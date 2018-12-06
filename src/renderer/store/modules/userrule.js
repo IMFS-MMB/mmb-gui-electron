@@ -1,27 +1,34 @@
-import Vue from 'vue';
+import deepClone from 'deepclone';
 
 const namespaced = true;
 
 const state = {
-  params: [],
+  params: [
+    [NaN, 0, 0, 0],
+    [0, 0, 0, 0],
+    [0, 0, 0, 0],
+    [0, 0, 0, 0],
+    [0, 0, 0, 0],
+    [NaN, 0, 0, 0],
+    [NaN, 0, 0, 0],
+    [NaN, 0, 0, 0],
+    [NaN, 0, 0, 0],
+  ],
 };
 
 const getters = {
   params(state) {
-    return state.params;
+    return deepClone(state.params);
   },
 };
 
 const mutations = {
   setParams(state, data) {
-    const items = data.map(d => +d); // convert to number
-    Vue.set(state, 'params', items);
+    state.params = deepClone(data);
   },
 };
 
-const actions = {
-
-};
+const actions = {};
 
 export default {
   namespaced,

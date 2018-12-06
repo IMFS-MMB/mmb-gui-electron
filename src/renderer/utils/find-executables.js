@@ -1,6 +1,6 @@
 import commandExists from 'command-exists';
 import { isExecutable } from './is-executable';
-import commonExecutables from './common-executables';
+import commonExecutables from '../data/common-executables';
 import logger from './logger';
 import { create } from './interface';
 

@@ -14,6 +14,7 @@ const state = {
   stdout: [],
   stderr: [],
   data: [],
+  error: false,
 };
 
 const getters = {
@@ -55,6 +56,7 @@ const mutations = {
     state.stdout = [];
     state.stderr = [];
     state.data = [];
+    state.error = false;
     state.inProgress = true;
     state.show = true;
   },
@@ -69,6 +71,9 @@ const mutations = {
   },
   addData(state, data) {
     state.data = (state.data || []).concat(data);
+  },
+  error(state, error) {
+    state.error = error;
   },
   done(state, data) {
     state.data = data;
@@ -85,6 +90,7 @@ const actions = {
     const policyRules = ctx.rootGetters['selections/policyRules'];
     const shocks = ctx.rootGetters['selections/shocks'];
     const outputVars = ctx.rootGetters['selections/outputVars'];
+    const userRule = ctx.rootGetters['userrule/params'];
 
     const isElectron = true; // todo detect environment
     if (isElectron) {
@@ -97,20 +103,24 @@ const actions = {
         cwd,
       });
 
+      const result = [];
+
       try {
         await backend.runCode(
-          buildMatlabScript(models, policyRules, outputVars, shocks),
+          buildMatlabScript(models, policyRules, outputVars, shocks, userRule),
           data => ctx.commit('addStdOut', data.toString()),
           data => ctx.commit('addStdErr', data.toString()),
         );
 
         const output = path.join(cwd, 'Modelbasefile.json');
 
-        const result = await readJsonFile(output, true);
+        const input = await readJsonFile(output, true);
 
-        ctx.commit('done', result);
+        result.push(...input);
       } catch (e) {
-        console.error(e);
+        ctx.commit('error', e);
+      } finally {
+        ctx.commit('done', result);
       }
     } else {
       // todo: fetch comparison data from server

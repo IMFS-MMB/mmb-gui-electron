@@ -355,8 +355,8 @@ for i=1:size(modelbase.rulenames,1);
                    irfrule = deblank(modelbase.rulenamesshort1(modelbase.l,:));
                    irfshock = ([deblank(modelbase.namesshocks(p,1:3))]);
                    for pp=1:4;
+                        irfvar = keyvariables(pp,:);
                         if  modelbase.pos_shock(p,modelbase.models(epsilon))~=0
-                            irfvar = keyvariables(pp,:);
                             if loc(modelbase.IRFendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:))~=0
                                 IRFval = modelbase.IRF.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:))))(loc(modelbase.IRFendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:)),:,p);
 
