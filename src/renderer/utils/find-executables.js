@@ -1,21 +1,21 @@
-import commandExists from 'command-exists';
-import { isExecutable } from './is-executable';
+// import commandExists from 'command-exists';
+// import { isExecutable } from './is-executable';
 import commonExecutables from '../data/common-executables';
 import logger from './logger';
 import { create } from './interface';
 
-async function isExecutableOrCommand(path) {
-  try {
-    if (await commandExists(path) || await isExecutable(path)) {
-      return true;
-    }
-  } catch (e) {
-    logger.info(e);
-    return false;
-  }
-
-  return false;
-}
+// async function isExecutableOrCommand(path) {
+//   try {
+//     if (await commandExists(path) || await isExecutable(path)) {
+//       return true;
+//     }
+//   } catch (e) {
+//     logger.info(e);
+//     return false;
+//   }
+//
+//   return false;
+// }
 
 export async function getExecutableInfo(exe) {
   logger.info(`testing path '${exe.path}'`);
