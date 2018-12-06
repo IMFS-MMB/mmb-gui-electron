@@ -86,7 +86,6 @@
       },
       "rule": {
         "id": 3,
-        "description_id": 3,
         "internal_name": "NK_CGG99"
       }
     },
@@ -119,7 +118,6 @@
       },
       "rule": {
         "id": 4,
-        "description_id": 4,
         "internal_name": "NK_CGG02"
       }
     },
@@ -151,7 +149,6 @@
       },
       "rule": {
         "id": 5,
-        "description_id": 5,
         "internal_name": "NK_MCN99cr"
       }
     },
@@ -182,7 +179,6 @@
       },
       "rule": {
         "id": 6,
-        "description_id": 6,
         "internal_name": "NK_IR04"
       }
     },
@@ -215,7 +211,6 @@
       },
       "rule": {
         "id": 7,
-        "description_id": 7,
         "internal_name": "NK_BGG99"
       }
     },
@@ -275,7 +270,6 @@
       },
       "rule": {
         "id": 9,
-        "description_id": 9,
         "internal_name": "NK_GK11"
       }
     },
@@ -307,7 +301,6 @@
       },
       "rule": {
         "id": 10,
-        "description_id": 10,
         "internal_name": "NK_CK08"
       }
     },
@@ -340,7 +333,6 @@
       },
       "rule": {
         "id": 11,
-        "description_id": 11,
         "internal_name": "NK_CKL09"
       }
     },
@@ -428,7 +420,6 @@
       },
       "rule": {
         "id": 14,
-        "description_id": 14,
         "internal_name": "US_OW98"
       }
     },
@@ -575,7 +566,6 @@
       },
       "rule": {
         "id": 19,
-        "description_id": 19,
         "internal_name": "US_ACELm"
       }
     },
@@ -609,7 +599,6 @@
       },
       "rule": {
         "id": 20,
-        "description_id": 20,
         "internal_name": "US_ACELt"
       }
     },
@@ -643,7 +632,6 @@
       },
       "rule": {
         "id": 21,
-        "description_id": 21,
         "internal_name": "US_ACELswm"
       }
     },
@@ -677,7 +665,6 @@
       },
       "rule": {
         "id": 22,
-        "description_id": 22,
         "internal_name": "US_ACELswt"
       }
     },
@@ -736,7 +723,6 @@
       },
       "rule": {
         "id": 24,
-        "description_id": 24,
         "internal_name": "US_OR03"
       }
     },
@@ -771,7 +757,6 @@
       },
       "rule": {
         "id": 25,
-        "description_id": 25,
         "internal_name": "US_PM08"
       }
     },
@@ -806,7 +791,6 @@
       },
       "rule": {
         "id": 26,
-        "description_id": 26,
         "internal_name": "US_PM08fl"
       }
     },
@@ -837,7 +821,6 @@
       },
       "rule": {
         "id": 27,
-        "description_id": 27,
         "internal_name": "US_DG08"
       }
     },
@@ -896,7 +879,6 @@
       },
       "rule": {
         "id": 29,
-        "description_id": 29,
         "internal_name": "US_IAC05"
       }
     },
@@ -955,7 +937,6 @@
       },
       "rule": {
         "id": 31,
-        "description_id": 31,
         "internal_name": "US_RA07"
       }
     },
@@ -989,7 +970,6 @@
       },
       "rule": {
         "id": 32,
-        "description_id": 32,
         "internal_name": "US_CCTW10"
       }
     },
@@ -1020,7 +1000,6 @@
       },
       "rule": {
         "id": 33,
-        "description_id": 33,
         "internal_name": "US_IR11"
       }
     },
@@ -1052,7 +1031,6 @@
       },
       "rule": {
         "id": 34,
-        "description_id": 34,
         "internal_name": "EA_CW05ta"
       }
     },
@@ -1084,7 +1062,6 @@
       },
       "rule": {
         "id": 35,
-        "description_id": 35,
         "internal_name": "EA_CW05fm"
       }
     },
@@ -1145,7 +1122,6 @@
       },
       "rule": {
         "id": 37,
-        "description_id": 37,
         "internal_name": "EA_SW03"
       }
     },
@@ -1208,7 +1184,6 @@
       },
       "rule": {
         "id": 39,
-        "description_id": 39,
         "internal_name": "EA_QUEST3"
       }
     },
@@ -1241,7 +1216,6 @@
       },
       "rule": {
         "id": 40,
-        "description_id": 40,
         "internal_name": "EA_CKL09"
       }
     },
@@ -1272,7 +1246,6 @@
       },
       "rule": {
         "id": 41,
-        "description_id": 41,
         "internal_name": "EA_GE10"
       }
     },
@@ -1303,7 +1276,6 @@
       },
       "rule": {
         "id": 42,
-        "description_id": 42,
         "internal_name": "G7_TAY93"
       }
     },
@@ -1335,7 +1307,6 @@
       },
       "rule": {
         "id": 43,
-        "description_id": 43,
         "internal_name": "G3_CW03"
       }
     },
@@ -1396,7 +1367,6 @@
       },
       "rule": {
         "id": 45,
-        "description_id": 45,
         "internal_name": "G2_SIGMA08"
       }
     },
@@ -1429,7 +1399,6 @@
       },
       "rule": {
         "id": 46,
-        "description_id": 46,
         "internal_name": "EAUS_NAWM08"
       }
     },
@@ -1460,7 +1429,6 @@
       },
       "rule": {
         "id": 47,
-        "description_id": 47,
         "internal_name": "EAES_RA09"
       }
     },
@@ -1522,7 +1490,6 @@
       },
       "rule": {
         "id": 49,
-        "description_id": 49,
         "internal_name": "BRA_SAMBA08"
       }
     },
@@ -1611,7 +1578,6 @@
       },
       "rule": {
         "id": 52,
-        "description_id": 52,
         "internal_name": "US_IN10"
       }
     },
@@ -1702,7 +1668,6 @@
       },
       "rule": {
         "id": 55,
-        "description_id": 55,
         "internal_name": "US_VMDno"
       }
     },
@@ -1735,7 +1700,6 @@
       },
       "rule": {
         "id": 56,
-        "description_id": 56,
         "internal_name": "US_VMDop"
       }
     },
@@ -1769,7 +1733,6 @@
       },
       "rule": {
         "id": 57,
-        "description_id": 57,
         "internal_name": "EA_GNSS10"
       }
     },
@@ -1801,7 +1764,6 @@
       },
       "rule": {
         "id": 58,
-        "description_id": 58,
         "internal_name": "NK_MM10"
       }
     },
@@ -1834,7 +1796,6 @@
       },
       "rule": {
         "id": 59,
-        "description_id": 59,
         "internal_name": "NK_KRS12"
       }
     },
@@ -1896,7 +1857,6 @@
       },
       "rule": {
         "id": 61,
-        "description_id": 61,
         "internal_name": "EAUS_NAWMctww"
       }
     },
@@ -1928,7 +1888,6 @@
       },
       "rule": {
         "id": 62,
-        "description_id": 62,
         "internal_name": "NK_CW09"
       }
     },
@@ -1964,7 +1923,6 @@
       },
       "rule": {
         "id": 63,
-        "description_id": 63,
         "internal_name": "GPM6_IMF13"
       }
     },
@@ -1997,7 +1955,6 @@
       },
       "rule": {
         "id": 64,
-        "description_id": 64,
         "internal_name": "CA_BMZ12"
       }
     },
@@ -2058,7 +2015,6 @@
       },
       "rule": {
         "id": 66,
-        "description_id": 66,
         "internal_name": "US_CMR14"
       }
     },
@@ -2119,7 +2075,6 @@
       },
       "rule": {
         "id": 68,
-        "description_id": 68,
         "internal_name": "EA_QR14"
       }
     },
@@ -2180,7 +2135,6 @@
       },
       "rule": {
         "id": 70,
-        "description_id": 70,
         "internal_name": "NK_LWW03AL"
       }
     },
@@ -2213,7 +2167,6 @@
       },
       "rule": {
         "id": 71,
-        "description_id": 71,
         "internal_name": "NK_CGG99AL"
       }
     },
@@ -2246,7 +2199,6 @@
       },
       "rule": {
         "id": 72,
-        "description_id": 72,
         "internal_name": "NK_CGG02AL"
       }
     },
@@ -2277,7 +2229,6 @@
       },
       "rule": {
         "id": 73,
-        "description_id": 73,
         "internal_name": "NK_IR04AL"
       }
     },
@@ -2310,7 +2261,6 @@
       },
       "rule": {
         "id": 74,
-        "description_id": 74,
         "internal_name": "NK_BGG99AL"
       }
     },
@@ -2398,7 +2348,6 @@
       },
       "rule": {
         "id": 77,
-        "description_id": 77,
         "internal_name": "US_SW07AL"
       }
     },
@@ -2429,7 +2378,6 @@
       },
       "rule": {
         "id": 78,
-        "description_id": 78,
         "internal_name": "US_MI07AL"
       }
     },
@@ -2460,7 +2408,6 @@
       },
       "rule": {
         "id": 79,
-        "description_id": 79,
         "internal_name": "US_YR13AL"
       }
     },
@@ -2492,7 +2439,6 @@
       },
       "rule": {
         "id": 80,
-        "description_id": 80,
         "internal_name": "NK_ET14"
       }
     },
@@ -2638,7 +2584,6 @@
       },
       "rule": {
         "id": 85,
-        "description_id": 85,
         "internal_name": "RBC_DTT11"
       }
     },
@@ -2672,7 +2617,6 @@
       },
       "rule": {
         "id": 86,
-        "description_id": 86,
         "internal_name": "US_CFOP14 "
       }
     },
@@ -2705,7 +2649,6 @@
       },
       "rule": {
         "id": 87,
-        "description_id": 87,
         "internal_name": "US_JPT11"
       }
     },
@@ -2738,7 +2681,6 @@
       },
       "rule": {
         "id": 88,
-        "description_id": 88,
         "internal_name": "US_CPS10"
       }
     },
@@ -2770,7 +2712,6 @@
       },
       "rule": {
         "id": 89,
-        "description_id": 89,
         "internal_name": "NK_NS14"
       }
     },
@@ -2803,7 +2744,6 @@
       },
       "rule": {
         "id": 90,
-        "description_id": 90,
         "internal_name": "US_DNGS15"
       }
     },
@@ -2836,7 +2776,6 @@
       },
       "rule": {
         "id": 91,
-        "description_id": 91,
         "internal_name": "US_FMS134"
       }
     },
@@ -2869,7 +2808,6 @@
       },
       "rule": {
         "id": 92,
-        "description_id": 92,
         "internal_name": "NK_AFL15"
       }
     },
@@ -2903,7 +2841,6 @@
       },
       "rule": {
         "id": 93,
-        "description_id": 93,
         "internal_name": "US_FGKR15"
       }
     },
@@ -2935,7 +2872,6 @@
       },
       "rule": {
         "id": 94,
-        "description_id": 94,
         "internal_name": "EA_PV15"
       }
     },
@@ -2968,7 +2904,6 @@
       },
       "rule": {
         "id": 95,
-        "description_id": 95,
         "internal_name": "NK_CFP10"
       }
     },
@@ -3000,7 +2935,6 @@
       },
       "rule": {
         "id": 96,
-        "description_id": 96,
         "internal_name": "NK_GM07"
       }
     },
@@ -3032,7 +2966,6 @@
       },
       "rule": {
         "id": 97,
-        "description_id": 97,
         "internal_name": "NK_KW16"
       }
     },
@@ -3065,7 +2998,6 @@
       },
       "rule": {
         "id": 98,
-        "description_id": 98,
         "internal_name": "NK_MPT10"
       }
     },
@@ -3097,7 +3029,6 @@
       },
       "rule": {
         "id": 99,
-        "description_id": 99,
         "internal_name": "NK_PP17"
       }
     },
@@ -3130,7 +3061,6 @@
       },
       "rule": {
         "id": 100,
-        "description_id": 100,
         "internal_name": "NK_PSV16"
       }
     },
@@ -3161,7 +3091,6 @@
       },
       "rule": {
         "id": 101,
-        "description_id": 101,
         "internal_name": "NK_RA16"
       }
     },
@@ -3192,7 +3121,6 @@
       },
       "rule": {
         "id": 102,
-        "description_id": 102,
         "internal_name": "NK_ST13"
       }
     },
@@ -3223,7 +3151,6 @@
       },
       "rule": {
         "id": 103,
-        "description_id": 103,
         "internal_name": "US_AJ16"
       }
     },
@@ -3256,7 +3183,6 @@
       },
       "rule": {
         "id": 104,
-        "description_id": 104,
         "internal_name": "US_CFP17_endo"
       }
     },
@@ -3289,7 +3215,6 @@
       },
       "rule": {
         "id": 105,
-        "description_id": 105,
         "internal_name": "US_CFP17_exo"
       }
     },
@@ -3322,7 +3247,6 @@
       },
       "rule": {
         "id": 106,
-        "description_id": 106,
         "internal_name": "US_DNGS15_SW"
       }
     },
@@ -3355,7 +3279,6 @@
       },
       "rule": {
         "id": 107,
-        "description_id": 107,
         "internal_name": "US_DNGS15_SWpi"
       }
     },
@@ -3388,7 +3311,6 @@
       },
       "rule": {
         "id": 108,
-        "description_id": 108,
         "internal_name": "US_DNGS15_SWSP"
       }
     },
@@ -3504,7 +3426,6 @@
       },
       "rule": {
         "id": 112,
-        "description_id": 112,
         "internal_name": "US_LWY13"
       }
     },
@@ -3535,7 +3456,6 @@
       },
       "rule": {
         "id": 113,
-        "description_id": 113,
         "internal_name": "US_RE09"
       }
     },
@@ -3568,7 +3488,6 @@
       },
       "rule": {
         "id": 114,
-        "description_id": 114,
         "internal_name": "NK_GLSV07"
       }
     }
@@ -3576,10 +3495,8 @@
   "commonRules": [
     {
       "id": 3,
-      "description_id": 1003,
       "internal_name": "Taylor_Rule",
       "description": {
-        "id": 1003,
         "ac_ref": "Taylor (1993)",
         "paper_title": "Discretion versus policy rules in practice",
         "journal": "Carnegie-Rochester Conference Series on Public Policy, pp. 195-214",
@@ -3594,11 +3511,9 @@
       }
     },
     {
-      "id": 0,
-      "description_id": 1004,
+      "id": 4,
       "internal_name": "GR_Rule",
       "description": {
-        "id": 1004,
         "ac_ref": "Gerdesmeier & Roffia (2004)",
         "paper_title": "Empirical estimates of reaction functions for the euro area",
         "journal": "Swiss Journal of Economics and Statistics 140(1), pp. 37–66",
@@ -3615,10 +3530,8 @@
     },
     {
       "id": 5,
-      "description_id": 1005,
       "internal_name": "LWW_Rule",
       "description": {
-        "id": 1005,
         "ac_ref": "Levin et al. (2003)",
         "paper_title": "The performance of forecast-based monetary policy rules under model uncertainty",
         "journal": "The American Economic Review 93(3), pp. 622–645",
@@ -3636,10 +3549,8 @@
     },
     {
       "id": 6,
-      "description_id": 1006,
       "internal_name": "SW_Rule",
       "description": {
-        "id": 1006,
         "ac_ref": "Smets & Wouters (2007)",
         "paper_title": "Shocks and frictions in US business cycles: A bayesian DSGE approach",
         "journal": "The American Economic Review 97(3), pp. 586–606",
@@ -3656,10 +3567,8 @@
     },
     {
       "id": 7,
-      "description_id": 1007,
       "internal_name": "CEE_Rule",
       "description": {
-        "id": 1007,
         "ac_ref": "Christiano et al. (2005)",
         "paper_title": "Nominal rigidities and the dynamic effects of a shock to monetary policy",
         "journal": "Journal of Political Economy 113(1), pp. 1–45",
@@ -3677,10 +3586,8 @@
     },
     {
       "id": 8,
-      "description_id": 1008,
       "internal_name": "OW08_Rule",
       "description": {
-        "id": 1008,
         "ac_ref": "Orphanides & Wieland (2008)",
         "paper_title": "Economic projections and rules of thumb for monetary policy",
         "journal": "Fed of St. Louis Review, pp. 307–324",
@@ -3697,10 +3604,8 @@
     },
     {
       "id": 9,
-      "description_id": 1009,
       "internal_name": "OW13_Rule",
       "description": {
-        "id": 1009,
         "ac_ref": "Orphanides & Wieland (2013)",
         "paper_title": "Complexity and monetary policy",
         "journal": "Journal of International Central 4\nBanking 9(1), pp. 167–204",
@@ -3717,10 +3622,8 @@
     },
     {
       "id": 10,
-      "description_id": 1010,
       "internal_name": "Coenen_Rule",
       "description": {
-        "id": 1010,
         "ac_ref": "Coenen et al. (2012)",
         "paper_title": "Effects of fiscal stimulus in structural models",
         "journal": "American Economic Journal: Macroeconomics 4, pp. 22–68",
@@ -3752,10 +3655,8 @@
     },
     {
       "id": 11,
-      "description_id": 1011,
       "internal_name": "CMR_Rule",
       "description": {
-        "id": 1011,
         "ac_ref": "Christiano et al. (2014)",
         "paper_title": "Risk shocks",
         "journal": "American Economic Review 104 (1), pp. 27–65",

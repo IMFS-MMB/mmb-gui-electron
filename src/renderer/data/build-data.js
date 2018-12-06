@@ -74,6 +74,10 @@ function getModels () {
     delete _model.description_id;
     delete description.id;
 
+    if(rule) {
+      delete rule.description_id;
+    }
+
     return {
       ..._model,
 
@@ -89,6 +93,9 @@ function getModels () {
 function getCommonRules () {
   const result = common_rules.map(cm => {
     const description = getDescription(cm.description_id);
+
+    delete cm.description_id;
+    delete description.id;
 
     return {
       ...cm,
