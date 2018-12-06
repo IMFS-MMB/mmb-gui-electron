@@ -1,13 +1,14 @@
-import commandExists from 'command-exists';
+// import commandExists from 'command-exists';
 
 import execute from './execute';
-import { isExecutableSync } from './is-executable';
+// import { isExecutableSync } from './is-executable';
 
 class Base {
   constructor(options) {
     const { path, cwd, defaultArgs } = options;
 
-    const pathExists = commandExists.sync(path) || isExecutableSync(path);
+    const pathExists = true;
+    // const pathExists = commandExists.sync(path) || isExecutableSync(path);
 
     if (!pathExists) {
       throw new Error(`${path} doesn't exist or is not executable.`);

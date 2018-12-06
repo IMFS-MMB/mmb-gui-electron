@@ -26,7 +26,8 @@ export async function getExecutableInfo(exe) {
     ver: 'unknown version',
   };
 
-  result.isExecutable = await isExecutableOrCommand(exe.path);
+  result.isExecutable = true;
+  // result.isExecutable = await isExecutableOrCommand(exe.path);
 
   logger.info(`'${exe.path}' is ${result.isExecutable ? '' : 'NOT '}executable`);
 
