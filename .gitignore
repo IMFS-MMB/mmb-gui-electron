@@ -11,4 +11,5 @@ thumbs.db
 
 Modelbase*
 octave-workspace
-*.log
+
+static/mmci-cli/**/*.log

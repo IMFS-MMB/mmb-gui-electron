@@ -18,9 +18,9 @@ dseries('initialize');
 global M_ options_ oo_ estim_params_ bayestopt_ dataset_ dataset_info estimation_info ys0_ ex0_
 options_ = [];
 M_.fname = 'NK_GM05';
-M_.dynare_version = '4.5.4';
-oo_.dynare_version = '4.5.4';
-options_.dynare_version = '4.5.4';
+M_.dynare_version = '4.5.6';
+oo_.dynare_version = '4.5.6';
+options_.dynare_version = '4.5.6';
 %
 % Some global variables initialization
 %
@@ -500,9 +500,9 @@ std_r_ = M_.params( 32 );
 % SHOCKS instructions
 %
 M_.exo_det_length = 0;
-M_.Sigma_e(1, 1) = 6.083999999999999e-05;
-M_.Sigma_e(2, 2) = 5.041000000000001e-05;
-M_.Sigma_e(2, 1) = 1.6614e-05;
+M_.Sigma_e(1, 1) = 6.083999999999999e-005;
+M_.Sigma_e(2, 2) = 5.041000000000001e-005;
+M_.Sigma_e(2, 1) = 1.6614e-005;
 M_.Sigma_e(1, 2) = M_.Sigma_e(2, 1);
 M_.sigma_e_is_diagonal = 0;
 save('NK_GM05_results.mat', 'oo_', 'M_', 'options_');

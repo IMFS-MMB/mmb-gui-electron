@@ -1,26 +1,13 @@
 %
-% Status : main Dynare file
+% Status : main Dynare file 
 %
 % Warning : this file is generated automatically by Dynare
 %           from model file (.mod)
 
-if isoctave || matlab_ver_less_than('8.6')
-    clear all
-else
-    clearvars -global
-    clear_persistent_variables(fileparts(which('dynare')), false)
-end
-tic0 = tic;
-% Save empty dates and dseries objects in memory.
-dates('initialize');
-dseries('initialize');
-% Define global variables.
-global M_ options_ oo_ estim_params_ bayestopt_ dataset_ dataset_info estimation_info ys0_ ex0_
+tic;
+global M_ oo_ options_ ys0_ ex0_ estimation_info
 options_ = [];
 M_.fname = 'EA_AWM05';
-M_.dynare_version = '4.5.4';
-oo_.dynare_version = '4.5.4';
-options_.dynare_version = '4.5.4';
 %
 % Some global variables initialization
 %
@@ -780,7 +767,6 @@ M_.endo_names_long = char(M_.endo_names_long, 'AUX_ENDO_LAG_192_3');
 M_.endo_names = char(M_.endo_names, 'AUX_ENDO_LAG_42_1');
 M_.endo_names_tex = char(M_.endo_names_tex, 'AUX\_ENDO\_LAG\_42\_1');
 M_.endo_names_long = char(M_.endo_names_long, 'AUX_ENDO_LAG_42_1');
-M_.endo_partitions = struct();
 M_.param_names = 'cofintintb1';
 M_.param_names_tex = 'cofintintb1';
 M_.param_names_long = 'cofintintb1';
@@ -1573,7 +1559,6 @@ M_.param_names_long = char(M_.param_names_long, 'ayett');
 M_.param_names = char(M_.param_names, 'acompr');
 M_.param_names_tex = char(M_.param_names_tex, 'acompr');
 M_.param_names_long = char(M_.param_names_long, 'acompr');
-M_.param_partitions = struct();
 M_.exo_det_nbr = 0;
 M_.exo_nbr = 15;
 M_.endo_nbr = 236;
@@ -1690,18 +1675,12 @@ M_.Correlation_matrix = eye(15, 15);
 M_.H = 0;
 M_.Correlation_matrix_ME = 1;
 M_.sigma_e_is_diagonal = 1;
-M_.det_shocks = [];
 options_.linear = 1;
 options_.block=0;
 options_.bytecode=0;
 options_.use_dll=0;
-M_.hessian_eq_zero = 1;
 erase_compiled_function('EA_AWM05_static');
 erase_compiled_function('EA_AWM05_dynamic');
-M_.orig_eq_nbr = 196;
-M_.eq_nbr = 236;
-M_.ramsey_eq_nbr = 0;
-M_.set_auxiliary_variables = exist(['./' M_.fname '_set_auxiliary_variables.m'], 'file') == 2;
 M_.lead_lag_incidence = [
  1 179 415;
  2 180 0;
@@ -1959,7 +1938,10 @@ M_.maximum_exo_lag = 0;
 M_.maximum_exo_lead = 0;
 oo_.exo_steady_state = zeros(15, 1);
 M_.params = NaN(264, 1);
-M_.NNZDerivatives = [821; 0; -1];
+M_.NNZDerivatives = zeros(3, 1);
+M_.NNZDerivatives(1) = 821;
+M_.NNZDerivatives(2) = 0;
+M_.NNZDerivatives(3) = -1;
 M_.params( 35 ) = 0.413895;
 BETABIG = M_.params( 35 );
 M_.params( 36 ) = 0.01;
@@ -2435,12 +2417,13 @@ coffispol = M_.params( 34 );
 %
 % SHOCKS instructions
 %
+make_ex_;
 M_.exo_det_length = 0;
 M_.Sigma_e(1, 1) = 0.033857;
 M_.Sigma_e(2, 2) = 0.18155;
 M_.Sigma_e(3, 3) = 0.03085;
 M_.Sigma_e(4, 4) = 0.02294;
-M_.Sigma_e(5, 5) = 0.8004599999999999;
+M_.Sigma_e(5, 5) = 0.80046;
 M_.Sigma_e(6, 6) = 0.036251;
 M_.Sigma_e(7, 7) = 0.1712;
 M_.Sigma_e(8, 8) = 0.6490899999999999;
@@ -2461,7 +2444,7 @@ M_.Sigma_e(1, 6) = 0.005248399999999999;
 M_.Sigma_e(6, 1) = M_.Sigma_e(1, 6);
 M_.Sigma_e(1, 7) = 0.021928;
 M_.Sigma_e(7, 1) = M_.Sigma_e(1, 7);
-M_.Sigma_e(1, 8) = 0.055601;
+M_.Sigma_e(1, 8) = 0.05560100000000001;
 M_.Sigma_e(8, 1) = M_.Sigma_e(1, 8);
 M_.Sigma_e(1, 9) = 0.019613;
 M_.Sigma_e(9, 1) = M_.Sigma_e(1, 9);
@@ -2539,7 +2522,7 @@ M_.Sigma_e(5, 7) = 0.11048;
 M_.Sigma_e(7, 5) = M_.Sigma_e(5, 7);
 M_.Sigma_e(5, 8) = 0.26808;
 M_.Sigma_e(8, 5) = M_.Sigma_e(5, 8);
-M_.Sigma_e(5, 9) = (-0.04899299999999999);
+M_.Sigma_e(5, 9) = (-0.048993);
 M_.Sigma_e(9, 5) = M_.Sigma_e(5, 9);
 M_.Sigma_e(5, 10) = (-0.13007);
 M_.Sigma_e(10, 5) = M_.Sigma_e(5, 10);
@@ -2620,15 +2603,9 @@ end
 if exist('estimation_info', 'var') == 1
   save('EA_AWM05_results.mat', 'estimation_info', '-append');
 end
-if exist('dataset_info', 'var') == 1
-  save('EA_AWM05_results.mat', 'dataset_info', '-append');
-end
-if exist('oo_recursive_', 'var') == 1
-  save('EA_AWM05_results.mat', 'oo_recursive_', '-append');
-end
 
 
-disp(['Total computing time : ' dynsec2hms(toc(tic0)) ]);
+disp(['Total computing time : ' dynsec2hms(toc) ]);
 if ~isempty(lastwarn)
   disp('Note: warning(s) encountered in MATLAB/Octave code')
 end

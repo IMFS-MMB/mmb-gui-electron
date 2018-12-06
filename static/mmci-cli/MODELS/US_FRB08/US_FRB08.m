@@ -1,26 +1,13 @@
 %
-% Status : main Dynare file
+% Status : main Dynare file 
 %
 % Warning : this file is generated automatically by Dynare
 %           from model file (.mod)
 
-if isoctave || matlab_ver_less_than('8.6')
-    clear all
-else
-    clearvars -global
-    clear_persistent_variables(fileparts(which('dynare')), false)
-end
-tic0 = tic;
-% Save empty dates and dseries objects in memory.
-dates('initialize');
-dseries('initialize');
-% Define global variables.
-global M_ options_ oo_ estim_params_ bayestopt_ dataset_ dataset_info estimation_info ys0_ ex0_
+tic;
+global M_ oo_ options_ ys0_ ex0_ estimation_info
 options_ = [];
 M_.fname = 'US_FRB08';
-M_.dynare_version = '4.5.4';
-oo_.dynare_version = '4.5.4';
-options_.dynare_version = '4.5.4';
 %
 % Some global variables initialization
 %
@@ -1392,7 +1379,6 @@ M_.endo_names_long = char(M_.endo_names_long, 'AUX_ENDO_LAG_305_1');
 M_.endo_names = char(M_.endo_names, 'AUX_ENDO_LAG_307_1');
 M_.endo_names_tex = char(M_.endo_names_tex, 'AUX\_ENDO\_LAG\_307\_1');
 M_.endo_names_long = char(M_.endo_names_long, 'AUX_ENDO_LAG_307_1');
-M_.endo_partitions = struct();
 M_.param_names = 'cofintintb1';
 M_.param_names_tex = 'cofintintb1';
 M_.param_names_long = 'cofintintb1';
@@ -5575,7 +5561,6 @@ M_.param_names_long = char(M_.param_names_long, 'ptra14');
 M_.param_names = char(M_.param_names, 'rrtra1');
 M_.param_names_tex = char(M_.param_names_tex, 'rrtra1');
 M_.param_names_long = char(M_.param_names_long, 'rrtra1');
-M_.param_partitions = struct();
 M_.exo_det_nbr = 0;
 M_.exo_nbr = 57;
 M_.endo_nbr = 398;
@@ -5684,18 +5669,12 @@ M_.Correlation_matrix = eye(57, 57);
 M_.H = 0;
 M_.Correlation_matrix_ME = 1;
 M_.sigma_e_is_diagonal = 1;
-M_.det_shocks = [];
 options_.linear = 1;
 options_.block=0;
 options_.bytecode=0;
 options_.use_dll=0;
-M_.hessian_eq_zero = 1;
 erase_compiled_function('US_FRB08_static');
 erase_compiled_function('US_FRB08_dynamic');
-M_.orig_eq_nbr = 369;
-M_.eq_nbr = 398;
-M_.ramsey_eq_nbr = 0;
-M_.set_auxiliary_variables = exist(['./' M_.fname '_set_auxiliary_variables.m'], 'file') == 2;
 M_.lead_lag_incidence = [
  1 297 0;
  2 298 0;
@@ -6115,7 +6094,10 @@ M_.maximum_exo_lag = 0;
 M_.maximum_exo_lead = 0;
 oo_.exo_steady_state = zeros(57, 1);
 M_.params = NaN(1394, 1);
-M_.NNZDerivatives = [1714; 0; -1];
+M_.NNZDerivatives = zeros(3, 1);
+M_.NNZDerivatives(1) = 1714;
+M_.NNZDerivatives(2) = 0;
+M_.NNZDerivatives(3) = -1;
 M_.params( 35 ) = 1;
 fsector = M_.params( 35 );
 M_.params( 36 ) = 0;
@@ -8863,15 +8845,9 @@ end
 if exist('estimation_info', 'var') == 1
   save('US_FRB08_results.mat', 'estimation_info', '-append');
 end
-if exist('dataset_info', 'var') == 1
-  save('US_FRB08_results.mat', 'dataset_info', '-append');
-end
-if exist('oo_recursive_', 'var') == 1
-  save('US_FRB08_results.mat', 'oo_recursive_', '-append');
-end
 
 
-disp(['Total computing time : ' dynsec2hms(toc(tic0)) ]);
+disp(['Total computing time : ' dynsec2hms(toc) ]);
 if ~isempty(lastwarn)
   disp('Note: warning(s) encountered in MATLAB/Octave code')
 end

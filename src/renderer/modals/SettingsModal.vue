@@ -16,7 +16,7 @@
             </option>
         </b-form-select>
 
-        <b-btn variant="primary" block @click="scan" disabled="scanning">{{ scanning ? 'Scanning...' : 'Scan'}}</b-btn>
+        <b-btn variant="primary" block @click="scan" :disabled="scanning">{{ scanning ? 'Scanning...' : 'Scan'}}</b-btn>
         <b-btn variant="primary" block @click="find">Find manually</b-btn>
     </b-modal>
 </template>

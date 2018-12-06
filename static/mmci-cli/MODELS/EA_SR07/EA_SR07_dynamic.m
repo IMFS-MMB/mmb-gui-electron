@@ -5,25 +5,23 @@ function [residual, g1, g2, g3] = EA_SR07_dynamic(y, x, params, steady_state, it
 % Inputs :
 %   y         [#dynamic variables by 1] double    vector of endogenous variables in the order stored
 %                                                 in M_.lead_lag_incidence; see the Manual
-%   x         [nperiods by M_.exo_nbr] double     matrix of exogenous variables (in declaration order)
+%   x         [M_.exo_nbr by nperiods] double     matrix of exogenous variables (in declaration order)
 %                                                 for all simulation periods
-%   steady_state  [M_.endo_nbr by 1] double       vector of steady state values
 %   params    [M_.param_nbr by 1] double          vector of parameter values in declaration order
 %   it_       scalar double                       time period for exogenous variables for which to evaluate the model
 %
 % Outputs:
 %   residual  [M_.endo_nbr by 1] double    vector of residuals of the dynamic model equations in order of 
-%                                          declaration of the equations.
-%                                          Dynare may prepend auxiliary equations, see M_.aux_vars
+%                                          declaration of the equations
 %   g1        [M_.endo_nbr by #dynamic variables] double    Jacobian matrix of the dynamic model equations;
 %                                                           rows: equations in order of declaration
-%                                                           columns: variables in order stored in M_.lead_lag_incidence followed by the ones in M_.exo_names
+%                                                           columns: variables in order stored in M_.lead_lag_incidence
 %   g2        [M_.endo_nbr by (#dynamic variables)^2] double   Hessian matrix of the dynamic model equations;
 %                                                              rows: equations in order of declaration
-%                                                              columns: variables in order stored in M_.lead_lag_incidence followed by the ones in M_.exo_names
+%                                                              columns: variables in order stored in M_.lead_lag_incidence
 %   g3        [M_.endo_nbr by (#dynamic variables)^3] double   Third order derivative matrix of the dynamic model equations;
 %                                                              rows: equations in order of declaration
-%                                                              columns: variables in order stored in M_.lead_lag_incidence followed by the ones in M_.exo_names
+%                                                              columns: variables in order stored in M_.lead_lag_incidence
 %
 %
 % Warning : this file is generated automatically by Dynare
@@ -34,11 +32,12 @@ function [residual, g1, g2, g3] = EA_SR07_dynamic(y, x, params, steady_state, it
 %
 
 residual = zeros(147, 1);
+T3 = (-1);
 T229 = params(45)*params(125)/(1+params(45)*params(125)-params(45));
 T337 = (-(1/params(113)));
-T380 = params(73)^2;
-T386 = (-(1/(T380+params(35)*params(70)^2)));
-T431 = 1/(T380*params(69)*(1+params(35)));
+T386 = (-(1/(params(73)^2+params(35)*params(70)^2)));
+T428 = params(73)^2*params(69);
+T431 = 1/(T428*(1+params(35)));
 T463 = params(75)/(1-params(75));
 T481 = (params(73)-params(35)*(1-params(41)))/params(73);
 T486 = T463*(params(73)-params(35)*(1-params(41)))/params(73);
@@ -117,7 +116,7 @@ lhs =y(94);
 rhs =T386*(params(73)*params(35)*(-params(70))*y(241)-params(73)*params(70)*y(6)+params(73)*params(70)*(y(121)-params(35)*y(248))+y(96)*(params(73)-params(35)*params(70))*(params(73)-params(70))+(params(73)-params(70))*(params(73)-params(35)*params(70))*params(47)/(1+params(47))*y(117)+(params(73)-params(35)*params(70))*(params(73)-params(70))*y(142)-(params(73)-params(70))*params(35)*(-params(70))*y(249))+y(122);
 residual(19)= lhs-rhs;
 lhs =y(95);
-rhs =T431*(T380*params(69)*(params(35)*y(248)+y(7)+params(35)*y(242)-y(121))+y(97)-y(143))+y(128);
+rhs =T431*(T428*(params(35)*y(248)+y(7)+params(35)*y(242)-y(121))+y(97)-y(143))+y(128);
 residual(20)= lhs-rhs;
 residual(21) = y(96)*(-params(39))+params(39)*y(243)-y(248)*params(39)+y(110)*(params(39)-params(35)*params(75))-y(236)*params(39)+T463*(params(35)-params(39))*y(247);
 residual(22) = y(97)+y(96)+y(248)-y(243)-params(35)*(1-params(41))/params(73)*y(244)-T481*y(250)+T487;
@@ -204,7 +203,7 @@ lhs =y(149);
 rhs =y(122)+T386*((params(73)-params(70))*(params(73)-params(35)*params(70))*params(47)/(1+params(47))*y(117)+params(73)*params(70)*(y(121)-params(35)*y(248))+params(73)*params(35)*(-params(70))*y(252)-params(73)*params(70)*y(37)+(params(73)-params(35)*params(70))*(params(73)-params(70))*y(151)+(params(73)-params(35)*params(70))*(params(73)-params(70))*y(180)-(params(73)-params(70))*params(35)*(-params(70))*y(249));
 residual(54)= lhs-rhs;
 lhs =y(150);
-rhs =y(128)+T431*(T380*params(69)*(params(35)*y(248)+y(38)+params(35)*y(253)-y(121))+y(152)-y(181));
+rhs =y(128)+T431*(T428*(params(35)*y(248)+y(38)+params(35)*y(253)-y(121))+y(152)-y(181));
 residual(55)= lhs-rhs;
 residual(56) = T463*(params(35)-params(39))*y(247)+(-params(39))*y(151)+params(39)*y(254)-y(248)*params(39)+(params(39)-params(35)*params(75))*y(165)-params(39)*y(251);
 residual(57) = T487+y(152)+y(248)+y(151)-y(254)-params(35)*(1-params(41))/params(73)*y(255)-T481*y(257);
@@ -471,7 +470,6 @@ if nargout >= 2,
   % Jacobian matrix
   %
 
-T3 = (-1);
   g1(1,110)=(-4);
   g1(1,186)=1;
   g1(2,36)=T3;
@@ -593,12 +591,12 @@ T3 = (-1);
   g1(19,122)=T3;
   g1(19,249)=(-(T386*(-(params(35)*(-params(70))*(params(73)-params(70))))));
   g1(19,142)=(-(T386*(params(73)-params(35)*params(70))*(params(73)-params(70))));
-  g1(20,7)=(-(T380*params(69)*T431));
+  g1(20,7)=(-(T428*T431));
   g1(20,95)=1;
-  g1(20,242)=(-(T431*params(35)*T380*params(69)));
+  g1(20,242)=(-(T431*params(35)*T428));
   g1(20,97)=(-T431);
-  g1(20,121)=(-(T431*(-(T380*params(69)))));
-  g1(20,248)=(-(T431*params(35)*T380*params(69)));
+  g1(20,121)=(-(T431*(-T428)));
+  g1(20,248)=(-(T431*params(35)*T428));
   g1(20,128)=T3;
   g1(20,143)=T431;
   g1(21,236)=(-params(39));
@@ -754,12 +752,12 @@ T3 = (-1);
   g1(54,252)=(-(T386*params(73)*params(35)*(-params(70))));
   g1(54,151)=(-(T386*(params(73)-params(35)*params(70))*(params(73)-params(70))));
   g1(54,180)=(-(T386*(params(73)-params(35)*params(70))*(params(73)-params(70))));
-  g1(55,121)=(-(T431*(-(T380*params(69)))));
-  g1(55,248)=(-(T431*params(35)*T380*params(69)));
+  g1(55,121)=(-(T431*(-T428)));
+  g1(55,248)=(-(T431*params(35)*T428));
   g1(55,128)=T3;
-  g1(55,38)=(-(T380*params(69)*T431));
+  g1(55,38)=(-(T428*T431));
   g1(55,150)=1;
-  g1(55,253)=(-(T431*params(35)*T380*params(69)));
+  g1(55,253)=(-(T431*params(35)*T428));
   g1(55,152)=(-T431);
   g1(55,181)=T431;
   g1(56,247)=T463*(params(35)-params(39));
@@ -1109,20 +1107,19 @@ T3 = (-1);
   g1(146,234)=1;
   g1(147,85)=T3;
   g1(147,235)=1;
-
+end
 if nargout >= 3,
   %
   % Hessian matrix
   %
 
   g2 = sparse([],[],[],147,84100);
+end
 if nargout >= 4,
   %
   % Third order derivatives
   %
 
   g3 = sparse([],[],[],147,24389000);
-end
-end
 end
 end

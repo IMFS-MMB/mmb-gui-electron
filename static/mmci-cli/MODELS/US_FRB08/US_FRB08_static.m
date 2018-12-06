@@ -1,4 +1,4 @@
-function [residual, g1, g2, g3] = US_FRB08_static(y, x, params)
+function [residual, g1, g2] = US_FRB08_static(y, x, params)
 %
 % Status : Computes static model for Dynare
 %
@@ -9,15 +9,11 @@ function [residual, g1, g2, g3] = US_FRB08_static(y, x, params)
 %
 % Outputs:
 %   residual  [M_.endo_nbr by 1] double    vector of residuals of the static model equations 
-%                                          in order of declaration of the equations.
-%                                          Dynare may prepend or append auxiliary equations, see M_.aux_vars
+%                                          in order of declaration of the equations
 %   g1        [M_.endo_nbr by M_.endo_nbr] double    Jacobian matrix of the static model equations;
-%                                                       columns: variables in declaration order
-%                                                       rows: equations in order of declaration
+%                                                     columns: variables in declaration order
+%                                                     rows: equations in order of declaration
 %   g2        [M_.endo_nbr by (M_.endo_nbr)^2] double   Hessian matrix of the static model equations;
-%                                                       columns: variables in declaration order
-%                                                       rows: equations in order of declaration
-%   g3        [M_.endo_nbr by (M_.endo_nbr)^3] double   Third derivatives matrix of the static model equations;
 %                                                       columns: variables in declaration order
 %                                                       rows: equations in order of declaration
 %
@@ -31,14 +27,13 @@ residual = zeros( 398, 1);
 % Model equations
 %
 
-T2957 = params(1305)^.25;
-T2966 = params(1349)^.25;
-T2975 = params(1325)^.25;
+T3 = (-1);
+T4014 = (-(params(35)*(2*params(566)/4+2*params(567)/4)));
 lhs =y(364);
 rhs =y(164);
 residual(1)= lhs-rhs;
 lhs =y(365);
-rhs =0.25*(y(3)+y(3)+y(3)+y(3));
+rhs =0.25*(y(3)+y(3)+y(379)+y(380));
 residual(2)= lhs-rhs;
 lhs =y(366);
 rhs =y(3);
@@ -56,7 +51,7 @@ lhs =y(369);
 rhs =y(363);
 residual(7)= lhs-rhs;
 lhs =y(364);
-rhs =params(32)*x(23)+y(368)*params(31)+y(368)*params(30)+y(368)*params(29)+y(368)*params(28)+y(368)*params(27)+y(368)*params(26)+y(368)*params(25)+y(368)*params(24)+y(368)*params(23)+y(367)*params(22)+y(367)*params(21)+y(367)*params(20)+y(367)*params(19)+y(367)*params(18)+y(367)*params(17)+y(367)*params(16)+y(367)*params(15)+y(367)*params(14)+y(366)*params(13)+y(366)*params(12)+y(366)*params(11)+y(366)*params(10)+y(366)*params(6)+y(366)*params(5)+y(364)*params(1)+y(364)*params(2)+y(364)*params(3)+y(364)*params(4)+y(366)*params(7)+y(366)*params(8)+y(366)*params(9);
+rhs =params(32)*x(23)+params(31)*y(378)+params(30)*y(377)+params(29)*y(376)+y(368)*params(28)+params(27)*y(383)+params(26)*y(382)+params(25)*y(381)+y(368)*params(24)+y(368)*params(23)+params(22)*y(375)+params(21)*y(374)+params(20)*y(373)+y(367)*params(19)+params(18)*y(386)+params(17)*y(385)+params(16)*y(384)+y(367)*params(15)+y(367)*params(14)+params(13)*y(372)+params(12)*y(371)+params(11)*y(370)+y(366)*params(10)+y(366)*params(6)+y(366)*params(5)+y(364)*params(1)+params(2)*y(387)+params(3)*y(388)+params(4)*y(389)+params(7)*y(390)+params(8)*y(391)+params(9)*y(392);
 residual(8)= lhs-rhs;
 lhs =y(369);
 rhs =params(34)*x(15);
@@ -445,22 +440,22 @@ lhs =y(131);
 rhs =y(3)*params(197)/400+y(130)*(1-params(197));
 residual(140)= lhs-rhs;
 lhs =y(132);
-rhs =y(362)+params(39)*(y(1)*params(407)+y(1)*params(406)+y(132)+params(402)*(y(132)-y(138))+params(403)*(y(132)-y(298))+params(404)*(y(298)-y(299)));
+rhs =y(362)+params(39)*(y(1)*params(407)+y(1)*params(406)+y(132)+params(402)*(y(132)-y(138))+params(403)*(y(132)-y(298))+params(404)*(y(393)-y(299)));
 residual(141)= lhs-rhs;
 lhs =y(133);
-rhs =y(363)+params(39)*(y(1)*params(413)+y(1)*params(412)+y(133)+params(408)*(y(133)-y(138))+params(409)*(y(133)-y(300))+params(410)*(y(300)-y(301)));
+rhs =y(363)+params(39)*(y(1)*params(413)+y(1)*params(412)+y(133)+params(408)*(y(133)-y(138))+params(409)*(y(133)-y(300))+params(410)*(y(394)-y(301)));
 residual(142)= lhs-rhs;
 lhs =y(134);
-rhs =y(369)+params(39)*(y(1)*params(419)+y(1)*params(418)+y(134)+params(414)*(y(134)-y(138))+params(415)*(y(134)-y(302))+params(416)*(y(302)-y(303)));
+rhs =y(369)+params(39)*(y(1)*params(419)+y(1)*params(418)+y(134)+params(414)*(y(134)-y(138))+params(415)*(y(134)-y(302))+params(416)*(y(395)-y(303)));
 residual(143)= lhs-rhs;
 lhs =y(135);
-rhs =x(6)+params(39)*(y(1)*params(425)+y(1)*params(424)+y(135)+params(420)*(y(135)-y(138))+params(421)*(y(135)-y(304))+params(422)*(y(304)-y(305)));
+rhs =x(6)+params(39)*(y(1)*params(425)+y(1)*params(424)+y(135)+params(420)*(y(135)-y(138))+params(421)*(y(135)-y(304))+params(422)*(y(396)-y(305)));
 residual(144)= lhs-rhs;
 lhs =y(136);
-rhs =x(7)+params(39)*(y(1)*params(431)+y(1)*params(430)+y(136)+params(426)*(y(136)-y(138))+params(427)*(y(136)-y(306))+params(428)*(y(306)-y(307)));
+rhs =x(7)+params(39)*(y(1)*params(431)+y(1)*params(430)+y(136)+params(426)*(y(136)-y(138))+params(427)*(y(136)-y(306))+params(428)*(y(397)-y(307)));
 residual(145)= lhs-rhs;
 lhs =y(137);
-rhs =x(8)+params(39)*(y(1)*params(437)+y(1)*params(436)+y(137)+params(432)*(y(137)-y(138))+params(433)*(y(137)-y(308))+params(434)*(y(308)-y(309)));
+rhs =x(8)+params(39)*(y(1)*params(437)+y(1)*params(436)+y(137)+params(432)*(y(137)-y(138))+params(433)*(y(137)-y(308))+params(434)*(y(398)-y(309)));
 residual(146)= lhs-rhs;
 lhs =y(138);
 rhs =y(138)+params(438)*(y(138)-y(69))+(y(261)+y(70)+y(260)+y(261))/1600;
@@ -667,13 +662,13 @@ lhs =y(206);
 rhs =y(206)*params(937)+y(353)*params(938);
 residual(214)= lhs-rhs;
 lhs =y(207);
-rhs =y(92)*(1-T2957*params(1306))+y(207)*T2957;
+rhs =y(92)*(1-params(1305)^.25*params(1306))+y(207)*params(1305)^.25;
 residual(215)= lhs-rhs;
 lhs =y(208);
-rhs =y(96)*(1-T2966*params(1350))+y(208)*T2966;
+rhs =y(96)*(1-params(1349)^.25*params(1350))+y(208)*params(1349)^.25;
 residual(216)= lhs-rhs;
 lhs =y(209);
-rhs =y(98)*(1-T2975*params(1326))+y(209)*T2975;
+rhs =y(98)*(1-params(1325)^.25*params(1326))+y(209)*params(1325)^.25;
 residual(217)= lhs-rhs;
 lhs =y(210);
 rhs =y(210)*params(957)+y(354)*params(958);
@@ -1135,70 +1130,70 @@ lhs =y(370);
 rhs =y(366);
 residual(370)= lhs-rhs;
 lhs =y(371);
-rhs =y(366);
+rhs =y(370);
 residual(371)= lhs-rhs;
 lhs =y(372);
-rhs =y(366);
+rhs =y(371);
 residual(372)= lhs-rhs;
 lhs =y(373);
 rhs =y(367);
 residual(373)= lhs-rhs;
 lhs =y(374);
-rhs =y(367);
+rhs =y(373);
 residual(374)= lhs-rhs;
 lhs =y(375);
-rhs =y(367);
+rhs =y(374);
 residual(375)= lhs-rhs;
 lhs =y(376);
 rhs =y(368);
 residual(376)= lhs-rhs;
 lhs =y(377);
-rhs =y(368);
+rhs =y(376);
 residual(377)= lhs-rhs;
 lhs =y(378);
-rhs =y(368);
+rhs =y(377);
 residual(378)= lhs-rhs;
 lhs =y(379);
 rhs =y(3);
 residual(379)= lhs-rhs;
 lhs =y(380);
-rhs =y(3);
+rhs =y(379);
 residual(380)= lhs-rhs;
 lhs =y(381);
 rhs =y(368);
 residual(381)= lhs-rhs;
 lhs =y(382);
-rhs =y(368);
+rhs =y(381);
 residual(382)= lhs-rhs;
 lhs =y(383);
-rhs =y(368);
+rhs =y(382);
 residual(383)= lhs-rhs;
 lhs =y(384);
 rhs =y(367);
 residual(384)= lhs-rhs;
 lhs =y(385);
-rhs =y(367);
+rhs =y(384);
 residual(385)= lhs-rhs;
 lhs =y(386);
-rhs =y(367);
+rhs =y(385);
 residual(386)= lhs-rhs;
 lhs =y(387);
 rhs =y(364);
 residual(387)= lhs-rhs;
 lhs =y(388);
-rhs =y(364);
+rhs =y(387);
 residual(388)= lhs-rhs;
 lhs =y(389);
-rhs =y(364);
+rhs =y(388);
 residual(389)= lhs-rhs;
 lhs =y(390);
 rhs =y(366);
 residual(390)= lhs-rhs;
 lhs =y(391);
-rhs =y(366);
+rhs =y(390);
 residual(391)= lhs-rhs;
 lhs =y(392);
-rhs =y(366);
+rhs =y(391);
 residual(392)= lhs-rhs;
 lhs =y(393);
 rhs =y(298);
@@ -1228,12 +1223,12 @@ if nargout >= 2,
   % Jacobian matrix
   %
 
-T3 = (-1);
-T4255 = (-(params(35)*(2*params(566)/4+2*params(567)/4)));
   g1(1,164)=T3;
   g1(1,364)=1;
-  g1(2,3)=T3;
+  g1(2,3)=(-0.5);
   g1(2,365)=1;
+  g1(2,379)=(-0.25);
+  g1(2,380)=(-0.25);
   g1(3,3)=T3;
   g1(3,366)=1;
   g1(4,1)=T3;
@@ -1244,10 +1239,31 @@ T4255 = (-(params(35)*(2*params(566)/4+2*params(567)/4)));
   g1(6,369)=1;
   g1(7,363)=T3;
   g1(7,369)=1;
-  g1(8,364)=1-(params(4)+params(3)+params(1)+params(2));
-  g1(8,366)=(-(params(13)+params(12)+params(11)+params(10)+params(9)+params(8)+params(7)+params(6)+params(5)));
-  g1(8,367)=(-(params(22)+params(21)+params(20)+params(19)+params(18)+params(17)+params(16)+params(15)+params(14)));
-  g1(8,368)=(-(params(31)+params(30)+params(29)+params(28)+params(27)+params(26)+params(25)+params(24)+params(23)));
+  g1(8,364)=1-params(1);
+  g1(8,366)=(-(params(10)+params(6)+params(5)));
+  g1(8,367)=(-(params(19)+params(15)+params(14)));
+  g1(8,368)=(-(params(28)+params(24)+params(23)));
+  g1(8,370)=(-params(11));
+  g1(8,371)=(-params(12));
+  g1(8,372)=(-params(13));
+  g1(8,373)=(-params(20));
+  g1(8,374)=(-params(21));
+  g1(8,375)=(-params(22));
+  g1(8,376)=(-params(29));
+  g1(8,377)=(-params(30));
+  g1(8,378)=(-params(31));
+  g1(8,381)=(-params(25));
+  g1(8,382)=(-params(26));
+  g1(8,383)=(-params(27));
+  g1(8,384)=(-params(16));
+  g1(8,385)=(-params(17));
+  g1(8,386)=(-params(18));
+  g1(8,387)=(-params(2));
+  g1(8,388)=(-params(3));
+  g1(8,389)=(-params(4));
+  g1(8,390)=(-params(7));
+  g1(8,391)=(-params(8));
+  g1(8,392)=(-params(9));
   g1(9,369)=1;
   g1(10,1)=1;
   g1(10,52)=(-100);
@@ -1861,36 +1877,42 @@ T4255 = (-(params(35)*(2*params(566)/4+2*params(567)/4)));
   g1(141,1)=(-(params(39)*(params(407)+params(406))));
   g1(141,132)=1-params(39)*(params(403)+1+params(402));
   g1(141,138)=(-(params(39)*(-params(402))));
-  g1(141,298)=(-(params(39)*(params(404)+(-params(403)))));
+  g1(141,298)=(-(params(39)*(-params(403))));
   g1(141,299)=(-(params(39)*(-params(404))));
   g1(141,362)=T3;
+  g1(141,393)=(-(params(39)*params(404)));
   g1(142,1)=(-(params(39)*(params(413)+params(412))));
   g1(142,133)=1-params(39)*(params(409)+1+params(408));
   g1(142,138)=(-(params(39)*(-params(408))));
-  g1(142,300)=(-(params(39)*(params(410)+(-params(409)))));
+  g1(142,300)=(-(params(39)*(-params(409))));
   g1(142,301)=(-(params(39)*(-params(410))));
   g1(142,363)=T3;
+  g1(142,394)=(-(params(39)*params(410)));
   g1(143,1)=(-(params(39)*(params(419)+params(418))));
   g1(143,134)=1-params(39)*(params(415)+1+params(414));
   g1(143,138)=(-(params(39)*(-params(414))));
-  g1(143,302)=(-(params(39)*(params(416)+(-params(415)))));
+  g1(143,302)=(-(params(39)*(-params(415))));
   g1(143,303)=(-(params(39)*(-params(416))));
   g1(143,369)=T3;
+  g1(143,395)=(-(params(39)*params(416)));
   g1(144,1)=(-(params(39)*(params(425)+params(424))));
   g1(144,135)=1-params(39)*(params(421)+1+params(420));
   g1(144,138)=(-(params(39)*(-params(420))));
-  g1(144,304)=(-(params(39)*(params(422)+(-params(421)))));
+  g1(144,304)=(-(params(39)*(-params(421))));
   g1(144,305)=(-(params(39)*(-params(422))));
+  g1(144,396)=(-(params(39)*params(422)));
   g1(145,1)=(-(params(39)*(params(431)+params(430))));
   g1(145,136)=1-params(39)*(params(427)+1+params(426));
   g1(145,138)=(-(params(39)*(-params(426))));
-  g1(145,306)=(-(params(39)*(params(428)+(-params(427)))));
+  g1(145,306)=(-(params(39)*(-params(427))));
   g1(145,307)=(-(params(39)*(-params(428))));
+  g1(145,397)=(-(params(39)*params(428)));
   g1(146,1)=(-(params(39)*(params(437)+params(436))));
   g1(146,137)=1-params(39)*(params(433)+1+params(432));
   g1(146,138)=(-(params(39)*(-params(432))));
-  g1(146,308)=(-(params(39)*(params(434)+(-params(433)))));
+  g1(146,308)=(-(params(39)*(-params(433))));
   g1(146,309)=(-(params(39)*(-params(434))));
+  g1(146,398)=(-(params(39)*params(434)));
   g1(147,69)=params(438);
   g1(147,70)=(-0.000625);
   g1(147,138)=1-(1+params(438));
@@ -2098,10 +2120,10 @@ T4255 = (-(params(35)*(2*params(566)/4+2*params(567)/4)));
   g1(194,184)=(-(params(35)*params(563)));
   g1(194,186)=1-params(35)*params(564);
   g1(195,181)=(-(params(35)*params(568)));
-  g1(195,184)=T4255;
+  g1(195,184)=T4014;
   g1(195,187)=1;
   g1(195,191)=(-(params(35)*params(565)));
-  g1(195,327)=T4255;
+  g1(195,327)=T4014;
   g1(196,187)=(-(params(35)*(-params(569))));
   g1(196,188)=1-params(35)*(params(570)+1+params(569));
   g1(196,329)=(-(params(35)*(-params(570))));
@@ -2171,12 +2193,12 @@ T4255 = (-(params(35)*(2*params(566)/4+2*params(567)/4)));
   g1(213,205)=1-params(920);
   g1(214,206)=1-params(937);
   g1(214,353)=(-params(938));
-  g1(215,92)=(-(1-T2957*params(1306)));
-  g1(215,207)=1-T2957;
-  g1(216,96)=(-(1-T2966*params(1350)));
-  g1(216,208)=1-T2966;
-  g1(217,98)=(-(1-T2975*params(1326)));
-  g1(217,209)=1-T2975;
+  g1(215,92)=(-(1-params(1305)^.25*params(1306)));
+  g1(215,207)=1-params(1305)^.25;
+  g1(216,96)=(-(1-params(1349)^.25*params(1350)));
+  g1(216,208)=1-params(1349)^.25;
+  g1(217,98)=(-(1-params(1325)^.25*params(1326)));
+  g1(217,209)=1-params(1325)^.25;
   g1(218,210)=1-params(957);
   g1(218,354)=(-params(958));
   g1(219,2)=(-params(978));
@@ -2483,49 +2505,49 @@ T4255 = (-(params(35)*(2*params(566)/4+2*params(567)/4)));
   g1(368,360)=1;
   g1(370,366)=T3;
   g1(370,370)=1;
-  g1(371,366)=T3;
+  g1(371,370)=T3;
   g1(371,371)=1;
-  g1(372,366)=T3;
+  g1(372,371)=T3;
   g1(372,372)=1;
   g1(373,367)=T3;
   g1(373,373)=1;
-  g1(374,367)=T3;
+  g1(374,373)=T3;
   g1(374,374)=1;
-  g1(375,367)=T3;
+  g1(375,374)=T3;
   g1(375,375)=1;
   g1(376,368)=T3;
   g1(376,376)=1;
-  g1(377,368)=T3;
+  g1(377,376)=T3;
   g1(377,377)=1;
-  g1(378,368)=T3;
+  g1(378,377)=T3;
   g1(378,378)=1;
   g1(379,3)=T3;
   g1(379,379)=1;
-  g1(380,3)=T3;
+  g1(380,379)=T3;
   g1(380,380)=1;
   g1(381,368)=T3;
   g1(381,381)=1;
-  g1(382,368)=T3;
+  g1(382,381)=T3;
   g1(382,382)=1;
-  g1(383,368)=T3;
+  g1(383,382)=T3;
   g1(383,383)=1;
   g1(384,367)=T3;
   g1(384,384)=1;
-  g1(385,367)=T3;
+  g1(385,384)=T3;
   g1(385,385)=1;
-  g1(386,367)=T3;
+  g1(386,385)=T3;
   g1(386,386)=1;
   g1(387,364)=T3;
   g1(387,387)=1;
-  g1(388,364)=T3;
+  g1(388,387)=T3;
   g1(388,388)=1;
-  g1(389,364)=T3;
+  g1(389,388)=T3;
   g1(389,389)=1;
   g1(390,366)=T3;
   g1(390,390)=1;
-  g1(391,366)=T3;
+  g1(391,390)=T3;
   g1(391,391)=1;
-  g1(392,366)=T3;
+  g1(392,391)=T3;
   g1(392,392)=1;
   g1(393,298)=T3;
   g1(393,393)=1;
@@ -2542,19 +2564,12 @@ T4255 = (-(params(35)*(2*params(566)/4+2*params(567)/4)));
   if ~isreal(g1)
     g1 = real(g1)+2*imag(g1);
   end
+end
 if nargout >= 3,
   %
   % Hessian matrix
   %
 
   g2 = sparse([],[],[],398,158404);
-if nargout >= 4,
-  %
-  % Third order derivatives
-  %
-
-  g3 = sparse([],[],[],398,63044792);
-end
-end
 end
 end

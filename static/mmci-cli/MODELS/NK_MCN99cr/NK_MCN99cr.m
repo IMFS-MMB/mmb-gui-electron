@@ -18,9 +18,9 @@ dseries('initialize');
 global M_ options_ oo_ estim_params_ bayestopt_ dataset_ dataset_info estimation_info ys0_ ex0_
 options_ = [];
 M_.fname = 'NK_MCN99cr';
-M_.dynare_version = '4.5.4';
-oo_.dynare_version = '4.5.4';
-options_.dynare_version = '4.5.4';
+M_.dynare_version = '4.5.6';
+oo_.dynare_version = '4.5.6';
+options_.dynare_version = '4.5.6';
 %
 % Some global variables initialization
 %
@@ -466,7 +466,7 @@ std_r_ = M_.params( 32 );
 M_.exo_det_length = 0;
 M_.Sigma_e(1, 1) = 0.00050625;
 M_.Sigma_e(2, 2) = 0.0006250000000000001;
-M_.Sigma_e(3, 3) = 4.900000000000001e-05;
+M_.Sigma_e(3, 3) = 4.900000000000001e-005;
 M_.Sigma_e(4, 4) = 0.00012996;
 save('NK_MCN99cr_results.mat', 'oo_', 'M_', 'options_');
 if exist('estim_params_', 'var') == 1
