@@ -1,0 +1,47 @@
+[
+  {
+    "id": 3,
+    "description_id": 1003,
+    "internal_name": "Taylor_Rule"
+  },
+  {
+    "id": 4,
+    "description_id": 1004,
+    "internal_name": "GR_Rule"
+  },
+  {
+    "id": 5,
+    "description_id": 1005,
+    "internal_name": "LWW_Rule"
+  },
+  {
+    "id": 6,
+    "description_id": 1006,
+    "internal_name": "SW_Rule"
+  },
+  {
+    "id": 7,
+    "description_id": 1007,
+    "internal_name": "CEE_Rule"
+  },
+  {
+    "id": 8,
+    "description_id": 1008,
+    "internal_name": "OW08_Rule"
+  },
+  {
+    "id": 9,
+    "description_id": 1009,
+    "internal_name": "OW13_Rule"
+  },
+  {
+    "id": 10,
+    "description_id": 1010,
+    "internal_name": "Coenen_Rule"
+  },
+  {
+    "id": 11,
+    "description_id": 1011,
+    "internal_name": "CMR_Rule"
+  }
+]

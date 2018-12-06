@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "ACF",
+    "text": "Autocorrelation Function"
+  },
+  {
+    "id": 2,
+    "name": "IRF",
+    "text": "Impulse Response Function"
+  },
+  {
+    "id": 3,
+    "name": "VAR",
+    "text": "Unconditional Variances"
+  }
+]

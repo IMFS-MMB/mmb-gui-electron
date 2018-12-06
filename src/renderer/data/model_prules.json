@@ -1,0 +1,3982 @@
+[
+  {
+    "model_id": 1,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 1,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 1,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 1,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 1,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 1,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 1,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 1,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 2,
+    "prule_id": 2
+  },
+  {
+    "model_id": 2,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 2,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 2,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 2,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 2,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 2,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 2,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 2,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 3,
+    "prule_id": 3
+  },
+  {
+    "model_id": 3,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 3,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 3,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 3,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 3,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 3,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 3,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 3,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 4,
+    "prule_id": 4
+  },
+  {
+    "model_id": 4,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 4,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 4,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 4,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 4,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 4,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 4,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 4,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 5,
+    "prule_id": 5
+  },
+  {
+    "model_id": 5,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 5,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 5,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 5,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 5,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 5,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 5,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 5,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 6,
+    "prule_id": 6
+  },
+  {
+    "model_id": 6,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 6,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 6,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 6,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 6,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 6,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 6,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 6,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 7,
+    "prule_id": 7
+  },
+  {
+    "model_id": 7,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 7,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 7,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 7,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 7,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 7,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 7,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 7,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 8,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 8,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 8,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 8,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 8,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 8,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 8,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 8,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 9,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 9,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 9,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 9,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 9,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 9,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 9,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 9,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 10,
+    "prule_id": 10
+  },
+  {
+    "model_id": 10,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 10,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 10,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 10,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 10,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 10,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 10,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 10,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 10,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 11,
+    "prule_id": 11
+  },
+  {
+    "model_id": 11,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 11,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 11,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 11,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 11,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 11,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 11,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 11,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 11,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 12,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 12,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 12,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 12,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 12,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 12,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 12,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 13,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 13,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 13,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 13,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 13,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 13,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 13,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 13,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 13,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 15,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 15,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 15,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 15,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 15,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 15,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 15,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 15,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 16,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 16,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 16,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 16,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 16,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 16,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 16,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 17,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 17,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 17,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 17,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 17,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 17,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 17,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 17,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 17,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 18,
+    "prule_id": 18
+  },
+  {
+    "model_id": 18,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 18,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 18,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 18,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 18,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 18,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 18,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 18,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 18,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 19,
+    "prule_id": 19
+  },
+  {
+    "model_id": 19,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 19,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 19,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 19,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 19,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 19,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 19,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 19,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 19,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 20,
+    "prule_id": 20
+  },
+  {
+    "model_id": 20,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 20,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 20,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 20,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 20,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 20,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 20,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 20,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 20,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 21,
+    "prule_id": 21
+  },
+  {
+    "model_id": 21,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 21,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 21,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 21,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 21,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 21,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 21,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 21,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 21,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 22,
+    "prule_id": 22
+  },
+  {
+    "model_id": 22,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 22,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 22,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 22,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 22,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 22,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 22,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 22,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 22,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 23,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 23,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 23,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 23,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 23,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 23,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 23,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 23,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 24,
+    "prule_id": 24
+  },
+  {
+    "model_id": 24,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 24,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 24,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 24,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 24,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 24,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 24,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 24,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 25,
+    "prule_id": 25
+  },
+  {
+    "model_id": 25,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 25,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 25,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 25,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 25,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 25,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 25,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 25,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 25,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 26,
+    "prule_id": 26
+  },
+  {
+    "model_id": 26,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 26,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 26,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 26,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 26,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 26,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 26,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 26,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 26,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 27,
+    "prule_id": 27
+  },
+  {
+    "model_id": 27,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 27,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 27,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 27,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 27,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 27,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 27,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 27,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 27,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 28,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 28,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 28,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 28,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 28,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 28,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 28,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 28,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 29,
+    "prule_id": 29
+  },
+  {
+    "model_id": 29,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 29,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 29,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 29,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 29,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 29,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 29,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 29,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 30,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 30,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 30,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 30,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 30,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 30,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 30,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 30,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 31,
+    "prule_id": 31
+  },
+  {
+    "model_id": 31,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 31,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 31,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 31,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 31,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 31,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 31,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 31,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 31,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 32,
+    "prule_id": 32
+  },
+  {
+    "model_id": 32,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 32,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 32,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 32,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 32,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 32,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 32,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 32,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 32,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 33,
+    "prule_id": 33
+  },
+  {
+    "model_id": 33,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 33,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 33,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 33,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 33,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 33,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 33,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 33,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 34,
+    "prule_id": 34
+  },
+  {
+    "model_id": 34,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 34,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 34,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 34,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 34,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 34,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 34,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 34,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 34,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 35,
+    "prule_id": 35
+  },
+  {
+    "model_id": 35,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 35,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 35,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 35,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 35,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 35,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 35,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 35,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 35,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 36,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 36,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 36,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 36,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 36,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 36,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 36,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 37,
+    "prule_id": 37
+  },
+  {
+    "model_id": 37,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 37,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 37,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 37,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 37,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 37,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 37,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 37,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 37,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 38,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 38,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 38,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 38,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 38,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 38,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 38,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 38,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 39,
+    "prule_id": 39
+  },
+  {
+    "model_id": 39,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 39,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 39,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 39,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 39,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 39,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 39,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 39,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 39,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 40,
+    "prule_id": 40
+  },
+  {
+    "model_id": 40,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 40,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 40,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 40,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 40,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 40,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 40,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 40,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 40,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 41,
+    "prule_id": 41
+  },
+  {
+    "model_id": 41,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 41,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 41,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 41,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 41,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 41,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 41,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 41,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 41,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 42,
+    "prule_id": 42
+  },
+  {
+    "model_id": 42,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 42,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 42,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 42,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 42,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 42,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 42,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 42,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 42,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 43,
+    "prule_id": 43
+  },
+  {
+    "model_id": 43,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 43,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 43,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 43,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 43,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 43,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 43,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 43,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 43,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 44,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 44,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 44,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 44,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 44,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 44,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 44,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 44,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 44,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 45,
+    "prule_id": 45
+  },
+  {
+    "model_id": 45,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 45,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 45,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 45,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 45,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 45,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 45,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 45,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 45,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 46,
+    "prule_id": 46
+  },
+  {
+    "model_id": 46,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 46,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 46,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 46,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 46,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 46,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 46,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 46,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 46,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 47,
+    "prule_id": 47
+  },
+  {
+    "model_id": 47,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 47,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 47,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 47,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 47,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 47,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 47,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 47,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 48,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 48,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 48,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 48,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 48,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 48,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 48,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 48,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 48,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 49,
+    "prule_id": 49
+  },
+  {
+    "model_id": 49,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 49,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 49,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 49,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 49,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 49,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 49,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 49,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 49,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 50,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 50,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 50,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 50,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 50,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 50,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 50,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 50,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 51,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 51,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 51,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 51,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 51,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 51,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 51,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 51,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 52,
+    "prule_id": 52
+  },
+  {
+    "model_id": 52,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 52,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 52,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 52,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 52,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 52,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 52,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 52,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 52,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 53,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 53,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 53,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 53,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 53,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 53,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 53,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 53,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 53,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 54,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 54,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 54,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 54,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 54,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 54,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 54,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 54,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 54,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 55,
+    "prule_id": 55
+  },
+  {
+    "model_id": 55,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 55,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 55,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 55,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 55,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 55,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 55,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 55,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 55,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 56,
+    "prule_id": 56
+  },
+  {
+    "model_id": 56,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 56,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 56,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 56,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 56,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 56,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 56,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 56,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 56,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 57,
+    "prule_id": 57
+  },
+  {
+    "model_id": 57,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 57,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 57,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 57,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 57,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 57,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 57,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 58,
+    "prule_id": 58
+  },
+  {
+    "model_id": 58,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 58,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 58,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 58,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 58,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 59,
+    "prule_id": 59
+  },
+  {
+    "model_id": 59,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 59,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 59,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 59,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 59,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 59,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 59,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 59,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 59,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 60,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 60,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 60,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 60,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 60,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 60,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 60,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 60,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 61,
+    "prule_id": 61
+  },
+  {
+    "model_id": 61,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 61,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 61,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 61,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 61,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 61,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 61,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 61,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 61,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 62,
+    "prule_id": 62
+  },
+  {
+    "model_id": 62,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 62,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 62,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 62,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 62,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 62,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 62,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 62,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 63,
+    "prule_id": 63
+  },
+  {
+    "model_id": 63,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 63,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 63,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 63,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 63,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 63,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 63,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 63,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 63,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 64,
+    "prule_id": 64
+  },
+  {
+    "model_id": 64,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 64,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 64,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 64,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 64,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 64,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 64,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 64,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 65,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 65,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 65,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 65,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 65,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 65,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 65,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 65,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 66,
+    "prule_id": 66
+  },
+  {
+    "model_id": 66,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 66,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 66,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 66,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 66,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 66,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 66,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 66,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 66,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 67,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 67,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 67,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 67,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 67,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 67,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 67,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 67,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 67,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 68,
+    "prule_id": 68
+  },
+  {
+    "model_id": 68,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 68,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 68,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 68,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 68,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 68,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 68,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 68,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 69,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 69,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 69,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 69,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 69,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 69,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 70,
+    "prule_id": 70
+  },
+  {
+    "model_id": 70,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 70,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 70,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 70,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 70,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 70,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 71,
+    "prule_id": 71
+  },
+  {
+    "model_id": 71,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 71,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 71,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 71,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 71,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 71,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 72,
+    "prule_id": 72
+  },
+  {
+    "model_id": 72,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 72,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 72,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 72,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 72,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 72,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 73,
+    "prule_id": 73
+  },
+  {
+    "model_id": 73,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 73,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 73,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 73,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 73,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 73,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 74,
+    "prule_id": 74
+  },
+  {
+    "model_id": 74,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 74,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 74,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 74,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 74,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 74,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 75,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 75,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 75,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 75,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 75,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 75,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 76,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 76,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 76,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 76,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 76,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 76,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 77,
+    "prule_id": 77
+  },
+  {
+    "model_id": 77,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 77,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 77,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 77,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 77,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 77,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 78,
+    "prule_id": 78
+  },
+  {
+    "model_id": 78,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 78,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 78,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 78,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 78,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 78,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 79,
+    "prule_id": 79
+  },
+  {
+    "model_id": 79,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 79,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 79,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 79,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 79,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 79,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 80,
+    "prule_id": 80
+  },
+  {
+    "model_id": 80,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 80,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 80,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 80,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 80,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 80,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 80,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 80,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 81,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 81,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 81,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 81,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 81,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 81,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 81,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 81,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 82,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 82,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 82,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 82,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 82,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 82,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 82,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 83,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 83,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 83,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 83,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 83,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 83,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 83,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 83,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 83,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 84,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 84,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 84,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 84,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 84,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 84,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 84,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 84,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 84,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 85,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 85,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 85,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 85,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 85,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 85,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 85,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 86,
+    "prule_id": 86
+  },
+  {
+    "model_id": 86,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 86,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 86,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 86,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 86,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 86,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 86,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 86,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 86,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 87,
+    "prule_id": 87
+  },
+  {
+    "model_id": 87,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 87,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 87,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 87,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 87,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 87,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 87,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 87,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 88,
+    "prule_id": 88
+  },
+  {
+    "model_id": 88,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 88,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 88,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 88,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 88,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 88,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 88,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 88,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 88,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 89,
+    "prule_id": 89
+  },
+  {
+    "model_id": 89,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 89,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 89,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 89,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 89,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 89,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 89,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 90,
+    "prule_id": 90
+  },
+  {
+    "model_id": 90,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 90,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 90,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 90,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 90,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 90,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 90,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 90,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 90,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 91,
+    "prule_id": 91
+  },
+  {
+    "model_id": 91,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 91,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 91,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 91,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 91,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 91,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 91,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 91,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 92,
+    "prule_id": 92
+  },
+  {
+    "model_id": 92,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 92,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 92,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 92,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 92,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 92,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 92,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 93,
+    "prule_id": 93
+  },
+  {
+    "model_id": 93,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 93,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 93,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 93,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 93,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 93,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 93,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 93,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 93,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 94,
+    "prule_id": 94
+  },
+  {
+    "model_id": 94,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 94,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 94,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 94,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 94,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 94,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 94,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 94,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 95,
+    "prule_id": 95
+  },
+  {
+    "model_id": 95,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 95,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 95,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 95,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 95,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 95,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 95,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 95,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 96,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 96,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 96,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 96,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 96,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 96,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 96,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 96,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 97,
+    "prule_id": 97
+  },
+  {
+    "model_id": 97,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 97,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 97,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 97,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 97,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 97,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 97,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 97,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 98,
+    "prule_id": 98
+  },
+  {
+    "model_id": 98,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 98,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 98,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 98,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 98,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 98,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 98,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 98,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 99,
+    "prule_id": 99
+  },
+  {
+    "model_id": 99,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 99,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 99,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 99,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 99,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 99,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 99,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 99,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 99,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 100,
+    "prule_id": 100
+  },
+  {
+    "model_id": 100,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 100,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 100,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 100,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 100,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 100,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 100,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 100,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 101,
+    "prule_id": 101
+  },
+  {
+    "model_id": 101,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 101,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 101,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 101,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 101,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 101,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 101,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 102,
+    "prule_id": 102
+  },
+  {
+    "model_id": 102,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 102,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 102,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 102,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 102,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 102,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 102,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 102,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 103,
+    "prule_id": 103
+  },
+  {
+    "model_id": 103,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 103,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 103,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 103,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 103,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 103,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 103,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 103,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 103,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 104,
+    "prule_id": 104
+  },
+  {
+    "model_id": 104,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 104,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 104,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 104,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 104,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 104,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 104,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 104,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 104,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 105,
+    "prule_id": 105
+  },
+  {
+    "model_id": 105,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 105,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 105,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 105,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 105,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 105,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 105,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 105,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 105,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 106,
+    "prule_id": 106
+  },
+  {
+    "model_id": 106,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 106,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 106,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 106,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 106,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 106,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 106,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 106,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 106,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 107,
+    "prule_id": 107
+  },
+  {
+    "model_id": 107,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 107,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 107,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 107,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 107,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 107,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 107,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 107,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 107,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 108,
+    "prule_id": 108
+  },
+  {
+    "model_id": 108,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 108,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 108,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 108,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 108,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 108,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 108,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 108,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 108,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 109,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 109,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 109,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 109,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 109,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 109,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 110,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 110,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 110,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 110,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 110,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 110,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 110,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 110,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 110,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 111,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 111,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 111,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 111,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 112,
+    "prule_id": 112
+  },
+  {
+    "model_id": 112,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 112,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 112,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 112,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 112,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 112,
+    "prule_id": 1008
+  },
+  {
+    "model_id": 112,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 112,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 112,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 113,
+    "prule_id": 113
+  },
+  {
+    "model_id": 113,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 113,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 113,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 113,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 113,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 113,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 113,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 113,
+    "prule_id": 1011
+  },
+  {
+    "model_id": 114,
+    "prule_id": 114
+  },
+  {
+    "model_id": 114,
+    "prule_id": 1003
+  },
+  {
+    "model_id": 114,
+    "prule_id": 1004
+  },
+  {
+    "model_id": 114,
+    "prule_id": 1005
+  },
+  {
+    "model_id": 114,
+    "prule_id": 1006
+  },
+  {
+    "model_id": 114,
+    "prule_id": 1007
+  },
+  {
+    "model_id": 114,
+    "prule_id": 1009
+  },
+  {
+    "model_id": 114,
+    "prule_id": 1010
+  },
+  {
+    "model_id": 114,
+    "prule_id": 1011
+  }
+]

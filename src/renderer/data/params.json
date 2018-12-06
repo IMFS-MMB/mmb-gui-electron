@@ -1,0 +1,266 @@
+[
+  {
+    "id": 1,
+    "name": "param1",
+    "position": 1,
+    "text_plain": "rho_i_b1",
+    "text_markup": "\\rho_{i,-1}\r",
+    "description": "coefficient for interest rate smoothing, first lag"
+  },
+  {
+    "id": 2,
+    "name": "param2",
+    "position": 2,
+    "text_plain": "rho_i_b2",
+    "text_markup": "\\rho_{i,-2}\r",
+    "description": "coefficient for interest rate smoothing, second lag"
+  },
+  {
+    "id": 3,
+    "name": "param3",
+    "position": 3,
+    "text_plain": "rho_i_b3",
+    "text_markup": "\\rho_{i,-3}",
+    "description": "coefficient for interest rate smoothing, third lag"
+  },
+  {
+    "id": 4,
+    "name": "param4",
+    "position": 4,
+    "text_plain": "rho_i_b4",
+    "text_markup": "\\rho_{i,-4}",
+    "description": "coefficient for interest rate smoothing, fourth lag"
+  },
+  {
+    "id": 5,
+    "name": "param5",
+    "position": 5,
+    "text_plain": "phi_pi",
+    "text_markup": "\\phi_{pi}\r",
+    "description": "coefficent for feedback to contemporaneous inflation"
+  },
+  {
+    "id": 6,
+    "name": "param6",
+    "position": 6,
+    "text_plain": "phi_pi_b1",
+    "text_markup": "\\phi_{pi,-1}",
+    "description": "coefficent for feedback to inflation, lag one"
+  },
+  {
+    "id": 7,
+    "name": "param7",
+    "position": 7,
+    "text_plain": "phi_pi_b2",
+    "text_markup": "\\phi_{pi,-2}",
+    "description": "coefficent for feedback to inflation, lag two"
+  },
+  {
+    "id": 8,
+    "name": "param8",
+    "position": 8,
+    "text_plain": "phi_pi_b3",
+    "text_markup": "\\phi_{pi,-3}",
+    "description": "coefficent for feedback to inflation, lag three"
+  },
+  {
+    "id": 9,
+    "name": "param9",
+    "position": 9,
+    "text_plain": "phi_pi_b4",
+    "text_markup": "\\phi_{pi,-4}",
+    "description": "coefficent for feedback to inflation, lag four"
+  },
+  {
+    "id": 10,
+    "name": "param10",
+    "position": 10,
+    "text_plain": "phi_pi_f1",
+    "text_markup": "\\phi_{pi,+1}\r",
+    "description": "coefficent for feedback to inflation, lead one"
+  },
+  {
+    "id": 11,
+    "name": "param11",
+    "position": 11,
+    "text_plain": "phi_pi_f2",
+    "text_markup": "\\phi_{pi,+2}",
+    "description": "coefficent for feedback to inflation, lead two"
+  },
+  {
+    "id": 12,
+    "name": "param12",
+    "position": 12,
+    "text_plain": "phi_pi_f3",
+    "text_markup": "\\phi_{pi,+3}",
+    "description": "coefficent for feedback to inflation, lead three"
+  },
+  {
+    "id": 13,
+    "name": "param13",
+    "position": 13,
+    "text_plain": "phi_pi_f4",
+    "text_markup": "\\phi_{pi,+4}",
+    "description": "coefficent for feedback to inflation, lead four"
+  },
+  {
+    "id": 14,
+    "name": "param14",
+    "position": 14,
+    "text_plain": "phi_q",
+    "text_markup": "\\phi_{q}",
+    "description": "coefficient for feedback to contemporaneous output gap"
+  },
+  {
+    "id": 15,
+    "name": "param15",
+    "position": 15,
+    "text_plain": "phi_q_b1",
+    "text_markup": "\\phi_{q,-1}",
+    "description": "coefficient for feedback to output gap, lag one"
+  },
+  {
+    "id": 16,
+    "name": "param16",
+    "position": 16,
+    "text_plain": "phi_q_b2",
+    "text_markup": "\\phi_{q,-2}\r",
+    "description": "coefficient for feedback to output gap, lag two"
+  },
+  {
+    "id": 17,
+    "name": "param17",
+    "position": 17,
+    "text_plain": "phi_q_b3",
+    "text_markup": "\\phi_{q,-3}",
+    "description": "coefficient for feedback to output gap, lag three"
+  },
+  {
+    "id": 18,
+    "name": "param18",
+    "position": 18,
+    "text_plain": "phi_q_b4",
+    "text_markup": "\\phi_{q,-4}",
+    "description": "coefficient for feedback to output gap, lag four"
+  },
+  {
+    "id": 19,
+    "name": "param19",
+    "position": 19,
+    "text_plain": "phi_q_f1",
+    "text_markup": "\\phi_{q,+1}",
+    "description": "coefficient for feedback to output gap, lead one"
+  },
+  {
+    "id": 20,
+    "name": "param20",
+    "position": 20,
+    "text_plain": "phi_q_f2",
+    "text_markup": "\\phi_{q,+2}",
+    "description": "coefficient for feedback to output gap, lead two"
+  },
+  {
+    "id": 21,
+    "name": "param21",
+    "position": 21,
+    "text_plain": "phi_q_f3",
+    "text_markup": "\\phi_{q,+3}",
+    "description": "coefficient for feedback to output gap, lead three"
+  },
+  {
+    "id": 22,
+    "name": "param22",
+    "position": 22,
+    "text_plain": "phi_q_f4",
+    "text_markup": "\\phi_{q,+4}",
+    "description": "coefficient for feedback to output gap, lead four"
+  },
+  {
+    "id": 23,
+    "name": "param23",
+    "position": 23,
+    "text_plain": "phi_y",
+    "text_markup": "\\phi_{y}\r",
+    "description": "coefficient for feedback to contemporaneous output"
+  },
+  {
+    "id": 24,
+    "name": "param24",
+    "position": 24,
+    "text_plain": "phi_y_b1",
+    "text_markup": "\\phi_{y,-1}",
+    "description": "coefficient for feedback to output, lag one"
+  },
+  {
+    "id": 25,
+    "name": "param25",
+    "position": 25,
+    "text_plain": "phi_y_b2",
+    "text_markup": "\\phi_{y,-2}",
+    "description": "coefficient for feedback to output, lag two"
+  },
+  {
+    "id": 26,
+    "name": "param26",
+    "position": 26,
+    "text_plain": "phi_y_b3",
+    "text_markup": "\\phi_{y,-3}",
+    "description": "coefficient for feedback to output, lag three"
+  },
+  {
+    "id": 27,
+    "name": "param27",
+    "position": 27,
+    "text_plain": "phi_y_b4",
+    "text_markup": "\\phi_{y,-4}",
+    "description": "coefficient for feedback to output, lag four"
+  },
+  {
+    "id": 28,
+    "name": "param28",
+    "position": 28,
+    "text_plain": "phi_y_f1",
+    "text_markup": "\\phi_{y,+1}",
+    "description": "coefficient for feedback to output, lead one"
+  },
+  {
+    "id": 29,
+    "name": "param29",
+    "position": 29,
+    "text_plain": "phi_y_f2",
+    "text_markup": "\\phi_{y,+2}",
+    "description": "coefficient for feedback to output, lead two"
+  },
+  {
+    "id": 30,
+    "name": "param30",
+    "position": 30,
+    "text_plain": "phi_y_f3",
+    "text_markup": "\\phi_{y,+3}",
+    "description": "coefficient for feedback to output, lead three"
+  },
+  {
+    "id": 31,
+    "name": "param31",
+    "position": 31,
+    "text_plain": "phi_y_f4",
+    "text_markup": "\\phi_{y,+4}",
+    "description": "coefficient for feedback to output, lead four"
+  },
+  {
+    "id": 32,
+    "name": "param32",
+    "position": 32,
+    "text_plain": "std_r_ann",
+    "text_markup": "\\sig_{r,ann}",
+    "description": "standard deviation of interest rate, if annualized"
+  },
+  {
+    "id": 33,
+    "name": "param33",
+    "position": 33,
+    "text_plain": "std_r_qrt",
+    "text_markup": "\\sig_{r,qrt}",
+    "description": "standard deviation of interest rate, if quarterly"
+  }
+]
