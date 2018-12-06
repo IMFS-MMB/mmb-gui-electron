@@ -10,6 +10,7 @@ async function isExecutableOrCommand(path) {
       return true;
     }
   } catch (e) {
+    logger.info(e);
     return false;
   }
 
@@ -37,7 +38,7 @@ export async function getExecutableInfo(exe) {
 
     result.ver = await backend.getVersion();
   } catch (e) {
-    logger.warn(e);
+    logger.info(e);
     result.ver = 'unknown version';
   }
 
