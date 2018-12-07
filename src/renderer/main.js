@@ -1,4 +1,4 @@
-import {remote} from 'electron'; // eslint-disable-line
+import { remote }  from 'electron'; // eslint-disable-line
 
 import Vue from 'vue';
 import axios from 'axios';
@@ -34,9 +34,3 @@ remote.globalShortcut.register('CommandOrControl+Shift+K', () => {
 window.addEventListener('beforeunload', () => {
   remote.globalShortcut.unregisterAll();
 });
-
-// import MatlabOctaveInterface from './matlab-interface/octave-interface';
-//
-// const octave = new MatlabOctaveInterface('octave', `${__static}/mmci-cli/MMB_OPTIONS/`, true);
-//
-// octave.runCode('CMD_MMB(484,6,7,3);', data => console.log(data.toString()));

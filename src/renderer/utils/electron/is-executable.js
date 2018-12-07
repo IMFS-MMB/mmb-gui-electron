@@ -1,6 +1,8 @@
-import { statSync } from 'fs';
+import { promisify } from 'util';
+import fs, { statSync } from 'fs';
 import logger from '@/utils/logger';
-import { stat } from './promisified';
+
+const stat = promisify(fs.stat);
 
 function hasExecPermissions(mode, gid, uid) {
   if (process.platform === 'win32') {

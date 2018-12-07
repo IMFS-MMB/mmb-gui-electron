@@ -1,5 +1,5 @@
 import { remote } from 'electron'; // eslint-disable-line
-import { getExecutableInfo, findExecutables } from '@/utils/find-executables';
+import { getExecutableInfo, findExecutables } from '@/utils/electron/find-executables';
 
 const { dialog } = remote;
 

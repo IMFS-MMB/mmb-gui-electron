@@ -1,10 +1,7 @@
-import { create } from '@/utils/interface';
-import path from 'path';
-import readJsonFile from '@/utils/read-json-file';
-import buildMatlabScript from '@/utils/build-matlab-script';
-
 import groupBy from 'lodash.groupby';
 import map from 'lodash.map';
+
+import compare from './comparison.compare.PLATFORM';
 
 const namespaced = true;
 
@@ -90,40 +87,15 @@ const actions = {
     const policyRules = ctx.rootGetters['selections/policyRules'];
     const shocks = ctx.rootGetters['selections/shocks'];
     const outputVars = ctx.rootGetters['selections/outputVars'];
-    const userRule = ctx.rootGetters['userrule/params'];
 
-    const isElectron = true; // todo detect environment
-    if (isElectron) {
-      const cwd = path.join(__static, 'mmci-cli', 'MMB_OPTIONS');
-      const executable = ctx.rootGetters['backends/selectedExecutable'];
+    let result = [];
 
-      const backend = create({
-        path: executable.path,
-        type: executable.type,
-        cwd,
-      });
-
-      const result = [];
-
-      try {
-        await backend.runCode(
-          buildMatlabScript(models, policyRules, outputVars, shocks, userRule),
-          data => ctx.commit('addStdOut', data.toString()),
-          data => ctx.commit('addStdErr', data.toString()),
-        );
-
-        const output = path.join(cwd, 'Modelbasefile.json');
-
-        const input = await readJsonFile(output, true);
-
-        result.push(...input);
-      } catch (e) {
-        ctx.commit('error', e);
-      } finally {
-        ctx.commit('done', result);
-      }
-    } else {
-      // todo: fetch comparison data from server
+    try {
+      result = await compare(ctx, models, policyRules, outputVars, shocks);
+    } catch (e) {
+      ctx.commit('error', e);
+    } finally {
+      ctx.commit('done', result);
     }
   },
 };

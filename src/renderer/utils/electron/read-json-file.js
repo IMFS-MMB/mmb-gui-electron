@@ -1,4 +1,7 @@
-import { readFile } from '@/utils/promisified';
+import fs from 'fs';
+import { promisify } from 'util';
+
+const readFile = promisify(fs.readFile);
 
 export default async function readJsonFile(path, dirty = false) {
   const contents = await readFile(path, { encoding: 'utf8' });

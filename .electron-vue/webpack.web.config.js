@@ -1,15 +1,15 @@
-'use strict'
+'use strict';
 
-process.env.BABEL_ENV = 'web'
+process.env.BABEL_ENV = 'web';
 
-const path = require('path')
-const webpack = require('webpack')
+const path = require('path');
+const webpack = require('webpack');
 
-const BabiliWebpackPlugin = require('babili-webpack-plugin')
-const CopyWebpackPlugin = require('copy-webpack-plugin')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const { VueLoaderPlugin } = require('vue-loader')
+const BabiliWebpackPlugin = require('babili-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { VueLoaderPlugin } = require('vue-loader');
 
 let webConfig = {
   devtool: '#cheap-module-eval-source-map',
@@ -52,7 +52,7 @@ let webConfig = {
       {
         test: /\.js$/,
         use: 'babel-loader',
-        include: [ path.resolve(__dirname, '../src/renderer') ],
+        include: [path.resolve(__dirname, '../src/renderer')],
         exclude: /node_modules/
       },
       {
@@ -93,7 +93,7 @@ let webConfig = {
   },
   plugins: [
     new VueLoaderPlugin(),
-    new MiniCssExtractPlugin({filename: 'styles.css'}),
+    new MiniCssExtractPlugin({ filename: 'styles.css' }),
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: path.resolve(__dirname, '../src/index.ejs'),
@@ -106,6 +106,9 @@ let webConfig = {
     }),
     new webpack.DefinePlugin({
       'process.env.IS_WEB': 'true'
+    }),
+    new webpack.NormalModuleReplacementPlugin(/(.*)\.PLATFORM(\.*)/, function (resource) {
+      resource.request = resource.request.replace(/\.PLATFORM/, `.web`);
     }),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin()
@@ -121,14 +124,17 @@ let webConfig = {
     },
     extensions: ['.js', '.vue', '.json', '.css']
   },
-  target: 'web'
-}
+  target: 'web',
+  node: {
+    fs: 'empty'
+  },
+};
 
 /**
  * Adjust webConfig for production settings
  */
 if (process.env.NODE_ENV === 'production') {
-  webConfig.devtool = ''
+  webConfig.devtool = '';
 
   webConfig.plugins.push(
     new BabiliWebpackPlugin(),
@@ -136,7 +142,7 @@ if (process.env.NODE_ENV === 'production') {
       {
         from: path.join(__dirname, '../static'),
         to: path.join(__dirname, '../dist/web/static'),
-        ignore: ['.*']
+        ignore: ['.*', 'mmci-cli/**/*']
       }
     ]),
     new webpack.DefinePlugin({
@@ -145,7 +151,7 @@ if (process.env.NODE_ENV === 'production') {
     new webpack.LoaderOptionsPlugin({
       minimize: true
     })
-  )
+  );
 }
 
-module.exports = webConfig
+module.exports = webConfig;
