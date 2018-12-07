@@ -1,5 +1,5 @@
 <template>
-    <b-popover :target="'cb-wrapper-' + id + model.id"
+    <b-popover :target="'cb-wrapper-' + model.id"
                :delay="{ show: 500, hide: 0 }"
                placement="left"
                triggers="hover"
@@ -11,15 +11,9 @@
     </b-popover>
 </template>
 <script>
-  import ModelPopoverContent from '@/components/ModelPopoverContent.vue';
-
   export default {
     name: 'ModelPopover',
-    components: {
-      ModelPopoverContent,
-    },
     props: {
-      id: {},
       model: {},
     },
   };

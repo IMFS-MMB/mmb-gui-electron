@@ -6,11 +6,11 @@
 
         <b-form-checkbox-group class="ctrl-set-listing" stacked v-model="selection">
             <template v-for="model in models">
-                <div :id="'cb-wrapper-' + id + model.id">
+                <div :id="'cb-wrapper-' + model.id">
                     <b-form-checkbox :value="model">{{model.internal_name}}</b-form-checkbox>
                 </div>
 
-                <ModelPopover :id="id" :model="model"/>
+                <ModelPopover :model="model"/>
             </template>
         </b-form-checkbox-group>
     </b-col>
@@ -20,8 +20,6 @@
   import { mapMutations, mapGetters, mapActions } from 'vuex'; // eslint-disable-line no-unused-vars
   import deepEqual from 'fast-deep-equal';
   import ModelPopover from './ModelPopover.vue';
-
-  let nextId = 0;
 
   export default {
     components: {
@@ -50,11 +48,6 @@
     },
     methods: {
       ...mapMutations('selections', { setModelSelection: 'setModels' }),
-    },
-    data() {
-      return {
-        id: `list-${nextId++}-`, // eslint-disable-line
-      };
     },
   };
 </script>
