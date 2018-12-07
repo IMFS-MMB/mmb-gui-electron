@@ -24,10 +24,16 @@ install:
   - node --version
 
 build_script:
-  - yarn build
+  - yarn run build
+  - yarn run build:web
+
+after_build:
+  - 7z a web.zip dist/web/
 
 test: off
 
 artifacts:
   - path: build/*.exe
     name: BuildWin
+  - path: web.zip
+    name: BuildWeb
