@@ -14,7 +14,9 @@
                     User specified rule
                     <a href="javascript:void(0)" v-b-modal.userSpecifiedRuleModal>(edit)</a>
                 </b-form-checkbox>
-                <b-form-checkbox :key="2" :value="{ id: 2 }"  :disabled="isRuleDisabled(2)">Model specific rule</b-form-checkbox>
+                <b-form-checkbox :key="2" :value="{ id: 2 }"  :disabled="isRuleDisabled(2)">
+                    <span class="rule-caption" :style="{ opacity: isRuleDisabled(2) ? .5 : 1 }">Model specific rule</span>
+                </b-form-checkbox>
 
                 <b-form-checkbox v-for="rule in rules"
                                  :key="rule.id"
@@ -58,5 +60,10 @@
     .cb-user-rule > label {
         display: flex !important;
         justify-content: space-between;
+    }
+</style>
+<style scoped lang="scss">
+    .rule-caption {
+        transition: opacity .15s ease-in-out;
     }
 </style>

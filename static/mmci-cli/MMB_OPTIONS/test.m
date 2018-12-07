@@ -1,5 +1,5 @@
-models = 2^14 + 2^48;
-rules = 2^-1 + 2^0;
+models = 2^34;
+rules = 2^0;
 output = 2^0;
 shocks = 2^0;
-CMD_MMB(models,rules,output,shocks);
+CMD_MMB(models,rules,output,shocks,'data','[NaN,0.5,0,0;0,0.3,0.4,0;0,0,0,0;0,0,0,0;0,0,0,0;NaN,0,0,0;NaN,0,0,0;NaN,0,0,0;NaN,0,0,0]');
