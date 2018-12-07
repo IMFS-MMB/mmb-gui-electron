@@ -1,5 +1,5 @@
 <template>
-    <div class="container mt-2" v-if="show && !inProgress">
+    <div ref="host" class="container mt-2" v-if="show && !inProgress">
         <b-row class="mt-2">
             <b-col>
                 <div class="comparison-set">
@@ -48,7 +48,8 @@
 <script>
   import Chart from '@/components/Chart.vue';
 
-  import {mapGetters, mapMutations} from 'vuex'; // eslint-disable-line
+  import { mapGetters } from 'vuex';
+  import scrollIntoView from '@/utils/scrollIntoView';
 
   const CHARTS_PER_ROW = 2;
 
@@ -87,20 +88,16 @@
         return this.chartData.length;
       },
     },
-
+    watch: {
+      inProgress(newVal, oldVal) {
+        if (oldVal && !newVal) {
+          // true -> false
+          setTimeout(() => scrollIntoView(this.$refs.host));
+        }
+      },
+    },
     methods: {
-      // scrollIntoView() {
-      //   // The comparison section may not be fully rendered yet,
-      //   // so defer scrolling until the next tick.
-      //   setTimeout(() => {
-      //     try {
-      //       this.$refs.host.scrollIntoView({
-      //         behavior: 'smooth',
-      //         block: 'start',
-      //       });
-      //     } catch (e) { /* noop */ }
-      //   });
-      // },
+
     },
   };
 </script>
