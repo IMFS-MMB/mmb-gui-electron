@@ -21,6 +21,7 @@
   "build": {
     "productName": "mmb-electron",
     "appId": "com.macromodelbase.mmci",
+    "asar": false,
     "directories": {
       "output": "build"
     },
