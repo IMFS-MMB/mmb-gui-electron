@@ -27,18 +27,22 @@ export async function getExecutableInfo(exe) {
 
   result.isExecutable = await isExecutableOrCommand(exe.path);
 
-  logger.info(`'${exe.path}' is ${result.isExecutable ? '' : 'NOT '}executable`);
+  if (result.isExecutable) {
+    logger.info(`'${exe.path}' is executable`);
 
-  try {
-    const backend = create({
-      ...exe,
-      cwd: '/',
-    });
+    try {
+      const backend = create({
+        ...exe,
+        cwd: '/',
+      });
 
-    result.ver = await backend.getVersion();
-  } catch (e) {
-    logger.info(e);
-    result.ver = 'unknown version';
+      result.ver = await backend.getVersion();
+    } catch (e) {
+      logger.info(e);
+      result.ver = 'unknown version';
+    }
+  } else {
+    logger.info(`'${exe.path}' is NOT executable`);
   }
 
   return result;
