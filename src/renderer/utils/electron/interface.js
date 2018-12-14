@@ -33,12 +33,6 @@ class Base {
     return version;
   }
 
-  async runCode(code, onData, onError) {
-    const args = this.getArgs('--eval', code);
-
-    return this.execute(args, onData, onError);
-  }
-
   /**
    * @private
    */
@@ -57,6 +51,12 @@ export class Octave extends Base {
       defaultArgs: ['--no-gui'],
     });
   }
+
+  async runCode(code, onData, onError) {
+    const args = this.getArgs('--eval', code);
+
+    return this.execute(args, onData, onError);
+  }
 }
 
 export class Matlab extends Base {
@@ -65,6 +65,12 @@ export class Matlab extends Base {
       ...options,
       defaultArgs: ['-nodesktop', '-nosplash', '-nojvm', '-nodisplay', '-noawt', '-noFigureWindows'],
     });
+  }
+
+  async runCode(code, onData, onError) {
+    const args = this.getArgs('-r', code);
+
+    return this.execute(args, onData, onError);
   }
 }
 
