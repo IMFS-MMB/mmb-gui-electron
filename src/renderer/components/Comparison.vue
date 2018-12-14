@@ -1,5 +1,5 @@
 <template>
-    <div ref="host" class="container mt-2" v-if="show && !inProgress">
+    <div ref="host" class="container mt-2" v-if="show && !inProgress" v-infinite-scroll="showMore" infinite-scroll-distance="10">
         <b-row class="mt-2">
             <b-col>
                 <div class="comparison-set">
@@ -26,7 +26,7 @@
         <template v-for="row of visibleRows">
             <b-row class="mt-5"></b-row>
             <b-row class="mt-1">
-                <b-col v-for="data of row">
+                <b-col v-for="(data, index) of row" :key="index">
                     <Chart :title="data.title" :series="data.series"></Chart>
                 </b-col>
             </b-row>
@@ -37,7 +37,7 @@
         <b-row class="mt-5">
             <b-col class="col text-center">
                 <p>Showing <strong>{{visibleCount}}</strong> of <strong>{{totalCount}}</strong> charts</p>
-                <a href="javascript:void(0)" v-if="visibleCount < totalCount" @click="visible += 2">
+                <a href="javascript:void(0)" v-if="visibleCount < totalCount" @click="showMore">
                     <i class="fa fa-plus"></i> Show more
                 </a>
             </b-col>
@@ -97,7 +97,9 @@
       },
     },
     methods: {
-
+      showMore() {
+        this.visible += 2;
+      },
     },
   };
 </script>

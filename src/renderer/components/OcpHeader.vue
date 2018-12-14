@@ -13,8 +13,7 @@
                     <div class="mmb-branding">
                         <a href="http://www.macromodelbase.com/" target="_blank">
                             <div class="site-logo">
-                                <img src="http://www.macromodelbase.com/theme/mmb/assets/img/mmb-logo-small.png"
-                                     alt=" ">
+                                <img src="../assets/images/logo.png" alt=" ">
                             </div>
                             <p class="site-title">Macroeconomic<br>Model Data Base</p>
                         </a>
