@@ -2,6 +2,7 @@ import path from 'path';
 import { create } from '@/utils/electron/interface';
 import readJsonFile from '@/utils/electron/read-json-file';
 import buildMatlabScript from '@/utils/electron/build-matlab-script';
+import logger from '@/utils/logger';
 
 export default async function compare(ctx, models, policyRules, outputVars, shocks) {
   const cwd = path.join(__static, 'mmci-cli', 'MMB_OPTIONS');
@@ -18,10 +19,12 @@ export default async function compare(ctx, models, policyRules, outputVars, shoc
   await backend.runCode(
     buildMatlabScript(models, policyRules, outputVars, shocks, userRule),
     data => ctx.commit('addStdOut', data.toString()),
-    data => ctx.commit('addStdErr', data.toString()),
+    data => ctx.commit('addStdOut', data.toString()), // todo: handle errors differently if needed
   );
 
   const output = path.join(cwd, 'Modelbasefile.json');
+
+  logger.debug(output);
 
   return readJsonFile(output, true);
 }
