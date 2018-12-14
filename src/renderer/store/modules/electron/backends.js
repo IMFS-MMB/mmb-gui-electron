@@ -73,6 +73,8 @@ const actions = {
       message: 'Do you want to add Matlab or Octave to the list of executables?',
       buttons: ['Cancel', 'Matlab', 'Octave'],
     }, (result) => {
+      const filters = {};
+
       switch (result) {
         case 0:
           return;
@@ -81,12 +83,15 @@ const actions = {
           break;
         case 2:
           type = 'octave';
+
+          filters.name = process.platform === 'win32' ? 'octave-cli.exe' : 'octave';
           break;
         default:
           throw new Error('invalid selection');
       }
 
       const options = {
+        filters,
         properties: ['openFile'],
         message: `Please select the ${type} executable`,
       };
