@@ -22,9 +22,9 @@ export default async function compare(ctx, models, policyRules, outputVars, shoc
     data => ctx.commit('addStdOut', data.toString()), // todo: handle errors differently if needed
   );
 
-  const output = path.join(cwd, 'Modelbasefile.json');
+  const output = await readJsonFile(path.join(cwd, 'Modelbasefile.json'));
 
-  logger.debug(output);
+  logger.debug(JSON.stringify(output, null, true));
 
-  return readJsonFile(output, true);
+  return output;
 }
