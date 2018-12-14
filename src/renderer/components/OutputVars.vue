@@ -2,7 +2,7 @@
     <div class="ctrl-set ctrl-set-output">
         <div class="ctrl-set-header">
             <div class="ctrl-set-title">
-                Output Variables
+                Output Options
                 <small class="ctrl-set-stats">({{selectedIndex}}/{{total}} Selected)</small>
                 <a href="javascript:void(0)" class="ctrl-set-clear" @click="clear">&nbsp;Clear</a>
             </div>
