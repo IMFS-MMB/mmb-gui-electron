@@ -1,17 +1,7 @@
 const namespaced = true;
 
 const state = {
-  rules: [
-    // {
-    //   id: 1,
-    //   text: 'User specified Rule',
-    // },
-    // {
-    //   id: 2,
-    //   text: 'Model specific Rule',
-    // },
-    ...require('../../data/_data').commonRules,
-  ],
+  rules: require('../../data/_commonRules'),
 };
 
 const getters = {

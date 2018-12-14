@@ -6,7 +6,10 @@
                boundary="viewport">
         <template slot="title">Model {{model.internal_name}}</template>
         <div>
-            <span>{{ model.description && model.description.description || '(no description)'}}</span>
+            <p>
+                {{ d.ac_ref }}: {{d.paper_title}}, <i>{{d.journal}}</i>
+            </p>
+            <p>{{ d.description ? d.description : '(no description)'}}</p>
         </div>
     </b-popover>
 </template>
@@ -16,5 +19,11 @@
     props: {
       model: {},
     },
+    computed: {
+      d() {
+        return this.model.description;
+      },
+    },
   };
 </script>
+// ac_ref: paper_title, journal. description

@@ -1238,7 +1238,7 @@
   {
     "id": 104,
     "description_id": 104,
-    "internal_name": "US_CFP17_endo",
+    "internal_name": "US_CFP17endo",
     "path": null,
     "interest": 1,
     "inflation": 1,
@@ -1250,7 +1250,7 @@
   {
     "id": 105,
     "description_id": 105,
-    "internal_name": "US_CFP17_exo",
+    "internal_name": "US_CFP17exo",
     "path": null,
     "interest": 1,
     "inflation": 1,

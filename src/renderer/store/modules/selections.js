@@ -42,7 +42,7 @@ const getters = {
           return false;
         case 2:
           // model specific
-          return getters.models.some(m => !m.rule);
+          return getters.models.some(m => !m.capabilities.model_specific_rule);
         default:
           // todo: check model/rule compat
           return false;

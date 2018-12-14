@@ -1,18 +1,21 @@
 const namespaced = true;
 
 const state = {
-  models: require('../../data/_data').models,
+  models: require('../../data/_models'),
 };
 
 const getters = {
+  sortedModels(state) {
+    return state.models.sort((a, b) => a.internal_name.localeCompare(b.internal_name));
+  },
   filteredModels(state, getters, rootState, rootGetters) {
     const text = rootGetters['search/text'].toLowerCase();
 
     if (!text) {
-      return state.models;
+      return getters.sortedModels;
     }
 
-    return state.models.filter(model => model.internal_name.toLowerCase().includes(text));
+    return getters.sortedModels.filter(model => model.internal_name.toLowerCase().includes(text));
   },
 
   total(state) {
