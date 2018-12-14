@@ -14,24 +14,32 @@
                     User specified rule
                     <a href="javascript:void(0)" v-b-modal.userSpecifiedRuleModal>(edit)</a>
                 </b-form-checkbox>
-                <b-form-checkbox :key="2" :value="{ id: 2 }"  :disabled="isRuleDisabled(2)">
-                    <span class="rule-caption" :style="{ opacity: isRuleDisabled(2) ? .5 : 1 }">Model specific rule</span>
+                <b-form-checkbox :key="2" :value="{ id: 2 }" :disabled="isRuleDisabled(2)">
+                    <span class="rule-caption"
+                          :style="{ opacity: isRuleDisabled(2) ? .5 : 1 }">Model specific rule</span>
                 </b-form-checkbox>
 
-                <b-form-checkbox v-for="rule in rules"
-                                 :key="rule.id"
-                                 :value="rule"
-                                 :disabled="isRuleDisabled(rule.id)">
-                    {{ rule.description.ac_ref }}
-                </b-form-checkbox>
+                <template v-for="(rule, index) in rules">
+                    <div :id="'cb-rule-' + rule.id">
+                        <b-form-checkbox ref="cb" :value="rule" :disabled="isRuleDisabled(rule.id)">
+                            {{ rule.description.ac_ref }}
+                        </b-form-checkbox>
+
+                    </div>
+                    <RulePopover :rule="rule"/>
+                </template>
             </b-form-checkbox-group>
         </div>
     </div>
 </template>
 <script>
   import { mapMutations, mapGetters } from 'vuex'; // eslint-disable-line no-unused-vars
+  import RulePopover from './RulePopover';
 
   export default {
+    components: {
+      RulePopover,
+    },
     computed: {
       ...mapGetters('rules', ['rules']),
       ...mapGetters('selections', {
@@ -53,6 +61,9 @@
         clear: 'clearPolicyRules',
         setPolicyRules: 'setPolicyRules',
       }),
+      asd() {
+        console.log(this.$refs);
+      },
     },
   };
 </script>
