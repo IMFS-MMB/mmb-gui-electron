@@ -3,7 +3,7 @@
 
         <h5 slot="modal-header" class="modal-title">Help</h5>
         <button slot="modal-header" class="close"><span
-                aria-hidden="true">&times;</span>
+                aria-hidden="true" @click="hideModal">&times;</span>
         </button>
 
 
@@ -39,6 +39,10 @@
 </template>
 <script>
   export default {
-    // name: 'HelpModal'
+    methods: {
+      hideModal() {
+        this.$root.$emit('bv::hide::modal', 'helpModal');
+      },
+    },
   };
 </script>

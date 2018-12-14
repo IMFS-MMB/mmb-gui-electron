@@ -1,6 +1,5 @@
 <template>
-    <b-modal id="settingsModal" size="lg" centered hide-footer>
-
+    <b-modal id="settingsModal" size="lg" centered ok-only>
         <h5 slot="modal-header" class="modal-title">Settings</h5>
         <button slot="modal-header" class="close" @click="hideModal"><span
                 aria-hidden="true">&times;</span>
