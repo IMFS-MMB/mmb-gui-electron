@@ -36,6 +36,7 @@ export default function buildMatlabScript(models, rules, output, shocks, userRul
     '  disp(\'An error occured:\')',
     '  disp(ERR)',
     'end',
+    'exit();',
   ];
 
   const result = lines.join('\n');
