@@ -29,6 +29,7 @@ HighCharts.setOptions({
   },
   plotOptions: {
     series: {
+      lineWidth: 3,
       marker: {
         enabled: false,
       },
