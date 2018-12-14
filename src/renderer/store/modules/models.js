@@ -15,7 +15,9 @@ const getters = {
       return getters.sortedModels;
     }
 
-    return getters.sortedModels.filter(model => model.internal_name.toLowerCase().includes(text));
+    return getters.sortedModels.filter(model =>
+      model.internal_name.toLowerCase().includes(text) ||
+      model.description.keywords.includes(text));
   },
 
   total(state) {
