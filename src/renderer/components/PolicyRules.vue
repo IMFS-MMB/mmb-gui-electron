@@ -61,9 +61,6 @@
         clear: 'clearPolicyRules',
         setPolicyRules: 'setPolicyRules',
       }),
-      asd() {
-        console.log(this.$refs);
-      },
     },
   };
 </script>
