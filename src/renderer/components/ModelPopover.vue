@@ -26,4 +26,3 @@
     },
   };
 </script>
-// ac_ref: paper_title, journal. description
