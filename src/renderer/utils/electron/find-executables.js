@@ -1,8 +1,12 @@
 import commandExists from 'command-exists';
+import { promisify } from 'util';
+import _glob from 'glob';
 import { isExecutable } from './is-executable';
 import commonExecutables from '../../data/common-executables';
 import logger from '../logger';
 import { create } from './interface';
+
+const glob = promisify(_glob);
 
 async function isExecutableOrCommand(path) {
   try {
@@ -54,12 +58,24 @@ export async function findExecutables() {
   /* eslint-disable */
 
   for (const exe of commonExecutables) {
-    const info = await getExecutableInfo(exe);
+    if (exe.pattern) {
+      const paths = await glob(exe.pattern, {
+        absolute: true,
+        cwd: '/',
+        silent: true,
+        strict: false
+      });
 
-    if (info.isExecutable) {
-      result.push(info);
+      for (const path of paths) {
+        result.push(await getExecutableInfo({
+          ...exe,
+          path
+        }));
+      }
+    } else if (exe.path) {
+      result.push(await getExecutableInfo(exe));
     }
   }
 
-  return result;
+  return result.filter(exe => exe.isExecutable);
 }
