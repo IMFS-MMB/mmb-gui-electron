@@ -9,7 +9,10 @@
             <p>
                 {{ d.ac_ref }}: {{ d.paper_title }}, <i>{{ d.journal }}</i>
             </p>
-            <p>{{ d.description ? d.description : '(no description)' }}</p>
+            <p v-if="d.description.length > 0">
+                <b>Description:</b>
+                {{ d.description ? d.description : '(no description)' }}
+            </p>
         </div>
     </b-popover>
 </template>
