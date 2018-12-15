@@ -4,6 +4,12 @@
 % Warning : this file is generated automatically by Dynare
 %           from model file (.mod)
 
+if isoctave || matlab_ver_less_than('8.6')
+    clear all
+else
+    clearvars -global
+    clear_persistent_variables(fileparts(which('dynare')), false)
+end
 tic0 = tic;
 % Save empty dates and dseries objects in memory.
 dates('initialize');
@@ -12,9 +18,9 @@ dseries('initialize');
 global M_ options_ oo_ estim_params_ bayestopt_ dataset_ dataset_info estimation_info ys0_ ex0_
 options_ = [];
 M_.fname = 'EAUS_NAWM08';
-M_.dynare_version = '4.5.5';
-oo_.dynare_version = '4.5.5';
-options_.dynare_version = '4.5.5';
+M_.dynare_version = '4.5.6';
+oo_.dynare_version = '4.5.6';
+options_.dynare_version = '4.5.6';
 %
 % Some global variables initialization
 %
