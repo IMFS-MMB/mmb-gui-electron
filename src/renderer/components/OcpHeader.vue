@@ -3,12 +3,11 @@
         <b-container>
             <b-row class="mt-4">
                 <b-col>
-                    <h1>Online Comparison Platform</h1>
+                    <!--<h1>Online Comparison Platform</h1>-->
 
-                    <p>Welcome to the <a href="https://www.macromodelbase.com/" target="_blank">Macro Economic Model Database</a>
-                        (MMB)
-                        Online Comparison Platform (OCP).</p>
-                </b-col>
+                    <p>Welcome to the <a href="https://www.macromodelbase.com/" target="_blank">Macroeconomic Modeldatabase</a>
+                        <!--(MMB) Online Comparison Platform (OCP).</p> </b-col>-->
+                        (MMB) v.3.0.</p> </b-col>
                 <b-col>
                     <div class="mmb-branding">
                         <a href="http://www.macromodelbase.com/" target="_blank">

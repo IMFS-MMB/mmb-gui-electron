@@ -1,13 +1,26 @@
 %
-% Status : main Dynare file 
+% Status : main Dynare file
 %
 % Warning : this file is generated automatically by Dynare
 %           from model file (.mod)
 
-tic;
-global M_ oo_ options_ ys0_ ex0_ estimation_info
+if isoctave || matlab_ver_less_than('8.6')
+    clear all
+else
+    clearvars -global
+    clear_persistent_variables(fileparts(which('dynare')), false)
+end
+tic0 = tic;
+% Save empty dates and dseries objects in memory.
+dates('initialize');
+dseries('initialize');
+% Define global variables.
+global M_ options_ oo_ estim_params_ bayestopt_ dataset_ dataset_info estimation_info ys0_ ex0_
 options_ = [];
 M_.fname = 'EAUS_NAWMctww';
+M_.dynare_version = '4.5.6';
+oo_.dynare_version = '4.5.6';
+options_.dynare_version = '4.5.6';
 %
 % Some global variables initialization
 %
@@ -899,6 +912,7 @@ M_.endo_names_long = char(M_.endo_names_long, 'AUX_ENDO_LAG_178_1');
 M_.endo_names = char(M_.endo_names, 'AUX_ENDO_LAG_178_2');
 M_.endo_names_tex = char(M_.endo_names_tex, 'AUX\_ENDO\_LAG\_178\_2');
 M_.endo_names_long = char(M_.endo_names_long, 'AUX_ENDO_LAG_178_2');
+M_.endo_partitions = struct();
 M_.param_names = 'cofintintb1';
 M_.param_names_tex = 'cofintintb1';
 M_.param_names_long = 'cofintintb1';
@@ -1388,6 +1402,7 @@ M_.param_names_long = char(M_.param_names_long, 'EA_interest_EXOG');
 M_.param_names = char(M_.param_names, 'US_interest_EXOG');
 M_.param_names_tex = char(M_.param_names_tex, 'US\_interest\_EXOG');
 M_.param_names_long = char(M_.param_names_long, 'US_interest_EXOG');
+M_.param_partitions = struct();
 M_.exo_det_nbr = 0;
 M_.exo_nbr = 25;
 M_.endo_nbr = 270;
@@ -1488,11 +1503,17 @@ M_.Correlation_matrix = eye(25, 25);
 M_.H = 0;
 M_.Correlation_matrix_ME = 1;
 M_.sigma_e_is_diagonal = 1;
+M_.det_shocks = [];
 options_.block=0;
 options_.bytecode=0;
 options_.use_dll=0;
+M_.hessian_eq_zero = 0;
 erase_compiled_function('EAUS_NAWMctww_static');
 erase_compiled_function('EAUS_NAWMctww_dynamic');
+M_.orig_eq_nbr = 243;
+M_.eq_nbr = 270;
+M_.ramsey_eq_nbr = 0;
+M_.set_auxiliary_variables = exist(['./' M_.fname '_set_auxiliary_variables.m'], 'file') == 2;
 M_.lead_lag_incidence = [
  0 123 0;
  1 124 0;
@@ -1784,10 +1805,8 @@ M_.maximum_exo_lag = 0;
 M_.maximum_exo_lead = 0;
 oo_.exo_steady_state = zeros(25, 1);
 M_.params = NaN(163, 1);
-M_.NNZDerivatives = zeros(3, 1);
-M_.NNZDerivatives(1) = 1246;
-M_.NNZDerivatives(2) = 2387;
-M_.NNZDerivatives(3) = -1;
+M_.NNZDerivatives = [1246; 2387; -1];
+st
 M_.params( 76 ) = 0.4194;
 EA_SIZE = M_.params( 76 );
 M_.params( 58 ) = 0.25;
@@ -2326,16 +2345,15 @@ oo_.steady_state(267)=oo_.steady_state(266);
 oo_.steady_state(268)=oo_.steady_state(167);
 oo_.steady_state(269)=oo_.steady_state(179);
 oo_.steady_state(270)=oo_.steady_state(269);
-if M_.exo_nbr > 0;
-	oo_.exo_simul = [ones(M_.maximum_lag,1)*oo_.exo_steady_state'];
-end;
-if M_.exo_det_nbr > 0;
-	oo_.exo_det_simul = [ones(M_.maximum_lag,1)*oo_.exo_det_steady_state'];
-end;
+if M_.exo_nbr > 0
+	oo_.exo_simul = ones(M_.maximum_lag,1)*oo_.exo_steady_state';
+end
+if M_.exo_det_nbr > 0
+	oo_.exo_det_simul = ones(M_.maximum_lag,1)*oo_.exo_det_steady_state';
+end
 %
 % SHOCKS instructions
 %
-make_ex_;
 M_.exo_det_length = 0;
 M_.Sigma_e(1, 1) = 0;
 M_.Sigma_e(2, 2) = 0;
@@ -2370,9 +2388,15 @@ end
 if exist('estimation_info', 'var') == 1
   save('EAUS_NAWMctww_results.mat', 'estimation_info', '-append');
 end
+if exist('dataset_info', 'var') == 1
+  save('EAUS_NAWMctww_results.mat', 'dataset_info', '-append');
+end
+if exist('oo_recursive_', 'var') == 1
+  save('EAUS_NAWMctww_results.mat', 'oo_recursive_', '-append');
+end
 
 
-disp(['Total computing time : ' dynsec2hms(toc) ]);
+disp(['Total computing time : ' dynsec2hms(toc(tic0)) ]);
 if ~isempty(lastwarn)
   disp('Note: warning(s) encountered in MATLAB/Octave code')
 end

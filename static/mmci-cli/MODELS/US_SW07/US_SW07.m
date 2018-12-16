@@ -4,6 +4,12 @@
 % Warning : this file is generated automatically by Dynare
 %           from model file (.mod)
 
+if isoctave || matlab_ver_less_than('8.6')
+    clear all
+else
+    clearvars -global
+    clear_persistent_variables(fileparts(which('dynare')), false)
+end
 tic0 = tic;
 % Save empty dates and dseries objects in memory.
 dates('initialize');
