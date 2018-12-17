@@ -37,9 +37,9 @@ cd([currentpath filesep 'MMB_OPTIONS' filesep])
 if nargin>0
     for ii=1:2:size(varargin,2)
         if isrow(varargin{ii+1})
-            eval([varargin{ii},'= [ ',strtrim(varargin{ii+1}),'];'])
+            eval([varargin{ii},'= [ ',strtrim(varargin{ii+1}),'];']) 
         else
-            eval([varargin{ii},'=',strtrim(varargin{ii+1}),';'])
+        eval([varargin{ii},'=',strtrim(varargin{ii+1}),';'])
         end
     end
 end
@@ -177,12 +177,12 @@ rulenamesshort1= deblank(modelbase.rulenamesshort1(logical(modelbase.rule),:));
                 else
                         modelbase.AL_=[];
                         modelbase.ModelStates(modelbase.models(epsilon))={[]};
-                end
+                end        
             end
             modelbase = rmfield(modelbase,'setpath') ; % path for dynare file of specific model
             options_.ar=100;
         end
-
+        
         cd('..');
         cd MODELS
         save policy_param.mat cofintintb1 cofintintb2 cofintintb3 cofintintb4...
@@ -203,21 +203,18 @@ rulenamesshort1= deblank(modelbase.rulenamesshort1(logical(modelbase.rule),:));
         modelbase.epsilon = epsilon;
         al=deblank(modelbase.names(modelbase.models(epsilon),:));
         modelbase.AL=strcmp(al(end-1:end),'AL');
-
+        
         if modelbase.AL
             if modelbase.l==min(find(modelbase.rule>0)) % If the model is solved for the first rule chosen
                 modelbase.ModelGAIN(modelbase.models(epsilon))=modelbase.gain;
             end
         end
-
+        
         save -append Modelbase modelbase
         cd(modelbase.setpath(modelbase.models(epsilon),:));                                 % go to directory of specific model
         disp(' ');
-        disp(['Currently Solving: ', strtrim(deblank(strtrim(modelbase.names(modelbase.models(epsilon),:))))]);
-
-
-        dynare(deblank(modelbase.names(modelbase.models(epsilon),:)));
-%        eval(['dynare '  modelbase.names(modelbase.models(epsilon),:)]);% solve model 'epsilon' in dynare by running the .mod file --> translates Dynare syntax into .m file, that is run
+        disp(['Currently Solving: ', strtrim(deblank(strtrim(modelbase.names(modelbase.models(epsilon),:))))]); 
+        eval(['dynare '  modelbase.names(modelbase.models(epsilon),:)]);% solve model 'epsilon' in dynare by running the .mod file --> translates Dynare syntax into .m file, that is run
         cd('..');
         cd('..'); % insert one more cd('..');
         cd MMB_OPTIONS
@@ -233,8 +230,8 @@ end
 
 for i=1:size(modelbase.rulenames,1);
     if (modelbase.rule(i)>0); % If the i-th rule has been chosen
-        if i==2 & prod(isnan(coeff_vec ))
-            disp('')    % in case the option model-specific rule has been chosen in conjunction with a model that does not feature a model-specific rule
+        if i==2 & prod(isnan(coeff_vec )) 
+            disp("")    % in case the option model-specific rule has been chosen in conjunction with a model that does not feature a model-specific rule
             modelbase.l=i;
             warning off
             if modelbase.option(1)==1
@@ -298,8 +295,9 @@ for i=1:size(modelbase.rulenames,1);
                             autmod = deblank(strtrim(modelbase.names(modelbase.models(epsilon),:)));
                             autrule = deblank(modelbase.rulenamesshort1(modelbase.l,:));
                             autvar = keyvariables(pp,:);
+                    if isfield (modelbase, 'AUTendo_names')
                         if loc(modelbase.AUTendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:))~=0;
-                            AUTval = modelbase.AUTR.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:))))(loc(modelbase.AUTendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:)),:);
+                            eval(['AUTval = modelbase.AUTR.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:))))(loc(modelbase.AUTendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:)),:);']);
 
                             outputmodel = horzcat(outputmodel, struct(...
                                 'model', deblank(autmod),...
@@ -319,16 +317,28 @@ for i=1:size(modelbase.rulenames,1);
                                 'values', []...
                             ));
                         end;
-                end;
+                          else
+                            outputmodel = horzcat(outputmodel, struct(...
+                                'model', deblank(autmod),...
+                                'rule', deblank(autrule),...
+                                'shock', [],...
+                                'func', 'AC',...
+                                'outputvar', deblank(autvar),...
+                                'values', []...
+                            ));
+                    end
+               end;
             end;
             if modelbase.option(5)==1
                 for pp=1:4;
                             vmod = deblank(strtrim(modelbase.names(modelbase.models(epsilon),:)));
                             vrule = deblank(modelbase.rulenamesshort1(modelbase.l,:));
                             vname = keyvariables(pp,:);
-                       if loc(modelbase.VARendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:))~=0;
-                            VARval = modelbase.VAR.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:))))(loc(modelbase.VARendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:)),loc(modelbase.VARendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:)));
+                       if isfield (modelbase,'VARendo_names')
+                            if loc(modelbase.VARendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:))~=0;
+                            var = modelbase.VAR.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:))))(loc(modelbase.VARendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:)),loc(modelbase.VARendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:)));
 
+                            eval(['VARval = modelbase.VAR.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:))))(loc(modelbase.VARendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:)),loc(modelbase.VARendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:)));']);
                             outputmodel = horzcat(outputmodel, struct(...
                                 'model', deblank(vmod),...
                                 'rule', deblank(vrule),...
@@ -337,6 +347,16 @@ for i=1:size(modelbase.rulenames,1);
                                 'outputvar', deblank(vname),...
                                 'values', VARval...
                             ));
+                       else
+                           outputmodel = horzcat(outputmodel, struct(...
+                               'model', deblank(vmod),...
+                               'rule', deblank(vrule),...
+                               'shock', [],...
+                               'func', 'VAR',...
+                               'outputvar', deblank(vname),...
+                               'values', []...
+                           ));
+                       end;
                        else
                            outputmodel = horzcat(outputmodel, struct(...
                                'model', deblank(vmod),...
@@ -356,9 +376,11 @@ for i=1:size(modelbase.rulenames,1);
                    irfshock = ([deblank(modelbase.namesshocks(p,1:3))]);
                    for pp=1:4;
                         irfvar = keyvariables(pp,:);
-                        if  modelbase.pos_shock(p,modelbase.models(epsilon))~=0
+                            if  modelbase.pos_shock(p,modelbase.models(epsilon))~=0
+                            irfvar = keyvariables(pp,:);
+                            if isfield (modelbase,'IRFendo_names')
                             if loc(modelbase.IRFendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:))~=0
-                                IRFval = modelbase.IRF.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:))))(loc(modelbase.IRFendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:)),:,p);
+                                eval(['IRFval = modelbase.IRF.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:))))(loc(modelbase.IRFendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:)),:,p);']);
 
                                 outputmodel = horzcat(outputmodel, struct(...
                                     'model', deblank(irfmod),...
@@ -388,13 +410,27 @@ for i=1:size(modelbase.rulenames,1);
                                 'values', []...
                             ));
                         end;
+                        else
+                            outputmodel = horzcat(outputmodel, struct(...
+                                'model', deblank(irfmod),...
+                                'rule', deblank(irfrule),...
+                                'shock', irfshock,...
+                                'func', 'IRF',...
+                                'outputvar', deblank(irfvar),...
+                                'values', []...
+                            ));
+                        end;
+
                    end;
               end;
           end;
-        end;
+        end; 
     end;
 end;
-
+try
+    eval(['modelbase.result.', strtrim(modelbase.names(modelbase.modelchosen,:)),  '= result;']);
+catch
+end
 
 % The following lines are necessary so that the dimensions of the respective matrices adjust with each model
 modelbase.AUTR = []; modelbase.AUTendo_names = []; modelbase.IRF = []; modelbase.IRFendo_names = []; modelbase.VAR = []; modelbase.VARendo_names = [];
@@ -402,23 +438,23 @@ modelbase.pos_shock = [];
 
 end;
 
-savejson('', outputmodel, 'Modelbasefile.json');
+savejson("", outputmodel, 'Modelbasefile.json');
 
-% for m=1:100
-%         n=101-m;
-%         o=100-m;
-%     if m<100
-%         if ~exist(['Modelbasefile_',num2str(n),'.json']) & exist(['Modelbasefile_',num2str(o),'.json'])
-%            movefile('Modelbasefile.json',['Modelbasefile_',num2str(n),'.json']);
-%         end
-%     else
-%         if ~exist(['Modelbasefile_',num2str(n),'.json'])
-%             movefile('Modelbasefile.json',['Modelbasefile_',num2str(n),'.json']);
-%         end
-%     end
-% end
-
-
+for m=1:100
+        n=101-m;
+        o=100-m;
+    if m<100
+        if ~exist(['Modelbasefile_',num2str(n),'.json']) & exist(['Modelbasefile_',num2str(o),'.json'])
+           movefile('Modelbasefile.json',['Modelbasefile_',num2str(n),'.json']);
+        end
+    else
+        if ~exist(['Modelbasefile_',num2str(n),'.json'])
+            movefile('Modelbasefile.json',['Modelbasefile_',num2str(n),'.json']);
+        end
+    end
+end
+        
+        
 save Modelbase modelbase -append
 modelbase.totaltime = cputime-modelbase.totaltime;
 
@@ -446,3 +482,4 @@ To_be_plotted=intersect(Index_Non_Aux_Var,Index_Non_Negligeable_Var{current_shoc
 IRF_Non_Aux_Var=IRF_STR.(strtrim(deblank(rules_setshort1(current_rule,:))))(To_be_plotted,:,:);
 IRFendo_names_Non_Aux = All_Endo_Var(To_be_plotted,:);
 end
+
