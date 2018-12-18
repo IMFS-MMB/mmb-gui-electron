@@ -391,3 +391,12 @@ if AL
     end
 end
 
+delete *_dynamic.m
+delete *_static.m
+delete *.log    
+delete *_set_auxiliary_variables.m
+delete *_results.mat
+delete *.eps
+delete *.fig
+delete *.pdf
+delete *.png
