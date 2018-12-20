@@ -37,7 +37,7 @@ cd([currentpath filesep 'MMB_OPTIONS' filesep])
 if nargin>0
     for ii=1:2:size(varargin,2)
         if isrow(varargin{ii+1})
-            eval([varargin{ii},'= [ ',strtrim(varargin{ii+1}),'];']) 
+            eval([varargin{ii},'= [ ',strtrim(varargin{ii+1}),'];'])
         else
         eval([varargin{ii},'=',strtrim(varargin{ii+1}),';'])
         end
@@ -177,12 +177,12 @@ rulenamesshort1= deblank(modelbase.rulenamesshort1(logical(modelbase.rule),:));
                 else
                         modelbase.AL_=[];
                         modelbase.ModelStates(modelbase.models(epsilon))={[]};
-                end        
+                end
             end
             modelbase = rmfield(modelbase,'setpath') ; % path for dynare file of specific model
             options_.ar=100;
         end
-        
+
         cd('..');
         cd MODELS
         save policy_param.mat cofintintb1 cofintintb2 cofintintb3 cofintintb4...
@@ -203,17 +203,17 @@ rulenamesshort1= deblank(modelbase.rulenamesshort1(logical(modelbase.rule),:));
         modelbase.epsilon = epsilon;
         al=deblank(modelbase.names(modelbase.models(epsilon),:));
         modelbase.AL=strcmp(al(end-1:end),'AL');
-        
+
         if modelbase.AL
             if modelbase.l==min(find(modelbase.rule>0)) % If the model is solved for the first rule chosen
                 modelbase.ModelGAIN(modelbase.models(epsilon))=modelbase.gain;
             end
         end
-        
+
         save -append Modelbase modelbase
         cd(modelbase.setpath(modelbase.models(epsilon),:));                                 % go to directory of specific model
         disp(' ');
-        disp(['Currently Solving: ', strtrim(deblank(strtrim(modelbase.names(modelbase.models(epsilon),:))))]); 
+        disp(['Currently Solving: ', strtrim(deblank(strtrim(modelbase.names(modelbase.models(epsilon),:))))]);
         eval(['dynare '  modelbase.names(modelbase.models(epsilon),:)]);% solve model 'epsilon' in dynare by running the .mod file --> translates Dynare syntax into .m file, that is run
         cd('..');
         cd('..'); % insert one more cd('..');
@@ -230,8 +230,8 @@ end
 
 for i=1:size(modelbase.rulenames,1);
     if (modelbase.rule(i)>0); % If the i-th rule has been chosen
-        if i==2 & prod(isnan(coeff_vec )) 
-            disp("")    % in case the option model-specific rule has been chosen in conjunction with a model that does not feature a model-specific rule
+        if i==2 & prod(isnan(coeff_vec ))
+            disp('')    % in case the option model-specific rule has been chosen in conjunction with a model that does not feature a model-specific rule
             modelbase.l=i;
             warning off
             if modelbase.option(1)==1
@@ -424,7 +424,7 @@ for i=1:size(modelbase.rulenames,1);
                    end;
               end;
           end;
-        end; 
+        end;
     end;
 end;
 try
@@ -438,23 +438,8 @@ modelbase.pos_shock = [];
 
 end;
 
-savejson("", outputmodel, 'Modelbasefile.json');
+savejson('', outputmodel, 'Modelbasefile.json');
 
-for m=1:100
-        n=101-m;
-        o=100-m;
-    if m<100
-        if ~exist(['Modelbasefile_',num2str(n),'.json']) & exist(['Modelbasefile_',num2str(o),'.json'])
-           movefile('Modelbasefile.json',['Modelbasefile_',num2str(n),'.json']);
-        end
-    else
-        if ~exist(['Modelbasefile_',num2str(n),'.json'])
-            movefile('Modelbasefile.json',['Modelbasefile_',num2str(n),'.json']);
-        end
-    end
-end
-        
-        
 save Modelbase modelbase -append
 modelbase.totaltime = cputime-modelbase.totaltime;
 

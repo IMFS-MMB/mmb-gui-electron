@@ -2,17 +2,9 @@ clear all
 close all
 cd(fileparts(mfilename('fullpath')));
 
-cd MMB_OPTIONS
-for m=1:100
-    if  exist(['Modelbasefile_',num2str(m),'.json'])
-        delete (['Modelbasefile_',num2str(m),'.json']);
-    end
-end
-cd ..
 %% Simple exercsie:
 % NK_RW97 with Taylor rule, printing variances, IRFs and ACFs for both
 % monetary and fiscal policy.
- 
 
 % cd  MMB_OPTIONS
 % CMD_MMB(3,6,7,3);
@@ -61,12 +53,12 @@ cd  MMB_OPTIONS
 CMD_MMB(33,4,7,3);
 
 % Exercise 1- RW97 with Tayor rule
-% 
+%
 cd ..
 cd  MMB_OPTIONS
 CMD_MMB(1,5,4,1);
 
-%Exercise 2- RW97 and NK_CGG02 with Tayor rule 
+%Exercise 2- RW97 and NK_CGG02 with Tayor rule
 
 cd ..
 cd  MMB_OPTIONS
@@ -79,7 +71,7 @@ CMD_MMB(9,4,4,1);
 
 %Exercise 2b- RW97 and NK_CGG02 with Tayor rule  print variances ,IRFs and
 %ACF for fiscal policy -note NK_CGG02 does not have a fiscal shock!
-% 
+%
 cd ..
 cd  MMB_OPTIONS
 CMD_MMB(9,4,7,2);
@@ -89,4 +81,4 @@ CMD_MMB(9,4,7,2);
 cd ..
 cd  MMB_OPTIONS
 CMD_MMB(8,12,2,1);
- 
+
