@@ -94,6 +94,7 @@ const actions = {
       result = await compare(ctx, models, policyRules, outputVars, shocks);
     } catch (e) {
       ctx.commit('error', e);
+      throw e;
     } finally {
       ctx.commit('done', result);
     }
