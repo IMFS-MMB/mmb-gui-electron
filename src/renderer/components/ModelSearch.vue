@@ -1,8 +1,16 @@
 <template>
     <form class="ctrl-search form-inline">
-        <input class="form-control form-control-sm mr-2 typeahead" autocomplete="off"
+        <input id="search" class="form-control form-control-sm mr-2 typeahead" autocomplete="off"
                placeholder="Search" aria-label="Search" v-model="search" @keydown.enter.prevent>
+        <b-popover target="search"
+                   :delay="{ show: 500, hide: 0 }"
+                   placement="left"
+                   triggers="hover"
+                   boundary="viewport">
+            Search models by name, title, paper, authors, year of publication...
+        </b-popover>
     </form>
+
 </template>
 <script>
   import { mapGetters, mapMutations } from 'vuex';
