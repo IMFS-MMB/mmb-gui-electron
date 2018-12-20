@@ -17,7 +17,12 @@ const getters = {
 
     return getters.sortedModels.filter(model =>
       model.internal_name.toLowerCase().includes(text) ||
-      model.description.keywords.includes(text));
+      (model.description.keywords || []).some(k => k.toLowerCase().includes(text)) ||
+      (model.description.paper_title || '').toLowerCase().includes(text) ||
+      (model.description.journal || '').toLowerCase().includes(text) ||
+      (model.description.replicants_name || '').toLowerCase().includes(text) ||
+      (model.description.pub_date || '').toLowerCase().includes(text) ||
+      (model.description.authors || []).some(a => a.toLowerCase().includes(text)));
   },
 
   total(state) {
