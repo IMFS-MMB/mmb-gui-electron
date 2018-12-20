@@ -56,6 +56,8 @@
   "dependencies": {
     "@feathersjs/feathers": "^3.3.0",
     "@feathersjs/rest-client": "^1.4.6",
+    "@sentry/browser": "^4.4.2",
+    "@sentry/electron": "^0.14.0",
     "axios": "^0.18.0",
     "bootstrap-scss": "^4.1.3",
     "bootstrap-vue": "^2.0.0-rc.11",

@@ -6,7 +6,17 @@ import path from 'path';
  * https://simulatedgreg.gitbooks.io/electron-vue/content/en/using-static-assets.html
  */
 if (process.env.NODE_ENV !== 'development') {
-  global.__static = require('path').join(__dirname, '/static').replace(/\\/g, '\\\\') // eslint-disable-line
+  global.__static = require('path').join(__dirname, '/static').replace(/\\/g, '\\\\'); // eslint-disable-line
+}
+
+if (!process.env.IS_WEB) {
+  console.warn('TODO: Sentry is still connecting via plain HTTP! Set up HTTPS for production!');
+
+  const Sentry = require('@sentry/electron');
+
+  Sentry.init({
+    dsn: 'http://b0fda030c61748cd95cc5f27e4a07a15@www.macromodelbase.com:9000/2',
+  });
 }
 
 let mainWindow;
