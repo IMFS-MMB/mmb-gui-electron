@@ -9,8 +9,7 @@ thumbs.db
 .idea/
 !.gitkeep
 
-Modelbase*
 octave-workspace
-
-static/mmci-cli/MODELS/**/*_results.mat
+static/mmci-cli/MODELS/policy_param.mat
+static/mmci-cli/**/Modelbase*
 static/mmci-cli/**/*.log
