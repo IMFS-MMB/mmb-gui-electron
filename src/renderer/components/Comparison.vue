@@ -1,5 +1,5 @@
 <template>
-    <div ref="host" class="container mt-2" v-if="show && !inProgress" v-infinite-scroll="showMore" infinite-scroll-distance="10">
+    <div ref="host" class="container mt-2" v-if="show && !inProgress">
         <b-row class="mt-2">
             <b-col>
                 <div class="comparison-set">
@@ -19,10 +19,6 @@
             </b-col>
         </b-row>
 
-        <!--<template v-for="section in sections">-->
-
-
-        <!--</template>-->
         <template v-for="row of visibleRows">
             <b-row class="mt-5"></b-row>
             <b-row class="mt-1">

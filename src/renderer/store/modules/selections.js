@@ -50,6 +50,10 @@ const getters = {
     };
   },
 
+  // isModelDisabled(state, getters) {
+  //
+  // },
+
   canCompare(state, getters) {
     return getters.numModels
       && getters.numPolicyRules
