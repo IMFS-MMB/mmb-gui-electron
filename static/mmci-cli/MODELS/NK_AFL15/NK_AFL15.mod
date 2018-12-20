@@ -432,7 +432,7 @@ outputgap = 0;
 fispol = 0;
 end;
 
-%steady(nocheck);
+steady(nocheck);
 
 //-------------------------------------------------------------------------
 //6. Simulation
