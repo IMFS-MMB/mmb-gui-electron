@@ -1,12 +1,12 @@
 function function_output = CMD_MMB(models,rules,output,shock,varargin)
 
-modelsvec = de2bi(models,114);       % 1*114 vector for selecting models to run
-rule = de2bi(rules,11);             % 1*11 vector for selecting rules to run
-outp = de2bi(output,3);             % ACF for first digit, IRF for second, Unc. variance for third
-option1 = outp(1,1);                % option1 :(1 - double) Autocorrelation Functions (ACFs) will be plotted, default = 1
-option2 = outp(1,2);                % option2 :(1 - double) Impulse Response Functions (IRFs) will be plotted, default = 1
-option5 = outp(1,3);                % option5 :(1 - double) Show the unconditional variance in the Matlab console, default =1
-shocks = de2bi(shock,2);            % 1*2  vector for selecting Monetary policy shock (default, shocks(1,1)=1) and/or Fiscal polilcy shock (shocks(1,2) = 1)
+modelsvec = models;                   % 1*114 vector for selecting models to run
+rule = rules;                         % 1*11 vector for selecting rules to run
+option1 = output(1,1);                % option1 :(1 - double) Autocorrelation Functions (ACFs) will be plotted, default = 1
+option2 = output(1,2);                % option2 :(1 - double) Impulse Response Functions (IRFs) will be plotted, default = 1
+option5 = output(1,3);                % option5 :(1 - double) Show the unconditional variance in the Matlab console, default =1
+shocks = shock;                       % 1*2  vector for selecting Monetary policy shock (default, shocks(1,1)=1) and/or Fiscal polilcy shock (shocks(1,2) = 1)
+
 if exist('Modelbase') ~= 0
     delete Modelbase
 end
