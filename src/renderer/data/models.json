@@ -10,7 +10,17 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Rotemberg & Woodford (1997)",
@@ -38,7 +48,17 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Levin et al (2003)",
@@ -67,7 +87,17 @@
       "outputgap": true,
       "output": false,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Clarida et al. (1999)",
@@ -96,7 +126,17 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Clarida et al. (2002)",
@@ -125,7 +165,17 @@
       "outputgap": true,
       "output": false,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "McCallum & Nelson (1999)",
@@ -153,7 +203,17 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Ireland (2004)",
@@ -180,7 +240,17 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Bernanke et al. (1999)",
@@ -209,7 +279,17 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Gali & Monacelli (2005)",
@@ -237,7 +317,17 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Gertler & Karadi (2009)",
@@ -265,7 +355,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Christoffel & Kuester (2008)",
@@ -293,7 +394,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Christoffel et al. (2009)",
@@ -322,7 +434,16 @@
       "outputgap": true,
       "output": false,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Ravenna & Walsh (2006)",
@@ -350,7 +471,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Christiano et al. (2014) I",
@@ -379,7 +511,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Christiano et al. (2014) II",
@@ -408,7 +551,17 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Federal Reserve Board model I",
@@ -437,7 +590,16 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10
+      ]
     },
     "description": {
       "ac_ref": "Federal Reserve Board model II",
@@ -465,7 +627,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Federal Reserve Board model III",
@@ -493,7 +666,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Smets & Wouters (2007)",
@@ -521,7 +705,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Altig et al. (2005) I",
@@ -551,7 +746,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Altig et al. (2005) II",
@@ -581,7 +787,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Altig et al. (2005) III",
@@ -611,7 +828,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Altig et al. (2005) IV",
@@ -641,7 +869,17 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Rudebusch & Svensson (1999)",
@@ -669,7 +907,17 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Orphanides (2003)",
@@ -696,7 +944,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "IMF projection model US I",
@@ -727,7 +986,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "IMF projection model US II",
@@ -758,7 +1028,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "De Graeve (2008)",
@@ -785,7 +1066,17 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Christensen & Dib (2008)",
@@ -813,7 +1104,17 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Iacoviello (2005)",
@@ -840,7 +1141,17 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Mankiw & Reis (2007)",
@@ -868,7 +1179,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Rabanal (2007)",
@@ -895,7 +1217,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Cogan et al. (2010)",
@@ -925,7 +1258,17 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Ireland (2011)",
@@ -952,7 +1295,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Coenen & Wieland (2005) I",
@@ -980,7 +1334,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Coenen & Wieland (2005) II",
@@ -1008,7 +1373,16 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        11
+      ]
     },
     "description": {
       "ac_ref": "ECB’s area-wide model",
@@ -1037,7 +1411,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Smets & Wouters (2003)",
@@ -1065,7 +1450,17 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Sveriges Riksbank euro area (2007)",
@@ -1095,7 +1490,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "QUEST III Euro Area Model (2009)",
@@ -1124,7 +1530,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Christoffel et al. (2009) EU",
@@ -1153,7 +1570,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Gelain (2010)",
@@ -1180,7 +1608,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Taylor (1993) G7",
@@ -1207,7 +1646,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Coenen & Wieland (2002)",
@@ -1235,7 +1685,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Laxton & Pesenti (2003)",
@@ -1263,7 +1724,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "The Federal Reserve’s SIGMA model (2008)",
@@ -1292,7 +1764,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Coenen et al. (2008)",
@@ -1321,7 +1804,17 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Rabanal (2009)",
@@ -1348,7 +1841,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Medina & Soto (2007)",
@@ -1376,7 +1880,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Gouvea et al. (2008)",
@@ -1406,7 +1921,17 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Lubik & Schorfheide (2007)",
@@ -1434,7 +1959,17 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Funke et al. (2011)",
@@ -1463,7 +1998,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Iacoviello & Neri (2010)",
@@ -1491,7 +2037,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Christiano et al. (2010) I",
@@ -1520,7 +2077,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Christiano et al. (2010) II\r",
@@ -1549,7 +2117,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Verona et al. (2013) I",
@@ -1578,7 +2157,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Verona et al. (2013) II",
@@ -1607,7 +2197,16 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Gerali et al. (2010)",
@@ -1637,7 +2236,14 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        4,
+        6,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Meh & Moran (2010)",
@@ -1665,7 +2271,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Kannan et al. (2012)",
@@ -1694,7 +2311,17 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Funke & Paetz (2013)",
@@ -1722,7 +2349,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Cogan et al. (2013)",
@@ -1752,7 +2390,17 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Curdia & Woodford (2009)",
@@ -1780,7 +2428,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "IMF global projection model (2013)\n",
@@ -1812,7 +2471,17 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Bailliu et al. (2012)",
@@ -1841,7 +2510,17 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Gertler & Karadi (2011)",
@@ -1869,7 +2548,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Fuhrer & Moore (1995a)",
@@ -1925,7 +2615,17 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Quint & Rabanal (2014)",
@@ -1953,7 +2653,15 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Rotemberg & Woodford (1997) AL",
@@ -1981,7 +2689,15 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Levin et al. (2003) AL",
@@ -2010,7 +2726,15 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Clarida et al. (1999) AL",
@@ -2039,7 +2763,15 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Clarida et al. (2002) AL\r",
@@ -2068,7 +2800,15 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Ireland (2004) AL",
@@ -2095,7 +2835,15 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Bernanke et al. (1999) AL",
@@ -2124,7 +2872,15 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Ravenna & Walsh (2006) AL",
@@ -2152,7 +2908,15 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Fuhrer & Moore (1995) AL",
@@ -2180,7 +2944,15 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Slobodyan & Wouters (2012)",
@@ -2208,7 +2980,15 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Milani (2007)",
@@ -2235,7 +3015,15 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Rychalovska (2016)",
@@ -2262,7 +3050,17 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Ellison & Tischbirek (2014)",
@@ -2290,7 +3088,17 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Gertler & Karadi (2013)",
@@ -2318,7 +3126,16 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Darracq Paries et al. (2011)\n",
@@ -2347,7 +3164,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Blanchard & Gali (2010) EU",
@@ -2375,7 +3203,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Blanchard & Gali (2010) US",
@@ -2403,7 +3242,16 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        11
+      ]
     },
     "description": {
       "ac_ref": "De Fiore et al. (2011)",
@@ -2432,7 +3280,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Carlstrom et al. (2014)",
@@ -2462,7 +3321,17 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Justiniano et al. (2011)",
@@ -2491,7 +3360,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Cogley et al. (2010)",
@@ -2520,7 +3400,16 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Nakamura & Steinsson (2014)",
@@ -2548,7 +3437,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Del Negro et al. (2015)",
@@ -2577,7 +3477,17 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Fève et al. (2013)",
@@ -2606,7 +3516,16 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Angeloni et al. (2015)",
@@ -2635,7 +3554,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Fernández-Villaverde et al. (2015) (a)",
@@ -2665,7 +3595,17 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Poutineau & Vermandel (2015)",
@@ -2693,7 +3633,17 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Carlstrom et al. (2010)",
@@ -2722,7 +3672,17 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Goodfriend & McCallum (2007)",
@@ -2750,7 +3710,17 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Kirchner & van Wijnbergen (2016)",
@@ -2778,7 +3748,17 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Monacelli et al. (2010)",
@@ -2807,7 +3787,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Paoli & Paustian (2017)",
@@ -2835,7 +3826,17 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Pancrazi et al. (2016)",
@@ -2864,7 +3865,16 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Rannenberg (2016)",
@@ -2891,7 +3901,17 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Stracca (2013)",
@@ -2918,7 +3938,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Ajello (2016)",
@@ -2945,7 +3976,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Carlstrom et al. (2017) I",
@@ -2974,7 +4016,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": false
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Carlstrom et al. (2017) II",
@@ -3003,7 +4056,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Del Negro et al. (2015) I",
@@ -3032,7 +4096,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Del Negro et al. (2015) II",
@@ -3061,7 +4136,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Del Negro et al. (2015) III",
@@ -3090,7 +4176,15 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        4,
+        5,
+        6,
+        8,
+        9,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Fernández-Villaverde (2010)",
@@ -3117,7 +4211,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Fernández-Villaverde et al. (2015) (b)",
@@ -3146,7 +4251,13 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        5,
+        6,
+        8
+      ]
     },
     "description": {
       "ac_ref": "Ireland (2015)",
@@ -3173,7 +4284,18 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Leeper et al. (2013)",
@@ -3202,7 +4324,17 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Reis (2009)",
@@ -3229,7 +4361,17 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ]
     },
     "description": {
       "ac_ref": "Galí et al. (2007)",
