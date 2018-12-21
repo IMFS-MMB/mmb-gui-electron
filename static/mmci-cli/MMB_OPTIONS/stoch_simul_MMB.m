@@ -400,3 +400,5 @@ delete *.eps
 delete *.fig
 delete *.pdf
 delete *.png
+delete([strtrim(deblank(base.names((base.models(base.epsilon)),:))),'.m'])
+rmdir(strtrim(deblank(base.names((base.models(base.epsilon)),:))), 's')
