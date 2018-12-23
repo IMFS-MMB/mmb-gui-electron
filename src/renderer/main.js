@@ -13,9 +13,6 @@ import './plugins/highcharts';
 import './plugins/chatscroll';
 import constants from '../constants';
 
-console.warn('TODO: Sentry is still connecting via plain HTTP! Set up HTTPS for production!');
-// TODO: Sentry is still connecting via plain HTTP! Set up HTTPS for production!
-
 if (process.env.IS_WEB) {
   const Sentry = require('@sentry/browser');
 
@@ -45,11 +42,6 @@ const vue = new Vue({
 }).$mount('#app');
 
 window.vue = vue;
-
-// todo: remove for production
-remote.globalShortcut.register('CommandOrControl+Shift+K', () => {
-  remote.BrowserWindow.getFocusedWindow().webContents.openDevTools();
-});
 
 window.addEventListener('beforeunload', () => {
   remote.globalShortcut.unregisterAll();
