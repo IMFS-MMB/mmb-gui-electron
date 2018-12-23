@@ -67,7 +67,6 @@ const getters = {
       });
 
       const hasUnsupportedShocks = shocks.some((shock) => {
-        console.log(shock.name, model.capabilities);
         switch (shock.name) {
           case 'Mon':
             return !model.capabilities.mp_shock;
