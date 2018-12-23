@@ -37,3 +37,16 @@ artifacts:
     name: BuildWin
   - path: web.zip
     name: BuildWeb
+
+deploy:
+  - provider: GitHub
+    release: v$(appveyor_build_version)
+    description: 'Release description'
+    auth_token:
+      secure: Umyb8lnZeivbvN4AoqdXEhoFbP9trQybmA6pUJ+pY6xh0D+n6iEzZW0ol3brZR0B
+    artifact: BuildWin
+    draft: true
+    prerelease: false
+    on:
+      branch: master
+      # APPVEYOR_REPO_TAG: true
