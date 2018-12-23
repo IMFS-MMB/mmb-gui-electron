@@ -11,6 +11,7 @@ import './global.scss';
 import './plugins/bootstrap';
 import './plugins/highcharts';
 import './plugins/chatscroll';
+import constants from '../constants';
 
 console.warn('TODO: Sentry is still connecting via plain HTTP! Set up HTTPS for production!');
 // TODO: Sentry is still connecting via plain HTTP! Set up HTTPS for production!
@@ -19,14 +20,14 @@ if (process.env.IS_WEB) {
   const Sentry = require('@sentry/browser');
 
   Sentry.init({
-    dsn: 'http://69d6aff76a234100a714aa1507b79985@www.macromodelbase.com:9000/3',
+    dsn: constants.sentry.dsnWeb,
     integrations: [Sentry.Integrations.Vue({ Vue })],
   });
 } else {
   const Sentry = require('@sentry/electron');
 
   Sentry.init({
-    dsn: 'http://b0fda030c61748cd95cc5f27e4a07a15@www.macromodelbase.com:9000/2',
+    dsn: constants.sentry.dsnElectron,
   });
 
   Vue.use(require('vue-electron'));
