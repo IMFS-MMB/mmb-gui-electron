@@ -1,7 +1,7 @@
 const namespaced = true;
 
 const state = {
-  models: require('../../data/models'),
+  models: require('@/data/models'),
 };
 
 const getters = {

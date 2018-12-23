@@ -21,7 +21,7 @@
 </template>
 <script>
   import { mapMutations, mapGetters, mapActions } from 'vuex'; // eslint-disable-line no-unused-vars
-  import outputVars from '../data/output_vars';
+  import outputVars from '@/data/output_vars';
 
   export default {
     data() {

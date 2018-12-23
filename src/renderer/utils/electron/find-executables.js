@@ -1,8 +1,8 @@
 import commandExists from 'command-exists';
 import { promisify } from 'util';
 import _glob from 'glob';
+import commonExecutables from '@/data/common-executables';
 import { isExecutable } from './is-executable';
-import commonExecutables from '../../data/common-executables';
 import logger from '../logger';
 import { create } from './interface';
 

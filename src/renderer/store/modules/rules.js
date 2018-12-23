@@ -1,7 +1,7 @@
 const namespaced = true;
 
 const state = {
-  rules: require('../../data/common_rules'),
+  rules: require('@/data/common_rules'),
 };
 
 const getters = {

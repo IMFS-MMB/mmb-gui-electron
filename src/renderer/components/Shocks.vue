@@ -22,7 +22,7 @@
 </template>
 <script>
   import { mapMutations, mapGetters, mapActions } from 'vuex'; // eslint-disable-line no-unused-vars
-  import shocks from '../data/shocks';
+  import shocks from '@/data/shocks';
 
   export default {
     data() {
