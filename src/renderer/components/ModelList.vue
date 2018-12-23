@@ -7,7 +7,7 @@
         <b-form-checkbox-group class="ctrl-set-listing" stacked v-model="selection">
             <template v-for="model in models">
                 <div :id="'cb-wrapper-' + model.id">
-                    <b-form-checkbox :value="model">{{model.internal_name}}</b-form-checkbox>
+                    <b-form-checkbox :value="model" :disabled="isModelDisabled(model)">{{model.internal_name}}</b-form-checkbox>
                 </div>
 
                 <ModelPopover :model="model"/>
@@ -32,7 +32,7 @@
       },
     },
     computed: {
-      ...mapGetters('selections', { modelSelection: 'models' }),
+      ...mapGetters('selections', { modelSelection: 'models', isModelDisabled: 'isModelDisabled' }),
       selection: {
         get() {
           return this.modelSelection;

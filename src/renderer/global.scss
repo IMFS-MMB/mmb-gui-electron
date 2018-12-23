@@ -165,3 +165,10 @@ h1 {
     }
   }
 }
+
+input+label {
+  transition: opacity .15s ease-in-out;
+}
+input[disabled]+label {
+  opacity: .5;
+}

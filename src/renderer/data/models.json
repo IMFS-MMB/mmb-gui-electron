@@ -2587,7 +2587,8 @@
       "outputgap": true,
       "output": true,
       "mp_shock": true,
-      "fiscal_shock": true
+      "fiscal_shock": true,
+      "rules": []
     },
     "description": {
       "ac_ref": "Orphanides & Wieland (1998)",
