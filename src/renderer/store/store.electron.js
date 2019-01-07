@@ -18,8 +18,8 @@ export const modules = {
 
 export const plugins = [
   createPersistedState({
-    selectState: state => pick(state, ['backends', 'userrule', 'selections']),
-    whitelist: whitelistNamespaces(['backends', 'userrule', 'selections']),
+    selectState: state => pick(state, ['backends', 'userrule']),
+    whitelist: whitelistNamespaces(['backends', 'userrule']),
     storageName: 'mmb-electron-vuex',
     mergeOptions: {
       arrayMerge: (dest, src) => src,
