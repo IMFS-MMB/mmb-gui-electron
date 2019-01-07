@@ -19,7 +19,7 @@
             </b-col>
         </b-row>
 
-        <template v-for="row of visibleRows">
+        <template v-for="row of rows">
             <b-row class="mt-5"></b-row>
             <b-row class="mt-1">
                 <b-col v-for="(data, index) of row" :key="index">
@@ -28,16 +28,6 @@
             </b-row>
 
         </template>
-        <hr class="mt-4">
-
-        <b-row class="mt-5">
-            <b-col class="col text-center">
-                <p>Showing <strong>{{visibleCount}}</strong> of <strong>{{totalCount}}</strong> charts</p>
-                <a href="javascript:void(0)" v-if="visibleCount < totalCount" @click="showMore">
-                    <i class="fa fa-plus"></i> Show more
-                </a>
-            </b-col>
-        </b-row>
     </div>
 </template>
 
@@ -55,7 +45,6 @@
     },
     data() {
       return {
-        visible: 2,
         loading: true,
         comparison: undefined,
       };
@@ -74,15 +63,6 @@
 
         return result;
       },
-      visibleRows() {
-        return this.rows.slice(0, this.visible);
-      },
-      visibleCount() {
-        return Math.min(this.visibleRows.length * CHARTS_PER_ROW, this.chartData.length);
-      },
-      totalCount() {
-        return this.chartData.length;
-      },
     },
     watch: {
       inProgress(newVal, oldVal) {
@@ -90,11 +70,6 @@
           // true -> false
           setTimeout(() => scrollIntoView(this.$refs.host));
         }
-      },
-    },
-    methods: {
-      showMore() {
-        this.visible += 2;
       },
     },
   };
