@@ -97,10 +97,7 @@ const getters = {
   },
 
   canCompare(state, getters) {
-    return getters.numModels
-      && getters.numPolicyRules
-      && getters.numShocks
-      && getters.numOutputVars;
+    return getters.numModels && getters.numPolicyRules;
   },
 };
 
