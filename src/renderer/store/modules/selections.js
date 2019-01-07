@@ -34,26 +34,9 @@ const getters = {
     return state.outputVars.length;
   },
 
-  isShockDisabled(state, getters) {
-    return (shock) => {
-      const { models } = getters;
-
-      return models.some((model) => {
-        switch (shock.name) {
-          case 'Mon':
-            return !model.capabilities.mp_shock;
-          case 'Fis':
-            return !model.capabilities.fiscal_shock;
-          default:
-            throw new Error('isShockDisabled(): Unknown shock type.');
-        }
-      });
-    };
-  },
-
   isModelDisabled(state, getters) {
     return (model) => {
-      const { shocks, policyRules } = getters;
+      const { policyRules } = getters;
 
       const hasUnsupportedRules = policyRules.some((rule) => {
         switch (rule.id) {
@@ -66,18 +49,7 @@ const getters = {
         }
       });
 
-      const hasUnsupportedShocks = shocks.some((shock) => {
-        switch (shock.name) {
-          case 'Mon':
-            return !model.capabilities.mp_shock;
-          case 'Fis':
-            return !model.capabilities.fiscal_shock;
-          default:
-            throw new Error('isShockDisabled(): Unknown shock type.');
-        }
-      });
-
-      return hasUnsupportedRules || hasUnsupportedShocks;
+      return hasUnsupportedRules;
     };
   },
 

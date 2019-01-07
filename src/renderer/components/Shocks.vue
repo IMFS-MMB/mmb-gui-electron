@@ -12,8 +12,7 @@
             <b-form-checkbox-group class="ctrl-set-listing" stacked v-model="selection">
                 <b-form-checkbox v-for="shock in shocks"
                                  :key="shock.id"
-                                 :value="shock"
-                                 :disabled="isShockDisabled(shock)">
+                                 :value="shock">
                     {{shock.text}}
                 </b-form-checkbox>
             </b-form-checkbox-group>
@@ -34,7 +33,6 @@
       ...mapGetters('selections', {
         selectedIndex: 'numShocks',
         shockSelection: 'shocks',
-        isShockDisabled: 'isShockDisabled',
       }),
       selection: {
         get() {
