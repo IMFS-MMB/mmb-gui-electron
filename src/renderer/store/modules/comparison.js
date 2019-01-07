@@ -27,10 +27,27 @@ const getters = {
   inProgress(state) {
     return state.inProgress;
   },
-  chartData(state, getters) {
-    const rawData = getters.data;
+  varianceData(state, getters) {
+    const variances = getters.data.filter(data => data.func === 'VAR');
 
-    const grouped = groupBy(rawData, data => `${data.rule} ${data.shock} ${data.outputvar} ${data.func}`);
+    const grouped = groupBy(variances, data => `${data.model}, ${data.rule}`);
+
+    const result = map(grouped, (data, index) => ({
+      title: index,
+      data: {
+        inflation: (data.find(d => d.outputvar === 'inflation') || {}).values,
+        interest: (data.find(d => d.outputvar === 'interest') || {}).values,
+        output: (data.find(d => d.outputvar === 'output') || {}).values,
+        outputgap: (data.find(d => d.outputvar === 'outputgap') || {}).values,
+      },
+    }));
+
+    return result;
+  },
+  chartData(state, getters) {
+    const others = getters.data.filter(data => data.func !== 'VAR');
+
+    const grouped = groupBy(others, data => `${data.rule} ${data.shock} ${data.outputvar} ${data.func}`);
 
     const result = map(grouped, (data, index) => {
       const series = data.map(d => ({
