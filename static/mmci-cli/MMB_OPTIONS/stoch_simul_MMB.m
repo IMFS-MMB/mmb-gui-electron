@@ -396,9 +396,9 @@ delete *_static.m
 delete *.log    
 delete *_set_auxiliary_variables.m
 delete *_results.mat
-delete *.eps
-delete *.fig
-delete *.pdf
-delete *.png
+%delete *.eps
+%delete *.fig
+%delete *.pdf
+%delete *.png
 delete([strtrim(deblank(base.names((base.models(base.epsilon)),:))),'.m'])
 %rmdir(strtrim(deblank(base.names((base.models(base.epsilon)),:))), 's')
