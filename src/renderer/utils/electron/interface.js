@@ -26,7 +26,7 @@ class Base {
   async getVersion() {
     let version;
 
-    await this.runCode('printf(version);', (data) => {
+    await this.runCode('fprintf(version);', (data) => {
       version = data.toString();
     });
 
