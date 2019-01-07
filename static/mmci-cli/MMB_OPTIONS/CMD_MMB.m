@@ -49,7 +49,7 @@ MMB_settings
 disp(' ')
 disp('Selected Models:')
 for epsilon=1:size(modelbase.models,2)
-    disp([strtrim(deblank(modelbase.names((modelbase.models(epsilon)),:)))]);
+    disp(strtrim(deblank(modelbase.names((modelbase.models(epsilon)),:))));
 end
 disp(' ')
 disp('Selected Policy Rule:');
@@ -79,7 +79,7 @@ if modelbase.option(2)==1
     modelbase.namesshocks = modelbase.namesshocks(choices,:);
     % this is neccesary for plotting the right shock in the right figure otherwise the order might get confused; if all model specific shocks are chosen, we put [] here. The names are assigned in stoch_simul_modelbase
 
-end;
+end
 
 delete('Modelbasefile.json');
 
@@ -228,14 +228,14 @@ rulenamesshort1= deblank(modelbase.rulenamesshort1(logical(modelbase.rule),:));
     end
 end
 
-for i=1:size(modelbase.rulenames,1);
-    if (modelbase.rule(i)>0); % If the i-th rule has been chosen
+for i=1:size(modelbase.rulenames,1)
+    if (modelbase.rule(i)>0) % If the i-th rule has been chosen
         if i==2 & prod(isnan(coeff_vec ))
             disp('')    % in case the option model-specific rule has been chosen in conjunction with a model that does not feature a model-specific rule
             modelbase.l=i;
             warning off
             if modelbase.option(1)==1
-                for pp=1:4;
+                for pp=1:4
                     autmod = deblank(strtrim(modelbase.names(modelbase.models(epsilon),:)));
                     autrule = deblank(modelbase.rulenamesshort1(modelbase.l,:));
                     autvar = keyvariables(pp,:);
@@ -248,10 +248,10 @@ for i=1:size(modelbase.rulenames,1);
                         'outputvar', deblank(autvar),...
                         'values', []...
                     ));
-                end;
+                end
             end
             if modelbase.option(5)==1
-                for pp=1:4;
+                for pp=1:4
                     vmod = deblank(strtrim(modelbase.names(modelbase.models(epsilon),:)));
                     vrule = deblank(modelbase.rulenamesshort1(modelbase.l,:));
                     vname = keyvariables(pp,:);
@@ -264,15 +264,15 @@ for i=1:size(modelbase.rulenames,1);
                         'outputvar', deblank(vname),...
                         'values', []...
                     ));
-                end;
-            end;
+                end
+            end
             if modelbase.option(2)==1
                for p=1:size(modelbase.innos,1)
-                   for pp=1:4;
+                   for pp=1:4
                         if  modelbase.pos_shock(p,modelbase.models(epsilon))~=0
                             irfmod = deblank(strtrim(modelbase.names(modelbase.models(epsilon),:)));
                             irfrule = deblank(modelbase.rulenamesshort1(modelbase.l,:));
-                            irfshock = ([deblank(modelbase.namesshocks(p,1:3))]);
+                            irfshock = (deblank(modelbase.namesshocks(p,1:3)));
                             irfvar = keyvariables(pp,:);
 
                             outputmodel = horzcat(outputmodel, struct(...
@@ -283,21 +283,21 @@ for i=1:size(modelbase.rulenames,1);
                                 'outputvar', deblank(irfvar),...
                                 'values', []...
                             ));
-                       end;
-                   end;
-              end;
-          end;
+                        end
+                   end
+               end
+            end
         else
         modelbase.l=i;
             warning off
             if modelbase.option(1)==1
-                for pp=1:4;
+                for pp=1:4
                             autmod = deblank(strtrim(modelbase.names(modelbase.models(epsilon),:)));
                             autrule = deblank(modelbase.rulenamesshort1(modelbase.l,:));
                             autvar = keyvariables(pp,:);
                     if isfield (modelbase, 'AUTendo_names')
-                        if loc(modelbase.AUTendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:))~=0;
-                            eval(['AUTval = modelbase.AUTR.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:))))(loc(modelbase.AUTendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:)),:);']);
+                        if loc(modelbase.AUTendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:))~=0
+                            eval('AUTval = modelbase.AUTR.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:))))(loc(modelbase.AUTendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:)),:);');
                             if max(isnan(AUTval))==0
                             outputmodel = horzcat(outputmodel, struct(...
                                 'model', deblank(autmod),...
@@ -326,7 +326,7 @@ for i=1:size(modelbase.rulenames,1);
                                 'outputvar', deblank(autvar),...
                                 'values', []...
                             ));
-                        end;
+                        end
                           else
                             outputmodel = horzcat(outputmodel, struct(...
                                 'model', deblank(autmod),...
@@ -337,17 +337,17 @@ for i=1:size(modelbase.rulenames,1);
                                 'values', []...
                             ));
                     end
-               end;
-            end;
+               end
+            end
             if modelbase.option(5)==1
-                for pp=1:4;
+                for pp=1:4
                             vmod = deblank(strtrim(modelbase.names(modelbase.models(epsilon),:)));
                             vrule = deblank(modelbase.rulenamesshort1(modelbase.l,:));
                             vname = keyvariables(pp,:);
                        if isfield (modelbase,'VARendo_names')
-                            if loc(modelbase.VARendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:))~=0;
+                            if loc(modelbase.VARendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:))~=0
                             var = modelbase.VAR.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:))))(loc(modelbase.VARendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:)),loc(modelbase.VARendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:)));
-                            eval(['VARval = modelbase.VAR.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:))))(loc(modelbase.VARendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:)),loc(modelbase.VARendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:)));']);
+                            eval('VARval = modelbase.VAR.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:))))(loc(modelbase.VARendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:)),loc(modelbase.VARendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:)));');
                             if max(isnan(VARval))==0
                             outputmodel = horzcat(outputmodel, struct(...
                                 'model', deblank(vmod),...
@@ -367,6 +367,16 @@ for i=1:size(modelbase.rulenames,1);
                                'values', []...
                            ));
                             end
+                            else
+                           outputmodel = horzcat(outputmodel, struct(...
+                               'model', deblank(vmod),...
+                               'rule', deblank(vrule),...
+                               'shock', [],...
+                               'func', 'VAR',...
+                               'outputvar', deblank(vname),...
+                               'values', []...
+                           ));
+                            end
                        else
                            outputmodel = horzcat(outputmodel, struct(...
                                'model', deblank(vmod),...
@@ -376,31 +386,21 @@ for i=1:size(modelbase.rulenames,1);
                                'outputvar', deblank(vname),...
                                'values', []...
                            ));
-                       end;
-                       else
-                           outputmodel = horzcat(outputmodel, struct(...
-                               'model', deblank(vmod),...
-                               'rule', deblank(vrule),...
-                               'shock', [],...
-                               'func', 'VAR',...
-                               'outputvar', deblank(vname),...
-                               'values', []...
-                           ));
-                       end;
-                end;
-            end;
+                       end
+                end
+            end
             if modelbase.option(2)==1
                for p=1:size(modelbase.innos,1)
                    irfmod = deblank(strtrim(modelbase.names(modelbase.models(epsilon),:)));
                    irfrule = deblank(modelbase.rulenamesshort1(modelbase.l,:));
-                   irfshock = ([deblank(modelbase.namesshocks(p,1:3))]);
-                   for pp=1:4;
+                   irfshock = (deblank(modelbase.namesshocks(p,1:3)));
+                   for pp=1:4
                         irfvar = keyvariables(pp,:);
                             if  modelbase.pos_shock(p,modelbase.models(epsilon))~=0
                             irfvar = keyvariables(pp,:);
                             if isfield (modelbase,'IRFendo_names')
                             if loc(modelbase.IRFendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:))~=0
-                                eval(['IRFval = modelbase.IRF.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:))))(loc(modelbase.IRFendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:)),:,p);']);
+                                eval('IRFval = modelbase.IRF.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:))))(loc(modelbase.IRFendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:)),:,p);');
 
                                 outputmodel = horzcat(outputmodel, struct(...
                                     'model', deblank(irfmod),...
@@ -419,8 +419,8 @@ for i=1:size(modelbase.rulenames,1);
                                     'outputvar', deblank(irfvar),...
                                     'values', []...
                                 ));
-                            end;
-                        else
+                            end
+                            else
                             outputmodel = horzcat(outputmodel, struct(...
                                 'model', deblank(irfmod),...
                                 'rule', deblank(irfrule),...
@@ -429,8 +429,8 @@ for i=1:size(modelbase.rulenames,1);
                                 'outputvar', deblank(irfvar),...
                                 'values', []...
                             ));
-                        end;
-                        else
+                            end
+                            else
                             outputmodel = horzcat(outputmodel, struct(...
                                 'model', deblank(irfmod),...
                                 'rule', deblank(irfrule),...
@@ -439,14 +439,14 @@ for i=1:size(modelbase.rulenames,1);
                                 'outputvar', deblank(irfvar),...
                                 'values', []...
                             ));
-                        end;
+                            end
 
-                   end;
-              end;
-          end;
-        end;
-    end;
-end;
+                   end
+               end
+            end
+        end
+    end
+end
 try
     eval(['modelbase.result.', strtrim(modelbase.names(modelbase.modelchosen,:)),  '= result;']);
 catch
@@ -456,7 +456,7 @@ end
 modelbase.AUTR = []; modelbase.AUTendo_names = []; modelbase.IRF = []; modelbase.IRFendo_names = []; modelbase.VAR = []; modelbase.VARendo_names = [];
 modelbase.pos_shock = [];
 
-end;
+end
 
 savejson('', outputmodel, 'Modelbasefile.json');
 
@@ -466,25 +466,5 @@ modelbase.totaltime = cputime-modelbase.totaltime;
 disp(['Total elapsed cputime: ' ,num2str(modelbase.totaltime), ' seconds.']);
 rmpath(modelbase.homepath);
 
-end
-
-function [IRF_Non_Aux_Var,IRFendo_names_Non_Aux]=Get_IRF_VAR(current_shock,current_rule,i, rules_set,rules_chosen,rule_solved,rules_setshort1,IRF_STR,Index_Non_Aux_Var,All_Endo_Var,precision)
-r1=1;
-for r=1:size(rules_set,1)
-    if (rules_chosen(r)>0)
-        if ~rule_solved(r)
-            IRF_Non_Negligeable_Var = IRF_STR.(strtrim(deblank(rules_setshort1(r,:))))(:,:,current_shock);
-            for v=1:size(IRF_Non_Negligeable_Var,1)
-                IRF_Non_Negligeable(v,r1)=(max(abs(IRF_Non_Negligeable_Var(v,:)))>precision);
-            end
-            r1=r1+1;
-        end
-    end
-end
-Index_Non_Negligeable_Var{current_shock}=max(IRF_Non_Negligeable,[],2);
-Index_Non_Negligeable_Var{current_shock}=find(Index_Non_Negligeable_Var{current_shock}>0);
-To_be_plotted=intersect(Index_Non_Aux_Var,Index_Non_Negligeable_Var{current_shock});
-IRF_Non_Aux_Var=IRF_STR.(strtrim(deblank(rules_setshort1(current_rule,:))))(To_be_plotted,:,:);
-IRFendo_names_Non_Aux = All_Endo_Var(To_be_plotted,:);
 end
 
