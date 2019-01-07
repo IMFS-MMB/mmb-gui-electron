@@ -12,6 +12,10 @@ const commonExecutables = {
   ],
   darwin: [
     // darwin is macOS
+    {
+      type: 'matlab',
+      pattern: '/Applications/MATLAB_*.app',
+    },
   ],
   win32: [
     // Use forward slashes. '/' is mapped to 'C:\'
