@@ -1,5 +1,6 @@
 import { remote } from 'electron'; // eslint-disable-line
 import { getExecutableInfo, findExecutables } from '@/utils/electron/find-executables';
+import { platform } from 'os';
 
 const { dialog } = remote;
 
@@ -101,7 +102,13 @@ const actions = {
           return;
         }
 
-        const path = filePaths[0];
+        let path = filePaths[0];
+
+        if (platform() === 'darwin' && type === 'matlab' && path.endsWith('.app')) {
+          // special treatment for matlab on macOS
+          // the matlab .app "file" actually is a folder, so append the proper path
+          path += '/bin/matlab';
+        }
 
         const info = await getExecutableInfo({
           path,
