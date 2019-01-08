@@ -26,7 +26,35 @@
                     <Chart :title="data.title" :series="data.series"></Chart>
                 </b-col>
             </b-row>
+        </template>
 
+        <template v-if="varianceData">
+            <b-row class="mt-5"></b-row>
+            <b-row class="mt-1">
+                <b-col>
+
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th>Variances</th>
+                            <th>Inflation</th>
+                            <th>Interest Rate</th>
+                            <th>Output</th>
+                            <th>Output Gap</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr v-for="variance of varianceData">
+                            <th>{{variance.title}}</th>
+                            <td>{{variance.data.inflation}}</td>
+                            <td>{{variance.data.interest}}</td>
+                            <td>{{variance.data.output}}</td>
+                            <td>{{variance.data.outputgap}}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </b-col>
+            </b-row>
         </template>
     </div>
 </template>
@@ -50,7 +78,7 @@
       };
     },
     computed: {
-      ...mapGetters('comparison', ['chartData', 'inProgress', 'show']),
+      ...mapGetters('comparison', ['varianceData', 'chartData', 'inProgress', 'show']),
       ...mapGetters('selections', ['numModels', 'numPolicyRules', 'numShocks', 'numOutputVars']),
       rows() {
         const data = this.chartData;
