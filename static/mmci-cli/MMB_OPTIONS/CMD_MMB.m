@@ -457,12 +457,12 @@ end
 try
     eval(['modelbase.result.', strtrim(modelbase.names(modelbase.modelchosen,:)),  '= result;']);
 catch
+end
     catch
         cd ..
         cd ..
         cd MMB_OPTIONS
     end
-end
 
 % The following lines are necessary so that the dimensions of the respective matrices adjust with each model
 modelbase.AUTR = []; modelbase.AUTendo_names = []; modelbase.IRF = []; modelbase.IRFendo_names = []; modelbase.VAR = []; modelbase.VARendo_names = [];
