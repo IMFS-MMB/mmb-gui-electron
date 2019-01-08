@@ -14,11 +14,17 @@ end
 %%%%%%%%%%%%%%%%%%% Declaration of key settings
 warning('off','all')
 OSenvironment = isunix;
-%% Adding dynare to path if it was not
+%% Adding dynare to path if it was not, and throw error, if Dynare not installed
 if OSenvironment==1
+    if exist('/Applications/Dynare')~= 7
+           error('Error. Dynare is not installed')
+    end
     addpath('/usr/local/opt/dynare/lib/dynare/matlab')
     addpath('/Applications/Dynare/4.5.6/matlab')
 else
+    if exist('c:\dynare')~= 7
+           error('Error. Dynare is not installed')
+    end
     addpath('c:\dynare\4.5.6\matlab')
 end
 %% Adding MMB to path (required for Dynare and Octave)
@@ -97,6 +103,7 @@ outputmodel = struct(...
 %%%%%%%%   Loop for Solving a model together with each chosen rule and producing results %%%%%%
 
 for epsilon=1:size(modelbase.models,2)
+    try
 for i=1:size(modelbase.rulenames,1)
 rulenamesshort1= deblank(modelbase.rulenamesshort1(logical(modelbase.rule),:));
     if (modelbase.rule(i)>0) % If the i-th rule has been chosen
@@ -450,6 +457,11 @@ end
 try
     eval(['modelbase.result.', strtrim(modelbase.names(modelbase.modelchosen,:)),  '= result;']);
 catch
+    catch
+        cd ..
+        cd ..
+        cd MMB_OPTIONS
+    end
 end
 
 % The following lines are necessary so that the dimensions of the respective matrices adjust with each model
