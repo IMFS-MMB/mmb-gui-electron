@@ -22,7 +22,13 @@ export default async function compare(ctx, models, policyRules, outputVars, shoc
     data => ctx.commit('addStdOut', data.toString()), // todo: handle errors differently if needed
   );
 
-  const output = await readJsonFile(path.join(cwd, 'Modelbasefile.json'));
+  let output = [];
+
+  try {
+    output = await readJsonFile(path.join(cwd, 'Modelbasefile.json'));
+  } catch (e) {
+    logger.warn(e.message);
+  }
 
   logger.debug(JSON.stringify(output, null, true));
 
