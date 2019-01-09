@@ -1,7 +1,5 @@
-// import commandExists from 'command-exists';
-
+import { platform } from 'os';
 import execute from './execute';
-// import { isExecutableSync } from './is-executable';
 
 class Base {
   constructor(options) {
@@ -61,9 +59,17 @@ export class Octave extends Base {
 
 export class Matlab extends Base {
   constructor(options) {
+    const defaultArgs = ['-nodesktop', '-nosplash', '-nojvm', '-nodisplay', '-noawt', '-noFigureWindows'];
+
+    // '-log' is undocumented, but seems to send output to stdout for some versions of matlab.
+    // https://stackoverflow.com/a/41818741/5227141
+    if (platform() === 'win32') {
+      defaultArgs.push('-wait', '-log');
+    }
+
     super({
       ...options,
-      defaultArgs: ['-nodesktop', '-nosplash', '-nojvm', '-nodisplay', '-noawt', '-noFigureWindows'],
+      defaultArgs,
     });
   }
 
