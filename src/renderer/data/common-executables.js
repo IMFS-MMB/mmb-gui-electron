@@ -23,6 +23,10 @@ const commonExecutables = {
       type: 'octave',
       pattern: '/Octave/**/octave-cli.exe', // e.g. c:\Octave\4.3.2\bin\octave-cli.exe
     },
+    {
+      type: 'matlab',
+      pattern: '/Program Files/matlab/*/bin/matlab.exe',
+    },
   ],
   all: [
     {
