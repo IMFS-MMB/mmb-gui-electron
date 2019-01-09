@@ -14,12 +14,48 @@ const state = {
   error: false,
 };
 
+function toSeries(data) {
+  return data
+    .map(d => ({
+      name: `${d.model}, ${d.rule}`,
+      data: d.values,
+    }))
+    .filter(d => !!d.data);
+}
+
+function toChartData(raw, title, filter) {
+  const data1 = raw
+    .filter(filter);
+
+  if (!data1.length) {
+    return null;
+  }
+
+  const grouped = groupBy(data1, d => d.outputvar);
+
+  return [
+    {
+      title: `${title} - Inflation`,
+      series: toSeries(grouped.inflation),
+    },
+    {
+      title: `${title} - Interest Rate`,
+      series: toSeries(grouped.interest),
+    },
+    {
+      title: `${title} - Output`,
+      series: toSeries(grouped.output),
+    },
+    {
+      title: `${title} - Output Gap`,
+      series: toSeries(grouped.outputgap),
+    },
+  ];
+}
+
 const getters = {
   show(state) {
     return state.show;
-  },
-  data(state) {
-    return state.data;
   },
   stdout(state) {
     return state.stdout;
@@ -27,12 +63,21 @@ const getters = {
   inProgress(state) {
     return state.inProgress;
   },
-  varianceData(state, getters) {
-    const variances = getters.data.filter(data => data.func === 'VAR');
+  acCharts(state) {
+    return toChartData(state.data, 'Autocorrelation Fct.', d => d.func === 'AC');
+  },
+  monCharts(state) {
+    return toChartData(state.data, 'Monetary Shock', d => d.shock === 'Mon');
+  },
+  fisCharts(state) {
+    return toChartData(state.data, 'Fiscal Shock', d => d.shock === 'Fis');
+  },
+  varTable(state) {
+    const varResults = state.data.filter(data => data.func === 'VAR');
 
-    const grouped = groupBy(variances, data => `${data.model}, ${data.rule}`);
+    const groupedVariances = groupBy(varResults, data => `${data.model}, ${data.rule}`);
 
-    const result = map(grouped, (data, index) => ({
+    return map(groupedVariances, (data, index) => ({
       title: index,
       data: {
         inflation: (data.find(d => d.outputvar === 'inflation') || {}).values,
@@ -41,27 +86,6 @@ const getters = {
         outputgap: (data.find(d => d.outputvar === 'outputgap') || {}).values,
       },
     }));
-
-    return result;
-  },
-  chartData(state, getters) {
-    const others = getters.data.filter(data => data.func !== 'VAR');
-
-    const grouped = groupBy(others, data => `${data.rule} ${data.shock} ${data.outputvar} ${data.func}`);
-
-    const result = map(grouped, (data, index) => {
-      const series = data.map(d => ({
-        name: d.model,
-        data: d.values,
-      }));
-
-      return {
-        title: index,
-        series,
-      };
-    });
-
-    return result;
   },
 };
 

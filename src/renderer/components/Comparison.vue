@@ -19,16 +19,26 @@
             </b-col>
         </b-row>
 
-        <template v-for="row of rows">
-            <b-row class="mt-5"></b-row>
-            <b-row class="mt-1">
-                <b-col v-for="(data, index) of row" :key="index">
-                    <Chart :title="data.title" :series="data.series"></Chart>
-                </b-col>
-            </b-row>
-        </template>
+        <b-row class="mt-5"></b-row>
+        <b-row class="mt-1">
+            <b-col v-for="(data, index) of acCharts" :key="index">
+                <Chart :title="data.title" :series="data.series"></Chart>
+            </b-col>
+        </b-row>
+        <b-row class="mt-5"></b-row>
+        <b-row class="mt-1">
+            <b-col v-for="(data, index) of monCharts" :key="index">
+                <Chart :title="data.title" :series="data.series"></Chart>
+            </b-col>
+        </b-row>
+        <b-row class="mt-5"></b-row>
+        <b-row class="mt-1">
+            <b-col v-for="(data, index) of fisCharts" :key="index">
+                <Chart :title="data.title" :series="data.series"></Chart>
+            </b-col>
+        </b-row>
 
-        <template v-if="varianceData">
+        <template v-if="varTable && varTable.length">
             <b-row class="mt-5"></b-row>
             <b-row class="mt-1">
                 <b-col>
@@ -44,7 +54,7 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr v-for="variance of varianceData">
+                        <tr v-for="variance of varTable">
                             <th>{{variance.title}}</th>
                             <td>{{variance.data.inflation}}</td>
                             <td>{{variance.data.interest}}</td>
@@ -65,7 +75,7 @@
   import { mapGetters } from 'vuex';
   import scrollIntoView from '@/utils/scrollIntoView';
 
-  const CHARTS_PER_ROW = 2;
+  // const CHARTS_PER_ROW = 2;
 
   export default {
     components: {
@@ -78,19 +88,19 @@
       };
     },
     computed: {
-      ...mapGetters('comparison', ['varianceData', 'chartData', 'inProgress', 'show']),
+      ...mapGetters('comparison', ['varTable', 'acCharts', 'monCharts', 'fisCharts', 'inProgress', 'show']),
       ...mapGetters('selections', ['numModels', 'numPolicyRules', 'numShocks', 'numOutputVars']),
-      rows() {
-        const data = this.chartData;
-
-        const result = [];
-
-        for (let i = 0; i < data.length; i += CHARTS_PER_ROW) {
-          result.push(data.slice(i, i + CHARTS_PER_ROW));
-        }
-
-        return result;
-      },
+      // rows() {
+      //   const data = this.data;
+      //
+      //   const result = [];
+      //
+      //   for (let i = 0; i < data.length; i += CHARTS_PER_ROW) {
+      //     result.push(data.slice(i, i + CHARTS_PER_ROW));
+      //   }
+      //
+      //   return result;
+      // },
     },
     watch: {
       inProgress(newVal, oldVal) {
