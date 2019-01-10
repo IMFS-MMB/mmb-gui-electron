@@ -59,13 +59,16 @@ export class Octave extends Base {
 
 export class Matlab extends Base {
   constructor(options) {
-    const defaultArgs = ['-nodesktop', '-nosplash', '-nojvm', '-nodisplay', '-noawt', '-noFigureWindows'];
+    const defaultArgs = ['-nodesktop', '-nosplash', '-nojvm', '-noawt', '-noFigureWindows'];
+    const platformArgs = {
+      // '-log' is undocumented, but seems to send output to stdout for some versions of matlab.
+      // https://stackoverflow.com/a/41818741/5227141
+      win32: ['-wait', '-log'],
+      linux: ['-nodisplay'],
+      darwin: ['-nodisplay'],
+    };
 
-    // '-log' is undocumented, but seems to send output to stdout for some versions of matlab.
-    // https://stackoverflow.com/a/41818741/5227141
-    if (platform() === 'win32') {
-      defaultArgs.push('-wait', '-log');
-    }
+    defaultArgs.push(...platformArgs[platform()]);
 
     super({
       ...options,
