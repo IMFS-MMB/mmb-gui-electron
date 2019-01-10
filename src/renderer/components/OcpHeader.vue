@@ -8,7 +8,7 @@
                     <p>
                     Welcome to the <a href="https://www.macromodelbase.com/" target="_blank">Macroeconomic Modeldatabase</a>
                         <!--(MMB) Online Comparison Platform (OCP).</p> </b-col>-->
-                        (MMB) v.3.0. Contrubute your model using our <a href="http://www.macromodelbase.com/form/code-submission" target="_blank">Contribute Form</a> or 
+                        (MMB) v.3.0. Contribute your model using our <a href="http://www.macromodelbase.com/form/code-submission" target="_blank">Contribute Form</a> or 
                     get in touch via our 
                     <a href="https://mmb.trydiscourse.com/" target="_blank">forum</a>.
                         </p> </b-col>
