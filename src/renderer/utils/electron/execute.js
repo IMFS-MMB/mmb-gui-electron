@@ -1,4 +1,5 @@
 import { spawn } from 'cross-spawn';
+import { addBreadcrumb } from '@sentry/electron';
 
 /**
  * Runs an executable
@@ -6,6 +7,15 @@ import { spawn } from 'cross-spawn';
 export default async function execute(path, cwd, args, onData, onError) {
   return new Promise((resolve, reject) => {
     try {
+      addBreadcrumb({
+        type: 'spawn',
+        data: {
+          path,
+          args,
+          cwd,
+        },
+      });
+
       const child = spawn(path, args, {
         cwd,
       });
