@@ -14,7 +14,7 @@ const commonExecutables = {
     // darwin is macOS
     {
       type: 'matlab',
-      path: '/Applications/MATLAB_R2018b.app/bin/matlab',
+      path: '/Applications/MATLAB_*.app/bin/matlab',
     },
   ],
   win32: [

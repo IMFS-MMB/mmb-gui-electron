@@ -22,10 +22,10 @@ class Base {
   }
 
   async getVersion() {
-    let version;
+    let version = '';
 
     await this.runCode('fprintf(version); exit()', (data) => {
-      version = data.toString();
+      version += data.toString();
     });
 
     return version;
@@ -59,7 +59,7 @@ export class Octave extends Base {
 
 export class Matlab extends Base {
   constructor(options) {
-    const defaultArgs = ['-nodesktop', '-nosplash', '-nojvm', '-noawt', '-noFigureWindows'];
+    const defaultArgs = ['-nodesktop', '-nosplash', '-nojvm', '-noFigureWindows'];
     const platformArgs = {
       // '-log' is undocumented, but seems to send output to stdout for some versions of matlab.
       // https://stackoverflow.com/a/41818741/5227141
@@ -80,6 +80,16 @@ export class Matlab extends Base {
     const args = this.getArgs('-r', code);
 
     return this.execute(args, onData, onError);
+  }
+
+  async getVersion() {
+    // matlab prints a header to stdout. remove it by just getting everything after the last \n
+    const headerAndVersion = await super.getVersion();
+    const split = headerAndVersion.split('\n');
+
+    const version = split[split.length - 1];
+
+    return version;
   }
 }
 
