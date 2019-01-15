@@ -32,20 +32,21 @@ export default function buildMatlabScript(models, rules, output, shocks, userRul
   // todo: fix hardcoded vector lengths
   const lines = [
     'try',
-    `  models = ${toVector(models, 114)};`,
-    `  rules = ${toVector(rules, 11)};`,
-    `  output = ${toVector(output, 3)};`,
-    `  shocks = ${toVector(shocks, 2)};`,
-    `  CMD_MMB(models,rules,output,shocks${moreArgs});`,
+    `  models = ${toVector(models, 114)}`,
+    `  rules = ${toVector(rules, 11)}`,
+    `  output = ${toVector(output, 3)}`,
+    `  shocks = ${toVector(shocks, 2)}`,
+    `  CMD_MMB(models,rules,output,shocks${moreArgs})`,
     'catch ERR',
     '  disp(\'\')',
     '  disp(\'An error occured:\')',
     '  disp(ERR)',
     'end',
-    'exit();',
+    'exit()',
   ];
 
-  const result = lines.join('\n');
+  // macOS somehow struggles with newlines in args, use semicolons
+  const result = lines.join(';');
 
   logger.info(result);
 
