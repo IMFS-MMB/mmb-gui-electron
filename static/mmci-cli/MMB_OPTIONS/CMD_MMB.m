@@ -16,16 +16,16 @@ warning('off','all')
 OSenvironment = isunix;
 %% Adding dynare to path if it was not, and throw error, if Dynare not installed
 if OSenvironment==1
-    if exist('/Applications/Dynare')~= 7
-           error('Error. Dynare is not installed')
-    end
     addpath('/usr/local/opt/dynare/lib/dynare/matlab')
     addpath('/Applications/Dynare/4.5.6/matlab')
-else
-    if exist('c:\dynare')~= 7
+    if ~exist('dynare')
            error('Error. Dynare is not installed')
     end
+else
     addpath('c:\dynare\4.5.6\matlab')
+    if ~exist('dynare')
+    error('Error. Dynare is not installed')
+    end
 end
 %% Adding MMB to path (required for Dynare and Octave)
 cd(fileparts(mfilename('fullpath')));
