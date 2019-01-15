@@ -58,8 +58,8 @@ export async function findExecutables() {
   /* eslint-disable */
 
   for (const exe of commonExecutables) {
-    if (exe.pattern) {
-      const paths = await glob(exe.pattern, {
+    if (glob.hasMagic(exe.path)) {
+      const paths = await glob(exe.path, {
         absolute: true,
         cwd: '/',
         silent: true,
@@ -72,7 +72,7 @@ export async function findExecutables() {
           path
         }));
       }
-    } else if (exe.path) {
+    } else {
       result.push(await getExecutableInfo(exe));
     }
   }

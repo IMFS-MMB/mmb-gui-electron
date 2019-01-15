@@ -14,18 +14,18 @@ const commonExecutables = {
     // darwin is macOS
     {
       type: 'matlab',
-      pattern: '/Applications/MATLAB_*.app/bin/matlab',
+      path: '/Applications/MATLAB_*.app/bin/matlab',
     },
   ],
   win32: [
     // Use forward slashes. '/' is mapped to 'C:\'
     {
       type: 'octave',
-      pattern: '/Octave/**/octave-cli.exe', // e.g. c:\Octave\4.3.2\bin\octave-cli.exe
+      path: '/Octave/**/octave-cli.exe', // e.g. c:\Octave\4.3.2\bin\octave-cli.exe
     },
     {
       type: 'matlab',
-      pattern: '/Program Files/matlab/*/bin/matlab.exe',
+      path: '/Program Files/matlab/*/bin/matlab.exe',
     },
   ],
   all: [
