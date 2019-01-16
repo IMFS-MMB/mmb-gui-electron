@@ -23,21 +23,21 @@ location=cd;
 d_version=dynare_version;
 if ~isempty(str2num(d_version([1 3])))
     if str2num(d_version([1 3]))==42 % for dynare versions higher than 4.2.0 and AL Models, we have modeifed the dr1.m of dynare(basically by storing the model jacobian)
-        if exist([location '\ALTOOL\dr1_AL.m'], 'file')==2
-            copyfile([location '\ALTOOL\dr1_AL.m'],[location '\ALTOOL\dr1.m']);
+        if exist([location  filesep 'ALTOOL' filesep 'dr1_AL.m'], 'file')==2
+            copyfile([location  filesep 'ALTOOL' filesep 'dr1_AL.m'],[location  filesep 'ALTOOL' filesep 'dr1.m']);
         end
     elseif str2num(d_version([1 3]))>42 && str2num(d_version([1 3]))<45 % for dynare versions higher than 4.3.0 and AL Models, we have modeifed the stochastic_solvers.m of dynare(basically by storing the model jacobian)
-        if exist([location '\ALTOOL\stochastic_solvers_AL_Dynare_' d_version([1 3]) '.m'], 'file')==2
-            copyfile([location '\ALTOOL\stochastic_solvers_AL_Dynare_' d_version([1 3]) '.m'],[location '\ALTOOL\stochastic_solvers.m']);
+        if exist([location  filesep 'ALTOOL' filesep 'stochastic_solvers_AL_Dynare_' d_version([1 3]) '.m'], 'file')==2
+            copyfile([location  filesep 'ALTOOL' filesep 'stochastic_solvers_AL_Dynare_' d_version([1 3]) '.m'],[location  filesep 'ALTOOL' filesep 'stochastic_solvers.m']);
         end
     elseif str2num(d_version([1 3]))>44  % for dynare versions higher than 4.4.* and AL Models, we have to use the modeifed stochastic_solvers.m of dynare(basically by storing the model jacobian)
-        if exist([location '\ALTOOL\stochastic_solvers_AL_Dynare_45.m'], 'file')==2
-            copyfile([location '\ALTOOL\stochastic_solvers_AL_Dynare_45.m'],[location '\ALTOOL\stochastic_solvers.m']);
+        if exist([location  filesep 'ALTOOL' filesep 'stochastic_solvers_AL_Dynare_45.m'], 'file')==2
+            copyfile([location  filesep 'ALTOOL' filesep 'stochastic_solvers_AL_Dynare_45.m'],[location  filesep 'ALTOOL' filesep 'stochastic_solvers.m']);
         end
     end
 else % for unstable (not numbered) versions of dynare versions higher than 4.5 and AL Models, we have modeifed the stochastic_solvers.m of dynare(basically by storing the model jacobian)
-    if exist([location '\ALTOOL\stochastic_solvers_AL_Dynare_45.m'], 'file')==2
-        copyfile([location '\ALTOOL\stochastic_solvers_AL_Dynare_45.m'],[location '\ALTOOL\stochastic_solvers.m']);
+    if exist([location  filesep 'ALTOOL' filesep 'stochastic_solvers_AL_Dynare_45.m'], 'file')==2
+        copyfile([location  filesep 'ALTOOL' filesep 'stochastic_solvers_AL_Dynare_45.m'],[location  filesep 'ALTOOL' filesep 'stochastic_solvers.m']);
     end
 end
 if AL % MODELBASE change
@@ -193,11 +193,11 @@ else
             oo_.var = Gamma_y{1}; % Variances
         end
         if AL
-            base.VAR.(num2str(deblank(base.rulenamesshort1(base.l,:)))) =oo_.var;
-            base.VARendo_names.(num2str(deblank(base.rulenamesshort1(base.l,:))))=M_.endo_names;
+            base.VAR.(strtrim(deblank(base.rulenamesshort1(base.l,:)))) =oo_.var;
+            base.VARendo_names.(strtrim(deblank(base.rulenamesshort1(base.l,:))))=M_.endo_names;
         else
-            base.VAR.(num2str(deblank(base.rulenamesshort1(base.l,:)))) =Gamma_y{1};
-            base.VARendo_names.(num2str(deblank(base.rulenamesshort1(base.l,:))))=M_.endo_names;
+            base.VAR.(strtrim(deblank(base.rulenamesshort1(base.l,:)))) =Gamma_y{1};
+            base.VARendo_names.(strtrim(deblank(base.rulenamesshort1(base.l,:))))=M_.endo_names;
         end
         if AL
             aut = zeros(nvar,base.horizon,n_sims);
@@ -220,11 +220,11 @@ else
         end
         
         if base.option(1) == 1; % If ACF are selected...
-           base.AUTR.(num2str(deblank(base.rulenamesshort1(base.l,:))))(:,:)=[ones(size(R,1),1),R];
-           base.AUTendo_names.(num2str(deblank(base.rulenamesshort1(base.l,:))))(:,:)=M_.endo_names(ivar,:);
+           base.AUTR.(strtrim(deblank(base.rulenamesshort1(base.l,:))))(:,:)=[ones(size(R,1),1),R];
+           base.AUTendo_names.(strtrim(deblank(base.rulenamesshort1(base.l,:))))(:,:)=M_.endo_names(ivar,:);
         else
-           base.AUTR.(num2str(deblank(base.rulenamesshort1(base.l,:)))) = [];
-           base.AUTendo_names.(num2str(deblank(base.rulenamesshort1(base.l,:)))) = [];
+           base.AUTR.(strtrim(deblank(base.rulenamesshort1(base.l,:)))) = [];
+           base.AUTendo_names.(strtrim(deblank(base.rulenamesshort1(base.l,:)))) = [];
         end
         
         % Impulse response functions
@@ -299,7 +299,7 @@ else
                     end
                     
                     if ii==0
-                        disp(['No ' deblank(num2str(base.namesshocks(p,:))) ' is available for Model: ' num2str(base.names(base.models(base.epsilon),:))]);
+                        disp(['No ' deblank(strtrim(base.namesshocks(p,:))) ' is available for Model: ' strtrim(base.names(base.models(base.epsilon),:))]);
                     end;
                     if AL
                         if base.variabledim(base.models(base.epsilon)) ==1
@@ -324,8 +324,8 @@ else
                 else
                     R=irf(oo_.dr,cs(M_.exo_names_orig_ord,1), options_.irf, options_.drop, options_.replic, options_.order);
                 end
-                base.IRF.(num2str(deblank(base.rulenamesshort1(base.l,:))))(:,:,1) = [zeros(size(R,1),1),R];
-                base.IRFendo_names.(num2str(deblank(base.rulenamesshort1(base.l,:))))(:,:)=M_.endo_names;
+                base.IRF.(strtrim(deblank(base.rulenamesshort1(base.l,:))))(:,:,1) = [zeros(size(R,1),1),R];
+                base.IRFendo_names.(strtrim(deblank(base.rulenamesshort1(base.l,:))))(:,:)=M_.endo_names;
             else
                 for p=1:size(base.innos,1)
                     cd('..');
@@ -340,7 +340,7 @@ else
                     end
                     
                     if ii==0
-                        disp(['No ' deblank(num2str(base.namesshocks(p,:))) ' is available for Model: ' num2str(base.names(base.models(base.epsilon),:))]);
+                        disp(['No ' deblank(strtrim(base.namesshocks(p,:))) ' is available for Model: ' strtrim(base.names(base.models(base.epsilon),:))]);
                     else
                         % Computing the IRFs
                         if AL
@@ -368,26 +368,26 @@ else
                         else
                             R=irf(oo_.dr,cs(M_.exo_names_orig_ord,ii), options_.irf, options_.drop, options_.replic, options_.order);
                         end
-                        base.IRF.(num2str(deblank(base.rulenamesshort1(base.l,:))))(:,:,p) = [zeros(size(R,1),1),R];
-                        base.IRFendo_names.(num2str(deblank(base.rulenamesshort1(base.l,:))))(:,:)=M_.endo_names;
+                        base.IRF.(strtrim(deblank(base.rulenamesshort1(base.l,:))))(:,:,p) = [zeros(size(R,1),1),R];
+                        base.IRFendo_names.(strtrim(deblank(base.rulenamesshort1(base.l,:))))(:,:)=M_.endo_names;
                     end;
                 end;
             end;
         else
-            base.IRF.(num2str(deblank(base.rulenamesshort1(base.l,:)))) = [];
-            base.IRFendo_names.(num2str(deblank(base.rulenamesshort1(base.l,:))))= [];
+            base.IRF.(strtrim(deblank(base.rulenamesshort1(base.l,:)))) = [];
+            base.IRFendo_names.(strtrim(deblank(base.rulenamesshort1(base.l,:))))= [];
         end
     end
 end
 if AL
     if ~isempty(str2num(d_version([1 3])))
         if str2num(d_version([1 3]))==42
-            copyfile([location '\ALTOOL\dr1.m'],[location '\ALTOOL\dr1_AL.m']);
+            copyfile([location  filesep 'ALTOOL' filesep 'dr1.m'],[location  filesep 'ALTOOL' filesep 'dr1_AL.m']);
         elseif  str2num(d_version([1 3]))>42 && str2num(d_version([1 3]))<45
-            copyfile([location '\ALTOOL\stochastic_solvers.m'],[location '\ALTOOL\stochastic_solvers_AL_Dynare_' d_version([1 3]) '.m']);
+            copyfile([location  filesep 'ALTOOL' filesep 'stochastic_solvers.m'],[location  filesep 'ALTOOL' filesep 'stochastic_solvers_AL_Dynare_' d_version([1 3]) '.m']);
         end
     else
-        copyfile([location '\ALTOOL\stochastic_solvers.m'],[location '\ALTOOL\stochastic_solvers_AL_Dynare_45.m']);
+        copyfile([location  filesep 'ALTOOL' filesep 'stochastic_solvers.m'],[location  filesep 'ALTOOL' filesep 'stochastic_solvers_AL_Dynare_45.m']);
     end
 end
 
@@ -396,9 +396,9 @@ delete *_static.m
 delete *.log    
 delete *_set_auxiliary_variables.m
 delete *_results.mat
-%delete *.eps
-%delete *.fig
-%delete *.pdf
-%delete *.png
+delete *.eps
+delete *.fig
+delete *.pdf
+delete *.png
 delete([strtrim(deblank(base.names((base.models(base.epsilon)),:))),'.m'])
 %rmdir(strtrim(deblank(base.names((base.models(base.epsilon)),:))), 's')
