@@ -18,6 +18,7 @@ function [base]=stoch_simul_MMB(base)
 % along with Dynare.  If not, see <http://www.gnu.org/licenses/>.
 cd ..
 AL=base.AL; % MODELBASE Change
+warning('off','all')
 
 location=cd;
 d_version=dynare_version;

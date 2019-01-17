@@ -358,7 +358,6 @@ for i=1:size(modelbase.rulenames,1)
                             var = modelbase.VAR.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:))))(loc(modelbase.VARendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:)),loc(modelbase.VARendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:)));
                             eval('VARval = modelbase.VAR.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:))))(loc(modelbase.VARendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:)),loc(modelbase.VARendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:)));');
                             if max(isnan(VARval))==0
-                                VARval =round(VARval,4);
                                 outputmodel = horzcat(outputmodel, struct(...
                                 'model', deblank(vmod),...
                                 'rule', deblank(vrule),...
@@ -366,7 +365,7 @@ for i=1:size(modelbase.rulenames,1)
                                 'func', 'VAR',...
                                 'outputvar', deblank(vname),...
                                 'values', VARval...
-                            ));
+                                 ));
                             else 
                            outputmodel = horzcat(outputmodel, struct(...
                                'model', deblank(vmod),...
@@ -375,7 +374,7 @@ for i=1:size(modelbase.rulenames,1)
                                'func', 'VAR',...
                                'outputvar', deblank(vname),...
                                'values', []...
-                           ));
+                                ));
                             end
                             else
                            outputmodel = horzcat(outputmodel, struct(...
@@ -385,7 +384,7 @@ for i=1:size(modelbase.rulenames,1)
                                'func', 'VAR',...
                                'outputvar', deblank(vname),...
                                'values', []...
-                           ));
+                                ));
                             end
                        else
                            outputmodel = horzcat(outputmodel, struct(...
@@ -461,15 +460,17 @@ try
     eval(['modelbase.result.', strtrim(modelbase.names(modelbase.modelchosen,:)),  '= result;']);
 catch
 end
-    catch
-        cd ..
-        cd ..
-        cd MMB_OPTIONS
+    catch   e %e is an MException struct
+        fprintf(1,'The identifier was:\n%s',e.identifier);
+        fprintf(1,'There was an error! The message was:\n%s',e.message);
+        % more error handling...%        
+        cd ([currentpath filesep 'MMB_OPTIONS' filesep]);
+        epsilon=epsilon+1;
     end
 
 % The following lines are necessary so that the dimensions of the respective matrices adjust with each model
 modelbase.AUTR = []; modelbase.AUTendo_names = []; modelbase.IRF = []; modelbase.IRFendo_names = []; modelbase.VAR = []; modelbase.VARendo_names = [];
-modelbase.pos_shock = [];
+modelbase.pos_shock = []; modelbase.setpath=[];
 
 end
 
