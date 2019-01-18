@@ -48,6 +48,10 @@ const getters = {
   modelsEstimatedOtherCountries(state, getters) {
     return getters.filteredModels.filter(model => model.description.category === 'Estimated other-country model');
   },
+
+  modelsAdaptiveLearning(state, getters) {
+    return getters.filteredModels.filter(model => model.description.category === 'Adaptive learning model');
+  },
 };
 
 const mutations = {};
