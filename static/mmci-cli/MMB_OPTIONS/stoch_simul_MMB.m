@@ -175,7 +175,6 @@ else
         options_.irf = base.horizon; % horizon for ACFs
         %cd('..');
         if AL       % HAVE TO REMEMBER MAKE R_sim IN DECLARATION ORDER!
-            h = waitbar(0,'Simulations running...');
             n_sims = 10;
             len_sim = 500;
             R_sim = zeros(nvar,len_sim,n_sims);
@@ -184,10 +183,8 @@ else
                 R_sim(:,:,j) = sim_AL_alt_gain(oo_.dr,len_sim,AL_,gain);
                 % Re-ordering into declaration order
                 R_sim(oo_.dr.order_var,:,j) = R_sim(:,:,j);
-                waitbar(j/n_sims,h);
                 Covar(:,:,j) = cov(R_sim(:,:,j)');
             end
-            close(h);
             oo_.var = mean(Covar,3);
         else
             [Gamma_y,stationary_vars] = th_autocovariances(oo_.dr,ivar,M_,options_,1);
