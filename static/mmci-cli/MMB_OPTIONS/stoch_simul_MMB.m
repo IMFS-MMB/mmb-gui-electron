@@ -118,10 +118,10 @@ else
     % Execute differently according to Dynare version
     if (strcmp(dynare_version, '4.2.0') || strcmp(dynare_version, '4.2.1') || strcmp(dynare_version, '4.2.2') || strcmp(dynare_version, '4.2.4')...
             || strcmp(dynare_version, '4.2.5'))
-        [oo_.dr, info] = resol(oo_.steady_state,0); % solve
+        [oo_.dr, info] = resol_MMB(oo_.steady_state,0); % solve
     elseif (strcmp(dynare_version, '4.3.0') || strcmp(dynare_version, '4.3.1') || strcmp(dynare_version, '4.3.2') || strcmp(dynare_version, '4.3.3')  )
         oo_.dr=set_state_space(dr,M_);
-        [oo_.dr,info] = resol(0,M_,options_,oo_); %solve
+        [oo_.dr,info] = resol_MMB(0,M_,options_,oo_); %solve
     else  % for dynare versions 4.4.0 or higher
         oo_.dr=set_state_space(dr,M_,options_);
         [oo_.dr.nstatic, oo_.dr.npred, oo_.dr.nboth, oo_.dr.nfwrd,oo_.dr.nsfwrd] = get_nvars_state_space(dr,M_);
@@ -135,7 +135,7 @@ else
             end
         end
         
-        [oo_.dr,info,M_,options_,oo_] = resol(0,M_,options_,oo_); %solve
+        [oo_.dr,info,M_,options_,oo_] = resol_MMB(0,M_,options_,oo_); %solve
     end
     
     % The follwoing if clause matters when the Dynare version is higher than
@@ -175,7 +175,6 @@ else
         options_.irf = base.horizon; % horizon for ACFs
         %cd('..');
         if AL       % HAVE TO REMEMBER MAKE R_sim IN DECLARATION ORDER!
-            h = waitbar(0,'Simulations running...');
             n_sims = 10;
             len_sim = 500;
             R_sim = zeros(nvar,len_sim,n_sims);
@@ -184,10 +183,8 @@ else
                 R_sim(:,:,j) = sim_AL_alt_gain(oo_.dr,len_sim,AL_,gain);
                 % Re-ordering into declaration order
                 R_sim(oo_.dr.order_var,:,j) = R_sim(:,:,j);
-                waitbar(j/n_sims,h);
                 Covar(:,:,j) = cov(R_sim(:,:,j)');
             end
-            close(h);
             oo_.var = mean(Covar,3);
         else
             [Gamma_y,stationary_vars] = th_autocovariances(oo_.dr,ivar,M_,options_,1);

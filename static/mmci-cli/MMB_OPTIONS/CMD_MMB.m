@@ -17,6 +17,7 @@ OSenvironment = isunix;
 %% Adding dynare to path if it was not, and throw error, if Dynare not installed
 if OSenvironment==1
     addpath('/usr/local/opt/dynare/lib/dynare/matlab')
+    addpath('/usr/lib/dynare/mex/octave')
     addpath('/Applications/Dynare/4.5.6/matlab')
     addpath('/Applications/Dynare/4.5.6/mex/octave')
     if ~exist('dynare')
@@ -172,7 +173,7 @@ rulenamesshort1= deblank(modelbase.rulenamesshort1(logical(modelbase.rule),:));
             if modelbase.AL
                 if ~ismember(modelbase.rule,[8 9 10])
                     thepath=cd;
-                    cd(modelbase.setpath(modelbase.models(epsilon),:))
+                    cd([modelbase.uphomepath filesep 'MODELS' filesep strtrim(modelbase.names(modelbase.models(epsilon),:))])
                     load AL_Info
                     cd(thepath);
                     AL_.forwards = AL_Info.forwards;
