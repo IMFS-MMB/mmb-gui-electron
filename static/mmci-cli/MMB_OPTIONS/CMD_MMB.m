@@ -173,7 +173,7 @@ rulenamesshort1= deblank(modelbase.rulenamesshort1(logical(modelbase.rule),:));
             if modelbase.AL
                 if ~ismember(modelbase.rule,[8 9 10])
                     thepath=cd;
-                    cd(modelbase.setpath(modelbase.models(epsilon),:))
+                    cd([modelbase.uphomepath filesep 'MODELS' filesep strtrim(modelbase.names(modelbase.models(epsilon),:))])
                     load AL_Info
                     cd(thepath);
                     AL_.forwards = AL_Info.forwards;
