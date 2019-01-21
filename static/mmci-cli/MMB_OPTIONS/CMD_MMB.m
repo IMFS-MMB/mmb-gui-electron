@@ -17,6 +17,7 @@ OSenvironment = isunix;
 %% Adding dynare to path if it was not, and throw error, if Dynare not installed
 if OSenvironment==1
     addpath('/usr/local/opt/dynare/lib/dynare/matlab')
+    addpath('/usr/lib/dynare/matlab')
     addpath('/usr/lib/dynare/mex/octave')
     addpath('/Applications/Dynare/4.5.6/matlab')
     addpath('/Applications/Dynare/4.5.6/mex/octave')
@@ -367,7 +368,7 @@ for i=1:size(modelbase.rulenames,1)
                                 'outputvar', deblank(vname),...
                                 'values', VARval...
                                  ));
-                            else 
+                            else
                            outputmodel = horzcat(outputmodel, struct(...
                                'model', deblank(vmod),...
                                'rule', deblank(vrule),...
@@ -464,7 +465,7 @@ end
     catch   e %e is an MException struct
         fprintf(1,'The identifier was:\n%s',e.identifier);
         fprintf(1,'There was an error! The message was:\n%s',e.message);
-        % more error handling...%        
+        % more error handling...%
         cd ([currentpath filesep 'MMB_OPTIONS' filesep]);
         epsilon=epsilon+1;
     end
