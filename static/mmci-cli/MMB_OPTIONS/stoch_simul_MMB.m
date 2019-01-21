@@ -118,10 +118,10 @@ else
     % Execute differently according to Dynare version
     if (strcmp(dynare_version, '4.2.0') || strcmp(dynare_version, '4.2.1') || strcmp(dynare_version, '4.2.2') || strcmp(dynare_version, '4.2.4')...
             || strcmp(dynare_version, '4.2.5'))
-        [oo_.dr, info] = resol(oo_.steady_state,0); % solve
+        [oo_.dr, info] = resol_MMB(oo_.steady_state,0); % solve
     elseif (strcmp(dynare_version, '4.3.0') || strcmp(dynare_version, '4.3.1') || strcmp(dynare_version, '4.3.2') || strcmp(dynare_version, '4.3.3')  )
         oo_.dr=set_state_space(dr,M_);
-        [oo_.dr,info] = resol(0,M_,options_,oo_); %solve
+        [oo_.dr,info] = resol_MMB(0,M_,options_,oo_); %solve
     else  % for dynare versions 4.4.0 or higher
         oo_.dr=set_state_space(dr,M_,options_);
         [oo_.dr.nstatic, oo_.dr.npred, oo_.dr.nboth, oo_.dr.nfwrd,oo_.dr.nsfwrd] = get_nvars_state_space(dr,M_);
@@ -135,7 +135,7 @@ else
             end
         end
         
-        [oo_.dr,info,M_,options_,oo_] = resol(0,M_,options_,oo_); %solve
+        [oo_.dr,info,M_,options_,oo_] = resol_MMB(0,M_,options_,oo_); %solve
     end
     
     % The follwoing if clause matters when the Dynare version is higher than
