@@ -41,16 +41,14 @@ const getters = {
     return getters.filteredModels.filter(model => model.description.category === 'Estimated euro area model');
   },
 
-  modelsEstimatedCalibratedMultiCountry(state, getters) {
-    return getters.filteredModels.filter(model => model.description.category === 'Estimated/Calibrated multi-country model');
-  },
-
-  modelsEstimatedOtherCountries(state, getters) {
-    return getters.filteredModels.filter(model => model.description.category === 'Estimated other-country model');
-  },
-
   modelsAdaptiveLearning(state, getters) {
     return getters.filteredModels.filter(model => model.description.category === 'Adaptive learning model');
+  },
+
+  modelsOther(state, getters) {
+    return getters.filteredModels.filter(model =>
+      model.description.category === 'Estimated/Calibrated multi-country model' ||
+      model.description.category === 'Estimated other-country model');
   },
 };
 
