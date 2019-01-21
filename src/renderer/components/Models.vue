@@ -15,8 +15,7 @@
                 <ModelList name="Calibrated" :models="modelsCalibrated"/>
                 <ModelList name="Estimated US" :models="modelsEstimatedUs"/>
                 <ModelList name="Estimated Euro Area" :models="modelsEstimatedEuroArea"/>
-                <ModelList name="Estimated/Calibrated Multi-Country" :models="modelsEstimatedCalibratedMultiCountry"/>
-                <ModelList name="Estimated Other Countries" :models="modelsEstimatedOtherCountries"/>
+                <ModelList name="Other" :models="modelsOther"/>
                 <ModelList name="Adaptive Learning" :models="modelsAdaptiveLearning"/>
             </b-row>
         </div>
@@ -41,8 +40,7 @@
         'modelsCalibrated',
         'modelsEstimatedUs',
         'modelsEstimatedEuroArea',
-        'modelsEstimatedCalibratedMultiCountry',
-        'modelsEstimatedOtherCountries',
+        'modelsOther',
         'modelsAdaptiveLearning',
       ]),
       ...mapGetters('selections', {
