@@ -22,7 +22,7 @@ var x pi R
 
 //**************************************************************************
 // Modelbase Variables                                                   //*
-   interest inflation inflationq outputgap;                              //*
+   interest inflation inflationq outputgap output;                              //*
 //**************************************************************************
 
 varexo u
@@ -81,6 +81,7 @@ interest   = R*4;                                                        //*
 inflation  = pi+pi(-1)+pi(-2)+pi(-3);                                    //*
 inflationq = pi*4;                                                       //*
 outputgap  = x;                                                          //*
+output      =0;
 //**************************************************************************
 
 
