@@ -11,8 +11,6 @@ if (process.env.NODE_ENV !== 'development') {
 }
 
 if (!process.env.IS_WEB) {
-  console.warn('TODO: Sentry is still connecting via plain HTTP! Set up HTTPS for production!');
-
   const Sentry = require('@sentry/electron');
 
   Sentry.init({
