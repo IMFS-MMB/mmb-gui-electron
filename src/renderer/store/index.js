@@ -3,7 +3,7 @@ import Vuex from 'vuex';
 
 import models from './modules/models';
 import search from './modules/search';
-import selections from './modules/selections';
+import settings from './modules/settings';
 import comparison from './modules/comparison';
 import rules from './modules/rules';
 import params from './modules/params';
@@ -15,7 +15,7 @@ Vue.use(Vuex);
 const store = new Vuex.Store({
   modules: {
     search,
-    selections,
+    settings,
     comparison,
     models,
     rules,

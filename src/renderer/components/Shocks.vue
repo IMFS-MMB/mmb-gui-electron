@@ -30,7 +30,7 @@
       };
     },
     computed: {
-      ...mapGetters('selections', {
+      ...mapGetters('settings', {
         selectedIndex: 'numShocks',
         shockSelection: 'shocks',
       }),
@@ -48,7 +48,7 @@
       },
     },
     methods: {
-      ...mapMutations('selections', {
+      ...mapMutations('settings', {
         clear: 'clearShocks',
         setShocks: 'setShocks',
       }),

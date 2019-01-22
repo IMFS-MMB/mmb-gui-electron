@@ -100,7 +100,7 @@ h1 {
     .ctrl-set-listing {
       padding:0.5rem 0;
       position: relative;
-      height:220px;
+      max-height:220px;
       border-top: 1px solid rgba(0, 0, 0, 0.125);
       overflow-y: scroll;
       @include scrolling-shadows;

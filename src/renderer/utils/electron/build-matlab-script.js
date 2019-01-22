@@ -20,14 +20,19 @@ function userRuleToMatrix(userRule) {
   return `'[${contents}]'`;
 }
 
-export default function buildMatlabScript(models, rules, output, shocks, userRule) {
-  let moreArgs = '';
+export default function buildMatlabScript(models, rules, output, shocks, horizon, userRule) {
+  // todo: fix hardcoded vector lengths
+
+  const moreArgs = {
+    horizon: `'${horizon}'`,
+  };
 
   if (rules.find(r => r.id === 1 /* user specified rule */)) {
-    const matrix = userRuleToMatrix(userRule);
-
-    moreArgs = `,'data',${matrix}`;
+    moreArgs.data = userRuleToMatrix(userRule);
   }
+
+  const argString = Object.keys(moreArgs).map(key => `'${key}', ${moreArgs[key]}`).join(', ');
+
 
   // todo: fix hardcoded vector lengths
   const lines = [
@@ -36,7 +41,7 @@ export default function buildMatlabScript(models, rules, output, shocks, userRul
     `  rules = ${toVector(rules, 11)}`,
     `  output = ${toVector(output, 3)}`,
     `  shocks = ${toVector(shocks, 2)}`,
-    `  CMD_MMB(models,rules,output,shocks${moreArgs})`,
+    `  CMD_MMB(models,rules,output,shocks, ${argString})`,
     'catch ERR',
     '  disp(\'\')',
     '  disp(\'An error occured:\')',

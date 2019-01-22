@@ -43,12 +43,12 @@
         'modelsOther',
         'modelsAdaptiveLearning',
       ]),
-      ...mapGetters('selections', {
+      ...mapGetters('settings', {
         selectedIndex: 'numModels',
       }),
     },
     methods: {
-      ...mapMutations('selections', ['clearModels']),
+      ...mapMutations('settings', ['clearModels']),
     },
   };
 </script>

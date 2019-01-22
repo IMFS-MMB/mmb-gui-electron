@@ -32,7 +32,7 @@
       },
     },
     computed: {
-      ...mapGetters('selections', { modelSelection: 'models', isModelDisabled: 'isModelDisabled' }),
+      ...mapGetters('settings', { modelSelection: 'models', isModelDisabled: 'isModelDisabled' }),
       selection: {
         get() {
           return this.modelSelection;
@@ -47,7 +47,7 @@
       },
     },
     methods: {
-      ...mapMutations('selections', { setModelSelection: 'setModels' }),
+      ...mapMutations('settings', { setModelSelection: 'setModels' }),
     },
   };
 </script>

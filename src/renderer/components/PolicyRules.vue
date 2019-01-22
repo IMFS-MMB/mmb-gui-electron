@@ -41,7 +41,7 @@
     },
     computed: {
       ...mapGetters('rules', ['rules']),
-      ...mapGetters('selections', {
+      ...mapGetters('settings', {
         isRuleDisabled: 'isRuleDisabled',
         selectedIndex: 'numPolicyRules',
         policyRuleSelection: 'policyRules',
@@ -56,7 +56,7 @@
       },
     },
     methods: {
-      ...mapMutations('selections', {
+      ...mapMutations('settings', {
         clear: 'clearPolicyRules',
         setPolicyRules: 'setPolicyRules',
       }),

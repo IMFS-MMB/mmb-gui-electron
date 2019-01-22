@@ -124,15 +124,10 @@ const actions = {
   async compare(ctx) {
     ctx.commit('start');
 
-    const models = ctx.rootGetters['selections/models'];
-    const policyRules = ctx.rootGetters['selections/policyRules'];
-    const shocks = ctx.rootGetters['selections/shocks'];
-    const outputVars = ctx.rootGetters['selections/outputVars'];
-
     let result = [];
 
     try {
-      result = await compare(ctx, models, policyRules, outputVars, shocks);
+      result = await compare(ctx);
     } catch (e) {
       ctx.commit('error', e);
       throw e;

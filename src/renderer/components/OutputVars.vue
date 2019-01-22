@@ -30,7 +30,7 @@
       };
     },
     computed: {
-      ...mapGetters('selections', {
+      ...mapGetters('settings', {
         selectedIndex: 'numOutputVars',
         outputVarSelection: 'outputVars',
       }),
@@ -48,7 +48,7 @@
       },
     },
     methods: {
-      ...mapMutations('selections', {
+      ...mapMutations('settings', {
         clear: 'clearOutputVars',
         setOutputVars: 'setOutputVars',
       }),

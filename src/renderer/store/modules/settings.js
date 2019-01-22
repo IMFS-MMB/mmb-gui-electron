@@ -5,9 +5,14 @@ const state = {
   policyRules: [],
   shocks: [],
   outputVars: [],
+  horizon: 20,
 };
 
 const getters = {
+  horizon(state) {
+    return state.horizon;
+  },
+
   models(state) {
     return state.models;
   },
@@ -74,6 +79,10 @@ const getters = {
 };
 
 const mutations = {
+  setHorizon(state, data) {
+    state.horizon = data;
+  },
+
   setModels(state, data) {
     state.models = data;
   },

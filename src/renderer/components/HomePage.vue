@@ -22,6 +22,7 @@
 
                 <b-col>
                     <OutputVars/>
+                    <Horizon/>
                 </b-col>
             </b-row>
 
@@ -76,10 +77,12 @@
   import UserSpecifiedRuleModal from '@/modals/UserSpecifiedRuleModal.vue';
   import MatlabOutputModal from '@/modals/MatlabOutputModal.vue';
 
-  import { mapMutations, mapGetters, mapActions } from 'vuex'; // eslint-disable-line no-unused-vars
+  import { mapGetters, mapActions } from 'vuex';
+  import Horizon from './Horizon';
 
   export default {
     components: {
+      Horizon,
       OcpHeader,
       Models,
       Shocks,
@@ -94,7 +97,7 @@
     },
     computed: {
       ...mapGetters('backends', ['executables']),
-      ...mapGetters('selections', ['canCompare']),
+      ...mapGetters('settings', ['canCompare']),
       ...mapGetters('comparison', {
         showComparison: 'show',
       }),
