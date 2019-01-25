@@ -47,5 +47,6 @@ deploy:
   skip_cleanup: true
   draft: true
   on:
+    tags: true
     repo: IMFS-MMB/mmb-gui-electron
 
