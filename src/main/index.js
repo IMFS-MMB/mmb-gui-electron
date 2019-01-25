@@ -33,8 +33,6 @@ function createWindow() {
    * Initial window options
    */
   mainWindow = new BrowserWindow({
-    resizable: false,
-
     x: mainWindowState.x,
     y: mainWindowState.y,
     width: mainWindowState.width,
