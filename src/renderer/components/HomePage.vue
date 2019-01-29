@@ -37,12 +37,6 @@
             <b-row class="mt-4 mb-5 justify-content-center ctrl-links">
                 <div class="col-4">
                     <b-row>
-                        <!--<div class="col-7">-->
-                            <!--<a href="javascript:void(0)" v-b-modal.popularModal><i class="fa fa-star"></i>-->
-                                <!--Popular-->
-                                <!--comparisons</a>-->
-                        <!--</div>-->
-
                         <div class="col text-center">
                             <a href="javascript:void(0)" v-b-modal.helpModal><i
                                     class="fa fa-question-circle"></i>
@@ -55,11 +49,13 @@
 
         <Comparison/>
 
-        <PopularModal/>
         <HelpModal/>
-        <SettingsModal/>
-        <UserSpecifiedRuleModal/>
-        <MatlabOutputModal/>
+
+        <template v-if="$isElectron">
+            <SettingsModal/>
+            <UserSpecifiedRuleModal/>
+            <MatlabOutputModal/>
+        </template>
     </b-container>
 </template>
 
@@ -72,13 +68,19 @@
   import Comparison from '@/components/Comparison.vue';
 
   import HelpModal from '@/modals/HelpModal.vue';
-  import PopularModal from '@/modals/PopularModal.vue';
   import SettingsModal from '@/modals/SettingsModal.vue';
   import UserSpecifiedRuleModal from '@/modals/UserSpecifiedRuleModal.vue';
   import MatlabOutputModal from '@/modals/MatlabOutputModal.vue';
 
   import { mapGetters, mapActions } from 'vuex';
   import Horizon from './Horizon';
+  import { isElectron } from '../../constants';
+
+  const platformComponents = isElectron ? {
+    SettingsModal,
+    UserSpecifiedRuleModal,
+    MatlabOutputModal,
+  } : {};
 
   export default {
     components: {
@@ -90,10 +92,7 @@
       PolicyRules,
       Comparison,
       HelpModal,
-      PopularModal,
-      SettingsModal,
-      UserSpecifiedRuleModal,
-      MatlabOutputModal,
+      ...platformComponents,
     },
     computed: {
       ...mapGetters('backends', ['executables']),
@@ -111,8 +110,10 @@
       },
     },
     mounted() {
-      if (!this.executables || !this.executables.length) {
-        this.$root.$emit('bv::show::modal', 'settingsModal');
+      if (isElectron) {
+        if (!this.executables || !this.executables.length) {
+          this.$root.$emit('bv::show::modal', 'settingsModal');
+        }
       }
     },
   };

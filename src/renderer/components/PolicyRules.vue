@@ -10,7 +10,7 @@
 
         <div class="ctrl-set-body">
             <b-form-checkbox-group class="ctrl-set-listing" stacked v-model="selection">
-                <b-form-checkbox class="cb-user-rule" :key="1" :value="{ id: 1 }" :disabled="isRuleDisabled(1)">
+                <b-form-checkbox v-if="$isElectron" class="cb-user-rule" :key="1" :value="{ id: 1 }" :disabled="isRuleDisabled(1)">
                     User specified rule
                     <a href="javascript:void(0)" v-b-modal.userSpecifiedRuleModal>(edit)</a>
                 </b-form-checkbox>
