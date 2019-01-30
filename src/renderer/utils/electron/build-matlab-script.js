@@ -33,7 +33,6 @@ export default function buildMatlabScript(models, rules, output, shocks, horizon
 
   const argString = Object.keys(moreArgs).map(key => `'${key}', ${moreArgs[key]}`).join(', ');
 
-
   // todo: fix hardcoded vector lengths
   const lines = [
     'try',

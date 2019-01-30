@@ -67,4 +67,7 @@ HighCharts.setOptions({
       }],
     },
   ],
+  tooltip: {
+    outside: true,
+  },
 });

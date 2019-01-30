@@ -12,8 +12,8 @@
                     <th></th>
                     <th>interest</th>
                     <th>inflation</th>
+                    <th>output gap</th>
                     <th>output</th>
-                    <th>outputgap</th>
                 </tr>
             </thead>
             <tbody>

@@ -23,12 +23,17 @@
       };
     },
     mounted() {
+      const [title, subtitle] = this.title.split(' - ');
+
       this.chart = new HighCharts.Chart({
         chart: {
           renderTo: this.id,
         },
         title: {
-          text: this.title,
+          text: title,
+        },
+        subtitle: {
+          text: subtitle,
         },
         series: this.series,
       });

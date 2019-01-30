@@ -1,7 +1,7 @@
 import { app, BrowserWindow, shell } from 'electron' // eslint-disable-line
 import windowStateKeeper from 'electron-window-state';
 import path from 'path';
-import constants from '../constants';
+import { sentry } from '../constants';
 /**
  * Set `__static` path to static files in production
  * https://simulatedgreg.gitbooks.io/electron-vue/content/en/using-static-assets.html
@@ -14,7 +14,7 @@ if (!process.env.IS_WEB) {
   const Sentry = require('@sentry/electron');
 
   Sentry.init({
-    dsn: constants.sentry.dsnElectron,
+    dsn: sentry.dsnElectron,
   });
 }
 
