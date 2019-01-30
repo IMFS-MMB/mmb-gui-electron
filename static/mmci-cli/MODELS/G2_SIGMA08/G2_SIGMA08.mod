@@ -720,15 +720,15 @@ shocks;
 //permanent technology shock
 var erratp        =0;
 //transitory technology shock
-var erratt        =0;
+var erratt        =0.1;
 //Fiscal shock permanent
 var errgcxp       =0;
 //Fiscal shock transitory
-var fiscal_       =0;
+var fiscal_       =0.1;
 //permanent shock to the inflation target
-var errpitarp     =0;
+var errpitarp     =0.1;
 //transitory shock to the inflation target
-var errpitart     =0;
+var errpitart     =0.1;
 var errconshkp    =0;
 var errconshkt    =0;
 var errtaxkp      =0;
@@ -740,22 +740,22 @@ var errriskpt     =0;
 var errbetashk    =0;
 var errimpshk     =0;
 var errtaxlshk    =0;
-var interest_     =0;
+var interest_     =0.1;
 
 //shocks to foreign economy
 
 //permanent technology shock
-var erratpf       =0;
+var erratpf       =0.0;
 //transitory technology shock
-var errattf       =0;
+var errattf       =0.1;
 //Fiscal shock permanent
 var errgcxpf      =0;
 //Fiscal shock transitory
-var errgcxtf      =0;
+var errgcxtf      =0.1;
 //permanent shock to the inflation target
 var errpitarpf    =0;
 //transitory shock to the inflation target
-var errpitartf    =0;
+var errpitartf    =0.1;
 var errconshkpf   =0;
 var errconshktf   =0;
 var errtaxkpf     =0;

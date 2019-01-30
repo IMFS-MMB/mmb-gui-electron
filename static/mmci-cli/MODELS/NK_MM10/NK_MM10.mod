@@ -625,7 +625,7 @@ end;
 //---------------------------------------------------------------------
 
 shocks;
-    var techShock = 0; // sigmaz^2;
+    var techShock = sigmaz^2;
 end;
 
 

@@ -191,13 +191,13 @@ ustar=rhou*ustar(-1)+infstar_;
 end;
 
 shocks;
-var inf_ = 0;
-var interest_ = 0;
-var a_ = 0;
-var ystar_ = 0;
-var infstar_ = 0;
-var rstar_ = 0;
-var astar_ = 0;
+var inf_ = 0.1;
+var interest_ = 0.1;
+var a_ = 0.1;
+var ystar_ = 0.1;
+var infstar_ = 0.1;
+var rstar_ = 0.1;
+var astar_ = 0.1;
 end;
 
 //stoch_simul (irf = 0, ar=100, noprint);

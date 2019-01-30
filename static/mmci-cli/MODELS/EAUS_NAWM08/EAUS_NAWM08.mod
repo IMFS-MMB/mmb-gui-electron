@@ -1013,27 +1013,27 @@ US_RRSTAR =1.00741706786548;
 end;
 
 shocks;
-var	fiscal_ = 0; //EA_EPSG
+var	fiscal_ = 0.1; //EA_EPSG
 //var	EA_EPSR=0;
-var	EA_EPSRP=0;
-var	EA_EPSTAUC=0;
-var	EA_EPSTAUD=0;
-var	EA_EPSTAUK=0;
-var	EA_EPSTAUN=0;
-var	EA_EPSTAUWF=0;
-var	EA_EPSTAUWH=0;
-var	EA_EPSTR=0;
-var	EA_EPSZ=0;
-var	US_EPSG=0;
+var	EA_EPSRP=0.1;
+var	EA_EPSTAUC=0.1;
+var	EA_EPSTAUD=0.1;
+var	EA_EPSTAUK=0.1;
+var	EA_EPSTAUN=0.1;
+var	EA_EPSTAUWF=0.1;
+var	EA_EPSTAUWH=0.1;
+var	EA_EPSTR=0.1;
+var	EA_EPSZ=0.1;
+var	US_EPSG=0.1;
 //var	US_EPSR=0;
-var	US_EPSTAUC=0;
-var	US_EPSTAUD=0;
-var	US_EPSTAUK=0;
-var	US_EPSTAUN=0;
-var	US_EPSTAUWF=0;
-var	US_EPSTAUWH=0;
-var	US_EPSTR=0;
-var	US_EPSZ=0;
+var	US_EPSTAUC=0.1;
+var	US_EPSTAUD=0.1;
+var	US_EPSTAUK=0.1;
+var	US_EPSTAUN=0.1;
+var	US_EPSTAUWF=0.1;
+var	US_EPSTAUWH=0.1;
+var	US_EPSTR=0.1;
+var	US_EPSZ=0.1;
 end;
 
 
