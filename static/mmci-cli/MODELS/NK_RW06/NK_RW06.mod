@@ -127,6 +127,6 @@ end;
 
 
 shocks;
-var u =0;
-var interest_ =0;
+var u =1;
+var interest_ =1;
 end;
