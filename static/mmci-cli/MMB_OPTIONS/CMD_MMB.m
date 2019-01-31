@@ -27,6 +27,7 @@ if OSenvironment==1
 else
     addpath('c:\dynare\4.5.6\matlab')
     addpath('c:\dynare\4.5.6\mex\octave')
+    addpath('c:\octave\octave-4.4.0\share\octave\packages\nan-3.1.4')
     if ~exist('dynare')
            error('Error. Dynare is not installed')
     end
