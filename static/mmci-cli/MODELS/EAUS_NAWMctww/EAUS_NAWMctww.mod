@@ -1,4 +1,4 @@
-st//**************************************************************************
+//**************************************************************************
 // A New Comparative Approach to Macroeconomic Modeling and Policy Analysis
 //
 // Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and 
