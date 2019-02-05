@@ -5,7 +5,7 @@
 // 2015, 7(1): 168-196.
 
 // This is the DNGS15 version of the SW (2007) model estimated with the same observables as Smets and
-Wouters plus credit spread data. 
+%Wouters plus credit spread data. 
 
 //------------------------------------------------------------------------------------------------------------------------
 //1. Variable declaration
