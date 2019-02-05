@@ -20,12 +20,12 @@ init:
 install:
   - ps: Install-Product node 8 x64
   - git reset --hard HEAD
-  - yarn
+  - npm install
   - node --version
 
 build_script:
-  - yarn run build
-  - yarn run build:web
+  - npm run build
+  - npm run build:web
 
 after_build:
   - 7z a web.zip dist/web/

@@ -1,10 +1,12 @@
 # mmb-electron
 
-This repo contains the new MMB Graphical User Interface based on the Electron framework and integrated via vue.js. The code is on beta stage.
+This repo contains the new MMB Graphical User Interface based on the Electron framework and integrated via vue.js. The code is in beta stage.
 
-> An electron-vue project
+**A electron-vue project**
 
 #### Build Setup
+
+For Windows, get the latest installer for `node` at [https://nodejs.org]. Linux users can find it in the repos of their distro. Then:
 
 ``` bash
 # install dependencies
@@ -21,6 +23,7 @@ npm run build
 npm run lint
 
 ```
+AppVeyor will place the latest Win-build (based on the master branch) [here](https://ci.appveyor.com/project/j2L4e/mmb-gui-electron/builds/21975081/artifacts).
 
 ---
 
