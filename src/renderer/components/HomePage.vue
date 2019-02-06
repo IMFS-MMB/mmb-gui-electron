@@ -38,6 +38,14 @@
                 <div class="col-4">
                     <b-row>
                         <div class="col text-center">
+                            <a href="http://www.macromodelbase.com/files/articles%20and%20papers/MMB_model_description_2_3.pdf">
+                                Documentation of Models</a>
+                        </div>
+                    </b-row>
+                </div>
+                <div class="col-4">
+                    <b-row>
+                        <div class="col text-center">
                             <a href="javascript:void(0)" v-b-modal.helpModal><i
                                     class="fa fa-question-circle"></i>
                                 Need help?</a>

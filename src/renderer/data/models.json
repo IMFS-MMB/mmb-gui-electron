@@ -604,7 +604,7 @@
     "description": {
       "ac_ref": "Federal Reserve Board model II",
       "paper_title": "Documentation of linearized FRB/US",
-      "journal": null,
+      "journal": "https://www.federalreserve.gov/econres/us-models-package.htm",
       "replicants_name": "M. Wolters with M. Burgert",
       "pub_date": "2008",
       "keywords": [],
@@ -643,7 +643,7 @@
     "description": {
       "ac_ref": "Federal Reserve Board model III",
       "paper_title": "Documentation of linearized FRB/US",
-      "journal": null,
+      "journal": "https://www.federalreserve.gov/econres/us-models-package.htm",
       "replicants_name": "M. Wolters with M. Burgert",
       "pub_date": "2008",
       "keywords": [],
