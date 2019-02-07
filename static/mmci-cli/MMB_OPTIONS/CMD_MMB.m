@@ -17,17 +17,38 @@ OSenvironment = isunix;
 %% Adding dynare to path if it was not, and throw error, if Dynare not installed
 if OSenvironment==1
     addpath('/usr/local/opt/dynare/lib/dynare/matlab')
-    addpath('/usr/lib/dynare/matlab')
     addpath('/usr/lib/dynare/mex/octave')
+    if isoctave ==1
+        if ~exist('/Applications/Octave-4.4.0.app')
+            error('Error: Path for Octave 4.4.0 not found! Expected: /Applications/Octave-4.4.0.app')
+        else
+            for dyn_vers = 1:6
+               if exist(['/Applications/Dynare/4.5.', num2str(dyn_vers)])
+                    addpath(['/Applications/Dynare/4.5.', num2str(dyn_vers), '/matlab'])
+                    addpath(['/Applications/Dynare/4.5.',num2str(dyn_vers),'/mex/octave'])
+                end
+            end
+        end
+    end
     addpath('/Applications/Dynare/4.5.6/matlab')
     addpath('/Applications/Dynare/4.5.6/mex/octave')
     if ~exist('dynare')
            error('Error. Dynare is not installed')
     end
 else
-    addpath('c:\dynare\4.5.6\matlab')
-    addpath('c:\dynare\4.5.6\mex\octave')
-    addpath('c:\octave\octave-4.4.0\share\octave\packages\nan-3.1.4')
+    if isoctave ==1   
+        if ~exist('c:\octave\octave-4.4.0')
+            error('Error: Path for Octave 4.4.0 not found! Expected: c:\octave\octave-4.4.0')
+        else
+            addpath('c:\octave\octave-4.4.0\share\octave\packages\nan-3.1.4')
+            for dyn_vers =1:6
+                if exist(['c:\dynare\4.5.', num2str(dyn_vers)])
+                    addpath(['c:\dynare\4.5.', num2str(dyn_vers), '\matlab'])
+                    addpath(['c:\dynare\4.5.',num2str(dyn_vers),'\mex\octave'])
+                end
+            end
+        end
+    end
     if ~exist('dynare')
            error('Error. Dynare is not installed')
     end
