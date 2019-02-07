@@ -1,8 +1,12 @@
 import path from 'path';
 import { create } from '@/utils/electron/interface';
-import readJsonFile from '@/utils/electron/read-json-file';
 import buildMatlabScript from '@/utils/electron/build-matlab-script';
 import logger from '@/utils/logger';
+import fs from 'fs';
+import { promisify } from 'util';
+import parseOutput from '../../utils/parseOutput';
+
+const readFile = promisify(fs.readFile);
 
 export default async function compare(ctx) {
   const cwd = path.join(__static, 'mmci-cli', 'MMB_OPTIONS');
@@ -31,7 +35,9 @@ export default async function compare(ctx) {
   let output = [];
 
   try {
-    output = await readJsonFile(path.join(cwd, 'Modelbasefile.json'));
+    const json = await readFile(path.join(cwd, 'Modelbasefile.json'), { encoding: 'utf8' });
+
+    output = parseOutput(json);
   } catch (e) {
     logger.warn(e.message);
   }
