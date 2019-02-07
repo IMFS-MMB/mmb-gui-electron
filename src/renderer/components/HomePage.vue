@@ -22,7 +22,7 @@
 
                 <b-col>
                     <OutputVars/>
-                    <Horizon/>
+                    <Horizon v-if="$isElectron"/>
                 </b-col>
             </b-row>
 
