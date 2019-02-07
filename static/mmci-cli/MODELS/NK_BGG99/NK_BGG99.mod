@@ -210,9 +210,9 @@ nHf = gammav*R_K*KN*r_kHf - gammav*R*KN*rHf(-1)+ gammav*(R_K - R)*KN*(qHf(-1) + 
 end;
 
 shocks;
-var e_a; stderr 0;
-var fiscal_; stderr 0;  //e_g               
-var interest_; stderr 0; 
+var e_a; stderr 0.1;
+var fiscal_; stderr 0.1;  //e_g               
+var interest_; stderr 0.1; 
 end;
 
 //stoch_simul(IRF=12) yH rn4 iH tp;

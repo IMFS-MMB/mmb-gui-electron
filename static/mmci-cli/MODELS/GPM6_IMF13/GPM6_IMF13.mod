@@ -1400,7 +1400,7 @@ end;
 
 // The Dynare is asked not to check the steady state values because this model
 // contains nonstationary variables.
-%steady(nocheck);
+steady(nocheck);
 
 //stoch_simul(order=1,irf=40,irf_shocks=(RES_Y_US,RES_BLT_US,RES_YY_US,RES_PIE_US,RES_RS_US))
 //Y_US PIE_US RS_US RR_US LRR_US FACT_US REER_T_US BLT_US

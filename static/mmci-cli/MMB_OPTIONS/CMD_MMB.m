@@ -27,6 +27,7 @@ if OSenvironment==1
 else
     addpath('c:\dynare\4.5.6\matlab')
     addpath('c:\dynare\4.5.6\mex\octave')
+    addpath('c:\octave\octave-4.4.0\share\octave\packages\nan-3.1.4')
     if ~exist('dynare')
            error('Error. Dynare is not installed')
     end
@@ -306,7 +307,7 @@ for i=1:size(modelbase.rulenames,1)
                             autmod = deblank(strtrim(modelbase.names(modelbase.models(epsilon),:)));
                             autrule = deblank(modelbase.rulenamesshort1(modelbase.l,:));
                             autvar = keyvariables(pp,:);
-                    if isfield (modelbase, 'AUTendo_names')
+                    if isfield (modelbase, 'AUTendo_names') & isfield(modelbase.AUTendo_names, deblank(autrule))
                         if loc(modelbase.AUTendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:))~=0
                             eval('AUTval = modelbase.AUTR.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:))))(loc(modelbase.AUTendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:)),:);');
                             if max(isnan(AUTval))==0
@@ -355,7 +356,7 @@ for i=1:size(modelbase.rulenames,1)
                             vmod = deblank(strtrim(modelbase.names(modelbase.models(epsilon),:)));
                             vrule = deblank(modelbase.rulenamesshort1(modelbase.l,:));
                             vname = keyvariables(pp,:);
-                       if isfield (modelbase,'VARendo_names')
+                       if isfield (modelbase,'VARendo_names')& isfield(modelbase.VARendo_names, deblank(vrule))
                             if loc(modelbase.VARendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:))~=0
                             var = modelbase.VAR.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:))))(loc(modelbase.VARendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:)),loc(modelbase.VARendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:)));
                             eval('VARval = modelbase.VAR.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:))))(loc(modelbase.VARendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:)),loc(modelbase.VARendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:)));');
@@ -409,7 +410,7 @@ for i=1:size(modelbase.rulenames,1)
                         irfvar = keyvariables(pp,:);
                             if  modelbase.pos_shock(p,modelbase.models(epsilon))~=0
                             irfvar = keyvariables(pp,:);
-                            if isfield (modelbase,'IRFendo_names')
+                            if isfield (modelbase,'IRFendo_names')& isfield(modelbase.IRFendo_names, deblank(irfrule))
                             if loc(modelbase.IRFendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:))~=0
                                 eval('IRFval = modelbase.IRF.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:))))(loc(modelbase.IRFendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:)),:,p);');
 

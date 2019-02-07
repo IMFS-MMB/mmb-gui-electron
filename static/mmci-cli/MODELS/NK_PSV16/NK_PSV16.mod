@@ -206,9 +206,9 @@ end;
 
 
 shocks;
-var eA; stderr 0;
-var fiscal_; stderr 0;  //eG               
-var interest_; stderr 0; 
+var eA; stderr 0.1;
+var fiscal_; stderr 0.1;  //eG               
+var interest_; stderr 0.1; 
 end;
 
  

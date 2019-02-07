@@ -219,7 +219,7 @@ end;
 
 shocks;
 // var e_g=1;
-var fiscal_; stderr 0;
+var fiscal_; stderr 1;
 end;
 
 //stoch_simul(irf=20, noprint, nograph) ;

@@ -5,7 +5,7 @@
 // 2015, 7(1): 168-196.
 
 // This is the DNGS15 version of the SW (2007) model  estimated using the same observables as
-Smets and Wouters but with the 2012Q3 vintage of data. 
+%Smets and Wouters but with the 2012Q3 vintage of data. 
 
 //------------------------------------------------------------------------------------------------------------------------
 //1. Variable declaration

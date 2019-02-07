@@ -237,9 +237,9 @@ names =char(['NK_RW97       ' % model_number 1
                'US_AJ16       ' %              103
                'US_CFP17endo  ' %              104
                'US_CFP17exo   ' %              105
-               'US_DNGS15SW   ' %              106
-               'US_DNGS15SWpi ' %              107
-               'US_DNGS15SWSP ' %              108
+               'US_DNGS15_SW  ' %              106
+               'US_DNGS15_SWpi' %              107
+               'US_DNGS15_SWSP' %              108
                'US_FV10       ' %              109
                'US_FV15       ' %              110
                'US_IR15       ' %              111

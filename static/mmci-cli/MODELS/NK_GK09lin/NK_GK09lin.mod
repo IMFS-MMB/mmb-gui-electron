@@ -281,9 +281,9 @@ end;
 
 shocks;
 //var e_rn; stderr 0;
-var e_a; stderr 0;
-var e_n; stderr 0;
-var e_epsilon; stderr 0;
+var e_a; stderr 0.1;
+var e_n; stderr 0.1;
+var e_epsilon; stderr 0.1;
 
 end;
 
