@@ -1,0 +1,59 @@
+{
+  "name": "mmb-server",
+  "description": "Project mmb-server",
+  "version": "0.0.0",
+  "homepage": "",
+  "main": "src",
+  "keywords": [
+    "feathers"
+  ],
+  "author": {
+    "name": "Jan Lohage",
+    "email": "git@j2L4e.de"
+  },
+  "contributors": [],
+  "bugs": {},
+  "directories": {
+    "lib": "src",
+    "test": "test/"
+  },
+  "engines": {
+    "node": "^8.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "scripts": {
+    "test": "npm run eslint && npm run mocha",
+    "test:all": "npm run eslint && cross-env NODE_ENV= npm run mocha",
+    "eslint": "eslint src/. test/. --config .eslintrc.json",
+    "dev": "nodemon src/",
+    "dev:seed": "nodemon src/ --seed",
+    "start": "node src/",
+    "start:seed": "cross-env NODE_ENV= node src/ --seed",
+    "mocha": "mocha test/ --recursive --exit --timeout 10000"
+  },
+  "dependencies": {
+    "@feathersjs/configuration": "^2.0.6",
+    "@feathersjs/errors": "^3.3.6",
+    "@feathersjs/express": "^1.3.1",
+    "@feathersjs/feathers": "^3.3.1",
+    "ajv": "^5.5.2",
+    "compression": "^1.7.3",
+    "cors": "^2.8.5",
+    "cross-env": "^5.2.0",
+    "feathers-hooks-common": "^4.20.2",
+    "feathers-sequelize": "^3.1.3",
+    "helmet": "^3.15.0",
+    "lodash.merge": "^4.6.1",
+    "sequelize": "^4.42.0",
+    "serve-favicon": "^2.5.0",
+    "sqlite3": "^4.0.6",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.13.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.9",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
+  }
+}

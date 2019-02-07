@@ -1,20 +1,10 @@
-import feathers_ from '@feathersjs/feathers';
-// todo use real backend
-const feathers = () => {
-  const app = feathers_();
-
-  app.use('data', {
-    async find(params) {
-      console.log(params);
-
-      return [];
-    },
-  });
-
-  return app;
-};
+import feathers from '@feathersjs/feathers';
+import rest from '@feathersjs/rest-client';
+import axios from 'axios';
 
 const app = feathers();
+
+app.configure(rest().axios(axios));
 
 export default async function compare(ctx) {
   const models = ctx.rootGetters['settings/models'];
