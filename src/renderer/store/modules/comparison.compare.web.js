@@ -4,7 +4,8 @@ import axios from 'axios';
 
 const app = feathers();
 
-app.configure(rest().axios(axios));
+app.configure(rest()
+  .axios(axios));
 
 export default async function compare(ctx) {
   const models = ctx.rootGetters['settings/models'];
@@ -19,19 +20,30 @@ export default async function compare(ctx) {
     rule: {
       $in: policyRules.map(pr => pr.internal_name),
     },
+    $or: [],
   };
 
   if (funcs && funcs.length) {
+    funcs.forEach((func) => {
+      const q = {
+        func: func.name,
+      };
+
+      if (func.name === 'IRF') {
+        q.shock = {
+          $in: shocks.map(shock => shock.name),
+        };
+      }
+
+      query.$or.push(q);
+    });
+
     query.func = {
       $in: funcs.map(func => func.name),
     };
   }
 
-  if (shocks && shocks.length) {
-    query.shock = {
-      $in: shocks.map(shock => shock.name),
-    };
-  }
 
-  return app.service('data').find({ query });
+  return app.service('data')
+    .find({ query });
 }
