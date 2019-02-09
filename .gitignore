@@ -18,3 +18,6 @@ static/mmci-cli/**/checksum
 static/mmci-cli/**/*_dynamic.m
 static/mmci-cli/**/*_static.m
 static/mmci-cli/**/*_set_auxiliary_variables.m
+
+/server/public/
+!/server/public/favicon.ico
