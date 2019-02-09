@@ -21,11 +21,11 @@
             </b-col>
         </b-row>
 
-        <ChartRow v-if="acCharts.length" :charts="acCharts"/>
-        <ChartRow v-if="monCharts.length" :charts="monCharts"/>
-        <ChartRow v-if="fisCharts.length" :charts="fisCharts"/>
+        <ChartRow v-if="acCharts && acCharts.length" :charts="acCharts"/>
+        <ChartRow v-if="monCharts && monCharts.length" :charts="monCharts"/>
+        <ChartRow v-if="fisCharts && fisCharts.length" :charts="fisCharts"/>
 
-        <Variances v-if="varTable.length" :varTable="varTable"/>
+        <Variances v-if="varTable && varTable.length" :varTable="varTable"/>
     </div>
 </template>
 
