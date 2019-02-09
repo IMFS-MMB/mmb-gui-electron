@@ -54,6 +54,9 @@ function toChartData(raw, title, filter) {
 }
 
 const getters = {
+  data(state) {
+    return state.data;
+  },
   show(state) {
     return state.show;
   },
