@@ -13,59 +13,19 @@
                                 {{numOutputVars}} Variable Outputs
                                 )
                             </small>
+
+                            <SaveData class="float-right" :data="data"/>
                         </div>
                     </div>
                 </div>
             </b-col>
         </b-row>
 
-        <b-row class="mt-5"></b-row>
-        <b-row class="mt-1">
-            <b-col v-for="(data, index) of acCharts" :key="index">
-                <Chart :title="data.title" :series="data.series"></Chart>
-            </b-col>
-        </b-row>
-        <b-row class="mt-5"></b-row>
-        <b-row class="mt-1">
-            <b-col v-for="(data, index) of monCharts" :key="index">
-                <Chart :title="data.title" :series="data.series"></Chart>
-            </b-col>
-        </b-row>
-        <b-row class="mt-5"></b-row>
-        <b-row class="mt-1">
-            <b-col v-for="(data, index) of fisCharts" :key="index">
-                <Chart :title="data.title" :series="data.series"></Chart>
-            </b-col>
-        </b-row>
+        <ChartRow v-if="acCharts && acCharts.length" :charts="acCharts"/>
+        <ChartRow v-if="monCharts && monCharts.length" :charts="monCharts"/>
+        <ChartRow v-if="fisCharts && fisCharts.length" :charts="fisCharts"/>
 
-        <template v-if="varTable && varTable.length">
-            <b-row class="mt-5"></b-row>
-            <b-row class="mt-1">
-                <b-col>
-
-                    <table class="table table-bordered table-striped">
-                        <thead>
-                        <tr>
-                            <th>Variances</th>
-                            <th>Inflation</th>
-                            <th>Interest Rate</th>
-                            <th>Output</th>
-                            <th>Output Gap</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr v-for="variance of varTable">
-                            <th>{{variance.title}}</th>
-                            <td>{{variance.data.inflation}}</td>
-                            <td>{{variance.data.interest}}</td>
-                            <td>{{variance.data.output}}</td>
-                            <td>{{variance.data.outputgap}}</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </b-col>
-            </b-row>
-        </template>
+        <Variances v-if="varTable && varTable.length" :varTable="varTable"/>
     </div>
 </template>
 
@@ -74,11 +34,15 @@
 
   import { mapGetters } from 'vuex';
   import scrollIntoView from '@/utils/scrollIntoView';
-
-  // const CHARTS_PER_ROW = 2;
+  import SaveData from './SaveData';
+  import Variances from './Variances';
+  import ChartRow from './ChartRow';
 
   export default {
     components: {
+      ChartRow,
+      Variances,
+      SaveData,
       Chart,
     },
     data() {
@@ -88,19 +52,8 @@
       };
     },
     computed: {
-      ...mapGetters('comparison', ['varTable', 'acCharts', 'monCharts', 'fisCharts', 'inProgress', 'show']),
+      ...mapGetters('comparison', ['varTable', 'acCharts', 'monCharts', 'fisCharts', 'inProgress', 'show', 'data']),
       ...mapGetters('settings', ['numModels', 'numPolicyRules', 'numShocks', 'numOutputVars']),
-      // rows() {
-      //   const data = this.data;
-      //
-      //   const result = [];
-      //
-      //   for (let i = 0; i < data.length; i += CHARTS_PER_ROW) {
-      //     result.push(data.slice(i, i + CHARTS_PER_ROW));
-      //   }
-      //
-      //   return result;
-      // },
     },
     watch: {
       inProgress(newVal, oldVal) {
@@ -113,6 +66,3 @@
   };
 </script>
 
-<style scoped lang="scss">
-
-</style>
