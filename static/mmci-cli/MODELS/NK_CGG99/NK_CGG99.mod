@@ -26,7 +26,7 @@ var x i pi
 
 //**************************************************************************
 // Modelbase Variables                                                   //*    
-    interest inflation inflationq outputgap output;                             //*
+    interest inflation inflationq outputgap;                             //*
 //**************************************************************************
 
 varexo inflation_ demand_
@@ -83,7 +83,6 @@ interest   = i*4;                                                        //*
 inflation  = pi+pi(-1)+pi(-2)+pi(-3);                                    //*
 inflationq = pi*4;                                                       //*
 outputgap  = x;                                                          //*
-output     = 0;
 //**************************************************************************
 
 

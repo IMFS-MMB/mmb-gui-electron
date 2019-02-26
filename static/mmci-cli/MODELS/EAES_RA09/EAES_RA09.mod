@@ -352,7 +352,7 @@ var eps_GT; stderr 3.07;
 var eps_GT_star; stderr 3.26;
 var eps_GN; stderr 4.58;
 var eps_GN_star; stderr 2.34;
-var interest_=0;
+var interest_=0.1;
 end;
 
 options_.Schur_vec_tol = 1e-6;
