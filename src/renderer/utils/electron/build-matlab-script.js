@@ -36,7 +36,7 @@ export default function buildMatlabScript(models, rules, output, shocks, horizon
   // todo: fix hardcoded vector lengths
   const lines = [
     'try',
-    `  models = ${toVector(models, 114)}`,
+    `  models = ${toVector(models, 128)}`,
     `  rules = ${toVector(rules, 11)}`,
     `  output = ${toVector(output, 3)}`,
     `  shocks = ${toVector(shocks, 2)}`,
