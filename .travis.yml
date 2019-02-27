@@ -35,6 +35,12 @@ script:
 branches:
   only:
   - master
+
+after_success:
+  - curl --ftp-create-dirs
+    -T filename
+    sftp://${SFTP_USER}:${SFTP_PASSWORD}@example.com/directory/filename
+
 deploy:
   provider: releases
   tag: $(TRAVIS_TAG)

@@ -42,7 +42,7 @@ deploy:
   - provider: FTP
     protocol: sftp
     host: macromodelbase.com:2222
-    username: data
+    username: deploy
     password:
       secure: Jk84+PZDSf/7XPb9gd8vvbjsh2SGSpPIhwVDjSBfSx0=
     folder: mmb-electron-latest
