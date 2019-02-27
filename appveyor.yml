@@ -45,8 +45,7 @@ deploy:
     username: deploy
     password:
       secure: Jk84+PZDSf/7XPb9gd8vvbjsh2SGSpPIhwVDjSBfSx0=
-    folder: mmb-electron-latest
+    folder: data/mmb-electron-latest
     artifact: BuildWin
     on:
       branch: master
-
