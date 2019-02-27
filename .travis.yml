@@ -26,7 +26,6 @@ before_install:
   -y icnsutils graphicsmagick xz-utils; fi
 install:
 - nvm install 8
-# - curl -o- -L https://yarnpkg.com/install.sh | bash
 - source ~/.bashrc
 - npm install -g xvfb-maybe
 - npm install
@@ -37,23 +36,4 @@ branches:
   - master
 
 after_success:
-  - curl --ftp-create-dirs
-    -T filename
-    sftp://${SFTP_USER}:${SFTP_PASSWORD}@example.com/directory/filename
-
-deploy:
-  provider: releases
-  tag: $(TRAVIS_TAG)
-  api_key:
-    secure: FWfZaSO2YQpfU1dTxiLfBn61zYcqh2Qh1ZprFhkrt8ht0K1TOl8BOqzzxTi8S7F0prmC96NRvNOr697oTemKq1AsCopnzJwzlpDFLRKIiFSznWKycInCG7YQQRdYH0bc1xwDELD6uvvefYbY0Q8pbb9kgJQjFEBizskm/v7YMCK2cJLT2RsKrKUK1L4RfVTwqpHOGuIU1HMex4kj8dqc0V3ktGAFtxGR3RrFPMHz/QofHmeFXx8q9h5aKkqHzR3HRnEjZ8i02sp5LClxgxqasEinf8JHDe3nMtO9pgf3hp2Xm+XPVbmh/vHe/hpxM3KL+RXXB8NxQUhrVvzXJL40sekJkHKqaEFOd/GynWOrHXwNNkPQG4GNjiiRRhWOxjwCc7MI7KIodLQ5M+uY9WOlLuIzONEFu7bkltVXeBmS49df1/IU53pGHCRaPGU6bCNff3KQHb1unx6WUUnXuJjDTrxzi7fTSS3o8tXSoT4I0vWz5EIiTPjFwJeBBHqMYbh1mik1nXvqvo6wl67E9i7lrYQIc2nQK+EXprVXUYlI1WnPayY7NpMczfcXaOLkQDrDzyvLN0TPUIi1e17AZ0DtNUYjQvBQeIoP+S4L33T6blsryX2VTqPd6oaQfzAOqJYkD7nfbKhTgf7S0i/22U07pa/OfzNkdHr+bvlvfG1p05Q=
-  file_glob: true
-  file:
-    - build/*.dmg
-    - build/*.snap
-    - build/*.AppImage
-  skip_cleanup: true
-  draft: true
-  on:
-    tags: true
-    repo: IMFS-MMB/mmb-gui-electron
-
+  - node .scripts/deploy.js

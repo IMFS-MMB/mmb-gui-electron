@@ -17,7 +17,8 @@
     "pack": "npm run pack:main && npm run pack:renderer",
     "pack:main": "cross-env NODE_ENV=production webpack --progress --colors --config .electron-vue/webpack.main.config.js",
     "pack:renderer": "cross-env NODE_ENV=production webpack --progress --colors --config .electron-vue/webpack.renderer.config.js",
-    "postinstall": "npm run lint:fix"
+    "postinstall": "npm run lint:fix",
+    "deploy": "node .scripts/deploy.sh"
   },
   "build": {
     "productName": "mmb-electron",
@@ -125,6 +126,7 @@
     "node-loader": "^0.6.0",
     "node-sass": "^4.11.0",
     "sass-loader": "^7.0.3",
+    "ssh2-sftp-client": "^2.4.3",
     "style-loader": "^0.21.0",
     "terser": "3.14.1",
     "url-loader": "^1.0.1",
