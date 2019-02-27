@@ -40,7 +40,7 @@ artifacts:
 
 deploy:
   - provider: FTP
-    protocol: ftps
+    protocol: sftp
     host: macromodelbase.com:2222
     username: data
     password:
