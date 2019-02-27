@@ -305,8 +305,8 @@ outputgap  = 0;
 fispol     = 0;  
 end;
 
-steady;
-resid;
+%steady;
+%resid;
 
 shocks;
 var fiscal_=(Y_ss/G_ss)^2;

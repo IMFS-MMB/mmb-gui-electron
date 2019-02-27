@@ -101,7 +101,7 @@ for i=1:33
     eval(['M_.params(i)  = ' deep_parameter_name ' ;'])                  
 end                                                                      
 cd(thispath);  
-    std_r_=100;
+    std_r_=0.25;
                                                                          
 // Definition of Discretionary Fiscal Policy Parameter                   //*
 GoverY = (pp.ECGF/pp.EY);                                                //*
@@ -151,7 +151,7 @@ fispol       = epsGF ;                                                   //*
 // Policy Rule                                                           //*
                                                                          //*
 // Monetary Policy is exogenous here, so no monetary policy rule         //*                                                                        //*
-epsrEUR =    interest_;                                                  //* 
+epsrEUR =  std_r_*  interest_;                                                  //* 
                                                                          //*
 // Discretionary Government Spending                                     //*
                                                                          //*
@@ -733,32 +733,32 @@ end;
 %resid(1);
 
 shocks;
-%var	epsZETAEUR; 	stderr seepsZETAEUR; 
-%var	epsZETACH;  	stderr seepsZETACH;
-%var	epsLAMW;    	stderr seepsLAMW;
-%var	epsMU;  	    stderr seepsMU;
-%var	epsUPSILON; 	stderr seepsUPSILON;
-%var	epsLAMBDALT;    stderr seepsLAMBDALT;
+var	epsZETAEUR; 	stderr seepsZETAEUR; 
+var	epsZETACH;  	stderr seepsZETACH;
+var	epsLAMW;    	stderr seepsLAMW;
+var	epsMU;  	    stderr seepsMU;
+var	epsUPSILON; 	stderr seepsUPSILON;
+var	epsLAMBDALT;    stderr seepsLAMBDALT;
 var	epsLAMBDAK;         stderr seepsLAMBDAK;
-%var	epsLAMBDACY;    stderr seepsLAMBDACY;
-%var	epsLAMBDACM;    stderr seepsLAMBDACM;
-%var	epsLAMBDAIY;    stderr seepsLAMBDAIY;
-%var	epsUPSILONMC;   stderr seepsUPSILONMC;
-%var	epsUPSILONX;    stderr seepsUPSILONX;
-%var	epsXX;  	    stderr seepsXX;
+var	epsLAMBDACY;    stderr seepsLAMBDACY;
+var	epsLAMBDACM;    stderr seepsLAMBDACM;
+var	epsLAMBDAIY;    stderr seepsLAMBDAIY;
+var	epsUPSILONMC;   stderr seepsUPSILONMC;
+var	epsUPSILONX;    stderr seepsUPSILONX;
+var	epsXX;  	    stderr seepsXX;
 %var	epsGF;  	    stderr seepsGF;
-%var	epsIG;  	    stderr seepsIG;
-%var	epshG;  	    stderr seepshG;
-%var	epsdS;          stderr seepsdS;
-%var	epsPIEW;    	stderr seepsPIEW;
-%var	epsMW;          stderr seepsMW;
-%var	epsPOILS;       stderr seepsPOILS;
-%var	epsPRAWS;       stderr seepsPRAWS;
-%var    epsBankCapital; stderr seepsBankCapital;
-%var    epsEPSB;        stderr seepsEPSB;
+var	epsIG;  	    stderr seepsIG;
+var	epshG;  	    stderr seepshG;
+var	epsdS;          stderr seepsdS;
+var	epsPIEW;    	stderr seepsPIEW;
+var	epsMW;          stderr seepsMW;
+var	epsPOILS;       stderr seepsPOILS;
+var	epsPRAWS;       stderr seepsPRAWS;
+var    epsBankCapital; stderr seepsBankCapital;
+var    epsEPSB;        stderr seepsEPSB;
 %var	epsrEUR;    	stderr seepsrEUR; 
-var interest_;  stderr 1;
-var fiscal_;  stderr 1;
+var interest_;  stderr 2*seepsrEUR;
+%var fiscal_;  stderr 0.1;
 end;
 
 //stoch_simul(order=1,irf=20,nograph, noprint) y cH iH x m tbY rK rwage mcY hF ToT pieY rb btot bka nwe q rs;

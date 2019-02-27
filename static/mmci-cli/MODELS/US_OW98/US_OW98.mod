@@ -78,7 +78,7 @@ end
 cd(thispath);  
                                                                          //*
 // Definition of Discretionary Fiscal Policy Parameter                   //*
-coffispol = 1;                                                           //*
+coffispol = 1/5;                                                           //*
 //**************************************************************************
 
 model(linear);
@@ -87,13 +87,19 @@ model(linear);
 // Definition of Modelbase Variables in Terms of Original Model Variables //*
 
 interest   = rff-rffbar*100;                                             //*
-inflation = (1/4)*(pdot+ pdot(-1)+ pdot(-2)+ pdot(-3))-pinfbar*100;      //*
-inflationq  = pdot-pinfbar*100;                                          //*
-outputgap  = ygap;                                                       //*
-output = ygap;                                                           //*
+inflation = (1/4)*(pdot+ pdot(-1)+ pdot(-2)+ pdot(-3));      //*
+inflationq  = pdot;                                          //*
+outputgap  = ygap-steady_state(ygap);                                                       //*
+output  =0;
 fispol = egsh;                                                           //*
 //**************************************************************************
 
+
+// Original Model Code:
+
+// Original monetary policy rule, equation (1)
+%rff = -0.0042 + 0.760*rff(-1) + 0.625*pinf + 1.171*ygap - 0.967*ygap(-1)+interest_ + (steady_state(rff)+0.0042 - 0.76*steady_state(rff)-0.625*steady_state(pinf)- 1.171*steady_state(ygap) + 0.967*steady_state(ygap));
+%rff = -0.00061525 -0.0042 + 0.760*rff(-1) + 0.625*pinf + 1.171*ygap - 0.967*ygap(-1)+interest_;
 
 //**************************************************************************                                                                    
 // Policy Rule                                                           //*
@@ -138,11 +144,6 @@ interest =   cofintintb1*interest(-1)                                    //*
 fispol = coffispol*fiscal_;                                              //*
 //**************************************************************************
 
-// Original Model Code:
-
-// Original monetary policy rule, equation (1)
-// rff = -0.0042 + 0.760*rff(-1) + 0.625*pinf + 1.171*ygap - 0.967*ygap(-1);
-
 drff     =  rff - rff(-1);
 
 //Output gap first difference
@@ -183,13 +184,17 @@ ex       =  exbar + exsh;
 yp       =  (1-0.9)*(ygap + 0.9*ygap(+1) + (0.9^2)*ygap(+2) + (0.9^3)*ygap(+3) + (0.9^4)*ygap(+4) + (0.9^5)*ygap(+5) + (0.9^6)*ygap(+6) + (0.9^7)*ygap(+7) + (0.9^8)*ygap(+8))/(1.0-(0.9^9));
 
 //nominal contract wage
-cwage - plevel =   + (0.25+1.5*0.0803)*vindex + (0.25+0.5*0.0803)*vindex(+1) + (0.25-0.5*0.0803)*vindex(+2) + (0.25-1.5*0.0803)*vindex (+3) + 0.0055*((0.25+1.5*0.0803)*ygap + (0.25+0.5*0.0803)*ygap(+1) + (0.25-0.5*0.0803)*ygap(+2) + (0.25-1.5*0.0803)*ygap(+3)) +cwsh;
-//price level
-plevel   =  (0.25+1.5*0.0803)*cwage + (0.25+0.5*0.0803)*cwage(-1) + (0.25-0.5*0.0803)*cwage1(-1) + (0.25-1.5*0.0803)*cwage2(-1); 
-//real contract wage index
-vindex   =  (0.25+1.5*0.0803)*(cwage - plevel) + (0.25+0.5*0.0803)*(cwage(-1) - plevel(-1)) + (0.25-0.5*0.0803)*(cwage1(-1) - plevel1(-1)) + (0.25-1.5*0.0803)*(cwage2(-1) - plevel2(-1));
+cwage - plevel =0.034292-0.00042072+ 0.00022993  + (0.25+1.5*0.0803)*vindex + (0.25+0.5*0.0803)*vindex(+1) + (0.25-0.5*0.0803)*vindex(+2) + (0.25-1.5*0.0803)*vindex (+3) + 0.0055*((0.25+1.5*0.0803)*ygap + (0.25+0.5*0.0803)*ygap(+1) + (0.25-0.5*0.0803)*ygap(+2) + (0.25-1.5*0.0803)*ygap(+3)) +cwsh;
+%-0.00042072 +
 
-//inflation target
+//price level
+plevel   = -0.00097656+ (0.25+1.5*0.0803)*cwage + (0.25+0.5*0.0803)*cwage(-1) + (0.25-0.5*0.0803)*cwage1(-1) + (0.25-1.5*0.0803)*cwage2(-1); 
+%-0.00097656+
+//real contract wage index
+vindex   =  -0.02231 +0.0002669 -0.00015472+ (0.25+1.5*0.0803)*(cwage - plevel) + (0.25+0.5*0.0803)*(cwage(-1) - plevel(-1)) + (0.25-0.5*0.0803)*(cwage1(-1) - plevel1(-1)) + (0.25-1.5*0.0803)*(cwage2(-1) - plevel2(-1));
+%0.0002669
+
+//inflation target (29-41)
 pitarg   =  pinfbar;
 cwage1   =  cwage(-1);
 cwage2   =  cwage1(-1);
@@ -205,6 +210,18 @@ ygap1    =  ygap(-1);
 ygap2    =  ygap1(-1);
 end;
 
+%steady(solve_algo=0);
+%check;
+
+//shocks;    
+//var interest_ = 1;// policy rule innovation
+//var ecsh      = 1;
+//var efish     = 1;
+//var eiish     = 1;
+//var fiscal_   = 1; // fiscal policy shock
+//var exsh      = 1;
+//var cwsh      = 1; 
+//end;
 
 initval;
 ygap = 0;
@@ -219,12 +236,17 @@ efi	=   1.4661885394578772e-01;
 eii	=   3.9412501642005875e-03;
 ex	=   -2.0844600536418095e-02;
 eg	=    1.8672901279611806e-01;
+rff1     =  rff;
+efi1     =  efi;
+efi2     =  efi;
+eii1     =  eii;
+eii2     =  eii;
+ygap1    =  0;
+ygap2    =  0;
 end;
-%steady(nocheck);
-resid(1);
 
 shocks;
-var interest_          =  0;
+var interest_          =  1; // for IRF replication 
 var interest_, ecsh    =  0;
 var interest_, efish   =  0;
 var interest_, eiish   =  0;
@@ -253,6 +275,8 @@ var exsh               =  10000*(9.05986420155772e-07);
 var exsh, cwsh         =  10000*(6.39353499797624e-08);
 var cwsh               =  10000*(3.04717660977982e-07);
 end; 
+%steady;
+
 
 options_.Schur_vec_tol = 1e-6;  
 //stoch_simul (irf = 0, ar=100, noprint);
