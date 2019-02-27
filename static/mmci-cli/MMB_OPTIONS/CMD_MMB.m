@@ -1,6 +1,6 @@
 function function_output = CMD_MMB(models,rules,output,shock,varargin)
-
-modelsvec = models;                   % 1*114 vector for selecting models to run
+    
+modelsvec = models;                   % 1*128 vector for selecting models to run
 rule = rules;                         % 1*11 vector for selecting rules to run
 option1 = output(1,1);                % option1 :(1 - double) Autocorrelation Functions (ACFs) will be plotted, default = 1
 option2 = output(1,2);                % option2 :(1 - double) Impulse Response Functions (IRFs) will be plotted, default = 1
@@ -14,20 +14,59 @@ end
 %%%%%%%%%%%%%%%%%%% Declaration of key settings
 warning('off','all')
 OSenvironment = isunix;
-%% Adding dynare to path if it was not, and throw error, if Dynare not installed
+
+%% Checking versions of OCTAVE AND DYNARE
 if OSenvironment==1
     addpath('/usr/local/opt/dynare/lib/dynare/matlab')
-    addpath('/usr/lib/dynare/matlab')
     addpath('/usr/lib/dynare/mex/octave')
-    addpath('/Applications/Dynare/4.5.6/matlab')
-    addpath('/Applications/Dynare/4.5.6/mex/octave')
+    if isoctave
+        k0=strfind(IMAGE_PATH,'4.4.0');
+        k1=strfind(IMAGE_PATH,'4.4.1');
+        if  k0 ~= 0
+            if exist(['/Applications/Dynare/4.5.6'])
+                    addpath(['/Applications/Dynare/4.5.6/matlab'])
+                    addpath(['/Applications/Dynare/4.5.6/mex/octave'])
+            else
+                error('Error: Octave 4.4.0 requires Dynare 4.5.6. Path for Dynare 4.5.6 not found: expected: /Applications/Dynare/4.5.6/matlab ')
+            end
+        elseif k1 ~=0
+            if exist(['/Applications/Dynare/4.5.7'])
+                    addpath(['/Applications/Dynare/4.5.7/matlab'])
+                    addpath(['/Applications/Dynare/4.5.7/mex/octave'])
+            else
+                error('Error: Octave 4.4.1 requires Dynare 4.5.7. Path for Dynare 4.5.7 not found: expected: /Applications/Dynare/4.5.7/matlab')
+            end
+        else
+            error('Error: Neither path for Octave 4.4.0 nor Octave 4.4.1 was found! Expected: /Applications/Octave-4.4.0.app or /Applications/Octave-4.4.1.app')
+        end
+    end
     if ~exist('dynare')
            error('Error. Dynare is not installed')
     end
 else
-    addpath('c:\dynare\4.5.6\matlab')
-    addpath('c:\dynare\4.5.6\mex\octave')
-    addpath('c:\octave\octave-4.4.0\share\octave\packages\nan-3.1.4')
+    if isoctave
+        k0=strfind(IMAGE_PATH,'4.4.0');
+        k1=strfind(IMAGE_PATH,'4.4.1');
+        if  k0 ~= 0
+            if exist('c:\dynare\4.5.6\matlab')
+                addpath(['c:\dynare\4.5.6\matlab'])
+                addpath(['c:\dynare\4.5.6\mex\octave'])
+                addpath('c:\octave\octave-4.4.0\share\octave\packages\nan-3.1.4')
+            else
+                error('Error: Octave 4.4.0 requires Dynare 4.5.6. Path for Dynare 4.5.6 not found: expected: c:\dynare\4.5.6\matlab')
+            end
+        elseif k1 ~=0
+            if exist('c:\dynare\4.5.7\matlab')
+                addpath(['c:\dynare\4.5.7\matlab'])
+                addpath(['c:\dynare\4.5.7\mex\octave'])
+                addpath('c:\octave\octave-4.4.0\share\octave\packages\nan-3.1.4')
+            else
+                error('Error: Octave 4.4.1 requires Dynare 4.5.7. Path for Dynare 4.5.7 not found: expected: c:\dynare\4.5.7\matlab')
+            end
+        else
+            error('Error: Neither path for Octave 4.4.0 nor Octave 4.4.1 was found! Expected: c:\octave\octave-4.4.0 or c:\octave\octave-4.4.1')
+        end
+    end
     if ~exist('dynare')
            error('Error. Dynare is not installed')
     end
@@ -169,12 +208,14 @@ rulenamesshort1= deblank(modelbase.rulenamesshort1(logical(modelbase.rule),:));
         end
         %% AL: defining state variables
         if ~exist('states','var')
-            modelbase.setpath(modelbase.models(epsilon),:) = [modelbase.uphomepath filesep 'MODELS' filesep strtrim(modelbase.names(modelbase.models(epsilon),:))]; % path for dynare file of specific model
+            modelbase.setpath(modelbase.models(epsilon),:) = char([modelbase.uphomepath filesep 'MODELS' filesep strtrim(modelbase.names(modelbase.models(epsilon),:))]); % path for dynare file of specific model
             al=deblank(modelbase.names(modelbase.models(epsilon),:));
             modelbase.AL=strcmp(al(end-1:end),'AL');
             if modelbase.AL
                 if ~ismember(modelbase.rule,[8 9 10])
                     thepath=cd;
+                    modelbase.setpath(modelbase.models(epsilon),:) = char([modelbase.uphomepath filesep 'MODELS' filesep strtrim(modelbase.names(modelbase.models(epsilon),:))]); % path for dynare file of specific model
+%                    cd(modelbase.setpath(modelbase.models(epsilon),:))
                     cd([modelbase.uphomepath filesep 'MODELS' filesep strtrim(modelbase.names(modelbase.models(epsilon),:))])
                     load AL_Info
                     cd(thepath);
@@ -369,7 +410,7 @@ for i=1:size(modelbase.rulenames,1)
                                 'outputvar', deblank(vname),...
                                 'values', VARval...
                                  ));
-                            else
+                            else 
                            outputmodel = horzcat(outputmodel, struct(...
                                'model', deblank(vmod),...
                                'rule', deblank(vrule),...
@@ -464,9 +505,13 @@ try
 catch
 end
     catch   e %e is an MException struct
-        fprintf(1,'The identifier was:\n%s',e.identifier);
-        fprintf(1,'There was an error! The message was:\n%s',e.message);
-        % more error handling...%
+        fprintf(1, 'Error occured in: %s', e.stack(1).name);
+        fprintf(1, '\n');
+        fprintf(1,'Identifier: %s',e.identifier);
+        fprintf(1, '\n');
+        fprintf(1,'Error message: %s',e.message);
+        fprintf(1, '\n');
+        % more error handling...%        
         cd ([currentpath filesep 'MMB_OPTIONS' filesep]);
         epsilon=epsilon+1;
     end
@@ -474,7 +519,6 @@ end
 % The following lines are necessary so that the dimensions of the respective matrices adjust with each model
 modelbase.AUTR = []; modelbase.AUTendo_names = []; modelbase.IRF = []; modelbase.IRFendo_names = []; modelbase.VAR = []; modelbase.VARendo_names = [];
 modelbase.pos_shock = []; modelbase.setpath=[];
-
 end
 
 savejson('', outputmodel, 'Modelbasefile.json');

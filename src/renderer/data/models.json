@@ -604,7 +604,7 @@
     "description": {
       "ac_ref": "Federal Reserve Board model II",
       "paper_title": "Documentation of linearized FRB/US",
-      "journal": "https://www.federalreserve.gov/econres/us-models-package.htm",
+      "journal": null,
       "replicants_name": "M. Wolters with M. Burgert",
       "pub_date": "2008",
       "keywords": [],
@@ -643,7 +643,7 @@
     "description": {
       "ac_ref": "Federal Reserve Board model III",
       "paper_title": "Documentation of linearized FRB/US",
-      "journal": "https://www.federalreserve.gov/econres/us-models-package.htm",
+      "journal": null,
       "replicants_name": "M. Wolters with M. Burgert",
       "pub_date": "2008",
       "keywords": [],
@@ -4387,6 +4387,551 @@
         "Gali, Jordí",
         "López-Salido, J. David ",
         "Vallés, Javier"
+      ]
+    }
+  },
+  {
+    "id": 115,
+    "internal_name": "US_BKM12",
+    "path": null,
+    "capabilities": {
+      "model_specific_rule": true,
+      "interest": true,
+      "inflation": true,
+      "outputgap": true,
+      "output": true,
+      "mp_shock": true,
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "description": {
+      "ac_ref": "Bils et al. (2012)",
+      "paper_title": "Reset Price Inflation and the Impact of Monetary Policy Shocks",
+      "journal": "American Economic Review, 102(6): 2798-2825",
+      "replicants_name": "Changnam Son",
+      "pub_date": "2012",
+      "keywords": [],
+      "description": "",
+      "category": "Estimated US model",
+      "authors": [
+        "Bils, Mark",
+        "Klenow, Peter J.",
+        "Malin, Benjamin A."
+      ]
+    }
+  },
+  {
+    "id": 116,
+    "internal_name": "NK_MI14",
+    "path": null,
+    "capabilities": {
+      "model_specific_rule": true,
+      "interest": true,
+      "inflation": true,
+      "outputgap": true,
+      "output": true,
+      "mp_shock": true,
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ]
+    },
+    "description": {
+      "ac_ref": "Michaillat (2014)",
+      "paper_title": "A Theory of Countercyclical Government Multiplier",
+      "journal": "American Economic Journal: Macroeconomics, 6(1): 190-217",
+      "replicants_name": "Mariia Bondnar",
+      "pub_date": "2014",
+      "keywords": [],
+      "description": "",
+      "category": "Calibrated model",
+      "authors": [
+        "Michaillat, Pascal"
+      ]
+    }
+  },
+  {
+    "id": 117,
+    "internal_name": "NK_KM16",
+    "path": null,
+    "capabilities": {
+      "model_specific_rule": true,
+      "interest": true,
+      "inflation": true,
+      "outputgap": true,
+      "output": true,
+      "mp_shock": true,
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "description": {
+      "ac_ref": "Krause & Moyen (2016)",
+      "paper_title": "Public Debt and Changing Inflation Targets",
+      "journal": "American Economic Journal: Macroeconomics, 8(4): 142-76",
+      "replicants_name": "Ioanna Pigkou",
+      "pub_date": "2016",
+      "keywords": [],
+      "description": "",
+      "category": "Calibrated model",
+      "authors": [
+        "Krause, Michael U.",
+        "Moyen, Stéphane"
+      ]
+    }
+  },
+  {
+    "id": 118,
+    "internal_name": "EA_BE15",
+    "path": null,
+    "capabilities": {
+      "model_specific_rule": true,
+      "interest": true,
+      "inflation": true,
+      "outputgap": true,
+      "output": true,
+      "mp_shock": true,
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ]
+    },
+    "description": {
+      "ac_ref": "Benchimol (2015)",
+      "paper_title": "Money in the Production Function: A New Keynesian DSGE Perspective",
+      "journal": "Southern Economic Journal 2015, 82(1), 152–184",
+      "replicants_name": "Felix Strobel",
+      "pub_date": "2015",
+      "keywords": [],
+      "description": "",
+      "category": "Estimated euro area model",
+      "authors": [
+        "Benchimol, Jonathan"
+      ]
+    }
+  },
+  {
+    "id": 119,
+    "internal_name": "EA_BF17",
+    "path": null,
+    "capabilities": {
+      "model_specific_rule": true,
+      "interest": true,
+      "inflation": true,
+      "outputgap": true,
+      "output": true,
+      "mp_shock": true,
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ]
+    },
+    "description": {
+      "ac_ref": "Benchimol & Fourçans (2017)",
+      "paper_title": "Money And Monetary Policy In The Eurozone: An Empirical Analysis During Crises",
+      "journal": "Macroeconomic Dynamics, Cambridge University Press, vol. 21(03), 677-707",
+      "replicants_name": "Felix Strobel",
+      "pub_date": "2017",
+      "keywords": [],
+      "description": "",
+      "category": "Estimated euro area model",
+      "authors": [
+        "Benchimol, Jonathan",
+        "Fourçans, André"
+      ]
+    }
+  },
+  {
+    "id": 120,
+    "internal_name": "FI_AINO16",
+    "path": null,
+    "capabilities": {
+      "model_specific_rule": false,
+      "interest": true,
+      "inflation": true,
+      "outputgap": true,
+      "output": true,
+      "mp_shock": true,
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "description": {
+      "ac_ref": "Kilponen et al. (2016)",
+      "paper_title": "The AINO II model",
+      "journal": "Bank of Finland Research Discussion Paper 16/2016",
+      "replicants_name": "Phillip Lieberknecht",
+      "pub_date": "2016",
+      "keywords": [],
+      "description": "",
+      "category": "Estimated other-country model",
+      "authors": [
+        "Kilponen, Juha",
+        "Orjasniemi, Seppo",
+        "Ripatti, Antti",
+        "Verona, Fabio"
+      ]
+    }
+  },
+  {
+    "id": 121,
+    "internal_name": "NK_GSSZ17",
+    "path": null,
+    "capabilities": {
+      "model_specific_rule": true,
+      "interest": true,
+      "inflation": true,
+      "outputgap": true,
+      "output": true,
+      "mp_shock": true,
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "description": {
+      "ac_ref": "Gilchrist et al. (2017)",
+      "paper_title": "Inflation Dynamics during the Financial Crisis",
+      "journal": "American Economic Review, 107(3): 785-823",
+      "replicants_name": "Phillip Lieberknecht",
+      "pub_date": "2017",
+      "keywords": [],
+      "description": "",
+      "category": "Calibrated model",
+      "authors": [
+        "Gilchrist, Simon",
+        "Schoenle, Raphael",
+        "Sim, Jae",
+        "Zakrajšek, Egon"
+      ]
+    }
+  },
+  {
+    "id": 122,
+    "internal_name": "NK_GM16",
+    "path": null,
+    "capabilities": {
+      "model_specific_rule": false,
+      "interest": true,
+      "inflation": true,
+      "outputgap": true,
+      "output": true,
+      "mp_shock": true,
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "description": {
+      "ac_ref": "Gali & Monacelli (2016)",
+      "paper_title": "Understanding the Gains from Wage Flexibility: The Exchange Rate Connection",
+      "journal": "American Economic Review, 106(12): 3829-3868",
+      "replicants_name": "Lazar Milovojevic",
+      "pub_date": "2016",
+      "keywords": [],
+      "description": "",
+      "category": "Calibrated model",
+      "authors": [
+        "Gali, Jordi",
+        "Monacelli, Tommaso"
+      ]
+    }
+  },
+  {
+    "id": 123,
+    "internal_name": "NK_GS14",
+    "path": null,
+    "capabilities": {
+      "model_specific_rule": true,
+      "interest": true,
+      "inflation": true,
+      "outputgap": true,
+      "output": true,
+      "mp_shock": true,
+      "fiscal_shock": false,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ]
+    },
+    "description": {
+      "ac_ref": "Gambacorta & Signoretti (2014)",
+      "paper_title": "Should monetary policy lean against the wind? An analysis based on a DSGE model with banking",
+      "journal": "Journal of Economic Dynamics and Control, 43, 146-174",
+      "replicants_name": "Nora Lamersdorf",
+      "pub_date": "2014",
+      "keywords": [],
+      "description": "",
+      "category": "Calibrated model",
+      "authors": [
+        "Gambacorta, Leonardo",
+        "Signoretti, Federico M."
+      ]
+    }
+  },
+  {
+    "id": 124,
+    "internal_name": "NK_FLMF18",
+    "path": null,
+    "capabilities": {
+      "model_specific_rule": false,
+      "interest": true,
+      "inflation": true,
+      "outputgap": true,
+      "output": true,
+      "mp_shock": true,
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ]
+    },
+    "description": {
+      "ac_ref": "Filardo et al. (2018)",
+      "paper_title": "Monetary policy spillovers, global commoditiy prices and cooperation",
+      "journal": "BIS Working Paper No 696",
+      "replicants_name": "Felix Strobel",
+      "pub_date": "2018",
+      "keywords": [],
+      "description": "",
+      "category": "Calibrated model",
+      "authors": [
+        "Filardo, Andrew",
+        "Lombardi, Marco",
+        "Montoro, Carlos",
+        "Ferrari, Massimo"
+      ]
+    }
+  },
+  {
+    "id": 125,
+    "internal_name": "EA_PV16",
+    "path": null,
+    "capabilities": {
+      "model_specific_rule": true,
+      "interest": true,
+      "inflation": true,
+      "outputgap": true,
+      "output": true,
+      "mp_shock": true,
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "description": {
+      "ac_ref": "Priftis & Vogel (2016)",
+      "paper_title": "The Portfolio Balance Mechanism and QE in the Euro Area",
+      "journal": "Manchester School, University of Manchester, vol. 84(S1), 84-105",
+      "replicants_name": "original code provided by the authors",
+      "pub_date": "2016",
+      "keywords": [],
+      "description": "",
+      "category": "Estimated euro area model",
+      "authors": [
+        "Priftis, Romanos",
+        "Vogel, Lukas"
+      ]
+    }
+  },
+  {
+    "id": 126,
+    "internal_name": "EA_PV17",
+    "path": null,
+    "capabilities": {
+      "model_specific_rule": true,
+      "interest": true,
+      "inflation": true,
+      "outputgap": true,
+      "output": true,
+      "mp_shock": true,
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "description": {
+      "ac_ref": "Priftis & Vogel (2017)",
+      "paper_title": "The macroeconomic effects of the ECB’s evolving QE programme: a model-based analysis",
+      "journal": "Open Economies Review, Springer, vol. 28(5), 823-845",
+      "replicants_name": "original code provided by the authors",
+      "pub_date": "2017",
+      "keywords": [],
+      "description": "",
+      "category": "Estimated euro area model",
+      "authors": [
+        "Priftis, Romanos",
+        "Vogel, Lukas"
+      ]
+    }
+  },
+  {
+    "id": 127,
+    "internal_name": "US_PV15",
+    "path": null,
+    "capabilities": {
+      "model_specific_rule": true,
+      "interest": true,
+      "inflation": true,
+      "outputgap": true,
+      "output": true,
+      "mp_shock": true,
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ]
+    },
+    "description": {
+      "ac_ref": "Poutineau & Vermandel (2015)",
+      "paper_title": "Financial frictions and the extensive margin of activity",
+      "journal": "Research in Economics, 69(4), 525-554",
+      "replicants_name": "Lazar Milovojevic",
+      "pub_date": "2015",
+      "keywords": [],
+      "description": "",
+      "category": "Estimated US model",
+      "authors": [
+        "Poutineau, Jean-Christophe",
+        "Vermandel, Gauthier"
+      ]
+    }
+  },
+  {
+    "id": 128,
+    "internal_name": "NK_GHP16",
+    "path": null,
+    "capabilities": {
+      "model_specific_rule": true,
+      "interest": true,
+      "inflation": true,
+      "outputgap": true,
+      "output": true,
+      "mp_shock": true,
+      "fiscal_shock": true,
+      "rules": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ]
+    },
+    "description": {
+      "ac_ref": "Gnocci et al. (2016)",
+      "paper_title": "Housework and Fiscal Expansions",
+      "journal": "Journal of Monetary Economics, 79, 94-108",
+      "replicants_name": "Nora Lamersdorf",
+      "pub_date": "2016",
+      "keywords": [],
+      "description": "",
+      "category": "Calibrated model",
+      "authors": [
+        "Gnocci, Stefano",
+        "Hauser, Daniela",
+        "Pappa, Evi"
       ]
     }
   }

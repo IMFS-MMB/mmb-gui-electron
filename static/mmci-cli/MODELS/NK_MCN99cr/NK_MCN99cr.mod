@@ -20,7 +20,7 @@ var pi p y R v m i eta ytilde ybar
 
 //**************************************************************************
 // Modelbase Variables                                                   //*    
-   interest inflation inflationq outputgap output;                              //*
+   interest inflation inflationq outputgap;                              //*
 //**************************************************************************
 
 varexo u_ e_ ey_ ev_
@@ -89,7 +89,6 @@ interest   = 100*4*R;                                                    //*
 inflation = 100*(1/4)*(4*pi + 4*pi(-1) + 4*pi(-2) + 4*pi(-3));           //*
 inflationq  = 100*4*pi;                                                  //*
 outputgap  = 100*ytilde;                                                 //*
-output      =0;
 //**************************************************************************
 
 
