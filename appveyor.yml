@@ -39,14 +39,14 @@ artifacts:
     name: BuildWeb
 
 deploy:
-  - provider: GitHub
-    release: $(APPVEYOR_REPO_TAG_NAME)
-    description: 'Release description'
-    auth_token:
-      secure: Umyb8lnZeivbvN4AoqdXEhoFbP9trQybmA6pUJ+pY6xh0D+n6iEzZW0ol3brZR0B
+  - provider: FTP
+    protocol: ftps
+    host: macromodelbase.com:2222
+    username: data
+    password:
+      secure: Jk84+PZDSf/7XPb9gd8vvbjsh2SGSpPIhwVDjSBfSx0=
+    folder: mmb-electron-latest
     artifact: BuildWin
-    draft: true
-    prerelease: false
     on:
       branch: master
-      APPVEYOR_REPO_TAG: true
+
