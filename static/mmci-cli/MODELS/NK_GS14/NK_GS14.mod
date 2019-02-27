@@ -491,12 +491,12 @@ outputgap=  0;
 
 end;
 
-steady(solve_algo=0);
+%steady(solve_algo=0);
 
 shocks;
-var e_A_e            =  1;
-var e_mk_y           =  1; 
-var interest_        =  1;        
+var e_A_e            =  0.1;
+var e_mk_y           =  0.1; 
+var interest_        =  0.1;        
 end;
 
 // Stochastic simulations 

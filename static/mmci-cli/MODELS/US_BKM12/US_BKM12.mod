@@ -324,19 +324,19 @@ end;
 shocks;
 //        adjusted (quarterly) // how to adjust               // parameter description   
 var ea;
-stderr         1.260;          //                             // productivity
+stderr         1.260*1/3;          //                             // productivity
 var eb;
-stderr         0.030;          //                             // risk premium     
+stderr         0.030*1/3;          //                             // risk premium     
 var eg;
-stderr         0.573;          //                             // government spending      
+stderr         0.573*1/3;          //                             // government spending      
 var eqs;
-stderr         0.240;          //                             // investment     
+stderr         0.240*1/3;          //                             // investment     
 //var em;
-//stderr       0.044;          //                             // monetary policy
+//stderr       0.044*1/3;          //                             // monetary policy
 var epinf;
-stderr         0.283;          //                             // price-markup
+stderr         0.283*1/3;          //                             // price-markup
 var ew;
-stderr         0.519;          //                             // wage-markup     
+stderr         0.519*1/3;          //                             // wage-markup     
 end;
 
 
