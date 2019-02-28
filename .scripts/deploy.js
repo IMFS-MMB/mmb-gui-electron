@@ -20,11 +20,17 @@ function getOptions() {
   const isAppveyor = !!process.env.APPVEYOR;
 
   if (isTravis) {
+    console.log('Travis detected');
+
     const {
       TRAVIS_BRANCH,
       TRAVIS_PULL_REQUEST,
       TRAVIS_TAG,
     } = process.env;
+
+    console.log(`TRAVIS_BRANCH=${TRAVIS_BRANCH}`);
+    console.log(`TRAVIS_PULL_REQUEST=${TRAVIS_PULL_REQUEST}`);
+    console.log(`TRAVIS_TAG=${TRAVIS_TAG}`);
 
     return {
       shouldDeploy: !TRAVIS_PULL_REQUEST && TARGET_BRANCHES.includes(TRAVIS_BRANCH),
@@ -34,12 +40,19 @@ function getOptions() {
   }
 
   if (isAppveyor) {
+    console.log('Appveyor detected');
+
     const {
       APPVEYOR_PULL_REQUEST_NUMBER,
       APPVEYOR_REPO_BRANCH,
       APPVEYOR_REPO_TAG,
       APPVEYOR_REPO_TAG_NAME
     } = process.env;
+
+    console.log(`APPVEYOR_PULL_REQUEST_NUMBER = ${APPVEYOR_PULL_REQUEST_NUMBER}`);
+    console.log(`APPVEYOR_REPO_BRANCH = ${APPVEYOR_REPO_BRANCH}`);
+    console.log(`APPVEYOR_REPO_TAG = ${APPVEYOR_REPO_TAG}`);
+    console.log(`APPVEYOR_REPO_TAG_NAME = ${APPVEYOR_REPO_TAG_NAME}`);
 
     return {
       shouldDeploy: !APPVEYOR_PULL_REQUEST_NUMBER && TARGET_BRANCHES.includes(APPVEYOR_REPO_BRANCH),
@@ -85,7 +98,7 @@ glob('mmb-electron*{snap,AppImage,dmg,mac.zip,exe}', {
       password: SFTP_PASSWORD
     });
 
-    const remoteFolder = isStable ? `${PATH_BASE}/${tag}`: PATH_NIGHTLY;
+    const remoteFolder = `${PATH_BASE}/${tag || 'nightly'}`;
 
     if(!await sftp.exists(remoteFolder)) {
       await sftp.mkdir(remoteFolder, true);
