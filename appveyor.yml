@@ -4,9 +4,9 @@ environment:
   SFTP_PASSWORD:
     secure: Jk84+PZDSf/7XPb9gd8vvbjsh2SGSpPIhwVDjSBfSx0=
 
-  branches:
-    only:
-      - master
+branches:
+  only:
+    - master
 
 image: Visual Studio 2017
 platform:
