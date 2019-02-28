@@ -3,6 +3,10 @@ const sftp = new Client();
 const path = require('path');
 const glob = require('glob');
 
+function coerceBoolean(value) {
+  return typeof value !== 'undefined' && value != null && `${value}` !== 'false' && `${value}` !== 'undefined';
+}
+
 function exitSuccess(message) {
   if (message) console.log(message);
 
@@ -16,8 +20,8 @@ function exitError(message) {
 }
 
 function getOptions() {
-  const isTravis = !!process.env.TRAVIS;
-  const isAppveyor = !!process.env.APPVEYOR;
+  const isTravis = coerceBoolean(process.env.TRAVIS);
+  const isAppveyor = coerceBoolean(process.env.APPVEYOR);
 
   if (isTravis) {
     console.log('Travis detected');
@@ -33,8 +37,8 @@ function getOptions() {
     console.log(`TRAVIS_TAG=${TRAVIS_TAG}`);
 
     return {
-      shouldDeploy: !TRAVIS_PULL_REQUEST && TARGET_BRANCHES.includes(TRAVIS_BRANCH),
-      isStable: !!TRAVIS_TAG,
+      shouldDeploy: !coerceBoolean(TRAVIS_PULL_REQUEST) && TARGET_BRANCHES.includes(TRAVIS_BRANCH),
+      isStable: coerceBoolean(TRAVIS_TAG),
       tag: TRAVIS_TAG,
     };
   }
@@ -55,8 +59,8 @@ function getOptions() {
     console.log(`APPVEYOR_REPO_TAG_NAME = ${APPVEYOR_REPO_TAG_NAME}`);
 
     return {
-      shouldDeploy: !APPVEYOR_PULL_REQUEST_NUMBER && TARGET_BRANCHES.includes(APPVEYOR_REPO_BRANCH),
-      isStable: APPVEYOR_REPO_TAG,
+      shouldDeploy: !coerceBoolean(APPVEYOR_PULL_REQUEST_NUMBER) && TARGET_BRANCHES.includes(APPVEYOR_REPO_BRANCH),
+      isStable: coerceBoolean(APPVEYOR_REPO_TAG),
       tag: APPVEYOR_REPO_TAG_NAME,
     };
   }
@@ -65,7 +69,7 @@ function getOptions() {
     shouldDeploy: false,
     isStable: false,
     tag: null
-  }
+  };
 }
 
 const { SFTP_PASSWORD } = process.env;
@@ -75,7 +79,6 @@ const BUILD_FOLDER = path.join(__dirname, '..', 'build');
 const TARGET_BRANCHES = ['master'];
 
 const PATH_BASE = `data/mmb-electron-gui`;
-const PATH_NIGHTLY = `${PATH_BASE}/nightly`;
 
 const {
   shouldDeploy,
@@ -98,9 +101,9 @@ glob('mmb-electron*{snap,AppImage,dmg,mac.zip,exe}', {
       password: SFTP_PASSWORD
     });
 
-    const remoteFolder = `${PATH_BASE}/${tag || 'nightly'}`;
+    const remoteFolder = `${PATH_BASE}/${isStable ? tag : 'nightly'}`;
 
-    if(!await sftp.exists(remoteFolder)) {
+    if (!await sftp.exists(remoteFolder)) {
       await sftp.mkdir(remoteFolder, true);
     }
 
