@@ -4,7 +4,7 @@ const path = require('path');
 const glob = require('glob');
 
 function coerceBoolean(value) {
-  return typeof value !== 'undefined' && value != null && `${value}` !== 'false' && `${value}` !== 'undefined';
+  return value && `${value}` !== 'false' && `${value}` !== 'undefined';
 }
 
 function exitSuccess(message) {
