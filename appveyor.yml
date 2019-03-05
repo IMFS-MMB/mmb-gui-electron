@@ -29,10 +29,10 @@ install:
 
 build_script:
   - npm run build
-  - npm run build:web
+#  - npm run build:web
 
 after_build:
-  - 7z a web.zip dist/web/
+#  - 7z a web.zip dist/web/
   - node .scripts/deploy.js
 
 test: off
