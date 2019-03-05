@@ -19,7 +19,7 @@ OSenvironment = isunix;
 if OSenvironment==1
     addpath('/usr/local/opt/dynare/lib/dynare/matlab')
     addpath('/usr/lib/dynare/mex/octave')
-    if isoctave
+    if exist('OCTAVE_VERSION', 'builtin')
         k0=strfind(IMAGE_PATH,'4.4.0');
         k1=strfind(IMAGE_PATH,'4.4.1');
         if  k0 ~= 0
@@ -37,14 +37,15 @@ if OSenvironment==1
                 error('Error: Octave 4.4.1 requires Dynare 4.5.7. Path for Dynare 4.5.7 not found: expected: /Applications/Dynare/4.5.7/matlab')
             end
         else
-            error('Error: Neither path for Octave 4.4.0 nor Octave 4.4.1 was found! Expected: /Applications/Octave-4.4.0.app or /Applications/Octave-4.4.1.app')
+            disp('Older versions of octave used. We cannot guarantee that all models will be simulated.')
+    %        error('Error: Neither path for Octave 4.4.0 nor Octave 4.4.1 was found! Expected: /Applications/Octave-4.4.0.app or /Applications/Octave-4.4.1.app')
         end
     end
     if ~exist('dynare')
            error('Error. Dynare is not installed')
     end
 else
-    if isoctave
+    if exist('OCTAVE_VERSION', 'builtin')
         k0=strfind(IMAGE_PATH,'4.4.0');
         k1=strfind(IMAGE_PATH,'4.4.1');
         if  k0 ~= 0
