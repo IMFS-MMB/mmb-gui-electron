@@ -20,41 +20,6 @@
     "postinstall": "npm run lint:fix",
     "deploy": "node .scripts/deploy.sh"
   },
-  "build": {
-    "productName": "mmb-electron",
-    "appId": "com.macromodelbase.mmci",
-    "asar": false,
-    "directories": {
-      "output": "build"
-    },
-    "files": [
-      "dist/electron/**/*"
-    ],
-    "dmg": {
-      "contents": [
-        {
-          "x": 410,
-          "y": 150,
-          "type": "link",
-          "path": "/Applications"
-        },
-        {
-          "x": 130,
-          "y": 150,
-          "type": "file"
-        }
-      ]
-    },
-    "mac": {
-      "icon": "build/icons/mac/icon.icns"
-    },
-    "win": {
-      "icon": "build/icons/win/icon.ico"
-    },
-    "linux": {
-      "icon": "build/icons/png"
-    }
-  },
   "dependencies": {
     "@feathersjs/feathers": "^3.3.0",
     "@feathersjs/rest-client": "^1.4.6",

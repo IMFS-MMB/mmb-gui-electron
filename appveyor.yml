@@ -1,5 +1,9 @@
 version: 0.1.{build}
 
+environment:
+  SFTP_PASSWORD:
+    secure: Jk84+PZDSf/7XPb9gd8vvbjsh2SGSpPIhwVDjSBfSx0=
+
 branches:
   only:
     - master
@@ -25,27 +29,10 @@ install:
 
 build_script:
   - npm run build
-  - npm run build:web
+#  - npm run build:web
 
 after_build:
-  - 7z a web.zip dist/web/
+#  - 7z a web.zip dist/web/
+  - node .scripts/deploy.js
 
 test: off
-
-artifacts:
-  - path: build/*.exe
-    name: BuildWin
-  - path: web.zip
-    name: BuildWeb
-
-deploy:
-  - provider: FTP
-    protocol: sftp
-    host: macromodelbase.com:2222
-    username: deploy
-    password:
-      secure: Jk84+PZDSf/7XPb9gd8vvbjsh2SGSpPIhwVDjSBfSx0=
-    folder: data/mmb-electron-latest
-    artifact: BuildWin
-    on:
-      branch: master
