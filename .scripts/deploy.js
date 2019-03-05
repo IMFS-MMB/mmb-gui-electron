@@ -90,7 +90,7 @@ if (!shouldDeploy) {
   exitSuccess('No deployment needed. Exiting.');
 }
 
-glob('mmb-electron*{snap,AppImage,dmg,mac.zip,exe}', {
+glob('mmb-electron*{tar.xz,dmg,mac.zip,exe}', {
   cwd: BUILD_FOLDER
 }, async function (err, files) {
   try {
