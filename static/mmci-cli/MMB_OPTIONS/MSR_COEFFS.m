@@ -2359,26 +2359,246 @@ case  114 	% NK_GLSV07
         coeff_vec(32) = 1;
         coeff_vec(33) = 0.25;
 
-%         case  115 	% NK_KM16
-% 
-%         % Original monetary policy rule (Krause and Moyen, 2016)
-%         % i = 0.75*i(-1)+ (1-0.75)*(1.5*pi+0.5*outputgap); inflation-based Taylor rule in page 18
-%         % Definition of Modelbase Variables in Terms of Original Model Variables
-%         %interest=4*100*log(i/STEADY_STATE(i));//i*4;
-%         %inflation=100*(log(pi)+log(pi(-1))+log(pi(-2))+log(pi(-3))-4*log(STEADY_STATE(pi))); //annual inflation
-%         %inflationq=100*4*log(pi/STEADY_STATE(pi)); //annualized quarterly inflation
-%         %outputgap=100*(log(y)-log(yn));
-%         %output=100*(log(y)-log(STEADY_STATE(y)));
-%         %fispol=G_;
-% 
-%         coeff_vec(1) =  0.75; coeff_vec(2) = 0; coeff_vec(3) = 0; coeff_vec(4) = 0;
-%         coeff_vec(5) = 0.375; coeff_vec(6) = 0; coeff_vec(7) = 0; coeff_vec(8) = 0.; coeff_vec(9) = 0;
-%         coeff_vec(10) = 0; coeff_vec(11) = 0; coeff_vec(12) = 0; coeff_vec(13) = 0;
-%         coeff_vec(14) =0.125; coeff_vec(15) = 0; coeff_vec(16) = 0; coeff_vec(17) = 0; coeff_vec(18) = 0;
-%         coeff_vec(19) = 0; coeff_vec(20) = 0; coeff_vec(21) = 0; coeff_vec(22) = 0;
-%         coeff_vec(23) = 0;coeff_vec(24) = 0;coeff_vec(25) = 0;coeff_vec(26) = 0;coeff_vec(27) = 0;
-%         coeff_vec(28) = 0;coeff_vec(29) = 0;coeff_vec(30) = 0; coeff_vec(31) = 0;
-%         coeff_vec(32) = 1;
-%         coeff_vec(33) = 0.25;
+case  115 	% US_BKM12
+            % Original monetary policy rule (Mark Bils, Peter J. Klenow, and Benjamin A. Malin, 2012)
+            % r =  crpi*(1-crr)*pinf+cry*(1-crr)*(y-yf)+crdy*(y-yf-y(-1)+yf(-1))+crr*r(-1) +ms  ;
+            % Definition of Modelbase Variables in Terms of Original Model Variable //*
+            %interest   = 4*r;                                                        //*
+            %inflation  = pinf+pinf(-1)+pinf(-2)+pinf(-3);                            //*
+            %inflationq = 4*pinf;                                                     //*
+            %outputgap  = y-yf;                                                       //*
+            %output     = y;                                                          //*
+
+        coeff_vec(1) =  0.929; coeff_vec(2) = 0; coeff_vec(3) = 0; coeff_vec(4) = 0;
+        coeff_vec(5) = (1-0.929)*1.127; coeff_vec(6) = 0; coeff_vec(7) = 0; coeff_vec(8) = 0.; coeff_vec(9) = 0;
+        coeff_vec(10) = 0; coeff_vec(11) = 0; coeff_vec(12) = 0; coeff_vec(13) = 0;
+        coeff_vec(14) =(1-0.929)*0.269+0.042; coeff_vec(15) = -0.042; coeff_vec(16) = 0; coeff_vec(17) = 0; coeff_vec(18) = 0;
+        coeff_vec(19) = 0; coeff_vec(20) = 0; coeff_vec(21) = 0; coeff_vec(22) = 0;
+        coeff_vec(23) = 0;coeff_vec(24) = 0;coeff_vec(25) = 0;coeff_vec(26) = 0;coeff_vec(27) = 0;
+        coeff_vec(28) = 0;coeff_vec(29) = 0;coeff_vec(30) = 0; coeff_vec(31) = 0;
+        coeff_vec(32) = 1;
+        coeff_vec(33) = 0.25;
+
+case  116 	% NK_MI14
+          % Original monetary policy rule (Pascal Michaillat, 2014)
+          %R = R_ss*(1+pie)^(phipi*(1-phir))*(R(-1)/R_ss)^phir;
+        % Definition of Modelbase Variables in Terms of Original Model Variables
+        % interest = log(R/R_ss)*4;                                                     //*   
+        % inflation = (1/4)*(inflationq+inflationq(-1)+inflationq(-2)+inflationq(-3));  //*  
+        % inflationq = pie*4;                                                      //*
+        % output = y;   
+        % outputgap = y-y_flex;                                                    //*
+
+        coeff_vec(1) = 0.6; coeff_vec(2) = 0; coeff_vec(3) = 0; coeff_vec(4) = 0;
+        coeff_vec(5) = 1.5*0.4; coeff_vec(6) = 0; coeff_vec(7) = 0; coeff_vec(8) = 0.; coeff_vec(9) = 0;
+        coeff_vec(10) = 0; coeff_vec(11) = 0; coeff_vec(12) = 0; coeff_vec(13) = 0;
+        coeff_vec(14) = 0; coeff_vec(15) = 0; coeff_vec(16) = 0; coeff_vec(17) = 0; coeff_vec(18) = 0;
+        coeff_vec(19) = 0; coeff_vec(20) = 0; coeff_vec(21) = 0; coeff_vec(22) = 0;
+        coeff_vec(23) = 0; coeff_vec(24) = 0; coeff_vec(25) = 0; coeff_vec(26) = 0; coeff_vec(27) = 0;
+        coeff_vec(28) = 0; coeff_vec(29) = 0; coeff_vec(30) = 0; coeff_vec(31) = 0;
+        coeff_vec(32) = 1;
+        coeff_vec(33) = 0.25;
+
+
+case  117 	% NK_KM16
+            % Original monetary policy rule (Michael U.Krause and Stephane Moyen, 2016)
+        % i_obs/4=(1-rho_i)*(PIESTAR+phipi*(pi_obs/4-PIESTAR)+phiy*(y_obs-yn_obs))+rho_i*i_obs(-1)/4+epsi_R;
+        % Definition of Modelbase Variables in Terms of Original Model Variables
+        % interest=i_obs/100;//i*4;
+        % inflation=(log(pi)+log(pi(-1))+log(pi(-2))+log(pi(-3))-4*log(STEADY_STATE(pi))); //annual inflation
+        % inflationq=4*log(pi/STEADY_STATE(pi)); //annualized quarterly inflation
+        % outputgap=(log(y)-log(yn));
+        % output=(log(y)-log(STEADY_STATE(y)));
+
+        coeff_vec(1) = 0.75; coeff_vec(2) = 0; coeff_vec(3) = 0; coeff_vec(4) = 0;
+        coeff_vec(5) = 1.5*0.25; coeff_vec(6) = 0; coeff_vec(7) = 0; coeff_vec(8) = 0.; coeff_vec(9) = 0;
+        coeff_vec(10) = 0; coeff_vec(11) = 0; coeff_vec(12) = 0; coeff_vec(13) = 0;
+        coeff_vec(14) = 0; coeff_vec(15) = 0; coeff_vec(16) = 0; coeff_vec(17) = 0; coeff_vec(18) = 0;
+        coeff_vec(19) = 0; coeff_vec(20) = 0; coeff_vec(21) = 0; coeff_vec(22) = 0;
+        coeff_vec(23) = 0.5*0.25; coeff_vec(24) = 0; coeff_vec(25) = 0; coeff_vec(26) = 0; coeff_vec(27) = 0;
+        coeff_vec(28) = 0; coeff_vec(29) = 0; coeff_vec(30) = 0; coeff_vec(31) = 0;
+        coeff_vec(32) = 1;
+        coeff_vec(33) = 0.25;
+
+case  118 	% EA_BE15
+            % Original monetary policy rule (Benchimol, J. 2015. "Money in the Production Function: A New Keynesian DSGE Perspective.")
+        % ir		=	(1-li1)*(li2*(pi-cible) + li3*(y-yf)) + li1*(ir(-1)) + ei;
+        % Definition of Modelbase Variables in Terms of Original Model Variables
+        % interest   = ir*4;                                                       //*
+        % inflation = (1/4)*(4*pi+4*pi(-1)+4*pi(-2)+4*pi(-3));			         //*
+        % inflationq  = pi*4;                                                      //*
+        % outputgap  = y-yf;                                                       //*
+        % output = y;                                                              //*
+
+        coeff_vec(1) = 0.6005; coeff_vec(2) = 0; coeff_vec(3) = 0; coeff_vec(4) = 0;
+        coeff_vec(5) = 3.4258*(1-0.6005); coeff_vec(6) = 0; coeff_vec(7) = 0; coeff_vec(8) = 0.; coeff_vec(9) = 0;
+        coeff_vec(10) = 0; coeff_vec(11) = 0; coeff_vec(12) = 0; coeff_vec(13) = 0;
+        coeff_vec(14) = 1.4118*(1-0.6005); coeff_vec(15) = 0; coeff_vec(16) = 0; coeff_vec(17) = 0; coeff_vec(18) = 0;
+        coeff_vec(19) = 0; coeff_vec(20) = 0; coeff_vec(21) = 0; coeff_vec(22) = 0;
+        coeff_vec(23) = 0; coeff_vec(24) = 0; coeff_vec(25) = 0; coeff_vec(26) = 0; coeff_vec(27) = 0;
+        coeff_vec(28) = 0; coeff_vec(29) = 0; coeff_vec(30) = 0; coeff_vec(31) = 0;
+        coeff_vec(32) = 1;
+        coeff_vec(33) = 0.25;
+
+        
+case  119 	% EA_BF17
+            % Original monetary policy rule (Benchimol, Jonathan & Fourçans, André, 2017)
+        % r-rb = (1-li1)*(li2*(pi-pb) + li3*(y-yf)) + li1*(r(-1)-rb)+ ei;// + li4*(mp-mpf)
+        % Definition of Modelbase Variables in Terms of Original Model Variables
+        %interest   = 4*r;                                           
+        %inflation  = (pi + pi(-1) + pi(-2) + pi(-3));                          
+        %inflationq = 4*pi;                                                              
+        %outputgap  = (y - yf);                                             
+        %output     = y; 
+
+        coeff_vec(1) = 0.42; coeff_vec(2) = 0; coeff_vec(3) = 0; coeff_vec(4) = 0;
+        coeff_vec(5) = 1.8*(1-0.42); coeff_vec(6) = 0; coeff_vec(7) = 0; coeff_vec(8) = 0.; coeff_vec(9) = 0;
+        coeff_vec(10) = 0; coeff_vec(11) = 0; coeff_vec(12) = 0; coeff_vec(13) = 0;
+        coeff_vec(14) = 1*(1-0.42); coeff_vec(15) = 0; coeff_vec(16) = 0; coeff_vec(17) = 0; coeff_vec(18) = 0;
+        coeff_vec(19) = 0; coeff_vec(20) = 0; coeff_vec(21) = 0; coeff_vec(22) = 0;
+        coeff_vec(23) = 0; coeff_vec(24) = 0; coeff_vec(25) = 0; coeff_vec(26) = 0; coeff_vec(27) = 0;
+        coeff_vec(28) = 0; coeff_vec(29) = 0; coeff_vec(30) = 0; coeff_vec(31) = 0;
+        coeff_vec(32) = 1;
+        coeff_vec(33) = 0.25;
+
+case  120 	% FI_AINO16
+    
+case  121 	% NK_GSSZ17
+            % Original monetary policy rule (Simon Gilchrist, Raphael Schoenle, Jae Sim, and Egon Zakrajsek 
+            % "Inflation Dynamics during the Financial Crisis")
+        % R           = R(-1)^rho_r*(1/beta*(y/steady_state(y))^rho_y*(pii/pii_f)^rho_pi)^(1-rho_r)*exp(Rsig*eR);
+        % Definition of Modelbase Variables in Terms of Original Model Variables
+        % interest     = 400*(log(R) - log(steady_state(R)));                      //* 
+        % inflation    = 100*(log(pii)+log(pii(-1))+log(pii(-2))+log(pii(-3))-4*log(steady_state(pii))); //* 
+        % inflationq   = 400*(log(pii) - log(steady_state(pii)));                  //*     
+        % outputgap    = 100*(log(y) - log(y_f) - (log(steady_state(y)) - log(steady_state(y_f))));  
+        % output       = 100*(log(y) - log(steady_state(y)));                      //*
+
+        coeff_vec(1) = 0.75; coeff_vec(2) = 0; coeff_vec(3) = 0; coeff_vec(4) = 0;
+        coeff_vec(5) = 2*0.25; coeff_vec(6) = 0; coeff_vec(7) = 0; coeff_vec(8) = 0.; coeff_vec(9) = 0;
+        coeff_vec(10) = 0; coeff_vec(11) = 0; coeff_vec(12) = 0; coeff_vec(13) = 0;
+        coeff_vec(14) = 0; coeff_vec(15) = 0; coeff_vec(16) = 0; coeff_vec(17) = 0; coeff_vec(18) = 0;
+        coeff_vec(19) = 0; coeff_vec(20) = 0; coeff_vec(21) = 0; coeff_vec(22) = 0;
+        coeff_vec(23) = 0; coeff_vec(24) = 0; coeff_vec(25) = 0; coeff_vec(26) = 0; coeff_vec(27) = 0;
+        coeff_vec(28) = 0; coeff_vec(29) = 0; coeff_vec(30) = 0; coeff_vec(31) = 0;
+        coeff_vec(32) = 1;
+        coeff_vec(33) = 0.25;
+        
+case  122 	% NK_GM16
+
+        
+case  123 	% NK_GS14
+        % L. Gambacorta and F.M. Signoretti (2014): 
+        % "Should MP Lean against the Wind? An Analysis based on a DSGE Model with Banking"
+        
+        % Case with "optimal" Taylor rule
+
+        % Definition of Modelbase Variables in Terms of Original Model Variables
+        % interest   = 4*(r_ib-r_ib_ss);                                          //*
+        % inflation  = (pie+pie(-1)+pie(-2)+pie(-3));                             //*
+        % inflationq = 4*pie;                                                      //*
+        % outputgap  = Y - Yf;                                         //*
+        % output     = Y-steady_state(Y);                                                //* 
+
+        coeff_vec(1) =  0; coeff_vec(2) = 0; coeff_vec(3) = 0; coeff_vec(4) = 0;
+        coeff_vec(5) = 0.5; coeff_vec(6) = 0; coeff_vec(7) = 0; coeff_vec(8) = 0.; coeff_vec(9) = 0;
+        coeff_vec(10) = 0; coeff_vec(11) = 0; coeff_vec(12) = 0; coeff_vec(13) = 0;
+        coeff_vec(14) =0; coeff_vec(15) = 0; coeff_vec(16) = 0; coeff_vec(17) = 0; coeff_vec(18) = 0;
+        coeff_vec(19) = 0; coeff_vec(20) = 0; coeff_vec(21) = 0; coeff_vec(22) = 0;
+        coeff_vec(23) = 0;coeff_vec(24) = 0;coeff_vec(25) = 0;coeff_vec(26) = 0;coeff_vec(27) = 0;
+        coeff_vec(28) = 0;coeff_vec(29) = 0;coeff_vec(30) = 0; coeff_vec(31) = 0;
+        coeff_vec(32) = 1;
+        coeff_vec(33) = 0.25;
+
+case  124 	% NK_FLMF18
+
+case  125 	% EA_PV16
+            % Original monetary policy rule (Priftis and Vogel (2016). "The portfolio Balance Mechanism and QE in The Euro Area.")
+        % ea_inom = ea_ilag*(ea_inom-ea_dinom)+(1-ea_ilag)*(ea_ex_r+ea_ex_inf+ea_tinf*(ea_infc-ea_ex_inf)+ea_ty*ea_ygap)+ea_eps_m;
+        % Definition of Modelbase Variables in Terms of Original Model Variables
+        % interest   = 4*(ea_inom-r_inom);               
+        % inflation = (1/4)*(inflationq+inflationq(-1)+inflationq(-2)+inflationq(-3));     
+        % inflationq = 4*(ea_infc-r_infc);          
+        % output = 1*ln(ea_y);
+        % outputgap=1*ea_ygap;
+
+        coeff_vec(1) = 0.82; coeff_vec(2) = 0; coeff_vec(3) = 0; coeff_vec(4) = 0;
+        coeff_vec(5) = 0.18*1.5; coeff_vec(6) = 0; coeff_vec(7) = 0; coeff_vec(8) = 0.; coeff_vec(9) = 0;
+        coeff_vec(10) = 0; coeff_vec(11) = 0; coeff_vec(12) = 0; coeff_vec(13) = 0;
+        coeff_vec(14) =0.18*0.5; coeff_vec(15) = 0; coeff_vec(16) = 0; coeff_vec(17) = 0; coeff_vec(18) = 0;
+        coeff_vec(19) = 0; coeff_vec(20) = 0; coeff_vec(21) = 0; coeff_vec(22) = 0;
+        coeff_vec(23) = 0;coeff_vec(24) = 0;coeff_vec(25) = 0;coeff_vec(26) = 0;coeff_vec(27) = 0;
+        coeff_vec(28) = 0;coeff_vec(29) = 0;coeff_vec(30) = 0; coeff_vec(31) = 0;
+        coeff_vec(32) = 1;
+        coeff_vec(33) = 0.25;
+
+    
+    case  126 	% EA_PV17
+            % Original monetary policy rule (Romanos Priftis & Lukas Vogel, 2017. "The macroeconomic effects of the ECB�s evolving QE programme: a model-based analysis,")
+        % ea_inom = ea_ilag*(ea_inom-ea_dinom)+(1-ea_ilag)*(ea_ex_r+ea_ex_inf+ea_tinf*(ea_infc-ea_ex_inf)+ea_ty*ea_ygap)+ea_eps_m;
+        % Definition of Modelbase Variables in Terms of Original Model Variables
+        % interest   = 4*(ea_inom-r_inom);               
+        % inflation = (1/4)*(inflationq+inflationq(-1)+inflationq(-2)+inflationq(-3));     
+        % inflationq = 4*(ea_infc-r_infc);          
+        % output = 1*ln(ea_y);
+        % outputgap=1*ea_ygap;
+
+        coeff_vec(1) = 0.82; coeff_vec(2) = 0; coeff_vec(3) = 0; coeff_vec(4) = 0;
+        coeff_vec(5) = 0.18*1.5; coeff_vec(6) = 0; coeff_vec(7) = 0; coeff_vec(8) = 0.; coeff_vec(9) = 0;
+        coeff_vec(10) = 0; coeff_vec(11) = 0; coeff_vec(12) = 0; coeff_vec(13) = 0;
+        coeff_vec(14) =0.18*0.5; coeff_vec(15) = 0; coeff_vec(16) = 0; coeff_vec(17) = 0; coeff_vec(18) = 0;
+        coeff_vec(19) = 0; coeff_vec(20) = 0; coeff_vec(21) = 0; coeff_vec(22) = 0;
+        coeff_vec(23) = 0;coeff_vec(24) = 0;coeff_vec(25) = 0;coeff_vec(26) = 0;coeff_vec(27) = 0;
+        coeff_vec(28) = 0;coeff_vec(29) = 0;coeff_vec(30) = 0; coeff_vec(31) = 0;
+        coeff_vec(32) = 1;
+        coeff_vec(33) = 0.25;
+
+case  127 	% US_PV15
+            % Original monetary policy rule (Poutineau, J. C., & Vermandel, G. (2015))
+        % r-STEADY_STATE(r)= rho*(r(-1)-STEADY_STATE(r)) + (1-rho)*(phi_pi*(pic-1) + phi_pic*(pic-1) +  phi_y*(y-STEADY_STATE(y)) ) + phi_dy*(y-y(-1)) + s_r;
+        % Definition of Modelbase Variables in Terms of Original Model Variables
+        % interest     = 4*(r-STEADY_STATE(r));                                              //* 
+        % inflation    = inflationq +inflationq(-1) + inflationq(-2) +inflationq(-3);                                 //* 
+        % inflationq   = 4*ln_pi;                                                    //* 
+        % outputgap    = ln_y-ln_yn;                                                     //* 
+        % output       = ln_y;                                    //* 
+
+        coeff_vec(1) = 0.874082619958901; coeff_vec(2) = 0; coeff_vec(3) = 0; coeff_vec(4) = 0;
+        coeff_vec(5) = (1-0.874082619958901)*1.442040888486226; coeff_vec(6) = 0; coeff_vec(7) = 0; coeff_vec(8) = 0.; coeff_vec(9) = 0;
+        coeff_vec(10) = 0; coeff_vec(11) = 0; coeff_vec(12) = 0; coeff_vec(13) = 0;
+        coeff_vec(14) = 0; coeff_vec(15) = 0; coeff_vec(16) = 0; coeff_vec(17) = 0; coeff_vec(18) = 0;
+        coeff_vec(19) = 0; coeff_vec(20) = 0; coeff_vec(21) = 0; coeff_vec(22) = 0;
+        coeff_vec(23) = (1-0.874082619958901)*(0.107573728902499+0.086084005670054);coeff_vec(24) = (1-0.874082619958901)*(-0.086084005670054);coeff_vec(25) = 0;coeff_vec(26) = 0;coeff_vec(27) = 0;
+        coeff_vec(28) = 0;coeff_vec(29) = 0;coeff_vec(30) = 0; coeff_vec(31) = 0;
+        coeff_vec(32) = 1;
+        coeff_vec(33) = 0.25;
+        
+        
+case  128 	% NK_GHP16
+        % Gnocchi, Hauser, Pappa, 2016 : "Housework and fiscal expansions"
+        % In: Journal of Monetary Economics (2016)
+        % Original formulation of the policy rule
+        % exp(1+r)=beta^(-1)*exp(infl)^phi_infl
+        % phi_infl=1.5
+        
+        % Definition of Modelbase Variables in Terms of Orginal Model Variables
+        % interest   = 4*(r-log(1/beta));                                          
+        %inflation  = infl+infl(-1)+infl(-2)+infl(-3);                            
+        %inflationq = 4*infl;                                                    
+        %exp(outputgap)  = exp(Y)/exp(Yf);                                       
+        %output     = Y-log(Y_ss);                                               
+        %fispol     = e_g;                                                                  
+        
+        % Description in terms of the Modelbase general rule specification:
+          coeff_vec(1) = 0.0; coeff_vec(2) = 0; coeff_vec(3) = 0; coeff_vec(4) = 0;
+          coeff_vec(5) = 1.5; coeff_vec(6) = 0; coeff_vec(7) = 0; coeff_vec(8) = 0; coeff_vec(9) = 0;
+          coeff_vec(10) = 0; coeff_vec(11) = 0; coeff_vec(12) = 0; coeff_vec(13) = 0;
+          coeff_vec(14) = 0; coeff_vec(15) = 0; coeff_vec(16) = 0; coeff_vec(17) = 0; coeff_vec(18) = 0;
+          coeff_vec(19) = 0; coeff_vec(20) = 0; coeff_vec(21) = 0; coeff_vec(22) = 0;
+          coeff_vec(23) = 0;coeff_vec(24) = 0;coeff_vec(25) = 0;coeff_vec(26) = 0;coeff_vec(27) = 0;
+          coeff_vec(28) = 0;coeff_vec(29) = 0;coeff_vec(30) = 0;coeff_vec(31) = 0;
+          coeff_vec(32) = 1;
+          coeff_vec(33) = 0.25;
+    
 
 end

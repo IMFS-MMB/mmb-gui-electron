@@ -23,7 +23,6 @@ npm run build
 npm run lint
 
 ```
-AppVeyor will place the latest Win-build (based on the master branch) [here](https://ci.appveyor.com/project/j2L4e/mmb-gui-electron).
 
 ---
 
