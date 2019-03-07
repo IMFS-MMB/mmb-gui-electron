@@ -5,6 +5,9 @@
   "description": "An electron-vue project",
   "license": null,
   "main": "./dist/electron/main.js",
+  "engines": {
+    "node": "^8.0.0"
+  },
   "scripts": {
     "build": "node .electron-vue/build.js && electron-builder",
     "build:dir": "node .electron-vue/build.js && electron-builder --dir",
