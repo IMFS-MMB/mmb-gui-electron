@@ -27,18 +27,17 @@ if OSenvironment==1
                     addpath(['/Applications/Dynare/4.5.6/matlab'])
                     addpath(['/Applications/Dynare/4.5.6/mex/octave'])
             else
-                error('Error: Octave 4.4.0 requires Dynare 4.5.6. Path for Dynare 4.5.6 not found: expected: /Applications/Dynare/4.5.6/matlab ')
+                error('Error: Your version of dynare seems to be incompatible with your version of octave. Please check on the dynare website for more information. ')
             end
         elseif k1 ~=0
             if exist(['/Applications/Dynare/4.5.7'])
                     addpath(['/Applications/Dynare/4.5.7/matlab'])
                     addpath(['/Applications/Dynare/4.5.7/mex/octave'])
             else
-                error('Error: Octave 4.4.1 requires Dynare 4.5.7. Path for Dynare 4.5.7 not found: expected: /Applications/Dynare/4.5.7/matlab')
+                error('Error: Your version of dynare seems to be incompatible with your version of octave. Please check on the dynare website for more information.')
             end
         else
-            disp('Older versions of octave used. We cannot guarantee that all models will be simulated.')
-    %        error('Error: Neither path for Octave 4.4.0 nor Octave 4.4.1 was found! Expected: /Applications/Octave-4.4.0.app or /Applications/Octave-4.4.1.app')
+            disp('Old versions of octave used. We cannot guarantee that all models will be simulated.')
         end
     end
     if ~exist('dynare')
