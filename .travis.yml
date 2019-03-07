@@ -39,7 +39,7 @@ install:
 - npm install
 script:
 - source ~/.bashrc
-- nvm exec 8 npm run build
+- npm run build
 branches:
   only:
   - master
