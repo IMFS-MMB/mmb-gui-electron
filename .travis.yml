@@ -5,6 +5,8 @@ osx_image: xcode9.4
 sudo: required
 dist: trusty
 language: c
+node_js:
+  - 8
 matrix:
   include:
   - os: osx
@@ -33,15 +35,9 @@ before_install:
 - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt-get install --no-install-recommends
   -y icnsutils graphicsmagick xz-utils; fi
 install:
-- nvm install 8
-- nvm use 8
-- source ~/.bashrc
 - npm install -g xvfb-maybe
 - npm install
 script:
-- nvm use 8
-- source ~/.bashrc
-- source ~/.bashrc
 - npm run build
 branches:
   only:
