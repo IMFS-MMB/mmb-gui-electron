@@ -7,12 +7,13 @@ import { addBreadcrumb } from '@sentry/electron';
 export default async function execute(path, cwd, args, onData, onError) {
   return new Promise((resolve, reject) => {
     try {
+      // todo sanitize paths instead of omitting them completely
       addBreadcrumb({
         type: 'spawn',
         data: {
-          path,
+          // path,
           args,
-          cwd,
+          // cwd,
         },
       });
 
