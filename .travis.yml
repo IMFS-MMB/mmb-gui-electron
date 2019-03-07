@@ -32,8 +32,9 @@ before_install:
   | tar -xz -C /tmp/git-lfs && /tmp/git-lfs/git-lfs pull
 - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt-get install --no-install-recommends
   -y icnsutils graphicsmagick xz-utils; fi
+- if [[ $(uname -s) == 'Darwin' ]]; then brew uninstall --force node; fi;
 install:
-- nvm use 8
+- nvm install 8
 - source ~/.bashrc
 - npm install -g xvfb-maybe
 - npm install
