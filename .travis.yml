@@ -34,10 +34,13 @@ before_install:
   -y icnsutils graphicsmagick xz-utils; fi
 install:
 - nvm install 8
+- nvm use 8
 - source ~/.bashrc
 - npm install -g xvfb-maybe
 - npm install
 script:
+- nvm use 8
+- source ~/.bashrc
 - source ~/.bashrc
 - npm run build
 branches:
