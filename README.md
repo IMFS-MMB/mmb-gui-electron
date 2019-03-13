@@ -1,6 +1,6 @@
 # mmb-electron
 
-This repo contains the new MMB Graphical User Interface based on the Electron framework and integrated via vue.js. The code is in beta stage.
+This repo contains the new MMB Graphical User Interface based on the Electron framework and integrated via vue.js.
 
 **A electron-vue project**
 
