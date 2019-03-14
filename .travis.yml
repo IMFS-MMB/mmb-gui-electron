@@ -39,8 +39,7 @@ install:
 - npm install
 script:
 - npm run build
-branches:
-  only:
-  - master
 after_success:
 - node .scripts/deploy.js
+
+if: tag IS present OR branch = master
