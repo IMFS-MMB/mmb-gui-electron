@@ -20,6 +20,12 @@ npm run build
 
 # lint all JS/Vue component files in `src/`
 npm run lint
+
+# build server version
+npm run build:server
+
+# run server (in server/)
+npm start
 ```
 
 ---
