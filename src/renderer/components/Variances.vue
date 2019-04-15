@@ -4,7 +4,7 @@
             <table class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                    <th>Variances</th>
+                    <th>Variances (all quarterly)</th>
                     <th>Inflation</th>
                     <th>Interest Rate</th>
                     <th>Output</th>

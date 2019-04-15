@@ -2,6 +2,9 @@
     <b-modal id="userSpecifiedRuleModal" size="lg" centered @hide="onHide">
 
         <h5 slot="modal-header" class="modal-title">User Specified Rule</h5>
+        <div>
+            All values are quarterly, periods refer to quarters.
+        </div>
         <button slot="modal-header" class="close" @click="hideModal"><span
                 aria-hidden="true">&times;</span>
         </button>
