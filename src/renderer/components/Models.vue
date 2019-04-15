@@ -6,6 +6,7 @@
                 <small class="ctrl-set-stats">({{selectedIndex}}/{{total}} Selected)</small>
                 &nbsp;
                 <a href="javascript:void(0)" class="ctrl-set-clear" @click="clearModels">Clear</a>
+
             </div>
 
             <ModelSearch/>
@@ -19,6 +20,14 @@
                 <ModelList name="Adaptive Learning" :models="modelsAdaptiveLearning"/>
             </b-row>
         </div>
+
+            <b-row class="justify-content-center ctrl-links">
+                        <div class="col text-center">
+                            <a href="http://www.macromodelbase.com/files/MMB_model_list_3_0.pdf" v-b-modal.helpModal><i class="fa fa-question-circle"></i>
+                               Documentation of Models</a>
+                        </div>
+            </b-row>
+
     </div>
 </template>
 <script>

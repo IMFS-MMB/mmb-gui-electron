@@ -5,6 +5,7 @@
                 Policy Rules
                 <small class="ctrl-set-stats">({{selectedIndex}}/{{rules.length}} Selected)</small>
                 <a href="javascript:void(0)" class="ctrl-set-clear" @click="clear">&nbsp;Clear</a>
+
             </div>
         </div>
 
@@ -29,6 +30,13 @@
                 </template>
             </b-form-checkbox-group>
         </div>
+
+            <b-row class="justify-content-center ctrl-links">
+                        <div class="col text-center">
+                            <a href="http://www.macromodelbase.com/files/MMB_MPrule_description.pdf" v-b-modal.helpModal><i class="fa fa-question-circle"></i>
+                               Documentation of Policy Rules</a>
+                        </div>
+            </b-row>
     </div>
 </template>
 <script>
