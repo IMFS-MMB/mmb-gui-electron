@@ -1,0 +1,44 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 63,
+  "internal_name": "GPM6_IMF13",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": true,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": true,
+    "mp_shock": true,
+    "fiscal_shock": false,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "description": {
+    "ac_ref": "IMF global projection model (2013)\n",
+    "paper_title": "A small quarterly projection model of the US economy",
+    "journal": "IMF Working Paper 08/278",
+    "replicants_name": "Original code provided (Jinhyuk Yoo edited)",
+    "pub_date": "2013",
+    "keywords": [],
+    "description": "Calibrated with 6 regions as in Carabenciov et al. (2013)",
+    "category": "Estimated/Calibrated multi-country model",
+    "authors": [
+      "Carabenciov, Ioan",
+      "Freedman, Charles",
+      "Garcia-Saltos, Roberto",
+      "Laxton, Douglas",
+      "Kamenik, Ondrej",
+      "Manchev, Petar"
+    ]
+  }
+}

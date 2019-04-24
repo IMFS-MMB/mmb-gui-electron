@@ -1,0 +1,40 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 83,
+  "internal_name": "NK_BGEU10",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": false,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": true,
+    "mp_shock": true,
+    "fiscal_shock": true,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "description": {
+    "ac_ref": "Blanchard & Gali (2010) EU",
+    "paper_title": "Labor markets and monetary policy: A New Keynesian model with unemployment",
+    "journal": "American Economic Journal: Macroeconomics 2(2), pp. 1-30",
+    "replicants_name": "Dennis Gram and Johannes Van Vlodrop",
+    "pub_date": "2010",
+    "keywords": [],
+    "description": "Calibrated for the European labor market",
+    "category": "Calibrated model",
+    "authors": [
+      "Blanchard, Olivier",
+      "Gali, Jordí"
+    ]
+  }
+}

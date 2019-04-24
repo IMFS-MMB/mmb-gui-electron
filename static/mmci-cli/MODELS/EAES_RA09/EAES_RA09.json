@@ -1,0 +1,38 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 47,
+  "internal_name": "EAES_RA09",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": true,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": true,
+    "mp_shock": true,
+    "fiscal_shock": false,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11
+    ]
+  },
+  "description": {
+    "ac_ref": "Rabanal (2009)",
+    "paper_title": "Inflation differentials between Spain and the EMU: A DSGE perspective",
+    "journal": "Journal of Money, Credit and Banking 41(6), pp. 1141-1166",
+    "replicants_name": " Martina Jancokova and Anastasia Pukhova",
+    "pub_date": "2009",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated/Calibrated multi-country model",
+    "authors": [
+      "Rabanal, Pau"
+    ]
+  }
+}

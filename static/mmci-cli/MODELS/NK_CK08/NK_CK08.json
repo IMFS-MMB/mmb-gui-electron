@@ -1,0 +1,40 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 10,
+  "internal_name": "NK_CK08",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": true,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": true,
+    "mp_shock": true,
+    "fiscal_shock": true,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "description": {
+    "ac_ref": "Christoffel & Kuester (2008)",
+    "paper_title": "Resuscitating the wage channel in models with unemployment",
+    "journal": "Journal of Monetary Economics 55(5), pp. 865-887",
+    "replicants_name": "K. Kuester",
+    "pub_date": "2008",
+    "keywords": [],
+    "description": "",
+    "category": "Calibrated model",
+    "authors": [
+      "Christoffel, Kai",
+      "Kuester, Keith"
+    ]
+  }
+}

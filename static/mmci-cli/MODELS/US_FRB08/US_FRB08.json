@@ -1,0 +1,38 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 16,
+  "internal_name": "US_FRB08",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": false,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": true,
+    "mp_shock": true,
+    "fiscal_shock": true,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10
+    ]
+  },
+  "description": {
+    "ac_ref": "Federal Reserve Board model II",
+    "paper_title": "Documentation of linearized FRB/US",
+    "journal": null,
+    "replicants_name": "M. Wolters with M. Burgert",
+    "pub_date": "2008",
+    "keywords": [],
+    "description": "Linearized by Brayton & Laubach (2008)",
+    "category": "Estimated US model",
+    "authors": [
+      "Brayton, Flint",
+      "Laubach, Thomas"
+    ]
+  }
+}

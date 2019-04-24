@@ -1,0 +1,42 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 20,
+  "internal_name": "US_ACELt",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": true,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": true,
+    "mp_shock": true,
+    "fiscal_shock": false,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "description": {
+    "ac_ref": "Altig et al. (2005) II",
+    "paper_title": "Firm-specific capital, nominal rigidities",
+    "journal": "CEPR Discussion Papers 4858",
+    "replicants_name": "S. Schmidt",
+    "pub_date": "2005",
+    "keywords": [],
+    "description": "Calibration for technology shocks",
+    "category": "Estimated US model",
+    "authors": [
+      "Altig, David",
+      "Christiano, Lawrence J.",
+      "Eichenbaum, Martin",
+      "Linde, Jesper"
+    ]
+  }
+}

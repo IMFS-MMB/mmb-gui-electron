@@ -1,0 +1,39 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 36,
+  "internal_name": "EA_AWM05",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": false,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": true,
+    "mp_shock": true,
+    "fiscal_shock": true,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      11
+    ]
+  },
+  "description": {
+    "ac_ref": "ECB's area-wide model",
+    "paper_title": "Optimal monetary policy rules for the euro area: An analysis using the area wide model",
+    "journal": "Journal of Common Market Studies 43(3), pp. 507-537",
+    "replicants_name": "S. Schmidt",
+    "pub_date": "2005",
+    "keywords": [],
+    "description": "Linearized as in Dieppe et al. (2005)",
+    "category": "Estimated euro area model",
+    "authors": [
+      "Dieppe, Alistair",
+      "Kuester, Keith",
+      "McAdam, Peter"
+    ]
+  }
+}

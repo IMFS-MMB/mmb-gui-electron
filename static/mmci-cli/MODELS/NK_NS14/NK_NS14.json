@@ -1,0 +1,38 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 89,
+  "internal_name": "NK_NS14",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": true,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": true,
+    "mp_shock": true,
+    "fiscal_shock": true,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      11
+    ]
+  },
+  "description": {
+    "ac_ref": "Nakamura & Steinsson (2014)",
+    "paper_title": "Fiscal stimulus in a monetary union: Evidence from US regions",
+    "journal": "American Economic Review 4, pp. 753-792",
+    "replicants_name": "Bopjun Gwak and Paul Reimers",
+    "pub_date": "2014",
+    "keywords": [],
+    "description": "",
+    "category": "Calibrated model",
+    "authors": [
+      "Nakamura, Emi",
+      "Steinsson, Jón"
+    ]
+  }
+}
