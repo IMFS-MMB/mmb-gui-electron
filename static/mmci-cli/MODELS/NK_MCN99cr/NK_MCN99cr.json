@@ -1,0 +1,39 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 5,
+  "internal_name": "NK_MCN99cr",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": true,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": false,
+    "mp_shock": true,
+    "fiscal_shock": false,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11
+    ]
+  },
+  "description": {
+    "ac_ref": "McCallum & Nelson (1999)",
+    "paper_title": "Performance of Operational Policy Rules in an Estimated Semiclassical Structural Model",
+    "journal": "Taylor, J. B. (Ed.), Monetary Policy Rules, pp. 15-56",
+    "replicants_name": null,
+    "pub_date": "1999",
+    "keywords": [],
+    "description": "",
+    "category": "Calibrated model",
+    "authors": [
+      "McCallum, Bennett",
+      "Nelson, Edward"
+    ]
+  }
+}

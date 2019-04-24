@@ -1,0 +1,39 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 50,
+  "internal_name": "CA_LS07",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": false,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": true,
+    "mp_shock": true,
+    "fiscal_shock": false,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11
+    ]
+  },
+  "description": {
+    "ac_ref": "Lubik & Schorfheide (2007)",
+    "paper_title": "Do central banks respond to exchange rate movements? A structural investigation",
+    "journal": "Journal of Monetary Economics 54(4), pp. 1069-1087",
+    "replicants_name": "M.Jancokova",
+    "pub_date": "2007",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated other-country model",
+    "authors": [
+      "Lubik, Thomas",
+      "Schorfheide, Frank"
+    ]
+  }
+}

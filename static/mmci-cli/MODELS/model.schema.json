@@ -1,0 +1,104 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": [
+    "id",
+    "internal_name",
+    "path",
+    "capabilities",
+    "description"
+  ],
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "internal_name": {
+      "type": "string"
+    },
+    "path": {
+      "type": "null"
+    },
+    "capabilities": {
+      "type": "object",
+      "required": [
+        "model_specific_rule",
+        "interest",
+        "inflation",
+        "outputgap",
+        "output",
+        "mp_shock",
+        "fiscal_shock"
+      ],
+      "properties": {
+        "model_specific_rule": {
+          "type": "boolean"
+        },
+        "interest": {
+          "type": "boolean"
+        },
+        "inflation": {
+          "type": "boolean"
+        },
+        "outputgap": {
+          "type": "boolean"
+        },
+        "output": {
+          "type": "boolean"
+        },
+        "mp_shock": {
+          "type": "boolean"
+        },
+        "fiscal_shock": {
+          "type": "boolean"
+        }
+      }
+    },
+    "description": {
+      "type": "object",
+      "required": [
+        "ac_ref",
+        "paper_title",
+        "journal",
+        "replicants_name",
+        "pub_date",
+        "keywords",
+        "description",
+        "category",
+        "authors"
+      ],
+      "properties": {
+        "ac_ref": {
+          "type": "string"
+        },
+        "paper_title": {
+          "type": "string"
+        },
+        "journal": {
+          "type": "string"
+        },
+        "replicants_name": {
+          "type": "string"
+        },
+        "pub_date": {
+          "type": "string"
+        },
+        "keywords": {
+          "type": "array"
+        },
+        "description": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string"
+        },
+        "authors": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
