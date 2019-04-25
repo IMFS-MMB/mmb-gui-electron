@@ -1,0 +1,40 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 3,
+  "internal_name": "NK_CGG99",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": true,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": false,
+    "mp_shock": true,
+    "fiscal_shock": false,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11
+    ]
+  },
+  "description": {
+    "ac_ref": "Clarida et al. (1999)",
+    "paper_title": "The Science of Monetary Policy: A New Keynesian Perspective",
+    "journal": "Journal of Economic Literature 37(4), pp. 1661-1707",
+    "replicants_name": "S. Schmidt",
+    "pub_date": "1999",
+    "keywords": [],
+    "description": "",
+    "category": "Calibrated model",
+    "authors": [
+      "Clarida, Richard",
+      "Gali, Jordí",
+      "Gertler, Mark"
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 112,
+  "internal_name": "US_LWY13",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": true,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": true,
+    "mp_shock": true,
+    "fiscal_shock": true,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "description": {
+    "ac_ref": "Leeper et al. (2013)",
+    "paper_title": "Fiscal foresight and information flows",
+    "journal": "Econometrica 81 (3), 1115-1145",
+    "replicants_name": "Balint Tatar",
+    "pub_date": "2013",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated US model",
+    "authors": [
+      "Leeper, Eric M.",
+      "Walker, Todd B.",
+      "Yang, S.-C. Susan"
+    ]
+  }
+}

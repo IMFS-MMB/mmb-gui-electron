@@ -1,0 +1,39 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 1,
+  "internal_name": "NK_RW97",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": false,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": true,
+    "mp_shock": true,
+    "fiscal_shock": true,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11
+    ]
+  },
+  "description": {
+    "ac_ref": "Rotemberg & Woodford (1997)",
+    "paper_title": "An Optimization-Based Econometric Framework for the Evaluation of Monetary Policy",
+    "journal": "NBER Macroeconomics Annual 12, pp. 297-346",
+    "replicants_name": "S. Schmidt",
+    "pub_date": "1997",
+    "keywords": [],
+    "description": "",
+    "category": "Calibrated model",
+    "authors": [
+      "Rotemberg, Julio",
+      "Woodford, Michael"
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 57,
+  "internal_name": "EA_GNSS10",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": true,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": true,
+    "mp_shock": true,
+    "fiscal_shock": false,
+    "rules": [
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "description": {
+    "ac_ref": "Gerali et al. (2010)",
+    "paper_title": "The external finance premium in the euro area: A dynamic stochastic general equilibrium analysis",
+    "journal": "Journal of Money, Credit and Banking 42 (s1), pp. 107-141",
+    "replicants_name": "Original code provided (S. Schmidt edited)",
+    "pub_date": "2010",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated euro area model",
+    "authors": [
+      "Gerali, Andrea",
+      "Neri, Stefano",
+      "Sessa, Luca",
+      "Signoretti, Federico M."
+    ]
+  }
+}

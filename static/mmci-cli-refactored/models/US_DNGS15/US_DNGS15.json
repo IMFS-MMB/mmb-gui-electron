@@ -1,0 +1,41 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 90,
+  "internal_name": "US_DNGS15",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": true,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": true,
+    "mp_shock": true,
+    "fiscal_shock": true,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "description": {
+    "ac_ref": "Del Negro et al. (2015)",
+    "paper_title": "Infation in the Great recession and New Keynesian models",
+    "journal": "American Economic Journal: Macroeconomics 1, pp. 168-196",
+    "replicants_name": "Tobias Krahnke and Lazar Milivojevic",
+    "pub_date": "2015",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated US model",
+    "authors": [
+      "Del Negro, Marco",
+      "Giannoni, Marc P.",
+      "Schorfheide, Frank"
+    ]
+  }
+}
