@@ -3,28 +3,36 @@
   "env": {
     "main": {
       "presets": [
-        ["env", {
+        ["@babel/env", {
           "targets": { "node": 7 }
-        }],
-        "stage-0"
+        }]
       ]
     },
     "renderer": {
       "presets": [
-        ["env", {
+        ["@babel/env", {
           "modules": false
-        }],
-        "stage-0"
+        }]
       ]
     },
     "web": {
       "presets": [
-        ["env", {
+        ["@babel/env", {
           "modules": false
-        }],
-        "stage-0"
+        }]
       ]
     }
   },
-  "plugins": ["transform-runtime"]
+  "plugins": [
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "absoluteRuntime": false,
+        "corejs": false,
+        "helpers": true,
+        "regenerator": true,
+        "useESModules": false
+      }
+    ]
+  ]
 }
