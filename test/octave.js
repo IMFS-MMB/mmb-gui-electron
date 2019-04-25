@@ -12,31 +12,40 @@ describe('Matlab/Octave', () => {
     MATLAB_PATH,
   } = process.env;
 
-  function setup(name, path) {
-    describe(name, () => {
-      let octave;
+  let backend;
 
-      before(() => {
-        octave = create({
-          type: 'octave',
-          path,
-        });
-      });
+  function commonTests() {
+    it('can launch and detect version', async () => {
+      const pattern = /\d+\.\d+\.\d+/;
+      const version = await backend.getVersion();
 
-      it('can launch and detect version', async () => {
-        const pattern = /\d+\.\d+\.\d+/;
-        const version = await octave.getVersion();
-
-        assert.match(version, pattern);
-      });
+      assert.match(version, pattern);
     });
   }
 
   if (OCTAVE_PATH) {
-    setup('Octave', OCTAVE_PATH);
+    describe('Octave', () => {
+      before(() => {
+        backend = create({
+          type: 'octave',
+          path: OCTAVE_PATH,
+        });
+      });
+
+      commonTests();
+    });
   }
 
   if (MATLAB_PATH) {
-    setup('Matlab', MATLAB_PATH);
+    describe('Matlab', () => {
+      before(() => {
+        backend = create({
+          type: 'matlab',
+          path: MATLAB_PATH,
+        });
+      });
+
+      commonTests();
+    });
   }
 });
