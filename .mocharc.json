@@ -1,6 +1,6 @@
 {
   "bail": true,
   "require": [
-    "babel-core/register"
+    "@babel/register"
   ]
 }
