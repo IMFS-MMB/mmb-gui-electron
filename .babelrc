@@ -17,10 +17,9 @@
     },
     "test": {
       "presets": [
-        ["env", {
+        ["@babel/env", {
           "targets": { "node": "current" }
-        }],
-        "stage-0"
+        }]
       ]
     },
     "web": {
