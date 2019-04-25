@@ -1,0 +1,39 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 67,
+  "internal_name": "US_OW98",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": true,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": true,
+    "mp_shock": true,
+    "fiscal_shock": true,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      10,
+      11
+    ]
+  },
+  "description": {
+    "ac_ref": "Orphanides & Wieland (1998)",
+    "paper_title": "Price stability and monetary policy effectiveness when nominal interest rates are bounded at zero",
+    "journal": "Finance and Economics Discussion Series 1998-35, Board of Governors of the Federal Reserve System (U.S.)",
+    "replicants_name": "S. Schmidt",
+    "pub_date": "1998",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated US model",
+    "authors": [
+      "Orphanides, Athanasios",
+      "Wieland, Volker"
+    ]
+  }
+}

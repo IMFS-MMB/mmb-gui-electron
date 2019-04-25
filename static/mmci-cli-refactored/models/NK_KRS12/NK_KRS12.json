@@ -1,0 +1,41 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 59,
+  "internal_name": "NK_KRS12",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": true,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": true,
+    "mp_shock": true,
+    "fiscal_shock": false,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "description": {
+    "ac_ref": "Kannan et al. (2012)",
+    "paper_title": "Monetary and macroprudential policy rules in a model with house price booms",
+    "journal": "The B.E. Journal of Macroeconomics 12 (1), pp. 16",
+    "replicants_name": "Original code provided (Jiajin Huang and Qianchao Qu edited)",
+    "pub_date": "2012",
+    "keywords": [],
+    "description": "",
+    "category": "Calibrated model",
+    "authors": [
+      "Kannan, Prakash",
+      "Rabanal, Pau",
+      "Scott, Alasdair M."
+    ]
+  }
+}

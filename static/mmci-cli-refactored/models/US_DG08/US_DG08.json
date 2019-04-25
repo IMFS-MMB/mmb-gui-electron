@@ -1,0 +1,39 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 27,
+  "internal_name": "US_DG08",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": true,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": true,
+    "mp_shock": true,
+    "fiscal_shock": true,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "description": {
+    "ac_ref": "De Graeve (2008)",
+    "paper_title": "The external finance premium and the macroeconomy: US post-WWII evidence.",
+    "journal": "Journal of Economic Dynamics and Control 32(11), pp. 3415-3440",
+    "replicants_name": "Melanie Krause",
+    "pub_date": "2008",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated US model",
+    "authors": [
+      "De Graeve, Ferre"
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 49,
+  "internal_name": "BRA_SAMBA08",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": true,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": true,
+    "mp_shock": true,
+    "fiscal_shock": true,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "description": {
+    "ac_ref": "Gouvea et al. (2008)",
+    "paper_title": "Samba: Stochastic analytical model with a bayesian approach",
+    "journal": "unpublished",
+    "replicants_name": "Ali Mazyaki",
+    "pub_date": "2008",
+    "keywords": [],
+    "description": "Model of the Brazilian economy",
+    "category": "Estimated other-country model",
+    "authors": [
+      "Gouvea, Solange",
+      "Minella, André",
+      "Santos, Rafael",
+      "Souza-Sobrinho, Nelson"
+    ]
+  }
+}

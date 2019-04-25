@@ -1,0 +1,40 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 7,
+  "internal_name": "NK_BGG99",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": true,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": true,
+    "mp_shock": true,
+    "fiscal_shock": true,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11
+    ]
+  },
+  "description": {
+    "ac_ref": "Bernanke et al. (1999)",
+    "paper_title": "The financial accelerator in a quantitative business",
+    "journal": "Taylor, J. B., Woodford, M. (Eds.), Handbook of Macroeconomics Volume 1, pp. 1341-1393",
+    "replicants_name": "S. Schmidt",
+    "pub_date": "1999",
+    "keywords": [],
+    "description": "",
+    "category": "Calibrated model",
+    "authors": [
+      "Bernanke, Ben",
+      "Gertler, Mark",
+      "Gilchrist, Simon"
+    ]
+  }
+}

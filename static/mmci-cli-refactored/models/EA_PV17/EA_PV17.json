@@ -1,0 +1,40 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 126,
+  "internal_name": "EA_PV17",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": true,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": true,
+    "mp_shock": true,
+    "fiscal_shock": true,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "description": {
+    "ac_ref": "Priftis & Vogel (2017)",
+    "paper_title": "The macroeconomic effects of the ECB's evolving QE programme: a model-based analysis",
+    "journal": "Open Economies Review, Springer, vol. 28(5), 823-845",
+    "replicants_name": "original code provided by the authors",
+    "pub_date": "2017",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated euro area model",
+    "authors": [
+      "Priftis, Romanos",
+      "Vogel, Lukas"
+    ]
+  }
+}

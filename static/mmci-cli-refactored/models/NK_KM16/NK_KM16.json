@@ -1,0 +1,39 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 117,
+  "internal_name": "NK_KM16",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": true,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": true,
+    "mp_shock": true,
+    "fiscal_shock": true,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11
+    ]
+  },
+  "description": {
+    "ac_ref": "Krause & Moyen (2016)",
+    "paper_title": "Public Debt and Changing Inflation Targets",
+    "journal": "American Economic Journal: Macroeconomics, 8(4): 142-76",
+    "replicants_name": "Ioanna Pigkou",
+    "pub_date": "2016",
+    "keywords": [],
+    "description": "",
+    "category": "Calibrated model",
+    "authors": [
+      "Krause, Michael U.",
+      "Moyen, Stéphane"
+    ]
+  }
+}

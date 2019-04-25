@@ -1,0 +1,39 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 119,
+  "internal_name": "EA_BF17",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": true,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": true,
+    "mp_shock": true,
+    "fiscal_shock": false,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11
+    ]
+  },
+  "description": {
+    "ac_ref": "Benchimol & Fourçans (2017)",
+    "paper_title": "Money And Monetary Policy In The Eurozone: An Empirical Analysis During Crises",
+    "journal": "Macroeconomic Dynamics, Cambridge University Press, vol. 21(03), 677-707",
+    "replicants_name": "Felix Strobel",
+    "pub_date": "2017",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated euro area model",
+    "authors": [
+      "Benchimol, Jonathan",
+      "Fourçans, André"
+    ]
+  }
+}

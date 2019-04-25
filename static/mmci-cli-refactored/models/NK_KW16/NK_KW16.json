@@ -1,0 +1,39 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 97,
+  "internal_name": "NK_KW16",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": true,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": true,
+    "mp_shock": true,
+    "fiscal_shock": true,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11
+    ]
+  },
+  "description": {
+    "ac_ref": "Kirchner & van Wijnbergen (2016)",
+    "paper_title": "Fiscal deficits, financial fragility, and the effectiveness of government policies",
+    "journal": "Journal of Monetary Economics 80, 51-68",
+    "replicants_name": "Felix Strobel",
+    "pub_date": "2016",
+    "keywords": [],
+    "description": "",
+    "category": "Calibrated model",
+    "authors": [
+      "Kirchner, Markus",
+      "van Wijnbergen, Sweder "
+    ]
+  }
+}

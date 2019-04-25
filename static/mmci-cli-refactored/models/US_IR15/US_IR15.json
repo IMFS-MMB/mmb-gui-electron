@@ -1,0 +1,34 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 111,
+  "internal_name": "US_IR15",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": false,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": true,
+    "mp_shock": true,
+    "fiscal_shock": true,
+    "rules": [
+      3,
+      5,
+      6,
+      8
+    ]
+  },
+  "description": {
+    "ac_ref": "Ireland (2015)",
+    "paper_title": "Monetary policy, bond risk premia, and the economy",
+    "journal": "Journal of Monetary Economics 76, 124-140",
+    "replicants_name": "M. Kuete",
+    "pub_date": "2015",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated US model",
+    "authors": [
+      "Ireland, Peter N."
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 69,
+  "internal_name": "NK_RW97AL",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": false,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": true,
+    "mp_shock": true,
+    "fiscal_shock": true,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      11
+    ]
+  },
+  "description": {
+    "ac_ref": "Rotemberg & Woodford (1997) AL",
+    "paper_title": "An optimization-based econometric framework for the evaluation of monetary policy",
+    "journal": "NBER Macroeconomics Annual 12, pp. 297-346",
+    "replicants_name": "V. Audzei and S. Schmidt",
+    "pub_date": "1997",
+    "keywords": [],
+    "description": "Adaptive learning version",
+    "category": "Adaptive learning model",
+    "authors": [
+      "Rotemberg, Julio",
+      "Woodford, Michael"
+    ]
+  }
+}
