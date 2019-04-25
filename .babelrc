@@ -17,6 +17,14 @@
         "stage-0"
       ]
     },
+    "test": {
+      "presets": [
+        ["env", {
+          "targets": { "node": "current" }
+        }],
+        "stage-0"
+      ]
+    },
     "web": {
       "presets": [
         ["env", {
