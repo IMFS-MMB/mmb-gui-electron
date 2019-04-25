@@ -75,10 +75,16 @@
           "type": "string"
         },
         "journal": {
-          "type": "string"
+          "type": [
+            "string",
+            "null"
+          ]
         },
         "replicants_name": {
-          "type": "string"
+          "type": [
+            "string",
+            "null"
+          ]
         },
         "pub_date": {
           "type": "string"
