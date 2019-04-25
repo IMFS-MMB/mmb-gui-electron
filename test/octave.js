@@ -5,8 +5,8 @@ import { assert } from 'chai';
 
 import { create } from '../src/renderer/utils/electron/interface';
 
-describe('Octave', () => {
-  describe('Octave interface', () => {
+describe('Matlab/Octave', () => {
+  describe('Octave', () => {
     let octave;
 
     before(() => {
@@ -16,7 +16,7 @@ describe('Octave', () => {
       });
     });
 
-    it('can detect version', async () => {
+    it('can launch and detect version', async () => {
       const pattern = /\d+\.\d+\.\d+/;
       const version = await octave.getVersion();
       assert.match(version, pattern);

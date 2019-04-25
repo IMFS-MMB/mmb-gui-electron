@@ -1,16 +1,14 @@
 /* global describe, it */
 
-import { ajv, models, validate } from './utils/models';
+import { assert } from 'chai';
 
-const assert = require('assert');
+import { ajv, models, validate } from './utils/models';
 
 describe('Models', () => {
   models.forEach((model) => {
     describe(model.internal_name, () => {
       it(`${model.internal_name}.json passes validation`, () => {
-        const pass = validate(model);
-
-        assert.ok(pass, ajv.errorsText(validate.errors));
+        assert.equal(validate(model), true, ajv.errorsText(validate.errors));
       });
     });
   });
