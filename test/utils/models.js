@@ -3,7 +3,7 @@
 import { join } from 'path';
 import glob from 'glob';
 import Ajv from 'ajv';
-import { modelsSchemaPath, modelsFolder } from '../../config';
+import { modelsSchemaPath, modelsFolder } from '../../config/paths';
 
 export const ajv = new Ajv({
   allErrors: true,
