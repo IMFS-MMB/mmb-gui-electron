@@ -1,0 +1,41 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 14,
+  "internal_name": "US_CMR14",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": true,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": true,
+    "mp_shock": true,
+    "fiscal_shock": true,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "description": {
+    "ac_ref": "Christiano et al. (2014) II",
+    "paper_title": "Risk shocks",
+    "journal": "American Economic Review 104 (1), pp. 27-65",
+    "replicants_name": "M. Kuete",
+    "pub_date": "2014",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated US model",
+    "authors": [
+      "Christiano, Lawrence J.",
+      "Motto, Roberto",
+      "Rostagno, Massimo"
+    ]
+  }
+}

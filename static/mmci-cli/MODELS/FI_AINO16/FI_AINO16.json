@@ -1,0 +1,42 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 120,
+  "internal_name": "FI_AINO16",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": false,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": true,
+    "mp_shock": true,
+    "fiscal_shock": true,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "description": {
+    "ac_ref": "Kilponen et al. (2016)",
+    "paper_title": "The AINO II model",
+    "journal": "Bank of Finland Research Discussion Paper 16/2016",
+    "replicants_name": "Phillip Lieberknecht",
+    "pub_date": "2016",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated other-country model",
+    "authors": [
+      "Kilponen, Juha",
+      "Orjasniemi, Seppo",
+      "Ripatti, Antti",
+      "Verona, Fabio"
+    ]
+  }
+}

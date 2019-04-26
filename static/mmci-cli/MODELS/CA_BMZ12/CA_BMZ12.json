@@ -1,0 +1,40 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 64,
+  "internal_name": "CA_BMZ12",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": true,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": true,
+    "mp_shock": true,
+    "fiscal_shock": false,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11
+    ]
+  },
+  "description": {
+    "ac_ref": "Bailliu et al. (2012)",
+    "paper_title": "Macroprudential rules and monetary policy when financial frictions matter",
+    "journal": "Bank of Canada Working Paper 2012-6",
+    "replicants_name": "Original code provided (Leonhard Czerny and Sungtaek Kwon edited)",
+    "pub_date": "2012",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated other-country model",
+    "authors": [
+      "Bailliu, Jeannine",
+      "Zhang, Yahong",
+      "Meh, Césaire A."
+    ]
+  }
+}

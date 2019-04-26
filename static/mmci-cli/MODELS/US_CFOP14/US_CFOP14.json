@@ -1,0 +1,42 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 86,
+  "internal_name": "US_CFOP14",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": true,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": true,
+    "mp_shock": true,
+    "fiscal_shock": true,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "description": {
+    "ac_ref": "Carlstrom et al. (2014)",
+    "paper_title": "Estimating contract indexation in a financial accelerator model",
+    "journal": "Journal of Economic Dynamics & Control 46, pp. 130-194",
+    "replicants_name": "Hayk Kamalyan and Jorge Quintana",
+    "pub_date": "2014",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated US model",
+    "authors": [
+      "Carlstrom, Charles T.",
+      "Fuerst, Timothy S.",
+      "Ortiz, Alberto",
+      "Paustian, Matthias"
+    ]
+  }
+}

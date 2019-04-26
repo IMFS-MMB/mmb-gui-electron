@@ -1,7 +1,9 @@
+import models from '@/data/models';
+
 const namespaced = true;
 
 const state = {
-  models: require('@/data/models'),
+  models,
 };
 
 const getters = {

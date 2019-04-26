@@ -1,0 +1,43 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 26,
+  "internal_name": "US_PM08fl",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": true,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": true,
+    "mp_shock": true,
+    "fiscal_shock": false,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "description": {
+    "ac_ref": "IMF projection model US II",
+    "paper_title": "A small quarterly projection model of the US economy",
+    "journal": "IMF Working Paper 08/278",
+    "replicants_name": "Elena Afanasyeva",
+    "pub_date": "2008",
+    "keywords": [],
+    "description": "Carabenciov et al. (2008)(calibrated for financial linkages)",
+    "category": "Estimated US model",
+    "authors": [
+      "Carabenciov, Ioan",
+      "Ermolaev, Igor",
+      "Freedman, Charles",
+      "Juillard, Michel",
+      "Kamenik, Ondrej"
+    ]
+  }
+}

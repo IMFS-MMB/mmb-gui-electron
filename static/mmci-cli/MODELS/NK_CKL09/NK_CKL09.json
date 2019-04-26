@@ -1,0 +1,41 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 11,
+  "internal_name": "NK_CKL09",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": true,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": true,
+    "mp_shock": true,
+    "fiscal_shock": true,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "description": {
+    "ac_ref": "Christoffel et al. (2009)",
+    "paper_title": "The role of labor markets for euro area monetary policy",
+    "journal": "European Economic Review 53(8), pp. 908-936",
+    "replicants_name": "K. Kuester",
+    "pub_date": "2009",
+    "keywords": [],
+    "description": "",
+    "category": "Calibrated model",
+    "authors": [
+      "Christoffel, Kai",
+      "Kuester, Keith",
+      "Linzert, Tobias"
+    ]
+  }
+}

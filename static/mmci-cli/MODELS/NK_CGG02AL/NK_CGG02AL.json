@@ -1,0 +1,38 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 72,
+  "internal_name": "NK_CGG02AL",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": true,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": true,
+    "mp_shock": true,
+    "fiscal_shock": false,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      11
+    ]
+  },
+  "description": {
+    "ac_ref": "Clarida et al. (2002) AL\r",
+    "paper_title": "A simple framework for international monetary policy analysis",
+    "journal": "Journal of Monetary Economics 49, pp. 879-904",
+    "replicants_name": "V. Audzei and S. Schmidt",
+    "pub_date": "2002",
+    "keywords": [],
+    "description": "Adaptive learning version",
+    "category": "Adaptive learning model",
+    "authors": [
+      "Clarida, Richard",
+      "Gali, Jordí",
+      "Gertler, Mark"
+    ]
+  }
+}

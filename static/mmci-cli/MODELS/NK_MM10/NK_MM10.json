@@ -1,0 +1,36 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 58,
+  "internal_name": "NK_MM10",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": true,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": true,
+    "mp_shock": true,
+    "fiscal_shock": false,
+    "rules": [
+      4,
+      6,
+      9,
+      10,
+      11
+    ]
+  },
+  "description": {
+    "ac_ref": "Meh & Moran (2010)",
+    "paper_title": "The role of bank capital in the propagation of shocks",
+    "journal": "Journal of Economic Dynamics and Control 34 (3), pp. 555-576",
+    "replicants_name": "Original code provided (R. Beyer and N. Balz edited)",
+    "pub_date": "2010",
+    "keywords": [],
+    "description": "",
+    "category": "Calibrated model",
+    "authors": [
+      "Meh, Césaire A.",
+      "Moran, Kevin"
+    ]
+  }
+}

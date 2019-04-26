@@ -1,0 +1,39 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 82,
+  "internal_name": "EA_DKR11",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": false,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": true,
+    "mp_shock": true,
+    "fiscal_shock": true,
+    "rules": [
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "description": {
+    "ac_ref": "Darracq Paries et al. (2011)\n",
+    "paper_title": "Macroeconomic propagation under different regulatory regimes: Evidence from an estimated dsge model for the euro area",
+    "journal": "International Journal of Central Banking 7(4), pp. 49-113",
+    "replicants_name": "Original code provided (Marcus Jüppner edited)",
+    "pub_date": "2011",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated euro area model",
+    "authors": [
+      "Darracq Pariès, Matthieu",
+      "Kok Sørensen, Christoffer",
+      "Rodriguez Palenzuela, Diego"
+    ]
+  }
+}

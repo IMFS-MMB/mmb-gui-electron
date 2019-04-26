@@ -1,0 +1,42 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 121,
+  "internal_name": "NK_GSSZ17",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": true,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": true,
+    "mp_shock": true,
+    "fiscal_shock": false,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "description": {
+    "ac_ref": "Gilchrist et al. (2017)",
+    "paper_title": "Inflation Dynamics during the Financial Crisis",
+    "journal": "American Economic Review, 107(3): 785-823",
+    "replicants_name": "Phillip Lieberknecht",
+    "pub_date": "2017",
+    "keywords": [],
+    "description": "",
+    "category": "Calibrated model",
+    "authors": [
+      "Gilchrist, Simon",
+      "Schoenle, Raphael",
+      "Sim, Jae",
+      "Zakrajsek, Egon"
+    ]
+  }
+}
