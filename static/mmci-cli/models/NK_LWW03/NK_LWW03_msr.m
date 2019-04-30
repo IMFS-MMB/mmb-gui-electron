@@ -1,0 +1,37 @@
+function coeffs=NK_LWW03_msr()
+    coeffs = zeros(33,1);
+
+    coeffs(1) = 0.755226;
+    coeffs(2) = 0;
+    coeffs(3) = 0;
+    coeffs(4) = 0;
+    coeffs(5) = 0.602691/4;
+    coeffs(6) = 0.602691/4;
+    coeffs(7) = 0.602691/4;
+    coeffs(8) = 0.602691/4;
+    coeffs(9) = 0;
+    coeffs(10) = 0;
+    coeffs(11) = 0;
+    coeffs(12) = 0;
+    coeffs(13) = 0;
+    coeffs(14) = 1.17616;
+    coeffs(15) = -0.972390;
+    coeffs(16) = 0;
+    coeffs(17) = 0;
+    coeffs(18) = 0;
+    coeffs(19) = 0;
+    coeffs(20) = 0;
+    coeffs(21) = 0;
+    coeffs(22) = 0;
+    coeffs(23) = 0;
+    coeffs(24) = 0;
+    coeffs(25) = 0;
+    coeffs(26) = 0;
+    coeffs(27) = 0;
+    coeffs(28) = 0;
+    coeffs(29) = 0;
+    coeffs(30) = 0;
+    coeffs(31) = 0;
+    coeffs(32) = 1;
+    coeffs(33) = 0.25;
+end
