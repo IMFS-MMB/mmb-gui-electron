@@ -16,4 +16,6 @@ const files = glob.sync('*/*.json', {
   cwd: modelsFolder,
 });
 
-export const models = files.map(file => require(join(modelsFolder, file)));
+export const models = files
+  .filter(file => /^([^/]*)\/\1\.json$/.test(file))
+  .map(file => require(join(modelsFolder, file)));
