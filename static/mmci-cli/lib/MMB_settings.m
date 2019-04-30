@@ -731,21 +731,22 @@ modelbase.common_rule = common_rule;
 modelbase.data = data;
 modelbase.AL_Models = AL_Models;
 
-
 %% Adding folder structure to path
-modelbase.homepath = cd; cd(modelbase.homepath); addpath(modelbase.homepath);
-modelbase.uphomepath =cd(cd('..')); addpath(modelbase.uphomepath);
+% modelbase.homepath = cd; cd(modelbase.homepath);
+% addpath(modelbase.homepath);
+% modelbase.uphomepath =cd(cd('..'));
+% addpath(modelbase.uphomepath);
 %% Creating the additional variables needed
 modelbase.totaltime = cputime;
 modelbase.models = find(modelsvec~=0);
-modelbase.savepath = [modelbase.uphomepath filesep 'OUTPUT' filesep num2str('results.xls')];
+% modelbase.savepath = [modelbase.uphomepath filesep 'OUTPUT' filesep num2str('results.xls')];
 modelbase.rule = find(rule==1);
 solution_found = zeros(size(find(modelsvec~=0)')); % solution_found(number)= 1 if a solution is found and 0 else
 
 %% ------------------------------ AL states
 if ~exist('states','var')
     for epsilon=1:size(modelbase.models,2)
-      modelbase.setpath(modelbase.models(epsilon),:) = [modelbase.uphomepath filesep 'MODELS' filesep strtrim(modelbase.names(modelbase.models(epsilon),:))]; % path for dynare file of specific model
+      modelbase.setpath(modelbase.models(epsilon),:) = [modelspath filesep strtrim(modelbase.names(modelbase.models(epsilon),:))]; % path for dynare file of specific model
       al=deblank(modelbase.names(modelbase.models(epsilon),:));
         modelbase.AL=strcmp(al(end-1:end),'AL');
 

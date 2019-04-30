@@ -72,16 +72,17 @@ else
     end
 end
 %% Adding MMB to path (required for Dynare and Octave)
-cd(fileparts(mfilename('fullpath')));
-cd ..
-currentpath= cd;  cd(currentpath);
-addpath(currentpath);
 
-addpath([currentpath filesep 'ALTOOL' filesep]);
-addpath([currentpath filesep 'MODELS' filesep]);
-addpath([currentpath filesep 'MMB_OPTIONS' filesep 'jsonlab'])
-newpath=[currentpath filesep 'MMB_OPTIONS' filesep];
-cd([currentpath filesep 'MMB_OPTIONS' filesep])
+rootpath = fileparts(mfilename('fullpath'));
+modelspath = [rootpath filesep 'models'];
+
+addpath(rootpath);
+addpath(modelspath);
+
+addpath([rootpath filesep 'lib'])
+addpath([rootpath filesep 'lib' filesep 'ALTOOL'])
+addpath([rootpath filesep 'lib' filesep 'jsonlab'])
+
 
 %% Loading in the MMB Settings
 if nargin>0
@@ -208,15 +209,15 @@ rulenamesshort1= deblank(modelbase.rulenamesshort1(logical(modelbase.rule),:));
         end
         %% AL: defining state variables
         if ~exist('states','var')
-            modelbase.setpath(modelbase.models(epsilon),:) = char([modelbase.uphomepath filesep 'MODELS' filesep strtrim(modelbase.names(modelbase.models(epsilon),:))]); % path for dynare file of specific model
+            modelbase.setpath(modelbase.models(epsilon),:) = char([modelspath filesep strtrim(modelbase.names(modelbase.models(epsilon),:))]); % path for dynare file of specific model
             al=deblank(modelbase.names(modelbase.models(epsilon),:));
             modelbase.AL=strcmp(al(end-1:end),'AL');
             if modelbase.AL
                 if ~ismember(modelbase.rule,[8 9 10])
                     thepath=cd;
-                    modelbase.setpath(modelbase.models(epsilon),:) = char([modelbase.uphomepath filesep 'MODELS' filesep strtrim(modelbase.names(modelbase.models(epsilon),:))]); % path for dynare file of specific model
+                    modelbase.setpath(modelbase.models(epsilon),:) = char([modelspath filesep strtrim(modelbase.names(modelbase.models(epsilon),:))]); % path for dynare file of specific model
 %                    cd(modelbase.setpath(modelbase.models(epsilon),:))
-                    cd([modelbase.uphomepath filesep 'MODELS' filesep strtrim(modelbase.names(modelbase.models(epsilon),:))])
+                    cd([modelspath filesep strtrim(modelbase.names(modelbase.models(epsilon),:))])
                     load AL_Info
                     cd(thepath);
                     AL_.forwards = AL_Info.forwards;
@@ -236,23 +237,25 @@ rulenamesshort1= deblank(modelbase.rulenamesshort1(logical(modelbase.rule),:));
             options_.ar=100;
         end
 
-        cd('..');
-        cd MODELS
+        % cd('..');
+        cd models
         save policy_param.mat cofintintb1 cofintintb2 cofintintb3 cofintintb4...
             cofintinf0 cofintinfb1 cofintinfb2 cofintinfb3 cofintinfb4 cofintinff1 cofintinff2 cofintinff3 cofintinff4...
             cofintout cofintoutb1 cofintoutb2 cofintoutb3 cofintoutb4 cofintoutf1 cofintoutf2 cofintoutf3 cofintoutf4...
             cofintoutp cofintoutpb1 cofintoutpb2 cofintoutpb3 cofintoutpb4 cofintoutpf1 cofintoutpf2 cofintoutpf3 cofintoutpf4...
             std_r_ std_r_quart ;
         cd('..');
-        cd MMB_OPTIONS
+        %cd MMB_OPTIONS
 
         %**********************************************************************************************************************
         %                    Solving the Model, Computing Statistics                                                          %
         %**********************************************************************************************************************
         save Modelbase modelbase                                % neccessary to save in between as dynare clears the workspace
 
+        modelname = strtrim(deblank(strtrim(modelbase.names(modelbase.models(epsilon),:))));
+
         modelbase.modeltime(modelbase.models(epsilon)) = cputime;
-        modelbase.setpath(modelbase.models(epsilon),:) = [modelbase.uphomepath filesep 'MODELS' filesep strtrim(modelbase.names(modelbase.models(epsilon),:))]; % path for dynare file of specific model
+        modelbase.setpath(modelbase.models(epsilon),:) = [modelspath filesep modelname]; % path for dynare file of specific model
         modelbase.epsilon = epsilon;
         al=deblank(modelbase.names(modelbase.models(epsilon),:));
         modelbase.AL=strcmp(al(end-1:end),'AL');
@@ -266,13 +269,14 @@ rulenamesshort1= deblank(modelbase.rulenamesshort1(logical(modelbase.rule),:));
         save -append Modelbase modelbase
         cd(modelbase.setpath(modelbase.models(epsilon),:));                                 % go to directory of specific model
         disp(' ');
-        disp(['Currently Solving: ', strtrim(deblank(strtrim(modelbase.names(modelbase.models(epsilon),:))))]);
-        eval(['dynare '  modelbase.names(modelbase.models(epsilon),:)]);% solve model 'epsilon' in dynare by running the .mod file --> translates Dynare syntax into .m file, that is run
-        cd('..');
-        cd('..'); % insert one more cd('..');
-        cd MMB_OPTIONS
+        disp(['Currently Solving: ', modelname]);
+        dynare(modelname);
+        % eval(['dynare '  modelbase.names(modelbase.models(epsilon),:)]);% solve model 'epsilon' in dynare by running the .mod file --> translates Dynare syntax into .m file, that is run
+        %cd('..');
+        %cd('..'); % insert one more cd('..');
+        %cd MMB_OPTIONS
         modelbase=stoch_simul_MMB(modelbase);                                     % solve model
-        cd(modelbase.homepath);                                                   % go back to main directory
+        cd(rootpath);                                                   % go back to main directory
 
         modelbase.modeltime(modelbase.models(modelbase.epsilon))=cputime-modelbase.modeltime(modelbase.models(modelbase.epsilon));
         disp(['Elapsed cputime is ' ,num2str(modelbase.modeltime(modelbase.models(modelbase.epsilon))), ' seconds.']);
@@ -505,6 +509,8 @@ try
 catch
 end
     catch   e %e is an MException struct
+        fprintf(savejson('', e))
+
         fprintf(1, 'Error occured in: %s', e.stack(1).name);
         fprintf(1, '\n');
         fprintf(1,'Identifier: %s',e.identifier);
@@ -512,7 +518,7 @@ end
         fprintf(1,'Error message: %s',e.message);
         fprintf(1, '\n');
         % more error handling...%
-        cd ([currentpath filesep 'MMB_OPTIONS' filesep]);
+        % cd ([currentpath filesep 'MMB_OPTIONS' filesep]);
         epsilon=epsilon+1;
     end
 
@@ -527,7 +533,7 @@ save Modelbase modelbase -append
 modelbase.totaltime = cputime-modelbase.totaltime;
 
 disp(['Total elapsed cputime: ' ,num2str(modelbase.totaltime), ' seconds.']);
-rmpath(modelbase.homepath);
+rmpath(rootpath);
 
 end
 
