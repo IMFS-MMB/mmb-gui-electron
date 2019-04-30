@@ -18,9 +18,9 @@ dseries('initialize');
 global M_ options_ oo_ estim_params_ bayestopt_ dataset_ dataset_info estimation_info ys0_ ex0_
 options_ = [];
 M_.fname = 'NK_ET14';
-M_.dynare_version = '4.5.7';
-oo_.dynare_version = '4.5.7';
-options_.dynare_version = '4.5.7';
+M_.dynare_version = '4.5.4';
+oo_.dynare_version = '4.5.4';
+options_.dynare_version = '4.5.4';
 %
 % Some global variables initialization
 %
@@ -914,17 +914,17 @@ M_.params( 59 ) = 0;
 gampiQE = M_.params( 59 );
 M_.params( 60 ) = 60;
 gamYQE = M_.params( 60 );
-M_.params( 61 ) = 6.25e-006;
+M_.params( 61 ) = 6.25e-06;
 vepsksi = M_.params( 61 );
-M_.params( 62 ) = 6.25e-006;
+M_.params( 62 ) = 6.25e-06;
 vepsC = M_.params( 62 );
-M_.params( 63 ) = 6.25e-006;
+M_.params( 63 ) = 6.25e-06;
 vepsL = M_.params( 63 );
 M_.params( 65 ) = 0.0001;
 vepsA = M_.params( 65 );
 M_.params( 66 ) = 0.0036;
 vepsthet = M_.params( 66 );
-M_.params( 67 ) = 2.5e-005;
+M_.params( 67 ) = 2.5e-05;
 vfiscal_ = M_.params( 67 );
 thispath = cd;                                                           
 cd('..');                                                                

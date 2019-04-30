@@ -18,9 +18,9 @@ dseries('initialize');
 global M_ options_ oo_ estim_params_ bayestopt_ dataset_ dataset_info estimation_info ys0_ ex0_
 options_ = [];
 M_.fname = 'US_AJ16';
-M_.dynare_version = '4.5.7';
-oo_.dynare_version = '4.5.7';
-options_.dynare_version = '4.5.7';
+M_.dynare_version = '4.5.4';
+oo_.dynare_version = '4.5.4';
+options_.dynare_version = '4.5.4';
 %
 % Some global variables initialization
 %
