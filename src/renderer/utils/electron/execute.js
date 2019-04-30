@@ -27,9 +27,9 @@ export default async function execute(path, cwd, args, onData, onError) {
         }
       });
 
-      child.stderr.on('error', (err) => {
+      child.stderr.on('error', (data) => {
         if (onError) {
-          onError(err);
+          onError(data);
         }
       });
 
@@ -37,7 +37,7 @@ export default async function execute(path, cwd, args, onData, onError) {
         if (code === 0) {
           resolve(code);
         } else {
-          reject(code);
+          reject(new Error(`Process quit with exit code ${code}.`));
         }
       });
     } catch (err) {
