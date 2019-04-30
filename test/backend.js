@@ -3,49 +3,30 @@
 
 import { assert } from 'chai';
 
-import { create } from '../src/renderer/utils/electron/interface';
+import getBackend from './utils/backend';
 
+function commonTests(backend) {
+  it('can launch and detect version', async () => {
+    const pattern = /\d+\.\d+\.\d+/;
+    const version = await backend.getVersion();
+
+    assert.match(version, pattern);
+  });
+}
 
 describe('Matlab/Octave', () => {
-  const {
-    OCTAVE_PATH,
-    MATLAB_PATH,
-  } = process.env;
+  const octave = getBackend('octave');
+  const matlab = getBackend('matlab');
 
-  let backend;
-
-  function commonTests() {
-    it('can launch and detect version', async () => {
-      const pattern = /\d+\.\d+\.\d+/;
-      const version = await backend.getVersion();
-
-      assert.match(version, pattern);
-    });
-  }
-
-  if (OCTAVE_PATH) {
+  if (octave) {
     describe('Octave', () => {
-      before(() => {
-        backend = create({
-          type: 'octave',
-          path: OCTAVE_PATH,
-        });
-      });
-
-      commonTests();
+      commonTests(octave);
     });
   }
 
-  if (MATLAB_PATH) {
+  if (matlab) {
     describe('Matlab', () => {
-      before(() => {
-        backend = create({
-          type: 'matlab',
-          path: MATLAB_PATH,
-        });
-      });
-
-      commonTests();
+      commonTests(matlab);
     });
   }
 });

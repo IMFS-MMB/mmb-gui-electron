@@ -5,11 +5,12 @@ import logger from '@/utils/logger';
 import fs from 'fs';
 import { promisify } from 'util';
 import parseOutput from '../../utils/parseOutput';
+import { mmbFolder } from '../../../../config/paths';
 
 const readFile = promisify(fs.readFile);
 
 export default async function compare(ctx) {
-  const cwd = path.join(__static, 'mmci-cli', 'MMB_OPTIONS');
+  const cwd = mmbFolder;
 
   const models = ctx.rootGetters['settings/models'];
   const policyRules = ctx.rootGetters['settings/policyRules'];
