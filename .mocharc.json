@@ -1,5 +1,5 @@
 {
-  "bail": false,
+  "bail": true,
   "timeout": 30000,
   "require": [
     "@babel/register"
