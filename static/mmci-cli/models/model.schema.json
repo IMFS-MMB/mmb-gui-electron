@@ -9,7 +9,11 @@
     "capabilities",
     "description"
   ],
+  "additionalProperties": false,
   "properties": {
+    "$schema": {
+      "type": "string"
+    },
     "id": {
       "type": "integer"
     },
