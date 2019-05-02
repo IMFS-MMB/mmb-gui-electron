@@ -45,32 +45,29 @@ const tests = [
 ];
 
 function modelTests(model, backend) {
-  describe(`${model.internal_name}`, () => {
-    it(`${model.internal_name}.json passes validation`, () => {
-      assert.equal(validate(model), true, ajv.errorsText(validate.errors));
-    });
+  if (!backend) {
+    return;
+  }
 
-    if (!backend) {
-      return;
+  tests.forEach((test) => {
+    if (test.condition(model)) {
+      it(test.caption, () => test.run(model, backend));
     }
-
-    tests.forEach((test) => {
-      if (test.condition(model)) {
-        it(test.caption, () => test.run(model, backend));
-      }
-    });
   });
 }
 
-describe('Models/Octave', () => {
+describe('Models', () => {
   const octave = getBackend('octave');
-
-  models.forEach(model => modelTests(model, octave));
-});
-
-describe('Models/Matlab', () => {
   const matlab = getBackend('matlab');
 
-  models.forEach(model => modelTests(model, matlab));
-});
+  models.forEach((model) => {
+    describe(`${model.internal_name}`, () => {
+      it('.json passes validation', () => {
+        assert.equal(validate(model), true, ajv.errorsText(validate.errors));
+      });
 
+      describe('Octave', () => modelTests(model, octave));
+      describe('Matlab', () => modelTests(model, matlab));
+    });
+  });
+});
