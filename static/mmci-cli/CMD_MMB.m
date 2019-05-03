@@ -85,16 +85,6 @@ addpath([rootpath filesep 'lib' filesep 'jsonlab'])
 
 
 %% Loading in the MMB Settings
-if nargin>0
-    for ii=1:2:size(varargin,2)
-        if isrow(varargin{ii+1})
-            eval([varargin{ii},'= [ ',strtrim(varargin{ii+1}),'];'])
-        else
-        eval([varargin{ii},'=',strtrim(varargin{ii+1}),';'])
-        end
-    end
-end
-
 MMB_settings
 
 disp(' ')
@@ -352,9 +342,10 @@ for i=1:size(modelbase.rulenames,1)
                             autmod = deblank(strtrim(modelbase.names(modelbase.models(epsilon),:)));
                             autrule = deblank(modelbase.rulenamesshort1(modelbase.l,:));
                             autvar = keyvariables(pp,:);
-                    if isfield (modelbase, 'AUTendo_names') & isfield(modelbase.AUTendo_names, deblank(autrule))
+                    if isfield(modelbase, 'AUTendo_names') & isfield(modelbase.AUTendo_names, deblank(autrule))
                         if loc(modelbase.AUTendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:))~=0
-                            eval('AUTval = modelbase.AUTR.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:))))(loc(modelbase.AUTendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:)),:);');
+                            %eval('AUTval = modelbase.AUTR.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:))))(loc(modelbase.AUTendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:)),:);');
+                            AUTval = modelbase.AUTR.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:))))(loc(modelbase.AUTendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:)),:);
                             if max(isnan(AUTval))==0
                             outputmodel = horzcat(outputmodel, struct(...
                                 'model', deblank(autmod),...
@@ -404,7 +395,8 @@ for i=1:size(modelbase.rulenames,1)
                        if isfield (modelbase,'VARendo_names')& isfield(modelbase.VARendo_names, deblank(vrule))
                             if loc(modelbase.VARendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:))~=0
                             var = modelbase.VAR.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:))))(loc(modelbase.VARendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:)),loc(modelbase.VARendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:)));
-                            eval('VARval = modelbase.VAR.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:))))(loc(modelbase.VARendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:)),loc(modelbase.VARendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:)));');
+                            %eval('VARval = modelbase.VAR.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:))))(loc(modelbase.VARendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:)),loc(modelbase.VARendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:)));');
+                            VARval = modelbase.VAR.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:))))(loc(modelbase.VARendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:)),loc(modelbase.VARendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:)));
                             if max(isnan(VARval))==0
                                 outputmodel = horzcat(outputmodel, struct(...
                                 'model', deblank(vmod),...
@@ -457,7 +449,7 @@ for i=1:size(modelbase.rulenames,1)
                             irfvar = keyvariables(pp,:);
                             if isfield (modelbase,'IRFendo_names')& isfield(modelbase.IRFendo_names, deblank(irfrule))
                             if loc(modelbase.IRFendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:))~=0
-                                eval('IRFval = modelbase.IRF.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:))))(loc(modelbase.IRFendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:)),:,p);');
+                                IRFval = modelbase.IRF.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:))))(loc(modelbase.IRFendo_names.(strtrim(deblank(modelbase.rulenamesshort1(modelbase.l,:)))),keyvariables(pp,:)),:,p);
 
                                 outputmodel = horzcat(outputmodel, struct(...
                                     'model', deblank(irfmod),...
@@ -503,10 +495,6 @@ for i=1:size(modelbase.rulenames,1)
             end
         end
     end
-end
-try
-    eval(['modelbase.result.', strtrim(modelbase.names(modelbase.modelchosen,:)),  '= result;']);
-catch
 end
     catch   e %e is an MException struct
         fprintf(savejson('', e))
