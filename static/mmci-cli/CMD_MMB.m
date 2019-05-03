@@ -7,8 +7,8 @@ option2 = output(1,2);                % option2 :(1 - double) Impulse Response F
 option5 = output(1,3);                % option5 :(1 - double) Show the unconditional variance in the Matlab console, default =1
 shocks = shock;                       % 1*2  vector for selecting Monetary policy shock (default, shocks(1,1)=1) and/or Fiscal polilcy shock (shocks(1,2) = 1)
 
-if exist('Modelbase') ~= 0
-    delete Modelbase
+if exist('Modelbase.mat') ~= 0
+    delete('Modelbase.mat')
 end
 
 %%%%%%%%%%%%%%%%%%% Declaration of key settings
@@ -98,10 +98,10 @@ disp(deblank(modelbase.rulenames(modelbase.rule,:)));
 
 modelbase.modelchosen=find(modelsvec>0);
 modelbase.rule=rule;
-save Modelbase modelbase                                % neccessary to save in between as dynare clears the workspace
+save('Modelbase','modelbase')                                % neccessary to save in between as dynare clears the workspace
 
 
-load Modelbase
+load('Modelbase')
 keyvariables = [ 'inflation'; 'interest '; 'output   ';'outputgap'];
 %% One model many rules
 rulechosen=find(modelbase.rule>0);
@@ -208,7 +208,7 @@ rulenamesshort1= deblank(modelbase.rulenamesshort1(logical(modelbase.rule),:));
                     modelbase.setpath(modelbase.models(epsilon),:) = char([modelspath filesep strtrim(modelbase.names(modelbase.models(epsilon),:))]); % path for dynare file of specific model
 %                    cd(modelbase.setpath(modelbase.models(epsilon),:))
                     cd([modelspath filesep strtrim(modelbase.names(modelbase.models(epsilon),:))])
-                    load AL_Info
+                    load('AL_Info')
                     cd(thepath);
                     AL_.forwards = AL_Info.forwards;
                     if ismember(modelbase.rule,[6 7])
@@ -228,19 +228,24 @@ rulenamesshort1= deblank(modelbase.rulenamesshort1(logical(modelbase.rule),:));
         end
 
         % cd('..');
-        cd models
-        save policy_param.mat cofintintb1 cofintintb2 cofintintb3 cofintintb4...
-            cofintinf0 cofintinfb1 cofintinfb2 cofintinfb3 cofintinfb4 cofintinff1 cofintinff2 cofintinff3 cofintinff4...
-            cofintout cofintoutb1 cofintoutb2 cofintoutb3 cofintoutb4 cofintoutf1 cofintoutf2 cofintoutf3 cofintoutf4...
-            cofintoutp cofintoutpb1 cofintoutpb2 cofintoutpb3 cofintoutpb4 cofintoutpf1 cofintoutpf2 cofintoutpf3 cofintoutpf4...
-            std_r_ std_r_quart ;
+        cd('models')
+%         save policy_param.mat cofintintb1 cofintintb2 cofintintb3 cofintintb4...
+%             cofintinf0 cofintinfb1 cofintinfb2 cofintinfb3 cofintinfb4 cofintinff1 cofintinff2 cofintinff3 cofintinff4...
+%             cofintout cofintoutb1 cofintoutb2 cofintoutb3 cofintoutb4 cofintoutf1 cofintoutf2 cofintoutf3 cofintoutf4...
+%             cofintoutp cofintoutpb1 cofintoutpb2 cofintoutpb3 cofintoutpb4 cofintoutpf1 cofintoutpf2 cofintoutpf3 cofintoutpf4...
+%             std_r_ std_r_quart ;
+        save('policy_param.mat','cofintintb1','cofintintb2','cofintintb3','cofintintb4',...
+            'cofintinf0','cofintinfb1','cofintinfb2','cofintinfb3','cofintinfb4','cofintinff1','cofintinff2','cofintinff3','cofintinff4',...
+            'cofintout','cofintoutb1','cofintoutb2','cofintoutb3','cofintoutb4','cofintoutf1','cofintoutf2','cofintoutf3','cofintoutf4',...
+            'cofintoutp','cofintoutpb1','cofintoutpb2','cofintoutpb3','cofintoutpb4','cofintoutpf1','cofintoutpf2','cofintoutpf3','cofintoutpf4',...
+            'std_r_','std_r_quart') ;
         cd('..');
         %cd MMB_OPTIONS
 
         %**********************************************************************************************************************
         %                    Solving the Model, Computing Statistics                                                          %
         %**********************************************************************************************************************
-        save Modelbase modelbase                                % neccessary to save in between as dynare clears the workspace
+        save('Modelbase','modelbase')                                % neccessary to save in between as dynare clears the workspace
 
         modelname = strtrim(deblank(strtrim(modelbase.names(modelbase.models(epsilon),:))));
 
@@ -256,7 +261,7 @@ rulenamesshort1= deblank(modelbase.rulenamesshort1(logical(modelbase.rule),:));
             end
         end
 
-        save -append Modelbase modelbase
+        save('Modelbase','modelbase','-append')
         cd(modelbase.setpath(modelbase.models(epsilon),:));                                 % go to directory of specific model
         disp(' ');
         disp(['Currently Solving: ', modelname]);
@@ -280,7 +285,7 @@ for i=1:size(modelbase.rulenames,1)
         if i==2 & prod(isnan(coeff_vec ))
             disp('')    % in case the option model-specific rule has been chosen in conjunction with a model that does not feature a model-specific rule
             modelbase.l=i;
-            warning off
+            warning('off')
             if modelbase.option(1)==1
                 for pp=1:4
                     autmod = deblank(strtrim(modelbase.names(modelbase.models(epsilon),:)));
@@ -336,7 +341,7 @@ for i=1:size(modelbase.rulenames,1)
             end
         else
         modelbase.l=i;
-            warning off
+            warning('off')
             if modelbase.option(1)==1
                 for pp=1:4
                             autmod = deblank(strtrim(modelbase.names(modelbase.models(epsilon),:)));
@@ -517,7 +522,7 @@ end
 
 savejson('', outputmodel, 'Modelbasefile.json');
 
-save Modelbase modelbase -append
+save('Modelbase','modelbase','-append');
 modelbase.totaltime = cputime-modelbase.totaltime;
 
 disp(['Total elapsed cputime: ' ,num2str(modelbase.totaltime), ' seconds.']);
