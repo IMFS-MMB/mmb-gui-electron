@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 69,
-  "internal_name": "NK_RW97AL",
-  "path": null,
+  "name": "NK_RW97AL",
   "capabilities": {
-    "model_specific_rule": false,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -33,5 +31,8 @@
       "Rotemberg, Julio",
       "Woodford, Michael"
     ]
-  }
+  },
+  "msr": null,
+  "variabledim": 1,
+  "al": true
 }

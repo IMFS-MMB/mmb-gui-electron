@@ -1,0 +1,39 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 103,
+  "internal_name": "US_AJ16",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": true,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": true,
+    "mp_shock": true,
+    "fiscal_shock": true,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "description": {
+    "ac_ref": "Ajello (2016)",
+    "paper_title": "Financial intermediation, investment dynamics, and business cycle fluctuations",
+    "journal": "American Economic Review 106 (8), 2256-2303",
+    "replicants_name": "Maximilian Mayer",
+    "pub_date": "2016",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated US model",
+    "authors": [
+      "Ajello, Andrea"
+    ]
+  }
+}

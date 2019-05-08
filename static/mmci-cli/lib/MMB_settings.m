@@ -448,17 +448,8 @@ rulenamesshort1 = char(['User_Rule   ' %rule_number 1
                         'CMR_Rule    ' %            11
                   ]);
 
-              % List of numbers of models according to having a model-specific rule implemented
-model_with_rule=[2 3 4 5 6 7 10 11 14 18 19 20 21 22 24 25 26 27 29 31 ...
-                32 33 34 35 37 39 40 41 42 43 45 46 47 49 52 ...
-                55 56 57 58 59 61 62 63 64 66 68 70 71 72 73 74 ...
-                77 78 79 80 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 112 113 114 115 116 117 118 119 121 123 125 126 127 128];
-model_without_rule=[1 8 9 12 13 15 16 17 23 28 30 36 38 44 48 50 51 53 54 60 ...
-                65 67 69 75 76 81 82 83 84 85 109 110 111 120 122 124];
-
 Number_rule=size(rulenames,1);
 common_rule=zeros(Number_rule,33);
-
 
   % Set Parameters for the Monetary Policy Rule
         % The Policy Rule is Described by the Following Equation in Each model Dynare file:

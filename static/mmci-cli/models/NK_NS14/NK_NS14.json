@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 89,
-  "internal_name": "NK_NS14",
-  "path": null,
+  "name": "NK_NS14",
   "capabilities": {
-    "model_specific_rule": true,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -34,5 +32,42 @@
       "Nakamura, Emi",
       "Steinsson, Jón"
     ]
-  }
+  },
+  "msr": [
+    "0.8",
+    "0",
+    "0",
+    "0",
+    "0.2*1.5",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0.2*0.5*4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "variabledim": 1,
+  "al": false
 }

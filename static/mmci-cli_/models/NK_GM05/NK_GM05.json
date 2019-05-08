@@ -1,0 +1,39 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 8,
+  "internal_name": "NK_GM05",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": false,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": true,
+    "mp_shock": true,
+    "fiscal_shock": false,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11
+    ]
+  },
+  "description": {
+    "ac_ref": "Gali & Monacelli (2005)",
+    "paper_title": "Monetary policy and exchange rate volatility in a small open economy",
+    "journal": "Review of Economic Studies 72, pp. 707-734",
+    "replicants_name": "Likun Wang",
+    "pub_date": "2005",
+    "keywords": [],
+    "description": "",
+    "category": "Calibrated model",
+    "authors": [
+      "Gali, Jordí",
+      "Monacelli, Tommaso"
+    ]
+  }
+}

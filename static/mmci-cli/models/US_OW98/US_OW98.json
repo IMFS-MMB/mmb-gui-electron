@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 67,
-  "internal_name": "US_OW98",
-  "path": null,
+  "name": "US_OW98",
   "capabilities": {
-    "model_specific_rule": true,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -35,5 +33,42 @@
       "Orphanides, Athanasios",
       "Wieland, Volker"
     ]
-  }
+  },
+  "msr": [
+    "0.760",
+    "0",
+    "0",
+    "0",
+    "0.625/4",
+    "0.625/4",
+    "0.625/4",
+    "0.625/4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1.171",
+    "-0.967",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false
 }

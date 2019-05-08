@@ -1,0 +1,39 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 94,
+  "internal_name": "EA_PV15",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": true,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": true,
+    "mp_shock": true,
+    "fiscal_shock": false,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11
+    ]
+  },
+  "description": {
+    "ac_ref": "Poutineau & Vermandel (2015)",
+    "paper_title": "Cross-border banking flows spillovers in the eurozone: Evidence from an estimated DSGE model",
+    "journal": "Journal of Economic Dynamics and Control 51, 378-403",
+    "replicants_name": "Lazar Milivojevic",
+    "pub_date": "2015",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated euro area model",
+    "authors": [
+      "Poutineau, Jean-Christophe",
+      "Vermandel, Gauthier"
+    ]
+  }
+}

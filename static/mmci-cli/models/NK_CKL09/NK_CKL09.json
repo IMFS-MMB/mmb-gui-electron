@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 11,
-  "internal_name": "NK_CKL09",
-  "path": null,
+  "name": "NK_CKL09",
   "capabilities": {
-    "model_specific_rule": true,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -37,5 +35,42 @@
       "Kuester, Keith",
       "Linzert, Tobias"
     ]
-  }
+  },
+  "msr": [
+    "0.85",
+    "0",
+    "0",
+    "0",
+    "(1-0.85)*1.5/4",
+    "(1-0.85)*1.5/4",
+    "(1-0.85)*1.5/4",
+    "(1-0.85)*1.5/4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0.5*(1-0.85)",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false
 }

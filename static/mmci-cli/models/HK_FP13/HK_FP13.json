@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 60,
-  "internal_name": "HK_FP13",
-  "path": null,
+  "name": "HK_FP13",
   "capabilities": {
-    "model_specific_rule": false,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -35,5 +33,8 @@
       "Funke, Michael",
       "Paetz, Michael"
     ]
-  }
+  },
+  "msr": null,
+  "variabledim": 1,
+  "al": false
 }

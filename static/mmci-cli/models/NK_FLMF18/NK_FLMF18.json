@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 124,
-  "internal_name": "NK_FLMF18",
-  "path": null,
+  "name": "NK_FLMF18",
   "capabilities": {
-    "model_specific_rule": false,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -37,5 +35,8 @@
       "Montoro, Carlos",
       "Ferrari, Massimo"
     ]
-  }
+  },
+  "msr": null,
+  "variabledim": 1,
+  "al": false
 }

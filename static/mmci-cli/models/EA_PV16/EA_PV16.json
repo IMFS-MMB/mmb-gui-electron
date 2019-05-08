@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 125,
-  "internal_name": "EA_PV16",
-  "path": null,
+  "name": "EA_PV16",
   "capabilities": {
-    "model_specific_rule": true,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -36,5 +34,42 @@
       "Priftis, Romanos",
       "Vogel, Lukas"
     ]
-  }
+  },
+  "msr": [
+    "0.82",
+    "0",
+    "0",
+    "0",
+    "0.18*1.5",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0.18*0.5",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false
 }

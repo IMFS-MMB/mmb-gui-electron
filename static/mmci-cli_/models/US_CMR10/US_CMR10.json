@@ -1,0 +1,41 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 53,
+  "internal_name": "US_CMR10",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": false,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": true,
+    "mp_shock": true,
+    "fiscal_shock": false,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "description": {
+    "ac_ref": "Christiano et al. (2010) I",
+    "paper_title": "Financial factors in economic fluctuations",
+    "journal": "Working Paper Series 1192",
+    "replicants_name": "Fabio Verona",
+    "pub_date": "2010",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated US model",
+    "authors": [
+      "Christiano, Lawrence J.",
+      "Motto, Roberto",
+      "Rostagno, Massimo"
+    ]
+  }
+}

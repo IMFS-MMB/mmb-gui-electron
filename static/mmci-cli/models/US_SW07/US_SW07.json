@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 18,
-  "internal_name": "US_SW07",
-  "path": null,
+  "name": "US_SW07",
   "capabilities": {
-    "model_specific_rule": false,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -36,5 +34,42 @@
       "Smets, Frank",
       "Wouters, Rafael"
     ]
-  }
+  },
+  "msr": [
+    "0.8103",
+    "0",
+    "0",
+    "0",
+    "(1-0.8103)*2.0443",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "((1-0.8103)*0.0882+0.2247)*4",
+    "-0.2247*4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false
 }

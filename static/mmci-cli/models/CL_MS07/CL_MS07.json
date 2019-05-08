@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 48,
-  "internal_name": "CL_MS07",
-  "path": null,
+  "name": "CL_MS07",
   "capabilities": {
-    "model_specific_rule": false,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -36,5 +34,8 @@
       "Medina, Juan Pablo",
       "Soto, Claudio"
     ]
-  }
+  },
+  "msr": null,
+  "variabledim": 1,
+  "al": false
 }

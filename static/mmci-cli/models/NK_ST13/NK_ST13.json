@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 102,
-  "internal_name": "NK_ST13",
-  "path": null,
+  "name": "NK_ST13",
   "capabilities": {
-    "model_specific_rule": true,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -34,5 +32,42 @@
     "authors": [
       "Stracca, Livio"
     ]
-  }
+  },
+  "msr": [
+    "0.75",
+    "0",
+    "0",
+    "0",
+    "0.25*1.5",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 2,
+  "al": false
 }

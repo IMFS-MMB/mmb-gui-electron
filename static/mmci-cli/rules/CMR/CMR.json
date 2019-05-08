@@ -1,7 +1,7 @@
 {
   "$schema": "../rule.schema.json",
   "id": 11,
-  "internal_name": "CMR_Rule",
+  "name": "CMR_Rule",
   "coefficients": [
     "0.850296450300000",
     "0",

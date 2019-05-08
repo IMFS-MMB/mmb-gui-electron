@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 70,
-  "internal_name": "NK_LWW03AL",
-  "path": null,
+  "name": "NK_LWW03AL",
   "capabilities": {
-    "model_specific_rule": true,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -34,5 +32,42 @@
       "Wieland, Volker",
       "Williams, John C."
     ]
-  }
+  },
+  "msr": [
+    "0.755226",
+    "0",
+    "0",
+    "0",
+    "0.602691/4",
+    "0.602691/4",
+    "0.602691/4",
+    "0.602691/4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1.17616",
+    "-0.972390",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": true
 }

@@ -4,7 +4,7 @@
   "type": "object",
   "required": [
     "id",
-    "internal_name",
+    "name",
     "description",
     "coefficients"
   ],
@@ -16,7 +16,7 @@
     "id": {
       "type": "integer"
     },
-    "internal_name": {
+    "name": {
       "type": "string"
     },
     "coefficients": {

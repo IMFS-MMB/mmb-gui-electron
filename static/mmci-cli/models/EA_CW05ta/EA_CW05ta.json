@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 34,
-  "internal_name": "EA_CW05ta",
-  "path": null,
+  "name": "EA_CW05ta",
   "capabilities": {
-    "model_specific_rule": true,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -36,5 +34,42 @@
       "Coenen, Günther",
       "Wieland, Volker"
     ]
-  }
+  },
+  "msr": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "1.5/4",
+    "1.5/4",
+    "1.5/4",
+    "1.5/4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0.5",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 2,
+  "al": false
 }

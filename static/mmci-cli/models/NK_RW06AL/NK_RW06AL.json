@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 75,
-  "internal_name": "NK_RW06AL",
-  "path": null,
+  "name": "NK_RW06AL",
   "capabilities": {
-    "model_specific_rule": false,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -33,5 +31,8 @@
       "Ravenna, Frederico",
       "Walsh, Carl "
     ]
-  }
+  },
+  "msr": null,
+  "variabledim": 1,
+  "al": true
 }

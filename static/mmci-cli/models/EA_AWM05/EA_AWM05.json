@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 36,
-  "internal_name": "EA_AWM05",
-  "path": null,
+  "name": "EA_AWM05",
   "capabilities": {
-    "model_specific_rule": false,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -35,5 +33,8 @@
       "Kuester, Keith",
       "McAdam, Peter"
     ]
-  }
+  },
+  "msr": null,
+  "variabledim": 1,
+  "al": false
 }

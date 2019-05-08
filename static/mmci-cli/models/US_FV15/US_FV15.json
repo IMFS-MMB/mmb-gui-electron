@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 110,
-  "internal_name": "US_FV15",
-  "path": null,
+  "name": "US_FV15",
   "capabilities": {
-    "model_specific_rule": false,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -37,5 +35,8 @@
       "Guerrón-Quintana, Pablo",
       "Rubio-Ramírez, Juan"
     ]
-  }
+  },
+  "msr": null,
+  "variabledim": 1,
+  "al": false
 }

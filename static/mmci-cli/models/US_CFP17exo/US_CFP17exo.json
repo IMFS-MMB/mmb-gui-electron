@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 105,
-  "internal_name": "US_CFP17exo",
-  "path": null,
+  "name": "US_CFP17exo",
   "capabilities": {
-    "model_specific_rule": true,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -37,5 +35,42 @@
       "Fuerst, Timothy S.",
       "Paustian, Matthias"
     ]
-  }
+  },
+  "msr": [
+    "0.77",
+    "0",
+    "0",
+    "0",
+    "0.3266",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0.1127/4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false
 }

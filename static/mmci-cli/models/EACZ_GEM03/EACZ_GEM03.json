@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 44,
-  "internal_name": "EACZ_GEM03",
-  "path": null,
+  "name": "EACZ_GEM03",
   "capabilities": {
-    "model_specific_rule": false,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -36,5 +34,8 @@
       "Laxton, Douglas",
       "Pesenti, Paolo"
     ]
-  }
+  },
+  "msr": null,
+  "variabledim": 2,
+  "al": false
 }

@@ -1,0 +1,41 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 88,
+  "internal_name": "US_CPS10",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": true,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": true,
+    "mp_shock": true,
+    "fiscal_shock": false,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "description": {
+    "ac_ref": "Cogley et al. (2010)",
+    "paper_title": "Inflation-gap persistence in the us",
+    "journal": "American Economic Journal: Macroeconomics 2, pp. 43-66",
+    "replicants_name": "Balint Tatar and Changnam Son",
+    "pub_date": "2010",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated US model",
+    "authors": [
+      "Cogley, Timothy",
+      "Primiceri, Giorgio E.",
+      "Sargent, Thomas J."
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 113,
+  "internal_name": "US_RE09",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": true,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": true,
+    "mp_shock": true,
+    "fiscal_shock": true,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11
+    ]
+  },
+  "description": {
+    "ac_ref": "Reis (2009)",
+    "paper_title": "A sticky-information general-equilibrium model for policy analysis",
+    "journal": "Tech. rep., National Bureau of Economic Research",
+    "replicants_name": "Laura Schmidt",
+    "pub_date": "2009",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated US model",
+    "authors": [
+      "Reis, Robert"
+    ]
+  }
+}

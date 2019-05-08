@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 120,
-  "internal_name": "FI_AINO16",
-  "path": null,
+  "name": "FI_AINO16",
   "capabilities": {
-    "model_specific_rule": false,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -38,5 +36,8 @@
       "Ripatti, Antti",
       "Verona, Fabio"
     ]
-  }
+  },
+  "msr": null,
+  "variabledim": 1,
+  "al": false
 }

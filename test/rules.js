@@ -4,10 +4,10 @@ import { assert } from 'chai';
 
 import { ajv, rules, validate } from './utils/rules';
 
-function ruleTests(model) {
-  describe(`${model.internal_name}`, () => {
+function ruleTests(rule) {
+  describe(`${rule.name}`, () => {
     it('.json passes validation', () => {
-      assert.equal(validate(model), true, ajv.errorsText(validate.errors));
+      assert.equal(validate(rule), true, ajv.errorsText(validate.errors));
     });
   });
 }

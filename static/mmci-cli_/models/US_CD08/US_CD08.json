@@ -1,0 +1,39 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 28,
+  "internal_name": "US_CD08",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": false,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": true,
+    "mp_shock": true,
+    "fiscal_shock": false,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11
+    ]
+  },
+  "description": {
+    "ac_ref": "Christensen & Dib (2008)",
+    "paper_title": "The financial accelerator in an estimated New Keynesian model",
+    "journal": "Review of Economic Dynamics 11(1), pp. 155-178",
+    "replicants_name": "Jens Kruk",
+    "pub_date": "2008",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated US model",
+    "authors": [
+      "Chistensen, Ian",
+      "Dib, Ali"
+    ]
+  }
+}

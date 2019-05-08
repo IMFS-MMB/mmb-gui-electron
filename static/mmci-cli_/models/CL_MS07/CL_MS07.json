@@ -1,0 +1,40 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 48,
+  "internal_name": "CL_MS07",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": false,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": true,
+    "mp_shock": true,
+    "fiscal_shock": true,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "description": {
+    "ac_ref": "Medina & Soto (2007)",
+    "paper_title": "The Chilean business cycles through the lens of a stochastic general equilibrium model",
+    "journal": "Central Bank of Chile Working Papers 457",
+    "replicants_name": "S. Schmidt",
+    "pub_date": "2007",
+    "keywords": [],
+    "description": "Model of the Chilean economy",
+    "category": "Estimated other-country model",
+    "authors": [
+      "Medina, Juan Pablo",
+      "Soto, Claudio"
+    ]
+  }
+}

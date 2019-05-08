@@ -4,10 +4,11 @@
   "type": "object",
   "required": [
     "id",
-    "internal_name",
-    "path",
+    "name",
     "capabilities",
-    "description"
+    "msr",
+    "description",
+    "variabledim"
   ],
   "additionalProperties": false,
   "properties": {
@@ -17,16 +18,33 @@
     "id": {
       "type": "integer"
     },
-    "internal_name": {
+    "name": {
       "type": "string"
     },
-    "path": {
-      "type": "null"
+    "al": {
+      "type": "boolean"
+    },
+    "variabledim": {
+      "type": "number"
+    },
+    "msr": {
+      "anyOf": [
+        {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 33,
+          "maxItems": 33
+        },
+        {
+          "type": "null"
+        }
+      ]
     },
     "capabilities": {
       "type": "object",
       "required": [
-        "model_specific_rule",
         "interest",
         "inflation",
         "outputgap",
@@ -35,9 +53,6 @@
         "fiscal_shock"
       ],
       "properties": {
-        "model_specific_rule": {
-          "type": "boolean"
-        },
         "interest": {
           "type": "boolean"
         },

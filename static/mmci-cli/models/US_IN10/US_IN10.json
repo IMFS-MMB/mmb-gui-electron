@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 52,
-  "internal_name": "US_IN10",
-  "path": null,
+  "name": "US_IN10",
   "capabilities": {
-    "model_specific_rule": true,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -36,5 +34,42 @@
       "Iacoviello, Matteo",
       "Neri, Stefano"
     ]
-  }
+  },
+  "msr": [
+    "0.59913",
+    "0",
+    "0",
+    "0",
+    "(1-0.59913)*1.40444",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "4*(1-0.59913)*0.51261",
+    "-4*(1-0.59913)*0.51261",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 2,
+  "al": false
 }

@@ -1,7 +1,7 @@
 {
   "$schema": "../rule.schema.json",
   "id": 3,
-  "internal_name": "Taylor_Rule",
+  "name": "Taylor_Rule",
   "coefficients": [
     "0",
     "0",

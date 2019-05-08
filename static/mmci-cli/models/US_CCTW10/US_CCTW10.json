@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 32,
-  "internal_name": "US_CCTW10",
-  "path": null,
+  "name": "US_CCTW10",
   "capabilities": {
-    "model_specific_rule": true,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -38,5 +36,42 @@
       "Taylor, John B.",
       "Wieland, Volker"
     ]
-  }
+  },
+  "msr": [
+    "0.8180",
+    "0",
+    "0",
+    "0",
+    "(1-0.8180)*2.0520",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "((1-0.8180)*0.0830+0.2321)*4",
+    "-0.2321*4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false
 }

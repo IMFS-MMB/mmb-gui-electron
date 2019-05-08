@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 6,
-  "internal_name": "NK_IR04",
-  "path": null,
+  "name": "NK_IR04",
   "capabilities": {
-    "model_specific_rule": true,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -34,5 +32,42 @@
     "authors": [
       "Ireland, Peter N."
     ]
-  }
+  },
+  "msr": [
+    "0.5481",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0.5680",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false
 }

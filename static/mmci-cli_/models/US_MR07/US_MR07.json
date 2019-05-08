@@ -1,0 +1,39 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 30,
+  "internal_name": "US_MR07",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": false,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": true,
+    "mp_shock": true,
+    "fiscal_shock": false,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11
+    ]
+  },
+  "description": {
+    "ac_ref": "Mankiw & Reis (2007)",
+    "paper_title": "Sticky information in general equilibrium.",
+    "journal": "Journal of the European Economic Association 5(2-3), pp. 603-613",
+    "replicants_name": "Christian Rühl",
+    "pub_date": "2007",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated US model",
+    "authors": [
+      "Mankiw, N. Gregory",
+      "Reis, Robert"
+    ]
+  }
+}

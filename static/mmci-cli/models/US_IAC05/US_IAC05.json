@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 29,
-  "internal_name": "US_IAC05",
-  "path": null,
+  "name": "US_IAC05",
   "capabilities": {
-    "model_specific_rule": true,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -34,5 +32,42 @@
     "authors": [
       "Iacoviello, Matteo"
     ]
-  }
+  },
+  "msr": [
+    "0.73",
+    "0",
+    "0",
+    "0",
+    "0",
+    "(1-0.73)*(1+0.27)",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "4*(1-0.73)*0.13",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false
 }

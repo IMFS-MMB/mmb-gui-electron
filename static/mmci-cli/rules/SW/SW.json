@@ -1,7 +1,7 @@
 {
   "$schema": "../rule.schema.json",
   "id": 6,
-  "internal_name": "SW_Rule",
+  "name": "SW_Rule",
   "coefficients": [
     "0.8103",
     "0",

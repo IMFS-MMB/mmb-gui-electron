@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 107,
-  "internal_name": "US_DNGS15_SWpi",
-  "path": null,
+  "name": "US_DNGS15_SWpi",
   "capabilities": {
-    "model_specific_rule": true,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -37,5 +35,42 @@
       "Giannoni, Marc P.",
       "Schorfheide, Frank"
     ]
-  }
+  },
+  "msr": [
+    "0.7909",
+    "0",
+    "0",
+    "0",
+    "(1-0.7909)*1.9693",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "4*((1-0.7909)*(-0.0053)+0.2175)",
+    "-4*0.2175",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false
 }

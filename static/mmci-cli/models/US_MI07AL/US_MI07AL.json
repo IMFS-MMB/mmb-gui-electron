@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 78,
-  "internal_name": "US_MI07AL",
-  "path": null,
+  "name": "US_MI07AL",
   "capabilities": {
-    "model_specific_rule": true,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -32,5 +30,42 @@
     "authors": [
       "Milani, Fabio"
     ]
-  }
+  },
+  "msr": [
+    "0.914",
+    "0",
+    "0",
+    "0",
+    "(1-0.914)*1.484",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "(1-0.914)*0.801",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": true
 }

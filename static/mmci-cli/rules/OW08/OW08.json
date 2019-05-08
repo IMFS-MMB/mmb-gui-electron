@@ -1,7 +1,7 @@
 {
   "$schema": "../rule.schema.json",
   "id": 8,
-  "internal_name": "OW08_Rule",
+  "name": "OW08_Rule",
   "coefficients": [
     "0",
     "0",

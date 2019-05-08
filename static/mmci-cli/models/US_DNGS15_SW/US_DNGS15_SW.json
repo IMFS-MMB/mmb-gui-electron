@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 106,
-  "internal_name": "US_DNGS15_SW",
-  "path": null,
+  "name": "US_DNGS15_SW",
   "capabilities": {
-    "model_specific_rule": true,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -37,5 +35,42 @@
       "Giannoni, Marc P.",
       "Schorfheide, Frank"
     ]
-  }
+  },
+  "msr": [
+    "0.8305",
+    "0",
+    "0",
+    "0",
+    "(1-0.8305)*2.0477",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "4*((1-0.8305)*0.0873 + 0.2360)",
+    "-4*0.2360",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false
 }

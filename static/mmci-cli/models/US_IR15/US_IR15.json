@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 111,
-  "internal_name": "US_IR15",
-  "path": null,
+  "name": "US_IR15",
   "capabilities": {
-    "model_specific_rule": false,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -30,5 +28,8 @@
     "authors": [
       "Ireland, Peter N."
     ]
-  }
+  },
+  "msr": null,
+  "variabledim": 1,
+  "al": false
 }

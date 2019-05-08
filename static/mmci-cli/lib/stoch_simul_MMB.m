@@ -62,7 +62,7 @@ global MODELGUI;
 
 if (strcmp(dynare_version, '4.2.0') || strcmp(dynare_version, '4.2.1') || strcmp(dynare_version, '4.2.2') || strcmp(dynare_version, '4.2.4')...
         || strcmp(dynare_version, '4.2.5'))
-    
+
 else
     % Only when the Dynare version is higher than 4.3.0
     dr = oo_.dr;
@@ -125,19 +125,19 @@ else
     else  % for dynare versions 4.4.0 or higher
         oo_.dr=set_state_space(dr,M_,options_);
         [oo_.dr.nstatic, oo_.dr.npred, oo_.dr.nboth, oo_.dr.nfwrd,oo_.dr.nsfwrd] = get_nvars_state_space(dr,M_);
-        
+
         if (strcmp(dynare_version, '4.4.0') || strcmp(dynare_version, '4.4.1') )
-            
+
         else
             if options_.logged_steady_state
                 oo_.dr.ys=exp(oo_.dr.ys);
                 oo_.steady_state=exp(oo_.steady_state);
             end
         end
-        
+
         [oo_.dr,info,M_,options_,oo_] = resol_MMB(0,M_,options_,oo_); %solve
     end
-    
+
     % The follwoing if clause matters when the Dynare version is higher than
     % 4.4.1.
     if options_.loglinear
@@ -145,9 +145,9 @@ else
         oo_.steady_state=log(oo_.steady_state);
         options_old.logged_steady_state = 1;
     end
-    
+
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    
+
     if info(1)
         disp(' ');
         disp('NO SOLUTION FOUND');
@@ -216,7 +216,7 @@ else
                 R= [ R, diag(oo_.autocorr{i}) ];
             end
         end
-        
+
         if base.option(1) == 1; % If ACF are selected...
            base.AUTR.(strtrim(deblank(base.rulenamesshort1(base.l,:))))(:,:)=[ones(size(R,1),1),R];
            base.AUTendo_names.(strtrim(deblank(base.rulenamesshort1(base.l,:))))(:,:)=M_.endo_names(ivar,:);
@@ -224,9 +224,9 @@ else
            base.AUTR.(strtrim(deblank(base.rulenamesshort1(base.l,:)))) = [];
            base.AUTendo_names.(strtrim(deblank(base.rulenamesshort1(base.l,:)))) = [];
         end
-        
+
         % Impulse response functions
-        
+
         if base.option(2)==1   % If IRF are selected...
             options_.irf = base.horizon; % horizon for IRFs
             shocks = M_.exo_names(M_.exo_names_orig_ord,:);  % put shocks in the right order for Dynare
@@ -272,7 +272,7 @@ else
 %                     else disp('You decided to plot all variables.');
 %                         disp(' ');
 %                     end
-%                     
+%
 %                 end
 %             else  base.option(4)=1;
 %             end
@@ -280,7 +280,7 @@ else
                 cd('..');
                 if AL
                     SS_AL=M_.Sigma_e+1e-14*eye(M_.exo_nbr);
-                    cs = zeros(size(SS_AL,1),1); % this line produces in the end IRF that are independent of any covariance structure. Shocks are one unit shocks. (as in Küster, Wieland)
+                    cs = zeros(size(SS_AL,1),1); % this line produces in the end IRF that are independent of any covariance structure. Shocks are one unit shocks. (as in Kï¿½ster, Wieland)
                 else
                     SS(M_.exo_names_orig_ord,M_.exo_names_orig_ord)=M_.Sigma_e+1e-14*eye(M_.exo_nbr);
                     cs = zeros(size(SS,1),1); % this line produces in the end IRF that are independent of any covariance structure. Shocks are one unit shocks. (as in K?ter, Wieland)
@@ -295,7 +295,7 @@ else
                         cd(base.setpath(base.models(base.epsilon),:));
                         base.pos_shock(p,base.models(base.epsilon))=ii;
                     end
-                    
+
                     if ii==0
                         disp(['No ' deblank(strtrim(base.namesshocks(p,:))) ' is available for Model: ' strtrim(base.names(base.models(base.epsilon),:))]);
                     end;
@@ -336,7 +336,7 @@ else
                         cd(base.setpath(base.models(base.epsilon),:));
                         base.pos_shock(p,base.models(base.epsilon))=ii;
                     end
-                    
+
                     if ii==0
                         disp(['No ' deblank(strtrim(base.namesshocks(p,:))) ' is available for Model: ' strtrim(base.names(base.models(base.epsilon),:))]);
                     else
@@ -391,7 +391,7 @@ end
 
 delete *_dynamic.m
 delete *_static.m
-delete *.log    
+delete *.log
 delete *_set_auxiliary_variables.m
 delete *_results.mat
 delete *.eps

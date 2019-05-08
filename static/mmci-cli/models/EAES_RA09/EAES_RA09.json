@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 47,
-  "internal_name": "EAES_RA09",
-  "path": null,
+  "name": "EAES_RA09",
   "capabilities": {
-    "model_specific_rule": true,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -34,5 +32,42 @@
     "authors": [
       "Rabanal, Pau"
     ]
-  }
+  },
+  "msr": [
+    "0.73",
+    "0",
+    "0",
+    "0",
+    "(1-0.73)*1.43",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false
 }
