@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 98,
-  "internal_name": "NK_MPT10",
-  "path": null,
+  "name": "NK_MPT10",
   "capabilities": {
-    "model_specific_rule": true,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -36,5 +34,42 @@
       "Perotti, Roberto",
       "Trigari, Antonella"
     ]
-  }
+  },
+  "msr": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "1.5",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0.125*4",
+    "-0.125*4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 2,
+  "al": false
 }

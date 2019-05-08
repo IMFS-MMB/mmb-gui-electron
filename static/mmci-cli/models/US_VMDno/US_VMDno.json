@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 55,
-  "internal_name": "US_VMDno",
-  "path": null,
+  "name": "US_VMDno",
   "capabilities": {
-    "model_specific_rule": true,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -37,5 +35,42 @@
       "Martins, Manuel M. F.",
       "Drumond, Ines"
     ]
-  }
+  },
+  "msr": [
+    "0.88",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "(1-0.88)*1.82*1/1.0516",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "(1-0.88)*4*0.11*0.4796/1.0516",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 2,
+  "al": false
 }

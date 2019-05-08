@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 82,
-  "internal_name": "EA_DKR11",
-  "path": null,
+  "name": "EA_DKR11",
   "capabilities": {
-    "model_specific_rule": false,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -35,5 +33,8 @@
       "Kok Sørensen, Christoffer",
       "Rodriguez Palenzuela, Diego"
     ]
-  }
+  },
+  "msr": null,
+  "variabledim": 2,
+  "al": false
 }

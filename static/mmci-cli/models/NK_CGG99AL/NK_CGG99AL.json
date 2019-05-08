@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 71,
-  "internal_name": "NK_CGG99AL",
-  "path": null,
+  "name": "NK_CGG99AL",
   "capabilities": {
-    "model_specific_rule": true,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -34,5 +32,42 @@
       "Gali, Jordí",
       "Gertler, Mark"
     ]
-  }
+  },
+  "msr": [
+    "0.79",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "(1-0.79)*2.15",
+    "0",
+    "0",
+    "0",
+    "(1-0.79)*.93/4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": true
 }

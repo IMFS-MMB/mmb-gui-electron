@@ -1,0 +1,39 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 80,
+  "internal_name": "NK_ET14",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": true,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": true,
+    "mp_shock": true,
+    "fiscal_shock": true,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      10,
+      11
+    ]
+  },
+  "description": {
+    "ac_ref": "Ellison & Tischbirek (2014)",
+    "paper_title": "Unconventional government debt purchases as a supplement to conventional monetary policy",
+    "journal": "Journal of Economic Dynamics and Control 43, pp. 199-217",
+    "replicants_name": "Elisabeth Falck and Philipp Lieberknecht",
+    "pub_date": "2014",
+    "keywords": [],
+    "description": "",
+    "category": "Calibrated model",
+    "authors": [
+      "Ellison, Martin",
+      "Tischbirek, Andreas"
+    ]
+  }
+}

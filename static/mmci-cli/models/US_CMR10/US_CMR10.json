@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 53,
-  "internal_name": "US_CMR10",
-  "path": null,
+  "name": "US_CMR10",
   "capabilities": {
-    "model_specific_rule": false,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -37,5 +35,8 @@
       "Motto, Roberto",
       "Rostagno, Massimo"
     ]
-  }
+  },
+  "msr": null,
+  "variabledim": 2,
+  "al": false
 }

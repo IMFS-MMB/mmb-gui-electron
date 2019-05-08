@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 80,
-  "internal_name": "NK_ET14",
-  "path": null,
+  "name": "NK_ET14",
   "capabilities": {
-    "model_specific_rule": true,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -35,5 +33,42 @@
       "Ellison, Martin",
       "Tischbirek, Andreas"
     ]
-  }
+  },
+  "msr": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "1.01",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "4*0.3",
+    "-4*(1-0.8016)*0.2023",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 2,
+  "al": false
 }

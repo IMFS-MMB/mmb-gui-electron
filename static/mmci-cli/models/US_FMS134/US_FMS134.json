@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 91,
-  "internal_name": "US_FMS134",
-  "path": null,
+  "name": "US_FMS134",
   "capabilities": {
-    "model_specific_rule": true,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -36,5 +34,42 @@
       "Matheron, Julien",
       "Sahuc, Jean-Guillaume"
     ]
-  }
+  },
+  "msr": [
+    "0.7987",
+    "0",
+    "0",
+    "0",
+    "(1-0.7987)*1.5189",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "4*((1-0.7987)*0.0075+0.2394)",
+    "-4*0.2394",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false
 }

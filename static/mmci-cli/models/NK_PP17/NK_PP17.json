@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 99,
-  "internal_name": "NK_PP17",
-  "path": null,
+  "name": "NK_PP17",
   "capabilities": {
-    "model_specific_rule": true,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -36,5 +34,42 @@
       "De Paoli, Bianca",
       "Paustian, Matthias"
     ]
-  }
+  },
+  "msr": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "1.5",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0.125*4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false
 }

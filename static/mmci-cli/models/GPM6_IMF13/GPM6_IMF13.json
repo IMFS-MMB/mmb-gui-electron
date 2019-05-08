@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 63,
-  "internal_name": "GPM6_IMF13",
-  "path": null,
+  "name": "GPM6_IMF13",
   "capabilities": {
-    "model_specific_rule": true,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -40,5 +38,42 @@
       "Kamenik, Ondrej",
       "Manchev, Petar"
     ]
-  }
+  },
+  "msr": [
+    "0.7107",
+    "0",
+    "0",
+    "0",
+    "(1-0.7107)*(1+0.9104)/4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "(1-0.7107)*(1+0.9104)/4",
+    "(1-0.7107)*(1+0.9104)/4",
+    "(1-0.7107)*(1+0.9104)/4",
+    "0",
+    "(1-0.7107)*0.2052",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false
 }

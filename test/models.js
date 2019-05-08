@@ -61,7 +61,7 @@ describe('Models', () => {
   const matlab = getBackend('matlab');
 
   models.forEach((model) => {
-    describe(`${model.internal_name}`, () => {
+    describe(`${model.name}`, () => {
       it('.json passes validation', () => {
         assert.equal(validate(model), true, ajv.errorsText(validate.errors));
       });

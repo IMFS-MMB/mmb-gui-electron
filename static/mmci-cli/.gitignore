@@ -1,8 +1,8 @@
 models/policy_param.mat
 **/Modelbase*
-**/Output/
 **/*.log
 **/checksum
 **/*_dynamic.m
 **/*_static.m
 **/*_set_auxiliary_variables.m
+out

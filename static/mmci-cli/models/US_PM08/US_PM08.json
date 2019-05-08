@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 25,
-  "internal_name": "US_PM08",
-  "path": null,
+  "name": "US_PM08",
   "capabilities": {
-    "model_specific_rule": true,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -39,5 +37,42 @@
       "Juillard, Michel",
       "Kamenik, Ondrej"
     ]
-  }
+  },
+  "msr": [
+    "0.7087",
+    "0",
+    "0",
+    "0",
+    "(1-0.7087)*(1+1.2679)/4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "(1-0.7087)*(1+1.2679)/4",
+    "(1-0.7087)*(1+1.2679)/4",
+    "(1-0.7087)*(1+1.2679)/4",
+    "0",
+    "(1-0.7087)*0.2192",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false
 }

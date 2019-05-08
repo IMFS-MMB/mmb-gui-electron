@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 121,
-  "internal_name": "NK_GSSZ17",
-  "path": null,
+  "name": "NK_GSSZ17",
   "capabilities": {
-    "model_specific_rule": true,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -38,5 +36,42 @@
       "Sim, Jae",
       "Zakrajsek, Egon"
     ]
-  }
+  },
+  "msr": [
+    "0.75",
+    "0",
+    "0",
+    "0",
+    "2*0.25",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false
 }

@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 83,
-  "internal_name": "NK_BGEU10",
-  "path": null,
+  "name": "NK_BGEU10",
   "capabilities": {
-    "model_specific_rule": false,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -36,5 +34,8 @@
       "Blanchard, Olivier",
       "Gali, Jordí"
     ]
-  }
+  },
+  "msr": null,
+  "variabledim": 1,
+  "al": false
 }

@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 49,
-  "internal_name": "BRA_SAMBA08",
-  "path": null,
+  "name": "BRA_SAMBA08",
   "capabilities": {
-    "model_specific_rule": true,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -38,5 +36,42 @@
       "Santos, Rafael",
       "Souza-Sobrinho, Nelson"
     ]
-  }
+  },
+  "msr": [
+    "0.682",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "(1-0.682)*1.523",
+    "0",
+    "0",
+    "0",
+    "(1-0.682)*0.839*4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 2,
+  "al": false
 }

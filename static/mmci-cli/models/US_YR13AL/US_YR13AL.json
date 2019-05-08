@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 79,
-  "internal_name": "US_YR13AL",
-  "path": null,
+  "name": "US_YR13AL",
   "capabilities": {
-    "model_specific_rule": true,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -32,5 +30,42 @@
     "authors": [
       "Rychalovska, Yuliya"
     ]
-  }
+  },
+  "msr": [
+    "0.9209",
+    "0",
+    "0",
+    "0",
+    "(1-0.9209)*1.6692",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "((1-0.9209)*0.1372+0.1004) ",
+    "-0.1004",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": true
 }

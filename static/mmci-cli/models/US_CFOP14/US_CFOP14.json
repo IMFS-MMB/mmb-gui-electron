@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 86,
-  "internal_name": "US_CFOP14",
-  "path": null,
+  "name": "US_CFOP14",
   "capabilities": {
-    "model_specific_rule": true,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -38,5 +36,42 @@
       "Ortiz, Alberto",
       "Paustian, Matthias"
     ]
-  }
+  },
+  "msr": [
+    "0.86",
+    "0",
+    "0",
+    "0",
+    "0.2954",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0.8616",
+    "-0.8",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false
 }

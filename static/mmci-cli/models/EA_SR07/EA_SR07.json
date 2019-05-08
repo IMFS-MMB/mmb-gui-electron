@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 38,
-  "internal_name": "EA_SR07",
-  "path": null,
+  "name": "EA_SR07",
   "capabilities": {
-    "model_specific_rule": false,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -37,5 +35,8 @@
       "Linde, Jesper",
       "Dib, Ali"
     ]
-  }
+  },
+  "msr": null,
+  "variabledim": 1,
+  "al": false
 }

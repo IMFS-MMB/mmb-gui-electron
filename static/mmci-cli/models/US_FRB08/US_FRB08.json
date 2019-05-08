@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 16,
-  "internal_name": "US_FRB08",
-  "path": null,
+  "name": "US_FRB08",
   "capabilities": {
-    "model_specific_rule": false,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -34,5 +32,8 @@
       "Brayton, Flint",
       "Laubach, Thomas"
     ]
-  }
+  },
+  "msr": null,
+  "variabledim": 2,
+  "al": false
 }

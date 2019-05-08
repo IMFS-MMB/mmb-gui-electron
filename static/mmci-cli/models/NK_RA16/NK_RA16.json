@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 101,
-  "internal_name": "NK_RA16",
-  "path": null,
+  "name": "NK_RA16",
   "capabilities": {
-    "model_specific_rule": true,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -33,5 +31,42 @@
     "authors": [
       "Rannenberg, Ansgar"
     ]
-  }
+  },
+  "msr": [
+    "0.8",
+    "0",
+    "0",
+    "0",
+    "0.3",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0.025",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false
 }

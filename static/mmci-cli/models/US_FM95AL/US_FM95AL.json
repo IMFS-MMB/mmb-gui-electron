@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 76,
-  "internal_name": "US_FM95AL",
-  "path": null,
+  "name": "US_FM95AL",
   "capabilities": {
-    "model_specific_rule": false,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -33,5 +31,8 @@
       "Fuhrer, Jeff",
       "Moore, George "
     ]
-  }
+  },
+  "msr": null,
+  "variabledim": 1,
+  "al": true
 }

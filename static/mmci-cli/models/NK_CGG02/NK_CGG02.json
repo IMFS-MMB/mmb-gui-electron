@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 4,
-  "internal_name": "NK_CGG02",
-  "path": null,
+  "name": "NK_CGG02",
   "capabilities": {
-    "model_specific_rule": true,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -36,5 +34,42 @@
       "Gali, Jordí",
       "Gertler, Mark"
     ]
-  }
+  },
+  "msr": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "1.5",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false
 }

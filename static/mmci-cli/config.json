@@ -1,0 +1,13 @@
+{
+  "dynare": "",
+  "models": [
+    "EA_PV15"
+  ],
+  "rules": [
+    "Taylor"
+  ],
+  "model_specific_rule": true,
+  "options": {
+    "horizon": 35
+  }
+}

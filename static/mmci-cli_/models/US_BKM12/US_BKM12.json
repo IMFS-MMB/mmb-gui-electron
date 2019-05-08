@@ -1,0 +1,41 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 115,
+  "internal_name": "US_BKM12",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": true,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": true,
+    "mp_shock": true,
+    "fiscal_shock": false,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "description": {
+    "ac_ref": "Bils et al. (2012)",
+    "paper_title": "Reset Price Inflation and the Impact of Monetary Policy Shocks",
+    "journal": "American Economic Review, 102(6): 2798-2825",
+    "replicants_name": "Changnam Son",
+    "pub_date": "2012",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated US model",
+    "authors": [
+      "Bils, Mark",
+      "Klenow, Peter J.",
+      "Malin, Benjamin A."
+    ]
+  }
+}

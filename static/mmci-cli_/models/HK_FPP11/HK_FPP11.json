@@ -1,0 +1,40 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 51,
+  "internal_name": "HK_FPP11",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": false,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": true,
+    "mp_shock": true,
+    "fiscal_shock": false,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11
+    ]
+  },
+  "description": {
+    "ac_ref": "Funke et al. (2011)",
+    "paper_title": "Stock market wealth effects in an estimated DSGE model for Hong Kong",
+    "journal": "Economic Modelling 28, pp. 316-334",
+    "replicants_name": "Xiaobei He and Tong Wang",
+    "pub_date": "2011",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated other-country model",
+    "authors": [
+      "Funke, Michael",
+      "Paetz, Michael",
+      "Pytlarczyk, Ernest"
+    ]
+  }
+}

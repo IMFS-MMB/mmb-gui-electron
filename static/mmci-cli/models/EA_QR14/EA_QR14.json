@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 68,
-  "internal_name": "EA_QR14",
-  "path": null,
+  "name": "EA_QR14",
   "capabilities": {
-    "model_specific_rule": true,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -35,5 +33,42 @@
       "Quint, Dominic",
       "Rabanal, Pau"
     ]
-  }
+  },
+  "msr": [
+    "0.8016",
+    "0",
+    "0",
+    "0",
+    "(1-0.8016)*1.5579",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "4*(1-0.8016)*0.2023",
+    "-4*(1-0.8016)*0.2023",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 2,
+  "al": false
 }

@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 100,
-  "internal_name": "NK_PSV16",
-  "path": null,
+  "name": "NK_PSV16",
   "capabilities": {
-    "model_specific_rule": true,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -36,5 +34,42 @@
       "Seoane, Hernán D.",
       "Vukotic, Marija"
     ]
-  }
+  },
+  "msr": [
+    "0.9",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0.11",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false
 }

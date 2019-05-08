@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 43,
-  "internal_name": "G3_CW03",
-  "path": null,
+  "name": "G3_CW03",
   "capabilities": {
-    "model_specific_rule": true,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -36,5 +34,42 @@
       "Coenen, Günther",
       "Wieland, Volker"
     ]
-  }
+  },
+  "msr": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "1.50/4",
+    "1.50/4",
+    "1.50/4",
+    "1.50/4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0.50",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 2,
+  "al": false
 }

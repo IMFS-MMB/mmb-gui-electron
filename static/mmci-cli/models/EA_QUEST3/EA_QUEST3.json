@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 39,
-  "internal_name": "EA_QUEST3",
-  "path": null,
+  "name": "EA_QUEST3",
   "capabilities": {
-    "model_specific_rule": true,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -37,5 +35,42 @@
       "Roeger, Werner",
       "Veld, Jan"
     ]
-  }
+  },
+  "msr": [
+    "0.9009",
+    "0",
+    "0",
+    "0",
+    "(1-0.9009)*1.02*1.9590/1.0366",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0.0783*4/1.0366",
+    "((1-0.9009)*0.4274-0.0783)*4/1.0366",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 2,
+  "al": false
 }

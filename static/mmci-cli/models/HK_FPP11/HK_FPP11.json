@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 51,
-  "internal_name": "HK_FPP11",
-  "path": null,
+  "name": "HK_FPP11",
   "capabilities": {
-    "model_specific_rule": false,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -36,5 +34,8 @@
       "Paetz, Michael",
       "Pytlarczyk, Ernest"
     ]
-  }
+  },
+  "msr": null,
+  "variabledim": 1,
+  "al": false
 }

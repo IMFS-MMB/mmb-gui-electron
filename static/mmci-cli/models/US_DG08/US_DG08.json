@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 27,
-  "internal_name": "US_DG08",
-  "path": null,
+  "name": "US_DG08",
   "capabilities": {
-    "model_specific_rule": true,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -35,5 +33,42 @@
     "authors": [
       "De Graeve, Ferre"
     ]
-  }
+  },
+  "msr": [
+    "0.8977",
+    "0",
+    "0",
+    "0",
+    "(1-0.8977)*1.4933+0.0801",
+    "-0.0801",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "4*((1-0.8977)*0.0882+0.2749)",
+    "-4*0.2749",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false
 }

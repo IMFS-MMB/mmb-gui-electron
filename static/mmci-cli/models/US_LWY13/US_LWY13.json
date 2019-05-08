@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 112,
-  "internal_name": "US_LWY13",
-  "path": null,
+  "name": "US_LWY13",
   "capabilities": {
-    "model_specific_rule": true,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -37,5 +35,42 @@
       "Walker, Todd B.",
       "Yang, S.-C. Susan"
     ]
-  }
+  },
+  "msr": [
+    "0.864376848",
+    "0",
+    "0",
+    "0",
+    "0.301234915",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0.179182587*4",
+    "-0.173996187*4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false
 }

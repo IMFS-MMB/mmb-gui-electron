@@ -1,8 +1,8 @@
 function setup_dynare()
     %% Checking versions of OCTAVE AND DYNARE
     if isunix==1
-        addpath('/usr/local/opt/dynare/lib/dynare/matlab')
-        addpath('/usr/lib/dynare/mex/octave')
+        % addpath('/usr/local/opt/dynare/lib/dynare/matlab')
+        addpath('/usr/lib/dynare/matlab')
         if exist('OCTAVE_VERSION', 'builtin')
             k0=strfind(IMAGE_PATH,'4.4.0');
             k1=strfind(IMAGE_PATH,'4.4.1');

@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 94,
-  "internal_name": "EA_PV15",
-  "path": null,
+  "name": "EA_PV15",
   "capabilities": {
-    "model_specific_rule": true,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -35,5 +33,42 @@
       "Poutineau, Jean-Christophe",
       "Vermandel, Gauthier"
     ]
-  }
+  },
+  "msr": [
+    "0.84",
+    "0",
+    "0",
+    "0",
+    "(1-0.84)*1.85",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "(1-0.84)*0.15*4",
+    "-(1-0.84)*0.15*4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false
 }

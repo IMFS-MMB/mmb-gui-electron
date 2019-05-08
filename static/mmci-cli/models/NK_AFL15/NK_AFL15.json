@@ -1,10 +1,8 @@
 {
   "$schema": "../model.schema.json",
   "id": 92,
-  "internal_name": "NK_AFL15",
-  "path": null,
+  "name": "NK_AFL15",
   "capabilities": {
-    "model_specific_rule": true,
     "interest": true,
     "inflation": true,
     "outputgap": true,
@@ -35,5 +33,42 @@
       "Faia, Ester",
       "Lo Duca, Marco"
     ]
-  }
+  },
+  "msr": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "1.5/4",
+    "1.5/4",
+    "1.5/4",
+    "1.5/4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0.5",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false
 }

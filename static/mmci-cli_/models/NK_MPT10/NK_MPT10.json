@@ -1,0 +1,40 @@
+{
+  "$schema": "../model.schema.json",
+  "id": 98,
+  "internal_name": "NK_MPT10",
+  "path": null,
+  "capabilities": {
+    "model_specific_rule": true,
+    "interest": true,
+    "inflation": true,
+    "outputgap": true,
+    "output": true,
+    "mp_shock": true,
+    "fiscal_shock": true,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11
+    ]
+  },
+  "description": {
+    "ac_ref": "Monacelli et al. (2010)",
+    "paper_title": "Unemployment fiscal multipliers",
+    "journal": "Journal of Monetary Economics 57 (5), 531-553",
+    "replicants_name": "Felix Strobel",
+    "pub_date": "2010",
+    "keywords": [],
+    "description": "",
+    "category": "Calibrated model",
+    "authors": [
+      "Monacelli, Tommaso",
+      "Perotti, Roberto",
+      "Trigari, Antonella"
+    ]
+  }
+}
