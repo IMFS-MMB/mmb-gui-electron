@@ -71,5 +71,10 @@
     "0.25"
   ],
   "variabledim": 1,
-  "al": false
+  "al": false,
+  "vars": [
+    "rstar_",
+    "pdotsh_",
+    "interest_"
+  ]
 }

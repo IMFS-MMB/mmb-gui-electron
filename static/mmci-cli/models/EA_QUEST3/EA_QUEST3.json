@@ -72,5 +72,27 @@
     "0.25"
   ],
   "variabledim": 2,
-  "al": false
+  "al": false,
+  "vars": [
+    "E_EPS_C",
+    "E_EPS_ETA",
+    "E_EPS_ETAM",
+    "E_EPS_ETAX",
+    "E_EPS_EX",
+    "E_EPS_IG",
+    "E_EPS_INOMW",
+    "E_EPS_L",
+    "E_EPS_LOL",
+    "E_EPS_M",
+    "E_EPS_PPI",
+    "E_EPS_PW",
+    "E_EPS_RPREME",
+    "E_EPS_RPREMK",
+    "E_EPS_TR",
+    "E_EPS_W",
+    "E_EPS_Y",
+    "E_EPS_YW",
+    "interest_",
+    "fiscal_"
+  ]
 }

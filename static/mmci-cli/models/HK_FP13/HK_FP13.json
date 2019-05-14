@@ -36,5 +36,21 @@
   },
   "msr": null,
   "variabledim": 1,
-  "al": false
+  "al": false,
+  "vars": [
+    "epsa_c",
+    "epsa_d",
+    "epsmu_c",
+    "epsmu_d",
+    "epsLTV",
+    "epsd_b",
+    "epsd_s",
+    "epsc_ast",
+    "epsd_ast",
+    "epsd_stern",
+    "epsp_c_ast",
+    "epsp_d_ast",
+    "interest_",
+    "fiscal_"
+  ]
 }

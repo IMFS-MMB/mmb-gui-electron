@@ -33,5 +33,12 @@
   },
   "msr": null,
   "variabledim": 1,
-  "al": false
+  "al": false,
+  "vars": [
+    "epsd",
+    "epsphi",
+    "epsmu_I",
+    "epsA",
+    "interest_"
+  ]
 }

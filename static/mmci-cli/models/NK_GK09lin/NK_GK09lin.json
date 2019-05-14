@@ -36,5 +36,11 @@
   },
   "msr": null,
   "variabledim": 1,
-  "al": false
+  "al": false,
+  "vars": [
+    "e_a",
+    "e_epsilon",
+    "e_n",
+    "interest_"
+  ]
 }

@@ -37,5 +37,10 @@
   },
   "msr": null,
   "variabledim": 1,
-  "al": false
+  "al": false,
+  "vars": [
+    "epsilon_p",
+    "epsilon_y",
+    "interest_"
+  ]
 }

@@ -36,5 +36,10 @@
   },
   "msr": null,
   "variabledim": 2,
-  "al": false
+  "al": false,
+  "vars": [
+    "ystar_",
+    "a_",
+    "interest_"
+  ]
 }

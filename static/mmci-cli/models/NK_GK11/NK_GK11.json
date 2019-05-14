@@ -36,5 +36,12 @@
   },
   "msr": null,
   "variabledim": 2,
-  "al": false
+  "al": false,
+  "vars": [
+    "e_a",
+    "e_ksi",
+    "e_Ne",
+    "interest_",
+    "fiscal_"
+  ]
 }

@@ -69,5 +69,13 @@
     "0.25"
   ],
   "variabledim": 1,
-  "al": false
+  "al": false,
+  "vars": [
+    "e_deltaa",
+    "e_g",
+    "e_nuu",
+    "e_gam",
+    "e_eps",
+    "interest_"
+  ]
 }

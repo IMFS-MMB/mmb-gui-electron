@@ -70,5 +70,18 @@
     "0.25"
   ],
   "variabledim": 1,
-  "al": false
+  "al": false,
+  "vars": [
+    "e_C_bar_s",
+    "e_C_bar_b",
+    "e_H_bar",
+    "e_mu_w",
+    "e_tau",
+    "e_Xi_tilde",
+    "e_chi_tilde",
+    "e_Z",
+    "e_b_g",
+    "interest_",
+    "fiscal_"
+  ]
 }

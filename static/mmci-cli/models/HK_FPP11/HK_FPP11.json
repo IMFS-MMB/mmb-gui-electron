@@ -37,5 +37,12 @@
   },
   "msr": null,
   "variabledim": 1,
-  "al": false
+  "al": false,
+  "vars": [
+    "epsa",
+    "epsy",
+    "mu_p",
+    "epseta",
+    "interest_"
+  ]
 }

@@ -70,5 +70,33 @@
     "0.25"
   ],
   "variabledim": 1,
-  "al": false
+  "al": false,
+  "vars": [
+    "e_a_h",
+    "e_g_h",
+    "e_beta_h",
+    "e_a_f",
+    "e_g_f",
+    "e_beta_f",
+    "e_n_h",
+    "e_n_f",
+    "e_q_h",
+    "e_q_f",
+    "e_rL_h",
+    "e_rL_f",
+    "e_w_h",
+    "e_w_f",
+    "e_ib_h",
+    "e_ib_f",
+    "e_a",
+    "e_g",
+    "e_beta",
+    "e_n",
+    "e_q",
+    "e_rL",
+    "e_w",
+    "e_ib",
+    "e_r",
+    "interest_"
+  ]
 }

@@ -1,5 +1,5 @@
 {
-  "$schema": "..\/model.schema.json",
+  "$schema": "../model.schema.json",
   "id": 74,
   "name": "NK_BGG99AL",
   "capabilities": {
@@ -102,5 +102,10 @@
       "inflationql2",
       "inflationq"
     ]
-  }
+  },
+  "vars": [
+    "e_a",
+    "interest_",
+    "fiscal_"
+  ]
 }

@@ -72,5 +72,15 @@
     "0.25"
   ],
   "variabledim": 1,
-  "al": false
+  "al": false,
+  "vars": [
+    "inno_ebargaint",
+    "inno_ekappat",
+    "inno_esept",
+    "inno_ebt",
+    "inno_eCt",
+    "inno_zt",
+    "interest_",
+    "fiscal_"
+  ]
 }

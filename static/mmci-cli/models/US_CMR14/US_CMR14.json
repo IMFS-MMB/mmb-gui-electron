@@ -72,5 +72,26 @@
     "0.25"
   ],
   "variabledim": 2,
-  "al": false
+  "al": false,
+  "vars": [
+    "e_epsil",
+    "e_gamma",
+    "e_lambdaf",
+    "e_muup",
+    "e_muzstar",
+    "e_sigma",
+    "e_xi1",
+    "e_xi2",
+    "e_xi3",
+    "e_xi4",
+    "e_xi5",
+    "e_xi6",
+    "e_xi7",
+    "e_xi8",
+    "e_term",
+    "e_zetac",
+    "e_zetai",
+    "interest_",
+    "fiscal_"
+  ]
 }

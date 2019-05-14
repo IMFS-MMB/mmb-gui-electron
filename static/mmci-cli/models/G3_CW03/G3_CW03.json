@@ -71,5 +71,14 @@
     "0.25"
   ],
   "variabledim": 2,
-  "al": false
+  "al": false,
+  "vars": [
+    "e_d_eu",
+    "e_cw_eu",
+    "e_d_ja",
+    "e_cw_ja",
+    "e_cw_us",
+    "e_d_us",
+    "interest_"
+  ]
 }

@@ -38,5 +38,14 @@
   },
   "msr": null,
   "variabledim": 1,
-  "al": false
+  "al": false,
+  "vars": [
+    "interest_",
+    "fiscal_",
+    "EZ",
+    "EOMEGA",
+    "EA",
+    "EG",
+    "EERR"
+  ]
 }

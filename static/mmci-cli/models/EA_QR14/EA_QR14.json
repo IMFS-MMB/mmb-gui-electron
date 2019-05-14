@@ -70,5 +70,9 @@
     "0.25"
   ],
   "variabledim": 2,
-  "al": false
+  "al": false,
+  "vars": [
+    "e_premiume_riske_risk_se_prefde_prefd_se_prefce_prefc_se_techce_techde_techc_se_techd_se_teche_prefd_come_techc_com",
+    "interest_"
+  ]
 }

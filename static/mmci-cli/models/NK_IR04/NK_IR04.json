@@ -69,5 +69,11 @@
     "0.25"
   ],
   "variabledim": 1,
-  "al": false
+  "al": false,
+  "vars": [
+    "epsa_",
+    "epse_",
+    "epsz_",
+    "interest_"
+  ]
 }

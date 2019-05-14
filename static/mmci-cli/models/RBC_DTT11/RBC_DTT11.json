@@ -70,5 +70,13 @@
     "0.25"
   ],
   "variabledim": 2,
-  "al": false
+  "al": false,
+  "vars": [
+    "epsA",
+    "epsmu",
+    "epsgam",
+    "epsstd",
+    "epspol",
+    "interest_"
+  ]
 }

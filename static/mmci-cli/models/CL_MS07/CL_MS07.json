@@ -37,5 +37,21 @@
   },
   "msr": null,
   "variabledim": 1,
-  "al": false
+  "al": false,
+  "vars": [
+    "eps_ah",
+    "eps_ys",
+    "eps_prsF",
+    "eps_yF",
+    "eps_iF",
+    "eps_piF",
+    "eps_sh_w",
+    "eps_sh_c",
+    "eps_sh_i",
+    "eps_prfF",
+    "eps_proF",
+    "eps_st",
+    "interest_",
+    "fiscal_"
+  ]
 }

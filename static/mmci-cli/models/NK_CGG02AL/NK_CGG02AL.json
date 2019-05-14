@@ -1,5 +1,5 @@
 {
-  "$schema": "..\/model.schema.json",
+  "$schema": "../model.schema.json",
   "id": 72,
   "name": "NK_CGG02AL",
   "capabilities": {
@@ -102,5 +102,14 @@
       "rstar",
       "interest"
     ]
-  }
+  },
+  "vars": [
+    "inf_",
+    "a_",
+    "infstar_",
+    "ystar_",
+    "rstar_",
+    "astar_",
+    "interest_"
+  ]
 }

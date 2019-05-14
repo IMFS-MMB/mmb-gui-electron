@@ -70,5 +70,11 @@
     "0.25"
   ],
   "variabledim": 1,
-  "al": false
+  "al": false,
+  "vars": [
+    "eps_a1",
+    "eps_a2",
+    "eps_a3",
+    "interest_"
+  ]
 }

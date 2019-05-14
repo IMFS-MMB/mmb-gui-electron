@@ -71,5 +71,9 @@
     "0.25"
   ],
   "variabledim": 2,
-  "al": false
+  "al": false,
+  "vars": [
+    "interest_",
+    "fiscal_"
+  ]
 }

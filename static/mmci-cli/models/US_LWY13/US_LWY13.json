@@ -72,5 +72,17 @@
     "0.25"
   ],
   "variabledim": 1,
-  "al": false
+  "al": false,
+  "vars": [
+    "epsilona",
+    "epsilonb",
+    "epsiloni",
+    "epsilonw",
+    "epsilonp",
+    "epsilontk",
+    "epsilontl",
+    "epsilonz",
+    "interest_",
+    "fiscal_"
+  ]
 }

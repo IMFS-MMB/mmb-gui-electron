@@ -70,5 +70,15 @@
     "0.25"
   ],
   "variabledim": 1,
-  "al": false
+  "al": false,
+  "vars": [
+    "eta_w",
+    "eta_p",
+    "epsinno_B",
+    "epsinno_L",
+    "epsinno_A",
+    "epsinno_I",
+    "interest_",
+    "fiscal_"
+  ]
 }
