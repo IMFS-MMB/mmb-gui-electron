@@ -1,7 +1,7 @@
 {
   "$schema": "../rule.schema.json",
   "id": 4,
-  "name": "GR_Rule",
+  "name": "GR",
   "coefficients": [
     "0.87^3",
     "0",

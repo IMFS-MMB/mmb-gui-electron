@@ -1,58 +1,74 @@
 import logger from '@/utils/logger';
+import { MODEL_RULE, USER_RULE } from '../../../../config/constants';
 
-function toVector(selected, length) {
-  const arr = (new Array(length)).fill(0);
+function rearrangeUserRule(old) {
+  // convert to single row
 
-  selected.forEach((s) => {
-    arr[s.id - 1] = 1;
-  });
+  const result = [];
 
-  return `[${arr.join(' ')}]`;
+  result.push(old[1][0]);
+  result.push(old[2][0]);
+  result.push(old[3][0]);
+  result.push(old[4][0]);
+  result.push(old[0][1]);
+  result.push(old[1][1]);
+  result.push(old[2][1]);
+  result.push(old[3][1]);
+  result.push(old[4][1]);
+  result.push(old[5][1]);
+  result.push(old[6][1]);
+  result.push(old[7][1]);
+  result.push(old[8][1]);
+  result.push(old[0][2]);
+  result.push(old[1][2]);
+  result.push(old[2][2]);
+  result.push(old[3][2]);
+  result.push(old[4][2]);
+  result.push(old[5][2]);
+  result.push(old[6][2]);
+  result.push(old[7][2]);
+  result.push(old[8][2]);
+  result.push(old[0][3]);
+  result.push(old[1][3]);
+  result.push(old[2][3]);
+  result.push(old[3][3]);
+  result.push(old[4][3]);
+  result.push(old[5][3]);
+  result.push(old[6][3]);
+  result.push(old[7][3]);
+  result.push(old[8][3]);
+  result.push('1');
+  result.push('0.25');
+
+  return result;
 }
 
-function userRuleToMatrix(userRule) {
-  const rows = userRule.map(row => row
-    .map(num => (num === null ? NaN : +num))
-    .join(','));
-
-  const contents = rows.join(';');
-
-  return `'[${contents}]'`;
+function useMSR(rules) {
+  return rules.some(r => r.id === MODEL_RULE);
 }
 
-export default function buildMatlabScript(models, rules, output, shocks, horizon, userRule) {
-  // todo: fix hardcoded vector lengths
+function useUSR(rules) {
+  return rules.some(r => r.id === USER_RULE);
+}
 
-  const moreArgs = {
-    horizon: `'${horizon}'`,
+export default function buildMatlabScript(models, rules, shocks, horizon, gain, userRule) {
+  const config = {
+    rules: rules.filter(r => r.id !== USER_RULE && r.id !== MODEL_RULE).map(r => r.name),
+    models: models.map(m => m.name),
+    msr: useMSR(rules),
+    usr: useUSR(rules) ? rearrangeUserRule(userRule) : false,
+    options: {
+      shocks: shocks.map(s => s.id),
+      gain,
+      horizon,
+    },
   };
 
-  if (rules.find(r => r.id === 1 /* user specified rule */)) {
-    moreArgs.data = userRuleToMatrix(userRule);
-  }
+  const jsonconfig = JSON.stringify(config);
 
-  const argString = Object.keys(moreArgs).map(key => `'${key}', ${moreArgs[key]}`).join(', ');
+  const result = `mmb('${jsonconfig}');exit();`;
 
-  // todo: fix hardcoded vector lengths
-  const lines = [
-    'try',
-    `  models = ${toVector(models, 128)}`,
-    `  rules = ${toVector(rules, 11)}`,
-    `  output = ${toVector(output, 3)}`,
-    `  shocks = ${toVector(shocks, 2)}`,
-    `  CMD_MMB(models,rules,output,shocks, ${argString})`,
-    'catch ERR',
-    '  disp(\'\')',
-    '  disp(\'An error occured:\')',
-    '  disp(ERR)',
-    'end',
-    'exit()',
-  ];
-
-  // macOS somehow struggles with newlines in args, use semicolons
-  const result = lines.join(';');
-
-  logger.info(result);
+  logger.info(jsonconfig);
 
   return result;
 }

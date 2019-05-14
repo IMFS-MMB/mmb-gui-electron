@@ -1,7 +1,7 @@
 {
   "$schema": "../rule.schema.json",
   "id": 5,
-  "name": "LWW_Rule",
+  "name": "LWW",
   "coefficients": [
     "0.755226",
     "0",

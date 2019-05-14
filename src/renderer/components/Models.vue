@@ -23,7 +23,7 @@
 
             <b-row class="justify-content-center ctrl-links">
                         <div class="col text-center">
-                            <a href="http://www.macromodelbase.com/files/MMB_model_list_3_0.pdf" v-b-modal.helpModal><i class="fa fa-question-circle"></i>
+                            <a href="http://www.macromodelbase.com/files/MMB_model_list_3_0.pdf" target="_blank"><i class="fa fa-question-circle"></i>
                                Documentation of Models</a>
                         </div>
             </b-row>

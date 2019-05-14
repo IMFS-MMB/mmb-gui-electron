@@ -6,11 +6,15 @@ const state = {
   shocks: [],
   outputVars: [],
   horizon: 20,
+  gain: 0.01,
 };
 
 const getters = {
   horizon(state) {
     return state.horizon;
+  },
+  gain(state) {
+    return state.gain;
   },
 
   models(state) {
@@ -48,7 +52,7 @@ const getters = {
           case 1:
             return false;
           case 2:
-            return !model.capabilities.model_specific_rule;
+            return !model.msr;
           default:
             return !model.capabilities.rules.includes(rule.id);
         }
@@ -66,7 +70,7 @@ const getters = {
           return false;
         case 2:
           // model specific
-          return getters.models.some(m => !m.capabilities.model_specific_rule);
+          return getters.models.some(m => !m.msr);
         default:
           return getters.models.some(m => !m.capabilities.rules.includes(id));
       }
@@ -82,7 +86,9 @@ const mutations = {
   setHorizon(state, data) {
     state.horizon = data;
   },
-
+  setGain(state, data) {
+    state.gain = data;
+  },
   setModels(state, data) {
     state.models = data;
   },

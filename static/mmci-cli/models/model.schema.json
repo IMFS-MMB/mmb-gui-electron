@@ -1,6 +1,13 @@
 {
-  "definitions": {},
   "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "arrayOfStrings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
   "type": "object",
   "required": [
     "id",
@@ -8,9 +15,22 @@
     "capabilities",
     "msr",
     "description",
-    "variabledim"
+    "variabledim",
+    "al"
   ],
   "additionalProperties": false,
+  "if": {
+    "properties": {
+      "al": {
+        "const": true
+      }
+    }
+  },
+  "then": {
+    "required": [
+      "al_info"
+    ]
+  },
   "properties": {
     "$schema": {
       "type": "string"
@@ -24,15 +44,36 @@
     "al": {
       "type": "boolean"
     },
+    "al_info": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "forwards": {
+          "$ref": "#/definitions/arrayOfStrings"
+        },
+        "states_long": {
+          "$ref": "#/definitions/arrayOfStrings"
+        },
+        "states_short": {
+          "$ref": "#/definitions/arrayOfStrings"
+        }
+      }
+    },
     "variabledim": {
-      "type": "number"
+      "enum": [
+        1,
+        2
+      ]
     },
     "msr": {
       "anyOf": [
         {
           "type": "array",
           "items": {
-            "type": "string"
+            "type": [
+              "string",
+              "number"
+            ]
           },
           "minItems": 33,
           "maxItems": 33
@@ -109,7 +150,7 @@
           "type": "string"
         },
         "keywords": {
-          "type": "array"
+          "$ref": "#/definitions/arrayOfStrings"
         },
         "description": {
           "type": "string"
@@ -118,10 +159,7 @@
           "type": "string"
         },
         "authors": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
+          "$ref": "#/definitions/arrayOfStrings"
         }
       }
     }

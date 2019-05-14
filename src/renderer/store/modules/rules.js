@@ -1,7 +1,9 @@
+import rules from '@/data/common_rules';
+
 const namespaced = true;
 
 const state = {
-  rules: require('@/data/common_rules'),
+  rules,
 };
 
 const getters = {

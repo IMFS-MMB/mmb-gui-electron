@@ -8,7 +8,7 @@ const state = {
 
 const getters = {
   sortedModels(state) {
-    return state.models.sort((a, b) => a.internal_name.localeCompare(b.internal_name));
+    return state.models.sort((a, b) => a.name.localeCompare(b.name));
   },
   filteredModels(state, getters, rootState, rootGetters) {
     const text = rootGetters['search/text'].toLowerCase();
@@ -18,7 +18,7 @@ const getters = {
     }
 
     return getters.sortedModels.filter(model =>
-      model.internal_name.toLowerCase().includes(text) ||
+      model.name.toLowerCase().includes(text) ||
       (model.description.keywords || []).some(k => k.toLowerCase().includes(text)) ||
       (model.description.paper_title || '').toLowerCase().includes(text) ||
       (model.description.journal || '').toLowerCase().includes(text) ||

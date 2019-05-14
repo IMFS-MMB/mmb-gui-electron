@@ -1,5 +1,5 @@
 {
-  "$schema": "../model.schema.json",
+  "$schema": "..\/model.schema.json",
   "id": 72,
   "name": "NK_CGG02AL",
   "capabilities": {
@@ -69,5 +69,38 @@
     "0.25"
   ],
   "variabledim": 1,
-  "al": true
+  "al": true,
+  "al_info": {
+    "forwards": [
+      "inflationq",
+      "infstar",
+      "ytildestar",
+      "ytilde",
+      "infl",
+      "ybar",
+      "ystar",
+      "ybarstar",
+      "y"
+    ],
+    "states_long": [
+      "astar",
+      "a",
+      "inflationq",
+      "inflationql",
+      "inflationql2",
+      "infstar",
+      "infstarl",
+      "infstarl2",
+      "rstar",
+      "interest"
+    ],
+    "states_short": [
+      "astar",
+      "a",
+      "inflationq",
+      "infstar",
+      "rstar",
+      "interest"
+    ]
+  }
 }

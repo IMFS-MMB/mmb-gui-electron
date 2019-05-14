@@ -2,12 +2,9 @@ import path from 'path';
 import { create } from '@/utils/electron/interface';
 import buildMatlabScript from '@/utils/electron/build-matlab-script';
 import logger from '@/utils/logger';
-import fs from 'fs';
-import { promisify } from 'util';
-import parseOutput from '../../utils/parseOutput';
+import readOutput from '@/utils/readOutput';
 import { mmbFolder } from '../../../../config/paths';
 
-const readFile = promisify(fs.readFile);
 
 export default async function compare(ctx) {
   const cwd = mmbFolder;
@@ -15,9 +12,8 @@ export default async function compare(ctx) {
   const models = ctx.rootGetters['settings/models'];
   const policyRules = ctx.rootGetters['settings/policyRules'];
   const shocks = ctx.rootGetters['settings/shocks'];
-  const outputVars = ctx.rootGetters['settings/outputVars'];
   const horizon = ctx.rootGetters['settings/horizon'];
-
+  const gain = ctx.rootGetters['settings/gain'];
   const executable = ctx.rootGetters['backends/selectedExecutable'];
   const userRule = ctx.rootGetters['userrule/params'];
 
@@ -28,7 +24,7 @@ export default async function compare(ctx) {
   });
 
   await backend.runCode(
-    buildMatlabScript(models, policyRules, outputVars, shocks, horizon, userRule),
+    buildMatlabScript(models, policyRules, shocks, horizon, gain, userRule),
     data => ctx.commit('addStdOut', data.toString()),
     data => ctx.commit('addStdOut', data.toString()), // todo: handle errors differently if needed
   );
@@ -36,9 +32,7 @@ export default async function compare(ctx) {
   let output = [];
 
   try {
-    const json = await readFile(path.join(cwd, 'Modelbasefile.json'), { encoding: 'utf8' });
-
-    output = parseOutput(json);
+    output = await readOutput(path.join(cwd, 'out'));
   } catch (e) {
     logger.warn(e.message);
   }

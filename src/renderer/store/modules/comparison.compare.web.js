@@ -15,10 +15,10 @@ export default async function compare(ctx) {
 
   const query = {
     model: {
-      $in: models.map(model => model.internal_name),
+      $in: models.map(model => model.name),
     },
     rule: {
-      $in: policyRules.map(pr => pr.internal_name),
+      $in: policyRules.map(pr => pr.name),
     },
     $or: [],
   };
