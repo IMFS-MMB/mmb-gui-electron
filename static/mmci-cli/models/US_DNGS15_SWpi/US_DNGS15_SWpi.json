@@ -72,5 +72,15 @@
     "0.25"
   ],
   "variabledim": 1,
-  "al": false
+  "al": false,
+  "vars": [
+    "psi_b",
+    "psi_mu",
+    "psi_z",
+    "psi_laf",
+    "psi_law",
+    "psi_sigw",
+    "interest_",
+    "fiscal_"
+  ]
 }

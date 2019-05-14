@@ -70,5 +70,17 @@
     "0.25"
   ],
   "variabledim": 1,
-  "al": false
+  "al": false,
+  "vars": [
+    "eps_z",
+    "eps_tau",
+    "eps_tau_trans",
+    "eps_beta",
+    "eps_p",
+    "eps_w",
+    "eps_meas",
+    "eps_meas_sp",
+    "interest_",
+    "fiscal_"
+  ]
 }

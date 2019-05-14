@@ -71,5 +71,16 @@
     "0.25"
   ],
   "variabledim": 2,
-  "al": false
+  "al": false,
+  "vars": [
+    "eps_c",
+    "eps_h",
+    "eps_j",
+    "eps_k",
+    "eps_p",
+    "eps_s",
+    "eps_t",
+    "eps_z",
+    "interest_"
+  ]
 }

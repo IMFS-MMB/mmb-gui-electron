@@ -71,5 +71,20 @@
     "0.25"
   ],
   "variabledim": 2,
-  "al": false
+  "al": false,
+  "vars": [
+    "e_A_e",
+    "e_eps_K_b",
+    "e_j",
+    "e_l",
+    "e_me",
+    "e_mi",
+    "e_mk_be",
+    "e_mk_bh",
+    "e_mk_d",
+    "e_qk",
+    "e_y",
+    "e_z",
+    "interest_"
+  ]
 }

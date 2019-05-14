@@ -71,5 +71,11 @@
     "0.25"
   ],
   "variabledim": 1,
-  "al": false
+  "al": false,
+  "vars": [
+    "eta_a",
+    "eta_pi",
+    "eta_n",
+    "interest_"
+  ]
 }

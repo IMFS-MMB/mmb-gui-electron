@@ -36,5 +36,12 @@
   },
   "msr": null,
   "variabledim": 1,
-  "al": false
+  "al": false,
+  "vars": [
+    "epsq",
+    "epspi_star",
+    "epsz",
+    "epsy_star",
+    "interest_"
+  ]
 }

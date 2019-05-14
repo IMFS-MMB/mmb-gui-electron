@@ -71,5 +71,12 @@
     "0.25"
   ],
   "variabledim": 2,
-  "al": false
+  "al": false,
+  "vars": [
+    "epszt",
+    "epsxt",
+    "epspt",
+    "epsft",
+    "interest_"
+  ]
 }

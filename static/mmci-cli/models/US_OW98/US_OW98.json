@@ -70,5 +70,14 @@
     "0.25"
   ],
   "variabledim": 1,
-  "al": false
+  "al": false,
+  "vars": [
+    "ecsh",
+    "efish",
+    "eiish",
+    "exsh",
+    "cwsh",
+    "interest_",
+    "fiscal_"
+  ]
 }

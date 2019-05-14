@@ -38,5 +38,16 @@
   },
   "msr": null,
   "variabledim": 2,
-  "al": false
+  "al": false,
+  "vars": [
+    "e_epsil",
+    "e_lambdaf",
+    "e_muup",
+    "e_muzstar",
+    "e_pitarget",
+    "e_zetac",
+    "e_zetai",
+    "interest_",
+    "fiscal_"
+  ]
 }

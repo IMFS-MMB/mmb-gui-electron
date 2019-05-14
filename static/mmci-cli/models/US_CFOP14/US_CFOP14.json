@@ -73,5 +73,18 @@
     "0.25"
   ],
   "variabledim": 1,
-  "al": false
+  "al": false,
+  "vars": [
+    "Rs",
+    "zs",
+    "mius",
+    "lambdaps",
+    "lambdaws",
+    "bs",
+    "efps",
+    "upsilons",
+    "nws",
+    "interest_",
+    "fiscal_"
+  ]
 }

@@ -1,5 +1,5 @@
 {
-  "$schema": "..\/model.schema.json",
+  "$schema": "../model.schema.json",
   "id": 79,
   "name": "US_YR13AL",
   "capabilities": {
@@ -114,5 +114,14 @@
       "sw",
       "ewma"
     ]
-  }
+  },
+  "vars": [
+    "ea",
+    "eb",
+    "eqs",
+    "epinf",
+    "ew",
+    "interest_",
+    "fiscal_"
+  ]
 }

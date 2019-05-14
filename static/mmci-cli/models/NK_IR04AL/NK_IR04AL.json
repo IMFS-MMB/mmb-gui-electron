@@ -1,5 +1,5 @@
 {
-  "$schema": "..\/model.schema.json",
+  "$schema": "../model.schema.json",
   "id": 73,
   "name": "NK_IR04AL",
   "capabilities": {
@@ -89,5 +89,11 @@
       "z",
       "interest"
     ]
-  }
+  },
+  "vars": [
+    "epsa_",
+    "epse_",
+    "epsz_",
+    "interest_"
+  ]
 }

@@ -72,5 +72,27 @@
     "0.25"
   ],
   "variabledim": 1,
-  "al": false
+  "al": false,
+  "vars": [
+    "EA_EPSRP",
+    "EA_EPSTAUC",
+    "EA_EPSTAUD",
+    "EA_EPSTAUK",
+    "EA_EPSTAUN",
+    "EA_EPSTAUWF",
+    "EA_EPSTAUWH",
+    "EA_EPSTR",
+    "EA_EPSZ",
+    "US_EPSG",
+    "US_EPSTAUC",
+    "US_EPSTAUD",
+    "US_EPSTAUK",
+    "US_EPSTAUN",
+    "US_EPSTAUWF",
+    "US_EPSTAUWH",
+    "US_EPSTR",
+    "US_EPSZ",
+    "interest_",
+    "fiscal_"
+  ]
 }

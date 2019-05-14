@@ -38,5 +38,28 @@
   },
   "msr": null,
   "variabledim": 1,
-  "al": false
+  "al": false,
+  "vars": [
+    "epsilon_tauk",
+    "epsilon_tauw",
+    "epsilon_tauc",
+    "epsilon_tauy",
+    "epsilon_lambdad",
+    "epsilon_lambdamc",
+    "epsilon_lambdami",
+    "epsilon_lambdax",
+    "epsilon_muz",
+    "epsilon_epsilon",
+    "epsilon_Upsilon",
+    "epsilon_ztildestar",
+    "epsilon_zetac",
+    "epsilon_zetah",
+    "epsilon_phitilde",
+    "epsilon_pibar",
+    "epsilon_pistar",
+    "epsilon_ystar",
+    "epsilon_Rstar",
+    "interest_",
+    "fiscal_"
+  ]
 }

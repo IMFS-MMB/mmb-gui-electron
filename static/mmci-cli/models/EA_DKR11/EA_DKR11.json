@@ -36,5 +36,23 @@
   },
   "msr": null,
   "variabledim": 2,
-  "al": false
+  "al": false,
+  "vars": [
+    "E_A",
+    "E_I",
+    "E_B",
+    "E_P",
+    "E_W",
+    "E_R",
+    "E_A_D",
+    "E_H",
+    "E_SIG_HH",
+    "E_SIG",
+    "E_R_L",
+    "E_R_L_E",
+    "E_R_D",
+    "E_Bankcap",
+    "interest_",
+    "fiscal_"
+  ]
 }

@@ -69,5 +69,17 @@
     "0.25"
   ],
   "variabledim": 1,
-  "al": false
+  "al": false,
+  "vars": [
+    "eps_ZT",
+    "eps_ZN",
+    "eps_ZT_star",
+    "eps_Z",
+    "eps_ZN_star",
+    "eps_GT",
+    "eps_GN",
+    "eps_GT_star",
+    "eps_GN_star",
+    "interest_"
+  ]
 }

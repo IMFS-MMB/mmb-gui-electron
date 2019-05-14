@@ -83,6 +83,9 @@
         }
       ]
     },
+    "vars": {
+      "$ref": "#/definitions/arrayOfStrings"
+    },
     "capabilities": {
       "type": "object",
       "required": [

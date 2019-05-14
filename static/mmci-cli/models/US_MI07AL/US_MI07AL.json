@@ -1,5 +1,5 @@
 {
-  "$schema": "..\/model.schema.json",
+  "$schema": "../model.schema.json",
   "id": 78,
   "name": "US_MI07AL",
   "capabilities": {
@@ -89,5 +89,10 @@
       "r_n",
       "u"
     ]
-  }
+  },
+  "vars": [
+    "v_r",
+    "v_u",
+    "interest_"
+  ]
 }

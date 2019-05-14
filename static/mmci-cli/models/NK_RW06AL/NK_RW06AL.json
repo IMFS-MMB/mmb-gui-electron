@@ -1,5 +1,5 @@
 {
-  "$schema": "..\/model.schema.json",
+  "$schema": "../model.schema.json",
   "id": 75,
   "name": "NK_RW06AL",
   "capabilities": {
@@ -51,5 +51,9 @@
       "interest",
       "outputgap"
     ]
-  }
+  },
+  "vars": [
+    "u",
+    "interest_"
+  ]
 }

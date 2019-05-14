@@ -36,5 +36,22 @@
   },
   "msr": null,
   "variabledim": 1,
-  "al": false
+  "al": false,
+  "vars": [
+    "innoelnn",
+    "innoewrn",
+    "innoeyfd",
+    "innoepcd",
+    "innoeitr",
+    "innoeitd",
+    "innoextd",
+    "innoemtd",
+    "innoepcr",
+    "innoelsr",
+    "innoextr",
+    "innoemtr",
+    "innoeltn",
+    "interest_",
+    "fiscal_"
+  ]
 }

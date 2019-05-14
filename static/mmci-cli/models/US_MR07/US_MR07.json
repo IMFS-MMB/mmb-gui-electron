@@ -36,5 +36,13 @@
   },
   "msr": null,
   "variabledim": 1,
-  "al": false
+  "al": false,
+  "vars": [
+    "g_e",
+    "a_e",
+    "e_e",
+    "v_e",
+    "gam_e",
+    "interest_"
+  ]
 }

@@ -70,5 +70,14 @@
     "0.25"
   ],
   "variabledim": 2,
-  "al": false
+  "al": false,
+  "vars": [
+    "epsA",
+    "epsthet",
+    "epsksi",
+    "epsC",
+    "epsL",
+    "interest_",
+    "fiscal_"
+  ]
 }

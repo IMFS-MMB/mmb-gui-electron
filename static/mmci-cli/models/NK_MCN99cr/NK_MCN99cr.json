@@ -70,5 +70,12 @@
     "0.25"
   ],
   "variabledim": 2,
-  "al": false
+  "al": false,
+  "vars": [
+    "u_",
+    "e_",
+    "ey_",
+    "ev_",
+    "interest_"
+  ]
 }

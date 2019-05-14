@@ -88,5 +88,10 @@
       "outputgap",
       "interest"
     ]
-  }
+  },
+  "vars": [
+    "inflation_",
+    "demand_",
+    "interest_"
+  ]
 }

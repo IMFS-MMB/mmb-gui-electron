@@ -39,5 +39,32 @@
   },
   "msr": null,
   "variabledim": 1,
-  "al": false
+  "al": false,
+  "vars": [
+    "epsMU",
+    "epsLAMBDAK",
+    "epsLAMBDALT",
+    "epsLAMBDACY",
+    "epsLAMBDACM",
+    "epsLAMBDAIY",
+    "epsUPSILON",
+    "epsUPSILONMC",
+    "epsUPSILONX",
+    "epsZETACH",
+    "epsLAMW",
+    "epsZETAEUR",
+    "epsdS",
+    "epsIG",
+    "epshG",
+    "epsPOILS",
+    "epsPRAWS",
+    "epsMW",
+    "epsPIEW",
+    "epsXX",
+    "epsEPSB",
+    "epsnuB",
+    "epsBankCapital",
+    "interest_",
+    "fiscal_"
+  ]
 }

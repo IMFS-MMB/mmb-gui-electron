@@ -38,5 +38,20 @@
   },
   "msr": null,
   "variabledim": 2,
-  "al": false
+  "al": false,
+  "vars": [
+    "e_lambdafU",
+    "e_pitargetU",
+    "e_xbU",
+    "e_muupU",
+    "e_chiiU",
+    "e_gU",
+    "e_muzstarU",
+    "e_gammaU",
+    "e_epsilU",
+    "e_sigmaU",
+    "e_zetaiU",
+    "e_tauoU",
+    "interest_"
+  ]
 }

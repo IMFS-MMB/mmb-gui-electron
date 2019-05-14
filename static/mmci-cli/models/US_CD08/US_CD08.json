@@ -36,5 +36,12 @@
   },
   "msr": null,
   "variabledim": 2,
-  "al": false
+  "al": false,
+  "vars": [
+    "u_x",
+    "u_a",
+    "u_e",
+    "u_b",
+    "interest_"
+  ]
 }

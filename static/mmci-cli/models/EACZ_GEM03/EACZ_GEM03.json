@@ -37,5 +37,21 @@
   },
   "msr": null,
   "variabledim": 2,
-  "al": false
+  "al": false,
+  "vars": [
+    "E_ZBH",
+    "E_ZUH",
+    "E_ZUF",
+    "E_ZEYEH",
+    "E_ZEYEF",
+    "E_GAMMAH",
+    "E_GAMMAF",
+    "E_LANDH",
+    "E_LANDF",
+    "E_GAH",
+    "E_CAPAH",
+    "E_CAPAF",
+    "interest_",
+    "fiscal_"
+  ]
 }

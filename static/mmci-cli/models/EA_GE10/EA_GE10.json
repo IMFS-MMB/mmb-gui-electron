@@ -70,5 +70,15 @@
     "0.25"
   ],
   "variabledim": 1,
-  "al": false
+  "al": false,
+  "vars": [
+    "ux",
+    "ub",
+    "ul",
+    "ua",
+    "ulambdapi",
+    "uw",
+    "interest_",
+    "fiscal_"
+  ]
 }
