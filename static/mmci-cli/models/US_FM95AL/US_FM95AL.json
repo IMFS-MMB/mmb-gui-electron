@@ -1,5 +1,5 @@
 {
-  "$schema": "../model.schema.json",
+  "$schema": "..\/model.schema.json",
   "id": 76,
   "name": "US_FM95AL",
   "capabilities": {
@@ -34,5 +34,39 @@
   },
   "msr": null,
   "variabledim": 1,
-  "al": true
+  "al": true,
+  "al_info": {
+    "forwards": [
+      "ypsilon",
+      "ytilde",
+      "rho",
+      "infl",
+      "inflationq",
+      "ytildef",
+      "ytildeff",
+      "ypsilonf",
+      "ypsilonff"
+    ],
+    "states_short": [
+      "interest",
+      "inflationql",
+      "ytildel",
+      "z",
+      "zl",
+      "zll",
+      "ytilde",
+      "inflationq"
+    ],
+    "states_long": [
+      "interest",
+      "inflationql",
+      "inflationql2",
+      "ytildel",
+      "z",
+      "zl",
+      "zll",
+      "ytilde",
+      "inflationq"
+    ]
+  }
 }

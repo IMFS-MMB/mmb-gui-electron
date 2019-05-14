@@ -1,5 +1,5 @@
 {
-  "$schema": "../model.schema.json",
+  "$schema": "..\/model.schema.json",
   "id": 70,
   "name": "NK_LWW03AL",
   "capabilities": {
@@ -38,10 +38,10 @@
     "0",
     "0",
     "0",
-    "0.602691/4",
-    "0.602691/4",
-    "0.602691/4",
-    "0.602691/4",
+    "0.602691\/4",
+    "0.602691\/4",
+    "0.602691\/4",
+    "0.602691\/4",
     "0",
     "0",
     "0",
@@ -69,5 +69,23 @@
     "0.25"
   ],
   "variabledim": 1,
-  "al": true
+  "al": true,
+  "al_info": {
+    "forwards": [
+      "ygap",
+      "pdot",
+      "inflationq"
+    ],
+    "states_long": [
+      "rstar",
+      "interest",
+      "inflationq",
+      "inflationql",
+      "inflationql2"
+    ],
+    "states_short": [
+      "interest",
+      "outputgap"
+    ]
+  }
 }

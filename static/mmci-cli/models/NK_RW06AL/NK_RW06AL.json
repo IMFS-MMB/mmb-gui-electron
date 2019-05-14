@@ -1,5 +1,5 @@
 {
-  "$schema": "../model.schema.json",
+  "$schema": "..\/model.schema.json",
   "id": 75,
   "name": "NK_RW06AL",
   "capabilities": {
@@ -34,5 +34,22 @@
   },
   "msr": null,
   "variabledim": 1,
-  "al": true
+  "al": true,
+  "al_info": {
+    "forwards": [
+      "pi",
+      "inflationq",
+      "x"
+    ],
+    "states_long": [
+      "interest",
+      "inflationq",
+      "inflationql",
+      "inflationql2"
+    ],
+    "states_short": [
+      "interest",
+      "outputgap"
+    ]
+  }
 }

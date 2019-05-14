@@ -1,5 +1,5 @@
 {
-  "$schema": "../model.schema.json",
+  "$schema": "..\/model.schema.json",
   "id": 77,
   "name": "US_SW07AL",
   "capabilities": {
@@ -68,5 +68,61 @@
     "0.25"
   ],
   "variabledim": 1,
-  "al": true
+  "al": true,
+  "al_info": {
+    "forwards": [
+      "c",
+      "cf",
+      "inve",
+      "invef",
+      "lab",
+      "labf",
+      "pinf",
+      "inflationq",
+      "pk",
+      "pkf",
+      "rk",
+      "rkf",
+      "w"
+    ],
+    "states_long": [
+      "c",
+      "cf",
+      "inve",
+      "invef",
+      "kp",
+      "kpf",
+      "inflationq",
+      "inflationqls",
+      "w",
+      "a",
+      "b",
+      "epinfma",
+      "ewma",
+      "g",
+      "qs",
+      "spinf",
+      "sw",
+      "interest"
+    ],
+    "states_short": [
+      "c",
+      "cf",
+      "inve",
+      "invef",
+      "kp",
+      "kpf",
+      "inflationq",
+      "w",
+      "a",
+      "b",
+      "epinfma",
+      "ewma",
+      "g",
+      "qs",
+      "spinf",
+      "sw",
+      "interest"
+    ]
+  }
 }

@@ -1,7 +1,7 @@
 {
   "$schema": "../rule.schema.json",
   "id": 7,
-  "name": "CEE_Rule",
+  "name": "CEE",
   "coefficients": [
     "0.8",
     "0",

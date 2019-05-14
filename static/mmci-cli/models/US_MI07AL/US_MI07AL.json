@@ -1,5 +1,5 @@
 {
-  "$schema": "../model.schema.json",
+  "$schema": "..\/model.schema.json",
   "id": 78,
   "name": "US_MI07AL",
   "capabilities": {
@@ -67,5 +67,27 @@
     "0.25"
   ],
   "variabledim": 1,
-  "al": true
+  "al": true,
+  "al_info": {
+    "forwards": [
+      "pi",
+      "pi_tilde",
+      "inflationq",
+      "x",
+      "x_tilde"
+    ],
+    "states_long": [
+      "x",
+      "inflationq",
+      "inflationqls",
+      "r_n",
+      "u"
+    ],
+    "states_short": [
+      "x",
+      "inflationq",
+      "r_n",
+      "u"
+    ]
+  }
 }

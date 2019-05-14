@@ -1,5 +1,5 @@
 {
-  "$schema": "../model.schema.json",
+  "$schema": "..\/model.schema.json",
   "id": 79,
   "name": "US_YR13AL",
   "capabilities": {
@@ -67,5 +67,52 @@
     "0.25"
   ],
   "variabledim": 1,
-  "al": true
+  "al": true,
+  "al_info": {
+    "forwards": [
+      "c",
+      "pinf",
+      "inflationq",
+      "w",
+      "lab",
+      "inve",
+      "rk",
+      "pk"
+    ],
+    "states_short": [
+      "c",
+      "ec",
+      "inve",
+      "kp",
+      "inflationq",
+      "nw",
+      "w",
+      "a",
+      "b",
+      "g",
+      "qs",
+      "spinf",
+      "epinfma",
+      "sw",
+      "ewma"
+    ],
+    "states_long": [
+      "c",
+      "ec",
+      "inve",
+      "kp",
+      "inflationqls",
+      "nw",
+      "w",
+      "a",
+      "b",
+      "inflationq",
+      "g",
+      "qs",
+      "spinf",
+      "epinfma",
+      "sw",
+      "ewma"
+    ]
+  }
 }

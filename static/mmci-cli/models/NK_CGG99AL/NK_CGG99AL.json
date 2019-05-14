@@ -69,5 +69,24 @@
     "0.25"
   ],
   "variabledim": 1,
-  "al": true
+  "al": true,
+  "al_info": {
+    "forwards": [
+      "inflationq",
+      "pi",
+      "x"
+    ],
+    "states_long": [
+      "inflationql",
+      "inflationql2",
+      "outputgap",
+      "inflationq",
+      "interest"
+    ],
+    "states_short": [
+      "inflationq",
+      "outputgap",
+      "interest"
+    ]
+  }
 }

@@ -1,7 +1,9 @@
+import params from '@/data/params';
+
 const namespaced = true;
 
 const state = {
-  params: require('@/data/params'),
+  params,
 };
 
 const getters = {

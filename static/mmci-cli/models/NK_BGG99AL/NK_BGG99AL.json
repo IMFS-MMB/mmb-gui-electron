@@ -1,5 +1,5 @@
 {
-  "$schema": "../model.schema.json",
+  "$schema": "..\/model.schema.json",
   "id": 74,
   "name": "NK_BGG99AL",
   "capabilities": {
@@ -69,5 +69,38 @@
     "0.25"
   ],
   "variabledim": 1,
-  "al": true
+  "al": true,
+  "al_info": {
+    "forwards": [
+      "cH",
+      "r_kH",
+      "xH",
+      "piH",
+      "cHf",
+      "r_kHf",
+      "inflationq",
+      "e_piH"
+    ],
+    "states_short": [
+      "kH",
+      "gH",
+      "qH",
+      "aH",
+      "kHf",
+      "qHf",
+      "outputgap"
+    ],
+    "states_long": [
+      "kH",
+      "gH",
+      "qH",
+      "aH",
+      "kHf",
+      "qHf",
+      "outputgap",
+      "inflationql",
+      "inflationql2",
+      "inflationq"
+    ]
+  }
 }

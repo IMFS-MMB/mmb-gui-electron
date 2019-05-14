@@ -22,7 +22,8 @@
 
                 <b-col>
                     <OutputVars/>
-                    <Horizon v-if="$isElectron"/>
+                    <Horizon class="mt-2" v-if="$isElectron"/>
+                    <Gain class="mt-1" v-if="$isElectron"/>
                 </b-col>
             </b-row>
 
@@ -74,6 +75,7 @@
 
   import { mapGetters, mapActions } from 'vuex';
   import Horizon from './Horizon';
+  import Gain from './Gain';
   import { isElectron } from '../../constants';
 
   const platformComponents = isElectron ? {
@@ -85,6 +87,7 @@
   export default {
     components: {
       Horizon,
+      Gain,
       OcpHeader,
       Models,
       Shocks,

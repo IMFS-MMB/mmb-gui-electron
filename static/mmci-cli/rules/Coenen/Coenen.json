@@ -1,7 +1,7 @@
 {
   "$schema": "../rule.schema.json",
   "id": 10,
-  "name": "Coenen_Rule",
+  "name": "Coenen",
   "coefficients": [
     "0.7",
     "0",

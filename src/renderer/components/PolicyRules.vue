@@ -22,7 +22,7 @@
                 <template v-for="(rule, index) in rules">
                     <div :id="'cb-rule-' + rule.id">
                         <b-form-checkbox ref="cb" :value="rule" :disabled="isRuleDisabled(rule.id)">
-                            {{ rule.description.ac_ref }}
+                            {{ rule && rule.description && rule.description.ac_ref }}
                         </b-form-checkbox>
 
                     </div>
@@ -33,7 +33,7 @@
 
             <b-row class="justify-content-center ctrl-links">
                         <div class="col text-center">
-                            <a href="http://www.macromodelbase.com/files/MMB_MPrule_description.pdf" v-b-modal.helpModal><i class="fa fa-question-circle"></i>
+                            <a href="http://www.macromodelbase.com/files/MMB_MPrule_description.pdf" target="_blank"><i class="fa fa-question-circle"></i>
                                Documentation of Policy Rules</a>
                         </div>
             </b-row>

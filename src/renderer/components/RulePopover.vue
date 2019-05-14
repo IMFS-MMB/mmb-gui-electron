@@ -4,7 +4,7 @@
                placement="left"
                triggers="hover"
                boundary="viewport">
-        <template slot="title">Model {{rule.internal_name}}</template>
+        <template slot="title">Model {{rule.name}}</template>
         <div>
             <p>
                 {{ d.ac_ref }}: {{ d.paper_title }}, <i>{{ d.journal }}</i>

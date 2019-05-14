@@ -197,6 +197,7 @@ else
             base.VAR.(strtrim(deblank(base.rulenamesshort1(base.l,:)))) =Gamma_y{1};
             base.VARendo_names.(strtrim(deblank(base.rulenamesshort1(base.l,:))))=M_.endo_names;
         end
+
         if AL
             aut = zeros(nvar,base.horizon,n_sims);
             for j = 1:n_sims
