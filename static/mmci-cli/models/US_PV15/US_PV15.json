@@ -72,16 +72,16 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "interest_",
-    "fiscal_",
     "e_a",
     "e_b",
+    "e_e",
     "e_i",
     "e_l",
+    "e_m",
     "e_n",
     "e_p",
     "e_w",
-    "e_m",
-    "e_e"
+    "fiscal_",
+    "interest_"
   ]
 }

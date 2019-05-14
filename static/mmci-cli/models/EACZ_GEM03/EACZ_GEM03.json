@@ -39,19 +39,19 @@
   "variabledim": 2,
   "al": false,
   "vars": [
-    "E_ZBH",
-    "E_ZUH",
-    "E_ZUF",
-    "E_ZEYEH",
-    "E_ZEYEF",
-    "E_GAMMAH",
-    "E_GAMMAF",
-    "E_LANDH",
-    "E_LANDF",
-    "E_GAH",
-    "E_CAPAH",
     "E_CAPAF",
-    "interest_",
-    "fiscal_"
+    "E_CAPAH",
+    "E_GAH",
+    "E_GAMMAF",
+    "E_GAMMAH",
+    "E_LANDF",
+    "E_LANDH",
+    "E_ZBH",
+    "E_ZEYEF",
+    "E_ZEYEH",
+    "E_ZUF",
+    "E_ZUH",
+    "fiscal_",
+    "interest_"
   ]
 }

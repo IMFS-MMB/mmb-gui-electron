@@ -73,10 +73,10 @@
   "al": false,
   "vars": [
     "epsA",
-    "epsmu",
     "epsgam",
-    "epsstd",
+    "epsmu",
     "epspol",
+    "epsstd",
     "interest_"
   ]
 }

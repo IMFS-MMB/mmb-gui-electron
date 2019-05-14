@@ -74,19 +74,19 @@
   "al": false,
   "vars": [
     "ea",
-    "eb",
-    "els",
-    "eqs",
-    "eps",
     "eas",
+    "eb",
     "econs",
     "einv",
-    "ey",
     "elab",
-    "epinf",
-    "ew",
+    "els",
     "em",
-    "interest_",
-    "fiscal_"
+    "epinf",
+    "eps",
+    "eqs",
+    "ew",
+    "ey",
+    "fiscal_",
+    "interest_"
   ]
 }

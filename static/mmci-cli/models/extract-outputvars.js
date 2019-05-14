@@ -16,8 +16,8 @@ models.forEach((model) => {
     .join(' ')
     .match(/varexo(.*?);/)[1] // find match between 'varexo' and the first semicolon thereafter
     .replace(/\/*.+?\*\//g, '') // remove /* */ style comments
-    .replace(/,/g, '')
-    .split(/\s+/)
+    .replace(/,/g, ' ')
+    .split(/\s+/) // split into non-whitespace portions
     .filter(line => !/^\s*$/.test(line)) // remove whitespace-only lines
     .sort((a, b) => a.localeCompare(b))
     .reduce((acc, v) => acc.concat(v), []);

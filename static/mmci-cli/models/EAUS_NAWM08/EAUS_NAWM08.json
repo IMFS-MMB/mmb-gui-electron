@@ -83,6 +83,8 @@
     "EA_EPSTAUWH",
     "EA_EPSTR",
     "EA_EPSZ",
+    "fiscal_",
+    "interest_",
     "US_EPSG",
     "US_EPSTAUC",
     "US_EPSTAUD",
@@ -91,8 +93,6 @@
     "US_EPSTAUWF",
     "US_EPSTAUWH",
     "US_EPSTR",
-    "US_EPSZ",
-    "interest_",
-    "fiscal_"
+    "US_EPSZ"
   ]
 }

@@ -75,12 +75,12 @@
   "al": false,
   "vars": [
     "eps_a",
-    "eps_mp",
+    "eps_b2",
     "eps_i",
-    "eps_psi",
     "eps_mk",
     "eps_mkw",
-    "eps_b2",
+    "eps_mp",
+    "eps_psi",
     "eps_rn",
     "interest_"
   ]

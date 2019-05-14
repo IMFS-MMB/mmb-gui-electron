@@ -72,13 +72,13 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "ux",
+    "fiscal_",
+    "interest_",
+    "ua",
     "ub",
     "ul",
-    "ua",
     "ulambdapi",
     "uw",
-    "interest_",
-    "fiscal_"
+    "ux"
   ]
 }

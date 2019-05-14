@@ -38,11 +38,11 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "g_e",
     "a_e",
     "e_e",
-    "v_e",
+    "g_e",
     "gam_e",
-    "interest_"
+    "interest_",
+    "v_e"
   ]
 }

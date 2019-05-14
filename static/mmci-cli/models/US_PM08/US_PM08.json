@@ -76,10 +76,10 @@
   "variabledim": 1,
   "al": false,
   "vars": [
+    "interest_",
+    "RES_PIE_US",
     "RES_RR_US_BAR",
     "RES_UNR_US_GAP",
-    "RES_Y_US",
-    "RES_PIE_US",
-    "interest_"
+    "RES_Y_US"
   ]
 }

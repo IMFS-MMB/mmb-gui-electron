@@ -40,9 +40,9 @@
   "al": false,
   "vars": [
     "epsa",
-    "epsy",
-    "mu_p",
     "epseta",
-    "interest_"
+    "epsy",
+    "interest_",
+    "mu_p"
   ]
 }

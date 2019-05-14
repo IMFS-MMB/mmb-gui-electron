@@ -74,8 +74,8 @@
   "al": false,
   "vars": [
     "eta_a",
-    "eta_pi",
     "eta_n",
+    "eta_pi",
     "interest_"
   ]
 }

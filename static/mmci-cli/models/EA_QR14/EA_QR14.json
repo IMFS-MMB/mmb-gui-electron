@@ -72,7 +72,20 @@
   "variabledim": 2,
   "al": false,
   "vars": [
-    "e_premiume_riske_risk_se_prefde_prefd_se_prefce_prefc_se_techce_techde_techc_se_techd_se_teche_prefd_come_techc_com",
+    "e_prefc",
+    "e_prefc_s",
+    "e_prefd",
+    "e_prefd_com",
+    "e_prefd_s",
+    "e_premium",
+    "e_risk",
+    "e_risk_s",
+    "e_tech",
+    "e_techc",
+    "e_techc_com",
+    "e_techc_s",
+    "e_techd",
+    "e_techd_s",
     "interest_"
   ]
 }

@@ -73,12 +73,12 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "zetaz",
+    "fiscal_",
+    "interest_",
     "zetab",
-    "zetax",
     "zetap",
     "zetaw",
-    "interest_",
-    "fiscal_"
+    "zetax",
+    "zetaz"
   ]
 }

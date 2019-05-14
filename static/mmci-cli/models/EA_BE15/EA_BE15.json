@@ -71,11 +71,11 @@
   "variabledim": 1,
   "al": false,
   "vars": [
+    "interest_",
     "ua",
-    "uu",
     "ui",
-    "up",
     "un",
-    "interest_"
+    "up",
+    "uu"
   ]
 }

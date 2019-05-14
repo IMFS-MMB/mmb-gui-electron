@@ -40,16 +40,16 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "epsd",
-    "epsphi",
-    "epsmu_I",
     "epsA",
-    "ud",
-    "uphi",
-    "umu",
-    "uA",
-    "um",
+    "epsd",
+    "epsmu_I",
+    "epsphi",
     "epspi",
-    "interest_"
+    "interest_",
+    "uA",
+    "ud",
+    "um",
+    "umu",
+    "uphi"
   ]
 }

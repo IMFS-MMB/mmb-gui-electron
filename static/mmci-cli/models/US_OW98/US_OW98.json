@@ -72,12 +72,12 @@
   "variabledim": 1,
   "al": false,
   "vars": [
+    "cwsh",
     "ecsh",
     "efish",
     "eiish",
     "exsh",
-    "cwsh",
-    "interest_",
-    "fiscal_"
+    "fiscal_",
+    "interest_"
   ]
 }

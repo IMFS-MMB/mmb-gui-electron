@@ -73,10 +73,10 @@
   "variabledim": 2,
   "al": false,
   "vars": [
-    "epszt",
-    "epsxt",
-    "epspt",
     "epsft",
+    "epspt",
+    "epsxt",
+    "epszt",
     "interest_"
   ]
 }

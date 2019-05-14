@@ -71,9 +71,9 @@
   "variabledim": 2,
   "al": false,
   "vars": [
-    "q",
     "epsilon_theta",
+    "interest_",
     "j",
-    "interest_"
+    "q"
   ]
 }
