@@ -128,11 +128,11 @@
   "vars": [
     "ea",
     "eb",
-    "eqs",
     "em",
     "epinf",
+    "eqs",
     "ew",
-    "interest_",
-    "fiscal_"
+    "fiscal_",
+    "interest_"
   ]
 }

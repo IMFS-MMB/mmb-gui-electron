@@ -75,9 +75,9 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "epsilon_M_",
-    "eps_muz_",
     "eps_muups_",
+    "eps_muz_",
+    "epsilon_M_",
     "epsilon_t_",
     "interest_"
   ]

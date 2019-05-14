@@ -38,10 +38,10 @@
   "variabledim": 2,
   "al": false,
   "vars": [
-    "u_x",
+    "interest_",
     "u_a",
-    "u_e",
     "u_b",
-    "interest_"
+    "u_e",
+    "u_x"
   ]
 }

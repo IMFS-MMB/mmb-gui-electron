@@ -40,17 +40,17 @@
   "vars": [
     "epsa_c",
     "epsa_d",
-    "epsmu_c",
-    "epsmu_d",
-    "epsLTV",
-    "epsd_b",
-    "epsd_s",
     "epsc_ast",
     "epsd_ast",
+    "epsd_b",
+    "epsd_s",
     "epsd_stern",
+    "epsLTV",
+    "epsmu_c",
+    "epsmu_d",
     "epsp_c_ast",
     "epsp_d_ast",
-    "interest_",
-    "fiscal_"
+    "fiscal_",
+    "interest_"
   ]
 }

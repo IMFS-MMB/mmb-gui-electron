@@ -104,12 +104,12 @@
     ]
   },
   "vars": [
-    "inf_",
     "a_",
-    "infstar_",
-    "ystar_",
-    "rstar_",
     "astar_",
-    "interest_"
+    "inf_",
+    "infstar_",
+    "interest_",
+    "rstar_",
+    "ystar_"
   ]
 }

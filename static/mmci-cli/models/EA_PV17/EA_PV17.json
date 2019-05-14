@@ -127,6 +127,8 @@
     "ea_tryshare",
     "ea_tvat",
     "ea_upi",
+    "fiscal_",
+    "interest_",
     "null",
     "r_a",
     "r_btar",
@@ -187,8 +189,6 @@
     "r_upi",
     "w_coreinf",
     "w_gpop",
-    "w_gtfp",
-    "interest_",
-    "fiscal_"
+    "w_gtfp"
   ]
 }

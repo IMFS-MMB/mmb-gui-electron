@@ -39,11 +39,11 @@
   "al": false,
   "vars": [
     "e_a",
+    "e_Gamma",
     "e_ksi",
     "e_Ne",
     "e_psi",
-    "e_Gamma",
-    "interest_",
-    "fiscal_"
+    "fiscal_",
+    "interest_"
   ]
 }

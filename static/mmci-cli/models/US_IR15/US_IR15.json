@@ -34,12 +34,12 @@
   "al": false,
   "vars": [
     "epsilon_pi",
-    "epsilon_y",
     "epsilon_tau",
     "epsilon_v",
+    "epsilon_y",
+    "eta_16",
     "eta_4",
     "eta_8",
-    "eta_16",
     "interest_"
   ]
 }

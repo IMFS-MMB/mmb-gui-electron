@@ -39,11 +39,11 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "ez",
     "ea",
+    "et",
+    "ez",
     "ezx1",
     "ezx2",
-    "et",
     "interest_"
   ]
 }

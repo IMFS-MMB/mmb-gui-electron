@@ -71,9 +71,9 @@
   "variabledim": 1,
   "al": false,
   "vars": [
+    "eAhat",
     "ejhat",
     "euhat",
-    "eAhat",
     "interest_"
   ]
 }

@@ -73,9 +73,9 @@
   "variabledim": 1,
   "al": false,
   "vars": [
+    "fiscal_",
     "inno_ebt",
     "inno_zt",
-    "interest_",
-    "fiscal_"
+    "interest_"
   ]
 }

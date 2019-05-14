@@ -74,13 +74,13 @@
   "variabledim": 1,
   "al": false,
   "vars": [
+    "fiscal_",
+    "interest_",
     "psi_b",
-    "psi_mu",
-    "psi_z",
     "psi_laf",
     "psi_law",
+    "psi_mu",
     "psi_sigw",
-    "interest_",
-    "fiscal_"
+    "psi_z"
   ]
 }

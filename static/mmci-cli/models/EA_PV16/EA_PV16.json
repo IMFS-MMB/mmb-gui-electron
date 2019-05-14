@@ -75,13 +75,13 @@
   "vars": [
     "ea_a",
     "ea_btar",
-    "ea_eps_g",
     "ea_bwyt",
     "ea_eps_ben",
     "ea_eps_clc",
     "ea_eps_cnlc",
     "ea_eps_eta",
     "ea_eps_etax",
+    "ea_eps_g",
     "ea_eps_i",
     "ea_eps_ig",
     "ea_eps_im",
@@ -127,6 +127,8 @@
     "ea_tryshare",
     "ea_tvat",
     "ea_upi",
+    "fiscal_",
+    "interest_",
     "null",
     "r_a",
     "r_btar",
@@ -187,8 +189,6 @@
     "r_upi",
     "w_coreinf",
     "w_gpop",
-    "w_gtfp",
-    "interest_",
-    "fiscal_"
+    "w_gtfp"
   ]
 }

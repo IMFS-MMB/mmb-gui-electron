@@ -38,8 +38,8 @@
   "variabledim": 2,
   "al": false,
   "vars": [
-    "ystar_",
     "a_",
-    "interest_"
+    "interest_",
+    "ystar_"
   ]
 }

@@ -69,7 +69,7 @@
   "variabledim": 2,
   "al": false,
   "vars": [
-    "techShock",
-    "interest_"
+    "interest_",
+    "techShock"
   ]
 }

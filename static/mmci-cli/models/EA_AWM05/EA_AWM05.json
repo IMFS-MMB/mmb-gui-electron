@@ -38,20 +38,20 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "innoelnn",
-    "innoewrn",
-    "innoeyfd",
-    "innoepcd",
-    "innoeitr",
+    "fiscal_",
     "innoeitd",
-    "innoextd",
-    "innoemtd",
-    "innoepcr",
+    "innoeitr",
+    "innoelnn",
     "innoelsr",
-    "innoextr",
-    "innoemtr",
     "innoeltn",
-    "interest_",
-    "fiscal_"
+    "innoemtd",
+    "innoemtr",
+    "innoepcd",
+    "innoepcr",
+    "innoewrn",
+    "innoextd",
+    "innoextr",
+    "innoeyfd",
+    "interest_"
   ]
 }

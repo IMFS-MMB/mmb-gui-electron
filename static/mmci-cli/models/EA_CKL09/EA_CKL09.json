@@ -74,13 +74,13 @@
   "variabledim": 1,
   "al": false,
   "vars": [
+    "fiscal_",
     "inno_ebargaint",
-    "inno_ekappat",
-    "inno_esept",
     "inno_ebt",
     "inno_eCt",
+    "inno_ekappat",
+    "inno_esept",
     "inno_zt",
-    "interest_",
-    "fiscal_"
+    "interest_"
   ]
 }

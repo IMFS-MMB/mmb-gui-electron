@@ -73,11 +73,11 @@
   "al": false,
   "vars": [
     "epsA",
-    "epsthet",
-    "epsksi",
     "epsC",
+    "epsksi",
     "epsL",
-    "interest_",
-    "fiscal_"
+    "epsthet",
+    "fiscal_",
+    "interest_"
   ]
 }

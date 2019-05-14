@@ -72,10 +72,10 @@
   "al": false,
   "vars": [
     "e_deltaa",
-    "e_g",
-    "e_nuu",
-    "e_gam",
     "e_eps",
+    "e_g",
+    "e_gam",
+    "e_nuu",
     "interest_"
   ]
 }

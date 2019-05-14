@@ -72,10 +72,10 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "up",
+    "interest_",
+    "ua",
     "ui",
     "um",
-    "ua",
-    "interest_"
+    "up"
   ]
 }

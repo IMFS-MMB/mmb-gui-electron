@@ -72,13 +72,13 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "eta_w",
-    "eta_p",
-    "epsinno_B",
-    "epsinno_L",
     "epsinno_A",
+    "epsinno_B",
     "epsinno_I",
-    "interest_",
-    "fiscal_"
+    "epsinno_L",
+    "eta_p",
+    "eta_w",
+    "fiscal_",
+    "interest_"
   ]
 }

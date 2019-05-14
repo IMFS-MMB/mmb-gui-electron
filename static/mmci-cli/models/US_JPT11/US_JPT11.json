@@ -73,14 +73,14 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "Rs",
-    "zs",
-    "mius",
+    "bs",
+    "fiscal_",
+    "interest_",
     "lambdaps",
     "lambdaws",
-    "bs",
+    "mius",
+    "Rs",
     "upsilons",
-    "interest_",
-    "fiscal_"
+    "zs"
   ]
 }

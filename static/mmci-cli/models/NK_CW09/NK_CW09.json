@@ -72,16 +72,16 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "e_C_bar_s",
+    "e_b_g",
     "e_C_bar_b",
+    "e_C_bar_s",
+    "e_chi_tilde",
     "e_H_bar",
     "e_mu_w",
     "e_tau",
     "e_Xi_tilde",
-    "e_chi_tilde",
     "e_Z",
-    "e_b_g",
-    "interest_",
-    "fiscal_"
+    "fiscal_",
+    "interest_"
   ]
 }

@@ -40,12 +40,12 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "interest_",
-    "fiscal_",
-    "EZ",
-    "EOMEGA",
     "EA",
+    "EERR",
     "EG",
-    "EERR"
+    "EOMEGA",
+    "EZ",
+    "fiscal_",
+    "interest_"
   ]
 }

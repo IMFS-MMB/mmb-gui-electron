@@ -40,18 +40,18 @@
   "variabledim": 2,
   "al": false,
   "vars": [
-    "e_lambdafU",
-    "e_pitargetU",
-    "e_xbU",
-    "e_muupU",
     "e_chiiU",
-    "e_gU",
-    "e_muzstarU",
-    "e_gammaU",
     "e_epsilU",
+    "e_gammaU",
+    "e_gU",
+    "e_lambdafU",
+    "e_muupU",
+    "e_muzstarU",
+    "e_pitargetU",
     "e_sigmaU",
-    "e_zetaiU",
     "e_tauoU",
+    "e_xbU",
+    "e_zetaiU",
     "interest_"
   ]
 }

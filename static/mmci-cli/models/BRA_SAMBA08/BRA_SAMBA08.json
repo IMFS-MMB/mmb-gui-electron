@@ -75,19 +75,19 @@
   "variabledim": 2,
   "al": false,
   "vars": [
-    "pibar_",
-    "gbar_",
-    "c_",
-    "n_",
-    "i_",
-    "fiistar_",
-    "fii_",
     "a_",
-    "mstar_",
-    "pistar_",
-    "rstar_",
-    "r_",
+    "c_",
+    "fii_",
+    "fiistar_",
+    "fiscal_",
+    "gbar_",
+    "i_",
     "interest_",
-    "fiscal_"
+    "mstar_",
+    "n_",
+    "pibar_",
+    "pistar_",
+    "r_",
+    "rstar_"
   ]
 }

@@ -72,8 +72,8 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "ua",
+    "fiscal_",
     "interest_",
-    "fiscal_"
+    "ua"
   ]
 }

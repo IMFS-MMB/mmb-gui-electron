@@ -38,10 +38,10 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "epsq",
     "epspi_star",
-    "epsz",
+    "epsq",
     "epsy_star",
+    "epsz",
     "interest_"
   ]
 }

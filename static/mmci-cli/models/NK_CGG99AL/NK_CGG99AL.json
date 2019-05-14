@@ -90,8 +90,8 @@
     ]
   },
   "vars": [
-    "inflation_",
     "demand_",
+    "inflation_",
     "interest_"
   ]
 }

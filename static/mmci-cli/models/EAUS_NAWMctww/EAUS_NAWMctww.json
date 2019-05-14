@@ -75,6 +75,9 @@
   "variabledim": 1,
   "al": false,
   "vars": [
+    "dummy_FR",
+    "EA_EPSBYTARGET",
+    "EA_EPSG",
     "EA_EPSR",
     "EA_EPSRP",
     "EA_EPSTAUC",
@@ -84,7 +87,11 @@
     "EA_EPSTAUWF",
     "EA_EPSTAUWH",
     "EA_EPSTR",
+    "EA_EPSTTARGET",
     "EA_EPSZ",
+    "fiscal_",
+    "interest_",
+    "US_EPSBYTARGET",
     "US_EPSTAUC",
     "US_EPSTAUD",
     "US_EPSTAUK",
@@ -92,13 +99,6 @@
     "US_EPSTAUWF",
     "US_EPSTAUWH",
     "US_EPSTR",
-    "US_EPSZ",
-    "EA_EPSBYTARGET",
-    "US_EPSBYTARGET",
-    "EA_EPSTTARGET",
-    "dummy_FR",
-    "EA_EPSG",
-    "interest_",
-    "fiscal_"
+    "US_EPSZ"
   ]
 }

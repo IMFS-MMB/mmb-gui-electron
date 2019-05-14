@@ -74,10 +74,10 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "zs",
-    "lambddaps",
     "bs",
+    "interest_",
+    "lambddaps",
     "pits",
-    "interest_"
+    "zs"
   ]
 }
