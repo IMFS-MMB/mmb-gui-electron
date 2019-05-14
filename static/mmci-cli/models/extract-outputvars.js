@@ -19,6 +19,7 @@ models.forEach((model) => {
     .replace(/,/g, '')
     .split(/\s+/)
     .filter(line => !/^\s*$/.test(line)) // remove whitespace-only lines
+    .sort((a, b) => a.localeCompare(b))
     .reduce((acc, v) => acc.concat(v), []);
 
   fs.writeFileSync(jsonFile, JSON.stringify(json, null, 2));

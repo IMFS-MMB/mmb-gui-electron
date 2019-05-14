@@ -72,9 +72,9 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "epsp",
     "epsa",
-    "interest_",
-    "fiscal_"
+    "epsp",
+    "fiscal_",
+    "interest_"
   ]
 }
