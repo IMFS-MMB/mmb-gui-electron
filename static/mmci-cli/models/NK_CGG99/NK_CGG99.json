@@ -73,6 +73,15 @@
   "variabledim": 1,
   "al": false,
   "vars": [
+    "i",
+    "inflation",
+    "inflationq",
+    "interest",
+    "outputgap",
+    "pi",
+    "x"
+  ],
+  "shocks": [
     "demand_",
     "inflation_",
     "interest_"

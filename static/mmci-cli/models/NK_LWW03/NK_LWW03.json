@@ -73,6 +73,18 @@
   "variabledim": 1,
   "al": false,
   "vars": [
+    "drff",
+    "inflation",
+    "inflationq",
+    "interest",
+    "outputgap",
+    "pdot",
+    "pdotsh",
+    "rff",
+    "rstar",
+    "ygap"
+  ],
+  "shocks": [
     "interest_",
     "pdotsh_",
     "rstar_"

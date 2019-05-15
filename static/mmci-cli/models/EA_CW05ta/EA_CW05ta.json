@@ -73,6 +73,27 @@
   "variabledim": 2,
   "al": false,
   "vars": [
+    "cwp",
+    "dis",
+    "il",
+    "infl",
+    "inflation",
+    "inflationq",
+    "interest",
+    "is",
+    "lagcwp1",
+    "lagcwp2",
+    "lagis1",
+    "lagpi11",
+    "lagpi12",
+    "lagq1",
+    "output",
+    "outputgap",
+    "pi1",
+    "q",
+    "rl"
+  ],
+  "shocks": [
     "e_cw",
     "e_d",
     "interest_"

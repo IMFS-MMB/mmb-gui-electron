@@ -71,6 +71,20 @@
   "variabledim": 1,
   "al": false,
   "vars": [
+    "a",
+    "e",
+    "inflation",
+    "inflationq",
+    "interest",
+    "m",
+    "output",
+    "outputgap",
+    "pi",
+    "r",
+    "y",
+    "z"
+  ],
+  "shocks": [
     "epsa_",
     "epse_",
     "epsz_",

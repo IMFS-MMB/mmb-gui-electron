@@ -90,6 +90,18 @@
     ]
   },
   "vars": [
+    "i",
+    "inflation",
+    "inflationq",
+    "inflationql",
+    "inflationql2",
+    "interest",
+    "output",
+    "outputgap",
+    "pi",
+    "x"
+  ],
+  "shocks": [
     "demand_",
     "inflation_",
     "interest_"

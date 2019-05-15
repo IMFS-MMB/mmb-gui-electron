@@ -89,6 +89,23 @@
     ]
   },
   "vars": [
+    "drff",
+    "inflation",
+    "inflationq",
+    "inflationql",
+    "inflationql2",
+    "inflationqls",
+    "interest",
+    "output",
+    "outputgap",
+    "pdot",
+    "pdotsh",
+    "pinf4",
+    "rff",
+    "rstar",
+    "ygap"
+  ],
+  "shocks": [
     "interest_",
     "pdotsh_",
     "rstar_"

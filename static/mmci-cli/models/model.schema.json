@@ -16,7 +16,9 @@
     "msr",
     "description",
     "variabledim",
-    "al"
+    "al",
+    "shocks",
+    "vars"
   ],
   "additionalProperties": false,
   "if": {
@@ -82,6 +84,9 @@
           "type": "null"
         }
       ]
+    },
+    "shocks": {
+      "$ref": "#/definitions/arrayOfStrings"
     },
     "vars": {
       "$ref": "#/definitions/arrayOfStrings"

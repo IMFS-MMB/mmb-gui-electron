@@ -56,6 +56,26 @@
     ]
   },
   "vars": [
+    "fispol",
+    "g",
+    "g_",
+    "i",
+    "inflation",
+    "inflationq",
+    "inflationql",
+    "inflationql2",
+    "inflationqls",
+    "interest",
+    "output",
+    "outputgap",
+    "pi",
+    "rnat",
+    "u",
+    "x",
+    "y",
+    "ynat"
+  ],
+  "shocks": [
     "fiscal_",
     "interest_",
     "u_"

@@ -39,6 +39,20 @@
   "variabledim": 1,
   "al": false,
   "vars": [
+    "f",
+    "infl",
+    "inflation",
+    "inflationq",
+    "interest",
+    "output",
+    "outputgap",
+    "p",
+    "rho",
+    "x",
+    "ypsilon",
+    "ytilde"
+  ],
+  "shocks": [
     "epsilon_p",
     "epsilon_y",
     "interest_"

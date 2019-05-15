@@ -38,6 +38,27 @@
   "variabledim": 2,
   "al": false,
   "vars": [
+    "a",
+    "e",
+    "inflation",
+    "inflationq",
+    "interest",
+    "output",
+    "outputgap",
+    "p",
+    "ph",
+    "pi",
+    "pih",
+    "pistar",
+    "r",
+    "rnat",
+    "s",
+    "x",
+    "y",
+    "ynat",
+    "ystar"
+  ],
+  "shocks": [
     "a_",
     "interest_",
     "ystar_"

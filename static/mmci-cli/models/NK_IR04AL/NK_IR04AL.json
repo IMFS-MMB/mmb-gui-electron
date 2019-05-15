@@ -91,6 +91,24 @@
     ]
   },
   "vars": [
+    "a",
+    "e",
+    "inflation",
+    "inflationq",
+    "inflationql",
+    "inflationql2",
+    "inflationqls",
+    "interest",
+    "m",
+    "output",
+    "outputgap",
+    "pi",
+    "pinf4",
+    "r",
+    "y",
+    "z"
+  ],
+  "shocks": [
     "epsa_",
     "epse_",
     "epsz_",
