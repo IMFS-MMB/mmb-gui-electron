@@ -53,6 +53,20 @@
     ]
   },
   "vars": [
+    "inflation",
+    "inflationq",
+    "inflationql",
+    "inflationql2",
+    "inflationqls",
+    "interest",
+    "output",
+    "outputgap",
+    "pi",
+    "pinf4",
+    "R",
+    "x"
+  ],
+  "shocks": [
     "interest_",
     "u"
   ]

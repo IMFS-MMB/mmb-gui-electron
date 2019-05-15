@@ -73,6 +73,29 @@
   "variabledim": 1,
   "al": false,
   "vars": [
+    "b",
+    "bf",
+    "c",
+    "cf",
+    "e_g",
+    "fispol",
+    "g",
+    "inflation",
+    "inflationq",
+    "interest",
+    "k",
+    "kf",
+    "n",
+    "nf",
+    "output",
+    "outputgap",
+    "pi",
+    "r",
+    "rf",
+    "y",
+    "yf"
+  ],
+  "shocks": [
     "fiscal_",
     "interest_"
   ]

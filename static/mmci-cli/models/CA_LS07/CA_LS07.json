@@ -38,6 +38,23 @@
   "variabledim": 1,
   "al": false,
   "vars": [
+    "deltae",
+    "deltaq",
+    "deltay_star",
+    "inflation",
+    "inflationq",
+    "interest",
+    "output",
+    "outputgap",
+    "pi",
+    "pi_star",
+    "R",
+    "y",
+    "y_bar",
+    "y_star",
+    "z"
+  ],
+  "shocks": [
     "epspi_star",
     "epsq",
     "epsy_star",

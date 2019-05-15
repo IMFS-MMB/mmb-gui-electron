@@ -70,6 +70,33 @@
     ]
   },
   "vars": [
+    "f",
+    "infl",
+    "inflation",
+    "inflationq",
+    "inflationql",
+    "inflationql2",
+    "inflationqls",
+    "interest",
+    "output",
+    "outputgap",
+    "p",
+    "rho",
+    "x",
+    "xl",
+    "xll",
+    "ypsilon",
+    "ypsilonf",
+    "ypsilonff",
+    "ytilde",
+    "ytildef",
+    "ytildeff",
+    "ytildel",
+    "z",
+    "zl",
+    "zll"
+  ],
+  "shocks": [
     "epsilon_p",
     "epsilon_y",
     "interest_"

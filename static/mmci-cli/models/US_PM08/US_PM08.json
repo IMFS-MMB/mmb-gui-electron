@@ -76,6 +76,23 @@
   "variabledim": 1,
   "al": false,
   "vars": [
+    "E1_PIE_USh",
+    "E1_Y_USh",
+    "E4_PIE_US4h",
+    "inflation",
+    "inflationq",
+    "interest",
+    "output",
+    "outputgap",
+    "PIE_US4h",
+    "PIE_USh",
+    "RR_US_BARh",
+    "RR_USh",
+    "RS_USh",
+    "UNR_US_GAP",
+    "Y_US"
+  ],
+  "shocks": [
     "interest_",
     "RES_PIE_US",
     "RES_RR_US_BAR",
