@@ -1,4 +1,5 @@
 {
+  "$schema": "schemas/config.schema.json",
   "dynare": "",
   "models": [
     "EA_PV15"
@@ -6,8 +7,13 @@
   "rules": [
     "Taylor"
   ],
-  "model_specific_rule": true,
+  "msr": false,
+  "usr": false,
   "options": {
-    "horizon": 35
+    "gain": 0.01,
+    "horizon": 35,
+    "shocks": [
+      1
+    ]
   }
 }
