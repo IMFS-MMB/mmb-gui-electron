@@ -9,15 +9,5 @@ thumbs.db
 .idea/
 !.gitkeep
 
-octave-workspace
-static/mmci-cli/MODELS/policy_param.mat
-static/mmci-cli/**/Modelbase*
-static/mmci-cli/**/Output/
-static/mmci-cli/**/*.log
-static/mmci-cli/**/checksum
-static/mmci-cli/**/*_dynamic.m
-static/mmci-cli/**/*_static.m
-static/mmci-cli/**/*_set_auxiliary_variables.m
-
 /server/public/
 !/server/public/favicon.ico
