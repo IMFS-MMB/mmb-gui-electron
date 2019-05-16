@@ -23,8 +23,8 @@ function mmb (jsonconfig)
 
     arrayfun(@(model) run_model_with_rules(model, rules, config, paths), models);
   catch e
-    disp(['current directory: ' pwd]);
-    printf(savejson('', e));
+    print_error(e);
+
     cd(paths.root);
   end
 end
