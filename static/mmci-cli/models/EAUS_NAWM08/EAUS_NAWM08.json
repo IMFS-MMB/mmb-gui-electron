@@ -74,260 +74,1019 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "EA_B",
-    "EA_BF",
-    "EA_BY",
-    "EA_C",
-    "EA_CI",
-    "EA_CJ",
-    "EA_CY",
-    "EA_D",
-    "EA_EPSG",
-    "EA_EPSILONM",
-    "EA_FH",
-    "EA_FI",
-    "EA_FJ",
-    "EA_FX",
-    "EA_G",
-    "EA_GAMMAB",
-    "EA_GAMMAI",
-    "EA_GAMMAIDER",
-    "EA_GAMMAIMC",
-    "EA_GAMMAIMCDAG",
-    "EA_GAMMAIMI",
-    "EA_GAMMAIMIDAG",
-    "EA_GAMMAU",
-    "EA_GAMMAUDER",
-    "EA_GAMMAV",
-    "EA_GAMMAVI",
-    "EA_GAMMAVIDER",
-    "EA_GAMMAVJ",
-    "EA_GAMMAVJDER",
-    "EA_GH",
-    "EA_GI",
-    "EA_GJ",
-    "EA_GX",
-    "EA_GY",
-    "EA_H",
-    "EA_HC",
-    "EA_HI",
-    "EA_I",
-    "EA_II",
-    "EA_IM",
-    "EA_IMC",
-    "EA_IMCY",
-    "EA_IMI",
-    "EA_IMIY",
-    "EA_IMY",
-    "EA_IY",
-    "EA_K",
-    "EA_KD",
-    "EA_KI",
-    "EA_LAMBDAI",
-    "EA_LAMBDAJ",
-    "EA_M",
-    "EA_MC",
-    "EA_MI",
-    "EA_MJ",
-    "EA_ND",
-    "EA_NDI",
-    "EA_NDJ",
-    "EA_NI",
-    "EA_NJ",
-    "EA_PH",
-    "EA_PHTILDE",
-    "EA_PI",
-    "EA_PIC",
-    "EA_PIC4",
-    "EA_PIH",
-    "EA_PIIM",
-    "EA_PIM",
-    "EA_PIMTILDE",
-    "EA_PY",
-    "EA_Q",
-    "EA_QC",
-    "EA_QI",
-    "EA_R",
-    "EA_RER",
-    "EA_RERDEP",
-    "EA_RK",
-    "EA_RP",
-    "EA_RR",
-    "EA_RRSTAR",
-    "EA_SH",
-    "EA_SI",
-    "EA_SJ",
-    "EA_SX",
-    "EA_T",
-    "EA_TAUC",
-    "EA_TAUD",
-    "EA_TAUK",
-    "EA_TAUN",
-    "EA_TAUWF",
-    "EA_TAUWH",
-    "EA_TB",
-    "EA_TI",
-    "EA_TJ",
-    "EA_TOT",
-    "EA_TR",
-    "EA_TRI",
-    "EA_TRJ",
-    "EA_TRY",
-    "EA_TY",
-    "EA_U",
-    "EA_UTILI",
-    "EA_UTILJ",
-    "EA_VI",
-    "EA_VJ",
-    "EA_W",
-    "EA_WI",
-    "EA_WITILDE",
-    "EA_WJ",
-    "EA_WJTILDE",
-    "EA_Y",
-    "EA_YGAP",
-    "EA_YGROWTH",
-    "EA_YS",
-    "EA_YSHARE",
-    "EA_Z",
-    "EAUS_RER",
-    "fispol",
-    "inflation",
-    "inflationq",
-    "interest",
-    "output",
-    "outputgap",
-    "US_B",
-    "US_BF",
-    "US_BY",
-    "US_C",
-    "US_CI",
-    "US_CJ",
-    "US_CY",
-    "US_D",
-    "US_EPSILONM",
-    "US_FH",
-    "US_FI",
-    "US_FJ",
-    "US_FX",
-    "US_G",
-    "US_GAMMAI",
-    "US_GAMMAIDER",
-    "US_GAMMAIMC",
-    "US_GAMMAIMCDAG",
-    "US_GAMMAIMI",
-    "US_GAMMAIMIDAG",
-    "US_GAMMAU",
-    "US_GAMMAUDER",
-    "US_GAMMAV",
-    "US_GAMMAVI",
-    "US_GAMMAVIDER",
-    "US_GAMMAVJ",
-    "US_GAMMAVJDER",
-    "US_GH",
-    "US_GI",
-    "US_GJ",
-    "US_GX",
-    "US_GY",
-    "US_H",
-    "US_HC",
-    "US_HI",
-    "US_I",
-    "US_II",
-    "US_IM",
-    "US_IMC",
-    "US_IMCY",
-    "US_IMI",
-    "US_IMIY",
-    "US_IMY",
-    "US_IY",
-    "US_K",
-    "US_KD",
-    "US_KI",
-    "US_LAMBDAI",
-    "US_LAMBDAJ",
-    "US_M",
-    "US_MC",
-    "US_MI",
-    "US_MJ",
-    "US_ND",
-    "US_NDI",
-    "US_NDJ",
-    "US_NI",
-    "US_NJ",
-    "US_PH",
-    "US_PHTILDE",
-    "US_PI",
-    "US_PIC",
-    "US_PIC4",
-    "US_PIH",
-    "US_PIIM",
-    "US_PIM",
-    "US_PIMTILDE",
-    "US_PY",
-    "US_Q",
-    "US_QC",
-    "US_QI",
-    "US_R",
-    "US_RK",
-    "US_RR",
-    "US_RRSTAR",
-    "US_SH",
-    "US_SI",
-    "US_SJ",
-    "US_SX",
-    "US_T",
-    "US_TAUC",
-    "US_TAUD",
-    "US_TAUK",
-    "US_TAUN",
-    "US_TAUWF",
-    "US_TAUWH",
-    "US_TI",
-    "US_TJ",
-    "US_TR",
-    "US_TRI",
-    "US_TRJ",
-    "US_TRY",
-    "US_TY",
-    "US_U",
-    "US_UTILI",
-    "US_UTILJ",
-    "US_VI",
-    "US_VJ",
-    "US_W",
-    "US_WI",
-    "US_WITILDE",
-    "US_WJ",
-    "US_WJTILDE",
-    "US_Y",
-    "US_YGAP",
-    "US_YGROWTH",
-    "US_YS",
-    "US_YSHARE",
-    "US_Z",
-    "USEA_RER"
+    {
+      "name": "EA_B",
+      "human_readable": "EA_B"
+    },
+    {
+      "name": "EA_BF",
+      "human_readable": "EA_BF"
+    },
+    {
+      "name": "EA_BY",
+      "human_readable": "EA_BY"
+    },
+    {
+      "name": "EA_C",
+      "human_readable": "EA_C"
+    },
+    {
+      "name": "EA_CI",
+      "human_readable": "EA_CI"
+    },
+    {
+      "name": "EA_CJ",
+      "human_readable": "EA_CJ"
+    },
+    {
+      "name": "EA_CY",
+      "human_readable": "EA_CY"
+    },
+    {
+      "name": "EA_D",
+      "human_readable": "EA_D"
+    },
+    {
+      "name": "EA_EPSG",
+      "human_readable": "EA_EPSG"
+    },
+    {
+      "name": "EA_EPSILONM",
+      "human_readable": "EA_EPSILONM"
+    },
+    {
+      "name": "EA_FH",
+      "human_readable": "EA_FH"
+    },
+    {
+      "name": "EA_FI",
+      "human_readable": "EA_FI"
+    },
+    {
+      "name": "EA_FJ",
+      "human_readable": "EA_FJ"
+    },
+    {
+      "name": "EA_FX",
+      "human_readable": "EA_FX"
+    },
+    {
+      "name": "EA_G",
+      "human_readable": "EA_G"
+    },
+    {
+      "name": "EA_GAMMAB",
+      "human_readable": "EA_GAMMAB"
+    },
+    {
+      "name": "EA_GAMMAI",
+      "human_readable": "EA_GAMMAI"
+    },
+    {
+      "name": "EA_GAMMAIDER",
+      "human_readable": "EA_GAMMAIDER"
+    },
+    {
+      "name": "EA_GAMMAIMC",
+      "human_readable": "EA_GAMMAIMC"
+    },
+    {
+      "name": "EA_GAMMAIMCDAG",
+      "human_readable": "EA_GAMMAIMCDAG"
+    },
+    {
+      "name": "EA_GAMMAIMI",
+      "human_readable": "EA_GAMMAIMI"
+    },
+    {
+      "name": "EA_GAMMAIMIDAG",
+      "human_readable": "EA_GAMMAIMIDAG"
+    },
+    {
+      "name": "EA_GAMMAU",
+      "human_readable": "EA_GAMMAU"
+    },
+    {
+      "name": "EA_GAMMAUDER",
+      "human_readable": "EA_GAMMAUDER"
+    },
+    {
+      "name": "EA_GAMMAV",
+      "human_readable": "EA_GAMMAV"
+    },
+    {
+      "name": "EA_GAMMAVI",
+      "human_readable": "EA_GAMMAVI"
+    },
+    {
+      "name": "EA_GAMMAVIDER",
+      "human_readable": "EA_GAMMAVIDER"
+    },
+    {
+      "name": "EA_GAMMAVJ",
+      "human_readable": "EA_GAMMAVJ"
+    },
+    {
+      "name": "EA_GAMMAVJDER",
+      "human_readable": "EA_GAMMAVJDER"
+    },
+    {
+      "name": "EA_GH",
+      "human_readable": "EA_GH"
+    },
+    {
+      "name": "EA_GI",
+      "human_readable": "EA_GI"
+    },
+    {
+      "name": "EA_GJ",
+      "human_readable": "EA_GJ"
+    },
+    {
+      "name": "EA_GX",
+      "human_readable": "EA_GX"
+    },
+    {
+      "name": "EA_GY",
+      "human_readable": "EA_GY"
+    },
+    {
+      "name": "EA_H",
+      "human_readable": "EA_H"
+    },
+    {
+      "name": "EA_HC",
+      "human_readable": "EA_HC"
+    },
+    {
+      "name": "EA_HI",
+      "human_readable": "EA_HI"
+    },
+    {
+      "name": "EA_I",
+      "human_readable": "EA_I"
+    },
+    {
+      "name": "EA_II",
+      "human_readable": "EA_II"
+    },
+    {
+      "name": "EA_IM",
+      "human_readable": "EA_IM"
+    },
+    {
+      "name": "EA_IMC",
+      "human_readable": "EA_IMC"
+    },
+    {
+      "name": "EA_IMCY",
+      "human_readable": "EA_IMCY"
+    },
+    {
+      "name": "EA_IMI",
+      "human_readable": "EA_IMI"
+    },
+    {
+      "name": "EA_IMIY",
+      "human_readable": "EA_IMIY"
+    },
+    {
+      "name": "EA_IMY",
+      "human_readable": "EA_IMY"
+    },
+    {
+      "name": "EA_IY",
+      "human_readable": "EA_IY"
+    },
+    {
+      "name": "EA_K",
+      "human_readable": "EA_K"
+    },
+    {
+      "name": "EA_KD",
+      "human_readable": "EA_KD"
+    },
+    {
+      "name": "EA_KI",
+      "human_readable": "EA_KI"
+    },
+    {
+      "name": "EA_LAMBDAI",
+      "human_readable": "EA_LAMBDAI"
+    },
+    {
+      "name": "EA_LAMBDAJ",
+      "human_readable": "EA_LAMBDAJ"
+    },
+    {
+      "name": "EA_M",
+      "human_readable": "EA_M"
+    },
+    {
+      "name": "EA_MC",
+      "human_readable": "EA_MC"
+    },
+    {
+      "name": "EA_MI",
+      "human_readable": "EA_MI"
+    },
+    {
+      "name": "EA_MJ",
+      "human_readable": "EA_MJ"
+    },
+    {
+      "name": "EA_ND",
+      "human_readable": "EA_ND"
+    },
+    {
+      "name": "EA_NDI",
+      "human_readable": "EA_NDI"
+    },
+    {
+      "name": "EA_NDJ",
+      "human_readable": "EA_NDJ"
+    },
+    {
+      "name": "EA_NI",
+      "human_readable": "EA_NI"
+    },
+    {
+      "name": "EA_NJ",
+      "human_readable": "EA_NJ"
+    },
+    {
+      "name": "EA_PH",
+      "human_readable": "EA_PH"
+    },
+    {
+      "name": "EA_PHTILDE",
+      "human_readable": "EA_PHTILDE"
+    },
+    {
+      "name": "EA_PI",
+      "human_readable": "EA_PI"
+    },
+    {
+      "name": "EA_PIC",
+      "human_readable": "EA_PIC"
+    },
+    {
+      "name": "EA_PIC4",
+      "human_readable": "EA_PIC4"
+    },
+    {
+      "name": "EA_PIH",
+      "human_readable": "EA_PIH"
+    },
+    {
+      "name": "EA_PIIM",
+      "human_readable": "EA_PIIM"
+    },
+    {
+      "name": "EA_PIM",
+      "human_readable": "EA_PIM"
+    },
+    {
+      "name": "EA_PIMTILDE",
+      "human_readable": "EA_PIMTILDE"
+    },
+    {
+      "name": "EA_PY",
+      "human_readable": "EA_PY"
+    },
+    {
+      "name": "EA_Q",
+      "human_readable": "EA_Q"
+    },
+    {
+      "name": "EA_QC",
+      "human_readable": "EA_QC"
+    },
+    {
+      "name": "EA_QI",
+      "human_readable": "EA_QI"
+    },
+    {
+      "name": "EA_R",
+      "human_readable": "EA_R"
+    },
+    {
+      "name": "EA_RER",
+      "human_readable": "EA_RER"
+    },
+    {
+      "name": "EA_RERDEP",
+      "human_readable": "EA_RERDEP"
+    },
+    {
+      "name": "EA_RK",
+      "human_readable": "EA_RK"
+    },
+    {
+      "name": "EA_RP",
+      "human_readable": "EA_RP"
+    },
+    {
+      "name": "EA_RR",
+      "human_readable": "EA_RR"
+    },
+    {
+      "name": "EA_RRSTAR",
+      "human_readable": "EA_RRSTAR"
+    },
+    {
+      "name": "EA_SH",
+      "human_readable": "EA_SH"
+    },
+    {
+      "name": "EA_SI",
+      "human_readable": "EA_SI"
+    },
+    {
+      "name": "EA_SJ",
+      "human_readable": "EA_SJ"
+    },
+    {
+      "name": "EA_SX",
+      "human_readable": "EA_SX"
+    },
+    {
+      "name": "EA_T",
+      "human_readable": "EA_T"
+    },
+    {
+      "name": "EA_TAUC",
+      "human_readable": "EA_TAUC"
+    },
+    {
+      "name": "EA_TAUD",
+      "human_readable": "EA_TAUD"
+    },
+    {
+      "name": "EA_TAUK",
+      "human_readable": "EA_TAUK"
+    },
+    {
+      "name": "EA_TAUN",
+      "human_readable": "EA_TAUN"
+    },
+    {
+      "name": "EA_TAUWF",
+      "human_readable": "EA_TAUWF"
+    },
+    {
+      "name": "EA_TAUWH",
+      "human_readable": "EA_TAUWH"
+    },
+    {
+      "name": "EA_TB",
+      "human_readable": "EA_TB"
+    },
+    {
+      "name": "EA_TI",
+      "human_readable": "EA_TI"
+    },
+    {
+      "name": "EA_TJ",
+      "human_readable": "EA_TJ"
+    },
+    {
+      "name": "EA_TOT",
+      "human_readable": "EA_TOT"
+    },
+    {
+      "name": "EA_TR",
+      "human_readable": "EA_TR"
+    },
+    {
+      "name": "EA_TRI",
+      "human_readable": "EA_TRI"
+    },
+    {
+      "name": "EA_TRJ",
+      "human_readable": "EA_TRJ"
+    },
+    {
+      "name": "EA_TRY",
+      "human_readable": "EA_TRY"
+    },
+    {
+      "name": "EA_TY",
+      "human_readable": "EA_TY"
+    },
+    {
+      "name": "EA_U",
+      "human_readable": "EA_U"
+    },
+    {
+      "name": "EA_UTILI",
+      "human_readable": "EA_UTILI"
+    },
+    {
+      "name": "EA_UTILJ",
+      "human_readable": "EA_UTILJ"
+    },
+    {
+      "name": "EA_VI",
+      "human_readable": "EA_VI"
+    },
+    {
+      "name": "EA_VJ",
+      "human_readable": "EA_VJ"
+    },
+    {
+      "name": "EA_W",
+      "human_readable": "EA_W"
+    },
+    {
+      "name": "EA_WI",
+      "human_readable": "EA_WI"
+    },
+    {
+      "name": "EA_WITILDE",
+      "human_readable": "EA_WITILDE"
+    },
+    {
+      "name": "EA_WJ",
+      "human_readable": "EA_WJ"
+    },
+    {
+      "name": "EA_WJTILDE",
+      "human_readable": "EA_WJTILDE"
+    },
+    {
+      "name": "EA_Y",
+      "human_readable": "EA_Y"
+    },
+    {
+      "name": "EA_YGAP",
+      "human_readable": "EA_YGAP"
+    },
+    {
+      "name": "EA_YGROWTH",
+      "human_readable": "EA_YGROWTH"
+    },
+    {
+      "name": "EA_YS",
+      "human_readable": "EA_YS"
+    },
+    {
+      "name": "EA_YSHARE",
+      "human_readable": "EA_YSHARE"
+    },
+    {
+      "name": "EA_Z",
+      "human_readable": "EA_Z"
+    },
+    {
+      "name": "EAUS_RER",
+      "human_readable": "EAUS_RER"
+    },
+    {
+      "name": "fispol",
+      "human_readable": "fispol"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "US_B",
+      "human_readable": "US_B"
+    },
+    {
+      "name": "US_BF",
+      "human_readable": "US_BF"
+    },
+    {
+      "name": "US_BY",
+      "human_readable": "US_BY"
+    },
+    {
+      "name": "US_C",
+      "human_readable": "US_C"
+    },
+    {
+      "name": "US_CI",
+      "human_readable": "US_CI"
+    },
+    {
+      "name": "US_CJ",
+      "human_readable": "US_CJ"
+    },
+    {
+      "name": "US_CY",
+      "human_readable": "US_CY"
+    },
+    {
+      "name": "US_D",
+      "human_readable": "US_D"
+    },
+    {
+      "name": "US_EPSILONM",
+      "human_readable": "US_EPSILONM"
+    },
+    {
+      "name": "US_FH",
+      "human_readable": "US_FH"
+    },
+    {
+      "name": "US_FI",
+      "human_readable": "US_FI"
+    },
+    {
+      "name": "US_FJ",
+      "human_readable": "US_FJ"
+    },
+    {
+      "name": "US_FX",
+      "human_readable": "US_FX"
+    },
+    {
+      "name": "US_G",
+      "human_readable": "US_G"
+    },
+    {
+      "name": "US_GAMMAI",
+      "human_readable": "US_GAMMAI"
+    },
+    {
+      "name": "US_GAMMAIDER",
+      "human_readable": "US_GAMMAIDER"
+    },
+    {
+      "name": "US_GAMMAIMC",
+      "human_readable": "US_GAMMAIMC"
+    },
+    {
+      "name": "US_GAMMAIMCDAG",
+      "human_readable": "US_GAMMAIMCDAG"
+    },
+    {
+      "name": "US_GAMMAIMI",
+      "human_readable": "US_GAMMAIMI"
+    },
+    {
+      "name": "US_GAMMAIMIDAG",
+      "human_readable": "US_GAMMAIMIDAG"
+    },
+    {
+      "name": "US_GAMMAU",
+      "human_readable": "US_GAMMAU"
+    },
+    {
+      "name": "US_GAMMAUDER",
+      "human_readable": "US_GAMMAUDER"
+    },
+    {
+      "name": "US_GAMMAV",
+      "human_readable": "US_GAMMAV"
+    },
+    {
+      "name": "US_GAMMAVI",
+      "human_readable": "US_GAMMAVI"
+    },
+    {
+      "name": "US_GAMMAVIDER",
+      "human_readable": "US_GAMMAVIDER"
+    },
+    {
+      "name": "US_GAMMAVJ",
+      "human_readable": "US_GAMMAVJ"
+    },
+    {
+      "name": "US_GAMMAVJDER",
+      "human_readable": "US_GAMMAVJDER"
+    },
+    {
+      "name": "US_GH",
+      "human_readable": "US_GH"
+    },
+    {
+      "name": "US_GI",
+      "human_readable": "US_GI"
+    },
+    {
+      "name": "US_GJ",
+      "human_readable": "US_GJ"
+    },
+    {
+      "name": "US_GX",
+      "human_readable": "US_GX"
+    },
+    {
+      "name": "US_GY",
+      "human_readable": "US_GY"
+    },
+    {
+      "name": "US_H",
+      "human_readable": "US_H"
+    },
+    {
+      "name": "US_HC",
+      "human_readable": "US_HC"
+    },
+    {
+      "name": "US_HI",
+      "human_readable": "US_HI"
+    },
+    {
+      "name": "US_I",
+      "human_readable": "US_I"
+    },
+    {
+      "name": "US_II",
+      "human_readable": "US_II"
+    },
+    {
+      "name": "US_IM",
+      "human_readable": "US_IM"
+    },
+    {
+      "name": "US_IMC",
+      "human_readable": "US_IMC"
+    },
+    {
+      "name": "US_IMCY",
+      "human_readable": "US_IMCY"
+    },
+    {
+      "name": "US_IMI",
+      "human_readable": "US_IMI"
+    },
+    {
+      "name": "US_IMIY",
+      "human_readable": "US_IMIY"
+    },
+    {
+      "name": "US_IMY",
+      "human_readable": "US_IMY"
+    },
+    {
+      "name": "US_IY",
+      "human_readable": "US_IY"
+    },
+    {
+      "name": "US_K",
+      "human_readable": "US_K"
+    },
+    {
+      "name": "US_KD",
+      "human_readable": "US_KD"
+    },
+    {
+      "name": "US_KI",
+      "human_readable": "US_KI"
+    },
+    {
+      "name": "US_LAMBDAI",
+      "human_readable": "US_LAMBDAI"
+    },
+    {
+      "name": "US_LAMBDAJ",
+      "human_readable": "US_LAMBDAJ"
+    },
+    {
+      "name": "US_M",
+      "human_readable": "US_M"
+    },
+    {
+      "name": "US_MC",
+      "human_readable": "US_MC"
+    },
+    {
+      "name": "US_MI",
+      "human_readable": "US_MI"
+    },
+    {
+      "name": "US_MJ",
+      "human_readable": "US_MJ"
+    },
+    {
+      "name": "US_ND",
+      "human_readable": "US_ND"
+    },
+    {
+      "name": "US_NDI",
+      "human_readable": "US_NDI"
+    },
+    {
+      "name": "US_NDJ",
+      "human_readable": "US_NDJ"
+    },
+    {
+      "name": "US_NI",
+      "human_readable": "US_NI"
+    },
+    {
+      "name": "US_NJ",
+      "human_readable": "US_NJ"
+    },
+    {
+      "name": "US_PH",
+      "human_readable": "US_PH"
+    },
+    {
+      "name": "US_PHTILDE",
+      "human_readable": "US_PHTILDE"
+    },
+    {
+      "name": "US_PI",
+      "human_readable": "US_PI"
+    },
+    {
+      "name": "US_PIC",
+      "human_readable": "US_PIC"
+    },
+    {
+      "name": "US_PIC4",
+      "human_readable": "US_PIC4"
+    },
+    {
+      "name": "US_PIH",
+      "human_readable": "US_PIH"
+    },
+    {
+      "name": "US_PIIM",
+      "human_readable": "US_PIIM"
+    },
+    {
+      "name": "US_PIM",
+      "human_readable": "US_PIM"
+    },
+    {
+      "name": "US_PIMTILDE",
+      "human_readable": "US_PIMTILDE"
+    },
+    {
+      "name": "US_PY",
+      "human_readable": "US_PY"
+    },
+    {
+      "name": "US_Q",
+      "human_readable": "US_Q"
+    },
+    {
+      "name": "US_QC",
+      "human_readable": "US_QC"
+    },
+    {
+      "name": "US_QI",
+      "human_readable": "US_QI"
+    },
+    {
+      "name": "US_R",
+      "human_readable": "US_R"
+    },
+    {
+      "name": "US_RK",
+      "human_readable": "US_RK"
+    },
+    {
+      "name": "US_RR",
+      "human_readable": "US_RR"
+    },
+    {
+      "name": "US_RRSTAR",
+      "human_readable": "US_RRSTAR"
+    },
+    {
+      "name": "US_SH",
+      "human_readable": "US_SH"
+    },
+    {
+      "name": "US_SI",
+      "human_readable": "US_SI"
+    },
+    {
+      "name": "US_SJ",
+      "human_readable": "US_SJ"
+    },
+    {
+      "name": "US_SX",
+      "human_readable": "US_SX"
+    },
+    {
+      "name": "US_T",
+      "human_readable": "US_T"
+    },
+    {
+      "name": "US_TAUC",
+      "human_readable": "US_TAUC"
+    },
+    {
+      "name": "US_TAUD",
+      "human_readable": "US_TAUD"
+    },
+    {
+      "name": "US_TAUK",
+      "human_readable": "US_TAUK"
+    },
+    {
+      "name": "US_TAUN",
+      "human_readable": "US_TAUN"
+    },
+    {
+      "name": "US_TAUWF",
+      "human_readable": "US_TAUWF"
+    },
+    {
+      "name": "US_TAUWH",
+      "human_readable": "US_TAUWH"
+    },
+    {
+      "name": "US_TI",
+      "human_readable": "US_TI"
+    },
+    {
+      "name": "US_TJ",
+      "human_readable": "US_TJ"
+    },
+    {
+      "name": "US_TR",
+      "human_readable": "US_TR"
+    },
+    {
+      "name": "US_TRI",
+      "human_readable": "US_TRI"
+    },
+    {
+      "name": "US_TRJ",
+      "human_readable": "US_TRJ"
+    },
+    {
+      "name": "US_TRY",
+      "human_readable": "US_TRY"
+    },
+    {
+      "name": "US_TY",
+      "human_readable": "US_TY"
+    },
+    {
+      "name": "US_U",
+      "human_readable": "US_U"
+    },
+    {
+      "name": "US_UTILI",
+      "human_readable": "US_UTILI"
+    },
+    {
+      "name": "US_UTILJ",
+      "human_readable": "US_UTILJ"
+    },
+    {
+      "name": "US_VI",
+      "human_readable": "US_VI"
+    },
+    {
+      "name": "US_VJ",
+      "human_readable": "US_VJ"
+    },
+    {
+      "name": "US_W",
+      "human_readable": "US_W"
+    },
+    {
+      "name": "US_WI",
+      "human_readable": "US_WI"
+    },
+    {
+      "name": "US_WITILDE",
+      "human_readable": "US_WITILDE"
+    },
+    {
+      "name": "US_WJ",
+      "human_readable": "US_WJ"
+    },
+    {
+      "name": "US_WJTILDE",
+      "human_readable": "US_WJTILDE"
+    },
+    {
+      "name": "US_Y",
+      "human_readable": "US_Y"
+    },
+    {
+      "name": "US_YGAP",
+      "human_readable": "US_YGAP"
+    },
+    {
+      "name": "US_YGROWTH",
+      "human_readable": "US_YGROWTH"
+    },
+    {
+      "name": "US_YS",
+      "human_readable": "US_YS"
+    },
+    {
+      "name": "US_YSHARE",
+      "human_readable": "US_YSHARE"
+    },
+    {
+      "name": "US_Z",
+      "human_readable": "US_Z"
+    },
+    {
+      "name": "USEA_RER",
+      "human_readable": "USEA_RER"
+    }
   ],
   "shocks": [
-    "EA_EPSRP",
-    "EA_EPSTAUC",
-    "EA_EPSTAUD",
-    "EA_EPSTAUK",
-    "EA_EPSTAUN",
-    "EA_EPSTAUWF",
-    "EA_EPSTAUWH",
-    "EA_EPSTR",
-    "EA_EPSZ",
-    "fiscal_",
-    "interest_",
-    "US_EPSG",
-    "US_EPSTAUC",
-    "US_EPSTAUD",
-    "US_EPSTAUK",
-    "US_EPSTAUN",
-    "US_EPSTAUWF",
-    "US_EPSTAUWH",
-    "US_EPSTR",
-    "US_EPSZ"
+    {
+      "name": "EA_EPSRP",
+      "human_readable": "EA_EPSRP"
+    },
+    {
+      "name": "EA_EPSTAUC",
+      "human_readable": "EA_EPSTAUC"
+    },
+    {
+      "name": "EA_EPSTAUD",
+      "human_readable": "EA_EPSTAUD"
+    },
+    {
+      "name": "EA_EPSTAUK",
+      "human_readable": "EA_EPSTAUK"
+    },
+    {
+      "name": "EA_EPSTAUN",
+      "human_readable": "EA_EPSTAUN"
+    },
+    {
+      "name": "EA_EPSTAUWF",
+      "human_readable": "EA_EPSTAUWF"
+    },
+    {
+      "name": "EA_EPSTAUWH",
+      "human_readable": "EA_EPSTAUWH"
+    },
+    {
+      "name": "EA_EPSTR",
+      "human_readable": "EA_EPSTR"
+    },
+    {
+      "name": "EA_EPSZ",
+      "human_readable": "EA_EPSZ"
+    },
+    {
+      "name": "fiscal_",
+      "human_readable": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    },
+    {
+      "name": "US_EPSG",
+      "human_readable": "US_EPSG"
+    },
+    {
+      "name": "US_EPSTAUC",
+      "human_readable": "US_EPSTAUC"
+    },
+    {
+      "name": "US_EPSTAUD",
+      "human_readable": "US_EPSTAUD"
+    },
+    {
+      "name": "US_EPSTAUK",
+      "human_readable": "US_EPSTAUK"
+    },
+    {
+      "name": "US_EPSTAUN",
+      "human_readable": "US_EPSTAUN"
+    },
+    {
+      "name": "US_EPSTAUWF",
+      "human_readable": "US_EPSTAUWF"
+    },
+    {
+      "name": "US_EPSTAUWH",
+      "human_readable": "US_EPSTAUWH"
+    },
+    {
+      "name": "US_EPSTR",
+      "human_readable": "US_EPSTR"
+    },
+    {
+      "name": "US_EPSZ",
+      "human_readable": "US_EPSZ"
+    }
   ]
 }

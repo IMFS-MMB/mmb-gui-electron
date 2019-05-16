@@ -72,232 +72,907 @@
   "variabledim": 2,
   "al": false,
   "vars": [
-    "b",
-    "c",
-    "c_borr",
-    "c_s",
-    "c_s_borr",
-    "c_s_tot",
-    "c_tot",
-    "cf",
-    "cf_s",
-    "cff",
-    "cff_borr",
-    "cff_s",
-    "cff_s_borr",
-    "cff_s_tot",
-    "cff_tot",
-    "ch",
-    "ch_s",
-    "d",
-    "d_borr",
-    "d_s",
-    "d_s_borr",
-    "df",
-    "df_borr",
-    "df_s",
-    "df_s_borr",
-    "dpc",
-    "dpc_s",
-    "dpd",
-    "dpd_s",
-    "dpemu",
-    "dpf",
-    "dph",
-    "eta",
-    "eta_s",
-    "Fa",
-    "Fa_s",
-    "Faf",
-    "Faf_s",
-    "Fp",
-    "Fp_s",
-    "Fpf",
-    "Fpf_s",
-    "Ga",
-    "Ga_s",
-    "Gaf",
-    "Gaf_s",
-    "Gp",
-    "Gp_s",
-    "Gpf",
-    "Gpf_s",
-    "inflation",
-    "inflationq",
-    "interest",
-    "inv",
-    "inv_borr",
-    "inv_s",
-    "inv_s_borr",
-    "invf",
-    "invf_borr",
-    "invf_s",
-    "invf_s_borr",
-    "l",
-    "l_borr",
-    "l_s",
-    "l_s_borr",
-    "lc",
-    "lc_borr",
-    "lc_s",
-    "lc_s_borr",
-    "lc_s_tot",
-    "lc_tot",
-    "lcf",
-    "lcf_borr",
-    "lcf_s",
-    "lcf_s_borr",
-    "lcf_s_tot",
-    "lcf_tot",
-    "ld",
-    "ld_borr",
-    "ld_s",
-    "ld_s_borr",
-    "ld_s_tot",
-    "ld_tot",
-    "ldf",
-    "ldf_borr",
-    "ldf_s",
-    "ldf_s_borr",
-    "ldf_s_tot",
-    "ldf_tot",
-    "lf",
-    "lf_borr",
-    "lf_s",
-    "lf_s_borr",
-    "mautil",
-    "mautil_s",
-    "mcc",
-    "mcc_s",
-    "mcd",
-    "mcd_s",
-    "omegaa",
-    "omegaa_s",
-    "omegaaf",
-    "omegaaf_s",
-    "omegap",
-    "omegap_s",
-    "omegapf",
-    "omegapf_s",
-    "output",
-    "outputgap",
-    "pdtilde",
-    "pdtilde_s",
-    "pftilde",
-    "phtilde",
-    "prefc",
-    "prefc_s",
-    "prefd",
-    "prefd_s",
-    "premium",
-    "q",
-    "q_s",
-    "qf",
-    "qf_s",
-    "r",
-    "r_s",
-    "rd",
-    "rd_s",
-    "rdf",
-    "rdf_s",
-    "return_default",
-    "return_default_s",
-    "return_defaultf",
-    "return_defaultf_s",
-    "return_nondefault",
-    "return_nondefault_s",
-    "return_nondefaultf",
-    "return_nondefaultf_s",
-    "rf",
-    "rf_s",
-    "risk",
-    "risk_s",
-    "rl",
-    "rl_s",
-    "rlf",
-    "rlf_s",
-    "s_borr",
-    "s_s_borr",
-    "sf_borr",
-    "sf_s_borr",
-    "techc",
-    "techc_s",
-    "techd",
-    "techd_s",
-    "terms",
-    "util",
-    "util_borr",
-    "util_s",
-    "util_s_borr",
-    "varrho",
-    "varrho_borr",
-    "varrho_s",
-    "varrho_s_borr",
-    "varrhof",
-    "varrhof_borr",
-    "varrhof_s",
-    "varrhof_s_borr",
-    "vc",
-    "vc_s",
-    "vd",
-    "vd_s",
-    "wc",
-    "wc_s",
-    "wcf",
-    "wcf_s",
-    "wd",
-    "wd_s",
-    "wdf",
-    "wdf_s",
-    "welf",
-    "welf_borr",
-    "welf_cor",
-    "welf_emu",
-    "welf_per",
-    "welf_s",
-    "welf_s_borr",
-    "XC1",
-    "XC1_s",
-    "XC2",
-    "XC2_s",
-    "XD1",
-    "XD1_s",
-    "XD2",
-    "XD2_s",
-    "y",
-    "y_emu",
-    "y_emuf",
-    "y_s",
-    "yc",
-    "yc_s",
-    "ycf",
-    "ycf_s",
-    "yctilde",
-    "yctilde_s",
-    "yd",
-    "yd_s",
-    "ydf",
-    "ydf_s",
-    "ydtilde",
-    "ydtilde_s",
-    "yf",
-    "yf_s"
+    {
+      "name": "b",
+      "human_readable": "b"
+    },
+    {
+      "name": "c",
+      "human_readable": "c"
+    },
+    {
+      "name": "c_borr",
+      "human_readable": "c_borr"
+    },
+    {
+      "name": "c_s",
+      "human_readable": "c_s"
+    },
+    {
+      "name": "c_s_borr",
+      "human_readable": "c_s_borr"
+    },
+    {
+      "name": "c_s_tot",
+      "human_readable": "c_s_tot"
+    },
+    {
+      "name": "c_tot",
+      "human_readable": "c_tot"
+    },
+    {
+      "name": "cf",
+      "human_readable": "cf"
+    },
+    {
+      "name": "cf_s",
+      "human_readable": "cf_s"
+    },
+    {
+      "name": "cff",
+      "human_readable": "cff"
+    },
+    {
+      "name": "cff_borr",
+      "human_readable": "cff_borr"
+    },
+    {
+      "name": "cff_s",
+      "human_readable": "cff_s"
+    },
+    {
+      "name": "cff_s_borr",
+      "human_readable": "cff_s_borr"
+    },
+    {
+      "name": "cff_s_tot",
+      "human_readable": "cff_s_tot"
+    },
+    {
+      "name": "cff_tot",
+      "human_readable": "cff_tot"
+    },
+    {
+      "name": "ch",
+      "human_readable": "ch"
+    },
+    {
+      "name": "ch_s",
+      "human_readable": "ch_s"
+    },
+    {
+      "name": "d",
+      "human_readable": "d"
+    },
+    {
+      "name": "d_borr",
+      "human_readable": "d_borr"
+    },
+    {
+      "name": "d_s",
+      "human_readable": "d_s"
+    },
+    {
+      "name": "d_s_borr",
+      "human_readable": "d_s_borr"
+    },
+    {
+      "name": "df",
+      "human_readable": "df"
+    },
+    {
+      "name": "df_borr",
+      "human_readable": "df_borr"
+    },
+    {
+      "name": "df_s",
+      "human_readable": "df_s"
+    },
+    {
+      "name": "df_s_borr",
+      "human_readable": "df_s_borr"
+    },
+    {
+      "name": "dpc",
+      "human_readable": "dpc"
+    },
+    {
+      "name": "dpc_s",
+      "human_readable": "dpc_s"
+    },
+    {
+      "name": "dpd",
+      "human_readable": "dpd"
+    },
+    {
+      "name": "dpd_s",
+      "human_readable": "dpd_s"
+    },
+    {
+      "name": "dpemu",
+      "human_readable": "dpemu"
+    },
+    {
+      "name": "dpf",
+      "human_readable": "dpf"
+    },
+    {
+      "name": "dph",
+      "human_readable": "dph"
+    },
+    {
+      "name": "eta",
+      "human_readable": "eta"
+    },
+    {
+      "name": "eta_s",
+      "human_readable": "eta_s"
+    },
+    {
+      "name": "Fa",
+      "human_readable": "Fa"
+    },
+    {
+      "name": "Fa_s",
+      "human_readable": "Fa_s"
+    },
+    {
+      "name": "Faf",
+      "human_readable": "Faf"
+    },
+    {
+      "name": "Faf_s",
+      "human_readable": "Faf_s"
+    },
+    {
+      "name": "Fp",
+      "human_readable": "Fp"
+    },
+    {
+      "name": "Fp_s",
+      "human_readable": "Fp_s"
+    },
+    {
+      "name": "Fpf",
+      "human_readable": "Fpf"
+    },
+    {
+      "name": "Fpf_s",
+      "human_readable": "Fpf_s"
+    },
+    {
+      "name": "Ga",
+      "human_readable": "Ga"
+    },
+    {
+      "name": "Ga_s",
+      "human_readable": "Ga_s"
+    },
+    {
+      "name": "Gaf",
+      "human_readable": "Gaf"
+    },
+    {
+      "name": "Gaf_s",
+      "human_readable": "Gaf_s"
+    },
+    {
+      "name": "Gp",
+      "human_readable": "Gp"
+    },
+    {
+      "name": "Gp_s",
+      "human_readable": "Gp_s"
+    },
+    {
+      "name": "Gpf",
+      "human_readable": "Gpf"
+    },
+    {
+      "name": "Gpf_s",
+      "human_readable": "Gpf_s"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "inv",
+      "human_readable": "inv"
+    },
+    {
+      "name": "inv_borr",
+      "human_readable": "inv_borr"
+    },
+    {
+      "name": "inv_s",
+      "human_readable": "inv_s"
+    },
+    {
+      "name": "inv_s_borr",
+      "human_readable": "inv_s_borr"
+    },
+    {
+      "name": "invf",
+      "human_readable": "invf"
+    },
+    {
+      "name": "invf_borr",
+      "human_readable": "invf_borr"
+    },
+    {
+      "name": "invf_s",
+      "human_readable": "invf_s"
+    },
+    {
+      "name": "invf_s_borr",
+      "human_readable": "invf_s_borr"
+    },
+    {
+      "name": "l",
+      "human_readable": "l"
+    },
+    {
+      "name": "l_borr",
+      "human_readable": "l_borr"
+    },
+    {
+      "name": "l_s",
+      "human_readable": "l_s"
+    },
+    {
+      "name": "l_s_borr",
+      "human_readable": "l_s_borr"
+    },
+    {
+      "name": "lc",
+      "human_readable": "lc"
+    },
+    {
+      "name": "lc_borr",
+      "human_readable": "lc_borr"
+    },
+    {
+      "name": "lc_s",
+      "human_readable": "lc_s"
+    },
+    {
+      "name": "lc_s_borr",
+      "human_readable": "lc_s_borr"
+    },
+    {
+      "name": "lc_s_tot",
+      "human_readable": "lc_s_tot"
+    },
+    {
+      "name": "lc_tot",
+      "human_readable": "lc_tot"
+    },
+    {
+      "name": "lcf",
+      "human_readable": "lcf"
+    },
+    {
+      "name": "lcf_borr",
+      "human_readable": "lcf_borr"
+    },
+    {
+      "name": "lcf_s",
+      "human_readable": "lcf_s"
+    },
+    {
+      "name": "lcf_s_borr",
+      "human_readable": "lcf_s_borr"
+    },
+    {
+      "name": "lcf_s_tot",
+      "human_readable": "lcf_s_tot"
+    },
+    {
+      "name": "lcf_tot",
+      "human_readable": "lcf_tot"
+    },
+    {
+      "name": "ld",
+      "human_readable": "ld"
+    },
+    {
+      "name": "ld_borr",
+      "human_readable": "ld_borr"
+    },
+    {
+      "name": "ld_s",
+      "human_readable": "ld_s"
+    },
+    {
+      "name": "ld_s_borr",
+      "human_readable": "ld_s_borr"
+    },
+    {
+      "name": "ld_s_tot",
+      "human_readable": "ld_s_tot"
+    },
+    {
+      "name": "ld_tot",
+      "human_readable": "ld_tot"
+    },
+    {
+      "name": "ldf",
+      "human_readable": "ldf"
+    },
+    {
+      "name": "ldf_borr",
+      "human_readable": "ldf_borr"
+    },
+    {
+      "name": "ldf_s",
+      "human_readable": "ldf_s"
+    },
+    {
+      "name": "ldf_s_borr",
+      "human_readable": "ldf_s_borr"
+    },
+    {
+      "name": "ldf_s_tot",
+      "human_readable": "ldf_s_tot"
+    },
+    {
+      "name": "ldf_tot",
+      "human_readable": "ldf_tot"
+    },
+    {
+      "name": "lf",
+      "human_readable": "lf"
+    },
+    {
+      "name": "lf_borr",
+      "human_readable": "lf_borr"
+    },
+    {
+      "name": "lf_s",
+      "human_readable": "lf_s"
+    },
+    {
+      "name": "lf_s_borr",
+      "human_readable": "lf_s_borr"
+    },
+    {
+      "name": "mautil",
+      "human_readable": "mautil"
+    },
+    {
+      "name": "mautil_s",
+      "human_readable": "mautil_s"
+    },
+    {
+      "name": "mcc",
+      "human_readable": "mcc"
+    },
+    {
+      "name": "mcc_s",
+      "human_readable": "mcc_s"
+    },
+    {
+      "name": "mcd",
+      "human_readable": "mcd"
+    },
+    {
+      "name": "mcd_s",
+      "human_readable": "mcd_s"
+    },
+    {
+      "name": "omegaa",
+      "human_readable": "omegaa"
+    },
+    {
+      "name": "omegaa_s",
+      "human_readable": "omegaa_s"
+    },
+    {
+      "name": "omegaaf",
+      "human_readable": "omegaaf"
+    },
+    {
+      "name": "omegaaf_s",
+      "human_readable": "omegaaf_s"
+    },
+    {
+      "name": "omegap",
+      "human_readable": "omegap"
+    },
+    {
+      "name": "omegap_s",
+      "human_readable": "omegap_s"
+    },
+    {
+      "name": "omegapf",
+      "human_readable": "omegapf"
+    },
+    {
+      "name": "omegapf_s",
+      "human_readable": "omegapf_s"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "pdtilde",
+      "human_readable": "pdtilde"
+    },
+    {
+      "name": "pdtilde_s",
+      "human_readable": "pdtilde_s"
+    },
+    {
+      "name": "pftilde",
+      "human_readable": "pftilde"
+    },
+    {
+      "name": "phtilde",
+      "human_readable": "phtilde"
+    },
+    {
+      "name": "prefc",
+      "human_readable": "prefc"
+    },
+    {
+      "name": "prefc_s",
+      "human_readable": "prefc_s"
+    },
+    {
+      "name": "prefd",
+      "human_readable": "prefd"
+    },
+    {
+      "name": "prefd_s",
+      "human_readable": "prefd_s"
+    },
+    {
+      "name": "premium",
+      "human_readable": "premium"
+    },
+    {
+      "name": "q",
+      "human_readable": "q"
+    },
+    {
+      "name": "q_s",
+      "human_readable": "q_s"
+    },
+    {
+      "name": "qf",
+      "human_readable": "qf"
+    },
+    {
+      "name": "qf_s",
+      "human_readable": "qf_s"
+    },
+    {
+      "name": "r",
+      "human_readable": "r"
+    },
+    {
+      "name": "r_s",
+      "human_readable": "r_s"
+    },
+    {
+      "name": "rd",
+      "human_readable": "rd"
+    },
+    {
+      "name": "rd_s",
+      "human_readable": "rd_s"
+    },
+    {
+      "name": "rdf",
+      "human_readable": "rdf"
+    },
+    {
+      "name": "rdf_s",
+      "human_readable": "rdf_s"
+    },
+    {
+      "name": "return_default",
+      "human_readable": "return_default"
+    },
+    {
+      "name": "return_default_s",
+      "human_readable": "return_default_s"
+    },
+    {
+      "name": "return_defaultf",
+      "human_readable": "return_defaultf"
+    },
+    {
+      "name": "return_defaultf_s",
+      "human_readable": "return_defaultf_s"
+    },
+    {
+      "name": "return_nondefault",
+      "human_readable": "return_nondefault"
+    },
+    {
+      "name": "return_nondefault_s",
+      "human_readable": "return_nondefault_s"
+    },
+    {
+      "name": "return_nondefaultf",
+      "human_readable": "return_nondefaultf"
+    },
+    {
+      "name": "return_nondefaultf_s",
+      "human_readable": "return_nondefaultf_s"
+    },
+    {
+      "name": "rf",
+      "human_readable": "rf"
+    },
+    {
+      "name": "rf_s",
+      "human_readable": "rf_s"
+    },
+    {
+      "name": "risk",
+      "human_readable": "risk"
+    },
+    {
+      "name": "risk_s",
+      "human_readable": "risk_s"
+    },
+    {
+      "name": "rl",
+      "human_readable": "rl"
+    },
+    {
+      "name": "rl_s",
+      "human_readable": "rl_s"
+    },
+    {
+      "name": "rlf",
+      "human_readable": "rlf"
+    },
+    {
+      "name": "rlf_s",
+      "human_readable": "rlf_s"
+    },
+    {
+      "name": "s_borr",
+      "human_readable": "s_borr"
+    },
+    {
+      "name": "s_s_borr",
+      "human_readable": "s_s_borr"
+    },
+    {
+      "name": "sf_borr",
+      "human_readable": "sf_borr"
+    },
+    {
+      "name": "sf_s_borr",
+      "human_readable": "sf_s_borr"
+    },
+    {
+      "name": "techc",
+      "human_readable": "techc"
+    },
+    {
+      "name": "techc_s",
+      "human_readable": "techc_s"
+    },
+    {
+      "name": "techd",
+      "human_readable": "techd"
+    },
+    {
+      "name": "techd_s",
+      "human_readable": "techd_s"
+    },
+    {
+      "name": "terms",
+      "human_readable": "terms"
+    },
+    {
+      "name": "util",
+      "human_readable": "util"
+    },
+    {
+      "name": "util_borr",
+      "human_readable": "util_borr"
+    },
+    {
+      "name": "util_s",
+      "human_readable": "util_s"
+    },
+    {
+      "name": "util_s_borr",
+      "human_readable": "util_s_borr"
+    },
+    {
+      "name": "varrho",
+      "human_readable": "varrho"
+    },
+    {
+      "name": "varrho_borr",
+      "human_readable": "varrho_borr"
+    },
+    {
+      "name": "varrho_s",
+      "human_readable": "varrho_s"
+    },
+    {
+      "name": "varrho_s_borr",
+      "human_readable": "varrho_s_borr"
+    },
+    {
+      "name": "varrhof",
+      "human_readable": "varrhof"
+    },
+    {
+      "name": "varrhof_borr",
+      "human_readable": "varrhof_borr"
+    },
+    {
+      "name": "varrhof_s",
+      "human_readable": "varrhof_s"
+    },
+    {
+      "name": "varrhof_s_borr",
+      "human_readable": "varrhof_s_borr"
+    },
+    {
+      "name": "vc",
+      "human_readable": "vc"
+    },
+    {
+      "name": "vc_s",
+      "human_readable": "vc_s"
+    },
+    {
+      "name": "vd",
+      "human_readable": "vd"
+    },
+    {
+      "name": "vd_s",
+      "human_readable": "vd_s"
+    },
+    {
+      "name": "wc",
+      "human_readable": "wc"
+    },
+    {
+      "name": "wc_s",
+      "human_readable": "wc_s"
+    },
+    {
+      "name": "wcf",
+      "human_readable": "wcf"
+    },
+    {
+      "name": "wcf_s",
+      "human_readable": "wcf_s"
+    },
+    {
+      "name": "wd",
+      "human_readable": "wd"
+    },
+    {
+      "name": "wd_s",
+      "human_readable": "wd_s"
+    },
+    {
+      "name": "wdf",
+      "human_readable": "wdf"
+    },
+    {
+      "name": "wdf_s",
+      "human_readable": "wdf_s"
+    },
+    {
+      "name": "welf",
+      "human_readable": "welf"
+    },
+    {
+      "name": "welf_borr",
+      "human_readable": "welf_borr"
+    },
+    {
+      "name": "welf_cor",
+      "human_readable": "welf_cor"
+    },
+    {
+      "name": "welf_emu",
+      "human_readable": "welf_emu"
+    },
+    {
+      "name": "welf_per",
+      "human_readable": "welf_per"
+    },
+    {
+      "name": "welf_s",
+      "human_readable": "welf_s"
+    },
+    {
+      "name": "welf_s_borr",
+      "human_readable": "welf_s_borr"
+    },
+    {
+      "name": "XC1",
+      "human_readable": "XC1"
+    },
+    {
+      "name": "XC1_s",
+      "human_readable": "XC1_s"
+    },
+    {
+      "name": "XC2",
+      "human_readable": "XC2"
+    },
+    {
+      "name": "XC2_s",
+      "human_readable": "XC2_s"
+    },
+    {
+      "name": "XD1",
+      "human_readable": "XD1"
+    },
+    {
+      "name": "XD1_s",
+      "human_readable": "XD1_s"
+    },
+    {
+      "name": "XD2",
+      "human_readable": "XD2"
+    },
+    {
+      "name": "XD2_s",
+      "human_readable": "XD2_s"
+    },
+    {
+      "name": "y",
+      "human_readable": "y"
+    },
+    {
+      "name": "y_emu",
+      "human_readable": "y_emu"
+    },
+    {
+      "name": "y_emuf",
+      "human_readable": "y_emuf"
+    },
+    {
+      "name": "y_s",
+      "human_readable": "y_s"
+    },
+    {
+      "name": "yc",
+      "human_readable": "yc"
+    },
+    {
+      "name": "yc_s",
+      "human_readable": "yc_s"
+    },
+    {
+      "name": "ycf",
+      "human_readable": "ycf"
+    },
+    {
+      "name": "ycf_s",
+      "human_readable": "ycf_s"
+    },
+    {
+      "name": "yctilde",
+      "human_readable": "yctilde"
+    },
+    {
+      "name": "yctilde_s",
+      "human_readable": "yctilde_s"
+    },
+    {
+      "name": "yd",
+      "human_readable": "yd"
+    },
+    {
+      "name": "yd_s",
+      "human_readable": "yd_s"
+    },
+    {
+      "name": "ydf",
+      "human_readable": "ydf"
+    },
+    {
+      "name": "ydf_s",
+      "human_readable": "ydf_s"
+    },
+    {
+      "name": "ydtilde",
+      "human_readable": "ydtilde"
+    },
+    {
+      "name": "ydtilde_s",
+      "human_readable": "ydtilde_s"
+    },
+    {
+      "name": "yf",
+      "human_readable": "yf"
+    },
+    {
+      "name": "yf_s",
+      "human_readable": "yf_s"
+    }
   ],
   "shocks": [
-    "e_prefc",
-    "e_prefc_s",
-    "e_prefd",
-    "e_prefd_com",
-    "e_prefd_s",
-    "e_premium",
-    "e_risk",
-    "e_risk_s",
-    "e_tech",
-    "e_techc",
-    "e_techc_com",
-    "e_techc_s",
-    "e_techd",
-    "e_techd_s",
-    "interest_"
+    {
+      "name": "e_prefc",
+      "human_readable": "e_prefc"
+    },
+    {
+      "name": "e_prefc_s",
+      "human_readable": "e_prefc_s"
+    },
+    {
+      "name": "e_prefd",
+      "human_readable": "e_prefd"
+    },
+    {
+      "name": "e_prefd_com",
+      "human_readable": "e_prefd_com"
+    },
+    {
+      "name": "e_prefd_s",
+      "human_readable": "e_prefd_s"
+    },
+    {
+      "name": "e_premium",
+      "human_readable": "e_premium"
+    },
+    {
+      "name": "e_risk",
+      "human_readable": "e_risk"
+    },
+    {
+      "name": "e_risk_s",
+      "human_readable": "e_risk_s"
+    },
+    {
+      "name": "e_tech",
+      "human_readable": "e_tech"
+    },
+    {
+      "name": "e_techc",
+      "human_readable": "e_techc"
+    },
+    {
+      "name": "e_techc_com",
+      "human_readable": "e_techc_com"
+    },
+    {
+      "name": "e_techc_s",
+      "human_readable": "e_techc_s"
+    },
+    {
+      "name": "e_techd",
+      "human_readable": "e_techd"
+    },
+    {
+      "name": "e_techd_s",
+      "human_readable": "e_techd_s"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    }
   ]
 }

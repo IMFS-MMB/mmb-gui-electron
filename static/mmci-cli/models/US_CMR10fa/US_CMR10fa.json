@@ -40,74 +40,275 @@
   "variabledim": 2,
   "al": false,
   "vars": [
-    "btotflexU",
-    "btotU",
-    "cflexU",
-    "cU",
-    "epsilU",
-    "FpXflexU",
-    "FpXU",
-    "FwXflexU",
-    "FwXU",
-    "gammaU",
-    "gU",
-    "hflexU",
-    "hU",
-    "iflexU",
-    "inflation",
-    "inflationq",
-    "interest",
-    "iU",
-    "kbarflexU",
-    "kbarU",
-    "lambdafU",
-    "lambdazflexU",
-    "lambdazU",
-    "muupU",
-    "muzstarU",
-    "nflexU",
-    "nU",
-    "omegabarflexU",
-    "omegabarU",
-    "output",
-    "outputgap",
-    "piflexU",
-    "pitargetU",
-    "piU",
-    "pstarU",
-    "qflexU",
-    "qU",
-    "ReXflexU",
-    "ReXU",
-    "rkflexU",
-    "rkU",
-    "RkXflexU",
-    "RkXU",
-    "sflexU",
-    "sigmaU",
-    "sU",
-    "tauoU",
-    "uflexU",
-    "uU",
-    "wflexU",
-    "wstarU",
-    "wU",
-    "YflexU",
-    "YU",
-    "zetacU",
-    "zetaiU"
+    {
+      "name": "btotflexU",
+      "human_readable": "btotflexU"
+    },
+    {
+      "name": "btotU",
+      "human_readable": "btotU"
+    },
+    {
+      "name": "cflexU",
+      "human_readable": "cflexU"
+    },
+    {
+      "name": "cU",
+      "human_readable": "cU"
+    },
+    {
+      "name": "epsilU",
+      "human_readable": "epsilU"
+    },
+    {
+      "name": "FpXflexU",
+      "human_readable": "FpXflexU"
+    },
+    {
+      "name": "FpXU",
+      "human_readable": "FpXU"
+    },
+    {
+      "name": "FwXflexU",
+      "human_readable": "FwXflexU"
+    },
+    {
+      "name": "FwXU",
+      "human_readable": "FwXU"
+    },
+    {
+      "name": "gammaU",
+      "human_readable": "gammaU"
+    },
+    {
+      "name": "gU",
+      "human_readable": "gU"
+    },
+    {
+      "name": "hflexU",
+      "human_readable": "hflexU"
+    },
+    {
+      "name": "hU",
+      "human_readable": "hU"
+    },
+    {
+      "name": "iflexU",
+      "human_readable": "iflexU"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "iU",
+      "human_readable": "iU"
+    },
+    {
+      "name": "kbarflexU",
+      "human_readable": "kbarflexU"
+    },
+    {
+      "name": "kbarU",
+      "human_readable": "kbarU"
+    },
+    {
+      "name": "lambdafU",
+      "human_readable": "lambdafU"
+    },
+    {
+      "name": "lambdazflexU",
+      "human_readable": "lambdazflexU"
+    },
+    {
+      "name": "lambdazU",
+      "human_readable": "lambdazU"
+    },
+    {
+      "name": "muupU",
+      "human_readable": "muupU"
+    },
+    {
+      "name": "muzstarU",
+      "human_readable": "muzstarU"
+    },
+    {
+      "name": "nflexU",
+      "human_readable": "nflexU"
+    },
+    {
+      "name": "nU",
+      "human_readable": "nU"
+    },
+    {
+      "name": "omegabarflexU",
+      "human_readable": "omegabarflexU"
+    },
+    {
+      "name": "omegabarU",
+      "human_readable": "omegabarU"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "piflexU",
+      "human_readable": "piflexU"
+    },
+    {
+      "name": "pitargetU",
+      "human_readable": "pitargetU"
+    },
+    {
+      "name": "piU",
+      "human_readable": "piU"
+    },
+    {
+      "name": "pstarU",
+      "human_readable": "pstarU"
+    },
+    {
+      "name": "qflexU",
+      "human_readable": "qflexU"
+    },
+    {
+      "name": "qU",
+      "human_readable": "qU"
+    },
+    {
+      "name": "ReXflexU",
+      "human_readable": "ReXflexU"
+    },
+    {
+      "name": "ReXU",
+      "human_readable": "ReXU"
+    },
+    {
+      "name": "rkflexU",
+      "human_readable": "rkflexU"
+    },
+    {
+      "name": "rkU",
+      "human_readable": "rkU"
+    },
+    {
+      "name": "RkXflexU",
+      "human_readable": "RkXflexU"
+    },
+    {
+      "name": "RkXU",
+      "human_readable": "RkXU"
+    },
+    {
+      "name": "sflexU",
+      "human_readable": "sflexU"
+    },
+    {
+      "name": "sigmaU",
+      "human_readable": "sigmaU"
+    },
+    {
+      "name": "sU",
+      "human_readable": "sU"
+    },
+    {
+      "name": "tauoU",
+      "human_readable": "tauoU"
+    },
+    {
+      "name": "uflexU",
+      "human_readable": "uflexU"
+    },
+    {
+      "name": "uU",
+      "human_readable": "uU"
+    },
+    {
+      "name": "wflexU",
+      "human_readable": "wflexU"
+    },
+    {
+      "name": "wstarU",
+      "human_readable": "wstarU"
+    },
+    {
+      "name": "wU",
+      "human_readable": "wU"
+    },
+    {
+      "name": "YflexU",
+      "human_readable": "YflexU"
+    },
+    {
+      "name": "YU",
+      "human_readable": "YU"
+    },
+    {
+      "name": "zetacU",
+      "human_readable": "zetacU"
+    },
+    {
+      "name": "zetaiU",
+      "human_readable": "zetaiU"
+    }
   ],
   "shocks": [
-    "e_epsilU",
-    "e_gammaU",
-    "e_gU",
-    "e_lambdafU",
-    "e_muupU",
-    "e_muzstarU",
-    "e_pitargetU",
-    "e_sigmaU",
-    "e_tauoU",
-    "e_zetaiU",
-    "interest_"
+    {
+      "name": "e_epsilU",
+      "human_readable": "e_epsilU"
+    },
+    {
+      "name": "e_gammaU",
+      "human_readable": "e_gammaU"
+    },
+    {
+      "name": "e_gU",
+      "human_readable": "e_gU"
+    },
+    {
+      "name": "e_lambdafU",
+      "human_readable": "e_lambdafU"
+    },
+    {
+      "name": "e_muupU",
+      "human_readable": "e_muupU"
+    },
+    {
+      "name": "e_muzstarU",
+      "human_readable": "e_muzstarU"
+    },
+    {
+      "name": "e_pitargetU",
+      "human_readable": "e_pitargetU"
+    },
+    {
+      "name": "e_sigmaU",
+      "human_readable": "e_sigmaU"
+    },
+    {
+      "name": "e_tauoU",
+      "human_readable": "e_tauoU"
+    },
+    {
+      "name": "e_zetaiU",
+      "human_readable": "e_zetaiU"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    }
   ]
 }

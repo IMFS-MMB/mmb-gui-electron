@@ -39,262 +39,1027 @@
   "variabledim": 2,
   "al": false,
   "vars": [
-    "AF",
-    "AH",
-    "BIGGAM_MONF",
-    "BIGGAM_MONH",
-    "BIGGAM_MOTF",
-    "BIGGAM_MOTH",
-    "BIGGAM_O_NF",
-    "BIGGAM_O_NH",
-    "BIGGAM_O_TF",
-    "BIGGAM_O_TH",
-    "BIGGAMF",
-    "BIGGAMH",
-    "BIGGAMIMPF",
-    "BIGGAMIMPH",
-    "BIGGAMMF",
-    "BIGGAMMH",
-    "BIGGAMNF",
-    "BIGGAMNH",
-    "BIGGAMQF",
-    "BIGGAMQH",
-    "CAPAF",
-    "CAPAH",
-    "CF",
-    "CF_NAT",
-    "CH",
-    "CH_NAT",
-    "CURBALF_RAT",
-    "CURBALH_RAT",
-    "DEEF",
-    "DEEH",
-    "DEPEX",
-    "E_GAF",
-    "EXPORTSF",
-    "EXPORTSF_NAT",
-    "EXPORTSH",
-    "EXPORTSH_NAT",
-    "EYEF",
-    "EYEH",
-    "fispol",
-    "GAF",
-    "GAH",
-    "GAMMAF",
-    "GAMMAH",
-    "GDPF",
-    "GDPF_NAT",
-    "GDPGAPF",
-    "GDPGAPH",
-    "GDPH",
-    "GDPH_NAT",
-    "GF_NAT",
-    "GH_NAT",
-    "GNF",
-    "GNH",
-    "HF",
-    "HH",
-    "IMPORTSF",
-    "IMPORTSF_NAT",
-    "IMPORTSH",
-    "IMPORTSH_NAT",
-    "inflation",
-    "inflationq",
-    "interest",
-    "K_OF",
-    "K_OF_RAT",
-    "K_OH",
-    "K_OH_RAT",
-    "KF",
-    "KH",
-    "KNF",
-    "KNF_RAT",
-    "KNH",
-    "KNH_RAT",
-    "KTF",
-    "KTF_RAT",
-    "KTH",
-    "KTH_RAT",
-    "L_OF",
-    "L_OH",
-    "LANDF",
-    "LANDH",
-    "LF",
-    "LH",
-    "LNF",
-    "LNH",
-    "LTF",
-    "LTH",
-    "M_ONF",
-    "M_ONH",
-    "M_OTF",
-    "M_OTH",
-    "MARGUTF",
-    "MARGUTH",
-    "MF",
-    "MF_NAT",
-    "MH",
-    "MH_NAT",
-    "NF",
-    "NH",
-    "NNF",
-    "NNH",
-    "O_NF",
-    "O_NH",
-    "O_TF",
-    "O_TH",
-    "output",
-    "outputgap",
-    "PIE4F",
-    "PIE4H",
-    "PIE4TARF",
-    "PIE4TARH",
-    "PIEBARMF",
-    "PIEBARMH",
-    "PIEBARQF",
-    "PIEBARQH",
-    "PIEF",
-    "PIEH",
-    "PIENF",
-    "PIENH",
-    "PIEWF",
-    "PIEWH",
-    "PSIF",
-    "PSIH",
-    "PSIPRIMEF",
-    "PSIPRIMEH",
-    "Q_ONF",
-    "Q_ONH",
-    "Q_OTF",
-    "Q_OTH",
-    "QF",
-    "QH",
-    "REALBF",
-    "REALBH",
-    "REALEX",
-    "REALEXF",
-    "REALEXH",
-    "REALFINH",
-    "REALMCNF",
-    "REALMCNH",
-    "REALMCTF",
-    "REALMCTH",
-    "REALMONEYF",
-    "REALMONEYH",
-    "REALP_MOF",
-    "REALP_MOH",
-    "REALP_ONF",
-    "REALP_ONH",
-    "REALP_OTF",
-    "REALP_OTH",
-    "REALP_QOF",
-    "REALP_QOH",
-    "REALPBARMF",
-    "REALPBARMH",
-    "REALPBARQF",
-    "REALPBARQH",
-    "REALPLANDF",
-    "REALPLANDH",
-    "REALPMF",
-    "REALPMH",
-    "REALPNF",
-    "REALPNH",
-    "REALPQF",
-    "REALPQH",
-    "REALPXF",
-    "REALPXH",
-    "REALRF",
-    "REALRH",
-    "REALTBALF",
-    "REALTBALH",
-    "REALWF",
-    "REALWH",
-    "RNOMF",
-    "RNOMH",
-    "SHOPF",
-    "SHOPH",
-    "SHOPPRIMEF",
-    "SHOPPRIMEH",
-    "T_OF",
-    "T_OH",
-    "TF",
-    "TH",
-    "VELOF",
-    "VELOH",
-    "VPRIMEF",
-    "VPRIMEH",
-    "XF_NAT",
-    "XH_NAT",
-    "XI",
-    "Z_OF",
-    "Z_OH",
-    "ZBF",
-    "ZBH",
-    "ZEYEF",
-    "ZEYEH",
-    "ZNF",
-    "ZNH",
-    "ZTF",
-    "ZTH",
-    "ZUF",
-    "ZUH",
-    "ZZ_C_SHARF",
-    "ZZ_C_SHARH",
-    "ZZ_CF",
-    "ZZ_CH",
-    "ZZ_CURBALF_RAT",
-    "ZZ_CURBALH_RAT",
-    "ZZ_DPIE4F",
-    "ZZ_DPIE4H",
-    "ZZ_DRNOMF",
-    "ZZ_DRNOMH",
-    "ZZ_EXPORTSF",
-    "ZZ_EXPORTSH",
-    "ZZ_EYE_SHARF",
-    "ZZ_EYE_SHARH",
-    "ZZ_EYEF",
-    "ZZ_EYEH",
-    "ZZ_GDP_PPP_RATH",
-    "ZZ_GDPF",
-    "ZZ_GDPH",
-    "ZZ_GF",
-    "ZZ_GH",
-    "ZZ_IMPORTSF",
-    "ZZ_IMPORTSH",
-    "ZZ_M_O_SHARF",
-    "ZZ_M_O_SHARH",
-    "ZZ_M_ON_SHARF",
-    "ZZ_M_ON_SHARH",
-    "ZZ_M_OT_SHARF",
-    "ZZ_M_OT_SHARH",
-    "ZZ_M_SHARF",
-    "ZZ_M_SHARH",
-    "ZZ_N_SHARF",
-    "ZZ_N_SHARH",
-    "ZZ_PIE4F",
-    "ZZ_PIE4H",
-    "ZZ_REALEX",
-    "ZZ_RNOMF",
-    "ZZ_RNOMH",
-    "ZZ_UTILITYF",
-    "ZZ_UTILITYH",
-    "ZZ_XBALF_TOT_RAT",
-    "ZZ_XBALH_TOT_RAT"
+    {
+      "name": "AF",
+      "human_readable": "AF"
+    },
+    {
+      "name": "AH",
+      "human_readable": "AH"
+    },
+    {
+      "name": "BIGGAM_MONF",
+      "human_readable": "BIGGAM_MONF"
+    },
+    {
+      "name": "BIGGAM_MONH",
+      "human_readable": "BIGGAM_MONH"
+    },
+    {
+      "name": "BIGGAM_MOTF",
+      "human_readable": "BIGGAM_MOTF"
+    },
+    {
+      "name": "BIGGAM_MOTH",
+      "human_readable": "BIGGAM_MOTH"
+    },
+    {
+      "name": "BIGGAM_O_NF",
+      "human_readable": "BIGGAM_O_NF"
+    },
+    {
+      "name": "BIGGAM_O_NH",
+      "human_readable": "BIGGAM_O_NH"
+    },
+    {
+      "name": "BIGGAM_O_TF",
+      "human_readable": "BIGGAM_O_TF"
+    },
+    {
+      "name": "BIGGAM_O_TH",
+      "human_readable": "BIGGAM_O_TH"
+    },
+    {
+      "name": "BIGGAMF",
+      "human_readable": "BIGGAMF"
+    },
+    {
+      "name": "BIGGAMH",
+      "human_readable": "BIGGAMH"
+    },
+    {
+      "name": "BIGGAMIMPF",
+      "human_readable": "BIGGAMIMPF"
+    },
+    {
+      "name": "BIGGAMIMPH",
+      "human_readable": "BIGGAMIMPH"
+    },
+    {
+      "name": "BIGGAMMF",
+      "human_readable": "BIGGAMMF"
+    },
+    {
+      "name": "BIGGAMMH",
+      "human_readable": "BIGGAMMH"
+    },
+    {
+      "name": "BIGGAMNF",
+      "human_readable": "BIGGAMNF"
+    },
+    {
+      "name": "BIGGAMNH",
+      "human_readable": "BIGGAMNH"
+    },
+    {
+      "name": "BIGGAMQF",
+      "human_readable": "BIGGAMQF"
+    },
+    {
+      "name": "BIGGAMQH",
+      "human_readable": "BIGGAMQH"
+    },
+    {
+      "name": "CAPAF",
+      "human_readable": "CAPAF"
+    },
+    {
+      "name": "CAPAH",
+      "human_readable": "CAPAH"
+    },
+    {
+      "name": "CF",
+      "human_readable": "CF"
+    },
+    {
+      "name": "CF_NAT",
+      "human_readable": "CF_NAT"
+    },
+    {
+      "name": "CH",
+      "human_readable": "CH"
+    },
+    {
+      "name": "CH_NAT",
+      "human_readable": "CH_NAT"
+    },
+    {
+      "name": "CURBALF_RAT",
+      "human_readable": "CURBALF_RAT"
+    },
+    {
+      "name": "CURBALH_RAT",
+      "human_readable": "CURBALH_RAT"
+    },
+    {
+      "name": "DEEF",
+      "human_readable": "DEEF"
+    },
+    {
+      "name": "DEEH",
+      "human_readable": "DEEH"
+    },
+    {
+      "name": "DEPEX",
+      "human_readable": "DEPEX"
+    },
+    {
+      "name": "E_GAF",
+      "human_readable": "E_GAF"
+    },
+    {
+      "name": "EXPORTSF",
+      "human_readable": "EXPORTSF"
+    },
+    {
+      "name": "EXPORTSF_NAT",
+      "human_readable": "EXPORTSF_NAT"
+    },
+    {
+      "name": "EXPORTSH",
+      "human_readable": "EXPORTSH"
+    },
+    {
+      "name": "EXPORTSH_NAT",
+      "human_readable": "EXPORTSH_NAT"
+    },
+    {
+      "name": "EYEF",
+      "human_readable": "EYEF"
+    },
+    {
+      "name": "EYEH",
+      "human_readable": "EYEH"
+    },
+    {
+      "name": "fispol",
+      "human_readable": "fispol"
+    },
+    {
+      "name": "GAF",
+      "human_readable": "GAF"
+    },
+    {
+      "name": "GAH",
+      "human_readable": "GAH"
+    },
+    {
+      "name": "GAMMAF",
+      "human_readable": "GAMMAF"
+    },
+    {
+      "name": "GAMMAH",
+      "human_readable": "GAMMAH"
+    },
+    {
+      "name": "GDPF",
+      "human_readable": "GDPF"
+    },
+    {
+      "name": "GDPF_NAT",
+      "human_readable": "GDPF_NAT"
+    },
+    {
+      "name": "GDPGAPF",
+      "human_readable": "GDPGAPF"
+    },
+    {
+      "name": "GDPGAPH",
+      "human_readable": "GDPGAPH"
+    },
+    {
+      "name": "GDPH",
+      "human_readable": "GDPH"
+    },
+    {
+      "name": "GDPH_NAT",
+      "human_readable": "GDPH_NAT"
+    },
+    {
+      "name": "GF_NAT",
+      "human_readable": "GF_NAT"
+    },
+    {
+      "name": "GH_NAT",
+      "human_readable": "GH_NAT"
+    },
+    {
+      "name": "GNF",
+      "human_readable": "GNF"
+    },
+    {
+      "name": "GNH",
+      "human_readable": "GNH"
+    },
+    {
+      "name": "HF",
+      "human_readable": "HF"
+    },
+    {
+      "name": "HH",
+      "human_readable": "HH"
+    },
+    {
+      "name": "IMPORTSF",
+      "human_readable": "IMPORTSF"
+    },
+    {
+      "name": "IMPORTSF_NAT",
+      "human_readable": "IMPORTSF_NAT"
+    },
+    {
+      "name": "IMPORTSH",
+      "human_readable": "IMPORTSH"
+    },
+    {
+      "name": "IMPORTSH_NAT",
+      "human_readable": "IMPORTSH_NAT"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "K_OF",
+      "human_readable": "K_OF"
+    },
+    {
+      "name": "K_OF_RAT",
+      "human_readable": "K_OF_RAT"
+    },
+    {
+      "name": "K_OH",
+      "human_readable": "K_OH"
+    },
+    {
+      "name": "K_OH_RAT",
+      "human_readable": "K_OH_RAT"
+    },
+    {
+      "name": "KF",
+      "human_readable": "KF"
+    },
+    {
+      "name": "KH",
+      "human_readable": "KH"
+    },
+    {
+      "name": "KNF",
+      "human_readable": "KNF"
+    },
+    {
+      "name": "KNF_RAT",
+      "human_readable": "KNF_RAT"
+    },
+    {
+      "name": "KNH",
+      "human_readable": "KNH"
+    },
+    {
+      "name": "KNH_RAT",
+      "human_readable": "KNH_RAT"
+    },
+    {
+      "name": "KTF",
+      "human_readable": "KTF"
+    },
+    {
+      "name": "KTF_RAT",
+      "human_readable": "KTF_RAT"
+    },
+    {
+      "name": "KTH",
+      "human_readable": "KTH"
+    },
+    {
+      "name": "KTH_RAT",
+      "human_readable": "KTH_RAT"
+    },
+    {
+      "name": "L_OF",
+      "human_readable": "L_OF"
+    },
+    {
+      "name": "L_OH",
+      "human_readable": "L_OH"
+    },
+    {
+      "name": "LANDF",
+      "human_readable": "LANDF"
+    },
+    {
+      "name": "LANDH",
+      "human_readable": "LANDH"
+    },
+    {
+      "name": "LF",
+      "human_readable": "LF"
+    },
+    {
+      "name": "LH",
+      "human_readable": "LH"
+    },
+    {
+      "name": "LNF",
+      "human_readable": "LNF"
+    },
+    {
+      "name": "LNH",
+      "human_readable": "LNH"
+    },
+    {
+      "name": "LTF",
+      "human_readable": "LTF"
+    },
+    {
+      "name": "LTH",
+      "human_readable": "LTH"
+    },
+    {
+      "name": "M_ONF",
+      "human_readable": "M_ONF"
+    },
+    {
+      "name": "M_ONH",
+      "human_readable": "M_ONH"
+    },
+    {
+      "name": "M_OTF",
+      "human_readable": "M_OTF"
+    },
+    {
+      "name": "M_OTH",
+      "human_readable": "M_OTH"
+    },
+    {
+      "name": "MARGUTF",
+      "human_readable": "MARGUTF"
+    },
+    {
+      "name": "MARGUTH",
+      "human_readable": "MARGUTH"
+    },
+    {
+      "name": "MF",
+      "human_readable": "MF"
+    },
+    {
+      "name": "MF_NAT",
+      "human_readable": "MF_NAT"
+    },
+    {
+      "name": "MH",
+      "human_readable": "MH"
+    },
+    {
+      "name": "MH_NAT",
+      "human_readable": "MH_NAT"
+    },
+    {
+      "name": "NF",
+      "human_readable": "NF"
+    },
+    {
+      "name": "NH",
+      "human_readable": "NH"
+    },
+    {
+      "name": "NNF",
+      "human_readable": "NNF"
+    },
+    {
+      "name": "NNH",
+      "human_readable": "NNH"
+    },
+    {
+      "name": "O_NF",
+      "human_readable": "O_NF"
+    },
+    {
+      "name": "O_NH",
+      "human_readable": "O_NH"
+    },
+    {
+      "name": "O_TF",
+      "human_readable": "O_TF"
+    },
+    {
+      "name": "O_TH",
+      "human_readable": "O_TH"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "PIE4F",
+      "human_readable": "PIE4F"
+    },
+    {
+      "name": "PIE4H",
+      "human_readable": "PIE4H"
+    },
+    {
+      "name": "PIE4TARF",
+      "human_readable": "PIE4TARF"
+    },
+    {
+      "name": "PIE4TARH",
+      "human_readable": "PIE4TARH"
+    },
+    {
+      "name": "PIEBARMF",
+      "human_readable": "PIEBARMF"
+    },
+    {
+      "name": "PIEBARMH",
+      "human_readable": "PIEBARMH"
+    },
+    {
+      "name": "PIEBARQF",
+      "human_readable": "PIEBARQF"
+    },
+    {
+      "name": "PIEBARQH",
+      "human_readable": "PIEBARQH"
+    },
+    {
+      "name": "PIEF",
+      "human_readable": "PIEF"
+    },
+    {
+      "name": "PIEH",
+      "human_readable": "PIEH"
+    },
+    {
+      "name": "PIENF",
+      "human_readable": "PIENF"
+    },
+    {
+      "name": "PIENH",
+      "human_readable": "PIENH"
+    },
+    {
+      "name": "PIEWF",
+      "human_readable": "PIEWF"
+    },
+    {
+      "name": "PIEWH",
+      "human_readable": "PIEWH"
+    },
+    {
+      "name": "PSIF",
+      "human_readable": "PSIF"
+    },
+    {
+      "name": "PSIH",
+      "human_readable": "PSIH"
+    },
+    {
+      "name": "PSIPRIMEF",
+      "human_readable": "PSIPRIMEF"
+    },
+    {
+      "name": "PSIPRIMEH",
+      "human_readable": "PSIPRIMEH"
+    },
+    {
+      "name": "Q_ONF",
+      "human_readable": "Q_ONF"
+    },
+    {
+      "name": "Q_ONH",
+      "human_readable": "Q_ONH"
+    },
+    {
+      "name": "Q_OTF",
+      "human_readable": "Q_OTF"
+    },
+    {
+      "name": "Q_OTH",
+      "human_readable": "Q_OTH"
+    },
+    {
+      "name": "QF",
+      "human_readable": "QF"
+    },
+    {
+      "name": "QH",
+      "human_readable": "QH"
+    },
+    {
+      "name": "REALBF",
+      "human_readable": "REALBF"
+    },
+    {
+      "name": "REALBH",
+      "human_readable": "REALBH"
+    },
+    {
+      "name": "REALEX",
+      "human_readable": "REALEX"
+    },
+    {
+      "name": "REALEXF",
+      "human_readable": "REALEXF"
+    },
+    {
+      "name": "REALEXH",
+      "human_readable": "REALEXH"
+    },
+    {
+      "name": "REALFINH",
+      "human_readable": "REALFINH"
+    },
+    {
+      "name": "REALMCNF",
+      "human_readable": "REALMCNF"
+    },
+    {
+      "name": "REALMCNH",
+      "human_readable": "REALMCNH"
+    },
+    {
+      "name": "REALMCTF",
+      "human_readable": "REALMCTF"
+    },
+    {
+      "name": "REALMCTH",
+      "human_readable": "REALMCTH"
+    },
+    {
+      "name": "REALMONEYF",
+      "human_readable": "REALMONEYF"
+    },
+    {
+      "name": "REALMONEYH",
+      "human_readable": "REALMONEYH"
+    },
+    {
+      "name": "REALP_MOF",
+      "human_readable": "REALP_MOF"
+    },
+    {
+      "name": "REALP_MOH",
+      "human_readable": "REALP_MOH"
+    },
+    {
+      "name": "REALP_ONF",
+      "human_readable": "REALP_ONF"
+    },
+    {
+      "name": "REALP_ONH",
+      "human_readable": "REALP_ONH"
+    },
+    {
+      "name": "REALP_OTF",
+      "human_readable": "REALP_OTF"
+    },
+    {
+      "name": "REALP_OTH",
+      "human_readable": "REALP_OTH"
+    },
+    {
+      "name": "REALP_QOF",
+      "human_readable": "REALP_QOF"
+    },
+    {
+      "name": "REALP_QOH",
+      "human_readable": "REALP_QOH"
+    },
+    {
+      "name": "REALPBARMF",
+      "human_readable": "REALPBARMF"
+    },
+    {
+      "name": "REALPBARMH",
+      "human_readable": "REALPBARMH"
+    },
+    {
+      "name": "REALPBARQF",
+      "human_readable": "REALPBARQF"
+    },
+    {
+      "name": "REALPBARQH",
+      "human_readable": "REALPBARQH"
+    },
+    {
+      "name": "REALPLANDF",
+      "human_readable": "REALPLANDF"
+    },
+    {
+      "name": "REALPLANDH",
+      "human_readable": "REALPLANDH"
+    },
+    {
+      "name": "REALPMF",
+      "human_readable": "REALPMF"
+    },
+    {
+      "name": "REALPMH",
+      "human_readable": "REALPMH"
+    },
+    {
+      "name": "REALPNF",
+      "human_readable": "REALPNF"
+    },
+    {
+      "name": "REALPNH",
+      "human_readable": "REALPNH"
+    },
+    {
+      "name": "REALPQF",
+      "human_readable": "REALPQF"
+    },
+    {
+      "name": "REALPQH",
+      "human_readable": "REALPQH"
+    },
+    {
+      "name": "REALPXF",
+      "human_readable": "REALPXF"
+    },
+    {
+      "name": "REALPXH",
+      "human_readable": "REALPXH"
+    },
+    {
+      "name": "REALRF",
+      "human_readable": "REALRF"
+    },
+    {
+      "name": "REALRH",
+      "human_readable": "REALRH"
+    },
+    {
+      "name": "REALTBALF",
+      "human_readable": "REALTBALF"
+    },
+    {
+      "name": "REALTBALH",
+      "human_readable": "REALTBALH"
+    },
+    {
+      "name": "REALWF",
+      "human_readable": "REALWF"
+    },
+    {
+      "name": "REALWH",
+      "human_readable": "REALWH"
+    },
+    {
+      "name": "RNOMF",
+      "human_readable": "RNOMF"
+    },
+    {
+      "name": "RNOMH",
+      "human_readable": "RNOMH"
+    },
+    {
+      "name": "SHOPF",
+      "human_readable": "SHOPF"
+    },
+    {
+      "name": "SHOPH",
+      "human_readable": "SHOPH"
+    },
+    {
+      "name": "SHOPPRIMEF",
+      "human_readable": "SHOPPRIMEF"
+    },
+    {
+      "name": "SHOPPRIMEH",
+      "human_readable": "SHOPPRIMEH"
+    },
+    {
+      "name": "T_OF",
+      "human_readable": "T_OF"
+    },
+    {
+      "name": "T_OH",
+      "human_readable": "T_OH"
+    },
+    {
+      "name": "TF",
+      "human_readable": "TF"
+    },
+    {
+      "name": "TH",
+      "human_readable": "TH"
+    },
+    {
+      "name": "VELOF",
+      "human_readable": "VELOF"
+    },
+    {
+      "name": "VELOH",
+      "human_readable": "VELOH"
+    },
+    {
+      "name": "VPRIMEF",
+      "human_readable": "VPRIMEF"
+    },
+    {
+      "name": "VPRIMEH",
+      "human_readable": "VPRIMEH"
+    },
+    {
+      "name": "XF_NAT",
+      "human_readable": "XF_NAT"
+    },
+    {
+      "name": "XH_NAT",
+      "human_readable": "XH_NAT"
+    },
+    {
+      "name": "XI",
+      "human_readable": "XI"
+    },
+    {
+      "name": "Z_OF",
+      "human_readable": "Z_OF"
+    },
+    {
+      "name": "Z_OH",
+      "human_readable": "Z_OH"
+    },
+    {
+      "name": "ZBF",
+      "human_readable": "ZBF"
+    },
+    {
+      "name": "ZBH",
+      "human_readable": "ZBH"
+    },
+    {
+      "name": "ZEYEF",
+      "human_readable": "ZEYEF"
+    },
+    {
+      "name": "ZEYEH",
+      "human_readable": "ZEYEH"
+    },
+    {
+      "name": "ZNF",
+      "human_readable": "ZNF"
+    },
+    {
+      "name": "ZNH",
+      "human_readable": "ZNH"
+    },
+    {
+      "name": "ZTF",
+      "human_readable": "ZTF"
+    },
+    {
+      "name": "ZTH",
+      "human_readable": "ZTH"
+    },
+    {
+      "name": "ZUF",
+      "human_readable": "ZUF"
+    },
+    {
+      "name": "ZUH",
+      "human_readable": "ZUH"
+    },
+    {
+      "name": "ZZ_C_SHARF",
+      "human_readable": "ZZ_C_SHARF"
+    },
+    {
+      "name": "ZZ_C_SHARH",
+      "human_readable": "ZZ_C_SHARH"
+    },
+    {
+      "name": "ZZ_CF",
+      "human_readable": "ZZ_CF"
+    },
+    {
+      "name": "ZZ_CH",
+      "human_readable": "ZZ_CH"
+    },
+    {
+      "name": "ZZ_CURBALF_RAT",
+      "human_readable": "ZZ_CURBALF_RAT"
+    },
+    {
+      "name": "ZZ_CURBALH_RAT",
+      "human_readable": "ZZ_CURBALH_RAT"
+    },
+    {
+      "name": "ZZ_DPIE4F",
+      "human_readable": "ZZ_DPIE4F"
+    },
+    {
+      "name": "ZZ_DPIE4H",
+      "human_readable": "ZZ_DPIE4H"
+    },
+    {
+      "name": "ZZ_DRNOMF",
+      "human_readable": "ZZ_DRNOMF"
+    },
+    {
+      "name": "ZZ_DRNOMH",
+      "human_readable": "ZZ_DRNOMH"
+    },
+    {
+      "name": "ZZ_EXPORTSF",
+      "human_readable": "ZZ_EXPORTSF"
+    },
+    {
+      "name": "ZZ_EXPORTSH",
+      "human_readable": "ZZ_EXPORTSH"
+    },
+    {
+      "name": "ZZ_EYE_SHARF",
+      "human_readable": "ZZ_EYE_SHARF"
+    },
+    {
+      "name": "ZZ_EYE_SHARH",
+      "human_readable": "ZZ_EYE_SHARH"
+    },
+    {
+      "name": "ZZ_EYEF",
+      "human_readable": "ZZ_EYEF"
+    },
+    {
+      "name": "ZZ_EYEH",
+      "human_readable": "ZZ_EYEH"
+    },
+    {
+      "name": "ZZ_GDP_PPP_RATH",
+      "human_readable": "ZZ_GDP_PPP_RATH"
+    },
+    {
+      "name": "ZZ_GDPF",
+      "human_readable": "ZZ_GDPF"
+    },
+    {
+      "name": "ZZ_GDPH",
+      "human_readable": "ZZ_GDPH"
+    },
+    {
+      "name": "ZZ_GF",
+      "human_readable": "ZZ_GF"
+    },
+    {
+      "name": "ZZ_GH",
+      "human_readable": "ZZ_GH"
+    },
+    {
+      "name": "ZZ_IMPORTSF",
+      "human_readable": "ZZ_IMPORTSF"
+    },
+    {
+      "name": "ZZ_IMPORTSH",
+      "human_readable": "ZZ_IMPORTSH"
+    },
+    {
+      "name": "ZZ_M_O_SHARF",
+      "human_readable": "ZZ_M_O_SHARF"
+    },
+    {
+      "name": "ZZ_M_O_SHARH",
+      "human_readable": "ZZ_M_O_SHARH"
+    },
+    {
+      "name": "ZZ_M_ON_SHARF",
+      "human_readable": "ZZ_M_ON_SHARF"
+    },
+    {
+      "name": "ZZ_M_ON_SHARH",
+      "human_readable": "ZZ_M_ON_SHARH"
+    },
+    {
+      "name": "ZZ_M_OT_SHARF",
+      "human_readable": "ZZ_M_OT_SHARF"
+    },
+    {
+      "name": "ZZ_M_OT_SHARH",
+      "human_readable": "ZZ_M_OT_SHARH"
+    },
+    {
+      "name": "ZZ_M_SHARF",
+      "human_readable": "ZZ_M_SHARF"
+    },
+    {
+      "name": "ZZ_M_SHARH",
+      "human_readable": "ZZ_M_SHARH"
+    },
+    {
+      "name": "ZZ_N_SHARF",
+      "human_readable": "ZZ_N_SHARF"
+    },
+    {
+      "name": "ZZ_N_SHARH",
+      "human_readable": "ZZ_N_SHARH"
+    },
+    {
+      "name": "ZZ_PIE4F",
+      "human_readable": "ZZ_PIE4F"
+    },
+    {
+      "name": "ZZ_PIE4H",
+      "human_readable": "ZZ_PIE4H"
+    },
+    {
+      "name": "ZZ_REALEX",
+      "human_readable": "ZZ_REALEX"
+    },
+    {
+      "name": "ZZ_RNOMF",
+      "human_readable": "ZZ_RNOMF"
+    },
+    {
+      "name": "ZZ_RNOMH",
+      "human_readable": "ZZ_RNOMH"
+    },
+    {
+      "name": "ZZ_UTILITYF",
+      "human_readable": "ZZ_UTILITYF"
+    },
+    {
+      "name": "ZZ_UTILITYH",
+      "human_readable": "ZZ_UTILITYH"
+    },
+    {
+      "name": "ZZ_XBALF_TOT_RAT",
+      "human_readable": "ZZ_XBALF_TOT_RAT"
+    },
+    {
+      "name": "ZZ_XBALH_TOT_RAT",
+      "human_readable": "ZZ_XBALH_TOT_RAT"
+    }
   ],
   "shocks": [
-    "E_CAPAF",
-    "E_CAPAH",
-    "E_GAH",
-    "E_GAMMAF",
-    "E_GAMMAH",
-    "E_LANDF",
-    "E_LANDH",
-    "E_ZBH",
-    "E_ZEYEF",
-    "E_ZEYEH",
-    "E_ZUF",
-    "E_ZUH",
-    "fiscal_",
-    "interest_"
+    {
+      "name": "E_CAPAF",
+      "human_readable": "E_CAPAF"
+    },
+    {
+      "name": "E_CAPAH",
+      "human_readable": "E_CAPAH"
+    },
+    {
+      "name": "E_GAH",
+      "human_readable": "E_GAH"
+    },
+    {
+      "name": "E_GAMMAF",
+      "human_readable": "E_GAMMAF"
+    },
+    {
+      "name": "E_GAMMAH",
+      "human_readable": "E_GAMMAH"
+    },
+    {
+      "name": "E_LANDF",
+      "human_readable": "E_LANDF"
+    },
+    {
+      "name": "E_LANDH",
+      "human_readable": "E_LANDH"
+    },
+    {
+      "name": "E_ZBH",
+      "human_readable": "E_ZBH"
+    },
+    {
+      "name": "E_ZEYEF",
+      "human_readable": "E_ZEYEF"
+    },
+    {
+      "name": "E_ZEYEH",
+      "human_readable": "E_ZEYEH"
+    },
+    {
+      "name": "E_ZUF",
+      "human_readable": "E_ZUF"
+    },
+    {
+      "name": "E_ZUH",
+      "human_readable": "E_ZUH"
+    },
+    {
+      "name": "fiscal_",
+      "human_readable": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    }
   ]
 }

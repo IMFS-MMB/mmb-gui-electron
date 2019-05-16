@@ -70,88 +70,331 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "a",
-    "C",
-    "C_fe",
-    "Cb",
-    "Cb_fe",
-    "Ce",
-    "Ce_fe",
-    "Cp",
-    "Cp_fe",
-    "e_g",
-    "fispol",
-    "g",
-    "GDP",
-    "GDP_fe",
-    "I",
-    "I_fe",
-    "inflation",
-    "inflationq",
-    "interest",
-    "K",
-    "K_fe",
-    "l",
-    "L",
-    "l_fe",
-    "L_fe",
-    "Lambda",
-    "Lambda_fe",
-    "Le",
-    "Le_fe",
-    "Lr",
-    "Lr_fe",
-    "mc",
-    "mc_fe",
-    "N",
-    "N_fe",
-    "Nb",
-    "Nb_fe",
-    "omega_bar_prime",
-    "omega_bar_prime_fe",
-    "output",
-    "outputgap",
-    "outputgap",
-    "phi_b",
-    "phi_b_fe",
-    "phi_e",
-    "phi_e_fe",
-    "Pi",
-    "Pi_fe",
-    "Pi4",
-    "Q",
-    "Q_fe",
-    "R",
-    "R_fe",
-    "R4",
-    "Rb",
-    "Rb_fe",
-    "rk",
-    "Rk",
-    "rk_fe",
-    "Rk_fe",
-    "Rl",
-    "Rl_fe",
-    "spread_RbR",
-    "spread_RkR",
-    "spread_RkRb",
-    "spread_RlR",
-    "U",
-    "U_fe",
-    "V",
-    "V_fe",
-    "varrho",
-    "varrho_fe",
-    "w",
-    "w_fe",
-    "Y",
-    "Y_fe",
-    "z",
-    "z_fe"
+    {
+      "name": "a",
+      "human_readable": "a"
+    },
+    {
+      "name": "C",
+      "human_readable": "C"
+    },
+    {
+      "name": "C_fe",
+      "human_readable": "C_fe"
+    },
+    {
+      "name": "Cb",
+      "human_readable": "Cb"
+    },
+    {
+      "name": "Cb_fe",
+      "human_readable": "Cb_fe"
+    },
+    {
+      "name": "Ce",
+      "human_readable": "Ce"
+    },
+    {
+      "name": "Ce_fe",
+      "human_readable": "Ce_fe"
+    },
+    {
+      "name": "Cp",
+      "human_readable": "Cp"
+    },
+    {
+      "name": "Cp_fe",
+      "human_readable": "Cp_fe"
+    },
+    {
+      "name": "e_g",
+      "human_readable": "e_g"
+    },
+    {
+      "name": "fispol",
+      "human_readable": "fispol"
+    },
+    {
+      "name": "g",
+      "human_readable": "g"
+    },
+    {
+      "name": "GDP",
+      "human_readable": "GDP"
+    },
+    {
+      "name": "GDP_fe",
+      "human_readable": "GDP_fe"
+    },
+    {
+      "name": "I",
+      "human_readable": "I"
+    },
+    {
+      "name": "I_fe",
+      "human_readable": "I_fe"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "K",
+      "human_readable": "K"
+    },
+    {
+      "name": "K_fe",
+      "human_readable": "K_fe"
+    },
+    {
+      "name": "l",
+      "human_readable": "l"
+    },
+    {
+      "name": "L",
+      "human_readable": "L"
+    },
+    {
+      "name": "l_fe",
+      "human_readable": "l_fe"
+    },
+    {
+      "name": "L_fe",
+      "human_readable": "L_fe"
+    },
+    {
+      "name": "Lambda",
+      "human_readable": "Lambda"
+    },
+    {
+      "name": "Lambda_fe",
+      "human_readable": "Lambda_fe"
+    },
+    {
+      "name": "Le",
+      "human_readable": "Le"
+    },
+    {
+      "name": "Le_fe",
+      "human_readable": "Le_fe"
+    },
+    {
+      "name": "Lr",
+      "human_readable": "Lr"
+    },
+    {
+      "name": "Lr_fe",
+      "human_readable": "Lr_fe"
+    },
+    {
+      "name": "mc",
+      "human_readable": "mc"
+    },
+    {
+      "name": "mc_fe",
+      "human_readable": "mc_fe"
+    },
+    {
+      "name": "N",
+      "human_readable": "N"
+    },
+    {
+      "name": "N_fe",
+      "human_readable": "N_fe"
+    },
+    {
+      "name": "Nb",
+      "human_readable": "Nb"
+    },
+    {
+      "name": "Nb_fe",
+      "human_readable": "Nb_fe"
+    },
+    {
+      "name": "omega_bar_prime",
+      "human_readable": "omega_bar_prime"
+    },
+    {
+      "name": "omega_bar_prime_fe",
+      "human_readable": "omega_bar_prime_fe"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "phi_b",
+      "human_readable": "phi_b"
+    },
+    {
+      "name": "phi_b_fe",
+      "human_readable": "phi_b_fe"
+    },
+    {
+      "name": "phi_e",
+      "human_readable": "phi_e"
+    },
+    {
+      "name": "phi_e_fe",
+      "human_readable": "phi_e_fe"
+    },
+    {
+      "name": "Pi",
+      "human_readable": "Pi"
+    },
+    {
+      "name": "Pi_fe",
+      "human_readable": "Pi_fe"
+    },
+    {
+      "name": "Pi4",
+      "human_readable": "Pi4"
+    },
+    {
+      "name": "Q",
+      "human_readable": "Q"
+    },
+    {
+      "name": "Q_fe",
+      "human_readable": "Q_fe"
+    },
+    {
+      "name": "R",
+      "human_readable": "R"
+    },
+    {
+      "name": "R_fe",
+      "human_readable": "R_fe"
+    },
+    {
+      "name": "R4",
+      "human_readable": "R4"
+    },
+    {
+      "name": "Rb",
+      "human_readable": "Rb"
+    },
+    {
+      "name": "Rb_fe",
+      "human_readable": "Rb_fe"
+    },
+    {
+      "name": "rk",
+      "human_readable": "rk"
+    },
+    {
+      "name": "Rk",
+      "human_readable": "Rk"
+    },
+    {
+      "name": "rk_fe",
+      "human_readable": "rk_fe"
+    },
+    {
+      "name": "Rk_fe",
+      "human_readable": "Rk_fe"
+    },
+    {
+      "name": "Rl",
+      "human_readable": "Rl"
+    },
+    {
+      "name": "Rl_fe",
+      "human_readable": "Rl_fe"
+    },
+    {
+      "name": "spread_RbR",
+      "human_readable": "spread_RbR"
+    },
+    {
+      "name": "spread_RkR",
+      "human_readable": "spread_RkR"
+    },
+    {
+      "name": "spread_RkRb",
+      "human_readable": "spread_RkRb"
+    },
+    {
+      "name": "spread_RlR",
+      "human_readable": "spread_RlR"
+    },
+    {
+      "name": "U",
+      "human_readable": "U"
+    },
+    {
+      "name": "U_fe",
+      "human_readable": "U_fe"
+    },
+    {
+      "name": "V",
+      "human_readable": "V"
+    },
+    {
+      "name": "V_fe",
+      "human_readable": "V_fe"
+    },
+    {
+      "name": "varrho",
+      "human_readable": "varrho"
+    },
+    {
+      "name": "varrho_fe",
+      "human_readable": "varrho_fe"
+    },
+    {
+      "name": "w",
+      "human_readable": "w"
+    },
+    {
+      "name": "w_fe",
+      "human_readable": "w_fe"
+    },
+    {
+      "name": "Y",
+      "human_readable": "Y"
+    },
+    {
+      "name": "Y_fe",
+      "human_readable": "Y_fe"
+    },
+    {
+      "name": "z",
+      "human_readable": "z"
+    },
+    {
+      "name": "z_fe",
+      "human_readable": "z_fe"
+    }
   ],
   "shocks": [
-    "e_a",
-    "fiscal_",
-    "interest_"
+    {
+      "name": "e_a",
+      "human_readable": "e_a"
+    },
+    {
+      "name": "fiscal_",
+      "human_readable": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    }
   ]
 }

@@ -75,60 +75,219 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "A",
-    "abar",
-    "abar_f",
-    "c",
-    "c_f",
-    "D",
-    "dt",
-    "dt_f",
-    "F",
-    "h",
-    "h_f",
-    "inflation",
-    "inflationq",
-    "interest",
-    "lambda",
-    "lambda_f",
-    "lw",
-    "m",
-    "m_f",
-    "mu",
-    "mu_f",
-    "output",
-    "outputgap",
-    "phi",
-    "pii",
-    "pii_f",
-    "pii_w",
-    "pii_w_f",
-    "pS",
-    "pS_f",
-    "pt",
-    "pt_f",
-    "R",
-    "R_f",
-    "s",
-    "s_f",
-    "v",
-    "v_f",
-    "varrho",
-    "w",
-    "w_f",
-    "x",
-    "x_f",
-    "xi",
-    "xi_f",
-    "y",
-    "y_f",
-    "z",
-    "z_f"
+    {
+      "name": "A",
+      "human_readable": "A"
+    },
+    {
+      "name": "abar",
+      "human_readable": "abar"
+    },
+    {
+      "name": "abar_f",
+      "human_readable": "abar_f"
+    },
+    {
+      "name": "c",
+      "human_readable": "c"
+    },
+    {
+      "name": "c_f",
+      "human_readable": "c_f"
+    },
+    {
+      "name": "D",
+      "human_readable": "D"
+    },
+    {
+      "name": "dt",
+      "human_readable": "dt"
+    },
+    {
+      "name": "dt_f",
+      "human_readable": "dt_f"
+    },
+    {
+      "name": "F",
+      "human_readable": "F"
+    },
+    {
+      "name": "h",
+      "human_readable": "h"
+    },
+    {
+      "name": "h_f",
+      "human_readable": "h_f"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "lambda",
+      "human_readable": "lambda"
+    },
+    {
+      "name": "lambda_f",
+      "human_readable": "lambda_f"
+    },
+    {
+      "name": "lw",
+      "human_readable": "lw"
+    },
+    {
+      "name": "m",
+      "human_readable": "m"
+    },
+    {
+      "name": "m_f",
+      "human_readable": "m_f"
+    },
+    {
+      "name": "mu",
+      "human_readable": "mu"
+    },
+    {
+      "name": "mu_f",
+      "human_readable": "mu_f"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "phi",
+      "human_readable": "phi"
+    },
+    {
+      "name": "pii",
+      "human_readable": "pii"
+    },
+    {
+      "name": "pii_f",
+      "human_readable": "pii_f"
+    },
+    {
+      "name": "pii_w",
+      "human_readable": "pii_w"
+    },
+    {
+      "name": "pii_w_f",
+      "human_readable": "pii_w_f"
+    },
+    {
+      "name": "pS",
+      "human_readable": "pS"
+    },
+    {
+      "name": "pS_f",
+      "human_readable": "pS_f"
+    },
+    {
+      "name": "pt",
+      "human_readable": "pt"
+    },
+    {
+      "name": "pt_f",
+      "human_readable": "pt_f"
+    },
+    {
+      "name": "R",
+      "human_readable": "R"
+    },
+    {
+      "name": "R_f",
+      "human_readable": "R_f"
+    },
+    {
+      "name": "s",
+      "human_readable": "s"
+    },
+    {
+      "name": "s_f",
+      "human_readable": "s_f"
+    },
+    {
+      "name": "v",
+      "human_readable": "v"
+    },
+    {
+      "name": "v_f",
+      "human_readable": "v_f"
+    },
+    {
+      "name": "varrho",
+      "human_readable": "varrho"
+    },
+    {
+      "name": "w",
+      "human_readable": "w"
+    },
+    {
+      "name": "w_f",
+      "human_readable": "w_f"
+    },
+    {
+      "name": "x",
+      "human_readable": "x"
+    },
+    {
+      "name": "x_f",
+      "human_readable": "x_f"
+    },
+    {
+      "name": "xi",
+      "human_readable": "xi"
+    },
+    {
+      "name": "xi_f",
+      "human_readable": "xi_f"
+    },
+    {
+      "name": "y",
+      "human_readable": "y"
+    },
+    {
+      "name": "y_f",
+      "human_readable": "y_f"
+    },
+    {
+      "name": "z",
+      "human_readable": "z"
+    },
+    {
+      "name": "z_f",
+      "human_readable": "z_f"
+    }
   ],
   "shocks": [
-    "eA",
-    "eD",
-    "eF",
-    "interest_"
+    {
+      "name": "eA",
+      "human_readable": "eA"
+    },
+    {
+      "name": "eD",
+      "human_readable": "eD"
+    },
+    {
+      "name": "eF",
+      "human_readable": "eF"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    }
   ]
 }

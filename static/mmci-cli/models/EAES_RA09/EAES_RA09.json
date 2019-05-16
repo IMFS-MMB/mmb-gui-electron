@@ -71,74 +71,275 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "c",
-    "c_F",
-    "c_F_star",
-    "c_H",
-    "c_H_star",
-    "c_N",
-    "c_N_star",
-    "c_star",
-    "dy",
-    "dy_star",
-    "g_N",
-    "g_N_star",
-    "g_T",
-    "g_T_star",
-    "inflation",
-    "inflationq",
-    "interest",
-    "l",
-    "l_N",
-    "l_N_star",
-    "l_star",
-    "l_T",
-    "l_T_star",
-    "mu",
-    "mu_star",
-    "output",
-    "outputgap",
-    "pi",
-    "pi_EMU",
-    "pi_F",
-    "pi_H",
-    "pi_N",
-    "pi_N_star",
-    "pi_star",
-    "r",
-    "rer",
-    "t_F",
-    "t_F_star",
-    "t_H",
-    "t_H_star",
-    "t_N",
-    "t_N_star",
-    "t_T",
-    "t_T_star",
-    "w",
-    "w_star",
-    "y",
-    "y_EMU",
-    "y_F_star",
-    "y_H",
-    "y_N",
-    "y_N_star",
-    "y_star",
-    "z_N",
-    "z_N_star",
-    "z_T",
-    "z_T_star"
+    {
+      "name": "c",
+      "human_readable": "c"
+    },
+    {
+      "name": "c_F",
+      "human_readable": "c_F"
+    },
+    {
+      "name": "c_F_star",
+      "human_readable": "c_F_star"
+    },
+    {
+      "name": "c_H",
+      "human_readable": "c_H"
+    },
+    {
+      "name": "c_H_star",
+      "human_readable": "c_H_star"
+    },
+    {
+      "name": "c_N",
+      "human_readable": "c_N"
+    },
+    {
+      "name": "c_N_star",
+      "human_readable": "c_N_star"
+    },
+    {
+      "name": "c_star",
+      "human_readable": "c_star"
+    },
+    {
+      "name": "dy",
+      "human_readable": "dy"
+    },
+    {
+      "name": "dy_star",
+      "human_readable": "dy_star"
+    },
+    {
+      "name": "g_N",
+      "human_readable": "g_N"
+    },
+    {
+      "name": "g_N_star",
+      "human_readable": "g_N_star"
+    },
+    {
+      "name": "g_T",
+      "human_readable": "g_T"
+    },
+    {
+      "name": "g_T_star",
+      "human_readable": "g_T_star"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "l",
+      "human_readable": "l"
+    },
+    {
+      "name": "l_N",
+      "human_readable": "l_N"
+    },
+    {
+      "name": "l_N_star",
+      "human_readable": "l_N_star"
+    },
+    {
+      "name": "l_star",
+      "human_readable": "l_star"
+    },
+    {
+      "name": "l_T",
+      "human_readable": "l_T"
+    },
+    {
+      "name": "l_T_star",
+      "human_readable": "l_T_star"
+    },
+    {
+      "name": "mu",
+      "human_readable": "mu"
+    },
+    {
+      "name": "mu_star",
+      "human_readable": "mu_star"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "pi",
+      "human_readable": "pi"
+    },
+    {
+      "name": "pi_EMU",
+      "human_readable": "pi_EMU"
+    },
+    {
+      "name": "pi_F",
+      "human_readable": "pi_F"
+    },
+    {
+      "name": "pi_H",
+      "human_readable": "pi_H"
+    },
+    {
+      "name": "pi_N",
+      "human_readable": "pi_N"
+    },
+    {
+      "name": "pi_N_star",
+      "human_readable": "pi_N_star"
+    },
+    {
+      "name": "pi_star",
+      "human_readable": "pi_star"
+    },
+    {
+      "name": "r",
+      "human_readable": "r"
+    },
+    {
+      "name": "rer",
+      "human_readable": "rer"
+    },
+    {
+      "name": "t_F",
+      "human_readable": "t_F"
+    },
+    {
+      "name": "t_F_star",
+      "human_readable": "t_F_star"
+    },
+    {
+      "name": "t_H",
+      "human_readable": "t_H"
+    },
+    {
+      "name": "t_H_star",
+      "human_readable": "t_H_star"
+    },
+    {
+      "name": "t_N",
+      "human_readable": "t_N"
+    },
+    {
+      "name": "t_N_star",
+      "human_readable": "t_N_star"
+    },
+    {
+      "name": "t_T",
+      "human_readable": "t_T"
+    },
+    {
+      "name": "t_T_star",
+      "human_readable": "t_T_star"
+    },
+    {
+      "name": "w",
+      "human_readable": "w"
+    },
+    {
+      "name": "w_star",
+      "human_readable": "w_star"
+    },
+    {
+      "name": "y",
+      "human_readable": "y"
+    },
+    {
+      "name": "y_EMU",
+      "human_readable": "y_EMU"
+    },
+    {
+      "name": "y_F_star",
+      "human_readable": "y_F_star"
+    },
+    {
+      "name": "y_H",
+      "human_readable": "y_H"
+    },
+    {
+      "name": "y_N",
+      "human_readable": "y_N"
+    },
+    {
+      "name": "y_N_star",
+      "human_readable": "y_N_star"
+    },
+    {
+      "name": "y_star",
+      "human_readable": "y_star"
+    },
+    {
+      "name": "z_N",
+      "human_readable": "z_N"
+    },
+    {
+      "name": "z_N_star",
+      "human_readable": "z_N_star"
+    },
+    {
+      "name": "z_T",
+      "human_readable": "z_T"
+    },
+    {
+      "name": "z_T_star",
+      "human_readable": "z_T_star"
+    }
   ],
   "shocks": [
-    "eps_GN",
-    "eps_GN_star",
-    "eps_GT",
-    "eps_GT_star",
-    "eps_Z",
-    "eps_ZN",
-    "eps_ZN_star",
-    "eps_ZT",
-    "eps_ZT_star",
-    "interest_"
+    {
+      "name": "eps_GN",
+      "human_readable": "eps_GN"
+    },
+    {
+      "name": "eps_GN_star",
+      "human_readable": "eps_GN_star"
+    },
+    {
+      "name": "eps_GT",
+      "human_readable": "eps_GT"
+    },
+    {
+      "name": "eps_GT_star",
+      "human_readable": "eps_GT_star"
+    },
+    {
+      "name": "eps_Z",
+      "human_readable": "eps_Z"
+    },
+    {
+      "name": "eps_ZN",
+      "human_readable": "eps_ZN"
+    },
+    {
+      "name": "eps_ZN_star",
+      "human_readable": "eps_ZN_star"
+    },
+    {
+      "name": "eps_ZT",
+      "human_readable": "eps_ZT"
+    },
+    {
+      "name": "eps_ZT_star",
+      "human_readable": "eps_ZT_star"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    }
   ]
 }

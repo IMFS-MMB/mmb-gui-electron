@@ -73,20 +73,59 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "drff",
-    "inflation",
-    "inflationq",
-    "interest",
-    "outputgap",
-    "pdot",
-    "pdotsh",
-    "rff",
-    "rstar",
-    "ygap"
+    {
+      "name": "drff",
+      "human_readable": "drff"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "pdot",
+      "human_readable": "pdot"
+    },
+    {
+      "name": "pdotsh",
+      "human_readable": "pdotsh"
+    },
+    {
+      "name": "rff",
+      "human_readable": "rff"
+    },
+    {
+      "name": "rstar",
+      "human_readable": "rstar"
+    },
+    {
+      "name": "ygap",
+      "human_readable": "ygap"
+    }
   ],
   "shocks": [
-    "interest_",
-    "pdotsh_",
-    "rstar_"
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    },
+    {
+      "name": "pdotsh_",
+      "human_readable": "pdotsh_"
+    },
+    {
+      "name": "rstar_",
+      "human_readable": "rstar_"
+    }
   ]
 }

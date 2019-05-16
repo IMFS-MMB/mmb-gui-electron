@@ -38,27 +38,87 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "deltae",
-    "deltaq",
-    "deltay_star",
-    "inflation",
-    "inflationq",
-    "interest",
-    "output",
-    "outputgap",
-    "pi",
-    "pi_star",
-    "R",
-    "y",
-    "y_bar",
-    "y_star",
-    "z"
+    {
+      "name": "deltae",
+      "human_readable": "deltae"
+    },
+    {
+      "name": "deltaq",
+      "human_readable": "deltaq"
+    },
+    {
+      "name": "deltay_star",
+      "human_readable": "deltay_star"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "pi",
+      "human_readable": "pi"
+    },
+    {
+      "name": "pi_star",
+      "human_readable": "pi_star"
+    },
+    {
+      "name": "R",
+      "human_readable": "R"
+    },
+    {
+      "name": "y",
+      "human_readable": "y"
+    },
+    {
+      "name": "y_bar",
+      "human_readable": "y_bar"
+    },
+    {
+      "name": "y_star",
+      "human_readable": "y_star"
+    },
+    {
+      "name": "z",
+      "human_readable": "z"
+    }
   ],
   "shocks": [
-    "epspi_star",
-    "epsq",
-    "epsy_star",
-    "epsz",
-    "interest_"
+    {
+      "name": "epspi_star",
+      "human_readable": "epspi_star"
+    },
+    {
+      "name": "epsq",
+      "human_readable": "epsq"
+    },
+    {
+      "name": "epsy_star",
+      "human_readable": "epsy_star"
+    },
+    {
+      "name": "epsz",
+      "human_readable": "epsz"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    }
   ]
 }

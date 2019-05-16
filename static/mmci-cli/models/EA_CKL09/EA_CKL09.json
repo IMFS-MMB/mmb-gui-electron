@@ -74,65 +74,239 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "cflext",
-    "ct",
-    "deltaFflext",
-    "deltaFt",
-    "Deltastarflext",
-    "Deltastart",
-    "deltaWflext",
-    "deltaWt",
-    "ebargaint",
-    "ebt",
-    "eCt",
-    "ekappat",
-    "emoneyt",
-    "esept",
-    "fispol",
-    "g_",
-    "gt",
-    "hflext",
-    "ht",
-    "inflation",
-    "inflationq",
-    "interest",
-    "Jstarflext",
-    "Jstart",
-    "lambdaflext",
-    "lambdat",
-    "mct",
-    "mflext",
-    "mt",
-    "nt",
-    "output",
-    "outputgap",
-    "Piannt",
-    "Pit",
-    "qflext",
-    "qt",
-    "Rt",
-    "sflext",
-    "st",
-    "ut",
-    "vflext",
-    "vt",
-    "wflext",
-    "wstart",
-    "wt",
-    "xLflext",
-    "xLt",
-    "yflext",
-    "yt",
-    "zt"
+    {
+      "name": "cflext",
+      "human_readable": "cflext"
+    },
+    {
+      "name": "ct",
+      "human_readable": "ct"
+    },
+    {
+      "name": "deltaFflext",
+      "human_readable": "deltaFflext"
+    },
+    {
+      "name": "deltaFt",
+      "human_readable": "deltaFt"
+    },
+    {
+      "name": "Deltastarflext",
+      "human_readable": "Deltastarflext"
+    },
+    {
+      "name": "Deltastart",
+      "human_readable": "Deltastart"
+    },
+    {
+      "name": "deltaWflext",
+      "human_readable": "deltaWflext"
+    },
+    {
+      "name": "deltaWt",
+      "human_readable": "deltaWt"
+    },
+    {
+      "name": "ebargaint",
+      "human_readable": "ebargaint"
+    },
+    {
+      "name": "ebt",
+      "human_readable": "ebt"
+    },
+    {
+      "name": "eCt",
+      "human_readable": "eCt"
+    },
+    {
+      "name": "ekappat",
+      "human_readable": "ekappat"
+    },
+    {
+      "name": "emoneyt",
+      "human_readable": "emoneyt"
+    },
+    {
+      "name": "esept",
+      "human_readable": "esept"
+    },
+    {
+      "name": "fispol",
+      "human_readable": "fispol"
+    },
+    {
+      "name": "g_",
+      "human_readable": "g_"
+    },
+    {
+      "name": "gt",
+      "human_readable": "gt"
+    },
+    {
+      "name": "hflext",
+      "human_readable": "hflext"
+    },
+    {
+      "name": "ht",
+      "human_readable": "ht"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "Jstarflext",
+      "human_readable": "Jstarflext"
+    },
+    {
+      "name": "Jstart",
+      "human_readable": "Jstart"
+    },
+    {
+      "name": "lambdaflext",
+      "human_readable": "lambdaflext"
+    },
+    {
+      "name": "lambdat",
+      "human_readable": "lambdat"
+    },
+    {
+      "name": "mct",
+      "human_readable": "mct"
+    },
+    {
+      "name": "mflext",
+      "human_readable": "mflext"
+    },
+    {
+      "name": "mt",
+      "human_readable": "mt"
+    },
+    {
+      "name": "nt",
+      "human_readable": "nt"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "Piannt",
+      "human_readable": "Piannt"
+    },
+    {
+      "name": "Pit",
+      "human_readable": "Pit"
+    },
+    {
+      "name": "qflext",
+      "human_readable": "qflext"
+    },
+    {
+      "name": "qt",
+      "human_readable": "qt"
+    },
+    {
+      "name": "Rt",
+      "human_readable": "Rt"
+    },
+    {
+      "name": "sflext",
+      "human_readable": "sflext"
+    },
+    {
+      "name": "st",
+      "human_readable": "st"
+    },
+    {
+      "name": "ut",
+      "human_readable": "ut"
+    },
+    {
+      "name": "vflext",
+      "human_readable": "vflext"
+    },
+    {
+      "name": "vt",
+      "human_readable": "vt"
+    },
+    {
+      "name": "wflext",
+      "human_readable": "wflext"
+    },
+    {
+      "name": "wstart",
+      "human_readable": "wstart"
+    },
+    {
+      "name": "wt",
+      "human_readable": "wt"
+    },
+    {
+      "name": "xLflext",
+      "human_readable": "xLflext"
+    },
+    {
+      "name": "xLt",
+      "human_readable": "xLt"
+    },
+    {
+      "name": "yflext",
+      "human_readable": "yflext"
+    },
+    {
+      "name": "yt",
+      "human_readable": "yt"
+    },
+    {
+      "name": "zt",
+      "human_readable": "zt"
+    }
   ],
   "shocks": [
-    "fiscal_",
-    "inno_ebargaint",
-    "inno_ebt",
-    "inno_eCt",
-    "inno_ekappat",
-    "inno_esept",
-    "inno_zt",
-    "interest_"
+    {
+      "name": "fiscal_",
+      "human_readable": "fiscal_"
+    },
+    {
+      "name": "inno_ebargaint",
+      "human_readable": "inno_ebargaint"
+    },
+    {
+      "name": "inno_ebt",
+      "human_readable": "inno_ebt"
+    },
+    {
+      "name": "inno_eCt",
+      "human_readable": "inno_eCt"
+    },
+    {
+      "name": "inno_ekappat",
+      "human_readable": "inno_ekappat"
+    },
+    {
+      "name": "inno_esept",
+      "human_readable": "inno_esept"
+    },
+    {
+      "name": "inno_zt",
+      "human_readable": "inno_zt"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    }
   ]
 }

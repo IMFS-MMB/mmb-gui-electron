@@ -76,27 +76,87 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "E1_PIE_USh",
-    "E1_Y_USh",
-    "E4_PIE_US4h",
-    "inflation",
-    "inflationq",
-    "interest",
-    "output",
-    "outputgap",
-    "PIE_US4h",
-    "PIE_USh",
-    "RR_US_BARh",
-    "RR_USh",
-    "RS_USh",
-    "UNR_US_GAP",
-    "Y_US"
+    {
+      "name": "E1_PIE_USh",
+      "human_readable": "E1_PIE_USh"
+    },
+    {
+      "name": "E1_Y_USh",
+      "human_readable": "E1_Y_USh"
+    },
+    {
+      "name": "E4_PIE_US4h",
+      "human_readable": "E4_PIE_US4h"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "PIE_US4h",
+      "human_readable": "PIE_US4h"
+    },
+    {
+      "name": "PIE_USh",
+      "human_readable": "PIE_USh"
+    },
+    {
+      "name": "RR_US_BARh",
+      "human_readable": "RR_US_BARh"
+    },
+    {
+      "name": "RR_USh",
+      "human_readable": "RR_USh"
+    },
+    {
+      "name": "RS_USh",
+      "human_readable": "RS_USh"
+    },
+    {
+      "name": "UNR_US_GAP",
+      "human_readable": "UNR_US_GAP"
+    },
+    {
+      "name": "Y_US",
+      "human_readable": "Y_US"
+    }
   ],
   "shocks": [
-    "interest_",
-    "RES_PIE_US",
-    "RES_RR_US_BAR",
-    "RES_UNR_US_GAP",
-    "RES_Y_US"
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    },
+    {
+      "name": "RES_PIE_US",
+      "human_readable": "RES_PIE_US"
+    },
+    {
+      "name": "RES_RR_US_BAR",
+      "human_readable": "RES_RR_US_BAR"
+    },
+    {
+      "name": "RES_UNR_US_GAP",
+      "human_readable": "RES_UNR_US_GAP"
+    },
+    {
+      "name": "RES_Y_US",
+      "human_readable": "RES_Y_US"
+    }
   ]
 }

@@ -71,46 +71,163 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "Ahat",
-    "b2hat",
-    "b2hatf",
-    "bhat",
-    "bhatf",
-    "c1hat",
-    "c1hatf",
-    "c2hat",
-    "c2hatf",
-    "chat",
-    "chatf",
-    "h2hat",
-    "h2hatf",
-    "hhat",
-    "hhatf",
-    "Ihat",
-    "Ihatf",
-    "inflation",
-    "inflationq",
-    "interest",
-    "jhat",
-    "Khat",
-    "Khatf",
-    "output",
-    "outputgap",
-    "pihat",
-    "qhat",
-    "qhatf",
-    "Rhat",
-    "rrhat",
-    "rrhatf",
-    "uhat",
-    "Xhat",
-    "Yhat",
-    "Yhatf"
+    {
+      "name": "Ahat",
+      "human_readable": "Ahat"
+    },
+    {
+      "name": "b2hat",
+      "human_readable": "b2hat"
+    },
+    {
+      "name": "b2hatf",
+      "human_readable": "b2hatf"
+    },
+    {
+      "name": "bhat",
+      "human_readable": "bhat"
+    },
+    {
+      "name": "bhatf",
+      "human_readable": "bhatf"
+    },
+    {
+      "name": "c1hat",
+      "human_readable": "c1hat"
+    },
+    {
+      "name": "c1hatf",
+      "human_readable": "c1hatf"
+    },
+    {
+      "name": "c2hat",
+      "human_readable": "c2hat"
+    },
+    {
+      "name": "c2hatf",
+      "human_readable": "c2hatf"
+    },
+    {
+      "name": "chat",
+      "human_readable": "chat"
+    },
+    {
+      "name": "chatf",
+      "human_readable": "chatf"
+    },
+    {
+      "name": "h2hat",
+      "human_readable": "h2hat"
+    },
+    {
+      "name": "h2hatf",
+      "human_readable": "h2hatf"
+    },
+    {
+      "name": "hhat",
+      "human_readable": "hhat"
+    },
+    {
+      "name": "hhatf",
+      "human_readable": "hhatf"
+    },
+    {
+      "name": "Ihat",
+      "human_readable": "Ihat"
+    },
+    {
+      "name": "Ihatf",
+      "human_readable": "Ihatf"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "jhat",
+      "human_readable": "jhat"
+    },
+    {
+      "name": "Khat",
+      "human_readable": "Khat"
+    },
+    {
+      "name": "Khatf",
+      "human_readable": "Khatf"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "pihat",
+      "human_readable": "pihat"
+    },
+    {
+      "name": "qhat",
+      "human_readable": "qhat"
+    },
+    {
+      "name": "qhatf",
+      "human_readable": "qhatf"
+    },
+    {
+      "name": "Rhat",
+      "human_readable": "Rhat"
+    },
+    {
+      "name": "rrhat",
+      "human_readable": "rrhat"
+    },
+    {
+      "name": "rrhatf",
+      "human_readable": "rrhatf"
+    },
+    {
+      "name": "uhat",
+      "human_readable": "uhat"
+    },
+    {
+      "name": "Xhat",
+      "human_readable": "Xhat"
+    },
+    {
+      "name": "Yhat",
+      "human_readable": "Yhat"
+    },
+    {
+      "name": "Yhatf",
+      "human_readable": "Yhatf"
+    }
   ],
   "shocks": [
-    "eAhat",
-    "ejhat",
-    "euhat",
-    "interest_"
+    {
+      "name": "eAhat",
+      "human_readable": "eAhat"
+    },
+    {
+      "name": "ejhat",
+      "human_readable": "ejhat"
+    },
+    {
+      "name": "euhat",
+      "human_readable": "euhat"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    }
   ]
 }

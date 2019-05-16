@@ -73,46 +73,163 @@
   "variabledim": 2,
   "al": false,
   "vars": [
-    "cwp",
-    "dis",
-    "il",
-    "infl",
-    "inflation",
-    "inflationq",
-    "interest",
-    "is",
-    "lagcwp1",
-    "lagcwp2",
-    "lagpi1",
-    "lagpi2",
-    "lagq1",
-    "ldis1",
-    "ldis2",
-    "ldis3",
-    "ldis4",
-    "ldis5",
-    "ldis6",
-    "ldpi1",
-    "ldpi2",
-    "ldpi3",
-    "ldpi4",
-    "ldpi5",
-    "ldpi6",
-    "ldpi7",
-    "ldq1",
-    "ldq2",
-    "ldvindex1",
-    "ldvindex2",
-    "output",
-    "outputgap",
-    "pi1",
-    "q",
-    "rl",
-    "vindex"
+    {
+      "name": "cwp",
+      "human_readable": "cwp"
+    },
+    {
+      "name": "dis",
+      "human_readable": "dis"
+    },
+    {
+      "name": "il",
+      "human_readable": "il"
+    },
+    {
+      "name": "infl",
+      "human_readable": "infl"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "is",
+      "human_readable": "is"
+    },
+    {
+      "name": "lagcwp1",
+      "human_readable": "lagcwp1"
+    },
+    {
+      "name": "lagcwp2",
+      "human_readable": "lagcwp2"
+    },
+    {
+      "name": "lagpi1",
+      "human_readable": "lagpi1"
+    },
+    {
+      "name": "lagpi2",
+      "human_readable": "lagpi2"
+    },
+    {
+      "name": "lagq1",
+      "human_readable": "lagq1"
+    },
+    {
+      "name": "ldis1",
+      "human_readable": "ldis1"
+    },
+    {
+      "name": "ldis2",
+      "human_readable": "ldis2"
+    },
+    {
+      "name": "ldis3",
+      "human_readable": "ldis3"
+    },
+    {
+      "name": "ldis4",
+      "human_readable": "ldis4"
+    },
+    {
+      "name": "ldis5",
+      "human_readable": "ldis5"
+    },
+    {
+      "name": "ldis6",
+      "human_readable": "ldis6"
+    },
+    {
+      "name": "ldpi1",
+      "human_readable": "ldpi1"
+    },
+    {
+      "name": "ldpi2",
+      "human_readable": "ldpi2"
+    },
+    {
+      "name": "ldpi3",
+      "human_readable": "ldpi3"
+    },
+    {
+      "name": "ldpi4",
+      "human_readable": "ldpi4"
+    },
+    {
+      "name": "ldpi5",
+      "human_readable": "ldpi5"
+    },
+    {
+      "name": "ldpi6",
+      "human_readable": "ldpi6"
+    },
+    {
+      "name": "ldpi7",
+      "human_readable": "ldpi7"
+    },
+    {
+      "name": "ldq1",
+      "human_readable": "ldq1"
+    },
+    {
+      "name": "ldq2",
+      "human_readable": "ldq2"
+    },
+    {
+      "name": "ldvindex1",
+      "human_readable": "ldvindex1"
+    },
+    {
+      "name": "ldvindex2",
+      "human_readable": "ldvindex2"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "pi1",
+      "human_readable": "pi1"
+    },
+    {
+      "name": "q",
+      "human_readable": "q"
+    },
+    {
+      "name": "rl",
+      "human_readable": "rl"
+    },
+    {
+      "name": "vindex",
+      "human_readable": "vindex"
+    }
   ],
   "shocks": [
-    "e_cw",
-    "e_d",
-    "interest_"
+    {
+      "name": "e_cw",
+      "human_readable": "e_cw"
+    },
+    {
+      "name": "e_d",
+      "human_readable": "e_d"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    }
   ]
 }

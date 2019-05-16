@@ -40,101 +40,383 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "A",
-    "A_CB",
-    "C",
-    "CY",
-    "DD",
-    "DELTA",
-    "EGG",
-    "EPI",
-    "EPIC",
-    "ERE",
-    "ERN",
-    "ERR",
-    "ERR_CB",
-    "ERR_CBS",
-    "ETA",
-    "ETA_CB",
-    "EY",
-    "EYG",
-    "EYNG",
-    "G",
-    "G_CB",
-    "GG",
-    "inflation",
-    "inflationq",
-    "interest",
-    "L",
-    "MC",
-    "NA",
-    "NC",
-    "NCY",
-    "NETA",
-    "NGG",
-    "NL",
-    "NMC",
-    "NN",
-    "NO",
-    "NOC",
-    "NOMEGA",
-    "NOY",
-    "NPI",
-    "NPIY",
-    "NQ",
-    "NR",
-    "NRe",
-    "NRfe",
-    "NRn",
-    "NTY",
-    "NWP",
-    "NX",
-    "NY",
-    "NY_aux",
-    "NYe",
-    "NYfe",
-    "NYn",
-    "NZ",
-    "O",
-    "OC",
-    "OMEGA",
-    "output",
-    "outputgap",
-    "OY",
-    "PI",
-    "PIY",
-    "Q",
-    "R",
-    "R1",
-    "R2",
-    "Re",
-    "Rfe",
-    "Rfe_CB",
-    "Rn",
-    "TY",
-    "UTIL",
-    "WELF",
-    "WP",
-    "X",
-    "Y",
-    "Y_aux",
-    "Y_gap",
-    "Y_gap_CB",
-    "Ye",
-    "Yfe",
-    "Yfe_CB",
-    "Yn",
-    "Yn_gap",
-    "Z",
-    "Z_CB"
+    {
+      "name": "A",
+      "human_readable": "A"
+    },
+    {
+      "name": "A_CB",
+      "human_readable": "A_CB"
+    },
+    {
+      "name": "C",
+      "human_readable": "C"
+    },
+    {
+      "name": "CY",
+      "human_readable": "CY"
+    },
+    {
+      "name": "DD",
+      "human_readable": "DD"
+    },
+    {
+      "name": "DELTA",
+      "human_readable": "DELTA"
+    },
+    {
+      "name": "EGG",
+      "human_readable": "EGG"
+    },
+    {
+      "name": "EPI",
+      "human_readable": "EPI"
+    },
+    {
+      "name": "EPIC",
+      "human_readable": "EPIC"
+    },
+    {
+      "name": "ERE",
+      "human_readable": "ERE"
+    },
+    {
+      "name": "ERN",
+      "human_readable": "ERN"
+    },
+    {
+      "name": "ERR",
+      "human_readable": "ERR"
+    },
+    {
+      "name": "ERR_CB",
+      "human_readable": "ERR_CB"
+    },
+    {
+      "name": "ERR_CBS",
+      "human_readable": "ERR_CBS"
+    },
+    {
+      "name": "ETA",
+      "human_readable": "ETA"
+    },
+    {
+      "name": "ETA_CB",
+      "human_readable": "ETA_CB"
+    },
+    {
+      "name": "EY",
+      "human_readable": "EY"
+    },
+    {
+      "name": "EYG",
+      "human_readable": "EYG"
+    },
+    {
+      "name": "EYNG",
+      "human_readable": "EYNG"
+    },
+    {
+      "name": "G",
+      "human_readable": "G"
+    },
+    {
+      "name": "G_CB",
+      "human_readable": "G_CB"
+    },
+    {
+      "name": "GG",
+      "human_readable": "GG"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "L",
+      "human_readable": "L"
+    },
+    {
+      "name": "MC",
+      "human_readable": "MC"
+    },
+    {
+      "name": "NA",
+      "human_readable": "NA"
+    },
+    {
+      "name": "NC",
+      "human_readable": "NC"
+    },
+    {
+      "name": "NCY",
+      "human_readable": "NCY"
+    },
+    {
+      "name": "NETA",
+      "human_readable": "NETA"
+    },
+    {
+      "name": "NGG",
+      "human_readable": "NGG"
+    },
+    {
+      "name": "NL",
+      "human_readable": "NL"
+    },
+    {
+      "name": "NMC",
+      "human_readable": "NMC"
+    },
+    {
+      "name": "NN",
+      "human_readable": "NN"
+    },
+    {
+      "name": "NO",
+      "human_readable": "NO"
+    },
+    {
+      "name": "NOC",
+      "human_readable": "NOC"
+    },
+    {
+      "name": "NOMEGA",
+      "human_readable": "NOMEGA"
+    },
+    {
+      "name": "NOY",
+      "human_readable": "NOY"
+    },
+    {
+      "name": "NPI",
+      "human_readable": "NPI"
+    },
+    {
+      "name": "NPIY",
+      "human_readable": "NPIY"
+    },
+    {
+      "name": "NQ",
+      "human_readable": "NQ"
+    },
+    {
+      "name": "NR",
+      "human_readable": "NR"
+    },
+    {
+      "name": "NRe",
+      "human_readable": "NRe"
+    },
+    {
+      "name": "NRfe",
+      "human_readable": "NRfe"
+    },
+    {
+      "name": "NRn",
+      "human_readable": "NRn"
+    },
+    {
+      "name": "NTY",
+      "human_readable": "NTY"
+    },
+    {
+      "name": "NWP",
+      "human_readable": "NWP"
+    },
+    {
+      "name": "NX",
+      "human_readable": "NX"
+    },
+    {
+      "name": "NY",
+      "human_readable": "NY"
+    },
+    {
+      "name": "NY_aux",
+      "human_readable": "NY_aux"
+    },
+    {
+      "name": "NYe",
+      "human_readable": "NYe"
+    },
+    {
+      "name": "NYfe",
+      "human_readable": "NYfe"
+    },
+    {
+      "name": "NYn",
+      "human_readable": "NYn"
+    },
+    {
+      "name": "NZ",
+      "human_readable": "NZ"
+    },
+    {
+      "name": "O",
+      "human_readable": "O"
+    },
+    {
+      "name": "OC",
+      "human_readable": "OC"
+    },
+    {
+      "name": "OMEGA",
+      "human_readable": "OMEGA"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "OY",
+      "human_readable": "OY"
+    },
+    {
+      "name": "PI",
+      "human_readable": "PI"
+    },
+    {
+      "name": "PIY",
+      "human_readable": "PIY"
+    },
+    {
+      "name": "Q",
+      "human_readable": "Q"
+    },
+    {
+      "name": "R",
+      "human_readable": "R"
+    },
+    {
+      "name": "R1",
+      "human_readable": "R1"
+    },
+    {
+      "name": "R2",
+      "human_readable": "R2"
+    },
+    {
+      "name": "Re",
+      "human_readable": "Re"
+    },
+    {
+      "name": "Rfe",
+      "human_readable": "Rfe"
+    },
+    {
+      "name": "Rfe_CB",
+      "human_readable": "Rfe_CB"
+    },
+    {
+      "name": "Rn",
+      "human_readable": "Rn"
+    },
+    {
+      "name": "TY",
+      "human_readable": "TY"
+    },
+    {
+      "name": "UTIL",
+      "human_readable": "UTIL"
+    },
+    {
+      "name": "WELF",
+      "human_readable": "WELF"
+    },
+    {
+      "name": "WP",
+      "human_readable": "WP"
+    },
+    {
+      "name": "X",
+      "human_readable": "X"
+    },
+    {
+      "name": "Y",
+      "human_readable": "Y"
+    },
+    {
+      "name": "Y_aux",
+      "human_readable": "Y_aux"
+    },
+    {
+      "name": "Y_gap",
+      "human_readable": "Y_gap"
+    },
+    {
+      "name": "Y_gap_CB",
+      "human_readable": "Y_gap_CB"
+    },
+    {
+      "name": "Ye",
+      "human_readable": "Ye"
+    },
+    {
+      "name": "Yfe",
+      "human_readable": "Yfe"
+    },
+    {
+      "name": "Yfe_CB",
+      "human_readable": "Yfe_CB"
+    },
+    {
+      "name": "Yn",
+      "human_readable": "Yn"
+    },
+    {
+      "name": "Yn_gap",
+      "human_readable": "Yn_gap"
+    },
+    {
+      "name": "Z",
+      "human_readable": "Z"
+    },
+    {
+      "name": "Z_CB",
+      "human_readable": "Z_CB"
+    }
   ],
   "shocks": [
-    "EA",
-    "EERR",
-    "EG",
-    "EOMEGA",
-    "EZ",
-    "fiscal_",
-    "interest_"
+    {
+      "name": "EA",
+      "human_readable": "EA"
+    },
+    {
+      "name": "EERR",
+      "human_readable": "EERR"
+    },
+    {
+      "name": "EG",
+      "human_readable": "EG"
+    },
+    {
+      "name": "EOMEGA",
+      "human_readable": "EOMEGA"
+    },
+    {
+      "name": "EZ",
+      "human_readable": "EZ"
+    },
+    {
+      "name": "fiscal_",
+      "human_readable": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    }
   ]
 }

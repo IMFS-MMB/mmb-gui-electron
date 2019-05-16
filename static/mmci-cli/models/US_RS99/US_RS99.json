@@ -38,20 +38,59 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "i",
-    "ibar",
-    "inflation",
-    "inflationq",
-    "interest",
-    "output",
-    "outputgap",
-    "pi",
-    "pibar",
-    "y"
+    {
+      "name": "i",
+      "human_readable": "i"
+    },
+    {
+      "name": "ibar",
+      "human_readable": "ibar"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "pi",
+      "human_readable": "pi"
+    },
+    {
+      "name": "pibar",
+      "human_readable": "pibar"
+    },
+    {
+      "name": "y",
+      "human_readable": "y"
+    }
   ],
   "shocks": [
-    "eps",
-    "eta",
-    "interest_"
+    {
+      "name": "eps",
+      "human_readable": "eps"
+    },
+    {
+      "name": "eta",
+      "human_readable": "eta"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    }
   ]
 }

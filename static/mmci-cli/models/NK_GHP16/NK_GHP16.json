@@ -73,57 +73,207 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "C",
-    "C_m",
-    "C_mf",
-    "C_n",
-    "C_nf",
-    "Cf",
-    "D",
-    "Df",
-    "fispol",
-    "g",
-    "G",
-    "h_m",
-    "h_mf",
-    "h_n",
-    "h_nf",
-    "I",
-    "If",
-    "infl",
-    "inflation",
-    "inflationq",
-    "inflf",
-    "inflstar",
-    "inflstarf",
-    "interest",
-    "K",
-    "K_m",
-    "K_mf",
-    "K_n",
-    "K_nf",
-    "Kf",
-    "lambda",
-    "lambdaf",
-    "output",
-    "outputgap",
-    "r",
-    "r_k",
-    "r_kf",
-    "rf",
-    "RMC",
-    "RMCf",
-    "W",
-    "Wf",
-    "x_1",
-    "x_1f",
-    "x_2",
-    "x_2f",
-    "Y",
-    "Yf"
+    {
+      "name": "C",
+      "human_readable": "C"
+    },
+    {
+      "name": "C_m",
+      "human_readable": "C_m"
+    },
+    {
+      "name": "C_mf",
+      "human_readable": "C_mf"
+    },
+    {
+      "name": "C_n",
+      "human_readable": "C_n"
+    },
+    {
+      "name": "C_nf",
+      "human_readable": "C_nf"
+    },
+    {
+      "name": "Cf",
+      "human_readable": "Cf"
+    },
+    {
+      "name": "D",
+      "human_readable": "D"
+    },
+    {
+      "name": "Df",
+      "human_readable": "Df"
+    },
+    {
+      "name": "fispol",
+      "human_readable": "fispol"
+    },
+    {
+      "name": "g",
+      "human_readable": "g"
+    },
+    {
+      "name": "G",
+      "human_readable": "G"
+    },
+    {
+      "name": "h_m",
+      "human_readable": "h_m"
+    },
+    {
+      "name": "h_mf",
+      "human_readable": "h_mf"
+    },
+    {
+      "name": "h_n",
+      "human_readable": "h_n"
+    },
+    {
+      "name": "h_nf",
+      "human_readable": "h_nf"
+    },
+    {
+      "name": "I",
+      "human_readable": "I"
+    },
+    {
+      "name": "If",
+      "human_readable": "If"
+    },
+    {
+      "name": "infl",
+      "human_readable": "infl"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "inflf",
+      "human_readable": "inflf"
+    },
+    {
+      "name": "inflstar",
+      "human_readable": "inflstar"
+    },
+    {
+      "name": "inflstarf",
+      "human_readable": "inflstarf"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "K",
+      "human_readable": "K"
+    },
+    {
+      "name": "K_m",
+      "human_readable": "K_m"
+    },
+    {
+      "name": "K_mf",
+      "human_readable": "K_mf"
+    },
+    {
+      "name": "K_n",
+      "human_readable": "K_n"
+    },
+    {
+      "name": "K_nf",
+      "human_readable": "K_nf"
+    },
+    {
+      "name": "Kf",
+      "human_readable": "Kf"
+    },
+    {
+      "name": "lambda",
+      "human_readable": "lambda"
+    },
+    {
+      "name": "lambdaf",
+      "human_readable": "lambdaf"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "r",
+      "human_readable": "r"
+    },
+    {
+      "name": "r_k",
+      "human_readable": "r_k"
+    },
+    {
+      "name": "r_kf",
+      "human_readable": "r_kf"
+    },
+    {
+      "name": "rf",
+      "human_readable": "rf"
+    },
+    {
+      "name": "RMC",
+      "human_readable": "RMC"
+    },
+    {
+      "name": "RMCf",
+      "human_readable": "RMCf"
+    },
+    {
+      "name": "W",
+      "human_readable": "W"
+    },
+    {
+      "name": "Wf",
+      "human_readable": "Wf"
+    },
+    {
+      "name": "x_1",
+      "human_readable": "x_1"
+    },
+    {
+      "name": "x_1f",
+      "human_readable": "x_1f"
+    },
+    {
+      "name": "x_2",
+      "human_readable": "x_2"
+    },
+    {
+      "name": "x_2f",
+      "human_readable": "x_2f"
+    },
+    {
+      "name": "Y",
+      "human_readable": "Y"
+    },
+    {
+      "name": "Yf",
+      "human_readable": "Yf"
+    }
   ],
   "shocks": [
-    "fiscal_",
-    "interest_"
+    {
+      "name": "fiscal_",
+      "human_readable": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    }
   ]
 }

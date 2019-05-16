@@ -73,68 +73,251 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "ARMAlambdap",
-    "ARMAlambdaw",
-    "b",
-    "c",
-    "cstar",
-    "fispol",
-    "g",
-    "gdp",
-    "gdpstar",
-    "gs",
-    "i",
-    "inflation",
-    "inflationq",
-    "interest",
-    "istar",
-    "k",
-    "kbar",
-    "kbarstar",
-    "kstar",
-    "L",
-    "lambda",
-    "lambdap",
-    "lambdastar",
-    "lambdaw",
-    "Lstar",
-    "miu",
-    "mp",
-    "mpk",
-    "mpkstar",
-    "output",
-    "outputgap",
-    "p",
-    "q",
-    "qstar",
-    "R",
-    "Rd",
-    "Rdstar",
-    "Rk",
-    "Rkstar",
-    "Rstar",
-    "s",
-    "sstar",
-    "u",
-    "upsilon",
-    "ustar",
-    "w",
-    "wgap",
-    "wgapstar",
-    "wstar",
-    "y",
-    "ystar",
-    "z"
+    {
+      "name": "ARMAlambdap",
+      "human_readable": "ARMAlambdap"
+    },
+    {
+      "name": "ARMAlambdaw",
+      "human_readable": "ARMAlambdaw"
+    },
+    {
+      "name": "b",
+      "human_readable": "b"
+    },
+    {
+      "name": "c",
+      "human_readable": "c"
+    },
+    {
+      "name": "cstar",
+      "human_readable": "cstar"
+    },
+    {
+      "name": "fispol",
+      "human_readable": "fispol"
+    },
+    {
+      "name": "g",
+      "human_readable": "g"
+    },
+    {
+      "name": "gdp",
+      "human_readable": "gdp"
+    },
+    {
+      "name": "gdpstar",
+      "human_readable": "gdpstar"
+    },
+    {
+      "name": "gs",
+      "human_readable": "gs"
+    },
+    {
+      "name": "i",
+      "human_readable": "i"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "istar",
+      "human_readable": "istar"
+    },
+    {
+      "name": "k",
+      "human_readable": "k"
+    },
+    {
+      "name": "kbar",
+      "human_readable": "kbar"
+    },
+    {
+      "name": "kbarstar",
+      "human_readable": "kbarstar"
+    },
+    {
+      "name": "kstar",
+      "human_readable": "kstar"
+    },
+    {
+      "name": "L",
+      "human_readable": "L"
+    },
+    {
+      "name": "lambda",
+      "human_readable": "lambda"
+    },
+    {
+      "name": "lambdap",
+      "human_readable": "lambdap"
+    },
+    {
+      "name": "lambdastar",
+      "human_readable": "lambdastar"
+    },
+    {
+      "name": "lambdaw",
+      "human_readable": "lambdaw"
+    },
+    {
+      "name": "Lstar",
+      "human_readable": "Lstar"
+    },
+    {
+      "name": "miu",
+      "human_readable": "miu"
+    },
+    {
+      "name": "mp",
+      "human_readable": "mp"
+    },
+    {
+      "name": "mpk",
+      "human_readable": "mpk"
+    },
+    {
+      "name": "mpkstar",
+      "human_readable": "mpkstar"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "p",
+      "human_readable": "p"
+    },
+    {
+      "name": "q",
+      "human_readable": "q"
+    },
+    {
+      "name": "qstar",
+      "human_readable": "qstar"
+    },
+    {
+      "name": "R",
+      "human_readable": "R"
+    },
+    {
+      "name": "Rd",
+      "human_readable": "Rd"
+    },
+    {
+      "name": "Rdstar",
+      "human_readable": "Rdstar"
+    },
+    {
+      "name": "Rk",
+      "human_readable": "Rk"
+    },
+    {
+      "name": "Rkstar",
+      "human_readable": "Rkstar"
+    },
+    {
+      "name": "Rstar",
+      "human_readable": "Rstar"
+    },
+    {
+      "name": "s",
+      "human_readable": "s"
+    },
+    {
+      "name": "sstar",
+      "human_readable": "sstar"
+    },
+    {
+      "name": "u",
+      "human_readable": "u"
+    },
+    {
+      "name": "upsilon",
+      "human_readable": "upsilon"
+    },
+    {
+      "name": "ustar",
+      "human_readable": "ustar"
+    },
+    {
+      "name": "w",
+      "human_readable": "w"
+    },
+    {
+      "name": "wgap",
+      "human_readable": "wgap"
+    },
+    {
+      "name": "wgapstar",
+      "human_readable": "wgapstar"
+    },
+    {
+      "name": "wstar",
+      "human_readable": "wstar"
+    },
+    {
+      "name": "y",
+      "human_readable": "y"
+    },
+    {
+      "name": "ystar",
+      "human_readable": "ystar"
+    },
+    {
+      "name": "z",
+      "human_readable": "z"
+    }
   ],
   "shocks": [
-    "bs",
-    "fiscal_",
-    "interest_",
-    "lambdaps",
-    "lambdaws",
-    "mius",
-    "Rs",
-    "upsilons",
-    "zs"
+    {
+      "name": "bs",
+      "human_readable": "bs"
+    },
+    {
+      "name": "fiscal_",
+      "human_readable": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    },
+    {
+      "name": "lambdaps",
+      "human_readable": "lambdaps"
+    },
+    {
+      "name": "lambdaws",
+      "human_readable": "lambdaws"
+    },
+    {
+      "name": "mius",
+      "human_readable": "mius"
+    },
+    {
+      "name": "Rs",
+      "human_readable": "Rs"
+    },
+    {
+      "name": "upsilons",
+      "human_readable": "upsilons"
+    },
+    {
+      "name": "zs",
+      "human_readable": "zs"
+    }
   ]
 }

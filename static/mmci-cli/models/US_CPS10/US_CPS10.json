@@ -74,30 +74,99 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "b",
-    "inflation",
-    "inflationq",
-    "interest",
-    "lambdda",
-    "lambddap",
-    "lambddastar",
-    "output",
-    "outputgap",
-    "p",
-    "pit",
-    "R",
-    "Rstar",
-    "w",
-    "wstar",
-    "y",
-    "ystar",
-    "z"
+    {
+      "name": "b",
+      "human_readable": "b"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "lambdda",
+      "human_readable": "lambdda"
+    },
+    {
+      "name": "lambddap",
+      "human_readable": "lambddap"
+    },
+    {
+      "name": "lambddastar",
+      "human_readable": "lambddastar"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "p",
+      "human_readable": "p"
+    },
+    {
+      "name": "pit",
+      "human_readable": "pit"
+    },
+    {
+      "name": "R",
+      "human_readable": "R"
+    },
+    {
+      "name": "Rstar",
+      "human_readable": "Rstar"
+    },
+    {
+      "name": "w",
+      "human_readable": "w"
+    },
+    {
+      "name": "wstar",
+      "human_readable": "wstar"
+    },
+    {
+      "name": "y",
+      "human_readable": "y"
+    },
+    {
+      "name": "ystar",
+      "human_readable": "ystar"
+    },
+    {
+      "name": "z",
+      "human_readable": "z"
+    }
   ],
   "shocks": [
-    "bs",
-    "interest_",
-    "lambddaps",
-    "pits",
-    "zs"
+    {
+      "name": "bs",
+      "human_readable": "bs"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    },
+    {
+      "name": "lambddaps",
+      "human_readable": "lambddaps"
+    },
+    {
+      "name": "pits",
+      "human_readable": "pits"
+    },
+    {
+      "name": "zs",
+      "human_readable": "zs"
+    }
   ]
 }

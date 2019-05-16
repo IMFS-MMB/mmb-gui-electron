@@ -74,97 +74,367 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "a",
-    "ann_pin",
-    "ann_r1",
-    "ann_r2",
-    "assets",
-    "b2",
-    "b2f",
-    "bb2",
-    "c",
-    "cf",
-    "d",
-    "f",
-    "ff",
-    "ffr",
-    "g_bonds",
-    "gi",
-    "gy",
-    "i",
-    "i_growth",
-    "if",
-    "infl",
-    "inflation",
-    "inflationq",
-    "interest",
-    "k",
-    "kf",
-    "L",
-    "labor_dist",
-    "lev",
-    "levf",
-    "Lf",
-    "m",
-    "mc",
-    "mf",
-    "mk",
-    "mkw",
-    "mp",
-    "mrs",
-    "muc",
-    "mucf",
-    "muinv",
-    "nw",
-    "nwf",
-    "output",
-    "outputgap",
-    "PCE_inf",
-    "pin",
-    "pinf",
-    "pinw",
-    "pk",
-    "pkf",
-    "q",
-    "qf",
-    "qi",
-    "qif",
-    "qnat",
-    "qnatf",
-    "r_lend",
-    "r1",
-    "r10",
-    "r10_nat",
-    "r10_natf",
-    "r10f",
-    "r10obs",
-    "r10s",
-    "r1f",
-    "r2",
-    "r2f",
-    "rk",
-    "rkf",
-    "rn",
-    "spread",
-    "term_prem",
-    "term_premf",
-    "u_psi",
-    "w",
-    "wf",
-    "y",
-    "y_growth",
-    "yf",
-    "ygap"
+    {
+      "name": "a",
+      "human_readable": "a"
+    },
+    {
+      "name": "ann_pin",
+      "human_readable": "ann_pin"
+    },
+    {
+      "name": "ann_r1",
+      "human_readable": "ann_r1"
+    },
+    {
+      "name": "ann_r2",
+      "human_readable": "ann_r2"
+    },
+    {
+      "name": "assets",
+      "human_readable": "assets"
+    },
+    {
+      "name": "b2",
+      "human_readable": "b2"
+    },
+    {
+      "name": "b2f",
+      "human_readable": "b2f"
+    },
+    {
+      "name": "bb2",
+      "human_readable": "bb2"
+    },
+    {
+      "name": "c",
+      "human_readable": "c"
+    },
+    {
+      "name": "cf",
+      "human_readable": "cf"
+    },
+    {
+      "name": "d",
+      "human_readable": "d"
+    },
+    {
+      "name": "f",
+      "human_readable": "f"
+    },
+    {
+      "name": "ff",
+      "human_readable": "ff"
+    },
+    {
+      "name": "ffr",
+      "human_readable": "ffr"
+    },
+    {
+      "name": "g_bonds",
+      "human_readable": "g_bonds"
+    },
+    {
+      "name": "gi",
+      "human_readable": "gi"
+    },
+    {
+      "name": "gy",
+      "human_readable": "gy"
+    },
+    {
+      "name": "i",
+      "human_readable": "i"
+    },
+    {
+      "name": "i_growth",
+      "human_readable": "i_growth"
+    },
+    {
+      "name": "if",
+      "human_readable": "if"
+    },
+    {
+      "name": "infl",
+      "human_readable": "infl"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "k",
+      "human_readable": "k"
+    },
+    {
+      "name": "kf",
+      "human_readable": "kf"
+    },
+    {
+      "name": "L",
+      "human_readable": "L"
+    },
+    {
+      "name": "labor_dist",
+      "human_readable": "labor_dist"
+    },
+    {
+      "name": "lev",
+      "human_readable": "lev"
+    },
+    {
+      "name": "levf",
+      "human_readable": "levf"
+    },
+    {
+      "name": "Lf",
+      "human_readable": "Lf"
+    },
+    {
+      "name": "m",
+      "human_readable": "m"
+    },
+    {
+      "name": "mc",
+      "human_readable": "mc"
+    },
+    {
+      "name": "mf",
+      "human_readable": "mf"
+    },
+    {
+      "name": "mk",
+      "human_readable": "mk"
+    },
+    {
+      "name": "mkw",
+      "human_readable": "mkw"
+    },
+    {
+      "name": "mp",
+      "human_readable": "mp"
+    },
+    {
+      "name": "mrs",
+      "human_readable": "mrs"
+    },
+    {
+      "name": "muc",
+      "human_readable": "muc"
+    },
+    {
+      "name": "mucf",
+      "human_readable": "mucf"
+    },
+    {
+      "name": "muinv",
+      "human_readable": "muinv"
+    },
+    {
+      "name": "nw",
+      "human_readable": "nw"
+    },
+    {
+      "name": "nwf",
+      "human_readable": "nwf"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "PCE_inf",
+      "human_readable": "PCE_inf"
+    },
+    {
+      "name": "pin",
+      "human_readable": "pin"
+    },
+    {
+      "name": "pinf",
+      "human_readable": "pinf"
+    },
+    {
+      "name": "pinw",
+      "human_readable": "pinw"
+    },
+    {
+      "name": "pk",
+      "human_readable": "pk"
+    },
+    {
+      "name": "pkf",
+      "human_readable": "pkf"
+    },
+    {
+      "name": "q",
+      "human_readable": "q"
+    },
+    {
+      "name": "qf",
+      "human_readable": "qf"
+    },
+    {
+      "name": "qi",
+      "human_readable": "qi"
+    },
+    {
+      "name": "qif",
+      "human_readable": "qif"
+    },
+    {
+      "name": "qnat",
+      "human_readable": "qnat"
+    },
+    {
+      "name": "qnatf",
+      "human_readable": "qnatf"
+    },
+    {
+      "name": "r_lend",
+      "human_readable": "r_lend"
+    },
+    {
+      "name": "r1",
+      "human_readable": "r1"
+    },
+    {
+      "name": "r10",
+      "human_readable": "r10"
+    },
+    {
+      "name": "r10_nat",
+      "human_readable": "r10_nat"
+    },
+    {
+      "name": "r10_natf",
+      "human_readable": "r10_natf"
+    },
+    {
+      "name": "r10f",
+      "human_readable": "r10f"
+    },
+    {
+      "name": "r10obs",
+      "human_readable": "r10obs"
+    },
+    {
+      "name": "r10s",
+      "human_readable": "r10s"
+    },
+    {
+      "name": "r1f",
+      "human_readable": "r1f"
+    },
+    {
+      "name": "r2",
+      "human_readable": "r2"
+    },
+    {
+      "name": "r2f",
+      "human_readable": "r2f"
+    },
+    {
+      "name": "rk",
+      "human_readable": "rk"
+    },
+    {
+      "name": "rkf",
+      "human_readable": "rkf"
+    },
+    {
+      "name": "rn",
+      "human_readable": "rn"
+    },
+    {
+      "name": "spread",
+      "human_readable": "spread"
+    },
+    {
+      "name": "term_prem",
+      "human_readable": "term_prem"
+    },
+    {
+      "name": "term_premf",
+      "human_readable": "term_premf"
+    },
+    {
+      "name": "u_psi",
+      "human_readable": "u_psi"
+    },
+    {
+      "name": "w",
+      "human_readable": "w"
+    },
+    {
+      "name": "wf",
+      "human_readable": "wf"
+    },
+    {
+      "name": "y",
+      "human_readable": "y"
+    },
+    {
+      "name": "y_growth",
+      "human_readable": "y_growth"
+    },
+    {
+      "name": "yf",
+      "human_readable": "yf"
+    },
+    {
+      "name": "ygap",
+      "human_readable": "ygap"
+    }
   ],
   "shocks": [
-    "eps_a",
-    "eps_b2",
-    "eps_i",
-    "eps_mk",
-    "eps_mkw",
-    "eps_mp",
-    "eps_psi",
-    "eps_rn",
-    "interest_"
+    {
+      "name": "eps_a",
+      "human_readable": "eps_a"
+    },
+    {
+      "name": "eps_b2",
+      "human_readable": "eps_b2"
+    },
+    {
+      "name": "eps_i",
+      "human_readable": "eps_i"
+    },
+    {
+      "name": "eps_mk",
+      "human_readable": "eps_mk"
+    },
+    {
+      "name": "eps_mkw",
+      "human_readable": "eps_mkw"
+    },
+    {
+      "name": "eps_mp",
+      "human_readable": "eps_mp"
+    },
+    {
+      "name": "eps_psi",
+      "human_readable": "eps_psi"
+    },
+    {
+      "name": "eps_rn",
+      "human_readable": "eps_rn"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    }
   ]
 }

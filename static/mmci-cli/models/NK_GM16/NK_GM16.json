@@ -39,50 +39,179 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "a",
-    "c",
-    "cgap",
-    "cn",
-    "de",
-    "dp",
-    "dpc",
-    "dw",
-    "e",
-    "i",
-    "inflation",
-    "inflationq",
-    "interest",
-    "n",
-    "ne",
-    "ngap",
-    "ngapx",
-    "nn",
-    "output",
-    "outputgap",
-    "p",
-    "pc",
-    "r",
-    "s",
-    "sgap",
-    "sn",
-    "t",
-    "w",
-    "wgap",
-    "wp",
-    "wpn",
-    "y",
-    "ygap",
-    "yn",
-    "z",
-    "zx1",
-    "zx2"
+    {
+      "name": "a",
+      "human_readable": "a"
+    },
+    {
+      "name": "c",
+      "human_readable": "c"
+    },
+    {
+      "name": "cgap",
+      "human_readable": "cgap"
+    },
+    {
+      "name": "cn",
+      "human_readable": "cn"
+    },
+    {
+      "name": "de",
+      "human_readable": "de"
+    },
+    {
+      "name": "dp",
+      "human_readable": "dp"
+    },
+    {
+      "name": "dpc",
+      "human_readable": "dpc"
+    },
+    {
+      "name": "dw",
+      "human_readable": "dw"
+    },
+    {
+      "name": "e",
+      "human_readable": "e"
+    },
+    {
+      "name": "i",
+      "human_readable": "i"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "n",
+      "human_readable": "n"
+    },
+    {
+      "name": "ne",
+      "human_readable": "ne"
+    },
+    {
+      "name": "ngap",
+      "human_readable": "ngap"
+    },
+    {
+      "name": "ngapx",
+      "human_readable": "ngapx"
+    },
+    {
+      "name": "nn",
+      "human_readable": "nn"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "p",
+      "human_readable": "p"
+    },
+    {
+      "name": "pc",
+      "human_readable": "pc"
+    },
+    {
+      "name": "r",
+      "human_readable": "r"
+    },
+    {
+      "name": "s",
+      "human_readable": "s"
+    },
+    {
+      "name": "sgap",
+      "human_readable": "sgap"
+    },
+    {
+      "name": "sn",
+      "human_readable": "sn"
+    },
+    {
+      "name": "t",
+      "human_readable": "t"
+    },
+    {
+      "name": "w",
+      "human_readable": "w"
+    },
+    {
+      "name": "wgap",
+      "human_readable": "wgap"
+    },
+    {
+      "name": "wp",
+      "human_readable": "wp"
+    },
+    {
+      "name": "wpn",
+      "human_readable": "wpn"
+    },
+    {
+      "name": "y",
+      "human_readable": "y"
+    },
+    {
+      "name": "ygap",
+      "human_readable": "ygap"
+    },
+    {
+      "name": "yn",
+      "human_readable": "yn"
+    },
+    {
+      "name": "z",
+      "human_readable": "z"
+    },
+    {
+      "name": "zx1",
+      "human_readable": "zx1"
+    },
+    {
+      "name": "zx2",
+      "human_readable": "zx2"
+    }
   ],
   "shocks": [
-    "ea",
-    "et",
-    "ez",
-    "ezx1",
-    "ezx2",
-    "interest_"
+    {
+      "name": "ea",
+      "human_readable": "ea"
+    },
+    {
+      "name": "et",
+      "human_readable": "et"
+    },
+    {
+      "name": "ez",
+      "human_readable": "ez"
+    },
+    {
+      "name": "ezx1",
+      "human_readable": "ezx1"
+    },
+    {
+      "name": "ezx2",
+      "human_readable": "ezx2"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    }
   ]
 }

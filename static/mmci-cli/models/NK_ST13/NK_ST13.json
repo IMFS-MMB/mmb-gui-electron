@@ -71,67 +71,247 @@
   "variabledim": 2,
   "al": false,
   "vars": [
-    "A",
-    "alpha",
-    "b",
-    "b_fe",
-    "c",
-    "c_fe",
-    "d",
-    "d_fe",
-    "delta_k",
-    "delta_k_fe",
-    "EFP",
-    "EFP_fe",
-    "f",
-    "f_fe",
-    "i",
-    "i_fe",
-    "IMP",
-    "IMP_fe",
-    "inflation",
-    "inflationq",
-    "interest",
-    "k",
-    "k_fe",
-    "l",
-    "l_fe",
-    "lambda",
-    "lambda_fe",
-    "m",
-    "m_fe",
-    "n",
-    "n_fe",
-    "omega",
-    "output",
-    "outputgap",
-    "pi",
-    "psi",
-    "psi_fe",
-    "R",
-    "R_fe",
-    "Rd",
-    "Rd_fe",
-    "Rl",
-    "Rl_fe",
-    "rmc",
-    "rmc_fe",
-    "theta",
-    "w",
-    "w_fe",
-    "xi",
-    "xi_fe",
-    "y",
-    "y_fe",
-    "yk",
-    "yk_fe",
-    "yn",
-    "yn_fe"
+    {
+      "name": "A",
+      "human_readable": "A"
+    },
+    {
+      "name": "alpha",
+      "human_readable": "alpha"
+    },
+    {
+      "name": "b",
+      "human_readable": "b"
+    },
+    {
+      "name": "b_fe",
+      "human_readable": "b_fe"
+    },
+    {
+      "name": "c",
+      "human_readable": "c"
+    },
+    {
+      "name": "c_fe",
+      "human_readable": "c_fe"
+    },
+    {
+      "name": "d",
+      "human_readable": "d"
+    },
+    {
+      "name": "d_fe",
+      "human_readable": "d_fe"
+    },
+    {
+      "name": "delta_k",
+      "human_readable": "delta_k"
+    },
+    {
+      "name": "delta_k_fe",
+      "human_readable": "delta_k_fe"
+    },
+    {
+      "name": "EFP",
+      "human_readable": "EFP"
+    },
+    {
+      "name": "EFP_fe",
+      "human_readable": "EFP_fe"
+    },
+    {
+      "name": "f",
+      "human_readable": "f"
+    },
+    {
+      "name": "f_fe",
+      "human_readable": "f_fe"
+    },
+    {
+      "name": "i",
+      "human_readable": "i"
+    },
+    {
+      "name": "i_fe",
+      "human_readable": "i_fe"
+    },
+    {
+      "name": "IMP",
+      "human_readable": "IMP"
+    },
+    {
+      "name": "IMP_fe",
+      "human_readable": "IMP_fe"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "k",
+      "human_readable": "k"
+    },
+    {
+      "name": "k_fe",
+      "human_readable": "k_fe"
+    },
+    {
+      "name": "l",
+      "human_readable": "l"
+    },
+    {
+      "name": "l_fe",
+      "human_readable": "l_fe"
+    },
+    {
+      "name": "lambda",
+      "human_readable": "lambda"
+    },
+    {
+      "name": "lambda_fe",
+      "human_readable": "lambda_fe"
+    },
+    {
+      "name": "m",
+      "human_readable": "m"
+    },
+    {
+      "name": "m_fe",
+      "human_readable": "m_fe"
+    },
+    {
+      "name": "n",
+      "human_readable": "n"
+    },
+    {
+      "name": "n_fe",
+      "human_readable": "n_fe"
+    },
+    {
+      "name": "omega",
+      "human_readable": "omega"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "pi",
+      "human_readable": "pi"
+    },
+    {
+      "name": "psi",
+      "human_readable": "psi"
+    },
+    {
+      "name": "psi_fe",
+      "human_readable": "psi_fe"
+    },
+    {
+      "name": "R",
+      "human_readable": "R"
+    },
+    {
+      "name": "R_fe",
+      "human_readable": "R_fe"
+    },
+    {
+      "name": "Rd",
+      "human_readable": "Rd"
+    },
+    {
+      "name": "Rd_fe",
+      "human_readable": "Rd_fe"
+    },
+    {
+      "name": "Rl",
+      "human_readable": "Rl"
+    },
+    {
+      "name": "Rl_fe",
+      "human_readable": "Rl_fe"
+    },
+    {
+      "name": "rmc",
+      "human_readable": "rmc"
+    },
+    {
+      "name": "rmc_fe",
+      "human_readable": "rmc_fe"
+    },
+    {
+      "name": "theta",
+      "human_readable": "theta"
+    },
+    {
+      "name": "w",
+      "human_readable": "w"
+    },
+    {
+      "name": "w_fe",
+      "human_readable": "w_fe"
+    },
+    {
+      "name": "xi",
+      "human_readable": "xi"
+    },
+    {
+      "name": "xi_fe",
+      "human_readable": "xi_fe"
+    },
+    {
+      "name": "y",
+      "human_readable": "y"
+    },
+    {
+      "name": "y_fe",
+      "human_readable": "y_fe"
+    },
+    {
+      "name": "yk",
+      "human_readable": "yk"
+    },
+    {
+      "name": "yk_fe",
+      "human_readable": "yk_fe"
+    },
+    {
+      "name": "yn",
+      "human_readable": "yn"
+    },
+    {
+      "name": "yn_fe",
+      "human_readable": "yn_fe"
+    }
   ],
   "shocks": [
-    "epsilon_theta",
-    "interest_",
-    "j",
-    "q"
+    {
+      "name": "epsilon_theta",
+      "human_readable": "epsilon_theta"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    },
+    {
+      "name": "j",
+      "human_readable": "j"
+    },
+    {
+      "name": "q",
+      "human_readable": "q"
+    }
   ]
 }

@@ -72,75 +72,279 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "c",
-    "c_obs",
-    "cn",
-    "D",
-    "D_obs",
-    "Dbs",
-    "Disp",
-    "Dn",
-    "Dn_obs",
-    "Dnew",
-    "Dnew_obs",
-    "Dnewn",
-    "epsi_R",
-    "fispol",
-    "G",
-    "G_",
-    "h",
-    "h_obs",
-    "hn",
-    "i",
-    "i_D",
-    "i_Dn",
-    "i_Dnew",
-    "i_Dnew_obs",
-    "i_Dnewn",
-    "i_obs",
-    "in",
-    "inflation",
-    "inflationq",
-    "interest",
-    "lamda",
-    "lamdan",
-    "m",
-    "m_obs",
-    "MC",
-    "mn",
-    "mu",
-    "mu_obs",
-    "mun",
-    "output",
-    "outputgap",
-    "pi",
-    "pi_obs",
-    "PIESTAR",
-    "PIESTARn",
-    "pin",
-    "pistar",
-    "R",
-    "Rn",
-    "Rrate",
-    "tau",
-    "tau_obs",
-    "taun",
-    "taun_obs",
-    "w",
-    "w_obs",
-    "wn",
-    "y",
-    "y_obs",
-    "yn",
-    "yn_obs",
-    "Z1",
-    "Z2"
+    {
+      "name": "c",
+      "human_readable": "c"
+    },
+    {
+      "name": "c_obs",
+      "human_readable": "c_obs"
+    },
+    {
+      "name": "cn",
+      "human_readable": "cn"
+    },
+    {
+      "name": "D",
+      "human_readable": "D"
+    },
+    {
+      "name": "D_obs",
+      "human_readable": "D_obs"
+    },
+    {
+      "name": "Dbs",
+      "human_readable": "Dbs"
+    },
+    {
+      "name": "Disp",
+      "human_readable": "Disp"
+    },
+    {
+      "name": "Dn",
+      "human_readable": "Dn"
+    },
+    {
+      "name": "Dn_obs",
+      "human_readable": "Dn_obs"
+    },
+    {
+      "name": "Dnew",
+      "human_readable": "Dnew"
+    },
+    {
+      "name": "Dnew_obs",
+      "human_readable": "Dnew_obs"
+    },
+    {
+      "name": "Dnewn",
+      "human_readable": "Dnewn"
+    },
+    {
+      "name": "epsi_R",
+      "human_readable": "epsi_R"
+    },
+    {
+      "name": "fispol",
+      "human_readable": "fispol"
+    },
+    {
+      "name": "G",
+      "human_readable": "G"
+    },
+    {
+      "name": "G_",
+      "human_readable": "G_"
+    },
+    {
+      "name": "h",
+      "human_readable": "h"
+    },
+    {
+      "name": "h_obs",
+      "human_readable": "h_obs"
+    },
+    {
+      "name": "hn",
+      "human_readable": "hn"
+    },
+    {
+      "name": "i",
+      "human_readable": "i"
+    },
+    {
+      "name": "i_D",
+      "human_readable": "i_D"
+    },
+    {
+      "name": "i_Dn",
+      "human_readable": "i_Dn"
+    },
+    {
+      "name": "i_Dnew",
+      "human_readable": "i_Dnew"
+    },
+    {
+      "name": "i_Dnew_obs",
+      "human_readable": "i_Dnew_obs"
+    },
+    {
+      "name": "i_Dnewn",
+      "human_readable": "i_Dnewn"
+    },
+    {
+      "name": "i_obs",
+      "human_readable": "i_obs"
+    },
+    {
+      "name": "in",
+      "human_readable": "in"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "lamda",
+      "human_readable": "lamda"
+    },
+    {
+      "name": "lamdan",
+      "human_readable": "lamdan"
+    },
+    {
+      "name": "m",
+      "human_readable": "m"
+    },
+    {
+      "name": "m_obs",
+      "human_readable": "m_obs"
+    },
+    {
+      "name": "MC",
+      "human_readable": "MC"
+    },
+    {
+      "name": "mn",
+      "human_readable": "mn"
+    },
+    {
+      "name": "mu",
+      "human_readable": "mu"
+    },
+    {
+      "name": "mu_obs",
+      "human_readable": "mu_obs"
+    },
+    {
+      "name": "mun",
+      "human_readable": "mun"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "pi",
+      "human_readable": "pi"
+    },
+    {
+      "name": "pi_obs",
+      "human_readable": "pi_obs"
+    },
+    {
+      "name": "PIESTAR",
+      "human_readable": "PIESTAR"
+    },
+    {
+      "name": "PIESTARn",
+      "human_readable": "PIESTARn"
+    },
+    {
+      "name": "pin",
+      "human_readable": "pin"
+    },
+    {
+      "name": "pistar",
+      "human_readable": "pistar"
+    },
+    {
+      "name": "R",
+      "human_readable": "R"
+    },
+    {
+      "name": "Rn",
+      "human_readable": "Rn"
+    },
+    {
+      "name": "Rrate",
+      "human_readable": "Rrate"
+    },
+    {
+      "name": "tau",
+      "human_readable": "tau"
+    },
+    {
+      "name": "tau_obs",
+      "human_readable": "tau_obs"
+    },
+    {
+      "name": "taun",
+      "human_readable": "taun"
+    },
+    {
+      "name": "taun_obs",
+      "human_readable": "taun_obs"
+    },
+    {
+      "name": "w",
+      "human_readable": "w"
+    },
+    {
+      "name": "w_obs",
+      "human_readable": "w_obs"
+    },
+    {
+      "name": "wn",
+      "human_readable": "wn"
+    },
+    {
+      "name": "y",
+      "human_readable": "y"
+    },
+    {
+      "name": "y_obs",
+      "human_readable": "y_obs"
+    },
+    {
+      "name": "yn",
+      "human_readable": "yn"
+    },
+    {
+      "name": "yn_obs",
+      "human_readable": "yn_obs"
+    },
+    {
+      "name": "Z1",
+      "human_readable": "Z1"
+    },
+    {
+      "name": "Z2",
+      "human_readable": "Z2"
+    }
   ],
   "shocks": [
-    "epsi_D",
-    "eta_PIESTAR",
-    "eta_r",
-    "fiscal_",
-    "interest_"
+    {
+      "name": "epsi_D",
+      "human_readable": "epsi_D"
+    },
+    {
+      "name": "eta_PIESTAR",
+      "human_readable": "eta_PIESTAR"
+    },
+    {
+      "name": "eta_r",
+      "human_readable": "eta_r"
+    },
+    {
+      "name": "fiscal_",
+      "human_readable": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    }
   ]
 }

@@ -89,25 +89,79 @@
     ]
   },
   "vars": [
-    "drff",
-    "inflation",
-    "inflationq",
-    "inflationql",
-    "inflationql2",
-    "inflationqls",
-    "interest",
-    "output",
-    "outputgap",
-    "pdot",
-    "pdotsh",
-    "pinf4",
-    "rff",
-    "rstar",
-    "ygap"
+    {
+      "name": "drff",
+      "human_readable": "drff"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "inflationql",
+      "human_readable": "inflationql"
+    },
+    {
+      "name": "inflationql2",
+      "human_readable": "inflationql2"
+    },
+    {
+      "name": "inflationqls",
+      "human_readable": "inflationqls"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "pdot",
+      "human_readable": "pdot"
+    },
+    {
+      "name": "pdotsh",
+      "human_readable": "pdotsh"
+    },
+    {
+      "name": "pinf4",
+      "human_readable": "pinf4"
+    },
+    {
+      "name": "rff",
+      "human_readable": "rff"
+    },
+    {
+      "name": "rstar",
+      "human_readable": "rstar"
+    },
+    {
+      "name": "ygap",
+      "human_readable": "ygap"
+    }
   ],
   "shocks": [
-    "interest_",
-    "pdotsh_",
-    "rstar_"
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    },
+    {
+      "name": "pdotsh_",
+      "human_readable": "pdotsh_"
+    },
+    {
+      "name": "rstar_",
+      "human_readable": "rstar_"
+    }
   ]
 }

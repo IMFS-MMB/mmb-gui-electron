@@ -73,29 +73,95 @@
   "variabledim": 2,
   "al": false,
   "vars": [
-    "cwp",
-    "dis",
-    "il",
-    "infl",
-    "inflation",
-    "inflationq",
-    "interest",
-    "is",
-    "lagcwp1",
-    "lagcwp2",
-    "lagis1",
-    "lagpi11",
-    "lagpi12",
-    "lagq1",
-    "output",
-    "outputgap",
-    "pi1",
-    "q",
-    "rl"
+    {
+      "name": "cwp",
+      "human_readable": "cwp"
+    },
+    {
+      "name": "dis",
+      "human_readable": "dis"
+    },
+    {
+      "name": "il",
+      "human_readable": "il"
+    },
+    {
+      "name": "infl",
+      "human_readable": "infl"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "is",
+      "human_readable": "is"
+    },
+    {
+      "name": "lagcwp1",
+      "human_readable": "lagcwp1"
+    },
+    {
+      "name": "lagcwp2",
+      "human_readable": "lagcwp2"
+    },
+    {
+      "name": "lagis1",
+      "human_readable": "lagis1"
+    },
+    {
+      "name": "lagpi11",
+      "human_readable": "lagpi11"
+    },
+    {
+      "name": "lagpi12",
+      "human_readable": "lagpi12"
+    },
+    {
+      "name": "lagq1",
+      "human_readable": "lagq1"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "pi1",
+      "human_readable": "pi1"
+    },
+    {
+      "name": "q",
+      "human_readable": "q"
+    },
+    {
+      "name": "rl",
+      "human_readable": "rl"
+    }
   ],
   "shocks": [
-    "e_cw",
-    "e_d",
-    "interest_"
+    {
+      "name": "e_cw",
+      "human_readable": "e_cw"
+    },
+    {
+      "name": "e_d",
+      "human_readable": "e_d"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    }
   ]
 }

@@ -72,48 +72,171 @@
   "variabledim": 2,
   "al": false,
   "vars": [
-    "A",
-    "b",
-    "C",
-    "ChiC",
-    "ChiL",
-    "D",
-    "epsG",
-    "F",
-    "fispol",
-    "G",
-    "Gf",
-    "i",
-    "inflation",
-    "inflationq",
-    "interest",
-    "iQ",
-    "K",
-    "ksi",
-    "L",
-    "output",
-    "outputgap",
-    "PB",
-    "Pi",
-    "PQ",
-    "Ps",
-    "Pss",
-    "q",
-    "qbar",
-    "qCB",
-    "s",
-    "theta",
-    "w",
-    "Y",
-    "Yf"
+    {
+      "name": "A",
+      "human_readable": "A"
+    },
+    {
+      "name": "b",
+      "human_readable": "b"
+    },
+    {
+      "name": "C",
+      "human_readable": "C"
+    },
+    {
+      "name": "ChiC",
+      "human_readable": "ChiC"
+    },
+    {
+      "name": "ChiL",
+      "human_readable": "ChiL"
+    },
+    {
+      "name": "D",
+      "human_readable": "D"
+    },
+    {
+      "name": "epsG",
+      "human_readable": "epsG"
+    },
+    {
+      "name": "F",
+      "human_readable": "F"
+    },
+    {
+      "name": "fispol",
+      "human_readable": "fispol"
+    },
+    {
+      "name": "G",
+      "human_readable": "G"
+    },
+    {
+      "name": "Gf",
+      "human_readable": "Gf"
+    },
+    {
+      "name": "i",
+      "human_readable": "i"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "iQ",
+      "human_readable": "iQ"
+    },
+    {
+      "name": "K",
+      "human_readable": "K"
+    },
+    {
+      "name": "ksi",
+      "human_readable": "ksi"
+    },
+    {
+      "name": "L",
+      "human_readable": "L"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "PB",
+      "human_readable": "PB"
+    },
+    {
+      "name": "Pi",
+      "human_readable": "Pi"
+    },
+    {
+      "name": "PQ",
+      "human_readable": "PQ"
+    },
+    {
+      "name": "Ps",
+      "human_readable": "Ps"
+    },
+    {
+      "name": "Pss",
+      "human_readable": "Pss"
+    },
+    {
+      "name": "q",
+      "human_readable": "q"
+    },
+    {
+      "name": "qbar",
+      "human_readable": "qbar"
+    },
+    {
+      "name": "qCB",
+      "human_readable": "qCB"
+    },
+    {
+      "name": "s",
+      "human_readable": "s"
+    },
+    {
+      "name": "theta",
+      "human_readable": "theta"
+    },
+    {
+      "name": "w",
+      "human_readable": "w"
+    },
+    {
+      "name": "Y",
+      "human_readable": "Y"
+    },
+    {
+      "name": "Yf",
+      "human_readable": "Yf"
+    }
   ],
   "shocks": [
-    "epsA",
-    "epsC",
-    "epsksi",
-    "epsL",
-    "epsthet",
-    "fiscal_",
-    "interest_"
+    {
+      "name": "epsA",
+      "human_readable": "epsA"
+    },
+    {
+      "name": "epsC",
+      "human_readable": "epsC"
+    },
+    {
+      "name": "epsksi",
+      "human_readable": "epsksi"
+    },
+    {
+      "name": "epsL",
+      "human_readable": "epsL"
+    },
+    {
+      "name": "epsthet",
+      "human_readable": "epsthet"
+    },
+    {
+      "name": "fiscal_",
+      "human_readable": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    }
   ]
 }

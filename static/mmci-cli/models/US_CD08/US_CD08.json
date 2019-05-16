@@ -38,51 +38,183 @@
   "variabledim": 2,
   "al": false,
   "vars": [
-    "a",
-    "b",
-    "c",
-    "c_f",
-    "cost",
-    "e",
-    "f",
-    "f_f",
-    "h",
-    "h_f",
-    "i",
-    "i_f",
-    "inflation",
-    "inflationq",
-    "interest",
-    "k",
-    "k_f",
-    "lambda",
-    "lambda_f",
-    "m",
-    "m_f",
-    "mu",
-    "n",
-    "n_f",
-    "output",
-    "outputgap",
-    "pi",
-    "q",
-    "q_f",
-    "r",
-    "r_f",
-    "rp",
-    "w",
-    "w_f",
-    "x",
-    "y",
-    "y_f",
-    "z",
-    "z_f"
+    {
+      "name": "a",
+      "human_readable": "a"
+    },
+    {
+      "name": "b",
+      "human_readable": "b"
+    },
+    {
+      "name": "c",
+      "human_readable": "c"
+    },
+    {
+      "name": "c_f",
+      "human_readable": "c_f"
+    },
+    {
+      "name": "cost",
+      "human_readable": "cost"
+    },
+    {
+      "name": "e",
+      "human_readable": "e"
+    },
+    {
+      "name": "f",
+      "human_readable": "f"
+    },
+    {
+      "name": "f_f",
+      "human_readable": "f_f"
+    },
+    {
+      "name": "h",
+      "human_readable": "h"
+    },
+    {
+      "name": "h_f",
+      "human_readable": "h_f"
+    },
+    {
+      "name": "i",
+      "human_readable": "i"
+    },
+    {
+      "name": "i_f",
+      "human_readable": "i_f"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "k",
+      "human_readable": "k"
+    },
+    {
+      "name": "k_f",
+      "human_readable": "k_f"
+    },
+    {
+      "name": "lambda",
+      "human_readable": "lambda"
+    },
+    {
+      "name": "lambda_f",
+      "human_readable": "lambda_f"
+    },
+    {
+      "name": "m",
+      "human_readable": "m"
+    },
+    {
+      "name": "m_f",
+      "human_readable": "m_f"
+    },
+    {
+      "name": "mu",
+      "human_readable": "mu"
+    },
+    {
+      "name": "n",
+      "human_readable": "n"
+    },
+    {
+      "name": "n_f",
+      "human_readable": "n_f"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "pi",
+      "human_readable": "pi"
+    },
+    {
+      "name": "q",
+      "human_readable": "q"
+    },
+    {
+      "name": "q_f",
+      "human_readable": "q_f"
+    },
+    {
+      "name": "r",
+      "human_readable": "r"
+    },
+    {
+      "name": "r_f",
+      "human_readable": "r_f"
+    },
+    {
+      "name": "rp",
+      "human_readable": "rp"
+    },
+    {
+      "name": "w",
+      "human_readable": "w"
+    },
+    {
+      "name": "w_f",
+      "human_readable": "w_f"
+    },
+    {
+      "name": "x",
+      "human_readable": "x"
+    },
+    {
+      "name": "y",
+      "human_readable": "y"
+    },
+    {
+      "name": "y_f",
+      "human_readable": "y_f"
+    },
+    {
+      "name": "z",
+      "human_readable": "z"
+    },
+    {
+      "name": "z_f",
+      "human_readable": "z_f"
+    }
   ],
   "shocks": [
-    "interest_",
-    "u_a",
-    "u_b",
-    "u_e",
-    "u_x"
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    },
+    {
+      "name": "u_a",
+      "human_readable": "u_a"
+    },
+    {
+      "name": "u_b",
+      "human_readable": "u_b"
+    },
+    {
+      "name": "u_e",
+      "human_readable": "u_e"
+    },
+    {
+      "name": "u_x",
+      "human_readable": "u_x"
+    }
   ]
 }

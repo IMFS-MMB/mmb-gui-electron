@@ -74,93 +74,351 @@
   "variabledim": 2,
   "al": false,
   "vars": [
-    "btotAflexU",
-    "btotAU",
-    "btotBflexU",
-    "btotBU",
-    "btotSflexU",
-    "btotSU",
-    "cflexU",
-    "chiflexU",
-    "chiU",
-    "CostFinancingSflexU",
-    "CostFinancingSU",
-    "cU",
-    "eps_analystflexU",
-    "eps_analystU",
-    "eps_couponflexU",
-    "eps_couponU",
-    "FpXflexU",
-    "FpXU",
-    "FwXflexU",
-    "FwXU",
-    "hflexU",
-    "hU",
-    "iflexU",
-    "inflation",
-    "inflationq",
-    "interest",
-    "iU",
-    "kbarBflexU",
-    "kbarBU",
-    "kbarSflexU",
-    "kbarSU",
-    "KpXflexU",
-    "KpXU",
-    "KtotflexU",
-    "KtotU",
-    "KwXflexU",
-    "KwXU",
-    "lambdanflexU",
-    "lambdanU",
-    "levAflexU",
-    "levAU",
-    "levBflexU",
-    "levBU",
-    "levSflexU",
-    "levSU",
-    "nBflexU",
-    "nBU",
-    "nSflexU",
-    "nSU",
-    "ntotflexU",
-    "ntotU",
-    "omegabarSflexU",
-    "omegabarSU",
-    "output",
-    "outputgap",
-    "PextSflexU",
-    "PextSU",
-    "piflexU",
-    "piU",
-    "qflexU",
-    "qU",
-    "RanalystXflexU",
-    "RanalystXU",
-    "RcouponXflexU",
-    "RcouponXU",
-    "ReXflexU",
-    "ReXU",
-    "RkBXflexU",
-    "RkBXU",
-    "rkSflexU",
-    "rkSU",
-    "RkSXflexU",
-    "RkSXU",
-    "SpreadflexU",
-    "SpreadU",
-    "stockcapitalflexU",
-    "stockcapitalU",
-    "uBflexU",
-    "uBU",
-    "uSflexU",
-    "uSU",
-    "wflexU",
-    "wU",
-    "YflexU",
-    "YU"
+    {
+      "name": "btotAflexU",
+      "human_readable": "btotAflexU"
+    },
+    {
+      "name": "btotAU",
+      "human_readable": "btotAU"
+    },
+    {
+      "name": "btotBflexU",
+      "human_readable": "btotBflexU"
+    },
+    {
+      "name": "btotBU",
+      "human_readable": "btotBU"
+    },
+    {
+      "name": "btotSflexU",
+      "human_readable": "btotSflexU"
+    },
+    {
+      "name": "btotSU",
+      "human_readable": "btotSU"
+    },
+    {
+      "name": "cflexU",
+      "human_readable": "cflexU"
+    },
+    {
+      "name": "chiflexU",
+      "human_readable": "chiflexU"
+    },
+    {
+      "name": "chiU",
+      "human_readable": "chiU"
+    },
+    {
+      "name": "CostFinancingSflexU",
+      "human_readable": "CostFinancingSflexU"
+    },
+    {
+      "name": "CostFinancingSU",
+      "human_readable": "CostFinancingSU"
+    },
+    {
+      "name": "cU",
+      "human_readable": "cU"
+    },
+    {
+      "name": "eps_analystflexU",
+      "human_readable": "eps_analystflexU"
+    },
+    {
+      "name": "eps_analystU",
+      "human_readable": "eps_analystU"
+    },
+    {
+      "name": "eps_couponflexU",
+      "human_readable": "eps_couponflexU"
+    },
+    {
+      "name": "eps_couponU",
+      "human_readable": "eps_couponU"
+    },
+    {
+      "name": "FpXflexU",
+      "human_readable": "FpXflexU"
+    },
+    {
+      "name": "FpXU",
+      "human_readable": "FpXU"
+    },
+    {
+      "name": "FwXflexU",
+      "human_readable": "FwXflexU"
+    },
+    {
+      "name": "FwXU",
+      "human_readable": "FwXU"
+    },
+    {
+      "name": "hflexU",
+      "human_readable": "hflexU"
+    },
+    {
+      "name": "hU",
+      "human_readable": "hU"
+    },
+    {
+      "name": "iflexU",
+      "human_readable": "iflexU"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "iU",
+      "human_readable": "iU"
+    },
+    {
+      "name": "kbarBflexU",
+      "human_readable": "kbarBflexU"
+    },
+    {
+      "name": "kbarBU",
+      "human_readable": "kbarBU"
+    },
+    {
+      "name": "kbarSflexU",
+      "human_readable": "kbarSflexU"
+    },
+    {
+      "name": "kbarSU",
+      "human_readable": "kbarSU"
+    },
+    {
+      "name": "KpXflexU",
+      "human_readable": "KpXflexU"
+    },
+    {
+      "name": "KpXU",
+      "human_readable": "KpXU"
+    },
+    {
+      "name": "KtotflexU",
+      "human_readable": "KtotflexU"
+    },
+    {
+      "name": "KtotU",
+      "human_readable": "KtotU"
+    },
+    {
+      "name": "KwXflexU",
+      "human_readable": "KwXflexU"
+    },
+    {
+      "name": "KwXU",
+      "human_readable": "KwXU"
+    },
+    {
+      "name": "lambdanflexU",
+      "human_readable": "lambdanflexU"
+    },
+    {
+      "name": "lambdanU",
+      "human_readable": "lambdanU"
+    },
+    {
+      "name": "levAflexU",
+      "human_readable": "levAflexU"
+    },
+    {
+      "name": "levAU",
+      "human_readable": "levAU"
+    },
+    {
+      "name": "levBflexU",
+      "human_readable": "levBflexU"
+    },
+    {
+      "name": "levBU",
+      "human_readable": "levBU"
+    },
+    {
+      "name": "levSflexU",
+      "human_readable": "levSflexU"
+    },
+    {
+      "name": "levSU",
+      "human_readable": "levSU"
+    },
+    {
+      "name": "nBflexU",
+      "human_readable": "nBflexU"
+    },
+    {
+      "name": "nBU",
+      "human_readable": "nBU"
+    },
+    {
+      "name": "nSflexU",
+      "human_readable": "nSflexU"
+    },
+    {
+      "name": "nSU",
+      "human_readable": "nSU"
+    },
+    {
+      "name": "ntotflexU",
+      "human_readable": "ntotflexU"
+    },
+    {
+      "name": "ntotU",
+      "human_readable": "ntotU"
+    },
+    {
+      "name": "omegabarSflexU",
+      "human_readable": "omegabarSflexU"
+    },
+    {
+      "name": "omegabarSU",
+      "human_readable": "omegabarSU"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "PextSflexU",
+      "human_readable": "PextSflexU"
+    },
+    {
+      "name": "PextSU",
+      "human_readable": "PextSU"
+    },
+    {
+      "name": "piflexU",
+      "human_readable": "piflexU"
+    },
+    {
+      "name": "piU",
+      "human_readable": "piU"
+    },
+    {
+      "name": "qflexU",
+      "human_readable": "qflexU"
+    },
+    {
+      "name": "qU",
+      "human_readable": "qU"
+    },
+    {
+      "name": "RanalystXflexU",
+      "human_readable": "RanalystXflexU"
+    },
+    {
+      "name": "RanalystXU",
+      "human_readable": "RanalystXU"
+    },
+    {
+      "name": "RcouponXflexU",
+      "human_readable": "RcouponXflexU"
+    },
+    {
+      "name": "RcouponXU",
+      "human_readable": "RcouponXU"
+    },
+    {
+      "name": "ReXflexU",
+      "human_readable": "ReXflexU"
+    },
+    {
+      "name": "ReXU",
+      "human_readable": "ReXU"
+    },
+    {
+      "name": "RkBXflexU",
+      "human_readable": "RkBXflexU"
+    },
+    {
+      "name": "RkBXU",
+      "human_readable": "RkBXU"
+    },
+    {
+      "name": "rkSflexU",
+      "human_readable": "rkSflexU"
+    },
+    {
+      "name": "rkSU",
+      "human_readable": "rkSU"
+    },
+    {
+      "name": "RkSXflexU",
+      "human_readable": "RkSXflexU"
+    },
+    {
+      "name": "RkSXU",
+      "human_readable": "RkSXU"
+    },
+    {
+      "name": "SpreadflexU",
+      "human_readable": "SpreadflexU"
+    },
+    {
+      "name": "SpreadU",
+      "human_readable": "SpreadU"
+    },
+    {
+      "name": "stockcapitalflexU",
+      "human_readable": "stockcapitalflexU"
+    },
+    {
+      "name": "stockcapitalU",
+      "human_readable": "stockcapitalU"
+    },
+    {
+      "name": "uBflexU",
+      "human_readable": "uBflexU"
+    },
+    {
+      "name": "uBU",
+      "human_readable": "uBU"
+    },
+    {
+      "name": "uSflexU",
+      "human_readable": "uSflexU"
+    },
+    {
+      "name": "uSU",
+      "human_readable": "uSU"
+    },
+    {
+      "name": "wflexU",
+      "human_readable": "wflexU"
+    },
+    {
+      "name": "wU",
+      "human_readable": "wU"
+    },
+    {
+      "name": "YflexU",
+      "human_readable": "YflexU"
+    },
+    {
+      "name": "YU",
+      "human_readable": "YU"
+    }
   ],
   "shocks": [
-    "interest_"
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    }
   ]
 }
