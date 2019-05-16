@@ -75,58 +75,211 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "c_t",
-    "cf_t",
-    "eps_M_t",
-    "eps_muups_t",
-    "eps_muz_t",
-    "epsilon_t",
-    "h_t",
-    "hf_t",
-    "i_t",
-    "if_t",
-    "inflation",
-    "inflationq",
-    "interest",
-    "kbar_t1",
-    "kbarf_t1",
-    "lambda_zstar_t",
-    "lambda_zstarf_t",
-    "m_t",
-    "mf_t",
-    "mu_ups_t",
-    "mu_z_t",
-    "mutilde_t",
-    "mutildef_t",
-    "output",
-    "outputgap",
-    "pi_t",
-    "pif_t",
-    "q_t",
-    "qf_t",
-    "R_t",
-    "Rf_t",
-    "rhotilde_t",
-    "rhotildef_t",
-    "s_t",
-    "sf_t",
-    "u_t",
-    "uf_t",
-    "wtilde_t",
-    "wtildef_t",
-    "x_M_t",
-    "x_t",
-    "x_ups_t",
-    "x_z_t",
-    "xf_t",
-    "ytilde_t",
-    "ytildef_t"
+    {
+      "name": "c_t",
+      "human_readable": "c_t"
+    },
+    {
+      "name": "cf_t",
+      "human_readable": "cf_t"
+    },
+    {
+      "name": "eps_M_t",
+      "human_readable": "eps_M_t"
+    },
+    {
+      "name": "eps_muups_t",
+      "human_readable": "eps_muups_t"
+    },
+    {
+      "name": "eps_muz_t",
+      "human_readable": "eps_muz_t"
+    },
+    {
+      "name": "epsilon_t",
+      "human_readable": "epsilon_t"
+    },
+    {
+      "name": "h_t",
+      "human_readable": "h_t"
+    },
+    {
+      "name": "hf_t",
+      "human_readable": "hf_t"
+    },
+    {
+      "name": "i_t",
+      "human_readable": "i_t"
+    },
+    {
+      "name": "if_t",
+      "human_readable": "if_t"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "kbar_t1",
+      "human_readable": "kbar_t1"
+    },
+    {
+      "name": "kbarf_t1",
+      "human_readable": "kbarf_t1"
+    },
+    {
+      "name": "lambda_zstar_t",
+      "human_readable": "lambda_zstar_t"
+    },
+    {
+      "name": "lambda_zstarf_t",
+      "human_readable": "lambda_zstarf_t"
+    },
+    {
+      "name": "m_t",
+      "human_readable": "m_t"
+    },
+    {
+      "name": "mf_t",
+      "human_readable": "mf_t"
+    },
+    {
+      "name": "mu_ups_t",
+      "human_readable": "mu_ups_t"
+    },
+    {
+      "name": "mu_z_t",
+      "human_readable": "mu_z_t"
+    },
+    {
+      "name": "mutilde_t",
+      "human_readable": "mutilde_t"
+    },
+    {
+      "name": "mutildef_t",
+      "human_readable": "mutildef_t"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "pi_t",
+      "human_readable": "pi_t"
+    },
+    {
+      "name": "pif_t",
+      "human_readable": "pif_t"
+    },
+    {
+      "name": "q_t",
+      "human_readable": "q_t"
+    },
+    {
+      "name": "qf_t",
+      "human_readable": "qf_t"
+    },
+    {
+      "name": "R_t",
+      "human_readable": "R_t"
+    },
+    {
+      "name": "Rf_t",
+      "human_readable": "Rf_t"
+    },
+    {
+      "name": "rhotilde_t",
+      "human_readable": "rhotilde_t"
+    },
+    {
+      "name": "rhotildef_t",
+      "human_readable": "rhotildef_t"
+    },
+    {
+      "name": "s_t",
+      "human_readable": "s_t"
+    },
+    {
+      "name": "sf_t",
+      "human_readable": "sf_t"
+    },
+    {
+      "name": "u_t",
+      "human_readable": "u_t"
+    },
+    {
+      "name": "uf_t",
+      "human_readable": "uf_t"
+    },
+    {
+      "name": "wtilde_t",
+      "human_readable": "wtilde_t"
+    },
+    {
+      "name": "wtildef_t",
+      "human_readable": "wtildef_t"
+    },
+    {
+      "name": "x_M_t",
+      "human_readable": "x_M_t"
+    },
+    {
+      "name": "x_t",
+      "human_readable": "x_t"
+    },
+    {
+      "name": "x_ups_t",
+      "human_readable": "x_ups_t"
+    },
+    {
+      "name": "x_z_t",
+      "human_readable": "x_z_t"
+    },
+    {
+      "name": "xf_t",
+      "human_readable": "xf_t"
+    },
+    {
+      "name": "ytilde_t",
+      "human_readable": "ytilde_t"
+    },
+    {
+      "name": "ytildef_t",
+      "human_readable": "ytildef_t"
+    }
   ],
   "shocks": [
-    "eps_muups_",
-    "eps_muz_",
-    "epsilon_M_",
-    "epsilon_t_",
-    "interest_"
+    {
+      "name": "eps_muups_",
+      "human_readable": "eps_muups_"
+    },
+    {
+      "name": "eps_muz_",
+      "human_readable": "eps_muz_"
+    },
+    {
+      "name": "epsilon_M_",
+      "human_readable": "epsilon_M_"
+    },
+    {
+      "name": "epsilon_t_",
+      "human_readable": "epsilon_t_"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    }
   ]
 }

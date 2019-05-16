@@ -75,82 +75,307 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "c_t",
-    "c_tlead",
-    "c_tpred",
-    "cf_t",
-    "cf_tlead",
-    "cf_tpred",
-    "eps_M_t",
-    "eps_muups_t",
-    "eps_muz_t",
-    "epsilon_t",
-    "h_t",
-    "hf_t",
-    "i_t",
-    "i_tlead",
-    "i_tpred",
-    "if_t",
-    "if_tlead",
-    "if_tpred",
-    "inflation",
-    "inflationq",
-    "interest",
-    "kbar_t1",
-    "kbarf_t1",
-    "lambda_zstar_t",
-    "lambda_zstarf_t",
-    "m_t",
-    "mf_t",
-    "mu_ups_t",
-    "mu_z_t",
-    "mutilde_t",
-    "mutilde_tlead",
-    "mutilde_tpred",
-    "mutildef_t",
-    "mutildef_tlead",
-    "mutildef_tpred",
-    "output",
-    "outputgap",
-    "pi_t",
-    "pi_tlead",
-    "pi_tpred",
-    "pif_t",
-    "pif_tlead",
-    "pif_tpred",
-    "q_t",
-    "qf_t",
-    "R_t",
-    "Rf_t",
-    "rhotilde_t",
-    "rhotildef_t",
-    "s_t",
-    "sf_t",
-    "u_t",
-    "u_tlead",
-    "u_tpred",
-    "uf_t",
-    "uf_tlead",
-    "uf_tpred",
-    "wtilde_t",
-    "wtilde_tlead",
-    "wtilde_tpred",
-    "wtildef_t",
-    "wtildef_tlead",
-    "wtildef_tpred",
-    "x_M_t",
-    "x_t",
-    "x_ups_t",
-    "x_z_t",
-    "xf_t",
-    "ytilde_t",
-    "ytildef_t"
+    {
+      "name": "c_t",
+      "human_readable": "c_t"
+    },
+    {
+      "name": "c_tlead",
+      "human_readable": "c_tlead"
+    },
+    {
+      "name": "c_tpred",
+      "human_readable": "c_tpred"
+    },
+    {
+      "name": "cf_t",
+      "human_readable": "cf_t"
+    },
+    {
+      "name": "cf_tlead",
+      "human_readable": "cf_tlead"
+    },
+    {
+      "name": "cf_tpred",
+      "human_readable": "cf_tpred"
+    },
+    {
+      "name": "eps_M_t",
+      "human_readable": "eps_M_t"
+    },
+    {
+      "name": "eps_muups_t",
+      "human_readable": "eps_muups_t"
+    },
+    {
+      "name": "eps_muz_t",
+      "human_readable": "eps_muz_t"
+    },
+    {
+      "name": "epsilon_t",
+      "human_readable": "epsilon_t"
+    },
+    {
+      "name": "h_t",
+      "human_readable": "h_t"
+    },
+    {
+      "name": "hf_t",
+      "human_readable": "hf_t"
+    },
+    {
+      "name": "i_t",
+      "human_readable": "i_t"
+    },
+    {
+      "name": "i_tlead",
+      "human_readable": "i_tlead"
+    },
+    {
+      "name": "i_tpred",
+      "human_readable": "i_tpred"
+    },
+    {
+      "name": "if_t",
+      "human_readable": "if_t"
+    },
+    {
+      "name": "if_tlead",
+      "human_readable": "if_tlead"
+    },
+    {
+      "name": "if_tpred",
+      "human_readable": "if_tpred"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "kbar_t1",
+      "human_readable": "kbar_t1"
+    },
+    {
+      "name": "kbarf_t1",
+      "human_readable": "kbarf_t1"
+    },
+    {
+      "name": "lambda_zstar_t",
+      "human_readable": "lambda_zstar_t"
+    },
+    {
+      "name": "lambda_zstarf_t",
+      "human_readable": "lambda_zstarf_t"
+    },
+    {
+      "name": "m_t",
+      "human_readable": "m_t"
+    },
+    {
+      "name": "mf_t",
+      "human_readable": "mf_t"
+    },
+    {
+      "name": "mu_ups_t",
+      "human_readable": "mu_ups_t"
+    },
+    {
+      "name": "mu_z_t",
+      "human_readable": "mu_z_t"
+    },
+    {
+      "name": "mutilde_t",
+      "human_readable": "mutilde_t"
+    },
+    {
+      "name": "mutilde_tlead",
+      "human_readable": "mutilde_tlead"
+    },
+    {
+      "name": "mutilde_tpred",
+      "human_readable": "mutilde_tpred"
+    },
+    {
+      "name": "mutildef_t",
+      "human_readable": "mutildef_t"
+    },
+    {
+      "name": "mutildef_tlead",
+      "human_readable": "mutildef_tlead"
+    },
+    {
+      "name": "mutildef_tpred",
+      "human_readable": "mutildef_tpred"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "pi_t",
+      "human_readable": "pi_t"
+    },
+    {
+      "name": "pi_tlead",
+      "human_readable": "pi_tlead"
+    },
+    {
+      "name": "pi_tpred",
+      "human_readable": "pi_tpred"
+    },
+    {
+      "name": "pif_t",
+      "human_readable": "pif_t"
+    },
+    {
+      "name": "pif_tlead",
+      "human_readable": "pif_tlead"
+    },
+    {
+      "name": "pif_tpred",
+      "human_readable": "pif_tpred"
+    },
+    {
+      "name": "q_t",
+      "human_readable": "q_t"
+    },
+    {
+      "name": "qf_t",
+      "human_readable": "qf_t"
+    },
+    {
+      "name": "R_t",
+      "human_readable": "R_t"
+    },
+    {
+      "name": "Rf_t",
+      "human_readable": "Rf_t"
+    },
+    {
+      "name": "rhotilde_t",
+      "human_readable": "rhotilde_t"
+    },
+    {
+      "name": "rhotildef_t",
+      "human_readable": "rhotildef_t"
+    },
+    {
+      "name": "s_t",
+      "human_readable": "s_t"
+    },
+    {
+      "name": "sf_t",
+      "human_readable": "sf_t"
+    },
+    {
+      "name": "u_t",
+      "human_readable": "u_t"
+    },
+    {
+      "name": "u_tlead",
+      "human_readable": "u_tlead"
+    },
+    {
+      "name": "u_tpred",
+      "human_readable": "u_tpred"
+    },
+    {
+      "name": "uf_t",
+      "human_readable": "uf_t"
+    },
+    {
+      "name": "uf_tlead",
+      "human_readable": "uf_tlead"
+    },
+    {
+      "name": "uf_tpred",
+      "human_readable": "uf_tpred"
+    },
+    {
+      "name": "wtilde_t",
+      "human_readable": "wtilde_t"
+    },
+    {
+      "name": "wtilde_tlead",
+      "human_readable": "wtilde_tlead"
+    },
+    {
+      "name": "wtilde_tpred",
+      "human_readable": "wtilde_tpred"
+    },
+    {
+      "name": "wtildef_t",
+      "human_readable": "wtildef_t"
+    },
+    {
+      "name": "wtildef_tlead",
+      "human_readable": "wtildef_tlead"
+    },
+    {
+      "name": "wtildef_tpred",
+      "human_readable": "wtildef_tpred"
+    },
+    {
+      "name": "x_M_t",
+      "human_readable": "x_M_t"
+    },
+    {
+      "name": "x_t",
+      "human_readable": "x_t"
+    },
+    {
+      "name": "x_ups_t",
+      "human_readable": "x_ups_t"
+    },
+    {
+      "name": "x_z_t",
+      "human_readable": "x_z_t"
+    },
+    {
+      "name": "xf_t",
+      "human_readable": "xf_t"
+    },
+    {
+      "name": "ytilde_t",
+      "human_readable": "ytilde_t"
+    },
+    {
+      "name": "ytildef_t",
+      "human_readable": "ytildef_t"
+    }
   ],
   "shocks": [
-    "eps_muups_",
-    "eps_muz_",
-    "epsilon_M_",
-    "epsilon_t_",
-    "interest_"
+    {
+      "name": "eps_muups_",
+      "human_readable": "eps_muups_"
+    },
+    {
+      "name": "eps_muz_",
+      "human_readable": "eps_muz_"
+    },
+    {
+      "name": "epsilon_M_",
+      "human_readable": "epsilon_M_"
+    },
+    {
+      "name": "epsilon_t_",
+      "human_readable": "epsilon_t_"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    }
   ]
 }

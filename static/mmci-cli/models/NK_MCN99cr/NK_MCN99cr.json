@@ -72,26 +72,83 @@
   "variabledim": 2,
   "al": false,
   "vars": [
-    "eta",
-    "i",
-    "inflation",
-    "inflationq",
-    "interest",
-    "m",
-    "outputgap",
-    "p",
-    "pi",
-    "R",
-    "v",
-    "y",
-    "ybar",
-    "ytilde"
+    {
+      "name": "eta",
+      "human_readable": "eta"
+    },
+    {
+      "name": "i",
+      "human_readable": "i"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "m",
+      "human_readable": "m"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "p",
+      "human_readable": "p"
+    },
+    {
+      "name": "pi",
+      "human_readable": "pi"
+    },
+    {
+      "name": "R",
+      "human_readable": "R"
+    },
+    {
+      "name": "v",
+      "human_readable": "v"
+    },
+    {
+      "name": "y",
+      "human_readable": "y"
+    },
+    {
+      "name": "ybar",
+      "human_readable": "ybar"
+    },
+    {
+      "name": "ytilde",
+      "human_readable": "ytilde"
+    }
   ],
   "shocks": [
-    "e_",
-    "ev_",
-    "ey_",
-    "interest_",
-    "u_"
+    {
+      "name": "e_",
+      "human_readable": "e_"
+    },
+    {
+      "name": "ev_",
+      "human_readable": "ev_"
+    },
+    {
+      "name": "ey_",
+      "human_readable": "ey_"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    },
+    {
+      "name": "u_",
+      "human_readable": "u_"
+    }
   ]
 }

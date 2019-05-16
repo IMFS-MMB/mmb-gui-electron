@@ -37,16 +37,43 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "inflation",
-    "inflationq",
-    "interest",
-    "outputgap",
-    "pi",
-    "R",
-    "x"
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "pi",
+      "human_readable": "pi"
+    },
+    {
+      "name": "R",
+      "human_readable": "R"
+    },
+    {
+      "name": "x",
+      "human_readable": "x"
+    }
   ],
   "shocks": [
-    "interest_",
-    "u"
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    },
+    {
+      "name": "u",
+      "human_readable": "u"
+    }
   ]
 }

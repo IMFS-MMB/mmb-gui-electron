@@ -38,84 +38,315 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "a",
-    "da",
-    "e",
-    "g",
-    "gam",
-    "i",
-    "inflation",
-    "inflationq",
-    "interest",
-    "l",
-    "l1",
-    "l10",
-    "l2",
-    "l3",
-    "l4",
-    "l5",
-    "l6",
-    "l7",
-    "l8",
-    "l9",
-    "output",
-    "outputgap",
-    "p",
-    "p1",
-    "p10",
-    "p2",
-    "p3",
-    "p4",
-    "p5",
-    "p6",
-    "p7",
-    "p8",
-    "p9",
-    "pi",
-    "R",
-    "R1",
-    "R10",
-    "R2",
-    "R3",
-    "R4",
-    "R5",
-    "R6",
-    "R7",
-    "R8",
-    "R9",
-    "v",
-    "w",
-    "w1",
-    "w10",
-    "w2",
-    "w3",
-    "w4",
-    "w5",
-    "w6",
-    "w7",
-    "w8",
-    "w9",
-    "x",
-    "y",
-    "y1",
-    "y10",
-    "y100",
-    "y2",
-    "y3",
-    "y4",
-    "y5",
-    "y6",
-    "y7",
-    "y8",
-    "y9",
-    "yn"
+    {
+      "name": "a",
+      "human_readable": "a"
+    },
+    {
+      "name": "da",
+      "human_readable": "da"
+    },
+    {
+      "name": "e",
+      "human_readable": "e"
+    },
+    {
+      "name": "g",
+      "human_readable": "g"
+    },
+    {
+      "name": "gam",
+      "human_readable": "gam"
+    },
+    {
+      "name": "i",
+      "human_readable": "i"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "l",
+      "human_readable": "l"
+    },
+    {
+      "name": "l1",
+      "human_readable": "l1"
+    },
+    {
+      "name": "l10",
+      "human_readable": "l10"
+    },
+    {
+      "name": "l2",
+      "human_readable": "l2"
+    },
+    {
+      "name": "l3",
+      "human_readable": "l3"
+    },
+    {
+      "name": "l4",
+      "human_readable": "l4"
+    },
+    {
+      "name": "l5",
+      "human_readable": "l5"
+    },
+    {
+      "name": "l6",
+      "human_readable": "l6"
+    },
+    {
+      "name": "l7",
+      "human_readable": "l7"
+    },
+    {
+      "name": "l8",
+      "human_readable": "l8"
+    },
+    {
+      "name": "l9",
+      "human_readable": "l9"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "p",
+      "human_readable": "p"
+    },
+    {
+      "name": "p1",
+      "human_readable": "p1"
+    },
+    {
+      "name": "p10",
+      "human_readable": "p10"
+    },
+    {
+      "name": "p2",
+      "human_readable": "p2"
+    },
+    {
+      "name": "p3",
+      "human_readable": "p3"
+    },
+    {
+      "name": "p4",
+      "human_readable": "p4"
+    },
+    {
+      "name": "p5",
+      "human_readable": "p5"
+    },
+    {
+      "name": "p6",
+      "human_readable": "p6"
+    },
+    {
+      "name": "p7",
+      "human_readable": "p7"
+    },
+    {
+      "name": "p8",
+      "human_readable": "p8"
+    },
+    {
+      "name": "p9",
+      "human_readable": "p9"
+    },
+    {
+      "name": "pi",
+      "human_readable": "pi"
+    },
+    {
+      "name": "R",
+      "human_readable": "R"
+    },
+    {
+      "name": "R1",
+      "human_readable": "R1"
+    },
+    {
+      "name": "R10",
+      "human_readable": "R10"
+    },
+    {
+      "name": "R2",
+      "human_readable": "R2"
+    },
+    {
+      "name": "R3",
+      "human_readable": "R3"
+    },
+    {
+      "name": "R4",
+      "human_readable": "R4"
+    },
+    {
+      "name": "R5",
+      "human_readable": "R5"
+    },
+    {
+      "name": "R6",
+      "human_readable": "R6"
+    },
+    {
+      "name": "R7",
+      "human_readable": "R7"
+    },
+    {
+      "name": "R8",
+      "human_readable": "R8"
+    },
+    {
+      "name": "R9",
+      "human_readable": "R9"
+    },
+    {
+      "name": "v",
+      "human_readable": "v"
+    },
+    {
+      "name": "w",
+      "human_readable": "w"
+    },
+    {
+      "name": "w1",
+      "human_readable": "w1"
+    },
+    {
+      "name": "w10",
+      "human_readable": "w10"
+    },
+    {
+      "name": "w2",
+      "human_readable": "w2"
+    },
+    {
+      "name": "w3",
+      "human_readable": "w3"
+    },
+    {
+      "name": "w4",
+      "human_readable": "w4"
+    },
+    {
+      "name": "w5",
+      "human_readable": "w5"
+    },
+    {
+      "name": "w6",
+      "human_readable": "w6"
+    },
+    {
+      "name": "w7",
+      "human_readable": "w7"
+    },
+    {
+      "name": "w8",
+      "human_readable": "w8"
+    },
+    {
+      "name": "w9",
+      "human_readable": "w9"
+    },
+    {
+      "name": "x",
+      "human_readable": "x"
+    },
+    {
+      "name": "y",
+      "human_readable": "y"
+    },
+    {
+      "name": "y1",
+      "human_readable": "y1"
+    },
+    {
+      "name": "y10",
+      "human_readable": "y10"
+    },
+    {
+      "name": "y100",
+      "human_readable": "y100"
+    },
+    {
+      "name": "y2",
+      "human_readable": "y2"
+    },
+    {
+      "name": "y3",
+      "human_readable": "y3"
+    },
+    {
+      "name": "y4",
+      "human_readable": "y4"
+    },
+    {
+      "name": "y5",
+      "human_readable": "y5"
+    },
+    {
+      "name": "y6",
+      "human_readable": "y6"
+    },
+    {
+      "name": "y7",
+      "human_readable": "y7"
+    },
+    {
+      "name": "y8",
+      "human_readable": "y8"
+    },
+    {
+      "name": "y9",
+      "human_readable": "y9"
+    },
+    {
+      "name": "yn",
+      "human_readable": "yn"
+    }
   ],
   "shocks": [
-    "a_e",
-    "e_e",
-    "g_e",
-    "gam_e",
-    "interest_",
-    "v_e"
+    {
+      "name": "a_e",
+      "human_readable": "a_e"
+    },
+    {
+      "name": "e_e",
+      "human_readable": "e_e"
+    },
+    {
+      "name": "g_e",
+      "human_readable": "g_e"
+    },
+    {
+      "name": "gam_e",
+      "human_readable": "gam_e"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    },
+    {
+      "name": "v_e",
+      "human_readable": "v_e"
+    }
   ]
 }

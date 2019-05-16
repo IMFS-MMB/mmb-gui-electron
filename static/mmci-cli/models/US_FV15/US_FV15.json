@@ -40,70 +40,259 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "c",
-    "cf",
-    "d",
-    "f",
-    "F",
-    "Ff",
-    "g1",
-    "g2",
-    "gammaPIt",
-    "gammayt",
-    "inflation",
-    "inflationq",
-    "interest",
-    "k",
-    "kf",
-    "l",
-    "lambda",
-    "lambdaf",
-    "ld",
-    "ldf",
-    "mc",
-    "mu_A",
-    "mu_I",
-    "mu_z",
-    "output",
-    "outputgap",
-    "phi",
-    "PI",
-    "PIstar",
-    "PIstarw",
-    "q",
-    "qf",
-    "r",
-    "R",
-    "rf",
-    "Rf",
-    "sigma_At",
-    "sigma_dt",
-    "sigma_mt",
-    "sigma_mut",
-    "sigma_phit",
-    "u",
-    "uf",
-    "vp",
-    "vw",
-    "w",
-    "wf",
-    "wstar",
-    "x",
-    "xf",
-    "yd",
-    "ydf"
+    {
+      "name": "c",
+      "human_readable": "c"
+    },
+    {
+      "name": "cf",
+      "human_readable": "cf"
+    },
+    {
+      "name": "d",
+      "human_readable": "d"
+    },
+    {
+      "name": "f",
+      "human_readable": "f"
+    },
+    {
+      "name": "F",
+      "human_readable": "F"
+    },
+    {
+      "name": "Ff",
+      "human_readable": "Ff"
+    },
+    {
+      "name": "g1",
+      "human_readable": "g1"
+    },
+    {
+      "name": "g2",
+      "human_readable": "g2"
+    },
+    {
+      "name": "gammaPIt",
+      "human_readable": "gammaPIt"
+    },
+    {
+      "name": "gammayt",
+      "human_readable": "gammayt"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "k",
+      "human_readable": "k"
+    },
+    {
+      "name": "kf",
+      "human_readable": "kf"
+    },
+    {
+      "name": "l",
+      "human_readable": "l"
+    },
+    {
+      "name": "lambda",
+      "human_readable": "lambda"
+    },
+    {
+      "name": "lambdaf",
+      "human_readable": "lambdaf"
+    },
+    {
+      "name": "ld",
+      "human_readable": "ld"
+    },
+    {
+      "name": "ldf",
+      "human_readable": "ldf"
+    },
+    {
+      "name": "mc",
+      "human_readable": "mc"
+    },
+    {
+      "name": "mu_A",
+      "human_readable": "mu_A"
+    },
+    {
+      "name": "mu_I",
+      "human_readable": "mu_I"
+    },
+    {
+      "name": "mu_z",
+      "human_readable": "mu_z"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "phi",
+      "human_readable": "phi"
+    },
+    {
+      "name": "PI",
+      "human_readable": "PI"
+    },
+    {
+      "name": "PIstar",
+      "human_readable": "PIstar"
+    },
+    {
+      "name": "PIstarw",
+      "human_readable": "PIstarw"
+    },
+    {
+      "name": "q",
+      "human_readable": "q"
+    },
+    {
+      "name": "qf",
+      "human_readable": "qf"
+    },
+    {
+      "name": "r",
+      "human_readable": "r"
+    },
+    {
+      "name": "R",
+      "human_readable": "R"
+    },
+    {
+      "name": "rf",
+      "human_readable": "rf"
+    },
+    {
+      "name": "Rf",
+      "human_readable": "Rf"
+    },
+    {
+      "name": "sigma_At",
+      "human_readable": "sigma_At"
+    },
+    {
+      "name": "sigma_dt",
+      "human_readable": "sigma_dt"
+    },
+    {
+      "name": "sigma_mt",
+      "human_readable": "sigma_mt"
+    },
+    {
+      "name": "sigma_mut",
+      "human_readable": "sigma_mut"
+    },
+    {
+      "name": "sigma_phit",
+      "human_readable": "sigma_phit"
+    },
+    {
+      "name": "u",
+      "human_readable": "u"
+    },
+    {
+      "name": "uf",
+      "human_readable": "uf"
+    },
+    {
+      "name": "vp",
+      "human_readable": "vp"
+    },
+    {
+      "name": "vw",
+      "human_readable": "vw"
+    },
+    {
+      "name": "w",
+      "human_readable": "w"
+    },
+    {
+      "name": "wf",
+      "human_readable": "wf"
+    },
+    {
+      "name": "wstar",
+      "human_readable": "wstar"
+    },
+    {
+      "name": "x",
+      "human_readable": "x"
+    },
+    {
+      "name": "xf",
+      "human_readable": "xf"
+    },
+    {
+      "name": "yd",
+      "human_readable": "yd"
+    },
+    {
+      "name": "ydf",
+      "human_readable": "ydf"
+    }
   ],
   "shocks": [
-    "epsA",
-    "epsd",
-    "epsmu_I",
-    "epsphi",
-    "epspi",
-    "interest_",
-    "uA",
-    "ud",
-    "um",
-    "umu",
-    "uphi"
+    {
+      "name": "epsA",
+      "human_readable": "epsA"
+    },
+    {
+      "name": "epsd",
+      "human_readable": "epsd"
+    },
+    {
+      "name": "epsmu_I",
+      "human_readable": "epsmu_I"
+    },
+    {
+      "name": "epsphi",
+      "human_readable": "epsphi"
+    },
+    {
+      "name": "epspi",
+      "human_readable": "epspi"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    },
+    {
+      "name": "uA",
+      "human_readable": "uA"
+    },
+    {
+      "name": "ud",
+      "human_readable": "ud"
+    },
+    {
+      "name": "um",
+      "human_readable": "um"
+    },
+    {
+      "name": "umu",
+      "human_readable": "umu"
+    },
+    {
+      "name": "uphi",
+      "human_readable": "uphi"
+    }
   ]
 }

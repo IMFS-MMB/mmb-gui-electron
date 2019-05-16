@@ -75,79 +75,295 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "bdt",
-    "bdtF",
-    "ct",
-    "ctF",
-    "dt",
-    "egt",
-    "fispol",
-    "gct",
-    "gctF",
-    "git",
-    "gitF",
-    "gt",
-    "gtF",
-    "gwt",
-    "gwtF",
-    "gyt",
-    "gytF",
-    "gzt",
-    "ht",
-    "htF",
-    "inflation",
-    "inflationq",
-    "inflt",
-    "infltF",
-    "interest",
-    "invt",
-    "invtF",
-    "kbt",
-    "kbtF",
-    "kt",
-    "ktF",
-    "lamt",
-    "lamtF",
-    "mct",
-    "mctF",
-    "miubt",
-    "miubtF",
-    "miut",
-    "miutF",
-    "output",
-    "outputgap",
-    "proft",
-    "proftF",
-    "rkt",
-    "rktF",
-    "Rt",
-    "RtF",
-    "sigct",
-    "siggt",
-    "sigkt",
-    "sigwt",
-    "tauct",
-    "tauctF",
-    "taukt",
-    "tauktF",
-    "tauwt",
-    "tauwtF",
-    "utilt",
-    "utiltF",
-    "wt",
-    "wtF",
-    "yt",
-    "ytF"
+    {
+      "name": "bdt",
+      "human_readable": "bdt"
+    },
+    {
+      "name": "bdtF",
+      "human_readable": "bdtF"
+    },
+    {
+      "name": "ct",
+      "human_readable": "ct"
+    },
+    {
+      "name": "ctF",
+      "human_readable": "ctF"
+    },
+    {
+      "name": "dt",
+      "human_readable": "dt"
+    },
+    {
+      "name": "egt",
+      "human_readable": "egt"
+    },
+    {
+      "name": "fispol",
+      "human_readable": "fispol"
+    },
+    {
+      "name": "gct",
+      "human_readable": "gct"
+    },
+    {
+      "name": "gctF",
+      "human_readable": "gctF"
+    },
+    {
+      "name": "git",
+      "human_readable": "git"
+    },
+    {
+      "name": "gitF",
+      "human_readable": "gitF"
+    },
+    {
+      "name": "gt",
+      "human_readable": "gt"
+    },
+    {
+      "name": "gtF",
+      "human_readable": "gtF"
+    },
+    {
+      "name": "gwt",
+      "human_readable": "gwt"
+    },
+    {
+      "name": "gwtF",
+      "human_readable": "gwtF"
+    },
+    {
+      "name": "gyt",
+      "human_readable": "gyt"
+    },
+    {
+      "name": "gytF",
+      "human_readable": "gytF"
+    },
+    {
+      "name": "gzt",
+      "human_readable": "gzt"
+    },
+    {
+      "name": "ht",
+      "human_readable": "ht"
+    },
+    {
+      "name": "htF",
+      "human_readable": "htF"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "inflt",
+      "human_readable": "inflt"
+    },
+    {
+      "name": "infltF",
+      "human_readable": "infltF"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "invt",
+      "human_readable": "invt"
+    },
+    {
+      "name": "invtF",
+      "human_readable": "invtF"
+    },
+    {
+      "name": "kbt",
+      "human_readable": "kbt"
+    },
+    {
+      "name": "kbtF",
+      "human_readable": "kbtF"
+    },
+    {
+      "name": "kt",
+      "human_readable": "kt"
+    },
+    {
+      "name": "ktF",
+      "human_readable": "ktF"
+    },
+    {
+      "name": "lamt",
+      "human_readable": "lamt"
+    },
+    {
+      "name": "lamtF",
+      "human_readable": "lamtF"
+    },
+    {
+      "name": "mct",
+      "human_readable": "mct"
+    },
+    {
+      "name": "mctF",
+      "human_readable": "mctF"
+    },
+    {
+      "name": "miubt",
+      "human_readable": "miubt"
+    },
+    {
+      "name": "miubtF",
+      "human_readable": "miubtF"
+    },
+    {
+      "name": "miut",
+      "human_readable": "miut"
+    },
+    {
+      "name": "miutF",
+      "human_readable": "miutF"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "proft",
+      "human_readable": "proft"
+    },
+    {
+      "name": "proftF",
+      "human_readable": "proftF"
+    },
+    {
+      "name": "rkt",
+      "human_readable": "rkt"
+    },
+    {
+      "name": "rktF",
+      "human_readable": "rktF"
+    },
+    {
+      "name": "Rt",
+      "human_readable": "Rt"
+    },
+    {
+      "name": "RtF",
+      "human_readable": "RtF"
+    },
+    {
+      "name": "sigct",
+      "human_readable": "sigct"
+    },
+    {
+      "name": "siggt",
+      "human_readable": "siggt"
+    },
+    {
+      "name": "sigkt",
+      "human_readable": "sigkt"
+    },
+    {
+      "name": "sigwt",
+      "human_readable": "sigwt"
+    },
+    {
+      "name": "tauct",
+      "human_readable": "tauct"
+    },
+    {
+      "name": "tauctF",
+      "human_readable": "tauctF"
+    },
+    {
+      "name": "taukt",
+      "human_readable": "taukt"
+    },
+    {
+      "name": "tauktF",
+      "human_readable": "tauktF"
+    },
+    {
+      "name": "tauwt",
+      "human_readable": "tauwt"
+    },
+    {
+      "name": "tauwtF",
+      "human_readable": "tauwtF"
+    },
+    {
+      "name": "utilt",
+      "human_readable": "utilt"
+    },
+    {
+      "name": "utiltF",
+      "human_readable": "utiltF"
+    },
+    {
+      "name": "wt",
+      "human_readable": "wt"
+    },
+    {
+      "name": "wtF",
+      "human_readable": "wtF"
+    },
+    {
+      "name": "yt",
+      "human_readable": "yt"
+    },
+    {
+      "name": "ytF",
+      "human_readable": "ytF"
+    }
   ],
   "shocks": [
-    "ekt",
-    "ewt",
-    "ezt",
-    "fiscal_",
-    "interest_",
-    "uct",
-    "ugt",
-    "ukt",
-    "uwt"
+    {
+      "name": "ekt",
+      "human_readable": "ekt"
+    },
+    {
+      "name": "ewt",
+      "human_readable": "ewt"
+    },
+    {
+      "name": "ezt",
+      "human_readable": "ezt"
+    },
+    {
+      "name": "fiscal_",
+      "human_readable": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    },
+    {
+      "name": "uct",
+      "human_readable": "uct"
+    },
+    {
+      "name": "ugt",
+      "human_readable": "ugt"
+    },
+    {
+      "name": "ukt",
+      "human_readable": "ukt"
+    },
+    {
+      "name": "uwt",
+      "human_readable": "uwt"
+    }
   ]
 }

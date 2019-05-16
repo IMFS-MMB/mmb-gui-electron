@@ -73,48 +73,171 @@
   "variabledim": 2,
   "al": false,
   "vars": [
-    "cwp_eu",
-    "cwp_ja",
-    "cwp_us",
-    "il_eu",
-    "il_ja",
-    "il_us",
-    "index_us",
-    "inflation",
-    "inflationq",
-    "interest",
-    "is_eu",
-    "is_ja",
-    "is_us",
-    "one",
-    "output",
-    "outputgap",
-    "pi1_eu",
-    "pi1_ja",
-    "pi1_us",
-    "pi4_eu",
-    "pi4_ja",
-    "pi4_us",
-    "q_eu",
-    "q_ja",
-    "q_us",
-    "reer_eu",
-    "reer_ja",
-    "reer_us",
-    "rer_euja",
-    "rer_euus",
-    "rer_jaus",
-    "rl_eu",
-    "rl_ja",
-    "rl_us"
+    {
+      "name": "cwp_eu",
+      "human_readable": "cwp_eu"
+    },
+    {
+      "name": "cwp_ja",
+      "human_readable": "cwp_ja"
+    },
+    {
+      "name": "cwp_us",
+      "human_readable": "cwp_us"
+    },
+    {
+      "name": "il_eu",
+      "human_readable": "il_eu"
+    },
+    {
+      "name": "il_ja",
+      "human_readable": "il_ja"
+    },
+    {
+      "name": "il_us",
+      "human_readable": "il_us"
+    },
+    {
+      "name": "index_us",
+      "human_readable": "index_us"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "is_eu",
+      "human_readable": "is_eu"
+    },
+    {
+      "name": "is_ja",
+      "human_readable": "is_ja"
+    },
+    {
+      "name": "is_us",
+      "human_readable": "is_us"
+    },
+    {
+      "name": "one",
+      "human_readable": "one"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "pi1_eu",
+      "human_readable": "pi1_eu"
+    },
+    {
+      "name": "pi1_ja",
+      "human_readable": "pi1_ja"
+    },
+    {
+      "name": "pi1_us",
+      "human_readable": "pi1_us"
+    },
+    {
+      "name": "pi4_eu",
+      "human_readable": "pi4_eu"
+    },
+    {
+      "name": "pi4_ja",
+      "human_readable": "pi4_ja"
+    },
+    {
+      "name": "pi4_us",
+      "human_readable": "pi4_us"
+    },
+    {
+      "name": "q_eu",
+      "human_readable": "q_eu"
+    },
+    {
+      "name": "q_ja",
+      "human_readable": "q_ja"
+    },
+    {
+      "name": "q_us",
+      "human_readable": "q_us"
+    },
+    {
+      "name": "reer_eu",
+      "human_readable": "reer_eu"
+    },
+    {
+      "name": "reer_ja",
+      "human_readable": "reer_ja"
+    },
+    {
+      "name": "reer_us",
+      "human_readable": "reer_us"
+    },
+    {
+      "name": "rer_euja",
+      "human_readable": "rer_euja"
+    },
+    {
+      "name": "rer_euus",
+      "human_readable": "rer_euus"
+    },
+    {
+      "name": "rer_jaus",
+      "human_readable": "rer_jaus"
+    },
+    {
+      "name": "rl_eu",
+      "human_readable": "rl_eu"
+    },
+    {
+      "name": "rl_ja",
+      "human_readable": "rl_ja"
+    },
+    {
+      "name": "rl_us",
+      "human_readable": "rl_us"
+    }
   ],
   "shocks": [
-    "e_cw_eu",
-    "e_cw_ja",
-    "e_cw_us",
-    "e_d_eu",
-    "e_d_ja",
-    "e_d_us",
-    "interest_"
+    {
+      "name": "e_cw_eu",
+      "human_readable": "e_cw_eu"
+    },
+    {
+      "name": "e_cw_ja",
+      "human_readable": "e_cw_ja"
+    },
+    {
+      "name": "e_cw_us",
+      "human_readable": "e_cw_us"
+    },
+    {
+      "name": "e_d_eu",
+      "human_readable": "e_d_eu"
+    },
+    {
+      "name": "e_d_ja",
+      "human_readable": "e_d_ja"
+    },
+    {
+      "name": "e_d_us",
+      "human_readable": "e_d_us"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    }
   ]
 }

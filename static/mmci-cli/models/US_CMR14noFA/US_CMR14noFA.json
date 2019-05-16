@@ -40,74 +40,275 @@
   "variabledim": 2,
   "al": false,
   "vars": [
-    "c",
-    "cf",
-    "consumption_obs",
-    "e_g",
-    "epsil",
-    "fispol",
-    "Fp",
-    "Fpf",
-    "Fw",
-    "Fwf",
-    "g",
-    "gdp_obs",
-    "h",
-    "hf",
-    "hours_obs",
-    "i",
-    "i_f",
-    "inflation",
-    "inflation_obs",
-    "inflationq",
-    "interest",
-    "investment_obs",
-    "kbar",
-    "kbarf",
-    "lambdaf",
-    "lambdaz",
-    "lambdazf",
-    "muup",
-    "muzstar",
-    "output",
-    "outputgap",
-    "phi",
-    "phif",
-    "pi",
-    "pinvest_obs",
-    "pitarget",
-    "pstar",
-    "q",
-    "qf",
-    "Re",
-    "Re_obs",
-    "RealRe_obs",
-    "Ref",
-    "rk",
-    "Rk",
-    "rkf",
-    "Rkf",
-    "s",
-    "sf",
-    "u",
-    "uf",
-    "wage_obs",
-    "wstar",
-    "wtilde",
-    "wtildef",
-    "y",
-    "zetac",
-    "zetai"
+    {
+      "name": "c",
+      "human_readable": "c"
+    },
+    {
+      "name": "cf",
+      "human_readable": "cf"
+    },
+    {
+      "name": "consumption_obs",
+      "human_readable": "consumption_obs"
+    },
+    {
+      "name": "e_g",
+      "human_readable": "e_g"
+    },
+    {
+      "name": "epsil",
+      "human_readable": "epsil"
+    },
+    {
+      "name": "fispol",
+      "human_readable": "fispol"
+    },
+    {
+      "name": "Fp",
+      "human_readable": "Fp"
+    },
+    {
+      "name": "Fpf",
+      "human_readable": "Fpf"
+    },
+    {
+      "name": "Fw",
+      "human_readable": "Fw"
+    },
+    {
+      "name": "Fwf",
+      "human_readable": "Fwf"
+    },
+    {
+      "name": "g",
+      "human_readable": "g"
+    },
+    {
+      "name": "gdp_obs",
+      "human_readable": "gdp_obs"
+    },
+    {
+      "name": "h",
+      "human_readable": "h"
+    },
+    {
+      "name": "hf",
+      "human_readable": "hf"
+    },
+    {
+      "name": "hours_obs",
+      "human_readable": "hours_obs"
+    },
+    {
+      "name": "i",
+      "human_readable": "i"
+    },
+    {
+      "name": "i_f",
+      "human_readable": "i_f"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflation_obs",
+      "human_readable": "inflation_obs"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "investment_obs",
+      "human_readable": "investment_obs"
+    },
+    {
+      "name": "kbar",
+      "human_readable": "kbar"
+    },
+    {
+      "name": "kbarf",
+      "human_readable": "kbarf"
+    },
+    {
+      "name": "lambdaf",
+      "human_readable": "lambdaf"
+    },
+    {
+      "name": "lambdaz",
+      "human_readable": "lambdaz"
+    },
+    {
+      "name": "lambdazf",
+      "human_readable": "lambdazf"
+    },
+    {
+      "name": "muup",
+      "human_readable": "muup"
+    },
+    {
+      "name": "muzstar",
+      "human_readable": "muzstar"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "phi",
+      "human_readable": "phi"
+    },
+    {
+      "name": "phif",
+      "human_readable": "phif"
+    },
+    {
+      "name": "pi",
+      "human_readable": "pi"
+    },
+    {
+      "name": "pinvest_obs",
+      "human_readable": "pinvest_obs"
+    },
+    {
+      "name": "pitarget",
+      "human_readable": "pitarget"
+    },
+    {
+      "name": "pstar",
+      "human_readable": "pstar"
+    },
+    {
+      "name": "q",
+      "human_readable": "q"
+    },
+    {
+      "name": "qf",
+      "human_readable": "qf"
+    },
+    {
+      "name": "Re",
+      "human_readable": "Re"
+    },
+    {
+      "name": "Re_obs",
+      "human_readable": "Re_obs"
+    },
+    {
+      "name": "RealRe_obs",
+      "human_readable": "RealRe_obs"
+    },
+    {
+      "name": "Ref",
+      "human_readable": "Ref"
+    },
+    {
+      "name": "rk",
+      "human_readable": "rk"
+    },
+    {
+      "name": "Rk",
+      "human_readable": "Rk"
+    },
+    {
+      "name": "rkf",
+      "human_readable": "rkf"
+    },
+    {
+      "name": "Rkf",
+      "human_readable": "Rkf"
+    },
+    {
+      "name": "s",
+      "human_readable": "s"
+    },
+    {
+      "name": "sf",
+      "human_readable": "sf"
+    },
+    {
+      "name": "u",
+      "human_readable": "u"
+    },
+    {
+      "name": "uf",
+      "human_readable": "uf"
+    },
+    {
+      "name": "wage_obs",
+      "human_readable": "wage_obs"
+    },
+    {
+      "name": "wstar",
+      "human_readable": "wstar"
+    },
+    {
+      "name": "wtilde",
+      "human_readable": "wtilde"
+    },
+    {
+      "name": "wtildef",
+      "human_readable": "wtildef"
+    },
+    {
+      "name": "y",
+      "human_readable": "y"
+    },
+    {
+      "name": "zetac",
+      "human_readable": "zetac"
+    },
+    {
+      "name": "zetai",
+      "human_readable": "zetai"
+    }
   ],
   "shocks": [
-    "e_epsil",
-    "e_lambdaf",
-    "e_muup",
-    "e_muzstar",
-    "e_pitarget",
-    "e_zetac",
-    "e_zetai",
-    "fiscal_",
-    "interest_"
+    {
+      "name": "e_epsil",
+      "human_readable": "e_epsil"
+    },
+    {
+      "name": "e_lambdaf",
+      "human_readable": "e_lambdaf"
+    },
+    {
+      "name": "e_muup",
+      "human_readable": "e_muup"
+    },
+    {
+      "name": "e_muzstar",
+      "human_readable": "e_muzstar"
+    },
+    {
+      "name": "e_pitarget",
+      "human_readable": "e_pitarget"
+    },
+    {
+      "name": "e_zetac",
+      "human_readable": "e_zetac"
+    },
+    {
+      "name": "e_zetai",
+      "human_readable": "e_zetai"
+    },
+    {
+      "name": "fiscal_",
+      "human_readable": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    }
   ]
 }

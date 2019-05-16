@@ -73,80 +73,299 @@
   "variabledim": 2,
   "al": false,
   "vars": [
-    "auxt",
-    "auxtfp",
-    "bigXt",
-    "bigZt",
-    "bt",
-    "ce",
-    "cg",
-    "cgn",
-    "ct",
-    "ctfp",
-    "efc",
-    "eqti",
-    "expi",
-    "ft",
-    "ht",
-    "htb",
-    "htfp",
-    "inflation",
-    "inflationq",
-    "interest",
-    "it",
-    "itfp",
-    "kc",
-    "kl",
-    "kt",
-    "ktfp",
-    "lambdat",
-    "lambdatfp",
-    "lev",
-    "llt",
-    "lltfp",
-    "lnit",
-    "lnygap",
-    "lnyt",
-    "mcb",
-    "mcc",
-    "mcd",
-    "mce",
-    "mck",
-    "mcl",
-    "mct",
-    "mctfp",
-    "mpk",
-    "mpl",
-    "nt",
-    "output",
-    "outputgap",
-    "pit",
-    "pref",
-    "pstart",
-    "qgap",
-    "qt",
-    "qtfp",
-    "rkt",
-    "rktfp",
-    "rnt",
-    "rntfp",
-    "rw",
-    "st",
-    "ste",
-    "taut",
-    "uu",
-    "vf",
-    "xt",
-    "ygap",
-    "yt",
-    "ytfp",
-    "zt"
+    {
+      "name": "auxt",
+      "human_readable": "auxt"
+    },
+    {
+      "name": "auxtfp",
+      "human_readable": "auxtfp"
+    },
+    {
+      "name": "bigXt",
+      "human_readable": "bigXt"
+    },
+    {
+      "name": "bigZt",
+      "human_readable": "bigZt"
+    },
+    {
+      "name": "bt",
+      "human_readable": "bt"
+    },
+    {
+      "name": "ce",
+      "human_readable": "ce"
+    },
+    {
+      "name": "cg",
+      "human_readable": "cg"
+    },
+    {
+      "name": "cgn",
+      "human_readable": "cgn"
+    },
+    {
+      "name": "ct",
+      "human_readable": "ct"
+    },
+    {
+      "name": "ctfp",
+      "human_readable": "ctfp"
+    },
+    {
+      "name": "efc",
+      "human_readable": "efc"
+    },
+    {
+      "name": "eqti",
+      "human_readable": "eqti"
+    },
+    {
+      "name": "expi",
+      "human_readable": "expi"
+    },
+    {
+      "name": "ft",
+      "human_readable": "ft"
+    },
+    {
+      "name": "ht",
+      "human_readable": "ht"
+    },
+    {
+      "name": "htb",
+      "human_readable": "htb"
+    },
+    {
+      "name": "htfp",
+      "human_readable": "htfp"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "it",
+      "human_readable": "it"
+    },
+    {
+      "name": "itfp",
+      "human_readable": "itfp"
+    },
+    {
+      "name": "kc",
+      "human_readable": "kc"
+    },
+    {
+      "name": "kl",
+      "human_readable": "kl"
+    },
+    {
+      "name": "kt",
+      "human_readable": "kt"
+    },
+    {
+      "name": "ktfp",
+      "human_readable": "ktfp"
+    },
+    {
+      "name": "lambdat",
+      "human_readable": "lambdat"
+    },
+    {
+      "name": "lambdatfp",
+      "human_readable": "lambdatfp"
+    },
+    {
+      "name": "lev",
+      "human_readable": "lev"
+    },
+    {
+      "name": "llt",
+      "human_readable": "llt"
+    },
+    {
+      "name": "lltfp",
+      "human_readable": "lltfp"
+    },
+    {
+      "name": "lnit",
+      "human_readable": "lnit"
+    },
+    {
+      "name": "lnygap",
+      "human_readable": "lnygap"
+    },
+    {
+      "name": "lnyt",
+      "human_readable": "lnyt"
+    },
+    {
+      "name": "mcb",
+      "human_readable": "mcb"
+    },
+    {
+      "name": "mcc",
+      "human_readable": "mcc"
+    },
+    {
+      "name": "mcd",
+      "human_readable": "mcd"
+    },
+    {
+      "name": "mce",
+      "human_readable": "mce"
+    },
+    {
+      "name": "mck",
+      "human_readable": "mck"
+    },
+    {
+      "name": "mcl",
+      "human_readable": "mcl"
+    },
+    {
+      "name": "mct",
+      "human_readable": "mct"
+    },
+    {
+      "name": "mctfp",
+      "human_readable": "mctfp"
+    },
+    {
+      "name": "mpk",
+      "human_readable": "mpk"
+    },
+    {
+      "name": "mpl",
+      "human_readable": "mpl"
+    },
+    {
+      "name": "nt",
+      "human_readable": "nt"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "pit",
+      "human_readable": "pit"
+    },
+    {
+      "name": "pref",
+      "human_readable": "pref"
+    },
+    {
+      "name": "pstart",
+      "human_readable": "pstart"
+    },
+    {
+      "name": "qgap",
+      "human_readable": "qgap"
+    },
+    {
+      "name": "qt",
+      "human_readable": "qt"
+    },
+    {
+      "name": "qtfp",
+      "human_readable": "qtfp"
+    },
+    {
+      "name": "rkt",
+      "human_readable": "rkt"
+    },
+    {
+      "name": "rktfp",
+      "human_readable": "rktfp"
+    },
+    {
+      "name": "rnt",
+      "human_readable": "rnt"
+    },
+    {
+      "name": "rntfp",
+      "human_readable": "rntfp"
+    },
+    {
+      "name": "rw",
+      "human_readable": "rw"
+    },
+    {
+      "name": "st",
+      "human_readable": "st"
+    },
+    {
+      "name": "ste",
+      "human_readable": "ste"
+    },
+    {
+      "name": "taut",
+      "human_readable": "taut"
+    },
+    {
+      "name": "uu",
+      "human_readable": "uu"
+    },
+    {
+      "name": "vf",
+      "human_readable": "vf"
+    },
+    {
+      "name": "xt",
+      "human_readable": "xt"
+    },
+    {
+      "name": "ygap",
+      "human_readable": "ygap"
+    },
+    {
+      "name": "yt",
+      "human_readable": "yt"
+    },
+    {
+      "name": "ytfp",
+      "human_readable": "ytfp"
+    },
+    {
+      "name": "zt",
+      "human_readable": "zt"
+    }
   ],
   "shocks": [
-    "epsft",
-    "epspt",
-    "epsxt",
-    "epszt",
-    "interest_"
+    {
+      "name": "epsft",
+      "human_readable": "epsft"
+    },
+    {
+      "name": "epspt",
+      "human_readable": "epspt"
+    },
+    {
+      "name": "epsxt",
+      "human_readable": "epsxt"
+    },
+    {
+      "name": "epszt",
+      "human_readable": "epszt"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    }
   ]
 }

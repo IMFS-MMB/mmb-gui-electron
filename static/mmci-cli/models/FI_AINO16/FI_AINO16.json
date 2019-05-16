@@ -41,175 +41,679 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "astar",
-    "astarf",
-    "bankprofits",
-    "bankprofitsf",
-    "bka",
-    "bkaf",
-    "bstar",
-    "bstarf",
-    "btot",
-    "btotf",
-    "by",
-    "byf",
-    "c",
-    "cf",
-    "cGF",
-    "cH",
-    "cHf",
-    "deposits",
-    "depositsf",
-    "ds",
-    "epsb",
-    "epsGF",
-    "epsKB",
-    "epsrEUR",
-    "epsX",
-    "fispol",
-    "h",
-    "hf",
-    "hF",
-    "hFf",
-    "hG",
-    "iG",
-    "iH",
-    "iHf",
-    "inflation",
-    "inflationq",
-    "interest",
-    "iT",
-    "iTf",
-    "k",
-    "kbank",
-    "kbankf",
-    "kf",
-    "lamCM",
-    "lamCY",
-    "lamIY",
-    "lamK",
-    "lamLT",
-    "lamW",
-    "lev_e",
-    "lev_ef",
-    "m",
-    "mC",
-    "mCf",
-    "mcX",
-    "mcXf",
-    "mcY",
-    "mcYf",
-    "mf",
-    "mI",
-    "mIf",
-    "mu",
-    "mW",
-    "mX",
-    "mXf",
-    "nuB",
-    "nwe",
-    "nwef",
-    "output",
-    "outputgap",
-    "pC",
-    "pCf",
-    "pI",
-    "pieC",
-    "pieCf",
-    "pieI",
-    "pieIf",
-    "pieM",
-    "pieMC",
-    "pieMCf",
-    "pieMf",
-    "pieOILS",
-    "pieOILSf",
-    "pieRAWS",
-    "pieRAWSf",
-    "pieW",
-    "pieX",
-    "pieXf",
-    "pieY",
-    "pieYf",
-    "pIf",
-    "pM",
-    "pMf",
-    "pO",
-    "pOf",
-    "pOILS",
-    "pRAWS",
-    "psi",
-    "psif",
-    "pX",
-    "pXf",
-    "q",
-    "qf",
-    "rb",
-    "RB",
-    "rbf",
-    "RBf",
-    "rEUR",
-    "rFI",
-    "rFIf",
-    "rK",
-    "rKf",
-    "rs",
-    "rsf",
-    "rwage",
-    "rwagef",
-    "tbY",
-    "tbYf",
-    "ToT",
-    "ToTf",
-    "trY",
-    "trYf",
-    "upsilon",
-    "upsilonMC",
-    "upsilonX",
-    "w",
-    "wf",
-    "wF",
-    "wFf",
-    "wG",
-    "wGf",
-    "x",
-    "xf",
-    "y",
-    "yC",
-    "yCf",
-    "yf",
-    "yI",
-    "yIf",
-    "yX",
-    "yXf",
-    "zetaCH",
-    "zetaEUR"
+    {
+      "name": "astar",
+      "human_readable": "astar"
+    },
+    {
+      "name": "astarf",
+      "human_readable": "astarf"
+    },
+    {
+      "name": "bankprofits",
+      "human_readable": "bankprofits"
+    },
+    {
+      "name": "bankprofitsf",
+      "human_readable": "bankprofitsf"
+    },
+    {
+      "name": "bka",
+      "human_readable": "bka"
+    },
+    {
+      "name": "bkaf",
+      "human_readable": "bkaf"
+    },
+    {
+      "name": "bstar",
+      "human_readable": "bstar"
+    },
+    {
+      "name": "bstarf",
+      "human_readable": "bstarf"
+    },
+    {
+      "name": "btot",
+      "human_readable": "btot"
+    },
+    {
+      "name": "btotf",
+      "human_readable": "btotf"
+    },
+    {
+      "name": "by",
+      "human_readable": "by"
+    },
+    {
+      "name": "byf",
+      "human_readable": "byf"
+    },
+    {
+      "name": "c",
+      "human_readable": "c"
+    },
+    {
+      "name": "cf",
+      "human_readable": "cf"
+    },
+    {
+      "name": "cGF",
+      "human_readable": "cGF"
+    },
+    {
+      "name": "cH",
+      "human_readable": "cH"
+    },
+    {
+      "name": "cHf",
+      "human_readable": "cHf"
+    },
+    {
+      "name": "deposits",
+      "human_readable": "deposits"
+    },
+    {
+      "name": "depositsf",
+      "human_readable": "depositsf"
+    },
+    {
+      "name": "ds",
+      "human_readable": "ds"
+    },
+    {
+      "name": "epsb",
+      "human_readable": "epsb"
+    },
+    {
+      "name": "epsGF",
+      "human_readable": "epsGF"
+    },
+    {
+      "name": "epsKB",
+      "human_readable": "epsKB"
+    },
+    {
+      "name": "epsrEUR",
+      "human_readable": "epsrEUR"
+    },
+    {
+      "name": "epsX",
+      "human_readable": "epsX"
+    },
+    {
+      "name": "fispol",
+      "human_readable": "fispol"
+    },
+    {
+      "name": "h",
+      "human_readable": "h"
+    },
+    {
+      "name": "hf",
+      "human_readable": "hf"
+    },
+    {
+      "name": "hF",
+      "human_readable": "hF"
+    },
+    {
+      "name": "hFf",
+      "human_readable": "hFf"
+    },
+    {
+      "name": "hG",
+      "human_readable": "hG"
+    },
+    {
+      "name": "iG",
+      "human_readable": "iG"
+    },
+    {
+      "name": "iH",
+      "human_readable": "iH"
+    },
+    {
+      "name": "iHf",
+      "human_readable": "iHf"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "iT",
+      "human_readable": "iT"
+    },
+    {
+      "name": "iTf",
+      "human_readable": "iTf"
+    },
+    {
+      "name": "k",
+      "human_readable": "k"
+    },
+    {
+      "name": "kbank",
+      "human_readable": "kbank"
+    },
+    {
+      "name": "kbankf",
+      "human_readable": "kbankf"
+    },
+    {
+      "name": "kf",
+      "human_readable": "kf"
+    },
+    {
+      "name": "lamCM",
+      "human_readable": "lamCM"
+    },
+    {
+      "name": "lamCY",
+      "human_readable": "lamCY"
+    },
+    {
+      "name": "lamIY",
+      "human_readable": "lamIY"
+    },
+    {
+      "name": "lamK",
+      "human_readable": "lamK"
+    },
+    {
+      "name": "lamLT",
+      "human_readable": "lamLT"
+    },
+    {
+      "name": "lamW",
+      "human_readable": "lamW"
+    },
+    {
+      "name": "lev_e",
+      "human_readable": "lev_e"
+    },
+    {
+      "name": "lev_ef",
+      "human_readable": "lev_ef"
+    },
+    {
+      "name": "m",
+      "human_readable": "m"
+    },
+    {
+      "name": "mC",
+      "human_readable": "mC"
+    },
+    {
+      "name": "mCf",
+      "human_readable": "mCf"
+    },
+    {
+      "name": "mcX",
+      "human_readable": "mcX"
+    },
+    {
+      "name": "mcXf",
+      "human_readable": "mcXf"
+    },
+    {
+      "name": "mcY",
+      "human_readable": "mcY"
+    },
+    {
+      "name": "mcYf",
+      "human_readable": "mcYf"
+    },
+    {
+      "name": "mf",
+      "human_readable": "mf"
+    },
+    {
+      "name": "mI",
+      "human_readable": "mI"
+    },
+    {
+      "name": "mIf",
+      "human_readable": "mIf"
+    },
+    {
+      "name": "mu",
+      "human_readable": "mu"
+    },
+    {
+      "name": "mW",
+      "human_readable": "mW"
+    },
+    {
+      "name": "mX",
+      "human_readable": "mX"
+    },
+    {
+      "name": "mXf",
+      "human_readable": "mXf"
+    },
+    {
+      "name": "nuB",
+      "human_readable": "nuB"
+    },
+    {
+      "name": "nwe",
+      "human_readable": "nwe"
+    },
+    {
+      "name": "nwef",
+      "human_readable": "nwef"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "pC",
+      "human_readable": "pC"
+    },
+    {
+      "name": "pCf",
+      "human_readable": "pCf"
+    },
+    {
+      "name": "pI",
+      "human_readable": "pI"
+    },
+    {
+      "name": "pieC",
+      "human_readable": "pieC"
+    },
+    {
+      "name": "pieCf",
+      "human_readable": "pieCf"
+    },
+    {
+      "name": "pieI",
+      "human_readable": "pieI"
+    },
+    {
+      "name": "pieIf",
+      "human_readable": "pieIf"
+    },
+    {
+      "name": "pieM",
+      "human_readable": "pieM"
+    },
+    {
+      "name": "pieMC",
+      "human_readable": "pieMC"
+    },
+    {
+      "name": "pieMCf",
+      "human_readable": "pieMCf"
+    },
+    {
+      "name": "pieMf",
+      "human_readable": "pieMf"
+    },
+    {
+      "name": "pieOILS",
+      "human_readable": "pieOILS"
+    },
+    {
+      "name": "pieOILSf",
+      "human_readable": "pieOILSf"
+    },
+    {
+      "name": "pieRAWS",
+      "human_readable": "pieRAWS"
+    },
+    {
+      "name": "pieRAWSf",
+      "human_readable": "pieRAWSf"
+    },
+    {
+      "name": "pieW",
+      "human_readable": "pieW"
+    },
+    {
+      "name": "pieX",
+      "human_readable": "pieX"
+    },
+    {
+      "name": "pieXf",
+      "human_readable": "pieXf"
+    },
+    {
+      "name": "pieY",
+      "human_readable": "pieY"
+    },
+    {
+      "name": "pieYf",
+      "human_readable": "pieYf"
+    },
+    {
+      "name": "pIf",
+      "human_readable": "pIf"
+    },
+    {
+      "name": "pM",
+      "human_readable": "pM"
+    },
+    {
+      "name": "pMf",
+      "human_readable": "pMf"
+    },
+    {
+      "name": "pO",
+      "human_readable": "pO"
+    },
+    {
+      "name": "pOf",
+      "human_readable": "pOf"
+    },
+    {
+      "name": "pOILS",
+      "human_readable": "pOILS"
+    },
+    {
+      "name": "pRAWS",
+      "human_readable": "pRAWS"
+    },
+    {
+      "name": "psi",
+      "human_readable": "psi"
+    },
+    {
+      "name": "psif",
+      "human_readable": "psif"
+    },
+    {
+      "name": "pX",
+      "human_readable": "pX"
+    },
+    {
+      "name": "pXf",
+      "human_readable": "pXf"
+    },
+    {
+      "name": "q",
+      "human_readable": "q"
+    },
+    {
+      "name": "qf",
+      "human_readable": "qf"
+    },
+    {
+      "name": "rb",
+      "human_readable": "rb"
+    },
+    {
+      "name": "RB",
+      "human_readable": "RB"
+    },
+    {
+      "name": "rbf",
+      "human_readable": "rbf"
+    },
+    {
+      "name": "RBf",
+      "human_readable": "RBf"
+    },
+    {
+      "name": "rEUR",
+      "human_readable": "rEUR"
+    },
+    {
+      "name": "rFI",
+      "human_readable": "rFI"
+    },
+    {
+      "name": "rFIf",
+      "human_readable": "rFIf"
+    },
+    {
+      "name": "rK",
+      "human_readable": "rK"
+    },
+    {
+      "name": "rKf",
+      "human_readable": "rKf"
+    },
+    {
+      "name": "rs",
+      "human_readable": "rs"
+    },
+    {
+      "name": "rsf",
+      "human_readable": "rsf"
+    },
+    {
+      "name": "rwage",
+      "human_readable": "rwage"
+    },
+    {
+      "name": "rwagef",
+      "human_readable": "rwagef"
+    },
+    {
+      "name": "tbY",
+      "human_readable": "tbY"
+    },
+    {
+      "name": "tbYf",
+      "human_readable": "tbYf"
+    },
+    {
+      "name": "ToT",
+      "human_readable": "ToT"
+    },
+    {
+      "name": "ToTf",
+      "human_readable": "ToTf"
+    },
+    {
+      "name": "trY",
+      "human_readable": "trY"
+    },
+    {
+      "name": "trYf",
+      "human_readable": "trYf"
+    },
+    {
+      "name": "upsilon",
+      "human_readable": "upsilon"
+    },
+    {
+      "name": "upsilonMC",
+      "human_readable": "upsilonMC"
+    },
+    {
+      "name": "upsilonX",
+      "human_readable": "upsilonX"
+    },
+    {
+      "name": "w",
+      "human_readable": "w"
+    },
+    {
+      "name": "wf",
+      "human_readable": "wf"
+    },
+    {
+      "name": "wF",
+      "human_readable": "wF"
+    },
+    {
+      "name": "wFf",
+      "human_readable": "wFf"
+    },
+    {
+      "name": "wG",
+      "human_readable": "wG"
+    },
+    {
+      "name": "wGf",
+      "human_readable": "wGf"
+    },
+    {
+      "name": "x",
+      "human_readable": "x"
+    },
+    {
+      "name": "xf",
+      "human_readable": "xf"
+    },
+    {
+      "name": "y",
+      "human_readable": "y"
+    },
+    {
+      "name": "yC",
+      "human_readable": "yC"
+    },
+    {
+      "name": "yCf",
+      "human_readable": "yCf"
+    },
+    {
+      "name": "yf",
+      "human_readable": "yf"
+    },
+    {
+      "name": "yI",
+      "human_readable": "yI"
+    },
+    {
+      "name": "yIf",
+      "human_readable": "yIf"
+    },
+    {
+      "name": "yX",
+      "human_readable": "yX"
+    },
+    {
+      "name": "yXf",
+      "human_readable": "yXf"
+    },
+    {
+      "name": "zetaCH",
+      "human_readable": "zetaCH"
+    },
+    {
+      "name": "zetaEUR",
+      "human_readable": "zetaEUR"
+    }
   ],
   "shocks": [
-    "epsBankCapital",
-    "epsdS",
-    "epsEPSB",
-    "epshG",
-    "epsIG",
-    "epsLAMBDACM",
-    "epsLAMBDACY",
-    "epsLAMBDAIY",
-    "epsLAMBDAK",
-    "epsLAMBDALT",
-    "epsLAMW",
-    "epsMU",
-    "epsMW",
-    "epsnuB",
-    "epsPIEW",
-    "epsPOILS",
-    "epsPRAWS",
-    "epsUPSILON",
-    "epsUPSILONMC",
-    "epsUPSILONX",
-    "epsXX",
-    "epsZETACH",
-    "epsZETAEUR",
-    "fiscal_",
-    "interest_"
+    {
+      "name": "epsBankCapital",
+      "human_readable": "epsBankCapital"
+    },
+    {
+      "name": "epsdS",
+      "human_readable": "epsdS"
+    },
+    {
+      "name": "epsEPSB",
+      "human_readable": "epsEPSB"
+    },
+    {
+      "name": "epshG",
+      "human_readable": "epshG"
+    },
+    {
+      "name": "epsIG",
+      "human_readable": "epsIG"
+    },
+    {
+      "name": "epsLAMBDACM",
+      "human_readable": "epsLAMBDACM"
+    },
+    {
+      "name": "epsLAMBDACY",
+      "human_readable": "epsLAMBDACY"
+    },
+    {
+      "name": "epsLAMBDAIY",
+      "human_readable": "epsLAMBDAIY"
+    },
+    {
+      "name": "epsLAMBDAK",
+      "human_readable": "epsLAMBDAK"
+    },
+    {
+      "name": "epsLAMBDALT",
+      "human_readable": "epsLAMBDALT"
+    },
+    {
+      "name": "epsLAMW",
+      "human_readable": "epsLAMW"
+    },
+    {
+      "name": "epsMU",
+      "human_readable": "epsMU"
+    },
+    {
+      "name": "epsMW",
+      "human_readable": "epsMW"
+    },
+    {
+      "name": "epsnuB",
+      "human_readable": "epsnuB"
+    },
+    {
+      "name": "epsPIEW",
+      "human_readable": "epsPIEW"
+    },
+    {
+      "name": "epsPOILS",
+      "human_readable": "epsPOILS"
+    },
+    {
+      "name": "epsPRAWS",
+      "human_readable": "epsPRAWS"
+    },
+    {
+      "name": "epsUPSILON",
+      "human_readable": "epsUPSILON"
+    },
+    {
+      "name": "epsUPSILONMC",
+      "human_readable": "epsUPSILONMC"
+    },
+    {
+      "name": "epsUPSILONX",
+      "human_readable": "epsUPSILONX"
+    },
+    {
+      "name": "epsXX",
+      "human_readable": "epsXX"
+    },
+    {
+      "name": "epsZETACH",
+      "human_readable": "epsZETACH"
+    },
+    {
+      "name": "epsZETAEUR",
+      "human_readable": "epsZETAEUR"
+    },
+    {
+      "name": "fiscal_",
+      "human_readable": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    }
   ]
 }

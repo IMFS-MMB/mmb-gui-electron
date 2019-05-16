@@ -70,35 +70,119 @@
     ]
   },
   "vars": [
-    "f",
-    "infl",
-    "inflation",
-    "inflationq",
-    "inflationql",
-    "inflationql2",
-    "inflationqls",
-    "interest",
-    "output",
-    "outputgap",
-    "p",
-    "rho",
-    "x",
-    "xl",
-    "xll",
-    "ypsilon",
-    "ypsilonf",
-    "ypsilonff",
-    "ytilde",
-    "ytildef",
-    "ytildeff",
-    "ytildel",
-    "z",
-    "zl",
-    "zll"
+    {
+      "name": "f",
+      "human_readable": "f"
+    },
+    {
+      "name": "infl",
+      "human_readable": "infl"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "inflationql",
+      "human_readable": "inflationql"
+    },
+    {
+      "name": "inflationql2",
+      "human_readable": "inflationql2"
+    },
+    {
+      "name": "inflationqls",
+      "human_readable": "inflationqls"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "p",
+      "human_readable": "p"
+    },
+    {
+      "name": "rho",
+      "human_readable": "rho"
+    },
+    {
+      "name": "x",
+      "human_readable": "x"
+    },
+    {
+      "name": "xl",
+      "human_readable": "xl"
+    },
+    {
+      "name": "xll",
+      "human_readable": "xll"
+    },
+    {
+      "name": "ypsilon",
+      "human_readable": "ypsilon"
+    },
+    {
+      "name": "ypsilonf",
+      "human_readable": "ypsilonf"
+    },
+    {
+      "name": "ypsilonff",
+      "human_readable": "ypsilonff"
+    },
+    {
+      "name": "ytilde",
+      "human_readable": "ytilde"
+    },
+    {
+      "name": "ytildef",
+      "human_readable": "ytildef"
+    },
+    {
+      "name": "ytildeff",
+      "human_readable": "ytildeff"
+    },
+    {
+      "name": "ytildel",
+      "human_readable": "ytildel"
+    },
+    {
+      "name": "z",
+      "human_readable": "z"
+    },
+    {
+      "name": "zl",
+      "human_readable": "zl"
+    },
+    {
+      "name": "zll",
+      "human_readable": "zll"
+    }
   ],
   "shocks": [
-    "epsilon_p",
-    "epsilon_y",
-    "interest_"
+    {
+      "name": "epsilon_p",
+      "human_readable": "epsilon_p"
+    },
+    {
+      "name": "epsilon_y",
+      "human_readable": "epsilon_y"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    }
   ]
 }

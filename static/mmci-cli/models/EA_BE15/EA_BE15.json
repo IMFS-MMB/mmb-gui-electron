@@ -71,32 +71,107 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "ea",
-    "ei",
-    "en",
-    "ep",
-    "eu",
-    "inflation",
-    "inflationq",
-    "interest",
-    "ir",
-    "mn",
-    "mnf",
-    "mp",
-    "mpf",
-    "output",
-    "outputgap",
-    "pi",
-    "vel",
-    "y",
-    "yf"
+    {
+      "name": "ea",
+      "human_readable": "ea"
+    },
+    {
+      "name": "ei",
+      "human_readable": "ei"
+    },
+    {
+      "name": "en",
+      "human_readable": "en"
+    },
+    {
+      "name": "ep",
+      "human_readable": "ep"
+    },
+    {
+      "name": "eu",
+      "human_readable": "eu"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "ir",
+      "human_readable": "ir"
+    },
+    {
+      "name": "mn",
+      "human_readable": "mn"
+    },
+    {
+      "name": "mnf",
+      "human_readable": "mnf"
+    },
+    {
+      "name": "mp",
+      "human_readable": "mp"
+    },
+    {
+      "name": "mpf",
+      "human_readable": "mpf"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "pi",
+      "human_readable": "pi"
+    },
+    {
+      "name": "vel",
+      "human_readable": "vel"
+    },
+    {
+      "name": "y",
+      "human_readable": "y"
+    },
+    {
+      "name": "yf",
+      "human_readable": "yf"
+    }
   ],
   "shocks": [
-    "interest_",
-    "ua",
-    "ui",
-    "un",
-    "up",
-    "uu"
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    },
+    {
+      "name": "ua",
+      "human_readable": "ua"
+    },
+    {
+      "name": "ui",
+      "human_readable": "ui"
+    },
+    {
+      "name": "un",
+      "human_readable": "un"
+    },
+    {
+      "name": "up",
+      "human_readable": "up"
+    },
+    {
+      "name": "uu",
+      "human_readable": "uu"
+    }
   ]
 }

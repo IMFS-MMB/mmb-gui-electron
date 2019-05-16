@@ -38,218 +38,851 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "can",
-    "compr",
-    "fdd",
-    "fispol",
-    "gcr",
-    "gdn",
-    "gln",
-    "gln_yen",
-    "gsn",
-    "gyn",
-    "ign",
-    "infl",
-    "inflation",
-    "inflationq",
-    "inn",
-    "innoextdend",
-    "interest",
-    "itd",
-    "itn",
-    "itr",
-    "ksr",
-    "lagcompr1",
-    "lagcompr2",
-    "laggcr1",
-    "laggln_yen1",
-    "laggln_yen2",
-    "laggln_yen3",
-    "lagitd1",
-    "lagitd2",
-    "lagitd3",
-    "lagitd4",
-    "lagitd5",
-    "lagitd6",
-    "lagitd7",
-    "lagitr1",
-    "lagitr2",
-    "lagksr1",
-    "lagksr2",
-    "laglprod1",
-    "laglprod2",
-    "laglprod3",
-    "laglprod4",
-    "laglprod5",
-    "laglsr1",
-    "lagltn1",
-    "lagltn10",
-    "lagltn11",
-    "lagltn12",
-    "lagltn13",
-    "lagltn14",
-    "lagltn15",
-    "lagltn16",
-    "lagltn17",
-    "lagltn18",
-    "lagltn19",
-    "lagltn2",
-    "lagltn20",
-    "lagltn21",
-    "lagltn22",
-    "lagltn23",
-    "lagltn24",
-    "lagltn25",
-    "lagltn26",
-    "lagltn27",
-    "lagltn28",
-    "lagltn29",
-    "lagltn3",
-    "lagltn30",
-    "lagltn31",
-    "lagltn32",
-    "lagltn33",
-    "lagltn34",
-    "lagltn35",
-    "lagltn36",
-    "lagltn37",
-    "lagltn38",
-    "lagltn39",
-    "lagltn4",
-    "lagltn40",
-    "lagltn41",
-    "lagltn42",
-    "lagltn43",
-    "lagltn44",
-    "lagltn45",
-    "lagltn46",
-    "lagltn47",
-    "lagltn5",
-    "lagltn6",
-    "lagltn7",
-    "lagltn8",
-    "lagltn9",
-    "lagmtd1",
-    "lagmtd2",
-    "lagmtd3",
-    "lagmtd4",
-    "lagmtd5",
-    "lagmtd6",
-    "lagnfa1",
-    "lagpcd1",
-    "lagpcd2",
-    "lagpcd3",
-    "lagpcd4",
-    "lagpcd5",
-    "lagpieen1",
-    "lagpieen2",
-    "lagpipcd1",
-    "lagpipcd2",
-    "lagpipcd3",
-    "lagpipcd4",
-    "lagpixtd1",
-    "lagpixtd2",
-    "lagpiyer1",
-    "lagpiyer2",
-    "lagpiyet1",
-    "lagpiyfd1",
-    "lagpiyfd2",
-    "lagpiywdx1",
-    "lagpiywdx2",
-    "lagstn1",
-    "lagult1",
-    "lagult2",
-    "lagult3",
-    "lagwrn1",
-    "lagwrn2",
-    "lagwrn3",
-    "lagwrn4",
-    "lagwrn5",
-    "lagxtr1",
-    "lagxtr2",
-    "lagxtr3",
-    "lagxtr4",
-    "lagxtr5",
-    "lagxtr6",
-    "lagxtr7",
-    "lagywd1",
-    "lagywd2",
-    "lagywd3",
-    "lagywr1",
-    "lagywr2",
-    "lagywrx1",
-    "lagywrx2",
-    "lagywrx3",
-    "lagywrx4",
-    "lagywrx5",
-    "lagywrx6",
-    "lagywrx7",
-    "lnn",
-    "lprod",
-    "lsr",
-    "ltn",
-    "mtd",
-    "mtn",
-    "mtr",
-    "nfa",
-    "nfn",
-    "output",
-    "outputgap",
-    "pcd",
-    "pcn",
-    "pcr",
-    "picompr",
-    "pieen",
-    "pimtd",
-    "pipcd",
-    "pipyr",
-    "pixtd",
-    "piyer",
-    "piyet",
-    "piyfd",
-    "piywdx",
-    "pyn",
-    "pyr",
-    "scr",
-    "stn",
-    "strq",
-    "tbn",
-    "tbr",
-    "tdn",
-    "tdn_yen",
-    "trn",
-    "ulc",
-    "ult",
-    "urx",
-    "win",
-    "wln",
-    "wrn",
-    "xtd",
-    "xtn",
-    "xtr",
-    "yer",
-    "yet",
-    "yett",
-    "ywd",
-    "ywdx",
-    "ywr",
-    "ywrx"
+    {
+      "name": "can",
+      "human_readable": "can"
+    },
+    {
+      "name": "compr",
+      "human_readable": "compr"
+    },
+    {
+      "name": "fdd",
+      "human_readable": "fdd"
+    },
+    {
+      "name": "fispol",
+      "human_readable": "fispol"
+    },
+    {
+      "name": "gcr",
+      "human_readable": "gcr"
+    },
+    {
+      "name": "gdn",
+      "human_readable": "gdn"
+    },
+    {
+      "name": "gln",
+      "human_readable": "gln"
+    },
+    {
+      "name": "gln_yen",
+      "human_readable": "gln_yen"
+    },
+    {
+      "name": "gsn",
+      "human_readable": "gsn"
+    },
+    {
+      "name": "gyn",
+      "human_readable": "gyn"
+    },
+    {
+      "name": "ign",
+      "human_readable": "ign"
+    },
+    {
+      "name": "infl",
+      "human_readable": "infl"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "inn",
+      "human_readable": "inn"
+    },
+    {
+      "name": "innoextdend",
+      "human_readable": "innoextdend"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "itd",
+      "human_readable": "itd"
+    },
+    {
+      "name": "itn",
+      "human_readable": "itn"
+    },
+    {
+      "name": "itr",
+      "human_readable": "itr"
+    },
+    {
+      "name": "ksr",
+      "human_readable": "ksr"
+    },
+    {
+      "name": "lagcompr1",
+      "human_readable": "lagcompr1"
+    },
+    {
+      "name": "lagcompr2",
+      "human_readable": "lagcompr2"
+    },
+    {
+      "name": "laggcr1",
+      "human_readable": "laggcr1"
+    },
+    {
+      "name": "laggln_yen1",
+      "human_readable": "laggln_yen1"
+    },
+    {
+      "name": "laggln_yen2",
+      "human_readable": "laggln_yen2"
+    },
+    {
+      "name": "laggln_yen3",
+      "human_readable": "laggln_yen3"
+    },
+    {
+      "name": "lagitd1",
+      "human_readable": "lagitd1"
+    },
+    {
+      "name": "lagitd2",
+      "human_readable": "lagitd2"
+    },
+    {
+      "name": "lagitd3",
+      "human_readable": "lagitd3"
+    },
+    {
+      "name": "lagitd4",
+      "human_readable": "lagitd4"
+    },
+    {
+      "name": "lagitd5",
+      "human_readable": "lagitd5"
+    },
+    {
+      "name": "lagitd6",
+      "human_readable": "lagitd6"
+    },
+    {
+      "name": "lagitd7",
+      "human_readable": "lagitd7"
+    },
+    {
+      "name": "lagitr1",
+      "human_readable": "lagitr1"
+    },
+    {
+      "name": "lagitr2",
+      "human_readable": "lagitr2"
+    },
+    {
+      "name": "lagksr1",
+      "human_readable": "lagksr1"
+    },
+    {
+      "name": "lagksr2",
+      "human_readable": "lagksr2"
+    },
+    {
+      "name": "laglprod1",
+      "human_readable": "laglprod1"
+    },
+    {
+      "name": "laglprod2",
+      "human_readable": "laglprod2"
+    },
+    {
+      "name": "laglprod3",
+      "human_readable": "laglprod3"
+    },
+    {
+      "name": "laglprod4",
+      "human_readable": "laglprod4"
+    },
+    {
+      "name": "laglprod5",
+      "human_readable": "laglprod5"
+    },
+    {
+      "name": "laglsr1",
+      "human_readable": "laglsr1"
+    },
+    {
+      "name": "lagltn1",
+      "human_readable": "lagltn1"
+    },
+    {
+      "name": "lagltn10",
+      "human_readable": "lagltn10"
+    },
+    {
+      "name": "lagltn11",
+      "human_readable": "lagltn11"
+    },
+    {
+      "name": "lagltn12",
+      "human_readable": "lagltn12"
+    },
+    {
+      "name": "lagltn13",
+      "human_readable": "lagltn13"
+    },
+    {
+      "name": "lagltn14",
+      "human_readable": "lagltn14"
+    },
+    {
+      "name": "lagltn15",
+      "human_readable": "lagltn15"
+    },
+    {
+      "name": "lagltn16",
+      "human_readable": "lagltn16"
+    },
+    {
+      "name": "lagltn17",
+      "human_readable": "lagltn17"
+    },
+    {
+      "name": "lagltn18",
+      "human_readable": "lagltn18"
+    },
+    {
+      "name": "lagltn19",
+      "human_readable": "lagltn19"
+    },
+    {
+      "name": "lagltn2",
+      "human_readable": "lagltn2"
+    },
+    {
+      "name": "lagltn20",
+      "human_readable": "lagltn20"
+    },
+    {
+      "name": "lagltn21",
+      "human_readable": "lagltn21"
+    },
+    {
+      "name": "lagltn22",
+      "human_readable": "lagltn22"
+    },
+    {
+      "name": "lagltn23",
+      "human_readable": "lagltn23"
+    },
+    {
+      "name": "lagltn24",
+      "human_readable": "lagltn24"
+    },
+    {
+      "name": "lagltn25",
+      "human_readable": "lagltn25"
+    },
+    {
+      "name": "lagltn26",
+      "human_readable": "lagltn26"
+    },
+    {
+      "name": "lagltn27",
+      "human_readable": "lagltn27"
+    },
+    {
+      "name": "lagltn28",
+      "human_readable": "lagltn28"
+    },
+    {
+      "name": "lagltn29",
+      "human_readable": "lagltn29"
+    },
+    {
+      "name": "lagltn3",
+      "human_readable": "lagltn3"
+    },
+    {
+      "name": "lagltn30",
+      "human_readable": "lagltn30"
+    },
+    {
+      "name": "lagltn31",
+      "human_readable": "lagltn31"
+    },
+    {
+      "name": "lagltn32",
+      "human_readable": "lagltn32"
+    },
+    {
+      "name": "lagltn33",
+      "human_readable": "lagltn33"
+    },
+    {
+      "name": "lagltn34",
+      "human_readable": "lagltn34"
+    },
+    {
+      "name": "lagltn35",
+      "human_readable": "lagltn35"
+    },
+    {
+      "name": "lagltn36",
+      "human_readable": "lagltn36"
+    },
+    {
+      "name": "lagltn37",
+      "human_readable": "lagltn37"
+    },
+    {
+      "name": "lagltn38",
+      "human_readable": "lagltn38"
+    },
+    {
+      "name": "lagltn39",
+      "human_readable": "lagltn39"
+    },
+    {
+      "name": "lagltn4",
+      "human_readable": "lagltn4"
+    },
+    {
+      "name": "lagltn40",
+      "human_readable": "lagltn40"
+    },
+    {
+      "name": "lagltn41",
+      "human_readable": "lagltn41"
+    },
+    {
+      "name": "lagltn42",
+      "human_readable": "lagltn42"
+    },
+    {
+      "name": "lagltn43",
+      "human_readable": "lagltn43"
+    },
+    {
+      "name": "lagltn44",
+      "human_readable": "lagltn44"
+    },
+    {
+      "name": "lagltn45",
+      "human_readable": "lagltn45"
+    },
+    {
+      "name": "lagltn46",
+      "human_readable": "lagltn46"
+    },
+    {
+      "name": "lagltn47",
+      "human_readable": "lagltn47"
+    },
+    {
+      "name": "lagltn5",
+      "human_readable": "lagltn5"
+    },
+    {
+      "name": "lagltn6",
+      "human_readable": "lagltn6"
+    },
+    {
+      "name": "lagltn7",
+      "human_readable": "lagltn7"
+    },
+    {
+      "name": "lagltn8",
+      "human_readable": "lagltn8"
+    },
+    {
+      "name": "lagltn9",
+      "human_readable": "lagltn9"
+    },
+    {
+      "name": "lagmtd1",
+      "human_readable": "lagmtd1"
+    },
+    {
+      "name": "lagmtd2",
+      "human_readable": "lagmtd2"
+    },
+    {
+      "name": "lagmtd3",
+      "human_readable": "lagmtd3"
+    },
+    {
+      "name": "lagmtd4",
+      "human_readable": "lagmtd4"
+    },
+    {
+      "name": "lagmtd5",
+      "human_readable": "lagmtd5"
+    },
+    {
+      "name": "lagmtd6",
+      "human_readable": "lagmtd6"
+    },
+    {
+      "name": "lagnfa1",
+      "human_readable": "lagnfa1"
+    },
+    {
+      "name": "lagpcd1",
+      "human_readable": "lagpcd1"
+    },
+    {
+      "name": "lagpcd2",
+      "human_readable": "lagpcd2"
+    },
+    {
+      "name": "lagpcd3",
+      "human_readable": "lagpcd3"
+    },
+    {
+      "name": "lagpcd4",
+      "human_readable": "lagpcd4"
+    },
+    {
+      "name": "lagpcd5",
+      "human_readable": "lagpcd5"
+    },
+    {
+      "name": "lagpieen1",
+      "human_readable": "lagpieen1"
+    },
+    {
+      "name": "lagpieen2",
+      "human_readable": "lagpieen2"
+    },
+    {
+      "name": "lagpipcd1",
+      "human_readable": "lagpipcd1"
+    },
+    {
+      "name": "lagpipcd2",
+      "human_readable": "lagpipcd2"
+    },
+    {
+      "name": "lagpipcd3",
+      "human_readable": "lagpipcd3"
+    },
+    {
+      "name": "lagpipcd4",
+      "human_readable": "lagpipcd4"
+    },
+    {
+      "name": "lagpixtd1",
+      "human_readable": "lagpixtd1"
+    },
+    {
+      "name": "lagpixtd2",
+      "human_readable": "lagpixtd2"
+    },
+    {
+      "name": "lagpiyer1",
+      "human_readable": "lagpiyer1"
+    },
+    {
+      "name": "lagpiyer2",
+      "human_readable": "lagpiyer2"
+    },
+    {
+      "name": "lagpiyet1",
+      "human_readable": "lagpiyet1"
+    },
+    {
+      "name": "lagpiyfd1",
+      "human_readable": "lagpiyfd1"
+    },
+    {
+      "name": "lagpiyfd2",
+      "human_readable": "lagpiyfd2"
+    },
+    {
+      "name": "lagpiywdx1",
+      "human_readable": "lagpiywdx1"
+    },
+    {
+      "name": "lagpiywdx2",
+      "human_readable": "lagpiywdx2"
+    },
+    {
+      "name": "lagstn1",
+      "human_readable": "lagstn1"
+    },
+    {
+      "name": "lagult1",
+      "human_readable": "lagult1"
+    },
+    {
+      "name": "lagult2",
+      "human_readable": "lagult2"
+    },
+    {
+      "name": "lagult3",
+      "human_readable": "lagult3"
+    },
+    {
+      "name": "lagwrn1",
+      "human_readable": "lagwrn1"
+    },
+    {
+      "name": "lagwrn2",
+      "human_readable": "lagwrn2"
+    },
+    {
+      "name": "lagwrn3",
+      "human_readable": "lagwrn3"
+    },
+    {
+      "name": "lagwrn4",
+      "human_readable": "lagwrn4"
+    },
+    {
+      "name": "lagwrn5",
+      "human_readable": "lagwrn5"
+    },
+    {
+      "name": "lagxtr1",
+      "human_readable": "lagxtr1"
+    },
+    {
+      "name": "lagxtr2",
+      "human_readable": "lagxtr2"
+    },
+    {
+      "name": "lagxtr3",
+      "human_readable": "lagxtr3"
+    },
+    {
+      "name": "lagxtr4",
+      "human_readable": "lagxtr4"
+    },
+    {
+      "name": "lagxtr5",
+      "human_readable": "lagxtr5"
+    },
+    {
+      "name": "lagxtr6",
+      "human_readable": "lagxtr6"
+    },
+    {
+      "name": "lagxtr7",
+      "human_readable": "lagxtr7"
+    },
+    {
+      "name": "lagywd1",
+      "human_readable": "lagywd1"
+    },
+    {
+      "name": "lagywd2",
+      "human_readable": "lagywd2"
+    },
+    {
+      "name": "lagywd3",
+      "human_readable": "lagywd3"
+    },
+    {
+      "name": "lagywr1",
+      "human_readable": "lagywr1"
+    },
+    {
+      "name": "lagywr2",
+      "human_readable": "lagywr2"
+    },
+    {
+      "name": "lagywrx1",
+      "human_readable": "lagywrx1"
+    },
+    {
+      "name": "lagywrx2",
+      "human_readable": "lagywrx2"
+    },
+    {
+      "name": "lagywrx3",
+      "human_readable": "lagywrx3"
+    },
+    {
+      "name": "lagywrx4",
+      "human_readable": "lagywrx4"
+    },
+    {
+      "name": "lagywrx5",
+      "human_readable": "lagywrx5"
+    },
+    {
+      "name": "lagywrx6",
+      "human_readable": "lagywrx6"
+    },
+    {
+      "name": "lagywrx7",
+      "human_readable": "lagywrx7"
+    },
+    {
+      "name": "lnn",
+      "human_readable": "lnn"
+    },
+    {
+      "name": "lprod",
+      "human_readable": "lprod"
+    },
+    {
+      "name": "lsr",
+      "human_readable": "lsr"
+    },
+    {
+      "name": "ltn",
+      "human_readable": "ltn"
+    },
+    {
+      "name": "mtd",
+      "human_readable": "mtd"
+    },
+    {
+      "name": "mtn",
+      "human_readable": "mtn"
+    },
+    {
+      "name": "mtr",
+      "human_readable": "mtr"
+    },
+    {
+      "name": "nfa",
+      "human_readable": "nfa"
+    },
+    {
+      "name": "nfn",
+      "human_readable": "nfn"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "pcd",
+      "human_readable": "pcd"
+    },
+    {
+      "name": "pcn",
+      "human_readable": "pcn"
+    },
+    {
+      "name": "pcr",
+      "human_readable": "pcr"
+    },
+    {
+      "name": "picompr",
+      "human_readable": "picompr"
+    },
+    {
+      "name": "pieen",
+      "human_readable": "pieen"
+    },
+    {
+      "name": "pimtd",
+      "human_readable": "pimtd"
+    },
+    {
+      "name": "pipcd",
+      "human_readable": "pipcd"
+    },
+    {
+      "name": "pipyr",
+      "human_readable": "pipyr"
+    },
+    {
+      "name": "pixtd",
+      "human_readable": "pixtd"
+    },
+    {
+      "name": "piyer",
+      "human_readable": "piyer"
+    },
+    {
+      "name": "piyet",
+      "human_readable": "piyet"
+    },
+    {
+      "name": "piyfd",
+      "human_readable": "piyfd"
+    },
+    {
+      "name": "piywdx",
+      "human_readable": "piywdx"
+    },
+    {
+      "name": "pyn",
+      "human_readable": "pyn"
+    },
+    {
+      "name": "pyr",
+      "human_readable": "pyr"
+    },
+    {
+      "name": "scr",
+      "human_readable": "scr"
+    },
+    {
+      "name": "stn",
+      "human_readable": "stn"
+    },
+    {
+      "name": "strq",
+      "human_readable": "strq"
+    },
+    {
+      "name": "tbn",
+      "human_readable": "tbn"
+    },
+    {
+      "name": "tbr",
+      "human_readable": "tbr"
+    },
+    {
+      "name": "tdn",
+      "human_readable": "tdn"
+    },
+    {
+      "name": "tdn_yen",
+      "human_readable": "tdn_yen"
+    },
+    {
+      "name": "trn",
+      "human_readable": "trn"
+    },
+    {
+      "name": "ulc",
+      "human_readable": "ulc"
+    },
+    {
+      "name": "ult",
+      "human_readable": "ult"
+    },
+    {
+      "name": "urx",
+      "human_readable": "urx"
+    },
+    {
+      "name": "win",
+      "human_readable": "win"
+    },
+    {
+      "name": "wln",
+      "human_readable": "wln"
+    },
+    {
+      "name": "wrn",
+      "human_readable": "wrn"
+    },
+    {
+      "name": "xtd",
+      "human_readable": "xtd"
+    },
+    {
+      "name": "xtn",
+      "human_readable": "xtn"
+    },
+    {
+      "name": "xtr",
+      "human_readable": "xtr"
+    },
+    {
+      "name": "yer",
+      "human_readable": "yer"
+    },
+    {
+      "name": "yet",
+      "human_readable": "yet"
+    },
+    {
+      "name": "yett",
+      "human_readable": "yett"
+    },
+    {
+      "name": "ywd",
+      "human_readable": "ywd"
+    },
+    {
+      "name": "ywdx",
+      "human_readable": "ywdx"
+    },
+    {
+      "name": "ywr",
+      "human_readable": "ywr"
+    },
+    {
+      "name": "ywrx",
+      "human_readable": "ywrx"
+    }
   ],
   "shocks": [
-    "fiscal_",
-    "innoeitd",
-    "innoeitr",
-    "innoelnn",
-    "innoelsr",
-    "innoeltn",
-    "innoemtd",
-    "innoemtr",
-    "innoepcd",
-    "innoepcr",
-    "innoewrn",
-    "innoextd",
-    "innoextr",
-    "innoeyfd",
-    "interest_"
+    {
+      "name": "fiscal_",
+      "human_readable": "fiscal_"
+    },
+    {
+      "name": "innoeitd",
+      "human_readable": "innoeitd"
+    },
+    {
+      "name": "innoeitr",
+      "human_readable": "innoeitr"
+    },
+    {
+      "name": "innoelnn",
+      "human_readable": "innoelnn"
+    },
+    {
+      "name": "innoelsr",
+      "human_readable": "innoelsr"
+    },
+    {
+      "name": "innoeltn",
+      "human_readable": "innoeltn"
+    },
+    {
+      "name": "innoemtd",
+      "human_readable": "innoemtd"
+    },
+    {
+      "name": "innoemtr",
+      "human_readable": "innoemtr"
+    },
+    {
+      "name": "innoepcd",
+      "human_readable": "innoepcd"
+    },
+    {
+      "name": "innoepcr",
+      "human_readable": "innoepcr"
+    },
+    {
+      "name": "innoewrn",
+      "human_readable": "innoewrn"
+    },
+    {
+      "name": "innoextd",
+      "human_readable": "innoextd"
+    },
+    {
+      "name": "innoextr",
+      "human_readable": "innoextr"
+    },
+    {
+      "name": "innoeyfd",
+      "human_readable": "innoeyfd"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    }
   ]
 }

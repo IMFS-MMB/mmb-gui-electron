@@ -74,80 +74,299 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "b",
-    "bstar",
-    "c",
-    "cnr",
-    "cnrstar",
-    "cr",
-    "crstar",
-    "cstar",
-    "fispol",
-    "g",
-    "gstar",
-    "i",
-    "inflation",
-    "inflationq",
-    "interest",
-    "istar",
-    "k",
-    "kbar",
-    "kbarstar",
-    "kstar",
-    "l",
-    "lstar",
-    "mc",
-    "mcstar",
-    "output",
-    "outputgap",
-    "pi",
-    "q",
-    "qstar",
-    "r",
-    "R",
-    "rk",
-    "rkstar",
-    "rstar",
-    "sb",
-    "sbstar",
-    "tauk",
-    "taukstar",
-    "taul",
-    "taulstar",
-    "Tk",
-    "Tkstar",
-    "Tl",
-    "Tlstar",
-    "ua",
-    "ub",
-    "ug",
-    "ui",
-    "um",
-    "up",
-    "utk",
-    "utl",
-    "uw",
-    "uz",
-    "v",
-    "vstar",
-    "w",
-    "wstar",
-    "y",
-    "ygap",
-    "ystar",
-    "z",
-    "zstar"
+    {
+      "name": "b",
+      "human_readable": "b"
+    },
+    {
+      "name": "bstar",
+      "human_readable": "bstar"
+    },
+    {
+      "name": "c",
+      "human_readable": "c"
+    },
+    {
+      "name": "cnr",
+      "human_readable": "cnr"
+    },
+    {
+      "name": "cnrstar",
+      "human_readable": "cnrstar"
+    },
+    {
+      "name": "cr",
+      "human_readable": "cr"
+    },
+    {
+      "name": "crstar",
+      "human_readable": "crstar"
+    },
+    {
+      "name": "cstar",
+      "human_readable": "cstar"
+    },
+    {
+      "name": "fispol",
+      "human_readable": "fispol"
+    },
+    {
+      "name": "g",
+      "human_readable": "g"
+    },
+    {
+      "name": "gstar",
+      "human_readable": "gstar"
+    },
+    {
+      "name": "i",
+      "human_readable": "i"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "istar",
+      "human_readable": "istar"
+    },
+    {
+      "name": "k",
+      "human_readable": "k"
+    },
+    {
+      "name": "kbar",
+      "human_readable": "kbar"
+    },
+    {
+      "name": "kbarstar",
+      "human_readable": "kbarstar"
+    },
+    {
+      "name": "kstar",
+      "human_readable": "kstar"
+    },
+    {
+      "name": "l",
+      "human_readable": "l"
+    },
+    {
+      "name": "lstar",
+      "human_readable": "lstar"
+    },
+    {
+      "name": "mc",
+      "human_readable": "mc"
+    },
+    {
+      "name": "mcstar",
+      "human_readable": "mcstar"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "pi",
+      "human_readable": "pi"
+    },
+    {
+      "name": "q",
+      "human_readable": "q"
+    },
+    {
+      "name": "qstar",
+      "human_readable": "qstar"
+    },
+    {
+      "name": "r",
+      "human_readable": "r"
+    },
+    {
+      "name": "R",
+      "human_readable": "R"
+    },
+    {
+      "name": "rk",
+      "human_readable": "rk"
+    },
+    {
+      "name": "rkstar",
+      "human_readable": "rkstar"
+    },
+    {
+      "name": "rstar",
+      "human_readable": "rstar"
+    },
+    {
+      "name": "sb",
+      "human_readable": "sb"
+    },
+    {
+      "name": "sbstar",
+      "human_readable": "sbstar"
+    },
+    {
+      "name": "tauk",
+      "human_readable": "tauk"
+    },
+    {
+      "name": "taukstar",
+      "human_readable": "taukstar"
+    },
+    {
+      "name": "taul",
+      "human_readable": "taul"
+    },
+    {
+      "name": "taulstar",
+      "human_readable": "taulstar"
+    },
+    {
+      "name": "Tk",
+      "human_readable": "Tk"
+    },
+    {
+      "name": "Tkstar",
+      "human_readable": "Tkstar"
+    },
+    {
+      "name": "Tl",
+      "human_readable": "Tl"
+    },
+    {
+      "name": "Tlstar",
+      "human_readable": "Tlstar"
+    },
+    {
+      "name": "ua",
+      "human_readable": "ua"
+    },
+    {
+      "name": "ub",
+      "human_readable": "ub"
+    },
+    {
+      "name": "ug",
+      "human_readable": "ug"
+    },
+    {
+      "name": "ui",
+      "human_readable": "ui"
+    },
+    {
+      "name": "um",
+      "human_readable": "um"
+    },
+    {
+      "name": "up",
+      "human_readable": "up"
+    },
+    {
+      "name": "utk",
+      "human_readable": "utk"
+    },
+    {
+      "name": "utl",
+      "human_readable": "utl"
+    },
+    {
+      "name": "uw",
+      "human_readable": "uw"
+    },
+    {
+      "name": "uz",
+      "human_readable": "uz"
+    },
+    {
+      "name": "v",
+      "human_readable": "v"
+    },
+    {
+      "name": "vstar",
+      "human_readable": "vstar"
+    },
+    {
+      "name": "w",
+      "human_readable": "w"
+    },
+    {
+      "name": "wstar",
+      "human_readable": "wstar"
+    },
+    {
+      "name": "y",
+      "human_readable": "y"
+    },
+    {
+      "name": "ygap",
+      "human_readable": "ygap"
+    },
+    {
+      "name": "ystar",
+      "human_readable": "ystar"
+    },
+    {
+      "name": "z",
+      "human_readable": "z"
+    },
+    {
+      "name": "zstar",
+      "human_readable": "zstar"
+    }
   ],
   "shocks": [
-    "epsilona",
-    "epsilonb",
-    "epsiloni",
-    "epsilonp",
-    "epsilontk",
-    "epsilontl",
-    "epsilonw",
-    "epsilonz",
-    "fiscal_",
-    "interest_"
+    {
+      "name": "epsilona",
+      "human_readable": "epsilona"
+    },
+    {
+      "name": "epsilonb",
+      "human_readable": "epsilonb"
+    },
+    {
+      "name": "epsiloni",
+      "human_readable": "epsiloni"
+    },
+    {
+      "name": "epsilonp",
+      "human_readable": "epsilonp"
+    },
+    {
+      "name": "epsilontk",
+      "human_readable": "epsilontk"
+    },
+    {
+      "name": "epsilontl",
+      "human_readable": "epsilontl"
+    },
+    {
+      "name": "epsilonw",
+      "human_readable": "epsilonw"
+    },
+    {
+      "name": "epsilonz",
+      "human_readable": "epsilonz"
+    },
+    {
+      "name": "fiscal_",
+      "human_readable": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    }
   ]
 }

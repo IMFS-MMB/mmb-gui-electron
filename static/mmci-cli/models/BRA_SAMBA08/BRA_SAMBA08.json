@@ -75,69 +75,255 @@
   "variabledim": 2,
   "al": false,
   "vars": [
-    "a",
-    "bby",
-    "bystar",
-    "c",
-    "co",
-    "crot",
-    "fii",
-    "fispol",
-    "g",
-    "g_",
-    "gy",
-    "i",
-    "inflation",
-    "inflationq",
-    "interest",
-    "k",
-    "m",
-    "mc",
-    "mstar",
-    "n",
-    "no",
-    "nrot",
-    "nxy",
-    "output",
-    "outputgap",
-    "pi",
-    "pibar",
-    "pistar",
-    "piva",
-    "q",
-    "qi",
-    "r",
-    "rk",
-    "rstar",
-    "sgbar",
-    "syhat",
-    "u",
-    "wr",
-    "x",
-    "y",
-    "yva",
-    "zc",
-    "zfii",
-    "zfiistar",
-    "zg",
-    "zi",
-    "zn",
-    "zr"
+    {
+      "name": "a",
+      "human_readable": "a"
+    },
+    {
+      "name": "bby",
+      "human_readable": "bby"
+    },
+    {
+      "name": "bystar",
+      "human_readable": "bystar"
+    },
+    {
+      "name": "c",
+      "human_readable": "c"
+    },
+    {
+      "name": "co",
+      "human_readable": "co"
+    },
+    {
+      "name": "crot",
+      "human_readable": "crot"
+    },
+    {
+      "name": "fii",
+      "human_readable": "fii"
+    },
+    {
+      "name": "fispol",
+      "human_readable": "fispol"
+    },
+    {
+      "name": "g",
+      "human_readable": "g"
+    },
+    {
+      "name": "g_",
+      "human_readable": "g_"
+    },
+    {
+      "name": "gy",
+      "human_readable": "gy"
+    },
+    {
+      "name": "i",
+      "human_readable": "i"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "k",
+      "human_readable": "k"
+    },
+    {
+      "name": "m",
+      "human_readable": "m"
+    },
+    {
+      "name": "mc",
+      "human_readable": "mc"
+    },
+    {
+      "name": "mstar",
+      "human_readable": "mstar"
+    },
+    {
+      "name": "n",
+      "human_readable": "n"
+    },
+    {
+      "name": "no",
+      "human_readable": "no"
+    },
+    {
+      "name": "nrot",
+      "human_readable": "nrot"
+    },
+    {
+      "name": "nxy",
+      "human_readable": "nxy"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "pi",
+      "human_readable": "pi"
+    },
+    {
+      "name": "pibar",
+      "human_readable": "pibar"
+    },
+    {
+      "name": "pistar",
+      "human_readable": "pistar"
+    },
+    {
+      "name": "piva",
+      "human_readable": "piva"
+    },
+    {
+      "name": "q",
+      "human_readable": "q"
+    },
+    {
+      "name": "qi",
+      "human_readable": "qi"
+    },
+    {
+      "name": "r",
+      "human_readable": "r"
+    },
+    {
+      "name": "rk",
+      "human_readable": "rk"
+    },
+    {
+      "name": "rstar",
+      "human_readable": "rstar"
+    },
+    {
+      "name": "sgbar",
+      "human_readable": "sgbar"
+    },
+    {
+      "name": "syhat",
+      "human_readable": "syhat"
+    },
+    {
+      "name": "u",
+      "human_readable": "u"
+    },
+    {
+      "name": "wr",
+      "human_readable": "wr"
+    },
+    {
+      "name": "x",
+      "human_readable": "x"
+    },
+    {
+      "name": "y",
+      "human_readable": "y"
+    },
+    {
+      "name": "yva",
+      "human_readable": "yva"
+    },
+    {
+      "name": "zc",
+      "human_readable": "zc"
+    },
+    {
+      "name": "zfii",
+      "human_readable": "zfii"
+    },
+    {
+      "name": "zfiistar",
+      "human_readable": "zfiistar"
+    },
+    {
+      "name": "zg",
+      "human_readable": "zg"
+    },
+    {
+      "name": "zi",
+      "human_readable": "zi"
+    },
+    {
+      "name": "zn",
+      "human_readable": "zn"
+    },
+    {
+      "name": "zr",
+      "human_readable": "zr"
+    }
   ],
   "shocks": [
-    "a_",
-    "c_",
-    "fii_",
-    "fiistar_",
-    "fiscal_",
-    "gbar_",
-    "i_",
-    "interest_",
-    "mstar_",
-    "n_",
-    "pibar_",
-    "pistar_",
-    "r_",
-    "rstar_"
+    {
+      "name": "a_",
+      "human_readable": "a_"
+    },
+    {
+      "name": "c_",
+      "human_readable": "c_"
+    },
+    {
+      "name": "fii_",
+      "human_readable": "fii_"
+    },
+    {
+      "name": "fiistar_",
+      "human_readable": "fiistar_"
+    },
+    {
+      "name": "fiscal_",
+      "human_readable": "fiscal_"
+    },
+    {
+      "name": "gbar_",
+      "human_readable": "gbar_"
+    },
+    {
+      "name": "i_",
+      "human_readable": "i_"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    },
+    {
+      "name": "mstar_",
+      "human_readable": "mstar_"
+    },
+    {
+      "name": "n_",
+      "human_readable": "n_"
+    },
+    {
+      "name": "pibar_",
+      "human_readable": "pibar_"
+    },
+    {
+      "name": "pistar_",
+      "human_readable": "pistar_"
+    },
+    {
+      "name": "r_",
+      "human_readable": "r_"
+    },
+    {
+      "name": "rstar_",
+      "human_readable": "rstar_"
+    }
   ]
 }

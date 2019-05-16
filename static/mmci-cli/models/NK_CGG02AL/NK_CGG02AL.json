@@ -104,40 +104,139 @@
     ]
   },
   "vars": [
-    "a",
-    "astar",
-    "infl",
-    "inflation",
-    "inflationq",
-    "inflationql",
-    "inflationql2",
-    "inflationqls",
-    "infstar",
-    "infstarl",
-    "infstarl2",
-    "interest",
-    "output",
-    "outputgap",
-    "r",
-    "rr",
-    "rrstar",
-    "rstar",
-    "u",
-    "ustar",
-    "y",
-    "ybar",
-    "ybarstar",
-    "ystar",
-    "ytilde",
-    "ytildestar"
+    {
+      "name": "a",
+      "human_readable": "a"
+    },
+    {
+      "name": "astar",
+      "human_readable": "astar"
+    },
+    {
+      "name": "infl",
+      "human_readable": "infl"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "inflationql",
+      "human_readable": "inflationql"
+    },
+    {
+      "name": "inflationql2",
+      "human_readable": "inflationql2"
+    },
+    {
+      "name": "inflationqls",
+      "human_readable": "inflationqls"
+    },
+    {
+      "name": "infstar",
+      "human_readable": "infstar"
+    },
+    {
+      "name": "infstarl",
+      "human_readable": "infstarl"
+    },
+    {
+      "name": "infstarl2",
+      "human_readable": "infstarl2"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "r",
+      "human_readable": "r"
+    },
+    {
+      "name": "rr",
+      "human_readable": "rr"
+    },
+    {
+      "name": "rrstar",
+      "human_readable": "rrstar"
+    },
+    {
+      "name": "rstar",
+      "human_readable": "rstar"
+    },
+    {
+      "name": "u",
+      "human_readable": "u"
+    },
+    {
+      "name": "ustar",
+      "human_readable": "ustar"
+    },
+    {
+      "name": "y",
+      "human_readable": "y"
+    },
+    {
+      "name": "ybar",
+      "human_readable": "ybar"
+    },
+    {
+      "name": "ybarstar",
+      "human_readable": "ybarstar"
+    },
+    {
+      "name": "ystar",
+      "human_readable": "ystar"
+    },
+    {
+      "name": "ytilde",
+      "human_readable": "ytilde"
+    },
+    {
+      "name": "ytildestar",
+      "human_readable": "ytildestar"
+    }
   ],
   "shocks": [
-    "a_",
-    "astar_",
-    "inf_",
-    "infstar_",
-    "interest_",
-    "rstar_",
-    "ystar_"
+    {
+      "name": "a_",
+      "human_readable": "a_"
+    },
+    {
+      "name": "astar_",
+      "human_readable": "astar_"
+    },
+    {
+      "name": "inf_",
+      "human_readable": "inf_"
+    },
+    {
+      "name": "infstar_",
+      "human_readable": "infstar_"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    },
+    {
+      "name": "rstar_",
+      "human_readable": "rstar_"
+    },
+    {
+      "name": "ystar_",
+      "human_readable": "ystar_"
+    }
   ]
 }

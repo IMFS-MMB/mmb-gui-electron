@@ -72,74 +72,275 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "b",
-    "B",
-    "b_g",
-    "b_g_hat",
-    "b_hat",
-    "C_bar_b",
-    "C_bar_b_hat",
-    "C_bar_s",
-    "C_bar_s_hat",
-    "chi_tilde",
-    "chi_tilde_hat",
-    "Delta",
-    "Delta_hat",
-    "e_G",
-    "F",
-    "F_hat",
-    "fispol",
-    "G",
-    "G_hat",
-    "H_bar",
-    "H_bar_hat",
-    "i_b_hat",
-    "i_d",
-    "i_d_hat",
-    "i_d_hat_a",
-    "inflation",
-    "inflationq",
-    "interest",
-    "K",
-    "K_hat",
-    "Lambda",
-    "lambda_b",
-    "lambda_b_hat",
-    "Lambda_hat",
-    "lambda_s",
-    "lambda_s_hat",
-    "lambda_tilde",
-    "lambda_tilde_hat",
-    "mu_w",
-    "mu_w_hat",
-    "omega",
-    "omega_hat",
-    "omega_hat_a",
-    "output",
-    "outputgap",
-    "Pi",
-    "Pi_hat",
-    "Pi_hat_a",
-    "tau",
-    "tau_hat",
-    "Xi_tilde_hat",
-    "Y",
-    "Y_hat",
-    "Y_n_hat",
-    "Z",
-    "Z_hat"
+    {
+      "name": "b",
+      "human_readable": "b"
+    },
+    {
+      "name": "B",
+      "human_readable": "B"
+    },
+    {
+      "name": "b_g",
+      "human_readable": "b_g"
+    },
+    {
+      "name": "b_g_hat",
+      "human_readable": "b_g_hat"
+    },
+    {
+      "name": "b_hat",
+      "human_readable": "b_hat"
+    },
+    {
+      "name": "C_bar_b",
+      "human_readable": "C_bar_b"
+    },
+    {
+      "name": "C_bar_b_hat",
+      "human_readable": "C_bar_b_hat"
+    },
+    {
+      "name": "C_bar_s",
+      "human_readable": "C_bar_s"
+    },
+    {
+      "name": "C_bar_s_hat",
+      "human_readable": "C_bar_s_hat"
+    },
+    {
+      "name": "chi_tilde",
+      "human_readable": "chi_tilde"
+    },
+    {
+      "name": "chi_tilde_hat",
+      "human_readable": "chi_tilde_hat"
+    },
+    {
+      "name": "Delta",
+      "human_readable": "Delta"
+    },
+    {
+      "name": "Delta_hat",
+      "human_readable": "Delta_hat"
+    },
+    {
+      "name": "e_G",
+      "human_readable": "e_G"
+    },
+    {
+      "name": "F",
+      "human_readable": "F"
+    },
+    {
+      "name": "F_hat",
+      "human_readable": "F_hat"
+    },
+    {
+      "name": "fispol",
+      "human_readable": "fispol"
+    },
+    {
+      "name": "G",
+      "human_readable": "G"
+    },
+    {
+      "name": "G_hat",
+      "human_readable": "G_hat"
+    },
+    {
+      "name": "H_bar",
+      "human_readable": "H_bar"
+    },
+    {
+      "name": "H_bar_hat",
+      "human_readable": "H_bar_hat"
+    },
+    {
+      "name": "i_b_hat",
+      "human_readable": "i_b_hat"
+    },
+    {
+      "name": "i_d",
+      "human_readable": "i_d"
+    },
+    {
+      "name": "i_d_hat",
+      "human_readable": "i_d_hat"
+    },
+    {
+      "name": "i_d_hat_a",
+      "human_readable": "i_d_hat_a"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "K",
+      "human_readable": "K"
+    },
+    {
+      "name": "K_hat",
+      "human_readable": "K_hat"
+    },
+    {
+      "name": "Lambda",
+      "human_readable": "Lambda"
+    },
+    {
+      "name": "lambda_b",
+      "human_readable": "lambda_b"
+    },
+    {
+      "name": "lambda_b_hat",
+      "human_readable": "lambda_b_hat"
+    },
+    {
+      "name": "Lambda_hat",
+      "human_readable": "Lambda_hat"
+    },
+    {
+      "name": "lambda_s",
+      "human_readable": "lambda_s"
+    },
+    {
+      "name": "lambda_s_hat",
+      "human_readable": "lambda_s_hat"
+    },
+    {
+      "name": "lambda_tilde",
+      "human_readable": "lambda_tilde"
+    },
+    {
+      "name": "lambda_tilde_hat",
+      "human_readable": "lambda_tilde_hat"
+    },
+    {
+      "name": "mu_w",
+      "human_readable": "mu_w"
+    },
+    {
+      "name": "mu_w_hat",
+      "human_readable": "mu_w_hat"
+    },
+    {
+      "name": "omega",
+      "human_readable": "omega"
+    },
+    {
+      "name": "omega_hat",
+      "human_readable": "omega_hat"
+    },
+    {
+      "name": "omega_hat_a",
+      "human_readable": "omega_hat_a"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "Pi",
+      "human_readable": "Pi"
+    },
+    {
+      "name": "Pi_hat",
+      "human_readable": "Pi_hat"
+    },
+    {
+      "name": "Pi_hat_a",
+      "human_readable": "Pi_hat_a"
+    },
+    {
+      "name": "tau",
+      "human_readable": "tau"
+    },
+    {
+      "name": "tau_hat",
+      "human_readable": "tau_hat"
+    },
+    {
+      "name": "Xi_tilde_hat",
+      "human_readable": "Xi_tilde_hat"
+    },
+    {
+      "name": "Y",
+      "human_readable": "Y"
+    },
+    {
+      "name": "Y_hat",
+      "human_readable": "Y_hat"
+    },
+    {
+      "name": "Y_n_hat",
+      "human_readable": "Y_n_hat"
+    },
+    {
+      "name": "Z",
+      "human_readable": "Z"
+    },
+    {
+      "name": "Z_hat",
+      "human_readable": "Z_hat"
+    }
   ],
   "shocks": [
-    "e_b_g",
-    "e_C_bar_b",
-    "e_C_bar_s",
-    "e_chi_tilde",
-    "e_H_bar",
-    "e_mu_w",
-    "e_tau",
-    "e_Xi_tilde",
-    "e_Z",
-    "fiscal_",
-    "interest_"
+    {
+      "name": "e_b_g",
+      "human_readable": "e_b_g"
+    },
+    {
+      "name": "e_C_bar_b",
+      "human_readable": "e_C_bar_b"
+    },
+    {
+      "name": "e_C_bar_s",
+      "human_readable": "e_C_bar_s"
+    },
+    {
+      "name": "e_chi_tilde",
+      "human_readable": "e_chi_tilde"
+    },
+    {
+      "name": "e_H_bar",
+      "human_readable": "e_H_bar"
+    },
+    {
+      "name": "e_mu_w",
+      "human_readable": "e_mu_w"
+    },
+    {
+      "name": "e_tau",
+      "human_readable": "e_tau"
+    },
+    {
+      "name": "e_Xi_tilde",
+      "human_readable": "e_Xi_tilde"
+    },
+    {
+      "name": "e_Z",
+      "human_readable": "e_Z"
+    },
+    {
+      "name": "fiscal_",
+      "human_readable": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    }
   ]
 }

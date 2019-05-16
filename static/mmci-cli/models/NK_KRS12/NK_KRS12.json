@@ -74,56 +74,203 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "aC",
-    "b",
-    "bB",
-    "c",
-    "cB",
-    "d",
-    "dB",
-    "deltabB",
-    "deltac",
-    "deltacB",
-    "deltap",
-    "deltapC",
-    "deltapD",
-    "dstar",
-    "i",
-    "iB",
-    "inflation",
-    "inflationq",
-    "interest",
-    "lC",
-    "lCB",
-    "lCtot",
-    "lD",
-    "lDB",
-    "lDtot",
-    "mu",
-    "muB",
-    "output",
-    "outputgap",
-    "p",
-    "pC",
-    "pD",
-    "q",
-    "r",
-    "rL",
-    "v",
-    "wC",
-    "wD",
-    "xiD",
-    "y",
-    "yC",
-    "yCstar",
-    "yD",
-    "yDstar",
-    "ystar"
+    {
+      "name": "aC",
+      "human_readable": "aC"
+    },
+    {
+      "name": "b",
+      "human_readable": "b"
+    },
+    {
+      "name": "bB",
+      "human_readable": "bB"
+    },
+    {
+      "name": "c",
+      "human_readable": "c"
+    },
+    {
+      "name": "cB",
+      "human_readable": "cB"
+    },
+    {
+      "name": "d",
+      "human_readable": "d"
+    },
+    {
+      "name": "dB",
+      "human_readable": "dB"
+    },
+    {
+      "name": "deltabB",
+      "human_readable": "deltabB"
+    },
+    {
+      "name": "deltac",
+      "human_readable": "deltac"
+    },
+    {
+      "name": "deltacB",
+      "human_readable": "deltacB"
+    },
+    {
+      "name": "deltap",
+      "human_readable": "deltap"
+    },
+    {
+      "name": "deltapC",
+      "human_readable": "deltapC"
+    },
+    {
+      "name": "deltapD",
+      "human_readable": "deltapD"
+    },
+    {
+      "name": "dstar",
+      "human_readable": "dstar"
+    },
+    {
+      "name": "i",
+      "human_readable": "i"
+    },
+    {
+      "name": "iB",
+      "human_readable": "iB"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "lC",
+      "human_readable": "lC"
+    },
+    {
+      "name": "lCB",
+      "human_readable": "lCB"
+    },
+    {
+      "name": "lCtot",
+      "human_readable": "lCtot"
+    },
+    {
+      "name": "lD",
+      "human_readable": "lD"
+    },
+    {
+      "name": "lDB",
+      "human_readable": "lDB"
+    },
+    {
+      "name": "lDtot",
+      "human_readable": "lDtot"
+    },
+    {
+      "name": "mu",
+      "human_readable": "mu"
+    },
+    {
+      "name": "muB",
+      "human_readable": "muB"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "p",
+      "human_readable": "p"
+    },
+    {
+      "name": "pC",
+      "human_readable": "pC"
+    },
+    {
+      "name": "pD",
+      "human_readable": "pD"
+    },
+    {
+      "name": "q",
+      "human_readable": "q"
+    },
+    {
+      "name": "r",
+      "human_readable": "r"
+    },
+    {
+      "name": "rL",
+      "human_readable": "rL"
+    },
+    {
+      "name": "v",
+      "human_readable": "v"
+    },
+    {
+      "name": "wC",
+      "human_readable": "wC"
+    },
+    {
+      "name": "wD",
+      "human_readable": "wD"
+    },
+    {
+      "name": "xiD",
+      "human_readable": "xiD"
+    },
+    {
+      "name": "y",
+      "human_readable": "y"
+    },
+    {
+      "name": "yC",
+      "human_readable": "yC"
+    },
+    {
+      "name": "yCstar",
+      "human_readable": "yCstar"
+    },
+    {
+      "name": "yD",
+      "human_readable": "yD"
+    },
+    {
+      "name": "yDstar",
+      "human_readable": "yDstar"
+    },
+    {
+      "name": "ystar",
+      "human_readable": "ystar"
+    }
   ],
   "shocks": [
-    "eps_A",
-    "eps_D",
-    "eps_v",
-    "interest_"
+    {
+      "name": "eps_A",
+      "human_readable": "eps_A"
+    },
+    {
+      "name": "eps_D",
+      "human_readable": "eps_D"
+    },
+    {
+      "name": "eps_v",
+      "human_readable": "eps_v"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    }
   ]
 }

@@ -74,138 +74,531 @@
   "variabledim": 2,
   "al": false,
   "vars": [
-    "c",
-    "cf",
-    "consumption_obs",
-    "credit_obs",
-    "e_g",
-    "EFP",
-    "epsil",
-    "fispol",
-    "Fp",
-    "Fpf",
-    "Fw",
-    "Fwf",
-    "g",
-    "gamma",
-    "gdp_obs",
-    "h",
-    "hf",
-    "hours_obs",
-    "i",
-    "i_f",
-    "inflation",
-    "inflation_obs",
-    "inflationq",
-    "interest",
-    "investment_obs",
-    "kbar",
-    "kbarf",
-    "lambdaf",
-    "lambdaz",
-    "lambdazf",
-    "lc",
-    "lhours",
-    "linv",
-    "lkbar",
-    "lnw",
-    "log_lambdaz",
-    "log_lambdazf",
-    "log_muzstar",
-    "log_pi",
-    "log_term",
-    "log_xi0",
-    "log_xi1",
-    "log_xi2",
-    "log_xi3",
-    "log_xi4",
-    "log_xi5",
-    "log_xi6",
-    "log_xi7",
-    "log_xi8",
-    "log_zetac",
-    "lq",
-    "lrborr",
-    "lrealRe",
-    "lrk",
-    "lu",
-    "lwage",
-    "ly",
-    "muup",
-    "muzstar",
-    "n",
-    "networth_obs",
-    "nf",
-    "omegabar",
-    "omegabarf",
-    "output",
-    "outputgap",
-    "phi",
-    "phif",
-    "pi",
-    "pinvest_obs",
-    "pitarget",
-    "premium_obs",
-    "pstar",
-    "q",
-    "qf",
-    "Re",
-    "Re_obs",
-    "RealRe_obs",
-    "Ref",
-    "rk",
-    "Rk",
-    "rkf",
-    "Rkf",
-    "rL",
-    "RL",
-    "rLf",
-    "RLf",
-    "s",
-    "sf",
-    "sigma",
-    "Spread1_obs",
-    "term",
-    "u",
-    "uf",
-    "volEquity",
-    "volEquityf",
-    "wage_obs",
-    "wstar",
-    "wtilde",
-    "wtildef",
-    "xi0",
-    "xi1",
-    "xi2",
-    "xi3",
-    "xi4",
-    "xi5",
-    "xi6",
-    "xi7",
-    "xi8",
-    "y",
-    "zetac",
-    "zetai"
+    {
+      "name": "c",
+      "human_readable": "c"
+    },
+    {
+      "name": "cf",
+      "human_readable": "cf"
+    },
+    {
+      "name": "consumption_obs",
+      "human_readable": "consumption_obs"
+    },
+    {
+      "name": "credit_obs",
+      "human_readable": "credit_obs"
+    },
+    {
+      "name": "e_g",
+      "human_readable": "e_g"
+    },
+    {
+      "name": "EFP",
+      "human_readable": "EFP"
+    },
+    {
+      "name": "epsil",
+      "human_readable": "epsil"
+    },
+    {
+      "name": "fispol",
+      "human_readable": "fispol"
+    },
+    {
+      "name": "Fp",
+      "human_readable": "Fp"
+    },
+    {
+      "name": "Fpf",
+      "human_readable": "Fpf"
+    },
+    {
+      "name": "Fw",
+      "human_readable": "Fw"
+    },
+    {
+      "name": "Fwf",
+      "human_readable": "Fwf"
+    },
+    {
+      "name": "g",
+      "human_readable": "g"
+    },
+    {
+      "name": "gamma",
+      "human_readable": "gamma"
+    },
+    {
+      "name": "gdp_obs",
+      "human_readable": "gdp_obs"
+    },
+    {
+      "name": "h",
+      "human_readable": "h"
+    },
+    {
+      "name": "hf",
+      "human_readable": "hf"
+    },
+    {
+      "name": "hours_obs",
+      "human_readable": "hours_obs"
+    },
+    {
+      "name": "i",
+      "human_readable": "i"
+    },
+    {
+      "name": "i_f",
+      "human_readable": "i_f"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflation_obs",
+      "human_readable": "inflation_obs"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "investment_obs",
+      "human_readable": "investment_obs"
+    },
+    {
+      "name": "kbar",
+      "human_readable": "kbar"
+    },
+    {
+      "name": "kbarf",
+      "human_readable": "kbarf"
+    },
+    {
+      "name": "lambdaf",
+      "human_readable": "lambdaf"
+    },
+    {
+      "name": "lambdaz",
+      "human_readable": "lambdaz"
+    },
+    {
+      "name": "lambdazf",
+      "human_readable": "lambdazf"
+    },
+    {
+      "name": "lc",
+      "human_readable": "lc"
+    },
+    {
+      "name": "lhours",
+      "human_readable": "lhours"
+    },
+    {
+      "name": "linv",
+      "human_readable": "linv"
+    },
+    {
+      "name": "lkbar",
+      "human_readable": "lkbar"
+    },
+    {
+      "name": "lnw",
+      "human_readable": "lnw"
+    },
+    {
+      "name": "log_lambdaz",
+      "human_readable": "log_lambdaz"
+    },
+    {
+      "name": "log_lambdazf",
+      "human_readable": "log_lambdazf"
+    },
+    {
+      "name": "log_muzstar",
+      "human_readable": "log_muzstar"
+    },
+    {
+      "name": "log_pi",
+      "human_readable": "log_pi"
+    },
+    {
+      "name": "log_term",
+      "human_readable": "log_term"
+    },
+    {
+      "name": "log_xi0",
+      "human_readable": "log_xi0"
+    },
+    {
+      "name": "log_xi1",
+      "human_readable": "log_xi1"
+    },
+    {
+      "name": "log_xi2",
+      "human_readable": "log_xi2"
+    },
+    {
+      "name": "log_xi3",
+      "human_readable": "log_xi3"
+    },
+    {
+      "name": "log_xi4",
+      "human_readable": "log_xi4"
+    },
+    {
+      "name": "log_xi5",
+      "human_readable": "log_xi5"
+    },
+    {
+      "name": "log_xi6",
+      "human_readable": "log_xi6"
+    },
+    {
+      "name": "log_xi7",
+      "human_readable": "log_xi7"
+    },
+    {
+      "name": "log_xi8",
+      "human_readable": "log_xi8"
+    },
+    {
+      "name": "log_zetac",
+      "human_readable": "log_zetac"
+    },
+    {
+      "name": "lq",
+      "human_readable": "lq"
+    },
+    {
+      "name": "lrborr",
+      "human_readable": "lrborr"
+    },
+    {
+      "name": "lrealRe",
+      "human_readable": "lrealRe"
+    },
+    {
+      "name": "lrk",
+      "human_readable": "lrk"
+    },
+    {
+      "name": "lu",
+      "human_readable": "lu"
+    },
+    {
+      "name": "lwage",
+      "human_readable": "lwage"
+    },
+    {
+      "name": "ly",
+      "human_readable": "ly"
+    },
+    {
+      "name": "muup",
+      "human_readable": "muup"
+    },
+    {
+      "name": "muzstar",
+      "human_readable": "muzstar"
+    },
+    {
+      "name": "n",
+      "human_readable": "n"
+    },
+    {
+      "name": "networth_obs",
+      "human_readable": "networth_obs"
+    },
+    {
+      "name": "nf",
+      "human_readable": "nf"
+    },
+    {
+      "name": "omegabar",
+      "human_readable": "omegabar"
+    },
+    {
+      "name": "omegabarf",
+      "human_readable": "omegabarf"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "phi",
+      "human_readable": "phi"
+    },
+    {
+      "name": "phif",
+      "human_readable": "phif"
+    },
+    {
+      "name": "pi",
+      "human_readable": "pi"
+    },
+    {
+      "name": "pinvest_obs",
+      "human_readable": "pinvest_obs"
+    },
+    {
+      "name": "pitarget",
+      "human_readable": "pitarget"
+    },
+    {
+      "name": "premium_obs",
+      "human_readable": "premium_obs"
+    },
+    {
+      "name": "pstar",
+      "human_readable": "pstar"
+    },
+    {
+      "name": "q",
+      "human_readable": "q"
+    },
+    {
+      "name": "qf",
+      "human_readable": "qf"
+    },
+    {
+      "name": "Re",
+      "human_readable": "Re"
+    },
+    {
+      "name": "Re_obs",
+      "human_readable": "Re_obs"
+    },
+    {
+      "name": "RealRe_obs",
+      "human_readable": "RealRe_obs"
+    },
+    {
+      "name": "Ref",
+      "human_readable": "Ref"
+    },
+    {
+      "name": "rk",
+      "human_readable": "rk"
+    },
+    {
+      "name": "Rk",
+      "human_readable": "Rk"
+    },
+    {
+      "name": "rkf",
+      "human_readable": "rkf"
+    },
+    {
+      "name": "Rkf",
+      "human_readable": "Rkf"
+    },
+    {
+      "name": "rL",
+      "human_readable": "rL"
+    },
+    {
+      "name": "RL",
+      "human_readable": "RL"
+    },
+    {
+      "name": "rLf",
+      "human_readable": "rLf"
+    },
+    {
+      "name": "RLf",
+      "human_readable": "RLf"
+    },
+    {
+      "name": "s",
+      "human_readable": "s"
+    },
+    {
+      "name": "sf",
+      "human_readable": "sf"
+    },
+    {
+      "name": "sigma",
+      "human_readable": "sigma"
+    },
+    {
+      "name": "Spread1_obs",
+      "human_readable": "Spread1_obs"
+    },
+    {
+      "name": "term",
+      "human_readable": "term"
+    },
+    {
+      "name": "u",
+      "human_readable": "u"
+    },
+    {
+      "name": "uf",
+      "human_readable": "uf"
+    },
+    {
+      "name": "volEquity",
+      "human_readable": "volEquity"
+    },
+    {
+      "name": "volEquityf",
+      "human_readable": "volEquityf"
+    },
+    {
+      "name": "wage_obs",
+      "human_readable": "wage_obs"
+    },
+    {
+      "name": "wstar",
+      "human_readable": "wstar"
+    },
+    {
+      "name": "wtilde",
+      "human_readable": "wtilde"
+    },
+    {
+      "name": "wtildef",
+      "human_readable": "wtildef"
+    },
+    {
+      "name": "xi0",
+      "human_readable": "xi0"
+    },
+    {
+      "name": "xi1",
+      "human_readable": "xi1"
+    },
+    {
+      "name": "xi2",
+      "human_readable": "xi2"
+    },
+    {
+      "name": "xi3",
+      "human_readable": "xi3"
+    },
+    {
+      "name": "xi4",
+      "human_readable": "xi4"
+    },
+    {
+      "name": "xi5",
+      "human_readable": "xi5"
+    },
+    {
+      "name": "xi6",
+      "human_readable": "xi6"
+    },
+    {
+      "name": "xi7",
+      "human_readable": "xi7"
+    },
+    {
+      "name": "xi8",
+      "human_readable": "xi8"
+    },
+    {
+      "name": "y",
+      "human_readable": "y"
+    },
+    {
+      "name": "zetac",
+      "human_readable": "zetac"
+    },
+    {
+      "name": "zetai",
+      "human_readable": "zetai"
+    }
   ],
   "shocks": [
-    "e_epsil",
-    "e_gamma",
-    "e_lambdaf",
-    "e_muup",
-    "e_muzstar",
-    "e_sigma",
-    "e_term",
-    "e_xi1",
-    "e_xi2",
-    "e_xi3",
-    "e_xi4",
-    "e_xi5",
-    "e_xi6",
-    "e_xi7",
-    "e_xi8",
-    "e_zetac",
-    "e_zetai",
-    "fiscal_",
-    "interest_"
+    {
+      "name": "e_epsil",
+      "human_readable": "e_epsil"
+    },
+    {
+      "name": "e_gamma",
+      "human_readable": "e_gamma"
+    },
+    {
+      "name": "e_lambdaf",
+      "human_readable": "e_lambdaf"
+    },
+    {
+      "name": "e_muup",
+      "human_readable": "e_muup"
+    },
+    {
+      "name": "e_muzstar",
+      "human_readable": "e_muzstar"
+    },
+    {
+      "name": "e_sigma",
+      "human_readable": "e_sigma"
+    },
+    {
+      "name": "e_term",
+      "human_readable": "e_term"
+    },
+    {
+      "name": "e_xi1",
+      "human_readable": "e_xi1"
+    },
+    {
+      "name": "e_xi2",
+      "human_readable": "e_xi2"
+    },
+    {
+      "name": "e_xi3",
+      "human_readable": "e_xi3"
+    },
+    {
+      "name": "e_xi4",
+      "human_readable": "e_xi4"
+    },
+    {
+      "name": "e_xi5",
+      "human_readable": "e_xi5"
+    },
+    {
+      "name": "e_xi6",
+      "human_readable": "e_xi6"
+    },
+    {
+      "name": "e_xi7",
+      "human_readable": "e_xi7"
+    },
+    {
+      "name": "e_xi8",
+      "human_readable": "e_xi8"
+    },
+    {
+      "name": "e_zetac",
+      "human_readable": "e_zetac"
+    },
+    {
+      "name": "e_zetai",
+      "human_readable": "e_zetai"
+    },
+    {
+      "name": "fiscal_",
+      "human_readable": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    }
   ]
 }

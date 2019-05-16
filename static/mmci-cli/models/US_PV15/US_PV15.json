@@ -72,138 +72,531 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "c",
-    "c_obs",
-    "cn",
-    "d",
-    "de",
-    "den",
-    "dn",
-    "eta",
-    "etan",
-    "h",
-    "h_obs",
-    "hc",
-    "hcn",
-    "he",
-    "hen",
-    "hn",
-    "i",
-    "i_obs",
-    "in",
-    "inflation",
-    "inflationq",
-    "interest",
-    "k",
-    "kn",
-    "ku",
-    "kun",
-    "l",
-    "l_obs",
-    "ln_c",
-    "ln_i",
-    "ln_l",
-    "ln_n",
-    "ln_ne",
-    "ln_p",
-    "ln_pi",
-    "ln_r",
-    "ln_rL",
-    "ln_v",
-    "ln_y",
-    "ln_yd",
-    "ln_yn",
-    "lnn",
-    "mc",
-    "mcL",
-    "mcLn",
-    "mcn",
-    "mk",
-    "mut_L",
-    "mut_Ln",
-    "mut_p",
-    "mut_w",
-    "mut_wn",
-    "n",
-    "ne",
-    "ne_obs",
-    "nen",
-    "nn",
-    "nnn",
-    "nnnn",
-    "omega",
-    "omegan",
-    "output",
-    "outputgap",
-    "p",
-    "Phiu",
-    "Phiun",
-    "pi",
-    "pi_obs",
-    "pi_w",
-    "pi_wn",
-    "pic",
-    "pn",
-    "Psi",
-    "q",
-    "qn",
-    "r",
-    "r_obs",
-    "rK",
-    "rKn",
-    "rL",
-    "rL_obs",
-    "rLn",
-    "rr",
-    "rrn",
-    "s",
-    "s_a",
-    "s_b",
-    "s_e",
-    "s_g",
-    "s_i",
-    "s_l",
-    "s_n",
-    "s_p",
-    "s_r",
-    "s_w",
-    "sn",
-    "u",
-    "uc",
-    "ucn",
-    "uh",
-    "uhn",
-    "un",
-    "v",
-    "vn",
-    "w",
-    "w_inf",
-    "w_infn",
-    "w_obs",
-    "w_sup",
-    "w_supn",
-    "wh",
-    "whn",
-    "wn",
-    "y",
-    "y_obs",
-    "yd",
-    "ydn",
-    "yn",
-    "z",
-    "zn"
+    {
+      "name": "c",
+      "human_readable": "c"
+    },
+    {
+      "name": "c_obs",
+      "human_readable": "c_obs"
+    },
+    {
+      "name": "cn",
+      "human_readable": "cn"
+    },
+    {
+      "name": "d",
+      "human_readable": "d"
+    },
+    {
+      "name": "de",
+      "human_readable": "de"
+    },
+    {
+      "name": "den",
+      "human_readable": "den"
+    },
+    {
+      "name": "dn",
+      "human_readable": "dn"
+    },
+    {
+      "name": "eta",
+      "human_readable": "eta"
+    },
+    {
+      "name": "etan",
+      "human_readable": "etan"
+    },
+    {
+      "name": "h",
+      "human_readable": "h"
+    },
+    {
+      "name": "h_obs",
+      "human_readable": "h_obs"
+    },
+    {
+      "name": "hc",
+      "human_readable": "hc"
+    },
+    {
+      "name": "hcn",
+      "human_readable": "hcn"
+    },
+    {
+      "name": "he",
+      "human_readable": "he"
+    },
+    {
+      "name": "hen",
+      "human_readable": "hen"
+    },
+    {
+      "name": "hn",
+      "human_readable": "hn"
+    },
+    {
+      "name": "i",
+      "human_readable": "i"
+    },
+    {
+      "name": "i_obs",
+      "human_readable": "i_obs"
+    },
+    {
+      "name": "in",
+      "human_readable": "in"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "k",
+      "human_readable": "k"
+    },
+    {
+      "name": "kn",
+      "human_readable": "kn"
+    },
+    {
+      "name": "ku",
+      "human_readable": "ku"
+    },
+    {
+      "name": "kun",
+      "human_readable": "kun"
+    },
+    {
+      "name": "l",
+      "human_readable": "l"
+    },
+    {
+      "name": "l_obs",
+      "human_readable": "l_obs"
+    },
+    {
+      "name": "ln_c",
+      "human_readable": "ln_c"
+    },
+    {
+      "name": "ln_i",
+      "human_readable": "ln_i"
+    },
+    {
+      "name": "ln_l",
+      "human_readable": "ln_l"
+    },
+    {
+      "name": "ln_n",
+      "human_readable": "ln_n"
+    },
+    {
+      "name": "ln_ne",
+      "human_readable": "ln_ne"
+    },
+    {
+      "name": "ln_p",
+      "human_readable": "ln_p"
+    },
+    {
+      "name": "ln_pi",
+      "human_readable": "ln_pi"
+    },
+    {
+      "name": "ln_r",
+      "human_readable": "ln_r"
+    },
+    {
+      "name": "ln_rL",
+      "human_readable": "ln_rL"
+    },
+    {
+      "name": "ln_v",
+      "human_readable": "ln_v"
+    },
+    {
+      "name": "ln_y",
+      "human_readable": "ln_y"
+    },
+    {
+      "name": "ln_yd",
+      "human_readable": "ln_yd"
+    },
+    {
+      "name": "ln_yn",
+      "human_readable": "ln_yn"
+    },
+    {
+      "name": "lnn",
+      "human_readable": "lnn"
+    },
+    {
+      "name": "mc",
+      "human_readable": "mc"
+    },
+    {
+      "name": "mcL",
+      "human_readable": "mcL"
+    },
+    {
+      "name": "mcLn",
+      "human_readable": "mcLn"
+    },
+    {
+      "name": "mcn",
+      "human_readable": "mcn"
+    },
+    {
+      "name": "mk",
+      "human_readable": "mk"
+    },
+    {
+      "name": "mut_L",
+      "human_readable": "mut_L"
+    },
+    {
+      "name": "mut_Ln",
+      "human_readable": "mut_Ln"
+    },
+    {
+      "name": "mut_p",
+      "human_readable": "mut_p"
+    },
+    {
+      "name": "mut_w",
+      "human_readable": "mut_w"
+    },
+    {
+      "name": "mut_wn",
+      "human_readable": "mut_wn"
+    },
+    {
+      "name": "n",
+      "human_readable": "n"
+    },
+    {
+      "name": "ne",
+      "human_readable": "ne"
+    },
+    {
+      "name": "ne_obs",
+      "human_readable": "ne_obs"
+    },
+    {
+      "name": "nen",
+      "human_readable": "nen"
+    },
+    {
+      "name": "nn",
+      "human_readable": "nn"
+    },
+    {
+      "name": "nnn",
+      "human_readable": "nnn"
+    },
+    {
+      "name": "nnnn",
+      "human_readable": "nnnn"
+    },
+    {
+      "name": "omega",
+      "human_readable": "omega"
+    },
+    {
+      "name": "omegan",
+      "human_readable": "omegan"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "p",
+      "human_readable": "p"
+    },
+    {
+      "name": "Phiu",
+      "human_readable": "Phiu"
+    },
+    {
+      "name": "Phiun",
+      "human_readable": "Phiun"
+    },
+    {
+      "name": "pi",
+      "human_readable": "pi"
+    },
+    {
+      "name": "pi_obs",
+      "human_readable": "pi_obs"
+    },
+    {
+      "name": "pi_w",
+      "human_readable": "pi_w"
+    },
+    {
+      "name": "pi_wn",
+      "human_readable": "pi_wn"
+    },
+    {
+      "name": "pic",
+      "human_readable": "pic"
+    },
+    {
+      "name": "pn",
+      "human_readable": "pn"
+    },
+    {
+      "name": "Psi",
+      "human_readable": "Psi"
+    },
+    {
+      "name": "q",
+      "human_readable": "q"
+    },
+    {
+      "name": "qn",
+      "human_readable": "qn"
+    },
+    {
+      "name": "r",
+      "human_readable": "r"
+    },
+    {
+      "name": "r_obs",
+      "human_readable": "r_obs"
+    },
+    {
+      "name": "rK",
+      "human_readable": "rK"
+    },
+    {
+      "name": "rKn",
+      "human_readable": "rKn"
+    },
+    {
+      "name": "rL",
+      "human_readable": "rL"
+    },
+    {
+      "name": "rL_obs",
+      "human_readable": "rL_obs"
+    },
+    {
+      "name": "rLn",
+      "human_readable": "rLn"
+    },
+    {
+      "name": "rr",
+      "human_readable": "rr"
+    },
+    {
+      "name": "rrn",
+      "human_readable": "rrn"
+    },
+    {
+      "name": "s",
+      "human_readable": "s"
+    },
+    {
+      "name": "s_a",
+      "human_readable": "s_a"
+    },
+    {
+      "name": "s_b",
+      "human_readable": "s_b"
+    },
+    {
+      "name": "s_e",
+      "human_readable": "s_e"
+    },
+    {
+      "name": "s_g",
+      "human_readable": "s_g"
+    },
+    {
+      "name": "s_i",
+      "human_readable": "s_i"
+    },
+    {
+      "name": "s_l",
+      "human_readable": "s_l"
+    },
+    {
+      "name": "s_n",
+      "human_readable": "s_n"
+    },
+    {
+      "name": "s_p",
+      "human_readable": "s_p"
+    },
+    {
+      "name": "s_r",
+      "human_readable": "s_r"
+    },
+    {
+      "name": "s_w",
+      "human_readable": "s_w"
+    },
+    {
+      "name": "sn",
+      "human_readable": "sn"
+    },
+    {
+      "name": "u",
+      "human_readable": "u"
+    },
+    {
+      "name": "uc",
+      "human_readable": "uc"
+    },
+    {
+      "name": "ucn",
+      "human_readable": "ucn"
+    },
+    {
+      "name": "uh",
+      "human_readable": "uh"
+    },
+    {
+      "name": "uhn",
+      "human_readable": "uhn"
+    },
+    {
+      "name": "un",
+      "human_readable": "un"
+    },
+    {
+      "name": "v",
+      "human_readable": "v"
+    },
+    {
+      "name": "vn",
+      "human_readable": "vn"
+    },
+    {
+      "name": "w",
+      "human_readable": "w"
+    },
+    {
+      "name": "w_inf",
+      "human_readable": "w_inf"
+    },
+    {
+      "name": "w_infn",
+      "human_readable": "w_infn"
+    },
+    {
+      "name": "w_obs",
+      "human_readable": "w_obs"
+    },
+    {
+      "name": "w_sup",
+      "human_readable": "w_sup"
+    },
+    {
+      "name": "w_supn",
+      "human_readable": "w_supn"
+    },
+    {
+      "name": "wh",
+      "human_readable": "wh"
+    },
+    {
+      "name": "whn",
+      "human_readable": "whn"
+    },
+    {
+      "name": "wn",
+      "human_readable": "wn"
+    },
+    {
+      "name": "y",
+      "human_readable": "y"
+    },
+    {
+      "name": "y_obs",
+      "human_readable": "y_obs"
+    },
+    {
+      "name": "yd",
+      "human_readable": "yd"
+    },
+    {
+      "name": "ydn",
+      "human_readable": "ydn"
+    },
+    {
+      "name": "yn",
+      "human_readable": "yn"
+    },
+    {
+      "name": "z",
+      "human_readable": "z"
+    },
+    {
+      "name": "zn",
+      "human_readable": "zn"
+    }
   ],
   "shocks": [
-    "e_a",
-    "e_b",
-    "e_e",
-    "e_i",
-    "e_l",
-    "e_m",
-    "e_n",
-    "e_p",
-    "e_w",
-    "fiscal_",
-    "interest_"
+    {
+      "name": "e_a",
+      "human_readable": "e_a"
+    },
+    {
+      "name": "e_b",
+      "human_readable": "e_b"
+    },
+    {
+      "name": "e_e",
+      "human_readable": "e_e"
+    },
+    {
+      "name": "e_i",
+      "human_readable": "e_i"
+    },
+    {
+      "name": "e_l",
+      "human_readable": "e_l"
+    },
+    {
+      "name": "e_m",
+      "human_readable": "e_m"
+    },
+    {
+      "name": "e_n",
+      "human_readable": "e_n"
+    },
+    {
+      "name": "e_p",
+      "human_readable": "e_p"
+    },
+    {
+      "name": "e_w",
+      "human_readable": "e_w"
+    },
+    {
+      "name": "fiscal_",
+      "human_readable": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    }
   ]
 }

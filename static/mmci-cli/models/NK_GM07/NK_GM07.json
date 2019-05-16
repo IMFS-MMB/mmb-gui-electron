@@ -72,39 +72,135 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "a1",
-    "a2",
-    "a3",
-    "b",
-    "c",
-    "CEFP",
-    "dp",
-    "fispol",
-    "h",
-    "inflation",
-    "inflationq",
-    "interest",
-    "lambda",
-    "m",
-    "mc",
-    "n",
-    "omega",
-    "output",
-    "outputgap",
-    "p",
-    "q",
-    "rB",
-    "rIB",
-    "rL",
-    "rT",
-    "UEFP",
-    "w",
-    "xi"
+    {
+      "name": "a1",
+      "human_readable": "a1"
+    },
+    {
+      "name": "a2",
+      "human_readable": "a2"
+    },
+    {
+      "name": "a3",
+      "human_readable": "a3"
+    },
+    {
+      "name": "b",
+      "human_readable": "b"
+    },
+    {
+      "name": "c",
+      "human_readable": "c"
+    },
+    {
+      "name": "CEFP",
+      "human_readable": "CEFP"
+    },
+    {
+      "name": "dp",
+      "human_readable": "dp"
+    },
+    {
+      "name": "fispol",
+      "human_readable": "fispol"
+    },
+    {
+      "name": "h",
+      "human_readable": "h"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "lambda",
+      "human_readable": "lambda"
+    },
+    {
+      "name": "m",
+      "human_readable": "m"
+    },
+    {
+      "name": "mc",
+      "human_readable": "mc"
+    },
+    {
+      "name": "n",
+      "human_readable": "n"
+    },
+    {
+      "name": "omega",
+      "human_readable": "omega"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "p",
+      "human_readable": "p"
+    },
+    {
+      "name": "q",
+      "human_readable": "q"
+    },
+    {
+      "name": "rB",
+      "human_readable": "rB"
+    },
+    {
+      "name": "rIB",
+      "human_readable": "rIB"
+    },
+    {
+      "name": "rL",
+      "human_readable": "rL"
+    },
+    {
+      "name": "rT",
+      "human_readable": "rT"
+    },
+    {
+      "name": "UEFP",
+      "human_readable": "UEFP"
+    },
+    {
+      "name": "w",
+      "human_readable": "w"
+    },
+    {
+      "name": "xi",
+      "human_readable": "xi"
+    }
   ],
   "shocks": [
-    "eps_a1",
-    "eps_a2",
-    "eps_a3",
-    "interest_"
+    {
+      "name": "eps_a1",
+      "human_readable": "eps_a1"
+    },
+    {
+      "name": "eps_a2",
+      "human_readable": "eps_a2"
+    },
+    {
+      "name": "eps_a3",
+      "human_readable": "eps_a3"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    }
   ]
 }

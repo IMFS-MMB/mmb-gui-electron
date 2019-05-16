@@ -72,110 +72,419 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "A_eff",
-    "AI",
-    "AIK",
-    "AIS",
-    "Ak_over_P",
-    "B_t",
-    "beta_t",
-    "BoY_t",
-    "CASH_t",
-    "chat",
-    "chi_k",
-    "chi_s",
-    "chi_spk",
-    "chi_w",
-    "ctau_q_t",
-    "d_chat",
-    "d_FGS_num",
-    "d_GDP",
-    "d_GDPm1",
-    "d_GDPm2",
-    "d_GDPm3",
-    "d_Ihat",
-    "D_t",
-    "Delta_N",
-    "dlnwhat",
-    "e_p",
-    "e_w",
-    "eps_g",
-    "eta_beta",
-    "etau_q_t",
-    "FGS",
-    "FGS_num",
-    "FGS_obs",
-    "FGSgap_t",
-    "fispol",
-    "g_t",
-    "GDP_t",
-    "GS_t",
-    "i_ob_t",
-    "i_t",
-    "Ihat",
-    "inflation",
-    "inflationq",
-    "interest",
-    "invQ_til_As",
-    "iota_k",
-    "iota_s",
-    "iota_t",
-    "Kbar",
-    "l",
-    "l_ob_t",
-    "lambda_p_t",
-    "lambda_t",
-    "lambda_w_t",
-    "LIQS_t",
-    "mchat",
-    "N_t",
-    "output",
-    "outputgap",
-    "phi_t",
-    "pi_ob_t",
-    "pi_t",
-    "pi_tm1",
-    "pi_tm2",
-    "pi_tm3",
-    "pistar",
-    "Q_t_A",
-    "Q_t_B",
-    "QK",
-    "QtilK_iota_t",
-    "QtilS_iota_t",
-    "r",
-    "rK",
-    "S",
-    "sdf",
-    "sdfr",
-    "sg",
-    "SMG",
-    "SMG_bar",
-    "SMGm1",
-    "SMGm2",
-    "SMGm3",
-    "Spread_ob_t",
-    "Spread_t",
-    "Spreadgap_t",
-    "Sprime",
-    "T_t",
-    "tau_q_t",
-    "ToY_t",
-    "what_t",
-    "ygap_t",
-    "yhat",
-    "z_t"
+    {
+      "name": "A_eff",
+      "human_readable": "A_eff"
+    },
+    {
+      "name": "AI",
+      "human_readable": "AI"
+    },
+    {
+      "name": "AIK",
+      "human_readable": "AIK"
+    },
+    {
+      "name": "AIS",
+      "human_readable": "AIS"
+    },
+    {
+      "name": "Ak_over_P",
+      "human_readable": "Ak_over_P"
+    },
+    {
+      "name": "B_t",
+      "human_readable": "B_t"
+    },
+    {
+      "name": "beta_t",
+      "human_readable": "beta_t"
+    },
+    {
+      "name": "BoY_t",
+      "human_readable": "BoY_t"
+    },
+    {
+      "name": "CASH_t",
+      "human_readable": "CASH_t"
+    },
+    {
+      "name": "chat",
+      "human_readable": "chat"
+    },
+    {
+      "name": "chi_k",
+      "human_readable": "chi_k"
+    },
+    {
+      "name": "chi_s",
+      "human_readable": "chi_s"
+    },
+    {
+      "name": "chi_spk",
+      "human_readable": "chi_spk"
+    },
+    {
+      "name": "chi_w",
+      "human_readable": "chi_w"
+    },
+    {
+      "name": "ctau_q_t",
+      "human_readable": "ctau_q_t"
+    },
+    {
+      "name": "d_chat",
+      "human_readable": "d_chat"
+    },
+    {
+      "name": "d_FGS_num",
+      "human_readable": "d_FGS_num"
+    },
+    {
+      "name": "d_GDP",
+      "human_readable": "d_GDP"
+    },
+    {
+      "name": "d_GDPm1",
+      "human_readable": "d_GDPm1"
+    },
+    {
+      "name": "d_GDPm2",
+      "human_readable": "d_GDPm2"
+    },
+    {
+      "name": "d_GDPm3",
+      "human_readable": "d_GDPm3"
+    },
+    {
+      "name": "d_Ihat",
+      "human_readable": "d_Ihat"
+    },
+    {
+      "name": "D_t",
+      "human_readable": "D_t"
+    },
+    {
+      "name": "Delta_N",
+      "human_readable": "Delta_N"
+    },
+    {
+      "name": "dlnwhat",
+      "human_readable": "dlnwhat"
+    },
+    {
+      "name": "e_p",
+      "human_readable": "e_p"
+    },
+    {
+      "name": "e_w",
+      "human_readable": "e_w"
+    },
+    {
+      "name": "eps_g",
+      "human_readable": "eps_g"
+    },
+    {
+      "name": "eta_beta",
+      "human_readable": "eta_beta"
+    },
+    {
+      "name": "etau_q_t",
+      "human_readable": "etau_q_t"
+    },
+    {
+      "name": "FGS",
+      "human_readable": "FGS"
+    },
+    {
+      "name": "FGS_num",
+      "human_readable": "FGS_num"
+    },
+    {
+      "name": "FGS_obs",
+      "human_readable": "FGS_obs"
+    },
+    {
+      "name": "FGSgap_t",
+      "human_readable": "FGSgap_t"
+    },
+    {
+      "name": "fispol",
+      "human_readable": "fispol"
+    },
+    {
+      "name": "g_t",
+      "human_readable": "g_t"
+    },
+    {
+      "name": "GDP_t",
+      "human_readable": "GDP_t"
+    },
+    {
+      "name": "GS_t",
+      "human_readable": "GS_t"
+    },
+    {
+      "name": "i_ob_t",
+      "human_readable": "i_ob_t"
+    },
+    {
+      "name": "i_t",
+      "human_readable": "i_t"
+    },
+    {
+      "name": "Ihat",
+      "human_readable": "Ihat"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "invQ_til_As",
+      "human_readable": "invQ_til_As"
+    },
+    {
+      "name": "iota_k",
+      "human_readable": "iota_k"
+    },
+    {
+      "name": "iota_s",
+      "human_readable": "iota_s"
+    },
+    {
+      "name": "iota_t",
+      "human_readable": "iota_t"
+    },
+    {
+      "name": "Kbar",
+      "human_readable": "Kbar"
+    },
+    {
+      "name": "l",
+      "human_readable": "l"
+    },
+    {
+      "name": "l_ob_t",
+      "human_readable": "l_ob_t"
+    },
+    {
+      "name": "lambda_p_t",
+      "human_readable": "lambda_p_t"
+    },
+    {
+      "name": "lambda_t",
+      "human_readable": "lambda_t"
+    },
+    {
+      "name": "lambda_w_t",
+      "human_readable": "lambda_w_t"
+    },
+    {
+      "name": "LIQS_t",
+      "human_readable": "LIQS_t"
+    },
+    {
+      "name": "mchat",
+      "human_readable": "mchat"
+    },
+    {
+      "name": "N_t",
+      "human_readable": "N_t"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "phi_t",
+      "human_readable": "phi_t"
+    },
+    {
+      "name": "pi_ob_t",
+      "human_readable": "pi_ob_t"
+    },
+    {
+      "name": "pi_t",
+      "human_readable": "pi_t"
+    },
+    {
+      "name": "pi_tm1",
+      "human_readable": "pi_tm1"
+    },
+    {
+      "name": "pi_tm2",
+      "human_readable": "pi_tm2"
+    },
+    {
+      "name": "pi_tm3",
+      "human_readable": "pi_tm3"
+    },
+    {
+      "name": "pistar",
+      "human_readable": "pistar"
+    },
+    {
+      "name": "Q_t_A",
+      "human_readable": "Q_t_A"
+    },
+    {
+      "name": "Q_t_B",
+      "human_readable": "Q_t_B"
+    },
+    {
+      "name": "QK",
+      "human_readable": "QK"
+    },
+    {
+      "name": "QtilK_iota_t",
+      "human_readable": "QtilK_iota_t"
+    },
+    {
+      "name": "QtilS_iota_t",
+      "human_readable": "QtilS_iota_t"
+    },
+    {
+      "name": "r",
+      "human_readable": "r"
+    },
+    {
+      "name": "rK",
+      "human_readable": "rK"
+    },
+    {
+      "name": "S",
+      "human_readable": "S"
+    },
+    {
+      "name": "sdf",
+      "human_readable": "sdf"
+    },
+    {
+      "name": "sdfr",
+      "human_readable": "sdfr"
+    },
+    {
+      "name": "sg",
+      "human_readable": "sg"
+    },
+    {
+      "name": "SMG",
+      "human_readable": "SMG"
+    },
+    {
+      "name": "SMG_bar",
+      "human_readable": "SMG_bar"
+    },
+    {
+      "name": "SMGm1",
+      "human_readable": "SMGm1"
+    },
+    {
+      "name": "SMGm2",
+      "human_readable": "SMGm2"
+    },
+    {
+      "name": "SMGm3",
+      "human_readable": "SMGm3"
+    },
+    {
+      "name": "Spread_ob_t",
+      "human_readable": "Spread_ob_t"
+    },
+    {
+      "name": "Spread_t",
+      "human_readable": "Spread_t"
+    },
+    {
+      "name": "Spreadgap_t",
+      "human_readable": "Spreadgap_t"
+    },
+    {
+      "name": "Sprime",
+      "human_readable": "Sprime"
+    },
+    {
+      "name": "T_t",
+      "human_readable": "T_t"
+    },
+    {
+      "name": "tau_q_t",
+      "human_readable": "tau_q_t"
+    },
+    {
+      "name": "ToY_t",
+      "human_readable": "ToY_t"
+    },
+    {
+      "name": "what_t",
+      "human_readable": "what_t"
+    },
+    {
+      "name": "ygap_t",
+      "human_readable": "ygap_t"
+    },
+    {
+      "name": "yhat",
+      "human_readable": "yhat"
+    },
+    {
+      "name": "z_t",
+      "human_readable": "z_t"
+    }
   ],
   "shocks": [
-    "eps_beta",
-    "eps_meas",
-    "eps_meas_sp",
-    "eps_p",
-    "eps_tau",
-    "eps_tau_trans",
-    "eps_w",
-    "eps_z",
-    "fiscal_",
-    "interest_"
+    {
+      "name": "eps_beta",
+      "human_readable": "eps_beta"
+    },
+    {
+      "name": "eps_meas",
+      "human_readable": "eps_meas"
+    },
+    {
+      "name": "eps_meas_sp",
+      "human_readable": "eps_meas_sp"
+    },
+    {
+      "name": "eps_p",
+      "human_readable": "eps_p"
+    },
+    {
+      "name": "eps_tau",
+      "human_readable": "eps_tau"
+    },
+    {
+      "name": "eps_tau_trans",
+      "human_readable": "eps_tau_trans"
+    },
+    {
+      "name": "eps_w",
+      "human_readable": "eps_w"
+    },
+    {
+      "name": "eps_z",
+      "human_readable": "eps_z"
+    },
+    {
+      "name": "fiscal_",
+      "human_readable": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    }
   ]
 }

@@ -73,101 +73,383 @@
   "variabledim": 2,
   "al": false,
   "vars": [
-    "a_c",
-    "a_h",
-    "a_j",
-    "a_k",
-    "a_s",
-    "a_t",
-    "a_z",
-    "b",
-    "bf",
-    "c",
-    "c1",
-    "c1f",
-    "cf",
-    "data_CC",
-    "data_CCf",
-    "data_DP",
-    "data_IH",
-    "data_IHf",
-    "data_IK",
-    "data_IKf",
-    "data_NC",
-    "data_NH",
-    "data_QQ",
-    "data_RR",
-    "data_WC",
-    "data_WH",
-    "dp",
-    "h",
-    "h1",
-    "h1f",
-    "hf",
-    "I",
-    "If",
-    "inflation",
-    "inflationq",
-    "interest",
-    "kc",
-    "kcf",
-    "kh",
-    "khf",
-    "lm",
-    "lmf",
-    "nc",
-    "nc1",
-    "nc1f",
-    "ncf",
-    "nh",
-    "nh1",
-    "nh1f",
-    "nhf",
-    "output",
-    "outputgap",
-    "q",
-    "qf",
-    "r",
-    "rf",
-    "rkc",
-    "rkcf",
-    "rkh",
-    "rkhf",
-    "uc",
-    "uc1",
-    "uc1f",
-    "ucf",
-    "wc",
-    "wc1",
-    "wc1f",
-    "wcf",
-    "wh",
-    "wh1",
-    "wh1f",
-    "whf",
-    "X",
-    "xwc",
-    "xwc1",
-    "xwh",
-    "xwh1",
-    "Y",
-    "Yf",
-    "zata_GDP",
-    "zata_GDPf",
-    "zkc",
-    "zkcf",
-    "zkh",
-    "zkhf"
+    {
+      "name": "a_c",
+      "human_readable": "a_c"
+    },
+    {
+      "name": "a_h",
+      "human_readable": "a_h"
+    },
+    {
+      "name": "a_j",
+      "human_readable": "a_j"
+    },
+    {
+      "name": "a_k",
+      "human_readable": "a_k"
+    },
+    {
+      "name": "a_s",
+      "human_readable": "a_s"
+    },
+    {
+      "name": "a_t",
+      "human_readable": "a_t"
+    },
+    {
+      "name": "a_z",
+      "human_readable": "a_z"
+    },
+    {
+      "name": "b",
+      "human_readable": "b"
+    },
+    {
+      "name": "bf",
+      "human_readable": "bf"
+    },
+    {
+      "name": "c",
+      "human_readable": "c"
+    },
+    {
+      "name": "c1",
+      "human_readable": "c1"
+    },
+    {
+      "name": "c1f",
+      "human_readable": "c1f"
+    },
+    {
+      "name": "cf",
+      "human_readable": "cf"
+    },
+    {
+      "name": "data_CC",
+      "human_readable": "data_CC"
+    },
+    {
+      "name": "data_CCf",
+      "human_readable": "data_CCf"
+    },
+    {
+      "name": "data_DP",
+      "human_readable": "data_DP"
+    },
+    {
+      "name": "data_IH",
+      "human_readable": "data_IH"
+    },
+    {
+      "name": "data_IHf",
+      "human_readable": "data_IHf"
+    },
+    {
+      "name": "data_IK",
+      "human_readable": "data_IK"
+    },
+    {
+      "name": "data_IKf",
+      "human_readable": "data_IKf"
+    },
+    {
+      "name": "data_NC",
+      "human_readable": "data_NC"
+    },
+    {
+      "name": "data_NH",
+      "human_readable": "data_NH"
+    },
+    {
+      "name": "data_QQ",
+      "human_readable": "data_QQ"
+    },
+    {
+      "name": "data_RR",
+      "human_readable": "data_RR"
+    },
+    {
+      "name": "data_WC",
+      "human_readable": "data_WC"
+    },
+    {
+      "name": "data_WH",
+      "human_readable": "data_WH"
+    },
+    {
+      "name": "dp",
+      "human_readable": "dp"
+    },
+    {
+      "name": "h",
+      "human_readable": "h"
+    },
+    {
+      "name": "h1",
+      "human_readable": "h1"
+    },
+    {
+      "name": "h1f",
+      "human_readable": "h1f"
+    },
+    {
+      "name": "hf",
+      "human_readable": "hf"
+    },
+    {
+      "name": "I",
+      "human_readable": "I"
+    },
+    {
+      "name": "If",
+      "human_readable": "If"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "kc",
+      "human_readable": "kc"
+    },
+    {
+      "name": "kcf",
+      "human_readable": "kcf"
+    },
+    {
+      "name": "kh",
+      "human_readable": "kh"
+    },
+    {
+      "name": "khf",
+      "human_readable": "khf"
+    },
+    {
+      "name": "lm",
+      "human_readable": "lm"
+    },
+    {
+      "name": "lmf",
+      "human_readable": "lmf"
+    },
+    {
+      "name": "nc",
+      "human_readable": "nc"
+    },
+    {
+      "name": "nc1",
+      "human_readable": "nc1"
+    },
+    {
+      "name": "nc1f",
+      "human_readable": "nc1f"
+    },
+    {
+      "name": "ncf",
+      "human_readable": "ncf"
+    },
+    {
+      "name": "nh",
+      "human_readable": "nh"
+    },
+    {
+      "name": "nh1",
+      "human_readable": "nh1"
+    },
+    {
+      "name": "nh1f",
+      "human_readable": "nh1f"
+    },
+    {
+      "name": "nhf",
+      "human_readable": "nhf"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "q",
+      "human_readable": "q"
+    },
+    {
+      "name": "qf",
+      "human_readable": "qf"
+    },
+    {
+      "name": "r",
+      "human_readable": "r"
+    },
+    {
+      "name": "rf",
+      "human_readable": "rf"
+    },
+    {
+      "name": "rkc",
+      "human_readable": "rkc"
+    },
+    {
+      "name": "rkcf",
+      "human_readable": "rkcf"
+    },
+    {
+      "name": "rkh",
+      "human_readable": "rkh"
+    },
+    {
+      "name": "rkhf",
+      "human_readable": "rkhf"
+    },
+    {
+      "name": "uc",
+      "human_readable": "uc"
+    },
+    {
+      "name": "uc1",
+      "human_readable": "uc1"
+    },
+    {
+      "name": "uc1f",
+      "human_readable": "uc1f"
+    },
+    {
+      "name": "ucf",
+      "human_readable": "ucf"
+    },
+    {
+      "name": "wc",
+      "human_readable": "wc"
+    },
+    {
+      "name": "wc1",
+      "human_readable": "wc1"
+    },
+    {
+      "name": "wc1f",
+      "human_readable": "wc1f"
+    },
+    {
+      "name": "wcf",
+      "human_readable": "wcf"
+    },
+    {
+      "name": "wh",
+      "human_readable": "wh"
+    },
+    {
+      "name": "wh1",
+      "human_readable": "wh1"
+    },
+    {
+      "name": "wh1f",
+      "human_readable": "wh1f"
+    },
+    {
+      "name": "whf",
+      "human_readable": "whf"
+    },
+    {
+      "name": "X",
+      "human_readable": "X"
+    },
+    {
+      "name": "xwc",
+      "human_readable": "xwc"
+    },
+    {
+      "name": "xwc1",
+      "human_readable": "xwc1"
+    },
+    {
+      "name": "xwh",
+      "human_readable": "xwh"
+    },
+    {
+      "name": "xwh1",
+      "human_readable": "xwh1"
+    },
+    {
+      "name": "Y",
+      "human_readable": "Y"
+    },
+    {
+      "name": "Yf",
+      "human_readable": "Yf"
+    },
+    {
+      "name": "zata_GDP",
+      "human_readable": "zata_GDP"
+    },
+    {
+      "name": "zata_GDPf",
+      "human_readable": "zata_GDPf"
+    },
+    {
+      "name": "zkc",
+      "human_readable": "zkc"
+    },
+    {
+      "name": "zkcf",
+      "human_readable": "zkcf"
+    },
+    {
+      "name": "zkh",
+      "human_readable": "zkh"
+    },
+    {
+      "name": "zkhf",
+      "human_readable": "zkhf"
+    }
   ],
   "shocks": [
-    "eps_c",
-    "eps_h",
-    "eps_j",
-    "eps_k",
-    "eps_p",
-    "eps_s",
-    "eps_t",
-    "eps_z",
-    "interest_"
+    {
+      "name": "eps_c",
+      "human_readable": "eps_c"
+    },
+    {
+      "name": "eps_h",
+      "human_readable": "eps_h"
+    },
+    {
+      "name": "eps_j",
+      "human_readable": "eps_j"
+    },
+    {
+      "name": "eps_k",
+      "human_readable": "eps_k"
+    },
+    {
+      "name": "eps_p",
+      "human_readable": "eps_p"
+    },
+    {
+      "name": "eps_s",
+      "human_readable": "eps_s"
+    },
+    {
+      "name": "eps_t",
+      "human_readable": "eps_t"
+    },
+    {
+      "name": "eps_z",
+      "human_readable": "eps_z"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    }
   ]
 }

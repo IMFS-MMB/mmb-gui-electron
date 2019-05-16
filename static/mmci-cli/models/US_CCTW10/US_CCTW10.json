@@ -75,79 +75,295 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "a",
-    "b",
-    "c",
-    "c_lc",
-    "c_lcf",
-    "c_nlc",
-    "c_nlcf",
-    "cf",
-    "dc",
-    "debt",
-    "debtf",
-    "dinve",
-    "dlab",
-    "dw",
-    "dy",
-    "eg",
-    "epinfma",
-    "ewma",
-    "fispol",
-    "g",
-    "gry",
-    "inflation",
-    "inflationq",
-    "interest",
-    "inve",
-    "invef",
-    "k",
-    "kf",
-    "kp",
-    "kpf",
-    "lab",
-    "labf",
-    "labobs",
-    "mc",
-    "mcf",
-    "ms",
-    "output",
-    "outputgap",
-    "pinf",
-    "pinf4",
-    "pinflag1",
-    "pinflag2",
-    "pinfobs",
-    "pinfobs4",
-    "pk",
-    "pkf",
-    "qs",
-    "r",
-    "realinterest",
-    "rk",
-    "rkf",
-    "robs",
-    "robs4",
-    "rrf",
-    "spinf",
-    "sw",
-    "t",
-    "tf",
-    "w",
-    "wf",
-    "y",
-    "yf",
-    "zcap",
-    "zcapf"
+    {
+      "name": "a",
+      "human_readable": "a"
+    },
+    {
+      "name": "b",
+      "human_readable": "b"
+    },
+    {
+      "name": "c",
+      "human_readable": "c"
+    },
+    {
+      "name": "c_lc",
+      "human_readable": "c_lc"
+    },
+    {
+      "name": "c_lcf",
+      "human_readable": "c_lcf"
+    },
+    {
+      "name": "c_nlc",
+      "human_readable": "c_nlc"
+    },
+    {
+      "name": "c_nlcf",
+      "human_readable": "c_nlcf"
+    },
+    {
+      "name": "cf",
+      "human_readable": "cf"
+    },
+    {
+      "name": "dc",
+      "human_readable": "dc"
+    },
+    {
+      "name": "debt",
+      "human_readable": "debt"
+    },
+    {
+      "name": "debtf",
+      "human_readable": "debtf"
+    },
+    {
+      "name": "dinve",
+      "human_readable": "dinve"
+    },
+    {
+      "name": "dlab",
+      "human_readable": "dlab"
+    },
+    {
+      "name": "dw",
+      "human_readable": "dw"
+    },
+    {
+      "name": "dy",
+      "human_readable": "dy"
+    },
+    {
+      "name": "eg",
+      "human_readable": "eg"
+    },
+    {
+      "name": "epinfma",
+      "human_readable": "epinfma"
+    },
+    {
+      "name": "ewma",
+      "human_readable": "ewma"
+    },
+    {
+      "name": "fispol",
+      "human_readable": "fispol"
+    },
+    {
+      "name": "g",
+      "human_readable": "g"
+    },
+    {
+      "name": "gry",
+      "human_readable": "gry"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "inve",
+      "human_readable": "inve"
+    },
+    {
+      "name": "invef",
+      "human_readable": "invef"
+    },
+    {
+      "name": "k",
+      "human_readable": "k"
+    },
+    {
+      "name": "kf",
+      "human_readable": "kf"
+    },
+    {
+      "name": "kp",
+      "human_readable": "kp"
+    },
+    {
+      "name": "kpf",
+      "human_readable": "kpf"
+    },
+    {
+      "name": "lab",
+      "human_readable": "lab"
+    },
+    {
+      "name": "labf",
+      "human_readable": "labf"
+    },
+    {
+      "name": "labobs",
+      "human_readable": "labobs"
+    },
+    {
+      "name": "mc",
+      "human_readable": "mc"
+    },
+    {
+      "name": "mcf",
+      "human_readable": "mcf"
+    },
+    {
+      "name": "ms",
+      "human_readable": "ms"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "pinf",
+      "human_readable": "pinf"
+    },
+    {
+      "name": "pinf4",
+      "human_readable": "pinf4"
+    },
+    {
+      "name": "pinflag1",
+      "human_readable": "pinflag1"
+    },
+    {
+      "name": "pinflag2",
+      "human_readable": "pinflag2"
+    },
+    {
+      "name": "pinfobs",
+      "human_readable": "pinfobs"
+    },
+    {
+      "name": "pinfobs4",
+      "human_readable": "pinfobs4"
+    },
+    {
+      "name": "pk",
+      "human_readable": "pk"
+    },
+    {
+      "name": "pkf",
+      "human_readable": "pkf"
+    },
+    {
+      "name": "qs",
+      "human_readable": "qs"
+    },
+    {
+      "name": "r",
+      "human_readable": "r"
+    },
+    {
+      "name": "realinterest",
+      "human_readable": "realinterest"
+    },
+    {
+      "name": "rk",
+      "human_readable": "rk"
+    },
+    {
+      "name": "rkf",
+      "human_readable": "rkf"
+    },
+    {
+      "name": "robs",
+      "human_readable": "robs"
+    },
+    {
+      "name": "robs4",
+      "human_readable": "robs4"
+    },
+    {
+      "name": "rrf",
+      "human_readable": "rrf"
+    },
+    {
+      "name": "spinf",
+      "human_readable": "spinf"
+    },
+    {
+      "name": "sw",
+      "human_readable": "sw"
+    },
+    {
+      "name": "t",
+      "human_readable": "t"
+    },
+    {
+      "name": "tf",
+      "human_readable": "tf"
+    },
+    {
+      "name": "w",
+      "human_readable": "w"
+    },
+    {
+      "name": "wf",
+      "human_readable": "wf"
+    },
+    {
+      "name": "y",
+      "human_readable": "y"
+    },
+    {
+      "name": "yf",
+      "human_readable": "yf"
+    },
+    {
+      "name": "zcap",
+      "human_readable": "zcap"
+    },
+    {
+      "name": "zcapf",
+      "human_readable": "zcapf"
+    }
   ],
   "shocks": [
-    "ea",
-    "eb",
-    "em",
-    "epinf",
-    "eqs",
-    "ew",
-    "fiscal_",
-    "interest_"
+    {
+      "name": "ea",
+      "human_readable": "ea"
+    },
+    {
+      "name": "eb",
+      "human_readable": "eb"
+    },
+    {
+      "name": "em",
+      "human_readable": "em"
+    },
+    {
+      "name": "epinf",
+      "human_readable": "epinf"
+    },
+    {
+      "name": "eqs",
+      "human_readable": "eqs"
+    },
+    {
+      "name": "ew",
+      "human_readable": "ew"
+    },
+    {
+      "name": "fiscal_",
+      "human_readable": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    }
   ]
 }

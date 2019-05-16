@@ -69,90 +69,339 @@
   "variabledim": 2,
   "al": false,
   "vars": [
-    "bigA",
-    "bigAf",
-    "bigN",
-    "bigNf",
-    "CA",
-    "CAf",
-    "Cb",
-    "Cbf",
-    "Ce",
-    "Cef",
-    "ch",
-    "chf",
-    "denp",
-    "denw",
-    "expinfl",
-    "G",
-    "Gf",
-    "gY",
-    "gYf",
-    "H",
-    "Hf",
-    "I",
-    "If",
-    "infl",
-    "inflation",
-    "inflationq",
-    "inflf",
-    "interest",
-    "K",
-    "Kb",
-    "Kbf",
-    "Ke",
-    "Kef",
-    "keff",
-    "kefff",
-    "Kf",
-    "lam",
-    "lamf",
-    "lbk",
-    "lmp",
-    "log_I",
-    "log_If",
-    "log_y",
-    "log_yf",
-    "lz",
-    "mc",
-    "mgrowth",
-    "nump",
-    "numw",
-    "output",
-    "outputgap",
-    "p",
-    "ptilde",
-    "q",
-    "qf",
-    "Ra",
-    "Raf",
-    "Rd",
-    "Rdf",
-    "rk",
-    "rkf",
-    "s",
-    "sf",
-    "smalld",
-    "smalldf",
-    "TL",
-    "TLf",
-    "totC",
-    "totCf",
-    "u",
-    "uf",
-    "w_b",
-    "w_bf",
-    "w_e",
-    "w_ef",
-    "w_h",
-    "w_hf",
-    "wtilde",
-    "wtildef",
-    "Y",
-    "Yf"
+    {
+      "name": "bigA",
+      "human_readable": "bigA"
+    },
+    {
+      "name": "bigAf",
+      "human_readable": "bigAf"
+    },
+    {
+      "name": "bigN",
+      "human_readable": "bigN"
+    },
+    {
+      "name": "bigNf",
+      "human_readable": "bigNf"
+    },
+    {
+      "name": "CA",
+      "human_readable": "CA"
+    },
+    {
+      "name": "CAf",
+      "human_readable": "CAf"
+    },
+    {
+      "name": "Cb",
+      "human_readable": "Cb"
+    },
+    {
+      "name": "Cbf",
+      "human_readable": "Cbf"
+    },
+    {
+      "name": "Ce",
+      "human_readable": "Ce"
+    },
+    {
+      "name": "Cef",
+      "human_readable": "Cef"
+    },
+    {
+      "name": "ch",
+      "human_readable": "ch"
+    },
+    {
+      "name": "chf",
+      "human_readable": "chf"
+    },
+    {
+      "name": "denp",
+      "human_readable": "denp"
+    },
+    {
+      "name": "denw",
+      "human_readable": "denw"
+    },
+    {
+      "name": "expinfl",
+      "human_readable": "expinfl"
+    },
+    {
+      "name": "G",
+      "human_readable": "G"
+    },
+    {
+      "name": "Gf",
+      "human_readable": "Gf"
+    },
+    {
+      "name": "gY",
+      "human_readable": "gY"
+    },
+    {
+      "name": "gYf",
+      "human_readable": "gYf"
+    },
+    {
+      "name": "H",
+      "human_readable": "H"
+    },
+    {
+      "name": "Hf",
+      "human_readable": "Hf"
+    },
+    {
+      "name": "I",
+      "human_readable": "I"
+    },
+    {
+      "name": "If",
+      "human_readable": "If"
+    },
+    {
+      "name": "infl",
+      "human_readable": "infl"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "inflf",
+      "human_readable": "inflf"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "K",
+      "human_readable": "K"
+    },
+    {
+      "name": "Kb",
+      "human_readable": "Kb"
+    },
+    {
+      "name": "Kbf",
+      "human_readable": "Kbf"
+    },
+    {
+      "name": "Ke",
+      "human_readable": "Ke"
+    },
+    {
+      "name": "Kef",
+      "human_readable": "Kef"
+    },
+    {
+      "name": "keff",
+      "human_readable": "keff"
+    },
+    {
+      "name": "kefff",
+      "human_readable": "kefff"
+    },
+    {
+      "name": "Kf",
+      "human_readable": "Kf"
+    },
+    {
+      "name": "lam",
+      "human_readable": "lam"
+    },
+    {
+      "name": "lamf",
+      "human_readable": "lamf"
+    },
+    {
+      "name": "lbk",
+      "human_readable": "lbk"
+    },
+    {
+      "name": "lmp",
+      "human_readable": "lmp"
+    },
+    {
+      "name": "log_I",
+      "human_readable": "log_I"
+    },
+    {
+      "name": "log_If",
+      "human_readable": "log_If"
+    },
+    {
+      "name": "log_y",
+      "human_readable": "log_y"
+    },
+    {
+      "name": "log_yf",
+      "human_readable": "log_yf"
+    },
+    {
+      "name": "lz",
+      "human_readable": "lz"
+    },
+    {
+      "name": "mc",
+      "human_readable": "mc"
+    },
+    {
+      "name": "mgrowth",
+      "human_readable": "mgrowth"
+    },
+    {
+      "name": "nump",
+      "human_readable": "nump"
+    },
+    {
+      "name": "numw",
+      "human_readable": "numw"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "p",
+      "human_readable": "p"
+    },
+    {
+      "name": "ptilde",
+      "human_readable": "ptilde"
+    },
+    {
+      "name": "q",
+      "human_readable": "q"
+    },
+    {
+      "name": "qf",
+      "human_readable": "qf"
+    },
+    {
+      "name": "Ra",
+      "human_readable": "Ra"
+    },
+    {
+      "name": "Raf",
+      "human_readable": "Raf"
+    },
+    {
+      "name": "Rd",
+      "human_readable": "Rd"
+    },
+    {
+      "name": "Rdf",
+      "human_readable": "Rdf"
+    },
+    {
+      "name": "rk",
+      "human_readable": "rk"
+    },
+    {
+      "name": "rkf",
+      "human_readable": "rkf"
+    },
+    {
+      "name": "s",
+      "human_readable": "s"
+    },
+    {
+      "name": "sf",
+      "human_readable": "sf"
+    },
+    {
+      "name": "smalld",
+      "human_readable": "smalld"
+    },
+    {
+      "name": "smalldf",
+      "human_readable": "smalldf"
+    },
+    {
+      "name": "TL",
+      "human_readable": "TL"
+    },
+    {
+      "name": "TLf",
+      "human_readable": "TLf"
+    },
+    {
+      "name": "totC",
+      "human_readable": "totC"
+    },
+    {
+      "name": "totCf",
+      "human_readable": "totCf"
+    },
+    {
+      "name": "u",
+      "human_readable": "u"
+    },
+    {
+      "name": "uf",
+      "human_readable": "uf"
+    },
+    {
+      "name": "w_b",
+      "human_readable": "w_b"
+    },
+    {
+      "name": "w_bf",
+      "human_readable": "w_bf"
+    },
+    {
+      "name": "w_e",
+      "human_readable": "w_e"
+    },
+    {
+      "name": "w_ef",
+      "human_readable": "w_ef"
+    },
+    {
+      "name": "w_h",
+      "human_readable": "w_h"
+    },
+    {
+      "name": "w_hf",
+      "human_readable": "w_hf"
+    },
+    {
+      "name": "wtilde",
+      "human_readable": "wtilde"
+    },
+    {
+      "name": "wtildef",
+      "human_readable": "wtildef"
+    },
+    {
+      "name": "Y",
+      "human_readable": "Y"
+    },
+    {
+      "name": "Yf",
+      "human_readable": "Yf"
+    }
   ],
   "shocks": [
-    "interest_",
-    "techShock"
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    },
+    {
+      "name": "techShock",
+      "human_readable": "techShock"
+    }
   ]
 }

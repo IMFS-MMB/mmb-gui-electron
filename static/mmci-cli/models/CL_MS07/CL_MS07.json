@@ -39,151 +39,583 @@
   "variabledim": 1,
   "al": false,
   "vars": [
-    "ah_hat",
-    "bF_flex",
-    "bF_hat",
-    "bg_flex",
-    "bg_hat",
-    "c_flex",
-    "c_hat",
-    "ca_y_flex",
-    "ca_y_hat",
-    "cf_flex",
-    "cf_hat",
-    "ch_flex",
-    "ch_hat",
-    "chF_flex",
-    "chF_hat",
-    "dc_flex",
-    "dc_hat",
-    "de_flex",
-    "de_hat",
-    "dinv_flex",
-    "dinv_hat",
-    "dwr_flex",
-    "dwr_hat",
-    "dy_flex",
-    "dy_hat",
-    "dyF_flex",
-    "dyF_hat",
-    "dys_flex",
-    "dys_hat",
-    "eps_gex",
-    "fispol",
-    "g_flex",
-    "g_hat",
-    "gex_hat",
-    "i_flex",
-    "i_hat",
-    "iF_hat",
-    "iFax_flex",
-    "iFax_hat",
-    "inflation",
-    "inflationq",
-    "interest",
-    "inv_flex",
-    "inv_hat",
-    "invf_flex",
-    "invf_hat",
-    "invh_flex",
-    "invh_hat",
-    "k_flex",
-    "k_hat",
-    "klag_flex",
-    "klag_hat",
-    "l_flex",
-    "l_hat",
-    "m_flex",
-    "m_hat",
-    "mcrh_flex",
-    "mcrh_hat",
-    "mo_flex",
-    "mo_hat",
-    "oc_flex",
-    "oc_hat",
-    "oh_flex",
-    "oh_hat",
-    "output",
-    "outputgap",
-    "pic_flex",
-    "pic_hat",
-    "picz_flex",
-    "picz_hat",
-    "pif_flex",
-    "pif_hat",
-    "pifF_hat",
-    "pihd_flex",
-    "pihd_hat",
-    "pihf_flex",
-    "pihf_hat",
-    "prf_flex",
-    "prf_hat",
-    "prfF_hat",
-    "prhd_flex",
-    "prhd_hat",
-    "prhf_flex",
-    "prhf_hat",
-    "pri_flex",
-    "pri_hat",
-    "prm_flex",
-    "prm_hat",
-    "proF_hat",
-    "prs_flex",
-    "prs_hat",
-    "prsa_flex",
-    "prsa_hat",
-    "prsF_hat",
-    "prx_flex",
-    "prx_hat",
-    "pry_flex",
-    "pry_hat",
-    "qr_flex",
-    "qr_hat",
-    "r_flex",
-    "r_hat",
-    "rer_flex",
-    "rer_hat",
-    "Rk_flex",
-    "Rk_hat",
-    "sh_c_hat",
-    "sh_i_hat",
-    "sh_w_hat",
-    "st_hat",
-    "tau_flex",
-    "tau_hat",
-    "u_flex",
-    "u_hat",
-    "wr_flex",
-    "wr_hat",
-    "x_flex",
-    "x_hat",
-    "y_flex",
-    "y_hat",
-    "yF_hat",
-    "yFa_flex",
-    "yFa_hat",
-    "yh_flex",
-    "yh_hat",
-    "ys_hat",
-    "ysa_flex",
-    "ysa_hat",
-    "zr_flex",
-    "zr_hat"
+    {
+      "name": "ah_hat",
+      "human_readable": "ah_hat"
+    },
+    {
+      "name": "bF_flex",
+      "human_readable": "bF_flex"
+    },
+    {
+      "name": "bF_hat",
+      "human_readable": "bF_hat"
+    },
+    {
+      "name": "bg_flex",
+      "human_readable": "bg_flex"
+    },
+    {
+      "name": "bg_hat",
+      "human_readable": "bg_hat"
+    },
+    {
+      "name": "c_flex",
+      "human_readable": "c_flex"
+    },
+    {
+      "name": "c_hat",
+      "human_readable": "c_hat"
+    },
+    {
+      "name": "ca_y_flex",
+      "human_readable": "ca_y_flex"
+    },
+    {
+      "name": "ca_y_hat",
+      "human_readable": "ca_y_hat"
+    },
+    {
+      "name": "cf_flex",
+      "human_readable": "cf_flex"
+    },
+    {
+      "name": "cf_hat",
+      "human_readable": "cf_hat"
+    },
+    {
+      "name": "ch_flex",
+      "human_readable": "ch_flex"
+    },
+    {
+      "name": "ch_hat",
+      "human_readable": "ch_hat"
+    },
+    {
+      "name": "chF_flex",
+      "human_readable": "chF_flex"
+    },
+    {
+      "name": "chF_hat",
+      "human_readable": "chF_hat"
+    },
+    {
+      "name": "dc_flex",
+      "human_readable": "dc_flex"
+    },
+    {
+      "name": "dc_hat",
+      "human_readable": "dc_hat"
+    },
+    {
+      "name": "de_flex",
+      "human_readable": "de_flex"
+    },
+    {
+      "name": "de_hat",
+      "human_readable": "de_hat"
+    },
+    {
+      "name": "dinv_flex",
+      "human_readable": "dinv_flex"
+    },
+    {
+      "name": "dinv_hat",
+      "human_readable": "dinv_hat"
+    },
+    {
+      "name": "dwr_flex",
+      "human_readable": "dwr_flex"
+    },
+    {
+      "name": "dwr_hat",
+      "human_readable": "dwr_hat"
+    },
+    {
+      "name": "dy_flex",
+      "human_readable": "dy_flex"
+    },
+    {
+      "name": "dy_hat",
+      "human_readable": "dy_hat"
+    },
+    {
+      "name": "dyF_flex",
+      "human_readable": "dyF_flex"
+    },
+    {
+      "name": "dyF_hat",
+      "human_readable": "dyF_hat"
+    },
+    {
+      "name": "dys_flex",
+      "human_readable": "dys_flex"
+    },
+    {
+      "name": "dys_hat",
+      "human_readable": "dys_hat"
+    },
+    {
+      "name": "eps_gex",
+      "human_readable": "eps_gex"
+    },
+    {
+      "name": "fispol",
+      "human_readable": "fispol"
+    },
+    {
+      "name": "g_flex",
+      "human_readable": "g_flex"
+    },
+    {
+      "name": "g_hat",
+      "human_readable": "g_hat"
+    },
+    {
+      "name": "gex_hat",
+      "human_readable": "gex_hat"
+    },
+    {
+      "name": "i_flex",
+      "human_readable": "i_flex"
+    },
+    {
+      "name": "i_hat",
+      "human_readable": "i_hat"
+    },
+    {
+      "name": "iF_hat",
+      "human_readable": "iF_hat"
+    },
+    {
+      "name": "iFax_flex",
+      "human_readable": "iFax_flex"
+    },
+    {
+      "name": "iFax_hat",
+      "human_readable": "iFax_hat"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "inv_flex",
+      "human_readable": "inv_flex"
+    },
+    {
+      "name": "inv_hat",
+      "human_readable": "inv_hat"
+    },
+    {
+      "name": "invf_flex",
+      "human_readable": "invf_flex"
+    },
+    {
+      "name": "invf_hat",
+      "human_readable": "invf_hat"
+    },
+    {
+      "name": "invh_flex",
+      "human_readable": "invh_flex"
+    },
+    {
+      "name": "invh_hat",
+      "human_readable": "invh_hat"
+    },
+    {
+      "name": "k_flex",
+      "human_readable": "k_flex"
+    },
+    {
+      "name": "k_hat",
+      "human_readable": "k_hat"
+    },
+    {
+      "name": "klag_flex",
+      "human_readable": "klag_flex"
+    },
+    {
+      "name": "klag_hat",
+      "human_readable": "klag_hat"
+    },
+    {
+      "name": "l_flex",
+      "human_readable": "l_flex"
+    },
+    {
+      "name": "l_hat",
+      "human_readable": "l_hat"
+    },
+    {
+      "name": "m_flex",
+      "human_readable": "m_flex"
+    },
+    {
+      "name": "m_hat",
+      "human_readable": "m_hat"
+    },
+    {
+      "name": "mcrh_flex",
+      "human_readable": "mcrh_flex"
+    },
+    {
+      "name": "mcrh_hat",
+      "human_readable": "mcrh_hat"
+    },
+    {
+      "name": "mo_flex",
+      "human_readable": "mo_flex"
+    },
+    {
+      "name": "mo_hat",
+      "human_readable": "mo_hat"
+    },
+    {
+      "name": "oc_flex",
+      "human_readable": "oc_flex"
+    },
+    {
+      "name": "oc_hat",
+      "human_readable": "oc_hat"
+    },
+    {
+      "name": "oh_flex",
+      "human_readable": "oh_flex"
+    },
+    {
+      "name": "oh_hat",
+      "human_readable": "oh_hat"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "pic_flex",
+      "human_readable": "pic_flex"
+    },
+    {
+      "name": "pic_hat",
+      "human_readable": "pic_hat"
+    },
+    {
+      "name": "picz_flex",
+      "human_readable": "picz_flex"
+    },
+    {
+      "name": "picz_hat",
+      "human_readable": "picz_hat"
+    },
+    {
+      "name": "pif_flex",
+      "human_readable": "pif_flex"
+    },
+    {
+      "name": "pif_hat",
+      "human_readable": "pif_hat"
+    },
+    {
+      "name": "pifF_hat",
+      "human_readable": "pifF_hat"
+    },
+    {
+      "name": "pihd_flex",
+      "human_readable": "pihd_flex"
+    },
+    {
+      "name": "pihd_hat",
+      "human_readable": "pihd_hat"
+    },
+    {
+      "name": "pihf_flex",
+      "human_readable": "pihf_flex"
+    },
+    {
+      "name": "pihf_hat",
+      "human_readable": "pihf_hat"
+    },
+    {
+      "name": "prf_flex",
+      "human_readable": "prf_flex"
+    },
+    {
+      "name": "prf_hat",
+      "human_readable": "prf_hat"
+    },
+    {
+      "name": "prfF_hat",
+      "human_readable": "prfF_hat"
+    },
+    {
+      "name": "prhd_flex",
+      "human_readable": "prhd_flex"
+    },
+    {
+      "name": "prhd_hat",
+      "human_readable": "prhd_hat"
+    },
+    {
+      "name": "prhf_flex",
+      "human_readable": "prhf_flex"
+    },
+    {
+      "name": "prhf_hat",
+      "human_readable": "prhf_hat"
+    },
+    {
+      "name": "pri_flex",
+      "human_readable": "pri_flex"
+    },
+    {
+      "name": "pri_hat",
+      "human_readable": "pri_hat"
+    },
+    {
+      "name": "prm_flex",
+      "human_readable": "prm_flex"
+    },
+    {
+      "name": "prm_hat",
+      "human_readable": "prm_hat"
+    },
+    {
+      "name": "proF_hat",
+      "human_readable": "proF_hat"
+    },
+    {
+      "name": "prs_flex",
+      "human_readable": "prs_flex"
+    },
+    {
+      "name": "prs_hat",
+      "human_readable": "prs_hat"
+    },
+    {
+      "name": "prsa_flex",
+      "human_readable": "prsa_flex"
+    },
+    {
+      "name": "prsa_hat",
+      "human_readable": "prsa_hat"
+    },
+    {
+      "name": "prsF_hat",
+      "human_readable": "prsF_hat"
+    },
+    {
+      "name": "prx_flex",
+      "human_readable": "prx_flex"
+    },
+    {
+      "name": "prx_hat",
+      "human_readable": "prx_hat"
+    },
+    {
+      "name": "pry_flex",
+      "human_readable": "pry_flex"
+    },
+    {
+      "name": "pry_hat",
+      "human_readable": "pry_hat"
+    },
+    {
+      "name": "qr_flex",
+      "human_readable": "qr_flex"
+    },
+    {
+      "name": "qr_hat",
+      "human_readable": "qr_hat"
+    },
+    {
+      "name": "r_flex",
+      "human_readable": "r_flex"
+    },
+    {
+      "name": "r_hat",
+      "human_readable": "r_hat"
+    },
+    {
+      "name": "rer_flex",
+      "human_readable": "rer_flex"
+    },
+    {
+      "name": "rer_hat",
+      "human_readable": "rer_hat"
+    },
+    {
+      "name": "Rk_flex",
+      "human_readable": "Rk_flex"
+    },
+    {
+      "name": "Rk_hat",
+      "human_readable": "Rk_hat"
+    },
+    {
+      "name": "sh_c_hat",
+      "human_readable": "sh_c_hat"
+    },
+    {
+      "name": "sh_i_hat",
+      "human_readable": "sh_i_hat"
+    },
+    {
+      "name": "sh_w_hat",
+      "human_readable": "sh_w_hat"
+    },
+    {
+      "name": "st_hat",
+      "human_readable": "st_hat"
+    },
+    {
+      "name": "tau_flex",
+      "human_readable": "tau_flex"
+    },
+    {
+      "name": "tau_hat",
+      "human_readable": "tau_hat"
+    },
+    {
+      "name": "u_flex",
+      "human_readable": "u_flex"
+    },
+    {
+      "name": "u_hat",
+      "human_readable": "u_hat"
+    },
+    {
+      "name": "wr_flex",
+      "human_readable": "wr_flex"
+    },
+    {
+      "name": "wr_hat",
+      "human_readable": "wr_hat"
+    },
+    {
+      "name": "x_flex",
+      "human_readable": "x_flex"
+    },
+    {
+      "name": "x_hat",
+      "human_readable": "x_hat"
+    },
+    {
+      "name": "y_flex",
+      "human_readable": "y_flex"
+    },
+    {
+      "name": "y_hat",
+      "human_readable": "y_hat"
+    },
+    {
+      "name": "yF_hat",
+      "human_readable": "yF_hat"
+    },
+    {
+      "name": "yFa_flex",
+      "human_readable": "yFa_flex"
+    },
+    {
+      "name": "yFa_hat",
+      "human_readable": "yFa_hat"
+    },
+    {
+      "name": "yh_flex",
+      "human_readable": "yh_flex"
+    },
+    {
+      "name": "yh_hat",
+      "human_readable": "yh_hat"
+    },
+    {
+      "name": "ys_hat",
+      "human_readable": "ys_hat"
+    },
+    {
+      "name": "ysa_flex",
+      "human_readable": "ysa_flex"
+    },
+    {
+      "name": "ysa_hat",
+      "human_readable": "ysa_hat"
+    },
+    {
+      "name": "zr_flex",
+      "human_readable": "zr_flex"
+    },
+    {
+      "name": "zr_hat",
+      "human_readable": "zr_hat"
+    }
   ],
   "shocks": [
-    "eps_ah",
-    "eps_iF",
-    "eps_piF",
-    "eps_prfF",
-    "eps_proF",
-    "eps_prsF",
-    "eps_sh_c",
-    "eps_sh_i",
-    "eps_sh_w",
-    "eps_st",
-    "eps_yF",
-    "eps_ys",
-    "fiscal_",
-    "interest_"
+    {
+      "name": "eps_ah",
+      "human_readable": "eps_ah"
+    },
+    {
+      "name": "eps_iF",
+      "human_readable": "eps_iF"
+    },
+    {
+      "name": "eps_piF",
+      "human_readable": "eps_piF"
+    },
+    {
+      "name": "eps_prfF",
+      "human_readable": "eps_prfF"
+    },
+    {
+      "name": "eps_proF",
+      "human_readable": "eps_proF"
+    },
+    {
+      "name": "eps_prsF",
+      "human_readable": "eps_prsF"
+    },
+    {
+      "name": "eps_sh_c",
+      "human_readable": "eps_sh_c"
+    },
+    {
+      "name": "eps_sh_i",
+      "human_readable": "eps_sh_i"
+    },
+    {
+      "name": "eps_sh_w",
+      "human_readable": "eps_sh_w"
+    },
+    {
+      "name": "eps_st",
+      "human_readable": "eps_st"
+    },
+    {
+      "name": "eps_yF",
+      "human_readable": "eps_yF"
+    },
+    {
+      "name": "eps_ys",
+      "human_readable": "eps_ys"
+    },
+    {
+      "name": "fiscal_",
+      "human_readable": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    }
   ]
 }

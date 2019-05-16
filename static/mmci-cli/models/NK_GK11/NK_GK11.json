@@ -38,86 +38,323 @@
   "variabledim": 2,
   "al": false,
   "vars": [
-    "a",
-    "C",
-    "Cf",
-    "D",
-    "delta",
-    "deltaf",
-    "e_g",
-    "eta",
-    "etaf",
-    "F",
-    "fispol",
-    "g",
-    "G",
-    "Gf",
-    "i",
-    "I",
-    "If",
-    "In",
-    "In_f",
-    "infl",
-    "inflation",
-    "inflationq",
-    "inflstar",
-    "interest",
-    "K",
-    "Keff",
-    "Kefff",
-    "Kf",
-    "ksi",
-    "L",
-    "Lambda",
-    "Lambdaf",
-    "Lf",
-    "N",
-    "Ne",
-    "Nef",
-    "Nf",
-    "Nn",
-    "Nnf",
-    "nu",
-    "nuf",
-    "output",
-    "outputgap",
-    "phi",
-    "phif",
-    "Pm",
-    "prem",
-    "premf",
-    "Q",
-    "Qf",
-    "R",
-    "Rf",
-    "Rk",
-    "Rkf",
-    "U",
-    "Uf",
-    "varrho",
-    "varrhof",
-    "VMPK",
-    "VMPKf",
-    "w",
-    "Welf",
-    "Welff",
-    "wf",
-    "x",
-    "X",
-    "xf",
-    "Y",
-    "Yf",
-    "Ym",
-    "Ymf",
-    "z",
-    "Z",
-    "zf"
+    {
+      "name": "a",
+      "human_readable": "a"
+    },
+    {
+      "name": "C",
+      "human_readable": "C"
+    },
+    {
+      "name": "Cf",
+      "human_readable": "Cf"
+    },
+    {
+      "name": "D",
+      "human_readable": "D"
+    },
+    {
+      "name": "delta",
+      "human_readable": "delta"
+    },
+    {
+      "name": "deltaf",
+      "human_readable": "deltaf"
+    },
+    {
+      "name": "e_g",
+      "human_readable": "e_g"
+    },
+    {
+      "name": "eta",
+      "human_readable": "eta"
+    },
+    {
+      "name": "etaf",
+      "human_readable": "etaf"
+    },
+    {
+      "name": "F",
+      "human_readable": "F"
+    },
+    {
+      "name": "fispol",
+      "human_readable": "fispol"
+    },
+    {
+      "name": "g",
+      "human_readable": "g"
+    },
+    {
+      "name": "G",
+      "human_readable": "G"
+    },
+    {
+      "name": "Gf",
+      "human_readable": "Gf"
+    },
+    {
+      "name": "i",
+      "human_readable": "i"
+    },
+    {
+      "name": "I",
+      "human_readable": "I"
+    },
+    {
+      "name": "If",
+      "human_readable": "If"
+    },
+    {
+      "name": "In",
+      "human_readable": "In"
+    },
+    {
+      "name": "In_f",
+      "human_readable": "In_f"
+    },
+    {
+      "name": "infl",
+      "human_readable": "infl"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "inflstar",
+      "human_readable": "inflstar"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "K",
+      "human_readable": "K"
+    },
+    {
+      "name": "Keff",
+      "human_readable": "Keff"
+    },
+    {
+      "name": "Kefff",
+      "human_readable": "Kefff"
+    },
+    {
+      "name": "Kf",
+      "human_readable": "Kf"
+    },
+    {
+      "name": "ksi",
+      "human_readable": "ksi"
+    },
+    {
+      "name": "L",
+      "human_readable": "L"
+    },
+    {
+      "name": "Lambda",
+      "human_readable": "Lambda"
+    },
+    {
+      "name": "Lambdaf",
+      "human_readable": "Lambdaf"
+    },
+    {
+      "name": "Lf",
+      "human_readable": "Lf"
+    },
+    {
+      "name": "N",
+      "human_readable": "N"
+    },
+    {
+      "name": "Ne",
+      "human_readable": "Ne"
+    },
+    {
+      "name": "Nef",
+      "human_readable": "Nef"
+    },
+    {
+      "name": "Nf",
+      "human_readable": "Nf"
+    },
+    {
+      "name": "Nn",
+      "human_readable": "Nn"
+    },
+    {
+      "name": "Nnf",
+      "human_readable": "Nnf"
+    },
+    {
+      "name": "nu",
+      "human_readable": "nu"
+    },
+    {
+      "name": "nuf",
+      "human_readable": "nuf"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "phi",
+      "human_readable": "phi"
+    },
+    {
+      "name": "phif",
+      "human_readable": "phif"
+    },
+    {
+      "name": "Pm",
+      "human_readable": "Pm"
+    },
+    {
+      "name": "prem",
+      "human_readable": "prem"
+    },
+    {
+      "name": "premf",
+      "human_readable": "premf"
+    },
+    {
+      "name": "Q",
+      "human_readable": "Q"
+    },
+    {
+      "name": "Qf",
+      "human_readable": "Qf"
+    },
+    {
+      "name": "R",
+      "human_readable": "R"
+    },
+    {
+      "name": "Rf",
+      "human_readable": "Rf"
+    },
+    {
+      "name": "Rk",
+      "human_readable": "Rk"
+    },
+    {
+      "name": "Rkf",
+      "human_readable": "Rkf"
+    },
+    {
+      "name": "U",
+      "human_readable": "U"
+    },
+    {
+      "name": "Uf",
+      "human_readable": "Uf"
+    },
+    {
+      "name": "varrho",
+      "human_readable": "varrho"
+    },
+    {
+      "name": "varrhof",
+      "human_readable": "varrhof"
+    },
+    {
+      "name": "VMPK",
+      "human_readable": "VMPK"
+    },
+    {
+      "name": "VMPKf",
+      "human_readable": "VMPKf"
+    },
+    {
+      "name": "w",
+      "human_readable": "w"
+    },
+    {
+      "name": "Welf",
+      "human_readable": "Welf"
+    },
+    {
+      "name": "Welff",
+      "human_readable": "Welff"
+    },
+    {
+      "name": "wf",
+      "human_readable": "wf"
+    },
+    {
+      "name": "x",
+      "human_readable": "x"
+    },
+    {
+      "name": "X",
+      "human_readable": "X"
+    },
+    {
+      "name": "xf",
+      "human_readable": "xf"
+    },
+    {
+      "name": "Y",
+      "human_readable": "Y"
+    },
+    {
+      "name": "Yf",
+      "human_readable": "Yf"
+    },
+    {
+      "name": "Ym",
+      "human_readable": "Ym"
+    },
+    {
+      "name": "Ymf",
+      "human_readable": "Ymf"
+    },
+    {
+      "name": "z",
+      "human_readable": "z"
+    },
+    {
+      "name": "Z",
+      "human_readable": "Z"
+    },
+    {
+      "name": "zf",
+      "human_readable": "zf"
+    }
   ],
   "shocks": [
-    "e_a",
-    "e_ksi",
-    "e_Ne",
-    "fiscal_",
-    "interest_"
+    {
+      "name": "e_a",
+      "human_readable": "e_a"
+    },
+    {
+      "name": "e_ksi",
+      "human_readable": "e_ksi"
+    },
+    {
+      "name": "e_Ne",
+      "human_readable": "e_Ne"
+    },
+    {
+      "name": "fiscal_",
+      "human_readable": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    }
   ]
 }
