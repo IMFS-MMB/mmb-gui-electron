@@ -7,4 +7,5 @@ models/policy_param.mat
 **/*_dynamic.m
 **/*_static.m
 **/*_set_auxiliary_variables.m
+**/*results.mat
 out
