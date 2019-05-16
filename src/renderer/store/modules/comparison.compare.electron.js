@@ -5,7 +5,6 @@ import logger from '@/utils/logger';
 import readOutput from '@/utils/readOutput';
 import { mmbFolder } from '../../../../config/paths';
 
-
 export default async function compare(ctx) {
   const cwd = mmbFolder;
 
@@ -14,8 +13,9 @@ export default async function compare(ctx) {
   const shocks = ctx.rootGetters['settings/shocks'];
   const horizon = ctx.rootGetters['settings/horizon'];
   const gain = ctx.rootGetters['settings/gain'];
-  const executable = ctx.rootGetters['backends/selectedExecutable'];
   const userRule = ctx.rootGetters['userrule/params'];
+  const executable = ctx.rootGetters['backends/selected'];
+  const dynare = ctx.rootGetters['dynare/selected'];
 
   const backend = create({
     path: executable.path,
@@ -24,7 +24,7 @@ export default async function compare(ctx) {
   });
 
   await backend.runCode(
-    buildMatlabScript(models, policyRules, shocks, horizon, gain, userRule),
+    buildMatlabScript(models, policyRules, shocks, horizon, gain, userRule, dynare),
     data => ctx.commit('addStdOut', data.toString()),
     data => ctx.commit('addStdOut', data.toString()), // todo: handle errors differently if needed
   );

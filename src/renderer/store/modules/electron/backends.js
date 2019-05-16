@@ -19,7 +19,7 @@ const getters = {
   selectedIndex(state) {
     return state.selectedIndex;
   },
-  selectedExecutable(state) {
+  selected(state) {
     return state.executables[state.selectedIndex];
   },
   scanning(state) {
@@ -40,7 +40,13 @@ const mutations = {
     }
   },
   remove(state, info) {
-    state.executable = state.executables.filter(executable => executable.path !== info.path);
+    state.executables = state.executables.filter(executable => executable.path !== info.path);
+
+    if (state.executables.length === 0) {
+      state.selectedIndex = null;
+    } else if (state.selectedIndex > state.executables.length - 1) {
+      state.selectedIndex = state.executables.length - 1;
+    }
   },
   removeAll(state) {
     state.executables = [];
@@ -55,6 +61,9 @@ const mutations = {
 };
 
 const actions = {
+  async removeSelected({ commit, getters }) {
+    commit('remove', getters.selected);
+  },
   async scan({ commit }) {
     commit('setScanning', true);
 
