@@ -126,59 +126,215 @@
     ]
   },
   "vars": [
-    "a",
-    "b",
-    "c",
-    "cf",
-    "eg",
-    "epinfma",
-    "ewma",
-    "fispol",
-    "g",
-    "inflation",
-    "inflationq",
-    "inflationql",
-    "inflationql2",
-    "inflationqls",
-    "interest",
-    "inve",
-    "invef",
-    "k",
-    "kf",
-    "kp",
-    "kpf",
-    "lab",
-    "labf",
-    "mc",
-    "ms",
-    "output",
-    "outputgap",
-    "pinf",
-    "pinf4",
-    "pk",
-    "pkf",
-    "qs",
-    "r",
-    "rk",
-    "rkf",
-    "rrf",
-    "spinf",
-    "sw",
-    "w",
-    "wf",
-    "y",
-    "yf",
-    "zcap",
-    "zcapf"
+    {
+      "name": "a",
+      "human_readable": "a"
+    },
+    {
+      "name": "b",
+      "human_readable": "b"
+    },
+    {
+      "name": "c",
+      "human_readable": "c"
+    },
+    {
+      "name": "cf",
+      "human_readable": "cf"
+    },
+    {
+      "name": "eg",
+      "human_readable": "eg"
+    },
+    {
+      "name": "epinfma",
+      "human_readable": "epinfma"
+    },
+    {
+      "name": "ewma",
+      "human_readable": "ewma"
+    },
+    {
+      "name": "fispol",
+      "human_readable": "fispol"
+    },
+    {
+      "name": "g",
+      "human_readable": "g"
+    },
+    {
+      "name": "inflation",
+      "human_readable": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "human_readable": "inflationq"
+    },
+    {
+      "name": "inflationql",
+      "human_readable": "inflationql"
+    },
+    {
+      "name": "inflationql2",
+      "human_readable": "inflationql2"
+    },
+    {
+      "name": "inflationqls",
+      "human_readable": "inflationqls"
+    },
+    {
+      "name": "interest",
+      "human_readable": "interest"
+    },
+    {
+      "name": "inve",
+      "human_readable": "inve"
+    },
+    {
+      "name": "invef",
+      "human_readable": "invef"
+    },
+    {
+      "name": "k",
+      "human_readable": "k"
+    },
+    {
+      "name": "kf",
+      "human_readable": "kf"
+    },
+    {
+      "name": "kp",
+      "human_readable": "kp"
+    },
+    {
+      "name": "kpf",
+      "human_readable": "kpf"
+    },
+    {
+      "name": "lab",
+      "human_readable": "lab"
+    },
+    {
+      "name": "labf",
+      "human_readable": "labf"
+    },
+    {
+      "name": "mc",
+      "human_readable": "mc"
+    },
+    {
+      "name": "ms",
+      "human_readable": "ms"
+    },
+    {
+      "name": "output",
+      "human_readable": "output"
+    },
+    {
+      "name": "outputgap",
+      "human_readable": "outputgap"
+    },
+    {
+      "name": "pinf",
+      "human_readable": "pinf"
+    },
+    {
+      "name": "pinf4",
+      "human_readable": "pinf4"
+    },
+    {
+      "name": "pk",
+      "human_readable": "pk"
+    },
+    {
+      "name": "pkf",
+      "human_readable": "pkf"
+    },
+    {
+      "name": "qs",
+      "human_readable": "qs"
+    },
+    {
+      "name": "r",
+      "human_readable": "r"
+    },
+    {
+      "name": "rk",
+      "human_readable": "rk"
+    },
+    {
+      "name": "rkf",
+      "human_readable": "rkf"
+    },
+    {
+      "name": "rrf",
+      "human_readable": "rrf"
+    },
+    {
+      "name": "spinf",
+      "human_readable": "spinf"
+    },
+    {
+      "name": "sw",
+      "human_readable": "sw"
+    },
+    {
+      "name": "w",
+      "human_readable": "w"
+    },
+    {
+      "name": "wf",
+      "human_readable": "wf"
+    },
+    {
+      "name": "y",
+      "human_readable": "y"
+    },
+    {
+      "name": "yf",
+      "human_readable": "yf"
+    },
+    {
+      "name": "zcap",
+      "human_readable": "zcap"
+    },
+    {
+      "name": "zcapf",
+      "human_readable": "zcapf"
+    }
   ],
   "shocks": [
-    "ea",
-    "eb",
-    "em",
-    "epinf",
-    "eqs",
-    "ew",
-    "fiscal_",
-    "interest_"
+    {
+      "name": "ea",
+      "human_readable": "ea"
+    },
+    {
+      "name": "eb",
+      "human_readable": "eb"
+    },
+    {
+      "name": "em",
+      "human_readable": "em"
+    },
+    {
+      "name": "epinf",
+      "human_readable": "epinf"
+    },
+    {
+      "name": "eqs",
+      "human_readable": "eqs"
+    },
+    {
+      "name": "ew",
+      "human_readable": "ew"
+    },
+    {
+      "name": "fiscal_",
+      "human_readable": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "human_readable": "interest_"
+    }
   ]
 }

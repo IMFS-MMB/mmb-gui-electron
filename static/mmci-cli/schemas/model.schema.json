@@ -71,10 +71,10 @@
       ]
     },
     "shocks": {
-      "$ref": "common#/definitions/arrayOfStrings"
+      "$ref": "common#/definitions/arrayOfNamesHumanReadableNames"
     },
     "vars": {
-      "$ref": "common#/definitions/arrayOfStrings"
+      "$ref": "common#/definitions/arrayOfNamesHumanReadableNames"
     },
     "capabilities": {
       "type": "object",

@@ -8,7 +8,15 @@
         "type": "string"
       }
     },
+    "arrayOfNamesHumanReadableNames": {
+      "type": "array",
+      "additionalItems": false,
+      "items": {
+        "$ref": "#/definitions/nameAndHumanReadableName"
+      }
+    },
     "nameAndHumanReadableName": {
+      "type": "object",
       "required": [
         "name",
         "human_readable"
