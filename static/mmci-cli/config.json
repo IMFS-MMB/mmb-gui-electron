@@ -1,6 +1,6 @@
 {
   "$schema": "schemas/config.schema.json",
-  "dynare": "",
+  "dynare": "/usr/lib/dynare",
   "models": [
     "EA_PV15"
   ],

@@ -5,46 +5,20 @@
                 aria-hidden="true">&times;</span>
         </button>
 
-
-        <!-- content start -->
-
-        <p class="lead">Select Matlab/Octave version:</p>
-
-        <b-form-select v-model="selectedOption" class="mb-3">
-            <option :value="index" v-for="(executable, index) in executables">{{executable.path}} ({{executable.ver}})
-            </option>
-        </b-form-select>
-
-        <b-btn variant="primary" block @click="scan" :disabled="scanning">{{ scanning ? 'Scanning...' : 'Scan'}}</b-btn>
-        <b-btn variant="primary" block @click="find">Find manually</b-btn>
+        <BackendSelection/>
+        <DynareSelection class="mt-3"/>
     </b-modal>
 </template>
 <script>
-  import { mapActions, mapGetters, mapMutations } from 'vuex';
+  import DynareSelection from './DynareSelection';
+  import BackendSelection from './BackendSelection';
 
   export default {
-    computed: {
-      ...mapGetters('backends', ['executables', 'selectedIndex', 'scanning']),
-      selectedOption: {
-        get() {
-          return this.selectedIndex;
-        },
-        set(index) {
-          this.select(index);
-        },
-      },
-    },
+    components: { BackendSelection, DynareSelection },
     methods: {
-      ...mapMutations('backends', ['select']),
-      ...mapActions('backends', ['scan', 'find']),
       hideModal() {
         this.$root.$emit('bv::hide::modal', 'settingsModal');
       },
-    },
-    created() {
-      if (!this.executables.length) {
-        this.scan();
-      }
     },
   };
 </script>
