@@ -1,5 +1,5 @@
 {
-  "$schema": "../model.schema.json",
+  "$schema": "../../schemas/model.schema.json",
   "id": 88,
   "name": "US_CPS10",
   "capabilities": {

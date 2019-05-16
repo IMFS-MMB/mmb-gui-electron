@@ -2,20 +2,14 @@
 
 import { join } from 'path';
 import glob from 'glob';
-import Ajv from 'ajv';
-import { rulesSchemaPath, rulesFolder } from '../../config/paths';
-
-export const ajv = new Ajv({
-  allErrors: true,
-});
-
-const schema = require(rulesSchemaPath);
-export const validate = ajv.compile(schema);
+import { rulesFolder } from '../../config/paths';
 
 const files = glob.sync('*/*.json', {
   cwd: rulesFolder,
 });
 
-export const rules = files
+const rules = files
   .filter(file => /^([^/]*)\/\1\.json$/.test(file))
   .map(file => require(join(rulesFolder, file)));
+
+export default rules;

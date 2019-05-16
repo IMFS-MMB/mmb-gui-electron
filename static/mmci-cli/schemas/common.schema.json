@@ -1,31 +1,38 @@
 {
-  "definitions": {},
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "type": "object",
-  "required": [
-    "id",
-    "name",
-    "description",
-    "coefficients"
-  ],
-  "additionalProperties": false,
-  "properties": {
-    "$schema": {
-      "type": "string"
-    },
-    "id": {
-      "type": "integer"
-    },
-    "name": {
-      "type": "string"
-    },
-    "coefficients": {
+  "$id": "common",
+  "definitions": {
+    "arrayOfStrings": {
       "type": "array",
       "items": {
-        "type": ["number", "string"],
-        "maxItems": 33,
-        "minItems": 33
+        "type": "string"
       }
+    },
+    "nameAndHumanReadableName": {
+      "required": [
+        "name",
+        "human_readable"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "human_readable": {
+          "type": "string"
+        }
+      }
+    },
+    "arrayOfCoefficients": {
+      "type": "array",
+      "items": {
+        "type": [
+          "string",
+          "number"
+        ]
+      },
+      "minItems": 33,
+      "maxItems": 33
     },
     "description": {
       "type": "object",
@@ -68,10 +75,7 @@
           "type": "string"
         },
         "authors": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
+          "$ref": "#/definitions/arrayOfStrings"
         }
       }
     }

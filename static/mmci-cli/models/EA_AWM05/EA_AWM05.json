@@ -1,5 +1,5 @@
 {
-  "$schema": "../model.schema.json",
+  "$schema": "../../schemas/model.schema.json",
   "id": 36,
   "name": "EA_AWM05",
   "capabilities": {

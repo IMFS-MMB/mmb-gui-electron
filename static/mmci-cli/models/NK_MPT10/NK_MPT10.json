@@ -1,5 +1,5 @@
 {
-  "$schema": "../model.schema.json",
+  "$schema": "../../schemas/model.schema.json",
   "id": 98,
   "name": "NK_MPT10",
   "capabilities": {

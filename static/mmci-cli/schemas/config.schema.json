@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "config",
+  "additionalProperties": false,
+  "required": [
+    "dynare",
+    "rules",
+    "models",
+    "msr",
+    "usr",
+    "options"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "dynare": {
+      "type": "string"
+    },
+    "rules": {
+      "$ref": "common#/definitions/arrayOfStrings"
+    },
+    "models": {
+      "$ref": "common#/definitions/arrayOfStrings"
+    },
+    "msr": {
+      "type": "boolean"
+    },
+    "usr": {
+      "anyOf": [
+        {
+          "const": false
+        },
+        {
+          "$ref": "common#/definitions/arrayOfCoefficients"
+        }
+      ]
+    },
+    "options": {
+      "additionalProperties": false,
+      "required": [],
+      "properties": {
+        "gain": {
+          "type": "number",
+          "minimum": 0.01,
+          "maximum": 0.05
+        },
+        "horizon": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "shocks": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 1
+          }
+        }
+      }
+    }
+  }
+}

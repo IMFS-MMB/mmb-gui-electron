@@ -1,5 +1,5 @@
 {
-  "$schema": "../model.schema.json",
+  "$schema": "../../schemas/model.schema.json",
   "id": 45,
   "name": "G2_SIGMA08",
   "capabilities": {

@@ -1,5 +1,5 @@
 {
-  "$schema": "../model.schema.json",
+  "$schema": "../../schemas/model.schema.json",
   "id": 29,
   "name": "US_IAC05",
   "capabilities": {

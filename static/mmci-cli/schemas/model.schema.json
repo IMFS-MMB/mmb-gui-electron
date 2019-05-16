@@ -1,13 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "definitions": {
-    "arrayOfStrings": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    }
-  },
+  "$id": "model",
   "type": "object",
   "required": [
     "id",
@@ -51,13 +44,13 @@
       "additionalProperties": false,
       "properties": {
         "forwards": {
-          "$ref": "#/definitions/arrayOfStrings"
+          "$ref": "common#/definitions/arrayOfStrings"
         },
         "states_long": {
-          "$ref": "#/definitions/arrayOfStrings"
+          "$ref": "common#/definitions/arrayOfStrings"
         },
         "states_short": {
-          "$ref": "#/definitions/arrayOfStrings"
+          "$ref": "common#/definitions/arrayOfStrings"
         }
       }
     },
@@ -70,15 +63,7 @@
     "msr": {
       "anyOf": [
         {
-          "type": "array",
-          "items": {
-            "type": [
-              "string",
-              "number"
-            ]
-          },
-          "minItems": 33,
-          "maxItems": 33
+          "$ref": "common#/definitions/arrayOfCoefficients"
         },
         {
           "type": "null"
@@ -86,10 +71,10 @@
       ]
     },
     "shocks": {
-      "$ref": "#/definitions/arrayOfStrings"
+      "$ref": "common#/definitions/arrayOfStrings"
     },
     "vars": {
-      "$ref": "#/definitions/arrayOfStrings"
+      "$ref": "common#/definitions/arrayOfStrings"
     },
     "capabilities": {
       "type": "object",
@@ -123,53 +108,7 @@
       }
     },
     "description": {
-      "type": "object",
-      "required": [
-        "ac_ref",
-        "paper_title",
-        "journal",
-        "replicants_name",
-        "pub_date",
-        "keywords",
-        "description",
-        "category",
-        "authors"
-      ],
-      "properties": {
-        "ac_ref": {
-          "type": "string"
-        },
-        "paper_title": {
-          "type": "string"
-        },
-        "journal": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "replicants_name": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "pub_date": {
-          "type": "string"
-        },
-        "keywords": {
-          "$ref": "#/definitions/arrayOfStrings"
-        },
-        "description": {
-          "type": "string"
-        },
-        "category": {
-          "type": "string"
-        },
-        "authors": {
-          "$ref": "#/definitions/arrayOfStrings"
-        }
-      }
+      "$ref": "common#/definitions/description"
     }
   }
 }

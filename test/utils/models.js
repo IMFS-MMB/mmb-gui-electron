@@ -2,20 +2,14 @@
 
 import { join } from 'path';
 import glob from 'glob';
-import Ajv from 'ajv';
-import { modelsSchemaPath, modelsFolder } from '../../config/paths';
-
-export const ajv = new Ajv({
-  allErrors: true,
-});
-
-const schema = require(modelsSchemaPath);
-export const validate = ajv.compile(schema);
+import { modelsFolder } from '../../config/paths';
 
 const files = glob.sync('*/*.json', {
   cwd: modelsFolder,
 });
 
-export const models = files
+const models = files
   .filter(file => /^([^/]*)\/\1\.json$/.test(file))
   .map(file => require(join(modelsFolder, file)));
+
+export default models;
