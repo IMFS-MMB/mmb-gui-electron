@@ -16,7 +16,7 @@ function mmb (jsonconfig)
 
     config = load_config(jsonconfig);
 
-    setup_dynare(); % todo use dynare path from config
+    load_dynare(); % todo use dynare path from config
 
     models = load_models(config.models, paths.models);
     rules = load_rules(config.rules, paths.rules);

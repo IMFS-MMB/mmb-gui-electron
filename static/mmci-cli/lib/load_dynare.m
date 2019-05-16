@@ -1,4 +1,4 @@
-function setup_dynare()
+function load_dynare()
     %% Checking versions of OCTAVE AND DYNARE
     if isunix==1
         % addpath('/usr/local/opt/dynare/lib/dynare/matlab')

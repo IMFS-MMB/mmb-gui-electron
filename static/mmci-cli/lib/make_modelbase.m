@@ -27,9 +27,8 @@ function mb = make_modelbase(modelpath, options)
   mb.variabledim(1) = 1;
   mb.epsilon = 1;
   mb.l = 1;
-
-  mb.namesshocks = char(['Mon. Pol. Shock'; 'Fiscal Pol. Shock']);
-  mb.namesinnos = char(['interest_'; 'fiscal_']);
+  mb.namesshocks= char(['Mon. Pol. Shock      '; 'Fiscal Pol. Shock    ']);
+  mb.namesinnos= char(['interest_'; 'fiscal_  ']);
   mb.innos = mb.namesinnos(shocks,:);
   mb.namesshocks = mb.namesshocks(shocks,:);
 

@@ -1,4 +1,4 @@
-function result = run_model (modelsfolder, options)
+function result = run_dynare_and_simulate (modelsfolder, options)
   oldpath = pwd;
 
   paramspath = fullfile(modelsfolder, 'policy_param.mat');
