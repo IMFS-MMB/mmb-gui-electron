@@ -1,6 +1,7 @@
 import { remote } from 'electron'; // eslint-disable-line
 import { promisify } from 'util';
 import _glob from 'glob';
+import getDynareVersion from '@/utils/electron/get-dynare-version';
 import { dynare } from '../../../../../config/paths';
 
 const glob = promisify(_glob);
@@ -10,20 +11,20 @@ const { dialog } = remote;
 const namespaced = true;
 
 const state = {
-  paths: [],
+  dynares: [],
   selectedIndex: null,
   scanning: false,
 };
 
 const getters = {
-  paths(state) {
-    return state.paths;
+  dynares(state) {
+    return state.dynares;
   },
   selectedIndex(state) {
     return state.selectedIndex;
   },
   selected(state) {
-    return state.paths[state.selectedIndex];
+    return state.dynares[state.selectedIndex];
   },
   scanning(state) {
     return state.scanning;
@@ -31,28 +32,29 @@ const getters = {
 };
 
 const mutations = {
-  add(state, paths) {
-    paths = Array.isArray(paths) ? paths : [paths];
+  add(state, dynares) {
+    dynares = Array.isArray(dynares) ? dynares : [dynares];
 
-    const filtered = paths.filter(p => !state.paths.includes(p));
+    const filtered = dynares.filter(newDynare =>
+      !state.dynares.some(dynare => dynare.path === newDynare.path));
 
-    state.paths.push(...filtered);
+    state.dynares.push(...filtered);
 
     if (state.selectedIndex === null) {
       state.selectedIndex = 0;
     }
   },
-  remove(state, pathToRemove) {
-    state.paths = state.paths.filter(path => path !== pathToRemove);
+  remove(state, dynareToRemove) {
+    state.dynares = state.dynares.filter(dynare => dynare.path !== dynareToRemove.path);
 
-    if (state.paths.length === 0) {
+    if (state.dynares.length === 0) {
       state.selectedIndex = null;
-    } else if (state.selectedIndex > state.paths.length - 1) {
-      state.selectedIndex = state.paths.length - 1;
+    } else if (state.selectedIndex > state.dynares.length - 1) {
+      state.selectedIndex = state.dynares.length - 1;
     }
   },
   removeAll(state) {
-    state.paths = [];
+    state.dynares = [];
     state.selectedIndex = null;
   },
   select(state, index) {
@@ -74,14 +76,17 @@ const actions = {
       // eslint-disable-next-line no-restricted-syntax
       for (const pattern of dynare) {
         // eslint-disable-next-line no-await-in-loop
-        const result = await glob(pattern, {
+        const dynares = await glob(pattern, {
           absolute: true,
           cwd: '/',
           silent: true,
           strict: false,
         });
 
-        commit('add', result);
+        dynares.forEach(dynare => commit('add', {
+          path: dynare,
+          version: getDynareVersion(dynare),
+        }));
       }
     } catch (e) {
       console.warn(e);
@@ -109,8 +114,11 @@ const actions = {
 
       const path = filePaths[0];
 
-      commit('add', path);
-      commit('select', state.paths.indexOf(path));
+      commit('add', {
+        path,
+        version: getDynareVersion(path),
+      });
+      commit('select', state.dynares.indexOf(path));
     }));
   },
 };

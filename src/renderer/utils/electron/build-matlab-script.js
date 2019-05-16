@@ -53,7 +53,7 @@ function useUSR(rules) {
 
 export default function buildMatlabScript(models, rules, shocks, horizon, gain, userRule, dynare) {
   const config = {
-    dynare,
+    dynare: dynare.path,
     rules: rules.filter(r => r.id !== USER_RULE && r.id !== MODEL_RULE).map(r => r.name),
     models: models.map(m => m.name),
     msr: useMSR(rules),

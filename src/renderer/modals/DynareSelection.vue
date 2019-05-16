@@ -3,7 +3,7 @@
         <b-card-title>Dynare</b-card-title>
 
         <b-form-select v-model="selectedOption" class="mb-3">
-            <option :value="index" v-for="(path, index) in paths">{{path}}</option>
+            <option :value="index" v-for="(dynare, index) in dynares">{{dynare.path}} ({{dynare.version || 'unknown version'}})</option>
         </b-form-select>
 
         <b-btn variant="primary" block @click="scan" :disabled="scanning">{{ scanning ? 'Scanning...' : 'Scan'}}</b-btn>
@@ -18,7 +18,7 @@
     name: 'DynareSelection',
 
     computed: {
-      ...mapGetters('dynare', ['paths', 'selectedIndex', 'scanning']),
+      ...mapGetters('dynare', ['dynares', 'selectedIndex', 'scanning']),
       selectedOption: {
         get() {
           return this.selectedIndex;
@@ -33,7 +33,7 @@
       ...mapActions('dynare', ['scan', 'find', 'removeSelected']),
     },
     created() {
-      if (!this.paths.length) {
+      if (!this.dynares.length) {
         this.scan();
       }
     },
