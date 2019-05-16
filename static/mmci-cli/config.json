@@ -1,19 +1,20 @@
 {
-  "$schema": "schemas/config.schema.json",
   "dynare": "/usr/lib/dynare",
-  "models": [
-    "EA_PV15"
-  ],
   "rules": [
-    "Taylor"
+    "CEE",
+    "CMR"
+  ],
+  "models": [
+    "EA_AWM05"
   ],
   "msr": false,
   "usr": false,
   "options": {
-    "gain": 0.01,
-    "horizon": 35,
     "shocks": [
+      2,
       1
-    ]
+    ],
+    "gain": 0.01,
+    "horizon": 20
   }
 }

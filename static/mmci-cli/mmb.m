@@ -22,7 +22,9 @@ function mmb (jsonconfig)
     models = load_models(config.models, paths.models);
     rules = load_rules(config.rules, paths.rules);
 
-    arrayfun(@(model) run_model_with_rules(model, rules, config, paths), models);
+    for model = models
+      run_model_with_rules(model, rules, config, paths);
+    end
   catch e
     print_error(e);
 
