@@ -1,8 +1,8 @@
 /* global describe, it, before */
 
 import { assert } from 'chai';
-
-import { ajv, models, validate } from './utils/models';
+import ajv from './utils/ajv';
+import models from './utils/models';
 import getBackend from './utils/backend';
 import { MODEL_RULE } from '../config/constants';
 import getTestScript from './utils/matlab-code';
@@ -63,7 +63,7 @@ describe('Models', () => {
   models.forEach((model) => {
     describe(`${model.name}`, () => {
       it('.json passes validation', () => {
-        assert.equal(validate(model), true, ajv.errorsText(validate.errors));
+        assert.equal(ajv.validate('model', model), true, ajv.errorsText(ajv.errors));
       });
 
       describe('Octave', () => modelTests(model, octave));

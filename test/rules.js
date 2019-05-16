@@ -1,13 +1,13 @@
 /* global describe, it, before */
 
 import { assert } from 'chai';
-
-import { ajv, rules, validate } from './utils/rules';
+import ajv from './utils/ajv';
+import rules from './utils/rules';
 
 function ruleTests(rule) {
   describe(`${rule.name}`, () => {
     it('.json passes validation', () => {
-      assert.equal(validate(rule), true, ajv.errorsText(validate.errors));
+      assert.equal(ajv.validate('rule', rule), true, ajv.errorsText(ajv.errors));
     });
   });
 }

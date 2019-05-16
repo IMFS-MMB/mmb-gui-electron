@@ -1,5 +1,5 @@
 {
-  "$schema": "../model.schema.json",
+  "$schema": "../../schemas/model.schema.json",
   "id": 72,
   "name": "NK_CGG02AL",
   "capabilities": {
