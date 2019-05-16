@@ -1,8 +1,9 @@
 import logger from '@/utils/logger';
 import { MODEL_RULE, USER_RULE } from '../../../../config/constants';
 
-function rearrangeUserRule(old) {
-  // convert to single row
+function userrule9x4to1x33(old) {
+  // for legacy reasons the user rule used to be a 9x4 matrix in matlab,
+  // although other coefficient matrices were 1x33. The user rule is 1x33 now, too.
 
   const result = [];
 
@@ -57,7 +58,7 @@ export default function buildMatlabScript(models, rules, shocks, horizon, gain, 
     rules: rules.filter(r => r.id !== USER_RULE && r.id !== MODEL_RULE).map(r => r.name),
     models: models.map(m => m.name),
     msr: useMSR(rules),
-    usr: useUSR(rules) ? rearrangeUserRule(userRule) : false,
+    usr: useUSR(rules) ? userrule9x4to1x33(userRule) : false,
     options: {
       shocks: shocks.map(s => s.id),
       gain,
