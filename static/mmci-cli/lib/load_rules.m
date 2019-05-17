@@ -6,4 +6,5 @@ function result = load_rule (rule, rulespath)
   rulepath = fullfile(rulespath, rule, [rule '.json']);
 
   result = loadjson(rulepath);
+  result.coefficients = load_coeffs(result.coefficients);
 end

@@ -42,7 +42,7 @@
       "properties": {
         "gain": {
           "type": "number",
-          "minimum": 0.01,
+          "minimum": 0,
           "maximum": 0.05
         },
         "horizon": {
