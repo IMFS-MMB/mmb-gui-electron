@@ -23,7 +23,7 @@
           dotSize: 16,
           dotHeight: null,
           dotWidth: null,
-          min: 0.01,
+          min: 0,
           max: 0.05,
           interval: 0.001,
           show: true,

@@ -10,6 +10,7 @@
     "description",
     "variabledim",
     "al",
+    "al_info",
     "shocks",
     "vars"
   ],
@@ -22,9 +23,18 @@
     }
   },
   "then": {
-    "required": [
-      "al_info"
-    ]
+    "properties": {
+      "al_info": {
+        "$ref": "#/properties/al_info/anyOf/0"
+      }
+    }
+  },
+  "else": {
+    "properties": {
+      "al_info": {
+        "$ref": "#/properties/al_info/anyOf/1"
+      }
+    }
   },
   "properties": {
     "$schema": {
@@ -40,19 +50,25 @@
       "type": "boolean"
     },
     "al_info": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "forwards": {
-          "$ref": "common#/definitions/arrayOfStrings"
-        },
-        "states_long": {
-          "$ref": "common#/definitions/arrayOfStrings"
-        },
-        "states_short": {
-          "$ref": "common#/definitions/arrayOfStrings"
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "forwards": {
+              "$ref": "common#/definitions/arrayOfStrings"
+            },
+            "states_long": {
+              "$ref": "common#/definitions/arrayOfStrings"
+            },
+            "states_short": {
+              "$ref": "common#/definitions/arrayOfStrings"
+            }
+          }
+        }, {
+          "type": "null"
         }
-      }
+      ]
     },
     "variabledim": {
       "enum": [
