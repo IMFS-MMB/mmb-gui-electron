@@ -15,11 +15,11 @@ function [base]=stoch_simul_MMB(base)
   %
   % You should have received a copy of the GNU General Public License
   % along with Dynare.  If not, see <http://www.gnu.org/licenses/>.
-  cd ..
+
   AL=base.AL; % MODELBASE Change
   warning('off','all')
 
-  location=cd;
+  location = pwd;
   d_version=dynare_version;
 
   if ~isempty(str2num(d_version([1 3])))
@@ -46,8 +46,6 @@ function [base]=stoch_simul_MMB(base)
     gain=base.gain;
     AL_=base.AL_;
   end
-
-  cd(base.setpath(base.models(base.epsilon),:)); % MODELBASE: change directory to the specific folder of the to-be-solved model
 
   global M_ options_ oo_ it_
 
@@ -177,7 +175,6 @@ function [base]=stoch_simul_MMB(base)
       nvar  = length(oo_.dr.order_var);
       ivar  = transpose(1:nvar);
       options_.irf = base.horizon; % horizon for ACFs
-      %cd('..');
 
       if AL       % HAVE TO REMEMBER MAKE R_sim IN DECLARATION ORDER!
         n_sims = 10;
@@ -232,7 +229,6 @@ function [base]=stoch_simul_MMB(base)
       inv_lgx_orig_ord_(M_.exo_names_orig_ord)=(1:M_.exo_nbr)'; % save the order
 
       for p=1:size(base.innos,1)
-        cd('..');
 
         if AL
           ii=loc(M_.exo_names,base.innos(p,:)); %Position of the shock
@@ -240,7 +236,6 @@ function [base]=stoch_simul_MMB(base)
           ii=loc(M_.exo_names(inv_lgx_orig_ord_,:),base.innos(p,:)); %Position of the shock
         end
 
-        cd(base.setpath(base.models(base.epsilon),:));
         base.pos_shock(p,base.models(base.epsilon))=ii;
 
         if ii==0
