@@ -1,12 +1,10 @@
 [
   {
-    "id": 1,
-    "name": "Mon",
+    "name": "interest_",
     "text": "Monetary Policy Shock"
   },
   {
-    "id": 2,
-    "name": "Fis",
+    "name": "fiscal_",
     "text": "Fiscal Policy Shock"
   }
 ]

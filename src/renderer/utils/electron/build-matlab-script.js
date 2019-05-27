@@ -60,7 +60,7 @@ export default function buildMatlabScript(models, rules, shocks, horizon, gain, 
     msr: useMSR(rules),
     usr: useUSR(rules) ? userrule9x4to1x33(userRule) : false,
     options: {
-      shocks: shocks.map(s => s.id),
+      shocks: shocks.map(s => s.name),
       gain,
       horizon,
     },
