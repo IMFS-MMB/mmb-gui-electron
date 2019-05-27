@@ -167,6 +167,8 @@ function tojson(modelbase, path)
       end
     end
   end
-  
+
+  [folder] = fileparts(path);
+  mkdir(folder);
   savejson('', outputmodel, path);
 end 
