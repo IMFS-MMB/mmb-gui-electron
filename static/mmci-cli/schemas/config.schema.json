@@ -50,11 +50,7 @@
           "minimum": 1
         },
         "shocks": {
-          "type": "array",
-          "items": {
-            "type": "integer",
-            "minimum": 1
-          }
+          "$ref": "common#/definitions/arrayOfStrings"
         },
         "states": {
           "$ref": "common#/definitions/arrayOfStrings"

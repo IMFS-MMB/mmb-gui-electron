@@ -11,8 +11,8 @@
   "usr": false,
   "options": {
     "shocks": [
-      2,
-      1
+      "interest_",
+      "fiscal_"
     ],
     "gain": 0.01,
     "horizon": 20

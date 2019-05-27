@@ -114,11 +114,11 @@ function tojson(modelbase, path)
          end
   end
 
-
-                       for p=1:size(modelbase.innos,1)
+  for p=1:size(modelbase.innos,1)
      irfmod = deblank(strtrim(modelbase.names(model_id,:)));
      irfrule = deblank(modelbase.rulenamesshort1(rule_id,:));
-     irfshock = (deblank(modelbase.namesshocks(p,1:3)));
+     irfshock = deblank(modelbase.innos(p,:));
+
      for pp=1:4
           irfvar = keyvariables(pp,:);
               if  modelbase.pos_shock(p,model_id)~=0
