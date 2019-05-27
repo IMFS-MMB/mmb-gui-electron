@@ -55,6 +55,9 @@
             "type": "integer",
             "minimum": 1
           }
+        },
+        "states": {
+          "$ref": "common#/definitions/arrayOfStrings"
         }
       }
     }
