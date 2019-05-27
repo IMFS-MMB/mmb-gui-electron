@@ -166,14 +166,16 @@ else
             end
         end
     else
-         base.info(base.l) = info(1);
-         base.solution=1;
+        base.info(base.l) = info(1);
+        base.solution=1;
+        rule_name = strtrim(deblank(base.rulenamesshort1(base.l,:)))
 
         %Theoretical ACFs and Variances
         nvar  = length(oo_.dr.order_var);
         ivar  = transpose(1:nvar);
         options_.irf = base.horizon; % horizon for ACFs
         %cd('..');
+
         if AL       % HAVE TO REMEMBER MAKE R_sim IN DECLARATION ORDER!
             n_sims = 10;
             len_sim = 500;
@@ -190,12 +192,13 @@ else
             [Gamma_y,stationary_vars] = th_autocovariances(oo_.dr,ivar,M_,options_,1);
             oo_.var = Gamma_y{1}; % Variances
         end
+
         if AL
-            base.VAR.(strtrim(deblank(base.rulenamesshort1(base.l,:)))) =oo_.var;
-            base.VARendo_names.(strtrim(deblank(base.rulenamesshort1(base.l,:))))=M_.endo_names;
+            base.VAR.(rule_name) =oo_.var;
+            base.VARendo_names.(rule_name)=M_.endo_names;
         else
-            base.VAR.(strtrim(deblank(base.rulenamesshort1(base.l,:)))) =Gamma_y{1};
-            base.VARendo_names.(strtrim(deblank(base.rulenamesshort1(base.l,:))))=M_.endo_names;
+            base.VAR.(rule_name) =Gamma_y{1};
+            base.VARendo_names.(rule_name)=M_.endo_names;
         end
 
         if AL
@@ -218,72 +221,68 @@ else
             end
         end
 
-        if base.option(1) == 1; % If ACF are selected...
-           base.AUTR.(strtrim(deblank(base.rulenamesshort1(base.l,:))))(:,:)=[ones(size(R,1),1),R];
-           base.AUTendo_names.(strtrim(deblank(base.rulenamesshort1(base.l,:))))(:,:)=M_.endo_names(ivar,:);
-        else
-           base.AUTR.(strtrim(deblank(base.rulenamesshort1(base.l,:)))) = [];
-           base.AUTendo_names.(strtrim(deblank(base.rulenamesshort1(base.l,:)))) = [];
-        end
+%        if base.option(1) == 1; % If ACF are selected...
+           base.AUTR.(rule_name)(:,:)=[ones(size(R,1),1),R];
+           base.AUTendo_names.(rule_name)(:,:)=M_.endo_names(ivar,:);
+%        else
+%           base.AUTR.(rule_name) = [];
+%           base.AUTendo_names.(rule_name) = [];
+%        end
 
         % Impulse response functions
 
-        if base.option(2)==1   % If IRF are selected...
+%        if base.option(2)==1   % If IRF are selected...
             options_.irf = base.horizon; % horizon for IRFs
             shocks = M_.exo_names(M_.exo_names_orig_ord,:);  % put shocks in the right order for Dynare
             inv_lgx_orig_ord_(M_.exo_names_orig_ord)=(1:M_.exo_nbr)'; % save the order
 
             for p=1:size(base.innos,1)
                 cd('..');
+
                 if AL
                     ii=loc(M_.exo_names,base.innos(p,:)); %Position of the shock
-                    cd(base.setpath(base.models(base.epsilon),:));
-                    base.pos_shock(p,base.models(base.epsilon))=ii;
                 else
                     ii=loc(M_.exo_names(inv_lgx_orig_ord_,:),base.innos(p,:)); %Position of the shock
-                    cd(base.setpath(base.models(base.epsilon),:));
-                    base.pos_shock(p,base.models(base.epsilon))=ii;
                 end
+
+                cd(base.setpath(base.models(base.epsilon),:));
+                base.pos_shock(p,base.models(base.epsilon))=ii;
 
                 if ii==0
                     disp(['No ' deblank(strtrim(base.namesshocks(p,:))) ' is available for Model: ' strtrim(base.names(base.models(base.epsilon),:))]);
                 else
-                    % Computing the IRFs
-                    if AL
-                        SS=M_.Sigma_e+1e-14*eye(M_.exo_nbr);
-                        % cs = transpose(chol(SS)); % this line should be taken later as an option to produce IRFs that are dependent on the covariances where the shock is one standard deviation (as in Dynare)
-                        if base.variabledim(base.models(base.epsilon)) ==1
-                            cs = eye(size(SS,1)); % this line produces in the end IRF that are independent of any covariance structure. Shocks are one unit shocks. (as in K?ter, Wieland)
-                        end
-                        if base.variabledim(base.models(base.epsilon)) ==2;
-                            cs = eye(size(SS,1))*(1/100); % in case that models are written in percent/100 terms, shocks are 0.01 shocks
-                        end
-                    else
-                        SS(M_.exo_names_orig_ord,M_.exo_names_orig_ord)=M_.Sigma_e+1e-14*eye(M_.exo_nbr);
-                        % cs = transpose(chol(SS)); % this line should be taken later as an option to produce IRFs that are dependent on the covariances where the shock is one standard deviation (as in Dynare)
-                        if base.variabledim(base.models(base.epsilon)) ==1
-                            cs = eye(size(SS,1)); % this line produces in the end IRF that are independent of any covariance structure. Shocks are one unit shocks. (as in K?ter, Wieland)
-                        end
-                        if base.variabledim(base.models(base.epsilon)) ==2
-                            cs = eye(size(SS,1))*(1/100); % in case that models are written in percent/100 terms, shocks are 0.01 shocks
-                        end
-                    end
-                    if AL
-                        R=irf_AL_alt_gain(oo_.dr,cs(:,ii), options_.irf, base.AL_,gain);
-                        R(oo_.dr.order_var,:) = R;
-                    else
-                        R=irf(oo_.dr,cs(M_.exo_names_orig_ord,ii), options_.irf, options_.drop, options_.replic, options_.order);
-                    end
-                    base.IRF.(strtrim(deblank(base.rulenamesshort1(base.l,:))))(:,:,p) = [zeros(size(R,1),1),R];
-                    base.IRFendo_names.(strtrim(deblank(base.rulenamesshort1(base.l,:))))(:,:)=M_.endo_names;
+                  if base.variabledim(base.models(base.epsilon)) == 1
+                      vdim = 1;
+                  elseif base.variabledim(base.models(base.epsilon)) == 2;
+                      vdim = 1/100; % in case that models are written in percent/100 terms, shocks are 0.01 shocks
+                  end
+
+                  % Computing the IRFs
+                  if AL
+                      SS=M_.Sigma_e+1e-14*eye(M_.exo_nbr);
+                  else
+                      SS(M_.exo_names_orig_ord,M_.exo_names_orig_ord)=M_.Sigma_e+1e-14*eye(M_.exo_nbr);
+                  end
+
+                  cs = eye(size(SS,1))*vdim; % in case that models are written in percent/100 terms, shocks are 0.01 shocks
+
+                  if AL
+                      R=irf_AL_alt_gain(oo_.dr,cs(:,ii), options_.irf, base.AL_,gain);
+                      R(oo_.dr.order_var,:) = R;
+                  else
+                      R=irf(oo_.dr,cs(M_.exo_names_orig_ord,ii), options_.irf, options_.drop, options_.replic, options_.order);
+                  end
+                  base.IRF.(rule_name)(:,:,p) = [zeros(size(R,1),1),R];
+                  base.IRFendo_names.(rule_name)(:,:)=M_.endo_names;
                 end;
             end;
-        else
-            base.IRF.(strtrim(deblank(base.rulenamesshort1(base.l,:)))) = [];
-            base.IRFendo_names.(strtrim(deblank(base.rulenamesshort1(base.l,:))))= [];
-        end
+%        else
+%            base.IRF.(rule_name) = [];
+%            base.IRFendo_names.(rule_name)= [];
+%        end
     end
 end
+
 if AL
     if ~isempty(str2num(d_version([1 3])))
         if str2num(d_version([1 3]))==42
