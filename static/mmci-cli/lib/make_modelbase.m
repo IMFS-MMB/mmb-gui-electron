@@ -33,11 +33,3 @@ function mb = make_modelbase(model, rule, options, modelpath)
   mb.l = 1;
   mb.totaltime = cputime;
 end
-
-function result = default (base, fieldname, default_value)
-  if (isfield(base, fieldname))
-    result = base.(fieldname);
-  else
-    result = default_value;
-  end
-end
