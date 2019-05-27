@@ -16,7 +16,9 @@ function run_model_with_rules(model, rules, config, paths)
   end
 
   % run with common rules
-  for rule = rules
+  for i = 1:length(rules)
+    rule = rules(i);
+
     result = run_dynare_and_simulate(model, rule, config.options, paths.models);
     save_result(result, get_output_filename(paths.out, model.name, rule.name));
   end
