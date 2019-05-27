@@ -121,25 +121,25 @@ function [base]=stoch_simul_MMB(base)
   else
       % Execute differently according to Dynare version
     if (strcmp(dynare_version, '4.2.0') || strcmp(dynare_version, '4.2.1') || strcmp(dynare_version, '4.2.2') || strcmp(dynare_version, '4.2.4')...
-            || strcmp(dynare_version, '4.2.5'))
-        [oo_.dr, info] = resol_MMB(oo_.steady_state,0); % solve
+        || strcmp(dynare_version, '4.2.5'))
+      [oo_.dr, info] = resol_MMB(oo_.steady_state,0); % solve
     elseif (strcmp(dynare_version, '4.3.0') || strcmp(dynare_version, '4.3.1') || strcmp(dynare_version, '4.3.2') || strcmp(dynare_version, '4.3.3')  )
-        oo_.dr=set_state_space(dr,M_);
-        [oo_.dr,info] = resol_MMB(0,M_,options_,oo_); %solve
+      oo_.dr=set_state_space(dr,M_);
+      [oo_.dr,info] = resol_MMB(0,M_,options_,oo_); %solve
     else  % for dynare versions 4.4.0 or higher
-        oo_.dr=set_state_space(dr,M_,options_);
-        [oo_.dr.nstatic, oo_.dr.npred, oo_.dr.nboth, oo_.dr.nfwrd,oo_.dr.nsfwrd] = get_nvars_state_space(dr,M_);
+      oo_.dr=set_state_space(dr,M_,options_);
+      [oo_.dr.nstatic, oo_.dr.npred, oo_.dr.nboth, oo_.dr.nfwrd,oo_.dr.nsfwrd] = get_nvars_state_space(dr,M_);
 
-        if (strcmp(dynare_version, '4.4.0') || strcmp(dynare_version, '4.4.1') )
+      if (strcmp(dynare_version, '4.4.0') || strcmp(dynare_version, '4.4.1') )
 
-        else
-            if options_.logged_steady_state
-                oo_.dr.ys=exp(oo_.dr.ys);
-                oo_.steady_state=exp(oo_.steady_state);
-            end
+      else
+        if options_.logged_steady_state
+          oo_.dr.ys=exp(oo_.dr.ys);
+          oo_.steady_state=exp(oo_.steady_state);
         end
+      end
 
-        [oo_.dr,info,M_,options_,oo_] = resol_MMB(0,M_,options_,oo_); %solve
+      [oo_.dr,info,M_,options_,oo_] = resol_MMB(0,M_,options_,oo_); %solve
     end
 
     % The follwoing if clause matters when the Dynare version is higher than
@@ -217,11 +217,11 @@ function [base]=stoch_simul_MMB(base)
         end
         R = mean(aut,3);
       else
-          R=[];
-          for i=1:base.horizon
-              oo_.autocorr{i}=Gamma_y{i+1};
-              R= [ R, diag(oo_.autocorr{i}) ];
-          end
+        R=[];
+        for i=1:base.horizon
+          oo_.autocorr{i}=Gamma_y{i+1};
+          R= [ R, diag(oo_.autocorr{i}) ];
+        end
       end
 
       base.AUTR.(rule_name)(:,:)=[ones(size(R,1),1),R];
@@ -235,42 +235,42 @@ function [base]=stoch_simul_MMB(base)
         cd('..');
 
         if AL
-            ii=loc(M_.exo_names,base.innos(p,:)); %Position of the shock
+          ii=loc(M_.exo_names,base.innos(p,:)); %Position of the shock
         else
-            ii=loc(M_.exo_names(inv_lgx_orig_ord_,:),base.innos(p,:)); %Position of the shock
+          ii=loc(M_.exo_names(inv_lgx_orig_ord_,:),base.innos(p,:)); %Position of the shock
         end
 
         cd(base.setpath(base.models(base.epsilon),:));
         base.pos_shock(p,base.models(base.epsilon))=ii;
 
         if ii==0
-            disp(['No ' deblank(strtrim(base.namesshocks(p,:))) ' is available for Model: ' strtrim(base.names(base.models(base.epsilon),:))]);
+          disp(['No ' deblank(strtrim(base.namesshocks(p,:))) ' is available for Model: ' strtrim(base.names(base.models(base.epsilon),:))]);
         else
           if base.variabledim(base.models(base.epsilon)) == 1
-              vdim = 1;
+            vdim = 1;
           elseif base.variabledim(base.models(base.epsilon)) == 2;
-              vdim = 1/100; % in case that models are written in percent/100 terms, shocks are 0.01 shocks
+            vdim = 1/100; % in case that models are written in percent/100 terms, shocks are 0.01 shocks
           end
 
           % Computing the IRFs
           if AL
-              SS=M_.Sigma_e+1e-14*eye(M_.exo_nbr);
+            SS=M_.Sigma_e+1e-14*eye(M_.exo_nbr);
           else
-              SS(M_.exo_names_orig_ord,M_.exo_names_orig_ord)=M_.Sigma_e+1e-14*eye(M_.exo_nbr);
+            SS(M_.exo_names_orig_ord,M_.exo_names_orig_ord)=M_.Sigma_e+1e-14*eye(M_.exo_nbr);
           end
 
           cs = eye(size(SS,1))*vdim; % in case that models are written in percent/100 terms, shocks are 0.01 shocks
 
           if AL
-              R=irf_AL_alt_gain(oo_.dr,cs(:,ii), options_.irf, base.AL_,gain);
-              R(oo_.dr.order_var,:) = R;
+            R=irf_AL_alt_gain(oo_.dr,cs(:,ii), options_.irf, base.AL_,gain);
+            R(oo_.dr.order_var,:) = R;
           else
-              R=irf(oo_.dr,cs(M_.exo_names_orig_ord,ii), options_.irf, options_.drop, options_.replic, options_.order);
+            R=irf(oo_.dr,cs(M_.exo_names_orig_ord,ii), options_.irf, options_.drop, options_.replic, options_.order);
           end
           base.IRF.(rule_name)(:,:,p) = [zeros(size(R,1),1),R];
           base.IRFendo_names.(rule_name)(:,:)=M_.endo_names;
-        end;
-      end;
+        end
+      end
     end
   end
 
@@ -278,7 +278,7 @@ function [base]=stoch_simul_MMB(base)
     if ~isempty(str2num(d_version([1 3])))
       if str2num(d_version([1 3]))==42
         copyfile([location  filesep 'ALTOOL' filesep 'dr1.m'],[location  filesep 'ALTOOL' filesep 'dr1_AL.m']);
-      elseif  str2num(d_version([1 3]))>42 && str2num(d_version([1 3]))<45
+      elseif str2num(d_version([1 3]))>42 && str2num(d_version([1 3]))<45
         copyfile([location  filesep 'ALTOOL' filesep 'stochastic_solvers.m'],[location  filesep 'ALTOOL' filesep 'stochastic_solvers_AL_Dynare_' d_version([1 3]) '.m']);
       end
     else
