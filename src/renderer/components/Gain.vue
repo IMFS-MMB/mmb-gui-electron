@@ -1,5 +1,5 @@
 <template>
-    <div class="outer">
+    <div class="gain" :class="classes">
         <div class="text">Gain: {{model}}</div>
         <vue-slider class="slider" v-model="model" v-bind="options"></vue-slider>
     </div>
@@ -51,7 +51,12 @@
       };
     },
     computed: {
-      ...mapGetters('settings', ['gain']),
+      ...mapGetters('settings', ['gain', 'models']),
+      classes() {
+        return {
+          show: this.models.some(m => !!m.al),
+        };
+      },
       model: {
         get() {
           return this.gain;
@@ -68,8 +73,13 @@
 </script>
 
 <style scoped lang="scss">
-    .outer {
-        /*border-top: 1px solid rgba(0, 0, 0, 0.125);*/
+    .gain {
+        opacity: 0;
+        transition: opacity .1s ease-in-out;
+
+        &.show {
+            opacity: 1;
+        }
     }
 
     .text {
