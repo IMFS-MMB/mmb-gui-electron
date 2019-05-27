@@ -232,144 +232,50 @@ else
             options_.irf = base.horizon; % horizon for IRFs
             shocks = M_.exo_names(M_.exo_names_orig_ord,:);  % put shocks in the right order for Dynare
             inv_lgx_orig_ord_(M_.exo_names_orig_ord)=(1:M_.exo_nbr)'; % save the order
-%             if base.option(6)==1 % this is the case if only one model and then all shocks for this model have been chosen
-%                 if base.l==min(find(base.info==0))
-%                     % the menu for model-specific shocks is shown once when the model with the first chosen rule is solved.
-%                     option3=0;
-%                     option4=1;
-%                     shocks= M_.exo_names(M_.exo_names_orig_ord,:);
-%                     s=size(shocks);
-%                     chosenshocks = zeros(s(1,1),1);
-%                     model_specific_gui
-%                     waitfor(MODELGUI)
-%                     shocks = shocks(find(chosenshocks>0),:);
-%                     base.option(4)=option4;
-%                     base.option(3)=option3;
-%                     if option3 == 0
-%                         disp('Selected innovations will not be shocked contemporaneously.');
-%                     end
-%                     base.innos = shocks; % put all chosen shocks in the choice vector for the IRFs
-%                     base.namesshocks1 = shocks; % put the right shock names for correct plots
-%                     if size(base.namesshocks1,2)<size(base.namesshocks,2)  % check if long names for monetary and fiscal shock fit in the names vector
-%                         nblanks=size(base.namesshocks,2)-size(base.namesshocks1,2);  % adjust vector length
-%                         for j= 1:size(base.namesshocks1,1)
-%                             blankvector(j,:) = blanks(nblanks);
-%                         end
-%                         base.namesshocks1 = [base.namesshocks1 blankvector];
-%                     end
-%                     if loc(base.namesshocks1,'interest_')~=0
-%                         base.namesshocks1(loc(base.namesshocks1,'interest_'),:)=char('Mon. Pol. Shock      ');  %put nice names for 'interest_' and 'fiscal_'
-%                     end
-%                     if loc(base.namesshocks1,'fiscal_')~=0
-%                         base.namesshocks1(loc(base.namesshocks1,'fiscal_'),:)  =char('Fiscal Pol. Shock    ');
-%                     end
-%                     base.namesshocks = base.namesshocks1; clear base.namesshocks1;
-%                     base.option(4)=option4;
-%                     base.option(3)=option3;
-%                     disp(' ');
-%                     if base.option(4) ==1
-%                         disp('You decided to plot selected variables.');
-%                         disp(' ');
-%                     else disp('You decided to plot all variables.');
-%                         disp(' ');
-%                     end
-%
-%                 end
-%             else  base.option(4)=1;
-%             end
-            if base.option(3)==1 %Several innovations are shocked contemporaneously
+
+            for p=1:size(base.innos,1)
                 cd('..');
                 if AL
-                    SS_AL=M_.Sigma_e+1e-14*eye(M_.exo_nbr);
-                    cs = zeros(size(SS_AL,1),1); % this line produces in the end IRF that are independent of any covariance structure. Shocks are one unit shocks. (as in K�ster, Wieland)
+                    ii=loc(M_.exo_names,base.innos(p,:)); %Position of the shock
+                    cd(base.setpath(base.models(base.epsilon),:));
+                    base.pos_shock(p,base.models(base.epsilon))=ii;
                 else
-                    SS(M_.exo_names_orig_ord,M_.exo_names_orig_ord)=M_.Sigma_e+1e-14*eye(M_.exo_nbr);
-                    cs = zeros(size(SS,1),1); % this line produces in the end IRF that are independent of any covariance structure. Shocks are one unit shocks. (as in K?ter, Wieland)
+                    ii=loc(M_.exo_names(inv_lgx_orig_ord_,:),base.innos(p,:)); %Position of the shock
+                    cd(base.setpath(base.models(base.epsilon),:));
+                    base.pos_shock(p,base.models(base.epsilon))=ii;
                 end
-                for p=1:size(base.innos,1)
-                    if AL
-                        ii=loc(M_.exo_names,base.innos(p,:)); %Position of the shock
-                        cd(base.setpath(base.models(base.epsilon),:));
-                        base.pos_shock(p,base.models(base.epsilon))=ii;
-                    else
-                        ii=loc(M_.exo_names(inv_lgx_orig_ord_,:),base.innos(p,:)); %Position of the shock
-                        cd(base.setpath(base.models(base.epsilon),:));
-                        base.pos_shock(p,base.models(base.epsilon))=ii;
-                    end
 
-                    if ii==0
-                        disp(['No ' deblank(strtrim(base.namesshocks(p,:))) ' is available for Model: ' strtrim(base.names(base.models(base.epsilon),:))]);
-                    end;
+                if ii==0
+                    disp(['No ' deblank(strtrim(base.namesshocks(p,:))) ' is available for Model: ' strtrim(base.names(base.models(base.epsilon),:))]);
+                else
+                    % Computing the IRFs
                     if AL
+                        SS=M_.Sigma_e+1e-14*eye(M_.exo_nbr);
+                        % cs = transpose(chol(SS)); % this line should be taken later as an option to produce IRFs that are dependent on the covariances where the shock is one standard deviation (as in Dynare)
                         if base.variabledim(base.models(base.epsilon)) ==1
-                            cs(ii,1)=1;
+                            cs = eye(size(SS,1)); % this line produces in the end IRF that are independent of any covariance structure. Shocks are one unit shocks. (as in K?ter, Wieland)
+                        end
+                        if base.variabledim(base.models(base.epsilon)) ==2;
+                            cs = eye(size(SS,1))*(1/100); % in case that models are written in percent/100 terms, shocks are 0.01 shocks
+                        end
+                    else
+                        SS(M_.exo_names_orig_ord,M_.exo_names_orig_ord)=M_.Sigma_e+1e-14*eye(M_.exo_nbr);
+                        % cs = transpose(chol(SS)); % this line should be taken later as an option to produce IRFs that are dependent on the covariances where the shock is one standard deviation (as in Dynare)
+                        if base.variabledim(base.models(base.epsilon)) ==1
+                            cs = eye(size(SS,1)); % this line produces in the end IRF that are independent of any covariance structure. Shocks are one unit shocks. (as in K?ter, Wieland)
                         end
                         if base.variabledim(base.models(base.epsilon)) ==2
-                            cs(ii,1)=1/100; % in case that models are written in percent/100 terms, shocks are 0.01 shocks
-                        end
-                    else
-                        if base.variabledim(base.models(base.epsilon)) ==1
-                            cs(ii,1)=1;
-                        end
-                        if base.variabledim(base.models(base.epsilon)) ==2
-                            cs(ii,1)=1/100; % in case that models are written in percent/100 terms, shocks are 0.01 shocks
+                            cs = eye(size(SS,1))*(1/100); % in case that models are written in percent/100 terms, shocks are 0.01 shocks
                         end
                     end
-                end;
-                %Compute the IRFs
-                if AL
-                    R=irf_AL_alt_gain(oo_.dr,cs, options_.irf, base.AL_,gain);
-                    R(oo_.dr.order_var,:) = R;
-                else
-                    R=irf(oo_.dr,cs(M_.exo_names_orig_ord,1), options_.irf, options_.drop, options_.replic, options_.order);
-                end
-                base.IRF.(strtrim(deblank(base.rulenamesshort1(base.l,:))))(:,:,1) = [zeros(size(R,1),1),R];
-                base.IRFendo_names.(strtrim(deblank(base.rulenamesshort1(base.l,:))))(:,:)=M_.endo_names;
-            else
-                for p=1:size(base.innos,1)
-                    cd('..');
                     if AL
-                        ii=loc(M_.exo_names,base.innos(p,:)); %Position of the shock
-                        cd(base.setpath(base.models(base.epsilon),:));
-                        base.pos_shock(p,base.models(base.epsilon))=ii;
+                        R=irf_AL_alt_gain(oo_.dr,cs(:,ii), options_.irf, base.AL_,gain);
+                        R(oo_.dr.order_var,:) = R;
                     else
-                        ii=loc(M_.exo_names(inv_lgx_orig_ord_,:),base.innos(p,:)); %Position of the shock
-                        cd(base.setpath(base.models(base.epsilon),:));
-                        base.pos_shock(p,base.models(base.epsilon))=ii;
+                        R=irf(oo_.dr,cs(M_.exo_names_orig_ord,ii), options_.irf, options_.drop, options_.replic, options_.order);
                     end
-
-                    if ii==0
-                        disp(['No ' deblank(strtrim(base.namesshocks(p,:))) ' is available for Model: ' strtrim(base.names(base.models(base.epsilon),:))]);
-                    else
-                        % Computing the IRFs
-                        if AL
-                            SS=M_.Sigma_e+1e-14*eye(M_.exo_nbr);
-                            % cs = transpose(chol(SS)); % this line should be taken later as an option to produce IRFs that are dependent on the covariances where the shock is one standard deviation (as in Dynare)
-                            if base.variabledim(base.models(base.epsilon)) ==1
-                                cs = eye(size(SS,1)); % this line produces in the end IRF that are independent of any covariance structure. Shocks are one unit shocks. (as in K?ter, Wieland)
-                            end
-                            if base.variabledim(base.models(base.epsilon)) ==2;
-                                cs = eye(size(SS,1))*(1/100); % in case that models are written in percent/100 terms, shocks are 0.01 shocks
-                            end
-                        else
-                            SS(M_.exo_names_orig_ord,M_.exo_names_orig_ord)=M_.Sigma_e+1e-14*eye(M_.exo_nbr);
-                            % cs = transpose(chol(SS)); % this line should be taken later as an option to produce IRFs that are dependent on the covariances where the shock is one standard deviation (as in Dynare)
-                            if base.variabledim(base.models(base.epsilon)) ==1
-                                cs = eye(size(SS,1)); % this line produces in the end IRF that are independent of any covariance structure. Shocks are one unit shocks. (as in K?ter, Wieland)
-                            end
-                            if base.variabledim(base.models(base.epsilon)) ==2
-                                cs = eye(size(SS,1))*(1/100); % in case that models are written in percent/100 terms, shocks are 0.01 shocks
-                            end
-                        end
-                        if AL
-                            R=irf_AL_alt_gain(oo_.dr,cs(:,ii), options_.irf, base.AL_,gain);
-                            R(oo_.dr.order_var,:) = R;
-                        else
-                            R=irf(oo_.dr,cs(M_.exo_names_orig_ord,ii), options_.irf, options_.drop, options_.replic, options_.order);
-                        end
-                        base.IRF.(strtrim(deblank(base.rulenamesshort1(base.l,:))))(:,:,p) = [zeros(size(R,1),1),R];
-                        base.IRFendo_names.(strtrim(deblank(base.rulenamesshort1(base.l,:))))(:,:)=M_.endo_names;
-                    end;
+                    base.IRF.(strtrim(deblank(base.rulenamesshort1(base.l,:))))(:,:,p) = [zeros(size(R,1),1),R];
+                    base.IRFendo_names.(strtrim(deblank(base.rulenamesshort1(base.l,:))))(:,:)=M_.endo_names;
                 end;
             end;
         else
@@ -390,14 +296,14 @@ if AL
     end
 end
 
-delete *_dynamic.m
-delete *_static.m
-delete *.log
-delete *_set_auxiliary_variables.m
-delete *_results.mat
-delete *.eps
-delete *.fig
-delete *.pdf
-delete *.png
-delete([strtrim(deblank(base.names((base.models(base.epsilon)),:))),'.m'])
+delete('*_dynamic.m');
+delete('*_static.m');
+delete('*.log');
+delete('*_set_auxiliary_variables.m');
+delete('*_results.mat');
+delete('*.eps');
+delete('*.fig');
+delete('*.pdf');
+delete('*.png');
+delete([strtrim(deblank(base.names((base.models(base.epsilon)),:))),'.m']);
 %rmdir(strtrim(deblank(base.names((base.models(base.epsilon)),:))), 's')
