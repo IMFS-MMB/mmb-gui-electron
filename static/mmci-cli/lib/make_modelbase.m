@@ -18,7 +18,7 @@ function mb = make_modelbase(model, rule, options, modelpath)
     mb.ModelStates(1)={ mb.AL_.states };
   end
 
-  shocks = default(options, 'shocks', [1]);
+  mb.innos = char(default(options, 'shocks', ['interest_']));
 
   % insert single model and single rule only, so all model/rule ids can be 1.
   mb.rulenamesshort1 = char([rule.name]);
@@ -31,11 +31,6 @@ function mb = make_modelbase(model, rule, options, modelpath)
   mb.setpath(1,:) = modelpath;
   mb.epsilon = 1;
   mb.l = 1;
-  mb.namesshocks= char(['Mon. Pol. Shock      '; 'Fiscal Pol. Shock    ']);
-  mb.namesinnos= char(['interest_'; 'fiscal_  ']);
-  mb.innos = mb.namesinnos(shocks,:);
-  mb.namesshocks = mb.namesshocks(shocks,:);
-
   mb.totaltime = cputime;
 end
 
