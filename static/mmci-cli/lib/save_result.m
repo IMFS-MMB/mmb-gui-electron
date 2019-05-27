@@ -3,7 +3,7 @@ function tojson(modelbase, path)
 
   model_id = 1;
   rule_id = 1;
-  
+
   outputmodel = struct(...
   'model', {},...
   'rule', {},...
@@ -12,7 +12,7 @@ function tojson(modelbase, path)
   'outputvar', {},...
   'values', {}...
   );
-  
+
   if modelbase.option(1)==1
     for pp=1:4
               autmod = deblank(strtrim(modelbase.names(model_id,:)));
@@ -62,8 +62,8 @@ function tojson(modelbase, path)
               ));
       end
                        end
-                    
-                    
+
+
   for pp=1:4
               vmod = deblank(strtrim(modelbase.names(model_id,:)));
               vrule = deblank(modelbase.rulenamesshort1(rule_id,:));
@@ -113,8 +113,8 @@ function tojson(modelbase, path)
              ));
          end
   end
-                    
-                    
+
+
                        for p=1:size(modelbase.innos,1)
      irfmod = deblank(strtrim(modelbase.names(model_id,:)));
      irfrule = deblank(modelbase.rulenamesshort1(rule_id,:));
@@ -171,4 +171,4 @@ function tojson(modelbase, path)
   [folder] = fileparts(path);
   mkdir(folder);
   savejson('', outputmodel, path);
-end 
+end
