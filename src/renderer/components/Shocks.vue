@@ -11,7 +11,7 @@
         <div class="ctrl-set-body">
             <b-form-checkbox-group class="ctrl-set-listing" stacked v-model="selection">
                 <b-form-checkbox v-for="shock in shocks"
-                                 :key="shock.id"
+                                 :key="shock.name"
                                  :value="shock">
                     {{shock.text}}
                 </b-form-checkbox>
