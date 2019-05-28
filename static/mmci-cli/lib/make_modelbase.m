@@ -21,7 +21,6 @@ function mb = make_modelbase(model, rule, options, modelpath)
   mb.innos = char(default(options, 'shocks', ['interest_']));
 
   % insert single model and single rule only, so all model/rule ids can be 1.
-  mb.rulenamesshort1 = char([rule.name]);
   mb.names = char([model.name]);
 
   mb.variabledim(1) = model.variabledim;
