@@ -229,17 +229,18 @@ function [base]=stoch_simul_MMB(base)
       inv_lgx_orig_ord_(M_.exo_names_orig_ord)=(1:M_.exo_nbr)'; % save the order
 
       for p=1:size(base.innos,1)
+        inno = base.innos(p,:);
 
         if AL
-          ii=loc(M_.exo_names,base.innos(p,:)); %Position of the shock
+          ii=loc(M_.exo_names, inno); %Position of the shock
         else
-          ii=loc(M_.exo_names(inv_lgx_orig_ord_,:),base.innos(p,:)); %Position of the shock
+          ii=loc(M_.exo_names(inv_lgx_orig_ord_,:), inno); %Position of the shock
         end
 
         base.pos_shock(p,base.models(base.epsilon))=ii;
 
         if ii==0
-          disp(['No ' deblank(strtrim(base.namesshocks(p,:))) ' is available for Model: ' strtrim(base.names(base.models(base.epsilon),:))]);
+          disp([deblank(strtrim(inno)) ' is unavailable for Model: ' strtrim(base.names(base.models(base.epsilon),:))]);
         else
           if base.variabledim(base.models(base.epsilon)) == 1
             vdim = 1;
