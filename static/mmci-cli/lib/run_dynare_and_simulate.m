@@ -1,8 +1,8 @@
-function result = run_dynare_and_simulate (model, rule, options, modelsfolder)
+function result = run_dynare_and_simulate (model, rule, options, workfolder)
   oldpath = pwd;
 
-  paramspath = fullfile(modelsfolder, 'policy_param.mat');
-  modelpath = fullfile(modelsfolder, model.name);
+  paramspath = fullfile(workfolder, 'policy_param.mat');
+  modelpath = fullfile(workfolder, model.name);
 
   make_policy_params(paramspath, rule.coefficients);
 
@@ -13,9 +13,6 @@ function result = run_dynare_and_simulate (model, rule, options, modelsfolder)
   % create legacy modelbase object
   modelbase = make_modelbase(model, rule, options, modelpath);
   result = stoch_simul_MMB(modelbase);
-
-  % clean up policy params file
-  delete(paramspath);
 
   cd(oldpath);
 end
