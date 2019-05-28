@@ -1,11 +1,4 @@
 octave-workspace
 
-models/policy_param.mat
-**/Modelbase*
-**/*.log
-**/checksum
-**/*_dynamic.m
-**/*_static.m
-**/*_set_auxiliary_variables.m
-**/*results.mat
+work
 out
