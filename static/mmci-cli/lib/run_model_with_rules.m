@@ -4,7 +4,7 @@ function run_model_with_rules(model, rules, config, paths)
     rule = make_rule('User', config.usr);
 
     result = run_dynare_and_simulate(model, rule, config.options, paths.models);
-    save_result(result, get_output_filename(paths.out, model.name, rule.name));
+    save_result(result, get_output_filename(paths.out, model.name, rule.name), model.name, rule.name);
   end
 
   % run with model specific rule
@@ -12,7 +12,7 @@ function run_model_with_rules(model, rules, config, paths)
     rule = make_rule('Model', model.msr);
 
     result = run_dynare_and_simulate(model, rule, config.options, paths.models);
-    save_result(result, get_output_filename(paths.out, model.name, rule.name));
+    save_result(result, get_output_filename(paths.out, model.name, rule.name), model.name, rule.name);
   end
 
   % run with common rules
@@ -20,6 +20,6 @@ function run_model_with_rules(model, rules, config, paths)
     rule = rules(i);
 
     result = run_dynare_and_simulate(model, rule, config.options, paths.models);
-    save_result(result, get_output_filename(paths.out, model.name, rule.name));
+    save_result(result, get_output_filename(paths.out, model.name, rule.name), model.name, rule.name);
   end
 end
