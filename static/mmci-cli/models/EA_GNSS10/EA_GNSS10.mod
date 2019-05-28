@@ -1,13 +1,13 @@
 // EA_GNSS10 model
 
-// Reference: Gerali, A., S. Neri, L. Sessa, F. Signoretti. (2010). 
+// Reference: Gerali, A., S. Neri, L. Sessa, F. Signoretti. (2010).
 // Credit and Banking in a DSGE Model of the Euro Area. Journal of Money Credit and Banking
 // Supplement to Vol. 42, No. 6.
 
 // The original model code has been provided by Stefano Neri.
 
 // Last edited by: Sebastian Schmidt, January 2012
-// Note: In order to define an output gap, I added a flexible price, flexible wage, 
+// Note: In order to define an output gap, I added a flexible price, flexible wage,
 // flexible loan and deposit rate case of the economy by eliminating adjustment costs
 // in the respective sectors. The model block is added below the original model block.
 
@@ -15,20 +15,20 @@
 // Authors' comments:
 
 // model with: TWO WAGES; INVESTMENT ADJ. COSTS;  VARIABLE CAPITAL UTILIZATION;  CONSUMPTION HABITS
-//            STICKY BANK RATES, PRICES & WAGES à la Rotemberg with indexation to both past and st.st. inflation
-// 9 blocks: 1) PATIENTs  2) IMPATIENTs  3) CAPITAL PRODUCERS  4) ENTREPRENEURS   5) BANKS   6) RETAILERS        
-//           7) LABOR MKT WITH ONE UNION FOR EACH LABOR TYPE  8) AGGREGATION & EQUILIBRIUM   9) MONETARY POLICY  
+//            STICKY BANK RATES, PRICES & WAGES ï¿½ la Rotemberg with indexation to both past and st.st. inflation
+// 9 blocks: 1) PATIENTs  2) IMPATIENTs  3) CAPITAL PRODUCERS  4) ENTREPRENEURS   5) BANKS   6) RETAILERS
+//           7) LABOR MKT WITH ONE UNION FOR EACH LABOR TYPE  8) AGGREGATION & EQUILIBRIUM   9) MONETARY POLICY
 
 //    AGGIUNTA DEL 16 APRILE: PROBLEMI INTERTEMPORALI TUTTI IN TERMINI REALE
 
 // THIS VERSION: April 20th, 2009
 // BBS has all items dated (t) - Banking capital in real terms is defined as: K_B(t)/p(t)
 // Banking profits are defined in the model code at time (t) - All equations in exp form
-// This is the full version (monop. competitive banking sector & BANK capital à la Gerali with sticky rates) 
+// This is the full version (monop. competitive banking sector & BANK capital ï¿½ la Gerali with sticky rates)
 
 
 
-var 
+var
 c_p       // 1  PATIENT   HHs
 h_p       // 2  PATIENT   HHs
 d_p       // 3  PATIENT   HHs
@@ -36,10 +36,10 @@ l_p       // 4  PATIENT   HHs
 lam_p     // 5  PATIENT   HHs
 J_R       // 6  PATIENT   HHs
 j_B       // 7  PATIENT   HHs
-pie_wp    // 8  PATIENT   HHs  
+pie_wp    // 8  PATIENT   HHs
 c_i       // 9  IMPATIENT HHs
 h_i       // 10 IMPATIENT HHs
-b_i       // 11 IMPATIENT HHs 
+b_i       // 11 IMPATIENT HHs
 l_i       // 12 IMPATIENT HHs
 lam_i     // 13 IMPATIENT HHs
 s_i       // 14 IMPATIENT HHs
@@ -153,14 +153,14 @@ Y1f
 varexo e_A_e e_eps_K_b e_j e_l e_me e_mi e_mk_be e_mk_bh e_mk_d e_qk e_y e_z  //13 varexo e_r_ib
 
 //**************************************************************************
-// Modelbase Shocks                                                      //*       
+// Modelbase Shocks                                                      //*
        interest_;                                                        //*
 //**************************************************************************
 
 
 
-parameters  
-//************************************************************************** 
+parameters
+//**************************************************************************
 // Modelbase Parameters                                                  //*
                                                                          //*
         cofintintb1 cofintintb2 cofintintb3 cofintintb4                  //*
@@ -176,9 +176,9 @@ parameters
             beta_p j phi beta_i m_i_ss beta_e m_e_ss alpha eksi_1 eksi_2    // HOUSEHOLDS & ENTREPRENEURS
             h a_i a_p a_e gamma_p gamma_i gamma_e    ni                     // HOUSEHOLDS & ENTREPRENEURS
             eps_l_ss kappa_w                                                // HOUSEHOLDS (labor params)
-            eps_d eps_bh eps_be                                             // BANKS 
+            eps_d eps_bh eps_be                                             // BANKS
             mk_d_ss mk_bh_ss mk_be_ss r_be_ss  r_bh_ss r_k_ss               // BANKS (SS)
-            gamma_b beta_b delta_kb vi kappa_kb                             // BANKS 
+            gamma_b beta_b delta_kb vi kappa_kb                             // BANKS
             eps_y_ss kappa_p ind_p ind_w                                    // RETAILERS
             kappa_i kappa_d kappa_be kappa_bh deltak                        // OTHERS
             ind_d ind_be ind_bh                                             // OTHERS
@@ -187,18 +187,18 @@ parameters
             rho_ee_z rho_A_e rho_ee_j rho_mi rho_me rho_eps_y               // SHOCKS
             rho_mk_d rho_mk_be rho_mk_bh rho_ee_qk rho_eps_l rho_eps_K_b    // SHOCKS
             ;
-            
+
 //**************************************************************************
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           
-cd('..');                                                                
-load policy_param.mat;                                                   
-for i=1:33                                                               
-    deep_parameter_name = M_.param_names(i,:);                           
-    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])                  
-end                                                                      
+thispath = pwd;
+cd('..');
+load policy_param.mat;
+for i=1:33
+    deep_parameter_name = M_.param_names(i,:);
+    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
+end
 cd(thispath);
     std_r_ = 100;                                                        //*
                                                                          //*
@@ -206,12 +206,12 @@ cd(thispath);
 //coffispol = ;                                                          //*
 //**************************************************************************
 
-% *********************			
+% *********************
 % CALIBRATED PARAMETERS
 % *********************
 
 beta_p       = 0.9943;                                                     % discount factor patient households
-beta_i       = 0.975;                                                      % discount factor impatient households     
+beta_i       = 0.975;                                                      % discount factor impatient households
 beta_b       = beta_p;                                                     % discount factor bankers (not used in this version of the model)
 beta_e       = beta_i;                                                     % discount factor entrepreneurs
 j            = 0.2;                                                        % weight of housing in utility function
@@ -219,16 +219,16 @@ phi          = 1.0;                                                        % inv
 m_i_ss       = 0.7  ;                                                      % loan-to-value ratio impatient households
 m_e_ss       = 0.35 ;                                                      % loan-to-value ratio entrepreneurs
 alpha        = 0.250;                                                      % capital share in the production function
-eps_d        = -1.46025;                                                   % elast. of subst. of deposits 
+eps_d        = -1.46025;                                                   % elast. of subst. of deposits
 eps_bh       = 2.932806;
-eps_be       = 2.932806; 
- 
+eps_be       = 2.932806;
+
 mk_d_ss      = eps_d   / (eps_d  - 1) ;                                    % steady state markdown on D (ok if eps_d<0; if eps_d>0 it should be eps_d/(eps_d+1) )
 mk_bh_ss     = eps_bh  / (eps_bh - 1) ;                                    % steady state markup on loans to I
 mk_be_ss     = eps_be  / (eps_be - 1) ;                                    % steady state markup on loans to E
 book_ss      = 0; %-35                                                       % steady state value of (B-M)/D in the bank balance shhet
-eps_y_ss     = 6;                                                          % 
-eps_l_ss     = 5;                                                          % 
+eps_y_ss     = 6;                                                          %
+eps_l_ss     = 5;                                                          %
 gamma_p      = 1;                                                          % shares of patient households
 gamma_i      = 1; //1/3;                                                   % shares of impatient households
 ni           = 0.8;                                                        % wage share of patient households
@@ -236,7 +236,7 @@ gamma_b      = 1; //0.10;												   % shares of bankers
 gamma_e      = 1; //1 - gamma_p - gamma_i;								   % shares of entrepreneurs
 deltak       = 0.025;                                                      % depreciation rate for physical capital
 piss         = 1;                                                          % steady state gross inflation rate
-r_ib_ss      = (piss/beta_p - 1) * (eps_d-1)/eps_d ;                       % steady state gross nominal interest rate 
+r_ib_ss      = (piss/beta_p - 1) * (eps_d-1)/eps_d ;                       % steady state gross nominal interest rate
 r_be_ss      = r_ib_ss*eps_be/(eps_be-1) ;								   % steady state interest rate on loans to E
 r_bh_ss      = r_ib_ss*eps_bh/(eps_bh-1) ;								   % steady state interest rate on loans to H
 r_k_ss       = -(1-deltak)-m_e_ss*(1-deltak)*piss/beta_e*
@@ -247,8 +247,8 @@ eksi_2       = 0.1*r_k_ss;                                                 % cap
 
 vi           = 0.09;                                                       % Banking Capital ratio over Loans (Basel II)
 eps_b        = mean([eps_bh,eps_be]);
-% delta_kb     = r_ib_ss/vi * (eps_d - eps_b + vi*(eps_b-1))/((eps_b-1)*(eps_d-1));  % j_B with terms in r_ib                            
-delta_kb     = r_ib_ss/vi * (eps_d - eps_b + vi*eps_d*(eps_b-1))/((eps_b-1)*(eps_d-1));                               
+% delta_kb     = r_ib_ss/vi * (eps_d - eps_b + vi*(eps_b-1))/((eps_b-1)*(eps_d-1));  % j_B with terms in r_ib
+delta_kb     = r_ib_ss/vi * (eps_d - eps_b + vi*eps_d*(eps_b-1))/((eps_b-1)*(eps_d-1));
 
 ind_d        = 0.0;                   % indexation deposit rates
 ind_be       = 0.0;                   % indexation rates on loans to firms
@@ -291,7 +291,7 @@ a_i	        =	coeffs(25); % 0.867003766306404	;
 a_e         =   0.0     ;   % degree of habit formation: entrepreneurs
 a_p         =   0.0     ;   % degree of habit formation: patient households
 
-            
+
 //%------------------------------------------------------------
 //% Model equations
 //%------------------------------------------------------------
@@ -301,52 +301,52 @@ model;
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables //*
 
-interest   = 400*(exp(r_ib)-r_ib_ss);                                           
-inflation  = (pie+pie(-1)+pie(-2)+pie(-3))*100;                          
-inflationq = pie*400;                                                              
-outputgap  = (Y-Yf)*100;                                             
-output     = (Y-0.273582784533271)*100; 
-//outputgap  = (Y1-Y1f)*100;   
-//output     = (Y1-0.250953431249047)*100;                                            
+interest   = 400*(exp(r_ib)-r_ib_ss);
+inflation  = (pie+pie(-1)+pie(-2)+pie(-3))*100;
+inflationq = pie*400;
+outputgap  = (Y-Yf)*100;
+output     = (Y-0.273582784533271)*100;
+//outputgap  = (Y1-Y1f)*100;
+//output     = (Y1-0.250953431249047)*100;
 //**************************************************************************
 
-//**************************************************************************                                                                    
+//**************************************************************************
 // Policy Rule                                                           //*
                                                                          //*
 // Monetary Policy                                                       //*
                                                                          //*
-interest =   cofintintb1*interest(-1)                                    //* 
-           + cofintintb2*interest(-2)                                    //* 
-           + cofintintb3*interest(-3)                                    //* 
-           + cofintintb4*interest(-4)                                    //* 
-           + cofintinf0*inflationq                                       //* 
-           + cofintinfb1*inflationq(-1)                                  //* 
-           + cofintinfb2*inflationq(-2)                                  //* 
-           + cofintinfb3*inflationq(-3)                                  //* 
-           + cofintinfb4*inflationq(-4)                                  //* 
-           + cofintinff1*inflationq(+1)                                  //* 
-           + cofintinff2*inflationq(+2)                                  //* 
-           + cofintinff3*inflationq(+3)                                  //* 
-           + cofintinff4*inflationq(+4)                                  //* 
-           + cofintout*outputgap 	                                     //* 
-           + cofintoutb1*outputgap(-1)                                   //* 
-           + cofintoutb2*outputgap(-2)                                   //* 
-           + cofintoutb3*outputgap(-3)                                   //* 
-           + cofintoutb4*outputgap(-4)                                   //* 
-           + cofintoutf1*outputgap(+1)                                   //* 
-           + cofintoutf2*outputgap(+2)                                   //* 
-           + cofintoutf3*outputgap(+3)                                   //* 
-           + cofintoutf4*outputgap(+4)                                   //* 
-           + cofintoutp*output 	                                         //* 
-           + cofintoutpb1*output(-1)                                     //* 
-           + cofintoutpb2*output(-2)                                     //* 
-           + cofintoutpb3*output(-3)                                     //* 
-           + cofintoutpb4*output(-4)                                     //* 
-           + cofintoutpf1*output(+1)                                     //* 
-           + cofintoutpf2*output(+2)                                     //* 
-           + cofintoutpf3*output(+3)                                     //* 
-           + cofintoutpf4*output(+4)                                     //* 
-           + std_r_ *interest_;                                          //* 
+interest =   cofintintb1*interest(-1)                                    //*
+           + cofintintb2*interest(-2)                                    //*
+           + cofintintb3*interest(-3)                                    //*
+           + cofintintb4*interest(-4)                                    //*
+           + cofintinf0*inflationq                                       //*
+           + cofintinfb1*inflationq(-1)                                  //*
+           + cofintinfb2*inflationq(-2)                                  //*
+           + cofintinfb3*inflationq(-3)                                  //*
+           + cofintinfb4*inflationq(-4)                                  //*
+           + cofintinff1*inflationq(+1)                                  //*
+           + cofintinff2*inflationq(+2)                                  //*
+           + cofintinff3*inflationq(+3)                                  //*
+           + cofintinff4*inflationq(+4)                                  //*
+           + cofintout*outputgap 	                                     //*
+           + cofintoutb1*outputgap(-1)                                   //*
+           + cofintoutb2*outputgap(-2)                                   //*
+           + cofintoutb3*outputgap(-3)                                   //*
+           + cofintoutb4*outputgap(-4)                                   //*
+           + cofintoutf1*outputgap(+1)                                   //*
+           + cofintoutf2*outputgap(+2)                                   //*
+           + cofintoutf3*outputgap(+3)                                   //*
+           + cofintoutf4*outputgap(+4)                                   //*
+           + cofintoutp*output 	                                         //*
+           + cofintoutpb1*output(-1)                                     //*
+           + cofintoutpb2*output(-2)                                     //*
+           + cofintoutpb3*output(-3)                                     //*
+           + cofintoutpb4*output(-4)                                     //*
+           + cofintoutpf1*output(+1)                                     //*
+           + cofintoutpf2*output(+2)                                     //*
+           + cofintoutpf3*output(+3)                                     //*
+           + cofintoutpf4*output(+4)                                     //*
+           + std_r_ *interest_;                                          //*
                                                                          //*
 // Discretionary Government Spending                                     //*
                                                                          //*
@@ -360,12 +360,12 @@ interest =   cofintintb1*interest(-1)                                    //*
 
   (1-a_i)*exp(ee_z)*(exp(c_p) - a_i*exp(c_p(-1)))^(-1) = exp(lam_p); // CON rescaling  (1) where a_p = a_e = a_i
 
-j * (exp(ee_j))  / exp(h_p) - exp(lam_p) * exp(q_h) + beta_p * exp(lam_p(+1)) * exp(q_h(+1))   = 0; // (2) 
+j * (exp(ee_j))  / exp(h_p) - exp(lam_p) * exp(q_h) + beta_p * exp(lam_p(+1)) * exp(q_h(+1))   = 0; // (2)
 
 exp(lam_p)  = beta_p * exp(lam_p(+1)) * (1+exp(r_d)) / exp(pie(+1)); // (3)
 
 
-(1 - exp(eps_l)) * exp(l_p) + exp(l_p) ^(1+phi) / exp(w_p) * exp(eps_l)/exp(lam_p) 
+(1 - exp(eps_l)) * exp(l_p) + exp(l_p) ^(1+phi) / exp(w_p) * exp(eps_l)/exp(lam_p)
                                          - kappa_w *( exp(pie_wp)     - exp(pie(-1)) ^ ind_w * piss ^ (1-ind_w) ) * exp(pie_wp)
    +  beta_p * exp(lam_p(+1))/exp(lam_p) * kappa_w *( exp(pie_wp(+1)) - exp(pie)     ^ ind_w * piss ^ (1-ind_w) ) * exp(pie_wp(+1)) ^2 / exp(pie(+1)) = 0 ; // Unions, labor supply (4)
 
@@ -382,23 +382,23 @@ exp(c_p) + exp(q_h) * ( exp(h_p) - exp(h_p(-1)) ) + exp(d_p)  = exp(w_p) * exp(l
 j * (exp(ee_j))  / exp(h_i) - exp(lam_i) * exp(q_h) + beta_i * exp(lam_i(+1)) * exp(q_h(+1))  + exp(s_i) * exp(m_i) *exp(q_h(+1))   * exp(pie(+1))  = 0;    // (8) s_i is multiplier on borrowing constraint
 exp(lam_i) - beta_i * exp(lam_i(+1)) * (1+exp(r_bh)) / exp(pie(+1)) = exp(s_i) * (1+exp(r_bh)); // (9)
 
-(1 - exp(eps_l)) * exp(l_i) + exp(l_i) ^(1+phi) / exp(w_i) * exp(eps_l)/exp(lam_i) 
+(1 - exp(eps_l)) * exp(l_i) + exp(l_i) ^(1+phi) / exp(w_i) * exp(eps_l)/exp(lam_i)
                                          - kappa_w *( exp(pie_wi)     - exp(pie(-1))^ind_w * piss ^ (1-ind_w) ) * exp(pie_wi)
    +  beta_i * exp(lam_i(+1))/exp(lam_i) * kappa_w *( exp(pie_wi(+1)) - exp(pie)    ^ind_w * piss ^ (1-ind_w) ) * exp(pie_wi(+1)) ^2 / exp(pie(+1)) = 0; // (10)
 
 exp(pie_wi) = exp(w_i) / exp(w_i(-1)) * exp(pie); // (11)
 
-exp(c_i) + exp(q_h) * (exp(h_i) - exp(h_i(-1))) + (1+exp(r_bh(-1)))*exp(b_i(-1))/exp(pie) =  
+exp(c_i) + exp(q_h) * (exp(h_i) - exp(h_i(-1))) + (1+exp(r_bh(-1)))*exp(b_i(-1))/exp(pie) =
    exp(w_i) * exp(l_i) + exp(b_i)  ;  // (12) budget constraint
 
-(1+exp(r_bh)) * exp(b_i) = exp(m_i) * exp(q_h(+1))   *exp(h_i) * exp(pie(+1));     // (13) borrowing constraint impatient household 
+(1+exp(r_bh)) * exp(b_i) = exp(m_i) * exp(q_h(+1))   *exp(h_i) * exp(pie(+1));     // (13) borrowing constraint impatient household
 
 
 ////***********  3) CAPITAL PRODUCERS *****************************************************
 
-exp(K) = (1-deltak) * exp(K(-1)) + ( 1 - kappa_i/2 * (exp(I)*exp(ee_qk)/exp(I(-1)) - 1)^2 ) * exp(I) ; // (14)  
+exp(K) = (1-deltak) * exp(K(-1)) + ( 1 - kappa_i/2 * (exp(I)*exp(ee_qk)/exp(I(-1)) - 1)^2 ) * exp(I) ; // (14)
 
-1 = exp(q_k) * ( 1 -  kappa_i/2 * (exp(I)*exp(ee_qk)/exp(I(-1)) - 1)^2  - kappa_i * (exp(I)*exp(ee_qk)/exp(I(-1)) - 1) * exp(I)*exp(ee_qk)/exp(I(-1)) ) 
+1 = exp(q_k) * ( 1 -  kappa_i/2 * (exp(I)*exp(ee_qk)/exp(I(-1)) - 1)^2  - kappa_i * (exp(I)*exp(ee_qk)/exp(I(-1)) - 1) * exp(I)*exp(ee_qk)/exp(I(-1)) )
   + beta_e * exp(lam_e(+1)) / exp(lam_e) * exp(q_k(+1)) *   kappa_i * (exp(I(+1))*exp(ee_qk(+1))/exp(I) - 1) * exp(ee_qk(+1)) * (exp(I(+1))/exp(I))^2 ; // real price of capital (15)
 
 
@@ -407,7 +407,7 @@ exp(K) = (1-deltak) * exp(K(-1)) + ( 1 - kappa_i/2 * (exp(I)*exp(ee_qk)/exp(I(-1
   (1-a_i)*(exp(c_e) - a_i*exp(c_e(-1)))^(-1) = exp(lam_e);         // CON rescaling  (16) FOC consumption
 //        (exp(c_e) - a_i*exp(c_e(-1)))^(-1) = exp(lam_e);         // SENZA rescaling
 
-exp(s_e)  * exp(m_e) * exp(q_k(+1)) * exp(pie(+1)) * (1-deltak) 
+exp(s_e)  * exp(m_e) * exp(q_k(+1)) * exp(pie(+1)) * (1-deltak)
      + beta_e * exp(lam_e(+1)) * ( exp(q_k(+1))*(1-deltak) + exp(r_k(+1))*exp(u(+1))
      - ( eksi_1*(exp(u(+1))-1)+eksi_2/2*( (exp(u(+1))-1)^2 ) ) )   = exp(lam_e) * exp(q_k) ;  // (17) FOC capital
 
@@ -417,8 +417,8 @@ exp(w_i) = (1-ni) * (1-alpha) * exp(y_e) / ( exp(l_id) * exp(x) ); // (19) FOC l
 exp(lam_e) - exp(s_e)  * (1+exp(r_be)) = beta_e * exp(lam_e(+1)) * (1+exp(r_be)) / exp(pie(+1));  // (20) FOC credit demand
 exp(r_k)  = eksi_1 + eksi_2 * (exp(u)-1); // (21) FOC utilization rate
 
-exp(c_e) + ((1+exp(r_be(-1))) * exp(b_ee(-1)) / exp(pie) ) +  (exp(w_p)*exp(l_pd) + exp(w_i)*exp(l_id)) + exp(q_k) * exp(k_e) 
-   + ( eksi_1*(exp(u)-1)+eksi_2/2*(exp(u)-1)^2 ) * exp(k_e(-1)) = 
+exp(c_e) + ((1+exp(r_be(-1))) * exp(b_ee(-1)) / exp(pie) ) +  (exp(w_p)*exp(l_pd) + exp(w_i)*exp(l_id)) + exp(q_k) * exp(k_e)
+   + ( eksi_1*(exp(u)-1)+eksi_2/2*(exp(u)-1)^2 ) * exp(k_e(-1)) =
     exp(y_e) / exp(x) + exp(b_ee) + exp(q_k) * (1-deltak) * exp(k_e(-1))  ;   // budget constraint entrepreneurs (22)
 
 exp(y_e) = exp(A_e) * (exp(u)*exp(k_e(-1)))^(alpha) * ( exp(l_pd)^ni * exp(l_id)^(1-ni) ) ^ (1-alpha); // production technology (23)
@@ -433,32 +433,32 @@ exp(R_b) = - kappa_kb * ( exp(K_b) / exp(B) - vi ) * (exp(K_b)/exp(B)) ^2  + exp
 
 exp(K_b) * exp(pie) = (1-delta_kb) * exp(K_b(-1)) / exp(eps_K_b) + exp(j_B(-1)) ; // (27) accumulation of bank capital
 
-gamma_b * exp(d_b)  = gamma_p * exp(d_p) ;                                      
-gamma_b * exp(b_h)  = gamma_i * exp(b_i) ; 
-gamma_b * exp(b_e)  = gamma_e * exp(b_ee); 
+gamma_b * exp(d_b)  = gamma_p * exp(d_p) ;
+gamma_b * exp(b_h)  = gamma_i * exp(b_i) ;
+gamma_b * exp(b_e)  = gamma_e * exp(b_ee);
 
 exp(b_h) + exp(b_e)  =  exp(d_b) + exp(K_b) ;
 
 /// PRICING in terms of MK ///
 
 // (28) FOC deposit branch:
-- 1 + exp(mk_d)/(exp(mk_d)-1)  - exp(mk_d)/(exp(mk_d)-1)  * exp(r_ib)/exp(r_d)  - kappa_d  * ( exp(r_d)/exp(r_d(-1)) - ( exp(r_d(-1)) / exp(r_d(-2)) )^ind_d  )  * exp(r_d)/exp(r_d(-1)) 
-  + beta_p * ( exp(lam_p(+1))/exp(lam_p) ) * kappa_d  * ( exp(r_d(+1))/exp(r_d) - ( exp(r_d)/exp(r_d(-1)))^ind_d )   * ( (exp(r_d(+1))/exp(r_d))^2 )   * (exp(d_b(+1))/exp(d_b)) = 0;// 
-  
+- 1 + exp(mk_d)/(exp(mk_d)-1)  - exp(mk_d)/(exp(mk_d)-1)  * exp(r_ib)/exp(r_d)  - kappa_d  * ( exp(r_d)/exp(r_d(-1)) - ( exp(r_d(-1)) / exp(r_d(-2)) )^ind_d  )  * exp(r_d)/exp(r_d(-1))
+  + beta_p * ( exp(lam_p(+1))/exp(lam_p) ) * kappa_d  * ( exp(r_d(+1))/exp(r_d) - ( exp(r_d)/exp(r_d(-1)))^ind_d )   * ( (exp(r_d(+1))/exp(r_d))^2 )   * (exp(d_b(+1))/exp(d_b)) = 0;//
+
 // (29) FOC loan branch, entrepreneurs:
-+ 1 - exp(mk_be)/(exp(mk_be)-1)  +  exp(mk_be)/(exp(mk_be)-1)  * exp(R_b)/exp(r_be) - kappa_be * (exp(r_be)/exp(r_be(-1)) - ( exp(r_be(-1)) / exp(r_be(-2)) )^ind_be ) * exp(r_be)/exp(r_be(-1)) 
++ 1 - exp(mk_be)/(exp(mk_be)-1)  +  exp(mk_be)/(exp(mk_be)-1)  * exp(R_b)/exp(r_be) - kappa_be * (exp(r_be)/exp(r_be(-1)) - ( exp(r_be(-1)) / exp(r_be(-2)) )^ind_be ) * exp(r_be)/exp(r_be(-1))
   + beta_p * ( exp(lam_p(+1))/exp(lam_p) ) * kappa_be * ( exp(r_be(+1))/exp(r_be) - ( exp(r_be)/exp(r_be(-1)))^ind_be ) * ( (exp(r_be(+1))/exp(r_be))^2 ) * (exp(b_e(+1))/exp(b_e)) = 0;//   30
-  
+
 // (30) FOC loan brach, impatient households
-+ 1 - exp(mk_bh)/(exp(mk_bh)-1)  +  exp(mk_bh)/(exp(mk_bh)-1)  * exp(R_b)/exp(r_bh) - kappa_bh * (exp(r_bh)/exp(r_bh(-1)) - ( exp(r_bh(-1)) / exp(r_bh(-2)))^ind_bh ) * exp(r_bh)/exp(r_bh(-1)) 
++ 1 - exp(mk_bh)/(exp(mk_bh)-1)  +  exp(mk_bh)/(exp(mk_bh)-1)  * exp(R_b)/exp(r_bh) - kappa_bh * (exp(r_bh)/exp(r_bh(-1)) - ( exp(r_bh(-1)) / exp(r_bh(-2)))^ind_bh ) * exp(r_bh)/exp(r_bh(-1))
   + beta_p * ( exp(lam_p(+1))/exp(lam_p) ) * kappa_bh * ( exp(r_bh(+1))/exp(r_bh) - ( exp(r_bh)/exp(r_bh(-1)))^ind_bh ) * ( (exp(r_bh(+1))/exp(r_bh))^2 ) * (exp(b_h(+1))/exp(b_h)) = 0;//
 
 // (31) overall bank profits:
 exp(j_B) = + exp(r_bh)  *  exp(b_h)
-           + exp(r_be)  *  exp(b_e) 
-           - exp(r_d)   *  exp(d_b)           
-           - kappa_d/2  * ( (exp(r_d)/exp(r_d(-1))-1)^2)   * exp(r_d) *exp(d_b) 
-           - kappa_be/2 * ( (exp(r_be)/exp(r_be(-1))-1)^2) * exp(r_be)*exp(b_e) 
+           + exp(r_be)  *  exp(b_e)
+           - exp(r_d)   *  exp(d_b)
+           - kappa_d/2  * ( (exp(r_d)/exp(r_d(-1))-1)^2)   * exp(r_d) *exp(d_b)
+           - kappa_be/2 * ( (exp(r_be)/exp(r_be(-1))-1)^2) * exp(r_be)*exp(b_e)
            - kappa_bh/2 * ( (exp(r_bh)/exp(r_bh(-1))-1)^2) * exp(r_bh)*exp(b_h)
            - kappa_kb/2 * ( (exp(K_b) / exp(B)  - vi ) ^2) * exp(K_b); //  32
 
@@ -467,7 +467,7 @@ exp(j_B) = + exp(r_bh)  *  exp(b_h)
 exp(J_R)  = exp(Y)*(1 - (1/exp(x))    - (kappa_p/2) * (exp(pie) - ( exp(pie(-1)) ^ ind_p * piss ^ (1-ind_p) ))^2 ) ; // (32) aggregate retail profits
 
 // (33) New Keynesian Phillips curve:
-1 - exp(eps_y) + exp(eps_y) / exp(x) -    kappa_p * (exp(pie)     - ( exp(pie(-1)) ^ ind_p * piss ^ (1-ind_p) )) * exp(pie) 
+1 - exp(eps_y) + exp(eps_y) / exp(x) -    kappa_p * (exp(pie)     - ( exp(pie(-1)) ^ ind_p * piss ^ (1-ind_p) )) * exp(pie)
     + beta_p*(exp(lam_p(+1))/exp(lam_p))* kappa_p * (exp(pie(+1)) - ( exp(pie)     ^ ind_p * piss ^ (1-ind_p) )) * exp(pie(+1)) * (exp(Y(+1))/exp(Y)) = 0;  // 34
 
 ////************  7) AGGREGATION & EQUILIBRIUM  ************************************************
@@ -478,7 +478,7 @@ exp(BE)             = gamma_b * exp(b_e);
 exp(B)              = (exp(BH) + exp(BE)); //
 exp(D)              = gamma_p * exp(d_p) ; // oppure: (gamma_b * exp(d_b))
 exp(Y)              = gamma_e * exp(y_e); //
-exp(J_B)            = gamma_b * exp(j_B);  // 
+exp(J_B)            = gamma_b * exp(j_B);  //
 gamma_e * exp(l_pd) = gamma_p * exp(l_p);
 gamma_e * exp(l_id) = gamma_i * exp(l_i);
 h                   = gamma_p * exp(h_p) + gamma_i * exp(h_i); //
@@ -487,15 +487,15 @@ exp(Y1)             = exp(C) +    1     * (exp(K)-(1-deltak)*exp(K(-1))) ; //   
 //exp(Y)              = exp(C) + exp(q_k) * (exp(K)-(1-deltak)*exp(K(-1))) + delta_kb * exp((-1))
 //                      + (eksi_1*(exp(u)-1) + eksi_2/2*((exp(u)-1)^2))
 //                      + kappa_p/2  * (  exp(pie) - ( exp(pie(-1)) ^ ind_p * piss ^ (1-ind_p) ))^2 * exp(Y)
-//                      + kappa_d/2  * ( (exp(r_d(-1))/exp(r_d(-2))-1)^2)   * exp(r_d(-1)) *exp(d_b(-1)) 
-//                      + kappa_be/2 * ( (exp(r_be(-1))/exp(r_be(-2))-1)^2) * exp(r_be(-1))*exp(b_e(-1)) 
+//                      + kappa_d/2  * ( (exp(r_d(-1))/exp(r_d(-2))-1)^2)   * exp(r_d(-1)) *exp(d_b(-1))
+//                      + kappa_be/2 * ( (exp(r_be(-1))/exp(r_be(-2))-1)^2) * exp(r_be(-1))*exp(b_e(-1))
 //                      + kappa_bh/2 * ( (exp(r_bh(-1))/exp(r_bh(-2))-1)^2) * exp(r_bh(-1))*exp(b_h(-1))
 //                         ;  //
 exp(PIW)            = ( exp(w_p) + exp(w_i) )  / ( exp(w_p(-1)) + exp(w_i(-1)) ) * exp(pie);
 
-////***********  8) TAYLOR RULE & PROFITS CB *****************************************************                                                  
+////***********  8) TAYLOR RULE & PROFITS CB *****************************************************
 
-//(1+exp(r_ib)) = (1+r_ib_ss)^(1 - rho_ib ) * (1+exp(r_ib(-1)))^rho_ib * (( exp(pie) / piss ) ^phi_pie *  
+//(1+exp(r_ib)) = (1+r_ib_ss)^(1 - rho_ib ) * (1+exp(r_ib(-1)))^rho_ib * (( exp(pie) / piss ) ^phi_pie *
 //             (exp(Y1)/exp(Y1(-1)))^phi_y  ) ^ ( 1 - rho_ib ) * (1+e_r_ib) ;// (34) monetary policy
 
 ////***********  9) EXOGENOUS PROCESSES ****************************************************12
@@ -532,7 +532,7 @@ exp(spr_b)   =  0.5*exp(r_bh) + 0.5*exp(r_be) - exp(r_d);                       
 
   (1-a_i)*exp(ee_z)*(exp(c_pf) - a_i*exp(c_pf(-1)))^(-1) = exp(lam_pf); //   (1) where a_p = a_e = a_i
 
-j * (exp(ee_j))  / exp(h_pf) - exp(lam_pf) * exp(q_hf) + beta_p * exp(lam_pf(+1)) * exp(q_hf(+1))   = 0; // (2) 
+j * (exp(ee_j))  / exp(h_pf) - exp(lam_pf) * exp(q_hf) + beta_p * exp(lam_pf(+1)) * exp(q_hf(+1))   = 0; // (2)
 
 exp(lam_pf)  = beta_p * exp(lam_pf(+1)) * (1+exp(r_df)); // (3)
 
@@ -551,17 +551,17 @@ exp(lam_if) - beta_i * exp(lam_if(+1)) * (1+exp(r_bhf)) = exp(s_if) * (1+exp(r_b
 
 exp(eps_l)*exp(l_if) ^(phi) = exp(lam_if)*exp(w_if)*(exp(eps_l)-1); // Unions, labor supply, no adjustment costs (10)
 
-exp(c_if) + exp(q_hf) * (exp(h_if) - exp(h_if(-1))) + (1+exp(r_bhf(-1)))*exp(b_if(-1)) =  
+exp(c_if) + exp(q_hf) * (exp(h_if) - exp(h_if(-1))) + (1+exp(r_bhf(-1)))*exp(b_if(-1)) =
    exp(w_if) * exp(l_if) + exp(b_if)  ;  // (12) budget constraint
 
-(1+exp(r_bhf)) * exp(b_if) = exp(m_i) * exp(q_hf(+1))   *exp(h_if);     // (13) borrowing constraint impatient household 
+(1+exp(r_bhf)) * exp(b_if) = exp(m_i) * exp(q_hf(+1))   *exp(h_if);     // (13) borrowing constraint impatient household
 
 
 ////***********  3) CAPITAL PRODUCERS *****************************************************
 
-exp(Kf) = (1-deltak) * exp(Kf(-1)) + ( 1 - kappa_i/2 * (exp(If)*exp(ee_qk)/exp(If(-1)) - 1)^2 ) * exp(If) ; // (14)  
+exp(Kf) = (1-deltak) * exp(Kf(-1)) + ( 1 - kappa_i/2 * (exp(If)*exp(ee_qk)/exp(If(-1)) - 1)^2 ) * exp(If) ; // (14)
 
-1 = exp(q_kf) * ( 1 -  kappa_i/2 * (exp(If)*exp(ee_qk)/exp(If(-1)) - 1)^2  - kappa_i * (exp(If)*exp(ee_qk)/exp(If(-1)) - 1) * exp(If)*exp(ee_qk)/exp(If(-1)) ) 
+1 = exp(q_kf) * ( 1 -  kappa_i/2 * (exp(If)*exp(ee_qk)/exp(If(-1)) - 1)^2  - kappa_i * (exp(If)*exp(ee_qk)/exp(If(-1)) - 1) * exp(If)*exp(ee_qk)/exp(If(-1)) )
   + beta_e * exp(lam_ef(+1)) / exp(lam_ef) * exp(q_kf(+1)) *   kappa_i * (exp(If(+1))*exp(ee_qk(+1))/exp(If) - 1) * exp(ee_qk(+1)) * (exp(If(+1))/exp(If))^2 ; // real price of capital (15)
 
 
@@ -569,7 +569,7 @@ exp(Kf) = (1-deltak) * exp(Kf(-1)) + ( 1 - kappa_i/2 * (exp(If)*exp(ee_qk)/exp(I
 
   (1-a_i)*(exp(c_ef) - a_i*exp(c_ef(-1)))^(-1) = exp(lam_ef);         // CON rescaling  (16) FOC consumption
 
-exp(s_ef)  * exp(m_e) * exp(q_kf(+1)) * (1-deltak) 
+exp(s_ef)  * exp(m_e) * exp(q_kf(+1)) * (1-deltak)
      + beta_e * exp(lam_ef(+1)) * ( exp(q_kf(+1))*(1-deltak) + exp(r_kf(+1))*exp(uf(+1))
      - ( eksi_1*(exp(uf(+1))-1)+eksi_2/2*( (exp(uf(+1))-1)^2 ) ) )   = exp(lam_ef) * exp(q_kf) ;  // (17) FOC capital
 
@@ -579,8 +579,8 @@ exp(w_if) = (1-ni) * (1-alpha) * exp(y_ef) / ( exp(l_idf) * exp(xf) ); // (19) F
 exp(lam_ef) - exp(s_ef)  * (1+exp(r_bef)) = beta_e * exp(lam_ef(+1)) * (1+exp(r_bef));  // (20) FOC credit demand
 exp(r_kf)  = eksi_1 + eksi_2 * (exp(uf)-1); // (21) FOC utilization rate
 
-exp(c_ef) + ((1+exp(r_bef(-1))) * exp(b_eef(-1)) ) +  (exp(w_pf)*exp(l_pdf) + exp(w_if)*exp(l_idf)) + exp(q_kf) * exp(k_ef) 
-   + ( eksi_1*(exp(uf)-1)+eksi_2/2*(exp(uf)-1)^2 ) * exp(k_ef(-1)) = 
+exp(c_ef) + ((1+exp(r_bef(-1))) * exp(b_eef(-1)) ) +  (exp(w_pf)*exp(l_pdf) + exp(w_if)*exp(l_idf)) + exp(q_kf) * exp(k_ef)
+   + ( eksi_1*(exp(uf)-1)+eksi_2/2*(exp(uf)-1)^2 ) * exp(k_ef(-1)) =
     exp(y_ef) / exp(xf) + exp(b_eef) + exp(q_kf) * (1-deltak) * exp(k_ef(-1))  ;   // budget constraint entrepreneurs (22)
 
 exp(y_ef) = exp(A_e) * (exp(uf)*exp(k_ef(-1)))^(alpha) * ( exp(l_pdf)^ni * exp(l_idf)^(1-ni) ) ^ (1-alpha); // production technology (23)
@@ -589,34 +589,34 @@ exp(y_ef) = exp(A_e) * (exp(uf)*exp(k_ef(-1)))^(alpha) * ( exp(l_pdf)^ni * exp(l
 
 exp(r_kf) = alpha * exp(A_e) * exp(uf)^(alpha-1) * exp(k_ef(-1))^(alpha-1) * ( exp(l_pdf)^ni * exp(l_idf)^(1-ni) ) ^ (1-alpha) /exp(xf);  // definition (25)
 
-////*************  5)BANKS **************************************************************** 
+////*************  5)BANKS ****************************************************************
 
 exp(R_bf) = - kappa_kb * ( exp(K_bf) / exp(Bf) - vi ) * (exp(K_bf)/exp(Bf)) ^2  + exp(r_ibf) ; // (26) FOC wholesale branch, where r_ibf is policy rate
 
 exp(K_bf) = (1-delta_kb) * exp(K_bf(-1)) / exp(eps_K_b) + exp(j_Bf(-1)) ; // (27) accumulation of bank capital
 
-gamma_b * exp(d_bf)  = gamma_p * exp(d_pf) ;                                      
-gamma_b * exp(b_hf)  = gamma_i * exp(b_if) ; 
-gamma_b * exp(b_ef)  = gamma_e * exp(b_eef); 
+gamma_b * exp(d_bf)  = gamma_p * exp(d_pf) ;
+gamma_b * exp(b_hf)  = gamma_i * exp(b_if) ;
+gamma_b * exp(b_ef)  = gamma_e * exp(b_eef);
 
 exp(b_hf) + exp(b_ef)  =  exp(d_bf) + exp(K_bf) ;
 
 // (28) FOC deposit branch:
 - 1 + exp(mk_d)/(exp(mk_d)-1)  - exp(mk_d)/(exp(mk_d)-1)  * exp(r_ibf)/exp(r_df); // case with no adjustment costs
 
-  
+
 // (29) FOC loan branch, entrepreneurs:
 + 1 - exp(mk_be)/(exp(mk_be)-1)  +  exp(mk_be)/(exp(mk_be)-1)  * exp(R_bf)/exp(r_bef); // case with no adustment costs
 
-  
+
 // (30) FOC loan brach, impatient households
 + 1 - exp(mk_bh)/(exp(mk_bh)-1)  +  exp(mk_bh)/(exp(mk_bh)-1)  * exp(R_bf)/exp(r_bhf); // case with no adjustment costs
 
 
 // (31) overall bank profits:
 exp(j_Bf) = + exp(r_bhf)  *  exp(b_hf)
-           + exp(r_bef)  *  exp(b_ef) 
-           - exp(r_df)   *  exp(d_bf)           
+           + exp(r_bef)  *  exp(b_ef)
+           - exp(r_df)   *  exp(d_bf)
            - kappa_kb/2 * ( (exp(K_bf) / exp(Bf)  - vi ) ^2) * exp(K_bf); //  32
 
 ////***********  6)RETAILERS **************************************************************
@@ -632,16 +632,16 @@ exp(Cf)              = gamma_p * exp(c_pf) + gamma_i * exp(c_if) + gamma_e * exp
 exp(BHf)             = gamma_b * exp(b_hf);
 exp(BEf)             = gamma_b * exp(b_ef);
 exp(Bf)              = (exp(BHf) + exp(BEf)); //
-exp(Df)              = gamma_p * exp(d_pf) ; // 
+exp(Df)              = gamma_p * exp(d_pf) ; //
 exp(Yf)              = gamma_e * exp(y_ef); //
-exp(J_Bf)            = gamma_b * exp(j_Bf);  // 
+exp(J_Bf)            = gamma_b * exp(j_Bf);  //
 gamma_e * exp(l_pdf) = gamma_p * exp(l_pf);
 gamma_e * exp(l_idf) = gamma_i * exp(l_if);
 h                   = gamma_p * exp(h_pf) + gamma_i * exp(h_if); //
 exp(Kf)              = gamma_e * exp(k_ef); //
 exp(Y1f)             = exp(Cf) +    1     * (exp(Kf)-(1-deltak)*exp(Kf(-1))) ;
 //exp(Yf)            = exp(Cf) + exp(q_kf) * (exp(Kf)-(1-deltak)*exp(Kf(-1))) + delta_kb * exp(K_bf(-1))
-//                      + (eksi_1*(exp(uf)-1) + eksi_2/2*((exp(uf)-1)^2));  
+//                      + (eksi_1*(exp(uf)-1) + eksi_2/2*((exp(uf)-1)^2));
 end;
 
 
@@ -759,7 +759,7 @@ end;
 //// COMPUTE THE SS /////
 //steady(solve_algo=0);
 
-    
+
 shocks;
 //estimated st.dev.
 var e_z         = 0.0144^2;

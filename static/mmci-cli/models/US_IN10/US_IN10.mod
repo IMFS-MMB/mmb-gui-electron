@@ -1,6 +1,6 @@
 // US_IN10 model
 
-// Reference: Iacoviello, Matteo and Stefano Neri (2010). 
+// Reference: Iacoviello, Matteo and Stefano Neri (2010).
 // "Housing Market Spillovers: Evidence from an Estimated DSGE Model"
 // American Economic Journal: Macroeconomics 2 (April 2010): 125 - 164
 
@@ -9,7 +9,7 @@
 // Last edited by: M. Lalik and A. Mazany, August 2012
 // Note: In order to define the output gap, we added a code for flexible prices and flexible wages
 // scenario. This was done by setting the price mark-up and wage mark-ups to their stead-state level
-// in the part of the ccode referring to flexible economy. This new code is added above 
+// in the part of the ccode referring to flexible economy. This new code is added above
 // the original model block.
 
 // Authors' comments:
@@ -43,15 +43,15 @@ data_CCf data_IHf data_IKf zata_GDPf
         interest inflation inflationq outputgap output;                  //*
 //**************************************************************************
 
-varexo eps_c eps_h eps_j eps_k eps_p eps_s eps_t eps_z  
+varexo eps_c eps_h eps_j eps_k eps_p eps_s eps_t eps_z
 
 //**************************************************************************
-// Modelbase Shocks                                                      //*       
+// Modelbase Shocks                                                      //*
        interest_;                                                        //*
 //**************************************************************************
 
-parameters 
-//************************************************************************** 
+parameters
+//**************************************************************************
 // Modelbase Parameters                                                  //*
                                                                          //*
         cofintintb1 cofintintb2 cofintintb3 cofintintb4                  //*
@@ -68,25 +68,25 @@ parameters
 //% Declare model parameters
 //%------------------------------------------------------------------------
 
-BETA BETA1 M JEI MUC MUH DKC DKH DH ETA ETA1 EC EC1 FIKC FIKH ALPHA 
-TETA TAYLOR_R TAYLOR_Y TAYLOR_P X_SS LAGP 
+BETA BETA1 M JEI MUC MUH DKC DKH DH ETA ETA1 EC EC1 FIKC FIKH ALPHA
+TETA TAYLOR_R TAYLOR_Y TAYLOR_P X_SS LAGP
 RHO_AC RHO_AH RHO_AJ RHO_AK RHO_AM RHO_AT RHO_AZ RHO_AS
-NU NU1 KAPPA XW_SS TETAWC TETAWH LAGWC LAGWH ZETAKC 
+NU NU1 KAPPA XW_SS TETAWC TETAWH LAGWC LAGWH ZETAKC
 TREND_AC TREND_AH TREND_AK MUBB  Xf xwcf xwc1f xwhf xwh1f ;
-//% local model parameters: IKC_SS IKH_SS TRENDY TRENDK  TRENDH ; 
+//% local model parameters: IKC_SS IKH_SS TRENDY TRENDK  TRENDH ;
 //% local model parameters: NC_SS NH_SS CC_SS IH_SS IK_SS QQ_SS
 
 //**************************************************************************
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           
-cd('..');                                                                
-load policy_param.mat;                                                   
-for i=1:33                                                               
-    deep_parameter_name = M_.param_names(i,:);                           
-    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])                  
-end                                                                      
+thispath = pwd;
+cd('..');
+load policy_param.mat;
+for i=1:33
+    deep_parameter_name = M_.param_names(i,:);
+    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
+end
 cd(thispath);
     std_r_ = 100;                                                        //*
                                                                          //*
@@ -99,12 +99,12 @@ X_SS = 1.15 ;
 XW_SS = 1.15 ;
 BETA = 0.9925 ;
 BETA1 = 0.97 ;
-JEI = 0.12; 
-MUC = 0.35; 
-MUH = 0.10; 
+JEI = 0.12;
+MUC = 0.35;
+MUH = 0.10;
 KAPPA = 0.10 ;
 MUBB = 0.10 ;
-DKC = 0.025 ; 
+DKC = 0.025 ;
 DKH = 0.03 ;
 DH = 0.01;
 M = 0.85 ;
@@ -166,51 +166,51 @@ model ;
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables //*
 
-interest   = 400*(r-log(1/BETA));                                           
-inflation  = (dp+dp(-1)+dp(-2)+dp(-3))*100;                          
-inflationq = dp*400;                                                              
-%outputgap  = (Y -Yf)*100;                                             
-%output     = (Y-0.9308)*100; 
-outputgap  = (zata_GDP-zata_GDPf)*100;                                             
-output     = (zata_GDP-0.9308)*100; 
+interest   = 400*(r-log(1/BETA));
+inflation  = (dp+dp(-1)+dp(-2)+dp(-3))*100;
+inflationq = dp*400;
+%outputgap  = (Y -Yf)*100;
+%output     = (Y-0.9308)*100;
+outputgap  = (zata_GDP-zata_GDPf)*100;
+output     = (zata_GDP-0.9308)*100;
 //**************************************************************************
-//**************************************************************************                                                                    
+//**************************************************************************
 // Policy Rule                                                           //*
                                                                          //*
 // Monetary Policy                                                       //*
                                                                          //*
-interest =   cofintintb1*interest(-1)                                    //* 
-           + cofintintb2*interest(-2)                                    //* 
-           + cofintintb3*interest(-3)                                    //* 
-           + cofintintb4*interest(-4)                                    //* 
-           + cofintinf0*inflationq                                       //* 
-           + cofintinfb1*inflationq(-1)                                  //* 
-           + cofintinfb2*inflationq(-2)                                  //* 
-           + cofintinfb3*inflationq(-3)                                  //* 
-           + cofintinfb4*inflationq(-4)                                  //* 
-           + cofintinff1*inflationq(+1)                                  //* 
-           + cofintinff2*inflationq(+2)                                  //* 
-           + cofintinff3*inflationq(+3)                                  //* 
-           + cofintinff4*inflationq(+4)                                  //* 
-           + cofintout*outputgap 	                                     //* 
-           + cofintoutb1*outputgap(-1)                                   //* 
-           + cofintoutb2*outputgap(-2)                                   //* 
-           + cofintoutb3*outputgap(-3)                                   //* 
-           + cofintoutb4*outputgap(-4)                                   //* 
-           + cofintoutf1*outputgap(+1)                                   //* 
-           + cofintoutf2*outputgap(+2)                                   //* 
-           + cofintoutf3*outputgap(+3)                                   //* 
-           + cofintoutf4*outputgap(+4)                                   //* 
-           + cofintoutp*output 	                                         //* 
-           + cofintoutpb1*output(-1)                                     //* 
-           + cofintoutpb2*output(-2)                                     //* 
-           + cofintoutpb3*output(-3)                                     //* 
-           + cofintoutpb4*output(-4)                                     //* 
-           + cofintoutpf1*output(+1)                                     //* 
-           + cofintoutpf2*output(+2)                                     //* 
-           + cofintoutpf3*output(+3)                                     //* 
-           + cofintoutpf4*output(+4)                                     //* 
-           + std_r_ *interest_;                                          //* 
+interest =   cofintintb1*interest(-1)                                    //*
+           + cofintintb2*interest(-2)                                    //*
+           + cofintintb3*interest(-3)                                    //*
+           + cofintintb4*interest(-4)                                    //*
+           + cofintinf0*inflationq                                       //*
+           + cofintinfb1*inflationq(-1)                                  //*
+           + cofintinfb2*inflationq(-2)                                  //*
+           + cofintinfb3*inflationq(-3)                                  //*
+           + cofintinfb4*inflationq(-4)                                  //*
+           + cofintinff1*inflationq(+1)                                  //*
+           + cofintinff2*inflationq(+2)                                  //*
+           + cofintinff3*inflationq(+3)                                  //*
+           + cofintinff4*inflationq(+4)                                  //*
+           + cofintout*outputgap 	                                     //*
+           + cofintoutb1*outputgap(-1)                                   //*
+           + cofintoutb2*outputgap(-2)                                   //*
+           + cofintoutb3*outputgap(-3)                                   //*
+           + cofintoutb4*outputgap(-4)                                   //*
+           + cofintoutf1*outputgap(+1)                                   //*
+           + cofintoutf2*outputgap(+2)                                   //*
+           + cofintoutf3*outputgap(+3)                                   //*
+           + cofintoutf4*outputgap(+4)                                   //*
+           + cofintoutp*output 	                                         //*
+           + cofintoutpb1*output(-1)                                     //*
+           + cofintoutpb2*output(-2)                                     //*
+           + cofintoutpb3*output(-3)                                     //*
+           + cofintoutpb4*output(-4)                                     //*
+           + cofintoutpf1*output(+1)                                     //*
+           + cofintoutpf2*output(+2)                                     //*
+           + cofintoutpf3*output(+3)                                     //*
+           + cofintoutpf4*output(+4)                                     //*
+           + std_r_ *interest_;                                          //*
                                                                          //*
 // Discretionary Government Spending                                     //*
                                                                          //*
@@ -220,11 +220,11 @@ interest =   cofintintb1*interest(-1)                                    //*
 // Model code:
 
 # TRENDK = TREND_AC + 1/(1-MUC)*TREND_AK ;
-# TRENDY = TREND_AC + MUC/(1-MUC)*TREND_AK;  
+# TRENDY = TREND_AC + MUC/(1-MUC)*TREND_AK;
 # TRENDH = (1-MUH-KAPPA-MUBB)*TREND_AH + (MUH+MUBB)*TREND_AC + MUC*(MUH+MUBB)/(1-MUC)*TREND_AK ;
 # TRENDQ = (1-MUH-MUBB)*TREND_AC + MUC*(1-MUH-MUBB)/(1-MUC)*TREND_AK - (1-MUH-KAPPA-MUBB)*TREND_AH ;
 
-# llEXPTRENDY = exp ( TRENDY ) ;  
+# llEXPTRENDY = exp ( TRENDY ) ;
 # llEXPTRENDK = exp ( TRENDK ) ;
 # llEXPTRENDQ = exp ( TRENDQ ) ;
 # llEXPTRENDH = exp ( TRENDH ) ;
@@ -240,9 +240,9 @@ interest =   cofintintb1*interest(-1)                                    //*
 # llZETA4 = (llr/llEXPTRENDY-1)*M*llEXPTRENDQ/llr ;
 
 # llDH1 = 1 - (1-DH)/llEXPTRENDH ;
-# llDKC1 = 1 - (1-DKC)/llEXPTRENDK ; 
+# llDKC1 = 1 - (1-DKC)/llEXPTRENDK ;
 # llDKH1 = 1 - (1-DKH)/llEXPTRENDY ;
-  
+
 # llCHI1 = 1+llDH1*llZETA2*(1-llr1*llZETA1-KAPPA-ALPHA*(1-MUH-KAPPA-MUBB)) ;
 # llCHI2 = (llr1*llZETA1+KAPPA+ALPHA*(1-MUH-KAPPA-MUBB))*llDH1*llZETA3+llZETA4*llZETA3 ;
 # llCHI3 = (X_SS-1+llr1*llZETA0*X_SS+ALPHA*(1-MUC))/X_SS ;
@@ -266,7 +266,7 @@ interest =   cofintintb1*interest(-1)                                    //*
 
 # llY = (llnc^ALPHA)*(llnc1^(1-ALPHA)) *  llZETA0^(MUC/(1-MUC)) / llEXPTRENDK^(MUC/(1-MUC)) ;
 
-# llI = (llnh^(ALPHA*(1-MUH-KAPPA-MUBB))) * (llnh1^((1-ALPHA)*(1-MUH-KAPPA-MUBB))) * llZETA1^MUH 
+# llI = (llnh^(ALPHA*(1-MUH-KAPPA-MUBB))) * (llnh1^((1-ALPHA)*(1-MUH-KAPPA-MUBB))) * llZETA1^MUH
 * (llY*llQIY)^MUH / llEXPTRENDY^(MUH) * (MUBB*llY*llQIY)^MUBB ;
 
 # llq = llQIY*llY / llI ;
@@ -309,25 +309,25 @@ interest =   cofintintb1*interest(-1)                                    //*
 //% Patient households
 
 //% 1
-exp(cf) + exp(kcf)/exp(a_k) + exp(khf)  + exp(qf+hf) + exp(bf) = 
-(1-DH)*exp(qf+hf(-1)-TRENDH) + exp(wcf+ncf) + exp(whf+nhf) + (1-1/exp(Xf))*exp(Yf) + exp(rf(-1)+bf(-1)-TRENDY) 
+exp(cf) + exp(kcf)/exp(a_k) + exp(khf)  + exp(qf+hf) + exp(bf) =
+(1-DH)*exp(qf+hf(-1)-TRENDH) + exp(wcf+ncf) + exp(whf+nhf) + (1-1/exp(Xf))*exp(Yf) + exp(rf(-1)+bf(-1)-TRENDY)
 + (exp(rkcf+zkcf)+(1-DKC)/exp(a_k))*exp(kcf(-1)-TRENDK) + (exp(rkhf+zkhf)+(1-DKH))*exp(khf(-1)-TRENDY) + KAPPA*exp(qf)*exp(If);
 
 //% 2
-exp(qf+ucf) = exp(a_z+a_j-hf)*JEI + 
+exp(qf+ucf) = exp(a_z+a_j-hf)*JEI +
 BETA*exp(TRENDY)*(1-DH)*exp(qf(+1)+TRENDQ+ucf(+1)-TRENDY);
 
 //% 3
 exp(ucf) = BETA*exp(TRENDY)*exp(rf+ucf(+1)-TRENDY) ;
 
 //% 4
-exp(ucf)/exp(a_k) * ( 1 + FIKC*(exp(kcf-kcf(-1))-1 ) ) = 
-BETA*exp(TRENDY) * exp(ucf(+1)-TRENDK) 
+exp(ucf)/exp(a_k) * ( 1 + FIKC*(exp(kcf-kcf(-1))-1 ) ) =
+BETA*exp(TRENDY) * exp(ucf(+1)-TRENDK)
 * ( exp(rkcf(+1)+zkcf(+1)) + (1-DKC)/exp(a_k(+1)) + FIKC/2*exp(TRENDK)*(exp(kcf(+1))^2/(exp(kcf))^2-1) ) ;
 
 //% 5
 exp(ucf) * ( 1 + FIKH*(exp(khf-khf(-1))-1 ) ) =
-BETA*exp(TRENDY) * exp(ucf(+1)-TRENDY) 
+BETA*exp(TRENDY) * exp(ucf(+1)-TRENDY)
 * ( exp(rkhf(+1)+zkhf(+1)) + (1-DKH) + FIKH/2*exp(TRENDY)*(exp(khf(+1))^2/(exp(khf))^2-1) ) ;
 
 //% 6
@@ -365,9 +365,9 @@ exp(a_t) * exp(a_z) *  ( exp(nc1f)^(1-NU1) + exp(nh1f)^(1-NU1) )^((ETA1+NU1)/(1-
 //% Firms
 //% 14
 Yf = (1-MUC)*(a_c) + (1-MUC)*ALPHA*ncf + (1-MUC)*(1-ALPHA)*nc1f + MUC*(kcf(-1)+zkcf-TRENDK) ;
- 
+
 //% 15
-If = (1-MUH-MUBB-KAPPA)*(a_h) + MUBB*(log(MUBB) + qf + If) 
+If = (1-MUH-MUBB-KAPPA)*(a_h) + MUBB*(log(MUBB) + qf + If)
 + (1-MUH-MUBB-KAPPA)*ALPHA*nhf + (1-MUH-MUBB-KAPPA)*(1-ALPHA)*nh1f + MUH*(khf(-1)+zkhf-TRENDY) ;
 
 //% 16
@@ -392,12 +392,12 @@ log(MUH) + qf + If - khf(-1) + TRENDY = rkhf + zkhf  ;
 //% 24
 exp(hf) + exp(h1f) = (1-DH)*exp(hf(-1)-TRENDH) + (1-DH)*exp(h1f(-1)-TRENDH) + exp(If) ;
 
-//% DEFINITIONS OF MARGINAL UTILITY OF CONSUMPTION 
+//% DEFINITIONS OF MARGINAL UTILITY OF CONSUMPTION
 //% 25
 exp(ucf) = exp(a_z) * ( ((exp(TRENDY)-EC)/(exp(TRENDY)-BETA*EC*exp(TRENDY))) *
 ( 1 / ( exp(cf) - EC*exp(cf(-1)-TRENDY)  ) - BETA*EC*exp(TRENDY)  / ( exp(cf(+1)+TRENDY) - EC*exp(cf)  ) ) ) ;
 
-//% 26 
+//% 26
 exp(uc1f) = exp(a_z) * ( ((exp(TRENDY)-EC1)/(exp(TRENDY)-BETA1*EC1*exp(TRENDY))) *
 ( 1 / ( exp(c1f) - EC1*exp(c1f(-1)-TRENDY) ) - BETA1*EC1*exp(TRENDY) / ( exp(c1f(+1)+TRENDY) - EC1*exp(c1f) ) ) ) ;
 
@@ -409,7 +409,7 @@ exp(rkhf) / ( (1/BETA)-(1-DKH) ) = ZETAKC/(1-ZETAKC)*exp(zkhf) + (1-ZETAKC/(1-ZE
 
 data_CCf= log(exp(cf) + exp(c1f)) - CC_SS + TRENDY ;
 data_IHf = If -  IH_SS + TRENDH ;
-data_IKf = log ( exp(kcf) - (1-DKC)*exp(kcf(-1)-TRENDK) + 
+data_IKf = log ( exp(kcf) - (1-DKC)*exp(kcf(-1)-TRENDK) +
           exp(khf) - (1-DKH)*exp(khf(-1)-TRENDY) ) - IK_SS + TRENDK ;
 
 zata_GDPf = (exp(CC_SS)/(exp(CC_SS)+exp(QQ_SS+IH_SS)+exp(IK_SS)))*(data_CCf-TRENDY) +
@@ -424,25 +424,25 @@ zata_GDPf = (exp(CC_SS)/(exp(CC_SS)+exp(QQ_SS+IH_SS)+exp(IK_SS)))*(data_CCf-TREN
 //% Patient households
 
 //% 1
-exp(c) + exp(kc)/exp(a_k) + exp(kh)  + exp(q+h) + exp(b) = 
-(1-DH)*exp(q+h(-1)-TRENDH) + exp(wc+nc) + exp(wh+nh) + (1-1/exp(X))*exp(Y) + exp(r(-1)-dp+b(-1)-TRENDY) 
+exp(c) + exp(kc)/exp(a_k) + exp(kh)  + exp(q+h) + exp(b) =
+(1-DH)*exp(q+h(-1)-TRENDH) + exp(wc+nc) + exp(wh+nh) + (1-1/exp(X))*exp(Y) + exp(r(-1)-dp+b(-1)-TRENDY)
 + (exp(rkc+zkc)+(1-DKC)/exp(a_k))*exp(kc(-1)-TRENDK) + (exp(rkh+zkh)+(1-DKH))*exp(kh(-1)-TRENDY) + KAPPA*exp(q)*exp(I);
 
 //% 2
-exp(q+uc) = exp(a_z+a_j-h)*JEI + 
+exp(q+uc) = exp(a_z+a_j-h)*JEI +
 BETA*exp(TRENDY)*(1-DH)*exp(q(+1)+TRENDQ+uc(+1)-TRENDY);
 
 //% 3
 exp(uc) = BETA*exp(TRENDY)*exp(r-dp(+1)+uc(+1)-TRENDY) ;
 
 //% 4
-exp(uc)/exp(a_k) * ( 1 + FIKC*(exp(kc-kc(-1))-1 ) ) = 
-BETA*exp(TRENDY) * exp(uc(+1)-TRENDK) 
+exp(uc)/exp(a_k) * ( 1 + FIKC*(exp(kc-kc(-1))-1 ) ) =
+BETA*exp(TRENDY) * exp(uc(+1)-TRENDK)
 * ( exp(rkc(+1)+zkc(+1)) + (1-DKC)/exp(a_k(+1)) + FIKC/2*exp(TRENDK)*(exp(kc(+1))^2/(exp(kc))^2-1) ) ;
 
 //% 5
 exp(uc) * ( 1 + FIKH*(exp(kh-kh(-1))-1 ) ) =
-BETA*exp(TRENDY) * exp(uc(+1)-TRENDY) 
+BETA*exp(TRENDY) * exp(uc(+1)-TRENDY)
 * ( exp(rkh(+1)+zkh(+1)) + (1-DKH) + FIKH/2*exp(TRENDY)*(exp(kh(+1))^2/(exp(kh))^2-1) ) ;
 
 //% 6
@@ -480,9 +480,9 @@ exp(uc1) = BETA1*exp(TRENDY)*exp(r-dp(+1)+uc1(+1)-TRENDY) + exp(lm) ;
 //% Firms
 //% 14
 Y = (1-MUC)*(a_c) + (1-MUC)*ALPHA*nc + (1-MUC)*(1-ALPHA)*nc1 + MUC*(kc(-1)+zkc-TRENDK) ;
- 
+
 //% 15
-I = (1-MUH-MUBB-KAPPA)*(a_h) + MUBB*(log(MUBB) + q + I) 
+I = (1-MUH-MUBB-KAPPA)*(a_h) + MUBB*(log(MUBB) + q + I)
 + (1-MUH-MUBB-KAPPA)*ALPHA*nh + (1-MUH-MUBB-KAPPA)*(1-ALPHA)*nh1 + MUH*(kh(-1)+zkh-TRENDY) ;
 
 //% 16
@@ -508,37 +508,37 @@ dp - LAGP*dp(-1) = BETA*exp(TRENDY)*(dp(1) - LAGP*dp) -
 ((1-TETA)*(1-BETA*exp(TRENDY)*TETA)/TETA)*(X-log(X_SS)) + eps_p ;
 
 //% 23 (Taylor rule)
-//r = TAYLOR_R*r(-1) + (1-TAYLOR_R)*(TAYLOR_P)*dp + 
+//r = TAYLOR_R*r(-1) + (1-TAYLOR_R)*(TAYLOR_P)*dp +
 //(1-TAYLOR_R)*TAYLOR_Y*(zata_GDP-zata_GDP(-1)) +
 //(1-TAYLOR_R)*log(1/BETA) + eps_e - a_s/100 ;
 
 //% 24
 exp(h) + exp(h1) = (1-DH)*exp(h(-1)-TRENDH) + (1-DH)*exp(h1(-1)-TRENDH) + exp(I) ;
 
-//% DEFINITIONS OF MARGINAL UTILITY OF CONSUMPTION 
+//% DEFINITIONS OF MARGINAL UTILITY OF CONSUMPTION
 //% 25
 exp(uc) = exp(a_z) * ( ((exp(TRENDY)-EC)/(exp(TRENDY)-BETA*EC*exp(TRENDY))) *
 ( 1 / ( exp(c) - EC*exp(c(-1)-TRENDY)  ) - BETA*EC*exp(TRENDY)  / ( exp(c(+1)+TRENDY) - EC*exp(c)  ) ) ) ;
 
-//% 26 
+//% 26
 exp(uc1) = exp(a_z) * ( ((exp(TRENDY)-EC1)/(exp(TRENDY)-BETA1*EC1*exp(TRENDY))) *
 ( 1 / ( exp(c1) - EC1*exp(c1(-1)-TRENDY) ) - BETA1*EC1*exp(TRENDY) / ( exp(c1(+1)+TRENDY) - EC1*exp(c1) ) ) ) ;
 
 //% WAGE EQUATIONS
-wc = (1/(1+BETA*exp(TRENDY)))*wc(-1) + (1-(1/(1+BETA*exp(TRENDY))))*(wc(1)+dp(+1))  
-- (1+BETA*exp(TRENDY)*LAGWC)/(1+BETA*exp(TRENDY))*dp + LAGWC/(1+BETA*exp(TRENDY))*dp(-1) 
+wc = (1/(1+BETA*exp(TRENDY)))*wc(-1) + (1-(1/(1+BETA*exp(TRENDY))))*(wc(1)+dp(+1))
+- (1+BETA*exp(TRENDY)*LAGWC)/(1+BETA*exp(TRENDY))*dp + LAGWC/(1+BETA*exp(TRENDY))*dp(-1)
 - ((1-TETAWC)*(1-BETA*exp(TRENDY)*TETAWC)/TETAWC)/(1+BETA*exp(TRENDY))*(xwc-log(XW_SS))  ;
 
-wc1 = (1/(1+BETA1*exp(TRENDY)))*wc1(-1) + (1-(1/(1+BETA1*exp(TRENDY))))*(wc1(1)+dp(+1))  
-- (1+BETA1*exp(TRENDY)*LAGWC)/(1+BETA1*exp(TRENDY))*dp + LAGWC/(1+BETA1*exp(TRENDY))*dp(-1) 
+wc1 = (1/(1+BETA1*exp(TRENDY)))*wc1(-1) + (1-(1/(1+BETA1*exp(TRENDY))))*(wc1(1)+dp(+1))
+- (1+BETA1*exp(TRENDY)*LAGWC)/(1+BETA1*exp(TRENDY))*dp + LAGWC/(1+BETA1*exp(TRENDY))*dp(-1)
 - ((1-TETAWC)*(1-BETA1*exp(TRENDY)*TETAWC)/TETAWC)/(1+BETA1*exp(TRENDY))*(xwc1-log(XW_SS))  ;
 
-wh = (1/(1+BETA*exp(TRENDY)))*wh(-1) + (1-(1/(1+BETA*exp(TRENDY))))*(wh(1)+dp(+1))  
-- (1+BETA*exp(TRENDY)*LAGWH)/(1+BETA*exp(TRENDY))*dp + LAGWH/(1+BETA*exp(TRENDY))*dp(-1) 
+wh = (1/(1+BETA*exp(TRENDY)))*wh(-1) + (1-(1/(1+BETA*exp(TRENDY))))*(wh(1)+dp(+1))
+- (1+BETA*exp(TRENDY)*LAGWH)/(1+BETA*exp(TRENDY))*dp + LAGWH/(1+BETA*exp(TRENDY))*dp(-1)
 - ((1-TETAWH)*(1-BETA*exp(TRENDY)*TETAWH)/TETAWH)/(1+BETA*exp(TRENDY))*(xwh-log(XW_SS))  ;
 
-wh1 = (1/(1+BETA1*exp(TRENDY)))*wh1(-1) + (1-(1/(1+BETA1*exp(TRENDY))))*(wh1(1)+dp(+1))  
-- (1+BETA1*exp(TRENDY)*LAGWH)/(1+BETA1*exp(TRENDY))*dp + LAGWH/(1+BETA1*exp(TRENDY))*dp(-1) 
+wh1 = (1/(1+BETA1*exp(TRENDY)))*wh1(-1) + (1-(1/(1+BETA1*exp(TRENDY))))*(wh1(1)+dp(+1))
+- (1+BETA1*exp(TRENDY)*LAGWH)/(1+BETA1*exp(TRENDY))*dp + LAGWH/(1+BETA1*exp(TRENDY))*dp(-1)
 - ((1-TETAWH)*(1-BETA1*exp(TRENDY)*TETAWH)/TETAWH)/(1+BETA1*exp(TRENDY))*(xwh1-log(XW_SS))  ;
 
 //% CAPACITY
@@ -549,7 +549,7 @@ exp(rkh) / ( (1/BETA)-(1-DKH) ) = ZETAKC/(1-ZETAKC)*exp(zkh) + (1-ZETAKC/(1-ZETA
 data_CC = log(exp(c) + exp(c1)) - CC_SS + TRENDY ;
 data_DP = dp  ;
 data_IH = I -  IH_SS + TRENDH ;
-data_IK = log ( exp(kc) - (1-DKC)*exp(kc(-1)-TRENDK) + 
+data_IK = log ( exp(kc) - (1-DKC)*exp(kc(-1)-TRENDK) +
           exp(kh) - (1-DKH)*exp(kh(-1)-TRENDY) ) - IK_SS + TRENDK ;
 data_NC = ALPHA*nc + (1-ALPHA)*nc1 - NC_SS ;
 data_NH = ALPHA*nh + (1-ALPHA)*nh1 - NH_SS ;

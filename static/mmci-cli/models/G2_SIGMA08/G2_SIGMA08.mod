@@ -1,7 +1,7 @@
 //**************************************************************************
 // A New Comparative Approach to Macroeconomic Modeling and Policy Analysis
 //
-// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and 
+// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and
 // Maik Wolters
 //
 // Working Paper, 2009
@@ -10,53 +10,53 @@
 // Model: G2_SIGMA08
 
 // Further references:
-// Erceg, C., L. Guerrieri, and C. Gust. 2008. "Trade adjustment and the composition of trade." 
+// Erceg, C., L. Guerrieri, and C. Gust. 2008. "Trade adjustment and the composition of trade."
 // Journal of Economic Dynamics and Control 32, pp. 2622-2650.
 
 // Last edited: 10/09/07 by S. Schmidt
 
 // For the replication of IRF to foreign investment demand shock (via decline in the foreign capital income tax rate)
-// Figure 3 in EGG2008, the AR parameter of the shock is needed to be changed to 0.95 (from 0.9) 
-// in line with footnote 11 of EGG2008. 
+// Figure 3 in EGG2008, the AR parameter of the shock is needed to be changed to 0.95 (from 0.9)
+// in line with footnote 11 of EGG2008.
 
 
-var cc sp2gdp cc2gdp if if2gdp tobq kp kp1 rentks gdp ccd ifd mgsni mgsnic mgsnii rmc 
-    rmi rs mcq mpl wmarkup mrs dpq pq dpmf pmf px dw w zetac zetap le rpmpq rpxpq rpmpx 
-    rpcpq rpipq dpc pc gdppot gdpgap rs1 rs1f1 rs1f2 rs1f3 rs1f4 rs1f5 rs1f6 rs1f7 rs1f8 
-    rs1f9 rs1f10 rs1f11 rs1f12 rs1f13 rs1f14 rs1f15 rs1f16 rs1f17 rs1f18 rs1f19 ronereal 
-    r3real rratek nfa er rerpc rerpq dpql1 dpql2 dpql3 dpcl1 dpcl2 dpcl3 dgdp dgdpl1 dgdpl2 
-    dgdpl3 prabs prabsdt nshrgdefy nshrgy nshrcy nshriy nshrxy nshrmy ntby dpqyoy dpcyoy 
-    dgdpyoy dpqyoya4 dpqyoya4l1 dpqyoya4l2 dpqyoya4l3 dpqyoya4l4 gdpgapa4 gdpgapa4l1 gdpgapa4l2 
-    gdpgapa4l3 gdpgapa4l4 pitartl1 pitartl2 pitartl3 pitartl4 glprod ccf cc2gdpf iff if2gdpf 
-    tobqf kpf kp1f rentksf gdpf ccdf ifdf mgsnif mgsnicf mgsniif rmcf rmif rsf mcqf mplf wmarkupf 
-    mrsf dpqf pqf dpm pm pxf dwf wf zetacf zetapf lef rpmpqf rpxpqf rpmpxf rpcpqf rpipqf dpcf 
-    pcf gdppotf gdpgapf rs1f dpql1f dpql2f dpql3f dpcl1f dpcl2f dpcl3f dpqyoyf dpcyoyf dgdpf 
-    dgdpl1f dgdpl2f dgdpl3f prabsf prabsdtf dgdpyoyf lamc ccopt cckey taxl debtg lamcf ccoptf cckeyf 
-    taxlf debtgf gtech gtechf at gat gatf1 gatf2 gatf3 gatf4 gcx pitar conshk taxk transhk atf gcxf 
-    pitarf conshkf taxkf transhkf riskp taxlshkf one gatp gatt gcxp gcxt pitarp pitart conshkp 
-    conshkt  taxkp taxkpl1 taxkpl2 taxkt transhkp transhkt gatpf gattf gcxpf gcxtf pitarpf pitartf 
-    conshkpf conshktf taxkpf taxkpfl1 taxkpfl2 taxktf transhkpf transhktf riskpp riskpt betashk 
+var cc sp2gdp cc2gdp if if2gdp tobq kp kp1 rentks gdp ccd ifd mgsni mgsnic mgsnii rmc
+    rmi rs mcq mpl wmarkup mrs dpq pq dpmf pmf px dw w zetac zetap le rpmpq rpxpq rpmpx
+    rpcpq rpipq dpc pc gdppot gdpgap rs1 rs1f1 rs1f2 rs1f3 rs1f4 rs1f5 rs1f6 rs1f7 rs1f8
+    rs1f9 rs1f10 rs1f11 rs1f12 rs1f13 rs1f14 rs1f15 rs1f16 rs1f17 rs1f18 rs1f19 ronereal
+    r3real rratek nfa er rerpc rerpq dpql1 dpql2 dpql3 dpcl1 dpcl2 dpcl3 dgdp dgdpl1 dgdpl2
+    dgdpl3 prabs prabsdt nshrgdefy nshrgy nshrcy nshriy nshrxy nshrmy ntby dpqyoy dpcyoy
+    dgdpyoy dpqyoya4 dpqyoya4l1 dpqyoya4l2 dpqyoya4l3 dpqyoya4l4 gdpgapa4 gdpgapa4l1 gdpgapa4l2
+    gdpgapa4l3 gdpgapa4l4 pitartl1 pitartl2 pitartl3 pitartl4 glprod ccf cc2gdpf iff if2gdpf
+    tobqf kpf kp1f rentksf gdpf ccdf ifdf mgsnif mgsnicf mgsniif rmcf rmif rsf mcqf mplf wmarkupf
+    mrsf dpqf pqf dpm pm pxf dwf wf zetacf zetapf lef rpmpqf rpxpqf rpmpxf rpcpqf rpipqf dpcf
+    pcf gdppotf gdpgapf rs1f dpql1f dpql2f dpql3f dpcl1f dpcl2f dpcl3f dpqyoyf dpcyoyf dgdpf
+    dgdpl1f dgdpl2f dgdpl3f prabsf prabsdtf dgdpyoyf lamc ccopt cckey taxl debtg lamcf ccoptf cckeyf
+    taxlf debtgf gtech gtechf at gat gatf1 gatf2 gatf3 gatf4 gcx pitar conshk taxk transhk atf gcxf
+    pitarf conshkf taxkf transhkf riskp taxlshkf one gatp gatt gcxp gcxt pitarp pitart conshkp
+    conshkt  taxkp taxkpl1 taxkpl2 taxkt transhkp transhkt gatpf gattf gcxpf gcxtf pitarpf pitartf
+    conshkpf conshktf taxkpf taxkpfl1 taxkpfl2 taxktf transhkpf transhktf riskpp riskpt betashk
     betashkf impshk impshkf taxlshk taxlshkpf taxlshktf errgcxt
 
 //**************************************************************************
-// Modelbase Variables                                                   //*    
+// Modelbase Variables                                                   //*
    interest inflation inflationq output outputgap fispol;                //*
 //**************************************************************************
 
-varexo erratp erratt errgcxp errpitarp errpitart errconshkp errconshkt errtaxkp 
-       errtaxkt errtranshkp errtranshkt erratpf errattf errgcxpf errgcxtf errpitarpf errpitartf 
-       errconshkpf errconshktf errtaxkpf errtaxktf errtranshkpf errtranshktf errriskpp errriskpt 
-       errbetashk errbetashkf errimpshk errimpshkf errtaxlshk errtaxlshkpf errtaxlshktf 
+varexo erratp erratt errgcxp errpitarp errpitart errconshkp errconshkt errtaxkp
+       errtaxkt errtranshkp errtranshkt erratpf errattf errgcxpf errgcxtf errpitarpf errpitartf
+       errconshkpf errconshktf errtaxkpf errtaxktf errtranshkpf errtranshktf errriskpp errriskpt
+       errbetashk errbetashkf errimpshk errimpshkf errtaxlshk errtaxlshkpf errtaxlshktf
 
 //**************************************************************************
-// Modelbase Shocks                                                      //*       
+// Modelbase Shocks                                                      //*
        interest_ fiscal_;                                                //*
 //**************************************************************************
 
 
 
-parameters 
-//************************************************************************** 
+parameters
+//**************************************************************************
 // Modelbase Parameters                                                  //*
                                                                          //*
         cofintintb1 cofintintb2 cofintintb3 cofintintb4                  //*
@@ -68,10 +68,10 @@ parameters
         cofintoutpf1 cofintoutpf2 cofintoutpf3 cofintoutpf4              //*
         std_r_ std_r_quart coffispol                                     //*
 //**************************************************************************
-           shrckey shrcy shrgy rbar gzbar popg delta  shriy phik  deltahat phii invfor inddelta tauk defspread cessub shrmy shrmc shrmi etamc          
-           phimc forswitch lovparm monlag gampi gamex gamy gamy4 gamgap taul chi shrlab indexp kappap indexm kappax indexw kappaw qcapshr shrlaby rkbar          
-           shrckeyf shrcyf shriyf shrgyf shrmyf shrmcf shrmif etamcf etamif phimcf monlagf gamexf gamyf gamy4f gamgapf kappapf kappaxf kappawf sigma phic           
-           xsic phid1 phid2 taxlwedgeswitch taxwedgeswitch deltag switchg rho1p  rho1t rho2p rho2t rho3p rho3t rho4p  rho4t rho5p taxkgswitch rho5t rho11p         
+           shrckey shrcy shrgy rbar gzbar popg delta  shriy phik  deltahat phii invfor inddelta tauk defspread cessub shrmy shrmc shrmi etamc
+           phimc forswitch lovparm monlag gampi gamex gamy gamy4 gamgap taul chi shrlab indexp kappap indexm kappax indexw kappaw qcapshr shrlaby rkbar
+           shrckeyf shrcyf shriyf shrgyf shrmyf shrmcf shrmif etamcf etamif phimcf monlagf gamexf gamyf gamy4f gamgapf kappapf kappaxf kappawf sigma phic
+           xsic phid1 phid2 taxlwedgeswitch taxwedgeswitch deltag switchg rho1p  rho1t rho2p rho2t rho3p rho3t rho4p  rho4t rho5p taxkgswitch rho5t rho11p
            rho11t rho13 rho14 rho15 phid3 phid4 rho15p rho15t cesparm beta thetap thetaw taup phimi prodg etami psip psiw psixf popkey psipf psiwf psix thetapf thetawf
            phimitilde phimctilde phimif;
 
@@ -80,28 +80,28 @@ parameters
 
 
 
-forswitch = 0;  //% cost of adjusting imports external if forswitch = 0, internal if forswitch = 1;  (home and foreign) 
-switchg = 1;  //% if switchg = 0, govt spending shock is relative to baseline GDP; 
+forswitch = 0;  //% cost of adjusting imports external if forswitch = 0, internal if forswitch = 1;  (home and foreign)
+switchg = 1;  //% if switchg = 0, govt spending shock is relative to baseline GDP;
               //% if switchg = 1, govt spending rises with gdp, so shk
               //% is to share (same switch home and foreign)
 //labendog = 0;  % if labendog = 1, then distortionary labor tax adjusts to satisfy govt intertemporal budget constraint;
                 //% but if labendog = 0, then lump-sum taxes of all agents adjust
 
 
-taxkgswitch = 1; // % if switch is 1 then errtaxkperr shocks the growth rate of taxkp 
+taxkgswitch = 1; // % if switch is 1 then errtaxkperr shocks the growth rate of taxkp
                  //% if switch is 0 then level shock
-                 
+
 taxwedgeswitch = 1;  //%if switch = 1, then capital tax shock does not affect gov't revenues
                           //          %if switch = 0, it does
-                 
+
 taxlwedgeswitch = 1;// %if switch =1, then labor tax shock does not affect gov't revenues
                         //           % if switch = 0, it does
-                                    
-invfor = 1;                           
+
+invfor = 1;
 defspread = 0;
 lovparm = 0;
 popg = 0.0025;
-gzbar = 1.0037;             
+gzbar = 1.0037;
 cesparm = 1;
 cessub = -1;
 tauk = .3;
@@ -116,7 +116,7 @@ beta = .997;
 //% consumption share), we have
 //% .5*shrmy = .5*.12 = .06 = shrmc*shrcy = shrmc*(.66)  IMPLYING shrmc=.09;
 //% .5*shrmy = .5*.12 = .06 = shrmi*shriy = shrmi*(.16)  IMPLYING shrmi=.38;
- 
+
 shriy = 0.25;
 shrgy = .18;
 shrmc = 0.052;
@@ -140,7 +140,7 @@ phimif = phimi;
 phimcf = phimc;
 prodg = 0;
 deltag = .025;
-etamc = 1.5;   // % elasticity of subst between home consumption goods and imports 
+etamc = 1.5;   // % elasticity of subst between home consumption goods and imports
 etami = 1.5;
 indexp = 1;
 indexw = 1;
@@ -200,9 +200,9 @@ rho14 = .95;
 
 etamcf = etamc;
 etamif = etami;
-shrcy = 1-shriy - shrgy;  
+shrcy = 1-shriy - shrgy;
 shrmy = shrmc*shrcy + shrmi*shriy;
-deltahat = gzbar*(1+popg) - (1 - delta); 
+deltahat = gzbar*(1+popg) - (1 - delta);
 inddelta = delta;
 rbar =  gzbar^sigma/beta -1;
 rkbar = (rbar + delta - tauk*inddelta)/(1-tauk);
@@ -238,14 +238,14 @@ kappawf =  (1-psiwf)*(1-psiwf*beta)/(psiwf*(1+chi*shrlab*(1+thetawf)/thetawf));
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           
-cd('..');                                                                
-load policy_param.mat;                                                   
-for i=1:33                                                               
-    deep_parameter_name = M_.param_names(i,:);                           
-    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])                  
-end                                                                      
-cd(thispath);   
+thispath = pwd;
+cd('..');
+load policy_param.mat;
+for i=1:33
+    deep_parameter_name = M_.param_names(i,:);
+    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
+end
+cd(thispath);
                                                                          //*
 // Definition of Discretionary Fiscal Policy Parameter                   //*
 coffispol = 1;                                                           //*
@@ -259,48 +259,48 @@ model(linear);
 interest  = rs*4;                                                        //*
 inflation  = dpqyoy;                                                     //*
 inflationq = dpq*4;                                                      //*
-outputgap  = gdpgap;                                                     //*         
+outputgap  = gdpgap;                                                     //*
 output     = gdp;                                                        //*
 fispol     = errgcxt;                                                    //*
 //**************************************************************************
 
 
-//**************************************************************************                                                                    
+//**************************************************************************
 // Policy Rule                                                           //*
                                                                          //*
 // Monetary Policy                                                       //*
                                                                          //*
-interest =   cofintintb1*interest(-1)                                    //* 
-           + cofintintb2*interest(-2)                                    //* 
-           + cofintintb3*interest(-3)                                    //* 
-           + cofintintb4*interest(-4)                                    //* 
-           + cofintinf0*inflationq                                       //* 
-           + cofintinfb1*inflationq(-1)                                  //* 
-           + cofintinfb2*inflationq(-2)                                  //* 
-           + cofintinfb3*inflationq(-3)                                  //* 
-           + cofintinfb4*inflationq(-4)                                  //* 
-           + cofintinff1*inflationq(+1)                                  //* 
-           + cofintinff2*inflationq(+2)                                  //* 
-           + cofintinff3*inflationq(+3)                                  //* 
-           + cofintinff4*inflationq(+4)                                  //* 
-           + cofintout*outputgap 	                                     //* 
-           + cofintoutb1*outputgap(-1)                                   //* 
-           + cofintoutb2*outputgap(-2)                                   //* 
-           + cofintoutb3*outputgap(-3)                                   //* 
-           + cofintoutb4*outputgap(-4)                                   //* 
-           + cofintoutf1*outputgap(+1)                                   //* 
-           + cofintoutf2*outputgap(+2)                                   //* 
-           + cofintoutf3*outputgap(+3)                                   //* 
-           + cofintoutf4*outputgap(+4)                                   //* 
-           + cofintoutp*output 	                                         //* 
-           + cofintoutpb1*output(-1)                                     //* 
-           + cofintoutpb2*output(-2)                                     //* 
-           + cofintoutpb3*output(-3)                                     //* 
-           + cofintoutpb4*output(-4)                                     //* 
-           + cofintoutpf1*output(+1)                                     //* 
-           + cofintoutpf2*output(+2)                                     //* 
-           + cofintoutpf3*output(+3)                                     //* 
-           + cofintoutpf4*output(+4)                                     //* 
+interest =   cofintintb1*interest(-1)                                    //*
+           + cofintintb2*interest(-2)                                    //*
+           + cofintintb3*interest(-3)                                    //*
+           + cofintintb4*interest(-4)                                    //*
+           + cofintinf0*inflationq                                       //*
+           + cofintinfb1*inflationq(-1)                                  //*
+           + cofintinfb2*inflationq(-2)                                  //*
+           + cofintinfb3*inflationq(-3)                                  //*
+           + cofintinfb4*inflationq(-4)                                  //*
+           + cofintinff1*inflationq(+1)                                  //*
+           + cofintinff2*inflationq(+2)                                  //*
+           + cofintinff3*inflationq(+3)                                  //*
+           + cofintinff4*inflationq(+4)                                  //*
+           + cofintout*outputgap 	                                     //*
+           + cofintoutb1*outputgap(-1)                                   //*
+           + cofintoutb2*outputgap(-2)                                   //*
+           + cofintoutb3*outputgap(-3)                                   //*
+           + cofintoutb4*outputgap(-4)                                   //*
+           + cofintoutf1*outputgap(+1)                                   //*
+           + cofintoutf2*outputgap(+2)                                   //*
+           + cofintoutf3*outputgap(+3)                                   //*
+           + cofintoutf4*outputgap(+4)                                   //*
+           + cofintoutp*output 	                                         //*
+           + cofintoutpb1*output(-1)                                     //*
+           + cofintoutpb2*output(-2)                                     //*
+           + cofintoutpb3*output(-3)                                     //*
+           + cofintoutpb4*output(-4)                                     //*
+           + cofintoutpf1*output(+1)                                     //*
+           + cofintoutpf2*output(+2)                                     //*
+           + cofintoutpf3*output(+3)                                     //*
+           + cofintoutpf4*output(+4)                                     //*
            + std_r_ *interest_;                                          //*
                                                                          //*
 // Discretionary Government Spending                                     //*
@@ -332,15 +332,15 @@ rsf =        cofintintb1*rsf(-1)                                         //*
            + cofintoutf2*gdpgapf(+2)                               	     //*
            + cofintoutf3*gdpgapf(+3)                                     //*
            + cofintoutf4*gdpgapf(+4)                             	     //*
-           + cofintoutp*gdpf 	                                         //* 
-           + cofintoutpb1*gdpf(-1)                                       //* 
-           + cofintoutpb2*gdpf(-2)                                       //* 
-           + cofintoutpb3*gdpf(-3)                                       //* 
-           + cofintoutpb4*gdpf(-4)                                       //* 
-           + cofintoutpf1*gdpf(+1)                                       //* 
-           + cofintoutpf2*gdpf(+2)                                       //* 
-           + cofintoutpf3*gdpf(+3)                                       //* 
-           + cofintoutpf4*gdpf(+4);                                       //* 
+           + cofintoutp*gdpf 	                                         //*
+           + cofintoutpb1*gdpf(-1)                                       //*
+           + cofintoutpb2*gdpf(-2)                                       //*
+           + cofintoutpb3*gdpf(-3)                                       //*
+           + cofintoutpb4*gdpf(-4)                                       //*
+           + cofintoutpf1*gdpf(+1)                                       //*
+           + cofintoutpf2*gdpf(+2)                                       //*
+           + cofintoutpf3*gdpf(+3)                                       //*
+           + cofintoutpf4*gdpf(+4);                                       //*
 //**************************************************************************
 
 // Original Model Code:
@@ -411,13 +411,13 @@ cckey =  -rpcpq  + (((1-taul)*shrlaby)/(shrlaby + tauk*qcapshr*(1-inddelta/rkbar
 
 
 //Verwendung GDP
-gdp     = shrcy*cc + shriy*if + shrgy*gcx + shrmy*(mgsnif -mgsni); 
+gdp     = shrcy*cc + shriy*if + shrgy*gcx + shrmy*(mgsnif -mgsni);
 
 sp2gdp  = -shrcy*(cc-gdp+rpcpq) - shrgy*(gcx-gdp) + debtg - ((1+rbar)/(gzbar*(1+popg)))*debtg(-1);
 cc2gdp  = shrcy * (cc-gdp);
 (1- ((1-delta)/(gzbar*(1+popg))))*if = kp - ((1-delta)/(gzbar*(1+popg)))*kp1;
 if2gdp  = shriy*(if-gdp+rpipq);
-tobq    = rpipq + phik*(deltahat/(1+popg))*(if-kp1) + phii*gzbar*(if-if(-1)) - (1/(1+rbar))*gzbar^2*(1+popg)*invfor*phii*(if(+1)-if); 
+tobq    = rpipq + phik*(deltahat/(1+popg))*(if-kp1) + phii*gzbar*(if-if(-1)) - (1/(1+rbar))*gzbar^2*(1+popg)*invfor*phii*(if(+1)-if);
 tobq    = (1/(1+rbar))*(1-delta)*tobq(+1) - (1/(1+rbar))*(rs - dpq(+1)) + (1/(1+rbar))*(rbar+delta-inddelta*tauk+defspread)*rentks(+1)- (1/(1+rbar))*((rbar+delta-inddelta)/(1-tauk))*taxk(+1) + tauk*inddelta*rpipq(+1) + (1/(1+rbar))*(phik*deltahat^2/(1+popg))*(if(+1) - kp);
 kp1     = kp(-1);
 rentks  =  zetap - at + (1-cessub)*(le + at - kp(-1));
@@ -447,7 +447,7 @@ zetap = zetap(-1) + dw - dpq;
 
 rpmpq =  pm - pq;
 
-//real exchange rate for domestically produced goods 
+//real exchange rate for domestically produced goods
 rpxpq = px - pq;
 
 rpmpx =  pm - px;
@@ -583,7 +583,7 @@ dpm = indexm*dpm(-1) + ((1+popg)*gzbar/(1+rbar))*(dpm(+1)-indexm*dpm) +  kappaxf
 //Households
 //total consumption
 ccf = (1-shrckeyf)*ccoptf +  shrckeyf*cckeyf;
-//consumption euler equation 
+//consumption euler equation
 lamcf = lamcf(+1) + (rsf - dpcf(+1)) + betashkf;
 lamcf = -1*sigma*(1/(1-(phic/gzbar)-xsic))*(ccoptf - (phic/gzbar)*ccoptf(-1) - xsic*(conshkf+atf)) ;
 //hand-to-mouth consumers
@@ -618,7 +618,7 @@ zetapf = zetapf(-1) + dwf - dpqf;
 
 rpmpqf =  pmf - pqf ;
 rpxpqf = pm - er - pqf;
-rpmpxf =  pmf - pm + er; 
+rpmpxf =  pmf - pm + er;
 rpcpqf = shrmcf*rpmpqf;
 rpipqf = shrmif*rpmpqf;
 dpcf = dpqf + rpcpqf - rpcpqf(-1);

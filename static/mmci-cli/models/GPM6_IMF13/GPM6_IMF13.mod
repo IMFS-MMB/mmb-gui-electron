@@ -8,41 +8,41 @@
 // This mod file is working under Dynare 4.3 and above.
 // Last edited: 15/08/2014 by J. Yoo
 
-// 6 Regions: EA6(Emerging Asia Countries), EU(Euro Area), JA(Japan),   
+// 6 Regions: EA6(Emerging Asia Countries), EU(Euro Area), JA(Japan),
 // LA6(Latin America), RC6(Remaining Countries), US(United States)
 // We set variables for the US to the Modelbase variables.
 
-var 
-BLT_BAR_US BLT_US BLT_BAR_EU BLT_EU BLT_BAR_JA BLT_JA  
-DOT_LZ_BAR_EA6 DOT_LZ_BAR_LA6 DOT_LZ_BAR_RC6 
-DOT_REER_M_BAR_EA6 DOT_REER_M_BAR_EU DOT_REER_M_BAR_JA DOT_REER_M_BAR_LA6 DOT_REER_M_BAR_RC6 DOT_REER_M_BAR_US 
-DRS_EA6 DRS_EU DRS_JA DRS_LA6 DRS_RC6 DRS_US  
-E2_EU E_EU E2_JA E_JA E2_US E_US  
-FACT_EA6 FACT_EU FACT_JA FACT_LA6 FACT_RC6 FACT_US  
-GROWTH4_BAR_EA6 GROWTH4_BAR_EU GROWTH4_BAR_JA GROWTH4_BAR_LA6 GROWTH4_BAR_RC6 GROWTH4_BAR_US 
-GROWTH4_EA6 GROWTH4_EU GROWTH4_JA GROWTH4_LA6 GROWTH4_RC6 GROWTH4_US  
-GROWTH_BAR_EA6 GROWTH_BAR_EU GROWTH_BAR_JA GROWTH_BAR_LA6 GROWTH_BAR_RC6 GROWTH_BAR_US 
-GROWTH_EA6 GROWTH_EU GROWTH_JA GROWTH_LA6 GROWTH_RC6 GROWTH_US  
-G_EA6 G_EU G_JA G_LA6 G_RC6 G_US  
-LCPI_EA6 LCPI_EU LCPI_JA LCPI_LA6 LCPI_RC6 LCPI_US  
-LGDP_BAR_EA6 LGDP_BAR_EU LGDP_BAR_JA LGDP_BAR_LA6 LGDP_BAR_RC6 LGDP_BAR_US  
-LGDP_EA6 LGDP_EU LGDP_JA LGDP_LA6 LGDP_RC6 LGDP_US  
-LS_EA6 LS_EU LS_JA LS_LA6 LS_RC6 LZ_BAR_EA6 LZ_BAR_EU LZ_BAR_JA LZ_BAR_LA6 LZ_BAR_RC6 
-LZ_EA6 LZ_EU LZ_JA LZ_LA6 LZ_RC6 LZ_E_EA6 LZ_E_EU LZ_E_JA LZ_E_LA6 LZ_E_RC6 
-LZ_GAP_EA6 LZ_GAP_EU LZ_GAP_JA LZ_GAP_LA6 LZ_GAP_RC6  
-PIE4_EA6 PIE4_EU PIE4_JA PIE4_LA6 PIE4_RC6 PIE4_US  
-PIETAR_EA6 PIETAR_EU PIETAR_JA PIETAR_LA6 PIETAR_RC6 PIETAR_US 
-PIE_EA6 PIE_EU PIE_JA PIE_LA6 PIE_RC6 PIE_US  
-REER_M_BAR_EA6 REER_M_BAR_EU REER_M_BAR_JA REER_M_BAR_LA6 REER_M_BAR_RC6 REER_M_BAR_US  
-REER_M_EA6 REER_M_EU REER_M_JA REER_M_LA6 REER_M_RC6 REER_M_US  
-REER_T_BAR_EA6 REER_T_BAR_EU REER_T_BAR_JA REER_T_BAR_LA6 REER_T_BAR_RC6 REER_T_BAR_US 
-REER_T_EA6 REER_T_EU REER_T_JA REER_T_LA6 REER_T_RC6 REER_T_US  
-RESN_RS_EA6 RESN_RS_LA6 RESN_RS_RC6 
-RR_BAR_EA6 RR_BAR_EU RR_BAR_JA RR_BAR_LA6 RR_BAR_RC6 RR_BAR_US  
-RR_EA6 RR_EU RR_JA RR_LA6 RR_RC6 RR_US RS_EA6 RS_EU RS_JA RS_LA6 RS_RC6 RS_US  
-UNR_BAR_EU UNR_BAR_JA UNR_BAR_US UNR_EU UNR_GAP_EU UNR_GAP_JA UNR_GAP_US  
-UNR_G_EU UNR_G_JA UNR_G_US UNR_JA UNR_US  
-Y_EA6 Y_EU Y_JA Y_LA6 Y_RC6 Y_US 
+var
+BLT_BAR_US BLT_US BLT_BAR_EU BLT_EU BLT_BAR_JA BLT_JA
+DOT_LZ_BAR_EA6 DOT_LZ_BAR_LA6 DOT_LZ_BAR_RC6
+DOT_REER_M_BAR_EA6 DOT_REER_M_BAR_EU DOT_REER_M_BAR_JA DOT_REER_M_BAR_LA6 DOT_REER_M_BAR_RC6 DOT_REER_M_BAR_US
+DRS_EA6 DRS_EU DRS_JA DRS_LA6 DRS_RC6 DRS_US
+E2_EU E_EU E2_JA E_JA E2_US E_US
+FACT_EA6 FACT_EU FACT_JA FACT_LA6 FACT_RC6 FACT_US
+GROWTH4_BAR_EA6 GROWTH4_BAR_EU GROWTH4_BAR_JA GROWTH4_BAR_LA6 GROWTH4_BAR_RC6 GROWTH4_BAR_US
+GROWTH4_EA6 GROWTH4_EU GROWTH4_JA GROWTH4_LA6 GROWTH4_RC6 GROWTH4_US
+GROWTH_BAR_EA6 GROWTH_BAR_EU GROWTH_BAR_JA GROWTH_BAR_LA6 GROWTH_BAR_RC6 GROWTH_BAR_US
+GROWTH_EA6 GROWTH_EU GROWTH_JA GROWTH_LA6 GROWTH_RC6 GROWTH_US
+G_EA6 G_EU G_JA G_LA6 G_RC6 G_US
+LCPI_EA6 LCPI_EU LCPI_JA LCPI_LA6 LCPI_RC6 LCPI_US
+LGDP_BAR_EA6 LGDP_BAR_EU LGDP_BAR_JA LGDP_BAR_LA6 LGDP_BAR_RC6 LGDP_BAR_US
+LGDP_EA6 LGDP_EU LGDP_JA LGDP_LA6 LGDP_RC6 LGDP_US
+LS_EA6 LS_EU LS_JA LS_LA6 LS_RC6 LZ_BAR_EA6 LZ_BAR_EU LZ_BAR_JA LZ_BAR_LA6 LZ_BAR_RC6
+LZ_EA6 LZ_EU LZ_JA LZ_LA6 LZ_RC6 LZ_E_EA6 LZ_E_EU LZ_E_JA LZ_E_LA6 LZ_E_RC6
+LZ_GAP_EA6 LZ_GAP_EU LZ_GAP_JA LZ_GAP_LA6 LZ_GAP_RC6
+PIE4_EA6 PIE4_EU PIE4_JA PIE4_LA6 PIE4_RC6 PIE4_US
+PIETAR_EA6 PIETAR_EU PIETAR_JA PIETAR_LA6 PIETAR_RC6 PIETAR_US
+PIE_EA6 PIE_EU PIE_JA PIE_LA6 PIE_RC6 PIE_US
+REER_M_BAR_EA6 REER_M_BAR_EU REER_M_BAR_JA REER_M_BAR_LA6 REER_M_BAR_RC6 REER_M_BAR_US
+REER_M_EA6 REER_M_EU REER_M_JA REER_M_LA6 REER_M_RC6 REER_M_US
+REER_T_BAR_EA6 REER_T_BAR_EU REER_T_BAR_JA REER_T_BAR_LA6 REER_T_BAR_RC6 REER_T_BAR_US
+REER_T_EA6 REER_T_EU REER_T_JA REER_T_LA6 REER_T_RC6 REER_T_US
+RESN_RS_EA6 RESN_RS_LA6 RESN_RS_RC6
+RR_BAR_EA6 RR_BAR_EU RR_BAR_JA RR_BAR_LA6 RR_BAR_RC6 RR_BAR_US
+RR_EA6 RR_EU RR_JA RR_LA6 RR_RC6 RR_US RS_EA6 RS_EU RS_JA RS_LA6 RS_RC6 RS_US
+UNR_BAR_EU UNR_BAR_JA UNR_BAR_US UNR_EU UNR_GAP_EU UNR_GAP_JA UNR_GAP_US
+UNR_G_EU UNR_G_JA UNR_G_US UNR_JA UNR_US
+Y_EA6 Y_EU Y_JA Y_LA6 Y_RC6 Y_US
 FACT_RES_US FACT_RES_EU FACT_RES_JA FACT_RES_EA6 FACT_RES_LA6 FACT_RES_RC6
 RESN_YY_US RESN_YY_EU RESN_YY_JA RESN_YY_EA6 RESN_YY_LA6 RESN_YY_RC6
 RESN_Y_US RESN_Y_EU RESN_Y_JA RESN_Y_EA6 RESN_Y_LA6 RESN_Y_RC6
@@ -51,43 +51,43 @@ RESN_RR_DIFF_EA6 RESN_RR_DIFF_EU RESN_RR_DIFF_JA RESN_RR_DIFF_LA6 RESN_RR_DIFF_R
 E1_PIE_EA6 E1_PIE_EU E1_PIE_JA E1_PIE_LA6 E1_PIE_RC6 E1_PIE_US
 E1_Y_EA6 E1_Y_EU E1_Y_JA E1_Y_LA6 E1_Y_RC6 E1_Y_US
 E4_Y_EA6 E4_Y_EU E4_Y_JA E4_Y_LA6 E4_Y_RC6 E4_Y_US
-E8_Y_EA6 E8_Y_EU E8_Y_JA E8_Y_LA6 E8_Y_RC6 E8_Y_US 
-E4_PIE4_EA6 E4_PIE4_EU E4_PIE4_JA E4_PIE4_LA6 E4_PIE4_RC6 E4_PIE4_US 
+E8_Y_EA6 E8_Y_EU E8_Y_JA E8_Y_LA6 E8_Y_RC6 E8_Y_US
+E4_PIE4_EA6 E4_PIE4_EU E4_PIE4_JA E4_PIE4_LA6 E4_PIE4_RC6 E4_PIE4_US
 E3_PIE4_EA6 E3_PIE4_EU E3_PIE4_JA E3_PIE4_LA6 E3_PIE4_RC6 E3_PIE4_US
 REER_T_GAP_EA6 REER_T_GAP_EU REER_T_GAP_JA REER_T_GAP_LA6 REER_T_GAP_RC6 REER_T_GAP_US
 DOT_REER_M_EA6 DOT_REER_M_EU DOT_REER_M_JA DOT_REER_M_LA6 DOT_REER_M_RC6 DOT_REER_M_US
 RR4_US RR4_BAR_US RR4_EU RR4_BAR_EU RR4_JA RR4_BAR_JA
-RR4_EA6 RR4_BAR_EA6 RR4_LA6 RR4_BAR_LA6 RR4_RC6 RR4_BAR_RC6 
+RR4_EA6 RR4_BAR_EA6 RR4_LA6 RR4_BAR_LA6 RR4_RC6 RR4_BAR_RC6
 LRR_US LRR_BAR_US LRR_EU LRR_BAR_EU LRR_JA LRR_BAR_JA
 LRR_EA6 LRR_BAR_EA6 LRR_LA6 LRR_BAR_LA6 LRR_RC6 LRR_BAR_RC6
-LRR_GAP_US LRR_GAP_EU LRR_GAP_JA LRR_GAP_EA6 LRR_GAP_LA6 LRR_GAP_RC6 
+LRR_GAP_US LRR_GAP_EU LRR_GAP_JA LRR_GAP_EA6 LRR_GAP_LA6 LRR_GAP_RC6
 //**************************************************************************
-// Modelbase Variables                                                   //*    
+// Modelbase Variables                                                   //*
    interest inflation inflationq outputgap output;                       //*
 //**************************************************************************
 
 
-varexo 
-RES_DOT_LZ_BAR_EA6 RES_PIETAR_EA6 RES_G_EA6 RES_LGDP_BAR_EA6 RES_LZ_BAR_EA6 RES_PIE_EA6 
+varexo
+RES_DOT_LZ_BAR_EA6 RES_PIETAR_EA6 RES_G_EA6 RES_LGDP_BAR_EA6 RES_LZ_BAR_EA6 RES_PIE_EA6
 RES_RR_BAR_EA6 RES_RR_DIFF_EA6 RES_RS_EA6 RES_Y_EA6 RES_YY_EA6
-RES_BLT_BAR_EU RES_G_EU RES_BLT_EU RES_LGDP_BAR_EU RES_LZ_BAR_EU RES_PIE_EU RES_RR_BAR_EU  
+RES_BLT_BAR_EU RES_G_EU RES_BLT_EU RES_LGDP_BAR_EU RES_LZ_BAR_EU RES_PIE_EU RES_RR_BAR_EU
 RES_RR_DIFF_EU RES_RS_EU RES_UNR_BAR_EU RES_UNR_G_EU RES_UNR_GAP_EU RES_Y_EU RES_YY_EU
-RES_BLT_BAR_JA RES_G_JA RES_BLT_JA RES_LGDP_BAR_JA RES_LZ_BAR_JA RES_PIE_JA RES_RR_BAR_JA  
-RES_RR_DIFF_JA RES_RS_JA RES_UNR_BAR_JA RES_UNR_G_JA RES_UNR_GAP_JA RES_Y_JA RES_YY_JA 
-RES_DOT_LZ_BAR_LA6 RES_PIETAR_LA6 RES_G_LA6 RES_LGDP_BAR_LA6 RES_LZ_BAR_LA6 RES_PIE_LA6 
+RES_BLT_BAR_JA RES_G_JA RES_BLT_JA RES_LGDP_BAR_JA RES_LZ_BAR_JA RES_PIE_JA RES_RR_BAR_JA
+RES_RR_DIFF_JA RES_RS_JA RES_UNR_BAR_JA RES_UNR_G_JA RES_UNR_GAP_JA RES_Y_JA RES_YY_JA
+RES_DOT_LZ_BAR_LA6 RES_PIETAR_LA6 RES_G_LA6 RES_LGDP_BAR_LA6 RES_LZ_BAR_LA6 RES_PIE_LA6
 RES_RR_BAR_LA6 RES_RR_DIFF_LA6 RES_RS_LA6 RES_Y_LA6 RES_YY_LA6
-RES_DOT_LZ_BAR_RC6 RES_PIETAR_RC6 RES_G_RC6 RES_LGDP_BAR_RC6 RES_LZ_BAR_RC6 RES_PIE_RC6 
+RES_DOT_LZ_BAR_RC6 RES_PIETAR_RC6 RES_G_RC6 RES_LGDP_BAR_RC6 RES_LZ_BAR_RC6 RES_PIE_RC6
 RES_RR_BAR_RC6 RES_RR_DIFF_RC6 RES_RS_RC6 RES_Y_RC6 RES_YY_RC6
-RES_BLT_BAR_US RES_G_US RES_BLT_US RES_LGDP_BAR_US RES_PIE_US RES_RR_BAR_US 
+RES_BLT_BAR_US RES_G_US RES_BLT_US RES_LGDP_BAR_US RES_PIE_US RES_RR_BAR_US
 RES_UNR_BAR_US RES_UNR_G_US RES_UNR_GAP_US RES_Y_US RES_YY_US //RES_RS_US
 //**************************************************************************
-// Modelbase Shocks                                                      //*       
+// Modelbase Shocks                                                      //*
        interest_;                                                        //*
-//**************************************************************************  
+//**************************************************************************
 
 
 parameters
-//************************************************************************** 
+//**************************************************************************
 // Modelbase Parameters                                                  //*
                                                                          //*
         cofintintb1 cofintintb2 cofintintb3 cofintintb4                  //*
@@ -97,64 +97,64 @@ parameters
         cofintoutf1 cofintoutf2 cofintoutf3 cofintoutf4                  //*
         cofintoutp cofintoutpb1 cofintoutpb2 cofintoutpb3 cofintoutpb4   //*
         cofintoutpf1 cofintoutpf2 cofintoutpf3 cofintoutpf4              //*
-        std_r_ std_r_quart //coffispol                                   //* 
-//************************************************************************** 
-beta_reergap_EA6 beta_reergap_EU beta_reergap_JA beta_reergap_LA6 beta_reergap_RC6 beta_reergap_US 
-alpha1_EU alpha1_JA alpha1_US alpha2_EU alpha2_JA alpha2_US alpha3_EU alpha3_JA alpha3_US  
-beta1_EA6 beta1_EU beta1_JA beta1_LA6 beta1_RC6 beta1_US 
-beta2_EA6 beta2_EU beta2_JA beta2_LA6 beta2_RC6 beta2_US 
+        std_r_ std_r_quart //coffispol                                   //*
+//**************************************************************************
+beta_reergap_EA6 beta_reergap_EU beta_reergap_JA beta_reergap_LA6 beta_reergap_RC6 beta_reergap_US
+alpha1_EU alpha1_JA alpha1_US alpha2_EU alpha2_JA alpha2_US alpha3_EU alpha3_JA alpha3_US
+beta1_EA6 beta1_EU beta1_JA beta1_LA6 beta1_RC6 beta1_US
+beta2_EA6 beta2_EU beta2_JA beta2_LA6 beta2_RC6 beta2_US
 beta3_EA6 beta3_EU beta3_JA beta3_LA6 beta3_RC6 beta3_US
-beta4_EA6 beta4_EU beta4_JA beta4_LA6 beta4_RC6 beta4_US 
-chi_EA6 chi_LA6 chi_RC6 dot_lz_bar_EA6_ss dot_lz_bar_LA6_ss dot_lz_bar_RC6_ss 
-gamma1_EA6 gamma1_EU gamma1_JA gamma1_LA6 gamma1_RC6 gamma1_US  
-gamma2_EA6 gamma2_EU gamma2_JA gamma2_LA6 gamma2_RC6 gamma2_US 
-gamma4_EA6 gamma4_EU gamma4_JA gamma4_LA6 gamma4_RC6 gamma4_US 
-growth_EA6_ss growth_EU_ss growth_JA_ss growth_LA6_ss growth_RC6_ss growth_US_ss 
-kappa_EU kappa_JA kappa_US 
-lambda1_EA6 lambda1_EU lambda1_JA lambda1_LA6 lambda1_RC6 lambda1_US  
-lambda1_RS_EA6 lambda1_RS_LA6 lambda1_RS_RC6  
-lambda2_EA6 lambda2_EU lambda2_JA lambda2_LA6 lambda2_RC6 lambda2_US  
-lambda3_EA6 lambda3_EU lambda3_JA lambda3_LA6 lambda3_RC6 lambda3_US  
-phi_EA6 phi_EU phi_JA phi_LA6 phi_RC6 
-pietar_EU_ss pietar_JA_ss pietar_US_ss pietar_LA6_ss pietar_EA6_ss pietar_RC6_ss 
-rho_EA6 rho_EU rho_JA rho_LA6 rho_RC6 rho_US 
-rr_bar_EA6_ss rr_bar_EU_ss rr_bar_JA_ss rr_bar_LA6_ss rr_bar_RC6_ss rr_bar_US_ss 
-tau_EA6 tau_EU tau_JA tau_LA6 tau_RC6 tau_US 
+beta4_EA6 beta4_EU beta4_JA beta4_LA6 beta4_RC6 beta4_US
+chi_EA6 chi_LA6 chi_RC6 dot_lz_bar_EA6_ss dot_lz_bar_LA6_ss dot_lz_bar_RC6_ss
+gamma1_EA6 gamma1_EU gamma1_JA gamma1_LA6 gamma1_RC6 gamma1_US
+gamma2_EA6 gamma2_EU gamma2_JA gamma2_LA6 gamma2_RC6 gamma2_US
+gamma4_EA6 gamma4_EU gamma4_JA gamma4_LA6 gamma4_RC6 gamma4_US
+growth_EA6_ss growth_EU_ss growth_JA_ss growth_LA6_ss growth_RC6_ss growth_US_ss
+kappa_EU kappa_JA kappa_US
+lambda1_EA6 lambda1_EU lambda1_JA lambda1_LA6 lambda1_RC6 lambda1_US
+lambda1_RS_EA6 lambda1_RS_LA6 lambda1_RS_RC6
+lambda2_EA6 lambda2_EU lambda2_JA lambda2_LA6 lambda2_RC6 lambda2_US
+lambda3_EA6 lambda3_EU lambda3_JA lambda3_LA6 lambda3_RC6 lambda3_US
+phi_EA6 phi_EU phi_JA phi_LA6 phi_RC6
+pietar_EU_ss pietar_JA_ss pietar_US_ss pietar_LA6_ss pietar_EA6_ss pietar_RC6_ss
+rho_EA6 rho_EU rho_JA rho_LA6 rho_RC6 rho_US
+rr_bar_EA6_ss rr_bar_EU_ss rr_bar_JA_ss rr_bar_LA6_ss rr_bar_RC6_ss rr_bar_US_ss
+tau_EA6 tau_EU tau_JA tau_LA6 tau_RC6 tau_US
 theta_EU theta_JA theta_US
 dY_dVA_US  dY_dVA_EU  dY_dVA_JA  dY_dVA_EA6 dY_dVA_LA6 dY_dVA_RC6
 dVA_dX_US  dVA_dX_EU  dVA_dX_JA  dVA_dX_EA6 dVA_dX_LA6 dVA_dX_RC6
-exp_US_EU   exp_US_JA   exp_US_EA6  exp_US_LA6  exp_US_RC6 
-exp_EU_US   exp_EU_JA   exp_EU_EA6  exp_EU_LA6  exp_EU_RC6 
-exp_JA_US   exp_JA_EU   exp_JA_EA6  exp_JA_LA6  exp_JA_RC6 
-exp_EA6_US  exp_EA6_EU  exp_EA6_JA  exp_EA6_LA6 exp_EA6_RC6 
-exp_LA6_US  exp_LA6_EU  exp_LA6_JA  exp_LA6_EA6 exp_LA6_RC6 
-exp_RC6_US  exp_RC6_EU  exp_RC6_JA  exp_RC6_EA6 exp_RC6_LA6 
-imp_US_EU   imp_US_JA   imp_US_EA6  imp_US_LA6  imp_US_RC6 
-imp_EU_US   imp_EU_JA   imp_EU_EA6  imp_EU_LA6  imp_EU_RC6 
+exp_US_EU   exp_US_JA   exp_US_EA6  exp_US_LA6  exp_US_RC6
+exp_EU_US   exp_EU_JA   exp_EU_EA6  exp_EU_LA6  exp_EU_RC6
+exp_JA_US   exp_JA_EU   exp_JA_EA6  exp_JA_LA6  exp_JA_RC6
+exp_EA6_US  exp_EA6_EU  exp_EA6_JA  exp_EA6_LA6 exp_EA6_RC6
+exp_LA6_US  exp_LA6_EU  exp_LA6_JA  exp_LA6_EA6 exp_LA6_RC6
+exp_RC6_US  exp_RC6_EU  exp_RC6_JA  exp_RC6_EA6 exp_RC6_LA6
+imp_US_EU   imp_US_JA   imp_US_EA6  imp_US_LA6  imp_US_RC6
+imp_EU_US   imp_EU_JA   imp_EU_EA6  imp_EU_LA6  imp_EU_RC6
 imp_JA_US   imp_JA_EU   imp_JA_EA6  imp_JA_LA6  imp_JA_RC6
-imp_EA6_US  imp_EA6_EU  imp_EA6_JA  imp_EA6_LA6 imp_EA6_RC6 
-imp_LA6_US  imp_LA6_EU  imp_LA6_JA  imp_LA6_EA6 imp_LA6_RC6 
-imp_RC6_US  imp_RC6_EU  imp_RC6_JA  imp_RC6_EA6 imp_RC6_LA6 
-trade_US_EU   trade_US_JA  trade_US_EA6  trade_US_LA6  trade_US_RC6 
-trade_EU_US   trade_EU_JA  trade_EU_EA6  trade_EU_LA6  trade_EU_RC6 
-trade_JA_US   trade_JA_EU  trade_JA_EA6  trade_JA_LA6  trade_JA_RC6 
-trade_EA6_US  trade_EA6_EU trade_EA6_JA  trade_EA6_LA6 trade_EA6_RC6 
-trade_LA6_US  trade_LA6_EU trade_LA6_JA  trade_LA6_EA6 trade_LA6_RC6 
-trade_RC6_US  trade_RC6_EU trade_RC6_JA  trade_RC6_EA6 trade_RC6_LA6 
+imp_EA6_US  imp_EA6_EU  imp_EA6_JA  imp_EA6_LA6 imp_EA6_RC6
+imp_LA6_US  imp_LA6_EU  imp_LA6_JA  imp_LA6_EA6 imp_LA6_RC6
+imp_RC6_US  imp_RC6_EU  imp_RC6_JA  imp_RC6_EA6 imp_RC6_LA6
+trade_US_EU   trade_US_JA  trade_US_EA6  trade_US_LA6  trade_US_RC6
+trade_EU_US   trade_EU_JA  trade_EU_EA6  trade_EU_LA6  trade_EU_RC6
+trade_JA_US   trade_JA_EU  trade_JA_EA6  trade_JA_LA6  trade_JA_RC6
+trade_EA6_US  trade_EA6_EU trade_EA6_JA  trade_EA6_LA6 trade_EA6_RC6
+trade_LA6_US  trade_LA6_EU trade_LA6_JA  trade_LA6_EA6 trade_LA6_RC6
+trade_RC6_US  trade_RC6_EU trade_RC6_JA  trade_RC6_EA6 trade_RC6_LA6
 xrat_US xrat_EU xrat_JA xrat_EA6 xrat_LA6 xrat_RC6
 mrat_US mrat_EU mrat_JA mrat_EA6 mrat_LA6 mrat_RC6
-rsize_US_EU   rsize_US_JA   rsize_US_EA6  rsize_US_LA6  rsize_US_RC6 
-rsize_EU_US   rsize_EU_JA   rsize_EU_EA6  rsize_EU_LA6  rsize_EU_RC6 
-rsize_JA_US   rsize_JA_EU   rsize_JA_EA6  rsize_JA_LA6  rsize_JA_RC6 
-rsize_EA6_US  rsize_EA6_EU  rsize_EA6_JA  rsize_EA6_LA6 rsize_EA6_RC6 
-rsize_LA6_US  rsize_LA6_EU  rsize_LA6_JA  rsize_LA6_EA6 rsize_LA6_RC6 
+rsize_US_EU   rsize_US_JA   rsize_US_EA6  rsize_US_LA6  rsize_US_RC6
+rsize_EU_US   rsize_EU_JA   rsize_EU_EA6  rsize_EU_LA6  rsize_EU_RC6
+rsize_JA_US   rsize_JA_EU   rsize_JA_EA6  rsize_JA_LA6  rsize_JA_RC6
+rsize_EA6_US  rsize_EA6_EU  rsize_EA6_JA  rsize_EA6_LA6 rsize_EA6_RC6
+rsize_LA6_US  rsize_LA6_EU  rsize_LA6_JA  rsize_LA6_EA6 rsize_LA6_RC6
 rsize_RC6_US  rsize_RC6_EU  rsize_RC6_JA  rsize_RC6_EA6 rsize_RC6_LA6
-spill_US_US   spill_US_EU   spill_US_JA   spill_US_EA6  spill_US_LA6  spill_US_RC6 
-spill_EU_US   spill_EU_EU   spill_EU_JA   spill_EU_EA6  spill_EU_LA6  spill_EU_RC6 
-spill_JA_US   spill_JA_EU   spill_JA_JA   spill_JA_EA6  spill_JA_LA6  spill_JA_RC6 
+spill_US_US   spill_US_EU   spill_US_JA   spill_US_EA6  spill_US_LA6  spill_US_RC6
+spill_EU_US   spill_EU_EU   spill_EU_JA   spill_EU_EA6  spill_EU_LA6  spill_EU_RC6
+spill_JA_US   spill_JA_EU   spill_JA_JA   spill_JA_EA6  spill_JA_LA6  spill_JA_RC6
 spill_EA6_US  spill_EA6_EU  spill_EA6_JA  spill_EA6_EA6 spill_EA6_LA6 spill_EA6_RC6
-spill_LA6_US  spill_LA6_EU  spill_LA6_JA  spill_LA6_EA6 spill_LA6_LA6 spill_LA6_RC6 
-spill_RC6_US  spill_RC6_EU  spill_RC6_JA  spill_RC6_EA6 spill_RC6_LA6 spill_RC6_RC6 
+spill_LA6_US  spill_LA6_EU  spill_LA6_JA  spill_LA6_EA6 spill_LA6_LA6 spill_LA6_RC6
+spill_RC6_US  spill_RC6_EU  spill_RC6_JA  spill_RC6_EA6 spill_RC6_LA6 spill_RC6_RC6
 theta_EA6 theta_LA6 theta_RC6 beta_fact beta_fact_res
 lrrw01_US  lrrw04_US  lrrw12_US  lrrw20_US
 lrrw01_EU  lrrw04_EU  lrrw12_EU  lrrw20_EU
@@ -165,14 +165,14 @@ lrrw01_RC6 lrrw04_RC6 lrrw12_RC6 lrrw20_RC6
 beta3m_US beta3m_EU beta3m_JA beta3m_EA6 beta3m_LA6 beta3m_RC6
 ;
 
-//  Xij (export destination) Data not usedAvg. 1998-07 						
-//		 US 	 		Eu 	 		JA 	 		EA 	 		LA 	 		RC 
-// US 	 0.9992 	 0.1682 	 0.0770 	 0.1902 	 0.1776 	 0.3862 
-// Eu 	 0.2021 	 1.0001 	 0.0381 	 0.1330 	 0.0385 	 0.5884 
-// JA 	 0.2844 	 0.1312 	 1.0000 	 0.4570 	 0.0210 	 0.1064 
-// EA 	 0.3663 	 0.2275 	 0.1963 	 1.0000 	 0.0309 	 0.1790 
-// LA 	 0.6868 	 0.1109 	 0.0287 	 0.0619 	 1.0000 	 0.1117 
-// RC 	 0.3687 	 0.4524 	 0.0439 	 0.1080 	 0.0270 	 1.0000 
+//  Xij (export destination) Data not usedAvg. 1998-07
+//		 US 	 		Eu 	 		JA 	 		EA 	 		LA 	 		RC
+// US 	 0.9992 	 0.1682 	 0.0770 	 0.1902 	 0.1776 	 0.3862
+// Eu 	 0.2021 	 1.0001 	 0.0381 	 0.1330 	 0.0385 	 0.5884
+// JA 	 0.2844 	 0.1312 	 1.0000 	 0.4570 	 0.0210 	 0.1064
+// EA 	 0.3663 	 0.2275 	 0.1963 	 1.0000 	 0.0309 	 0.1790
+// LA 	 0.6868 	 0.1109 	 0.0287 	 0.0619 	 1.0000 	 0.1117
+// RC 	 0.3687 	 0.4524 	 0.0439 	 0.1080 	 0.0270 	 1.0000
 
 // exp_ii_jj is a trade from ii to jj as a share of total ii exports
 exp_US_EU  = 0.16820;
@@ -206,14 +206,14 @@ exp_RC6_JA  = 0.0439;
 exp_RC6_EA6 = 0.1080;
 exp_RC6_LA6 = 0.0270;
 
-//	  Mij (Import origin) 2007 Data 						
-//	 		US 	 		Eu 	 		JA 	 		EA 	 		LA 	 		RC 
-// US 	 1.0000 	 0.1542 	 0.0835 	 0.3147 	 0.1484 	 0.2992 
-// Eu 	 0.1132 	 1.0000 	 0.0508 	 0.2589 	 0.0479 	 0.5292 
-// JA 	 0.1489 	 0.1059 	 1.0001 	 0.5320 	 0.0406 	 0.1727 
-// EA 	 0.2055 	 0.2122 	 0.3074 	 1.0006 	 0.0534 	 0.2221 
-// LA 	 0.4221 	 0.1451 	 0.0576 	 0.2432 	 0.9997 	 0.1317 
-// RC 	 0.2075 	 0.4890 	 0.0486 	 0.2080 	 0.0469 	 1.0000 
+//	  Mij (Import origin) 2007 Data
+//	 		US 	 		Eu 	 		JA 	 		EA 	 		LA 	 		RC
+// US 	 1.0000 	 0.1542 	 0.0835 	 0.3147 	 0.1484 	 0.2992
+// Eu 	 0.1132 	 1.0000 	 0.0508 	 0.2589 	 0.0479 	 0.5292
+// JA 	 0.1489 	 0.1059 	 1.0001 	 0.5320 	 0.0406 	 0.1727
+// EA 	 0.2055 	 0.2122 	 0.3074 	 1.0006 	 0.0534 	 0.2221
+// LA 	 0.4221 	 0.1451 	 0.0576 	 0.2432 	 0.9997 	 0.1317
+// RC 	 0.2075 	 0.4890 	 0.0486 	 0.2080 	 0.0469 	 1.0000
 
 // imp_ii_jj is a trade from jj to ii as a share of total ii imports
 imp_US_EU  = 0.154200;
@@ -279,10 +279,10 @@ trade_RC6_JA  = (exp_RC6_JA+imp_RC6_JA)/2;
 trade_RC6_EA6 = (exp_RC6_EA6+imp_RC6_EA6)/2;
 trade_RC6_LA6 = (exp_RC6_LA6+imp_RC6_LA6)/2;
 
-// Export and Import Ratio, 2007 						
-//	 US 	 		Eu 	 		JA 	 		EA 	 		LA 	 		RC 
-//M	 0.1271 	 0.1291 	 0.1108 	 0.1608 	 0.1608 	 0.1822 
-//X	 0.0744 	 0.1244 	 0.1491 	 0.2014 	 0.1648 	 0.1709 
+// Export and Import Ratio, 2007
+//	 US 	 		Eu 	 		JA 	 		EA 	 		LA 	 		RC
+//M	 0.1271 	 0.1291 	 0.1108 	 0.1608 	 0.1608 	 0.1822
+//X	 0.0744 	 0.1244 	 0.1491 	 0.2014 	 0.1648 	 0.1709
 
 // export to GDP ratio
 xrat_US  = 0.01*7.440000;
@@ -300,14 +300,14 @@ mrat_EA6 = 0.01*16.080000;
 mrat_LA6 = 0.01*16.080000;
 mrat_RC6 = 0.01*18.220000;
 
-// Relative Country Size (Yj/Yi) (i=row, j=column) Average (2003-07) 						
-//		 US 	 Eu 	 JA 	 EA 	 LA 	 RC 
-// US 	 1.00 	 1.23 	 2.83 	 2.35 	 6.05 	 1.64 
-// Eu 	 0.81 	 1.00 	 2.31 	 1.91 	 4.92 	 1.33 
-// JA 	 0.35 	 0.43 	 1.00 	 0.83 	 2.13 	 0.58 
-// EA 	 0.43 	 0.52 	 1.21 	 1.00 	 2.57 	 0.70 
-// LA 	 0.17 	 0.20 	 0.47 	 0.39 	 1.00 	 0.27 
-// RC 	 0.61 	 0.75 	 1.73 	 1.44 	 3.70 	 1.00 
+// Relative Country Size (Yj/Yi) (i=row, j=column) Average (2003-07)
+//		 US 	 Eu 	 JA 	 EA 	 LA 	 RC
+// US 	 1.00 	 1.23 	 2.83 	 2.35 	 6.05 	 1.64
+// Eu 	 0.81 	 1.00 	 2.31 	 1.91 	 4.92 	 1.33
+// JA 	 0.35 	 0.43 	 1.00 	 0.83 	 2.13 	 0.58
+// EA 	 0.43 	 0.52 	 1.21 	 1.00 	 2.57 	 0.70
+// LA 	 0.17 	 0.20 	 0.47 	 0.39 	 1.00 	 0.27
+// RC 	 0.61 	 0.75 	 1.73 	 1.44 	 3.70 	 1.00
 
 // rsize_ii_jj: relative size of country ii to country jj
 rsize_US_EU  = 1.230000;
@@ -341,14 +341,14 @@ rsize_RC6_JA  = 1.730000;
 rsize_RC6_EA6 = 1.440000;
 rsize_RC6_LA6 = 3.700000;
 
-// dYi/dVAi change in Y relative to Value Added						
-//		 US 	 Eu 	 JA 	 EA 	 LA 	 RC 
-// US 	 1.50 	 1.50 	 1.50 	 1.50 	 1.50 	 1.50 
-// Eu 	 1.40 	 1.40 	 1.40 	 1.40 	 1.40 	 1.40 
-// JA 	 1.40 	 1.40 	 1.40 	 1.40 	 1.40 	 1.40 
-// EA 	 1.30 	 1.30 	 1.30 	 1.30 	 1.30 	 1.30 
-// LA 	 1.20 	 1.20 	 1.20 	 1.20 	 1.20 	 1.20 
-// RC 	 1.30 	 1.30 	 1.30 	 1.30 	 1.30 	 1.30 
+// dYi/dVAi change in Y relative to Value Added
+//		 US 	 Eu 	 JA 	 EA 	 LA 	 RC
+// US 	 1.50 	 1.50 	 1.50 	 1.50 	 1.50 	 1.50
+// Eu 	 1.40 	 1.40 	 1.40 	 1.40 	 1.40 	 1.40
+// JA 	 1.40 	 1.40 	 1.40 	 1.40 	 1.40 	 1.40
+// EA 	 1.30 	 1.30 	 1.30 	 1.30 	 1.30 	 1.30
+// LA 	 1.20 	 1.20 	 1.20 	 1.20 	 1.20 	 1.20
+// RC 	 1.30 	 1.30 	 1.30 	 1.30 	 1.30 	 1.30
 dY_dVA_US = 1.5;
 dY_dVA_EU = 1.4;
 dY_dVA_JA = 1.4;
@@ -356,14 +356,14 @@ dY_dVA_EA6 = 1.3;
 dY_dVA_LA6 = 1.2;
 dY_dVA_RC6 = 1.3;
 
-// dVAi/dVXij (1-import content of exports) 						
-//		 US 	 Eu 	 JA 	 EA 	 LA 	 RC 
-// US 	 0.88 	 0.88 	 0.88 	 0.88 	 0.88 	 0.88 
-// Eu 	 0.89 	 0.89 	 0.89 	 0.89 	 0.89 	 0.89 
-// JA 	 0.89 	 0.89 	 0.89 	 0.89 	 0.89 	 0.89 
-// EA 	 0.79 	 0.79 	 0.79 	 0.79 	 0.79 	 0.79 
-// LA 	 0.69 	 0.69 	 0.69 	 0.69 	 0.69 	 0.69 
-// RC 	 0.80 	 0.80 	 0.80 	 0.80 	 0.80 	 0.80 
+// dVAi/dVXij (1-import content of exports)
+//		 US 	 Eu 	 JA 	 EA 	 LA 	 RC
+// US 	 0.88 	 0.88 	 0.88 	 0.88 	 0.88 	 0.88
+// Eu 	 0.89 	 0.89 	 0.89 	 0.89 	 0.89 	 0.89
+// JA 	 0.89 	 0.89 	 0.89 	 0.89 	 0.89 	 0.89
+// EA 	 0.79 	 0.79 	 0.79 	 0.79 	 0.79 	 0.79
+// LA 	 0.69 	 0.69 	 0.69 	 0.69 	 0.69 	 0.69
+// RC 	 0.80 	 0.80 	 0.80 	 0.80 	 0.80 	 0.80
 dVA_dX_US = 0.88;
 dVA_dX_EU = 0.89;
 dVA_dX_JA = 0.89;
@@ -443,7 +443,7 @@ beta2_LA6=      0.1782;
 beta2_RC6=      0.4085;
 beta2_US=   0.23121217;
 beta4_EA6=   0.1714932; // (1-beta1_EA6)*beta_reergap_EA6; // The way how it is computed.
-beta4_EU=  0.066516696; // (1-beta1_EU) *beta_reergap_EU; 
+beta4_EU=  0.066516696; // (1-beta1_EU) *beta_reergap_EU;
 beta4_JA=  0.036270321; // (1-beta1_JA) *beta_reergap_JA;
 beta4_LA6=    0.147744; // (1-beta1_LA6)*beta_reergap_LA6;
 beta4_RC6=  0.06967935; // (1-beta1_RC6)*beta_reergap_RC6;
@@ -547,25 +547,25 @@ lrrw01_US =0.10;
 lrrw04_US =0.35;
 lrrw12_US =0.35;
 lrrw20_US =0.20;
-lrrw01_EU =0.10; 
-lrrw04_EU =0.35; 
-lrrw12_EU =0.35; 
+lrrw01_EU =0.10;
+lrrw04_EU =0.35;
+lrrw12_EU =0.35;
 lrrw20_EU =0.20;
-lrrw01_JA =0.10; 
-lrrw04_JA =0.35; 
-lrrw12_JA =0.35; 
+lrrw01_JA =0.10;
+lrrw04_JA =0.35;
+lrrw12_JA =0.35;
 lrrw20_JA =0.20;
-lrrw01_EA6=0.10; 
-lrrw04_EA6=0.35; 
-lrrw12_EA6=0.35; 
+lrrw01_EA6=0.10;
+lrrw04_EA6=0.35;
+lrrw12_EA6=0.35;
 lrrw20_EA6=0.20;
-lrrw01_LA6=0.10; 
-lrrw04_LA6=0.35; 
-lrrw12_LA6=0.35; 
+lrrw01_LA6=0.10;
+lrrw04_LA6=0.35;
+lrrw12_LA6=0.35;
 lrrw20_LA6=0.20;
-lrrw01_RC6=0.10; 
-lrrw04_RC6=0.35; 
-lrrw12_RC6=0.35; 
+lrrw01_RC6=0.10;
+lrrw04_RC6=0.35;
+lrrw12_RC6=0.35;
 lrrw20_RC6=0.20;
 beta3m_US =1*beta3_US ;
 beta3m_EU =1*beta3_EU ;
@@ -578,15 +578,15 @@ beta3m_RC6=1*beta3_RC6;
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           
-cd('..');                                                                
-load policy_param.mat;                                                   
-for i=1:33                                                               
-    deep_parameter_name = M_.param_names(i,:);                           
-    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])                  
-end                                                                      
-cd(thispath);    
-                                                                         //* 
+thispath = pwd;
+cd('..');
+load policy_param.mat;
+for i=1:33
+    deep_parameter_name = M_.param_names(i,:);
+    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
+end
+cd(thispath);
+                                                                         //*
 //**************************************************************************
 
 model;
@@ -598,46 +598,46 @@ interest   = RS_US - (pietar_US_ss+rr_bar_US_ss);                         //*
 inflation  = PIE4_US - pietar_US_ss;                                      //*
 inflationq = PIE_US- pietar_US_ss;                                        //*
 outputgap  = Y_US;                                                        //*
-output = LGDP_US - 948.33249637;                                          //*   
+output = LGDP_US - 948.33249637;                                          //*
 //**************************************************************************
 
-//**************************************************************************                                                                    
+//**************************************************************************
 // Policy Rule                                                           //*
                                                                          //*
 // Monetary Policy                                                       //*
                                                                          //*
-interest =   cofintintb1*interest(-1)                                    //* 
-           + cofintintb2*interest(-2)                                    //* 
-           + cofintintb3*interest(-3)                                    //* 
-           + cofintintb4*interest(-4)                                    //* 
-           + cofintinf0*inflationq                                       //* 
-           + cofintinfb1*inflationq(-1)                                  //* 
-           + cofintinfb2*inflationq(-2)                                  //* 
-           + cofintinfb3*inflationq(-3)                                  //* 
-           + cofintinfb4*inflationq(-4)                                  //* 
-           + cofintinff1*inflationq(+1)                                  //* 
-           + cofintinff2*inflationq(+2)                                  //* 
-           + cofintinff3*inflationq(+3)                                  //* 
-           + cofintinff4*inflationq(+4)                                  //* 
-           + cofintout*outputgap 	                                     //* 
-           + cofintoutb1*outputgap(-1)                                   //* 
-           + cofintoutb2*outputgap(-2)                                   //* 
-           + cofintoutb3*outputgap(-3)                                   //* 
-           + cofintoutb4*outputgap(-4)                                   //* 
-           + cofintoutf1*outputgap(+1)                                   //* 
-           + cofintoutf2*outputgap(+2)                                   //* 
-           + cofintoutf3*outputgap(+3)                                   //* 
-           + cofintoutf4*outputgap(+4)                                   //* 
-           + cofintoutp*output 	                                         //* 
-           + cofintoutpb1*output(-1)                                     //* 
-           + cofintoutpb2*output(-2)                                     //* 
-           + cofintoutpb3*output(-3)                                     //* 
-           + cofintoutpb4*output(-4)                                     //* 
-           + cofintoutpf1*output(+1)                                     //* 
-           + cofintoutpf2*output(+2)                                     //* 
-           + cofintoutpf3*output(+3)                                     //* 
-           + cofintoutpf4*output(+4)                                     //* 
-           + std_r_ *interest_;                                          //* 
+interest =   cofintintb1*interest(-1)                                    //*
+           + cofintintb2*interest(-2)                                    //*
+           + cofintintb3*interest(-3)                                    //*
+           + cofintintb4*interest(-4)                                    //*
+           + cofintinf0*inflationq                                       //*
+           + cofintinfb1*inflationq(-1)                                  //*
+           + cofintinfb2*inflationq(-2)                                  //*
+           + cofintinfb3*inflationq(-3)                                  //*
+           + cofintinfb4*inflationq(-4)                                  //*
+           + cofintinff1*inflationq(+1)                                  //*
+           + cofintinff2*inflationq(+2)                                  //*
+           + cofintinff3*inflationq(+3)                                  //*
+           + cofintinff4*inflationq(+4)                                  //*
+           + cofintout*outputgap 	                                     //*
+           + cofintoutb1*outputgap(-1)                                   //*
+           + cofintoutb2*outputgap(-2)                                   //*
+           + cofintoutb3*outputgap(-3)                                   //*
+           + cofintoutb4*outputgap(-4)                                   //*
+           + cofintoutf1*outputgap(+1)                                   //*
+           + cofintoutf2*outputgap(+2)                                   //*
+           + cofintoutf3*outputgap(+3)                                   //*
+           + cofintoutf4*outputgap(+4)                                   //*
+           + cofintoutp*output 	                                         //*
+           + cofintoutpb1*output(-1)                                     //*
+           + cofintoutpb2*output(-2)                                     //*
+           + cofintoutpb3*output(-3)                                     //*
+           + cofintoutpb4*output(-4)                                     //*
+           + cofintoutpf1*output(+1)                                     //*
+           + cofintoutpf2*output(+2)                                     //*
+           + cofintoutpf3*output(+3)                                     //*
+           + cofintoutpf4*output(+4)                                     //*
+           + std_r_ *interest_;                                          //*
                                                                          //*
 //**************************************************************************
 
@@ -668,7 +668,7 @@ interest =   cofintintb1*interest(-1)                                    //*
 		  E8_Y_EA6 = Y_EA6(+8) ;
 		  REER_T_GAP_EA6 = REER_T_EA6 - REER_T_BAR_EA6;
 		  DOT_REER_M_EA6 = 4*(REER_M_EA6-REER_M_EA6(-1));
-		  
+
           REER_M_EA6 = +imp_EA6_EU *(LZ_EA6-LZ_EU )+imp_EA6_JA *(LZ_EA6-LZ_JA )+imp_EA6_LA6*(LZ_EA6-LZ_LA6)+imp_EA6_RC6*(LZ_EA6-LZ_RC6)+imp_EA6_US *LZ_EA6 ;
           REER_M_BAR_EA6 = +imp_EA6_EU *(LZ_BAR_EA6-LZ_BAR_EU )+imp_EA6_JA *(LZ_BAR_EA6-LZ_BAR_JA )+imp_EA6_LA6*(LZ_BAR_EA6-LZ_BAR_LA6)+imp_EA6_RC6*(LZ_BAR_EA6-LZ_BAR_RC6)+imp_EA6_US *LZ_BAR_EA6 ;
           DOT_REER_M_BAR_EA6 = 4*(REER_M_BAR_EA6-REER_M_BAR_EA6(-1)) ;
@@ -693,13 +693,13 @@ interest =   cofintintb1*interest(-1)                                    //*
           LS_EA6 = LZ_EA6+LCPI_EA6-LCPI_US;
           RR4_EA6 = (RR_EA6+RR_EA6(+1)+RR_EA6(+2)+RR_EA6(+3))/4;
           RR4_BAR_EA6 = (RR_BAR_EA6+RR_BAR_EA6(+1)+RR_BAR_EA6(+2)+RR_BAR_EA6(+3))/4;
-          LRR_EA6 = lrrw01_EA6*RR_EA6 + lrrw04_EA6*RR4_EA6 + 
+          LRR_EA6 = lrrw01_EA6*RR_EA6 + lrrw04_EA6*RR4_EA6 +
                     lrrw12_EA6*(RR4_EA6+RR4_EA6(+4)+RR4_EA6(+8))/3 +
                     lrrw20_EA6*(RR4_EA6+RR4_EA6(+4)+RR4_EA6(+8)+RR4_EA6(12)+RR4_EA6(16))/5;
-          LRR_BAR_EA6 = lrrw01_EA6*RR_BAR_EA6 + lrrw04_EA6*RR4_BAR_EA6 + 
+          LRR_BAR_EA6 = lrrw01_EA6*RR_BAR_EA6 + lrrw04_EA6*RR4_BAR_EA6 +
                     lrrw12_EA6*(RR4_BAR_EA6+RR4_BAR_EA6(+4)+RR4_BAR_EA6(+8))/3 +
                     lrrw20_EA6*(RR4_BAR_EA6+RR4_BAR_EA6(+4)+RR4_BAR_EA6(+8)+RR4_BAR_EA6(12)+RR4_BAR_EA6(16))/5;
-          LRR_GAP_EA6 = LRR_EA6 - LRR_BAR_EA6;					
+          LRR_GAP_EA6 = LRR_EA6 - LRR_BAR_EA6;
 
 
           // EU
@@ -715,7 +715,7 @@ interest =   cofintintb1*interest(-1)                                    //*
           UNR_GAP_EU  = UNR_BAR_EU -UNR_EU  ;
           UNR_BAR_EU  = UNR_BAR_EU(-1) +UNR_G_EU +RES_UNR_BAR_EU  ;
           UNR_G_EU  = (1-alpha3_EU )*UNR_G_EU(-1) +RES_UNR_G_EU  ;
-          PIE_EU  = lambda1_EU *PIE4_EU(+4)  +(1-lambda1_EU )*PIE4_EU(-1) +lambda2_EU *Y_EU(-1)  
+          PIE_EU  = lambda1_EU *PIE4_EU(+4)  +(1-lambda1_EU )*PIE4_EU(-1) +lambda2_EU *Y_EU(-1)
                    +lambda3_EU *(REER_M_EU -REER_M_EU(-4) -(REER_M_BAR_EU -REER_M_BAR_EU(-4)) )/4-RES_PIE_EU  ;
           DRS_EU  = RS_EU -RS_EU(-1)  ;
           RR_EU  = RS_EU -PIE_EU(+1)  ;
@@ -732,7 +732,7 @@ interest =   cofintintb1*interest(-1)                                    //*
 		  E8_Y_EU  = Y_EU(+8)  ;
 		  REER_T_GAP_EU = REER_T_EU - REER_T_BAR_EU;
 		  DOT_REER_M_EU = 4*(REER_M_EU-REER_M_EU(-1));
-		  
+
           REER_M_EU  = +imp_EU_EA6*(LZ_EU -LZ_EA6)+imp_EU_JA *(LZ_EU -LZ_JA )+imp_EU_LA6*(LZ_EU -LZ_LA6)+imp_EU_RC6*(LZ_EU -LZ_RC6)+imp_EU_US *LZ_EU  ;
           REER_M_BAR_EU  = +imp_EU_EA6*(LZ_BAR_EU -LZ_BAR_EA6)+imp_EU_JA *(LZ_BAR_EU -LZ_BAR_JA )+imp_EU_LA6*(LZ_BAR_EU -LZ_BAR_LA6)+imp_EU_RC6*(LZ_BAR_EU -LZ_BAR_RC6)+imp_EU_US *LZ_BAR_EU  ;
           DOT_REER_M_BAR_EU  = 4*(REER_M_BAR_EU -REER_M_BAR_EU(-1) ) ;
@@ -765,7 +765,7 @@ interest =   cofintintb1*interest(-1)                                    //*
           LRR_BAR_EU  = lrrw01_EU *RR_BAR_EU
 		              + lrrw04_EU *RR4_BAR_EU
 					  + lrrw12_EU *(RR4_BAR_EU +RR4_BAR_EU(+4) +RR4_BAR_EU(+8) )/3
-					  + lrrw20_EU *(RR4_BAR_EU +RR4_BAR_EU(+4) +RR4_BAR_EU(+8) +RR4_BAR_EU(12) +RR4_BAR_EU(16) )/5;		  
+					  + lrrw20_EU *(RR4_BAR_EU +RR4_BAR_EU(+4) +RR4_BAR_EU(+8) +RR4_BAR_EU(12) +RR4_BAR_EU(16) )/5;
 
 
           // JA
@@ -781,7 +781,7 @@ interest =   cofintintb1*interest(-1)                                    //*
           UNR_GAP_JA  = UNR_BAR_JA -UNR_JA  ;
           UNR_BAR_JA  = UNR_BAR_JA(-1) +UNR_G_JA +RES_UNR_BAR_JA  ;
           UNR_G_JA  = (1-alpha3_JA )*UNR_G_JA(-1) +RES_UNR_G_JA  ;
-          PIE_JA  = lambda1_JA *PIE4_JA(+4)  +(1-lambda1_JA )*PIE4_JA(-1) +lambda2_JA *Y_JA(-1)  
+          PIE_JA  = lambda1_JA *PIE4_JA(+4)  +(1-lambda1_JA )*PIE4_JA(-1) +lambda2_JA *Y_JA(-1)
                    +lambda3_JA *(REER_M_JA -REER_M_JA(-4) -(REER_M_BAR_JA -REER_M_BAR_JA(-4) ))/4-RES_PIE_JA  ;
           DRS_JA  = RS_JA -RS_JA(-1)  ;
           RR_JA  = RS_JA -PIE_JA(+1)  ;
@@ -832,7 +832,7 @@ interest =   cofintintb1*interest(-1)                                    //*
 					  + lrrw12_JA *(RR4_BAR_JA +RR4_BAR_JA(+4) +RR4_BAR_JA(+8) )/3
 					  + lrrw20_JA *(RR4_BAR_JA +RR4_BAR_JA(+4) +RR4_BAR_JA(+8) +RR4_BAR_JA(12) +RR4_BAR_JA(16) )/5;
 
-          
+
           // LA6
 
           GROWTH_LA6 = 4*(LGDP_LA6-LGDP_LA6(-1)) ;
@@ -882,15 +882,15 @@ interest =   cofintintb1*interest(-1)                                    //*
           LS_LA6 = LZ_LA6+LCPI_LA6-LCPI_US  ;
           RR4_LA6 = (RR_LA6+RR_LA6(+1)+RR_LA6(+2)+RR_LA6(+3))/4;
           RR4_BAR_LA6 = (RR_BAR_LA6+RR_BAR_LA6(+1)+RR_BAR_LA6(+2)+RR_BAR_LA6(+3))/4;
-          LRR_LA6 = lrrw01_LA6*RR_LA6 + lrrw04_LA6*RR4_LA6 + 
+          LRR_LA6 = lrrw01_LA6*RR_LA6 + lrrw04_LA6*RR4_LA6 +
                     lrrw12_LA6*(RR4_LA6+RR4_LA6(+4)+RR4_LA6(+8))/3 +
                     lrrw20_LA6*(RR4_LA6+RR4_LA6(+4)+RR4_LA6(+8)+RR4_LA6(12)+RR4_LA6(16))/5;
-          LRR_BAR_LA6 = lrrw01_LA6*RR_BAR_LA6 + lrrw04_LA6*RR4_BAR_LA6 + 
+          LRR_BAR_LA6 = lrrw01_LA6*RR_BAR_LA6 + lrrw04_LA6*RR4_BAR_LA6 +
                     lrrw12_LA6*(RR4_BAR_LA6+RR4_BAR_LA6(+4)+RR4_BAR_LA6(+8))/3 +
                     lrrw20_LA6*(RR4_BAR_LA6+RR4_BAR_LA6(+4)+RR4_BAR_LA6(+8)+RR4_BAR_LA6(12)+RR4_BAR_LA6(16))/5;
           LRR_GAP_LA6 = LRR_LA6 - LRR_BAR_LA6;
 
-          
+
           // RC6
 
 		  GROWTH_RC6 = 4*(LGDP_RC6-LGDP_RC6(-1)) ;
@@ -939,10 +939,10 @@ interest =   cofintintb1*interest(-1)                                    //*
           LS_RC6 = LZ_RC6+LCPI_RC6-LCPI_US  ;
           RR4_RC6 = (RR_RC6+RR_RC6(+1)+RR_RC6(+2)+RR_RC6(+3))/4;
           RR4_BAR_RC6 = (RR_BAR_RC6+RR_BAR_RC6(+1)+RR_BAR_RC6(+2)+RR_BAR_RC6(+3))/4;
-          LRR_RC6 = lrrw01_RC6*RR_RC6 + lrrw04_RC6*RR4_RC6 + 
+          LRR_RC6 = lrrw01_RC6*RR_RC6 + lrrw04_RC6*RR4_RC6 +
                     lrrw12_RC6*(RR4_RC6+RR4_RC6(+4)+RR4_RC6(+8))/3 +
                     lrrw20_RC6*(RR4_RC6+RR4_RC6(+4)+RR4_RC6(+8)+RR4_RC6(12)+RR4_RC6(16))/5;
-          LRR_BAR_RC6 = lrrw01_RC6*RR_BAR_RC6 + lrrw04_RC6*RR4_BAR_RC6 + 
+          LRR_BAR_RC6 = lrrw01_RC6*RR_BAR_RC6 + lrrw04_RC6*RR4_BAR_RC6 +
                     lrrw12_RC6*(RR4_BAR_RC6+RR4_BAR_RC6(+4)+RR4_BAR_RC6(+8))/3 +
                     lrrw20_RC6*(RR4_BAR_RC6+RR4_BAR_RC6(+4)+RR4_BAR_RC6(+8)+RR4_BAR_RC6(12)+RR4_BAR_RC6(16))/5;
           LRR_GAP_RC6 = LRR_RC6 - LRR_BAR_RC6;
@@ -1003,19 +1003,19 @@ interest =   cofintintb1*interest(-1)                                    //*
           LRR_BAR_US  = lrrw01_US *RR_BAR_US
 		              + lrrw04_US *RR4_BAR_US
 					  + lrrw12_US *(RR4_BAR_US +RR4_BAR_US(+4) +RR4_BAR_US(+8) )/3
-					  + lrrw20_US *(RR4_BAR_US +RR4_BAR_US(+4) +RR4_BAR_US(+8) +RR4_BAR_US(12) +RR4_BAR_US(16) )/5;		  
+					  + lrrw20_US *(RR4_BAR_US +RR4_BAR_US(+4) +RR4_BAR_US(+8) +RR4_BAR_US(12) +RR4_BAR_US(16) )/5;
 end;
 
 
 steady_state_model;
-// Note that the model has unit roots in PIETAR for EA6, LA6 and RC6 countries 
+// Note that the model has unit roots in PIETAR for EA6, LA6 and RC6 countries
 // and the steady states for pie of three countries are not determined.
 
-interest   = 0;                         
-inflation  = 0;                                       
-inflationq = 0;                                       
-outputgap  = 0;                                                        
-output =     0;                                          
+interest   = 0;
+inflation  = 0;
+inflationq = 0;
+outputgap  = 0;
+output =     0;
 BLT_BAR_US=         10.65;
 BLT_US=             10.65;
 BLT_BAR_EU=             3;
@@ -1139,7 +1139,7 @@ G_EA6=            growth_EA6_ss;
 G_EU=              growth_EU_ss;
 G_JA=              growth_JA_ss;
 G_LA6=            growth_LA6_ss;
-G_RC6=            growth_RC6_ss;    
+G_RC6=            growth_RC6_ss;
 G_US=              growth_US_ss;
 LZ_GAP_EA6=                   0;
 LZ_GAP_EU=                    0;
@@ -1166,7 +1166,7 @@ PIE_RC6=          pietar_RC6_ss;
 PIE_US=            pietar_US_ss;
 RESN_RS_EA6=                  0;
 RESN_RS_LA6=                  0;
-RESN_RS_RC6=                  0;     
+RESN_RS_RC6=                  0;
 RR_BAR_EA6=       rr_bar_EA6_ss;
 RR_BAR_EU=         rr_bar_EU_ss;
 RR_BAR_JA=         rr_bar_JA_ss;
@@ -1385,13 +1385,13 @@ var RES_YY_EA6;         stderr   0.29690676;
 var RES_YY_LA6;         stderr   0.30749163;
 var RES_YY_RC6;         stderr   0.32534853;
 corr RES_G_US,RES_BLT_US =           0.8759;
-corr RES_LGDP_BAR_US,RES_PIE_US =    0.0915;  
-corr RES_LGDP_BAR_JA,RES_PIE_JA =    0.0917; 
+corr RES_LGDP_BAR_US,RES_PIE_US =    0.0915;
+corr RES_LGDP_BAR_JA,RES_PIE_JA =    0.0917;
 corr RES_LGDP_BAR_EU,RES_PIE_EU =    0.0961;
 corr RES_LGDP_BAR_EA6,RES_PIE_EA6 =     0.1;
 corr RES_LGDP_BAR_LA6,RES_PIE_LA6 =     0.1;
 corr RES_LGDP_BAR_RC6,RES_PIE_RC6 =     0.1;
-corr RES_Y_JA,RES_G_JA =             0.2156;  
+corr RES_Y_JA,RES_G_JA =             0.2156;
 corr RES_Y_EU,RES_G_EU =             0.2476;
 corr RES_Y_EA6,RES_G_EA6 =             0.25;
 corr RES_Y_LA6,RES_G_LA6 =             0.25;

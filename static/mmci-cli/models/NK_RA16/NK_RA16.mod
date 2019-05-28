@@ -1,22 +1,22 @@
 //**************************************************************************
 // A New Comparative Approach to Macroeconomic Modeling and Policy Analysis
 //
-// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and 
+// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and
 // Maik Wolters
 //
 //**************************************************************************
 
-% Rannenberg, Ansgar (2016). "Bank Leverage Cycles and the External Finance Premium", 
+% Rannenberg, Ansgar (2016). "Bank Leverage Cycles and the External Finance Premium",
 %                             Journal of Money, Credit and Banking, Vol. 48, No. 8, pp. 1569-1612
 
 % replicated by Felix Strobel, last edited 21.02.2018
 
-% This code replicates the full model used in figure 1 and 2 of the article. To perfectly match the IRFs 
-%   in figure 1 and 2, variable capital utilization need to be included. The calibration of the respective 
+% This code replicates the full model used in figure 1 and 2 of the article. To perfectly match the IRFs
+%   in figure 1 and 2, variable capital utilization need to be included. The calibration of the respective
 %   parameter is not included in the paper, but was provided by the author.
 //**********************************************************************************************************
 
-var 
+var
 //**************************************************************************
 // Modelbase Variables                                                   //*
         interest inflation inflationq outputgap output fispol                //*
@@ -25,7 +25,7 @@ var
 Y       % output
 GDP     % GDP
 I       % Investment
-K       % Capital stocl 
+K       % Capital stocl
 l       % labor
 U       % Utilization rate
 Cp      % aggregate consumption
@@ -37,7 +37,7 @@ R       % riskfree rate
 Rk      % return on capital
 rk      % marginal product of capital
 Rb      % return on banks assets
-Rl      % return on loans 
+Rl      % return on loans
 w       % wage
 a       % technology
 Q       % price of capital
@@ -68,13 +68,13 @@ omega_bar_prime_fe L_fe Lr_fe Le_fe Nb_fe phi_b_fe z_fe Lambda_fe outputgap;
 
 varexo e_a %(monetary policy shock, technology shock, government spending shock)
 //**************************************************************************
-// Modelbase Shocks                                                      //*       
+// Modelbase Shocks                                                      //*
        interest_ fiscal_;                                                        //*
 //**************************************************************************
 
 
-parameters 
-//************************************************************************** 
+parameters
+//**************************************************************************
 // Modelbase Parameters                                                  //*
                                                                          //*
         cofintintb1 cofintintb2 cofintintb3 cofintintb4                  //*
@@ -88,34 +88,34 @@ parameters
                                                                          //*
 //**************************************************************************
            beta varphi h alpha delta eta_i epsilon xi_p theta psi_L psi_K sigma mu gamma lambda N_nb  psi_pi psi_y rho_i rho_a sigma_i sigma_a
-           G_over_Y brate omega_bar_ss F_ss F1_ss  G_ss G1_ss G11_ss Gamma_ss Gamma1_ss Gamma11_ss rho_g 
-           xi_ss spread_RkRb_ss phi_e_ss Pi_ss R_ss Rl_ss Rk_ss Rb_ss X_ss mc_ss Q_ss rk_ss K_over_l w_ss l_ss K_ss Y_ss Gov_ss I_ss 
-           omega_bar_prime_ss V_ss N_ss Le_ss Lr_ss L_ss phi_ss Ce_ss phi_b_ss z_ss x_ss eta_ss nu_ss Nb_ss Nb_e_ss Cb_ss C_ss Cp_ss 
+           G_over_Y brate omega_bar_ss F_ss F1_ss  G_ss G1_ss G11_ss Gamma_ss Gamma1_ss Gamma11_ss rho_g
+           xi_ss spread_RkRb_ss phi_e_ss Pi_ss R_ss Rl_ss Rk_ss Rb_ss X_ss mc_ss Q_ss rk_ss K_over_l w_ss l_ss K_ss Y_ss Gov_ss I_ss
+           omega_bar_prime_ss V_ss N_ss Le_ss Lr_ss L_ss phi_ss Ce_ss phi_b_ss z_ss x_ss eta_ss nu_ss Nb_ss Nb_e_ss Cb_ss C_ss Cp_ss
            GDP_ss varrho_ss chi gamma_p tr_omega_bar_ss spread_RbR_ss chi_e c_U xi_p_fe;
 
 //**************************************************************************
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           
-cd('..');                                                                
-load policy_param.mat;                                                   
-for i=1:33                                                               
-    deep_parameter_name = M_.param_names(i,:);                           
-    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])                  
-end                                                                      
-cd(thispath);   
+thispath = pwd;
+cd('..');
+load policy_param.mat;
+for i=1:33
+    deep_parameter_name = M_.param_names(i,:);
+    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
+end
+cd(thispath);
 std_r_=100;
                                                                          //*
 // Definition of Discretionary Fiscal Policy Parameter                   //*
-coffispol = 5;                                                        //*   
+coffispol = 5;                                                        //*
 //**************************************************************************
 
 beta = 0.9958;      % households discount factor
 h = 0.6;            % habit formation
 varphi = 0.25;      % inverse of Frisch elasticity      %1.5 in the case of sticky wages
 alpha = 0.33;       % output elasticity of capital
-delta = 0.025;      % depreciation rate 
+delta = 0.025;      % depreciation rate
 c_U = 100;          % taken from file provided by Ansgar Rannenberg  (model with sticky wages and variable capital utilization)
 eta_i = 4;          % inverse elasticity of investment w.r.t price of capital
 epsilon = 6;        % elasticity of substitution between varieties of final good
@@ -173,7 +173,7 @@ Rl_ss = omega_bar_ss*Rk_ss/(1-1/phi_e_ss); % loan rate
 
 X_ss  = epsilon/(epsilon-1);                % markup
 mc_ss = (epsilon-1)/epsilon;                % real marginal cost
-Q_ss  = 1;                                  % price of capital 
+Q_ss  = 1;                                  % price of capital
 rk_ss = Rk_ss/Pi_ss - (1-delta);            % real marginal product of capital
 
 K_over_l = (alpha/(X_ss*(1+psi_K*(R_ss-1))*(rk_ss)))^(1/(1-alpha)); % capital-labor ratio
@@ -187,7 +187,7 @@ I_ss = delta * K_ss;            % investment
 
 YK_ss   =   X_ss/alpha*(rk_ss)*(1+psi_K*(R_ss-1));
 
-omega_bar_prime_ss = omega_bar_ss*Rk_ss;    %  
+omega_bar_prime_ss = omega_bar_ss*Rk_ss;    %
 V_ss = K_ss*Rk_ss/Pi_ss*(1-Gamma_ss);       % Value fct. of entrepreneurs
 N_ss = K_ss/phi_e_ss;                       % net worth of entrepreneur
 Le_ss = K_ss-N_ss;                          % loans received by entrepreneur
@@ -201,7 +201,7 @@ Ce_ss = (1-gamma)*V_ss;                     % consumption of entrepreneur
 z_ss = ((Rb_ss-R_ss)*phi_b_ss+R_ss)/Pi_ss;  % asset growth rate
 x_ss = z_ss;                                % growth rate of net worth
 eta_ss = (1-theta)/(1-beta*theta*x_ss);     % margina value of net worth to banker
-nu_ss = (1-theta)*((Rb_ss-R_ss)/R_ss)/(1-beta*theta*z_ss); % marginal value of portfolio to banker 
+nu_ss = (1-theta)*((Rb_ss-R_ss)/R_ss)/(1-beta*theta*z_ss); % marginal value of portfolio to banker
 lambda = (eta_ss+phi_b_ss*nu_ss)/phi_b_ss;  % share of loans to entrepreneurs that bankers can divert
 Nb_ss = Le_ss/phi_b_ss;                     % net worth of banker
 Nb_e_ss = theta*z_ss*Nb_ss;                 % net worth of existing/old bankers
@@ -216,7 +216,7 @@ chi = (varrho_ss*w_ss)/(l_ss^varphi);       % weight of disutility of labor for 
 
 
 //Calculation of coefficient on entrepreneurial leverage chi_e and on sigma chi_sigma
-Upsilon     =   1-Gamma_ss+xi_ss*(Gamma_ss-mu*G_ss); 
+Upsilon     =   1-Gamma_ss+xi_ss*(Gamma_ss-mu*G_ss);
 domegabards1=-(Gamma_ss-mu*G_ss)/((Gamma1_ss-mu*G1_ss)*spread_RkRb_ss);
 domegabardphi_e=(1-(Gamma_ss-mu*G_ss)*spread_RkRb_ss)/((Gamma1_ss-mu*G1_ss)*spread_RkRb_ss*phi_e_ss);
 domegabardsigma=-(Gamma2_ss-mu*G2_ss)/(Gamma1_ss-mu*G1_ss);
@@ -242,7 +242,7 @@ fispol     = coffispol*fiscal_;                                                 
 //**************************************************************************
 
 
-% households 
+% households
 %marginal utility of consumption
 varrho= 1/((1-h)*(1-beta*h))*(-(C-h*C(-1)) + beta*h * (C(+1)-h*C));
 
@@ -278,10 +278,10 @@ rk/rk_ss+R*psi_K*R_ss/(1+psi_K*(R_ss-1))=   mc+Y-K(-1)-U;
 Lr*Lr_ss=   psi_L*w_ss*l_ss*(w+l)+psi_K*K_ss*rk_ss*(rk/rk_ss+U+K(-1)); %mistake - why not L_r*L_r_ss?
 
 % banks
-% bank leverage 
+% bank leverage
 phi_b = Le-Nb;
 
-% bank net worth 
+% bank net worth
 Nb = theta*z_ss*(z + Nb(-1));
 
 % consumption of bankers
@@ -291,7 +291,7 @@ Cb = z + Nb(-1);
 z_ss*Pi_ss*(z+Pi) = ((Rb_ss-R_ss)*phi_b(-1) + Rb_ss*Rb-R_ss*R(-1))*phi_b_ss + R_ss*R(-1);
 
 % leverage dynamics
-phi_b= theta*beta^2*z_ss^2*phi_b(+1)+phi_b_ss*Rb_ss/R_ss*(Rb(+1)-R);   
+phi_b= theta*beta^2*z_ss^2*phi_b(+1)+phi_b_ss*Rb_ss/R_ss*(Rb(+1)-R);
 
 % entrepreneurs (20-30)
 
@@ -310,7 +310,7 @@ phi_e = Q + K - N;
 % entrepreneurs loans
 Le-N=phi_e_ss/(phi_e_ss-1)*phi_e;
 
-% value function of entrepreneur 
+% value function of entrepreneur
 V = N(-1) + Rk -Pi + phi_e(-1)- Gamma1_ss*omega_bar_ss/(1-Gamma_ss)*(omega_bar_prime(-1)-Rk);
 
 % cost of variable capital utilization
@@ -388,15 +388,15 @@ interest =   cofintintb1*interest(-1)                                    //*
            + cofintoutf2*outputgap(+2)                                   //*
            + cofintoutf3*outputgap(+3)                                   //*
            + cofintoutf4*outputgap(+4)                                   //*
-           + cofintoutp*output 	                                         //* 
-           + cofintoutpb1*output(-1)                                     //* 
-           + cofintoutpb2*output(-2)                                     //* 
-           + cofintoutpb3*output(-3)                                     //* 
-           + cofintoutpb4*output(-4)                                     //* 
-           + cofintoutpf1*output(+1)                                     //* 
-           + cofintoutpf2*output(+2)                                     //* 
-           + cofintoutpf3*output(+3)                                     //* 
-           + cofintoutpf4*output(+4)                                     //* 
+           + cofintoutp*output 	                                         //*
+           + cofintoutpb1*output(-1)                                     //*
+           + cofintoutpb2*output(-2)                                     //*
+           + cofintoutpb3*output(-3)                                     //*
+           + cofintoutpb4*output(-4)                                     //*
+           + cofintoutpf1*output(+1)                                     //*
+           + cofintoutpf2*output(+2)                                     //*
+           + cofintoutpf3*output(+3)                                     //*
+           + cofintoutpf4*output(+4)                                     //*
            + std_r_/100 *interest_;                                          //*
 //########################
 
@@ -412,12 +412,12 @@ Y_fe = alpha*(U_fe+K_fe(-1))+(1-alpha)*(a+l_fe);
 Pi_fe = 1/(1+beta*gamma_p)*(beta*Pi_fe(+1) + gamma_p*Pi_fe(-1)+(1-xi_p_fe*beta)*(1-xi_p_fe)/xi_p_fe *mc_fe);
 w_ss*(1+psi_L*(R_ss-1))*w_fe + w_ss*psi_L*R_ss*R_fe = (1+psi_L*(R_ss-1))*w_ss   *(mc_fe + Y_fe - l_fe);
 rk_fe/rk_ss+R_fe*psi_K*R_ss/(1+psi_K*(R_ss-1))=   mc_fe+Y_fe-K_fe(-1)-U_fe;
-Lr_fe*Lr_ss=   psi_L*w_ss*l_ss*(w_fe+l_fe)+psi_K*K_ss*rk_ss*(rk_fe/rk_ss+U_fe+K_fe(-1)); 
+Lr_fe*Lr_ss=   psi_L*w_ss*l_ss*(w_fe+l_fe)+psi_K*K_ss*rk_ss*(rk_fe/rk_ss+U_fe+K_fe(-1));
 phi_b_fe = Le_fe-Nb_fe;
 Nb_fe = theta*z_ss*(z_fe + Nb_fe(-1));
 Cb_fe = z_fe + Nb_fe(-1);
 z_ss*Pi_ss*(z_fe+Pi_fe) = ((Rb_ss-R_ss)*phi_b_fe(-1) + Rb_ss*Rb_fe-R_ss*R_fe(-1))*phi_b_ss + R_ss*R_fe(-1);
-phi_b_fe= theta*beta^2*z_ss^2*phi_b_fe(+1)+phi_b_ss*Rb_ss/R_ss*(Rb_fe(+1)-R_fe);   
+phi_b_fe= theta*beta^2*z_ss^2*phi_b_fe(+1)+phi_b_ss*Rb_ss/R_ss*(Rb_fe(+1)-R_fe);
 Ce_fe = V_fe;
 N_fe*N_ss = gamma*V_fe*V_ss;
 Rk_ss*(Rk_fe+Q_fe(-1))=      Rk_ss* Pi_fe+Pi_ss*(rk_fe+Q_fe*(1-delta));
@@ -437,37 +437,37 @@ L_ss*L_fe = Le_ss*Le_fe + Lr_ss*Lr_fe;
 end;
 
 
-    
+
 initval;
 Y  =   0;
 GDP=   0;
-I  =   0; 
-K  =   0; 
+I  =   0;
+K  =   0;
 l  =   0;
 C  =   0;
 Ce=   0;
 Cp=   0;
 Cb=   0;
 varrho=0;
-R  =   0; 
+R  =   0;
 Rk =   0;
-rk =   0; 
+rk =   0;
 Rb =   0;
 Rl =   0;
-w  =   0; 
+w  =   0;
 a   =   0;
-Q= 0; 
+Q= 0;
 Pi =   0;
 mc  =   0;
 N   =   0;
-V   =   0; 
+V   =   0;
 phi_e=  0;
 omega_bar_prime=  0;
 L   =   0;
 Lr =   0;
 Le =   0;
 Nb  =  0;
-phi_b=  0; 
+phi_b=  0;
 z   =   0;
 spread_RlR  =0;
 spread_RkR  =0;
@@ -487,4 +487,4 @@ var interest_ = 1;
 var fiscal_ = 1;
 end;
 
-%stoch_simul(order=1,irf=40, hp_filter=1600, ar=1) GDP Cp I Q Pi R Le N Nb phi_b spread_RkR spread_RbR spread_RkRb; 
+%stoch_simul(order=1,irf=40, hp_filter=1600, ar=1) GDP Cp I Q Pi R Le N Nb phi_b spread_RkR spread_RbR spread_RkRb;

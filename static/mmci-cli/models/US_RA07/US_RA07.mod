@@ -1,7 +1,7 @@
 //**************************************************************************
 // A New Comparative Approach to Macroeconomic Modeling and Policy Analysis
 //
-// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and 
+// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and
 // Maik Wolters
 //
 // Working Paper, 2009
@@ -10,16 +10,16 @@
 // Model: US_RB07
 
 // Further references:
-// Pau Rabanal (2007). Does inflation increase after a monetary policy tightening? 
+// Pau Rabanal (2007). Does inflation increase after a monetary policy tightening?
 // Answers based on an estimated DSGE model.
 // Journal of Economic Dynamics & Control 31, p.906-937.
 
 // Implemented by: Asim Farooq and Martina Jancokova
-// Last edited: 13/04/11 
+// Last edited: 13/04/11
 
 // Note: There have been two typos in the original code confirmed by the author. Therefore, the
 // impulse response functions from this model file do in general not match the impulse responses
-// reported in the paper. The adjustments refer to the definition of two parameters. 
+// reported in the paper. The adjustments refer to the definition of two parameters.
 
 
 var pi mc rk w r a u c n l k q i y g rkf wf rrf uf cf nf lf kf qf if yf epsg
@@ -36,19 +36,19 @@ varexo epsp epsa
        interest_ fiscal_;                                                //*
 //**************************************************************************
 
-parameters 
+parameters
  //**************************************************************************
-// Modelbase Parameters                                                  
-                                                                         
-        cofintintb1 cofintintb2 cofintintb3 cofintintb4                  
-        cofintinf0 cofintinfb1 cofintinfb2 cofintinfb3 cofintinfb4       
-        cofintinff1 cofintinff2 cofintinff3 cofintinff4                  
-        cofintout cofintoutb1 cofintoutb2 cofintoutb3 cofintoutb4        
-        cofintoutf1 cofintoutf2 cofintoutf3 cofintoutf4                  
+// Modelbase Parameters
+
+        cofintintb1 cofintintb2 cofintintb3 cofintintb4
+        cofintinf0 cofintinfb1 cofintinfb2 cofintinfb3 cofintinfb4
+        cofintinff1 cofintinff2 cofintinff3 cofintinff4
+        cofintout cofintoutb1 cofintoutb2 cofintoutb3 cofintoutb4
+        cofintoutf1 cofintoutf2 cofintoutf3 cofintoutf4
         cofintoutp cofintoutpb1 cofintoutpb2 cofintoutpb3 cofintoutpb4   //*
         cofintoutpf1 cofintoutpf2 cofintoutpf3 cofintoutpf4              //*
-        std_r_ std_r_quart coffispol           
-//************************************************************************** 
+        std_r_ std_r_quart coffispol
+//**************************************************************************
 gammab gammaf kappap omegap beta thetap alpha gamma thetaw vaphi phi omegaw kappaw sigma b eta delta rhor gammap
            gammay ISS GSS lambdaSS rhoa rhog sigmaa sigmag sigmaz sigmap;
 
@@ -90,15 +90,15 @@ ISS = delta*alpha*(lambdaSS)/((lambdaSS-1)*(1/beta-(1-delta)));//steady state in
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           
-cd('..');                                                                
-load policy_param.mat;                                                   
-for i=1:33                                                               
-    deep_parameter_name = M_.param_names(i,:);                           
-    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])                  
-end                                                                      
-cd(thispath);  
-        
+thispath = pwd;
+cd('..');
+load policy_param.mat;
+for i=1:33
+    deep_parameter_name = M_.param_names(i,:);
+    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
+end
+cd(thispath);
+
 // Definition of Discretionary Fiscal Policy Parameter                   //*
                                                                          //*
 coffispol = 1/GSS;                                                       //*
@@ -145,15 +145,15 @@ interest =   cofintintb1*interest(-1)                                    //*
            + cofintoutf2*outputgap(+2)                                   //*
            + cofintoutf3*outputgap(+3)                                   //*
            + cofintoutf4*outputgap(+4)                                   //*
-           + cofintoutp*output 	                                         //* 
-           + cofintoutpb1*output(-1)                                     //* 
-           + cofintoutpb2*output(-2)                                     //* 
-           + cofintoutpb3*output(-3)                                     //* 
-           + cofintoutpb4*output(-4)                                     //* 
-           + cofintoutpf1*output(+1)                                     //* 
-           + cofintoutpf2*output(+2)                                     //* 
-           + cofintoutpf3*output(+3)                                     //* 
-           + cofintoutpf4*output(+4)                                     //* 
+           + cofintoutp*output 	                                         //*
+           + cofintoutpb1*output(-1)                                     //*
+           + cofintoutpb2*output(-2)                                     //*
+           + cofintoutpb3*output(-3)                                     //*
+           + cofintoutpb4*output(-4)                                     //*
+           + cofintoutpf1*output(+1)                                     //*
+           + cofintoutpf2*output(+2)                                     //*
+           + cofintoutpf3*output(+3)                                     //*
+           + cofintoutpf4*output(+4)                                     //*
            + std_r_ *interest_;                                          //*
                                                                          //*
 // Discretionary Government Spending                                     //*

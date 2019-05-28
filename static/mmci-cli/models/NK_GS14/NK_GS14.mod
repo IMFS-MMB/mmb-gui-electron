@@ -1,7 +1,7 @@
 //**************************************************************************
 // A New Comparative Approach to Macroeconomic Modeling and Policy Analysis
 //
-// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and 
+// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and
 // Maik Wolters
 //
 //**************************************************************************
@@ -10,7 +10,7 @@
 % replicated by Nora Lamersdorf, last edited 11.02.2019
 
 
-var 
+var
 //**************************************************************************
 // Modelbase Variables                                                   //*
        interest inflation inflationq outputgap output // fispol         //*
@@ -41,13 +41,13 @@ B       // 22 Aggregation & Equilibrium
 D       // 23 Aggregation & Equilibrium
 K       // 24 Aggregation & Equilibrium
 r_ib    // 25 Monetary Policy
-J_B     // 26 Banks 
-r_b     // 27 Banks 
-spread  // 28 Banks 
-K_b     // 29 Banks 
+J_B     // 26 Banks
+r_b     // 27 Banks
+spread  // 28 Banks
+K_b     // 29 Banks
 R_b     // 30 Banks
-lev     // 31 Leverage 
-rr      // 32 Real Rate (on loans if possible) 
+lev     // 31 Leverage
+rr      // 32 Real Rate (on loans if possible)
 Y1      // 33 Auxiliary variable 1
 mk_y    // 34 Exogenous Process
 A_e     // 35 Exogenous Process
@@ -57,14 +57,14 @@ c_pf d_pf lam_pf l_pf c_ef k_ef b_eef lam_ef s_ef l_pdf y_ef r_kf mc_Ef J_Rf q_k
 Bf Df Kf r_ibf J_Bf r_bf spreadf K_bf R_bf levf rrf Y1f;
 % pief;
 
-varexo  e_A_e e_mk_y 
+varexo  e_A_e e_mk_y
 //**************************************************************************
-// Modelbase Shocks                                                      //*       
+// Modelbase Shocks                                                      //*
       interest_ ;  // fiscal_;                                          //*
 //**************************************************************************
 
 parameters
-//************************************************************************** 
+//**************************************************************************
 // Modelbase Parameters                                                  //*
                                                                          //*
         cofintintb1 cofintintb2 cofintintb3 cofintintb4                  //*
@@ -78,7 +78,7 @@ parameters
                                                                          //*
 //**************************************************************************
   beta_p beta_e phi m_e_ss gamma_p gamma_e// HOUSEHOLDS & ENTREPRENEURS
-            theta  vi   mcspread delta_b // BANKS 
+            theta  vi   mcspread delta_b // BANKS
             eps_y mk_y_ss ksi kappa_p kappa_i deltak piss // PRODUCTION & RETAILERS
             r_ib_ss rho_ib phi_pie phi_y phi_AP phi_B      // MON POLICY
             rho_A_e rho_mk_y;     // SHOCKS
@@ -87,32 +87,32 @@ parameters
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           
-cd('..');                                                                
-load policy_param.mat;                                                   
-for i=1:33                                                               
-    deep_parameter_name = M_.param_names(i,:);                           
-    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])                  
-end                                                                      
-cd(thispath);   
+thispath = pwd;
+cd('..');
+load policy_param.mat;
+for i=1:33
+    deep_parameter_name = M_.param_names(i,:);
+    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
+end
+cd(thispath);
 std_r_=1;
                                                                          //*
 // Definition of Discretionary Fiscal Policy Parameter                   //*
-coffispol = 1;                                                        //*   
+coffispol = 1;                                                        //*
 //**************************************************************************
-            
+
 beta_p   = 0.996;
 beta_e   = 0.975;
 phi      = 1; // Robustness: High: 1.5, Low: 0.5
 m_e_ss   = 0.35; // Hi-LTV case: m_e_ss = 0.70
 gamma_p  = 1;
 gamma_e  = 1 ;
-eps_y    = 6; 
+eps_y    = 6;
 mk_y_ss  = eps_y   / (eps_y  - 1);
 ksi    = 0.20;
 kappa_p  =  28.65; // Robustness: High: 100, Low: 15
 kappa_i  = 5; // For Tech. Shock. For cost-push shock, subst with kappa_i = 0.05
-              // Robustness: Tech.Sh.: kappa_i = 0.05, 0.5, 10 
+              // Robustness: Tech.Sh.: kappa_i = 0.05, 0.5, 10
               //             C-p Sh. : kappa_i = 5, 0.5 0.005
 deltak    = 0.050;
 piss     = 1.00;
@@ -138,55 +138,55 @@ interest   = 4*(r_ib-r_ib_ss);                                          //*
 inflation  = (pie+pie(-1)+pie(-2)+pie(-3));                             //*
 inflationq = 4*pie;                                                      //*
 outputgap  = Y - Yf;                                         //*
-output     = Y-steady_state(Y);                                                //* 
-//fispol     = e_g;                                                        //*                                                       
+output     = Y-steady_state(Y);                                                //*
+//fispol     = e_g;                                                        //*
 //**************************************************************************
 
-  % (1+r_ib) = (1+r_ib_ss)^(1-rho_ib)*(1+r_ib(-1))^rho_ib*((exp(pie)/piss)^phi_pie*(exp(Y1)/exp(steady_state(Y1)))^phi_y  
+  % (1+r_ib) = (1+r_ib_ss)^(1-rho_ib)*(1+r_ib(-1))^rho_ib*((exp(pie)/piss)^phi_pie*(exp(Y1)/exp(steady_state(Y1)))^phi_y
    %     *(exp(q_k)/exp(steady_state(q_k)))^phi_AP*(exp(B)/exp(steady_state(B)))^phi_B)^(1-rho_ib);
 
-//**************************************************************************                                                                    
+//**************************************************************************
 // Policy Rule                                                           //*
                                                                          //*
-// Monetary Policy  
-interest =   cofintintb1*interest(-1)                                    //* 
-           + cofintintb2*interest(-2)                                    //* 
-           + cofintintb3*interest(-3)                                    //* 
-           + cofintintb4*interest(-4)                                    //* 
-           + cofintinf0*inflationq                                       //* 
-           + cofintinfb1*inflationq(-1)                                  //* 
-           + cofintinfb2*inflationq(-2)                                  //* 
-           + cofintinfb3*inflationq(-3)                                  //* 
-           + cofintinfb4*inflationq(-4)                                  //* 
-           + cofintinff1*inflationq(+1)                                  //* 
-           + cofintinff2*inflationq(+2)                                  //* 
-           + cofintinff3*inflationq(+3)                                  //* 
-           + cofintinff4*inflationq(+4)                                  //* 
-           + cofintout*outputgap 	                                     //* 
-           + cofintoutb1*outputgap(-1)                                   //* 
-           + cofintoutb2*outputgap(-2)                                   //* 
-           + cofintoutb3*outputgap(-3)                                   //* 
-           + cofintoutb4*outputgap(-4)                                   //* 
-           + cofintoutf1*outputgap(+1)                                   //* 
-           + cofintoutf2*outputgap(+2)                                   //* 
-           + cofintoutf3*outputgap(+3)                                   //* 
-           + cofintoutf4*outputgap(+4)                                   //* 
-           + cofintoutp*output 	                                         //* 
-           + cofintoutpb1*output(-1)                                     //* 
-           + cofintoutpb2*output(-2)                                     //* 
-           + cofintoutpb3*output(-3)                                     //* 
-           + cofintoutpb4*output(-4)                                     //* 
-           + cofintoutpf1*output(+1)                                     //* 
-           + cofintoutpf2*output(+2)                                     //* 
-           + cofintoutpf3*output(+3)                                     //* 
-           + cofintoutpf4*output(+4)                                     //* 
-           + std_r_ *interest_;                                          //* 
-    
+// Monetary Policy
+interest =   cofintintb1*interest(-1)                                    //*
+           + cofintintb2*interest(-2)                                    //*
+           + cofintintb3*interest(-3)                                    //*
+           + cofintintb4*interest(-4)                                    //*
+           + cofintinf0*inflationq                                       //*
+           + cofintinfb1*inflationq(-1)                                  //*
+           + cofintinfb2*inflationq(-2)                                  //*
+           + cofintinfb3*inflationq(-3)                                  //*
+           + cofintinfb4*inflationq(-4)                                  //*
+           + cofintinff1*inflationq(+1)                                  //*
+           + cofintinff2*inflationq(+2)                                  //*
+           + cofintinff3*inflationq(+3)                                  //*
+           + cofintinff4*inflationq(+4)                                  //*
+           + cofintout*outputgap 	                                     //*
+           + cofintoutb1*outputgap(-1)                                   //*
+           + cofintoutb2*outputgap(-2)                                   //*
+           + cofintoutb3*outputgap(-3)                                   //*
+           + cofintoutb4*outputgap(-4)                                   //*
+           + cofintoutf1*outputgap(+1)                                   //*
+           + cofintoutf2*outputgap(+2)                                   //*
+           + cofintoutf3*outputgap(+3)                                   //*
+           + cofintoutf4*outputgap(+4)                                   //*
+           + cofintoutp*output 	                                         //*
+           + cofintoutpb1*output(-1)                                     //*
+           + cofintoutpb2*output(-2)                                     //*
+           + cofintoutpb3*output(-3)                                     //*
+           + cofintoutpb4*output(-4)                                     //*
+           + cofintoutpf1*output(+1)                                     //*
+           + cofintoutpf2*output(+2)                                     //*
+           + cofintoutpf3*output(+3)                                     //*
+           + cofintoutpf4*output(+4)                                     //*
+           + std_r_ *interest_;                                          //*
+
                               //*
                                                                          //*
 // Discretionary Government Spending                                     //*
                                                                          //*
-//fispol = coffispol*fiscal_;                                              //*  
+//fispol = coffispol*fiscal_;                                              //*
 //**************************************************************************
 
 // Original model:
@@ -209,20 +209,20 @@ exp(c_p) + exp(d_p) = exp(w_p)*exp(l_p)+(1+r_ib(-1))*exp(d_p(-1))+exp(J_R)/gamma
 //// ENTREPRENEURS
 
 //5. Marginal utility of consumption
-exp(c_e) ^(-1) = exp(lam_e); 
+exp(c_e) ^(-1) = exp(lam_e);
 
 // 6. Labor demand
-exp(w_p) = (1-ksi)*exp(y_e)/(exp(l_pd)*exp(x)); 
+exp(w_p) = (1-ksi)*exp(y_e)/(exp(l_pd)*exp(x));
 
 // 7. Investment Euler equation
-exp(s_e)*m_e_ss*exp(q_k(+1))*(1-deltak)/(1+r_b)+beta_e*exp(lam_e(+1))*(exp(q_k(+1))*(1-deltak)+exp(r_k(+1)))=exp(lam_e)*exp(q_k);  
+exp(s_e)*m_e_ss*exp(q_k(+1))*(1-deltak)/(1+r_b)+beta_e*exp(lam_e(+1))*(exp(q_k(+1))*(1-deltak)+exp(r_k(+1)))=exp(lam_e)*exp(q_k);
 
 // 8. Consumption Euler equation
 exp(lam_e)-exp(s_e) = beta_e*exp(lam_e(+1))*(1+r_b);
 
 // 9. Budget constraint
-exp(c_e)+(1+r_b(-1))*exp(b_ee(-1)) + exp(w_p)*exp(l_pd) + exp(q_k) * exp(k_e) 
-   = exp(y_e)/exp(x) + exp(b_ee) + exp(q_k)*(1-deltak)*exp(k_e(-1));  
+exp(c_e)+(1+r_b(-1))*exp(b_ee(-1)) + exp(w_p)*exp(l_pd) + exp(q_k) * exp(k_e)
+   = exp(y_e)/exp(x) + exp(b_ee) + exp(q_k)*(1-deltak)*exp(k_e(-1));
 
 // 10. Production function
 exp(y_e) = exp(A_e)*(exp(k_e(-1)))^ksi*(exp(l_pd))^(1-ksi);
@@ -231,29 +231,29 @@ exp(y_e) = exp(A_e)*(exp(k_e(-1)))^ksi*(exp(l_pd))^(1-ksi);
 (1+r_b)*exp(b_ee) = m_e_ss *exp(q_k(+1))*exp(k_e)*(1-deltak);
 
 // 12. Return to capital
-exp(r_k) = ksi*exp(A_e)*exp(k_e(-1))^(ksi-1)*(exp(l_pd))^(1-ksi)/exp(x); 
+exp(r_k) = ksi*exp(A_e)*exp(k_e(-1))^(ksi-1)*(exp(l_pd))^(1-ksi)/exp(x);
 
 
 //// CAPITAL PRODUCERS
 
 // 13. Capital accumulation
-exp(K) =(1-deltak)*exp(K(-1))+(1 - kappa_i/2 *(exp(I)/exp(I(-1))- 1)^2 )*exp(I); 
+exp(K) =(1-deltak)*exp(K(-1))+(1 - kappa_i/2 *(exp(I)/exp(I(-1))- 1)^2 )*exp(I);
 
 // 14. FOC
-1 = exp(q_k)*(1-kappa_i/2 *(exp(I)/exp(I(-1))- 1)^2 - kappa_i*(exp(I)/exp(I(-1))- 1)*exp(I)/exp(I(-1))) 
+1 = exp(q_k)*(1-kappa_i/2 *(exp(I)/exp(I(-1))- 1)^2 - kappa_i*(exp(I)/exp(I(-1))- 1)*exp(I)/exp(I(-1)))
   + beta_e*exp(lam_e(+1))/exp(lam_e)*exp(q_k(+1))*kappa_i*(exp(I(+1))/exp(I) -1)*(exp(I(+1))/exp(I))^2;
 
-    
+
 //// RETAILERS
 
 // 15. NK Phillips curve
-1 - exp(mk_y)/(exp(mk_y)-1)+ exp(mk_y)/(exp(mk_y)-1)*exp(mc_E) - kappa_p*(exp(pie) - 1)*exp(pie) 
+1 - exp(mk_y)/(exp(mk_y)-1)+ exp(mk_y)/(exp(mk_y)-1)*exp(mc_E) - kappa_p*(exp(pie) - 1)*exp(pie)
    + beta_p*exp(lam_p(+1))/exp(lam_p)*kappa_p*(exp(pie(+1))-1)*exp(pie(+1))*(exp(Y(+1))/exp(Y)) = 0;
 
 // 16. with
 exp(mc_E) = 1 / exp(x);
 
-//// AGGREGATION & EQUILIBRIUM 
+//// AGGREGATION & EQUILIBRIUM
 
 exp(C)              = gamma_p*exp(c_p) + gamma_e*exp(c_e); // 17.
 gamma_e * exp(l_pd) = gamma_p*exp(l_p); // 18.
@@ -264,12 +264,12 @@ exp(B)              = exp(D) + exp(K_b);  // // 22.
 exp(Y)              = gamma_e*exp(y_e); // 23.
 exp(Y)              = exp(C) + exp(q_k)*(exp(K) - (1-deltak)*exp(K(-1))) + delta_b*exp(K_b(-1)); // 24.
 
-           
-//// MONETARY POLICY 
+
+//// MONETARY POLICY
 // 25. Interest rate rule
-  % (1+r_ib) = (1+r_ib_ss)^(1-rho_ib)*(1+r_ib(-1))^rho_ib*((exp(pie)/piss)^phi_pie*(exp(Y1)/exp(steady_state(Y1)))^phi_y  
+  % (1+r_ib) = (1+r_ib_ss)^(1-rho_ib)*(1+r_ib(-1))^rho_ib*((exp(pie)/piss)^phi_pie*(exp(Y1)/exp(steady_state(Y1)))^phi_y
    %     *(exp(q_k)/exp(steady_state(q_k)))^phi_AP*(exp(B)/exp(steady_state(B)))^phi_B)^(1-rho_ib);
-                 
+
 ////EXOGENOUS PROCESSES
 
 // 26. Technology shock
@@ -279,7 +279,7 @@ exp(A_e)  = 1 - rho_A_e + rho_A_e*exp(A_e(-1)) + e_A_e;
 exp(mk_y) = (1-rho_mk_y)*mk_y_ss + rho_mk_y*exp(mk_y(-1)) + e_mk_y;
 
 
-//// BANKS 
+//// BANKS
 
 // 28. Aggregate bank profits
 exp(J_B)  = (r_b*exp(B) - r_ib*exp(D) - theta/2*(exp(K_b)/exp(B) - vi)^2 *exp(K_b));
@@ -325,20 +325,20 @@ exp(c_pf) + exp(d_pf) = exp(w_pf)*exp(l_pf)+(1+r_ibf(-1))*exp(d_pf(-1))+exp(J_Rf
 
 //// ENTREPRENEURS
 //5. Marginal utility of consumption
-exp(c_ef) ^(-1) = exp(lam_ef); 
+exp(c_ef) ^(-1) = exp(lam_ef);
 
 // 6. Labor demand
-exp(w_pf) = (1-ksi)*exp(y_ef)/(exp(l_pdf)*exp(xf)); 
+exp(w_pf) = (1-ksi)*exp(y_ef)/(exp(l_pdf)*exp(xf));
 
 // 7. Investment Euler equation
-exp(s_ef)*m_e_ss*exp(q_kf(+1))*(1-deltak)/(1+r_bf)+beta_e*exp(lam_ef(+1))*(exp(q_kf(+1))*(1-deltak)+exp(r_kf(+1)))=exp(lam_ef)*exp(q_kf);  
+exp(s_ef)*m_e_ss*exp(q_kf(+1))*(1-deltak)/(1+r_bf)+beta_e*exp(lam_ef(+1))*(exp(q_kf(+1))*(1-deltak)+exp(r_kf(+1)))=exp(lam_ef)*exp(q_kf);
 
 // 8. Consumption Euler equation
 exp(lam_ef)-exp(s_ef) = beta_e*exp(lam_ef(+1))*(1+r_bf);
 
 // 9. Budget constraint
-exp(c_ef)+(1+r_bf(-1))*exp(b_eef(-1)) + exp(w_pf)*exp(l_pdf) + exp(q_kf) * exp(k_ef) 
-   = exp(y_ef)/exp(xf) + exp(b_eef) + exp(q_kf)*(1-deltak)*exp(k_ef(-1));  
+exp(c_ef)+(1+r_bf(-1))*exp(b_eef(-1)) + exp(w_pf)*exp(l_pdf) + exp(q_kf) * exp(k_ef)
+   = exp(y_ef)/exp(xf) + exp(b_eef) + exp(q_kf)*(1-deltak)*exp(k_ef(-1));
 
 // 10. Production function
 exp(y_ef) = exp(A_e)*(exp(k_ef(-1)))^ksi*(exp(l_pdf))^(1-ksi);
@@ -347,18 +347,18 @@ exp(y_ef) = exp(A_e)*(exp(k_ef(-1)))^ksi*(exp(l_pdf))^(1-ksi);
 (1+r_bf)*exp(b_eef) = m_e_ss *exp(q_kf(+1))*exp(k_ef)*(1-deltak);
 
 // 12. Return to capital
-exp(r_kf) = ksi*exp(A_e)*exp(k_ef(-1))^(ksi-1)*(exp(l_pdf))^(1-ksi)/exp(xf); 
+exp(r_kf) = ksi*exp(A_e)*exp(k_ef(-1))^(ksi-1)*(exp(l_pdf))^(1-ksi)/exp(xf);
 
 
 //// CAPITAL PRODUCERS
 // 13. Capital accumulation
-exp(Kf) =(1-deltak)*exp(Kf(-1))+(1 - kappa_i/2 *(exp(If)/exp(If(-1))- 1)^2 )*exp(If); 
+exp(Kf) =(1-deltak)*exp(Kf(-1))+(1 - kappa_i/2 *(exp(If)/exp(If(-1))- 1)^2 )*exp(If);
 
 // 14. FOC
-1 = exp(q_kf)*(1-kappa_i/2 *(exp(If)/exp(If(-1))- 1)^2 - kappa_i*(exp(If)/exp(If(-1))- 1)*exp(If)/exp(If(-1))) 
+1 = exp(q_kf)*(1-kappa_i/2 *(exp(If)/exp(If(-1))- 1)^2 - kappa_i*(exp(If)/exp(If(-1))- 1)*exp(If)/exp(If(-1)))
   + beta_e*exp(lam_ef(+1))/exp(lam_ef)*exp(q_kf(+1))*kappa_i*(exp(If(+1))/exp(If) -1)*(exp(If(+1))/exp(If))^2;
 
-    
+
 //// RETAILERS
 // 15. FOC price-setting of retailers, case without adjustment costs
 1 - exp(mk_y)/(exp(mk_y)-1)+ exp(mk_y)/(exp(mk_y)-1)*exp(mc_Ef) = 0;
@@ -366,7 +366,7 @@ exp(Kf) =(1-deltak)*exp(Kf(-1))+(1 - kappa_i/2 *(exp(If)/exp(If(-1))- 1)^2 )*exp
 // 16. with
 exp(mc_Ef) = 1 / exp(xf);
 
-//// AGGREGATION & EQUILIBRIUM 
+//// AGGREGATION & EQUILIBRIUM
 exp(Cf)              = gamma_p*exp(c_pf) + gamma_e*exp(c_ef); // 17.
 gamma_e * exp(l_pdf) = gamma_p*exp(l_pf); // 18.
 exp(Bf)              = gamma_e*exp(b_eef); // 19.
@@ -375,12 +375,12 @@ exp(Kf)              = gamma_e*exp(k_ef); //  21.
 exp(Bf)              = exp(Df) + exp(K_bf);  // // 22.
 exp(Yf)              = gamma_e*exp(y_ef); // 23.
 exp(Yf)              = exp(Cf) + exp(q_kf)*(exp(Kf) - (1-deltak)*exp(Kf(-1))) + delta_b*exp(K_bf(-1)); // 24.
-           
-//// MONETARY POLICY 
+
+//// MONETARY POLICY
 // 25. Interest rate rule
-%(1+r_ibf) = (1+r_ib_ss)^(1-rho_ib)*(1+r_ibf(-1))^rho_ib*((exp(pief)/piss)^phi_pie*(exp(Y1f)/exp(steady_state(Y1)))^phi_y  
+%(1+r_ibf) = (1+r_ib_ss)^(1-rho_ib)*(1+r_ibf(-1))^rho_ib*((exp(pief)/piss)^phi_pie*(exp(Y1f)/exp(steady_state(Y1)))^phi_y
    %        *(exp(q_kf)/exp(steady_state(q_kf)))^phi_AP*(exp(Bf)/exp(steady_state(Bf)))^phi_B)^(1-rho_ib);
-                 
+
 ////EXOGENOUS PROCESSES
 // 26. Technology shock
 %exp(A_e)  = 1 - rho_A_e + rho_A_e*exp(A_e(-1)) + e_A_e;
@@ -388,7 +388,7 @@ exp(Yf)              = exp(Cf) + exp(q_kf)*(exp(Kf) - (1-deltak)*exp(Kf(-1))) + 
 // 27. Goods' mark-up shock
 %exp(mk_y) = (1-rho_mk_y)*mk_y_ss + rho_mk_y*exp(mk_y(-1)) + e_mk_y;
 
-//// BANKS 
+//// BANKS
 // 28. Aggregate bank profits
 exp(J_Bf)  = (r_b*exp(Bf) - r_ibf*exp(Df) - theta/2*(exp(K_bf)/exp(Bf) - vi)^2 *exp(K_bf));
 
@@ -495,10 +495,10 @@ end;
 
 shocks;
 var e_A_e            =  0.1;
-var e_mk_y           =  0.1; 
-var interest_        =  0.1;        
+var e_mk_y           =  0.1;
+var interest_        =  0.1;
 end;
 
-// Stochastic simulations 
+// Stochastic simulations
 %stoch_simul(order=1,irf=20, periods=10000);
 

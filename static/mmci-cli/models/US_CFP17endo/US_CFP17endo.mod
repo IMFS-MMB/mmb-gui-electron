@@ -1,14 +1,14 @@
 //**************************************************************************
 // A New Comparative Approach to Macroeconomic Modeling and Policy Analysis
 //
-// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and 
+// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and
 // Maik Wolters
 //
 //**************************************************************************
 
 //Model: US_CFP17exo
 
-//Model replication code by: Alina Tänzer (alina.taenzer@hof.uni-frankfurt.de)
+//Model replication code by: Alina Tï¿½nzer (alina.taenzer@hof.uni-frankfurt.de)
 
 //Last edited: November 2017
 
@@ -18,7 +18,7 @@
 //In: American Economic Journal (2017)
 //**************************************************************************
 
-var         rn mrs pinw mkw mk gy gi spread g_bonds infl ffr bb2 qnat r10s assets qi m lev muc c L w a r1 r2 rk pin y mp 
+var         rn mrs pinw mkw mk gy gi spread g_bonds infl ffr bb2 qnat r10s assets qi m lev muc c L w a r1 r2 rk pin y mp
             q f d b2 nw k i pk mc ann_pin r10 ann_r2 ann_r1 term_prem r10_nat muinv r_lend u_psi mucf cf r1f pinf pkf mf rkf
             qif r2f Lf wf yf kf if ff nwf term_premf r10f r10_natf qnatf qf b2f ygap levf r10obs PCE_inf y_growth i_growth labor_dist
 
@@ -34,8 +34,8 @@ varexo      eps_a eps_mp eps_i eps_psi eps_mk eps_mkw eps_b2 eps_rn
             interest_                                ;                  //*
 //**********************************************************************
 
-parameters  
-        //************************************************************************** 
+parameters
+        //**************************************************************************
         // Modelbase Parameters                                                  //*
                                                                          //*
         cofintintb1 cofintintb2 cofintintb3 cofintintb4                  //*
@@ -47,7 +47,7 @@ parameters
         cofintoutpf1 cofintoutpf2 cofintoutpf3 cofintoutpf4              //*
         std_r_ std_r_quart                                              //*
         //**************************************************************************
-            alpha b beta delta eta gamma h kappa kappa_i psi_i psi_n zeta tau_p tau_y tau_pi tauy_long taupi_long tau_prem rho_m 
+            alpha b beta delta eta gamma h kappa kappa_i psi_i psi_n zeta tau_p tau_y tau_pi tauy_long taupi_long tau_prem rho_m
             eps_p eps_w theta_p theta_w i_p i_w kappaw kappapc sigmamk sigmamkw sigmab2 sigmarn sigmaea sigmaeb sigmaeph sigmaer sigmaemu dur
             rhomkw rhomk rhod3 rhod4 rhoi rho_a rho1_b rho2_b rho_phi rho_mu rho_rn rhoi_long Y_ss I_ss C_ss R1ss R2ss b2ss dss nwss xss premss b2n;
 
@@ -59,7 +59,7 @@ load parameterfile;
             set_param_value('psi_i',psi_i);           set_param_value('psi_n',psi_n);           set_param_value('zeta',zeta);
             set_param_value('tau_p',tau_p);           set_param_value('tau_y',tau_y);           set_param_value('tau_pi',tau_pi);
             set_param_value('tau_prem',tau_prem);     set_param_value('tauy_long',tauy_long);   set_param_value('taupi_long',taupi_long);
-               set_param_value('nwss',nwss); 
+               set_param_value('nwss',nwss);
             set_param_value('theta_p',theta_p);       set_param_value('theta_w',theta_w);       set_param_value('i_p',i_p);
             set_param_value('i_w',i_w);               set_param_value('kappaw',kappaw);         set_param_value('kappapc',kappapc);
             set_param_value('sigmaea',sigmaea);       set_param_value('sigmaeb',sigmaeb);       set_param_value('sigmaeph',sigmaeph);
@@ -67,15 +67,15 @@ load parameterfile;
             set_param_value('sigmamk',sigmamk);       set_param_value('sigmamkw',sigmamkw);     set_param_value('sigmab2',sigmab2);
             set_param_value('rhoi',rhoi);             set_param_value('rho_a',rho_a);           set_param_value('rho1_b',rho1_b);
             set_param_value('rho2_b',rho2_b);         set_param_value('rho_phi',rho_phi);       set_param_value('rho_mu',rho_mu); set_param_value('rho_m',rho_m);
-            set_param_value('rho_rn',rho_rn);         set_param_value('rhomk',rhomk);           
+            set_param_value('rho_rn',rho_rn);         set_param_value('rhomk',rhomk);
             set_param_value('rhomkw',rhomkw);         set_param_value('rhoi_long',rhoi_long);
-            set_param_value('C_ss',C_ss);             set_param_value('I_ss',I_ss);             set_param_value('R1ss',R1ss);                     
-            set_param_value('R2ss',R2ss);             set_param_value('Y_ss',Y_ss);             set_param_value('premss',premss); 
-  
-// calibrate to 40% of bank assets held as securities:                
-            b2n = .4*gamma;       b2ss = b2n*nwss;       
+            set_param_value('C_ss',C_ss);             set_param_value('I_ss',I_ss);             set_param_value('R1ss',R1ss);
+            set_param_value('R2ss',R2ss);             set_param_value('Y_ss',Y_ss);             set_param_value('premss',premss);
+
+// calibrate to 40% of bank assets held as securities:
+            b2n = .4*gamma;       b2ss = b2n*nwss;
             fn  = gamma - b2n;    fss  = nwss*fn;
-            xss = fss + b2ss;     dss  = (gamma-1)*nwss; 
+            xss = fss + b2ss;     dss  = (gamma-1)*nwss;
 
 
 kappa_i = (duration_i-1)/(duration_i);
@@ -84,14 +84,14 @@ kappa_i = (duration_i-1)/(duration_i);
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           
-cd('..');                                                                
-load policy_param.mat;                                                   
-for i=1:33                                                      //change?                                       
-    deep_parameter_name = M_.param_names(i,:);                           
-    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])                  
-end                                                                      
-cd(thispath);  
+thispath = pwd;
+cd('..');
+load policy_param.mat;
+for i=1:33                                                      //change?
+    deep_parameter_name = M_.param_names(i,:);
+    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
+end
+cd(thispath);
                                                                          //*
 // Definition of Discretionary Fiscal Policy Parameter                   //*
 //coffispol = 1;                                                           //*
@@ -109,43 +109,43 @@ inflationq  =  400*pin; //(1/4)*infl*100;                                       
 outputgap  =   ygap*100;                                                    //*
 output =       y*100;                                                       //*                                                            //*
 //**************************************************************************
-//**************************************************************************                                                                    
+//**************************************************************************
 // Policy Rule                                                           //*
                                                                          //*
 // Monetary Policy                                                       //*
                                                                          //*
-interest =   cofintintb1*interest(-1)                                    //* 
-           + cofintintb2*interest(-2)                                    //* 
-           + cofintintb3*interest(-3)                                    //* 
-           + cofintintb4*interest(-4)                                    //* 
-           + cofintinf0*inflationq                                       //* 
-           + cofintinfb1*inflationq(-1)                                  //* 
-           + cofintinfb2*inflationq(-2)                                  //* 
-           + cofintinfb3*inflationq(-3)                                  //* 
-           + cofintinfb4*inflationq(-4)                                  //* 
-           + cofintinff1*inflationq(+1)                                  //* 
-           + cofintinff2*inflationq(+2)                                  //* 
-           + cofintinff3*inflationq(+3)                                  //* 
-           + cofintinff4*inflationq(+4)                                  //* 
-           + cofintout*outputgap 	                                     //* 
-           + cofintoutb1*outputgap(-1)                                   //* 
-           + cofintoutb2*outputgap(-2)                                   //* 
-           + cofintoutb3*outputgap(-3)                                   //* 
-           + cofintoutb4*outputgap(-4)                                   //* 
-           + cofintoutf1*outputgap(+1)                                   //* 
-           + cofintoutf2*outputgap(+2)                                   //* 
-           + cofintoutf3*outputgap(+3)                                   //* 
-           + cofintoutf4*outputgap(+4)                                   //* 
-           + cofintoutp*output 	                                         //* 
-           + cofintoutpb1*output(-1)                                     //* 
-           + cofintoutpb2*output(-2)                                     //* 
-           + cofintoutpb3*output(-3)                                     //* 
-           + cofintoutpb4*output(-4)                                     //* 
-           + cofintoutpf1*output(+1)                                     //* 
-           + cofintoutpf2*output(+2)                                     //* 
-           + cofintoutpf3*output(+3)                                     //* 
-           + cofintoutpf4*output(+4)                                     //* 
-           + std_r_ *interest_;                                          //* 
+interest =   cofintintb1*interest(-1)                                    //*
+           + cofintintb2*interest(-2)                                    //*
+           + cofintintb3*interest(-3)                                    //*
+           + cofintintb4*interest(-4)                                    //*
+           + cofintinf0*inflationq                                       //*
+           + cofintinfb1*inflationq(-1)                                  //*
+           + cofintinfb2*inflationq(-2)                                  //*
+           + cofintinfb3*inflationq(-3)                                  //*
+           + cofintinfb4*inflationq(-4)                                  //*
+           + cofintinff1*inflationq(+1)                                  //*
+           + cofintinff2*inflationq(+2)                                  //*
+           + cofintinff3*inflationq(+3)                                  //*
+           + cofintinff4*inflationq(+4)                                  //*
+           + cofintout*outputgap 	                                     //*
+           + cofintoutb1*outputgap(-1)                                   //*
+           + cofintoutb2*outputgap(-2)                                   //*
+           + cofintoutb3*outputgap(-3)                                   //*
+           + cofintoutb4*outputgap(-4)                                   //*
+           + cofintoutf1*outputgap(+1)                                   //*
+           + cofintoutf2*outputgap(+2)                                   //*
+           + cofintoutf3*outputgap(+3)                                   //*
+           + cofintoutf4*outputgap(+4)                                   //*
+           + cofintoutp*output 	                                         //*
+           + cofintoutpb1*output(-1)                                     //*
+           + cofintoutpb2*output(-2)                                     //*
+           + cofintoutpb3*output(-3)                                     //*
+           + cofintoutpb4*output(-4)                                     //*
+           + cofintoutpf1*output(+1)                                     //*
+           + cofintoutpf2*output(+2)                                     //*
+           + cofintoutpf3*output(+3)                                     //*
+           + cofintoutpf4*output(+4)                                     //*
+           + std_r_ *interest_;                                          //*
                                                                          //*
 //**************************************************************************
 
@@ -164,7 +164,7 @@ mucf = (beta*h*cf(+1)-(1+beta*h^2)*cf+h*cf(-1))/((1-h*beta)*(1-h)) + rn*(1-h*bet
 
 % (33) Labor Supply:
 
-mrs = eta*L + rn - muc; 
+mrs = eta*L + rn - muc;
 wf = eta*Lf + rn - mucf;
 
 
@@ -208,7 +208,7 @@ psi_n*nwf = (premss*gamma*(r2f-r1f)+(gamma*(premss-1))*levf) / (1+gamma*(premss-
 lev = (b2ss/xss)*b2 + (1-b2ss/xss)*f - nw;
 levf = (b2ss/xss)*b2f + (1-b2ss/xss)*ff - nwf;
 
-(b2ss/nwss)*b2 + (gamma-b2ss/nwss)*f = nw + (gamma-1)*d; 
+(b2ss/nwss)*b2 + (gamma-b2ss/nwss)*f = nw + (gamma-1)*d;
 
 % (43a) Total Assets:
 assets = (b2ss/xss)*b2 + (1-b2ss/xss)*f;
@@ -270,7 +270,7 @@ spread = ann_r2 - ann_r1;
 a = rho_a*a(-1) + eps_a;
 
 % (A2) Credit Shock (psi=PHI in nonlinear):
-u_psi = rho_phi*u_psi(-1) + eps_psi; 
+u_psi = rho_phi*u_psi(-1) + eps_psi;
 
 % (A3) Investment Shock:
 muinv = rho_mu*muinv(-1) + eps_i;
@@ -282,7 +282,7 @@ mp = rho_m*mp(-1) + eps_mp;
 rn = rho_rn*rn(-1) + eps_rn/(1-rho_rn);
 
 % (A6) Wage Markup Shock:
-mkw = rhomkw*mkw(-1) + eps_mkw; 
+mkw = rhomkw*mkw(-1) + eps_mkw;
 
 % (A7) Price Markup Shock:
 mk = rhomk*mk(-1) + eps_mk;
@@ -318,7 +318,7 @@ initval;
     u_psi=0;    muinv=0;      mp=0;       r10=0;    r1=0;   r2=0;    pin=0;
     y=0;        mp=0;         q=0;        f=0;      d=0;    b2=0;    nw=0;
     k=0;        i=0;          pk=0;       mc=0;     infl=0; ffr=0;   ann_pin=0;
-    r10=0;      
+    r10=0;
 end;
 
 %steady;

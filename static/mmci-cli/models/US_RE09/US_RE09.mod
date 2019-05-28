@@ -1,7 +1,7 @@
 //************************************************************************
 // A New Comparative Approach to Macroeconomic Modeling and Policy Analysis
 //
-// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and 
+// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and
 // Maik Wolters
 //
 // Working Paper, 2009
@@ -16,14 +16,14 @@
 // Computational Economics 43
 
 // Created by Laura Schmidt
-// Last edited: 
+// Last edited:
 
 //Allows for 16 lagged information sets to restrict computational time, adjust as desired (note: if so also adjust the parameter value of T in line 81)
 @#define lags = [1:16]
 
 var y a l p w yinfn i R pi x yclas deltaa g nuu gam eps z zwage zoutput
 //y: output, a: productivity, l: labor, p: price, w: wage, yinfn: output 100 periods ahead (steady state output)
-//i: interest rate, R: recursive long real interest rate, pi: inflation, outputgap: outputgap 
+//i: interest rate, R: recursive long real interest rate, pi: inflation, outputgap: outputgap
 //yclass: output without sticky information, deltaa: productivity growth, g: government spending (aggregate demand shock)
 //nuu: elasticity of substitution (goods), gam: elasticity of substitution (labor)
 //z: generic variable to compute the price under sticky information (sticky information Phillips curve)
@@ -47,7 +47,7 @@ varexo e_deltaa e_g e_nuu e_gam e_eps
        interest_;                                                        //*
 //**************************************************************************
 
-parameters 
+parameters
 //**************************************************************************
 // Modelbase Parameters                                                  //*
                                                                          //*
@@ -77,25 +77,25 @@ phi_pi     =   1.17350494813421;
 phi_y      =   0.0625290108287302;
 delta      =   0.0822178065824585;
 omega      =   0.744214139325477;
-lambda     =   0.516437987152365; 
+lambda     =   0.516437987152365;
 T=16;
 
 //**************************************************************************
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           
-cd('..');                                                                
-load policy_param.mat;                                                   
-for i=1:33                                                               
-    deep_parameter_name = M_.param_names(i,:);                           
-    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])                  
-end                                                                      
-cd(thispath);  
-                                                          
+thispath = pwd;
+cd('..');
+load policy_param.mat;
+for i=1:33
+    deep_parameter_name = M_.param_names(i,:);
+    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
+end
+cd(thispath);
+
 // Definition of Discretionary Fiscal Policy Parameter                   //*
 coffispol = 0;                                                           //*
-//**************************************************************************  
+//**************************************************************************
 
 
 model(linear);
@@ -109,40 +109,40 @@ outputgap  = x;                                                          //*
 output     = y;                                                          //*
 //**************************************************************************
 
-//**************************************************************************                                                                    
+//**************************************************************************
 // Policy Rule                                                           //*
 
-interest =   cofintintb1*interest(-1)                                    //* 
-           + cofintintb2*interest(-2)                                    //* 
-           + cofintintb3*interest(-3)                                    //* 
-           + cofintintb4*interest(-4)                                    //* 
-           + cofintinf0*inflationq                                       //* 
-           + cofintinfb1*inflationq(-1)                                  //* 
-           + cofintinfb2*inflationq(-2)                                  //* 
-           + cofintinfb3*inflationq(-3)                                  //* 
-           + cofintinfb4*inflationq(-4)                                  //* 
-           + cofintinff1*inflationq(+1)                                  //* 
-           + cofintinff2*inflationq(+2)                                  //* 
-           + cofintinff3*inflationq(+3)                                  //* 
-           + cofintinff4*inflationq(+4)                                  //* 
-           + cofintout*outputgap 	                                     //* 
-           + cofintoutb1*outputgap(-1)                                   //* 
-           + cofintoutb2*outputgap(-2)                                   //* 
-           + cofintoutb3*outputgap(-3)                                   //* 
-           + cofintoutb4*outputgap(-4)                                   //* 
-           + cofintoutf1*outputgap(+1)                                   //* 
-           + cofintoutf2*outputgap(+2)                                   //* 
-           + cofintoutf3*outputgap(+3)                                   //* 
+interest =   cofintintb1*interest(-1)                                    //*
+           + cofintintb2*interest(-2)                                    //*
+           + cofintintb3*interest(-3)                                    //*
+           + cofintintb4*interest(-4)                                    //*
+           + cofintinf0*inflationq                                       //*
+           + cofintinfb1*inflationq(-1)                                  //*
+           + cofintinfb2*inflationq(-2)                                  //*
+           + cofintinfb3*inflationq(-3)                                  //*
+           + cofintinfb4*inflationq(-4)                                  //*
+           + cofintinff1*inflationq(+1)                                  //*
+           + cofintinff2*inflationq(+2)                                  //*
+           + cofintinff3*inflationq(+3)                                  //*
+           + cofintinff4*inflationq(+4)                                  //*
+           + cofintout*outputgap 	                                     //*
+           + cofintoutb1*outputgap(-1)                                   //*
+           + cofintoutb2*outputgap(-2)                                   //*
+           + cofintoutb3*outputgap(-3)                                   //*
+           + cofintoutb4*outputgap(-4)                                   //*
+           + cofintoutf1*outputgap(+1)                                   //*
+           + cofintoutf2*outputgap(+2)                                   //*
+           + cofintoutf3*outputgap(+3)                                   //*
            + cofintoutf4*outputgap(+4)                                   //*
-           + cofintoutp*output 	                                         //* 
-           + cofintoutpb1*output(-1)                                     //* 
-           + cofintoutpb2*output(-2)                                     //* 
-           + cofintoutpb3*output(-3)                                     //* 
-           + cofintoutpb4*output(-4)                                     //* 
-           + cofintoutpf1*output(+1)                                     //* 
-           + cofintoutpf2*output(+2)                                     //* 
-           + cofintoutpf3*output(+3)                                     //* 
-           + cofintoutpf4*output(+4)                                     //*  
+           + cofintoutp*output 	                                         //*
+           + cofintoutpb1*output(-1)                                     //*
+           + cofintoutpb2*output(-2)                                     //*
+           + cofintoutpb3*output(-3)                                     //*
+           + cofintoutpb4*output(-4)                                     //*
+           + cofintoutpf1*output(+1)                                     //*
+           + cofintoutpf2*output(+2)                                     //*
+           + cofintoutpf3*output(+3)                                     //*
+           + cofintoutpf4*output(+4)                                     //*
            + std_r_ *interest_;                                          //*
 //**************************************************************************
 
@@ -155,8 +155,8 @@ y = a + beta*l;
 z = p +  (beta*(w-p)+(1-beta)*y-a)/(beta+nu*(1-beta))-(beta*nuu)/((nu-1)*(beta+nu*(1-beta)));
 
 p = lambda*( + z +
- @#for lag in lags 
-   +EXPECTATION(-@{lag})(z)*((1-lambda)^(@{lag})) 
+ @#for lag in lags
+   +EXPECTATION(-@{lag})(z)*((1-lambda)^(@{lag}))
  @#endfor
 );
 
@@ -167,18 +167,18 @@ R = i - (p(+1)-p) + R(+1);
 yinfn = y(100);
 zoutput = yinfn - theta*R;
 
-y = g + delta*( + zoutput + 
- @#for lag in lags 
-   +EXPECTATION(-@{lag})(zoutput)*((1-delta)^(@{lag})) 
+y = g + delta*( + zoutput +
+ @#for lag in lags
+   +EXPECTATION(-@{lag})(zoutput)*((1-delta)^(@{lag}))
  @#endfor
 );
 
 // Wage Curve
 zwage = p + gamma*(w-p)/(gamma+psi) + l/(gamma+psi) + psi*(yinfn - theta*R)/(theta*(gamma+psi)) - psi*gam/((gamma+psi)*(gamma-1));
 
-w = omega*( + zwage + 
- @#for lag in lags 
-   +EXPECTATION(-@{lag})(zwage)*((1-omega)^(@{lag})) 
+w = omega*( + zwage +
+ @#for lag in lags
+   +EXPECTATION(-@{lag})(zwage)*((1-omega)^(@{lag}))
  @#endfor
 );
 

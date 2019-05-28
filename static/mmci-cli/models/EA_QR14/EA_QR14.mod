@@ -13,8 +13,8 @@
 % The MMB team adds the flexible-price economy where we assume no nominal rigidities in both home and foreign countries
 % in the presence of financial frictions.
 % In the flexible-price economy, all inflations as well as terms of trade are one.
-% Last edited by Jinhyuk Yoo in February 2016. 
- 
+% Last edited by Jinhyuk Yoo in February 2016.
+
 
 %----------------------------------------------------------------
 % 0. Housekeeping
@@ -26,7 +26,7 @@ close all
 % 1. Defining variables
 %----------------------------------------------------------------
 
-var 
+var
 q,c,d,c_borr,d_borr,dpd,dpc,dph,lc_tot,ld_tot,l,l_borr,lc,ld,lc_borr,ld_borr,wc,wd,yc,yd,varrho,inv,varrho_borr,inv_borr,
 q_s,c_s,d_s,c_s_borr,d_s_borr,dpd_s,dpc_s,dpf,lc_s_tot,ld_s_tot,l_s,l_s_borr,lc_s,ld_s,
 lc_s_borr,ld_s_borr,wc_s,wd_s,yc_s,yd_s,varrho_s,inv_s,varrho_s_borr,inv_s_borr,
@@ -41,7 +41,7 @@ ldf_s,wdf_s,ycf,ydf,yf,y_emuf,ycf_s,ydf_s,yf_s,cff_borr,
 cff_s_borr,varrhof_borr,varrhof_s_borr,invf_borr,invf_s_borr,df_borr,df_s_borr,lf_borr,lcf_borr,ldf_borr,
 lf_s_borr,lcf_s_borr,ldf_s_borr,sf_borr,sf_s_borr,lcf_tot,lcf_s_tot,ldf_tot,ldf_s_tot,cff_tot,
 cff_s_tot,rdf,rdf_s,rlf,rlf_s
-% need to initialize variables in the following lines below. 
+% need to initialize variables in the following lines below.
 Faf Fpf return_defaultf return_nondefaultf Gpf Gaf omegaaf omegapf
 Faf_s Fpf_s return_defaultf_s return_nondefaultf_s Gpf_s Gaf_s omegaaf_s omegapf_s
 //**************************************************************************
@@ -50,16 +50,16 @@ Faf_s Fpf_s return_defaultf_s return_nondefaultf_s Gpf_s Gaf_s omegaaf_s omegapf
 //**************************************************************************
 
 
-varexo 
+varexo
 e_premium,e_risk,e_risk_s,e_prefd,e_prefd_s,e_prefc,e_prefc_s,e_techc,e_techd,e_techc_s,e_techd_s,e_tech,e_prefd_com,e_techc_com,  // e_m,
 
 //**************************************************************************
-// Modelbase Shocks                                                      //*       
+// Modelbase Shocks                                                      //*
        interest_;                                                        //*
 //**************************************************************************
 
 parameters
-//************************************************************************** 
+//**************************************************************************
 // Modelbase Parameters                                                  //*
                                                                          //*
         cofintintb1 cofintintb2 cofintintb3 cofintintb4                  //*
@@ -72,7 +72,7 @@ parameters
         std_r_ std_r_quart                                               //*
                                                                          //*
 //**************************************************************************
- 
+
 beta,beta_borr,lambda,delta,chi,sigma,kappa_b,gamma,alpha,phi,tau,epsilon,epsilon_borr,psi,theta_c,phi_c,theta_d,phi_d,
 gamma_s,alpha_s,tau_s,theta_c_s,phi_c_s,theta_d_s,phi_d_s,gamma_r,gamma_pi,iota_C,iota_L,
 RR_bar,RL_bar,upsilon,upsilon_borr,upsilon_s,upsilon_borr_s,rho_premium,rho_risk,rho_risk_s,rho_prefd,rho_prefd_s,
@@ -84,13 +84,13 @@ C_s_borr_bar,n,gamma_y,gamma_eta,gamma_eta_s,RL_s_bar,RD_bar,F_bar,G_bar,sigma_b
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           
-cd('..');                                                                
-load policy_param.mat;                                                   
-for i=1:33                                                               
-    deep_parameter_name = M_.param_names(i,:);                           
-    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])                  
-end                                                                      
+thispath = pwd;
+cd('..');
+load policy_param.mat;
+for i=1:33
+    deep_parameter_name = M_.param_names(i,:);
+    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
+end
 cd(thispath);
     std_r_ = 100;                                                        //*
                                                                          //*
@@ -172,55 +172,55 @@ rho_techd_s=rho_techd;    % AR coefficient, TFP shock durable sector Foreign cou
     gamma_s = call_csolve1_timingI(delta,lambda,epsilon,epsilon_borr,chi,beta,sigma,phi,alpha_s,mu,F_bar);
 
     RR_bar=1/beta;
-    
+
     omega_bar = (1-chi);
     sigma_bar = call_csolve2(F_bar,omega_bar);
 
     G_bar = 1- normcdf((0.5*sigma_bar^2 -log(omega_bar))/sigma_bar,0,1);
-    
+
     RL_bar = RR_bar/((1-mu)*G_bar/omega_bar+1-F_bar);
     RL_s_bar=RL_bar;
-    
+
     beta_borr = (RL_bar*(1-F_bar+G_bar/omega_bar))^(-1);
 
     RD_bar = G_bar*RL_s_bar/omega_bar;
-        
+
     upsilon_borr=gamma*(1-beta_borr*(1-delta))/(beta_borr*(1-gamma)*(1-epsilon_borr));
     upsilon=gamma*(1-beta*(1-delta))/(beta*(1-gamma)*(1-epsilon));
-    
+
     upsilon_borr_s=gamma_s*(1-beta_borr*(1-delta))/(beta_borr*(1-gamma_s)*(1-epsilon_borr));
-    upsilon_s=gamma_s*(1-beta*(1-delta))/(beta*(1-gamma_s)*(1-epsilon));   
-     
-    % Hours worked and consumption by borrowers 
+    upsilon_s=gamma_s*(1-beta*(1-delta))/(beta*(1-gamma_s)*(1-epsilon));
+
+    % Hours worked and consumption by borrowers
     L_borr_bar=(gamma/(1-epsilon_borr)*(1+(delta+G_bar+(1-F_bar-(1/RL_bar))*omega_bar)/upsilon_borr))^(1/(1+phi));
     C_borr_bar=gamma/(1-epsilon_borr)*(1-1/sigma)*L_borr_bar^(-phi);
     W_bar = 1-1/sigma;
-    
+
     D_borr_bar=C_borr_bar/upsilon_borr;
     S_borr_bar=omega_bar*D_borr_bar/RL_bar;
 
     L_s_borr_bar=(gamma_s/(1-epsilon_borr)*(1+(delta+G_bar+(1-F_bar-(1/RL_bar))*omega_bar)/upsilon_borr_s))^(1/(1+phi));
     C_s_borr_bar=gamma_s/(1-epsilon_borr)*(1-1/sigma)*L_s_borr_bar^(-phi);
-    
+
     D_s_borr_bar=C_s_borr_bar/upsilon_borr_s;
     S_s_borr_bar=omega_bar*D_s_borr_bar/RL_s_bar;
-    
-    
+
+
     % Hours worked and consumption by savers
     Z_bar=(1-lambda)/lambda*((1-(sigma-1)/sigma)*L_borr_bar+(RR_bar-1)*S_borr_bar+mu*G_bar*D_borr_bar);
     L_bar = call_csolve3(delta,upsilon,phi,W_bar,Z_bar,gamma,epsilon,alpha);
-    
+
     C_bar=W_bar*gamma/(1-epsilon)*L_bar^(-phi);
     D_bar=C_bar/upsilon;
 
     Z_s_bar=(1-lambda)/lambda*((1-(sigma-1)/sigma)*L_s_borr_bar+(RR_bar-1)*S_s_borr_bar+mu*G_bar*D_s_borr_bar);
     L_s_bar = call_csolve3(delta,upsilon_s,phi,W_bar,Z_s_bar,gamma_s,epsilon,alpha_s);
-    
+
     C_s_bar=W_bar*gamma_s/(1-epsilon)*L_s_bar^(-phi);
     D_s_bar=C_s_bar/upsilon_s;
 
-    
-    % Total hours 
+
+    % Total hours
     L_total_bar=lambda*L_bar+(1-lambda)*L_borr_bar;
     L_s_total_bar=lambda*L_s_bar+(1-lambda)*L_s_borr_bar;
 
@@ -236,57 +236,57 @@ model;
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables //*
 
-interest   = 400*(r-log(RR_bar));                                           
-inflation  = (dpemu + dpemu(-1) + dpemu(-2) + dpemu(-3))*100;                          
-inflationq = dpemu*400;                                                              
-outputgap  = (y_emu - y_emuf)*100;                                             
-output     = (y_emu - log(L_total_bar))*100; 
+interest   = 400*(r-log(RR_bar));
+inflation  = (dpemu + dpemu(-1) + dpemu(-2) + dpemu(-3))*100;
+inflationq = dpemu*400;
+outputgap  = (y_emu - y_emuf)*100;
+output     = (y_emu - log(L_total_bar))*100;
 //**************************************************************************
 
-//**************************************************************************                                                                    
+//**************************************************************************
 // Policy Rule                                                           //*
                                                                          //*
 // Monetary Policy                                                       //*
                                                                          //*
-interest =   cofintintb1*interest(-1)                                    //* 
-           + cofintintb2*interest(-2)                                    //* 
-           + cofintintb3*interest(-3)                                    //* 
-           + cofintintb4*interest(-4)                                    //* 
-           + cofintinf0*inflationq                                       //* 
-           + cofintinfb1*inflationq(-1)                                  //* 
-           + cofintinfb2*inflationq(-2)                                  //* 
-           + cofintinfb3*inflationq(-3)                                  //* 
-           + cofintinfb4*inflationq(-4)                                  //* 
-           + cofintinff1*inflationq(+1)                                  //* 
-           + cofintinff2*inflationq(+2)                                  //* 
-           + cofintinff3*inflationq(+3)                                  //* 
-           + cofintinff4*inflationq(+4)                                  //* 
-           + cofintout*outputgap 	                                     //* 
-           + cofintoutb1*outputgap(-1)                                   //* 
-           + cofintoutb2*outputgap(-2)                                   //* 
-           + cofintoutb3*outputgap(-3)                                   //* 
-           + cofintoutb4*outputgap(-4)                                   //* 
-           + cofintoutf1*outputgap(+1)                                   //* 
-           + cofintoutf2*outputgap(+2)                                   //* 
-           + cofintoutf3*outputgap(+3)                                   //* 
-           + cofintoutf4*outputgap(+4)                                   //* 
-           + cofintoutp*output 	                                         //* 
-           + cofintoutpb1*output(-1)                                     //* 
-           + cofintoutpb2*output(-2)                                     //* 
-           + cofintoutpb3*output(-3)                                     //* 
-           + cofintoutpb4*output(-4)                                     //* 
-           + cofintoutpf1*output(+1)                                     //* 
-           + cofintoutpf2*output(+2)                                     //* 
-           + cofintoutpf3*output(+3)                                     //* 
-           + cofintoutpf4*output(+4)                                     //* 
-           + std_r_ *interest_;                                          //* 
+interest =   cofintintb1*interest(-1)                                    //*
+           + cofintintb2*interest(-2)                                    //*
+           + cofintintb3*interest(-3)                                    //*
+           + cofintintb4*interest(-4)                                    //*
+           + cofintinf0*inflationq                                       //*
+           + cofintinfb1*inflationq(-1)                                  //*
+           + cofintinfb2*inflationq(-2)                                  //*
+           + cofintinfb3*inflationq(-3)                                  //*
+           + cofintinfb4*inflationq(-4)                                  //*
+           + cofintinff1*inflationq(+1)                                  //*
+           + cofintinff2*inflationq(+2)                                  //*
+           + cofintinff3*inflationq(+3)                                  //*
+           + cofintinff4*inflationq(+4)                                  //*
+           + cofintout*outputgap 	                                     //*
+           + cofintoutb1*outputgap(-1)                                   //*
+           + cofintoutb2*outputgap(-2)                                   //*
+           + cofintoutb3*outputgap(-3)                                   //*
+           + cofintoutb4*outputgap(-4)                                   //*
+           + cofintoutf1*outputgap(+1)                                   //*
+           + cofintoutf2*outputgap(+2)                                   //*
+           + cofintoutf3*outputgap(+3)                                   //*
+           + cofintoutf4*outputgap(+4)                                   //*
+           + cofintoutp*output 	                                         //*
+           + cofintoutpb1*output(-1)                                     //*
+           + cofintoutpb2*output(-2)                                     //*
+           + cofintoutpb3*output(-3)                                     //*
+           + cofintoutpb4*output(-4)                                     //*
+           + cofintoutpf1*output(+1)                                     //*
+           + cofintoutpf2*output(+2)                                     //*
+           + cofintoutpf3*output(+3)                                     //*
+           + cofintoutpf4*output(+4)                                     //*
+           + std_r_ *interest_;                                          //*
                                                                          //*
 // Discretionary Government Spending                                     //*
                                                                          //*
 //fispol = coffispol*fiscal_;                                            //*
 //**************************************************************************
 
-//******* The Flexible-price economy  
+//******* The Flexible-price economy
 //******* there are no nominal rigidities.
 //***********************************************************************
 //1-2 investment decision borrowers
@@ -632,7 +632,7 @@ exp(terms)/exp(terms(-1)) = exp(dpf)/exp(dph);
 exp(dpemu) = exp(dpc)^n *exp(dpc_s)^(1-n);
 
 //106 Taylor rule
-//exp(r) = (1/beta)^(1-gamma_r) *(exp(dpemu))^(gamma_pi*(1-gamma_r)) *(exp(y_emu)*exp(e_tech)/exp(y_emu(-1)))^(gamma_y*(1-gamma_r)) *exp(r(-1))^gamma_r*exp(e_m); 
+//exp(r) = (1/beta)^(1-gamma_r) *(exp(dpemu))^(gamma_pi*(1-gamma_r)) *(exp(y_emu)*exp(e_tech)/exp(y_emu(-1)))^(gamma_y*(1-gamma_r)) *exp(r(-1))^gamma_r*exp(e_m);
 
 //107-108 macroprudential policy rule
 exp(eta) = (exp(dpc)*exp(s_borr)*exp(e_tech)/exp(s_borr(-1)))^gamma_eta;
@@ -665,8 +665,8 @@ welf_cor = lambda*welf +(1-lambda)*welf_borr;
 welf_per = lambda*welf_s +(1-lambda)*welf_s_borr;
 welf_emu = n*welf_cor +(1-n)*welf_per;
 
-//additional variables 
-//exp(spread) = exp(rl)/exp(r);  
+//additional variables
+//exp(spread) = exp(rl)/exp(r);
 //exp(spread_s) = exp(rl_s)/exp(r_s);
 //exp(spread_int) = exp(r_s)/exp(r);
 //exp(CtoY) = exp(s_borr)/exp(y);
@@ -722,7 +722,7 @@ dpc = log(1);
 dph = log(1);
 lc_tot = log(alpha*L_total_bar);
 ld_tot = log((1-alpha)*L_total_bar);
-l = log(L_bar); 
+l = log(L_bar);
 l_borr = log(L_borr_bar);
 lc = log(alpha*L_bar);
 ld = log((1-alpha)*L_bar);
@@ -797,11 +797,11 @@ rd_s = log(RD_bar);
 risk = log(sigma_bar);
 risk_s = log(sigma_bar);
 
-XC1 = log(W_bar*alpha*L_total_bar/((1-epsilon)*C_bar*(1-theta_c*beta))); 
+XC1 = log(W_bar*alpha*L_total_bar/((1-epsilon)*C_bar*(1-theta_c*beta)));
 XC2 = log(alpha*L_total_bar/((1-epsilon)*C_bar*(1-theta_c*beta)));
-XC1_s = log(W_bar*alpha_s*L_s_total_bar/((1-epsilon)*C_s_bar*(1-theta_c_s*beta))); 
-XC2_s = log(alpha_s*L_s_total_bar/((1-epsilon)*C_s_bar*(1-theta_c_s*beta))); 
-XD1 = log(W_bar*(1-alpha)*L_total_bar/((1-epsilon)*C_bar*(1-theta_d*beta))); 
+XC1_s = log(W_bar*alpha_s*L_s_total_bar/((1-epsilon)*C_s_bar*(1-theta_c_s*beta)));
+XC2_s = log(alpha_s*L_s_total_bar/((1-epsilon)*C_s_bar*(1-theta_c_s*beta)));
+XD1 = log(W_bar*(1-alpha)*L_total_bar/((1-epsilon)*C_bar*(1-theta_d*beta)));
 XD2 = log((1-alpha)*L_total_bar/((1-epsilon)*C_bar*(1-theta_d*beta)));
 XD1_s = log(W_bar*(1-alpha_s)*L_s_total_bar/((1-epsilon)*C_s_bar*(1-theta_d_s*beta)));
 XD2_s = log((1-alpha_s)*L_s_total_bar/((1-epsilon)*C_s_bar*(1-theta_d_s*beta)));
@@ -811,7 +811,7 @@ ydtilde = log((1-alpha)*L_total_bar);
 ydtilde_s = log((1-alpha_s)*L_s_total_bar);
 mcc = log(W_bar);
 mcc_s = log(W_bar);
-mcd = log(W_bar); 
+mcd = log(W_bar);
 mcd_s = log(W_bar);
 mautil = log(1/((1-epsilon)*C_bar));
 mautil_s = log(1/((1-epsilon)*C_s_bar));
@@ -860,7 +860,7 @@ lf = log(L_bar);
 lcf = log(alpha*L_bar);
 wcf = log(W_bar);
 ldf = log((1-alpha)*L_bar);
-wdf = log(W_bar); 
+wdf = log(W_bar);
 cff_s = log(C_s_bar);
 qf_s = log(1);
 varrhof_s = log(gamma_s/(beta*(1-epsilon)*C_s_bar));
@@ -872,7 +872,7 @@ lcf_s = log(alpha_s*L_s_bar);
 wcf_s = log(W_bar);
 ldf_s = log((1-alpha_s)*L_s_bar);
 wdf_s = log(W_bar);
-ycf = log(alpha*L_total_bar); 
+ycf = log(alpha*L_total_bar);
 ydf = log((1-alpha)*L_total_bar);
 yf  = log(L_total_bar);
 y_emuf = log(L_total_bar);
@@ -906,10 +906,10 @@ rdf_s = log(RD_bar);
 rlf = log(RL_bar);
 rlf_s = log(RL_s_bar);
 Faf = log(F_bar);
-Fpf = log(F_bar); 
+Fpf = log(F_bar);
 return_defaultf = log((1-mu)*G_bar*D_borr_bar/S_borr_bar);
 return_nondefaultf = log((1-F_bar)*RL_bar);
-Gpf = log(G_bar); 
+Gpf = log(G_bar);
 Gaf = log(G_bar);
 omegaaf = log(1-chi);
 omegapf = log(1-chi);
@@ -921,17 +921,17 @@ Gpf_s = log(G_bar);
 Gaf_s = log(G_bar);
 omegaaf_s = log(1-chi);
 omegapf_s = log(1-chi);
-interest   = 0;                                            
-inflation  = 0;                          
-inflationq = 0;                                                              
-outputgap  = 0;                                             
-output     = 0; 
+interest   = 0;
+inflation  = 0;
+inflationq = 0;
+outputgap  = 0;
+output     = 0;
 end;
 
 
-%steady; 
+%steady;
 
-//check; 
+//check;
 
 shocks;
 //var e_m;stderr 0.0012;

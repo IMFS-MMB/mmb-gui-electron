@@ -1,44 +1,44 @@
 //**************************************************************************
 // A New Comparative Approach to Macroeconomic Modeling and Policy Analysis
 //
-// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and 
+// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and
 // Maik Wolters
 //
 // Working Paper, 2009
 //**************************************************************************
 
 // Model: NK_GSSZ17
-// Model replication coded by: Philipp Lieberknecht, 
+// Model replication coded by: Philipp Lieberknecht,
 //                             e_mail: philipp.lieberknecht@gmail.com
 // Last edited: 07/02/2019
 // Further references:
 // Simon Gilchrist, Raphael Schoenle, Jae Sim, and Egon Zakrajsek
 // "Inflation Dynamics during the Financial Crisis"
-// American Economic Review 2017, 107(3): 785–823
+// American Economic Review 2017, 107(3): 785ï¿½823
 //**************************************************************************
 
 // From here: Beginning of original author's code
 // model file, A simple model of pricing under financial friction
 
-parameters 
+parameters
 
 //**************************************************************************
-// Modelbase Parameters                                                  
-                                                                         
-        cofintintb1 cofintintb2 cofintintb3 cofintintb4                  
-        cofintinf0 cofintinfb1 cofintinfb2 cofintinfb3 cofintinfb4       
-        cofintinff1 cofintinff2 cofintinff3 cofintinff4                  
-        cofintout cofintoutb1 cofintoutb2 cofintoutb3 cofintoutb4        
-        cofintoutf1 cofintoutf2 cofintoutf3 cofintoutf4   
-        cofintoutp cofintoutpb1 cofintoutpb2 cofintoutpb3 cofintoutpb4   
-        cofintoutpf1 cofintoutpf2 cofintoutpf3 cofintoutpf4                           
-        std_r_ std_r_quart coffispol           
-//************************************************************************** 
+// Modelbase Parameters
 
-alpha beta gam_x theta rho_s gam_h eta rho_A gam_p rho_r rho_y 
+        cofintintb1 cofintintb2 cofintintb3 cofintintb4
+        cofintinf0 cofintinfb1 cofintinfb2 cofintinfb3 cofintinfb4
+        cofintinff1 cofintinff2 cofintinff3 cofintinff4
+        cofintout cofintoutb1 cofintoutb2 cofintoutb3 cofintoutb4
+        cofintoutf1 cofintoutf2 cofintoutf3 cofintoutf4
+        cofintoutp cofintoutpb1 cofintoutpb2 cofintoutpb3 cofintoutpb4
+        cofintoutpf1 cofintoutpf2 cofintoutpf3 cofintoutpf4
+        std_r_ std_r_quart coffispol
+//**************************************************************************
+
+alpha beta gam_x theta rho_s gam_h eta rho_A gam_p rho_r rho_y
            rho_pi varrhobar sig rho_F rho_D Asig Rsig Fsig Dsig zeta eta_w gam_w;
 
-var xi s c x pt y h pii A D w pS m dt z abar mu v lambda R varrho F xi_f 
+var xi s c x pt y h pii A D w pS m dt z abar mu v lambda R varrho F xi_f
     s_f c_f x_f pt_f y_f h_f pii_f w_f pS_f m_f dt_f z_f abar_f mu_f v_f lambda_f R_f phi pii_w pii_w_f lw
 
 //**************************************************************************
@@ -49,7 +49,7 @@ var xi s c x pt y h pii A D w pS m dt z abar mu v lambda R varrho F xi_f
 varexo eA eF eD // eR
 
 //**************************************************************************
-// Modelbase Shocks                                                      //*       
+// Modelbase Shocks                                                      //*
      interest_; //fiscal_                                                //*
 //**************************************************************************
 
@@ -81,16 +81,16 @@ gam_w       = 30; // wage adjustment cost
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           
-cd('..');                                                                
-load policy_param.mat;                                                   
-for i=1:33                                                               
-    deep_parameter_name = M_.param_names(i,:);                           
-    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])                  
-end                                                                      
-cd(thispath);  
+thispath = pwd;
+cd('..');
+load policy_param.mat;
+for i=1:33
+    deep_parameter_name = M_.param_names(i,:);
+    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
+end
+cd(thispath);
 std_r_=1;
-                                                                         
+
 // Definition of Discretionary Fiscal Policy Parameter                   //*
 coffispol = 1;                                                           //*
 //**************************************************************************
@@ -99,52 +99,52 @@ model;
 
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables//*
-                                                                         //* 
-interest     = 400*(log(R) - log(steady_state(R)));                      //* 
-inflation    = 100*(log(pii)+log(pii(-1))+log(pii(-2))+log(pii(-3))-4*log(steady_state(pii))); //* 
-inflationq   = 400*(log(pii) - log(steady_state(pii)));                  //*     
-outputgap    = 100*(log(y) - log(y_f) - (log(steady_state(y)) - log(steady_state(y_f))));  
+                                                                         //*
+interest     = 400*(log(R) - log(steady_state(R)));                      //*
+inflation    = 100*(log(pii)+log(pii(-1))+log(pii(-2))+log(pii(-3))-4*log(steady_state(pii))); //*
+inflationq   = 400*(log(pii) - log(steady_state(pii)));                  //*
+outputgap    = 100*(log(y) - log(y_f) - (log(steady_state(y)) - log(steady_state(y_f))));
 output       = 100*(log(y) - log(steady_state(y)));                      //*
 //fispol       = epsG;                                                   //*
 //**************************************************************************
 
-//**************************************************************************                                                                    
+//**************************************************************************
 // Policy Rule                                                           //*
                                                                          //*
 // Monetary Policy                                                       //*
                                                                         //*
-interest =   cofintintb1*interest(-1)                                    //* 
-           + cofintintb2*interest(-2)                                    //* 
-           + cofintintb3*interest(-3)                                    //* 
-           + cofintintb4*interest(-4)                                    //* 
-           + cofintinf0*inflationq                                       //* 
-           + cofintinfb1*inflationq(-1)                                  //* 
-           + cofintinfb2*inflationq(-2)                                  //* 
-           + cofintinfb3*inflationq(-3)                                  //* 
-           + cofintinfb4*inflationq(-4)                                  //* 
-           + cofintinff1*inflationq(+1)                                  //* 
-           + cofintinff2*inflationq(+2)                                  //* 
-           + cofintinff3*inflationq(+3)                                  //* 
-           + cofintinff4*inflationq(+4)                                  //* 
-           + cofintout*outputgap 	                                     //* 
-           + cofintoutb1*outputgap(-1)                                   //* 
-           + cofintoutb2*outputgap(-2)                                   //* 
-           + cofintoutb3*outputgap(-3)                                   //* 
-           + cofintoutb4*outputgap(-4)                                   //* 
-           + cofintoutf1*outputgap(+1)                                   //* 
-           + cofintoutf2*outputgap(+2)                                   //* 
-           + cofintoutf3*outputgap(+3)                                   //* 
-           + cofintoutf4*outputgap(+4)                                   //* 
-           + cofintoutp*output 	                                         //* 
-           + cofintoutpb1*output(-1)                                     //* 
-           + cofintoutpb2*output(-2)                                     //* 
-           + cofintoutpb3*output(-3)                                     //* 
-           + cofintoutpb4*output(-4)                                     //* 
-           + cofintoutpf1*output(+1)                                     //* 
-           + cofintoutpf2*output(+2)                                     //* 
-           + cofintoutpf3*output(+3)                                     //* 
-           + cofintoutpf4*output(+4)                                     //* 
-           + std_r_ *interest_;                                          //* 
+interest =   cofintintb1*interest(-1)                                    //*
+           + cofintintb2*interest(-2)                                    //*
+           + cofintintb3*interest(-3)                                    //*
+           + cofintintb4*interest(-4)                                    //*
+           + cofintinf0*inflationq                                       //*
+           + cofintinfb1*inflationq(-1)                                  //*
+           + cofintinfb2*inflationq(-2)                                  //*
+           + cofintinfb3*inflationq(-3)                                  //*
+           + cofintinfb4*inflationq(-4)                                  //*
+           + cofintinff1*inflationq(+1)                                  //*
+           + cofintinff2*inflationq(+2)                                  //*
+           + cofintinff3*inflationq(+3)                                  //*
+           + cofintinff4*inflationq(+4)                                  //*
+           + cofintout*outputgap 	                                     //*
+           + cofintoutb1*outputgap(-1)                                   //*
+           + cofintoutb2*outputgap(-2)                                   //*
+           + cofintoutb3*outputgap(-3)                                   //*
+           + cofintoutb4*outputgap(-4)                                   //*
+           + cofintoutf1*outputgap(+1)                                   //*
+           + cofintoutf2*outputgap(+2)                                   //*
+           + cofintoutf3*outputgap(+3)                                   //*
+           + cofintoutf4*outputgap(+4)                                   //*
+           + cofintoutp*output 	                                         //*
+           + cofintoutpb1*output(-1)                                     //*
+           + cofintoutpb2*output(-2)                                     //*
+           + cofintoutpb3*output(-3)                                     //*
+           + cofintoutpb4*output(-4)                                     //*
+           + cofintoutpf1*output(+1)                                     //*
+           + cofintoutpf2*output(+2)                                     //*
+           + cofintoutpf3*output(+3)                                     //*
+           + cofintoutpf4*output(+4)                                     //*
+           + std_r_ *interest_;                                          //*
                                                                          //*
 // Discretionary Government Spending                                     //*
                                                                          //*
@@ -155,7 +155,7 @@ interest =   cofintintb1*interest(-1)                                    //*
 
 phi         = steady_state(phi);
 xi          = 1+varrho/(1-varrho)*(1-normcdf(z));
-s           = rho_s*s(-1)+(1-rho_s)*c; 
+s           = rho_s*s(-1)+(1-rho_s)*c;
 x           = c/(s(-1)^theta);
 pt          = s(-1)^theta;
 y           = exp(0.5*alpha*(1+alpha)*sig^2)*(A*h)^alpha-phi;
@@ -189,7 +189,7 @@ lw          = alpha*exp(0.5*alpha*(1+alpha)*sig^2)*(A*h)^(alpha-1)
 // flexible stuffs
 
 xi_f        = 1+varrho/(1-varrho)*(1-normcdf(z_f));
-s_f         = rho_s*s_f(-1)+(1-rho_s)*c_f; 
+s_f         = rho_s*s_f(-1)+(1-rho_s)*c_f;
 x_f         = c_f/(s_f(-1)^theta);
 pt_f        = s_f(-1)^theta;
 y_f         = exp(0.5*alpha*(1+alpha)*sig^2)*(A*h_f)^alpha-phi;

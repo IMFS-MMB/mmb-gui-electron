@@ -1,7 +1,7 @@
 //**************************************************************************
 // A New Comparative Approach to Macroeconomic Modeling and Policy Analysis
 //
-// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and 
+// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and
 // Maik Wolters
 //
 // Working Paper, 2009
@@ -17,35 +17,35 @@
 
 
 // This file simulates the dynamic response of the model to specific shocks
-// This code is a adoption of the code provided by L.J.Christiano on 
+// This code is a adoption of the code provided by L.J.Christiano on
 // http://faculty.wcas.northwestern.edu/~lchrist/research/ACEL/acelweb.htm
 
-// This version produces the right impulse responses to neutral and investment 
+// This version produces the right impulse responses to neutral and investment
 // specific technology shocks for the ACEL model without cost channel (nu = 0).
 // Timing: Technology shock, agents' decisions, monetary policy shock.
 // This file produces wrong answers to monetary policy shocks as variables are
-// not predetermined. 
+// not predetermined.
 
 
 var c_t wtilde_t lambda_zstar_t m_t pi_t x_t s_t i_t h_t kbar_t1 q_t ytilde_t R_t mutilde_t rhotilde_t u_t
     x_M_t eps_M_t mu_z_t eps_muz_t x_z_t mu_ups_t eps_muups_t x_ups_t
     cf_t wtildef_t lambda_zstarf_t mf_t pif_t xf_t sf_t if_t hf_t kbarf_t1 qf_t ytildef_t Rf_t mutildef_t rhotildef_t uf_t
-    epsilon_t  // the last variable is the additional transitory neutral technology shock not considered in the original code    
+    epsilon_t  // the last variable is the additional transitory neutral technology shock not considered in the original code
 
 //**************************************************************************
-// Modelbase Variables                                                   //*    
+// Modelbase Variables                                                   //*
         interest inflation inflationq outputgap output;                  //*
 //**************************************************************************
 
 varexo  epsilon_M_ eps_muz_ eps_muups_ epsilon_t_  // the last shock is the transitory technology shock, not in the original code
 
 //**************************************************************************
-// Modelbase Shocks                                                      //*       
+// Modelbase Shocks                                                      //*
         interest_;                                                       //*
 //**************************************************************************
 
-parameters 
-//************************************************************************** 
+parameters
+//**************************************************************************
 // Modelbase Parameters                                                  //*
                                                                          //*
         cofintintb1 cofintintb2 cofintintb3 cofintintb4                  //*
@@ -57,11 +57,11 @@ parameters
         cofintoutpf1 cofintoutpf2 cofintoutpf3 cofintoutpf4              //*
         std_r_ std_r_quart coffispol                                     //*
 //**************************************************************************
-           alpha b beta delta eps eta lambda_f lambda_w mu_ups mu_z nu psi_L 
+           alpha b beta delta eps eta lambda_f lambda_w mu_ups mu_z nu psi_L
            sigma_L x xi_w V kappa sigma_a gamma squig vaartheta rho_M theta_M
            rho_muz theta_muz c_z cp_z rho_xz rho_muups theta_muups c_ups
            cp_ups rho_xups
-           mu_zstar rhotilde infl R eta_pr s R_nu wtilde h_kbar kbar h c q 
+           mu_zstar rhotilde infl R eta_pr s R_nu wtilde h_kbar kbar h c q
            m ytilde phi sig_eta i
            lambda_zstar
            blewy b_w ETA1 ETA2 ETA3 ETA4 ETA5 ETA6 ETA7 ETA8 ETA9 ETA10
@@ -140,7 +140,7 @@ ETA1  =   b_w*xi_w; //eta0
 ETA2  =   -b_w*(1+beta*xi_w^2)+sigma_L*lambda_w; //eta1
 ETA3  =   beta*xi_w*b_w; //eta2
 ETA4  =   b_w*xi_w; //eta3-bar
-ETA5  =   -xi_w*b_w*(1+beta); //eta3   
+ETA5  =   -xi_w*b_w*(1+beta); //eta3
 ETA6  =   b_w*beta*xi_w; //eta4
 ETA7  =   -sigma_L*(1-lambda_w); //eta5
 ETA8  =   1-lambda_w; //eta6
@@ -152,7 +152,7 @@ ETA1f  =   bf_w*xif_w; //eta0
 ETA2f  =   -bf_w*(1+beta*xif_w^2)+sigma_L*lambda_w; //eta1
 ETA3f  =   beta*xif_w*bf_w; //eta2
 ETA4f  =   bf_w*xif_w; //eta3-bar
-ETA5f  =   -xif_w*bf_w*(1+beta); //eta3   
+ETA5f  =   -xif_w*bf_w*(1+beta); //eta3
 ETA6f  =   bf_w*beta*xif_w; //eta4
 ETA7f  =   -sigma_L*(1-lambda_w); //eta5
 ETA8f  =   1-lambda_w; //eta6
@@ -163,14 +163,14 @@ ETA10f  =  beta*bf_w*xif_w*(1-blewy); //eta8
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           
-cd('..');                                                                
-load policy_param.mat;                                                   
-for i=1:33                                                               
-    deep_parameter_name = M_.param_names(i,:);                           
-    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])                  
-end                                                                      
-cd(thispath);       
+thispath = pwd;
+cd('..');
+load policy_param.mat;
+for i=1:33
+    deep_parameter_name = M_.param_names(i,:);
+    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
+end
+cd(thispath);
 //**************************************************************************
 
 model(linear);
@@ -186,41 +186,41 @@ output     = ytilde_t;                                                   //*
 //**************************************************************************
 
 
-//**************************************************************************                                                                    
+//**************************************************************************
 // Policy Rule                                                           //*
 
-interest =   cofintintb1*interest(-1)                                    //* 
-           + cofintintb2*interest(-2)                                    //* 
-           + cofintintb3*interest(-3)                                    //* 
-           + cofintintb4*interest(-4)                                    //* 
-           + cofintinf0*inflationq                                       //* 
-           + cofintinfb1*inflationq(-1)                                  //* 
-           + cofintinfb2*inflationq(-2)                                  //* 
-           + cofintinfb3*inflationq(-3)                                  //* 
-           + cofintinfb4*inflationq(-4)                                  //* 
-           + cofintinff1*inflationq(+1)                                  //* 
-           + cofintinff2*inflationq(+2)                                  //* 
-           + cofintinff3*inflationq(+3)                                  //* 
-           + cofintinff4*inflationq(+4)                                  //* 
-           + cofintout*outputgap 	                                     //* 
-           + cofintoutb1*outputgap(-1)                                   //* 
-           + cofintoutb2*outputgap(-2)                                   //* 
-           + cofintoutb3*outputgap(-3)                                   //* 
-           + cofintoutb4*outputgap(-4)                                   //* 
-           + cofintoutf1*outputgap(+1)                                   //* 
-           + cofintoutf2*outputgap(+2)                                   //* 
-           + cofintoutf3*outputgap(+3)                                   //* 
-           + cofintoutf4*outputgap(+4)                                   //* 
-           + cofintoutp*output 	                                         //* 
-           + cofintoutpb1*output(-1)                                     //* 
-           + cofintoutpb2*output(-2)                                     //* 
-           + cofintoutpb3*output(-3)                                     //* 
-           + cofintoutpb4*output(-4)                                     //* 
-           + cofintoutpf1*output(+1)                                     //* 
-           + cofintoutpf2*output(+2)                                     //* 
-           + cofintoutpf3*output(+3)                                     //* 
-           + cofintoutpf4*output(+4)                                     //* 
-           + std_r_ *interest_;                                          //* 
+interest =   cofintintb1*interest(-1)                                    //*
+           + cofintintb2*interest(-2)                                    //*
+           + cofintintb3*interest(-3)                                    //*
+           + cofintintb4*interest(-4)                                    //*
+           + cofintinf0*inflationq                                       //*
+           + cofintinfb1*inflationq(-1)                                  //*
+           + cofintinfb2*inflationq(-2)                                  //*
+           + cofintinfb3*inflationq(-3)                                  //*
+           + cofintinfb4*inflationq(-4)                                  //*
+           + cofintinff1*inflationq(+1)                                  //*
+           + cofintinff2*inflationq(+2)                                  //*
+           + cofintinff3*inflationq(+3)                                  //*
+           + cofintinff4*inflationq(+4)                                  //*
+           + cofintout*outputgap 	                                     //*
+           + cofintoutb1*outputgap(-1)                                   //*
+           + cofintoutb2*outputgap(-2)                                   //*
+           + cofintoutb3*outputgap(-3)                                   //*
+           + cofintoutb4*outputgap(-4)                                   //*
+           + cofintoutf1*outputgap(+1)                                   //*
+           + cofintoutf2*outputgap(+2)                                   //*
+           + cofintoutf3*outputgap(+3)                                   //*
+           + cofintoutf4*outputgap(+4)                                   //*
+           + cofintoutp*output 	                                         //*
+           + cofintoutpb1*output(-1)                                     //*
+           + cofintoutpb2*output(-2)                                     //*
+           + cofintoutpb3*output(-3)                                     //*
+           + cofintoutpb4*output(-4)                                     //*
+           + cofintoutpf1*output(+1)                                     //*
+           + cofintoutpf2*output(+2)                                     //*
+           + cofintoutpf3*output(+3)                                     //*
+           + cofintoutpf4*output(+4)                                     //*
+           + std_r_ *interest_;                                          //*
 //**************************************************************************
 
 // Original Model Code:
@@ -229,34 +229,34 @@ interest =   cofintintb1*interest(-1)                                    //*
 // STICKY PRICE MODEL ///////////////////////////
 // THE FIRM SECTOR
 //Capital Euler Equation: eq. (1) in technical appendix
-lambda_zstar_t(+1) + (1-delta)/(rhotilde+1-delta) * mutilde_t(+1) + rhotilde/(rhotilde+1-delta)*rhotilde_t(+1) 
-- lambda_zstar_t - mutilde_t 
+lambda_zstar_t(+1) + (1-delta)/(rhotilde+1-delta) * mutilde_t(+1) + rhotilde/(rhotilde+1-delta)*rhotilde_t(+1)
+- lambda_zstar_t - mutilde_t
 = mu_z_t(+1) + 1/(1-alpha)*mu_ups_t(+1);
-  
+
 //Investment Euler Equation: eq. (2) in technical appendix
--beta*kappa*(mu_zstar*mu_ups)^2 * i_t(+1) - mutilde_t 
-+ kappa*(mu_zstar*mu_ups)^2*(1+beta) * i_t 
-- kappa*(mu_zstar*mu_ups)^2 * i_t(-1) 
-= beta*kappa*(mu_zstar*mu_ups)^2 * mu_z_t(+1) + beta*kappa*(mu_zstar*mu_ups)^2/(1-alpha) * mu_ups_t(+1) 
+-beta*kappa*(mu_zstar*mu_ups)^2 * i_t(+1) - mutilde_t
++ kappa*(mu_zstar*mu_ups)^2*(1+beta) * i_t
+- kappa*(mu_zstar*mu_ups)^2 * i_t(-1)
+= beta*kappa*(mu_zstar*mu_ups)^2 * mu_z_t(+1) + beta*kappa*(mu_zstar*mu_ups)^2/(1-alpha) * mu_ups_t(+1)
 - kappa*(mu_zstar*mu_ups)^2 * mu_z_t -  kappa*(mu_zstar*mu_ups)^2/(1-alpha) * mu_ups_t;
 
 //Shadow rental rate on capital: eq. (3) in technical appendix
-wtilde_t + 1/(1-alpha)*ytilde/(ytilde+phi)*ytilde_t + nu*R/(nu*R+1-nu) * R_t - rhotilde_t - 1/(1-alpha) * u_t 
+wtilde_t + 1/(1-alpha)*ytilde/(ytilde+phi)*ytilde_t + nu*R/(nu*R+1-nu) * R_t - rhotilde_t - 1/(1-alpha) * u_t
 -1/(1-alpha) * kbar_t1(-1) = - 1/(1-alpha) * mu_z_t - 1/(1-alpha)^2 * mu_ups_t + 1/(1-alpha) * epsilon_t;
 
 //Capital evolution: eq. (4) in technical appendix
-(mu_zstar*mu_ups-(1-delta)) * i_t - mu_ups*mu_zstar * kbar_t1 
+(mu_zstar*mu_ups-(1-delta)) * i_t - mu_ups*mu_zstar * kbar_t1
 + (1-delta) * kbar_t1(-1)
 = (1-delta) * mu_z_t + (1-delta)/(1-alpha) * mu_ups_t;
 
 //Inflation equation: eq. (5) in technical appendix
-beta * pi_t(+1) 
-- (1+beta*squig) * pi_t + gamma*s_t 
+beta * pi_t(+1)
+- (1+beta*squig) * pi_t + gamma*s_t
 = - squig * pi_t(-1);
 
 //Marginal Cost Equation: eq. (6) in technical appendix
-wtilde_t - s_t + alpha/(1-alpha)*ytilde/(ytilde+phi)*ytilde_t + nu*R/(nu*R+1-nu) * R_t - alpha/(1-alpha) * u_t 
-- alpha/(1-alpha) * kbar_t1(-1) 
+wtilde_t - s_t + alpha/(1-alpha)*ytilde/(ytilde+phi)*ytilde_t + nu*R/(nu*R+1-nu) * R_t - alpha/(1-alpha) * u_t
+- alpha/(1-alpha) * kbar_t1(-1)
 = - alpha/(1-alpha) * mu_z_t - alpha/(1-alpha)^2 * mu_ups_t + 1/(1-alpha)*epsilon_t;
 
 // THE HOUSEHOLD SECTOR
@@ -264,11 +264,11 @@ wtilde_t - s_t + alpha/(1-alpha)*ytilde/(ytilde+phi)*ytilde_t + nu*R/(nu*R+1-nu)
 c_t - q_t = R/(R-1)/(2+sig_eta) * R_t;
 
 //Consumption Euler Equation: eq. (8) in technical appendix
-- beta*b*(1/(mu_zstar*c-b*c))^2*mu_zstar*c * c_t(+1) 
+- beta*b*(1/(mu_zstar*c-b*c))^2*mu_zstar*c * c_t(+1)
 + (1/(c*(1-b/mu_zstar))^2*c+beta*b*(1/(mu_zstar*c-b*c))^2*b*c+lambda_zstar*(2+sig_eta)*eta_pr*V) * c_t + (lambda_zstar*(1+eta+eta_pr*V))* lambda_zstar_t
-- lambda_zstar*(2+sig_eta)*eta_pr*V * q_t 
+- lambda_zstar*(2+sig_eta)*eta_pr*V * q_t
 - 1/(c*(1-b/mu_zstar))^2*b*c/mu_zstar * c_t(-1)
-= beta*b*(1/(mu_zstar*c-b*c))^2*mu_zstar*c * mu_z_t(+1) + beta*b*(1/(mu_zstar*c-b*c))^2*mu_zstar*c*alpha/(1-alpha) * mu_ups_t(+1)  
+= beta*b*(1/(mu_zstar*c-b*c))^2*mu_zstar*c * mu_z_t(+1) + beta*b*(1/(mu_zstar*c-b*c))^2*mu_zstar*c*alpha/(1-alpha) * mu_ups_t(+1)
 - 1/(c*(1-b/mu_zstar))^2*b*c/mu_zstar * mu_z_t - 1/(c*(1-b/mu_zstar))^2*b*c/mu_zstar*alpha/(1-alpha) * mu_ups_t;
 
 //Monetary Base First Order Condition: eq. (9) in technical appendix
@@ -276,16 +276,16 @@ lambda_zstar_t(+1) - pi_t(+1) + R_t(+1)
 - lambda_zstar_t = mu_z_t(+1) + alpha/(1-alpha) * mu_ups_t(+1);
 
 // Wage First Order Condition: eq. (10) in technical appendix
-ETA3 * wtilde_t(+1) +  ETA6 * pi_t(+1) 
-+ ETA2 * wtilde_t + ETA5 * pi_t + ETA7 * h_t + ETA8 * lambda_zstar_t 
-+ ETA1 * wtilde_t(-1) + ETA4 * pi_t(-1) 
+ETA3 * wtilde_t(+1) +  ETA6 * pi_t(+1)
++ ETA2 * wtilde_t + ETA5 * pi_t + ETA7 * h_t + ETA8 * lambda_zstar_t
++ ETA1 * wtilde_t(-1) + ETA4 * pi_t(-1)
 = - ETA10*alpha/(1-alpha) * mu_ups_t(+1) - ETA10 * mu_z_t(+1)
  - ETA9*alpha/(1-alpha) * mu_ups_t - ETA9 * mu_z_t;
 
 // Resource Constraint: eq. (11) in technical appendix
-((1+eta)*c+eta_pr*c^2/q) * c_t +  (1-(1-delta)/(mu_ups*mu_zstar))*kbar * i_t -(ytilde+phi)*(1-alpha) * h_t - eta_pr*c^2/q * q_t 
-+ (rhotilde*kbar/(mu_zstar*mu_ups)-(ytilde+phi)*alpha) * u_t 
-- (ytilde+phi)*alpha * kbar_t1(-1) 
+((1+eta)*c+eta_pr*c^2/q) * c_t +  (1-(1-delta)/(mu_ups*mu_zstar))*kbar * i_t -(ytilde+phi)*(1-alpha) * h_t - eta_pr*c^2/q * q_t
++ (rhotilde*kbar/(mu_zstar*mu_ups)-(ytilde+phi)*alpha) * u_t
+- (ytilde+phi)*alpha * kbar_t1(-1)
 + (ytilde+phi)*alpha * mu_z_t + (ytilde+phi)*alpha/(1-alpha) * mu_ups_t -(ytilde+phi) * epsilon_t = 0;
 
 // Money market clearing condition: eq. (12) in technical appendix
@@ -295,12 +295,12 @@ wtilde_t - x*m/(x*m-q) * m_t +  h_t + q/(x*m-q) * q_t = x*m/(x*m-q) * x_t;
 //x_t =  x_M_t + x_z_t + x_ups_t;   // replaced by interest rule of model base
 
 // Linking base growth to the base: eq. (14) in technical appendix
--  m_t  - pi_t 
-+  m_t(-1) + x_t(-1) 
+-  m_t  - pi_t
++  m_t(-1) + x_t(-1)
 =  mu_z_t  + alpha/(1-alpha)* mu_ups_t;
 
 // Production Function: eq. (15) in technical appendix
-(ytilde+phi)*(1-alpha) * h_t - ytilde * ytilde_t + ((ytilde+phi)*alpha-rhotilde*kbar/(mu_zstar*mu_ups)) * u_t 
+(ytilde+phi)*(1-alpha) * h_t - ytilde * ytilde_t + ((ytilde+phi)*alpha-rhotilde*kbar/(mu_zstar*mu_ups)) * u_t
 + (ytilde+phi)*alpha * kbar_t1(-1)
 = (ytilde+phi)*alpha * mu_z_t + (ytilde+phi)*alpha/(1-alpha) * mu_ups_t- (ytilde+phi)*epsilon_t;
 
@@ -312,35 +312,35 @@ wtilde_t - x*m/(x*m-q) * m_t +  h_t + q/(x*m-q) * q_t = x*m/(x*m-q) * x_t;
 // FLEXIBLE PRICE MODEL ///////////////////////////
 // THE FIRM SECTOR
 //Capital Euler Equation: eq. (1) in technical appendix
-lambda_zstarf_t(+1) + (1-delta)/(rhotilde+1-delta) * mutildef_t(+1) + rhotilde/(rhotilde+1-delta)*rhotildef_t(+1) 
-- lambda_zstarf_t - mutildef_t 
+lambda_zstarf_t(+1) + (1-delta)/(rhotilde+1-delta) * mutildef_t(+1) + rhotilde/(rhotilde+1-delta)*rhotildef_t(+1)
+- lambda_zstarf_t - mutildef_t
 = mu_z_t(+1) + 1/(1-alpha)*mu_ups_t(+1);
-  
+
 //Investment Euler Equation: eq. (2) in technical appendix
--beta*kappa*(mu_zstar*mu_ups)^2 * if_t(+1) - mutildef_t 
-+ kappa*(mu_zstar*mu_ups)^2*(1+beta) * if_t 
-- kappa*(mu_zstar*mu_ups)^2 * if_t(-1) 
-= beta*kappa*(mu_zstar*mu_ups)^2 * mu_z_t(+1) + beta*kappa*(mu_zstar*mu_ups)^2/(1-alpha) * mu_ups_t(+1) 
+-beta*kappa*(mu_zstar*mu_ups)^2 * if_t(+1) - mutildef_t
++ kappa*(mu_zstar*mu_ups)^2*(1+beta) * if_t
+- kappa*(mu_zstar*mu_ups)^2 * if_t(-1)
+= beta*kappa*(mu_zstar*mu_ups)^2 * mu_z_t(+1) + beta*kappa*(mu_zstar*mu_ups)^2/(1-alpha) * mu_ups_t(+1)
 - kappa*(mu_zstar*mu_ups)^2 * mu_z_t -  kappa*(mu_zstar*mu_ups)^2/(1-alpha) * mu_ups_t;
 
 //Shadow rental rate on capital: eq. (3) in technical appendix
-wtildef_t + 1/(1-alpha)*ytilde/(ytilde+phi)*ytildef_t + nu*R/(nu*R+1-nu) * Rf_t - rhotildef_t - 1/(1-alpha) * uf_t 
+wtildef_t + 1/(1-alpha)*ytilde/(ytilde+phi)*ytildef_t + nu*R/(nu*R+1-nu) * Rf_t - rhotildef_t - 1/(1-alpha) * uf_t
 -1/(1-alpha) * kbarf_t1(-1) = - 1/(1-alpha) * mu_z_t - 1/(1-alpha)^2 * mu_ups_t + 1/(1-alpha) * epsilon_t;
 
 //Capital evolution: eq. (4) in technical appendix
-(mu_zstar*mu_ups-(1-delta)) * if_t - mu_ups*mu_zstar * kbarf_t1 
+(mu_zstar*mu_ups-(1-delta)) * if_t - mu_ups*mu_zstar * kbarf_t1
 + (1-delta) * kbarf_t1(-1)
 =  (1-delta) * mu_z_t + (1-delta)/(1-alpha) * mu_ups_t;
 
 //Inflation equation: eq. (5) in technical appendix
 sf_t = 0;  //not solvable with this exact version
-//beta * pif_t(+1) 
-//- (1+beta*squig) * pif_t + (1-xif_p)*(1-beta*xif_p)/xif_p *sf_t 
+//beta * pif_t(+1)
+//- (1+beta*squig) * pif_t + (1-xif_p)*(1-beta*xif_p)/xif_p *sf_t
 //= - squig * pif_t(-1);
 
 //Marginal Cost Equation: eq. (6) in technical appendix
-wtildef_t - sf_t + alpha/(1-alpha)*ytilde/(ytilde+phi)*ytildef_t + nu*R/(nu*R+1-nu) * Rf_t - alpha/(1-alpha) * uf_t 
-- alpha/(1-alpha) * kbarf_t1(-1) 
+wtildef_t - sf_t + alpha/(1-alpha)*ytilde/(ytilde+phi)*ytildef_t + nu*R/(nu*R+1-nu) * Rf_t - alpha/(1-alpha) * uf_t
+- alpha/(1-alpha) * kbarf_t1(-1)
 = - alpha/(1-alpha) * mu_z_t - alpha/(1-alpha)^2 * mu_ups_t + 1/(1-alpha)*epsilon_t;
 
 // THE HOUSEHOLD SECTOR
@@ -348,11 +348,11 @@ wtildef_t - sf_t + alpha/(1-alpha)*ytilde/(ytilde+phi)*ytildef_t + nu*R/(nu*R+1-
 cf_t - qf_t = R/(R-1)/(2+sig_eta) * Rf_t;
 
 //Consumption Euler Equation: eq. (8) in technical appendix
-- beta*b*(1/(mu_zstar*c-b*c))^2*mu_zstar*c * cf_t(+1) 
+- beta*b*(1/(mu_zstar*c-b*c))^2*mu_zstar*c * cf_t(+1)
 + (1/(c*(1-b/mu_zstar))^2*c+beta*b*(1/(mu_zstar*c-b*c))^2*b*c+lambda_zstar*(2+sig_eta)*eta_pr*V) * cf_t + (lambda_zstar*(1+eta+eta_pr*V))* lambda_zstarf_t
-- lambda_zstar*(2+sig_eta)*eta_pr*V * qf_t 
+- lambda_zstar*(2+sig_eta)*eta_pr*V * qf_t
 - 1/(c*(1-b/mu_zstar))^2*b*c/mu_zstar * cf_t(-1)
-= beta*b*(1/(mu_zstar*c-b*c))^2*mu_zstar*c * mu_z_t(+1) + beta*b*(1/(mu_zstar*c-b*c))^2*mu_zstar*c*alpha/(1-alpha) * mu_ups_t(+1)  
+= beta*b*(1/(mu_zstar*c-b*c))^2*mu_zstar*c * mu_z_t(+1) + beta*b*(1/(mu_zstar*c-b*c))^2*mu_zstar*c*alpha/(1-alpha) * mu_ups_t(+1)
 - 1/(c*(1-b/mu_zstar))^2*b*c/mu_zstar * mu_z_t - 1/(c*(1-b/mu_zstar))^2*b*c/mu_zstar*alpha/(1-alpha) * mu_ups_t;
 
 //Monetary Base First Order Condition: eq. (9) in technical appendix
@@ -360,16 +360,16 @@ lambda_zstarf_t(+1) - pif_t(+1) + Rf_t(+1)
 - lambda_zstarf_t = mu_z_t(+1) + alpha/(1-alpha) * mu_ups_t(+1);
 
 // Wage First Order Condition: eq. (10) in technical appendix
-ETA3f * wtildef_t(+1) +  ETA6f * pif_t(+1) 
-+ ETA2f * wtildef_t + ETA5f * pif_t + ETA7f * hf_t + ETA8f * lambda_zstarf_t 
-+ ETA1f * wtildef_t(-1) + ETA4f * pif_t(-1) 
+ETA3f * wtildef_t(+1) +  ETA6f * pif_t(+1)
++ ETA2f * wtildef_t + ETA5f * pif_t + ETA7f * hf_t + ETA8f * lambda_zstarf_t
++ ETA1f * wtildef_t(-1) + ETA4f * pif_t(-1)
 = - ETA10f*alpha/(1-alpha) * mu_ups_t(+1) - ETA10f * mu_z_t(+1)
  - ETA9f*alpha/(1-alpha) * mu_ups_t - ETA9f * mu_z_t;
 
 // Resource Constraint: eq. (11) in technical appendix
-((1+eta)*c+eta_pr*c^2/q) * cf_t +  (1-(1-delta)/(mu_ups*mu_zstar))*kbar * if_t -(ytilde+phi)*(1-alpha) * hf_t - eta_pr*c^2/q * qf_t 
-+ (rhotilde*kbar/(mu_zstar*mu_ups)-(ytilde+phi)*alpha) * uf_t 
-- (ytilde+phi)*alpha * kbarf_t1(-1)  
+((1+eta)*c+eta_pr*c^2/q) * cf_t +  (1-(1-delta)/(mu_ups*mu_zstar))*kbar * if_t -(ytilde+phi)*(1-alpha) * hf_t - eta_pr*c^2/q * qf_t
++ (rhotilde*kbar/(mu_zstar*mu_ups)-(ytilde+phi)*alpha) * uf_t
+- (ytilde+phi)*alpha * kbarf_t1(-1)
 + (ytilde+phi)*alpha * mu_z_t + (ytilde+phi)*alpha/(1-alpha) * mu_ups_t -(ytilde+phi) * epsilon_t = 0;
 
 // Money market clearing condition: eq. (12) in technical appendix
@@ -380,12 +380,12 @@ xf_t =  0;// x_M_t + 0*x_z_t + 0*x_ups_t;  //We assume a constant money growth r
 
 
 // Linking base growth to the base: eq. (14) in technical appendix
--  mf_t  - pif_t  
-+  mf_t(-1) + xf_t(-1) 
+-  mf_t  - pif_t
++  mf_t(-1) + xf_t(-1)
 =  mu_z_t  + alpha/(1-alpha)* mu_ups_t;
 
 // Production Function: eq. (15) in technical appendix
-(ytilde+phi)*(1-alpha) * hf_t - ytilde * ytildef_t + ((ytilde+phi)*alpha-rhotilde*kbar/(mu_zstar*mu_ups)) * uf_t 
+(ytilde+phi)*(1-alpha) * hf_t - ytilde * ytildef_t + ((ytilde+phi)*alpha-rhotilde*kbar/(mu_zstar*mu_ups)) * uf_t
 + (ytilde+phi)*alpha * kbarf_t1(-1)
 =  (ytilde+phi)*alpha * mu_z_t + (ytilde+phi)*alpha/(1-alpha) * mu_ups_t- (ytilde+phi)*epsilon_t;
 
@@ -408,13 +408,13 @@ end;
 
 //steady;
 //check;
-   
+
 shocks;
 var epsilon_M_;
 stderr .3285; // sig_M
-var eps_muz_;  
+var eps_muz_;
 stderr .0673; // sig_muz
-var eps_muups_; 
+var eps_muups_;
 stderr .3027; //sig_muups
 end;
 

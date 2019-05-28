@@ -1,7 +1,7 @@
 //**************************************************************************
 // A New Comparative Approach to Macroeconomic Modeling and Policy Analysis
 //
-// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and 
+// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and
 // Maik Wolters
 //
 // Working Paper, 2009
@@ -18,8 +18,8 @@
 // Last edited: 22/08/11 by M.Jancokova
 
 
-var y R pi z deltaq deltay_star y_bar y_star deltae pi_star 
-     
+var y R pi z deltaq deltay_star y_bar y_star deltae pi_star
+
 //**************************************************************************
 // Modelbase Variables                                                   //*
    interest inflation inflationq output outputgap; //fispol;             //*
@@ -32,7 +32,7 @@ varexo epsq epspi_star epsz epsy_star// epsR
        interest_; //fiscal_;                                             //*
 //**************************************************************************
 
-parameters 
+parameters
 //**************************************************************************
 // Modelbase Parameters                                                  //*
                                                                          //*
@@ -68,20 +68,20 @@ rhopi_star=0.46;                    //persistence in world inflation shock
 //**************************************************************************
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
-// Load Modelbase Monetary Policy Parameters                             
-	thispath = cd;                                                       
-	cd('..');                                                            
-	load policy_param.mat; 
+// Load Modelbase Monetary Policy Parameters
+	thispath = pwd;
+	cd('..');
+	load policy_param.mat;
     for i=1:33
         deep_parameter_name = M_.param_names(i,:);
         eval(['M_.params(i) = ' deep_parameter_name ' ;'])
     end
-	cd(thispath);                                                     	 
-//    std_r_=100;                                                        
-                                                                         
-// Definition of Discretionary Fiscal Policy Parameter                   
-                                                                         
-// coffispol = 1;                                                        
+	cd(thispath);
+//    std_r_=100;
+
+// Definition of Discretionary Fiscal Policy Parameter
+
+// coffispol = 1;
 //**************************************************************************
 
 
@@ -126,15 +126,15 @@ interest =   cofintintb1*interest(-1)                                    //*
            + cofintoutf2*outputgap(+2)                                   //*
            + cofintoutf3*outputgap(+3)                                   //*
            + cofintoutf4*outputgap(+4)                                   //*
-           + cofintoutp*output 	                                         //* 
-           + cofintoutpb1*output(-1)                                     //* 
-           + cofintoutpb2*output(-2)                                     //* 
-           + cofintoutpb3*output(-3)                                     //* 
-           + cofintoutpb4*output(-4)                                     //* 
-           + cofintoutpf1*output(+1)                                     //* 
-           + cofintoutpf2*output(+2)                                     //* 
-           + cofintoutpf3*output(+3)                                     //* 
-           + cofintoutpf4*output(+4)                                     //*  
+           + cofintoutp*output 	                                         //*
+           + cofintoutpb1*output(-1)                                     //*
+           + cofintoutpb2*output(-2)                                     //*
+           + cofintoutpb3*output(-3)                                     //*
+           + cofintoutpb4*output(-4)                                     //*
+           + cofintoutpf1*output(+1)                                     //*
+           + cofintoutpf2*output(+2)                                     //*
+           + cofintoutpf3*output(+3)                                     //*
+           + cofintoutpf4*output(+4)                                     //*
            + std_r_ *interest_;                                          //*
                                                                          //*
 // Discretionary Government Spending                                     //*
@@ -151,7 +151,7 @@ deltay_star=y_star-y_star(-1);
 //open economy Phillips curve
 pi=beta*pi(+1)+alfa*beta*deltaq(+1)-alfa*deltaq+kappa/(tau+alfa*(2-alfa)*(1-tau))*(y-y_bar);
 
-//potential output in absence of nominal rigidities 
+//potential output in absence of nominal rigidities
 y_bar=-alfa*(2-alfa)*(1-tau)/tau*y_star;
 
 //CPI
@@ -163,7 +163,7 @@ pi=deltae+(1-alfa)*deltaq+pi_star;
 //law of motion for the TOT growth rate
 deltaq=rhoq*deltaq(-1)+epsq;
 
-//AR(1) process of the growth rate of an underlying technology process 
+//AR(1) process of the growth rate of an underlying technology process
 z=rhoz*z(-1)+epsz;
 
 //AR(1) processes for y_star and pi_star; introducing TOT shocks

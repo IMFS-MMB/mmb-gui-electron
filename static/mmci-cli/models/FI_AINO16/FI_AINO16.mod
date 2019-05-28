@@ -1,7 +1,7 @@
 //**************************************************************************
 // A New Comparative Approach to Macroeconomic Modeling and Policy Analysis
 //
-// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and 
+// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and
 // Maik Wolters
 //
 // Working Paper, 2009
@@ -9,7 +9,7 @@
 
 // Model: FI_AINO16
 
-// Model replication coded by: Philipp Lieberknecht, 
+// Model replication coded by: Philipp Lieberknecht,
 //                             e_mail: philipp.lieberknecht@gmail.com
 // based on original author code, for info see below
 // Last edited: 10/01/2019
@@ -18,7 +18,7 @@
  * Aino 2.0 model
  * Copyright (C) 2016 Bank of Finland, Juha Kilponen and Fabio Verona
 
- * This file provides the file to simulate the model described in 
+ * This file provides the file to simulate the model described in
  * Kilponen, Orjasniemi, Ripatti and Verona, "The Aino 2.0 model",
  * Bank of Finland Research Discussion Paper No. 16 / 2016
 
@@ -26,24 +26,24 @@
  * The code produces the impulse response functions following a temporary capital productivity shock (the blue line in figure 6 in the paper)
  * To obtain the impulse response functions following other shocks, just uncomment the respective line in the "shocks" block in the Dynare code
 
- * This file was originally written by Antti Ripatti 
- * and has been updated by Juha Kilponen and Fabio Verona 
- * It should work with Dynare 4.3.3 and Matlab 2012b and 2015b 
- * Please cite the source if you use the code.  
+ * This file was originally written by Antti Ripatti
+ * and has been updated by Juha Kilponen and Fabio Verona
+ * It should work with Dynare 4.3.3 and Matlab 2012b and 2015b
+ * Please cite the source if you use the code.
 
- * If you spot mistakes, please email us at 
- * juha.kilponen@bof.fi 
+ * If you spot mistakes, please email us at
+ * juha.kilponen@bof.fi
  * fabio.verona@bof.fi
  */
 
 
 var psi	q iH cH rFI rEUR k wF y hF mcY pieY ds yC mC pC c pO iT yI mI pI
-    rK yX mX mcX x pieX pX pieMC pieM tbY m pM ToT bstar astar  pieC pieI rs trY w h  mu lamK lamLT lamCY lamCM lamIY 
+    rK yX mX mcX x pieX pX pieMC pieM tbY m pM ToT bstar astar  pieC pieI rs trY w h  mu lamK lamLT lamCY lamCM lamIY
     upsilon upsilonMC upsilonX zetaCH zetaEUR lamW iG hG cGF wG pOILS mW pieW pieOILS epsX pRAWS pieRAWS
     rb nwe btot epsb lev_e by  RB kbank nuB epsKB bankprofits deposits bka rwage epsrEUR epsGF
 
     psif qf iHf cHf rFIf  kf wFf yf hFf mcYf pieYf yCf mCf pCf cf pOf iTf yIf mIf pIf
-    rKf yXf mXf mcXf xf pieXf pXf pieMCf pieMf tbYf mf pMf ToTf bstarf astarf pieCf pieIf rsf trYf wf hf  
+    rKf yXf mXf mcXf xf pieXf pXf pieMCf pieMf tbYf mf pMf ToTf bstarf astarf pieCf pieIf rsf trYf wf hf
     wGf  pieOILSf pieRAWSf rbf nwef btotf lev_ef byf  RBf kbankf bankprofitsf depositsf bkaf rwagef
 //**************************************************************************
 // Modelbase Variables                                                   //*
@@ -51,34 +51,34 @@ var psi	q iH cH rFI rEUR k wF y hF mcY pieY ds yC mC pC c pO iT yI mI pI
 //**************************************************************************
 
 varexo epsMU epsLAMBDAK epsLAMBDALT epsLAMBDACY epsLAMBDACM epsLAMBDAIY epsUPSILON epsUPSILONMC epsUPSILONX epsZETACH epsLAMW
-       epsZETAEUR epsdS epsIG epshG epsPOILS epsPRAWS epsMW epsPIEW epsXX epsEPSB epsnuB epsBankCapital       	
+       epsZETAEUR epsdS epsIG epshG epsPOILS epsPRAWS epsMW epsPIEW epsXX epsEPSB epsnuB epsBankCapital
 
 //**************************************************************************
-// Modelbase Shocks                                                      //*       
+// Modelbase Shocks                                                      //*
        interest_ fiscal_;                                                //*
 //**************************************************************************
 
 parameters
 
 //**************************************************************************
-// Modelbase Parameters                                                  
-                                                                         
-        cofintintb1 cofintintb2 cofintintb3 cofintintb4                  
-        cofintinf0 cofintinfb1 cofintinfb2 cofintinfb3 cofintinfb4       
-        cofintinff1 cofintinff2 cofintinff3 cofintinff4                  
-        cofintout cofintoutb1 cofintoutb2 cofintoutb3 cofintoutb4        
-        cofintoutf1 cofintoutf2 cofintoutf3 cofintoutf4   
-        cofintoutp cofintoutpb1 cofintoutpb2 cofintoutpb3 cofintoutpb4   
-        cofintoutpf1 cofintoutpf2 cofintoutpf3 cofintoutpf4                           
-        std_r_ std_r_quart coffispol           
-//************************************************************************** 
+// Modelbase Parameters
+
+        cofintintb1 cofintintb2 cofintintb3 cofintintb4
+        cofintinf0 cofintinfb1 cofintinfb2 cofintinfb3 cofintinfb4
+        cofintinff1 cofintinff2 cofintinff3 cofintinff4
+        cofintout cofintoutb1 cofintoutb2 cofintoutb3 cofintoutb4
+        cofintoutf1 cofintoutf2 cofintoutf3 cofintoutf4
+        cofintoutp cofintoutpb1 cofintoutpb2 cofintoutpb3 cofintoutpb4
+        cofintoutpf1 cofintoutpf2 cofintoutpf3 cofintoutpf4
+        std_r_ std_r_quart coffispol
+//**************************************************************************
 
     bC ssMU ssTAXWR ssRS ssRPOILS ssTAXCR bet delta lambdaW	rhoY deltaY ssLAMBDAK ssLAMBDALT ssTAXKR gamI sspieY phia
     xiW sigmaL ssHG ssTAXFR ssUPSILON ssUPSILONMC ssUPSILONMI ssUPSILONMX
-    zeta theta deltaI  deltaC ssLAMBDACY rhoC ssLAMBDACM ssGCF gamCM  zetaMC 
+    zeta theta deltaI  deltaC ssLAMBDACY rhoC ssLAMBDACM ssGCF gamCM  zetaMC
     ssLAMBDAIY ssLAMBDAIM rhoI gamIM ssIG rhoX deltaX thetaX zetaX ssLAMBDAXY ssLAMBDAXM ssUPSILONF
-    thetaMC omegaMC rhoMU rhoLAMBDAK rhoLAMBDALT rhoLAMBDACY rhoLAMBDACM 
-    rhoLAMBDAIY rhoUPSILON rhoUPSILONMC   rhoUPSILONX rhoZETACH rhoZETAEUR rhoLAMW rhoiG rhohG rhocFG rhoPOILS rhoPRAWS rhomW rhopieW 
+    thetaMC omegaMC rhoMU rhoLAMBDAK rhoLAMBDALT rhoLAMBDACY rhoLAMBDACM
+    rhoLAMBDAIY rhoUPSILON rhoUPSILONMC   rhoUPSILONX rhoZETACH rhoZETAEUR rhoLAMW rhoiG rhohG rhocFG rhoPOILS rhoPRAWS rhomW rhopieW
     rhodS rhoepsX omegaOIL omegaRAW rhorEUR RMCX sigmaW WEHE ssnuBank kappaB kappaKB rhoepsB rhoepsKB  BYSS_data  spread_data ;
 
 pp=load('all_parameters_February2016');
@@ -93,23 +93,23 @@ end;
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           
-cd('..');                                                                
-load policy_param.mat;                                                   
-for i=1:33                                                               
-    deep_parameter_name = M_.param_names(i,:);                           
-    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])                  
-end                                                                      
-cd(thispath);  
+thispath = pwd;
+cd('..');
+load policy_param.mat;
+for i=1:33
+    deep_parameter_name = M_.param_names(i,:);
+    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
+end
+cd(thispath);
     std_r_=0.25;
-                                                                         
+
 // Definition of Discretionary Fiscal Policy Parameter                   //*
 GoverY = (pp.ECGF/pp.EY);                                                //*
 coffispol = GoverY^(-1);                                                 //*
 
 //**************************************************************************
 
-seepsZETAEUR=pp.seepsZETAEUR; 
+seepsZETAEUR=pp.seepsZETAEUR;
 seepsZETACH=pp.seepsZETACH;
 seepsLAMW=pp.seepsLAMW;
 seepsMU=pp.seepsMU;
@@ -132,26 +132,26 @@ seepsPOILS=pp.seepsPOILS;
 seepsPRAWS=pp.seepsPRAWS;
 seepsBankCapital=pp.seepsBankCapital;
 seepsEPSB=pp.seepsEPSB;
-seepsrEUR=pp.seepsrEUR; 
+seepsrEUR=pp.seepsrEUR;
 
 model(linear);
 
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables//*
-                                                                         //* 
-interest     = rFI*4;                                                    //* 
-inflation    = pieC+pieC(-1)+pieC(-2)+pieC(-3);                          //* 
-inflationq   = 4*pieC;                                                   //* 
-outputgap    = y-yf;                                                     //* 
-output       = y;                                                        //* 
+                                                                         //*
+interest     = rFI*4;                                                    //*
+inflation    = pieC+pieC(-1)+pieC(-2)+pieC(-3);                          //*
+inflationq   = 4*pieC;                                                   //*
+outputgap    = y-yf;                                                     //*
+output       = y;                                                        //*
 fispol       = epsGF ;                                                   //*
 //**************************************************************************
 
-//**************************************************************************                                                                    
+//**************************************************************************
 // Policy Rule                                                           //*
                                                                          //*
 // Monetary Policy is exogenous here, so no monetary policy rule         //*                                                                        //*
-epsrEUR =  std_r_*  interest_;                                                  //* 
+epsrEUR =  std_r_*  interest_;                                                  //*
                                                                          //*
 // Discretionary Government Spending                                     //*
                                                                          //*
@@ -163,8 +163,8 @@ fispol = coffispol*fiscal_;                                              //*
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%&%%%%%%%%%%%
 
 # ssR   = ssMU*sspieY/bet;
-# RPOIL = ssRS*ssRPOILS; 
-# RPMC  = ssUPSILONMC;  
+# RPOIL = ssRS*ssRPOILS;
+# RPMC  = ssUPSILONMC;
 # RPMI  = ssUPSILONMI;
 # RPMX  = ssUPSILONMX;
 # RPX   = ssUPSILONF*RMCX;
@@ -191,13 +191,13 @@ fispol = coffispol*fiscal_;                                              //*
 # ECH   = (1/A)*(EHF^(-sigmaL))*(KsLF^(1+rhoY))*RPI;
 # ECGF  = (ssGCF/(1-ssGCF))*ECH;
 # EC    = ECH + ECGF;
-# ERWF  = ((1-deltaY)/deltaY)*((KsLF/ssMU)^(rhoY+1))*(RRK*RPC/(1+ssTAXFR))*((ssLAMBDALT/ssLAMBDAK)^(-rhoY)); 
-# EK8   = KsLF*EHF; 
+# ERWF  = ((1-deltaY)/deltaY)*((KsLF/ssMU)^(rhoY+1))*(RRK*RPC/(1+ssTAXFR))*((ssLAMBDALT/ssLAMBDAK)^(-rhoY));
+# EK8   = KsLF*EHF;
 # EY    = (deltaY*(ssLAMBDAK*EK8/ssMU)^(-rhoY)+(1-deltaY)*((ssLAMBDALT*EHF)^(-rhoY)))^(-1/rhoY);
 # EI    = (sIK/(1-ssIG))*EK8;
 # EIG   = ssIG*EI;
 # EI8   = sIK*EK8;
-# EMI   = sMII*EI; 
+# EMI   = sMII*EI;
 # EYI   = sYII*EI;
 # EZ    = sZCH*ECH;
 # EMC   = sMCZ*sZCH*ECH;
@@ -227,14 +227,14 @@ fispol = coffispol*fiscal_;                                              //*
 % Total loans
 # b1_coef=ssQ*EK8*RPC/BTOTSS;
 # b2_coef=NWSS/BTOTSS;
-btot = b1_coef*(q + k + pC) - b2_coef*nwe;    
+btot = b1_coef*(q + k + pC) - b2_coef*nwe;
 
 % Tobin's Q (FOC, capital stock)
 q = 1/(1+bet*RBSS)*( bet*sspieY*(1-delta+delta*ssTAXKR)*q(+1) - bet*RBSS*rb + bet*sspieY/ssQ*(RRK*(1-ssTAXKR)*(rK(+1)- pC(+1)) ))
   + pieY(+1) + pieC(+1) - pC ;
 
 % Entrepreneur's net worth
-# c1star = RRK*RPC*(1-ssTAXKR) + (1-delta+delta*ssTAXKR)*ssQ*RPC;  
+# c1star = RRK*RPC*(1-ssTAXKR) + (1-delta+delta*ssTAXKR)*ssQ*RPC;
 # N1     = sspieY*NWSS*ssMU/GAMMAESS;
 # N2     = sspieY*EK8*c1star - (1+RBSS)*EK8*ssQ*RPC;
 # N3     = sspieY*EK8*RRK*RPC*(1-ssTAXKR);
@@ -248,7 +248,7 @@ q = 1/(1+bet*RBSS)*( bet*sspieY*(1-delta+delta*ssTAXKR)*q(+1) - bet*RBSS*rb + be
 # N11    = N4;
 # N12    = N5;
 
-N1*nwe = N2*k(-1) + N3*rK + N4*q + N5*q(-1) + N6*nwe(-1) + N7*rb(-1) + N8*pieY + N9*mu + N11*pC + N12*pC(-1); 
+N1*nwe = N2*k(-1) + N3*rK + N4*q + N5*q(-1) + N6*nwe(-1) + N7*rb(-1) + N8*pieY + N9*mu + N11*pC + N12*pC(-1);
 
 % Net interest rate on loans, complete model
 rb = (kappaB/(EPSBSS-1+(1+bet)*kappaB))*rb(-1) + (bet*kappaB/(EPSBSS-1+(1+bet)*kappaB))*rb(+1)
@@ -261,7 +261,7 @@ RB = rFI - (kappaKB/RBSS*(ssnuBank^3))*(kbank - btot - nuB);
 kbank = (1-deltaBank)/ssMU/sspieY*(kbank(-1) - pieY - mu - epsKB) + (1-(1-deltaBank)/ssMU/sspieY)*bankprofits;
 
 % Bank profits
-bankprofits = RBSS/(RBSS-(ssR-1)*(1-ssnuBank))*(rb(-1)+btot(-1)) 
+bankprofits = RBSS/(RBSS-(ssR-1)*(1-ssnuBank))*(rb(-1)+btot(-1))
               -(ssR-1)*(1-ssnuBank)/(RBSS-(ssR-1)*(1-ssnuBank))*(rFI(-1)+deposits(-1))
               - pieY - mu;
 
@@ -272,35 +272,35 @@ btot = (1-ssnuBank)*deposits + ssnuBank*kbank;
 bka = kbank - btot;
 
 % Entrepreneur leverage
-lev_e = q + k + pC - nwe;  
+lev_e = q + k + pC - nwe;
 
 % Credit-to-output ratio
-by = btot - y; 
+by = btot - y;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
 % Households %%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Private Consumption, Lagrange multiplier 
+% Private Consumption, Lagrange multiplier
 psi = -(1/(1-bC/ssMU))*(cH-(bC/ssMU)*cH(-1)) - ((bC/ssMU)/(1-bC/ssMU))*mu+zetaCH;
-      
+
 % Investment equation
 iH = (1/(1+bet))*(bet*iH(+1)+iH(-1))-(1/(gamI*ssMU^2*(1+bet)))*(pI-pC-q)+(1/(1+bet))*(bet*mu(+1)-mu);
 
 %  Consumption equation (FOC, holdings of domestic bonds & FOC, private consumption)
 cH=(bC/ssMU)/(1+bC/ssMU)*cH(-1)+(1/(1+bC/ssMU))*cH(+1)
     +(1/(1+bC/ssMU))*(mu(+1)-(bC/ssMU)*mu)
-    -((1-bC/ssMU)/(1+bC/ssMU))*(rFI-pieC(+1))                              
+    -((1-bC/ssMU)/(1+bC/ssMU))*(rFI-pieC(+1))
     -((1-bC/ssMU)/(1+bC/ssMU))*(zetaCH(+1)-zetaCH);
 
 % Interest rate
-rFI-rEUR = -phia*astar + zetaEUR; 
-   
+rFI-rEUR = -phia*astar + zetaEUR;
+
 %  Capital accumulation equation
 k =((1-delta)/ssMU)*(k(-1)-mu)+(1-(1-delta)/ssMU)*(iH);
 
-%  Wage setting                  
-# calcoef=(1-xiW)*(1-bet*xiW)/(xiW*(1+bet)*(1-(sigmaL*(1-ssHG)*(lambdaW/(1+lambdaW)))));    
+%  Wage setting
+# calcoef=(1-xiW)*(1-bet*xiW)/(xiW*(1+bet)*(1-(sigmaL*(1-ssHG)*(lambdaW/(1+lambdaW)))));
 
 wF-pC=(1/(1+bet))*(wF(-1)-pC(-1))
       -(1/(1+bet))*(pC-pC(-1)+pieY-pieY(-1))+(bet/(1+bet))*(pC(+1)-pC+pieY(+1)-pieY)
@@ -316,18 +316,18 @@ rwage = wF-pC;
 % Domestic intermediate goods producer %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 #sigmaY=1/(1+rhoY);
-#alphaK=RRK*RPC*EK8/(EY*ssMCY*ssMU); 
-#alphal=(1+ssTAXFR)*ERWF*EHF/(EY*ssMCY);  
+#alphaK=RRK*RPC*EK8/(EY*ssMCY*ssMU);
+#alphal=(1+ssTAXFR)*ERWF*EHF/(EY*ssMCY);
 
 % Combined first order condition for labour and capital
 sigmaY*rK=mu+hF+sigmaY*(wF+rhoY*(lamLT-lamK))-k(-1);
-    
+
 % Real marginal costs
 mcY=alphaK*(rK-lamK)+alphal*(wF-lamLT);
- 
+
 % Production function
 y=alphaK*(lamK+k(-1)-mu)+alphal*(lamLT+hF);
-    
+
 % Domestic intermediate good inflation
 pieY=(theta/(1+bet*theta))*(pieY(-1))
      +(bet/(1+theta*bet))*pieY(+1)
@@ -351,7 +351,7 @@ mC=(sigmaC*gamCM/(1+sigmaC*gamCM))*(mC(-1)+cH-cH(-1))
 
 % Import prices of oil based consumption goods (NOT USED)
 RPOIL*pO=ssRS*ssRPOILS*(rs+pOILS);
- 
+
 % Import prices of non-oil based consumption goods
 pC=-(sYCZ/RPZ)*lamCY+sMCZ*(RPMC/RPZ)*(pM-lamCM+gamCM*((mC-cH)-(mC(-1)-cH(-1))));
 
@@ -377,11 +377,11 @@ pI=-(sYII/RPI)*lamIY+sMII*(RPMI/RPI)*(pM-lamCM+gamIM*((mI-iT)-(mI(-1)-iT(-1))));
 % Investment identity
 iT = (1-ssIG)*iH + ssIG*iG;
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Export markets %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 # sigmaX=1/(1+rhoX);
-    
+
 % Demand for domestic intermediate good
    yX=x+sigmaX*(mcX);
 
@@ -389,16 +389,16 @@ iT = (1-ssIG)*iH + ssIG*iG;
 mX=x+sigmaX*(mcX-pM-rhoX*lamCM);
 
 % Exporters' marginal costs
-mcX=sMXX*(RPMX/RMCX)*(pM-lamCM); 
+mcX=sMXX*(RPMX/RMCX)*(pM-lamCM);
 
-% Export demand 
-x = -sigmaW*(pX) + mW + epsX; 
+% Export demand
+x = -sigmaW*(pX) + mW + epsX;
 
 % Export price inflation
 pieX = (thetaX/(1+bet*thetaX))*(pieX(-1))+(bet/(1+thetaX*bet))*pieX(+1)
        +((1-zetaX)*(1-zetaX*bet)/(zetaX*(1+bet*thetaX)))*(mcX-pX-rs+upsilonX);
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Import goods' inflation  %%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -418,7 +418,7 @@ ToT = rs + pX - pM;
 
 % Total imports
 m = (RPMC*EMC/(ssRS*RPX*EX))*mC+(RPMI*EMI/(ssRS*RPX*EX))*mI+(RPMX*EMX/(ssRS*RPX*EX))*mX;
-   
+
 % Net Foreign Assets
 bstar = +(RPX*EX*ssRS)*(pX+rs+x)-RPMC*EMC*(pM+mC)-RPMI*EMI*(pM+mI)-RPMX*EMX*(pM+mX)+(ssR/(sspieY*ssMU))*bstar(-1);
 
@@ -428,15 +428,15 @@ astar=bstar/EY-y;
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Relative prices, rates of inflation and real exhange rate  %%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-pC=pC(-1)+pieC-pieY;  
+pC=pC(-1)+pieC-pieY;
 pX=pX(-1)+pieX-pieW;      % Note that definition of pX is in terms of pieW!
 pI=pI(-1)+pieI-pieY;
 pM=pM(-1)+pieM-pieY;
 pM=pM(-1)+pieMC-pieY;
 rs=rs(-1)+ds+pieW-pieY;
-pOILS=pOILS(-1)+pieOILS-pieY; 
-pRAWS=pRAWS(-1)+pieRAWS-pieY; 
-   
+pOILS=pOILS(-1)+pieOILS-pieY;
+pRAWS=pRAWS(-1)+pieRAWS-pieY;
+
 % Public sector budget constraint
 
 (ECGF/EY)*(cGF-y)+(RPI*EIG/EY)*(pI+iG-y)+(1-ssTAXWR)*(ERWG*(ssHG/(1-ssHG))*EHF/EY)*(wG+hG-y)
@@ -446,7 +446,7 @@ pRAWS=pRAWS(-1)+pieRAWS-pieY;
 +sTRy*trY;
 
 % Average (production) wage
-w = ssHG*wG+(1-ssHG)*wF;                 
+w = ssHG*wG+(1-ssHG)*wF;
 wG = wF;
 
 % Total hours
@@ -457,19 +457,19 @@ h = ssHG*hG+(1-ssHG)*hF;
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Markup at banking sector
-epsb = rhoepsB*epsb(-1) + epsEPSB; 
+epsb = rhoepsB*epsb(-1) + epsEPSB;
 
-% Bank capital requirement           
+% Bank capital requirement
 nuB =  epsnuB;
-  
-% Bank capital            
-epsKB = rhoepsKB*epsKB(-1) + epsBankCapital; 
+
+% Bank capital
+epsKB = rhoepsKB*epsKB(-1) + epsBankCapital;
 
 % Intermediate goods' technology
 mu = rhoMU*mu(-1) + epsMU;
 lamK = rhoLAMBDAK*lamK(-1)    + epsLAMBDAK;
 lamLT = rhoLAMBDALT*lamLT(-1) + epsLAMBDALT;
- 
+
 % Consumption goods' technology
 lamCY = rhoLAMBDACY*lamCY(-1) + epsLAMBDACY;
 lamCM = rhoLAMBDACM*lamCM(-1) + epsLAMBDACM;
@@ -481,28 +481,28 @@ lamIY = rhoLAMBDAIY*lamIY(-1) + epsLAMBDAIY;
 upsilon   = rhoUPSILON*upsilon(-1) + epsUPSILON;
 upsilonMC = rhoUPSILONMC*upsilonMC(-1) + epsUPSILONMC;
 upsilonX  = rhoUPSILONX*upsilonX(-1)   + epsUPSILONX;
-	
+
 % Consumption preference shock
 zetaCH=rhoZETACH*zetaCH(-1)+epsZETACH;
 
 % Domestic risk premium shock
 zetaEUR=rhoZETAEUR*zetaEUR(-1)+epsZETAEUR;
 
-% Euro area interest rate 
+% Euro area interest rate
 rEUR=rhorEUR*rEUR(-1)+epsrEUR;
 
 % Labour supply shocks
 lamW=rhoLAMW*lamW(-1)+epsLAMW;
-  
+
 % Export share shock
 epsX=rhoepsX*epsX(-1)+epsXX;
 
-% Exogenous fiscal variables 
+% Exogenous fiscal variables
 iG=rhoiG*iG(-1)+epsIG;
 hG=rhohG*hG(-1)+epshG;
 cGF=rhocFG*cGF(-1)+epsGF;
 
-% Oil price shock 
+% Oil price shock
 pOILS = rhoPOILS*pOILS(-1)+epsPOILS;
 
 % Foreign export demand shock
@@ -526,14 +526,14 @@ ds=rhodS*ds(-1)+epsdS;
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%&%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Total loans
-btotf = b1_coef*(qf + kf + pCf) - b2_coef*nwef;    
+btotf = b1_coef*(qf + kf + pCf) - b2_coef*nwef;
 
 % Tobin's Q (FOC, capital stock)
 qf = 1/(1+bet*RBSS)*( bet*sspieY*(1-delta+delta*ssTAXKR)*qf(+1) - bet*RBSS*rbf + bet*sspieY/ssQ*(RRK*(1-ssTAXKR)*(rKf(+1)- pCf(+1)) ))
   + pieYf(+1) + pieCf(+1) - pCf ;
 
 % Entrepreneur's net worth
-N1*nwef = N2*kf(-1) + N3*rKf + N4*qf + N5*qf(-1) + N6*nwef(-1) + N7*rbf(-1) + N8*pieYf + N9*mu + N11*pCf + N12*pCf(-1); 
+N1*nwef = N2*kf(-1) + N3*rKf + N4*qf + N5*qf(-1) + N6*nwef(-1) + N7*rbf(-1) + N8*pieYf + N9*mu + N11*pCf + N12*pCf(-1);
 
 % Net interest rate on loans, complete model
 rbf = (kappaB/(EPSBSS-1+(1+bet)*kappaB))*rbf(-1) + (bet*kappaB/(EPSBSS-1+(1+bet)*kappaB))*rbf(+1)
@@ -546,7 +546,7 @@ RBf = rFIf - (kappaKB/RBSS*(ssnuBank^3))*(kbankf - btotf - nuB);
 kbankf = (1-deltaBank)/ssMU/sspieY*(kbankf(-1) - pieYf - mu - epsKB) + (1-(1-deltaBank)/ssMU/sspieY)*bankprofitsf;
 
 % Bank profits
-bankprofitsf = RBSS/(RBSS-(ssR-1)*(1-ssnuBank))*(rbf(-1)+btotf(-1)) 
+bankprofitsf = RBSS/(RBSS-(ssR-1)*(1-ssnuBank))*(rbf(-1)+btotf(-1))
               -(ssR-1)*(1-ssnuBank)/(RBSS-(ssR-1)*(1-ssnuBank))*(rFIf(-1)+depositsf(-1))
               - pieYf - mu;
 
@@ -557,34 +557,34 @@ btotf = (1-ssnuBank)*depositsf + ssnuBank*kbankf;
 bkaf = kbankf - btotf;
 
 % Entrepreneur leverage
-lev_ef = qf + kf + pCf - nwef;  
+lev_ef = qf + kf + pCf - nwef;
 
 % Credit-to-output ratio
-byf = btotf - yf; 
+byf = btotf - yf;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
 % Households %%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Private Consumption, Lagrange multiplier 
+% Private Consumption, Lagrange multiplier
 psif = -(1/(1-bC/ssMU))*(cHf-(bC/ssMU)*cHf(-1)) - ((bC/ssMU)/(1-bC/ssMU))*mu+zetaCH;
-      
+
 % Investment equation
 iHf = (1/(1+bet))*(bet*iHf(+1)+iHf(-1))-(1/(gamI*ssMU^2*(1+bet)))*(pIf-pCf-qf)+(1/(1+bet))*(bet*mu(+1)-mu);
 
 %  Consumption equation (FOC, holdings of domestic bonds & FOC, private consumption)
 cHf=(bC/ssMU)/(1+bC/ssMU)*cHf(-1)+(1/(1+bC/ssMU))*cHf(+1)
     +(1/(1+bC/ssMU))*(mu(+1)-(bC/ssMU)*mu)
-    -((1-bC/ssMU)/(1+bC/ssMU))*(rFIf-pieCf(+1))                              
+    -((1-bC/ssMU)/(1+bC/ssMU))*(rFIf-pieCf(+1))
     -((1-bC/ssMU)/(1+bC/ssMU))*(zetaCH(+1)-zetaCH);
 
 % Interest rate
-rFIf-rEUR = -phia*astarf + zetaEUR; 
-   
+rFIf-rEUR = -phia*astarf + zetaEUR;
+
 %  Capital accumulation equation
 kf =((1-delta)/ssMU)*(kf(-1)-mu)+(1-(1-delta)/ssMU)*(iHf);
 
-%  Wage setting                  
+%  Wage setting
 wFf-pCf=(1/(1+bet))*(wFf(-1)-pCf(-1))
       -(1/(1+bet))*(pCf-pCf(-1)+pieYf-pieYf(-1))+(bet/(1+bet))*(pCf(+1)-pCf+pieYf(+1)-pieYf)
       -(1/(1+bet))*(pCf-pCf(-1))+(bet/(1+bet))*(pCf(+1)-pCf)
@@ -600,13 +600,13 @@ rwagef = wFf-pCf;
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Combined first order condition for labour and capital
 sigmaY*rKf=mu+hFf+sigmaY*(wFf+rhoY*(lamLT-lamK))-kf(-1);
-    
+
 % Real marginal costs
 mcYf=alphaK*(rKf-lamK)+alphal*(wFf-lamLT);
- 
+
 % Production function
 yf=alphaK*(lamK+kf(-1)-mu)+alphal*(lamLT+hFf);
-    
+
 % Domestic intermediate good inflation
 pieYf=(0.001/(1+bet*0.001))*(pieYf(-1))
      +(bet/(1+0.001*bet))*pieYf(+1)
@@ -628,7 +628,7 @@ mCf=(sigmaC*gamCM/(1+sigmaC*gamCM))*(mCf(-1)+cHf-cHf(-1))
 
 % Import prices of oil based consumption goods (NOT USED)
 RPOIL*pOf=ssRS*ssRPOILS*(rsf+pOILS);
- 
+
 % Import prices of non-oil based consumption goods
 pCf=-(sYCZ/RPZ)*lamCY+sMCZ*(RPMC/RPZ)*(pMf-lamCM+gamCM*((mCf-cHf)-(mCf(-1)-cHf(-1))));
 
@@ -652,10 +652,10 @@ pIf=-(sYII/RPI)*lamIY+sMII*(RPMI/RPI)*(pMf-lamCM+gamIM*((mIf-iTf)-(mIf(-1)-iTf(-
 % Investment identity
 iTf = (1-ssIG)*iHf + ssIG*iG;
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Export markets %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-   
+
 % Demand for domestic intermediate good
    yXf=xf+sigmaX*(mcXf);
 
@@ -663,16 +663,16 @@ iTf = (1-ssIG)*iHf + ssIG*iG;
 mXf=xf+sigmaX*(mcXf-pMf-rhoX*lamCM);
 
 % Exporters' marginal costs
-mcXf=sMXX*(RPMX/RMCX)*(pMf-lamCM); 
+mcXf=sMXX*(RPMX/RMCX)*(pMf-lamCM);
 
-% Export demand 
-xf = -sigmaW*(pXf) + mW + epsX; 
+% Export demand
+xf = -sigmaW*(pXf) + mW + epsX;
 
 % Export price inflation
 pieXf = (0.001/(1+bet*0.001))*(pieXf(-1))+(bet/(1+0.001*bet))*pieXf(+1)
        +((1-0.001)*(1-0.001*bet)/(0.001*(1+bet*0.001)))*(mcXf-pXf-rsf+upsilonX);
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Import goods' inflation  %%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -692,7 +692,7 @@ ToTf = rsf + pXf - pMf;
 
 % Total imports
 mf = (RPMC*EMC/(ssRS*RPX*EX))*mCf+(RPMI*EMI/(ssRS*RPX*EX))*mIf+(RPMX*EMX/(ssRS*RPX*EX))*mXf;
-   
+
 % Net Foreign Assets
 bstarf = +(RPX*EX*ssRS)*(pXf+rsf+xf)-RPMC*EMC*(pMf+mCf)-RPMI*EMI*(pMf+mIf)-RPMX*EMX*(pMf+mXf)+(ssR/(sspieY*ssMU))*bstarf(-1);
 
@@ -702,15 +702,15 @@ astarf=bstarf/EY-yf;
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Relative prices, rates of inflation and real exhange rate  %%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-pCf=pCf(-1)+pieCf-pieYf;  
+pCf=pCf(-1)+pieCf-pieYf;
 pXf=pXf(-1)+pieXf-pieW;      % Note that definition of pXf is in terms of pieW!
 pIf=pIf(-1)+pieIf-pieYf;
 pMf=pMf(-1)+pieMf-pieYf;
 pMf=pMf(-1)+pieMCf-pieYf;
 rsf=rsf(-1)+ds+pieW-pieYf;
-pOILS=pOILS(-1)+pieOILSf-pieYf; 
-pRAWS=pRAWS(-1)+pieRAWSf-pieYf; 
-   
+pOILS=pOILS(-1)+pieOILSf-pieYf;
+pRAWS=pRAWS(-1)+pieRAWSf-pieYf;
+
 % Public sector budget constraint
 
 (ECGF/EY)*(cGF-yf)+(RPI*EIG/EY)*(pIf+iG-yf)+(1-ssTAXWR)*(ERWG*(ssHG/(1-ssHG))*EHF/EY)*(wGf+hG-yf)
@@ -720,20 +720,20 @@ pRAWS=pRAWS(-1)+pieRAWSf-pieYf;
 +sTRy*trYf;
 
 % Average (production) wage
-wf = ssHG*wGf+(1-ssHG)*wFf;                 
+wf = ssHG*wGf+(1-ssHG)*wFf;
 wGf = wFf;
 
 % Total hours
 hf = ssHG*hG+(1-ssHG)*hFf;
 
 end;
-    
+
 %steady(solve_algo = 1);
 %check;
 %resid(1);
 
 shocks;
-var	epsZETAEUR; 	stderr seepsZETAEUR; 
+var	epsZETAEUR; 	stderr seepsZETAEUR;
 var	epsZETACH;  	stderr seepsZETACH;
 var	epsLAMW;    	stderr seepsLAMW;
 var	epsMU;  	    stderr seepsMU;
@@ -756,7 +756,7 @@ var	epsPOILS;       stderr seepsPOILS;
 var	epsPRAWS;       stderr seepsPRAWS;
 var    epsBankCapital; stderr seepsBankCapital;
 var    epsEPSB;        stderr seepsEPSB;
-%var	epsrEUR;    	stderr seepsrEUR; 
+%var	epsrEUR;    	stderr seepsrEUR;
 var interest_;  stderr 2*seepsrEUR;
 %var fiscal_;  stderr 0.1;
 end;

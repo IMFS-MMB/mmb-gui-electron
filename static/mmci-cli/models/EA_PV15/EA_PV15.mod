@@ -1,7 +1,7 @@
 //**************************************************************************
 // A New Comparative Approach to Macroeconomic Modeling and Policy Analysis
 //
-// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and 
+// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and
 // Maik Wolters
 //
 //**************************************************************************
@@ -44,7 +44,7 @@ var y_h y_f y_ea 		% output
 	ku_h ku_f			% utilized capital
 	u_h u_f				% capital utilization rate
 	CA					% current account
-	
+
 // Financial Accelerator
 
 	omega_h omega_f		% default threshold
@@ -85,29 +85,29 @@ var y_h y_f y_ea 		% output
 
 // flexible-price variables
 
-y_hfp y_ffp y_eafp c_hfp c_ffp c_eafp	pi_hfp pi_ffp pi_eafp		
-pic_hfp pic_ffp	w_hfp w_ffp	wh_hfp wh_ffp h_hfp h_ffp				
-mc_hfp mc_ffp k_hfp k_ffp i_hfp i_ffp i_eafp		
-z_hfp z_ffp	q_hfp q_ffp	ToTfp b_hfp					
-ku_hfp ku_ffp u_hfp u_ffp CAfp					
+y_hfp y_ffp y_eafp c_hfp c_ffp c_eafp	pi_hfp pi_ffp pi_eafp
+pic_hfp pic_ffp	w_hfp w_ffp	wh_hfp wh_ffp h_hfp h_ffp
+mc_hfp mc_ffp k_hfp k_ffp i_hfp i_ffp i_eafp
+z_hfp z_ffp	q_hfp q_ffp	ToTfp b_hfp
+ku_hfp ku_ffp u_hfp u_ffp CAfp
 p_Hfp p_Ffp	 % relative prices
-omega_hfp omega_ffp	n_E_hfp n_E_ffp	r_K_hfp r_K_ffp			
-ld_hfp ld_ffp rr_hfp rr_ffp	s_hfp s_ffp				
-nk_hfp nk_ffp v_E_hfp v_E_ffp			
-mcL_hfp mcL_ffp	ls_hfp ls_ffp ls_eafp		
-r_L_hfp r_L_ffp s_B_hfp s_B_ffp			
-pl_hfp pl_ffp bk_hfp bk_ffp			
-ibn_hfp ibn_ffp	IBs_hfp IBs_ffp IB_eafp	
-r_IB_hfp r_IB_ffp p_IB_hfp p_IB_ffp		
-IBd_hfp IBd_ffp			
+omega_hfp omega_ffp	n_E_hfp n_E_ffp	r_K_hfp r_K_ffp
+ld_hfp ld_ffp rr_hfp rr_ffp	s_hfp s_ffp
+nk_hfp nk_ffp v_E_hfp v_E_ffp
+mcL_hfp mcL_ffp	ls_hfp ls_ffp ls_eafp
+r_L_hfp r_L_ffp s_B_hfp s_B_ffp
+pl_hfp pl_ffp bk_hfp bk_ffp
+ibn_hfp ibn_ffp	IBs_hfp IBs_ffp IB_eafp
+r_IB_hfp r_IB_ffp p_IB_hfp p_IB_ffp
+IBd_hfp IBd_ffp
 
 //**************************************************************************
 // Modelbase Variables                                                   //*
-        interest inflation inflationq outputgap output                   //*                                                                    
+        interest inflation inflationq outputgap output                   //*
         ;                                                                //*
 //**************************************************************************
 
-varexo	
+varexo
  e_a_h e_g_h e_beta_h  e_a_f e_g_f e_beta_f e_n_h e_n_f e_q_h e_q_f e_rL_h e_rL_f  e_w_h e_w_f e_ib_h e_ib_f %e_pi_h e_pi_f  e_pi  e_ac e_ac_h e_ac_f
  e_a e_g e_beta e_n e_q e_rL e_w e_ib e_r
 
@@ -116,13 +116,13 @@ varexo
 //e_ib_h
 
 //**************************************************************************
-// Modelbase Shocks                                                      //*       
+// Modelbase Shocks                                                      //*
        interest_;                                                        //*
 //**************************************************************************
 
-parameters	
+parameters
 
-//************************************************************************** 
+//**************************************************************************
 // Modelbase Parameters                                                  //*
                                                                          //*
         cofintintb1 cofintintb2 cofintintb3 cofintintb4                  //*
@@ -136,14 +136,14 @@ parameters
                                                                          //*
 //**************************************************************************
 
-beta alpha delta thetap_h thetap_f xi_B xi_I_h xi_I_f GYss 
+beta alpha delta thetap_h thetap_f xi_B xi_I_h xi_I_f GYss
 			rho_a_h rho_g_h rho_a_f rho_g_f rho_beta_f rho_beta_h rho_n_h rho_n_f rho_q_h rho_q_f rho_L_h rho_L_f rho_W_h rho_W_f rho_B_h rho_B_f
  			u_W_h u_W_f rho_ag_h rho_ag_f
 			phi_pi phi_dy rho_R rho sigmaC_h sigmaC_f mu sigmaL_h sigmaL_f xiL_h xiL_f thetaL_h thetaL_f xiw_h xiw_f thetaw_h thetaw_f
 			alpha_I alpha_C Rss Hss Zss Iss Qss Kss
 			Yss Css Wss xip_h xip_f hc_h hc_f psi_h psi_f
 			% financial accelerator
-			ETA_Sss gamma_E RKss RRLss Nss Lss NKss OMEGAss ka wmin w_sup 
+			ETA_Sss gamma_E RKss RRLss Nss Lss NKss OMEGAss ka wmin w_sup
 			w_inf varkappa_h varkappa_f chi_IB_h chi_IB_f gammatild_E
 			gamma_B hL_h hL_f alpha_L alpha_IB nu xi Vss BKss IBss RFss lambda hib_h hib_f
 			;
@@ -152,13 +152,13 @@ beta alpha delta thetap_h thetap_f xi_B xi_I_h xi_I_f GYss
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           
-cd('..');                                                                
-load policy_param.mat;                                                   
-for i=1:33                                                               
-    deep_parameter_name = M_.param_names(i,:);                           
-    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])                  
-end                                                                      
+thispath = pwd;
+cd('..');
+load policy_param.mat;
+for i=1:33
+    deep_parameter_name = M_.param_names(i,:);
+    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
+end
 cd(thispath);                                                                         //*
 // Definition of Discretionary Fiscal Policy Parameter                   //*
 //coffispol = ;                                                          //*
@@ -216,7 +216,7 @@ hib_f 		= 0.21; % interbank loan demand habits
 lambda 		= 0.25; % illiquid bank share
 phi_pi		= 1.85; % monetary policy - inflation weight
 phi_dy		= 0.15; % monetary policy - gdp growth
-rho			= 0.84;	% monetary policy - smoothing 
+rho			= 0.84;	% monetary policy - smoothing
 alpha_C 	= 0.17;	% consumption goods openness
 alpha_I 	= 0.06;	% investment goods openness
 alpha_L 	= 0.09;	% corporate loans openness
@@ -251,7 +251,7 @@ rho_ag_f 	= 0.83;
 
 // Financial parameters
 
-Rss			= 1/beta; 
+Rss			= 1/beta;
 RRLss		= Rss+SLss;
 wmin		= 1-NKss;
 ka			= 1/NKss;
@@ -264,7 +264,7 @@ Gw			= 1-((wmin/OMEGAss)^(ka-1));
 ETA_Dss 	= 1-(wmin/OMEGAss)^ka;
 ETA_Sss 	= (wmin/OMEGAss)^ka;
 w_sup 		= (ka/(ka-1))*OMEGAss;
-w_inf 		= (ka/(ka-1))*(((OMEGAss^(1-ka))-(wmin^(1-ka)))/((OMEGAss^(-ka))-(wmin^(-ka)))); 
+w_inf 		= (ka/(ka-1))*(((OMEGAss^(1-ka))-(wmin^(1-ka)))/((OMEGAss^(-ka))-(wmin^(-ka))));
 
 // entrepreneurs ss
 Qss			=1;
@@ -298,50 +298,50 @@ model(linear);
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables //*
 
-interest   = 4*r;                                           
-inflation  = (pi_ea + pi_ea(-1) + pi_ea(-2) + pi_ea(-3));                          
-inflationq = 4*pi_ea;                                                              
-outputgap  = (y_ea - y_eafp);                                             
-output     = y_ea; 
+interest   = 4*r;
+inflation  = (pi_ea + pi_ea(-1) + pi_ea(-2) + pi_ea(-3));
+inflationq = 4*pi_ea;
+outputgap  = (y_ea - y_eafp);
+output     = y_ea;
 //**************************************************************************
 
-//**************************************************************************                                                                    
+//**************************************************************************
 // Policy Rule                                                           //*
                                                                          //*
 // Monetary Policy                                                       //*
                                                                          //*
-interest =   cofintintb1*interest(-1)                                    //* 
-           + cofintintb2*interest(-2)                                    //* 
-           + cofintintb3*interest(-3)                                    //* 
-           + cofintintb4*interest(-4)                                    //* 
-           + cofintinf0*inflationq                                       //* 
-           + cofintinfb1*inflationq(-1)                                  //* 
-           + cofintinfb2*inflationq(-2)                                  //* 
-           + cofintinfb3*inflationq(-3)                                  //* 
-           + cofintinfb4*inflationq(-4)                                  //* 
-           + cofintinff1*inflationq(+1)                                  //* 
-           + cofintinff2*inflationq(+2)                                  //* 
-           + cofintinff3*inflationq(+3)                                  //* 
-           + cofintinff4*inflationq(+4)                                  //* 
-           + cofintout*outputgap 	                                     //* 
-           + cofintoutb1*outputgap(-1)                                   //* 
-           + cofintoutb2*outputgap(-2)                                   //* 
-           + cofintoutb3*outputgap(-3)                                   //* 
-           + cofintoutb4*outputgap(-4)                                   //* 
-           + cofintoutf1*outputgap(+1)                                   //* 
-           + cofintoutf2*outputgap(+2)                                   //* 
-           + cofintoutf3*outputgap(+3)                                   //* 
-           + cofintoutf4*outputgap(+4)                                   //* 
-           + cofintoutp*output 	                                         //* 
-           + cofintoutpb1*output(-1)                                     //* 
-           + cofintoutpb2*output(-2)                                     //* 
-           + cofintoutpb3*output(-3)                                     //* 
-           + cofintoutpb4*output(-4)                                     //* 
-           + cofintoutpf1*output(+1)                                     //* 
-           + cofintoutpf2*output(+2)                                     //* 
-           + cofintoutpf3*output(+3)                                     //* 
-           + cofintoutpf4*output(+4)                                     //* 
-           + std_r_ *interest_;                                          //* 
+interest =   cofintintb1*interest(-1)                                    //*
+           + cofintintb2*interest(-2)                                    //*
+           + cofintintb3*interest(-3)                                    //*
+           + cofintintb4*interest(-4)                                    //*
+           + cofintinf0*inflationq                                       //*
+           + cofintinfb1*inflationq(-1)                                  //*
+           + cofintinfb2*inflationq(-2)                                  //*
+           + cofintinfb3*inflationq(-3)                                  //*
+           + cofintinfb4*inflationq(-4)                                  //*
+           + cofintinff1*inflationq(+1)                                  //*
+           + cofintinff2*inflationq(+2)                                  //*
+           + cofintinff3*inflationq(+3)                                  //*
+           + cofintinff4*inflationq(+4)                                  //*
+           + cofintout*outputgap 	                                     //*
+           + cofintoutb1*outputgap(-1)                                   //*
+           + cofintoutb2*outputgap(-2)                                   //*
+           + cofintoutb3*outputgap(-3)                                   //*
+           + cofintoutb4*outputgap(-4)                                   //*
+           + cofintoutf1*outputgap(+1)                                   //*
+           + cofintoutf2*outputgap(+2)                                   //*
+           + cofintoutf3*outputgap(+3)                                   //*
+           + cofintoutf4*outputgap(+4)                                   //*
+           + cofintoutp*output 	                                         //*
+           + cofintoutpb1*output(-1)                                     //*
+           + cofintoutpb2*output(-2)                                     //*
+           + cofintoutpb3*output(-3)                                     //*
+           + cofintoutpb4*output(-4)                                     //*
+           + cofintoutpf1*output(+1)                                     //*
+           + cofintoutpf2*output(+2)                                     //*
+           + cofintoutpf3*output(+3)                                     //*
+           + cofintoutpf4*output(+4)                                     //*
+           + std_r_ *interest_;                                          //*
                                                                          //*
 // Discretionary Government Spending                                     //*
                                                                          //*
@@ -360,7 +360,7 @@ interest =   cofintintb1*interest(-1)                                    //*
 	(1+beta)*w_h=xiw_h*pic_h(-1)+w_h(-1)-(1+beta*xiw_h)*pic_h+beta*(w_h(+1)+pic_h(+1))+(((1-thetaw_h*beta)*(1-thetaw_h))/thetaw_h)*(wh_h-w_h) + w_shock_h;
 	(1+beta)*w_f=xiw_f*pic_f(-1)+w_f(-1)-(1+beta*xiw_f)*pic_f+beta*(w_f(+1)+pic_f(+1))+(((1-thetaw_f*beta)*(1-thetaw_f))/thetaw_f)*(wh_f-w_f) + w_shock_f;
 
-	
+
     // Firms
 	// Input cost minimization
 	h_h + w_h = z_h + ku_h;
@@ -381,8 +381,8 @@ interest =   cofintintb1*interest(-1)                                    //*
 	r  = rr_h + pic_h(+1);
 	r  = rr_f + pic_f(+1);
 
-	
-    // Capital producer 
+
+    // Capital producer
 	// Ex post return on capital (29)
 	r_K_h = (Zss/RKss)*z_h + ((1-delta)/RKss)*q_h - q_h(-1) + (Css/RKss)*xi_B*b_h(-1) ;
 	r_K_f = (Zss/RKss)*z_f + ((1-delta)/RKss)*q_f - q_f(-1) - (Css/RKss)*xi_B*b_h(-1) ;
@@ -395,7 +395,7 @@ interest =   cofintintb1*interest(-1)                                    //*
 	// Optimal utilization rate of capital
 	((1-psi_h)/psi_h)*z_h = u_h;
 	((1-psi_f)/psi_f)*z_f = u_f;
-	
+
    // Entrepreneur
 	// Entrepreneur balance sheet (12)
 	Lss*(ld_h-hL_h*ld_h(-1)) = Kss*(q_h+k_h)-Nss*n_E_h;
@@ -421,7 +421,7 @@ interest =   cofintintb1*interest(-1)                                    //*
 	// CES credit price index (14)
 	pl_h = (1-alpha_L)*r_L_h + alpha_L*r_L_f + alpha_L*(pic_f(+1)-pic_h(+1));
 	pl_f = (1-alpha_L)*r_L_f + alpha_L*r_L_h - alpha_L*(pic_f(+1)-pic_h(+1));
-	
+
 
 
 	// BANKING SYSTEM
@@ -431,7 +431,7 @@ interest =   cofintintb1*interest(-1)                                    //*
 	// Sticky real lending rate (11)
 	(1+beta*(1+xiL_h))*r_L_h = (1+xiL_h*(1+beta))*r_L_h(-1) - xiL_h*r_L_h(-2) + beta*r_L_h(+1) + (((1-thetaL_h*beta)*(1-thetaL_h))/thetaL_h)*( mcL_h - r_L_h ) + beta*thetaL_h*pic_h(+2) - (1+beta*thetaL_h)*pic_h(+1) + pic_h + rL_shock_h;
 	(1+beta*(1+xiL_f))*r_L_f = (1+xiL_f*(1+beta))*r_L_f(-1) - xiL_f*r_L_f(-2) + beta*r_L_f(+1) + (((1-thetaL_f*beta)*(1-thetaL_f))/thetaL_f)*( mcL_f - r_L_f ) + beta*thetaL_f*pic_f(+2) - (1+beta*thetaL_f)*pic_f(+1) + pic_f + rL_shock_f;
-	// Lending spread 
+	// Lending spread
 	r_L_h - rr_h = s_B_h;
 	r_L_f - rr_f = s_B_f;
 	 // Illiquid Bank
@@ -443,7 +443,7 @@ interest =   cofintintb1*interest(-1)                                    //*
     IBss*(IBd_f-hib_f*IBd_f(-1)) + BKss*bk_f + RFss*ib_shock_f = Lss*ls_f;
 	// Illiquid assets to bank capital ratio
 	ibn_h=IBd_h-bk_h;
-	ibn_f=IBd_f-bk_f;	
+	ibn_f=IBd_f-bk_f;
     // Illiquid Bank
  	// Interbank rate(9)
 	r_IB_h = rr_h + chi_IB_h*IBss*IBs_h;
@@ -452,7 +452,7 @@ interest =   cofintintb1*interest(-1)                                    //*
 	p_IB_h = (1-alpha_IB)*r_IB_h + alpha_IB*r_IB_f + alpha_IB*(pic_f(+1)-pic_h(+1));
 	p_IB_f = (1-alpha_IB)*r_IB_f + alpha_IB*r_IB_h - alpha_IB*(pic_f(+1)-pic_h(+1));
 
-	
+
     // Aggregation
 	// Market clearing for goods(31)
 	Yss*y_h = (1-alpha_C)*(Css*c_h)+alpha_C*(Css*c_f) + Iss*((1-alpha_I)*i_h+alpha_I*i_f) + GYss*Yss*g_h + Zss*Kss*u_h + 2*mu*( Css*(1-alpha_C)*alpha_C + Iss*(1-alpha_I)*alpha_I )*ToT  ;
@@ -467,24 +467,24 @@ interest =   cofintintb1*interest(-1)                                    //*
 
 	// Monetary policy rule (30)
 	// r = rho*r(-1) + (1-rho)*0.5*( phi_pi*(pic_h+pic_f)+phi_dy*(y_h+y_f-y_h(-1)-y_f(-1)))+ r_shock;
- 
- 
+
+
 	// International macroeconomics
-	// Inflation consumption price 
+	// Inflation consumption price
 	pic_h=pi_h+alpha_C*(ToT-ToT(-1));
 	pic_f=pi_f-alpha_C*(ToT-ToT(-1));
-	// Terms of trades 
+	// Terms of trades
 	ToT = pi_f-pi_h+ToT(-1);
 	// Net foreign assets
-	Css*(b_h-b_h(-1))=		  Css*(Rss-1)*b_h(-1)	
+	Css*(b_h-b_h(-1))=		  Css*(Rss-1)*b_h(-1)
 							+ Css*alpha_C*( c_f - c_h + (2*mu*(1-alpha_C)-1)*ToT )
-							+ Iss*alpha_I*( i_f - i_h + (2*mu*(1-alpha_I)-1)*ToT );	
+							+ Iss*alpha_I*( i_f - i_h + (2*mu*(1-alpha_I)-1)*ToT );
 	// Current account
-	Css*CA = 	  Css*(b_h-b_h(-1)) 
+	Css*CA = 	  Css*(b_h-b_h(-1))
 				+ Lss*alpha_L*( ld_f - ld_f(-1) + pic_f(+1) - pic_h(+1) - (ld_h - ld_h(-1)) +  (2*nu*(1-alpha_L))*(r_L_f+pic_f(+1)-r_L_h-pic_h(+1)-(r_L_f(-1)+pic_f-r_L_h(-1)-pic_h) ) )
 				+ IBss*alpha_IB*( IBd_f - IBd_f(-1) + pic_f(+1) - pic_h(+1) - (IBd_h - IBd_h(-1)) +  (2*xi*(1-alpha_IB))*(r_IB_f+pic_f(+1)-r_IB_h-pic_h(+1)-(r_IB_f(-1)+pic_f-r_IB_h(-1)-pic_h) )) ;
-            
-   
+
+
     // Euro area variables
     y_ea = .5*y_h + .5*y_f;			% output
     c_ea = .5*c_h + .5*c_f;			% consumption
@@ -492,7 +492,7 @@ interest =   cofintintb1*interest(-1)                                    //*
     i_ea = .5*i_h + .5*i_f;			% investment
     ls_ea = .5*ls_h + .5*ls_f;		% loan supply
     IB_ea = .5*IBs_h + .5*IBs_f;	% interbank supply
-    
+
     // Exogenous shocks - core
 	a_h = rho_a_h*a_h(-1) + e_a_h + e_a;
 	g_h = rho_g_h*g_h(-1) + e_g_h + rho_ag_h*(e_a_h) + e_g;
@@ -531,7 +531,7 @@ interest =   cofintintb1*interest(-1)                                    //*
 	w_hfp = wh_hfp;
 	w_ffp = wh_ffp;
 
-	
+
     // Firms
 	// Input cost minimization
 	h_hfp + w_hfp = z_hfp + ku_hfp;
@@ -549,10 +549,10 @@ interest =   cofintintb1*interest(-1)                                    //*
 	pi_hfp=1;
 	pi_ffp=1;
 	// Marginal product of labor
-	w_hfp = y_hfp - h_hfp; 
+	w_hfp = y_hfp - h_hfp;
 	w_ffp = y_ffp - h_ffp;
-	
-    // Capital producer 
+
+    // Capital producer
 	// Ex post return on capital (29)
 	r_K_hfp = (Zss/RKss)*z_hfp + ((1-delta)/RKss)*q_hfp - q_hfp(-1) + (Css/RKss)*xi_B*b_hfp(-1) ;
 	r_K_ffp = (Zss/RKss)*z_ffp + ((1-delta)/RKss)*q_ffp - q_ffp(-1) - (Css/RKss)*xi_B*b_hfp(-1) ;
@@ -565,7 +565,7 @@ interest =   cofintintb1*interest(-1)                                    //*
 	// Optimal utilization rate of capital
 	((1-psi_h)/psi_h)*z_hfp = u_hfp;
 	((1-psi_f)/psi_f)*z_ffp = u_ffp;
-	
+
    // Entrepreneur
 	// Entrepreneur balance sheet (12)
 	Lss*(ld_hfp-hL_h*ld_hfp(-1)) = Kss*(q_hfp+k_hfp)-Nss*n_E_hfp;
@@ -591,7 +591,7 @@ interest =   cofintintb1*interest(-1)                                    //*
 	// CES credit price index (14)
 	pl_hfp = (1-alpha_L)*r_L_hfp + alpha_L*r_L_ffp;
 	pl_ffp = (1-alpha_L)*r_L_ffp + alpha_L*r_L_hfp;
-	
+
 
 
 	// BANKING SYSTEM
@@ -601,7 +601,7 @@ interest =   cofintintb1*interest(-1)                                    //*
 	// Sticky real lending rate (11)
 	r_L_hfp = mcL_hfp;
 	r_L_ffp = mcL_ffp;
-	// Lending spread 
+	// Lending spread
 	r_L_hfp - rr_hfp = s_B_hfp;
 	r_L_ffp - rr_ffp = s_B_ffp;
 	 // Illiquid Bank
@@ -613,7 +613,7 @@ interest =   cofintintb1*interest(-1)                                    //*
     IBss*(IBd_ffp-hib_f*IBd_ffp(-1)) + BKss*bk_ffp + RFss*ib_shock_f = Lss*ls_ffp;
 	// Illiquid assets to bank capital ratio
 	ibn_hfp=IBd_hfp-bk_hfp;
-	ibn_ffp=IBd_ffp-bk_ffp;	
+	ibn_ffp=IBd_ffp-bk_ffp;
     // Illiquid Bank
  	// Interbank rate(9)
 	r_IB_hfp = rr_hfp + chi_IB_h*IBss*IBs_hfp;
@@ -622,7 +622,7 @@ interest =   cofintintb1*interest(-1)                                    //*
 	p_IB_hfp = (1-alpha_IB)*r_IB_hfp + alpha_IB*r_IB_ffp;
 	p_IB_ffp = (1-alpha_IB)*r_IB_ffp + alpha_IB*r_IB_hfp;
 
-	
+
     // Aggregation
 	// Market clearing for goods(31)
 	Yss*y_hfp = (1-alpha_C)*(Css*c_hfp)+alpha_C*(Css*c_ffp) + Iss*((1-alpha_I)*i_hfp+alpha_I*i_ffp) + GYss*Yss*g_h + Zss*Kss*u_hfp + 2*mu*( Css*(1-alpha_C)*alpha_C + Iss*(1-alpha_I)*alpha_I )*ToTfp  ;
@@ -634,25 +634,25 @@ interest =   cofintintb1*interest(-1)                                    //*
 	(1-lambda)/lambda*IBs_hfp = (1-alpha_IB)*IBd_hfp + alpha_IB*IBd_ffp + alpha_IB*(1-2*xi)*ToTfp + 2*xi*(1-alpha_IB)*alpha_IB*(r_IB_ffp+pic_ffp(+1)-r_IB_hfp-pic_hfp(+1));
 	(1-lambda)/lambda*IBs_ffp = (1-alpha_IB)*IBd_ffp + alpha_IB*IBd_hfp - alpha_IB*(1-2*xi)*ToTfp - 2*xi*(1-alpha_IB)*alpha_IB*(r_IB_ffp+pic_ffp(+1)-r_IB_hfp-pic_hfp(+1));
 
- 
- 
+
+
 	// International macroeconomics
-	// Inflation consumption price 
+	// Inflation consumption price
 	pic_hfp=0;
 	pic_ffp=0;
 	// Terms of trade
-	ToTfp = ToTfp(+1) + rr_ffp - rr_hfp + p_Ffp - p_Hfp + p_Hfp(+1) - p_Ffp(+1); 
-	
+	ToTfp = ToTfp(+1) + rr_ffp - rr_hfp + p_Ffp - p_Hfp + p_Hfp(+1) - p_Ffp(+1);
+
 	// Net foreign assets
-	Css*(b_hfp-b_hfp(-1))=		  Css*(Rss-1)*b_hfp(-1)	
+	Css*(b_hfp-b_hfp(-1))=		  Css*(Rss-1)*b_hfp(-1)
 							+ Css*alpha_C*( c_ffp - c_hfp + (2*mu*(1-alpha_C)-1)*ToTfp )
-							+ Iss*alpha_I*( i_ffp - i_hfp + (2*mu*(1-alpha_I)-1)*ToTfp );	
+							+ Iss*alpha_I*( i_ffp - i_hfp + (2*mu*(1-alpha_I)-1)*ToTfp );
 	// Current account
-	Css*CAfp = 	  Css*(b_hfp-b_hfp(-1)) 
+	Css*CAfp = 	  Css*(b_hfp-b_hfp(-1))
 				+ Lss*alpha_L*( ld_ffp - ld_ffp(-1) + pic_ffp(+1) - pic_hfp(+1) - (ld_hfp - ld_hfp(-1)) +  (2*nu*(1-alpha_L))*(r_L_ffp+pic_ffp(+1)-r_L_hfp-pic_hfp(+1)-(r_L_ffp(-1)+pic_ffp-r_L_hfp(-1)-pic_hfp) ) )
 				+ IBss*alpha_IB*( IBd_ffp - IBd_ffp(-1) + pic_ffp(+1) - pic_hfp(+1) - (IBd_hfp - IBd_hfp(-1)) +  (2*xi*(1-alpha_IB))*(r_IB_ffp+pic_ffp(+1)-r_IB_hfp-pic_hfp(+1)-(r_IB_ffp(-1)+pic_ffp-r_IB_hfp(-1)-pic_hfp) )) ;
-            
-   
+
+
     // Euro area variables
     y_eafp = .5*y_hfp + .5*y_ffp;			% output
     c_eafp = .5*c_hfp + .5*c_ffp;			% consumption

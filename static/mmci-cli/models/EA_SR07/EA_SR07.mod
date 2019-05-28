@@ -1,7 +1,7 @@
 //**************************************************************************
 // A New Comparative Approach to Macroeconomic Modeling and Policy Analysis
 //
-// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and 
+// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and
 // Maik Wolters
 //
 // Working Paper, 2009
@@ -10,7 +10,7 @@
 // Model: EA_SR07
 
 // Further references:
-// Adolfson, M., S. Laseen, J. Linde, and M. Villani. 2007. "Bayesian Estimation of an Open Economy DSGE Model with Incomplete Pass-Through." 
+// Adolfson, M., S. Laseen, J. Linde, and M. Villani. 2007. "Bayesian Estimation of an Open Economy DSGE Model with Incomplete Pass-Through."
 // Journal of International Economics 72(2), pp. 481-511.
 
 // Last edited: 10/09/07 by S. Schmidt
@@ -27,20 +27,20 @@ var pi_hat pi_mc pi_mi pi_x w_barhat c_hat i_hat psi_zhat P_k dS H_hat k_barhat 
     pistar_hatf ystar_hatf Rstar_hatf epsilon_rhog
 
 //**************************************************************************
-// Modelbase Variables                                                   //*                      
+// Modelbase Variables                                                   //*
     interest inflation inflationq outputgap output fispol;               //*
-//**************************************************************************       
+//**************************************************************************
 
 varexo  epsilon_tauk epsilon_tauw epsilon_tauc epsilon_tauy epsilon_lambdad epsilon_lambdamc epsilon_lambdami epsilon_lambdax epsilon_muz epsilon_epsilon
         epsilon_Upsilon epsilon_ztildestar epsilon_zetac epsilon_zetah epsilon_phitilde epsilon_pibar epsilon_pistar epsilon_ystar epsilon_Rstar// epsilon_R
 
 //**************************************************************************
-// Modelbase Shocks                                                      //*       
+// Modelbase Shocks                                                      //*
 interest_ fiscal_ ;                                                      //*
-//************************************************************************** 
+//**************************************************************************
 
- 
-parameters 
+
+parameters
 //**************************************************************************
 // Modelbase Parameters                                                  //*
                                                                          //*
@@ -61,7 +61,7 @@ parameters
            b_w eta_0 eta_1 eta_2 eta_3 eta_4 eta_5 eta_6 eta_7 eta_8 eta_9 eta_10 eta_11 pi R R_f eta_mc eta_mi gamma_id gamma_cd gamma_dc gamma_mcc gamma_cmc gamma_imi gamma_mii
            r_k w_bar k_H D1 D2 D3 D4 H c psi_z y_bar g q m_bar k k_bar i c_m i_m y_star //steady state relationships
            xi_df xi_mcf xi_mif xi_xf xi_wf xi_ef // flexible price case
-        
+
 // Parameters from exogenous VAR
 //ForLag1, ForLag2, ForLag3, ForLag4, ForShock, FisLag1, FisLag2 , FisShock,
 ForLag111 ,ForLag112 ,ForLag113 ,ForLag121 ,ForLag122 ,ForLag123 ,ForLag131 ,ForLag132 ,ForLag133 ,
@@ -73,7 +73,7 @@ FisLag111 ,FisLag112 ,FisLag113 ,FisLag121 ,FisLag122 ,FisLag123 ,FisLag131 ,Fis
 FisLag211 ,FisLag212 ,FisLag213 ,FisLag221 ,FisLag222 ,FisLag223 ,FisLag231 ,FisLag232 ,FisLag233 ,
 FisShock11, FisShock12, FisShock13, FisShock14, FisShock15, FisShock21, FisShock22, FisShock23, FisShock24, FisShock25,
 FisShock31, FisShock32, FisShock33, FisShock34, FisShock35, FisShock41, FisShock42, FisShock43, FisShock44, FisShock45,
-FisShock51, FisShock52, FisShock53, FisShock54, FisShock55,epstauk, epstauw;   
+FisShock51, FisShock52, FisShock53, FisShock54, FisShock55,epstauk, epstauw;
 
 ForLag111 = 0.1762;
 ForLag112 = 0.2798;
@@ -330,7 +330,7 @@ i=(1-(1-delta)/mu_z)*k;
 c_m =omega_c*gamma_cmc^eta_c*c;
 i_m=omega_i*gamma_imi^eta_i*i;
 y_star=omega_c*gamma_cmc^eta_c*c+omega_i*gamma_imi^eta_i*i;
- 
+
 
 // derived from steady state
 
@@ -342,15 +342,15 @@ y_star=omega_c*gamma_cmc^eta_c*c+omega_i*gamma_imi^eta_i*i;
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           
-cd('..');                                                                
-load policy_param.mat;                                                   
-for i=1:33                                                               
-    deep_parameter_name = M_.param_names(i,:);                           
-    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])                  
-end                                                                      
-cd(thispath);                                                            
-                           
+thispath = pwd;
+cd('..');
+load policy_param.mat;
+for i=1:33
+    deep_parameter_name = M_.param_names(i,:);
+    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
+end
+cd(thispath);
+
 // Definition of Discretionary Fiscal Policy Parameter                   //*
 coffispol = (1/FisShock55)*(1/gr);                                       //*
 //**************************************************************************
@@ -362,50 +362,50 @@ model(linear);
 
 interest   = 4*R_hat;                                                    //*
 inflation  = pi_c+pi_c(-1)+pi_c(-2)+pi_c(-3);                            //*
-inflationq = pi_c*4;                                                 	 //* 
+inflationq = pi_c*4;                                                 	 //*
 outputgap  = y_hat-y_hatf;                                               //*
 output     = y_hat;                                                      //*
 fispol     = epsilon_rhog;                                               //*
 //**************************************************************************
 
 
-//**************************************************************************                                                                    
+//**************************************************************************
 // Policy Rule                                                           //*
                                                                          //*
 // Monetary Policy                                                       //*
                                                                          //*
-interest =   cofintintb1*interest(-1)                                    //* 
-           + cofintintb2*interest(-2)                                    //* 
-           + cofintintb3*interest(-3)                                    //* 
-           + cofintintb4*interest(-4)                                    //* 
-           + cofintinf0*inflationq                                       //* 
-           + cofintinfb1*inflationq(-1)                                  //* 
-           + cofintinfb2*inflationq(-2)                                  //* 
-           + cofintinfb3*inflationq(-3)                                  //* 
-           + cofintinfb4*inflationq(-4)                                  //* 
-           + cofintinff1*inflationq(+1)                                  //* 
-           + cofintinff2*inflationq(+2)                                  //* 
-           + cofintinff3*inflationq(+3)                                  //* 
-           + cofintinff4*inflationq(+4)                                  //* 
-           + cofintout*outputgap 	                                     //* 
-           + cofintoutb1*outputgap(-1)                                   //* 
-           + cofintoutb2*outputgap(-2)                                   //* 
-           + cofintoutb3*outputgap(-3)                                   //* 
-           + cofintoutb4*outputgap(-4)                                   //* 
-           + cofintoutf1*outputgap(+1)                                   //* 
-           + cofintoutf2*outputgap(+2)                                   //* 
-           + cofintoutf3*outputgap(+3)                                   //* 
-           + cofintoutf4*outputgap(+4)                                   //* 
-           + cofintoutp*output 	                                         //* 
-           + cofintoutpb1*output(-1)                                     //* 
-           + cofintoutpb2*output(-2)                                     //* 
-           + cofintoutpb3*output(-3)                                     //* 
-           + cofintoutpb4*output(-4)                                     //* 
-           + cofintoutpf1*output(+1)                                     //* 
-           + cofintoutpf2*output(+2)                                     //* 
-           + cofintoutpf3*output(+3)                                     //* 
-           + cofintoutpf4*output(+4)                                     //* 
-           + std_r_ *interest_;                                          //* 
+interest =   cofintintb1*interest(-1)                                    //*
+           + cofintintb2*interest(-2)                                    //*
+           + cofintintb3*interest(-3)                                    //*
+           + cofintintb4*interest(-4)                                    //*
+           + cofintinf0*inflationq                                       //*
+           + cofintinfb1*inflationq(-1)                                  //*
+           + cofintinfb2*inflationq(-2)                                  //*
+           + cofintinfb3*inflationq(-3)                                  //*
+           + cofintinfb4*inflationq(-4)                                  //*
+           + cofintinff1*inflationq(+1)                                  //*
+           + cofintinff2*inflationq(+2)                                  //*
+           + cofintinff3*inflationq(+3)                                  //*
+           + cofintinff4*inflationq(+4)                                  //*
+           + cofintout*outputgap 	                                     //*
+           + cofintoutb1*outputgap(-1)                                   //*
+           + cofintoutb2*outputgap(-2)                                   //*
+           + cofintoutb3*outputgap(-3)                                   //*
+           + cofintoutb4*outputgap(-4)                                   //*
+           + cofintoutf1*outputgap(+1)                                   //*
+           + cofintoutf2*outputgap(+2)                                   //*
+           + cofintoutf3*outputgap(+3)                                   //*
+           + cofintoutf4*outputgap(+4)                                   //*
+           + cofintoutp*output 	                                         //*
+           + cofintoutpb1*output(-1)                                     //*
+           + cofintoutpb2*output(-2)                                     //*
+           + cofintoutpb3*output(-3)                                     //*
+           + cofintoutpb4*output(-4)                                     //*
+           + cofintoutpf1*output(+1)                                     //*
+           + cofintoutpf2*output(+2)                                     //*
+           + cofintoutpf3*output(+3)                                     //*
+           + cofintoutpf4*output(+4)                                     //*
+           + std_r_ *interest_;                                          //*
                                                                          //*
 // Discretionary Government Spending                                     //*
                                                                          //*
@@ -497,7 +497,7 @@ gamma_midhat=gamma_midhat(-1)+pi_mi-pi_hat;
 gamma_xstar=gamma_xstar(-1)+pi_x-pistar_hat;
 mc_x=mc_x(-1)+pi_hat-pi_x-dS;
 gamma_fhat=mc_x+gamma_xstar;
-gamma_cdhat=omega_c*(gamma_mcc)^(1-eta_c)*gamma_mcdhat; 
+gamma_cdhat=omega_c*(gamma_mcc)^(1-eta_c)*gamma_mcdhat;
 gamma_idhat=omega_i*(gamma_mii)^(1-eta_i)*gamma_midhat;
 
 
@@ -540,9 +540,9 @@ rk_hatf=mu_zhat+w_barhatf+R_fhatf+H_hatf-k_hatf;
 //R_fhatf=nu*R/(nu*R+1-nu)*R_hatf(-1)+nu*(R-1)/(nu*R+1-nu)*nu_hat;
 R_fhatf=nu*R/(nu*R+1-nu)*R_hatf(-1); //without money demand shock
 
-//imported consumption goods 
+//imported consumption goods
 mc_mcf=-mc_xf-gamma_xstarf-gamma_mcdhatf;
-//imported investment goods 
+//imported investment goods
 mc_mif=-mc_xf-gamma_xstarf-gamma_midhatf;
 
 //wage equation (B5) for flexible price case, ie (2.64) log-linearized
@@ -598,7 +598,7 @@ gamma_midhatf=gamma_midhatf(-1)+pi_mif-pi_hatf;
 gamma_xstarf=gamma_xstarf(-1)+pi_xf-pistar_hatf;
 mc_xf=mc_xf(-1)+pi_hatf-pi_xf-dSf;
 gamma_fhatf=mc_xf+gamma_xstarf;
-gamma_cdhatf=omega_c*(gamma_mcc)^(1-eta_c)*gamma_mcdhatf; 
+gamma_cdhatf=omega_c*(gamma_mcc)^(1-eta_c)*gamma_mcdhatf;
 gamma_idhatf=omega_i*(gamma_mii)^(1-eta_i)*gamma_midhatf;
 
 
@@ -619,49 +619,49 @@ uf=k_hatf-k_barhatf(-1);
 
 //Shock processes
 
-//Fiscal VAR 
+//Fiscal VAR
  tauk_hat    = rho_tauk*tauk_hat(-1)    + epstauk*epsilon_tauk;
- tauw_hat    = rho_tauw*tauw_hat(-1)    + epstauw*epsilon_tauw; 
- tauy_hat    =   FisLag111*tauy_hat(-1)   + FisLag112*tauc_hat(-1) + FisLag113*g_hat(-1)   
-               + FisLag211*tauy_hat(-2)   + FisLag212*tauc_hat(-2) + FisLag213*g_hat(-2) 
+ tauw_hat    = rho_tauw*tauw_hat(-1)    + epstauw*epsilon_tauw;
+ tauy_hat    =   FisLag111*tauy_hat(-1)   + FisLag112*tauc_hat(-1) + FisLag113*g_hat(-1)
+               + FisLag211*tauy_hat(-2)   + FisLag212*tauc_hat(-2) + FisLag213*g_hat(-2)
                + FisShock22*epsilon_tauy   + FisShock23*epsilon_tauc + FisShock25*epsilon_rhog;
- 
- tauc_hat    =   FisLag121*tauy_hat(-1)   + FisLag122*tauc_hat(-1) + FisLag123*g_hat(-1)   
-               + FisLag221*tauy_hat(-2)   + FisLag222*tauc_hat(-2) + FisLag223*g_hat(-2) 
+
+ tauc_hat    =   FisLag121*tauy_hat(-1)   + FisLag122*tauc_hat(-1) + FisLag123*g_hat(-1)
+               + FisLag221*tauy_hat(-2)   + FisLag222*tauc_hat(-2) + FisLag223*g_hat(-2)
                + FisShock32*epsilon_tauy   + FisShock33*epsilon_tauc + FisShock35*epsilon_rhog;
- 
- g_hat       =   FisLag131*tauy_hat(-1)   + FisLag132*tauc_hat(-1) + FisLag133*g_hat(-1)   
-               + FisLag231*tauy_hat(-2)   + FisLag232*tauc_hat(-2) + FisLag233*g_hat(-2) 
-               + FisShock52*epsilon_tauy   + FisShock53*epsilon_tauc + FisShock55*epsilon_rhog; 
+
+ g_hat       =   FisLag131*tauy_hat(-1)   + FisLag132*tauc_hat(-1) + FisLag133*g_hat(-1)
+               + FisLag231*tauy_hat(-2)   + FisLag232*tauc_hat(-2) + FisLag233*g_hat(-2)
+               + FisShock52*epsilon_tauy   + FisShock53*epsilon_tauc + FisShock55*epsilon_rhog;
 
 //Foreign VAR
- pistar_hat  = ForLag111*pistar_hat(-1)  + ForLag112*ystar_hat(-1) + ForLag113*Rstar_hat(-1)  
-             +ForLag211*pistar_hat(-2)  + ForLag212*ystar_hat(-2) + ForLag213*Rstar_hat(-2) 	
-             +ForLag311*pistar_hat(-3)  + ForLag312*ystar_hat(-3) + ForLag313*Rstar_hat(-3) 
+ pistar_hat  = ForLag111*pistar_hat(-1)  + ForLag112*ystar_hat(-1) + ForLag113*Rstar_hat(-1)
+             +ForLag211*pistar_hat(-2)  + ForLag212*ystar_hat(-2) + ForLag213*Rstar_hat(-2)
+             +ForLag311*pistar_hat(-3)  + ForLag312*ystar_hat(-3) + ForLag313*Rstar_hat(-3)
       		+ForLag411*pistar_hat(-4)  + ForLag412*ystar_hat(-4) + ForLag413*Rstar_hat(-4) + ForShock11*epsilon_pistar + ForShock12*epsilon_ystar + ForShock13*epsilon_Rstar ;
- 
- ystar_hat = ForLag121*pistar_hat(-1)  + ForLag122*ystar_hat(-1) + ForLag123*Rstar_hat(-1)  
-             +ForLag221*pistar_hat(-2)  + ForLag222*ystar_hat(-2) + ForLag223*Rstar_hat(-2) 	
-             +ForLag321*pistar_hat(-3)  + ForLag322*ystar_hat(-3) + ForLag323*Rstar_hat(-3) 
+
+ ystar_hat = ForLag121*pistar_hat(-1)  + ForLag122*ystar_hat(-1) + ForLag123*Rstar_hat(-1)
+             +ForLag221*pistar_hat(-2)  + ForLag222*ystar_hat(-2) + ForLag223*Rstar_hat(-2)
+             +ForLag321*pistar_hat(-3)  + ForLag322*ystar_hat(-3) + ForLag323*Rstar_hat(-3)
       		+ForLag421*pistar_hat(-4)  + ForLag422*ystar_hat(-4) + ForLag423*Rstar_hat(-4) + ForShock21*epsilon_pistar + ForShock22*epsilon_ystar + ForShock23*epsilon_Rstar ;
- 
- Rstar_hat  = ForLag131*pistar_hat(-1)  + ForLag132*ystar_hat(-1) + ForLag133*Rstar_hat(-1)  
-             +ForLag231*pistar_hat(-2)  + ForLag232*ystar_hat(-2) + ForLag233*Rstar_hat(-2) 	
-             +ForLag331*pistar_hat(-3)  + ForLag332*ystar_hat(-3) + ForLag333*Rstar_hat(-3) 
+
+ Rstar_hat  = ForLag131*pistar_hat(-1)  + ForLag132*ystar_hat(-1) + ForLag133*Rstar_hat(-1)
+             +ForLag231*pistar_hat(-2)  + ForLag232*ystar_hat(-2) + ForLag233*Rstar_hat(-2)
+             +ForLag331*pistar_hat(-3)  + ForLag332*ystar_hat(-3) + ForLag333*Rstar_hat(-3)
       		+ForLag431*pistar_hat(-4)  + ForLag432*ystar_hat(-4) + ForLag433*Rstar_hat(-4) + ForShock31*epsilon_pistar + ForShock32*epsilon_ystar + ForShock33*epsilon_Rstar ;
 
 
 //Foreign VAR for flexible economy (added)
  pistar_hatf  = 0;
- 
- ystar_hatf = ForLag121*pistar_hatf(-1)  + ForLag122*ystar_hatf(-1) + ForLag123*Rstar_hatf(-1)  
-             +ForLag221*pistar_hatf(-2)  + ForLag222*ystar_hatf(-2) + ForLag223*Rstar_hatf(-2) 	
-             +ForLag321*pistar_hatf(-3)  + ForLag322*ystar_hatf(-3) + ForLag323*Rstar_hatf(-3) 
+
+ ystar_hatf = ForLag121*pistar_hatf(-1)  + ForLag122*ystar_hatf(-1) + ForLag123*Rstar_hatf(-1)
+             +ForLag221*pistar_hatf(-2)  + ForLag222*ystar_hatf(-2) + ForLag223*Rstar_hatf(-2)
+             +ForLag321*pistar_hatf(-3)  + ForLag322*ystar_hatf(-3) + ForLag323*Rstar_hatf(-3)
       		+ForLag421*pistar_hatf(-4)  + ForLag422*ystar_hatf(-4) + ForLag423*Rstar_hatf(-4) + 0*epsilon_pistar + ForShock22*epsilon_ystar + ForShock23*epsilon_Rstar ;
- 
- Rstar_hatf  = ForLag131*pistar_hatf(-1)  + ForLag132*ystar_hatf(-1) + ForLag133*Rstar_hatf(-1)  
-             +ForLag231*pistar_hatf(-2)  + ForLag232*ystar_hatf(-2) + ForLag233*Rstar_hatf(-2) 	
-             +ForLag331*pistar_hatf(-3)  + ForLag332*ystar_hatf(-3) + ForLag333*Rstar_hatf(-3) 
+
+ Rstar_hatf  = ForLag131*pistar_hatf(-1)  + ForLag132*ystar_hatf(-1) + ForLag133*Rstar_hatf(-1)
+             +ForLag231*pistar_hatf(-2)  + ForLag232*ystar_hatf(-2) + ForLag233*Rstar_hatf(-2)
+             +ForLag331*pistar_hatf(-3)  + ForLag332*ystar_hatf(-3) + ForLag333*Rstar_hatf(-3)
       		+ForLag431*pistar_hatf(-4)  + ForLag432*ystar_hatf(-4) + ForLag433*Rstar_hatf(-4) + 0*epsilon_pistar + ForShock32*epsilon_ystar + ForShock33*epsilon_Rstar ;
 
 
@@ -681,7 +681,7 @@ zeta_c=rho_zetac*zeta_c(-1)+epsilon_zetac;
 zeta_h=rho_zetah*zeta_h(-1)+epsilon_zetah;
 phi_tilde=rho_phitilde*phi_tilde(-1)+epsilon_phitilde;
 pi_bar=rho_pibar*pi_bar(-1)+epsilon_pibar;
-end; 
+end;
 
 shocks;
 //Government

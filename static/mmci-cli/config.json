@@ -1,19 +1,14 @@
 {
   "dynare": "/usr/lib/dynare",
   "rules": [
-    "CEE",
-    "CMR"
+    "CEE"
   ],
   "models": [
-    "EA_AWM05"
+    "EA_PV16"
   ],
-  "msr": false,
+  "msr": true,
   "usr": false,
   "options": {
-    "shocks": [
-      "interest_",
-      "fiscal_"
-    ],
     "gain": 0.01,
     "horizon": 20
   }

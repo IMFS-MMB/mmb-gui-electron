@@ -1,7 +1,7 @@
 //**************************************************************************
 // A New Comparative Approach to Macroeconomic Modeling and Policy Analysis
 //
-// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and 
+// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and
 // Maik Wolters
 //
 // Working Paper, 2009
@@ -13,7 +13,7 @@
 // Poutineau, J. C., & Vermandel, G. (2015). Financial frictions and the extensive margin of activity.
 // Research in Economics, 69(4), 525-554.
 
-// Original code provided by Gauthier Vermandel 
+// Original code provided by Gauthier Vermandel
 
 // Last edited: Felix Strobel 21/02/2019
 
@@ -21,40 +21,40 @@
 % 1. Defining variables
 %----------------------------------------------------------------
 
-var 
+var
 //**************************************************************************
 // Modelbase Variables                                                   //*
         interest inflation inflationq outputgap output                   //*
 //**************************************************************************
     uh uc w r rr pi v d de n ne mk mc Psi pic p c y yd h he hc z k i q u Phiu ku rK rL l nn s omega mcL eta w_sup w_inf mut_w wh pi_w mut_p mut_L
-	s_a s_g s_b s_i s_l s_n s_p s_w s_e s_r	
+	s_a s_g s_b s_i s_l s_n s_p s_w s_e s_r
 	ln_yd ln_y ln_c ln_n ln_r ln_pi ln_i ln_ne ln_rL ln_l ln_p ln_v
 	y_obs c_obs i_obs pi_obs r_obs w_obs h_obs ne_obs rL_obs l_obs
     uhn ucn wn rrn vn dn den nnn nen  mcn pn cn yn ydn hn hen hcn zn kn in qn un Phiun kun rKn rLn lnn nnnn sn omegan mcLn etan w_supn w_infn mut_wn whn pi_wn mut_Ln ln_yn;
 
-varexo 
+varexo
 //**************************************************************************
-// Modelbase Shocks                                                      //*       
+// Modelbase Shocks                                                      //*
        interest_ fiscal_                                                 //*
 //**************************************************************************
 e_a e_b e_i e_l e_n e_p e_w e_m e_e;
 
-parameters	
+parameters
 //**************************************************************************
-// Modelbase Parameters                                                  
-                                                                         
-        cofintintb1 cofintintb2 cofintintb3 cofintintb4                  
-        cofintinf0 cofintinfb1 cofintinfb2 cofintinfb3 cofintinfb4       
-        cofintinff1 cofintinff2 cofintinff3 cofintinff4                  
-        cofintout cofintoutb1 cofintoutb2 cofintoutb3 cofintoutb4        
-        cofintoutf1 cofintoutf2 cofintoutf3 cofintoutf4   
-        cofintoutp cofintoutpb1 cofintoutpb2 cofintoutpb3 cofintoutpb4   
-        cofintoutpf1 cofintoutpf2 cofintoutpf3 cofintoutpf4                           
-        std_r_ std_r_quart coffispol           
-//************************************************************************** 
+// Modelbase Parameters
+
+        cofintintb1 cofintintb2 cofintintb3 cofintintb4
+        cofintinf0 cofintinfb1 cofintinfb2 cofintinfb3 cofintinfb4
+        cofintinff1 cofintinff2 cofintinff3 cofintinff4
+        cofintout cofintoutb1 cofintoutb2 cofintoutb3 cofintoutb4
+        cofintoutf1 cofintoutf2 cofintoutf3 cofintoutf4
+        cofintoutp cofintoutpb1 cofintoutpb2 cofintoutpb3 cofintoutpb4
+        cofintoutpf1 cofintoutpf2 cofintoutpf3 cofintoutpf4
+        std_r_ std_r_quart coffispol
+//**************************************************************************
 
             beta alpha delta mu sigmaL chi Fe kappa_P xi_P epsilon gy hh chi_I chi_E psi rho phi_pi phi_pic phi_y phi_dy
-			L_QK R eta_d H RL sigmaC obsFactor theta gamma wmin ka TT phi N_K varkappa kappa_L mu_B mu_L mu_P mu_W kappa_W xi_W u_p u_w 
+			L_QK R eta_d H RL sigmaC obsFactor theta gamma wmin ka TT phi N_K varkappa kappa_L mu_B mu_L mu_P mu_W kappa_W xi_W u_p u_w
 			rho_a rho_g rho_b rho_i rho_l rho_n rho_p rho_w rho_e rho_r rho_ag  mkn Psin rn pin picn mut_pn;
 
 %----------------------------------------------------------------
@@ -64,16 +64,16 @@ parameters
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           
-cd('..');                                                                
-load policy_param.mat;                                                   
-for i=1:33                                                               
-    deep_parameter_name = M_.param_names(i,:);                           
-    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])                  
-end                                                                      
-cd(thispath);  
+thispath = pwd;
+cd('..');
+load policy_param.mat;
+for i=1:33
+    deep_parameter_name = M_.param_names(i,:);
+    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
+end
+cd(thispath);
     std_r_=1;
-                                                                         
+
 // Definition of Discretionary Fiscal Policy Parameter                   //*
 coffispol = 0;                                                           //*
 
@@ -128,8 +128,8 @@ xi_P		= 0.256415364089944;		% Price indexation
 u_p			= 0.353493870232101;		% ARMA price
 u_w			= 0.880087358281597;		% ARMA wage
 varkappa	= 0.212721156496507;		% external finance prem elasticity
-kappa_L		= 13.105140377417609;		% credit rate adjustment cost	
-mu_B 		= 0.074227073284695;		% Auditing cost 
+kappa_L		= 13.105140377417609;		% credit rate adjustment cost
+mu_B 		= 0.074227073284695;		% Auditing cost
 kappa_P 	= 52.900789993278337;		% Price adjustment cost
 hh			= 0.633600823023379;		% Consumption habits
 chi_I		= 8.052744763552568;		% Investment cost
@@ -148,11 +148,11 @@ chi_E 		= 0.911043517537755;		% Free entry cost
 steady_state_model;
 % modelbase variables
 %*************************************************************************
-interest     = 0;                                              //* 
-inflation    = 0;                                 //* 
-inflationq   = 0;                                                    //* 
-outputgap    = 0;                                                     //* 
-output       = 0;                                    //* 
+interest     = 0;                                              //*
+inflation    = 0;                                 //*
+inflationq   = 0;                                                    //*
+outputgap    = 0;                                                     //*
+output       = 0;                                    //*
 %*************************************************************************
 	q 		= 1;	%	Steady state Tobin's q normalized to one
 	r 		= R-1;	%	nominal rate
@@ -160,13 +160,13 @@ output       = 0;                                    //*
 	h		= H;	% 	hours worked
 	rL 		= RL-1; %	calibrated credit rate
 	% threshold - eq B.35
-	wmin 	= L_QK;	
+	wmin 	= L_QK;
 	% shape pareto distribution - eq B.36
 	ka		= 1/L_QK;
 	% threshold - eq B.37
 	omega 	= wmin*(1-eta_d)^(-1/ka);
 	% capital rate of return - eq B.38
-	rK 		= ((1+rL)/omega)*(1-L_QK)-1;	
+	rK 		= ((1+rL)/omega)*(1-L_QK)-1;
 	% marginal product capital - eq B.39
 	z		= 1+rK -(1-delta);
 	% surviving rate entreprneurs
@@ -245,7 +245,7 @@ output       = 0;                                    //*
 	% threshold - eq B.37
 	omegan 	= wmin*(1-eta_d)^(-1/ka);
 	% capital rate of return - eq B.38
-	rKn 		= ((1+rLn)/omegan)*(1-L_QK)-1;	
+	rKn 		= ((1+rLn)/omegan)*(1-L_QK)-1;
 	% marginal product capital - eq B.39
 	zn		= 1+rKn -(1-delta);
 	% surviving rate entreprneurs
@@ -299,54 +299,54 @@ output       = 0;                                    //*
 
 end;
 
-model; 
+model;
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables//*
-                                                                        //* 
-interest     = 400*(r-STEADY_STATE(r));                                              //* 
-inflation    = inflationq +inflationq(-1) + inflationq(-2) +inflationq(-3);                                 //* 
-inflationq   = 400*ln_pi;                                                    //* 
-outputgap    = ln_y-ln_yn;                                                     //* 
-output       = ln_y;                                    //* 
+                                                                        //*
+interest     = 400*(r-STEADY_STATE(r));                                              //*
+inflation    = inflationq +inflationq(-1) + inflationq(-2) +inflationq(-3);                                 //*
+inflationq   = 400*ln_pi;                                                    //*
+outputgap    = ln_y-ln_yn;                                                     //*
+output       = ln_y;                                    //*
 
 //**************************************************************************
 %	r-STEADY_STATE(r)= rho*(r(-1)-STEADY_STATE(r)) + (1-rho)*(phi_pi*(pic-1) + phi_pic*(pic-1) +  phi_y*(y-STEADY_STATE(y)) ) + phi_dy*(y-y(-1)) + s_r;
 %/*
-//**************************************************************************                                                                    
+//**************************************************************************
 // Monetary Policy                                                        //*
                                                                           //*
- interest =   cofintintb1*interest(-1)                                    //* 
-            + cofintintb2*interest(-2)                                    //* 
-            + cofintintb3*interest(-3)                                    //* 
-            + cofintintb4*interest(-4)                                    //* 
-            + cofintinf0*inflationq                                       //* 
-            + cofintinfb1*inflationq(-1)                                  //* 
-            + cofintinfb2*inflationq(-2)                                  //* 
-            + cofintinfb3*inflationq(-3)                                  //* 
-            + cofintinfb4*inflationq(-4)                                  //* 
-            + cofintinff1*inflationq(+1)                                  //* 
-            + cofintinff2*inflationq(+2)                                  //* 
-            + cofintinff3*inflationq(+3)                                  //* 
-            + cofintinff4*inflationq(+4)                                  //* 
-            + cofintout*outputgap 	                                     //* 
-            + cofintoutb1*outputgap(-1)                                   //* 
-            + cofintoutb2*outputgap(-2)                                   //* 
-            + cofintoutb3*outputgap(-3)                                   //* 
-            + cofintoutb4*outputgap(-4)                                   //* 
-            + cofintoutf1*outputgap(+1)                                   //* 
-            + cofintoutf2*outputgap(+2)                                   //* 
-            + cofintoutf3*outputgap(+3)                                   //* 
+ interest =   cofintintb1*interest(-1)                                    //*
+            + cofintintb2*interest(-2)                                    //*
+            + cofintintb3*interest(-3)                                    //*
+            + cofintintb4*interest(-4)                                    //*
+            + cofintinf0*inflationq                                       //*
+            + cofintinfb1*inflationq(-1)                                  //*
+            + cofintinfb2*inflationq(-2)                                  //*
+            + cofintinfb3*inflationq(-3)                                  //*
+            + cofintinfb4*inflationq(-4)                                  //*
+            + cofintinff1*inflationq(+1)                                  //*
+            + cofintinff2*inflationq(+2)                                  //*
+            + cofintinff3*inflationq(+3)                                  //*
+            + cofintinff4*inflationq(+4)                                  //*
+            + cofintout*outputgap 	                                     //*
+            + cofintoutb1*outputgap(-1)                                   //*
+            + cofintoutb2*outputgap(-2)                                   //*
+            + cofintoutb3*outputgap(-3)                                   //*
+            + cofintoutb4*outputgap(-4)                                   //*
+            + cofintoutf1*outputgap(+1)                                   //*
+            + cofintoutf2*outputgap(+2)                                   //*
+            + cofintoutf3*outputgap(+3)                                   //*
             + cofintoutf4*outputgap(+4)                                   //*
-            + cofintoutp*output 	                                         //* 
-            + cofintoutpb1*output(-1)                                     //* 
-            + cofintoutpb2*output(-2)                                     //* 
-            + cofintoutpb3*output(-3)                                     //* 
-            + cofintoutpb4*output(-4)                                     //* 
-            + cofintoutpf1*output(+1)                                     //* 
-            + cofintoutpf2*output(+2)                                     //* 
-            + cofintoutpf3*output(+3)                                     //* 
-            + cofintoutpf4*output(+4)                                     //* 
-            + std_r_ *interest_;                                          //* 
+            + cofintoutp*output 	                                         //*
+            + cofintoutpb1*output(-1)                                     //*
+            + cofintoutpb2*output(-2)                                     //*
+            + cofintoutpb3*output(-3)                                     //*
+            + cofintoutpb4*output(-4)                                     //*
+            + cofintoutpf1*output(+1)                                     //*
+            + cofintoutpf2*output(+2)                                     //*
+            + cofintoutpf3*output(+3)                                     //*
+            + cofintoutpf4*output(+4)                                     //*
+            + std_r_ *interest_;                                          //*
 %*/
 	%%% HOUSEHOLD
 	% marginal utility of consumption (eq B.1)
@@ -354,7 +354,7 @@ output       = ln_y;                                    //*
 	% Euler bond (eq B.2)
 	beta*uc(+1)/uc*(1+rr)*exp(s_b)=1;
 	% Euler shares (eq B.3)
-	v = beta*uc(+1)/uc*(1-delta)*(d(+1)+v(+1) + theta/100*de(+1) );	
+	v = beta*uc(+1)/uc*(1-delta)*(d(+1)+v(+1) + theta/100*de(+1) );
 	% marginal disutility of labor (partially in eq B.4)
 	uh = chi*h^sigmaL;
 	% labor supply (eq B.4)
@@ -366,17 +366,17 @@ output       = ln_y;                                    //*
 	% varying markup (see page 533)
 	mut_w = mu_W*exp(s_w);
 	% wage decision (eq B.6)
-	w = mut_w*wh 
+	w = mut_w*wh
 		- (mut_w-1)*w*kappa_W*( pi_w*pi + (pi_w*pic-(xi_W*pi(-1)+(1-xi_W))) )*(pi_w*pic-(xi_W*pic(-1)+(1-xi_W)))
 		+ (mut_w-1)*w(+1)/(pi_w(+1)*pic(+1))*beta*uc(+1)/uc*kappa_W*( pi_w(+1)*pic(+1) - (xi_W*pi+(1-xi_W)) )*(pi_w(+1)*pic(+1))^2;
 	% real wage growth wage // axiliary variable
 	pi_w = w/w(-1);
-	
+
 	%%% INSTALLED FIRMS
 	% production function (eq B.7)
 	n*y = exp(s_a)*(ku^alpha)*(hc^(1-alpha));
 	% Capital utilized (eq B.8)
-	ku = u*k(-1); 
+	ku = u*k(-1);
 	% marginal cost (eq B.9)
 	mc = (1/exp(s_a))*(z/alpha)^alpha*(w/(1-alpha))^(1-alpha);
 	% inputs cost minimization (eq B.10)
@@ -391,11 +391,11 @@ output       = ln_y;                                    //*
 	mut_p = mu_P*exp(s_p);
 	% dividends (eq B.13)
 	d = y*p*(1-kappa_P/2*(pi-(xi_P*pi(-1)+(1-xi_P)))^2-1/mk);
-	
+
 	%%% STARTUPS
 	% demand from entrant (eq B.14)
 	ne*Fe = exp(s_a)*he;
-	
+
     %%% ENTREPRENEUR
 	% balance sheet (eq B.16)
 	l + nn = q*k + gamma*w*he;
@@ -423,7 +423,7 @@ output       = ln_y;                                    //*
 	rL = mut_L*mcL - (mut_L-1)*kappa_L*rL*(rL/rL(-1)-1)*rL/rL(-1) + kappa_L*(mut_L-1)*rL*beta*uc(+1)/uc*l(+1)/l*(rL(+1)/rL-1)*rL(+1)/rL;
 	% Exogenous bank time varying markup (see text between eq14 and eq15)
 	mut_L = mu_L*exp(s_l);
-	
+
 	%%% CAPITAL SUPPLIERS
 	% investment equation (eq B.23)
 	exp(s_i)*(1-(chi_I/2)*(i/i(-1)-1)^2)*i = k-(1-delta)*k(-1);
@@ -453,16 +453,16 @@ output       = ln_y;                                    //*
 	h = hc + he;
 	% law of motion of firms number (eq B.34)
 	n = (1-delta)*(n(-1)+exp(s_e(-1))*(1-chi_E/2*(ne/ne(-1)-1)^2 )*ne(-1));
-	
+
     // RBC counterpart
-    
+
     %%% HOUSEHOLD
 	% marginal utility of consumption (eq B.1)
 	ucn = (cn-hh*cn(-1))^-sigmaC;
 	% Euler bond (eq B.2)
 	beta*ucn(+1)/ucn*(1+rrn)*exp(s_b)=1;
 	% Euler shares (eq B.3)
-	vn = beta*ucn(+1)/ucn*(1-delta)*(dn(+1)+vn(+1) + theta/100*den(+1) );	
+	vn = beta*ucn(+1)/ucn*(1-delta)*(dn(+1)+vn(+1) + theta/100*den(+1) );
 	% marginal disutility of labor (partially in eq B.4)
 	uhn = chi*hn^sigmaL;
 	% labor supply (eq B.4)
@@ -474,29 +474,29 @@ output       = ln_y;                                    //*
 	% varying markup (see page 533)
 	mut_wn = mu_W;%*exp(s_w);
 	% wage decision (eq B.6)
-	wn = mut_wn*whn; 
+	wn = mut_wn*whn;
 	% real wage growth wage // axiliary variable
 	pi_wn = wn/wn(-1);
-	
+
 	%%% INSTALLED FIRMS
 	% production function (eq B.7)
 	nnn*yn = exp(s_a)*(kun^alpha)*(hcn^(1-alpha));
 	% Capital utilized (eq B.8)
-	kun = un*kn(-1); 
+	kun = un*kn(-1);
 	% marginal cost (eq B.9)
 	mcn = (1/exp(s_a))*(zn/alpha)^alpha*(wn/(1-alpha))^(1-alpha);
 	% inputs cost minimization (eq B.10)
 	wn*hcn/(1-alpha) = zn*kun/alpha;
 	% relative price as a markup over the marginal cost (eq B.11)
 	pn = mkn*mcn;
-	
+
 	% dividends (eq B.13)
 	dn = yn*pn*(1-kappa_P/2*(pin-(xi_P*pin(-1)+(1-xi_P)))^2-1/mkn);
-	
+
 	%%% STARTUPS
 	% demand from entrant (eq B.14)
 	nen*Fe = exp(s_a)*hen;
-	
+
     %%% ENTREPRENEUR
 	% balance sheet (eq B.16)
 	lnn + nnnn = qn*kn + gamma*wn*hen;
@@ -524,7 +524,7 @@ output       = ln_y;                                    //*
 	rLn = mut_Ln*mcLn ;%- (mut_Ln-1)*kappa_L*rLn*(rLn/rLn(-1)-1)*rLn/rLn(-1) + kappa_L*(mut_Ln-1)*rLn*beta*ucn(+1)/ucn*lnn(+1)/lnn*(rLn(+1)/rLn-1)*rLn(+1)/rLn;
 	% Exogenous bank time varying markup (see text between eq14 and eq15)
 	mut_Ln = mu_L;%*exp(s_l);
-	
+
 	%%% CAPITAL SUPPLIERS
 	% investment equation (eq B.23)
 	exp(s_i)*(1-(chi_I/2)*(in/in(-1)-1)^2)*in = kn-(1-delta)*kn(-1);
@@ -548,8 +548,8 @@ output       = ln_y;                                    //*
 	hn = hcn + hen;
 	% law of motion of firms number (eq B.34)
 	nnn = (1-delta)*(nnn(-1)+exp(s_e(-1))*(1-chi_E/2*(nen/nen(-1)-1)^2 )*nen(-1));
-	
-    
+
+
 	%%% SHOCKS see page 536
 	% Markup shocks are multiplied by 100 for prior simplificity purposes // does not affect the result
 	s_a = rho_a*s_a(-1)+e_a/obsFactor;						% productivity AR(1)
@@ -562,8 +562,8 @@ output       = ln_y;                                    //*
 	s_w = rho_w*s_w(-1)+100*(e_w-u_w*e_w(-1))/obsFactor;	% wage markup ARMA(1,1
 	s_e = rho_e*s_e(-1)+e_e/obsFactor;						% entry AR(1)
 	s_r = rho_r*s_r(-1)+e_m/obsFactor;						% monetary policy AR(1)
-	
-	
+
+
 	% Measurement equations as defined in eq A.1
 	y_obs = obsFactor*log(yd/yd(-1));
 	c_obs = obsFactor*log(c/c(-1));
@@ -575,7 +575,7 @@ output       = ln_y;                                    //*
 	ne_obs = obsFactor*( log(n/n(-1)/(1-delta)-1) - log(1/(1-delta)-1) );
 	rL_obs = obsFactor*((1+rL)/(1+r)-(1+STEADY_STATE(rL))/(1+STEADY_STATE(r)));%
 	l_obs = obsFactor*log(l/l(-1));
-	
+
 	% Setting some key variables in log deviations from deterministic ss for plotting purposes
 	ln_yd	= log(yd/STEADY_STATE(yd))*100;
 	ln_y	= log(y/STEADY_STATE(y))*100;
@@ -589,7 +589,7 @@ output       = ln_y;                                    //*
 	ln_c	= log(c/STEADY_STATE(c))*100;
 	ln_n	= log(n/STEADY_STATE(n))*100;
 	ln_r	= log(r/STEADY_STATE(r))*100;
-    
+
     ln_yn	= log(yn/STEADY_STATE(yn))*100;  // natural output
 
 end;

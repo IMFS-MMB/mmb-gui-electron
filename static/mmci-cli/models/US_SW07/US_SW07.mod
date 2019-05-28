@@ -1,7 +1,7 @@
 //**************************************************************************
 // A New Comparative Approach to Macroeconomic Modeling and Policy Analysis
 //
-// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and 
+// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and
 // Maik Wolters
 //
 // Working Paper, 2009
@@ -16,7 +16,7 @@
 // Last edited: 10/08/26 by S. Schmidt
 
 
-var 
+var
 labobs 	% observed labor
 robs 	% observed interest rate
 pinfobs	% observed inflation change
@@ -71,17 +71,17 @@ eb    % wedge between FFR and return on assets (risk premium)
 eqs   % investment-specific technology shock (epsilon^i_t in the paper)
 em    % monetary policy shock
 epinf % price markup shock
-ew    % wage markup shock 
+ew    % wage markup shock
 
 
 //**************************************************************************
-// Modelbase Shocks                                                      //*       
+// Modelbase Shocks                                                      //*
        interest_ fiscal_;                                                //*
 //**************************************************************************
-  
- 
-parameters 
-//************************************************************************** 
+
+
+parameters
+//**************************************************************************
 // Modelbase Parameters                                                  //*
                                                                          //*
         cofintintb1 cofintintb2 cofintintb3 cofintintb4                  //*
@@ -93,10 +93,10 @@ parameters
         cofintoutpf1 cofintoutpf2 cofintoutpf3 cofintoutpf4              //*
         std_r_ std_r_quart coffispol                                     //*
 //**************************************************************************
-curvw cgy curvp constelab constepinf constebeta cmaw cmap calfa 
-czcap cbeta csadjcost ctou csigma chabb ccs cinvs cfc cindw cprobw 
-cindp cprobp csigl clandaw crdpi crpi crdy cry crr crhoa crhob 
-crhog crhoqs crhoms crhopinf crhow ctrend cg cgamma clandap cbetabar 
+curvw cgy curvp constelab constepinf constebeta cmaw cmap calfa
+czcap cbeta csadjcost ctou csigma chabb ccs cinvs cfc cindw cprobw
+cindp cprobp csigl clandaw crdpi crpi crdy cry crr crhoa crhob
+crhog crhoqs crhoms crhopinf crhow ctrend cg cgamma clandap cbetabar
 cr cpie crk cw cikbar cik clk cky ciy ccy crkky cwhlc cwly conster;
 
 
@@ -120,10 +120,10 @@ calfa=0.1901; 			% labor share in production
 
 csigma=1.3808; 	   % inverse of intertemporal elasticity of substitution
 cfc=1.6064; 	   % Capital phi in the paper (fixed costs in the production function)
-cgy=0.5187; 	   % rho_ga in paper (parameter adjusting the exogenous spending component for TFP caused changes in (exogenous) net exports) 
+cgy=0.5187; 	   % rho_ga in paper (parameter adjusting the exogenous spending component for TFP caused changes in (exogenous) net exports)
 
 csadjcost= 5.7606; % investment adjustment cost
-chabb=    0.7133;  % habit persistence 
+chabb=    0.7133;  % habit persistence
 cprobw=   0.7061;  % calvo parameter labor market
 csigl=    1.8383;  % elasticity of labor supply w.r.t. real wage
 cprobp=   0.6523;  % calvo parameter goods market
@@ -143,7 +143,7 @@ crhoqs=   0.7113;
 crhoms=   0.1479;
 crhopinf= 0.8895;
 crhow=    0.9688;
-% Moving average 
+% Moving average
 cmap =    0.7010; % Moving average part of price mark-up disturbance
 cmaw  =   0.8503; % Moving average part of wage mark-up disturbance
 
@@ -160,7 +160,7 @@ clk=((1-calfa)/calfa)*(crk/cw); %Stst labor-capital ratio
 cky=cfc*(clk)^(calfa-1);	 % StSt capital-output ratio
 ciy=cik*cky; 		 	 % StSt investment-output ratio
 ccy=1-cg-cik*cky; 	 	 % StSt consumption-output ratio
-crkky=crk*cky;          % 
+crkky=crk*cky;          %
 cwhlc=(1/clandaw)*(1-calfa)/calfa*crk*cky/ccy;  % coefficient in Euler equation
 cwly=1-crk*cky;
 conster=(cr-1)*100; % constant of nominal interest rate in observation equation
@@ -169,20 +169,20 @@ conster=(cr-1)*100; % constant of nominal interest rate in observation equation
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           
-cd('..');                                                                
-load policy_param.mat;                                                   
-for i=1:33                                                               
-    deep_parameter_name = M_.param_names(i,:);                           
-    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])                  
-end                                                                      
-cd(thispath);                                                            
-                                                                         
+thispath = pwd;
+cd('..');
+load policy_param.mat;
+for i=1:33
+    deep_parameter_name = M_.param_names(i,:);
+    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
+end
+cd(thispath);
+
 // Definition of Discretionary Fiscal Policy Parameter                   //*
 coffispol = 1;                                                           //*
 //**************************************************************************
 
-model(linear); 
+model(linear);
 
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables //*
@@ -196,43 +196,43 @@ fispol     = eg;                                                         //*
 //**************************************************************************
 
 
-//**************************************************************************                                                                    
+//**************************************************************************
 // Policy Rule                                                           //*
                                                                          //*
 // Monetary Policy                                                       //*
                                                                          //*
-interest =   cofintintb1*interest(-1)                                    //* 
-           + cofintintb2*interest(-2)                                    //* 
-           + cofintintb3*interest(-3)                                    //* 
-           + cofintintb4*interest(-4)                                    //* 
-           + cofintinf0*inflationq                                       //* 
-           + cofintinfb1*inflationq(-1)                                  //* 
-           + cofintinfb2*inflationq(-2)                                  //* 
-           + cofintinfb3*inflationq(-3)                                  //* 
-           + cofintinfb4*inflationq(-4)                                  //* 
-           + cofintinff1*inflationq(+1)                                  //* 
-           + cofintinff2*inflationq(+2)                                  //* 
-           + cofintinff3*inflationq(+3)                                  //* 
-           + cofintinff4*inflationq(+4)                                  //* 
-           + cofintout*outputgap 	                                     //* 
-           + cofintoutb1*outputgap(-1)                                   //* 
-           + cofintoutb2*outputgap(-2)                                   //* 
-           + cofintoutb3*outputgap(-3)                                   //* 
-           + cofintoutb4*outputgap(-4)                                   //* 
-           + cofintoutf1*outputgap(+1)                                   //* 
-           + cofintoutf2*outputgap(+2)                                   //* 
-           + cofintoutf3*outputgap(+3)                                   //* 
-           + cofintoutf4*outputgap(+4)                                   //* 
-           + cofintoutp*output 	                                         //* 
-           + cofintoutpb1*output(-1)                                     //* 
-           + cofintoutpb2*output(-2)                                     //* 
-           + cofintoutpb3*output(-3)                                     //* 
-           + cofintoutpb4*output(-4)                                     //* 
-           + cofintoutpf1*output(+1)                                     //* 
-           + cofintoutpf2*output(+2)                                     //* 
-           + cofintoutpf3*output(+3)                                     //* 
-           + cofintoutpf4*output(+4)                                     //* 
-           + std_r_ *interest_;                                          //* 
+interest =   cofintintb1*interest(-1)                                    //*
+           + cofintintb2*interest(-2)                                    //*
+           + cofintintb3*interest(-3)                                    //*
+           + cofintintb4*interest(-4)                                    //*
+           + cofintinf0*inflationq                                       //*
+           + cofintinfb1*inflationq(-1)                                  //*
+           + cofintinfb2*inflationq(-2)                                  //*
+           + cofintinfb3*inflationq(-3)                                  //*
+           + cofintinfb4*inflationq(-4)                                  //*
+           + cofintinff1*inflationq(+1)                                  //*
+           + cofintinff2*inflationq(+2)                                  //*
+           + cofintinff3*inflationq(+3)                                  //*
+           + cofintinff4*inflationq(+4)                                  //*
+           + cofintout*outputgap 	                                     //*
+           + cofintoutb1*outputgap(-1)                                   //*
+           + cofintoutb2*outputgap(-2)                                   //*
+           + cofintoutb3*outputgap(-3)                                   //*
+           + cofintoutb4*outputgap(-4)                                   //*
+           + cofintoutf1*outputgap(+1)                                   //*
+           + cofintoutf2*outputgap(+2)                                   //*
+           + cofintoutf3*outputgap(+3)                                   //*
+           + cofintoutf4*outputgap(+4)                                   //*
+           + cofintoutp*output 	                                         //*
+           + cofintoutpb1*output(-1)                                     //*
+           + cofintoutpb2*output(-2)                                     //*
+           + cofintoutpb3*output(-3)                                     //*
+           + cofintoutpb4*output(-4)                                     //*
+           + cofintoutpf1*output(+1)                                     //*
+           + cofintoutpf2*output(+2)                                     //*
+           + cofintoutpf3*output(+3)                                     //*
+           + cofintoutpf4*output(+4)                                     //*
+           + std_r_ *interest_;                                          //*
                                                                          //*
 // Discretionary Government Spending                                     //*
                                                                          //*
@@ -254,7 +254,7 @@ kf =  kpf(-1)+zcapf ;
 
 invef = (1/(1+cbetabar*cgamma))* (  invef(-1) + cbetabar*cgamma*invef(1)+(1/(cgamma^2*csadjcost))*pkf ) +qs ;
 
-%Equation for the value of capital 
+%Equation for the value of capital
 pkf = -rrf-0*b+(1/((1-chabb/cgamma)/(csigma*(1+chabb/cgamma))))*b +(crk/(crk+(1-ctou)))*rkf(1) +  ((1-ctou)/(crk+(1-ctou)))*pkf(1) ;
 
 //consumption Euler equation
@@ -273,11 +273,11 @@ kpf =  (1-cikbar)*kpf(-1)+(cikbar)*invef + (cikbar)*(cgamma^2*csadjcost)*qs ;
 // sticky price - wage economy
           //marginal cost
 	      mc =  calfa*rk+(1-calfa)*(w) - 1*a - 0*(1-calfa)*a ;
-          // capital utilization 
+          // capital utilization
 	      zcap =  (1/(czcap/(1-czcap)))* rk ;
           //rental rate of capital
 	      rk =  w+lab-k ;
-          // Capital installed used one period later in production 
+          // Capital installed used one period later in production
 	      k =  kp(-1)+zcap ;
           //investment Euler equation
 	      inve = (1/(1+cbetabar*cgamma))* (  inve(-1) + cbetabar*cgamma*inve(1)+(1/(cgamma^2*csadjcost))*pk ) +qs ;
@@ -290,15 +290,15 @@ kpf =  (1-cikbar)*kpf(-1)+(cikbar)*invef + (cikbar)*(cgamma^2*csadjcost)*qs ;
           // aggregate production function
 	      y = cfc*( calfa*k+(1-calfa)*lab +a );
           //Phillips Curve
-	      pinf =  (1/(1+cbetabar*cgamma*cindp)) * ( cbetabar*cgamma*pinf(1) +cindp*pinf(-1) 
-               +((1-cprobp)*(1-cbetabar*cgamma*cprobp)/cprobp)/((cfc-1)*curvp+1)*(mc)  )  + spinf ; 
+	      pinf =  (1/(1+cbetabar*cgamma*cindp)) * ( cbetabar*cgamma*pinf(1) +cindp*pinf(-1)
+               +((1-cprobp)*(1-cbetabar*cgamma*cprobp)/cprobp)/((cfc-1)*curvp+1)*(mc)  )  + spinf ;
 	      w =  (1/(1+cbetabar*cgamma))*w(-1)
                +(cbetabar*cgamma/(1+cbetabar*cgamma))*w(1)
                +(cindw/(1+cbetabar*cgamma))*pinf(-1)
                -(1+cbetabar*cgamma*cindw)/(1+cbetabar*cgamma)*pinf
                +(cbetabar*cgamma)/(1+cbetabar*cgamma)*pinf(1)
                +(1-cprobw)*(1-cbetabar*cgamma*cprobw)/((1+cbetabar*cgamma)*cprobw)*(1/((clandaw-1)*curvw+1))*
-               (csigl*lab + (1/(1-chabb/cgamma))*c - ((chabb/cgamma)/(1-chabb/cgamma))*c(-1) -w) 
+               (csigl*lab + (1/(1-chabb/cgamma))*c - ((chabb/cgamma)/(1-chabb/cgamma))*c(-1) -w)
                + 1*sw ;
           //Monetary Policy Rule
 	      //r =  crpi*(1-crr)*pinf +cry*(1-crr)*(y-yf) +crdy*(y-yf-y(-1)+yf(-1))+crr*r(-1) +ms  ;
@@ -312,7 +312,7 @@ kpf =  (1-cikbar)*kpf(-1)+(cikbar)*invef + (cikbar)*(cgamma^2*csadjcost)*qs ;
 	      spinf = crhopinf*spinf(-1) + epinfma - cmap*epinfma(-1);
 	          epinfma=epinf;
 	      sw = crhow*sw(-1) + ewma - cmaw*ewma(-1) ;
-	          ewma=ew; 
+	          ewma=ew;
           //accumulation of installed capital
 	      kp =  (1-cikbar)*kp(-1)+cikbar*inve + cikbar*cgamma^2*csadjcost*qs ;
 
@@ -327,7 +327,7 @@ pinf4= pinf + pinf(-1) + pinf(-2) + pinf(-3);	% Inflation change (cumulative ove
 robs =    1*(r) + conster;			% Interest rate
 labobs = lab + constelab;			% Labor change
 
-end; 
+end;
 
 shocks;
 var ea; 	% productivity shock
@@ -346,4 +346,4 @@ var ew;		% wage markup shock
 stderr 0.2446;
 end;
 
- //stoch_simul(irf=20) dy pinfobs robs ; 
+ //stoch_simul(irf=20) dy pinfobs robs ;

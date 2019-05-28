@@ -1,7 +1,7 @@
 //**************************************************************************
 // A New Comparative Approach to Macroeconomic Modeling and Policy Analysis
 //
-// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and 
+// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and
 // Maik Wolters
 //
 // Working Paper, 2009
@@ -10,35 +10,35 @@
 // Model: EA_GE10
 
 // Further references:
-// Gelain, Paolo. 2010. "The external finance premium in the euro area: A dynamic stochastic general equilibrium analysis" 
+// Gelain, Paolo. 2010. "The external finance premium in the euro area: A dynamic stochastic general equilibrium analysis"
 // North american Journal of Economics and finance 21, pp. 49-71.
 
 
-// This is a version of the model with financial accelerator and 
+// This is a version of the model with financial accelerator and
 // estimation with data from ECB until 2008 q3 without epi
 // and without S as a varobs (author's comment)
 
 // Last edited: 03/08/11 by M.Jancokova
 
-var   r c l inv q k nw rk y pi z mc a x eb el S g rn wp EMP ypot 
+var   r c l inv q k nw rk y pi z mc a x eb el S g rn wp EMP ypot
       cf invf qf rkf rf kf wpf lf zf mcf ug
-      //thetae; epi 
+      //thetae; epi
 
 //**************************************************************************
 // Modelbase Variables                                                   //*
    interest inflation inflationq output outputgap fispol;                //*
 //**************************************************************************
 
-varexo ux ub ul ua ulambdapi uw  
+varexo ux ub ul ua ulambdapi uw
        //uq; uthetae upi  ur
 
 //**************************************************************************
 // Modelbase Shocks                                                      //*
        interest_ fiscal_;                                                //*
 //**************************************************************************
- 
+
 parameters
-//************************************************************************** 
+//**************************************************************************
 // Modelbase Parameters                                                  //*
                                                                          //*
         cofintintb1 cofintintb2 cofintintb3 cofintintb4                  //*
@@ -51,33 +51,33 @@ parameters
         std_r_ std_r_quart coffispol                                     //*
 //**************************************************************************
              alpha beta delta theta RR S_ss rhob vkappa thetae  phim rhol rhox rhopi rhoa  NWK KNW Rk  xie
-             rpi ry  h rhog sigmal sigmac  cw  gammaw  lambdaw gammapi pis FI  phi rdeltapi rdeltay 
+             rpi ry  h rhog sigmal sigmac  cw  gammaw  lambdaw gammapi pis FI  phi rdeltapi rdeltay
              GAMMA thetaest c_y gz
              //Xi //epsilon //thetaf //rhothetae //GY //Z_ss //KY
 
             //additional local variables defined
-            Z_ss mc_ss abar w_ss l_k k_y inv_y GY c_kap kap_ss 
-            cons_ss inv_ss Y_ss lab_ss KY ZF_ss mcF_ss wF_ss l_kF 
+            Z_ss mc_ss abar w_ss l_k k_y inv_y GY c_kap kap_ss
+            cons_ss inv_ss Y_ss lab_ss KY ZF_ss mcF_ss wF_ss l_kF
             k_yF inv_yF g_yF c_kF kapF_ss consF_ss invF_ss yF_ss labF_ss KYF;
 
 
 //calibrated parameters
 
-beta=0.99;                  //discount factor 
+beta=0.99;                  //discount factor
 RR=(1/beta);
-delta=0.025;                //capital depreciation rate 
+delta=0.025;                //capital depreciation rate
 S_ss=1+(0.02/4);            //SS level of the finance premium
-alpha=0.3;                  //capital share on output 
+alpha=0.3;                  //capital share on output
 Rk=S_ss*RR;
-KNW=2;                      //capital net worth ratio	
+KNW=2;                      //capital net worth ratio
 NWK=1/KNW;
-rhopi=1;        	
-lambdaw=3;                  //SS wage markup 
+rhopi=1;
+lambdaw=3;                  //SS wage markup
 //KY=8.8;
 //thetaf=0.00000001;
 //GY=0.195;
 //Z=0.04;
-thetaest=6;                 //goods elasticity of substitution 
+thetaest=6;                 //goods elasticity of substitution
 c_y=0.6;                    //consumption-output ratio
 gz=1;
 
@@ -116,7 +116,7 @@ l_k=(1-alpha)/alpha*(Z_ss/gz)/w_ss;
 k_y=l_k^(alpha-1)*(1+phi)*gz^alpha;
 inv_y=delta*l_k^(alpha-1)*(1+phi); //inv/y
 GY=1-(c_y+inv_y);
-c_kap=(1-GY)/(1+phi)*l_k^(1-alpha)-delta;  // c/k 
+c_kap=(1-GY)/(1+phi)*l_k^(1-alpha)-delta;  // c/k
 kap_ss=( w_ss*(lambdaw-1)/lambdaw*((1-h)*c_kap)^(-sigmac)*l_k^(-sigmal) )^(1/(sigmac+sigmal));
 cons_ss=c_kap*kap_ss;
 inv_ss=delta*kap_ss;
@@ -131,7 +131,7 @@ l_kF=(1-alpha)/alpha*(ZF_ss/gz)/wF_ss;
 k_yF=l_kF^(alpha-1)*(1+phi)*gz^alpha;
 inv_yF=delta*l_kF^(alpha-1)*(1+phi);
 g_yF=1-(c_y+inv_yF);
-c_kF=(1-g_yF)/(1+phi)*l_kF^(1-alpha)-delta;  //c/k 
+c_kF=(1-g_yF)/(1+phi)*l_kF^(1-alpha)-delta;  //c/k
 kapF_ss=( wF_ss*(lambdaw-1)/lambdaw*((1-h)*c_kF)^(-sigmac)*l_kF^(-sigmal) )^(1/(sigmac+sigmal));
 consF_ss=c_kF*kapF_ss;
 invF_ss=delta*kapF_ss;
@@ -143,19 +143,19 @@ KYF=kapF_ss/yF_ss;
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           
-cd('..');                                                                
-load policy_param.mat;                                                   
-for i=1:33                                                               
-    deep_parameter_name = M_.param_names(i,:);                           
-    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])                  
-end                                                                      
-cd(thispath);       
+thispath = pwd;
+cd('..');
+load policy_param.mat;
+for i=1:33
+    deep_parameter_name = M_.param_names(i,:);
+    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
+end
+cd(thispath);
                                                                          //*
 // Definition of Discretionary Fiscal Policy Parameter                   //*
                                                                          //*
 coffispol = 1/GY;                                                        //*
-//**************************************************************************      
+//**************************************************************************
 
 model;
 
@@ -198,15 +198,15 @@ interest =   cofintintb1*interest(-1)                                    //*
            + cofintoutf2*outputgap(+2)                                   //*
            + cofintoutf3*outputgap(+3)                                   //*
            + cofintoutf4*outputgap(+4)                                   //*
-           + cofintoutp*output 	                                         //* 
-           + cofintoutpb1*output(-1)                                     //* 
-           + cofintoutpb2*output(-2)                                     //* 
-           + cofintoutpb3*output(-3)                                     //* 
-           + cofintoutpb4*output(-4)                                     //* 
-           + cofintoutpf1*output(+1)                                     //* 
-           + cofintoutpf2*output(+2)                                     //* 
-           + cofintoutpf3*output(+3)                                     //* 
-           + cofintoutpf4*output(+4)                                     //* 
+           + cofintoutp*output 	                                         //*
+           + cofintoutpb1*output(-1)                                     //*
+           + cofintoutpb2*output(-2)                                     //*
+           + cofintoutpb3*output(-3)                                     //*
+           + cofintoutpb4*output(-4)                                     //*
+           + cofintoutpf1*output(+1)                                     //*
+           + cofintoutpf2*output(+2)                                     //*
+           + cofintoutpf3*output(+3)                                     //*
+           + cofintoutpf4*output(+4)                                     //*
            + std_r_ *interest_;                                          //*
                                                                          //*
 // Discretionary Government Spending                                     //*
@@ -216,7 +216,7 @@ fispol = coffispol*fiscal_;                                              //*
 
 
 // WARNING:  z IS THE MARGINAL PRODUCTIVITY OF CAPITAL AND IT IS ALSO THE RENTAL RATE OF CAPITAL
-//                HENCE IN THE PRODCTION FUNCTION AND IN THE LABOUR DEMAND EQUATION THERE IS NOT RK, 
+//                HENCE IN THE PRODCTION FUNCTION AND IN THE LABOUR DEMAND EQUATION THERE IS NOT RK,
 //                WHIHC IS THE RETURN ON CAPITAL, BUT z. (author's note)
 
 
@@ -234,16 +234,16 @@ c=(1/(1+h))*c(+1)+(h/(1+h))*c(-1)-((1-h)/((1+h)*sigmac))*(rn-pi(+1))+
 //External finance premium (Financial accelerator mechanism)
 rk(+1)=r-vkappa*(nw-q(-1)-k);
 
-//Ex-post aggregate return to capital 
-rk = (Z_ss*z+(1-delta)*q)/(1-delta+Z_ss)-q(-1); 
+//Ex-post aggregate return to capital
+rk = (Z_ss*z+(1-delta)*q)/(1-delta+Z_ss)-q(-1);
 
-//Real marginal cost 
+//Real marginal cost
 z=mc+y-k(-1);
 
-//Investment dynamics 
+//Investment dynamics
 inv=(1/(1+beta))*inv(-1)+(beta/(1+beta))*inv(+1)+((1/pis)/(1+beta))*q+x;
 
-//Production function 
+//Production function
 y/(1+phi) = alpha*(k(-1)+FI*z)+(1-alpha)*l+a;
 
 //Wage equation
@@ -251,7 +251,7 @@ wp=(beta/(1+beta))*wp(+1)+(1/(1+beta))*wp(-1)+(beta/(1+beta))*pi(+1)-((1+beta*ga
     +(gammaw/(1+beta))*pi(-1)-(1/(1+beta))*(((1-beta*cw)*(1-cw))/((1+(((1+lambdaw)*sigmal)/lambdaw))*cw))
     *(wp-sigmal*l-(sigmac/(1-h))*(c-h*c(-1))+el)+uw; //% condition on labour supply wiht wage stickiness and time varying wage mark up
 
-//Return on capital 
+//Return on capital
 l=-wp+(1+FI)*z+k(-1);
 
 //NK Phillips curve
@@ -288,7 +288,7 @@ cf=(1/(1+h))*cf(+1)+(h/(1+h))*cf(-1)-((1-h)/((1+h)*sigmac))*(rf)+
 
 rkf(+1)=rf;
 
-rkf = (ZF_ss*zf+(1-delta)*qf)/(1-delta+ZF_ss)-qf(-1); 
+rkf = (ZF_ss*zf+(1-delta)*qf)/(1-delta+ZF_ss)-qf(-1);
 
 zf=mcf+ypot-kf(-1);
 
@@ -302,7 +302,7 @@ lf=-wpf+(1+FI)*zf+kf(-1);
 
 mcf=0;
 
-kf =  (1-delta)*kf(-1)+(delta)*(invf+pis*x) ; 
+kf =  (1-delta)*kf(-1)+(delta)*(invf+pis*x) ;
 
 //***********************
 //AR(1) shock processes
@@ -331,7 +331,7 @@ var fiscal_=1.2456^2;  //instead of ug
 var interest_=0;
 end;
 
- 
+
 
 
 

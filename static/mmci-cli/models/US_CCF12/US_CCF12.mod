@@ -2,14 +2,14 @@
 //**************************************************************************
 // A New Comparative Approach to Macroeconomic Modeling and Policy Analysis
 //
-// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and 
+// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and
 // Maik Wolters
 //
 //**************************************************************************
 
 //Model: US_CCF12
 
-//Model replication code by: Alina Tänzer (alina.taenzer@hof.uni-frankfurt.de)
+//Model replication code by: Alina Tï¿½nzer (alina.taenzer@hof.uni-frankfurt.de)
 
 //Last edited: December 2017
 
@@ -25,29 +25,29 @@
 //1. Defining variables
 //-----------------------------------
 
-var         marc rk r rL wz Kz Kz_eff L Yz Xpnu Xpnr Xpdu Xpdr Xwnu 
-            Xwnr Xwdu Xwdr pi u Iz mu z psi lambda_ms bu br 
-            Xiu Xir q Czu Czr zeta_h Bz BzL Gz Tz  
-            shock_zeta BLMVz BTotMVz slope rLEH RP rr rLr rLEHr 
-            Yz_growth pi_ann r_ann rL_ann dy y infl FFR bondrate riskprem y_level 
-            eps_Gz 
+var         marc rk r rL wz Kz Kz_eff L Yz Xpnu Xpnr Xpdu Xpdr Xwnu
+            Xwnr Xwdu Xwdr pi u Iz mu z psi lambda_ms bu br
+            Xiu Xir q Czu Czr zeta_h Bz BzL Gz Tz
+            shock_zeta BLMVz BTotMVz slope rLEH RP rr rLr rLEHr
+            Yz_growth pi_ann r_ann rL_ann dy y infl FFR bondrate riskprem y_level
+            eps_Gz
     //flex price variables
-            marcf pif rkf wzf Kz_eff_f Lf Yzf zf uf Kzf Izf muf qf Xiuf Xirf buf 
+            marcf pif rkf wzf Kz_eff_f Lf Yzf zf uf Kzf Izf muf qf Xiuf Xirf buf
             brf Czuf Czrf rf zeta_h_f rLf Bzf BzLf Gzf Tzf psif BLMVzf BTotMVzf ygap
             Xwnuf Xwnrf Xwduf Xwdrf
             //**************************************************************************
             // Modelbase Variables                                                   //*
-                    interest inflation inflationq outputgap output fispol;        //*     
+                    interest inflation inflationq outputgap output fispol;        //*
             //**************************************************************************
-            
-                   
-varexo      eps_z eps_phi eps_lambda eps_mu eps_zeta eps_bu eps_br eps_T  eps_B     
+
+
+varexo      eps_z eps_phi eps_lambda eps_mu eps_zeta eps_bu eps_br eps_T  eps_B
             //**************************************************************************
-            // Modelbase Shocks                                                      //*   
+            // Modelbase Shocks                                                      //*
                 interest_ fiscal_;                                              //*
             //**************************************************************************
             //eps_m, eps_G  cancelled, fiscal_ cancelled
-parameters  //************************************************************************** 
+parameters  //**************************************************************************
             // Modelbase Parameters                                                  //*
                                                                          //*
                 cofintintb1 cofintintb2 cofintintb3 cofintintb4                  //*
@@ -57,22 +57,22 @@ parameters  //******************************************************************
                 cofintoutf1 cofintoutf2 cofintoutf3 cofintoutf4                  //*
                 cofintoutp cofintoutpb1 cofintoutpb2 cofintoutpb3 cofintoutpb4   //*
                 cofintoutpf1 cofintoutpf2 cofintoutpf3 cofintoutpf4              //*
-                std_r_ std_r_quart coffispol                                    //* coffispol 
+                std_r_ std_r_quart coffispol                                    //* coffispol
             //**************************************************************************
-            alpha betau betar beta_av delta gamma kappa lambdaw lambdaf zeta zetap zetaw chi_pu chi_wu 
-            omegau omegar S_dp a_dp zeta_prime RL phi_T phi_pi phi_y qu h sigmau sigmar nu rho_bu rho_br 
-            rho_B rho_zeta rho_Gz rho_r rho_z rho_phi rho_mu rk_SS r_SS Bz_SS C_ratio Czu_SS Czr_SS BzL_SS 
-            Gz_SS Iz_SS Yz_SS Tz_SS Pi_SS Kz_eff_SS Kz_SS X_ratio sigma_z sigma_lambda sigma_mu sigma_b 
+            alpha betau betar beta_av delta gamma kappa lambdaw lambdaf zeta zetap zetaw chi_pu chi_wu
+            omegau omegar S_dp a_dp zeta_prime RL phi_T phi_pi phi_y qu h sigmau sigmar nu rho_bu rho_br
+            rho_B rho_zeta rho_Gz rho_r rho_z rho_phi rho_mu rk_SS r_SS Bz_SS C_ratio Czu_SS Czr_SS BzL_SS
+            Gz_SS Iz_SS Yz_SS Tz_SS Pi_SS Kz_eff_SS Kz_SS X_ratio sigma_z sigma_lambda sigma_mu sigma_b
             sigma_phi sigma_B sigma_T sigma_m sigma_zeta sigma_g BLMVB BLB BLMVz_SS kappaEH BondDuration;
 
 //--------------------------------------------------------------------------
 // 2. Calibration
-//-----------------------------------------------------------------------    
+//-----------------------------------------------------------------------
 
 //CALIBRATED PARAMETERS
-alpha       = 0.33;             //share of capital in production    
-lambdaw     = 0.15;                //steady state wage markup 
-lambdaf     = 0.15;                //steady state price markup 
+alpha       = 0.33;             //share of capital in production
+lambdaw     = 0.15;                //steady state wage markup
+lambdaf     = 0.15;                //steady state price markup
 delta       = 0.025;            //capital depreciation rate
 Gz_SS       = 0.2;
 
@@ -81,42 +81,42 @@ Gz_SS       = 0.2;
 gamma       = 0.005;            //check: vorher 0.5
 betau       = 0.9988;           //discount factor for unconstrained HH
 pi_SS       = 0.0053;             //quarterly SS inflation *100 in percent, annualized about 2%
-zeta        = 0.001242;          //transaction costs (SS spread between 10-year treasury yield and federal funds rate) 
-zeta_prime  = 0.003274;         //elasticity of risk premium to changes in in market value of long-term debt 
+zeta        = 0.001242;          //transaction costs (SS spread between 10-year treasury yield and federal funds rate)
+zeta_prime  = 0.003274;         //elasticity of risk premium to changes in in market value of long-term debt
 BondDuration = 30;
 
 //ESTIMATED PARAMETERS FROM POSTERIOR DISTRIBUTION
-BLMVB       = 0.8533; 
+BLMVB       = 0.8533;
 zetap       = 0.9288;            //price rigidity parameter
 zetaw       = 0.7342;            //wage rigidity parameter
-chi_wu      = 0.5611;            
+chi_wu      = 0.5611;
 omegau      = 0.9468;            //fraction of unrestricted agents
 omegar      = 1 - omegau;        //fraction of restricted agents
 S_dp        = 4.7815;           //investment adjustment cost convexity parameter
 a_dp        = 0.2159;           //utilization cost elasticity parameter
 phi_T       = 1.2543;           //fiscal rule parameter
 phi_pi      = 1.5979;           //monetary policy rule weight on inflation
-phi_y       = 0.3251;           //monetary policy rule weight on output growth 
+phi_y       = 0.3251;           //monetary policy rule weight on output growth
 h           = 0.8020;           //habit formation coefficient
 sigmau      = 3.3548;           //intertemporal elasticity of substitution of consumption
 sigmar      = 2.0825;           //intertemporal elasticity of substitution of consumption
 nu          = 1.9295;           //labor supply elasticity
 
-rho_bu      = 0.9614; 
-rho_br      = 0.9614;           
+rho_bu      = 0.9614;
+rho_br      = 0.9614;
 rho_B       = 0.9659;
-rho_zeta    = 0.9426; 
+rho_zeta    = 0.9426;
 rho_Gz      = 0.7491;
 rho_r       = 0.8565;           //interest rate smoothing in MP rule
-rho_z       = 0.1430; 
+rho_z       = 0.1430;
 rho_phi     = 0.5074;
-rho_mu      = 0.8489; 
+rho_mu      = 0.8489;
 //std deviation of shock innovations:
 sigma_z         = 0.7588;
-sigma_lambda    = 1.7939; 
-sigma_mu        = 2.9725; 
-sigma_b         = 3.5860; 
-sigma_phi       = 0.7628; 
+sigma_lambda    = 1.7939;
+sigma_mu        = 2.9725;
+sigma_b         = 3.5860;
+sigma_phi       = 0.7628;
 sigma_B         = 0.3578;
 sigma_T         = 0.3457;
 sigma_m         = 0.1161; //0.25/4;   //for 25 bp shock (times 4 because goal is 25 bp change in annual rate)  original value:0.1161
@@ -126,7 +126,7 @@ sigma_g         = 0.3429;
 //Parameters derived from SS:
 
 C_ratio     = 0.9760;             //Ratio of consumption of unconstrained and constrained HH
-Yz_SS       = 1; 
+Yz_SS       = 1;
 X_ratio     = 1.0730;             //ratio of unconstrained and constrained marginal utility
 
 betar       = betau/(1+zeta);                                       //discount factor for constrained HH
@@ -146,7 +146,7 @@ chi_pu      = omegau/(omegau + omegar*((1-betau*zetap)/(1-betar*zetap))/(X_ratio
 Kz_eff_SS   = alpha/(1+lambdaf)*1/rk_SS;                            //from C.11
 Kz_SS       = exp(gamma)*alpha/(1+lambdaf)*1/rk_SS;                 //from C.13
 Iz_SS       = (exp(gamma)-(1-delta))*alpha/(1+lambdaf)*1/rk_SS;      //from C.14
-Tz_SS       = Gz_SS - (1-1/betau + (1-1/betar)/(RL-kappa)*BLB)*Bz_SS;             
+Tz_SS       = Gz_SS - (1-1/betau + (1-1/betar)/(RL-kappa)*BLB)*Bz_SS;
 Czr_SS      = (1-Iz_SS-Gz_SS)/(omegau*C_ratio+omegar);              //from C.16
 Czu_SS      = C_ratio*Czr_SS;                                       //from C.17
 
@@ -154,14 +154,14 @@ Czu_SS      = C_ratio*Czr_SS;                                       //from C.17
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           
-cd('..');                                                                
-load policy_param.mat;                                                   
-for i=1:33                                                                                                        
-    deep_parameter_name = M_.param_names(i,:);                           
-    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])                  
-end                                                                      
-cd(thispath);  
+thispath = pwd;
+cd('..');
+load policy_param.mat;
+for i=1:33
+    deep_parameter_name = M_.param_names(i,:);
+    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
+end
+cd(thispath);
                                                                          //*
 // Definition of Discretionary Fiscal Policy Parameter                   //*
 coffispol = 1;                                                           //*
@@ -177,53 +177,53 @@ model(linear);
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables //*
 
-interest   =   FFR*100;                                           //* 
+interest   =   FFR*100;                                           //*
 inflation =    (pi + pi(-1) + pi(-2) + pi(-3))*100;   //*
 inflationq  =  pi*400;                                      //*
 outputgap  =   ygap*100/4;                                                    //*
-output =       y*100/4;                                                    //*   
+output =       y*100/4;                                                    //*
 fispol = eps_Gz;                                                         //*
 //**************************************************************************
 
-//**************************************************************************                                                                    
+//**************************************************************************
 // Policy Rule                                                           //*
                                                                          //*
 // Monetary Policy                                                       //*
                                                                          //*
-interest =   cofintintb1*interest(-1)                                    //* 
-           + cofintintb2*interest(-2)                                    //* 
-           + cofintintb3*interest(-3)                                    //* 
-           + cofintintb4*interest(-4)                                    //* 
-           + cofintinf0*inflationq                                       //* 
-           + cofintinfb1*inflationq(-1)                                  //* 
-           + cofintinfb2*inflationq(-2)                                  //* 
-           + cofintinfb3*inflationq(-3)                                  //* 
-           + cofintinfb4*inflationq(-4)                                  //* 
-           + cofintinff1*inflationq(+1)                                  //* 
-           + cofintinff2*inflationq(+2)                                  //* 
-           + cofintinff3*inflationq(+3)                                  //* 
-           + cofintinff4*inflationq(+4)                                  //* 
-           + cofintout*outputgap 	                                     //* 
-           + cofintoutb1*outputgap(-1)                                   //* 
-           + cofintoutb2*outputgap(-2)                                   //* 
-           + cofintoutb3*outputgap(-3)                                   //* 
-           + cofintoutb4*outputgap(-4)                                   //* 
-           + cofintoutf1*outputgap(+1)                                   //* 
-           + cofintoutf2*outputgap(+2)                                   //* 
-           + cofintoutf3*outputgap(+3)                                   //* 
-           + cofintoutf4*outputgap(+4)                                   //* 
-           + cofintoutp*output 	                                         //* 
-           + cofintoutpb1*output(-1)                                     //* 
-           + cofintoutpb2*output(-2)                                     //* 
-           + cofintoutpb3*output(-3)                                     //* 
-           + cofintoutpb4*output(-4)                                     //* 
-           + cofintoutpf1*output(+1)                                     //* 
-           + cofintoutpf2*output(+2)                                     //* 
-           + cofintoutpf3*output(+3)                                     //* 
-           + cofintoutpf4*output(+4)                                     //* 
-           + std_r_ *interest_;                                          //* 
+interest =   cofintintb1*interest(-1)                                    //*
+           + cofintintb2*interest(-2)                                    //*
+           + cofintintb3*interest(-3)                                    //*
+           + cofintintb4*interest(-4)                                    //*
+           + cofintinf0*inflationq                                       //*
+           + cofintinfb1*inflationq(-1)                                  //*
+           + cofintinfb2*inflationq(-2)                                  //*
+           + cofintinfb3*inflationq(-3)                                  //*
+           + cofintinfb4*inflationq(-4)                                  //*
+           + cofintinff1*inflationq(+1)                                  //*
+           + cofintinff2*inflationq(+2)                                  //*
+           + cofintinff3*inflationq(+3)                                  //*
+           + cofintinff4*inflationq(+4)                                  //*
+           + cofintout*outputgap 	                                     //*
+           + cofintoutb1*outputgap(-1)                                   //*
+           + cofintoutb2*outputgap(-2)                                   //*
+           + cofintoutb3*outputgap(-3)                                   //*
+           + cofintoutb4*outputgap(-4)                                   //*
+           + cofintoutf1*outputgap(+1)                                   //*
+           + cofintoutf2*outputgap(+2)                                   //*
+           + cofintoutf3*outputgap(+3)                                   //*
+           + cofintoutf4*outputgap(+4)                                   //*
+           + cofintoutp*output 	                                         //*
+           + cofintoutpb1*output(-1)                                     //*
+           + cofintoutpb2*output(-2)                                     //*
+           + cofintoutpb3*output(-3)                                     //*
+           + cofintoutpb4*output(-4)                                     //*
+           + cofintoutpf1*output(+1)                                     //*
+           + cofintoutpf2*output(+2)                                     //*
+           + cofintoutpf3*output(+3)                                     //*
+           + cofintoutpf4*output(+4)                                     //*
+           + std_r_ *interest_;                                          //*
 
-//DiscretionaryGovernmentSpending                                      //* 
+//DiscretionaryGovernmentSpending                                      //*
 fispol=coffispol*fiscal_;                                              //*                                                                    //*
 //**************************************************************************
 
@@ -233,11 +233,11 @@ fispol=coffispol*fiscal_;                                              //*      
 //INTERMEDIATE GOODS PRODUCERS:
 
 //real marginal costs (D.1)
-marc = alpha*rk + (1-alpha)*wz;   
-marcf= alpha*rkf + (1-alpha)*wzf;               
+marc = alpha*rk + (1-alpha)*wz;
+marcf= alpha*rkf + (1-alpha)*wzf;
 
 //capital demand (D.2)
-Kz_eff = wz - rk + L; 
+Kz_eff = wz - rk + L;
 Kz_eff_f = wzf - rkf + Lf;
 
 //Technology (D.3)
@@ -245,11 +245,11 @@ Yz = alpha*Kz_eff + (1-alpha)*L;
 Yzf = alpha*Kz_eff_f + (1-alpha)*Lf;
 
 //Price Setting unconstrained (u) and restricted (r) (D.4, D.5)
-Xpnu = (1-betau*zetap)*(Xiu + Yz + lambda_ms + marc) + betau*zetap*((1+lambdaf)/lambdaf*pi(+1) + Xpnu(+1)); 
-Xpnr = (1-betar*zetap)*(Xir + Yz + lambda_ms + marc) + betar*zetap*((1+lambdaf)/lambdaf*pi(+1) + Xpnr(+1)); 
+Xpnu = (1-betau*zetap)*(Xiu + Yz + lambda_ms + marc) + betau*zetap*((1+lambdaf)/lambdaf*pi(+1) + Xpnu(+1));
+Xpnr = (1-betar*zetap)*(Xir + Yz + lambda_ms + marc) + betar*zetap*((1+lambdaf)/lambdaf*pi(+1) + Xpnr(+1));
 
-Xpdu = (1-betau*zetap)*(Xiu + Yz) + betau*zetap*(1/lambdaf*pi(+1) + Xpdu(+1));                                 
-Xpdr = (1-betar*zetap)*(Xir + Yz) + betar*zetap*(1/lambdaf*pi(+1) + Xpdr(+1));                                
+Xpdu = (1-betau*zetap)*(Xiu + Yz) + betau*zetap*(1/lambdaf*pi(+1) + Xpdu(+1));
+Xpdr = (1-betar*zetap)*(Xir + Yz) + betar*zetap*(1/lambdaf*pi(+1) + Xpdr(+1));
 
 //Law of motion of prices (D.6)
 pi = (1-zetap)/zetap*(chi_pu*Xpnu + (1-chi_pu)*Xpnr - chi_pu*Xpdu -(1-chi_pu)*Xpdr);
@@ -257,7 +257,7 @@ pi = (1-zetap)/zetap*(chi_pu*Xpnu + (1-chi_pu)*Xpnr - chi_pu*Xpdu -(1-chi_pu)*Xp
 //CAPITAL PRODUCERS:
 
 //Effective Capital (D.7)
-Kz_eff = -z + u + Kz(-1);   
+Kz_eff = -z + u + Kz(-1);
 Kz_eff_f = -zf + uf + Kzf(-1);
 
 //Law of motion of capital (D.8)
@@ -266,7 +266,7 @@ Kzf = (1-delta)*exp(-gamma)*(Kzf(-1)-z)+ (1-(1-delta)*exp(-gamma))*(muf+Izf);
 
 //Capital Utilization (D.9)
 rk = a_dp/rk_SS*u;
-rkf = a_dp/rk_SS*uf;    
+rkf = a_dp/rk_SS*uf;
 
 //Law of motion of Q (D.10)
 q = beta_av*exp(-gamma)*(rk_SS*rk(+1)+(1-delta)*q(+1))-z(+1)+ qu*((1+zeta)
@@ -282,39 +282,39 @@ qf = beta_av*exp(-gamma)*(rk_SS*rkf(+1)+(1-delta)*qf(+1))-zf(+1)+ qu*((1+zeta)
 
 //Marginal utilities each type (u,r) (D.12)
 Xiu = 1/(1-betau*h)*((bu - betau*h*bu(+1))-sigmau/(1-h)*((1+betau*h^2)*Czu-betau*h*Czu(+1)-h*Czu(-1)));
-Xir = 1/(1-betar*h)*((br - betar*h*br(+1))-sigmar/(1-h)*((1+betar*h^2)*Czr-betar*h*Czr(+1)-h*Czr(-1))); 
+Xir = 1/(1-betar*h)*((br - betar*h*br(+1))-sigmar/(1-h)*((1+betar*h^2)*Czr-betar*h*Czr(+1)-h*Czr(-1)));
 Xiuf = 1/(1-betau*h)*((buf - betau*h*buf(+1))-sigmau/(1-h)*((1+betau*h^2)*Czuf-betau*h*Czuf(+1)-h*Czuf(-1)));
-Xirf = 1/(1-betar*h)*((brf - betar*h*brf(+1))-sigmar/(1-h)*((1+betar*h^2)*Czrf-betar*h*Czrf(+1)-h*Czrf(-1)));   
+Xirf = 1/(1-betar*h)*((brf - betar*h*brf(+1))-sigmar/(1-h)*((1+betar*h^2)*Czrf-betar*h*Czrf(+1)-h*Czrf(-1)));
 
-//EE unconstrained, short (D.13); Fisher equation 
+//EE unconstrained, short (D.13); Fisher equation
 Xiu = r + Xiu(+1)-z(+1)-pi(+1);
 Xiuf = rf + Xiuf(+1)-zf(+1)-pif(+1);
 
-//EE unconstrained, long (D.14); 
+//EE unconstrained, long (D.14);
 zeta_h + Xiu = RL/(RL-kappa)*rL + Xiu(+1) -z(+1) -pi(+1) -kappa/(RL-kappa)*rL(+1);
 zeta_h_f + Xiuf = RL/(RL-kappa)*rLf + Xiuf(+1) -zf(+1) -pif(+1) -kappa/(RL-kappa)*rLf(+1);
 
-//EE constrained, long (D.15); 
+//EE constrained, long (D.15);
 Xir = RL/(RL-kappa)*rL + Xir(+1) -z(+1) -pi(+1) -kappa/(RL-kappa)*rL(+1);
 Xirf = RL/(RL-kappa)*rLf + Xirf(+1) -zf(+1) -pif(+1) -kappa/(RL-kappa)*rLf(+1);
 
 //Wage setting (D.16)
-Xwnu = (1-zetaw*betau)*(bu + psi + (1+nu)*L + (1+lambdaw)/lambdaw*(1+nu)*wz) 
-        + zetaw*betau*((1+lambdaw)/lambdaw*(1+nu)*(pi(+1)+z(+1))+Xwnu(+1));        
-Xwnr = (1-zetaw*betar)*(br + psi + (1+nu)*L + (1+lambdaw)/lambdaw*(1+nu)*wz) 
-        + zetaw*betar*((1+lambdaw)/lambdaw*(1+nu)*(pi(+1)+z(+1))+Xwnr(+1));        
-Xwnuf = (buf + psif + (1+nu)*Lf + (1+lambdaw)/lambdaw*(1+nu)*wzf);                
-Xwnrf = (brf + psif + (1+nu)*Lf + (1+lambdaw)/lambdaw*(1+nu)*wzf);                
+Xwnu = (1-zetaw*betau)*(bu + psi + (1+nu)*L + (1+lambdaw)/lambdaw*(1+nu)*wz)
+        + zetaw*betau*((1+lambdaw)/lambdaw*(1+nu)*(pi(+1)+z(+1))+Xwnu(+1));
+Xwnr = (1-zetaw*betar)*(br + psi + (1+nu)*L + (1+lambdaw)/lambdaw*(1+nu)*wz)
+        + zetaw*betar*((1+lambdaw)/lambdaw*(1+nu)*(pi(+1)+z(+1))+Xwnr(+1));
+Xwnuf = (buf + psif + (1+nu)*Lf + (1+lambdaw)/lambdaw*(1+nu)*wzf);
+Xwnrf = (brf + psif + (1+nu)*Lf + (1+lambdaw)/lambdaw*(1+nu)*wzf);
 
 
 //Wage setting (D.17)
-Xwdu = (1-zetaw*betau)*(Xiu+L+(1+lambdaw)/lambdaw*wz) + zetaw*betau*(1/lambdaw*(pi(+1)+z(+1))+Xwdu(+1)); 
-Xwdr = (1-zetaw*betar)*(Xir+L+(1+lambdaw)/lambdaw*wz) + zetaw*betar*(1/lambdaw*(pi(+1)+z(+1))+Xwdr(+1)); 
-Xwduf = (Xiuf+Lf+(1+lambdaw)/lambdaw*wzf);                                         
-Xwdrf = (Xirf+Lf+(1+lambdaw)/lambdaw*wzf);  
+Xwdu = (1-zetaw*betau)*(Xiu+L+(1+lambdaw)/lambdaw*wz) + zetaw*betau*(1/lambdaw*(pi(+1)+z(+1))+Xwdu(+1));
+Xwdr = (1-zetaw*betar)*(Xir+L+(1+lambdaw)/lambdaw*wz) + zetaw*betar*(1/lambdaw*(pi(+1)+z(+1))+Xwdr(+1));
+Xwduf = (Xiuf+Lf+(1+lambdaw)/lambdaw*wzf);
+Xwdrf = (Xirf+Lf+(1+lambdaw)/lambdaw*wzf);
 
 //Law of motion of real wages (D.18)
-wz=(1-zetaw)/(1+(1+lambdaw)/lambdaw*nu)*(chi_wu*(Xwnu-Xwdu)+(1-chi_wu)*(Xwnr-Xwdr))+ zetaw*(wz(-1)-pi-z); 
+wz=(1-zetaw)/(1+(1+lambdaw)/lambdaw*nu)*(chi_wu*(Xwnu-Xwdu)+(1-chi_wu)*(Xwnr-Xwdr))+ zetaw*(wz(-1)-pi-z);
 wzf=1/(1+(1+lambdaw)/lambdaw*nu)*(chi_wu*(Xwnuf-Xwduf)+(1-chi_wu)*(Xwnrf-Xwdrf));
 
 //GOVERNMENT DEBT:
@@ -330,35 +330,35 @@ Bzf+(BzL_SS/Bz_SS)/(RL-kappa)*BzLf = betau^(-1)*(Bzf(-1)+rf(-1))+(BzL_SS/Bz_SS)/
 //EQUATIONS WHICH ARE NEW AS IN OFFICIAL CODE:
 //******************************************************************
 //Long-term bond policy (D.20)
-   
+
     //defining the LHS of bond equation D.20
     BLMVz = BzL - RL/(RL-kappa)*rL;
     BLMVzf=BzLf -RL/(RL-kappa)*rLf;
-    
+
     //defining the evolution of (long-term) bonds
     BLMVz = rho_B*BLMVz(-1)+eps_B;
     BLMVzf= rho_B*BLMVzf(-1) + eps_B;
 
-     
+
     //Transfers feedback rule
     (Tz-Gz_SS*Gz)/(Tz_SS-Gz_SS)= phi_T*BLMVz(-1)+eps_T;
     (Tzf-Gz_SS*Gzf)/(Tz_SS-Gz_SS)= phi_T*BLMVzf(-1)+eps_T;
     //definition of RHS bracket
     Bz+(BzL_SS/Bz_SS)/(RL-kappa)*BzL-(BzL_SS/Bz_SS)*RL/((RL-kappa)^2)*rL -(1+ (BzL_SS/Bz_SS)/(RL-kappa))*BTotMVz;
     Bzf+(BzL_SS/Bz_SS)/(RL-kappa)*BzLf-(BzL_SS/Bz_SS)*RL/((RL-kappa)^2)*rLf -(1+ (BzL_SS/Bz_SS)/(RL-kappa))*BTotMVzf;
-    
+
 
 
 //Term premium (D.23)/ risk premium
 
     zeta_h = zeta_prime/2*(BLMVz - Bz) + shock_zeta;
     zeta_h_f = zeta_prime/2*(BLMVzf - Bzf) + shock_zeta;
-    shock_zeta = rho_zeta*shock_zeta(-1)+eps_zeta; 
+    shock_zeta = rho_zeta*shock_zeta(-1)+eps_zeta;
 //************************************************************************
 
 
         //Monetary policy (D.22)
-        //r = rho_r*r(-1) + (1-rho_r)*(phi_pi*pi + phi_y*(Yz - Yz(-4) + z + z(-1) + z(-2) + z(-3))) + eps_m; 
+        //r = rho_r*r(-1) + (1-rho_r)*(phi_pi*pi + phi_y*(Yz - Yz(-4) + z + z(-1) + z(-2) + z(-3))) + eps_m;
 
 //Aggregate Resource constraint (D.24)
 Yz*Yz_SS = omegau*Czu_SS*Czu + omegar*Czr_SS*Czr + Iz_SS*Iz + Gz_SS*Gz + exp(-gamma)*rk_SS*Kz_SS*u;
@@ -374,7 +374,7 @@ zf = rho_z*zf(-1) + eps_z;
 psi=rho_phi*psi(-1) + eps_phi;
 
 //price markup shock
-lambda_ms=eps_lambda;                  
+lambda_ms=eps_lambda;
 
 //Capital adjustment cost process
 mu=rho_mu*mu(-1)+eps_mu;
@@ -391,11 +391,11 @@ Gzf = rho_Gz*Gzf(-1) + eps_Gz;
 
 
 // ADDITIONAL EQUATIONS FOR FLEX PRICE VERSION
-ygap = (Yz - Yzf); 
+ygap = (Yz - Yzf);
 pif=0;
 marcf=0;
-rkf = rf;     
-psif=0;            
+rkf = rf;
+psif=0;
 
 //ADDITIONAL DEFINITIONS REQUIRED FOR PLOTTING:
 
@@ -416,7 +416,7 @@ y_level          = Yz;                                //percentage deviation fro
 pi_ann           = (pi + pi(-1) + pi(-2) + pi(-3));   //annualized percentage rate
 r_ann            = 4*r;                                 //annualized percentage rate
 rL_ann           = 4*rL;                                //annualized percentage rate
-riskprem         = 4*RP;                      
+riskprem         = 4*RP;
 
 //REDEFINE VARIABLED FOR IRF GRAPHS
 
@@ -429,7 +429,7 @@ bondrate    = rL_ann;
 
 end;
 
-//steady; 
+//steady;
 //check;
 
 
@@ -439,7 +439,7 @@ end;
 shocks;
 
 //technology shock
-        var eps_z = sigma_z^2; 
+        var eps_z = sigma_z^2;
 //intratemporal preference shock
         var eps_phi = sigma_phi^2;
 //price markup shock
@@ -448,7 +448,7 @@ shocks;
         var eps_mu = sigma_mu^2;
 //intertemporal preference shock
         var eps_bu = sigma_b^2;
-        var eps_br = sigma_b^2;         
+        var eps_br = sigma_b^2;
 //government spending shock
 //        var eps_Gz = sigma_g^2;
 //risk premium shock
@@ -462,4 +462,4 @@ shocks;
 
 end;
 
-//stoch_simul(linear,  irf=20)    Yzf ygap dy y infl FFR bondrate riskprem; 
+//stoch_simul(linear,  irf=20)    Yzf ygap dy y infl FFR bondrate riskprem;

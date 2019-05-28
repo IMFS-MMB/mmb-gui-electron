@@ -1,7 +1,7 @@
 //**************************************************************************
 // A New Comparative Approach to Macroeconomic Modeling and Policy Analysis
 //
-// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and 
+// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and
 // Maik Wolters
 //
 // Working Paper, 2009
@@ -10,37 +10,37 @@
 // Model: US_PM08 stationary version (without financial-real linkages)
 
 // Further references:
-// Carabenciov, Ioan, Igor Ermolaev, Charles Freedman, Michel Juillard, 
+// Carabenciov, Ioan, Igor Ermolaev, Charles Freedman, Michel Juillard,
 // Ondra Kamenik, Dmitry Korshunov, and Douglas Laxton (2008).
-// “A Small Quarterly Projection Model of the US Economy” 
+// ï¿½A Small Quarterly Projection Model of the US Economyï¿½
 // IMF Working Paper 08/278.
 
 // Created by Elena Afanasyeva
 // Last edited: 10/09/07 by S. Schmidt
 
 var RR_USh RR_US_BARh
-    UNR_US_GAP 
-    PIE_USh PIE_US4h Y_US  RS_USh 
-    E4_PIE_US4h E1_Y_USh E1_PIE_USh 
+    UNR_US_GAP
+    PIE_USh PIE_US4h Y_US  RS_USh
+    E4_PIE_US4h E1_Y_USh E1_PIE_USh
     //eg
 
 //**************************************************************************
 // Modelbase Variables                                                   //*
-        interest inflation inflationq outputgap output;                  //* 
+        interest inflation inflationq outputgap output;                  //*
 //**************************************************************************
- 
-varexo RES_RR_US_BAR RES_UNR_US_GAP 
-        RES_Y_US  RES_PIE_US      
-       
-       
+
+varexo RES_RR_US_BAR RES_UNR_US_GAP
+        RES_Y_US  RES_PIE_US
+
+
 //**************************************************************************
-// Modelbase Shocks                                                      //*       
+// Modelbase Shocks                                                      //*
        interest_;                                                        //*
 //**************************************************************************
-  
- 
-parameters 
-//************************************************************************** 
+
+
+parameters
+//**************************************************************************
 // Modelbase Parameters                                                  //*
                                                                          //*
         cofintintb1 cofintintb2 cofintintb3 cofintintb4                  //*
@@ -50,12 +50,12 @@ parameters
         cofintoutf1 cofintoutf2 cofintoutf3 cofintoutf4                  //*
         cofintoutp cofintoutpb1 cofintoutpb2 cofintoutpb3 cofintoutpb4   //*
         cofintoutpf1 cofintoutpf2 cofintoutpf3 cofintoutpf4              //*
-        std_r_ std_r_quart  //coffispol                                  //* 
+        std_r_ std_r_quart  //coffispol                                  //*
 //**************************************************************************
            rho_us rr_us_bar_ss alpha_us1 alpha_us2
-           tau_us growth_us_ss beta_us1 beta_us2 beta_us3 lambda_us1 
+           tau_us growth_us_ss beta_us1 beta_us2 beta_us3 lambda_us1
            lambda_us2 gamma_us1 gamma_us2 gamma_us4 pietar_us_ss alpha_us3;
-           
+
 
 
 // estimated and fixed parameters, set at mode value (Table 1, p. 32)
@@ -80,15 +80,15 @@ pietar_us_ss= 2.5;
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           
-cd('..');                                                                
-load policy_param.mat;                                                   
-for i=1:33                                                               
-    deep_parameter_name = M_.param_names(i,:);                           
-    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])                  
-end                                                                      
-cd(thispath);    
-                                                                         //* 
+thispath = pwd;
+cd('..');
+load policy_param.mat;
+for i=1:33
+    deep_parameter_name = M_.param_names(i,:);
+    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
+end
+cd(thispath);
+                                                                         //*
 // Definition of Discretionary Fiscal Policy Parameter                   //*
 //coffispol = 1;                                                         //*
 //**************************************************************************
@@ -107,43 +107,43 @@ output     = Y_US;                                                       //*
 //**************************************************************************
 
 
-//**************************************************************************                                                                    
+//**************************************************************************
 // Policy Rule                                                           //*
                                                                          //*
 // Monetary Policy                                                       //*
                                                                          //*
-interest =   cofintintb1*interest(-1)                                    //* 
-           + cofintintb2*interest(-2)                                    //* 
-           + cofintintb3*interest(-3)                                    //* 
-           + cofintintb4*interest(-4)                                    //* 
-           + cofintinf0*inflationq                                       //* 
-           + cofintinfb1*inflationq(-1)                                  //* 
-           + cofintinfb2*inflationq(-2)                                  //* 
-           + cofintinfb3*inflationq(-3)                                  //* 
-           + cofintinfb4*inflationq(-4)                                  //* 
-           + cofintinff1*inflationq(+1)                                  //* 
-           + cofintinff2*inflationq(+2)                                  //* 
-           + cofintinff3*inflationq(+3)                                  //* 
-           + cofintinff4*inflationq(+4)                                  //* 
-           + cofintout*outputgap 	                                     //* 
-           + cofintoutb1*outputgap(-1)                                   //* 
-           + cofintoutb2*outputgap(-2)                                   //* 
-           + cofintoutb3*outputgap(-3)                                   //* 
-           + cofintoutb4*outputgap(-4)                                   //* 
-           + cofintoutf1*outputgap(+1)                                   //* 
-           + cofintoutf2*outputgap(+2)                                   //* 
-           + cofintoutf3*outputgap(+3)                                   //* 
-           + cofintoutf4*outputgap(+4)                                   //* 
-           + cofintoutp*output 	                                         //* 
-           + cofintoutpb1*output(-1)                                     //* 
-           + cofintoutpb2*output(-2)                                     //* 
-           + cofintoutpb3*output(-3)                                     //* 
-           + cofintoutpb4*output(-4)                                     //* 
-           + cofintoutpf1*output(+1)                                     //* 
-           + cofintoutpf2*output(+2)                                     //* 
-           + cofintoutpf3*output(+3)                                     //* 
-           + cofintoutpf4*output(+4)                                     //* 
-           + std_r_ *interest_;                                          //* 
+interest =   cofintintb1*interest(-1)                                    //*
+           + cofintintb2*interest(-2)                                    //*
+           + cofintintb3*interest(-3)                                    //*
+           + cofintintb4*interest(-4)                                    //*
+           + cofintinf0*inflationq                                       //*
+           + cofintinfb1*inflationq(-1)                                  //*
+           + cofintinfb2*inflationq(-2)                                  //*
+           + cofintinfb3*inflationq(-3)                                  //*
+           + cofintinfb4*inflationq(-4)                                  //*
+           + cofintinff1*inflationq(+1)                                  //*
+           + cofintinff2*inflationq(+2)                                  //*
+           + cofintinff3*inflationq(+3)                                  //*
+           + cofintinff4*inflationq(+4)                                  //*
+           + cofintout*outputgap 	                                     //*
+           + cofintoutb1*outputgap(-1)                                   //*
+           + cofintoutb2*outputgap(-2)                                   //*
+           + cofintoutb3*outputgap(-3)                                   //*
+           + cofintoutb4*outputgap(-4)                                   //*
+           + cofintoutf1*outputgap(+1)                                   //*
+           + cofintoutf2*outputgap(+2)                                   //*
+           + cofintoutf3*outputgap(+3)                                   //*
+           + cofintoutf4*outputgap(+4)                                   //*
+           + cofintoutp*output 	                                         //*
+           + cofintoutpb1*output(-1)                                     //*
+           + cofintoutpb2*output(-2)                                     //*
+           + cofintoutpb3*output(-3)                                     //*
+           + cofintoutpb4*output(-4)                                     //*
+           + cofintoutpf1*output(+1)                                     //*
+           + cofintoutpf2*output(+2)                                     //*
+           + cofintoutpf3*output(+3)                                     //*
+           + cofintoutpf4*output(+4)                                     //*
+           + std_r_ *interest_;                                          //*
                                                                          //*
 // Discretionary Government Spending                                     //*
                                                                          //*
@@ -155,7 +155,7 @@ interest =   cofintintb1*interest(-1)                                    //*
 
 UNR_US_GAP = alpha_us1*UNR_US_GAP(-1) + alpha_us2*Y_US + RES_UNR_US_GAP;
 
-Y_US = beta_us1*Y_US(-1) + beta_us2*Y_US(+1) - beta_us3*(RR_USh(-1) - RR_US_BARh(-1)) + RES_Y_US; 
+Y_US = beta_us1*Y_US(-1) + beta_us2*Y_US(+1) - beta_us3*(RR_USh(-1) - RR_US_BARh(-1)) + RES_Y_US;
 
 
 PIE_USh = lambda_us1*PIE_US4h(+4) + (1-lambda_us1)*PIE_US4h(-1) + lambda_us2*Y_US(-1) - RES_PIE_US;
@@ -174,19 +174,19 @@ E1_Y_USh = Y_US(+1);
 
 //MP rule
 
-//RS_USh = gamma_us1*RS_USh(-1) + (1-gamma_us1)*(RR_US_BARh + PIE_US4h(+3) + 
+//RS_USh = gamma_us1*RS_USh(-1) + (1-gamma_us1)*(RR_US_BARh + PIE_US4h(+3) +
 //gamma_us2*(PIE_US4h(+3)-pietar_us_ss) + gamma_us4*Y_US) + RES_RS_US;
 
 
 end;
 
-shocks; 
+shocks;
 var RES_RR_US_BAR;  stderr 0.0934;  // replaced with estimated values (Table 2, p. 33)
 var RES_UNR_US_GAP; stderr 0.0943;
 var RES_Y_US	;stderr 0.3567;
-var RES_PIE_US    ;stderr 1.3598; 
+var RES_PIE_US    ;stderr 1.3598;
 
 end;
 
 
- //stoch_simul(irf=20) dy pinfobs robs ; 
+ //stoch_simul(irf=20) dy pinfobs robs ;

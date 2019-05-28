@@ -1,7 +1,7 @@
 //**************************************************************************
 // A New Comparative Approach to Macroeconomic Modeling and Policy Analysis
 //
-// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and 
+// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and
 // Maik Wolters
 //
 // Working Paper, 2009
@@ -10,13 +10,13 @@
 // Model: US_IR11
 
 // Further references:
-// Ireland, Peter N. (2011): "A New Keynesian Perspective on the Great Recession", 
+// Ireland, Peter N. (2011): "A New Keynesian Perspective on the Great Recession",
 //        Journal of Money, Credit and Banking Vol.54, No.1, 31-54.
 // a small-scale New Keynesian model
 
-// Note that this file produces the right impulse responses to any shocks 
+// Note that this file produces the right impulse responses to any shocks
 // but a technology shock. It is because the original monetary policy of the paper
-// react to a technology shock but any monetary policy rules of the MMB cannot. 
+// react to a technology shock but any monetary policy rules of the MMB cannot.
 
 // First edited: 24/08/11 by M.Jancokova
 // Last  edited: 12/11/13 by Jinhyuk Yoo
@@ -37,7 +37,7 @@ varexo epsa epse epsz
 //**************************************************************************
 
 
-parameters 
+parameters
 
 //**************************************************************************
 // Modelbase Parameters                                                  //*
@@ -52,9 +52,9 @@ parameters
         std_r_ std_r_quart  //coffispol;                                 //*
                                                                          //*
 //**************************************************************************
-gamma alfa rhopi rhog rhoa rhoe zeta beta psi; 
+gamma alfa rhopi rhog rhoa rhoe zeta beta psi;
 
-//Note: the cost-push shock and some related parameters are renormalized to make the 
+//Note: the cost-push shock and some related parameters are renormalized to make the
 //          innovation normally distributed with mean zero (see page 40 in the paper)
 
 //estimated parameters (maximum likelihood estimates)
@@ -73,20 +73,20 @@ psi=0.10;           //Phillips Curve parameter; equals the original model parame
 //**************************************************************************
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
-// Load Modelbase Monetary Policy Parameters                             
-	thispath = cd;                                                       
-	cd('..');                                                            
-	load policy_param.mat; 
+// Load Modelbase Monetary Policy Parameters
+	thispath = pwd;
+	cd('..');
+	load policy_param.mat;
     for i=1:33
         deep_parameter_name = M_.param_names(i,:);
         eval(['M_.params(i) = ' deep_parameter_name ' ;'])
     end
-	cd(thispath);                                                     	 
-//    std_r_=100;                                                        
-                                                                         
-// Definition of Discretionary Fiscal Policy Parameter                   
-                                                                         
-// coffispol = 1;                                                        
+	cd(thispath);
+//    std_r_=100;
+
+// Definition of Discretionary Fiscal Policy Parameter
+
+// coffispol = 1;
 //**************************************************************************
 
 
@@ -130,15 +130,15 @@ interest =   cofintintb1*interest(-1)                                    //*
            + cofintoutf2*outputgap(+2)                                   //*
            + cofintoutf3*outputgap(+3)                                   //*
            + cofintoutf4*outputgap(+4)                                   //*
-           + cofintoutp*output 	                                         //* 
-           + cofintoutpb1*output(-1)                                     //* 
-           + cofintoutpb2*output(-2)                                     //* 
-           + cofintoutpb3*output(-3)                                     //* 
-           + cofintoutpb4*output(-4)                                     //* 
-           + cofintoutpf1*output(+1)                                     //* 
-           + cofintoutpf2*output(+2)                                     //* 
-           + cofintoutpf3*output(+3)                                     //* 
-           + cofintoutpf4*output(+4)                                     //* 
+           + cofintoutp*output 	                                         //*
+           + cofintoutpb1*output(-1)                                     //*
+           + cofintoutpb2*output(-2)                                     //*
+           + cofintoutpb3*output(-3)                                     //*
+           + cofintoutpb4*output(-4)                                     //*
+           + cofintoutpf1*output(+1)                                     //*
+           + cofintoutpf2*output(+2)                                     //*
+           + cofintoutpf3*output(+3)                                     //*
+           + cofintoutpf4*output(+4)                                     //*
            + std_r_ *interest_;                                          //*
                                                                          //*
 // Discretionary Government Spending                                     //*
@@ -155,7 +155,7 @@ a=rhoa*a(-1)+epsa;
 //IS curve
 lambda=r+lambda(+1)-pi(+1);
 
-//law of motion for the renormalized cost-push shock 
+//law of motion for the renormalized cost-push shock
 e=rhoe*e(-1)+epse;
 
 //law of motion for the technology shock
@@ -173,7 +173,7 @@ g=y-y(-1)+z;
 //efficient level of output
 0=gamma*zeta*q(-1)-(zeta^2+beta*gamma^2)*q+beta*gamma*zeta*q(+1)+beta*gamma*(zeta-gamma)*(1-rhoa)*a-gamma*zeta*z;
 
-//output gap 
+//output gap
 x=y-q;
 
 end;

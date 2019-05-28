@@ -1,7 +1,7 @@
 //**************************************************************************
 // A New Comparative Approach to Macroeconomic Modeling and Policy Analysis
 //
-// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and 
+// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and
 // Maik Wolters
 //
 // Working Paper, 2009
@@ -10,13 +10,13 @@
 // Model: CA_ToTEM - The Bank of Canada New Quarterly Projection and Policy Analysis Model
 
 // Further references:
-// Murchison, S. and A. Rennison. 2006. ToTEM: The Bank of Canada’s New Canadian Projection
+// Murchison, S. and A. Rennison. 2006. ToTEM: The Bank of Canadaï¿½s New Canadian Projection
 // Model. Bank of Canada Technical Report
 
 
 
 // This file simulates the dynamic response of Bank of Canada's ToTEM model
-// to specific shocks. 
+// to specific shocks.
 
 
 var cbal,cbal_cor,defn_yn,defn_yn_ss,den_w,deprk,dr1rown,gbn_cor,gbn_yn,gbn_yn_ss,
@@ -43,33 +43,33 @@ var cbal,cbal_cor,defn_yn,defn_yn_ss,den_w,deprk,dr1rown,gbn_cor,gbn_yn,gbn_yn_s
 //**************************************************************************
 // Modelbase Variables                                                   //*
     interest, inflation, inflationq, outputgap, fispol;                  //*
-//**************************************************************************  
+//**************************************************************************
 
 
 varexo lyrow_shk,lpcomrow_shk,lxdc_shk,lforexn_shk,lc_shk,gn_yn_shk,la_shk,
 
 
 //**************************************************************************
-// Modelbase Shocks                                                      //*       
+// Modelbase Shocks                                                      //*
        interest_,                                                        //*
        fiscal_;                                                          //*
-//**************************************************************************  
+//**************************************************************************
 
-     
-parameters 
+
+parameters
  //**************************************************************************
-// Modelbase Parameters                                                  
-                                                                         
-        cofintintb1 cofintintb2 cofintintb3 cofintintb4                  
-        cofintinf0 cofintinfb1 cofintinfb2 cofintinfb3 cofintinfb4       
-        cofintinff1 cofintinff2 cofintinff3 cofintinff4                  
-        cofintout cofintoutb1 cofintoutb2 cofintoutb3 cofintoutb4        
+// Modelbase Parameters
+
+        cofintintb1 cofintintb2 cofintintb3 cofintintb4
+        cofintinf0 cofintinfb1 cofintinfb2 cofintinfb3 cofintinfb4
+        cofintinff1 cofintinff2 cofintinff3 cofintinff4
+        cofintout cofintoutb1 cofintoutb2 cofintoutb3 cofintoutb4
         cofintoutf1 cofintoutf2 cofintoutf3 cofintoutf4
         cofintoutp cofintoutpb1 cofintoutpb2 cofintoutpb3 cofintoutpb4   //*
         cofintoutpf1 cofintoutpf2 cofintoutpf3 cofintoutpf4              //*
-                  
-        std_r_ std_r_quart coffispol           
-//************************************************************************** 
+
+        std_r_ std_r_quart coffispol
+//**************************************************************************
            alpha_c,alpha_c2,alpha_com,alpha_g,alpha_hawc,alpha_hawcom,alpha_hawg,alpha_hawinv,alpha_hawx,
            alpha_inv,alpha_x,a_cbal,a_gbn,a_k,a_ladotus,a_lc,a_lc2,a_lforexn,a_lg,a_linv,a_lm,a_lpcomrow,a_lprow,
            a_lyrow,a_pc,a_r1n,a_rf_prem,a_rgbn,a_rh_prem,a_tdn,a_tinc,a_transf_r,a_xdc,a_xdg,a_xdinv,a_xdx,a_xf,a_xw,
@@ -282,14 +282,14 @@ nfa_shk=0.00000000e+00;
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           
-cd('..');                                                                
-load policy_param.mat;                                                   
-for i=1:33                                                               
-    deep_parameter_name = M_.param_names(i,:);                           
-    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])                  
-end                                                                      
-cd(thispath); 
+thispath = pwd;
+cd('..');
+load policy_param.mat;
+for i=1:33
+    deep_parameter_name = M_.param_names(i,:);
+    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
+end
+cd(thispath);
 
 // Definition of Discretionary Fiscal Policy Parameter                   //*
 coffispol = 1;                                                           //*
@@ -305,79 +305,79 @@ interest   = 4*(r1n - r1n_ss_ss);                                       //*
 inflationq = 4*(infq - infq_ss);                                        //*
 inflation  = 1*(infq+infq(-1)+infq(-2)+infq(-3) - 4*infq_ss);           //*
 outputgap  = 1*(ly_gap-ly_gap_ss);                                      //*
-//output     = (ly - ly_ss);                                            
+//output     = (ly - ly_ss);
 fispol     = gn_yn_cor ;                                                //*
 //**************************************************************************
 
 
-//**************************************************************************                                                                    
+//**************************************************************************
 // Policy Rule                                                           //*
                                                                          //*
 // Monetary Policy                                                       //*
                                                                          //*
-interest =   cofintintb1*interest(-1)                                    //* 
-           + cofintintb2*interest(-2)                                    //* 
-           + cofintintb3*interest(-3)                                    //* 
-           + cofintintb4*interest(-4)                                    //* 
-           + cofintinf0*inflationq                                       //* 
-           + cofintinfb1*inflationq(-1)                                  //* 
-           + cofintinfb2*inflationq(-2)                                  //* 
-           + cofintinfb3*inflationq(-3)                                  //* 
-           + cofintinfb4*inflationq(-4)                                  //* 
-           + cofintinff1*inflationq(+1)                                  //* 
-           + cofintinff2*inflationq(+2)                                  //* 
-           + cofintinff3*inflationq(+3)                                  //* 
-           + cofintinff4*inflationq(+4)                                  //* 
-           + cofintout*outputgap 	                                     //* 
-           + cofintoutb1*outputgap(-1)                                   //* 
-           + cofintoutb2*outputgap(-2)                                   //* 
-           + cofintoutb3*outputgap(-3)                                   //* 
-           + cofintoutb4*outputgap(-4)                                   //* 
-           + cofintoutf1*outputgap(+1)                                   //* 
-           + cofintoutf2*outputgap(+2)                                   //* 
-           + cofintoutf3*outputgap(+3)                                   //* 
-           + cofintoutf4*outputgap(+4)                                   //* 
-           + cofintoutp*output 	                                         //* 
-           + cofintoutpb1*output(-1)                                     //* 
-           + cofintoutpb2*output(-2)                                     //* 
-           + cofintoutpb3*output(-3)                                     //* 
-           + cofintoutpb4*output(-4)                                     //* 
-           + cofintoutpf1*output(+1)                                     //* 
-           + cofintoutpf2*output(+2)                                     //* 
-           + cofintoutpf3*output(+3)                                     //* 
-           + cofintoutpf4*output(+4)                                     //*  
-           + std_r_ *interest_;                                          //* 
+interest =   cofintintb1*interest(-1)                                    //*
+           + cofintintb2*interest(-2)                                    //*
+           + cofintintb3*interest(-3)                                    //*
+           + cofintintb4*interest(-4)                                    //*
+           + cofintinf0*inflationq                                       //*
+           + cofintinfb1*inflationq(-1)                                  //*
+           + cofintinfb2*inflationq(-2)                                  //*
+           + cofintinfb3*inflationq(-3)                                  //*
+           + cofintinfb4*inflationq(-4)                                  //*
+           + cofintinff1*inflationq(+1)                                  //*
+           + cofintinff2*inflationq(+2)                                  //*
+           + cofintinff3*inflationq(+3)                                  //*
+           + cofintinff4*inflationq(+4)                                  //*
+           + cofintout*outputgap 	                                     //*
+           + cofintoutb1*outputgap(-1)                                   //*
+           + cofintoutb2*outputgap(-2)                                   //*
+           + cofintoutb3*outputgap(-3)                                   //*
+           + cofintoutb4*outputgap(-4)                                   //*
+           + cofintoutf1*outputgap(+1)                                   //*
+           + cofintoutf2*outputgap(+2)                                   //*
+           + cofintoutf3*outputgap(+3)                                   //*
+           + cofintoutf4*outputgap(+4)                                   //*
+           + cofintoutp*output 	                                         //*
+           + cofintoutpb1*output(-1)                                     //*
+           + cofintoutpb2*output(-2)                                     //*
+           + cofintoutpb3*output(-3)                                     //*
+           + cofintoutpb4*output(-4)                                     //*
+           + cofintoutpf1*output(+1)                                     //*
+           + cofintoutpf2*output(+2)                                     //*
+           + cofintoutpf3*output(+3)                                     //*
+           + cofintoutpf4*output(+4)                                     //*
+           + std_r_ *interest_;                                          //*
 
 
 // Foreign Country:                                                        //*
-//rstar =   cofintintb1*rstar(-1)                                          //* 
+//rstar =   cofintintb1*rstar(-1)                                          //*
 //        + cofintintb2*rstar(-2)                                          //*
 //        + cofintintb3*rstar(-3)                                          //*
 //        + cofintintb4*rstar(-4)                                          //*
 //        + cofintinf0*infstar                                             //*
 //        + cofintinfb1*infstar(-1)                                        //*
 //        + cofintinfb2*infstar(-2)                                        //*
-//        + cofintinfb3*infstar(-3)                                        //*                                   
+//        + cofintinfb3*infstar(-3)                                        //*
 //        + cofintinfb4*infstar(-4)                                        //*
-//        + cofintinff1*infstar(+1)                                        //* 
-//        + cofintinff2*infstar(+2)                                        //* 
-//        + cofintinff3*infstar(+3)                                        //* 
+//        + cofintinff1*infstar(+1)                                        //*
+//        + cofintinff2*infstar(+2)                                        //*
+//        + cofintinff3*infstar(+3)                                        //*
 //        + cofintinff4*infstar(+4)                                        //*
 //        + cofintout*ytildestar                                           //*
-//        + cofintoutb1*ytildestar(-1)                                     //* 
-//        + cofintoutb2*ytildestar(-2)                                     //* 
-//        + cofintoutb3*ytildestar(-3)                                     //* 
+//        + cofintoutb1*ytildestar(-1)                                     //*
+//        + cofintoutb2*ytildestar(-2)                                     //*
+//        + cofintoutb3*ytildestar(-3)                                     //*
 //        + cofintoutb4*ytildestar(-4)                                     //*
 //        + cofintoutf1*ytildestar(+1)                                     //*
-//        + cofintoutf2*ytildestar(+2)                                     //* 
-//        + cofintoutf3*ytildestar(+3)                                     //* 
-//        + cofintoutf4*ytildestar(+4)                                     //* 
+//        + cofintoutf2*ytildestar(+2)                                     //*
+//        + cofintoutf3*ytildestar(+3)                                     //*
+//        + cofintoutf4*ytildestar(+4)                                     //*
 //        + std_r_ * rstar_;                                               //*
 
 // Discretionary Government Spending                                       //*
-                                                                           //* 
+                                                                           //*
 fispol = coffispol*fiscal_;                                                //*
-//**************************************************************************                                                                          
+//**************************************************************************
 
 
 // Original Model Code:
@@ -402,7 +402,7 @@ fispol = coffispol*fiscal_;                                                //*
  lmpk = 1/theta*(log(alpha_c)+lcklcm-lcklc)+(theta-1)/theta*la_c+1/sigma*(log(1-delta)+lckl-lk-log(u))+1/sigma_com*(log(delta_c)+lcklc-lckl) ;
  exp(lq_r)-exp(lpinv_r) = exp(lmc_r)*(chi_k*(exp(linvc-lk)-4*(exp(ladot)+deprk-1))+chi/2*(exp(linvc-linv_cor-linvc(-1))-exp(ladot))^2+exp(linvc-linv_cor-linvc(-1))*chi*(exp(linvc-linv_cor-linvc(-1))-exp(ladot)))-1/(1+rkn)*exp(lmc_r(1)+infq(1))*exp(linvc(1)-linvc-linv_cor)^2*chi*(exp(linvc(1)-linvc-linv_cor)-exp(ladot)) ;
  infq = dyn_pcpix/(1+beta*dyn_pcpix)*infq(-1)+beta/(1+beta*dyn_pcpix)*infq(1)+(1-dyn_pcpix)*(1-beta)/(1+beta*dyn_pcpix)*pertarget+xi*(1-calvo_pcpix)*(1-beta*calvo_pcpix)/((1+beta*dyn_pcpix)*calvo_pcpix)*lmc_r+lxdc_cor_tot ;
- 
+
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 //% Investment goods production sector  %
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -422,7 +422,7 @@ fispol = coffispol*fiscal_;                                                //*
  lmpkinv = 1/theta*(log(alpha_inv)+linvklcm-linvklc)+(theta-1)/theta*la_inv+1/sigma*(log(1-delta)+linvkl-lkinv-log(uinv))+1/sigma_com*(log(delta_c)+linvklc-linvkl) ;
  exp(lqinv_r)-exp(lpinv_r) = exp(lmcinv_r)*(chi_k*(exp(linvinv-lkinv)-4*(exp(ladot)+deprk-1))+chi/2*(exp(linvinv-linv_cor-linvinv(-1))-exp(ladot))^2+exp(linvinv-linv_cor-linvinv(-1))*chi*(exp(linvinv-linv_cor-linvinv(-1))-exp(ladot)))-1/(1+rkn)*exp(lmcinv_r(1)+infq(1))*exp(linvinv(1)-linvinv-linv_cor)^2*chi*(exp(linvinv(1)-linvinv-linv_cor)-exp(ladot)) ;
  lpinv_r-lpinv_r(-1)+infq = dyn_pinv/(1+beta*dyn_pinv)*(lpinv_r(-1)+infq(-1)-lpinv_r(-2))+beta/(1+beta*dyn_pinv)*(lpinv_r(1)+infq(1)-lpinv_r)+(1-dyn_pinv)*(1-beta)/(1+beta*dyn_pinv)*pertarget+xi*(1-calvo_pinv)*(1-beta*calvo_pinv)/((1+beta*dyn_pinv)*calvo_pinv)*(lmcinv_r-lpinv_r)+lxdinv_cor ;
- 
+
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 //% Government goods production sector  %
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -442,7 +442,7 @@ fispol = coffispol*fiscal_;                                                //*
  lmpkg = 1/theta*(log(alpha_g)+lgklcm-lgklc)+(theta-1)/theta*la_g+1/sigma*(log(1-delta)+lgkl-lkg-log(ug))+1/sigma_com*(log(delta_c)+lgklc-lgkl) ;
  exp(lqg_r)-exp(lpinv_r) = exp(lmcg_r)*(chi_k*(exp(linvg-lkg)-4*(exp(ladot)+deprk-1))+chi/2*(exp(linvg-linv_cor-linvg(-1))-exp(ladot))^2+exp(linvg-linv_cor-linvg(-1))*chi*(exp(linvg-linv_cor-linvg(-1))-exp(ladot)))-1/(1+rkn)*exp(lmcg_r(1)+infq(1))*exp(linvg(1)-linvg-linv_cor)^2*chi*(exp(linvg(1)-linvg-linv_cor)-exp(ladot)) ;
  infq_pg = dyn_pg/(1+beta*dyn_pg)*infq_pg(-1)+beta/(1+beta*dyn_pg)*infq_pg(1)+(1-dyn_pg)*(1-beta)/(1+beta*dyn_pg)*pertarget+xi*(1-calvo_pg)*(1-beta*calvo_pg)/((1+beta*dyn_pg)*calvo_pg)*(lmcg_r-lpg_r)+lxdg_cor ;
- 
+
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 //%  Export goods production sector %
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -480,7 +480,7 @@ fispol = coffispol*fiscal_;                                                //*
  exp(lmpkcom) = exp(log(alpha_com)+lcomy-lykl)^(1/theta_com)*exp(log(1-delta)+lykl-lkcom-log(ucom))^(1/sigma) ;
  exp(lqcom_r)-exp(lpinv_r) = exp(lpcom_r)*(chi_k*(exp(linvcom-lkcom)-4*(exp(ladot)+deprk-1))+chi/2*(exp(linvcom-linv_cor-linvcom(-1))-exp(ladot))^2+exp(linvcom-linv_cor-linvcom(-1))*chi*(exp(linvcom-linv_cor-linvcom(-1))-exp(ladot)))-1/(1+rkn)*exp(lpcom_r(1)+infq(1))*exp(linvcom(1)-linvcom-linv_cor)*chi*(exp(linvcom(1)-linvcom-linv_cor)-exp(ladot)) ;
  lpcomd_r+infq-lpcomd_r(-1) = dyn_pcomd/(1+beta*dyn_pcomd)*(lpcomd_r(-1)+infq(-1)-lpcomd_r(-2))+beta/(1+beta*dyn_pcomd)*(lpcomd_r(1)+infq(1)-lpcomd_r)+(1-dyn_pcomd)*(1-beta)/(1+beta*dyn_pcomd)*pertarget+(1-calvo_pcomd)*(1-beta*calvo_pcomd)/((1+beta*dyn_pcomd)*calvo_pcomd)*(lpcom_r-lpcomd_r) ;
- 
+
 //%%%%%%%%%%%%%%%%%
 //% Import sector %
 //%%%%%%%%%%%%%%%%%
@@ -497,7 +497,7 @@ fispol = coffispol*fiscal_;                                                //*
 //% UIP %
 //%%%%%%%
  lforex = z_lag*(lforex(-1)+infq_row+lp_r(-1)-lp_r-infq+2*(pertarget-infrow_ss))+(1-z_lag)*(lforex(1)-infq_row(1)+lp_r(1)-lp_r+infq(1))+log(1+r1rown)+log(1+risk)-log(1+r1n)-log(1+r1row_ss)-log(1+risk_ss)+log(1+r1_ss) ;
- 
+
 //%%%%%%%%%%%%%%
 //% Households %
 //%%%%%%%%%%%%%%
@@ -511,7 +511,7 @@ fispol = coffispol*fiscal_;                                                //*
  lcx8 = log(alpha_c2)-theta_c2*(-lpc_r)+lc+(1-theta_c2)*lpc_cor ;
  lcomc = log(1-alpha_c2)-theta_c2*(lpcomd_r-lpc_r)+lc ;
  exp(lpc_r) = (alpha_c2*exp(lpc_cor)^(1-theta_c2)+(1-alpha_c2)*exp(lpcomd_r)^(1-theta_c2))^(1/(1-theta_c2)) ;
- 
+
 //%%%%%%%%%%%%%%%%%%%
 //% Current Account %
 //%%%%%%%%%%%%%%%%%%%
@@ -520,7 +520,7 @@ fispol = coffispol*fiscal_;                                                //*
  risk = risk_ss+risk_dyn ;
  risk_dyn = tau2*(exp(-(nfa-nfa_ss))-1)+lforexn_cor_tot+risk_cor ;
  risk_ss = tau*(exp(-nfa_ss)-1) ;
- 
+
 //%%%%%%%%%%%%%%
 //% Government %
 //%%%%%%%%%%%%%%
@@ -594,8 +594,8 @@ fispol = coffispol*fiscal_;                                                //*
  exp(lhaw_sreq) = exp(lhawc_sreq)+exp(lhawcom_sreq)+exp(lhawx_sreq)+exp(lhawg_sreq)+exp(lhawinv_sreq) ;
  exp(lktotal+log(utotal)) = exp(lk+log(u))+exp(lkinv+log(uinv))+exp(lkg+log(ug))+exp(lkx+log(ux))+exp(lkcom+log(ucom)) ;
  exp(lktotal) = exp(lk)+exp(lkinv)+exp(lkg)+exp(lkx)+exp(lkcom) ;
- 
- 
+
+
 //%%%%%%%%%%%%%%%%%%%%%%%
 //% Exogenous Processes %
 //%%%%%%%%%%%%%%%%%%%%%%%

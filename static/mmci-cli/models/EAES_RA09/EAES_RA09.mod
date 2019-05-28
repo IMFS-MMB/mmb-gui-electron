@@ -1,7 +1,7 @@
 //**************************************************************************
 // A New Comparative Approach to Macroeconomic Modeling and Policy Analysis
 //
-// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and 
+// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and
 // Maik Wolters
 //
 // Working Paper, 2009
@@ -10,24 +10,24 @@
 // Model: EAES_RA09
 
 // Further references:
-// Rabanal, Pau. 2009. "Inflation Differentials between Spain and the EMU: A DSGE Perspective" 
+// Rabanal, Pau. 2009. "Inflation Differentials between Spain and the EMU: A DSGE Perspective"
 // Journal of Money, Credit and Banking 41(6), pp. 1141-1166.
 
 // Implemented by Martina Jancokova and Anastasia Pukhova
-// Last edited: 31/07/11 
+// Last edited: 31/07/11
 
-//NOTE: we implement the restricted model with trends set equal to zero; 
+//NOTE: we implement the restricted model with trends set equal to zero;
 //      a setting that generates the IRFs from the paper.
 // This code is based on the original code provided by the author.
 
 //Note, the flex price case based output gap is not yet defined.
 
 
-var dy dy_star mu r pi c mu_star c_star rer t_N t_H t_F t_T t_N_star t_H_star t_F_star t_T_star 
-    c_H c_F c_N c_H_star c_F_star c_N_star l w l_star w_star l_N l_T l_N_star l_T_star y_N z_N y_H z_T y_N_star z_N_star 
-    y_F_star z_T_star pi_H pi_N pi_N_star pi_F pi_star pi_EMU g_N g_T g_N_star g_T_star y y_star y_EMU 
+var dy dy_star mu r pi c mu_star c_star rer t_N t_H t_F t_T t_N_star t_H_star t_F_star t_T_star
+    c_H c_F c_N c_H_star c_F_star c_N_star l w l_star w_star l_N l_T l_N_star l_T_star y_N z_N y_H z_T y_N_star z_N_star
+    y_F_star z_T_star pi_H pi_N pi_N_star pi_F pi_star pi_EMU g_N g_T g_N_star g_T_star y y_star y_EMU
 
-    
+
 //**************************************************************************
 // Modelbase Variables                                                   //*
    interest inflation inflationq output outputgap;                       //*
@@ -40,7 +40,7 @@ varexo eps_ZT eps_ZN eps_ZT_star eps_Z eps_ZN_star eps_GT eps_GN eps_GT_star eps
        interest_;                                                        //*
 //**************************************************************************
 
-parameters 
+parameters
 //**************************************************************************
 // Modelbase Parameters                                                  //*
                                                                          //*
@@ -54,11 +54,11 @@ parameters
         std_r_ std_r_quart coffispol                                     //*
                                                                          //*
 //**************************************************************************
-b x alfa_T b_star alfa_T_star nu eps w_bar w_bar_star gamma gamma_star vaphi_N theta_N beta alfa_N  
+b x alfa_T b_star alfa_T_star nu eps w_bar w_bar_star gamma gamma_star vaphi_N theta_N beta alfa_N
            vaphi_H theta_H vaphi_N_star theta_N_star alfa_N_star vaphi_F_star theta_F_star lambda lambda_star s
            eta eta_star rho_r gamma_pi rho_ZT rho_ZN rho_ZT_star rho_ZN_star rho_GT rho_GN rho_GT_star rho_GN_star;
 
-//NOTE: eta=G_N/Y_N=G_T/Y_H 
+//NOTE: eta=G_N/Y_N=G_T/Y_H
 
 
 
@@ -67,46 +67,46 @@ b x alfa_T b_star alfa_T_star nu eps w_bar w_bar_star gamma gamma_star vaphi_N t
 //"star" denotes parameters describing foreign country
 
 b=0.6;                  //habit persistence in home country C
-x=0*0.57;               //growth rate in the EMU in percent 
-alfa_T=0*0.04;          //sector-specific trend (home tradable sector) 
+x=0*0.57;               //growth rate in the EMU in percent
+alfa_T=0*0.04;          //sector-specific trend (home tradable sector)
 b_star=0.6;             //habit persistence in foreign country C
-alfa_T_star=0*0.06;     //sector-specific trends (foreign tradable sector)  
-nu=0.52;                //elasticity of substitution between H and F goods 
-eps=0.51;               //elasticity of substitution between T and N goods  
-w_bar=1;                //labor disutility in home country C 
-w_bar_star=1;           //labor disutility in foreign country C 
-gamma=0.66;             //proportion of goods in Spain HICP C 
-gamma_star=0.61;        //proportion of goods in Euro Area HICP C 
+alfa_T_star=0*0.06;     //sector-specific trends (foreign tradable sector)
+nu=0.52;                //elasticity of substitution between H and F goods
+eps=0.51;               //elasticity of substitution between T and N goods
+w_bar=1;                //labor disutility in home country C
+w_bar_star=1;           //labor disutility in foreign country C
+gamma=0.66;             //proportion of goods in Spain HICP C
+gamma_star=0.61;        //proportion of goods in Euro Area HICP C
 vaphi_N=0.28;           //sector-specific last period's inflation rate indexation fraction (the rest indexes to the SS inflation rate)
-theta_N=0.66;           //sector-specific Calvo lottery 
+theta_N=0.66;           //sector-specific Calvo lottery
 beta=0.99;              //discount factor C
-alfa_N=0*(-0.11);       //sector-specific trend (nontradable sector)  
-vaphi_H=0.44;           //sector-specific last period's inflation rate indexation fraction (the rest indexes to the SS inflation rate) 
-theta_H=0.35;           //sector-specific Calvo lottery 
-vaphi_N_star=0.46;      //sector-specific last period's inflation rate indexation fraction (the rest indexes to the SS inflation rate)  
-theta_N_star=0.85;      //sector-specific Calvo lottery 
-alfa_N_star=0*(-0.03);  //sector-specific trend (foreign nontradable sector) 
-vaphi_F_star=0.37;      //sector-specific last period's inflation rate indexation fraction (the rest indexes to the SS inflation rate)   
-theta_F_star=0.43;      //sector-specific Calvo lottery  
+alfa_N=0*(-0.11);       //sector-specific trend (nontradable sector)
+vaphi_H=0.44;           //sector-specific last period's inflation rate indexation fraction (the rest indexes to the SS inflation rate)
+theta_H=0.35;           //sector-specific Calvo lottery
+vaphi_N_star=0.46;      //sector-specific last period's inflation rate indexation fraction (the rest indexes to the SS inflation rate)
+theta_N_star=0.85;      //sector-specific Calvo lottery
+alfa_N_star=0*(-0.03);  //sector-specific trend (foreign nontradable sector)
+vaphi_F_star=0.37;      //sector-specific last period's inflation rate indexation fraction (the rest indexes to the SS inflation rate)
+theta_F_star=0.43;      //sector-specific Calvo lottery
 
-eta=0.18;               //average ratio G/Y in Spain C 
-eta_star=0.20;          //average ratio G/Y in euro area C 
-rho_r=0.73;             //interest rate smoothing 
-gamma_pi=1.43;          //Taylor rule inflation 
-rho_ZT=0.65;            //AR(1) coefficient of productivity shock in tradable sector at home 
-rho_ZN=0.77;            //AR(1) coefficient of productivity shock in nontradable sector at home  
+eta=0.18;               //average ratio G/Y in Spain C
+eta_star=0.20;          //average ratio G/Y in euro area C
+rho_r=0.73;             //interest rate smoothing
+gamma_pi=1.43;          //Taylor rule inflation
+rho_ZT=0.65;            //AR(1) coefficient of productivity shock in tradable sector at home
+rho_ZN=0.77;            //AR(1) coefficient of productivity shock in nontradable sector at home
 rho_ZT_star=0.65;       //=rho_ZT
 rho_ZN_star=0.77;       //=rho_ZN
-rho_GT=0.96;            //AR(1) coefficient of preference (government spending) shock in tradable sector at home  
-rho_GN=0.98;            //AR(1) coefficient of preference (government spending) shock in nontradable sector at home 
-rho_GT_star=0.96;       //=rho_GT 
+rho_GT=0.96;            //AR(1) coefficient of preference (government spending) shock in tradable sector at home
+rho_GN=0.98;            //AR(1) coefficient of preference (government spending) shock in nontradable sector at home
+rho_GT_star=0.96;       //=rho_GT
 rho_GN_star=0.98;       //=rho_GN
 
 //Differencies to Rabanal's code
-//lambda=0.16;            //average ratio of imports from EMU C 
+//lambda=0.16;            //average ratio of imports from EMU C
 //lambda_star=0.015;      //average ratio of imports from Spain C
-lambda=0.85;            
-lambda_star=0.98;      
+lambda=0.85;
+lambda_star=0.98;
 
 //s=0.11;                 //average weight of Spain in EMU HICP C
 s=((1-lambda)*gamma*(1-eta)/((1-lambda_star)*gamma_star*(1-eta_star))+1)^(-1);
@@ -115,14 +115,14 @@ s=((1-lambda)*gamma*(1-eta)/((1-lambda_star)*gamma_star*(1-eta_star))+1)^(-1);
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           
-cd('..');                                                                
-load policy_param.mat;                                                   
-for i=1:33                                                               
-    deep_parameter_name = M_.param_names(i,:);                           
-    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])                  
-end                                                                      
-cd(thispath);       
+thispath = pwd;
+cd('..');
+load policy_param.mat;
+for i=1:33
+    deep_parameter_name = M_.param_names(i,:);
+    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
+end
+cd(thispath);
                                                                          //*
 // Definition of Discretionary Fiscal Policy Parameter                   //*
                                                                          //*
@@ -170,15 +170,15 @@ interest =   cofintintb1*interest(-1)                                    //*
            + cofintoutf2*outputgap(+2)                                   //*
            + cofintoutf3*outputgap(+3)                                   //*
            + cofintoutf4*outputgap(+4)                                   //*
-           + cofintoutp*output 	                                         //* 
-           + cofintoutpb1*output(-1)                                     //* 
-           + cofintoutpb2*output(-2)                                     //* 
-           + cofintoutpb3*output(-3)                                     //* 
-           + cofintoutpb4*output(-4)                                     //* 
-           + cofintoutpf1*output(+1)                                     //* 
-           + cofintoutpf2*output(+2)                                     //* 
-           + cofintoutpf3*output(+3)                                     //* 
-           + cofintoutpf4*output(+4)                                     //* 
+           + cofintoutp*output 	                                         //*
+           + cofintoutpb1*output(-1)                                     //*
+           + cofintoutpb2*output(-2)                                     //*
+           + cofintoutpb3*output(-3)                                     //*
+           + cofintoutpb4*output(-4)                                     //*
+           + cofintoutpf1*output(+1)                                     //*
+           + cofintoutpf2*output(+2)                                     //*
+           + cofintoutpf3*output(+3)                                     //*
+           + cofintoutpf4*output(+4)                                     //*
            + std_r_ *interest_;                                          //*
                                                                          //*
 // Discretionary Government Spending                                     //*
@@ -190,7 +190,7 @@ interest =   cofintintb1*interest(-1)                                    //*
 
 //Definitions
 //pi=p-p(-1);
-//pi_star=p_star-p_star(-1);              
+//pi_star=p_star-p_star(-1);
 //t_N=p_N-p;
 //t_H=p_H-p;
 //t_F=p_F-p;
@@ -214,8 +214,8 @@ y_EMU=s*y+(1-s)*y_star;
 
 
 //Euler equation
-mu=mu(+1)+(r-pi(+1));   
--mu_star*(1-b_star/((1+x)*(1+alfa_T_star)))=c_star-b/((1+x)*(1+alfa_T_star))*c_star(-1); 
+mu=mu(+1)+(r-pi(+1));
+-mu_star*(1-b_star/((1+x)*(1+alfa_T_star)))=c_star-b/((1+x)*(1+alfa_T_star))*c_star(-1);
 -mu*(1-b/((1+x)*(1+alfa_T)))=c-b/((1+x)*(1+alfa_T))*c(-1);
 
 

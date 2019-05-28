@@ -1,7 +1,7 @@
 //**************************************************************************
 // A New Comparative Approach to Macroeconomic Modeling and Policy Analysis
 //
-// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and 
+// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and
 // Maik Wolters
 //
 // Working Paper, 2009
@@ -10,53 +10,53 @@
 // Model: EACZ_GEM03
 
 // Further references:
-// Laxton, D., and P. Pesenti. 2003. "Monetary Policy Rules for Small, Open, Emerging Economies." 
+// Laxton, D., and P. Pesenti. 2003. "Monetary Policy Rules for Small, Open, Emerging Economies."
 // Journal of Monetary Economics 50, pp. 1109-1146.
 
 // Last edited: 10/09/07 by S. Schmidt
 
 
-var AF AH BIGGAMF BIGGAMH BIGGAMIMPF BIGGAMIMPH BIGGAMMF BIGGAMMH BIGGAMNF 
-    BIGGAMNH BIGGAMQF BIGGAMQH BIGGAM_MONF BIGGAM_MONH BIGGAM_MOTF BIGGAM_MOTH 
-    BIGGAM_O_NF BIGGAM_O_NH BIGGAM_O_TF BIGGAM_O_TH CAPAF CAPAH CF CF_NAT CH 
-    CH_NAT CURBALF_RAT CURBALH_RAT DEEF DEEH DEPEX EXPORTSF EXPORTSF_NAT EXPORTSH 
-    EXPORTSH_NAT EYEF EYEH GAF GAH GAMMAF GAMMAH GDPF GDPF_NAT GDPGAPF GDPGAPH 
-    GDPH GDPH_NAT GF_NAT GH_NAT GNF GNH HF HH IMPORTSF IMPORTSF_NAT IMPORTSH 
-    IMPORTSH_NAT KF KH KNF KNF_RAT KNH KNH_RAT KTF KTF_RAT KTH KTH_RAT K_OF 
-    K_OF_RAT K_OH K_OH_RAT LANDF LANDH LF LH LNF LNH LTF LTH L_OF L_OH MARGUTF 
-    MARGUTH MF MF_NAT MH MH_NAT M_ONF M_ONH M_OTF M_OTH NF NH NNF NNH O_NF O_NH 
-    O_TF O_TH PIE4F PIE4H PIE4TARF PIE4TARH PIEBARMF PIEBARMH PIEBARQF PIEBARQH 
-    PIEF PIEH PIENF PIENH PIEWF PIEWH PSIF PSIH PSIPRIMEF PSIPRIMEH QF QH Q_ONF 
-    Q_ONH Q_OTF Q_OTH REALBF REALBH REALEX REALEXF REALEXH REALFINH REALMCNF 
-    REALMCNH REALMCTF REALMCTH REALMONEYF REALMONEYH REALPBARMF REALPBARMH 
-    REALPBARQF REALPBARQH REALPLANDF REALPLANDH REALPMF REALPMH REALPNF REALPNH 
-    REALPQF REALPQH REALPXF REALPXH REALP_MOF REALP_MOH REALP_ONF REALP_ONH 
-    REALP_OTF REALP_OTH REALP_QOF REALP_QOH REALRF REALRH REALTBALF REALTBALH 
-    REALWF REALWH RNOMF RNOMH SHOPF SHOPH SHOPPRIMEF SHOPPRIMEH TF TH T_OF 
-    T_OH VELOF VELOH VPRIMEF VPRIMEH XF_NAT XH_NAT XI ZBF ZBH ZEYEF ZEYEH ZNF 
-    ZNH ZTF ZTH ZUF ZUH ZZ_CF ZZ_CH ZZ_CURBALF_RAT ZZ_CURBALH_RAT ZZ_C_SHARF 
-    ZZ_C_SHARH ZZ_DPIE4F ZZ_DPIE4H ZZ_DRNOMF ZZ_DRNOMH ZZ_EXPORTSF ZZ_EXPORTSH 
-    ZZ_EYEF ZZ_EYEH ZZ_EYE_SHARF ZZ_EYE_SHARH ZZ_GDPF ZZ_GDPH ZZ_GDP_PPP_RATH 
-    ZZ_GF ZZ_GH ZZ_IMPORTSF ZZ_IMPORTSH ZZ_M_ON_SHARF ZZ_M_ON_SHARH ZZ_M_OT_SHARF 
-    ZZ_M_OT_SHARH ZZ_M_O_SHARF ZZ_M_O_SHARH ZZ_M_SHARF ZZ_M_SHARH ZZ_N_SHARF 
-    ZZ_N_SHARH ZZ_PIE4F ZZ_PIE4H ZZ_REALEX ZZ_RNOMF ZZ_RNOMH ZZ_UTILITYF 
+var AF AH BIGGAMF BIGGAMH BIGGAMIMPF BIGGAMIMPH BIGGAMMF BIGGAMMH BIGGAMNF
+    BIGGAMNH BIGGAMQF BIGGAMQH BIGGAM_MONF BIGGAM_MONH BIGGAM_MOTF BIGGAM_MOTH
+    BIGGAM_O_NF BIGGAM_O_NH BIGGAM_O_TF BIGGAM_O_TH CAPAF CAPAH CF CF_NAT CH
+    CH_NAT CURBALF_RAT CURBALH_RAT DEEF DEEH DEPEX EXPORTSF EXPORTSF_NAT EXPORTSH
+    EXPORTSH_NAT EYEF EYEH GAF GAH GAMMAF GAMMAH GDPF GDPF_NAT GDPGAPF GDPGAPH
+    GDPH GDPH_NAT GF_NAT GH_NAT GNF GNH HF HH IMPORTSF IMPORTSF_NAT IMPORTSH
+    IMPORTSH_NAT KF KH KNF KNF_RAT KNH KNH_RAT KTF KTF_RAT KTH KTH_RAT K_OF
+    K_OF_RAT K_OH K_OH_RAT LANDF LANDH LF LH LNF LNH LTF LTH L_OF L_OH MARGUTF
+    MARGUTH MF MF_NAT MH MH_NAT M_ONF M_ONH M_OTF M_OTH NF NH NNF NNH O_NF O_NH
+    O_TF O_TH PIE4F PIE4H PIE4TARF PIE4TARH PIEBARMF PIEBARMH PIEBARQF PIEBARQH
+    PIEF PIEH PIENF PIENH PIEWF PIEWH PSIF PSIH PSIPRIMEF PSIPRIMEH QF QH Q_ONF
+    Q_ONH Q_OTF Q_OTH REALBF REALBH REALEX REALEXF REALEXH REALFINH REALMCNF
+    REALMCNH REALMCTF REALMCTH REALMONEYF REALMONEYH REALPBARMF REALPBARMH
+    REALPBARQF REALPBARQH REALPLANDF REALPLANDH REALPMF REALPMH REALPNF REALPNH
+    REALPQF REALPQH REALPXF REALPXH REALP_MOF REALP_MOH REALP_ONF REALP_ONH
+    REALP_OTF REALP_OTH REALP_QOF REALP_QOH REALRF REALRH REALTBALF REALTBALH
+    REALWF REALWH RNOMF RNOMH SHOPF SHOPH SHOPPRIMEF SHOPPRIMEH TF TH T_OF
+    T_OH VELOF VELOH VPRIMEF VPRIMEH XF_NAT XH_NAT XI ZBF ZBH ZEYEF ZEYEH ZNF
+    ZNH ZTF ZTH ZUF ZUH ZZ_CF ZZ_CH ZZ_CURBALF_RAT ZZ_CURBALH_RAT ZZ_C_SHARF
+    ZZ_C_SHARH ZZ_DPIE4F ZZ_DPIE4H ZZ_DRNOMF ZZ_DRNOMH ZZ_EXPORTSF ZZ_EXPORTSH
+    ZZ_EYEF ZZ_EYEH ZZ_EYE_SHARF ZZ_EYE_SHARH ZZ_GDPF ZZ_GDPH ZZ_GDP_PPP_RATH
+    ZZ_GF ZZ_GH ZZ_IMPORTSF ZZ_IMPORTSH ZZ_M_ON_SHARF ZZ_M_ON_SHARH ZZ_M_OT_SHARF
+    ZZ_M_OT_SHARH ZZ_M_O_SHARF ZZ_M_O_SHARH ZZ_M_SHARF ZZ_M_SHARH ZZ_N_SHARF
+    ZZ_N_SHARH ZZ_PIE4F ZZ_PIE4H ZZ_REALEX ZZ_RNOMF ZZ_RNOMH ZZ_UTILITYF
     ZZ_UTILITYH ZZ_XBALF_TOT_RAT ZZ_XBALH_TOT_RAT Z_OF Z_OH E_GAF
 
 //**************************************************************************
-// Modelbase Variables                                                   //*                      
+// Modelbase Variables                                                   //*
     interest inflation inflationq outputgap output fispol;               //*
 //**************************************************************************
- 
-varexo E_ZBH E_ZUH E_ZUF E_ZEYEH E_ZEYEF E_GAMMAH E_GAMMAF E_LANDH E_LANDF E_GAH  
+
+varexo E_ZBH E_ZUH E_ZUF E_ZEYEH E_ZEYEF E_GAMMAH E_GAMMAF E_LANDH E_LANDF E_GAH
        E_CAPAH E_CAPAF
 
 //**************************************************************************
-// Modelbase Shocks                                                      //*       
+// Modelbase Shocks                                                      //*
         interest_ fiscal_;                                               //*
-//************************************************************************** 
+//**************************************************************************
 
- 
-parameters 
+
+parameters
 //**************************************************************************
 // Modelbase Parameters                                                  //*
                                                                          //*
@@ -69,22 +69,22 @@ parameters
         cofintoutpf1 cofintoutpf2 cofintoutpf3 cofintoutpf4              //*
         std_r_ std_r_quart coffispol                                     //*
 //**************************************************************************
-           COSTLF COSTLH EPSF EPSH EPSQMF EPSQMH GLAMBDAF GLAMBDAH SIGMAF SIGMAH 
-           SSF SSH XR1F XR1H XR2F XR2H XR3F XR3H XR4F XR4H ALPHANF ALPHANH ALPHATF 
-           ALPHATH ALPHA_OF ALPHA_OH A_ONEF A_ONEH A_ZEROF A_ZEROH B0F B0H B1F 
-           B1H B2F B2H BET CAPAF_SS CAPAH_SS CHI0 CHI1 CHI2 CHI3 COSTF COSTH 
-           COST_MONF COST_MONH COST_MOTF COST_MOTH COST_O_NF COST_O_NH COST_O_TF 
-           COST_O_TH DELTAF DELTAH EPS_ONF EPS_ONH EPS_OTF EPS_OTH ETAF ETAH 
-           E_PIE4TARF E_PIE4TARH E_ZBF GAMA_NF GAMA_NH GAMA_TF GAMA_TH GAMMAF_SS 
-           GAMMAH_SS GAMMA_LANDF GAMMA_LANDH GA_RATF GA_RATH GDPF_EXOG GDPH_EXOG 
-           GN_RATF GN_RATH LANDF_SS LANDH_SS LILCAPPA1F LILCAPPA1H LILCAPPA2F 
-           LILCAPPA2H LILCAPPA3F LILCAPPA3H LILCAPPA4F LILCAPPA4H LILCAPPA5F 
-           LILCAPPA5H LILCAPPA6F LILCAPPA6H LILCAPPA7F LILCAPPA7H LILCAPPA8F 
-           LILCAPPA8H NYF NYH NY_NF NY_NH NY_TF NY_TH OMEGA0F OMEGA0H OMEGAF 
-           OMEGAH PHIF PHIH PIE4TARF_SS PIE4TARH_SS REALEX_EXOG REALPBARMF_EXOG 
-           REALPBARMH_EXOG REALPNF_EXOG REALPNH_EXOG REALP_MOF_EXOG REALP_MOH_EXOG 
-           RNOM_EXOGF RNOM_EXOGH THETAF THETAH XDUMF XDUMH XIXI_NF XIXI_NH XIXI_OF 
-           XIXI_OH XIXI_TF XIXI_TH ZBF_SS ZBH_SS ZEDF ZEDH ZEYEF_SS ZEYEH_SS 
+           COSTLF COSTLH EPSF EPSH EPSQMF EPSQMH GLAMBDAF GLAMBDAH SIGMAF SIGMAH
+           SSF SSH XR1F XR1H XR2F XR2H XR3F XR3H XR4F XR4H ALPHANF ALPHANH ALPHATF
+           ALPHATH ALPHA_OF ALPHA_OH A_ONEF A_ONEH A_ZEROF A_ZEROH B0F B0H B1F
+           B1H B2F B2H BET CAPAF_SS CAPAH_SS CHI0 CHI1 CHI2 CHI3 COSTF COSTH
+           COST_MONF COST_MONH COST_MOTF COST_MOTH COST_O_NF COST_O_NH COST_O_TF
+           COST_O_TH DELTAF DELTAH EPS_ONF EPS_ONH EPS_OTF EPS_OTH ETAF ETAH
+           E_PIE4TARF E_PIE4TARH E_ZBF GAMA_NF GAMA_NH GAMA_TF GAMA_TH GAMMAF_SS
+           GAMMAH_SS GAMMA_LANDF GAMMA_LANDH GA_RATF GA_RATH GDPF_EXOG GDPH_EXOG
+           GN_RATF GN_RATH LANDF_SS LANDH_SS LILCAPPA1F LILCAPPA1H LILCAPPA2F
+           LILCAPPA2H LILCAPPA3F LILCAPPA3H LILCAPPA4F LILCAPPA4H LILCAPPA5F
+           LILCAPPA5H LILCAPPA6F LILCAPPA6H LILCAPPA7F LILCAPPA7H LILCAPPA8F
+           LILCAPPA8H NYF NYH NY_NF NY_NH NY_TF NY_TH OMEGA0F OMEGA0H OMEGAF
+           OMEGAH PHIF PHIH PIE4TARF_SS PIE4TARH_SS REALEX_EXOG REALPBARMF_EXOG
+           REALPBARMH_EXOG REALPNF_EXOG REALPNH_EXOG REALP_MOF_EXOG REALP_MOH_EXOG
+           RNOM_EXOGF RNOM_EXOGH THETAF THETAH XDUMF XDUMH XIXI_NF XIXI_NH XIXI_OF
+           XIXI_OH XIXI_TF XIXI_TH ZBF_SS ZBH_SS ZEDF ZEDH ZEYEF_SS ZEYEH_SS
            ZNF_SS ZNH_SS ZTF_SS ZTH_SS ZUF_SS ZUH_SS Z_OF_SS Z_OH_SS
            PIE4F_EXOG interest_EXOG PIE4NF_EXOG PIEBAR4QF_EXOG;
 
@@ -234,7 +234,7 @@ ZUF_SS=1;
 ZUH_SS=1;
 Z_OF_SS=1;
 Z_OH_SS=1;
- 
+
 PIE4F_EXOG=1.125;
 interest_EXOG=PIE4F_EXOG^0.25/BET;
 PIE4NF_EXOG=1.02988357195356^4;
@@ -244,27 +244,27 @@ PIEBAR4QF_EXOG=1.02988357195356^4;
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           
-cd('..');                                                                
-load policy_param.mat;                                                   
-for i=1:33                                                               
-    deep_parameter_name = M_.param_names(i,:);                           
-    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])                  
-end                                                                      
-cd(thispath);                                                            
-std_r_ = 100;                                                            //* 
+thispath = pwd;
+cd('..');
+load policy_param.mat;
+for i=1:33
+    deep_parameter_name = M_.param_names(i,:);
+    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
+end
+cd(thispath);
+std_r_ = 100;                                                            //*
                                                                          //*
 // Definition of Discretionary Fiscal Policy Parameter                   //*
 coffispol = 1;                                                           //*
 //**************************************************************************
 
-model; 
+model;
 
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables //*
 
-interest         = 100*(RNOMF^4-interest_EXOG^4)/interest_EXOG^4;        //*    
-inflation        = 100*(PIE4F-PIE4F_EXOG)/PIE4F_EXOG;                    //* 
+interest         = 100*(RNOMF^4-interest_EXOG^4)/interest_EXOG^4;        //*
+inflation        = 100*(PIE4F-PIE4F_EXOG)/PIE4F_EXOG;                    //*
 inflationq       = 100*(PIEF^4-PIE4F_EXOG)/PIE4F_EXOG;                   //*
 outputgap        = GDPGAPF;                                              //*
 output           = GDPF*100;                                             //*
@@ -273,42 +273,42 @@ fispol           = E_GAF;                                                //*
 //**************************************************************************
 
 
-//**************************************************************************                       
+//**************************************************************************
 // Policy Rule foreign (large) country (main country)                	 //*
                                                                          //*
 // Monetary Policy                                                       //*
                                                                          //*
-interest =   cofintintb1*interest(-1)                                    //* 
-           + cofintintb2*interest(-2)                                    //* 
-           + cofintintb3*interest(-3)                                    //* 
-           + cofintintb4*interest(-4)                                    //* 
-           + cofintinf0*inflationq                                       //* 
-           + cofintinfb1*inflationq(-1)                                  //* 
-           + cofintinfb2*inflationq(-2)                                  //* 
-           + cofintinfb3*inflationq(-3)                                  //* 
-           + cofintinfb4*inflationq(-4)                                  //* 
-           + cofintinff1*inflationq(+1)                                  //* 
-           + cofintinff2*inflationq(+2)                                  //* 
-           + cofintinff3*inflationq(+3)                                  //* 
-           + cofintinff4*inflationq(+4)                                  //* 
-           + cofintout*outputgap 	                                     //* 
-           + cofintoutb1*outputgap(-1)                                   //* 
-           + cofintoutb2*outputgap(-2)                                   //* 
-           + cofintoutb3*outputgap(-3)                                   //* 
-           + cofintoutb4*outputgap(-4)                                   //* 
-           + cofintoutf1*outputgap(+1)                                   //* 
-           + cofintoutf2*outputgap(+2)                                   //* 
-           + cofintoutf3*outputgap(+3)                                   //* 
+interest =   cofintintb1*interest(-1)                                    //*
+           + cofintintb2*interest(-2)                                    //*
+           + cofintintb3*interest(-3)                                    //*
+           + cofintintb4*interest(-4)                                    //*
+           + cofintinf0*inflationq                                       //*
+           + cofintinfb1*inflationq(-1)                                  //*
+           + cofintinfb2*inflationq(-2)                                  //*
+           + cofintinfb3*inflationq(-3)                                  //*
+           + cofintinfb4*inflationq(-4)                                  //*
+           + cofintinff1*inflationq(+1)                                  //*
+           + cofintinff2*inflationq(+2)                                  //*
+           + cofintinff3*inflationq(+3)                                  //*
+           + cofintinff4*inflationq(+4)                                  //*
+           + cofintout*outputgap 	                                     //*
+           + cofintoutb1*outputgap(-1)                                   //*
+           + cofintoutb2*outputgap(-2)                                   //*
+           + cofintoutb3*outputgap(-3)                                   //*
+           + cofintoutb4*outputgap(-4)                                   //*
+           + cofintoutf1*outputgap(+1)                                   //*
+           + cofintoutf2*outputgap(+2)                                   //*
+           + cofintoutf3*outputgap(+3)                                   //*
            + cofintoutf4*outputgap(+4)                                   //*
-           + cofintoutp*output 	                                         //* 
-           + cofintoutpb1*output(-1)                                     //* 
-           + cofintoutpb2*output(-2)                                     //* 
-           + cofintoutpb3*output(-3)                                     //* 
-           + cofintoutpb4*output(-4)                                     //* 
-           + cofintoutpf1*output(+1)                                     //* 
-           + cofintoutpf2*output(+2)                                     //* 
-           + cofintoutpf3*output(+3)                                     //* 
-           + cofintoutpf4*output(+4)                                     //*  
+           + cofintoutp*output 	                                         //*
+           + cofintoutpb1*output(-1)                                     //*
+           + cofintoutpb2*output(-2)                                     //*
+           + cofintoutpb3*output(-3)                                     //*
+           + cofintoutpb4*output(-4)                                     //*
+           + cofintoutpf1*output(+1)                                     //*
+           + cofintoutpf2*output(+2)                                     //*
+           + cofintoutpf3*output(+3)                                     //*
+           + cofintoutpf4*output(+4)                                     //*
            + std_r_ *interest_;                                          //*
                                                                          //*
 // Discretionary Government Spending                                     //*
@@ -341,15 +341,15 @@ fispol = coffispol*fiscal_;                                              //*
                       + cofintoutf2*GDPGAPH(+2)                                      //*
                       + cofintoutf3*GDPGAPH(+3)                                      //*
                       + cofintoutf4*GDPGAPH(+4)                                     //*
-                       + cofintoutp*(100*GDPH) 	                                         //* 
-                       + cofintoutpb1*(100*GDPH(-1))                                     //* 
-                       + cofintoutpb2*(100*GDPH(-2))                                     //* 
-                       + cofintoutpb3*(100*GDPH(-3))                                     //* 
-                       + cofintoutpb4*(100*GDPH(-4))                                     //* 
-                       + cofintoutpf1*(100*GDPH(+1))                                     //* 
-                       + cofintoutpf2*(100*GDPH(+2))                                     //* 
-                       + cofintoutpf3*(100*GDPH(+3))                                     //* 
-                       + cofintoutpf4*(100*GDPH(+4));                                     //*  
+                       + cofintoutp*(100*GDPH) 	                                         //*
+                       + cofintoutpb1*(100*GDPH(-1))                                     //*
+                       + cofintoutpb2*(100*GDPH(-2))                                     //*
+                       + cofintoutpb3*(100*GDPH(-3))                                     //*
+                       + cofintoutpb4*(100*GDPH(-4))                                     //*
+                       + cofintoutpf1*(100*GDPH(+1))                                     //*
+                       + cofintoutpf2*(100*GDPH(+2))                                     //*
+                       + cofintoutpf3*(100*GDPH(+3))                                     //*
+                       + cofintoutpf4*(100*GDPH(+4));                                     //*
                                                                                      //*
 //**************************************************************************************
 
@@ -376,7 +376,7 @@ fispol = coffispol*fiscal_;                                              //*
           ZZ_RNOMH = 100*(RNOMH^4-1) ;
           ZZ_DRNOMH = ZZ_RNOMH-ZZ_RNOMH(-1) ;
           100*(PIE4TARH-1) = 1*100*(PIE4TARH_SS-1)+(1-1)*100*(PIE4TARH(-1)-1)+E_PIE4TARH ;
-          
+
           log(ZUH) = 0.3*log(ZUH_SS)+0.7*log(ZUH(-1))+E_ZUH ;
           ZBH = 0.3*ZBH_SS+0.7*ZBH(-1)+E_ZBH ;
           log(LANDH) = 0.05*log(LANDH_SS)+0.95*log(LANDH(-1))+E_LANDH ;
@@ -386,7 +386,7 @@ fispol = coffispol*fiscal_;                                              //*
           ZEYEH = 0.05*ZEYEH_SS+0.95*ZEYEH(-1)+E_ZEYEH ;
           CAPAH = 0.05*CAPAH_SS+0.95*CAPAH(-1)+E_CAPAH ;
           log(GAMMAH) = 0.05*log(GAMMAH_SS)+0.95*log(GAMMAH(-1))+E_GAMMAH ;
-          
+
           BIGGAM_O_NH = 1-COST_O_NH/2*(O_NH/NH/(O_NH(-1)/NH(-1))-1)^2 ;
           BIGGAM_O_TH = 1-COST_O_TH/2*(O_TH/TH/(O_TH(-1)/TH(-1))-1)^2 ;
           O_NH = GAMA_NH*NH/ZNH*(REALP_ONH/(REALMCNH*ZNH))^(-XIXI_NH)*(BIGGAM_O_NH-COST_O_NH*(O_NH/NH/(O_NH(-1)/NH(-1))-1)*O_NH/NH/(O_NH(-1)/NH(-1)))^XIXI_NH/BIGGAM_O_NH ;
@@ -429,7 +429,7 @@ fispol = coffispol*fiscal_;                                              //*
 //        100*(RNOMH^4-1) = (1-XDUMH)*100*(RNOM_EXOGH^4-1)+XDUMH*(XR3H*100*(RNOMH(-1)^4-1)+(1-XR3H)*(100*((1/BET*PIE4H^0.25)^4-1)+XR1H/(1-XR3H)*(100*(PIE4H-1)-100*(PIE4TARH-1))+XR4H/(1-XR3H)*100*(DEPEX^4-1)+XR2H/(1-XR3H)*GDPGAPH)) ;
 
 // original policy rule home country (small economy):
-//100*(RNOMH^4-1) = (1-XDUMH)*100*(RNOM_EXOGH^4-1)   
+//100*(RNOMH^4-1) = (1-XDUMH)*100*(RNOM_EXOGH^4-1)
 //+XDUMH*(XR3H*100*(RNOMH(-1)^4-1)
 //+(1-XR3H)*(100*((1/BET*PIE4H^0.25)^4-1))
 //+XR1H*(100*(PIE4H-1)-100*(PIE4TARH-1))
@@ -557,15 +557,15 @@ fispol = coffispol*fiscal_;                                              //*
           VELOF = CF/REALMONEYF ;
           DEEF = 1-SHOPPRIMEF*VELOF^2 ;
           1 = RNOMF*DEEF ;
-  
-// original policy rule foreign country        
+
+// original policy rule foreign country
 //          100*(RNOMF^4-1) = (1-XDUMF)*100*(RNOM_EXOGF^4-1)+XDUMF*(XR3F*100*(RNOMF(-1)^4-1)+(1-XR3F)*(100*((1/BET*PIE4F^0.25)^4-1)+XR1F*(100*(PIE4F-1)-100*(PIE4TARF-1))+XR4F*100*(DEPEX^4-1)+XR2F*GDPGAPF)) ;
-          
+
 
           GDPGAPF = 100*(GDPF_NAT-GDPF_EXOG)/GDPF_EXOG ;
           PIE4F = PIEF*PIEF(-1)*PIEF(-2)*PIEF(-3) ;
           AF = CF*(1+SHOPF)+EYEF+GAF ;
-          GAF = .05*(GA_RATF*(GLAMBDAF*GDPF_NAT+(1-GLAMBDAF)*GDPF_EXOG))+.95*GAF(-1)+E_GAF;  
+          GAF = .05*(GA_RATF*(GLAMBDAF*GDPF_NAT+(1-GLAMBDAF)*GDPF_EXOG))+.95*GAF(-1)+E_GAF;
           GNF = GN_RATF*(GLAMBDAF*GDPF_NAT+(1-GLAMBDAF)*GDPF_EXOG)/REALPNF_EXOG ;
           PIEBARMF = PIEF*REALPBARMF/REALPBARMF(-1) ;
           BIGGAMMF = LILCAPPA7F/2*(PIEBARMF/PIE4TARF^0.25-1)^2+LILCAPPA8F/2*(PIEBARMF/PIEBARMF(-1)-1)^2 ;
@@ -606,9 +606,9 @@ fispol = coffispol*fiscal_;                                              //*
           XF_NAT = SSH/SSF*1/REALEX_EXOG*REALPBARMH_EXOG*MH ;
           MF_NAT = REALPBARMF_EXOG*MF ;
           CURBALF_RAT = -(REALTBALH/REALEX/SSF/GDPF)+(RNOMF(-1)-1)*REALBF(-1)/PIEF/GDPF ;
-end; 
- 
-initval; 
+end;
+
+initval;
 AF=2.17350447531715;
 AH=2.61461230039988;
 BIGGAMF=0;
@@ -867,8 +867,8 @@ E_CAPAF=0;
 
 interest    = 0;
 inflation  = 0;
-outputgap  = 0; 
-end;    
+outputgap  = 0;
+end;
 
 shocks;
 
@@ -924,4 +924,4 @@ stderr 0;
 end;
 
 
-  
+

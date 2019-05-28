@@ -1,6 +1,6 @@
 // US_NS14FSCM
 
-// Reference: Emi Nakamura and Jón Steinsson (2014).
+// Reference: Emi Nakamura and Jï¿½n Steinsson (2014).
 // "Fiscal Stimulus in a Monetary Union: Evidence from US Regions"
 // American Economic Review 2014, 104(3): 753-792
 
@@ -8,7 +8,7 @@
 // Bopjun Gwak and Paul Reimers, Goethe University, Frankfurt.
 // Last edited in April 2017.
 
-// NOTES: 
+// NOTES:
 //    1. The model implemented in the MMB is the firm-specific capital with
 //       GHH preferences specification.
 //    2. The flexible-price economy assumes no nominal rigidities in both home
@@ -24,21 +24,21 @@
 //       is zero.
 
 var c cf r pi pif piH piF l lf pH p pf sH sF y yf g gf w wf i if k kf ny nyf q
-    c_n cf_n r_n l_n lf_n sH_n sF_n y_n yf_n 
+    c_n cf_n r_n l_n lf_n sH_n sF_n y_n yf_n
     g_n gf_n w_n wf_n i_n if_n k_n kf_n ny_n nyf_n eg_agg
 //**************************************************************************
-// Modelbase Variables                                                   //*    
+// Modelbase Variables                                                   //*
    interest inflation inflationq output fispol outputgap ;               //*
 //**************************************************************************
 
 varexo eg egf /*er*/
 //**************************************************************************
-// Modelbase Shocks                                                      //*       
+// Modelbase Shocks                                                      //*
        interest_ fiscal_;                                                //*
-//************************************************************************** 
+//**************************************************************************
 
 parameters
-//************************************************************************** 
+//**************************************************************************
 // Modelbase Parameters                                                  //*
         cofintintb1 cofintintb2 cofintintb3 cofintintb4                  //*
         cofintinf0 cofintinfb1 cofintinfb2 cofintinfb3 cofintinfb4       //*
@@ -49,7 +49,7 @@ parameters
         cofintoutpf1 cofintoutpf2 cofintoutpf3 cofintoutpf4              //*
         std_r_ std_r_quart coffispol                                     //*
 //**************************************************************************
-sigma_c sigma_l beta kappa zeta phiH phiF phiHstar phiFstar Cbar Ibar nn eta rhoii 
+sigma_c sigma_l beta kappa zeta phiH phiF phiHstar phiFstar Cbar Ibar nn eta rhoii
 phiPi phiY phiG rhoG aa nu omegaBar delta eps_phi rho_y rho_k kappa_n zeta_n ;
 
 sigma   = 1;                % Intertemporal elastisity of substitution
@@ -83,7 +83,7 @@ Cbar     = 1 - Gbar - Ibar; % Steady state consumption-output ratio
 sigma_c  = sigma^(-1)*(1-aa*((theta-1)/theta)*Cbar^(-1)*(1+1/nu)^(-1))^(-1);
 sigma_l  = (Cbar^(-1)*((theta-1)/theta)*aa*sigma_c^(-1))^(-1);
 kappa    = (1-alpha)*(1-alpha*beta)/alpha;
-omegaBar = (nu^(-1)+1-aa)/aa; 
+omegaBar = (nu^(-1)+1-aa)/aa;
 rho_y    = omegaBar + 1;
 rho_k    = rho_y - nu^(-1);
 Xi       = (1-beta*(1-delta))*rho_y*theta*eps_phi^(-1);
@@ -110,7 +110,7 @@ zeta     = (1+omegaBar*theta-(omegaBar-nu^(-1))*tauBar*alpha*beta/(1-alpha*beta*
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           //*
+thispath = pwd;                                                           //*
 cd('..');                                                                //*
 load policy_param.mat;                                                   //*
 for i=1:33                                                               //*
@@ -140,43 +140,43 @@ output         = (nn*y + (1-nn)*yf);
 
 fispol = eg_agg;
 //**************************************************************************
-//**************************************************************************                                                                    
+//**************************************************************************
 // Policy Rule                                                           //*
                                                                          //*
 // Monetary Policy                                                       //*
                                                                          //*
 interest =   cofintintb1*interest(-1)                                    //*
-           + cofintintb2*interest(-2)                                    //* 
-           + cofintintb3*interest(-3)                                    //* 
-           + cofintintb4*interest(-4)                                    //* 
+           + cofintintb2*interest(-2)                                    //*
+           + cofintintb3*interest(-3)                                    //*
+           + cofintintb4*interest(-4)                                    //*
            + cofintinf0*inflationq                                       //*
-           + cofintinfb1*inflationq(-1)                                  //* 
-           + cofintinfb2*inflationq(-2)                                  //* 
-           + cofintinfb3*inflationq(-3)                                  //* 
-           + cofintinfb4*inflationq(-4)                                  //* 
-           + cofintinff1*inflationq(+1)                                  //* 
-           + cofintinff2*inflationq(+2)                                  //* 
-           + cofintinff3*inflationq(+3)                                  //* 
-           + cofintinff4*inflationq(+4)                                  //* 
-           + cofintout*outputgap 	                                     //* 
+           + cofintinfb1*inflationq(-1)                                  //*
+           + cofintinfb2*inflationq(-2)                                  //*
+           + cofintinfb3*inflationq(-3)                                  //*
+           + cofintinfb4*inflationq(-4)                                  //*
+           + cofintinff1*inflationq(+1)                                  //*
+           + cofintinff2*inflationq(+2)                                  //*
+           + cofintinff3*inflationq(+3)                                  //*
+           + cofintinff4*inflationq(+4)                                  //*
+           + cofintout*outputgap 	                                     //*
            + cofintoutb1*outputgap(-1)                                   //*
-           + cofintoutb2*outputgap(-2)                                   //* 
-           + cofintoutb3*outputgap(-3)                                   //* 
-           + cofintoutb4*outputgap(-4)                                   //* 
-           + cofintoutf1*outputgap(+1)                                   //* 
-           + cofintoutf2*outputgap(+2)                                   //* 
-           + cofintoutf3*outputgap(+3)                                   //* 
-           + cofintoutf4*outputgap(+4)                                   //* 
-           + cofintoutp*output 	                                         //* 
-           + cofintoutpb1*output(-1)                                     //* 
-           + cofintoutpb2*output(-2)                                     //* 
-           + cofintoutpb3*output(-3)                                     //* 
-           + cofintoutpb4*output(-4)                                     //* 
-           + cofintoutpf1*output(+1)                                     //* 
-           + cofintoutpf2*output(+2)                                     //* 
-           + cofintoutpf3*output(+3)                                     //* 
-           + cofintoutpf4*output(+4)                                     //* 
-           + std_r_*interest_;                                           //* 
+           + cofintoutb2*outputgap(-2)                                   //*
+           + cofintoutb3*outputgap(-3)                                   //*
+           + cofintoutb4*outputgap(-4)                                   //*
+           + cofintoutf1*outputgap(+1)                                   //*
+           + cofintoutf2*outputgap(+2)                                   //*
+           + cofintoutf3*outputgap(+3)                                   //*
+           + cofintoutf4*outputgap(+4)                                   //*
+           + cofintoutp*output 	                                         //*
+           + cofintoutpb1*output(-1)                                     //*
+           + cofintoutpb2*output(-2)                                     //*
+           + cofintoutpb3*output(-3)                                     //*
+           + cofintoutpb4*output(-4)                                     //*
+           + cofintoutpf1*output(+1)                                     //*
+           + cofintoutpf2*output(+2)                                     //*
+           + cofintoutpf3*output(+3)                                     //*
+           + cofintoutpf4*output(+4)                                     //*
+           + std_r_*interest_;                                           //*
                                                                          //*
 // Discretionary Government Spending                                     //*
                                                                          //*
@@ -243,9 +243,9 @@ wf=1/nu*lf;
 sH+pH=omegaBar*y-(omegaBar-1/nu)*k(-1);                % sH, sF real marginal cost
 
 //Foreign Marginal Costs
-sF-phiH/phiF*pH=omegaBar*yf-(omegaBar-1/nu)*kf(-1)+q;   
+sF-phiH/phiF*pH=omegaBar*yf-(omegaBar-1/nu)*kf(-1)+q;
 
-//Home & Foreign Capital Accumulation 
+//Home & Foreign Capital Accumulation
 k=(1-delta)*k(-1)+delta*i;
 kf=(1-delta)*kf(-1)+delta*if;
 
@@ -257,7 +257,7 @@ sigma_c^(-1)*c-sigma_c^(-1)*c(+1)-sigma_l^(-1)*l+sigma_l^(-1)*l(+1)-(1+beta)*eps
 sigma_c^(-1)*cf-sigma_c^(-1)*cf(+1)-sigma_l^(-1)*lf+sigma_l^(-1)*lf(+1)-(1+beta)*eps_phi*kf
 -(1-beta*(1-delta))*rho_k*kf+beta*eps_phi*kf(+1)+(1-beta*(1-delta))*rho_y*yf(+1)=-eps_phi*kf(-1);
 
-//Home PPI: 
+//Home PPI:
 p=piH+p(-1);
 
 //Foreign PPI
@@ -310,9 +310,9 @@ wf_n=1/nu*lf_n;
 sH_n=omegaBar*y_n-(omegaBar-1/nu)*k_n(-1);
 
 //Foreign Marginal Costs
-sF_n=omegaBar*yf_n-(omegaBar-1/nu)*kf_n(-1)+0;   
+sF_n=omegaBar*yf_n-(omegaBar-1/nu)*kf_n(-1)+0;
 
-//Home & Foreign Capital Accumulation 
+//Home & Foreign Capital Accumulation
 k_n=(1-delta)*k_n(-1)+delta*i_n;
 kf_n=(1-delta)*kf_n(-1)+delta*if_n;
 
@@ -329,7 +329,7 @@ sigma_c^(-1)*cf_n-sigma_c^(-1)*cf_n(+1)-sigma_l^(-1)*lf_n+sigma_l^(-1)*lf_n(+1)-
 end;
 
 shocks;
-var fiscal_ = 1; 
+var fiscal_ = 1;
 var eg      = 1;
 var egf     = 1;
 end;
