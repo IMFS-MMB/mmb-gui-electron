@@ -169,7 +169,6 @@ function [base]=stoch_simul_MMB(base)
     else
       base.info(rule_number) = info(1);
       base.solution=1;
-      rule_name = strtrim(deblank(base.rulenamesshort1(rule_number,:)));
 
       %Theoretical ACFs and Variances
       nvar  = length(oo_.dr.order_var);
@@ -194,11 +193,11 @@ function [base]=stoch_simul_MMB(base)
       end
 
       if AL
-        base.VAR.(rule_name) =oo_.var;
-        base.VARendo_names.(rule_name)=M_.endo_names;
+        base.VAR =oo_.var;
+        base.VARendo_names=M_.endo_names;
       else
-        base.VAR.(rule_name) =Gamma_y{1};
-        base.VARendo_names.(rule_name)=M_.endo_names;
+        base.VAR =Gamma_y{1};
+        base.VARendo_names=M_.endo_names;
       end
 
       if AL
@@ -221,8 +220,8 @@ function [base]=stoch_simul_MMB(base)
         end
       end
 
-      base.AUTR.(rule_name)(:,:)=[ones(size(R,1),1),R];
-      base.AUTendo_names.(rule_name)(:,:)=M_.endo_names(ivar,:);
+      base.AUTR(:,:)=[ones(size(R,1),1),R];
+      base.AUTendo_names(:,:)=M_.endo_names(ivar,:);
 
       options_.irf = base.horizon; % horizon for IRFs
       shocks = M_.exo_names(M_.exo_names_orig_ord,:);  % put shocks in the right order for Dynare
@@ -263,8 +262,8 @@ function [base]=stoch_simul_MMB(base)
           else
             R=irf(oo_.dr,cs(M_.exo_names_orig_ord,ii), options_.irf, options_.drop, options_.replic, options_.order);
           end
-          base.IRF.(rule_name)(:,:,p) = [zeros(size(R,1),1),R];
-          base.IRFendo_names.(rule_name)(:,:)=M_.endo_names;
+          base.IRF(:,:,p) = [zeros(size(R,1),1),R];
+          base.IRFendo_names(:,:)=M_.endo_names;
         end
       end
     end
