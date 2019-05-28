@@ -1,10 +1,12 @@
 function mmb (jsonconfig)
   try
-    paths.root = pwd;
+    [paths.root] = fileparts(mfilename('fullpath'));
     paths.models = fullfile(paths.root, 'models');
     paths.rules = fullfile(paths.root, 'rules');
     paths.out = fullfile(paths.root, 'out');
     paths.lib = fullfile(paths.root, 'lib');
+
+    cd(paths.root);
 
     addpath(paths.root);
     addpath(paths.models);
