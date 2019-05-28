@@ -1,5 +1,5 @@
 //**********************************************************************
-//The Implications of Financial Frictions and Imperfect Knowledge in 
+//The Implications of Financial Frictions and Imperfect Knowledge in
 //the Estimated Model of the US Economy
 //
 //Yuliya Rychalovska
@@ -10,41 +10,41 @@
 //**********************************************************************
 //Model: US_YR
 
-var ewma epinfma  mc zcap rk k pk  
-    c inve y lab pinf w r a  b g qs spinf sw kp 
+var ewma epinfma  mc zcap rk k pk
+    c inve y lab pinf w r a  b g qs spinf sw kp
     rr er ec nw prem pinf4 eg
 	//cl invel labl pinfl pkl rkl wl   ms
 //************************************************************************
-//Modelbase Variables                                                 //*  
+//Modelbase Variables                                                 //*
        interest inflation inflationq inflationql inflationql2 inflationqls
 	   outputgap output fispol newv_long newv_short;         //*
 //**************************************************************************
-   
-varexo  ea eb eqs epinf ew   //em 
+
+varexo  ea eb eqs epinf ew   //em
 //**************************************************************************
-// Modelbase Shocks                                                      //*       
+// Modelbase Shocks                                                      //*
        interest_ fiscal_;                                                //*
 //**************************************************************************
 
-parameters 
+parameters
  //**************************************************************************
-// Modelbase Parameters                                                  
-                                                                         
-        cofintintb1 cofintintb2 cofintintb3 cofintintb4                  
-        cofintinf0 cofintinfb1 cofintinfb2 cofintinfb3 cofintinfb4       
-        cofintinff1 cofintinff2 cofintinff3 cofintinff4                  
-        cofintout cofintoutb1 cofintoutb2 cofintoutb3 cofintoutb4        
+// Modelbase Parameters
+
+        cofintintb1 cofintintb2 cofintintb3 cofintintb4
+        cofintinf0 cofintinfb1 cofintinfb2 cofintinfb3 cofintinfb4
+        cofintinff1 cofintinff2 cofintinff3 cofintinff4
+        cofintout cofintoutb1 cofintoutb2 cofintoutb3 cofintoutb4
         cofintoutf1 cofintoutf2 cofintoutf3 cofintoutf4
         cofintoutp cofintoutpb1 cofintoutpb2 cofintoutpb3 cofintoutpb4   //*
-        cofintoutpf1 cofintoutpf2 cofintoutpf3 cofintoutpf4              //*                  
-        std_r_ std_r_quart coffispol           
-//************************************************************************** 
- 
-            curvw cgy curvp constelab constepinf constebeta   calfa 
-            czcap cbeta csadjcost ctou csigma chabb ccs cinvs cfc 
-            cindw cprobw cindp cprobp csigl clandaw 
+        cofintoutpf1 cofintoutpf2 cofintoutpf3 cofintoutpf4              //*
+        std_r_ std_r_quart coffispol
+//**************************************************************************
+
+            curvw cgy curvp constelab constepinf constebeta   calfa
+            czcap cbeta csadjcost ctou csigma chabb ccs cinvs cfc
+            cindw cprobw cindp cprobp csigl clandaw
             crdpi crpi crdy cry crr elast cv clev cff tau
-            crhoa crhoas crhob crhog crhols crhoqs crhoms crhopinf crhow cmaw cmap  
+            crhoa crhoas crhob crhog crhols crhoqs crhoms crhopinf crhow cmaw cmap
             ctrendy ctrendc ctrendinv ctrend ctrendw conster cg cgamma clandap cbetabar cr cpie crk cw cikbar cik clk cky ciy ccy crkky cwhlc cwly ro;
 
 // fixed parameters
@@ -69,7 +69,7 @@ calfa=      0.1994;
 cgy=        0.5787;
 csadjcost=  5.9774;
 csigma=     1.4874;
-chabb=      0.7194;    
+chabb=      0.7194;
 cprobw=     0.7329;
 csigl=      1.5992;
 cprobp=     0.5756;
@@ -125,15 +125,15 @@ cff=crk+1-ctou;
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           
-cd('..');                                                                
-load policy_param.mat;                                                   
-for i=1:33                                                               
-    deep_parameter_name = M_.param_names(i,:);                           
-    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])                  
-end                                                                       
-cd(thispath);                                                            
-                                                                         
+thispath = pwd;
+cd('..');
+load policy_param.mat;
+for i=1:33
+    deep_parameter_name = M_.param_names(i,:);
+    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
+end
+cd(thispath);
+
 // Definition of Discretionary Fiscal Policy Parameter                   //*
 coffispol = 1;                                                           //*
 
@@ -146,10 +146,10 @@ AL_Info.forwards = {'c','pinf','inflationq','w','lab','inve', 'rk', 'pk'};
 AL_Info.states_short = {'c', 'ec', 'inve','kp','inflationq','nw','w','a','b','g','qs','spinf','epinfma','sw','ewma'};
 //states_long  = {'c', 'ec', 'pk','inve','kp','inflationqls','nw','w','a','b','sw','newv_long','inflationq','g','qs','spinf'};
 AL_Info.states_long  = {'c', 'ec','inve','kp','inflationqls','nw','w','a','b','inflationq','g','qs','spinf','epinfma','sw','ewma'};
-save AL_Info AL_Info 
+save AL_Info AL_Info
 //**************************************************************************
 
-model(linear); 
+model(linear);
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables //*
 
@@ -166,43 +166,43 @@ newv_long=ewma+epinfma;                                                  //*
 newv_short=ewma+epinfma;                                                 //*
 //**************************************************************************
 
-//**************************************************************************                                                                    
+//**************************************************************************
 // Policy Rule                                                           //*
                                                                          //*
 // Monetary Policy                                                       //*
                                                                          //*
-interest =   cofintintb1*interest(-1)                                    //* 
-//         + cofintintb2*interestl(-1)                                   //* 
-//         + cofintintb3*interestl2(-1)                                  //* 
-//         + cofintintb4*interestl3(-1)                                  //* 
-           + cofintinf0*inflationq                                       //* 
-           + cofintinfb1*inflationq(-1)                                  //* 
-           + cofintinfb2*inflationql(-1)                                 //* 
-           + cofintinfb3*inflationql2(-1)                                //* 
-//         + cofintinfb4*inflationql3(-1)                                //* 
-//           + 0.25*cofintinff1*pinf(+1)                                   //* 
-           + cofintinff1*inflationq(+1)                                  //* 
-//         + cofintinff2*inflationq(+2)                                  //* 
-//         + cofintinff3*inflationq(+3)                                  //* 
-//         + cofintinff4*inflationq(+4)                                  //* 
-           + cofintout*outputgap 	                                     //* 
-           + cofintoutb1*outputgap(-1)                                   //* 
-//         + cofintoutb2*outputgap(-2)                                   //* 
-//         + cofintoutb3*outputgap(-3)                                   //* 
-//         + cofintoutb4*outputgap(-4)                                   //* 
-//         + cofintoutf1*outputgap(+1)                                   //* 
-//         + cofintoutf2*outputgap(+2)                                   //* 
-//         + cofintoutf3*outputgap(+3)                                   //* 
-//         + cofintoutf4*outputgap(+4)                                   //* 
-           + cofintoutp*output 	                                         //* 
-           + cofintoutpb1*output(-1)                                     //* 
-//         + cofintoutpb2*output(-2)                                     //* 
-//         + cofintoutpb3*output(-3)                                     //* 
-//         + cofintoutpb4*output(-4)                                     //* 
-//         + cofintoutpf1*output(+1)                                     //* 
-//         + cofintoutpf2*output(+2)                                     //* 
-//         + cofintoutpf3*output(+3)                                     //* 
-//         + cofintoutpf4*output(+4)                                     //* 
+interest =   cofintintb1*interest(-1)                                    //*
+//         + cofintintb2*interestl(-1)                                   //*
+//         + cofintintb3*interestl2(-1)                                  //*
+//         + cofintintb4*interestl3(-1)                                  //*
+           + cofintinf0*inflationq                                       //*
+           + cofintinfb1*inflationq(-1)                                  //*
+           + cofintinfb2*inflationql(-1)                                 //*
+           + cofintinfb3*inflationql2(-1)                                //*
+//         + cofintinfb4*inflationql3(-1)                                //*
+//           + 0.25*cofintinff1*pinf(+1)                                   //*
+           + cofintinff1*inflationq(+1)                                  //*
+//         + cofintinff2*inflationq(+2)                                  //*
+//         + cofintinff3*inflationq(+3)                                  //*
+//         + cofintinff4*inflationq(+4)                                  //*
+           + cofintout*outputgap 	                                     //*
+           + cofintoutb1*outputgap(-1)                                   //*
+//         + cofintoutb2*outputgap(-2)                                   //*
+//         + cofintoutb3*outputgap(-3)                                   //*
+//         + cofintoutb4*outputgap(-4)                                   //*
+//         + cofintoutf1*outputgap(+1)                                   //*
+//         + cofintoutf2*outputgap(+2)                                   //*
+//         + cofintoutf3*outputgap(+3)                                   //*
+//         + cofintoutf4*outputgap(+4)                                   //*
+           + cofintoutp*output 	                                         //*
+           + cofintoutpb1*output(-1)                                     //*
+//         + cofintoutpb2*output(-2)                                     //*
+//         + cofintoutpb3*output(-3)                                     //*
+//         + cofintoutpb4*output(-4)                                     //*
+//         + cofintoutpf1*output(+1)                                     //*
+//         + cofintoutpf2*output(+2)                                     //*
+//         + cofintoutpf3*output(+3)                                     //*
+//         + cofintoutpf4*output(+4)                                     //*
            + std_r_ *interest_;                                          //*                                                                          //*
 // Discretionary Government Spending                                     //*
                                                                          //*
@@ -222,18 +222,18 @@ fispol = coffispol*fiscal_;                                              //*
             //pk = -r+pinf(1)-b +0*(1/((1-chabb/cgamma)/(csigma*(1+chabb/cgamma))))*b + ((cff-1+ctou)/cff)*rk(1) +  ((1-ctou)/cff)*pk(1) ;
             c = (chabb/cgamma)/(1+chabb/cgamma)*c(-1) + (1/(1+chabb/cgamma))*c(+1) +((csigma-1)*cwhlc/(csigma*(1+chabb/cgamma)))*(lab-lab(+1)) - (1-chabb/cgamma)/(csigma*(1+chabb/cgamma))*(r-pinf(+1) + b) +0*b ;
             y = ccy*c+ciy*inve+g  +  1*((cff-1+ctou)*(ciy/cik))*zcap + (ciy/cik)*cff*(1-(cr/cff))*(1-1/clev)*(rr + pk(-1) +k);
-            
-  
+
+
             y = cfc*( calfa*k+(1-calfa)*lab +a );
-            pinf =  (1/(1+cbetabar*cgamma*cindp)) * ( cbetabar*cgamma*pinf(1) +cindp*pinf(-1) 
-               +((1-cprobp)*(1-cbetabar*cgamma*cprobp)/cprobp)/((cfc-1)*curvp+1)*(mc)  )  + spinf ; 
+            pinf =  (1/(1+cbetabar*cgamma*cindp)) * ( cbetabar*cgamma*pinf(1) +cindp*pinf(-1)
+               +((1-cprobp)*(1-cbetabar*cgamma*cprobp)/cprobp)/((cfc-1)*curvp+1)*(mc)  )  + spinf ;
             w =  (1/(1+cbetabar*cgamma))*w(-1)
                +(cbetabar*cgamma/(1+cbetabar*cgamma))*w(1)
                +(cindw/(1+cbetabar*cgamma))*pinf(-1)
                -(1+cbetabar*cgamma*cindw)/(1+cbetabar*cgamma)*pinf
                +(cbetabar*cgamma)/(1+cbetabar*cgamma)*pinf(1)
                +(1-cprobw)*(1-cbetabar*cgamma*cprobw)/((1+cbetabar*cgamma)*cprobw)*(1/((clandaw-1)*curvw+1))*
-                   (csigl*lab + (1/(1-chabb/cgamma))*c - ((chabb/cgamma)/(1-chabb/cgamma))*c(-1) -w) 
+                   (csigl*lab + (1/(1-chabb/cgamma))*c - ((chabb/cgamma)/(1-chabb/cgamma))*c(-1) -w)
                +1*sw ;
             //r = crpi*(1-crr)*pinf +cry*(1-crr)*(y-cfc*a) +crdy*(y-y(-1)-cfc*(a-a(-1))) +crr*r(-1) +ms  ;
             kp =  (1-cikbar)*kp(-1)+cikbar*inve + cikbar*cgamma^2*csadjcost*qs ;
@@ -246,14 +246,14 @@ fispol = coffispol*fiscal_;                                              //*
             spinf = crhopinf*spinf(-1) + epinfma - cmap*epinfma(-1);
             epinfma=epinf;
 	      sw = crhow*sw(-1) + ewma - cmaw*ewma(-1) ;
-	          ewma=ew; 
+	          ewma=ew;
 
 rr + pk(-1)= ((cff-1+tau)/cff)*rk + (1-tau)/cff*pk ;
-nw/(cv*cff) = clev*(rr-ec(-1))+ ec(-1) + nw(-1); 
+nw/(cv*cff) = clev*(rr-ec(-1))+ ec(-1) + nw(-1);
 er + pk = ((cff-1+tau)/cff)*rk(1) + (1-tau)/cff*pk(1)  ; //+ ETA_Q;
 ec-(r-pinf(1)+b)=-elast*(nw -pk -k);
 ec=er;
-prem=ec-(r-pinf(1)+b);  
+prem=ec-(r-pinf(1)+b);
 
             //cl = c(-1);
             //invel = inve(-1);
@@ -263,7 +263,7 @@ prem=ec-(r-pinf(1)+b);
             //rkl = rk(-1);
             //wl = w(-1);
 
-           end; 
+           end;
 
 shocks;
 var ea;
@@ -285,4 +285,3 @@ end;
 
 //stoch_simul(irf = 0, ar=100, periods=10000);
 
- 

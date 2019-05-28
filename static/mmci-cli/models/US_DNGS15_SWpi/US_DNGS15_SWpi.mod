@@ -1,17 +1,17 @@
-//DEL NEGRO et al. 2015 Replication with both sticky and flexible price output in Dynare 
+//DEL NEGRO et al. 2015 Replication with both sticky and flexible price output in Dynare
 
 // DEL NEGRO, M., M. GIANNONI & F. SCHORFHEIDE 2015.: Inflation in the Great Recession and New Keynesian Models,
 // American Economic Journal: Macroeconomics
 // 2015, 7(1): 168-196.
 
-// This is the DNGS15 model with a time-varying inflation target but no financial frictions. 
+// This is the DNGS15 model with a time-varying inflation target but no financial frictions.
 
 
 //------------------------------------------------------------------------------------------------------------------------
 //1. Variable declaration
 //------------------------------------------------------------------------------------------------------------------------
 var c R pi $\pi$ L qk $q^k$ i Rktil $\tilde{R}^k$ rk $r^k$ kbar $\bar{k}$ y k u mc w wh z ztil mu sigw laf law g b
- 
+
 //% the flexble-price counterparts
 c_f r_f L_f qk_f i_f rk_f y_f k_f u_f kbar_f w_f
 
@@ -26,7 +26,7 @@ psi_g
 varexo psi_b psi_mu psi_z psi_laf psi_law  psi_sigw
 
 //**************************************************************************
-// Modelbase Shocks                                                      //*       
+// Modelbase Shocks                                                      //*
        interest_ fiscal_;                                                //*
 //**************************************************************************
 
@@ -34,7 +34,7 @@ varexo psi_b psi_mu psi_z psi_laf psi_law  psi_sigw
 // 2. Parameter declaration and calibration
 //-------------------------------------------------------------------------------------------------------------------------
 parameters
-//************************************************************************** 
+//**************************************************************************
 // Modelbase Parameters                                                  //*
                                                                          //*
         cofintintb1 cofintintb2 cofintintb3 cofintintb4                  //*
@@ -92,7 +92,7 @@ eta_law = 0.9670;
 
 //Parameters (implicit) -- from steady state
 
-zstar = 0.0034; 
+zstar = 0.0034;
 rstar = 1.0064;
 rkstar = 0.0314;
 wstar = 0.6006;
@@ -103,21 +103,21 @@ istar = 0.0994;
 ystar = 0.7106;
 cstar = 0.4834;
 
-wl_c = 0.8284;  
+wl_c = 0.8284;
 
 //**************************************************************************
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           
-cd('..');                                                                
-load policy_param.mat;                                                   
-for i=1:33                                                               
-    deep_parameter_name = M_.param_names(i,:);                           
-    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])                  
-end                                                                      
-cd(thispath);   
-    
+thispath = pwd;
+cd('..');
+load policy_param.mat;
+for i=1:33
+    deep_parameter_name = M_.param_names(i,:);
+    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
+end
+cd(thispath);
+
                                                                          //*
 // Definition of Discretionary Fiscal Policy Parameter                   //*
 coffispol = 1/gstar;                                                           //*
@@ -127,7 +127,7 @@ coffispol = 1/gstar;                                                           /
 // 3. The model
 //-----------------------------------------------------------------------------------------------------------------------
 
-model(linear); 
+model(linear);
 
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables //*
@@ -140,43 +140,43 @@ output     = y;                                                          //*
 fispol     = psi_g;                                                  //*
 //**************************************************************************
 
-//**************************************************************************                                                                    
+//**************************************************************************
 // Policy Rule                                                           //*
                                                                          //*
 // Monetary Policy                                                       //*
                                                                          //*
-interest =   cofintintb1*interest(-1)                                    //* 
-           + cofintintb2*interest(-2)                                    //* 
-           + cofintintb3*interest(-3)                                    //* 
-           + cofintintb4*interest(-4)                                    //* 
-           + cofintinf0*inflationq                                       //* 
-           + cofintinfb1*inflationq(-1)                                  //* 
-           + cofintinfb2*inflationq(-2)                                  //* 
-           + cofintinfb3*inflationq(-3)                                  //* 
-           + cofintinfb4*inflationq(-4)                                  //* 
-           + cofintinff1*inflationq(+1)                                  //* 
-           + cofintinff2*inflationq(+2)                                  //* 
-           + cofintinff3*inflationq(+3)                                  //* 
-           + cofintinff4*inflationq(+4)                                  //* 
-           + cofintout*outputgap 	                                     //* 
-           + cofintoutb1*outputgap(-1)                                   //* 
-           + cofintoutb2*outputgap(-2)                                   //* 
-           + cofintoutb3*outputgap(-3)                                   //* 
-           + cofintoutb4*outputgap(-4)                                   //* 
-           + cofintoutf1*outputgap(+1)                                   //* 
-           + cofintoutf2*outputgap(+2)                                   //* 
-           + cofintoutf3*outputgap(+3)                                   //* 
-           + cofintoutf4*outputgap(+4)                                   //* 
-           + cofintoutp*output 	                                         //* 
-           + cofintoutpb1*output(-1)                                     //* 
-           + cofintoutpb2*output(-2)                                     //* 
-           + cofintoutpb3*output(-3)                                     //* 
-           + cofintoutpb4*output(-4)                                     //* 
-           + cofintoutpf1*output(+1)                                     //* 
-           + cofintoutpf2*output(+2)                                     //* 
-           + cofintoutpf3*output(+3)                                     //* 
-           + cofintoutpf4*output(+4)                                     //* 
-           + std_r_ *interest_;                                          //* 
+interest =   cofintintb1*interest(-1)                                    //*
+           + cofintintb2*interest(-2)                                    //*
+           + cofintintb3*interest(-3)                                    //*
+           + cofintintb4*interest(-4)                                    //*
+           + cofintinf0*inflationq                                       //*
+           + cofintinfb1*inflationq(-1)                                  //*
+           + cofintinfb2*inflationq(-2)                                  //*
+           + cofintinfb3*inflationq(-3)                                  //*
+           + cofintinfb4*inflationq(-4)                                  //*
+           + cofintinff1*inflationq(+1)                                  //*
+           + cofintinff2*inflationq(+2)                                  //*
+           + cofintinff3*inflationq(+3)                                  //*
+           + cofintinff4*inflationq(+4)                                  //*
+           + cofintout*outputgap 	                                     //*
+           + cofintoutb1*outputgap(-1)                                   //*
+           + cofintoutb2*outputgap(-2)                                   //*
+           + cofintoutb3*outputgap(-3)                                   //*
+           + cofintoutb4*outputgap(-4)                                   //*
+           + cofintoutf1*outputgap(+1)                                   //*
+           + cofintoutf2*outputgap(+2)                                   //*
+           + cofintoutf3*outputgap(+3)                                   //*
+           + cofintoutf4*outputgap(+4)                                   //*
+           + cofintoutp*output 	                                         //*
+           + cofintoutpb1*output(-1)                                     //*
+           + cofintoutpb2*output(-2)                                     //*
+           + cofintoutpb3*output(-3)                                     //*
+           + cofintoutpb4*output(-4)                                     //*
+           + cofintoutpf1*output(+1)                                     //*
+           + cofintoutpf2*output(+2)                                     //*
+           + cofintoutpf3*output(+3)                                     //*
+           + cofintoutpf4*output(+4)                                     //*
+           + std_r_ *interest_;                                          //*
                                                                          //*
 // Discretionary Government Spending                                     //*
                                                                          //*
@@ -189,7 +189,7 @@ c = -(1-h*exp(-zstar))/(sigmac*(1+h*exp(-zstar)))*(R-pi(+1))+b+(h*exp(-zstar))/(
 
 //investment Euler equation
 qk = (s2*exp(2*zstar)*(1+bet*exp((1-sigmac)*zstar)))*(i-(1/(1+bet*exp((1-sigmac)*zstar)))*(i(-1)-z)
-     -(bet*exp((1-sigmac)*zstar)/(1+bet*exp((1-sigmac)*zstar)))*i(+1) 
+     -(bet*exp((1-sigmac)*zstar)/(1+bet*exp((1-sigmac)*zstar)))*i(+1)
     -(bet*exp((1-sigmac)*zstar)/(1+bet*exp((1-sigmac)*zstar)))*(1/(1-alp))*(rho_z-1)*ztil-mu);
 
 //evolution of capital
@@ -265,7 +265,7 @@ c_f = -(1-h*exp(-zstar))/(sigmac*(1+h*exp(-zstar)))*r_f+b+(h*exp(-zstar))/(1+h*e
     +(1/(1+h*exp(-zstar)))*(c_f(+1)+(1/(1-alp))*(rho_z-1)*ztil)+(sigmac-1)*wl_c/(sigmac*(1+ h*exp(-zstar)))*(L_f-L_f(+1));
 
 qk_f = (s2*exp(2*zstar)*(1+bet*exp((1-sigmac)*zstar)))*(i_f-(1/(1+bet*exp((1-sigmac)*zstar)))*(i_f(-1)-z)
-     -(bet*exp((1-sigmac)*zstar)/(1+bet*exp((1-sigmac)*zstar)))*i_f(+1) 
+     -(bet*exp((1-sigmac)*zstar)/(1+bet*exp((1-sigmac)*zstar)))*i_f(+1)
     -(bet*exp((1-sigmac)*zstar)/(1+bet*exp((1-sigmac)*zstar)))*(1/(1-alp))*(rho_z-1)* ztil-mu);
 
 kbar_f = (1-istar/kbarstar)*(kbar_f(-1)-z)+(istar/kbarstar)*i_f+(istar*s2*exp(2*zstar)*(1+bet*exp((1-sigmac)*zstar))/kbarstar)*mu;
@@ -314,4 +314,4 @@ end;
 
 //write_latex_dynamic_model;
 //check;
-//stoch_simul(irf=20) R pi L y; 
+//stoch_simul(irf=20) R pi L y;

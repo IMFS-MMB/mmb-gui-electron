@@ -9,14 +9,14 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Declare model variables
-var     
+var
 AI                      % Integral of A_{i_t}x \iota_{i,t} for all i
 AIK                     % Integral of A_{i_t}x \iota_{i,t} for keepers (i = k)
-AIS                     % Integral of A_{i_t}x \iota_{i,t} for savers (i = s)  
-A_eff                   % Effective investment technology A_{eff} (i = s)  
+AIS                     % Integral of A_{i_t}x \iota_{i,t} for savers (i = s)
+A_eff                   % Effective investment technology A_{eff} (i = s)
 Ak_over_P               % Integral of A_{i_t} \ P_t^K for keepers (i = k)
 B_t                     % Government bonds
-BoY_t                   % Government bonds as fraction of GDP                
+BoY_t                   % Government bonds as fraction of GDP
 CASH_t                  % Cash share (as of Table 1)
 D_t                     % Dividend payoffs (intermediate good producers)
 Delta_N                 % Traded equity claims
@@ -28,8 +28,8 @@ GDP_t                   % GDP
 Ihat          			% Investment
 Kbar                    % Capital stock
 LIQS_t                  % Liquidation Share (as of Table 1)
-N_t                     % Equity stock 
-QK						% Price of investment units (P_t^K)             
+N_t                     % Equity stock
+QK						% Price of investment units (P_t^K)
 Q_t_A                   % Sale price of equity
 Q_t_B         			% Purchase price of equity
 QtilK_iota_t        	% Integrals of tech distribution for Euler eq. (keepers)
@@ -44,7 +44,7 @@ Spread_ob_t             % Spread plus measurement error
 Spread_t 				% Spread
 Spreadgap_t             % Spread (model-consistent HP-filtered series)
 Sprime                  % Investment Adjustment Costs (first derivative)
-T_t                     % Taxes  
+T_t                     % Taxes
 ToY_t                   % Taxes as a fraction of GDP
 beta_t                  % Time-varying discount factor
 chat                    % Consumption
@@ -61,14 +61,14 @@ d_GDPm3                 % Growth rate of real GDP (lag 3)
 d_Ihat                  % Growth rate of real Investment
 d_chat                  % Growth rate of real Consumption
 dlnwhat                 % Growth rate of real wages
-eta_beta                % Intertemporal preference shock    
+eta_beta                % Intertemporal preference shock
 etau_q_t                % Persistent financial intermediation shock
 e_p                     % Price mark-up shock
 e_w                     % Wage mark-up shock
 g_t                     % Government spending
-i_ob_t					% FFR observed   
+i_ob_t					% FFR observed
 i_t                     % FFR (Taylor rule)
-invQ_til_As             % Integrals of tech distribution for Euler eq. 
+invQ_til_As             % Integrals of tech distribution for Euler eq.
 iota_k                  % Investment goods demand (keepers)
 iota_s  				% Investment goods demand (savers)
 iota_t                  % Investment goods demand (total)
@@ -85,34 +85,34 @@ pi_tm1                  % Inflation (lag 1)
 pi_tm2                  % Inflation (lag 2)
 pi_tm3                  % Inflation (lag 3)
 pistar                  % Inflation target
-r                       % Real rate           
+r                       % Real rate
 rK                      % Rate of return on capital
 sdf                     % Stochastic discount factor (nominal)
 sdfr                    % Stochastic discount factor (real)
 sg                      % Investment technology dispersion
 tau_q_t                 % Financial intermediation wedge
-what_t					% Real wage            
+what_t					% Real wage
 ygap_t                  % Output Gap (model-consistent HP-filtered series)
 yhat                    % output  = GDP
-z_t                     % 
+z_t                     %
 GS_t                    % government spending
 eps_g                 % added exogenous government shock
 //**************************************************************************
 // Modelbase Variables                                                   //*
         interest inflation inflationq outputgap output fispol;           //*
 //**************************************************************************
- 
 
-varexo  eps_z eps_tau eps_tau_trans eps_beta  eps_p  eps_w  eps_meas  eps_meas_sp 
+
+varexo  eps_z eps_tau eps_tau_trans eps_beta  eps_p  eps_w  eps_meas  eps_meas_sp
 
 //**************************************************************************
-// Modelbase Shocks                                                      //*       
+// Modelbase Shocks                                                      //*
        interest_ fiscal_;                                                //*
 //**************************************************************************
-  
 
-parameters 
-//************************************************************************** 
+
+parameters
+//**************************************************************************
 // Modelbase Parameters                                                  //*
                                                                          //*
         cofintintb1 cofintintb2 cofintintb3 cofintintb4                  //*
@@ -125,53 +125,53 @@ parameters
         std_r_ std_r_quart coffispol                                     //*
 //**************************************************************************
 
-gam_s       
-bet_s       
-delta       
-nu          
-h           
-l_ss        
-eta         
-lambda_p    
-xi_p        
-iota_p      
-lambda_w    
-xi_w        
-iota_w      
-mu_ss          
-sg_ss          
-fgs_param   
-theta       
-Bs_ss       
-gs_ss       
-etau_q_ss   
-theta_I     
-pis         
-rho_i       
-phi_pi      
-phi_DY      
-phi_Ygap    
-tB %\varphi_B in paper notation         
-rho_z       
-rho_g       
-rho_tau     
-decay       
-rho_beta    
-rho_p       
-rho_w       
-theta_p     
-theta_w     
-s_z         
-s_g         
-s_i         
-s_tau       
-s_tau_trans 
+gam_s
+bet_s
+delta
+nu
+h
+l_ss
+eta
+lambda_p
+xi_p
+iota_p
+lambda_w
+xi_w
+iota_w
+mu_ss
+sg_ss
+fgs_param
+theta
+Bs_ss
+gs_ss
+etau_q_ss
+theta_I
+pis
+rho_i
+phi_pi
+phi_DY
+phi_Ygap
+tB %\varphi_B in paper notation
+rho_z
+rho_g
+rho_tau
+decay
+rho_beta
+rho_p
+rho_w
+theta_p
+theta_w
+s_z
+s_g
+s_i
+s_tau
+s_tau_trans
 s_phi
 s_sg
-s_beta      
-s_p         
-s_w         
-s_meas_sp   
+s_beta
+s_p
+s_w
+s_meas_sp
 s_meas;
 
 // Calibrate model parameters (order and numbers correspond to Table 2 in the paper)
@@ -229,15 +229,15 @@ s_meas       =  0.148;
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           
-cd('..');                                                                
-load policy_param.mat;                                                   
-for i=1:33                                                               
-    deep_parameter_name = M_.param_names(i,:);                           
-    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])                  
-end   
-%std_r_ = 100;                                                                   
-cd(thispath);                                                            
+thispath = pwd;
+cd('..');
+load policy_param.mat;
+for i=1:33
+    deep_parameter_name = M_.param_names(i,:);
+    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
+end
+%std_r_ = 100;
+cd(thispath);
 // Definition of Discretionary Fiscal Policy Parameter                   //*
 coffispol =100*(((-log(1-1.01*(1 - 1/exp(gs_ss))) - gs_ss)/s_g));
 //**************************************************************************
@@ -254,42 +254,42 @@ output     = (GDP_t-steady_state(GDP_t));                                       
 //**************************************************************************
 
 
-//**************************************************************************                                                                    
+//**************************************************************************
 // Policy Rule                                                           //*
                                                                          //*
-// Monetary Policy                                                       //*       
-interest =   cofintintb1*interest(-1)                                  //* 
-           + cofintintb2*interest(-2)                                    //* 
-           + cofintintb3*interest(-3)                                    //* 
-           + cofintintb4*interest(-4)                                    //* 
-           + cofintinf0*inflationq                                       //* 
-           + cofintinfb1*inflationq(-1)                                  //* 
-           + cofintinfb2*inflationq(-2)                                  //* 
-           + cofintinfb3*inflationq(-3)                                  //* 
-           + cofintinfb4*inflationq(-4)                                  //* 
-           + cofintinff1*inflationq(+1)                                  //* 
-           + cofintinff2*inflationq(+2)                                  //* 
+// Monetary Policy                                                       //*
+interest =   cofintintb1*interest(-1)                                  //*
+           + cofintintb2*interest(-2)                                    //*
+           + cofintintb3*interest(-3)                                    //*
+           + cofintintb4*interest(-4)                                    //*
+           + cofintinf0*inflationq                                       //*
+           + cofintinfb1*inflationq(-1)                                  //*
+           + cofintinfb2*inflationq(-2)                                  //*
+           + cofintinfb3*inflationq(-3)                                  //*
+           + cofintinfb4*inflationq(-4)                                  //*
+           + cofintinff1*inflationq(+1)                                  //*
+           + cofintinff2*inflationq(+2)                                  //*
            + cofintinff3*inflationq(+3)                                  //*
-           + cofintinff4*inflationq(+4)                                  //* 
-           + cofintout*outputgap 	                                     //* 
-           + cofintoutb1*outputgap(-1)                                   //* 
-           + cofintoutb2*outputgap(-2)                                   //* 
-           + cofintoutb3*outputgap(-3)                                   //* 
-           + cofintoutb4*outputgap(-4)                                   //* 
-           + cofintoutf1*outputgap(+1)                                   //* 
-           + cofintoutf2*outputgap(+2)                                   //* 
-           + cofintoutf3*outputgap(+3)                                   //* 
-           + cofintoutf4*outputgap(+4)                                   //* 
-           + cofintoutp*output 	                                         //* 
-           + cofintoutpb1*output(-1)                                     //* 
-           + cofintoutpb2*output(-2)                                     //* 
-           + cofintoutpb3*output(-3)                                     //* 
+           + cofintinff4*inflationq(+4)                                  //*
+           + cofintout*outputgap 	                                     //*
+           + cofintoutb1*outputgap(-1)                                   //*
+           + cofintoutb2*outputgap(-2)                                   //*
+           + cofintoutb3*outputgap(-3)                                   //*
+           + cofintoutb4*outputgap(-4)                                   //*
+           + cofintoutf1*outputgap(+1)                                   //*
+           + cofintoutf2*outputgap(+2)                                   //*
+           + cofintoutf3*outputgap(+3)                                   //*
+           + cofintoutf4*outputgap(+4)                                   //*
+           + cofintoutp*output 	                                         //*
+           + cofintoutpb1*output(-1)                                     //*
+           + cofintoutpb2*output(-2)                                     //*
+           + cofintoutpb3*output(-3)                                     //*
            + cofintoutpb4*output(-4)                                     //*
-           + cofintoutpf1*output(+1)                                     //* 
-           + cofintoutpf2*output(+2)                                     //* 
-           + cofintoutpf3*output(+3)                                     //* 
-           + cofintoutpf4*output(+4)                                       
-           + std_r_ *interest_; 
+           + cofintoutpf1*output(+1)                                     //*
+           + cofintoutpf2*output(+2)                                     //*
+           + cofintoutpf3*output(+3)                                     //*
+           + cofintoutpf4*output(+4)
+           + std_r_ *interest_;
 
 %model interest rate
 %i_t - (rho_i*i_t(-1) + (1-rho_i)*((steady_state(r) + (pi_t + pi_t(-1)+pi_t(-2)+pi_t(-3))/4) + phi_pi*((pi_t + pi_t(-1)+pi_t(-2)+pi_t(-3))/4 - pistar) + phi_Ygap*(ygap_t) + phi_DY*(d_GDP + d_GDP(-1) + d_GDP(-2) + d_GDP(-3))/400) + interest_);
@@ -303,8 +303,8 @@ fispol = eps_g;                                           //*
 
 #pi_ss    = pis/100;
 #gam      = gam_s/100;
-#bet      = 1/(bet_s/100 + 1);  
-#tau_q_ss = etau_q_ss/100;   
+#bet      = 1/(bet_s/100 + 1);
+#tau_q_ss = etau_q_ss/100;
 #kp       = (1-xi_p*bet)*(1-xi_p)/(xi_p*(1+iota_p*bet));
 #chi0     = exp(steady_state(what_t))/(exp(lambda_w))/((1/exp(steady_state(lambda_t)))*((exp(steady_state(l))))^(nu));
 #phi_ss    = steady_state(phi_t);
@@ -312,21 +312,21 @@ fispol = eps_g;                                           //*
 
 // Household
 phi_t = phi_ss;
-beta_t - bet*exp(eta_beta); % checked 
+beta_t - bet*exp(eta_beta); % checked
 (lambda_t - steady_state(lambda_t)) - ( exp(gam)/(exp(gam) - h*bet) * ( (z_t - gam) - exp(gam)/(exp(gam) - h) * ((chat - steady_state(chat)) + (z_t - gam)) + h/(exp(gam) - h) * (chat(-1) - steady_state(chat)) ) + h*bet/(exp(gam) - h*bet) * ( exp(gam)/(exp(gam)-h) * ((chat(1) - steady_state(chat)) +  (z_t(1) - gam)) - h/(exp(gam)-h) * (chat - steady_state(chat))) + ((exp(gam) - h*bet*rho_beta)/(exp(gam) - h*bet))*eta_beta );
 (sdfr - steady_state(sdfr)) - ( (lambda_t - steady_state(lambda_t)) - (lambda_t(-1) - steady_state(lambda_t)) - (z_t - gam) );
 (sdf - steady_state(sdf))   - ( (lambda_t - steady_state(lambda_t)) - (lambda_t(-1) - steady_state(lambda_t)) - (z_t - gam) - (pi_t - pi_ss));
 
 exp(Q_t_B) - exp(sdfr(1)) * ( exp(Q_t_B(+1)) * (exp(invQ_til_As(+1))) *
                         (exp(rK(1)) + exp(phi_t(1))*exp(Q_t_A(1))*(1-delta)) + exp(chi_s(1))*(1-exp(phi_t(1)))*exp(Q_t_B(1))*(1-delta) +
-                              exp(Q_t_B(+1)) * (exp(Ak_over_P(+1))) * 
-                        (exp(rK(1))) + exp(chi_k(1))*exp(Q_t_B(1))*(1-delta) + 
-                           exp(chi_w(1)) * (exp(rK(1)) + exp(Q_t_B(1))*(1-delta) ) );                           
-                                         
+                              exp(Q_t_B(+1)) * (exp(Ak_over_P(+1))) *
+                        (exp(rK(1))) + exp(chi_k(1))*exp(Q_t_B(1))*(1-delta) +
+                           exp(chi_w(1)) * (exp(rK(1)) + exp(Q_t_B(1))*(1-delta) ) );
+
 1/exp(r) -   exp(sdfr(1)) *  ( exp(invQ_til_As(1))*exp(Q_t_B(+1)) + exp(Ak_over_P(1))*exp(Q_t_B(+1)) + exp(chi_w(1))  );
 1/exp(i_t) - exp(sdf(1)) *   ( exp(invQ_til_As(1))*exp(Q_t_B(+1)) + exp(Ak_over_P(1))*exp(Q_t_B(+1)) + exp(chi_w(1))  );
 
-// Bank 13 - 
+// Bank 13 -
 
 exp(Q_t_B) - exp(Q_t_A)*(exp(tau_q_t));
 
@@ -336,14 +336,14 @@ exp(Q_t_B) - exp(Q_t_A)*(exp(tau_q_t));
 exp(chi_w)   - (1/2 + 1/2*erf((log(exp(QK)/exp(Q_t_B)) - mu_ss)/(sqrt(2)*sg)) - 0);   %checked ..derived from p2273
 exp(chi_spk) - (exp(chi_s) + exp(chi_k));  //Definition
 exp(chi_s)        - (1 - (1/2 + 1/2*erf((log(exp(QK)/exp(Q_t_A)) - mu_ss)/(sqrt(2)*sg)))); %p. 2272 --- share of savers
-exp(invQ_til_As)  - (  ( -( exp(QK)*theta* (-1)) + exp(mu_ss + sg^2/2)*exp(Q_t_A)*(-1))/(2*exp(QK)*exp(Q_t_A)*(-1 + theta)) - 
-                       ( -( exp(QK)*theta* erf((mu_ss - log(exp(QK)/exp(Q_t_A)))/(sqrt(2)*sg))) + exp(mu_ss + sg^2/2)*exp(Q_t_A)*erf((mu_ss + sg^2 - log(exp(QK)/exp(Q_t_A)) )/ (sqrt(2)*sg)))/(2*exp(QK)*exp(Q_t_A)*(-1 + theta)) ) ; 
+exp(invQ_til_As)  - (  ( -( exp(QK)*theta* (-1)) + exp(mu_ss + sg^2/2)*exp(Q_t_A)*(-1))/(2*exp(QK)*exp(Q_t_A)*(-1 + theta)) -
+                       ( -( exp(QK)*theta* erf((mu_ss - log(exp(QK)/exp(Q_t_A)))/(sqrt(2)*sg))) + exp(mu_ss + sg^2/2)*exp(Q_t_A)*erf((mu_ss + sg^2 - log(exp(QK)/exp(Q_t_A)) )/ (sqrt(2)*sg)))/(2*exp(QK)*exp(Q_t_A)*(-1 + theta)) ) ;
 exp(QtilS_iota_t) -  exp(chi_s)/(exp(QK)*(1-theta)); % checked
 exp(AIS)         -  ( (exp(mu_ss + sg^2/2)*(-1))/ (2*exp(QK)*(-1 + theta)) - (exp(mu_ss + sg^2/2)*erf((mu_ss + sg^2 - log(exp(QK)/exp(Q_t_A)))/(sqrt(2)*sg)))/ (2*exp(QK)*(-1 + theta)) ) *
                     (exp(rK)*exp(N_t(-1))/exp(z_t) + exp(r(-1))*exp(B_t(-1))/exp(z_t) + exp(D_t) - exp(T_t) + exp(phi_t)*exp(Q_t_A)*(1-delta)*exp(N_t(-1))/exp(z_t)) ;
-exp(iota_s)       - exp(QtilS_iota_t) *                     
+exp(iota_s)       - exp(QtilS_iota_t) *
                           (exp(rK)*exp(N_t(-1))/exp(z_t) + exp(r(-1))*exp(B_t(-1))/exp(z_t) + exp(D_t) - exp(T_t) + exp(phi_t)*exp(Q_t_A)*(1-delta)*exp(N_t(-1))/exp(z_t)); %eq p16
-                    
+
 exp(chi_k)       - (1/2 + 1/2*erf((log(exp(QK)/exp(Q_t_A)) - mu_ss)/(sqrt(2)*sg)) - (1/2 + 1/2*erf((log(exp(QK)/exp(Q_t_B)) - mu_ss)/(sqrt(2)*sg)))); %checked
 exp(Ak_over_P)   - ((exp(mu_ss + 1/2 * sg^2)*(normcdf((mu_ss + sg^2 - log(exp(QK)/exp(Q_t_B)))/sg) - normcdf((mu_ss + sg^2 - log(exp(QK)/exp(Q_t_A)))/sg) ))/exp(QK));
 exp(QtilK_iota_t) - exp(chi_k)/exp(QK); %checked
@@ -353,18 +353,18 @@ exp(iota_k)       - exp(QtilK_iota_t)  *
 
 exp(AI) - exp(AIK) - exp(AIS); % Definition
 
-exp(iota_t) - (exp(QtilS_iota_t) *                     
+exp(iota_t) - (exp(QtilS_iota_t) *
                          ( exp(rK)*exp(N_t(-1))/exp(z_t) + exp(r(-1))*exp(B_t(-1))/exp(z_t) + exp(D_t) - exp(T_t) + exp(phi_t)*exp(Q_t_A)*(1-delta)*exp(N_t(-1))/exp(z_t)) +
                exp(QtilK_iota_t)  *
-                         ( exp(rK)*exp(N_t(-1))/exp(z_t) + exp(r(-1))*exp(B_t(-1))/exp(z_t) + exp(D_t) - exp(T_t)) );   %checked---eq p87  
+                         ( exp(rK)*exp(N_t(-1))/exp(z_t) + exp(r(-1))*exp(B_t(-1))/exp(z_t) + exp(D_t) - exp(T_t)) );   %checked---eq p87
 
-exp(N_t) - ( exp(AI) + (1-delta)*exp(N_t(-1))/exp(z_t) ); 
+exp(N_t) - ( exp(AI) + (1-delta)*exp(N_t(-1))/exp(z_t) );
 
 exp(Delta_N) - ( theta*exp(QK)/exp(Q_t_A)*exp(iota_s) + exp(phi_t)*(1-delta)*exp(chi_s)*exp(N_t(-1))/exp(z_t));
 
 exp(N_t) - exp(Kbar); // eq a101
 
-exp(A_eff) - (exp(AI)/exp(iota_t)); 
+exp(A_eff) - (exp(AI)/exp(iota_t));
 
 // Capital Producers
 
@@ -374,7 +374,7 @@ Sprime - ( theta_I*(exp(Ihat)/exp(Ihat(-1))*exp(z_t)-exp(gam)));
 
 exp(QK) - ( ( 1 - exp(sdfr(1))*exp(QK(1))*Sprime(1)*(exp(Ihat(1))/exp(Ihat)*exp(z_t(1)))^2)/((1-(Sprime*(exp(Ihat)/exp(Ihat(-1))*exp(z_t))+S))) );
 
-exp(iota_t) - (1 - S)*exp(Ihat); 
+exp(iota_t) - (1 - S)*exp(Ihat);
 
 // Government and Central Bank
 
@@ -397,7 +397,7 @@ exp(mchat) - ( 1/((1-eta)^(1-eta) * eta^eta) * exp(rK)^(1-eta) * exp(what_t)^(et
 
 exp(Kbar(-1))/( exp(z_t) * exp(l) ) - ( exp(what_t)/exp(rK) * (1-eta)/eta );  %eq a76
 
-(pi_t - pi_ss) - (bet/(1+iota_p*bet) * (pi_t(1) - pi_ss)  
+(pi_t - pi_ss) - (bet/(1+iota_p*bet) * (pi_t(1) - pi_ss)
                + iota_p/(1+iota_p*bet)*(pi_t(-1) - pi_ss)
                + kp*(mchat - steady_state(mchat))
                + (lambda_p_t - lambda_p));
@@ -412,14 +412,14 @@ exp(yhat)  - (exp(chat) + exp(Ihat) + (1 - 1/exp(g_t))*exp(yhat)  ); %eq. a98
       + (bet/(1+bet))*(what_t(1) - steady_state(what_t))
       + ((iota_w)/(1+bet)) * ( (pi_t(-1) - pi_ss)  + (z_t(-1) - gam) )
       - ((bet*iota_w + 1)/(1+bet)) * ( (pi_t - pi_ss)  + (z_t - gam) )
-      + (bet/(1+bet)) * ( (pi_t(1) - pi_ss)  + (z_t(1) - gam) ) 
-      + ((1-xi_w*bet)*(1-xi_w)/(1+bet)) * (eta_beta - (lambda_t - steady_state(lambda_t)) + nu*(l - l_ss) - (what_t - steady_state(what_t))) + (lambda_w_t - lambda_w) );  
+      + (bet/(1+bet)) * ( (pi_t(1) - pi_ss)  + (z_t(1) - gam) )
+      + ((1-xi_w*bet)*(1-xi_w)/(1+bet)) * (eta_beta - (lambda_t - steady_state(lambda_t)) + nu*(l - l_ss) - (what_t - steady_state(what_t))) + (lambda_w_t - lambda_w) );
 
 % If you want to assume that wages are flexible (as in online appendix K), then use:
-% exp(what_t)  -  chi0*(1/exp(lambda_t))*((exp(l)))^(nu) * exp(lambda_w_t);      
+% exp(what_t)  -  chi0*(1/exp(lambda_t))*((exp(l)))^(nu) * exp(lambda_w_t);
 
 // Definitions
-exp(GDP_t) - (exp(chat) + exp(Ihat) + (1 - 1/exp(g_t))*exp(yhat)); 
+exp(GDP_t) - (exp(chat) + exp(Ihat) + (1 - 1/exp(g_t))*exp(yhat));
 pistar - pi_ss;
 
 %// Exogenous processes (check)

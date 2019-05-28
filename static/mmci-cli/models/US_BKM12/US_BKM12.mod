@@ -7,16 +7,16 @@
 // This model is corresponding to Table 4(1) in the paper.
 
 // Important note:
-// Some parameters are adjusted for corresponding to quarterly frequency. 
-// (Only in case that clear logics for the change can be provided, for example, 
-// AR(1) coefficients, the adjustments are made) 
-// References for parameter adjustments: Monacelli et al. (2010): 541--542, 
+// Some parameters are adjusted for corresponding to quarterly frequency.
+// (Only in case that clear logics for the change can be provided, for example,
+// AR(1) coefficients, the adjustments are made)
+// References for parameter adjustments: Monacelli et al. (2010): 541--542,
 // Smets and Wouters (2007): 593, Bils et al.(2012): appendix.
 // Last edited: 26/04/18 by Changnam Son
 
 var   labobs robs pinfobs dy dc dinve dw ewma epinfma
 	  zcapf rkf kf pkf cf invef yf labf wf rrf kpf
-	  mc zcap rk k pk c inve y lab pinf w r kp 
+	  mc zcap rk k pk c inve y lab pinf w r kp
 	  a b g qs  spinf sw // ms
 
 
@@ -24,20 +24,20 @@ var   labobs robs pinfobs dy dc dinve dw ewma epinfma
 // Modelbase Variables                                                   //*
         interest inflation inflationq outputgap output; // fispol;       //*
 //**************************************************************************
- 
 
-varexo ea eb eg eqs epinf ew // em 
+
+varexo ea eb eg eqs epinf ew // em
 
 
 //**************************************************************************
-// Modelbase Shocks                                                      //*       
+// Modelbase Shocks                                                      //*
        interest_ ;// fiscal_                                             //*
 //**************************************************************************
-  
 
-parameters 
 
-//************************************************************************** 
+parameters
+
+//**************************************************************************
 // Modelbase Parameters                                                  //*
                                                                          //*
         cofintintb1 cofintintb2 cofintintb3 cofintintb4                  //*
@@ -50,30 +50,30 @@ parameters
         std_r_ std_r_quart coffispol                                     //*
 //**************************************************************************
 
- curvw cgy curvp constelab constepinf constebeta cmaw cmap calfa  czcap 
+ curvw cgy curvp constelab constepinf constebeta cmaw cmap calfa  czcap
  cbeta  csadjcost ctou csigma chabb cfc cindw cprobw cindp cprobp csigl
- clandaw crpi crdy cry crr  crhoa crhob crhog crhoqs crhoms crhopinf crhow  
- ctrend conster cg cgamma clandap cbetabar cr cpie crk cw cikbar cik clk 
+ clandaw crpi crdy cry crr  crhoa crhob crhog crhoqs crhoms crhopinf crhow
+ ctrend conster cg cgamma clandap cbetabar cr cpie crk cw cikbar cik clk
  cky ciy ccy crkky cwhlc cwly ;
 
 
 // Fixed parameters (Baseline model, correspoding to table 4 (a))
-//        adjusted (quarterly) // how to adjust               // parameter description 
-ctou=          0.025;          //   0.017*(3/2)               // depreciation rate  
+//        adjusted (quarterly) // how to adjust               // parameter description
+ctou=          0.025;          //   0.017*(3/2)               // depreciation rate
 clandaw=       1.5  ;          //                             // SS markup in the labor market
-cg=            0.18 ;          //                             // spending-GDP ratio 
+cg=            0.18 ;          //                             // spending-GDP ratio
 curvp=         10   ;          //                             // curvature in the goods market
 curvw=         10   ;          //                             // curvature in the labor market
 
 
 
 // Estimated parameters (Baseline model, correspoding to table 4 (a))
-//        adjusted (quarterly) // how to adjust               // parameter description  
-csadjcost=     5.499*3/2;      //                             // adjustment cost (i)  *reference: 
+//        adjusted (quarterly) // how to adjust               // parameter description
+csadjcost=     5.499*3/2;      //                             // adjustment cost (i)  *reference:
 csigma=        1.144;          //                             // EIS
-chabb=         0.637*2/3;      //                             // external habit 
+chabb=         0.637*2/3;      //                             // external habit
 cprobw=        0.819;          // 1-(1-0.879)*(3/2)           // Calvo (w): adjusted to have the same average duration,  cf) SW(07): 0.70
-csigl=         0.964;          //                             // elasticity of labor supply   
+csigl=         0.964;          //                             // elasticity of labor supply
 cprobp=        0.877;          // 1-(1-0.918)*(3/2)           // Calvo (p): adjusted to have the same average duration,  cf) SW(07): 0.66
 cindw=         0.314;          //                             // indexation (w): weight between Pi(-1) and SS Pi
 cindp=         0.671;          //                             // indexation (p): weight between Pi(-1) and SS Pi
@@ -92,7 +92,7 @@ ctrend =       0.350;          // 0.233*(3/2)                 // trend growth ra
 calfa=         0.209;          //                             // share of capital
 
 crhoa=         0.930;          // 0.953^(3/2)                 // AR(1) productivity disturbance
-crhob=         0.952;          // 0.968^(3/2)                 // AR(1) risk premium disturbance 
+crhob=         0.952;          // 0.968^(3/2)                 // AR(1) risk premium disturbance
 crhog=         0.949;          // 0.966^(3/2)                 // AR(1) government spending disturbance
 crhoqs=        0.967;          // 0.978^(3/2)                 // AR(1) investment disturbance
 //crhoms=      0.397;          // 0.540^(3/2)                 // AR(1) monetary policy disturbance
@@ -103,7 +103,7 @@ cmaw =         0.188;          // 0.328^(3/2)                 // MA(1) wage mark
 cgy  =         1.166;          //                             // reaction of government spending to productivity shock
 
 
-// Derived parameters 
+// Derived parameters
 cpie=1+constepinf/100;
 cgamma=1+ctrend/100 ;
 cbeta=1/(1+constebeta/100);
@@ -128,14 +128,14 @@ conster=(cr-1)*100;
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           
-cd('..');                                                                
-load policy_param.mat;                                                   
-for i=1:33                                                               
-    deep_parameter_name = M_.param_names(i,:);                           
-    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])                  
-end                                                                      
-cd(thispath);       
+thispath = pwd;
+cd('..');
+load policy_param.mat;
+for i=1:33
+    deep_parameter_name = M_.param_names(i,:);
+    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
+end
+cd(thispath);
                                                                          //*
 // Definition of Discretionary Fiscal Policy Parameter                   //*
 // coffispol = 1;                                                        //*
@@ -143,7 +143,7 @@ cd(thispath);
 
 
 
-model(linear); 
+model(linear);
 
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variable //*
@@ -157,43 +157,43 @@ output     = y;                                                          //*
 //**************************************************************************
 
 
-//**************************************************************************                                                                    
+//**************************************************************************
 // Policy Rule                                                           //*
                                                                          //*
 // Monetary Policy                                                       //*
                                                                          //*
-interest =   cofintintb1*interest(-1)                                    //* 
-           + cofintintb2*interest(-2)                                    //* 
-           + cofintintb3*interest(-3)                                    //* 
-           + cofintintb4*interest(-4)                                    //* 
-           + cofintinf0*inflationq                                       //* 
-           + cofintinfb1*inflationq(-1)                                  //* 
-           + cofintinfb2*inflationq(-2)                                  //* 
-           + cofintinfb3*inflationq(-3)                                  //* 
-           + cofintinfb4*inflationq(-4)                                  //* 
-           + cofintinff1*inflationq(+1)                                  //* 
-           + cofintinff2*inflationq(+2)                                  //* 
-           + cofintinff3*inflationq(+3)                                  //* 
-           + cofintinff4*inflationq(+4)                                  //* 
-           + cofintout*outputgap 	                                     //* 
-           + cofintoutb1*outputgap(-1)                                   //* 
-           + cofintoutb2*outputgap(-2)                                   //* 
-           + cofintoutb3*outputgap(-3)                                   //* 
-           + cofintoutb4*outputgap(-4)                                   //* 
-           + cofintoutf1*outputgap(+1)                                   //* 
-           + cofintoutf2*outputgap(+2)                                   //* 
-           + cofintoutf3*outputgap(+3)                                   //* 
-           + cofintoutf4*outputgap(+4)                                   //* 
-           + cofintoutp*output 	                                         //* 
-           + cofintoutpb1*output(-1)                                     //* 
-           + cofintoutpb2*output(-2)                                     //* 
-           + cofintoutpb3*output(-3)                                     //* 
-           + cofintoutpb4*output(-4)                                     //* 
-           + cofintoutpf1*output(+1)                                     //* 
-           + cofintoutpf2*output(+2)                                     //* 
-           + cofintoutpf3*output(+3)                                     //* 
-           + cofintoutpf4*output(+4)                                     //* 
-           + std_r_ *interest_;                                          //* 
+interest =   cofintintb1*interest(-1)                                    //*
+           + cofintintb2*interest(-2)                                    //*
+           + cofintintb3*interest(-3)                                    //*
+           + cofintintb4*interest(-4)                                    //*
+           + cofintinf0*inflationq                                       //*
+           + cofintinfb1*inflationq(-1)                                  //*
+           + cofintinfb2*inflationq(-2)                                  //*
+           + cofintinfb3*inflationq(-3)                                  //*
+           + cofintinfb4*inflationq(-4)                                  //*
+           + cofintinff1*inflationq(+1)                                  //*
+           + cofintinff2*inflationq(+2)                                  //*
+           + cofintinff3*inflationq(+3)                                  //*
+           + cofintinff4*inflationq(+4)                                  //*
+           + cofintout*outputgap 	                                     //*
+           + cofintoutb1*outputgap(-1)                                   //*
+           + cofintoutb2*outputgap(-2)                                   //*
+           + cofintoutb3*outputgap(-3)                                   //*
+           + cofintoutb4*outputgap(-4)                                   //*
+           + cofintoutf1*outputgap(+1)                                   //*
+           + cofintoutf2*outputgap(+2)                                   //*
+           + cofintoutf3*outputgap(+3)                                   //*
+           + cofintoutf4*outputgap(+4)                                   //*
+           + cofintoutp*output 	                                         //*
+           + cofintoutpb1*output(-1)                                     //*
+           + cofintoutpb2*output(-2)                                     //*
+           + cofintoutpb3*output(-3)                                     //*
+           + cofintoutpb4*output(-4)                                     //*
+           + cofintoutpf1*output(+1)                                     //*
+           + cofintoutpf2*output(+2)                                     //*
+           + cofintoutpf3*output(+3)                                     //*
+           + cofintoutpf4*output(+4)                                     //*
+           + std_r_ *interest_;                                          //*
                                                                          //*
 // Discretionary Government Spending                                     //*
                                                                          //*
@@ -228,8 +228,8 @@ interest =   cofintintb1*interest(-1)                                    //*
 
 	     pinf = (1/(1+cbetabar*cgamma*cindp)) * ( cbetabar*cgamma*pinf(1) +cindp*pinf(-1)
                +((1-cprobp)*(1-cbetabar*cgamma*cprobp)/cprobp)/((cfc-1)*curvp+1)*(mc)  )  + spinf ;
-      
-      // without pric indexation 
+
+      // without pric indexation
       // pinf = cbetabar*cgamma* (cprobp + (1-cprobp*cpie^(1/(clandap-1)))^(clandap)/(1-cprobp)^(clandap-1)/cpie^(1+1/(clandap-1))) * pinf(1)
       //       +((1-cbetabar*cgamma*cprobp)*(1-cprobp*cpie^(1/(clandap-1)))^(clandap)/cprobp/(1-cprobp)^(clandap-1)/cpie^(1/(clandap-1)))/((clandap-1)*curvp+1)*(mc)
       // 	   + spinf ;
@@ -258,7 +258,7 @@ interest =   cofintintb1*interest(-1)                                    //*
 	              epinfma=epinf;
 	      sw = crhow*sw(-1) + ewma - cmaw*ewma(-1) ;
 	           ewma=ew;
-	 
+
 
 // measurment equations
 
@@ -322,21 +322,21 @@ end;
 
 
 shocks;
-//        adjusted (quarterly) // how to adjust               // parameter description   
+//        adjusted (quarterly) // how to adjust               // parameter description
 var ea;
 stderr         1.260*1/3;          //                             // productivity
 var eb;
-stderr         0.030*1/3;          //                             // risk premium     
+stderr         0.030*1/3;          //                             // risk premium
 var eg;
-stderr         0.573*1/3;          //                             // government spending      
+stderr         0.573*1/3;          //                             // government spending
 var eqs;
-stderr         0.240*1/3;          //                             // investment     
+stderr         0.240*1/3;          //                             // investment
 //var em;
 //stderr       0.044*1/3;          //                             // monetary policy
 var epinf;
 stderr         0.283*1/3;          //                             // price-markup
 var ew;
-stderr         0.519*1/3;          //                             // wage-markup     
+stderr         0.519*1/3;          //                             // wage-markup
 end;
 
 
@@ -344,4 +344,4 @@ end;
 
 // The execution command we run is:
 // stoch_simul(order = 1, noprint, IRF=0, periods = 12102, drop = 200);
-// stoch_simul(order = 1, noprint, IRF=100, periods = 12102, drop = 200) r w mc y c inve lab pinf wf yf cf invef; %construct impulse responses; 
+// stoch_simul(order = 1, noprint, IRF=100, periods = 12102, drop = 200) r w mc y c inve lab pinf wf yf cf invef; %construct impulse responses;

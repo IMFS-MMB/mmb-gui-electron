@@ -5,6 +5,7 @@ function mmb (jsonconfig)
     paths.rules = fullfile(paths.root, 'rules');
     paths.out = fullfile(paths.root, 'out');
     paths.lib = fullfile(paths.root, 'lib');
+    paths.work = fullfile(paths.root, 'work');
 
     cd(paths.root);
 

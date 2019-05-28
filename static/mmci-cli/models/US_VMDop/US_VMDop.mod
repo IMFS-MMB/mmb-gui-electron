@@ -1,7 +1,7 @@
 //**************************************************************************
 // A New Comparative Approach to Macroeconomic Modeling and Policy Analysis
 //
-// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and 
+// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and
 // Maik Wolters
 //
 // Working Paper, 2009
@@ -19,44 +19,44 @@
 // Variables
 
 var piU, iU, omegabarSU, RkSXU, nSU, qU,
-         cU, wU,rkSU,kbarBU, hU, kbarSU, ReXU, 
-        FpXU, FwXU,  RcouponXU,uSU,uBU,  
+         cU, wU,rkSU,kbarBU, hU, kbarSU, ReXU,
+        FpXU, FwXU,  RcouponXU,uSU,uBU,
           KwXU, KpXU,chiU,KtotU,YU,eps_analystU,eps_couponU,RanalystXU,nBU,stockcapitalU,ntotU,RkBXU,
             btotAU,btotBU,btotSU,levAU,levBU,levSU,CostFinancingSU,SpreadU, lambdanU,PextSU,
 
     piflexU, iflexU, omegabarSflexU, RkSXflexU, nSflexU, qflexU,
-         cflexU, wflexU,rkSflexU,kbarBflexU, hflexU, kbarSflexU, ReXflexU, 
-        FpXflexU, FwXflexU,  RcouponXflexU,uSflexU,uBflexU,  
+         cflexU, wflexU,rkSflexU,kbarBflexU, hflexU, kbarSflexU, ReXflexU,
+        FpXflexU, FwXflexU,  RcouponXflexU,uSflexU,uBflexU,
           KwXflexU, KpXflexU,chiflexU,KtotflexU,YflexU,eps_analystflexU,eps_couponflexU,RanalystXflexU,nBflexU,stockcapitalflexU,ntotflexU,RkBXflexU,
             btotAflexU,btotBflexU,btotSflexU,levAflexU,levBflexU,levSflexU,CostFinancingSflexU,SpreadflexU, lambdanflexU,PextSflexU,
 
 //**************************************************************************
-// Modelbase Variables                                                   //*    
+// Modelbase Variables                                                   //*
         interest inflation inflationq outputgap output;                  //*
 //**************************************************************************
 
-varexo 
+varexo
 
 //**************************************************************************
-// Modelbase Shocks                                                      //*       
+// Modelbase Shocks                                                      //*
         interest_;                                                       //*
 //**************************************************************************
 
 parameters  KtotUU, ntotUU,KwXUU,KpXUU, RcouponXUU, eps_couponUU,levBUU,btotBUU,btotSUU,levSUU,
             piUU, sUU, rkSUU,rkBUU, iUU, uSUU,uBUU, omegabarSUU, RkSXUU,RkBXUU, nSUU,nBUU, qUU, lambdanUU, cUU, wUU, hUU,
-            kbarSUU,kbarBUU, ReXUU,  FpXUU, FwXUU, PextSUU,YUU,eps_analystUU, RanalystXUU, chiUU, eps_biasedUU, RbiasedXUU ,  
+            kbarSUU,kbarBUU, ReXUU,  FpXUU, FwXUU, PextSUU,YUU,eps_analystUU, RanalystXUU, chiUU, eps_biasedUU, RbiasedXUU ,
               gammaSUU,gammaBUU,  sigmaSUU,  sigmaCUU,levAUU,btotAUU,CostFinancingSUU,SpreadUU,stockcapitalUU,gUU;
 
 
 //PARAMETERS
 
 parameters lambdawUU, sigmaLXUU, betaUU, xiwUU, bUU,lambdafUU,
-      psiLXUU, iotaw1UU,  weSUU,weBUU, sigmaaSUU,sigmaaBUU, SdouprXUU,  
+      psiLXUU, iotaw1UU,  weSUU,weBUU, sigmaaSUU,sigmaaBUU, SdouprXUU,
       alphaUU, deltaUU, xipUU, iota1UU, etagUU, muUU,
       aptilUU, aytilUU, rhotilUU,
       rhoEIS,etaSE, rho_chi,OMEGA, alpha3, alpha4,KwXflexUU,KpXflexUU,FpXflexUU, FwXflexUU,
 
-//************************************************************************** 
+//**************************************************************************
 // Modelbase Parameters                                                  //*
                                                                          //*
         cofintintb1 cofintintb2 cofintintb3 cofintintb4                  //*
@@ -79,9 +79,9 @@ alpha4=30000;
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-	thispath = cd;                                                       //*
+	thispath = pwd;                                                       //*
 	cd('..');                                                            //*
-	load policy_param.mat; 
+	load policy_param.mat;
     //load ss_parameters_US.mat;
     qq=load('policy_param.mat');
     for i=1:M_.param_nbr;
@@ -91,7 +91,7 @@ alpha4=30000;
    //    disp([name ' ' num2str(M_.params(i))]);
     end;
 end;                                         //*
-	cd(thispath);    
+	cd(thispath);
 std_r_=100;                                                         	 //*
 //**************************************************************************
 
@@ -119,41 +119,41 @@ outputgap  = 100*(YU-YflexU)/YUU;                                        //*
 output     = 100*(YU-YUU)/YUU;                                           //*
 //**************************************************************************
 
-//**************************************************************************                                                                    
+//**************************************************************************
 // Policy Rule                                                           //*
 
-interest =   cofintintb1*interest(-1)                                    //* 
-           + cofintintb2*interest(-2)                                    //* 
-           + cofintintb3*interest(-3)                                    //* 
-           + cofintintb4*interest(-4)                                    //* 
-           + cofintinf0*inflationq                                       //* 
-           + cofintinfb1*inflationq(-1)                                  //* 
-           + cofintinfb2*inflationq(-2)                                  //* 
-           + cofintinfb3*inflationq(-3)                                  //* 
-           + cofintinfb4*inflationq(-4)                                  //* 
-           + cofintinff1*inflationq(+1)                                  //* 
-           + cofintinff2*inflationq(+2)                                  //* 
-           + cofintinff3*inflationq(+3)                                  //* 
-           + cofintinff4*inflationq(+4)                                  //* 
-           + cofintout*outputgap 	                                     //* 
-           + cofintoutb1*outputgap(-1)                                   //* 
-           + cofintoutb2*outputgap(-2)                                   //* 
-           + cofintoutb3*outputgap(-3)                                   //* 
-           + cofintoutb4*outputgap(-4)                                   //* 
-           + cofintoutf1*outputgap(+1)                                   //* 
-           + cofintoutf2*outputgap(+2)                                   //* 
-           + cofintoutf3*outputgap(+3)                                   //* 
-           + cofintoutf4*outputgap(+4)                                   //* 
-           + cofintoutp*output 	                                         //* 
-           + cofintoutpb1*output(-1)                                     //* 
-           + cofintoutpb2*output(-2)                                     //* 
-           + cofintoutpb3*output(-3)                                     //* 
-           + cofintoutpb4*output(-4)                                     //* 
-           + cofintoutpf1*output(+1)                                     //* 
-           + cofintoutpf2*output(+2)                                     //* 
-           + cofintoutpf3*output(+3)                                     //* 
-           + cofintoutpf4*output(+4)                                     //* 
-           + std_r_ *interest_;                                          //* 
+interest =   cofintintb1*interest(-1)                                    //*
+           + cofintintb2*interest(-2)                                    //*
+           + cofintintb3*interest(-3)                                    //*
+           + cofintintb4*interest(-4)                                    //*
+           + cofintinf0*inflationq                                       //*
+           + cofintinfb1*inflationq(-1)                                  //*
+           + cofintinfb2*inflationq(-2)                                  //*
+           + cofintinfb3*inflationq(-3)                                  //*
+           + cofintinfb4*inflationq(-4)                                  //*
+           + cofintinff1*inflationq(+1)                                  //*
+           + cofintinff2*inflationq(+2)                                  //*
+           + cofintinff3*inflationq(+3)                                  //*
+           + cofintinff4*inflationq(+4)                                  //*
+           + cofintout*outputgap 	                                     //*
+           + cofintoutb1*outputgap(-1)                                   //*
+           + cofintoutb2*outputgap(-2)                                   //*
+           + cofintoutb3*outputgap(-3)                                   //*
+           + cofintoutb4*outputgap(-4)                                   //*
+           + cofintoutf1*outputgap(+1)                                   //*
+           + cofintoutf2*outputgap(+2)                                   //*
+           + cofintoutf3*outputgap(+3)                                   //*
+           + cofintoutf4*outputgap(+4)                                   //*
+           + cofintoutp*output 	                                         //*
+           + cofintoutpb1*output(-1)                                     //*
+           + cofintoutpb2*output(-2)                                     //*
+           + cofintoutpb3*output(-3)                                     //*
+           + cofintoutpb4*output(-4)                                     //*
+           + cofintoutpf1*output(+1)                                     //*
+           + cofintoutpf2*output(+2)                                     //*
+           + cofintoutpf3*output(+3)                                     //*
+           + cofintoutpf4*output(+4)                                     //*
+           + std_r_ *interest_;                                          //*
 //**************************************************************************
 
 
@@ -161,7 +161,7 @@ interest =   cofintintb1*interest(-1)                                    //*
 (1+betaUU*RcouponXU)*qU - betaUU*piU(+1)*(  uBU(+1)*rkSU(+1)*( (uSU(+1)*kbarSU/(uBU(+1)*kbarBU))^(1-rhoEIS)) - rkBUU*(exp(sigmaaBUU*(uBU-1))-1)/sigmaaBUU + (1-deltaUU)*qU(+1));
 eps_analystU - eps_analystUU - alpha4*(YU(-1)-YUU);
 eps_couponU - eps_analystU*(1 + chiU);
-chiU - rho_chi*chiU(-1) - (1-rho_chi)*(chiUU + alpha3*(nBU-nBUU)); 
+chiU - rho_chi*chiU(-1) - (1-rho_chi)*(chiUU + alpha3*(nBU-nBUU));
 1 - eps_couponU*(RcouponXU-ReXU)/(1+RcouponXU);
 1 - eps_analystU*(RanalystXU-ReXU)/(1+RanalystXU);
 -(rkSU/( alphaUU * ((uSU*kbarSU(-1))^(rhoEIS-1)) *((hU / ( ( etaSE*(uSU*kbarSU(-1))^rhoEIS +(1-etaSE)*(uBU*kbarBU(-1))^rhoEIS)^(1/rhoEIS)))^(1-alphaUU)) * (( etaSE*(uSU*kbarSU(-1))^rhoEIS +(1-etaSE)*(uBU*kbarBU(-1))^rhoEIS))^(1/rhoEIS-1))) + ( (wU/(1-alphaUU))^(1-alphaUU/(rhoEIS+alphaUU-alphaUU*rhoEIS))) * ( ( alphaUU/rkSU*((uSU*kbarSU(-1))^(rhoEIS-1)))^(-alphaUU/(rhoEIS+alphaUU-alphaUU*rhoEIS))) *((((( ( etaSE*(uSU*kbarSU(-1))^rhoEIS +(1-etaSE)*(uBU*kbarBU(-1))^rhoEIS)^(1/rhoEIS))^alphaUU)*(hU ^(1-alphaUU)) ))^(alphaUU*(rhoEIS-1)/(rhoEIS+alphaUU-alphaUU*rhoEIS))) * rhoEIS/(rhoEIS+alphaUU-alphaUU*rhoEIS);
@@ -203,7 +203,7 @@ PextSU + (1+ReXU) - omegabarSU(+1)*(1+RkSXU(+1))*qU*kbarSU/(qU*kbarSU-nSU);
 (1+betaUU*RcouponXflexU)*qflexU - betaUU*piflexU(+1)*(  uBflexU(+1)*rkSflexU(+1)*( (uSflexU(+1)*kbarSflexU/(uBflexU(+1)*kbarBflexU))^(1-rhoEIS)) - rkBUU*(exp(sigmaaBUU*(uBflexU-1))-1)/sigmaaBUU + (1-deltaUU)*qflexU(+1));
 eps_analystflexU - eps_analystUU - alpha4*(YflexU(-1)-YUU);
 eps_couponflexU - eps_analystflexU*(1 + chiflexU);
-chiflexU - rho_chi*chiflexU(-1) - (1-rho_chi)*(chiUU + alpha3*(nBflexU-nBUU)); 
+chiflexU - rho_chi*chiflexU(-1) - (1-rho_chi)*(chiUU + alpha3*(nBflexU-nBUU));
 1 - eps_couponflexU*(RcouponXflexU-ReXflexU)/(1+RcouponXflexU);
 1 - eps_analystflexU*(RanalystXflexU-ReXflexU)/(1+RanalystXflexU);
 -(rkSflexU/( alphaUU * ((uSflexU*kbarSflexU(-1))^(rhoEIS-1)) *((hflexU / ( ( etaSE*(uSflexU*kbarSflexU(-1))^rhoEIS +(1-etaSE)*(uBflexU*kbarBflexU(-1))^rhoEIS)^(1/rhoEIS)))^(1-alphaUU)) * (( etaSE*(uSflexU*kbarSflexU(-1))^rhoEIS +(1-etaSE)*(uBflexU*kbarBflexU(-1))^rhoEIS))^(1/rhoEIS-1))) + ( (wflexU/(1-alphaUU))^(1-alphaUU/(rhoEIS+alphaUU-alphaUU*rhoEIS))) * ( ( alphaUU/rkSflexU*((uSflexU*kbarSflexU(-1))^(rhoEIS-1)))^(-alphaUU/(rhoEIS+alphaUU-alphaUU*rhoEIS))) *((((( ( etaSE*(uSflexU*kbarSflexU(-1))^rhoEIS +(1-etaSE)*(uBflexU*kbarBflexU(-1))^rhoEIS)^(1/rhoEIS))^alphaUU)*(hflexU ^(1-alphaUU)) ))^(alphaUU*(rhoEIS-1)/(rhoEIS+alphaUU-alphaUU*rhoEIS))) * rhoEIS/(rhoEIS+alphaUU-alphaUU*rhoEIS);
@@ -244,7 +244,7 @@ PextSflexU + (1+ReXflexU) - omegabarSflexU(+1)*(1+RkSXflexU(+1))*qflexU*kbarSfle
 end;
 
 
-// Initial values, coinciding with steady-state values 
+// Initial values, coinciding with steady-state values
 initval;
 piU = piUU;
 rkSU = rkSUU;
@@ -328,16 +328,16 @@ SpreadflexU= SpreadUU;
 lambdanflexU=lambdanUU;
 PextSflexU=PextSUU;
 
-interest   = 0;      
-inflation  = 0;             
-inflationq = 0;                                       
-outputgap  = 0;                                                     
+interest   = 0;
+inflation  = 0;
+inflationq = 0;
+outputgap  = 0;
 output     = 0;
 
 end;
 
 
-shocks; 
+shocks;
 // var e_xpU; stderr std1_xpU;
 var interest_; stderr 0.01;
 end;

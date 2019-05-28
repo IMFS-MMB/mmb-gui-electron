@@ -1,7 +1,7 @@
 //**************************************************************************
 // A New Comparative Approach to Macroeconomic Modeling and Policy Analysis
 //
-// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and 
+// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and
 // Maik Wolters
 //
 // Working Paper, 2009
@@ -19,41 +19,41 @@ var stn lnn wrn piyfd pipcd itr itd pieen pimtd pcr lsr xtr mtr ltn pixtd
     ywd compr ywr gcr nfn tdn_yen ign piyet urx lprod yett pcd mtd picompr
     ulc ult ksr strq xtd piywdx pipyr piyer scr fdd ywrx ywdx tbr yer pcn
     itn xtn mtn tbn can nfa pyn pyr wln win tdn trn gln_yen gyn gsn gln
-    gdn inn lagksr1 lagksr2 lagwrn1 lagwrn2 lagwrn3 
+    gdn inn lagksr1 lagksr2 lagwrn1 lagwrn2 lagwrn3
     lagwrn4 lagwrn5 lagpcd1 lagpcd2 lagpcd3 lagpcd4 lagpcd5 laglprod1
-    laglprod2 laglprod3 laglprod4 laglprod5 lagpipcd1 lagpipcd2 lagpipcd3   
+    laglprod2 laglprod3 laglprod4 laglprod5 lagpipcd1 lagpipcd2 lagpipcd3
     lagpipcd4 lagult1 lagult2 lagult3 lagpiyfd1 lagpiyfd2 lagitr1 lagitr2
-    lagitd1 lagitd2 lagitd3 lagitd4 lagitd5 lagitd6 lagitd7 lagmtd1 lagmtd2     
-    lagmtd3 lagmtd4 lagmtd5 lagmtd6 lagstn1 lagpiyer1 lagpiyer2 laglsr1     
-    lagxtr1 lagxtr2 lagxtr3 lagxtr4 lagxtr5 lagxtr6 lagxtr7 lagywrx1 
-    lagywrx2 lagywrx3 lagywrx4 lagywrx5 lagywrx6 lagywrx7 lagpixtd1 lagpixtd2    
-    lagpiywdx1 lagpiywdx2 lagnfa1 laggln_yen1 laggln_yen2 laggln_yen3 lagltn1     
-    lagltn2 lagltn3 lagltn4 lagltn5 lagltn6 lagltn7 lagltn8 lagltn9 lagltn10    
-    lagltn11 lagltn12 lagltn13 lagltn14 lagltn15 lagltn16 lagltn17 lagltn18    
-    lagltn19 lagltn20 lagltn21 lagltn22 lagltn23 lagltn24 lagltn25 lagltn26    
-    lagltn27 lagltn28 lagltn29 lagltn30 lagltn31 lagltn32 lagltn33 lagltn34    
-    lagltn35 lagltn36 lagltn37 lagltn38 lagltn39 lagltn40 lagltn41 lagltn42    
-    lagltn43 lagltn44 lagltn45 lagltn46 lagltn47 lagywd1 lagywd2 lagywd3 
-    lagpieen1 lagpieen2 lagcompr1 lagcompr2 laggcr1 lagywr1 lagywr2 lagpiyet1   
+    lagitd1 lagitd2 lagitd3 lagitd4 lagitd5 lagitd6 lagitd7 lagmtd1 lagmtd2
+    lagmtd3 lagmtd4 lagmtd5 lagmtd6 lagstn1 lagpiyer1 lagpiyer2 laglsr1
+    lagxtr1 lagxtr2 lagxtr3 lagxtr4 lagxtr5 lagxtr6 lagxtr7 lagywrx1
+    lagywrx2 lagywrx3 lagywrx4 lagywrx5 lagywrx6 lagywrx7 lagpixtd1 lagpixtd2
+    lagpiywdx1 lagpiywdx2 lagnfa1 laggln_yen1 laggln_yen2 laggln_yen3 lagltn1
+    lagltn2 lagltn3 lagltn4 lagltn5 lagltn6 lagltn7 lagltn8 lagltn9 lagltn10
+    lagltn11 lagltn12 lagltn13 lagltn14 lagltn15 lagltn16 lagltn17 lagltn18
+    lagltn19 lagltn20 lagltn21 lagltn22 lagltn23 lagltn24 lagltn25 lagltn26
+    lagltn27 lagltn28 lagltn29 lagltn30 lagltn31 lagltn32 lagltn33 lagltn34
+    lagltn35 lagltn36 lagltn37 lagltn38 lagltn39 lagltn40 lagltn41 lagltn42
+    lagltn43 lagltn44 lagltn45 lagltn46 lagltn47 lagywd1 lagywd2 lagywd3
+    lagpieen1 lagpieen2 lagcompr1 lagcompr2 laggcr1 lagywr1 lagywr2 lagpiyet1
     yet infl innoextdend
 
 //**************************************************************************
-// Modelbase Variables                                                   //*    
+// Modelbase Variables                                                   //*
         interest inflation inflationq  outputgap output fispol;          //*
-//**************************************************************************  
+//**************************************************************************
 
 
-varexo  innoelnn innoewrn innoeyfd innoepcd innoeitr innoeitd   
+varexo  innoelnn innoewrn innoeyfd innoepcd innoeitr innoeitd
     	innoextd innoemtd innoepcr innoelsr innoextr innoemtr innoeltn
 
 //**************************************************************************
-// Modelbase Shocks                                                      //*     
+// Modelbase Shocks                                                      //*
   interest_ fiscal_;                                               //*
 //**************************************************************************
 
 
-parameters 
-//************************************************************************** 
+parameters
+//**************************************************************************
 // Modelbase Parameters                                                  //*
                                                                          //*
         cofintintb1 cofintintb2 cofintintb3 cofintintb4                  //*
@@ -64,48 +64,48 @@ parameters
         cofintoutp cofintoutpb1 cofintoutpb2 cofintoutpb3 cofintoutpb4   //*
         cofintoutpf1 cofintoutpf2 cofintoutpf3 cofintoutpf4              //*
         std_r_ std_r_quart coffispol                                     //*
-//**************************************************************************                                
-            BETABIG DELTABIG HICP__CST HICP__D1 HICP__D11 HICP__LHICPMTD HICP__LHICPPCD 
-           HICP__LHICPULC ITD__CST ITD__DDLMTD ITD__DDLYFD ITD__DLITDMTD1 
-           ITD__DLITDMTD5 ITD__DLITDMTD6 ITD__DLITDYFD1 ITD__DLITDYFD4 
+//**************************************************************************
+            BETABIG DELTABIG HICP__CST HICP__D1 HICP__D11 HICP__LHICPMTD HICP__LHICPPCD
+           HICP__LHICPULC ITD__CST ITD__DDLMTD ITD__DDLYFD ITD__DLITDMTD1
+           ITD__DLITDMTD5 ITD__DLITDMTD6 ITD__DLITDYFD1 ITD__DLITDYFD4
            ITD__DLITDYFD7  ITD__ECM1 ITD__ECM2 ITR__ADJ ITR__D894 ITR__DITY1
-           ITR__ECM LNN__D841 LNN__D872 LNN__DLLNT LNN__DLWRRADJ LNN__DLWRRADJ1 
-           LNN__DLYERADJ LNN__ECM LSR__CST LSR__DLSR1 LSR__DLSTR LSR__ECM 
+           ITR__ECM LNN__D841 LNN__D872 LNN__DLLNT LNN__DLWRRADJ LNN__DLWRRADJ1
+           LNN__DLYERADJ LNN__ECM LSR__CST LSR__DLSR1 LSR__DLSTR LSR__ECM
            LSR__DYER1 LSR__DYER2 LTN__CST LTN__DDSTN LTN__DLTNSTN1 LTN__LTNSTN1
-           MEAN__LSX MTD__CST MTD__DLCOMPR MTD__DLCOMPR1 MTD__DLMTD1 MTD__DLYWDX 
-           MTD__ECM MTD__ECM1 MTD__ECM2 MTR__CST MTR__D743 MTR__DLFDD MTR__ECM 
-           MTR__ECM__LMTDYED MTR__ECM__TIME NFN__NFA NFN__NFN PCD__CST PCD__DI82Q1 
-           PCD__DI92Q4 PCD__DLCOMPREEN PCD__DLMTD PCD__DLMTD1 PCD__DLPCD4 
-           PCD__DLYED PCD__DLYED1 PCD__ECM PCD__ECM__LMTD PCD__ECM__LYED 
-           PCD__I77Q4I78Q1 PCR__CST PCR__DLPYR PCR__DLSTR PCR__DURX PCR__ECM 
+           MEAN__LSX MTD__CST MTD__DLCOMPR MTD__DLCOMPR1 MTD__DLMTD1 MTD__DLYWDX
+           MTD__ECM MTD__ECM1 MTD__ECM2 MTR__CST MTR__D743 MTR__DLFDD MTR__ECM
+           MTR__ECM__LMTDYED MTR__ECM__TIME NFN__NFA NFN__NFN PCD__CST PCD__DI82Q1
+           PCD__DI92Q4 PCD__DLCOMPREEN PCD__DLMTD PCD__DLMTD1 PCD__DLPCD4
+           PCD__DLYED PCD__DLYED1 PCD__ECM PCD__ECM__LMTD PCD__ECM__LYED
+           PCD__I77Q4I78Q1 PCR__CST PCR__DLPYR PCR__DLSTR PCR__DURX PCR__ECM
            PCR__ECM__LPYR PCR__ECM__LWLR PCR__I93Q1 PCR__LPYR PCR__LWLR
-           TDN__GLN WRN__DDLPCD WRN__DDLPCD1 WRN__DDLPCD2 WRN__DDLPCD3 
-           WRN__DDLPROD WRN__DDLPROD1 WRN__DDLPROD2 WRN__DDLPROD3 WRN__DDLPROD4 
-           WRN__DLWRCQ4 WRN__ECM WRN__I81Q1 WRN__I84Q2 WRN__I98Q1 WRN__INFT 
-           WRN__LURX_GAP1 XTD__CST XTD__DLEEN XTD__DLMTD XTD__DLXTD1 XTD__DLYED 
-           XTD__ECM XTD__ECM1 XTD__ECM2 XTD__ECM3 XTR__CST XTR__DLXTDYWDX1 
-           XTR__DLXTRYWRX7 XTR__ECM XTR__LXTDYWDX1 XTR__TIME YFD__CST YFD__DLMTD1 
-           YFD__DLULT YFD__DLULT1 YFD__DLULT2 YFD__DLYFD1 YFD__ECM YFD__INFT 
-           YFD__LYGA URTBAR 
+           TDN__GLN WRN__DDLPCD WRN__DDLPCD1 WRN__DDLPCD2 WRN__DDLPCD3
+           WRN__DDLPROD WRN__DDLPROD1 WRN__DDLPROD2 WRN__DDLPROD3 WRN__DDLPROD4
+           WRN__DLWRCQ4 WRN__ECM WRN__I81Q1 WRN__I84Q2 WRN__I98Q1 WRN__INFT
+           WRN__LURX_GAP1 XTD__CST XTD__DLEEN XTD__DLMTD XTD__DLXTD1 XTD__DLYED
+           XTD__ECM XTD__ECM1 XTD__ECM2 XTD__ECM3 XTR__CST XTR__DLXTDYWDX1
+           XTR__DLXTRYWRX7 XTR__ECM XTR__LXTDYWDX1 XTR__TIME YFD__CST YFD__DLMTD1
+           YFD__DLULT YFD__DLULT1 YFD__DLULT2 YFD__DLYFD1 YFD__ECM YFD__INFT
+           YFD__LYGA URTBAR
            PIBAR STNBAR STRQBAR LTNRESBAR EXPLTNRESBAR YETGBAR atransfer atdn_yen
            GDN__DIS__YEN GIN__OTHER__YEN GIN__YEN GLN__YEN__TARGET INN__YEN
-           PYN__DIS__YEN SSN__YEN TIN__YEN TDN__YEN__DIS TRN__FIRMS__YEN 
+           PYN__DIS__YEN SSN__YEN TIN__YEN TDN__YEN__DIS TRN__FIRMS__YEN
            TRN__OTHER__YEN TRN__YEN__DIS OGN__YEN IGN__ADJ XTD__RES MTD__RES
-           ITD__RES PCD__RES LSR__RES MTR__RES TRN__YEN__DISBAR GCR__YERBAR 
+           ITD__RES PCD__RES LSR__RES MTR__RES TRN__YEN__DISBAR GCR__YERBAR
            YWR__YERBAR YWDEEN__YFDBAR COMPREEN__YFDBAR PCR__YERBAR
            YED__YFDBAR XTD__YFDBAR MTD__YFDBAR ITD__YFDBAR  PCD__YFDBAR
-           GCN__YENBAR GLN__YENBAR TRN__YENBAR GDN__YENBAR LTNBAR INN__YENBAR       
+           GCN__YENBAR GLN__YENBAR TRN__YENBAR GDN__YENBAR LTNBAR INN__YENBAR
            GSN__YENBAR GYN__YENBAR TDN__YENBAR YIN__YENBAR YFN__YENBAR KSR__YERBAR
-           ITR__YERBAR LSR__YERBAR SCR__YERBAR MTR__YERBAR XTR__YERBAR GYN__GSNBAR       
-           TDN__GYNBAR SSN__GYNBAR TIN__GYNBAR OGN__GYNBAR INN__GYNBAR TRN__GYNBAR        
-           TRN__OTHER__GYNBAR GIN__OTHER__GYNBAR GSN__GLNBAR GLN__GDNBAR 
-           GDN__DIS__GDNBAR YFN__YINBAR YWDX__YFDBAR TBR__YERBAR YWRX__YERBAR  
-           XTR__TBRBAR FDD__YERBAR PCR__FDDBAR GCR__FDDBAR ITR__FDDBAR SCR__FDDBAR       
-           XTR__FDDBAR PCN__YENBAR ITN__YENBAR XTN__YENBAR MTN__YENBAR TBN__YENBAR        
-           AUXa AUXb AUXc NFN__YENBAR CAN__YENBAR NFA__YENBAR PYN__YENBAR   
+           ITR__YERBAR LSR__YERBAR SCR__YERBAR MTR__YERBAR XTR__YERBAR GYN__GSNBAR
+           TDN__GYNBAR SSN__GYNBAR TIN__GYNBAR OGN__GYNBAR INN__GYNBAR TRN__GYNBAR
+           TRN__OTHER__GYNBAR GIN__OTHER__GYNBAR GSN__GLNBAR GLN__GDNBAR
+           GDN__DIS__GDNBAR YFN__YINBAR YWDX__YFDBAR TBR__YERBAR YWRX__YERBAR
+           XTR__TBRBAR FDD__YERBAR PCR__FDDBAR GCR__FDDBAR ITR__FDDBAR SCR__FDDBAR
+           XTR__FDDBAR PCN__YENBAR ITN__YENBAR XTN__YENBAR MTN__YENBAR TBN__YENBAR
+           AUXa AUXb AUXc NFN__YENBAR CAN__YENBAR NFA__YENBAR PYN__YENBAR
            TBN__CANBAR YFN__PYNBAR PYN__DIS__PYNBAR NFN__PYNBAR TIN__PYNBAR
            GYN__PYNBAR WLN__YENBAR NFA__WLNBAR KSRITD__WLNBAR GDN__WLNBAR
-           XTN__TBNBAR  
+           XTN__TBNBAR
            subtract agcr aywr aywd ayett acompr;
 
 
@@ -126,7 +126,7 @@ ITD__DLITDMTD6 =  0.037784;
 ITD__DLITDYFD1 =  0.313957;
 ITD__DLITDYFD4 =  0.207904;
 ITD__DLITDYFD7 =  0.16902;
-ITD__ECM1      = -0.052662; 
+ITD__ECM1      = -0.052662;
 ITD__ECM2      = -0.012261;
 ITR__ADJ       =  0.01231;
 ITR__D894      =  0.020823;
@@ -262,76 +262,76 @@ MTR__RES          =   0.0025;
 TRN__YEN__DISBAR  =   0.204491;
 GCR__YERBAR       =   0.138826;
 YWR__YERBAR       =   8.52024841e-005;
-YWDEEN__YFDBAR    =   0.684308;                     
-COMPREEN__YFDBAR  =   55.345606;                   
+YWDEEN__YFDBAR    =   0.684308;
+COMPREEN__YFDBAR  =   55.345606;
 PCR__YERBAR       =   0.685502;
 YED__YFDBAR       =   1/(1-TIN__YEN);
 XTD__YFDBAR       =   exp(.7*log(YED__YFDBAR)+.3*log(YWDEEN__YFDBAR)-1/XTD__ECM*( XTD__CST+XTD__RES + PIBAR*(XTD__DLXTD1 - 1 + XTD__DLYED+XTD__DLMTD)));
 MTD__YFDBAR       =   exp( .65*log(XTD__YFDBAR)+.25*log(COMPREEN__YFDBAR)+.1*log(YWDEEN__YFDBAR) - 1/MTD__ECM*( MTD__CST+MTD__RES+ ( -1 +MTD__DLMTD1+MTD__DLYWDX+MTD__DLCOMPR+MTD__DLCOMPR1 )*PIBAR ) ) ;
 ITD__YFDBAR       =   exp( ITD__ECM2/(ITD__ECM1+ITD__ECM2)*log(MTD__YFDBAR) - (ITD__CST+ITD__RES)/(ITD__ECM1+ITD__ECM2) ) ;
-PCD__YFDBAR       =   exp( PCD__ECM__LYED*log(YED__YFDBAR)+PCD__ECM__LMTD*log(MTD__YFDBAR) - 1/PCD__ECM*( PCD__CST+PCD__RES +(PCD__DLPCD4 -1 + PCD__DLYED + PCD__DLYED1 + PCD__DLMTD + PCD__DLMTD1+PCD__DLCOMPREEN)*PIBAR ) ); 
+PCD__YFDBAR       =   exp( PCD__ECM__LYED*log(YED__YFDBAR)+PCD__ECM__LMTD*log(MTD__YFDBAR) - 1/PCD__ECM*( PCD__CST+PCD__RES +(PCD__DLPCD4 -1 + PCD__DLYED + PCD__DLYED1 + PCD__DLMTD + PCD__DLMTD1+PCD__DLCOMPREEN)*PIBAR ) );
 GCN__YENBAR       =   GCR__YERBAR;
 GLN__YENBAR       =   -(TDN__YEN__DIS)*2/TDN__GLN+GLN__YEN__TARGET;
-TRN__YENBAR       =   0.2*atransfer*URTBAR+TRN__YEN__DIS;                                                       
-GDN__YENBAR       =   (1+YETGBAR)*(1+PIBAR)/((1+YETGBAR)*(1+PIBAR)-1)*(-GLN__YENBAR/4+GDN__DIS__YEN);  
-LTNBAR            =   EXPLTNRESBAR*(100+STNBAR)-100;                                                  
-INN__YENBAR       =   4/100*(1/2*LTNBAR+IGN__ADJ)*GDN__YENBAR*( (1+YETGBAR)*(1+PIBAR) )^(-1);          
-GSN__YENBAR       =   GLN__YENBAR+GIN__YEN;                                                          
-GYN__YENBAR       =   GSN__YENBAR+GCN__YENBAR;                                                        
-TDN__YENBAR       =   GYN__YENBAR-SSN__YEN-TIN__YEN-OGN__YEN+INN__YENBAR+TRN__YENBAR+TRN__OTHER__YEN+GIN__OTHER__YEN; 
-YIN__YENBAR       =   1;                                                                          
-YFN__YENBAR       =   (1-TIN__YEN);                                                              
-KSR__YERBAR       =   ( (STRQBAR+DELTABIG+ITR__ADJ)/BETABIG )^(-1);  
-ITR__YERBAR       =   (1-(1-DELTABIG)/(1+YETGBAR))*KSR__YERBAR ;                                       
-LSR__YERBAR       =   exp(- ( LSR__CST+YETGBAR*(-1+.5*LSR__DYER1+LSR__DYER2+LSR__DLSR1)+LSR__RES+LSR__ECM*0.2425)/LSR__ECM); 
-SCR__YERBAR       =   YETGBAR/(1+YETGBAR)*LSR__YERBAR;                                                
-MTR__YERBAR       =   ( exp(1/MTR__ECM*(MTR__CST+MTR__RES-MTR__ECM__TIME*MTR__ECM*112 -MTR__ECM*MTR__ECM__LMTDYED*log(MTD__YFDBAR/YED__YFDBAR) +YETGBAR*(-1+MTR__DLFDD)))-1)^(-1) ;  
-XTR__YERBAR       =    1-PCR__YERBAR-GCR__YERBAR-SCR__YERBAR-ITR__YERBAR+MTR__YERBAR;                  
-GYN__GSNBAR         =   GYN__YENBAR/GSN__YENBAR; 
-TDN__GYNBAR         =   TDN__YENBAR/GYN__YENBAR;  
-SSN__GYNBAR         =   SSN__YEN/GYN__YENBAR; 
-TIN__GYNBAR         =   TIN__YEN/GYN__YENBAR; 
-OGN__GYNBAR         =   OGN__YEN/GYN__YENBAR; 
-INN__GYNBAR         =   INN__YENBAR/GYN__YENBAR; 
-TRN__GYNBAR         =   TRN__YENBAR/GYN__YENBAR; 
-TRN__OTHER__GYNBAR   =  TRN__OTHER__YEN /GYN__YENBAR; 
-GIN__OTHER__GYNBAR   =  GIN__OTHER__YEN/GYN__YENBAR; 
-GSN__GLNBAR         =   GSN__YENBAR/GLN__YENBAR; 
-GLN__GDNBAR         =   GLN__YENBAR/GDN__YENBAR; 
-GDN__DIS__GDNBAR    =   GDN__DIS__YEN/GDN__YENBAR; 
-YFN__YINBAR         =   YFN__YENBAR/YIN__YENBAR; 
-YWDX__YFDBAR        =   YWDEEN__YFDBAR^(.4)*XTD__YFDBAR^(.6);                              
-TBR__YERBAR         =   XTR__YERBAR-MTR__YERBAR;                                                  
-YWRX__YERBAR        =   YWR__YERBAR^(.4)*(1-TBR__YERBAR)^(0.6);                                   
+TRN__YENBAR       =   0.2*atransfer*URTBAR+TRN__YEN__DIS;
+GDN__YENBAR       =   (1+YETGBAR)*(1+PIBAR)/((1+YETGBAR)*(1+PIBAR)-1)*(-GLN__YENBAR/4+GDN__DIS__YEN);
+LTNBAR            =   EXPLTNRESBAR*(100+STNBAR)-100;
+INN__YENBAR       =   4/100*(1/2*LTNBAR+IGN__ADJ)*GDN__YENBAR*( (1+YETGBAR)*(1+PIBAR) )^(-1);
+GSN__YENBAR       =   GLN__YENBAR+GIN__YEN;
+GYN__YENBAR       =   GSN__YENBAR+GCN__YENBAR;
+TDN__YENBAR       =   GYN__YENBAR-SSN__YEN-TIN__YEN-OGN__YEN+INN__YENBAR+TRN__YENBAR+TRN__OTHER__YEN+GIN__OTHER__YEN;
+YIN__YENBAR       =   1;
+YFN__YENBAR       =   (1-TIN__YEN);
+KSR__YERBAR       =   ( (STRQBAR+DELTABIG+ITR__ADJ)/BETABIG )^(-1);
+ITR__YERBAR       =   (1-(1-DELTABIG)/(1+YETGBAR))*KSR__YERBAR ;
+LSR__YERBAR       =   exp(- ( LSR__CST+YETGBAR*(-1+.5*LSR__DYER1+LSR__DYER2+LSR__DLSR1)+LSR__RES+LSR__ECM*0.2425)/LSR__ECM);
+SCR__YERBAR       =   YETGBAR/(1+YETGBAR)*LSR__YERBAR;
+MTR__YERBAR       =   ( exp(1/MTR__ECM*(MTR__CST+MTR__RES-MTR__ECM__TIME*MTR__ECM*112 -MTR__ECM*MTR__ECM__LMTDYED*log(MTD__YFDBAR/YED__YFDBAR) +YETGBAR*(-1+MTR__DLFDD)))-1)^(-1) ;
+XTR__YERBAR       =    1-PCR__YERBAR-GCR__YERBAR-SCR__YERBAR-ITR__YERBAR+MTR__YERBAR;
+GYN__GSNBAR         =   GYN__YENBAR/GSN__YENBAR;
+TDN__GYNBAR         =   TDN__YENBAR/GYN__YENBAR;
+SSN__GYNBAR         =   SSN__YEN/GYN__YENBAR;
+TIN__GYNBAR         =   TIN__YEN/GYN__YENBAR;
+OGN__GYNBAR         =   OGN__YEN/GYN__YENBAR;
+INN__GYNBAR         =   INN__YENBAR/GYN__YENBAR;
+TRN__GYNBAR         =   TRN__YENBAR/GYN__YENBAR;
+TRN__OTHER__GYNBAR   =  TRN__OTHER__YEN /GYN__YENBAR;
+GIN__OTHER__GYNBAR   =  GIN__OTHER__YEN/GYN__YENBAR;
+GSN__GLNBAR         =   GSN__YENBAR/GLN__YENBAR;
+GLN__GDNBAR         =   GLN__YENBAR/GDN__YENBAR;
+GDN__DIS__GDNBAR    =   GDN__DIS__YEN/GDN__YENBAR;
+YFN__YINBAR         =   YFN__YENBAR/YIN__YENBAR;
+YWDX__YFDBAR        =   YWDEEN__YFDBAR^(.4)*XTD__YFDBAR^(.6);
+TBR__YERBAR         =   XTR__YERBAR-MTR__YERBAR;
+YWRX__YERBAR        =   YWR__YERBAR^(.4)*(1-TBR__YERBAR)^(0.6);
 XTR__TBRBAR         =   XTR__YERBAR/TBR__YERBAR;
-FDD__YERBAR         =   1+MTR__YERBAR;                                                       
-PCR__FDDBAR         =   PCR__YERBAR/FDD__YERBAR; 
-GCR__FDDBAR         =   GCR__YERBAR/FDD__YERBAR; 
-ITR__FDDBAR         =   ITR__YERBAR/FDD__YERBAR; 
-SCR__FDDBAR         =   SCR__YERBAR/FDD__YERBAR; 
-XTR__FDDBAR         =   XTR__YERBAR/FDD__YERBAR; 
-PCN__YENBAR         =   PCR__YERBAR*PCD__YFDBAR/YED__YFDBAR;                                           
-ITN__YENBAR         =   ITR__YERBAR*ITD__YFDBAR/YED__YFDBAR;                                            
+FDD__YERBAR         =   1+MTR__YERBAR;
+PCR__FDDBAR         =   PCR__YERBAR/FDD__YERBAR;
+GCR__FDDBAR         =   GCR__YERBAR/FDD__YERBAR;
+ITR__FDDBAR         =   ITR__YERBAR/FDD__YERBAR;
+SCR__FDDBAR         =   SCR__YERBAR/FDD__YERBAR;
+XTR__FDDBAR         =   XTR__YERBAR/FDD__YERBAR;
+PCN__YENBAR         =   PCR__YERBAR*PCD__YFDBAR/YED__YFDBAR;
+ITN__YENBAR         =   ITR__YERBAR*ITD__YFDBAR/YED__YFDBAR;
 XTN__YENBAR         =   XTR__YERBAR*XTD__YFDBAR/YED__YFDBAR;
-MTN__YENBAR         =   MTR__YERBAR*MTD__YFDBAR/YED__YFDBAR; 
-TBN__YENBAR         =   XTN__YENBAR-MTN__YENBAR; 
+MTN__YENBAR         =   MTR__YERBAR*MTD__YFDBAR/YED__YFDBAR;
+TBN__YENBAR         =   XTN__YENBAR-MTN__YENBAR;
 AUXa                =   1-NFN__NFN/(1+PIBAR)/(1+YETGBAR);
 AUXb                =   -NFN__NFA*( 1/(1+PIBAR)/(1+YETGBAR)+1/(1+PIBAR)^2/(1+YETGBAR)^2 );
 AUXc                =   1-1/(1+YETGBAR)/(1+PIBAR);
 NFN__YENBAR         =   (AUXa-AUXb/AUXc)^(-1)*AUXb/AUXc*TBN__YENBAR;
-CAN__YENBAR         =   TBN__YENBAR+NFN__YENBAR;  
-NFA__YENBAR         =   1/AUXc*CAN__YENBAR; 
-PYN__YENBAR         =   (1-TIN__YEN)-GYN__YENBAR+TIN__YEN+NFN__YENBAR+PYN__DIS__YEN; 
-TBN__CANBAR         =   TBN__YENBAR/CAN__YENBAR; 
-YFN__PYNBAR         =   YFN__YENBAR/PYN__YENBAR; 
-PYN__DIS__PYNBAR    =   PYN__DIS__YEN/PYN__YENBAR;  
-NFN__PYNBAR         =   NFN__YENBAR/PYN__YENBAR; 
-TIN__PYNBAR         =   TIN__YEN/PYN__YENBAR; 
-GYN__PYNBAR         =   GYN__YENBAR/PYN__YENBAR; 
-WLN__YENBAR         =   NFA__YENBAR+KSR__YERBAR*ITD__YFDBAR/YED__YFDBAR+4*GDN__YENBAR;  
-NFA__WLNBAR         =   NFA__YENBAR/WLN__YENBAR; 
-KSRITD__WLNBAR      =   KSR__YERBAR*ITD__YFDBAR/YED__YFDBAR / WLN__YENBAR; 
-GDN__WLNBAR         =   GDN__YENBAR/WLN__YENBAR; 
+CAN__YENBAR         =   TBN__YENBAR+NFN__YENBAR;
+NFA__YENBAR         =   1/AUXc*CAN__YENBAR;
+PYN__YENBAR         =   (1-TIN__YEN)-GYN__YENBAR+TIN__YEN+NFN__YENBAR+PYN__DIS__YEN;
+TBN__CANBAR         =   TBN__YENBAR/CAN__YENBAR;
+YFN__PYNBAR         =   YFN__YENBAR/PYN__YENBAR;
+PYN__DIS__PYNBAR    =   PYN__DIS__YEN/PYN__YENBAR;
+NFN__PYNBAR         =   NFN__YENBAR/PYN__YENBAR;
+TIN__PYNBAR         =   TIN__YEN/PYN__YENBAR;
+GYN__PYNBAR         =   GYN__YENBAR/PYN__YENBAR;
+WLN__YENBAR         =   NFA__YENBAR+KSR__YERBAR*ITD__YFDBAR/YED__YFDBAR+4*GDN__YENBAR;
+NFA__WLNBAR         =   NFA__YENBAR/WLN__YENBAR;
+KSRITD__WLNBAR      =   KSR__YERBAR*ITD__YFDBAR/YED__YFDBAR / WLN__YENBAR;
+GDN__WLNBAR         =   GDN__YENBAR/WLN__YENBAR;
 XTN__TBNBAR         =   XTN__YENBAR/TBN__YENBAR;
 TBN__CANBAR         =   TBN__YENBAR/CAN__YENBAR;
 subtract            =   1.e-6;
@@ -346,14 +346,14 @@ acompr              = 1-subtract;
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           
-cd('..');                                                                
-load policy_param.mat;                                                   
-for i=1:33                                                               
-    deep_parameter_name = M_.param_names(i,:);                           
-    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])                  
-end                                                                      
-cd(thispath);    
+thispath = pwd;
+cd('..');
+load policy_param.mat;
+for i=1:33
+    deep_parameter_name = M_.param_names(i,:);
+    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
+end
+cd(thispath);
                                                                          //*
 // Definition of Discretionary Fiscal Policy Parameter                   //*
 coffispol = (1/GCR__YERBAR);                                             //*
@@ -363,7 +363,7 @@ model(linear);
 
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables //*
-                                                                         
+
 interest   = stn/100;                                                 //*
 inflation  = infl;                                                    //*
 inflationq = pipcd*4;                                                  //*
@@ -376,38 +376,38 @@ output     = yer;                                                    //*
 // Policy Rule                                                           //*
 
 
-interest =   cofintintb1*interest(-1)                                    //* 
-           + cofintintb2*interest(-2)                                    //* 
-           + cofintintb3*interest(-3)                                    //* 
-           + cofintintb4*interest(-4)                                    //* 
-           + cofintinf0*inflationq                                       //* 
-           + cofintinfb1*inflationq(-1)                                  //* 
-           + cofintinfb2*inflationq(-2)                                  //* 
-           + cofintinfb3*inflationq(-3)                                  //* 
-           + cofintinfb4*inflationq(-4)                                  //* 
-           + cofintinff1*inflationq(+1)                                  //* 
-           + cofintinff2*inflationq(+2)                                  //* 
-           + cofintinff3*inflationq(+3)                                  //* 
-           + cofintinff4*inflationq(+4)                                  //* 
-           + cofintout*outputgap 	                                     //* 
-           + cofintoutb1*outputgap(-1)                                   //* 
-           + cofintoutb2*outputgap(-2)                                   //* 
-           + cofintoutb3*outputgap(-3)                                   //* 
-           + cofintoutb4*outputgap(-4)                                   //* 
-           + cofintoutf1*outputgap(+1)                                   //* 
-           + cofintoutf2*outputgap(+2)                                   //* 
-           + cofintoutf3*outputgap(+3)                                   //* 
-           + cofintoutf4*outputgap(+4)                                   //* 
-           + cofintoutp*output 	                                         //* 
-           + cofintoutpb1*output(-1)                                     //* 
-           + cofintoutpb2*output(-2)                                     //* 
-           + cofintoutpb3*output(-3)                                     //* 
-           + cofintoutpb4*output(-4)                                     //* 
-           + cofintoutpf1*output(+1)                                     //* 
-           + cofintoutpf2*output(+2)                                     //* 
-           + cofintoutpf3*output(+3)                                     //* 
-           + cofintoutpf4*output(+4)                                     //* 
-           + std_r_ *interest_;                                          //* 
+interest =   cofintintb1*interest(-1)                                    //*
+           + cofintintb2*interest(-2)                                    //*
+           + cofintintb3*interest(-3)                                    //*
+           + cofintintb4*interest(-4)                                    //*
+           + cofintinf0*inflationq                                       //*
+           + cofintinfb1*inflationq(-1)                                  //*
+           + cofintinfb2*inflationq(-2)                                  //*
+           + cofintinfb3*inflationq(-3)                                  //*
+           + cofintinfb4*inflationq(-4)                                  //*
+           + cofintinff1*inflationq(+1)                                  //*
+           + cofintinff2*inflationq(+2)                                  //*
+           + cofintinff3*inflationq(+3)                                  //*
+           + cofintinff4*inflationq(+4)                                  //*
+           + cofintout*outputgap 	                                     //*
+           + cofintoutb1*outputgap(-1)                                   //*
+           + cofintoutb2*outputgap(-2)                                   //*
+           + cofintoutb3*outputgap(-3)                                   //*
+           + cofintoutb4*outputgap(-4)                                   //*
+           + cofintoutf1*outputgap(+1)                                   //*
+           + cofintoutf2*outputgap(+2)                                   //*
+           + cofintoutf3*outputgap(+3)                                   //*
+           + cofintoutf4*outputgap(+4)                                   //*
+           + cofintoutp*output 	                                         //*
+           + cofintoutpb1*output(-1)                                     //*
+           + cofintoutpb2*output(-2)                                     //*
+           + cofintoutpb3*output(-3)                                     //*
+           + cofintoutpb4*output(-4)                                     //*
+           + cofintoutpf1*output(+1)                                     //*
+           + cofintoutpf2*output(+2)                                     //*
+           + cofintoutpf3*output(+3)                                     //*
+           + cofintoutpf4*output(+4)                                     //*
+           + std_r_ *interest_;                                          //*
                                                                          //*
 // Discretionary Government Spending                                     //*
                                                                          //*
@@ -416,7 +416,7 @@ fispol = coffispol*fiscal_;                                              //*
 
 // Original Model Code:
 
-lnn     = lnn(-1)+LNN__DLYERADJ * (yer - yer(-1)+piyet) 
+lnn     = lnn(-1)+LNN__DLYERADJ * (yer - yer(-1)+piyet)
           + (1-LNN__DLLNT-LNN__DLYERADJ)* (yer(-1)-yer(-2)+piyet(-1))
           + LNN__DLWRRADJ*(wrn-lagwrn1) + LNN__DLWRRADJ1*(lagwrn1-lagwrn2)
           + LNN__ECM*(lnn(-1)-1/(1-BETABIG)*yer(-1))+innoelnn;
@@ -424,7 +424,7 @@ wrn     = wrn(-1) + (lprod - laglprod1) + (pcd - pcd(-1)) - WRN__INFT*pipcd(-1)
           + WRN__DLWRCQ4*((lagwrn4-lagwrn5) - (lagpcd4-lagpcd5) - (laglprod4-laglprod5))
           + WRN__DDLPCD*(pipcd-lagpipcd1) + WRN__DDLPCD1*(lagpipcd1-lagpipcd2)
           + WRN__DDLPCD2*(lagpipcd2-lagpipcd3) + WRN__DDLPCD3*(lagpipcd3-lagpipcd4)
-          + WRN__DDLPROD*((lprod - laglprod1) - (laglprod1 - laglprod2)) 
+          + WRN__DDLPROD*((lprod - laglprod1) - (laglprod1 - laglprod2))
           + WRN__DDLPROD1*((laglprod1 - laglprod2)-(laglprod2 - laglprod3))
           + WRN__DDLPROD2*((laglprod2 - laglprod3)-(laglprod3 - laglprod4))
           + WRN__DDLPROD3*((laglprod3 - laglprod4)-(laglprod4 - laglprod5))
@@ -440,7 +440,7 @@ itr     = 1*itr(-1)+(yer-yer(-1)) + ITR__DITY1*((lagitr1-lagitr2)-(yer(-1)-yer(-
           + ITR__ECM*( - (STRQBAR+DELTABIG+ITR__ADJ)*itr(-1) - strq(-1)) + innoeitr;
 itd     = itd(-1)+ITD__DDLYFD*(piyfd-piyfd(-1)) + ITD__DDLMTD*(pimtd-pimtd(-1))
           + ITD__DLITDYFD1*(lagitd1-lagitd2) + ITD__DLITDYFD4*(lagitd4-lagitd5)
-          + ITD__DLITDYFD7*(lagitd7-lagitd7(-1)) + ITD__DLITDMTD1*( (lagitd1-lagitd2) 
+          + ITD__DLITDYFD7*(lagitd7-lagitd7(-1)) + ITD__DLITDMTD1*( (lagitd1-lagitd2)
           - (lagmtd1-lagmtd2)) + ITD__DLITDMTD5*( (lagitd5-lagitd6) - (lagmtd5-lagmtd6))
           + ITD__DLITDMTD6*( (lagitd6-lagitd7) - (lagmtd6-lagmtd6(-1)))
           + ITD__ECM1*itd(-1) + ITD__ECM2*(itd(-1)-mtd(-1)) + innoeitd;
@@ -479,7 +479,7 @@ ltn     = EXPLTNRESBAR *1/20 * (stn+stn(+1)+stn(+2)+stn(+3)+stn(+4) + stn(+5)+st
 
 
 //(gcr-agcr*laggcr1+piyet)  =  0.970768*(gcr(-1)-agcr*laggcr1(-1)+lagpiyet1);  //original fiscal rule --> permanent shock
-gcr  =  0.970768*gcr(-1)+fispol; 
+gcr  =  0.970768*gcr(-1)+fispol;
 
 nfn     = NFN__NFN*1/((1+PIBAR)*(1+YETGBAR))*(nfn(-1) - piyet - piyfd) + ((1+YETGBAR)*(1+PIBAR)-NFN__NFN)/
          ((1+YETGBAR)*(1+PIBAR)+1)*((nfa(-1)-piyet-piyfd) + 1/(1+YETGBAR)*1/(1+PIBAR)*(lagnfa1(-1)-piyet-piyet(-1)
@@ -493,7 +493,7 @@ ign     = 1/96*1/2*(ltn+lagltn1+lagltn2+lagltn3+lagltn4+lagltn5+lagltn6+lagltn7+
             +lagltn37+lagltn38+lagltn39+lagltn40+lagltn41+lagltn42+lagltn43
             +lagltn44+lagltn45+lagltn46+lagltn47);
 piyet   = BETABIG*piyet(-1) + BETABIG*(lagksr1-lagksr2);
-urx     = -(1-URTBAR)/(URTBAR)*lnn;			
+urx     = -(1-URTBAR)/(URTBAR)*lnn;
 lprod   = yer + yett - lnn;
 yett    = ayett*yett(-1)+piyet;  // WHAT IS YETT?????????????
 pipcd   = (pcd - pcd(-1)) + piyfd;
@@ -765,4 +765,4 @@ var innoemtr,innoeltn = -10000*(0.0018)      ;
 var innoeltn          =  10000*(1.1741)       ;
 end;
 options_.Schur_vec_tol = 1e-6;
-//stoch_simul (irf = 20, ar=100, nograph); 
+//stoch_simul (irf = 20, ar=100, nograph);

@@ -1,7 +1,7 @@
 //**************************************************************************
 // A New Comparative Approach to Macroeconomic Modeling and Policy Analysis
 //
-// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and 
+// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and
 // Maik Wolters
 //
 // Working Paper, 2009
@@ -10,7 +10,7 @@
 // Model: EA_PV17
 // QUEST3 extension with short-term and long-term government bonds and EA CB bond purchases
 // Cross-border holding (EA-RoW) of long-term government bonds
-// Romanos Priftis & Lukas Vogel, 2017. "The macroeconomic effects of the ECB’s evolving QE programme: a model-based analysis," Open Economies Review, vol. 28(5), pages 823-845. 
+// Romanos Priftis & Lukas Vogel, 2017. "The macroeconomic effects of the ECBï¿½s evolving QE programme: a model-based analysis," Open Economies Review, vol. 28(5), pages 823-845.
 
 //List of enogenous variables (EA = EA, equivalent for R_ = RoW)
 
@@ -68,25 +68,25 @@ EA_dpbl = first difference pbl
 ea_dpim = first difference pim
 ea_dpx = first difference px
 ea_dpy = first difference py
-ea_dq = first difference q 
-ea_dr = first difference r 
+ea_dq = first difference q
+ea_dr = first difference r
 ea_drealint = first difference realint
-ea_dtl = first difference tl 
+ea_dtl = first difference tl
 ea_dv = first difference v
-ea_dwinf = first difference winf  
-ea_dwr = first difference wr 
-ea_dy = first difference y 
+ea_dwinf = first difference winf
+ea_dwr = first difference wr
+ea_dy = first difference y
 ea_e = nom exchange rate EA to ROW
-ea_eps_gs = shock to gs 
-ea_eps_igs = shock to igs 
-ea_eta = price mark-up 
-ea_ex = real exports 
+ea_eps_gs = shock to gs
+ea_eps_igs = shock to igs
+ea_eta = price mark-up
+ea_ex = real exports
 ea_ex_l = trend employment
-ea_ex_r = trend real rate 
+ea_ex_r = trend real rate
 ea_ex_ucap= trend capacity utilisation
 ea_f = financial wealth
 ea_gby = gov balance to GDP
-ea_gs = gov consumption to GDP 
+ea_gs = gov consumption to GDP
 ea_i = real private investment
 ea_igs = gov investment to GDP
 ea_im = real imports
@@ -94,16 +94,16 @@ ea_imr = bilateral imports from R
 ea_infc = CPI inflation
 ea_inflation = GDP price inflation including trend
 ea_infx = export price inflation
-ea_infy = GDP price inflation 
+ea_infy = GDP price inflation
 ea_inom = nom risk-free interest rate
-ea_k = private capital stock 
-ea_kg = public capital stock 
+ea_k = private capital stock
+ea_kg = public capital stock
 ea_l = employment
 ea_lamlc = Lagrangian LC
 ea_lamnlc = Lagrangian NLC
 ea_ltfp = log TFP
-ea_m = money 
-ea_nomint = nom interest rate including trend growth 
+ea_m = money
+ea_nomint = nom interest rate including trend growth
 ea_o = total output
 ea_oil = oil
 EA_pbl = price bl
@@ -116,7 +116,7 @@ ea_px = export price deflator
 ea_py = GDP deflator
 ea_q = Tobin's Q
 ea_r = real interest rate
-ea_realint = real interest rate including trend growth 
+ea_realint = real interest rate including trend growth
 ea_tax = lump-sum tax
 ea_tby = trade balance to GDP
 ea_tfp = TFP
@@ -132,7 +132,7 @@ ea_vl = marginal disutility of labour
 ea_winf = wage inflation
 ea_wr = real wage
 ea_wrinf = real wage inflation
-ea_y = real GDP including adjustment costs 
+ea_y = real GDP including adjustment costs
 ea_ygap = output gap
 EA_yobs = real GDP as sum of components (C+I+G+IG+NX)
 */
@@ -149,7 +149,7 @@ ea_eps_cnlc = shock to cnlc (savings)
 ea_eps_eta = mark-up shock
 ea_eps_etax = shock to tax
 ea_eps_g = shock to g
-ea_eps_i = shock to capital stock adjustment costs 
+ea_eps_i = shock to capital stock adjustment costs
 ea_eps_ig = shock to ig
 ea_eps_im = shock to import demand
 ea_eps_l = shock to labour supply
@@ -221,13 +221,13 @@ ea_delta = private capital stock depreciation rate
 EA_deltabl = long-term bond depreciation rate
 ea_deltag = public capital stock depreciation rate
 ea_dumtrlc = dummy trlc indexation
-EA_gamb = bond portfolio (bl vs bl) adjustment costs  
+EA_gamb = bond portfolio (bl vs bl) adjustment costs
 EA_gambd = bond portfolio (bl domestic vs bl foreign) adjustment costs
 ea_gami = capital stock adjustment costs
 ea_gami2 = investment stock adjustment costs
 ea_gamim = import adjustment friction
 ea_gaml = labour adjustment costs
-ea_gamoil = oil adjustment costs 
+ea_gamoil = oil adjustment costs
 ea_gamp = price adjustment costs
 ea_gampx = export price adjustment costs
 ea_gamw = wage adjustment costs
@@ -240,9 +240,9 @@ ea_kappa = inverse labour supply elasticity
 EA_kbl = steady state portfolio share bl
 EA_kblf = steady state portfolio share blf
 ea_llag = persistence in employment trend
-ea_omeg = weight of leisure in utility function 
+ea_omeg = weight of leisure in utility function
 ea_pimlag = persistence in pim
-ea_rho = parameter finite planning horizon 
+ea_rho = parameter finite planning horizon
 EA_rhoqe = persistence QE bond purchases
 ea_rhotfp = persistence TFP
 ea_rlag = perssistence trend real interest rate
@@ -260,12 +260,12 @@ ea_sigmaoil = price elasticity of oil demand
 ea_soil = steady state demand share of oil
 ea_sxd = indexation of import prices to GDP deflator
 ea_s_r = steady state bilateral import share
-ea_tau = steady state price mark-up 
-ea_taux = steady state export price mark-up 
-ea_tgovb1 = coefficient on by in fiscal closure rule 
-ea_tgovb2 = coefficient on db in fiscal closure rule 
-ea_tgovby = coefficient on gby in fiscal closure rule 
-ea_tgovinf = coefficient on infc in fiscal closure rule 
+ea_tau = steady state price mark-up
+ea_taux = steady state export price mark-up
+ea_tgovb1 = coefficient on by in fiscal closure rule
+ea_tgovb2 = coefficient on db in fiscal closure rule
+ea_tgovby = coefficient on gby in fiscal closure rule
+ea_tgovinf = coefficient on infc in fiscal closure rule
 ea_theta = discount factor
 ea_thetanlc = elasticity of substitution between varieties of labour
 EA_tqe = endogenous response of QE
@@ -280,16 +280,16 @@ var ea_b ea_ben EA_bl EA_blcb EA_blnlc EA_blnlcd EA_blnlcf ea_br EA_bs ea_bw ea_
  //**************************************************************************
 // Modelbase Variables                                                   //*
     interest inflation inflationq outputgap output fispol;               //*
-//**************************************************************************    
+//**************************************************************************
 
 varexo ea_a ea_btar ea_bwyt ea_eps_ben ea_eps_clc ea_eps_cnlc ea_eps_eta ea_eps_etax ea_eps_g ea_eps_i ea_eps_ig ea_eps_im ea_eps_l ea_eps_ltfp EA_eps_qe ea_eps_rpremb ea_eps_rpreme ea_eps_rpremk ea_eps_tl ea_eps_tr ea_eps_trlc ea_eps_ucap ea_eps_v ea_eps_w ea_ex_ben ea_ex_by ea_ex_gby ea_ex_gs ea_ex_igs ea_ex_inf ea_ex_ltfp ea_ex_tl ea_ex_trlc ea_ex_tvat ea_fcl ea_fcy ea_ig ea_im1lag EA_inoml ea_libdum ea_npart EA_profcb ea_rpremb ea_rpremk ea_size ea_slc ea_ssc ea_taxdum ea_taxshare ea_tc ea_trshare ea_tryshare ea_tvat ea_upi null r_a r_btar r_e r_eps_ben r_eps_clc r_eps_cnlc r_eps_eta r_eps_etax r_eps_g r_eps_i r_eps_ig r_eps_im r_eps_l r_eps_ltfp r_eps_m r_eps_poil R_eps_qe r_eps_rpremb r_eps_rpremk r_eps_tl r_eps_tr r_eps_trlc r_eps_ucap r_eps_v r_eps_w r_ex_ben r_ex_by r_ex_gby r_ex_gs r_ex_igs r_ex_inf r_ex_ltfp r_ex_tl r_ex_trlc r_ex_tvat r_fcl r_fcy r_g r_ig r_ilag r_im1lag R_inoml r_npart r_rpremb r_rpremk r_size r_slc r_ssc r_taxdum r_taxshare r_tc r_tinf r_trshare r_tryshare r_tvat r_ty r_upi w_coreinf w_gpop w_gtfp
 //**************************************************************************
-// Modelbase Shocks                                                      //*       
+// Modelbase Shocks                                                      //*
     interest_ fiscal_  ;                                                 //*
 //**************************************************************************
- 
-parameters 
-//************************************************************************** 
+
+parameters
+//**************************************************************************
 // Modelbase Parameters                                                  //*
                                                                          //*
         cofintintb1 cofintintb2 cofintintb3 cofintintb4                  //*
@@ -299,7 +299,7 @@ parameters
         cofintoutf1 cofintoutf2 cofintoutf3 cofintoutf4                  //*
         cofintoutp cofintoutpb1 cofintoutpb2 cofintoutpb3 cofintoutpb4   //*
         cofintoutpf1 cofintoutpf2 cofintoutpf3 cofintoutpf4              //*
-        std_r_ std_r_quart coffispol                                     //*          
+        std_r_ std_r_quart coffispol                                     //*
 //**************************************************************************
 
 dyn ea_a1 ea_a2 ea_alpha ea_alphag ea_benex ea_benpc ea_benrr ea_bentl ea_bentvat ea_delta EA_deltabl ea_deltag ea_dumtrlc EA_gamb EA_gambd ea_gami ea_gami2 ea_gamim ea_gaml ea_gamoil ea_gamp ea_gampx ea_gamw EA_gamxr ea_gslag ea_hab ea_habl ea_igslag ea_kappa EA_kbl EA_kblf ea_llag ea_omeg ea_pimlag ea_rho EA_rhoqe ea_rhotfp ea_rlag ea_rprem ea_s EA_sbl ea_sfim ea_sfp ea_sfpx ea_sfw ea_sig ea_sig1 ea_sigc ea_sigmaoil ea_soil ea_sxd ea_s_r ea_tau ea_taux ea_tgovb1 ea_tgovb2 ea_tgovby ea_tgovinf ea_theta ea_thetanlc EA_tqe ea_trnom ea_ucaplag ea_zet lev r_a1 r_a2 r_alpha r_alphag r_benex r_benpc r_benrr r_bentl r_bentvat r_delta R_deltabl r_deltag r_dumtrlc R_gamb R_gambd r_gami r_gami2 r_gamim r_gaml r_gamoil r_gamp r_gampx r_gamw R_gamxr r_gslag r_hab r_habl r_igslag r_kappa R_kbl R_kblf r_llag r_omeg r_pimlag r_poildol r_rho R_rhoqe r_rhotfp r_rlag r_s R_sbl r_sfim r_sfp r_sfpx r_sfw r_sig r_sig1 r_sigc r_sigmaoil r_soil r_sxd r_s_ea r_tau r_taux r_tgovb1 r_tgovb2 r_tgovby r_tgovinf r_theta r_thetanlc R_tqe r_trnom r_ucaplag r_zet;
@@ -308,15 +308,15 @@ dyn ea_a1 ea_a2 ea_alpha ea_alphag ea_benex ea_benpc ea_benrr ea_bentl ea_bentva
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           
-cd('..');                                                                
-load policy_param.mat;                                                   
-for i=1:33                                                               
-    deep_parameter_name = M_.param_names(i,:);                           
-    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])                  
-end                                                                      
+thispath = pwd;
+cd('..');
+load policy_param.mat;
+for i=1:33
+    deep_parameter_name = M_.param_names(i,:);
+    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
+end
 cd(thispath);
-std_r_ = 1;                                                            //* 
+std_r_ = 1;                                                            //*
                                                                          //*
 // Definition of Discretionary Fiscal Policy Parameter                   //*
 coffispol = 1;                                                       //*
@@ -452,8 +452,8 @@ R_tqe=0;
 r_trnom=1;
 r_ucaplag=0.99;
 r_zet=0.4;
- 
-model; 
+
+model;
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables //*
 
@@ -466,33 +466,33 @@ outputgap=1*ea_ygap;
  //**************************************************************************
 
 %          ea_inom = ea_ilag*(ea_inom-ea_dinom)+(1-ea_ilag)*(ea_ex_r+ea_ex_inf+ea_tinf*(ea_infc-ea_ex_inf)+ea_ty*ea_ygap)+ea_eps_m;
-//**************************************************************************                                                                    
+//**************************************************************************
 // Policy Rule                                                           //*
                                                                          //*
 // Monetary Policy                                                       //*
                                                                          //*
-interest = cofintintb1*interest(-1)                                      //*  
-           + cofintintb2*interest(-2)                                    //* 
-           + cofintintb3*interest(-3)                                    //*  
-           + cofintintb4*interest(-4)                                    //* 
-           + cofintinf0*inflationq                                       //* 
-           + cofintinfb1*inflationq(-1)                                  //* 
-           + cofintinfb2*inflationq(-2)                                  //* 
-           + cofintinfb3*inflationq(-3)                                  //* 
-           + cofintinfb4*inflationq(-4)                                  //* 
-           + cofintinff1*inflationq(+1)                                  //* 	      
-           + cofintinff2*inflationq(+2)                                  //* 
-           + cofintinff3*inflationq(+3)                                  //* 
-           + cofintinff4*inflationq(+4)                                  //* 
-           + cofintout*outputgap                                         //* 
-           + cofintoutb1*outputgap(-1)                                   //* 
-           + cofintoutb2*outputgap(-2)                                   //* 
-           + cofintoutb3*outputgap(-3)                                   //* 
-           + cofintoutb4*outputgap(-4)                                   //* 
-           + cofintoutf1*outputgap(+1)                                   //* 
-           + cofintoutf2*outputgap(+2)                                   //* 
-           + cofintoutf3*outputgap(+3)                                   //* 
-           + cofintoutf4*outputgap(+4)                                   //* 
+interest = cofintintb1*interest(-1)                                      //*
+           + cofintintb2*interest(-2)                                    //*
+           + cofintintb3*interest(-3)                                    //*
+           + cofintintb4*interest(-4)                                    //*
+           + cofintinf0*inflationq                                       //*
+           + cofintinfb1*inflationq(-1)                                  //*
+           + cofintinfb2*inflationq(-2)                                  //*
+           + cofintinfb3*inflationq(-3)                                  //*
+           + cofintinfb4*inflationq(-4)                                  //*
+           + cofintinff1*inflationq(+1)                                  //*
+           + cofintinff2*inflationq(+2)                                  //*
+           + cofintinff3*inflationq(+3)                                  //*
+           + cofintinff4*inflationq(+4)                                  //*
+           + cofintout*outputgap                                         //*
+           + cofintoutb1*outputgap(-1)                                   //*
+           + cofintoutb2*outputgap(-2)                                   //*
+           + cofintoutb3*outputgap(-3)                                   //*
+           + cofintoutb4*outputgap(-4)                                   //*
+           + cofintoutf1*outputgap(+1)                                   //*
+           + cofintoutf2*outputgap(+2)                                   //*
+           + cofintoutf3*outputgap(+3)                                   //*
+           + cofintoutf4*outputgap(+4)                                   //*
            + std_r_ * interest_;                                         //*
                                                                          //*
 // Discretionary Government Spending                                     //*
@@ -737,10 +737,10 @@ fispol = ea_g-0.18;
           R_dm = dyn*(r_m-r_m(-1))+(1-dyn)*null ;
           EA_yobs = (ea_s-ea_eps_im)*(ea_pcy/ea_py)^ea_sig*(1-ea_soil)*(ea_pc/ea_pcy)^ea_sigmaoil*(ea_c+ea_i*(1+ea_upi)^ea_sigmaoil+ea_g+ea_ig)+ea_ex ;
           R_yobs = (r_s-r_eps_im)*(r_pcy/r_py)^r_sig*(1-r_soil)*(r_pc/r_pcy)^r_sigmaoil*(r_c+r_i*(1+r_upi)^r_sigmaoil+r_g+r_ig)+r_ex ;
-          
-end; 
- 
-initval; 
+
+end;
+
+initval;
 ea_b=2.4233628861392;
 ea_ben=0.347236353606391;
 EA_bl=1.2116814430696;
@@ -1103,16 +1103,16 @@ outputgap=0;
 output=0;
 fispol=0;
 
-end; 
- 
+end;
 
-%steady; 
- 
+
+%steady;
+
 shocks;
-var fiscal_; stderr 1; 
+var fiscal_; stderr 1;
 var interest_; stderr 1;
-%var EA_eps_qe; stderr 0.01;                
-%var ea_eps_ltfp; stderr 0.01; 
+%var EA_eps_qe; stderr 0.01;
+%var ea_eps_ltfp; stderr 0.01;
 end;
 
 %stoch_simul(order=1, nomoments) interest inflationq output outputgap fispol ea_gs ea_eps_gs;

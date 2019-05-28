@@ -1,13 +1,13 @@
 //**************************************************************************
 // A New Comparative Approach to Macroeconomic Modeling and Policy Analysis
 //
-// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and 
+// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and
 // Maik Wolters
 //
 //**************************************************************************
 
 % Model: NK_MPT10
- 
+
 % Further References:  T. Monacelli, R. Perotti, A. Trigari (2010): "Unemployment Fiscal Multiplier",
 % Journal of Monetary Economics 57, pp.531-553
 
@@ -15,49 +15,49 @@
 %**************************************************************************************************
 
 %% For comments on the replication of Figure 7 in the paper, see the corresponding code in the replication folder.
-%% In order to facilitate a comparison of this model with other models in the database, the calibration is 
+%% In order to facilitate a comparison of this model with other models in the database, the calibration is
 %% adjusted from monthly to quarterly frequency.
 %% This transforms ...
-%% ... beta from 0.99^(1/3) to 0.99 
-%% ... rho_g from 0.9^(1/3) to 0.9 
+%% ... beta from 0.99^(1/3) to 0.99
+%% ... rho_g from 0.9^(1/3) to 0.9
 %% ... delta from 0.025/3 to 0.025
 %% ... kappa_pi from 1.5^(1/3) to 1.5
 %% ... kappa_y from (0.5/4)^(1/3) to 0.5/4
 %% ... gam from 11/12 to 0.75
 %% ... rho from 0.965 to 0.895
 %% ... p_ss from 0.45 to 1-(1-0.45)^3
-%% ... eta_k from 3.24*3 to 3.24 
-%%     (According to the calibration table in the paper, 
-%%     3.24 is chosen for monthly calibration. However, to obtain the same persistence 
-%%     of investment responses as in the Figures of the paper that display IRFs, 
-%%     3.24*3 is an appropriate value for the monthly calibration. Monacelli et al., 
-%%     motivate the  choice of the calibration with the estimation by Christiano, 
+%% ... eta_k from 3.24*3 to 3.24
+%%     (According to the calibration table in the paper,
+%%     3.24 is chosen for monthly calibration. However, to obtain the same persistence
+%%     of investment responses as in the Figures of the paper that display IRFs,
+%%     3.24*3 is an appropriate value for the monthly calibration. Monacelli et al.,
+%%     motivate the  choice of the calibration with the estimation by Christiano,
 %%     Eichenbaum, Evans (2005, JPE) who estimate a value of 3.24 for quarterly data).
 %**************************************************************************************************
 
- 
- 
-var 
+
+
+var
 //**************************************************************************
 // Modelbase Variables                                                   //*
         interest inflation inflationq outputgap output fispol                //*
 //**************************************************************************
-q rk y k a w lambda F n p theta u i phi c phi_i omega H w_bar w_und S 
+q rk y k a w lambda F n p theta u i phi c phi_i omega H w_bar w_und S
 tau g v m Lambda varphi
-r i_nom mc Dis Y infl inflstar P_F P_Z 
-theta_fe p_fe y_fe rk_fe n_fe a_fe omega_fe k_fe i_fe u_fe v_fe lambda_fe c_fe F_fe 
+r i_nom mc Dis Y infl inflstar P_F P_Z
+theta_fe p_fe y_fe rk_fe n_fe a_fe omega_fe k_fe i_fe u_fe v_fe lambda_fe c_fe F_fe
 phi_fe w_bar_fe S_fe w_und_fe w_fe H_fe phi_i_fe m_fe Lambda_fe q_fe varphi_fe r_fe mc_fe Y_fe e;
 
 
-varexo 
+varexo
 //**************************************************************************
-// Modelbase Shocks                                                      //*       
+// Modelbase Shocks                                                      //*
        interest_ fiscal_;                                                        //*
 //**************************************************************************
 
 
-parameters 
-//************************************************************************** 
+parameters
+//**************************************************************************
 // Modelbase Parameters                                                  //*
                                                                          //*
         cofintintb1 cofintintb2 cofintintb3 cofintintb4                  //*
@@ -70,32 +70,32 @@ parameters
         std_r_ std_r_quart coffispol                                     //*
                                                                          //*
 //**************************************************************************
-alpha beta rho gamma_m gamma delta eta_k sigma eta b kappa 
-rho_g Y_over_K K_over_N G_over_Y omega_bar 
-theta_ss p_ss q_ss Lambda_ss phi_ss phi_i_ss n_ss u_ss v_ss m_ss rk_ss 
-k_ss y_ss a_ss i_ss omega_ss S_ss F_ss w_ss w_bar_ss w_und_ss 
-g_ss lambda_ss tau_ss H_ss 
+alpha beta rho gamma_m gamma delta eta_k sigma eta b kappa
+rho_g Y_over_K K_over_N G_over_Y omega_bar
+theta_ss p_ss q_ss Lambda_ss phi_ss phi_i_ss n_ss u_ss v_ss m_ss rk_ss
+k_ss y_ss a_ss i_ss omega_ss S_ss F_ss w_ss w_bar_ss w_und_ss
+g_ss lambda_ss tau_ss H_ss
 rho_i kappa_pi kappa_y epsilon gam gam_P infl_ss inflstar_ss mc_ss P_F_ss P_Z_ss Dis_ss r_ss i_nom_ss Y_ss;
 
 //**************************************************************************
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           
-cd('..');                                                                
-load policy_param.mat;                                                   
-for i=1:33                                                               
-    deep_parameter_name = M_.param_names(i,:);                           
-    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])                  
-end                                                                      
-cd(thispath);   
+thispath = pwd;
+cd('..');
+load policy_param.mat;
+for i=1:33
+    deep_parameter_name = M_.param_names(i,:);
+    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
+end
+cd(thispath);
 std_r_=100;
                                                                          //*
 // Definition of Discretionary Fiscal Policy Parameter                   //*
-coffispol = 1;                                                           //*   
+coffispol = 1;                                                           //*
 //**************************************************************************
 
-sigma=1; % CRRA 
+sigma=1; % CRRA
 beta=0.99; %discount factor
 delta=0.025; %depreciation rate
 alpha=1/3; % capital share
@@ -111,7 +111,7 @@ G_over_Y = 0.2; % government spending share of output
 rho_i=0; % interest rate smoothing parameter
 kappa_pi = 1.5; % inflation response in Taylor rule
 kappa_y = (0.5/4); % output response in Taylor rule
-gam_P = 0; % backward looking fraction of price setters 
+gam_P = 0; % backward looking fraction of price setters
 gam =  3/4; % Calvo Parameter
 epsilon = 7.25 ; % Elasticity of subtitution between varieties of final goods
 
@@ -139,7 +139,7 @@ r_ss = rk_ss-delta;
 %Y_over_K = rk_ss/alpha; % (in text - mpc)
 Y_over_K = rk_ss/(alpha*mc_ss); % (in text - mpc)
 K_over_N = Y_over_K^(1/(alpha-1)); %(in text - prod.fct.)
-k_ss = K_over_N*n_ss; 
+k_ss = K_over_N*n_ss;
 y_ss = Y_over_K*k_ss;
 %a_ss =(1-alpha) * y_ss / n_ss; % (in text - mpn)
 a_ss =(1-alpha)*mc_ss* y_ss / n_ss; % (in text - mpn)
@@ -148,7 +148,7 @@ g_ss = G_over_Y*y_ss;
 tau_ss = g_ss;
 Y_ss = y_ss; % final output
 i_nom_ss = r_ss;  % nominal interest rate
-P_F_ss = 1/(1-beta*gam)*(Y_ss)*(mc_ss); % auxiliary variable for price setting 
+P_F_ss = 1/(1-beta*gam)*(Y_ss)*(mc_ss); % auxiliary variable for price setting
 P_Z_ss = 1/(1-beta*gam)*(Y_ss); % auxiliary variable for price setting
 
 omega_ss=omega_bar*a_ss; %(31)
@@ -156,7 +156,7 @@ S_ss = (a_ss - omega_ss)/(1-beta*(rho - eta*p_ss)); %(24)
 F_ss = (1-eta)*S_ss; %(in text)
 kappa = F_ss*q_ss; %(5)
 c_ss = y_ss - g_ss - i_ss - kappa*v_ss;
-w_ss = a_ss-(1-rho*beta)*F_ss; %(6) 
+w_ss = a_ss-(1-rho*beta)*F_ss; %(6)
 w_bar_ss = a_ss + (rho * beta * F_ss); %(21)
 w_und_ss = w_bar_ss - S_ss; %(20)
 b = omega_ss/(c_ss*sigma-(sigma-1)*omega_ss*n_ss);
@@ -176,46 +176,46 @@ outputgap  = log(Y/Y_fe)*100;                                               //*
 fispol     = e;
 //**************************************************************************
 
-//**************************************************************************                                                                    
+//**************************************************************************
 // Policy Rule                                                           //*
 %1+i_nom            =   (1+i_nom(-1))^rho_i*((1+i_nom_ss)*infl^kappa_pi*(Y/Y(-1))^(kappa_y))^(1-rho_i);%*(e_i);
                                                                          //*
-interest =   cofintintb1*interest(-1)                                    //* 
-           + cofintintb2*interest(-2)                                    //* 
-           + cofintintb3*interest(-3)                                    //* 
-           + cofintintb4*interest(-4)                                    //* 
-           + cofintinf0*inflationq                                       //* 
-           + cofintinfb1*inflationq(-1)                                  //* 
-           + cofintinfb2*inflationq(-2)                                  //* 
-           + cofintinfb3*inflationq(-3)                                  //* 
-           + cofintinfb4*inflationq(-4)                                  //* 
-           + cofintinff1*inflationq(+1)                                  //* 
-           + cofintinff2*inflationq(+2)                                  //* 
-           + cofintinff3*inflationq(+3)                                  //* 
-           + cofintinff4*inflationq(+4)                                  //* 
-           + cofintout*outputgap 	                                     //* 
-           + cofintoutb1*outputgap(-1)                                   //* 
-           + cofintoutb2*outputgap(-2)                                   //* 
-           + cofintoutb3*outputgap(-3)                                   //* 
-           + cofintoutb4*outputgap(-4)                                   //* 
-           + cofintoutf1*outputgap(+1)                                   //* 
-           + cofintoutf2*outputgap(+2)                                   //* 
-           + cofintoutf3*outputgap(+3)                                   //* 
+interest =   cofintintb1*interest(-1)                                    //*
+           + cofintintb2*interest(-2)                                    //*
+           + cofintintb3*interest(-3)                                    //*
+           + cofintintb4*interest(-4)                                    //*
+           + cofintinf0*inflationq                                       //*
+           + cofintinfb1*inflationq(-1)                                  //*
+           + cofintinfb2*inflationq(-2)                                  //*
+           + cofintinfb3*inflationq(-3)                                  //*
+           + cofintinfb4*inflationq(-4)                                  //*
+           + cofintinff1*inflationq(+1)                                  //*
+           + cofintinff2*inflationq(+2)                                  //*
+           + cofintinff3*inflationq(+3)                                  //*
+           + cofintinff4*inflationq(+4)                                  //*
+           + cofintout*outputgap 	                                     //*
+           + cofintoutb1*outputgap(-1)                                   //*
+           + cofintoutb2*outputgap(-2)                                   //*
+           + cofintoutb3*outputgap(-3)                                   //*
+           + cofintoutb4*outputgap(-4)                                   //*
+           + cofintoutf1*outputgap(+1)                                   //*
+           + cofintoutf2*outputgap(+2)                                   //*
+           + cofintoutf3*outputgap(+3)                                   //*
            + cofintoutf4*outputgap(+4)                                   //*
-           + cofintoutp*output 	                                         //* 
-           + cofintoutpb1*output(-1)                                     //* 
-           + cofintoutpb2*output(-2)                                     //* 
-           + cofintoutpb3*output(-3)                                     //* 
-           + cofintoutpb4*output(-4)                                     //* 
-           + cofintoutpf1*output(+1)                                     //* 
-           + cofintoutpf2*output(+2)                                     //* 
-           + cofintoutpf3*output(+3)                                     //* 
-           + cofintoutpf4*output(+4)                                     //*  
-           + std_r_ *interest_;                                          //* 
+           + cofintoutp*output 	                                         //*
+           + cofintoutpb1*output(-1)                                     //*
+           + cofintoutpb2*output(-2)                                     //*
+           + cofintoutpb3*output(-3)                                     //*
+           + cofintoutpb4*output(-4)                                     //*
+           + cofintoutpf1*output(+1)                                     //*
+           + cofintoutpf2*output(+2)                                     //*
+           + cofintoutpf3*output(+3)                                     //*
+           + cofintoutpf4*output(+4)                                     //*
+           + std_r_ *interest_;                                          //*
                                                                          //*
 // Discretionary Government Spending                                     //*
                                                                          //*
- fispol = coffispol*fiscal_;                                             //*  
+ fispol = coffispol*fiscal_;                                             //*
 //**************************************************************************
 
 Lambda = lambda/lambda(-1);                     % (part of) SDF of firms
@@ -236,14 +236,14 @@ theta = v/u;                                            % labor market tightness
 n = rho * n(-1) + q * v;                                %law of motion of employment
 u = 1 - n(-1);                                          %unemployment
 y = k(-1)^(alpha)*n^(1-alpha);                          %aggregate production function
-F = kappa/q; % 
+F = kappa/q; %
 F = a - w + rho*beta*(Lambda(+1)* F(+1));               % marginal value of another worker for firm
 k = (1 - delta) * k(-1) + i * (1 - phi);                % law of motion of capital
 phi = (eta_k / 2) * ((i/i(-1)) - 1)^2;                          % investment adjustment cost fct.
 phi_i = eta_k * ((i/i(-1)) - 1);                                % derivative of investment adjustment cost fct.
 lambda = ((1 + (sigma -1) * b *n) / c)^(sigma);                 % marginal utility of consumption
 varphi * (1 - phi - i/i(-1)*phi_i) = 1 - beta*varphi(+1)*Lambda(+1)*(i(+1)/i)^2*phi_i(+1); %investment FOC
-varphi = beta*(Lambda(+1)*(varphi(+1)*(1-delta)+rk(+1)));       %FOC capital 
+varphi = beta*(Lambda(+1)*(varphi(+1)*(1-delta)+rk(+1)));       %FOC capital
 H = lambda*(w - omega)+beta*(rho - p(+1))*H(+1);                % marginal value of another employed household member
 omega = sigma*b*lambda^(-1/sigma);                              %marginal value of non-work activity
 w_bar = a + rho*beta*(Lambda(+1)*F(+1));                        % reservation wage of firm
@@ -267,14 +267,14 @@ theta_fe = v_fe/u_fe; % labor market tightness
 n_fe = rho * n_fe(-1) + q_fe * v_fe; %law of motion of employment
 u_fe = 1 - n_fe(-1); %unemployment
 y_fe = k_fe(-1)^(alpha)*n_fe^(1-alpha); %aggregate production function
-F_fe = kappa/q_fe; % 
+F_fe = kappa/q_fe; %
 F_fe = a_fe - w_fe + rho*beta*(Lambda_fe(+1)* F_fe(+1)); % marginal value of another worker for firm
 k_fe = (1 - delta) * k_fe(-1) + i_fe * (1 - phi_fe); % law of motion of capital
 phi_fe = (eta_k / 2) * ((i_fe/i_fe(-1)) - 1)^2; % investment adjustment cost fct.
 phi_i_fe = eta_k * ((i_fe/i_fe(-1)) - 1); % derivative of investment adjustment cost fct.
 lambda_fe = ((1 + (sigma -1) * b *n_fe) / c_fe)^(sigma); % marginal utility of consumption
 varphi_fe * (1 - phi_fe - i_fe/i_fe(-1)*phi_i_fe) = 1 - beta*varphi_fe(+1)*Lambda_fe(+1)*(i_fe(+1)/i_fe)^2*phi_i_fe(+1); %investment FOC
-varphi_fe = beta*(Lambda_fe(+1)*(varphi_fe(+1)*(1-delta)+rk_fe(+1))); %FOC capital 
+varphi_fe = beta*(Lambda_fe(+1)*(varphi_fe(+1)*(1-delta)+rk_fe(+1))); %FOC capital
 H_fe = lambda_fe*(w_fe - omega_fe)+beta*(rho - p_fe(+1))*H_fe(+1); % marginal value of another employed household member
 omega_fe = sigma*b*lambda_fe^(-1/sigma); %marginal value of non-work activity
 w_bar_fe = a_fe + rho*beta*(Lambda_fe(+1)*F_fe(+1));% reservation wage of firm

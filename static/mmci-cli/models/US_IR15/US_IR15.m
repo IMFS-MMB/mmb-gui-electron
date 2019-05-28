@@ -1075,14 +1075,14 @@ M_.params( 67 ) = 0.0002;
 sig8 = M_.params( 67 );
 M_.params( 68 ) = 0.0001;
 sig16 = M_.params( 68 );
-thispath = cd;                                                           
-cd('..');                                                                
-load policy_param.mat;                                                   
-for i=1:33                                                               
-deep_parameter_name = M_.param_names(i,:);                           
-eval(['M_.params(i)  = ' deep_parameter_name ' ;'])                  
-end                                                                      
-cd(thispath);       
+thispath = pwd;
+cd('..');
+load policy_param.mat;
+for i=1:33
+deep_parameter_name = M_.param_names(i,:);
+eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
+end
+cd(thispath);
 M_.params( 34 ) = 1;
 coffispol = M_.params( 34 );
 %

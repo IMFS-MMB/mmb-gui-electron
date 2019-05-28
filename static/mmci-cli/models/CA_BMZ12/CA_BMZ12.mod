@@ -8,7 +8,7 @@
 //Yahong Zhang, June 29, 2010
 //This mod file is adjusted to be simulated under Dynare 4 and
 //implemented in the Macromodel Base by Leonhard Czerny and Sungtaek Kwon.
-//The baseline policy regime is 'standard Taylor rule plus macroprudential policy rule 
+//The baseline policy regime is 'standard Taylor rule plus macroprudential policy rule
 //which reacts to credit growth rate with rhotau  = 0.5'.
 
 
@@ -21,14 +21,14 @@ close all
 % 1. Preamble Defining variables and parameters
 %----------------------------------------------------------------
 
-var  
-auxt, bigXt, bigZt, ct, eqti, ht, it, kt, lambdat, llt, mct, nt, pit, pref, pstart, qt, 
-rkt, rnt, st, xt, yt, zt, auxtfp, ctfp, htfp, itfp, ktfp, lambdatfp, 
-lltfp, mctfp, qtfp, rktfp, rntfp, ytfp, ygap, lnyt, 
-lnit, lnygap, ft, taut, bt, cgn, cg, mpl, kl, mpk, rw, mcl, 
+var
+auxt, bigXt, bigZt, ct, eqti, ht, it, kt, lambdat, llt, mct, nt, pit, pref, pstart, qt,
+rkt, rnt, st, xt, yt, zt, auxtfp, ctfp, htfp, itfp, ktfp, lambdatfp,
+lltfp, mctfp, qtfp, rktfp, rntfp, ytfp, ygap, lnyt,
+lnit, lnygap, ft, taut, bt, cgn, cg, mpl, kl, mpk, rw, mcl,
 mck, mcb, mcc, mcd, mce, htb, qgap, expi, lev, kc, ce, ste,efc,
-uu, vf, 
-// pitfp, pstartfp, et, 
+uu, vf,
+// pitfp, pstartfp, et,
 //**************************************************************************
 // Modelbase Variables                                                   //*
         interest inflation inflationq outputgap output;                  //*
@@ -38,14 +38,14 @@ uu, vf,
 // Define 4 exogenous shocks (technology, monetary, investment, preference)
 varexo epszt,  epsxt, epspt, epsft  //epset,
 //**************************************************************************
-// Modelbase Shocks                                                      //*       
+// Modelbase Shocks                                                      //*
        interest_;                                                        //*
 //**************************************************************************
 
 
 // Define 14 structural parameters and STEADY STATE values
-parameters 
-//************************************************************************** 
+parameters
+//**************************************************************************
 // Modelbase Parameters                                                  //*
                                                                          //*
         cofintintb1 cofintintb2 cofintintb3 cofintintb4                  //*
@@ -58,19 +58,19 @@ parameters
         std_r_ std_r_quart                                               //*
                                                                          //*
 //**************************************************************************
-b, a, chi, d,  g, te, veps, xi, nu, tau, r_p, r_r, r_y, rho_z, rho_e, rho_x, mub, tau1, rho_p, 
-aux_ss, pi_ss, q_ss, z_ss, e_ss, mc_ss, rn_ss, rk_ss, s_ss, ik_ss, eqti_ss, 
-yk_ss, ck_ss, yc_ss, h_ss, k_ss, n_ss, c_ss, i_ss, y_ss, 
+b, a, chi, d,  g, te, veps, xi, nu, tau, r_p, r_r, r_y, rho_z, rho_e, rho_x, mub, tau1, rho_p,
+aux_ss, pi_ss, q_ss, z_ss, e_ss, mc_ss, rn_ss, rk_ss, s_ss, ik_ss, eqti_ss,
+yk_ss, ck_ss, yc_ss, h_ss, k_ss, n_ss, c_ss, i_ss, y_ss,
 lambda_ss, bigX_ss, bigZ_ss, pstar_ss, x_ss, p_ss, ll_ss ,
 qfp_ss,  sfp_ss,  rkfp_ss,
-ykfp_ss, ckfp_ss, ycfp_ss, hfp_ss, kfp_ss, nfp_ss, cfp_ss, ifp_ss, 
-yfp_ss,  lambdafp_ss, pstarfp_ss, llfp_ss,  ygap_ss, eta, 
+ykfp_ss, ckfp_ss, ycfp_ss, hfp_ss, kfp_ss, nfp_ss, cfp_ss, ifp_ss,
+yfp_ss,  lambdafp_ss, pstarfp_ss, llfp_ss,  ygap_ss, eta,
 nkratio, lny_ss, lni_ss, lnygap_ss, r_q, f_ss, rho_f,
 r_c, rhotau, taut_ss, bt_ss, cgn_ss, cg_ss, r_s, hbar, mpl_ss, kl_ss,
 mpk_ss, rw_ss, mcl_ss, mck_ss, mcb_ss, mcc_ss, mcd_ss, mce_ss, htb_ss, expi_ss, lev_ss, kc_ss, ce_ss,
 ste_ss, efc_ss
-lnyt_ss lnit_ss qgap_ss; 
-  
+lnyt_ss lnit_ss qgap_ss;
+
 // Set parameter and SS values
 
 //////policy experiment parameters
@@ -99,7 +99,7 @@ te    = 5.75;//1;//0.195;
 veps  =6;
 xi   =0.2603;
 
-tau   = 0; //tau   = 0.9179; 
+tau   = 0; //tau   = 0.9179;
 tau1 = 0; //tau1 =19.6422;
 nu = 0.4824;
 r_p   = 1.7062;//1.01;//1.3;//1.3009;//3;  // mode
@@ -130,7 +130,7 @@ rn_ss     = pi_ss/b;
 rk_ss     = 1/eta;
 aux_ss    = rn_ss/pi_ss;
 s_ss      = rk_ss/(rn_ss/pi_ss);
-ik_ss     = d;                       
+ik_ss     = d;
 yk_ss     = (1/((1-a)*mc_ss))*(rk_ss-(1-d))/ll_ss;
 ck_ss     = yk_ss-ik_ss;
 yc_ss     = yk_ss/ck_ss;
@@ -171,7 +171,7 @@ ce_ss     = (1-eta)*n_ss;
 pstarfp_ss  = 1;
 llfp_ss     = 1;
 rkfp_ss     = rk_ss;
-sfp_ss      = s_ss;              
+sfp_ss      = s_ss;
 ykfp_ss     = (1/((1-a)*mc_ss))*(rkfp_ss-(1-d))/llfp_ss;
 ckfp_ss     = ykfp_ss-ik_ss;
 ycfp_ss     = ykfp_ss/ckfp_ss;
@@ -191,25 +191,25 @@ uu_ss       = log(c_ss)-te*(h_ss^(1+g))/(1+g);
 vf_ss       = uu_ss/(1-b);
 kc_ss       = 0;
 lnyt_ss     = 0;
-lnit_ss     = 0; 
+lnit_ss     = 0;
 qgap_ss     = q_ss-qfp_ss;
 
 //**************************************************************************
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           
-cd('..');                                                                
-load policy_param.mat;                                                   
-for i=1:33                                                               
-    deep_parameter_name = M_.param_names(i,:);                           
-    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])                  
-end                                                                      
-cd(thispath);   
+thispath = pwd;
+cd('..');
+load policy_param.mat;
+for i=1:33
+    deep_parameter_name = M_.param_names(i,:);
+    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
+end
+cd(thispath);
 std_r_=100;
                                                                          //*
 // Definition of Discretionary Fiscal Policy Parameter                   //*
-// coffispol = 1;                                                        //*   
+// coffispol = 1;                                                        //*
 //**************************************************************************
 
 
@@ -226,50 +226,50 @@ inflationq = log(pit/pi_ss)*400;                                            //*
 inflation  = 1/4*(inflationq+inflationq(-1)+inflationq(-2)+inflationq(-3)); //*
 output     = log(yt/y_ss)*100;                                              //*
 outputgap  = log(yt/ytfp)*100;                                              //*
-//fispol   = e_g;                                                           //*    
+//fispol   = e_g;                                                           //*
 //**************************************************************************
 
-//**************************************************************************                                                                    
+//**************************************************************************
 // Policy Rule                                                           //*
                                                                          //*
 // Monetary Policy                                                       //*
                                                                          //*
-interest =   cofintintb1*interest(-1)                                    //* 
-           + cofintintb2*interest(-2)                                    //* 
-           + cofintintb3*interest(-3)                                    //* 
-           + cofintintb4*interest(-4)                                    //* 
-           + cofintinf0*inflationq                                       //* 
-           + cofintinfb1*inflationq(-1)                                  //* 
-           + cofintinfb2*inflationq(-2)                                  //* 
-           + cofintinfb3*inflationq(-3)                                  //* 
-           + cofintinfb4*inflationq(-4)                                  //* 
-           + cofintinff1*inflationq(+1)                                  //* 
-           + cofintinff2*inflationq(+2)                                  //* 
-           + cofintinff3*inflationq(+3)                                  //* 
-           + cofintinff4*inflationq(+4)                                  //* 
-           + cofintout*outputgap 	                                     //* 
-           + cofintoutb1*outputgap(-1)                                   //* 
-           + cofintoutb2*outputgap(-2)                                   //* 
-           + cofintoutb3*outputgap(-3)                                   //* 
-           + cofintoutb4*outputgap(-4)                                   //* 
-           + cofintoutf1*outputgap(+1)                                   //* 
-           + cofintoutf2*outputgap(+2)                                   //* 
-           + cofintoutf3*outputgap(+3)                                   //* 
+interest =   cofintintb1*interest(-1)                                    //*
+           + cofintintb2*interest(-2)                                    //*
+           + cofintintb3*interest(-3)                                    //*
+           + cofintintb4*interest(-4)                                    //*
+           + cofintinf0*inflationq                                       //*
+           + cofintinfb1*inflationq(-1)                                  //*
+           + cofintinfb2*inflationq(-2)                                  //*
+           + cofintinfb3*inflationq(-3)                                  //*
+           + cofintinfb4*inflationq(-4)                                  //*
+           + cofintinff1*inflationq(+1)                                  //*
+           + cofintinff2*inflationq(+2)                                  //*
+           + cofintinff3*inflationq(+3)                                  //*
+           + cofintinff4*inflationq(+4)                                  //*
+           + cofintout*outputgap 	                                     //*
+           + cofintoutb1*outputgap(-1)                                   //*
+           + cofintoutb2*outputgap(-2)                                   //*
+           + cofintoutb3*outputgap(-3)                                   //*
+           + cofintoutb4*outputgap(-4)                                   //*
+           + cofintoutf1*outputgap(+1)                                   //*
+           + cofintoutf2*outputgap(+2)                                   //*
+           + cofintoutf3*outputgap(+3)                                   //*
            + cofintoutf4*outputgap(+4)                                   //*
-           + cofintoutp*output 	                                         //* 
-           + cofintoutpb1*output(-1)                                     //* 
-           + cofintoutpb2*output(-2)                                     //* 
-           + cofintoutpb3*output(-3)                                     //* 
-           + cofintoutpb4*output(-4)                                     //* 
-           + cofintoutpf1*output(+1)                                     //* 
-           + cofintoutpf2*output(+2)                                     //* 
-           + cofintoutpf3*output(+3)                                     //* 
-           + cofintoutpf4*output(+4)                                     //*  
-           + std_r_ *interest_;                                          //* 
+           + cofintoutp*output 	                                         //*
+           + cofintoutpb1*output(-1)                                     //*
+           + cofintoutpb2*output(-2)                                     //*
+           + cofintoutpb3*output(-3)                                     //*
+           + cofintoutpb4*output(-4)                                     //*
+           + cofintoutpf1*output(+1)                                     //*
+           + cofintoutpf2*output(+2)                                     //*
+           + cofintoutpf3*output(+3)                                     //*
+           + cofintoutpf4*output(+4)                                     //*
+           + std_r_ *interest_;                                          //*
                                                                          //*
 // Discretionary Government Spending                                     //*
                                                                          //*
-// fispol = coffispol*fiscal_;                                           //*  
+// fispol = coffispol*fiscal_;                                           //*
 //**************************************************************************
 
 // Model equations:
@@ -401,8 +401,8 @@ bigXt  = bigX_ss;
 bigZt  = bigZ_ss;
 ct     = c_ss;
 eqti   = eqti_ss;
-// et     = e_ss; 
-ht     = h_ss; 
+// et     = e_ss;
+ht     = h_ss;
 it     = i_ss;
 kt     = k_ss;
 lambdat = lambda_ss;
@@ -421,7 +421,7 @@ yt     = y_ss;
 zt     = z_ss;
 auxtfp   = rn_ss/pi_ss;
 ctfp     = cfp_ss;
-htfp     = hfp_ss; 
+htfp     = hfp_ss;
 itfp     = ifp_ss;
 ktfp     = kfp_ss;
 lambdatfp = lambdafp_ss;

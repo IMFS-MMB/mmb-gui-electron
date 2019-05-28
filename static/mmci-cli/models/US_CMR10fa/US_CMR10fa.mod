@@ -1,7 +1,7 @@
 //-------------------------------------------------------------------------------------------------------------------------
-//      THIS DYNARE FILE REPLICATES 
-//      
-//      Christiano, Motto and Rostagno (2010), "Financial Factors in Economic Fluctuations", ECB WP Nº1192 - FINANCIAL ACCELERATOR MODEL
+//      THIS DYNARE FILE REPLICATES
+//
+//      Christiano, Motto and Rostagno (2010), "Financial Factors in Economic Fluctuations", ECB WP Nï¿½1192 - FINANCIAL ACCELERATOR MODEL
 //
 //      ADAPTED for the Macro Model Data Base
 //
@@ -10,19 +10,19 @@
 //      Fabio Verona, email: f8fabio@yahoo.it
 //
 //      August 2012
-//      
+//
 //---------------------------------------------------------------------------------------------------------------------------
 
 // Variables
 var   piU, sU, rkU, iU, uU, omegabarU, RkXU, nU, qU, lambdazU, cU, wU,
-      hU, kbarU, ReXU, pstarU, wstarU, FpXU, FwXU,YU, btotU,  
+      hU, kbarU, ReXU, pstarU, wstarU, FpXU, FwXU,YU, btotU,
       lambdafU, pitargetU, muupU, gU, muzstarU, gammaU, epsilU,sigmaU, zetacU, zetaiU, tauoU
 
       piflexU, sflexU, rkflexU, iflexU, uflexU, omegabarflexU, RkXflexU, nflexU, qflexU, lambdazflexU, cflexU, wflexU,
-      hflexU, kbarflexU, ReXflexU, FpXflexU, FwXflexU,YflexU, btotflexU,  
-      
+      hflexU, kbarflexU, ReXflexU, FpXflexU, FwXflexU,YflexU, btotflexU,
+
 //**************************************************************************
-// Modelbase Variables                                                   //*    
+// Modelbase Variables                                                   //*
         interest inflation inflationq outputgap output;                  //*
 //**************************************************************************
 
@@ -30,7 +30,7 @@ var   piU, sU, rkU, iU, uU, omegabarU, RkXU, nU, qU, lambdazU, cU, wU,
 varexo e_lambdafU, e_pitargetU,e_muupU, e_gU, e_muzstarU, e_gammaU, e_epsilU, e_sigmaU,  e_zetaiU, e_tauoU, //e_zetacU,
 
 //**************************************************************************
-// Modelbase Shocks                                                      //*       
+// Modelbase Shocks                                                      //*
         interest_;                                                       //*
 //**************************************************************************
 
@@ -38,16 +38,16 @@ varexo e_lambdafU, e_pitargetU,e_muupU, e_gU, e_muzstarU, e_gammaU, e_epsilU, e_
 parameters btotUU, YUU, piUU, sUU, rkUU, iUU, uUU, omegabarUU, RkXUU, nUU, qUU, lambdazUU, cUU, wUU, hUU, kbarUU, ReXUU, pstarUU, wstarUU, FpXUU, FwXUU,  lambdafUU, pitargetUU, muupUU, gUU, muzstarUU, gammaUU, epsilUU, sigmaUU, zetacUU, zetaiUU, tauoUU
 
            FpXflexUU,FwXflexUU,
-           
+
            rho1_lambdafU, rho1_pitargetU, rho1_muupU, rho1_gU, rho1_muzstarU, rho1_gammaU, rho1_epsilU, rho1_sigmaU,  rho1_zetaiU, rho1_tauoU, rho1_zetacU
            std1_lambdafU, std1_pitargetU, std1_muupU, std1_gU, std1_muzstarU, std1_gammaU, std1_epsilU, std1_sigmaU,  std1_zetaiU, std1_tauoU, std1_zetacU
 
            lambdawUU, sigmaLXUU, betaUU, xiwUU, bUU,
-           psiLXUU, iotaw1UU, iotamuUU, muUU, weUU, bigthetaUU, sigmaaUU, SdouprXUU,  
+           psiLXUU, iotaw1UU, iotamuUU, muUU, weUU, bigthetaUU, sigmaaUU, SdouprXUU,
            upsilUU, alphaUU, deltaUU, xipUU, iota1UU, etagUU,
            taukUU, taulUU, taucUU, tauUU, aptilUU, aytilUU, rhotilUU, phiUU, pibarUU,
 
-//************************************************************************** 
+//**************************************************************************
 // Modelbase Parameters                                                  //*
                                                                          //*
         cofintintb1 cofintintb2 cofintintb3 cofintintb4                  //*
@@ -66,9 +66,9 @@ parameters btotUU, YUU, piUU, sUU, rkUU, iUU, uUU, omegabarUU, RkXUU, nUU, qUU, 
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-	thispath = cd;                                                       //*
+	thispath = pwd;                                                       //*
 	cd('..');                                                            //*
-	load policy_param.mat; 
+	load policy_param.mat;
     //load ss_parameters_US.mat;
     qq=load('policy_param.mat');
     for i=1:M_.param_nbr;
@@ -78,7 +78,7 @@ parameters btotUU, YUU, piUU, sUU, rkUU, iUU, uUU, omegabarUU, RkXUU, nUU, qUU, 
    //    disp([name ' ' num2str(M_.params(i))]);
     end;
 end;                                         //*
-	cd(thispath);    
+	cd(thispath);
 std_r_=100;                                                         	 //*
 //**************************************************************************
 
@@ -108,41 +108,41 @@ output     = 100*(YU-YUU)/YUU;                                           //*
 //**************************************************************************
 
 
-//**************************************************************************                                                                    
+//**************************************************************************
 // Policy Rule                                                           //*
 
-interest =   cofintintb1*interest(-1)                                    //* 
-           + cofintintb2*interest(-2)                                    //* 
-           + cofintintb3*interest(-3)                                    //* 
-           + cofintintb4*interest(-4)                                    //* 
-           + cofintinf0*inflationq                                       //* 
-           + cofintinfb1*inflationq(-1)                                  //* 
-           + cofintinfb2*inflationq(-2)                                  //* 
-           + cofintinfb3*inflationq(-3)                                  //* 
-           + cofintinfb4*inflationq(-4)                                  //* 
-           + cofintinff1*inflationq(+1)                                  //* 
-           + cofintinff2*inflationq(+2)                                  //* 
-           + cofintinff3*inflationq(+3)                                  //* 
-           + cofintinff4*inflationq(+4)                                  //* 
-           + cofintout*outputgap 	                                     //* 
-           + cofintoutb1*outputgap(-1)                                   //* 
-           + cofintoutb2*outputgap(-2)                                   //* 
-           + cofintoutb3*outputgap(-3)                                   //* 
-           + cofintoutb4*outputgap(-4)                                   //* 
-           + cofintoutf1*outputgap(+1)                                   //* 
-           + cofintoutf2*outputgap(+2)                                   //* 
-           + cofintoutf3*outputgap(+3)                                   //* 
-           + cofintoutf4*outputgap(+4)                                   //* 
-           + cofintoutp*output 	                                         //* 
-           + cofintoutpb1*output(-1)                                     //* 
-           + cofintoutpb2*output(-2)                                     //* 
-           + cofintoutpb3*output(-3)                                     //* 
-           + cofintoutpb4*output(-4)                                     //* 
-           + cofintoutpf1*output(+1)                                     //* 
-           + cofintoutpf2*output(+2)                                     //* 
-           + cofintoutpf3*output(+3)                                     //* 
-           + cofintoutpf4*output(+4)                                     //* 
-           + std_r_ *interest_;                                          //* 
+interest =   cofintintb1*interest(-1)                                    //*
+           + cofintintb2*interest(-2)                                    //*
+           + cofintintb3*interest(-3)                                    //*
+           + cofintintb4*interest(-4)                                    //*
+           + cofintinf0*inflationq                                       //*
+           + cofintinfb1*inflationq(-1)                                  //*
+           + cofintinfb2*inflationq(-2)                                  //*
+           + cofintinfb3*inflationq(-3)                                  //*
+           + cofintinfb4*inflationq(-4)                                  //*
+           + cofintinff1*inflationq(+1)                                  //*
+           + cofintinff2*inflationq(+2)                                  //*
+           + cofintinff3*inflationq(+3)                                  //*
+           + cofintinff4*inflationq(+4)                                  //*
+           + cofintout*outputgap 	                                     //*
+           + cofintoutb1*outputgap(-1)                                   //*
+           + cofintoutb2*outputgap(-2)                                   //*
+           + cofintoutb3*outputgap(-3)                                   //*
+           + cofintoutb4*outputgap(-4)                                   //*
+           + cofintoutf1*outputgap(+1)                                   //*
+           + cofintoutf2*outputgap(+2)                                   //*
+           + cofintoutf3*outputgap(+3)                                   //*
+           + cofintoutf4*outputgap(+4)                                   //*
+           + cofintoutp*output 	                                         //*
+           + cofintoutpb1*output(-1)                                     //*
+           + cofintoutpb2*output(-2)                                     //*
+           + cofintoutpb3*output(-3)                                     //*
+           + cofintoutpb4*output(-4)                                     //*
+           + cofintoutpf1*output(+1)                                     //*
+           + cofintoutpf2*output(+2)                                     //*
+           + cofintoutpf3*output(+3)                                     //*
+           + cofintoutpf4*output(+4)                                     //*
+           + std_r_ *interest_;                                          //*
 //**************************************************************************
 
 // A.1: A measure of marginal cost
@@ -187,7 +187,7 @@ RkXU - ( ( (1-taukUU)*(uU*rkU-tauoU*( rkUU*(exp(sigmaaUU*(uU-1))-1)/sigmaaUU ))+
 wstarU - ( ((1-xiwUU)*( ( (1 - xiwUU * ( ( (( (pitargetU^iotaw1UU) * (piU(-1)^(1-iotaw1UU)) * (pibarUU^(1-iotaw1UU-(1-iotaw1UU))) )/( piU*muzstarU*wU/wU(-1) )) * (muzstarUU^(1-iotamuUU)) * (muzstarU^iotamuUU) ) ^ (1/(1-lambdawUU)) ) ) / (1-xiwUU) ) ^ lambdawUU ) + xiwUU*( (( (( (pitargetU^iotaw1UU) * (piU(-1)^(1-iotaw1UU)) * (pibarUU^(1-iotaw1UU-(1-iotaw1UU))) )/( piU*muzstarU*wU/wU(-1) )) * (muzstarUU^(1-iotamuUU)) * (muzstarU^iotamuUU) )*wstarU(-1))^( lambdawUU/(1-lambdawUU) ) ) )^(1/( lambdawUU/(1-lambdawUU) )) );
 ((wstarU^(lambdawUU/(lambdawUU-1)))*hU*(1-taulUU)*lambdazU/lambdawUU) + betaUU * xiwUU * (muzstarUU^((1-iotamuUU)/(1-lambdawUU))) * ( (( (pitargetU(+1)^iotaw1UU) * (piU^(1-iotaw1UU)) * (pibarUU^(1-iotaw1UU-(1-iotaw1UU))) )^(1/(1-lambdawUU))) / piU(+1) ) * ( (1/( piU(+1)*muzstarU(+1)*wU(+1)/wU )) ^ (lambdawUU/(1-lambdawUU)) ) * (muzstarU(+1)^(iotamuUU/(1-lambdawUU)-1)) * FwXU(+1) - FwXU;
 zetacU*((wstarU^(lambdawUU/(lambdawUU-1))*hU)^(1+sigmaLXUU)) + betaUU * xiwUU * (( (( (pitargetU(+1)^iotaw1UU) * (piU^(1-iotaw1UU)) * (pibarUU^(1-iotaw1UU-(1-iotaw1UU))) )/( piU(+1)*muzstarU(+1)*wU(+1)/wU )) * (muzstarUU^(1-iotamuUU)) * (muzstarU(+1)^iotamuUU) )  ^ (lambdawUU*(1+sigmaLXUU)/(1-lambdawUU))) * ( ( ( (1 - xiwUU * ( ( (( (pitargetU(+1)^iotaw1UU) * (piU^(1-iotaw1UU)) * (pibarUU^(1-iotaw1UU-(1-iotaw1UU))) )/( piU(+1)*muzstarU(+1)*wU(+1)/wU )) * (muzstarUU^(1-iotamuUU)) * (muzstarU(+1)^iotamuUU) ) ^ (1/(1-lambdawUU)) ) ) / (1-xiwUU) ) ^ (1-lambdawUU*(1+sigmaLXUU)) ) * wU(+1) * FwXU(+1)/psiLXUU ) - ( ( ( (1 - xiwUU * ( ( (( (pitargetU^iotaw1UU) * (piU(-1)^(1-iotaw1UU)) * (pibarUU^(1-iotaw1UU-(1-iotaw1UU))) )/( piU*muzstarU*wU/wU(-1) )) * (muzstarUU^(1-iotamuUU)) * (muzstarU^iotamuUU) ) ^ (1/(1-lambdawUU)) ) ) / (1-xiwUU) )   ^ (1-lambdawUU*(1+sigmaLXUU)) ) * wU   * FwXU/psiLXUU );
- 
+
 // A.24: choice of Tt
 -lambdazU + (betaUU*lambdazU(+1)/(muzstarU(+1)*piU(+1)))*(1+ReXU);
 
@@ -301,15 +301,15 @@ zetaiU = zetaiUU;
 tauoU = tauoUU;
 
 
-interest   = 0;      
-inflation  = 0;             
-inflationq = 0;                                       
-outputgap  = 0;                                                     
+interest   = 0;
+inflation  = 0;
+inflationq = 0;
+outputgap  = 0;
 output     = 0;
 
 end;
 
-shocks; 
+shocks;
 var e_lambdafU; stderr std1_lambdafU;
 var e_pitargetU; stderr std1_pitargetU;
 
@@ -324,7 +324,7 @@ var e_sigmaU; stderr std1_sigmaU;
 var e_zetaiU; stderr std1_zetaiU;
 var e_tauoU; stderr std1_tauoU;
 
-//var interest_ = 0;//var interest_; stderr 1;//; 
+//var interest_ = 0;//var interest_; stderr 1;//;
 var interest_; stderr 0;
 end;
 

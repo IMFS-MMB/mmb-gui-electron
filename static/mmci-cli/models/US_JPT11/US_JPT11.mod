@@ -1,7 +1,7 @@
 //**************************************************************************
 // A New Comparative Approach to Macroeconomic Modeling and Policy Analysis
 //
-// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and 
+// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and
 // Maik Wolters
 //
 // Working Paper, 2009
@@ -14,7 +14,7 @@
 // Investment shocks and the relative price of investment. Review of Economic Dynamics, 14(1), 102-121.
 
 // Implemented by: Hayk Kamalyan and Jorge Quintana
-// Last edited: 19/03/16 
+// Last edited: 19/03/16
 
 var y k L mpk w p s lambda c R u i kbar wgap gdp z g miu lambdap lambdaw b mp ARMAlambdap ARMAlambdaw
     ystar kstar Lstar mpkstar wstar sstar lambdastar cstar Rstar ustar istar kbarstar wgapstar gdpstar
@@ -28,12 +28,12 @@ var y k L mpk w p s lambda c R u i kbar wgap gdp z g miu lambdap lambdaw b mp AR
 varexo Rs zs mius lambdaps lambdaws bs upsilons
 
 //**************************************************************************
-// Modelbase Shocks                                                      //*       
+// Modelbase Shocks                                                      //*
        interest_ fiscal_;                                                //*
 //**************************************************************************
 
-parameters 
-//************************************************************************** 
+parameters
+//**************************************************************************
 // Modelbase Parameters                                                  //*
                                                                          //*
         cofintintb1 cofintintb2 cofintintb3 cofintintb4                  //*
@@ -50,7 +50,7 @@ alpha delta iotap iotaw gamma100 h lambdapss lambdawss Lss pss100 Fbeta gss niu 
            rhoR rhoz rhog rhomiu rholambdap rholambdaw rhob rhoARMAlambdap rhoARMAlambdaw
            rhoupsilon gammamiu100 gammastar100;
 
-// Non SD parameters 
+// Non SD parameters
 // ------------------------------------------------------------------------
 alpha= 0.167;     // share of capital in the prod. function
 delta= 0.025;    // capital depreciation rate
@@ -61,7 +61,7 @@ gammastar100 = 0.3 ;                                                // steady st
 gammamiu100 = 0.596 ;                                               // steady state growth rate of investment-specific technology (multiplied by 100)
 gamma100 = gammastar100 - (alpha/(1-alpha))*gammamiu100 ;           // steady state growth rate of technology (multiplied by 100)
 
-h= 0.858;         // habit formation 
+h= 0.858;         // habit formation
 lambdapss= 0.18; // steady state net price markup
 lambdawss= 0.144; // steady state net wage markup
 Lss= exp(0.194);       // steady state for log hours
@@ -91,15 +91,15 @@ rhoupsilon = 0.813;
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           
-cd('..');                                                                
-load policy_param.mat;                                                   
-for i=1:33                                                               
-    deep_parameter_name = M_.param_names(i,:);                           
-    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])                  
-end                                                                      
-cd(thispath);                                                            
-                                                                         
+thispath = pwd;
+cd('..');
+load policy_param.mat;
+for i=1:33
+    deep_parameter_name = M_.param_names(i,:);
+    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
+end
+cd(thispath);
+
 // Definition of Discretionary Fiscal Policy Parameter                   //*
 coffispol = 1;                                                       //*
 //**************************************************************************
@@ -145,43 +145,43 @@ fispol     = gs;                                                           //*
 //**************************************************************************
 
 
-//**************************************************************************                                                                    
+//**************************************************************************
 // Policy Rule                                                           //*
                                                                          //*
 // Monetary Policy                                                       //*
                                                                          //*
-interest =   cofintintb1*interest(-1)                                    //* 
-           + cofintintb2*interest(-2)                                    //* 
-           + cofintintb3*interest(-3)                                    //* 
-           + cofintintb4*interest(-4)                                    //* 
-           + cofintinf0*inflationq                                       //* 
-           + cofintinfb1*inflationq(-1)                                  //* 
-           + cofintinfb2*inflationq(-2)                                  //* 
-           + cofintinfb3*inflationq(-3)                                  //* 
-           + cofintinfb4*inflationq(-4)                                  //* 
-           + cofintinff1*inflationq(+1)                                  //* 
-           + cofintinff2*inflationq(+2)                                  //* 
-           + cofintinff3*inflationq(+3)                                  //* 
-           + cofintinff4*inflationq(+4)                                  //* 
-           + cofintout*outputgap 	                                     //* 
-           + cofintoutb1*outputgap(-1)                                   //* 
-           + cofintoutb2*outputgap(-2)                                   //* 
-           + cofintoutb3*outputgap(-3)                                   //* 
-           + cofintoutb4*outputgap(-4)                                   //* 
-           + cofintoutf1*outputgap(+1)                                   //* 
-           + cofintoutf2*outputgap(+2)                                   //* 
-           + cofintoutf3*outputgap(+3)                                   //* 
-           + cofintoutf4*outputgap(+4)                                   //* 
-           + cofintoutp*output 	                                         //* 
-           + cofintoutpb1*output(-1)                                     //* 
-           + cofintoutpb2*output(-2)                                     //* 
-           + cofintoutpb3*output(-3)                                     //* 
-           + cofintoutpb4*output(-4)                                     //* 
-           + cofintoutpf1*output(+1)                                     //* 
-           + cofintoutpf2*output(+2)                                     //* 
-           + cofintoutpf3*output(+3)                                     //* 
-           + cofintoutpf4*output(+4)                                     //* 
-           + std_r_ *interest_;                                          //* 
+interest =   cofintintb1*interest(-1)                                    //*
+           + cofintintb2*interest(-2)                                    //*
+           + cofintintb3*interest(-3)                                    //*
+           + cofintintb4*interest(-4)                                    //*
+           + cofintinf0*inflationq                                       //*
+           + cofintinfb1*inflationq(-1)                                  //*
+           + cofintinfb2*inflationq(-2)                                  //*
+           + cofintinfb3*inflationq(-3)                                  //*
+           + cofintinfb4*inflationq(-4)                                  //*
+           + cofintinff1*inflationq(+1)                                  //*
+           + cofintinff2*inflationq(+2)                                  //*
+           + cofintinff3*inflationq(+3)                                  //*
+           + cofintinff4*inflationq(+4)                                  //*
+           + cofintout*outputgap 	                                     //*
+           + cofintoutb1*outputgap(-1)                                   //*
+           + cofintoutb2*outputgap(-2)                                   //*
+           + cofintoutb3*outputgap(-3)                                   //*
+           + cofintoutb4*outputgap(-4)                                   //*
+           + cofintoutf1*outputgap(+1)                                   //*
+           + cofintoutf2*outputgap(+2)                                   //*
+           + cofintoutf3*outputgap(+3)                                   //*
+           + cofintoutf4*outputgap(+4)                                   //*
+           + cofintoutp*output 	                                         //*
+           + cofintoutpb1*output(-1)                                     //*
+           + cofintoutpb2*output(-2)                                     //*
+           + cofintoutpb3*output(-3)                                     //*
+           + cofintoutpb4*output(-4)                                     //*
+           + cofintoutpf1*output(+1)                                     //*
+           + cofintoutpf2*output(+2)                                     //*
+           + cofintoutpf3*output(+3)                                     //*
+           + cofintoutpf4*output(+4)                                     //*
+           + std_r_ *interest_;                                          //*
                                                                          //*
 // Discretionary Government Spending                                     //*
                                                                          //*
@@ -223,7 +223,7 @@ sstar = 0;
 
 ((expg-h*beta)*(expg-h))*lambda = ((expg-h*beta*rhob)*(expg-h)/((1-rhob)*(expg-h*beta*rhob)*(expg-h)/(expg*h+expg^2+beta*h^2)))*b + ((beta*h*expg*rhoz-h*expg))*z - ((expg^2+beta*h^2))*c + (beta*h*expg)*c(+1) + (expg*h)*c(-1) + ((beta*h*expg*rhomiu-h*expg)*alpha/(1-alpha))*miu;
 
-((expg-h*beta)*(expg-h))*lambdastar = ((expg-h*beta*rhob)*(expg-h)/((1-rhob)*(expg-h*beta*rhob)*(expg-h)/(expg*h+expg^2+beta*h^2)))*b + ((beta*h*expg*rhoz-h*expg))*z - ((expg^2+beta*h^2))*cstar + (beta*h*expg)*cstar(+1) + (expg*h)*cstar(-1) + ((beta*h*expg*rhomiu-h*expg)*alpha/(1-alpha))*miu; 
+((expg-h*beta)*(expg-h))*lambdastar = ((expg-h*beta*rhob)*(expg-h)/((1-rhob)*(expg-h*beta*rhob)*(expg-h)/(expg*h+expg^2+beta*h^2)))*b + ((beta*h*expg*rhoz-h*expg))*z - ((expg^2+beta*h^2))*cstar + (beta*h*expg)*cstar(+1) + (expg*h)*cstar(-1) + ((beta*h*expg*rhomiu-h*expg)*alpha/(1-alpha))*miu;
 
 // eq 11 and 12, Euler equation (lambda and lambdastar)
 // ------------------------------------------------------------------------
@@ -245,18 +245,18 @@ mpkstar = chi*ustar;
 0 = (1/(Sadj*expgmiu^2))*q + (1/(Sadj*expgmiu^2))*upsilon - (1+beta)*i - (1-beta*rhoz)*z + beta*i(+1) + i(-1)  - (((1-beta*rhomiu))*(alpha/(1-alpha)+1))*miu;
 
 0 = (1/(Sadj*expgmiu^2))*qstar + (1/(Sadj*expgmiu^2))*upsilon - (1+beta)*istar - (1-beta*rhoz)*z + beta*istar(+1) + istar(-1) - (((1-beta*rhomiu))*(alpha/(1-alpha)+1))*miu;
- 
+
 // eq 19 and 20, capital input (k and kstar)
 // ------------------------------------------------------------------------
 
-k = u - z + kbar(-1) -(alpha/(1-alpha)+1)*miu; 
+k = u - z + kbar(-1) -(alpha/(1-alpha)+1)*miu;
 
 kstar = ustar - z + kbarstar(-1) -(alpha/(1-alpha)+1)*miu;
 
 // eq 21 and 22, capital accumulation (kbar and kbarstar)
 // ------------------------------------------------------------------------
 
-kbar = ((1-(1-delta)*exp(-gamma-gammamiu)))*upsilon + ((1-(1-delta)*exp(-gamma-gammamiu)))*i + ((1-delta)*exp(-gamma-gammamiu))*kbar(-1) - ((1-delta)*exp(-gamma-gammamiu))*z - (((1-delta)*exp(-gamma-gammamiu))*(alpha/(1-alpha)+1))*miu; 
+kbar = ((1-(1-delta)*exp(-gamma-gammamiu)))*upsilon + ((1-(1-delta)*exp(-gamma-gammamiu)))*i + ((1-delta)*exp(-gamma-gammamiu))*kbar(-1) - ((1-delta)*exp(-gamma-gammamiu))*z - (((1-delta)*exp(-gamma-gammamiu))*(alpha/(1-alpha)+1))*miu;
 
 kbarstar = ((1-(1-delta)*exp(-gamma-gammamiu)))*upsilon + ((1-(1-delta)*exp(-gamma-gammamiu)))*istar + ((1-delta)*exp(-gamma-gammamiu))*kbarstar(-1) - ((1-delta)*exp(-gamma-gammamiu))*z - (((1-delta)*exp(-gamma-gammamiu))*(alpha/(1-alpha)+1))*miu;
 
@@ -270,7 +270,7 @@ wgapstar = 0;
 // eq 25 and 26, wage gap (wgap and wgapstar)
 // ------------------------------------------------------------------------
 
-wgap = w -(1/((1-rhob)*(expg-h*beta*rhob)*(expg-h)/(expg*h+expg^2+beta*h^2)))*b - niu*L + lambda; 
+wgap = w -(1/((1-rhob)*(expg-h*beta*rhob)*(expg-h)/(expg*h+expg^2+beta*h^2)))*b - niu*L + lambda;
 
 wgapstar = wstar - (1/((1-rhob)*(expg-h*beta*rhob)*(expg-h)/(expg*h+expg^2+beta*h^2)))*b - niu*Lstar + lambdastar;
 
@@ -298,9 +298,9 @@ gdpstar = ystar - (kss*Rkss/yss)*ustar;
 
 Rk(+1) = lambda - lambda(+1) + rhoz*z +(rhomiu*alpha/(1-alpha))*miu;
 
-Rkstar(+1) = lambdastar - lambdastar(+1) - rhoz*z + (rhomiu*alpha/(1-alpha))*miu; 
+Rkstar(+1) = lambdastar - lambdastar(+1) - rhoz*z + (rhomiu*alpha/(1-alpha))*miu;
 
-// Definition of realized return 
+// Definition of realized return
 // ------------------------------------------------------------------------
 
 Rk = (beta*exp(-gamma-gammamiu)*(1-delta))*q + ((1-beta*exp(-gamma-gammamiu)*(1-delta)))*mpk - q(-1);
@@ -314,7 +314,7 @@ Rd = R - p(+1);
 
 Rdstar = Rstar;
 
-// eq 32 - 40, exogenous shocks 
+// eq 32 - 40, exogenous shocks
 // ------------------------------------------------------------------------
 
 z = rhoz*z(-1) + zs;
@@ -326,7 +326,7 @@ ARMAlambdaw = lambdaws;
 miu = rhomiu*miu(-1) + mius;
 
 lambdap = rholambdap*lambdap(-1) + ARMAlambdap - rhoARMAlambdap*ARMAlambdap(-1);
-ARMAlambdap = lambdaps;   
+ARMAlambdap = lambdaps;
 
 b = rhob*b(-1) + bs;
 mp = Rs;
@@ -348,5 +348,5 @@ var mius        =	0.629^2	;
 
 end;
 
-//stoch_simul(irf=15, ar=10); 
+//stoch_simul(irf=15, ar=10);
 

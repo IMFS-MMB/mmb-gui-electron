@@ -1,7 +1,7 @@
 //**************************************************************************
 // A New Comparative Approach to Macroeconomic Modeling and Policy Analysis
 //
-// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and 
+// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and
 // Maik Wolters
 //
 // Working Paper, 2009
@@ -9,19 +9,19 @@
 
 // Model: US_FV10
 
-// Model replication coded by: Philipp Lieberknecht, 
+// Model replication coded by: Philipp Lieberknecht,
 //                             e_mail: philipp.lieberknecht@gmail.com
 // based on code by Benjamin Born and Johannes Pfeifer, Copyright (C) 2013-2016 Dynare Team
 // Last edited: 17/01/2018
 
 // Further references:
-// Jesús Fernández-Villaverde, 2010.
-// "The econometrics of DSGE models" 
+// Jesï¿½s Fernï¿½ndez-Villaverde, 2010.
+// "The econometrics of DSGE models"
 // SERIEs: Journal of the Spanish Economic Association, Springer;Spanish Economic Association
 // vol. 1(1), pages 3-49, March.
 //**************************************************************************
 
-var 
+var
     c       //consumption
     lambda  //Lagrange multiplier
     R       //Nominal Interest rate
@@ -73,25 +73,25 @@ var
 varexo epsd epsphi epsmu_I epsA  // epsm
 
 //**************************************************************************
-// Modelbase Shocks                                                      //*       
+// Modelbase Shocks                                                      //*
        interest_; //fiscal_                                             //*
 //**************************************************************************
 
 predetermined_variables k kf;
-parameters 
+parameters
 
 //**************************************************************************
-// Modelbase Parameters                                                  
-                                                                         
-        cofintintb1 cofintintb2 cofintintb3 cofintintb4                  
-        cofintinf0 cofintinfb1 cofintinfb2 cofintinfb3 cofintinfb4       
-        cofintinff1 cofintinff2 cofintinff3 cofintinff4                  
-        cofintout cofintoutb1 cofintoutb2 cofintoutb3 cofintoutb4        
-        cofintoutf1 cofintoutf2 cofintoutf3 cofintoutf4   
-        cofintoutp cofintoutpb1 cofintoutpb2 cofintoutpb3 cofintoutpb4   
-        cofintoutpf1 cofintoutpf2 cofintoutpf3 cofintoutpf4                           
-        std_r_ std_r_quart coffispol           
-//************************************************************************** 
+// Modelbase Parameters
+
+        cofintintb1 cofintintb2 cofintintb3 cofintintb4
+        cofintinf0 cofintinfb1 cofintinfb2 cofintinfb3 cofintinfb4
+        cofintinff1 cofintinff2 cofintinff3 cofintinff4
+        cofintout cofintoutb1 cofintoutb2 cofintoutb3 cofintoutb4
+        cofintoutf1 cofintoutf2 cofintoutf3 cofintoutf4
+        cofintoutp cofintoutpb1 cofintoutpb2 cofintoutpb3 cofintoutpb4
+        cofintoutpf1 cofintoutpf2 cofintoutpf3 cofintoutpf4
+        std_r_ std_r_quart coffispol
+//**************************************************************************
            h            //consumption habits
            betta        //discount factor
            gammma1      //capital utilization, linear term
@@ -116,7 +116,7 @@ parameters
            rhod         //autocorrelation preference shock
            rhophi       //autocorrelation labor disutility shock
            Lambdamu  	//steady state growth rate of investmentment-specific technology
-           LambdaA      //steady state neutral technology growth 
+           LambdaA      //steady state neutral technology growth
            Lambdax      //steady state growth rate of investment
            LambdaYd     //steady state growth rate of output
            sigma_d      //standard deviation preference shock
@@ -126,107 +126,107 @@ parameters
            sigma_m;      //standard deviation preference shock
 
 //Fixed parameters, taken from FV(2010), Table 2, p. 37
-delta       = 0.025;  
-epsilon     = 10;   
-eta         = 10;       
-Phi         = 0; 
+delta       = 0.025;
+epsilon     = 10;
+eta         = 10;
+Phi         = 0;
 gammma2     = 0.001;
 //Estimated parameters, taken from FV(2010), Table 3, p. 38, median estimate parameters
-betta       = 0.998; 
-h           = 0.97; 
+betta       = 0.998;
+h           = 0.97;
 varpsi      = 8.92;
 gammma      = 1.17;
 kappa       = 9.51;
 alppha      = 0.21;
-thetap      = 0.82;   
-chi         = 0.63; 
-thetaw      = 0.68;  
-chiw        = 0.62; 
-gammmaR     = 0.77; 
-gammmay     = 0.19; 
-gammmaPI    = 1.29; 
-PIbar       = 1.01;  
-rhod        = 0.12; 
-rhophi      = 0.93; 
-sigma_A     = exp(-3.97); 
-sigma_d     = exp(-1.51); 
-sigma_phi   = exp(-2.36);  
-sigma_mu    = exp(-5.43); 
-sigma_m     = exp(-5.85); 
-Lambdamu    = 3.4e-3; 
-LambdaA     = 2.8e-3; 
+thetap      = 0.82;
+chi         = 0.63;
+thetaw      = 0.68;
+chiw        = 0.62;
+gammmaR     = 0.77;
+gammmay     = 0.19;
+gammmaPI    = 1.29;
+PIbar       = 1.01;
+rhod        = 0.12;
+rhophi      = 0.93;
+sigma_A     = exp(-3.97);
+sigma_d     = exp(-1.51);
+sigma_phi   = exp(-2.36);
+sigma_mu    = exp(-5.43);
+sigma_m     = exp(-5.85);
+Lambdamu    = 3.4e-3;
+LambdaA     = 2.8e-3;
 
 
 //**************************************************************************
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           
-cd('..');                                                                
-load policy_param.mat;                                                   
-for i=1:33                                                               
-    deep_parameter_name = M_.param_names(i,:);                           
-    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])                  
-end                                                                      
-cd(thispath);  
+thispath = pwd;
+cd('..');
+load policy_param.mat;
+for i=1:33
+    deep_parameter_name = M_.param_names(i,:);
+    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
+end
+cd(thispath);
     std_r_=100;
-                                                                         
+
 // Definition of Discretionary Fiscal Policy Parameter                   //*
 coffispol = 1;                                                           //*
 
 //**************************************************************************
 
 
-model; 
+model;
 
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables//*
-                                                                         //* 
-interest     = 400*(log(R) - log(steady_state(R)));                      //* 
-inflation    = 100*(log(PI) + log(PI(-1)) + log(PI(-2)) + log(PI(-3)) - 4*log(steady_state(PI)));   //* 
-inflationq   = 400*(log(PI) - log(steady_state(PI)));                    //*     
-outputgap    = 100*(log(yd) - log(ydf) - (log(steady_state(yd)) - log(steady_state(ydf))));  
+                                                                         //*
+interest     = 400*(log(R) - log(steady_state(R)));                      //*
+inflation    = 100*(log(PI) + log(PI(-1)) + log(PI(-2)) + log(PI(-3)) - 4*log(steady_state(PI)));   //*
+inflationq   = 400*(log(PI) - log(steady_state(PI)));                    //*
+outputgap    = 100*(log(yd) - log(ydf) - (log(steady_state(yd)) - log(steady_state(ydf))));
 output       = 100*(log(yd) - log(steady_state(yd)));                    //*
 //fispol       = epsG;                                                   //*
 //**************************************************************************
 
-//**************************************************************************                                                                    
+//**************************************************************************
 // Policy Rule                                                           //*
                                                                          //*
 // Monetary Policy                                                       //*
                                                                         //*
-interest =   cofintintb1*interest(-1)                                    //* 
-           + cofintintb2*interest(-2)                                    //* 
-           + cofintintb3*interest(-3)                                    //* 
-           + cofintintb4*interest(-4)                                    //* 
-           + cofintinf0*inflationq                                       //* 
-           + cofintinfb1*inflationq(-1)                                  //* 
-           + cofintinfb2*inflationq(-2)                                  //* 
-           + cofintinfb3*inflationq(-3)                                  //* 
-           + cofintinfb4*inflationq(-4)                                  //* 
-           + cofintinff1*inflationq(+1)                                  //* 
-           + cofintinff2*inflationq(+2)                                  //* 
-           + cofintinff3*inflationq(+3)                                  //* 
-           + cofintinff4*inflationq(+4)                                  //* 
-           + cofintout*outputgap 	                                     //* 
-           + cofintoutb1*outputgap(-1)                                   //* 
-           + cofintoutb2*outputgap(-2)                                   //* 
-           + cofintoutb3*outputgap(-3)                                   //* 
-           + cofintoutb4*outputgap(-4)                                   //* 
-           + cofintoutf1*outputgap(+1)                                   //* 
-           + cofintoutf2*outputgap(+2)                                   //* 
-           + cofintoutf3*outputgap(+3)                                   //* 
-           + cofintoutf4*outputgap(+4)                                   //* 
-           + cofintoutp*output 	                                         //* 
-           + cofintoutpb1*output(-1)                                     //* 
-           + cofintoutpb2*output(-2)                                     //* 
-           + cofintoutpb3*output(-3)                                     //* 
-           + cofintoutpb4*output(-4)                                     //* 
-           + cofintoutpf1*output(+1)                                     //* 
-           + cofintoutpf2*output(+2)                                     //* 
-           + cofintoutpf3*output(+3)                                     //* 
-           + cofintoutpf4*output(+4)                                     //* 
-           + std_r_/100 *interest_;                                      //* 
+interest =   cofintintb1*interest(-1)                                    //*
+           + cofintintb2*interest(-2)                                    //*
+           + cofintintb3*interest(-3)                                    //*
+           + cofintintb4*interest(-4)                                    //*
+           + cofintinf0*inflationq                                       //*
+           + cofintinfb1*inflationq(-1)                                  //*
+           + cofintinfb2*inflationq(-2)                                  //*
+           + cofintinfb3*inflationq(-3)                                  //*
+           + cofintinfb4*inflationq(-4)                                  //*
+           + cofintinff1*inflationq(+1)                                  //*
+           + cofintinff2*inflationq(+2)                                  //*
+           + cofintinff3*inflationq(+3)                                  //*
+           + cofintinff4*inflationq(+4)                                  //*
+           + cofintout*outputgap 	                                     //*
+           + cofintoutb1*outputgap(-1)                                   //*
+           + cofintoutb2*outputgap(-2)                                   //*
+           + cofintoutb3*outputgap(-3)                                   //*
+           + cofintoutb4*outputgap(-4)                                   //*
+           + cofintoutf1*outputgap(+1)                                   //*
+           + cofintoutf2*outputgap(+2)                                   //*
+           + cofintoutf3*outputgap(+3)                                   //*
+           + cofintoutf4*outputgap(+4)                                   //*
+           + cofintoutp*output 	                                         //*
+           + cofintoutpb1*output(-1)                                     //*
+           + cofintoutpb2*output(-2)                                     //*
+           + cofintoutpb3*output(-3)                                     //*
+           + cofintoutpb4*output(-4)                                     //*
+           + cofintoutpf1*output(+1)                                     //*
+           + cofintoutpf2*output(+2)                                     //*
+           + cofintoutpf3*output(+3)                                     //*
+           + cofintoutpf4*output(+4)                                     //*
+           + std_r_/100 *interest_;                                      //*
                                                                          //*
 // Discretionary Government Spending                                     //*
                                                                          //*
@@ -265,7 +265,7 @@ mc=(1/(1-alppha))^(1-alppha)*(1/alppha)^alppha*w^(1-alppha)*r^alppha;
 yd=c+x+mu_z^(-1)*mu_I^(-1)*(gammma1*(u-1)+gammma2/2*(u-1)^2)*k;
 yd=(mu_A*mu_z^(-1)*(u*k)^alppha*ld^(1-alppha)-Phi)/vp;
 //18-20. Price and wage dispersion terms
-l=vw*ld; 
+l=vw*ld;
 vp=thetap*(PI(-1)^chi/PI)^(-epsilon)*vp(-1)+(1-thetap)*PIstar^(-epsilon);
 vw=thetaw*(w(-1)/w*mu_z^(-1)*PI(-1)^chiw/PI)^(-eta)*vw(-1)+(1-thetaw)*(PIstarw)^(-eta);
 //21. Law of motion for capital
@@ -283,7 +283,7 @@ log(phi)=rhophi*log(phi(-1))+sigma_phi*epsphi;
 //26. Investment specific technology
 log(mu_I)=Lambdamu+sigma_mu*epsmu_I;
 //27. Neutral technology
-log(mu_A)=LambdaA+sigma_A*epsA; 
+log(mu_A)=LambdaA+sigma_A*epsA;
 //28. Defininition composite technology
 mu_z=mu_A^(1/(1-alppha))*mu_I^(alppha/(1-alppha));
 

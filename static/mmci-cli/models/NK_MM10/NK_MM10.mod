@@ -1,7 +1,7 @@
 //**************************************************************************
 // A New Comparative Approach to Macroeconomic Modeling and Policy Analysis
 //
-// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and 
+// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and
 // Maik Wolters
 //
 // Working Paper, 2009
@@ -16,17 +16,17 @@
 // Last edited: 15/08/2012 by R. Beyer and N. Balz
 // Note: We have added the flexible price & wage economy to the code in order to define the output gap.
 
-var 
+var
 
 ch    % 1- household consumption
 Ce    % 2- entrepreneurial consumption
 Cb    % 3- banking consumption
 H     % 4- aggregate (composite) labour input
 Y     % 5- Output
-I     % 6- Investment 
-bigN  % 7- entrepreneurial net worth 
+I     % 6- Investment
+bigN  % 7- entrepreneurial net worth
 bigA  % 8- net worth of banking sector (bank capital)
-G     % 9- inverse of leverage 
+G     % 9- inverse of leverage
 q     % 10- relative price of capital goods
 rk    % 11- rental rate on capital
 infl  % 12 - gross rate of quarterly inflation
@@ -43,10 +43,10 @@ mc    % fraction of HH's financiel assets held as currency
 s     % marginal costs
 mgrowth % growth rate of money
 expinfl % expected rate of inflation at time t+1
-smalld  % real value of household deposits  
+smalld  % real value of household deposits
 gY   % gross rate of output growth
 totC % aggregate consumption
-u    % utilization rate on physical capital 
+u    % utilization rate on physical capital
 keff  % effective capital services
 K     % total physical capital
 Kb    % holdings of physical capital by banking sector
@@ -70,10 +70,10 @@ Cef    % 2- entrepreneurial consumption
 Cbf    % 3- banking consumption
 Hf     % 4- aggregate (composite) labour input
 Yf     % 5- Output
-If     % 6- Investment 
-bigNf  % 7- entrepreneurial net worth 
+If     % 6- Investment
+bigNf  % 7- entrepreneurial net worth
 bigAf  % 8- net worth of banking sector (bank capital)
-Gf     % 9- inverse of leverage 
+Gf     % 9- inverse of leverage
 qf     % 10- relative price of capital goods
 rkf    % 11- rental rate on capital
 smalldf
@@ -88,8 +88,8 @@ Rdf    % nominal interest rate in flex price economy
 sf     % marginal costs
 TLf    % Aggregate bank lending in the economy
 gYf   % gross rate of output growth
-totCf 
-uf    % utilization rate on physical capital 
+totCf
+uf    % utilization rate on physical capital
 kefff  % effective capital services
 Kf     % total physical capital
 Kbf    % holdings of physical capital by banking sector
@@ -100,9 +100,9 @@ wtildef
 
 
 //**************************************************************************
-// Modelbase Variables                                                   //*    
+// Modelbase Variables                                                   //*
         interest inflation inflationq output outputgap;                  //*
-//**************************************************************************  
+//**************************************************************************
 
 
 
@@ -111,12 +111,12 @@ techShock  % innovation to productivity process
 
 
 //**************************************************************************
-// Modelbase Shocks                                                      //*     
+// Modelbase Shocks                                                      //*
   interest_ ;                                                            //*
 //**************************************************************************
 
 parameters
-//************************************************************************** 
+//**************************************************************************
 // Modelbase Parameters                                                  //*
                                                                          //*
         cofintintb1 cofintintb2 cofintintb3 cofintintb4                  //*
@@ -220,8 +220,8 @@ bigR = 1.2118;
 mu = 0.025;
 mu_ss = 0.025;
 
-% One can shut off the bank channel by putting mu = 0. In order to do so one 
-% in addition has to disable the control loop in steady_.m that controls whether 
+% One can shut off the bank channel by putting mu = 0. In order to do so one
+% in addition has to disable the control loop in steady_.m that controls whether
 % the steady state really solves the model.
 
 
@@ -256,15 +256,15 @@ sigmabk = 0.000001;
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           
-cd('..');                                                                
-load policy_param.mat;                                                   
-for i=1:33                                                               
-    deep_parameter_name = M_.param_names(i,:);                           
-    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])                  
-end                                                                      
-cd(thispath);    
-std_r_ = 100;                                                            //* 
+thispath = pwd;
+cd('..');
+load policy_param.mat;
+for i=1:33
+    deep_parameter_name = M_.param_names(i,:);
+    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
+end
+cd(thispath);
+std_r_ = 100;                                                            //*
                                                                          //*
 // Definition of Discretionary Fiscal Policy Parameter                   //*
 %coffispol;                                                              //*
@@ -280,7 +280,7 @@ std_r_ = 100;                                                            //*
 % steady-state computations:
 
 
-kk1 = delta*theta_k/(alphag*bigR*(1/bet-1+delta)); 
+kk1 = delta*theta_k/(alphag*bigR*(1/bet-1+delta));
 betatemp  = 1/bet;
 
 infl_temp = pi_ss;
@@ -290,13 +290,13 @@ qtemp = kk1*(alphag*tau_b*mu*betatemp/delalpha-(1+mu+alphag*mu/(Rd_temp*delalpha
 qtemp = qtemp/(alphag*smallb*kk1/(Rd_temp*delalpha)-alphag*bigR*kk1/Rd_temp-theta_e-theta_b-bby-alphag*tau_e*smallb*kk1*betatemp/delalpha);
 
 Gtemp = 1+mu-(qtemp*alphag/Rd_temp)*(bigR-mu/(qtemp*delalpha)-smallb/delalpha);
-   
+
 IY = kk1/qtemp;
 
-KY = alphag*bigR*IY/delta; 
+KY = alphag*bigR*IY/delta;
 
 KeY = tau_e*alphag*smallb*IY/delalpha;
-    
+
 KbY = tau_b*alphag*mu*IY/(qtemp*delalpha);
 
 KhY = KY - KeY - KbY;
@@ -328,16 +328,16 @@ rktemp = (1/mark_p)*theta_k*(Ktemp^(theta_k-1))*(Htemp^theta_h)*(eta_e^theta_e)*
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Following Fernandez Villaverde et al. (2010) as well as others,
-% set utilisation of capital as 
+% set utilisation of capital as
 %upsilon(u) = chi_1 (u - 1) + 0.5chi_2 (u - 1)^2
 %Set parameters in a way that replicates CEE (2005)
 chi1 = rktemp;
-chi2 = sigma_a*chi1;  
+chi2 = sigma_a*chi1;
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 w_htemp = (1/mark_p)*theta_h*(Ktemp^theta_k)*(Htemp^(theta_h-1))*(eta_e^theta_e)*(eta_b^theta_b);
-                                 
+
 w_etemp = (1/mark_p)*theta_e*(Ktemp^theta_k)*(Htemp^theta_h)*(eta_e^(theta_e-1))*(eta_b^theta_b);
 
 w_btemp = (1/mark_p)*theta_b*(Ktemp^theta_k)*(Htemp^theta_h)*(eta_e^theta_e)*(eta_b^(theta_b-1));
@@ -355,7 +355,7 @@ Cbtemp = CbY*Ytemp;
 chtemp = ChY*Ytemp/eta_h;
 
 bigAtemp = eta_b*w_btemp+(rktemp+qtemp*(1-delta))*Kbtemp+bby*Ytemp
-			
+
 bigNtemp = eta_e*w_etemp+(rktemp+qtemp*(1-delta))*Ketemp;
 
 totCtemp = Cetemp+Cbtemp+eta_h*chtemp;
@@ -363,7 +363,7 @@ totCtemp = Cetemp+Cbtemp+eta_h*chtemp;
 lamtemp = (1-bet*habit)/((1-habit)*(chtemp));
 
 smalldtemp = alphag*qtemp*( bigR - smallb/delalpha - mu/(qtemp*delalpha))*Itemp/(Rd_temp*eta_b);
-   
+
 ptemp = (Rd_temp-1)*lamtemp/ ( (Rd_temp-1)*lamtemp*eta_b*smalldtemp + eta_h*reta);
 
 mctemp = reta*ptemp/((Rd_temp-1)*lamtemp);
@@ -401,15 +401,15 @@ utemp = 1;
 // 3. Model declaration
 //---------------------------------------------------------------------
 
-model; 
- 
+model;
+
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables //*
                                                                           //*
-//interest   = (Rd^4-steady_state(Rd)^4)/(steady_state(Rd)^4)*100;  
+//interest   = (Rd^4-steady_state(Rd)^4)/(steady_state(Rd)^4)*100;
 interest = log(Rd/steady_state(Rd))*400;
-inflationq = log(infl/steady_state(infl))*400;     
-inflation = 1/4*(inflationq+inflationq(-1)+inflationq(-2)+inflationq(-3));                 
+inflationq = log(infl/steady_state(infl))*400;
+inflation = 1/4*(inflationq+inflationq(-1)+inflationq(-2)+inflationq(-3));
 //inflation  = (infl*infl(-1)*infl(-2)*infl(-3)-steady_state(infl)^4)/(steady_state(infl)^4)*100;    //*
 //inflationq = ((infl^4-steady_state(infl)^4)/steady_state(infl)^4)*100;    //*
 output     =  (log(Y)-log(steady_state(Y)))*100;                          //*
@@ -420,38 +420,38 @@ outputgap  =  (log(Y)-log(Yf))*100;                                        //*
 // Policy Rule                                                           //*
 
 
-interest =   cofintintb1*interest(-1)                                    //* 
-           + cofintintb2*interest(-2)                                    //* 
-           + cofintintb3*interest(-3)                                    //* 
-           + cofintintb4*interest(-4)                                    //* 
-           + cofintinf0*inflationq                                       //* 
-           + cofintinfb1*inflationq(-1)                                  //* 
-           + cofintinfb2*inflationq(-2)                                  //* 
-           + cofintinfb3*inflationq(-3)                                  //* 
-           + cofintinfb4*inflationq(-4)                                  //* 
-           + cofintinff1*inflationq(+1)                                  //* 
-           + cofintinff2*inflationq(+2)                                  //* 
-           + cofintinff3*inflationq(+3)                                  //* 
-           + cofintinff4*inflationq(+4)                                  //* 
-           + cofintout*outputgap 	                                     //* 
-           + cofintoutb1*outputgap(-1)                                   //* 
-           + cofintoutb2*outputgap(-2)                                   //* 
-           + cofintoutb3*outputgap(-3)                                   //* 
-           + cofintoutb4*outputgap(-4)                                   //* 
-           + cofintoutf1*outputgap(+1)                                   //* 
-           + cofintoutf2*outputgap(+2)                                   //* 
-           + cofintoutf3*outputgap(+3)                                   //* 
-           + cofintoutf4*outputgap(+4)                                   //* 
-           + cofintoutp*output 	                                         //* 
-           + cofintoutpb1*output(-1)                                     //* 
-           + cofintoutpb2*output(-2)                                     //* 
-           + cofintoutpb3*output(-3)                                     //* 
-           + cofintoutpb4*output(-4)                                     //* 
-           + cofintoutpf1*output(+1)                                     //* 
-           + cofintoutpf2*output(+2)                                     //* 
-           + cofintoutpf3*output(+3)                                     //* 
-           + cofintoutpf4*output(+4)                                     //* 
-           + std_r_ *interest_;                                          //* 
+interest =   cofintintb1*interest(-1)                                    //*
+           + cofintintb2*interest(-2)                                    //*
+           + cofintintb3*interest(-3)                                    //*
+           + cofintintb4*interest(-4)                                    //*
+           + cofintinf0*inflationq                                       //*
+           + cofintinfb1*inflationq(-1)                                  //*
+           + cofintinfb2*inflationq(-2)                                  //*
+           + cofintinfb3*inflationq(-3)                                  //*
+           + cofintinfb4*inflationq(-4)                                  //*
+           + cofintinff1*inflationq(+1)                                  //*
+           + cofintinff2*inflationq(+2)                                  //*
+           + cofintinff3*inflationq(+3)                                  //*
+           + cofintinff4*inflationq(+4)                                  //*
+           + cofintout*outputgap 	                                     //*
+           + cofintoutb1*outputgap(-1)                                   //*
+           + cofintoutb2*outputgap(-2)                                   //*
+           + cofintoutb3*outputgap(-3)                                   //*
+           + cofintoutb4*outputgap(-4)                                   //*
+           + cofintoutf1*outputgap(+1)                                   //*
+           + cofintoutf2*outputgap(+2)                                   //*
+           + cofintoutf3*outputgap(+3)                                   //*
+           + cofintoutf4*outputgap(+4)                                   //*
+           + cofintoutp*output 	                                         //*
+           + cofintoutpb1*output(-1)                                     //*
+           + cofintoutpb2*output(-2)                                     //*
+           + cofintoutpb3*output(-3)                                     //*
+           + cofintoutpb4*output(-4)                                     //*
+           + cofintoutpf1*output(+1)                                     //*
+           + cofintoutpf2*output(+2)                                     //*
+           + cofintoutpf3*output(+3)                                     //*
+           + cofintoutpf4*output(+4)                                     //*
+           + std_r_ *interest_;                                          //*
                                                                          //*
 // Discretionary Government Spending                                     //*
                                                                          //*
@@ -618,10 +618,10 @@ log_I = log(I);
 
 
 end;
-                
+
 //---------------------------------------------------------------------
-// 5. Shock declaration  
-//                       
+// 5. Shock declaration
+//
 //---------------------------------------------------------------------
 
 shocks;

@@ -1,7 +1,7 @@
 //**************************************************************************
 // A New Comparative Approach to Macroeconomic Modeling and Policy Analysis
 //
-// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and 
+// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and
 // Maik Wolters
 //
 // Working Paper, 2009
@@ -15,43 +15,43 @@
 % code last edited by Felix Strobel (21.02.2018)
 
 
-var 
+var
 //**************************************************************************
 // Modelbase Variables                                                   //*
         interest inflation inflationq outputgap output                   //*
 //**************************************************************************
 
-GG NGG Y C CY TY PI PIY MC 
-WP L R O OC OY X Q Z OMEGA A G ETA NY NC NCY 
+GG NGG Y C CY TY PI PIY MC
+WP L R O OC OY X Q Z OMEGA A G ETA NY NC NCY
 NTY NPI NN DD NPIY DELTA NMC NWP NL NR NO NOC
- NOY NX NQ NZ NOMEGA NA NETA NY_aux Y_aux NYn Yn Yn_gap 
-Y_gap NYe Ye NYfe Yfe NRn Rn NRe Re NRfe Rfe UTIL WELF ERR Z_CB 
+ NOY NX NQ NZ NOMEGA NA NETA NY_aux Y_aux NYn Yn Yn_gap
+Y_gap NYe Ye NYfe Yfe NRn Rn NRe Re NRfe Rfe UTIL WELF ERR Z_CB
 ETA_CB A_CB G_CB Yfe_CB Y_gap_CB Rfe_CB ERR_CB ERR_CBS
 EYG EPI ERE EPIC R1 R2 ERN EY EYNG
 EGG;
 
 
-varexo 
+varexo
 //**************************************************************************
-// Modelbase Shocks                                                      //*       
+// Modelbase Shocks                                                      //*
        interest_  fiscal_                                                //*
 //**************************************************************************
 
 EZ, EOMEGA, EA, EG, EERR;
 
-parameters 
+parameters
 //**************************************************************************
-// Modelbase Parameters                                                  
-                                                                         
-        cofintintb1 cofintintb2 cofintintb3 cofintintb4                  
-        cofintinf0 cofintinfb1 cofintinfb2 cofintinfb3 cofintinfb4       
-        cofintinff1 cofintinff2 cofintinff3 cofintinff4                  
-        cofintout cofintoutb1 cofintoutb2 cofintoutb3 cofintoutb4        
-        cofintoutf1 cofintoutf2 cofintoutf3 cofintoutf4   
-        cofintoutp cofintoutpb1 cofintoutpb2 cofintoutpb3 cofintoutpb4   
-        cofintoutpf1 cofintoutpf2 cofintoutpf3 cofintoutpf4                           
-        std_r_ std_r_quart coffispol           
-//************************************************************************** 
+// Modelbase Parameters
+
+        cofintintb1 cofintintb2 cofintintb3 cofintintb4
+        cofintinf0 cofintinfb1 cofintinfb2 cofintinfb3 cofintinfb4
+        cofintinff1 cofintinff2 cofintinff3 cofintinff4
+        cofintout cofintoutb1 cofintoutb2 cofintoutb3 cofintoutb4
+        cofintoutf1 cofintoutf2 cofintoutf3 cofintoutf4
+        cofintoutp cofintoutpb1 cofintoutpb2 cofintoutpb3 cofintoutpb4
+        cofintoutpf1 cofintoutpf2 cofintoutpf3 cofintoutpf4
+        std_r_ std_r_quart coffispol
+//**************************************************************************
 
 scale_Y XI GAMMA KAPPA ALPHA NU PHI_HEAD PHI_CORE PHI_COMM RHO_Z RHO_OMEGA RHO_A RHO_ERR SZ SOMEGA SA SERR SERR_Z SERR_OMEGA SERR_A SERR_G ES MU EPS BETA THETA ZS AS RHO_G SG PHI_BENCH PHI_NAT PHI_EFF PHI_Y PHI_Yn PHI_Yfe Y_gapS M1_a M1_b M1_c M1 M2_a M2_b M2_c M2 PHI_MISP_a PHI_MISP_b PHI_MISP_c CORR_Z_ETA S_Z_ETA PHI_CB Z_CBS Yfe_CBS YfeS Y_gap_CBS Rfe_CBS RfeS YS NOMEGAS isexp;
 
@@ -59,16 +59,16 @@ scale_Y XI GAMMA KAPPA ALPHA NU PHI_HEAD PHI_CORE PHI_COMM RHO_Z RHO_OMEGA RHO_A
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           
-cd('..');                                                                
-load policy_param.mat;                                                   
-for i=1:33                                                               
-    deep_parameter_name = M_.param_names(i,:);                           
-    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])                  
-end                                                                      
-cd(thispath);  
+thispath = pwd;
+cd('..');
+load policy_param.mat;
+for i=1:33
+    deep_parameter_name = M_.param_names(i,:);
+    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
+end
+cd(thispath);
     std_r_=1;
-                                                                         
+
 // Definition of Discretionary Fiscal Policy Parameter                   //*
 coffispol = 1;                                                           //*
 
@@ -77,13 +77,13 @@ coffispol = 1;                                                           //*
 % Main parameters
 scale_Y=1;    %scaling of CB response to output gap
 GAMMA=0.1;    %foreign share in CPI
-XI=1-GAMMA;   
+XI=1-GAMMA;
 ALPHA = 0.1;  %share of commodity in production
 NU    = 0.5;  %elasticity of labor
 EPS   = 7.67; %elasticity of substitution (good market)
 MU    = EPS/(EPS-1);    %markup
 BETA  = 0.99; %discount factor
-THETA = 0.75; %calvo probability  
+THETA = 0.75; %calvo probability
 KAPPA = (1-THETA)/THETA*(1-BETA*THETA);
 
 %Monetary policy parameters; reactions to headline inflation, core inflation,
@@ -98,7 +98,7 @@ PHI_Y     = 0.5*scale_Y;
 
 PHI_CB    = 0; %=1 for monetary policy misperception
 
-%Select model based on natural rate and output gap (benchmark, natural, 
+%Select model based on natural rate and output gap (benchmark, natural,
 %efficient) based on equations 3.2 to 3.9
 
 PHI_BENCH = 0;
@@ -114,18 +114,18 @@ ES  = 0.01;
 % Parameters shocks
 %AR components
 RHO_Z 	   = 0.5*0+0.95;  %commodity productivity shock
-RHO_OMEGA  = 0.5*0+0.5;   %number of fringe exporters shock  
-RHO_A      = 0.5*0+0.5;   %TFP process (commodity importer)   
+RHO_OMEGA  = 0.5*0+0.5;   %number of fringe exporters shock
+RHO_A      = 0.5*0+0.5;   %TFP process (commodity importer)
 RHO_G      = 0.5;         %Consumers' preference shock (commodity importer)
 RHO_GG      = 0.5;        %Gov. speding (commodity importer)
-RHO_ERR    = 0.5;         %Mon. policy shock (commodity importer)  
+RHO_ERR    = 0.5;         %Mon. policy shock (commodity importer)
 %standard deviations and autocorrelations
 SZ   	   = 0.01;
 SOMEGA     = 0.01;
 SA         = 0.01;
 SG         = 0.01;
 SERR       = 0.01;
-SERR_Z     = -0.2*0; 
+SERR_Z     = -0.2*0;
 SERR_OMEGA = -0.2*0;
 SERR_A     = -0.2*0;
 SERR_G     = -0.2*0;
@@ -136,7 +136,7 @@ SERR_G     = -0.2*0;
 PHI_MISP_a = 0;
 PHI_MISP_b = 0;
 PHI_MISP_c = 0;
- 
+
 CORR_Z_ETA = 0.5530*0+0.5;        % : corr(zeta,eta)
 S_Z_ETA    = 1.533*0+50*0+0.5;    % : sd_z/sd_eta
 
@@ -150,7 +150,7 @@ M1_c = (NETA/(1-NETA)*CORR_Z_ETA - S_Z_ETA)*S_Z_ETA/(S_Z_ETA^2-2*NETA/(1-NETA)*C
 M2_c = (NETA/(1-NETA)/S_Z_ETA - CORR_Z_ETA)*S_Z_ETA/(S_Z_ETA^2-2*NETA/(1-NETA)*CORR_Z_ETA*S_Z_ETA+(NETA/(1-NETA))^2)*0+1/2;
 
 M1 = M1_a*PHI_MISP_a + M1_b*PHI_MISP_b + M1_c*PHI_MISP_c; % M matrix
-M2 = M2_a*PHI_MISP_a + M2_b*PHI_MISP_b + M2_c*PHI_MISP_c;  
+M2 = M2_a*PHI_MISP_a + M2_b*PHI_MISP_b + M2_c*PHI_MISP_c;
 
 % Steady state values
 % These parameters are defined in the steady state file
@@ -168,53 +168,53 @@ NOMEGAS = NOMEGA;
 model;
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables//*
-                                                                        //* 
-interest     = 4*(R+log(BETA));                                              //* 
-inflation    = PI+PI(-1)+PI(-2)+PI(-3);                                 //* 
-inflationq   = 4*PI;                                                    //* 
-outputgap    = Yn_gap;                                                     //* 
-output       = Y-log(0.671490104190072);                                    //* 
+                                                                        //*
+interest     = 4*(R+log(BETA));                                              //*
+inflation    = PI+PI(-1)+PI(-2)+PI(-3);                                 //*
+inflationq   = 4*PI;                                                    //*
+outputgap    = Yn_gap;                                                     //*
+output       = Y-log(0.671490104190072);                                    //*
 
 //**************************************************************************
 
 %R PI Y Y_gap
 //Actual rate (uses only one of the two)
 %R=isexp*R2+(1-isexp)*R1+ interest_;
-//**************************************************************************                                                                    
+//**************************************************************************
 // Monetary Policy                                                        //*
                                                                           //*
- interest =   cofintintb1*interest(-1)                                    //* 
-            + cofintintb2*interest(-2)                                    //* 
-            + cofintintb3*interest(-3)                                    //* 
-            + cofintintb4*interest(-4)                                    //* 
-            + cofintinf0*inflationq                                       //* 
-            + cofintinfb1*inflationq(-1)                                  //* 
-            + cofintinfb2*inflationq(-2)                                  //* 
-            + cofintinfb3*inflationq(-3)                                  //* 
-            + cofintinfb4*inflationq(-4)                                  //* 
-            + cofintinff1*inflationq(+1)                                  //* 
-            + cofintinff2*inflationq(+2)                                  //* 
-            + cofintinff3*inflationq(+3)                                  //* 
-            + cofintinff4*inflationq(+4)                                  //* 
-            + cofintout*outputgap 	                                     //* 
-            + cofintoutb1*outputgap(-1)                                   //* 
-            + cofintoutb2*outputgap(-2)                                   //* 
-            + cofintoutb3*outputgap(-3)                                   //* 
-            + cofintoutb4*outputgap(-4)                                   //* 
-            + cofintoutf1*outputgap(+1)                                   //* 
-            + cofintoutf2*outputgap(+2)                                   //* 
-            + cofintoutf3*outputgap(+3)                                   //* 
+ interest =   cofintintb1*interest(-1)                                    //*
+            + cofintintb2*interest(-2)                                    //*
+            + cofintintb3*interest(-3)                                    //*
+            + cofintintb4*interest(-4)                                    //*
+            + cofintinf0*inflationq                                       //*
+            + cofintinfb1*inflationq(-1)                                  //*
+            + cofintinfb2*inflationq(-2)                                  //*
+            + cofintinfb3*inflationq(-3)                                  //*
+            + cofintinfb4*inflationq(-4)                                  //*
+            + cofintinff1*inflationq(+1)                                  //*
+            + cofintinff2*inflationq(+2)                                  //*
+            + cofintinff3*inflationq(+3)                                  //*
+            + cofintinff4*inflationq(+4)                                  //*
+            + cofintout*outputgap 	                                     //*
+            + cofintoutb1*outputgap(-1)                                   //*
+            + cofintoutb2*outputgap(-2)                                   //*
+            + cofintoutb3*outputgap(-3)                                   //*
+            + cofintoutb4*outputgap(-4)                                   //*
+            + cofintoutf1*outputgap(+1)                                   //*
+            + cofintoutf2*outputgap(+2)                                   //*
+            + cofintoutf3*outputgap(+3)                                   //*
             + cofintoutf4*outputgap(+4)                                   //*
-            + cofintoutp*output 	                                         //* 
-            + cofintoutpb1*output(-1)                                     //* 
-            + cofintoutpb2*output(-2)                                     //* 
-            + cofintoutpb3*output(-3)                                     //* 
-            + cofintoutpb4*output(-4)                                     //* 
-            + cofintoutpf1*output(+1)                                     //* 
-            + cofintoutpf2*output(+2)                                     //* 
-            + cofintoutpf3*output(+3)                                     //* 
-            + cofintoutpf4*output(+4)                                     //* 
-            + std_r_ *interest_;                                          //* 
+            + cofintoutp*output 	                                         //*
+            + cofintoutpb1*output(-1)                                     //*
+            + cofintoutpb2*output(-2)                                     //*
+            + cofintoutpb3*output(-3)                                     //*
+            + cofintoutpb4*output(-4)                                     //*
+            + cofintoutpf1*output(+1)                                     //*
+            + cofintoutpf2*output(+2)                                     //*
+            + cofintoutpf3*output(+3)                                     //*
+            + cofintoutpf4*output(+4)                                     //*
+            + std_r_ *interest_;                                          //*
 
 // Discretionary Government Spending                 ;                    //*
 EGG    = coffispol*fiscal_;
@@ -224,7 +224,7 @@ EGG    = coffispol*fiscal_;
 % Aggregate demand
 
 //TYS*(TY+Y) = CS*C + QS*OYS*(Q+OY)+G;
-NTY*NY  = (NC + NQ*NOY)*NGG; 
+NTY*NY  = (NC + NQ*NOY)*NGG;
 
 //Euler condition (commodity importer)
 //C - C(+1)  = -(R-PI(+1));
@@ -251,7 +251,7 @@ DD = NY/NC + THETA*BETA*(NPIY(+1)^(EPS-1)*DD(+1));
 NN = MU*NY/NC*NMC + THETA*BETA*(NPIY(+1)^(EPS)*NN(+1));
 THETA*(NPIY)^(EPS-1) = 1-(1-THETA)*(NN/DD)^(1-EPS);
 
-DELTA = (1-THETA)*(NN/DD)^(-EPS) + THETA*DELTA(-1)*(NPIY)^EPS; 
+DELTA = (1-THETA)*(NN/DD)^(-EPS) + THETA*DELTA(-1)*(NPIY)^EPS;
 
 //Marginal cost
 //MC = (1-ALPHA)*WP + ALPHA*Q-A;

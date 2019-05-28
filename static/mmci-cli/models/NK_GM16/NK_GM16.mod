@@ -1,7 +1,7 @@
 // Model: NK_GM16
 
 // Further references:
-// Galí, Jordi, and Tommaso Monacelli (2016) “Understanding the Gains from Wage Flexibility: The Exchange Rate Connection"
+// Galï¿½, Jordi, and Tommaso Monacelli (2016) ï¿½Understanding the Gains from Wage Flexibility: The Exchange Rate Connection"
 // AMERICAN ECONOMIC REVIEW VOL. 106, NO. 12, (pp. 3829-68)
 
 // The code has been provided by the authors.
@@ -11,29 +11,29 @@
 
 //--------------------------------------------------------------------------
 // 1. Defining variables
-//-------------------------------------------------------------------------- 
+//--------------------------------------------------------------------------
 
 // variables are in log deviations from respective steady states
-var 
+var
 y         // output
 c         // consumtion
-s         // terms of trade (TOT) in SOE  
+s         // terms of trade (TOT) in SOE
 z         // exogenous preference shifter
-zx1 
+zx1
 zx2    //  Exogenous shocks that are defined by the differential monetary policy responses they elicit from the (foreign) central bank
 i         // nominal interest rate in SOE
 dpc        // CPI inflation in SOE
 e         // nominal exchange rate in SOE
 p        // domestic price level
 n         // labor
-a         // productivity in SOE 
+a         // productivity in SOE
 dp       // domestic inflation in SOE
 t       // labor tax
 wp     // real wage
 dw       // wage inflation
 w         // nominal wages
 pc         // price level in SOE
-r       // real interest rate                                
+r       // real interest rate
 de
 ygap // gaps
 wgap
@@ -47,26 +47,26 @@ cn
 nn
 ne
 wpn
- 
+
 
 //**************************************************************************
 // Modelbase Variables                                                   //*
-        interest inflation inflationq  output outputgap;          //* 
+        interest inflation inflationq  output outputgap;          //*
 //**************************************************************************
 
 
-                                        
+
 // exogenous variables
 varexo ez ea ezx1 ezx2 et
 
 //**************************************************************************
-// Modelbase Shocks                                                      //*   
+// Modelbase Shocks                                                      //*
        interest_;                                                 //*
 //**************************************************************************
-                                   
+
 parameters
 
-//************************************************************************** 
+//**************************************************************************
 // Modelbase Parameters                                                  //*
                                                                          //*
         cofintintb1 cofintintb2 cofintintb3 cofintintb4                  //*
@@ -91,34 +91,34 @@ phiy = 0 ;
 //phip =1 ;     // domestic inflation targeting
 //game = 1 ;
 phi = 2.22 ;
-alf = 0.26 ;   
-bet = 0.99 ; 
+alf = 0.26 ;
+bet = 0.99 ;
 nu = 0.3 ;               % openness
 epsw = 1/(1-exp(-phi*0.118)) ;        % labor demand elasticity (consistent with u = 11.8%;  phi=2,epsw=2.24 )
-                     
+
 epsp = 3.85 ;           % goods demand elasticity
 
 lamp   =   ((1-bet*thep)*(1-thep)/thep)*((1-alf)/(1-alf+alf*epsp)) ;
 lamw   =   (1-bet*thew)*(1-thew)/(thew*(1+epsw*phi)) ;
 
-rhoz =  0.9 ;   
-rhoa =  0.9 ;       
-rhozx1 =  0.9 ;      
-rhozx2 =  0.9 ;      
-rhot =  0.9 ;   
+rhoz =  0.9 ;
+rhoa =  0.9 ;
+rhozx1 =  0.9 ;
+rhozx2 =  0.9 ;
+rhot =  0.9 ;
 
 //**************************************************************************
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           
-cd('..');                                                                
-load policy_param.mat;                                                   
-for i=1:33                                                               
-    deep_parameter_name = M_.param_names(i,:);                           
-    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])                  
-end                                                                      
-cd(thispath);                                                            
+thispath = pwd;
+cd('..');
+load policy_param.mat;
+for i=1:33
+    deep_parameter_name = M_.param_names(i,:);
+    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
+end
+cd(thispath);
                                                       //*
 //**************************************************************************
 
@@ -134,41 +134,41 @@ outputgap  = ygap;                                                      //*
 output = y;                                                          //*
 //**************************************************************************
 
-//**************************************************************************                                                                    
+//**************************************************************************
 // Monetary Policy                                                        //*
                                                                           //*
- interest =   cofintintb1*interest(-1)                                    //* 
-            + cofintintb2*interest(-2)                                    //* 
-            + cofintintb3*interest(-3)                                    //* 
-            + cofintintb4*interest(-4)                                    //* 
-            + cofintinf0*inflationq                                       //* 
-            + cofintinfb1*inflationq(-1)                                  //* 
-            + cofintinfb2*inflationq(-2)                                  //* 
-            + cofintinfb3*inflationq(-3)                                  //* 
-            + cofintinfb4*inflationq(-4)                                  //* 
-            + cofintinff1*inflationq(+1)                                  //* 
-            + cofintinff2*inflationq(+2)                                  //* 
-            + cofintinff3*inflationq(+3)                                  //* 
-            + cofintinff4*inflationq(+4)                                  //* 
-            + cofintout*outputgap 	                                     //* 
-            + cofintoutb1*outputgap(-1)                                   //* 
-            + cofintoutb2*outputgap(-2)                                   //* 
-            + cofintoutb3*outputgap(-3)                                   //* 
-            + cofintoutb4*outputgap(-4)                                   //* 
-            + cofintoutf1*outputgap(+1)                                   //* 
-            + cofintoutf2*outputgap(+2)                                   //* 
-            + cofintoutf3*outputgap(+3)                                   //* 
+ interest =   cofintintb1*interest(-1)                                    //*
+            + cofintintb2*interest(-2)                                    //*
+            + cofintintb3*interest(-3)                                    //*
+            + cofintintb4*interest(-4)                                    //*
+            + cofintinf0*inflationq                                       //*
+            + cofintinfb1*inflationq(-1)                                  //*
+            + cofintinfb2*inflationq(-2)                                  //*
+            + cofintinfb3*inflationq(-3)                                  //*
+            + cofintinfb4*inflationq(-4)                                  //*
+            + cofintinff1*inflationq(+1)                                  //*
+            + cofintinff2*inflationq(+2)                                  //*
+            + cofintinff3*inflationq(+3)                                  //*
+            + cofintinff4*inflationq(+4)                                  //*
+            + cofintout*outputgap 	                                     //*
+            + cofintoutb1*outputgap(-1)                                   //*
+            + cofintoutb2*outputgap(-2)                                   //*
+            + cofintoutb3*outputgap(-3)                                   //*
+            + cofintoutb4*outputgap(-4)                                   //*
+            + cofintoutf1*outputgap(+1)                                   //*
+            + cofintoutf2*outputgap(+2)                                   //*
+            + cofintoutf3*outputgap(+3)                                   //*
             + cofintoutf4*outputgap(+4)                                   //*
-            + cofintoutp*output 	                                         //* 
-            + cofintoutpb1*output(-1)                                     //* 
-            + cofintoutpb2*output(-2)                                     //* 
-            + cofintoutpb3*output(-3)                                     //* 
-            + cofintoutpb4*output(-4)                                     //* 
-            + cofintoutpf1*output(+1)                                     //* 
-            + cofintoutpf2*output(+2)                                     //* 
-            + cofintoutpf3*output(+3)                                     //* 
-            + cofintoutpf4*output(+4)                                     //* 
-            + std_r_ *interest_;                                          //* 
+            + cofintoutp*output 	                                         //*
+            + cofintoutpb1*output(-1)                                     //*
+            + cofintoutpb2*output(-2)                                     //*
+            + cofintoutpb3*output(-3)                                     //*
+            + cofintoutpb4*output(-4)                                     //*
+            + cofintoutpf1*output(+1)                                     //*
+            + cofintoutpf2*output(+2)                                     //*
+            + cofintoutpf3*output(+3)                                     //*
+            + cofintoutpf4*output(+4)                                     //*
+            + std_r_ *interest_;                                          //*
 
 z   = rhoz*z(-1) + ez;                  % domestic demand shock
 a   = rhoa*a(-1) + ea;                  % technology shock
@@ -199,7 +199,7 @@ wp = w - pc ;     % consumption wage
 
 ygap = y - yn;
 ngap = n - nn;
-ngapx = n - ne; 
+ngapx = n - ne;
 sgap = s - sn;
 cgap = c - cn;
 wgap = wp - wpn;
@@ -217,7 +217,7 @@ end;
 initval;
 ngap = 0; ngapx =  0; ygap = 0; sgap = 0; cgap = 0; wgap = 0; dp = 0 ; dpc = 0 ; dw = 0; i = 0; r = 0;
 e = 0; de = 0; y = 0; n = 0; s = 0; c = 0; wpn = 0; yn = 0; nn = 0; ne = 0; sn = 0; cn = 0; a = 0; z = 0;
-t = 0; zx1 = 0; zx2 = 0; 
+t = 0; zx1 = 0; zx2 = 0;
 end;
 
 options_.noprint = 1;
@@ -227,12 +227,12 @@ shocks;
 %var ea = 0.01^2;
 %var ez = 0.01^2;
 %var ezx1 = (0.01)^2;
-%var ezx2 = (0.01)^2;  
+%var ezx2 = (0.01)^2;
 %var et = (0.01)^2;
 var ea = 1;
 var ez = 1;
 var ezx1 = 1;
-var ezx2 = 1;  
+var ezx2 = 1;
 var et = 1;
 end;
 

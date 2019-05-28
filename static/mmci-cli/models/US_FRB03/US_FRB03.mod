@@ -1,7 +1,7 @@
 //**************************************************************************
 // A New Comparative Approach to Macroeconomic Modeling and Policy Analysis
 //
-// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and 
+// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and
 // Maik Wolters
 //
 // Working Paper, 2009
@@ -15,96 +15,96 @@
 
 // Last edited: 10/09/10 by S. Schmidt
 
-// This model file contains the linearized Version of the FRB-US Model. 
+// This model file contains the linearized Version of the FRB-US Model.
 // The model equations and parameters are equal to the ones used in LWW (2003).
 // This file simulates the dynamic response of the model to specific shocks.
 
 
-var xgap2 picnia rffe drffe xgap lur fpxr dlfpxr dlfpx	pcr qec ec qsdv ecdv 
-    ecdo eh kcd kh epd	kpd vpd	eps kps	kimt kio ex hgxemo emo fninr xgdp xp 
-    xb vpda veoa lhp lep lf leor lurnat xgpot xgdpt xgdpnr jccanr yhibnr ynicpnr 
-    ynidnr yhpntnr ypnr qpxpr dlpxp qplr plr dlpl pmor pcengr pgasr pxbr plminr 
-    pxp gftrd rgfint gfdefnr gfdbtnr gstrd	gsdbtnr trsci trssi trsib trfci 
-    rtbe rme rcar rg5es rg10es rcbes rdp lwpss fgdp dlfpc poilr trfpt trfp 
-    trspt trsp egfi egfo egfos egfl egsi egso egsl rfftay rffvar rstar rtr 
-    pitarg ptr zertay zervar zec1  lzec1 zgapc1 lzgapc1 zec2 lzec2 zgapc2 
+var xgap2 picnia rffe drffe xgap lur fpxr dlfpxr dlfpx	pcr qec ec qsdv ecdv
+    ecdo eh kcd kh epd	kpd vpd	eps kps	kimt kio ex hgxemo emo fninr xgdp xp
+    xb vpda veoa lhp lep lf leor lurnat xgpot xgdpt xgdpnr jccanr yhibnr ynicpnr
+    ynidnr yhpntnr ypnr qpxpr dlpxp qplr plr dlpl pmor pcengr pgasr pxbr plminr
+    pxp gftrd rgfint gfdefnr gfdbtnr gstrd	gsdbtnr trsci trssi trsib trfci
+    rtbe rme rcar rg5es rg10es rcbes rdp lwpss fgdp dlfpc poilr trfpt trfp
+    trspt trsp egfi egfo egfos egfl egsi egso egsl rfftay rffvar rstar rtr
+    pitarg ptr zertay zervar zec1  lzec1 zgapc1 lzgapc1 zec2 lzec2 zgapc2
     lzgapc2 zsdv lzsdv zrccdv lzrccdv zec3 lzec3 zgapc3	lzgapc3	zrccdo	lzrccdo
-    zec4 lzec4 zrcch lzrcch	zvpd lzvpd zvpdl2  zxb lzxb zxbl2 zdxb lzdxb zdxbl2 
-    zpib5 lzpib5 zkimt lzkimt zlhp lzlhp zyh zyhp zyht zynid lzynid zpl lzpl 
-    zpxp lzpxp zpxpl2 zlur1 lzlur1 zlur1l2	zlur2 lzlur2 zgap05 zgap10 zgap30 
-    zpi05 zpi10 zpi30 zrff05 zrff10 zrff30 zdivgr cashfl one qecl2 qecl4 picnial2 
-    picnial4 picnial6 picnial8 picnia10 rffel2 pcl2 xgap2l2 epdl2 epsl2 dxbl1 
-    dxbl3 dxbl5 kimtl2 vpdl2 vpdl4 vpdl6  vpdl8 vpdl10 pcengrl2 pcengrl4 pcengrl6 
-    pcengrl8 pcengr10 dlepl1 dlepl3 dlepl5 dlpll2 dlpxpl2 pmorl2 pxbrl2 dlfpcl2 
-    dlfpxl2 egfil2 egfll2 egfol2 egsil2 egsll2 egsol2 xgapl2 fgdpl2 fgdpl4 
-    fgdpl6 pgasrl2 pcrl2 gfdbtyl2 gfdbtyl4 gsdbtyl2 gsdbtyl4 xothtl2 xothtl4 
-    xothtl6 xothtl8 xothtl10 pcf2 xgap2f2 xgap2f4 xgap2f6 picniaf2 picniaf4 
-    picniaf6 qplrf2 dlpxpf2 xbf2 ltfpt poilrs zkimtl2 zpll2 zlur2l2 pxgr yhp 
+    zec4 lzec4 zrcch lzrcch	zvpd lzvpd zvpdl2  zxb lzxb zxbl2 zdxb lzdxb zdxbl2
+    zpib5 lzpib5 zkimt lzkimt zlhp lzlhp zyh zyhp zyht zynid lzynid zpl lzpl
+    zpxp lzpxp zpxpl2 zlur1 lzlur1 zlur1l2	zlur2 lzlur2 zgap05 zgap10 zgap30
+    zpi05 zpi10 zpi30 zrff05 zrff10 zrff30 zdivgr cashfl one qecl2 qecl4 picnial2
+    picnial4 picnial6 picnial8 picnia10 rffel2 pcl2 xgap2l2 epdl2 epsl2 dxbl1
+    dxbl3 dxbl5 kimtl2 vpdl2 vpdl4 vpdl6  vpdl8 vpdl10 pcengrl2 pcengrl4 pcengrl6
+    pcengrl8 pcengr10 dlepl1 dlepl3 dlepl5 dlpll2 dlpxpl2 pmorl2 pxbrl2 dlfpcl2
+    dlfpxl2 egfil2 egfll2 egfol2 egsil2 egsll2 egsol2 xgapl2 fgdpl2 fgdpl4
+    fgdpl6 pgasrl2 pcrl2 gfdbtyl2 gfdbtyl4 gsdbtyl2 gsdbtyl4 xothtl2 xothtl4
+    xothtl6 xothtl8 xothtl10 pcf2 xgap2f2 xgap2f4 xgap2f6 picniaf2 picniaf4
+    picniaf6 qplrf2 dlpxpf2 xbf2 ltfpt poilrs zkimtl2 zpll2 zlur2l2 pxgr yhp
     gsintnr tfpnr ecnd ei fcbnr leh yht rg5e rg10e rcbe lwps egf egs ecd em
-    lprdgt qlhp qyhibnr yniinr qynidnr	qpxgr qpmor rgsint eg xg ecnia xbnr 
-    xgnr yninr yhinr tryh yhl yh pgdpr gfintnr tspnr gssrpnr wpo egfi_ egfl_ 
+    lprdgt qlhp qyhibnr yniinr qynidnr	qpxgr qpmor rgsint eg xg ecnia xbnr
+    xgnr yninr yhinr tryh yhl yh pgdpr gfintnr tspnr gssrpnr wpo egfi_ egfl_
 
 //**************************************************************************
-// Modelbase Variables                                                   //*    
+// Modelbase Variables                                                   //*
    interest inflation inflationq outputgap output fispol;                //*
 //**************************************************************************
 
-varexo 
-dlfgdp_  
-dlfpc_     
-dlfpxr_  
-dlpl_    
-dlpxp_   
-ec_      
-ecdo_    
-ecdv_    
-egsi_    
-egsl_    
-egso_    
-eh_      
-emo_     
-epd_     
-eps_     
-ex_        
-fiscal_  
-gftrd_   
-gstrd_   
+varexo
+dlfgdp_
+dlfpc_
+dlfpxr_
+dlpl_
+dlpxp_
+ec_
+ecdo_
+ecdv_
+egsi_
+egsl_
+egso_
+eh_
+emo_
+epd_
+eps_
+ex_
+fiscal_
+gftrd_
+gstrd_
 interest_
-kimt_    
-kio_     
-leor_    
-lep_     
-lf_      
-lhp_     
-lwps_    
-pcengr_  
-pcr_     
-pgasr_   
-pmor_    
-poilr_   
-ptr_     
-rcar_    
-rcbe_    
-rdp_     
-rffvar_  
-rg10e_   
-rg5e_    
-rgfint_  
-rme_     
-rtbe_    
-rtr_     
-trfci_   
-trfp_    
-trsci_   
-trsib_   
-trsp_    
-trssi_   
-yhibnr_  
-ynidnr_  
+kimt_
+kio_
+leor_
+lep_
+lf_
+lhp_
+lwps_
+pcengr_
+pcr_
+pgasr_
+pmor_
+poilr_
+ptr_
+rcar_
+rcbe_
+rdp_
+rffvar_
+rg10e_
+rg5e_
+rgfint_
+rme_
+rtbe_
+rtr_
+trfci_
+trfp_
+trsci_
+trsib_
+trsp_
+trssi_
+yhibnr_
+ynidnr_
 ;
 
-parameters 
-//************************************************************************** 
+parameters
+//**************************************************************************
 // Modelbase Parameters                                                  //*
                                                                          //*
         cofintintb1 cofintintb2 cofintintb3 cofintintb4                  //*
@@ -114,44 +114,44 @@ parameters
         cofintoutf1 cofintoutf2 cofintoutf3 cofintoutf4                  //*
         cofintoutp cofintoutpb1 cofintoutpb2 cofintoutpb3 cofintoutpb4   //*
         cofintoutpf1 cofintoutpf2 cofintoutpf3 cofintoutpf4              //*
-        std_r_ std_r_quart coffispol                                     //*                                                                 
+        std_r_ std_r_quart coffispol                                     //*
 //**************************************************************************
-       stockoff pcrec pgasrec pwfix	iscurve shortlag xgaprho datet anton 
-	   taxon yhpntfix ltfpt1 plminr1 lurnat1 dmptay	dmpvar	qsector	gsector 
-       gshock4	egfo1	poilr4	poilr1  rstar1	rstarsh pitarg1	rtr1 dptr ptr1 
-       rg5e1 rg10e1	rcbe1	lwps1	trfpt1	trfpt2	trspt1	trspt2 leadpi20 
-       leadpi19 leadpi18 leadpi17 leadpi16 leadpi15 leadpi14 leadpi13 leadpi12 
-       leadpi11 leadpi10 leadpi9  leadpi8  leadpi7 leadpi6 leadpi5 leadpi4 
-       leadpi3 leadpi2 leadpi1 leadpi0 	   lagpi1 lagpi2 lagpi3	 lagpi4 leadpi1l 
-       laginfo leadinfo tayr1	tayr2 tayr3 tayr4 taypm20 taypm19 taypm18 taypm17 
-       taypm16 taypm15 taypm14 taypm13 taypm12 taypm11 taypm10 taypm9 taypm8 
-       taypm7 taypm6 taypm5	taypm4	taypm3 taypm2 taypm1 tayp0 tayp1 tayp2 
+       stockoff pcrec pgasrec pwfix	iscurve shortlag xgaprho datet anton
+	   taxon yhpntfix ltfpt1 plminr1 lurnat1 dmptay	dmpvar	qsector	gsector
+       gshock4	egfo1	poilr4	poilr1  rstar1	rstarsh pitarg1	rtr1 dptr ptr1
+       rg5e1 rg10e1	rcbe1	lwps1	trfpt1	trfpt2	trspt1	trspt2 leadpi20
+       leadpi19 leadpi18 leadpi17 leadpi16 leadpi15 leadpi14 leadpi13 leadpi12
+       leadpi11 leadpi10 leadpi9  leadpi8  leadpi7 leadpi6 leadpi5 leadpi4
+       leadpi3 leadpi2 leadpi1 leadpi0 	   lagpi1 lagpi2 lagpi3	 lagpi4 leadpi1l
+       laginfo leadinfo tayr1	tayr2 tayr3 tayr4 taypm20 taypm19 taypm18 taypm17
+       taypm16 taypm15 taypm14 taypm13 taypm12 taypm11 taypm10 taypm9 taypm8
+       taypm7 taypm6 taypm5	taypm4	taypm3 taypm2 taypm1 tayp0 tayp1 tayp2
        tayp3 tayp4 tayp8 tayp12	tayp16	tayplm4 tayplm3	tayplm2	tayplm1	taypl0
-       taypl1 taypl2 taypl3 taypl4 tayxm8 tayxm7 tayxm6 tayxm5 tayxm4 
+       taypl1 taypl2 taypl3 taypl4 tayxm8 tayxm7 tayxm6 tayxm5 tayxm4
        tayxm3 tayxm2 tayxm1 tayx0 tayx1 tayx2 tayx3 tayx4 tayu1 tayre0 taymu0
-       taymu1 taye0	taysp0	tayg0 tayc0 tayfi0 tayii0 sprule tayul4 tayul3 
-       tayul2 tayul1 tayu0 tayrl0 bfi1  bfi2  kcd1 kcd2 ecd1 ecd2 kh1 kh2  
-       ecnia1 ecnd1 ecnd2 kpd1 kpd2 kps1 kps2 fcbn1 fcbn2 fcbn3 fcbn4 emn1 
-       emn2 emp1 emp2 fynin1 fynin2 fnin1 fnin2 fpxr1 xgdp1 xgdp2 xgdp3 xgdp4 
-       xgdp5 xgdp6 xgdp7 xgdp8 xgdp9  xgdp10 ki1  ki2 em1  em2 xp1 xp2 xp3 
-       xp4 xp5 xp6 xp7 xp8  xp9 xb1  xb2  xb3 xgv1 xgv2 xg1 xg2 xg3 vpda1  
-       vpda2 leh1 leh2 leh3  leh4 lur1  xgpot1  xgpot2 xgpot3  xgpot4 xgdpn1 
-       xgdpn2  xgdpn3 xgdpn4 xgdpn5 xgdpn6  xgdpn7 xgdpn8 xbn1  xbn2  xbn3 
-       xgn1 xgn2 xgn3  xgn4 xgn5  jccan1  jccan2 jccan3  ynin1  ynin2 ynin3  
+       taymu1 taye0	taysp0	tayg0 tayc0 tayfi0 tayii0 sprule tayul4 tayul3
+       tayul2 tayul1 tayu0 tayrl0 bfi1  bfi2  kcd1 kcd2 ecd1 ecd2 kh1 kh2
+       ecnia1 ecnd1 ecnd2 kpd1 kpd2 kps1 kps2 fcbn1 fcbn2 fcbn3 fcbn4 emn1
+       emn2 emp1 emp2 fynin1 fynin2 fnin1 fnin2 fpxr1 xgdp1 xgdp2 xgdp3 xgdp4
+       xgdp5 xgdp6 xgdp7 xgdp8 xgdp9  xgdp10 ki1  ki2 em1  em2 xp1 xp2 xp3
+       xp4 xp5 xp6 xp7 xp8  xp9 xb1  xb2  xb3 xgv1 xgv2 xg1 xg2 xg3 vpda1
+       vpda2 leh1 leh2 leh3  leh4 lur1  xgpot1  xgpot2 xgpot3  xgpot4 xgdpn1
+       xgdpn2  xgdpn3 xgdpn4 xgdpn5 xgdpn6  xgdpn7 xgdpn8 xbn1  xbn2  xbn3
+       xgn1 xgn2 xgn3  xgn4 xgn5  jccan1  jccan2 jccan3  ynin1  ynin2 ynin3
        ynin4 ynin5  ynin6 ynin7 qyhibnr1 qyhibnr2  qyhibnr3 yhinr1  yhinr2
-	   yhinr3  yhinr4 ynicpn1  ynicpn2  ynicpn3  ynicpn4 qynid1  qynid2  qynid3 
-       yhln1  yhln2 yhln3  yniln1 yniln2 yniln3  ypn1  ypn2  ypn3 ypn4 ypn5 
-       ypn6 ypn7  ypn8 ypn9  ypn10 gfptn1 gsptn1 yhpntn1 yhpntn2  yhpntn3  
-       yhpntn4 yhpntn5 yhpntn6  yhpntn7  yhpntn8  yhpntn9  tryh1 tryh2  tryh3 
-       tryh4  yhptn1 yhptn2 yhptn3 yhl1  yhp1 yhp2 yhp3 yh1  yh2  yh3 yhtn1 
-       yhtn2 qpxp1  qpxp2 qpxp3 qpxp4 qpxp5  qpxp6  qpxp7 qpxp8  qpxp9 qpxp10 
-       dlpxp1 dlpxp2  dlpcr1 xgdpt1  xgdpt2 xotht1 xotht2 xotht3 gfintn1  
-       trfp1  tfpn1 tfpn2 tfpn3 tfpn4  gfdefn1 gfdefn2 gfdefn3 gfdefn4 gfdefn5  
-       gfdefn6  gfdefn7 gfdefn8 gfdefn9 gfdefn10 gfdefn11 gfdbtn1 gfdbtn2  
-       gfdbtn3  gsintn1   gsintn2   trsp1   tspn1 tspn2  tspn3  tspn4  trsib1  
-       trsci1 trfci1 trssi1  gssrpn1 gssrpn2 gssrpn3 gssrpn4 gssrpn5 gssrpn6 
-       gssrpn7  gssrpn8 gssrpn9 gssrpn10 gssrpn11 gsdbtn1  gsdbtn2  gsdbtn3  
-       wpo1 wpo2 wpo3  wpo4 wpo5 wpo6  eg1 eg2 egf1 egf2 egf3 egs1 egs2  egs3 
+	   yhinr3  yhinr4 ynicpn1  ynicpn2  ynicpn3  ynicpn4 qynid1  qynid2  qynid3
+       yhln1  yhln2 yhln3  yniln1 yniln2 yniln3  ypn1  ypn2  ypn3 ypn4 ypn5
+       ypn6 ypn7  ypn8 ypn9  ypn10 gfptn1 gsptn1 yhpntn1 yhpntn2  yhpntn3
+       yhpntn4 yhpntn5 yhpntn6  yhpntn7  yhpntn8  yhpntn9  tryh1 tryh2  tryh3
+       tryh4  yhptn1 yhptn2 yhptn3 yhl1  yhp1 yhp2 yhp3 yh1  yh2  yh3 yhtn1
+       yhtn2 qpxp1  qpxp2 qpxp3 qpxp4 qpxp5  qpxp6  qpxp7 qpxp8  qpxp9 qpxp10
+       dlpxp1 dlpxp2  dlpcr1 xgdpt1  xgdpt2 xotht1 xotht2 xotht3 gfintn1
+       trfp1  tfpn1 tfpn2 tfpn3 tfpn4  gfdefn1 gfdefn2 gfdefn3 gfdefn4 gfdefn5
+       gfdefn6  gfdefn7 gfdefn8 gfdefn9 gfdefn10 gfdefn11 gfdbtn1 gfdbtn2
+       gfdbtn3  gsintn1   gsintn2   trsp1   tspn1 tspn2  tspn3  tspn4  trsib1
+       trsci1 trfci1 trssi1  gssrpn1 gssrpn2 gssrpn3 gssrpn4 gssrpn5 gssrpn6
+       gssrpn7  gssrpn8 gssrpn9 gssrpn10 gssrpn11 gsdbtn1  gsdbtn2  gsdbtn3
+       wpo1 wpo2 wpo3  wpo4 wpo5 wpo6  eg1 eg2 egf1 egf2 egf3 egs1 egs2  egs3
        profit1 profit2 profit3 profit4  rg51 rtb1;
 
 
@@ -162,7 +162,7 @@ pwfix	=  0;
 iscurve =  0;
 shortlag = 0;
 xgaprho =  0;
-datet	=  0; //% datet=1: Model-Consistent solution based on time t expectations; 
+datet	=  0; //% datet=1: Model-Consistent solution based on time t expectations;
               //% datet=0: Same timing as in VAR expectations
 //vara	=  0; //% VAR expectations for sector "x"
 //varb	=  0;
@@ -174,7 +174,7 @@ datet	=  0; //% datet=1: Model-Consistent solution based on time t expectations;
 //varn	=  0;
 anton	=  1; //% anton=1: Time-varing risk premium for bond/equity return
 taxon	=  1; //% taxon=1: Tax non-neutralities in place; taxon=0: non-neutralities removed (eh,epd)
-yhpntfix=  0; //% 
+yhpntfix=  0; //%
 ltfpt1  =  0; //% Autocorrelation coefficient of ltfpt
 plminr1	=  0; //% Autocorrelation coefficient of plminr
 lurnat1 =  0; //% Autocorrelation coefficient of lurnat
@@ -187,13 +187,13 @@ egfo1	=  0; //% Autocorrelation coefficient of egfo shock (gsector=0)
 poilr4	=  0; //% 4-qrt Oil-price shock (qsector=0, poilr1=1)
 poilr1  =  0; //% Autocorrelation coefficient of poilr
 
-rstar1	=  0.95;  
-rstarsh =  0; 
+rstar1	=  0.95;
+rstarsh =  0;
 pitarg1	=  1;
 rtr1	=  rstar1;
 
 dptr    =  1 ;//% Dummy for updating rule for trend inflation (1 use picnia; 0 use rffe surprises)
-ptr1	=  0;	
+ptr1	=  0;
 rg5e1	=  0.8370; //% Autocorrelation coefficient of bond/equity residuals
 rg10e1	=  0.8552; //% Autocorrelation coefficient of bond/equity residuals
 rcbe1	=  0.8930; //% Autocorrelation coefficient of bond/equity residuals
@@ -203,7 +203,7 @@ trfpt2	=  0.50; //% tax rate reaction functions to debt/GDP
 trspt1	=  0.05;// % tax rate reaction functions to debt/GDP
 trspt2	=  0.50; //% tax rate reaction functions to debt/GDP
 
-%tayr1	=  0.620293583474;    // % Coefficient on first lag rffe 
+%tayr1	=  0.620293583474;    // % Coefficient on first lag rffe
 %tayr2	= -0.0578095589655;   // % Coefficient on second lag rffe
 %tayr3	=  0.246517098053;    // % Coefficient on third lag rffe
 %tayr4	=  0.0672965169207;   // % Coefficient on fourth lag rffe
@@ -212,9 +212,9 @@ trspt2	=  0.50; //% tax rate reaction functions to debt/GDP
 %tayp2	=  0.0689014399685;   // % Coefficient on second lag picnia
 %tayp3	=  0.226770600238;    // % Coefficient on third lag picnia
 %tayx0	=  0.840416045966;    // % Coefficient on current xgap2
-%tayx1	= -0.206994650785;   //  % Coefficient on first lag xgap2 
+%tayx1	= -0.206994650785;   //  % Coefficient on first lag xgap2
 %tayx2	= -0.102521604026;   //  % Coefficient on second lag xgap2
-%tayx3	= -0.271316618104;   //  % Coefficient on third lag xgap2 
+%tayx3	= -0.271316618104;   //  % Coefficient on third lag xgap2
 
 leadpi20 = 0;
 leadpi19 = 0;
@@ -572,15 +572,15 @@ rtb1      = .91875477     ;
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           
-cd('..');                                                                
-load policy_param.mat;                                                   
-for i=1:33                                                               
-    deep_parameter_name = M_.param_names(i,:);                           
-    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])                  
-end                                                                      
+thispath = pwd;
+cd('..');
+load policy_param.mat;
+for i=1:33
+    deep_parameter_name = M_.param_names(i,:);
+    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
+end
 cd(thispath);
-    std_r_ = 100;                                                        //* 
+    std_r_ = 100;                                                        //*
                                                                          //*
 // Definition of Discretionary Fiscal Policy Parameter                   //*
 coffispol = 1/xgdp9;                                                     //*
@@ -606,40 +606,40 @@ fispol     = egfos;                                                      //*
 // Policy Rule                                                           //*
                                                                          //*
 // Monetary Policy                                                       //*
-                                                                         //*	
+                                                                         //*
 interest = (1-tayr1)*rstar                                               //*
-           + cofintintb1*interest(-1)                                    //*  
-           + cofintintb2*interest(-2)                                    //* 
-           + cofintintb3*interest(-3)                                    //*  
-           + cofintintb4*interest(-4)                                    //* 
-           + cofintinf0*inflationq                                       //* 
-           + cofintinfb1*inflationq(-1)                                  //* 
-           + cofintinfb2*inflationq(-2)                                  //* 
-           + cofintinfb3*inflationq(-3)                                  //* 
-           + cofintinfb4*inflationq(-4)                                  //* 
-           + cofintinff1*inflationq(+1)                                  //* 	      
-           + cofintinff2*inflationq(+2)                                  //* 
-           + cofintinff3*inflationq(+3)                                  //* 
-           + cofintinff4*inflationq(+4)                                  //* 
-           + cofintout*outputgap                                         //* 
-           + cofintoutb1*outputgap(-1)                                   //* 
-           + cofintoutb2*outputgap(-2)                                   //* 
-           + cofintoutb3*outputgap(-3)                                   //* 
-           + cofintoutb4*outputgap(-4)                                   //* 
-           + cofintoutf1*outputgap(+1)                                   //* 
-           + cofintoutf2*outputgap(+2)                                   //* 
-           + cofintoutf3*outputgap(+3)                                   //* 
+           + cofintintb1*interest(-1)                                    //*
+           + cofintintb2*interest(-2)                                    //*
+           + cofintintb3*interest(-3)                                    //*
+           + cofintintb4*interest(-4)                                    //*
+           + cofintinf0*inflationq                                       //*
+           + cofintinfb1*inflationq(-1)                                  //*
+           + cofintinfb2*inflationq(-2)                                  //*
+           + cofintinfb3*inflationq(-3)                                  //*
+           + cofintinfb4*inflationq(-4)                                  //*
+           + cofintinff1*inflationq(+1)                                  //*
+           + cofintinff2*inflationq(+2)                                  //*
+           + cofintinff3*inflationq(+3)                                  //*
+           + cofintinff4*inflationq(+4)                                  //*
+           + cofintout*outputgap                                         //*
+           + cofintoutb1*outputgap(-1)                                   //*
+           + cofintoutb2*outputgap(-2)                                   //*
+           + cofintoutb3*outputgap(-3)                                   //*
+           + cofintoutb4*outputgap(-4)                                   //*
+           + cofintoutf1*outputgap(+1)                                   //*
+           + cofintoutf2*outputgap(+2)                                   //*
+           + cofintoutf3*outputgap(+3)                                   //*
            + cofintoutf4*outputgap(+4)                                   //*
-           + cofintoutp*output 	                                         //* 
-           + cofintoutpb1*output(-1)                                     //* 
-           + cofintoutpb2*output(-2)                                     //* 
-           + cofintoutpb3*output(-3)                                     //* 
-           + cofintoutpb4*output(-4)                                     //* 
-           + cofintoutpf1*output(+1)                                     //* 
-           + cofintoutpf2*output(+2)                                     //* 
-           + cofintoutpf3*output(+3)                                     //* 
-           + cofintoutpf4*output(+4)                                     //* 
-           + std_r_ * interest_;                                         //*	
+           + cofintoutp*output 	                                         //*
+           + cofintoutpb1*output(-1)                                     //*
+           + cofintoutpb2*output(-2)                                     //*
+           + cofintoutpb3*output(-3)                                     //*
+           + cofintoutpb4*output(-4)                                     //*
+           + cofintoutpf1*output(+1)                                     //*
+           + cofintoutpf2*output(+2)                                     //*
+           + cofintoutpf3*output(+3)                                     //*
+           + cofintoutpf4*output(+4)                                     //*
+           + std_r_ * interest_;                                         //*
                                                                          //*
 // Discretionary Government Spending                                     //*
                                                                          //*
@@ -651,7 +651,7 @@ fispol = coffispol*fiscal_;                                              //*
 drffe   = rffe - rffe(-1);
 qec     = zyh +  0.0584068790054*(zyht-zyh) -  0.0655950765465*(zyhp-zyh) +  0.0325302560675*(1+iscurve*.5)*(lwps + pxgr - pcr - zyh) +  0.1440652972670*(wpo-zyh);
 ec      = ec(-1) + 0.154173479486*(qec(-1)-ec(-1)) + 0.207837076245*(ec(-1)-ec(-2)) + datet*zec1 + (1-datet)*lzec1(-1) + 0.0080074377742*(datet*zgapc1 + (1-datet)*lzgapc1(-1)) + 0.0995119731721*(yh-yh(-1) -(datet*zec1+ (1-datet)*lzec1(-1))) - 0.0229678540295*(yh(-1)-yh(-2)) + ec_;
-qsdv    = -0.263228678243*0.25*(pgasr +pgasr(-1)+pgasr(-2)+pgasrl2(-1)); 
+qsdv    = -0.263228678243*0.25*(pgasr +pgasr(-1)+pgasr(-2)+pgasrl2(-1));
 ecdv    = ecdv(-1) +  0.339759596749*(qsdv(-1)+qec(-1)-ecdv(-1)) -  .257457530254*(ecdv(-1)-ecdv(-2)) +  3.03323716171*(datet*zec2 + (1-datet)*lzec2(-1)) +  3.03323716171*(datet*zsdv + (1-datet)*lzsdv(-1)) +  3.03323716171*0.008*(datet*zgapc2 + (1-datet)*lzgapc2(-1)) -  0.029831192544*(1+iscurve/2.67)*(datet*zrccdv + (1-datet)*lzrccdv(-1)) +  1.97908433908*(qec(-1)-qec(-2)) +  4.72167026462*(qec(-2)-qecl2(-1)) +  1.73447532682*(qecl2(-1)-qecl2(-2))  +  2.41236583958*(qecl2(-2)-qecl4(-1)) +  ecdv_;
 ecdo    = ecdo(-1) +  0.0978812349793*(qec(-1)-ecdo(-1)) +  0.0762268913328*(ecdo(-1)-ecdo(-2)) +  3.17577973362*(datet*zec3 + (1-datet)*lzec3(-1)) +  3.17577973362*0.008*(datet*zgapc3 + (1-datet)*lzgapc3(-1)) -  0.018364159583*(1+iscurve/3.33)*(datet*zrccdo + (1-datet)*lzrccdo(-1)) +  0.762178056319*(qec(-1)-qec(-2))  +  0.483710408941*(qec(-2)-qecl2(-1))  -  0.257987551449*(qecl2(-1)-qecl2(-2))  +  0.637934053208*(qecl2(-2)-qecl4(-1)) +  ecdo_;
 eh      = eh(-1)   +  0.112177343577*(qec(-1)-eh(-1)) +  0.30940588957*(eh(-1)-eh(-2)) +  14.1861305056*(datet*zec4+ (1-datet)*lzec4(-1)) -  0.116556799251*(1+iscurve/2.58)*(datet*zrcch+ (1-datet)*lzrcch(-1)) +  5.33425802988*(qec(-1)-qec(-2)) +  2.61720944263*(qec(-2)-qecl2(-1)) +  1.26676734391*(qecl2(-1)-qecl2(-2))  +  2.37472643623*(qecl2(-2)-qecl4(-1)) +  eh_;
@@ -841,7 +841,7 @@ dlepl1  = lep(-1) - lep(-2);
 dlepl3  = dlepl1(-2);
 dlepl5  = dlepl3(-2);
 dlpll2  = dlpl(-2);
-dlpxpl2 = dlpxp(-2); 
+dlpxpl2 = dlpxp(-2);
 pmorl2  = pmor(-2);
 pxbrl2  = pxbr(-2);
 dlfpcl2 = dlfpc(-2);

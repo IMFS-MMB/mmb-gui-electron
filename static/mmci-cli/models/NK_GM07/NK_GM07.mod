@@ -1,13 +1,13 @@
 //**************************************************************************
 // A New Comparative Approach to Macroeconomic Modeling and Policy Analysis
 //
-// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and 
+// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and
 // Maik Wolters
 //
 //**************************************************************************
 % Model: NK_GM07
 
-% Further Reference: 
+% Further Reference:
 % Goodfriend, M., B.T. McCallum. 2007. " Banking and interest raets in monetary policy analysis: A quantitative exploration".
 % Journal of Monetary Economics 54, pp. 1480-1507.
 
@@ -37,7 +37,7 @@ varexo eps_a1, eps_a2, eps_a3
 
 
 
-parameters 
+parameters
 
 //**************************************************************************
 // Modelbase Parameters                                                  //*
@@ -77,7 +77,7 @@ F=9;
 
 // persistence parameters
 
-rho_h  = 0.6;  %Fig 1: 0.6 Fig 2: 0.99 
+rho_h  = 0.6;  %Fig 1: 0.6 Fig 2: 0.99
 rho_a1 = 0.99;
 rho_a2 = 0.99;
 rho_a3 = 0.9;
@@ -111,15 +111,15 @@ rB_ss = 0.0052;
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           
-cd('..');                                                                
-load policy_param.mat;                                                   
-for i=1:33                                                               
-    deep_parameter_name = M_.param_names(i,:);                           
-    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])                  
-end                                                                      
-cd(thispath);                                                            
-                                                                         
+thispath = pwd;
+cd('..');
+load policy_param.mat;
+for i=1:33
+    deep_parameter_name = M_.param_names(i,:);
+    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
+end
+cd(thispath);
+
 //**************************************************************************
 
 model;
@@ -134,7 +134,7 @@ dp = beta * dp(+1) + kappa * mc;
 //(33)
 mc = xi - lambda;
 
-//(34) 
+//(34)
 //(34')
 %h - h(-1) = rho_h * (h(-1) - h(-2)) + eps_h;
 
@@ -208,38 +208,38 @@ interest =   cofintintb1*interest(-1)                                    //*
            + cofintoutf2*outputgap(+2)                                   //*
            + cofintoutf3*outputgap(+3)                                   //*
            + cofintoutf4*outputgap(+4)                                   //*
-           + cofintoutp*output 	                                         //* 
-           + cofintoutpb1*output(-1)                                     //* 
-           + cofintoutpb2*output(-2)                                     //* 
-           + cofintoutpb3*output(-3)                                     //* 
-           + cofintoutpb4*output(-4)                                     //* 
-           + cofintoutpf1*output(+1)                                     //* 
-           + cofintoutpf2*output(+2)                                     //* 
-           + cofintoutpf3*output(+3)                                     //* 
-           + cofintoutpf4*output(+4)                                     //* 
+           + cofintoutp*output 	                                         //*
+           + cofintoutpb1*output(-1)                                     //*
+           + cofintoutpb2*output(-2)                                     //*
+           + cofintoutpb3*output(-3)                                     //*
+           + cofintoutpb4*output(-4)                                     //*
+           + cofintoutpf1*output(+1)                                     //*
+           + cofintoutpf2*output(+2)                                     //*
+           + cofintoutpf3*output(+3)                                     //*
+           + cofintoutpf4*output(+4)                                     //*
            + std_r_ *interest_;                                          //*
                                                                          //*
 //########################
 //#### interest-rates ####
 //########################
 % comment: here, EFPs and interest rates are in absolute deviations from their steady state
-% alternatively, one can define the EFPs in term of log-deviations to obtain EFP=w+m-c as in the paper (page 1498). 
-% Then, the use of CEFP and UEFP in equations (20) and (21) has to be adjusted accordingly (multiplied by their respective steady states). 
-% To reproduce the results of the paper, treat the CEFP and UEFP as log-devations in the definition of the EFP 
+% alternatively, one can define the EFPs in term of log-deviations to obtain EFP=w+m-c as in the paper (page 1498).
+% Then, the use of CEFP and UEFP in equations (20) and (21) has to be adjusted accordingly (multiplied by their respective steady states).
+% To reproduce the results of the paper, treat the CEFP and UEFP as log-devations in the definition of the EFP
 % and inconsistently as absolute deviations in equations 20 and 21.
 
 //Definition of the EFP
 CEFP/CEFP_ss = (w + m - c);
-UEFP/UEFP_ss = (w + m - c); 
+UEFP/UEFP_ss = (w + m - c);
 
 //(16)
-rT = 1/beta*1/(1+gamma)*(dp(+1) + lambda - lambda(+1)); 
+rT = 1/beta*1/(1+gamma)*(dp(+1) + lambda - lambda(+1));
 //(17)
 rT - rB = omega_ss * (phi / (c_ss * lambda_ss)) * (omega - c - lambda) - omega_ss * omega;
 //(20)
-rT - rIB =  UEFP;  
+rT - rIB =  UEFP;
 //(22)
-rL - rIB =  CEFP; 
+rL - rIB =  CEFP;
 
 
 

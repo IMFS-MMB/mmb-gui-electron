@@ -1,7 +1,7 @@
 //**************************************************************************
 // A New Comparative Approach to Macroeconomic Modeling and Policy Analysis
 //
-// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and 
+// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and
 // Maik Wolters
 //
 // Working Paper, 2009
@@ -10,11 +10,11 @@
 // Model: NK_IR04
 
 // Further references:
-// Ireland, Peter N. "Money's Role In The Monetary Business Cycle," 
+// Ireland, Peter N. "Money's Role In The Monetary Business Cycle,"
 // "Journal of Money, Credit and Banking, 2004, v36(6,Dec), 969-983.
 
 
-// Last edited: 11/09/07 by S. Schmidt 
+// Last edited: 11/09/07 by S. Schmidt
 
 // Comment: Due to the real balance effect, we have to make an assumption about the evolution
 // of the nominal interest rate under flexible prices in order to calculate the natural rate
@@ -25,32 +25,32 @@
 var y m pi r a e z pinf4
 
 //**************************************************************************
-// Modelbase Variables                                                  //*    
+// Modelbase Variables                                                  //*
    interest inflation inflationq outputgap output                       //*
-    inflationql inflationql2 inflationqls;  
+    inflationql inflationql2 inflationqls;
 //**************************************************************************
 
-varexo epsa_ epse_ epsz_ 
+varexo epsa_ epse_ epsz_
 
 //**************************************************************************
-// Modelbase Shocks                                                      //*       
+// Modelbase Shocks                                                      //*
        interest_;                                                        //*
-//************************************************************************** 
+//**************************************************************************
 
 
-parameters 
+parameters
  //**************************************************************************
-// Modelbase Parameters                                                  
-                                                                         
-        cofintintb1 cofintintb2 cofintintb3 cofintintb4                  
-        cofintinf0 cofintinfb1 cofintinfb2 cofintinfb3 cofintinfb4       
-        cofintinff1 cofintinff2 cofintinff3 cofintinff4                  
-        cofintout cofintoutb1 cofintoutb2 cofintoutb3 cofintoutb4        
+// Modelbase Parameters
+
+        cofintintb1 cofintintb2 cofintintb3 cofintintb4
+        cofintinf0 cofintinfb1 cofintinfb2 cofintinfb3 cofintinfb4
+        cofintinff1 cofintinff2 cofintinff3 cofintinff4
+        cofintout cofintoutb1 cofintoutb2 cofintoutb3 cofintoutb4
         cofintoutf1 cofintoutf2 cofintoutf3 cofintoutf4
         cofintoutp cofintoutpb1 cofintoutpb2 cofintoutpb3 cofintoutpb4   //*
-        cofintoutpf1 cofintoutpf2 cofintoutpf3 cofintoutpf4              //*                  
-        std_r_ std_r_quart coffispol           
-//************************************************************************** 
+        cofintoutpf1 cofintoutpf2 cofintoutpf3 cofintoutpf4              //*
+        std_r_ std_r_quart coffispol
+//**************************************************************************
 omega1 omega2 psi gamma1 gamma2 gamma3 rhor rhoy rhopi rhoa rhoe rhoz sigmaa sigmae sigmaz sigmar lny lnm lnpi lnr yss mss piss rss;
 
 
@@ -84,14 +84,14 @@ rss = 1.0188;
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           
-cd('..');                                                                
-load policy_param.mat;                                                   
-for i=1:33                                                               
-    deep_parameter_name = M_.param_names(i,:);                           
-    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])                  
-end                                                                      
-cd(thispath); 
+thispath = pwd;
+cd('..');
+load policy_param.mat;
+for i=1:33
+    deep_parameter_name = M_.param_names(i,:);
+    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
+end
+cd(thispath);
 
 // State and forward variables for learning setup                        //*
 
@@ -100,14 +100,14 @@ AL_Info.states_long  = {'a','z','inflationq','inflationql','inflationql2'};
 AL_Info.states_short = {'a','z','interest'};
 //states_short = {'a','z','interest','outputgap'};
 //states_long  = {'a','e','z','y','inflationqls'};
-save AL_Info AL_Info 
+save AL_Info AL_Info
 
 //**************************************************************************
 
 model(linear);
 
 //**************************************************************************
-// Definition of Modelbase Variables in Terms of Original Model Variables//*                                                                        
+// Definition of Modelbase Variables in Terms of Original Model Variables//*
 interest = 4*r;                                                          //*
 inflation  = pinf4;                                                 	 //*
 inflationq = 4*pi;
@@ -120,40 +120,40 @@ pinf4= 0.25 * (inflationq + inflationql + inflationql2 + inflationql2(-1));
 //**************************************************************************
 
 
-//**************************************************************************                                                                    
+//**************************************************************************
 // Policy Rule                                                           //*
-interest =   cofintintb1*interest(-1)                                    //* 
-//         + cofintintb2*interestl(-1)                                   //* 
-//         + cofintintb3*interestl2(-1)                                  //* 
-//         + cofintintb4*interestl3(-1)                                  //* 
-           + cofintinf0*inflationq                                       //* 
-           + cofintinfb1*inflationq(-1)                                  //* 
-           + cofintinfb2*inflationql(-1)                                 //* 
-           + cofintinfb3*inflationql2(-1)                                //* 
-//         + cofintinfb4*inflationql3(-1)                                //* 
-//           + 0.25*cofintinff1*pinf(+1)                                   //* 
-           + cofintinff1*inflationq(+1)                                  //* 
-//         + cofintinff2*inflationq(+2)                                  //* 
-//         + cofintinff3*inflationq(+3)                                  //* 
-//         + cofintinff4*inflationq(+4)                                  //* 
-           + cofintout*outputgap 	                                     //* 
-           + cofintoutb1*outputgap(-1)                                   //* 
-//         + cofintoutb2*outputgap(-2)                                   //* 
-//         + cofintoutb3*outputgap(-3)                                   //* 
-//         + cofintoutb4*outputgap(-4)                                   //* 
-//         + cofintoutf1*outputgap(+1)                                   //* 
-//         + cofintoutf2*outputgap(+2)                                   //* 
-//         + cofintoutf3*outputgap(+3)                                   //* 
-//         + cofintoutf4*outputgap(+4)                                   //* 
-           + cofintoutp*output 	                                         //* 
-           + cofintoutpb1*output(-1)                                     //* 
-//         + cofintoutpb2*output(-2)                                     //* 
-//         + cofintoutpb3*output(-3)                                     //* 
-//         + cofintoutpb4*output(-4)                                     //* 
-//         + cofintoutpf1*output(+1)                                     //* 
-//         + cofintoutpf2*output(+2)                                     //* 
-//         + cofintoutpf3*output(+3)                                     //* 
-//         + cofintoutpf4*output(+4)                                     //* 
+interest =   cofintintb1*interest(-1)                                    //*
+//         + cofintintb2*interestl(-1)                                   //*
+//         + cofintintb3*interestl2(-1)                                  //*
+//         + cofintintb4*interestl3(-1)                                  //*
+           + cofintinf0*inflationq                                       //*
+           + cofintinfb1*inflationq(-1)                                  //*
+           + cofintinfb2*inflationql(-1)                                 //*
+           + cofintinfb3*inflationql2(-1)                                //*
+//         + cofintinfb4*inflationql3(-1)                                //*
+//           + 0.25*cofintinff1*pinf(+1)                                   //*
+           + cofintinff1*inflationq(+1)                                  //*
+//         + cofintinff2*inflationq(+2)                                  //*
+//         + cofintinff3*inflationq(+3)                                  //*
+//         + cofintinff4*inflationq(+4)                                  //*
+           + cofintout*outputgap 	                                     //*
+           + cofintoutb1*outputgap(-1)                                   //*
+//         + cofintoutb2*outputgap(-2)                                   //*
+//         + cofintoutb3*outputgap(-3)                                   //*
+//         + cofintoutb4*outputgap(-4)                                   //*
+//         + cofintoutf1*outputgap(+1)                                   //*
+//         + cofintoutf2*outputgap(+2)                                   //*
+//         + cofintoutf3*outputgap(+3)                                   //*
+//         + cofintoutf4*outputgap(+4)                                   //*
+           + cofintoutp*output 	                                         //*
+           + cofintoutpb1*output(-1)                                     //*
+//         + cofintoutpb2*output(-2)                                     //*
+//         + cofintoutpb3*output(-3)                                     //*
+//         + cofintoutpb4*output(-4)                                     //*
+//         + cofintoutpf1*output(+1)                                     //*
+//         + cofintoutpf2*output(+2)                                     //*
+//         + cofintoutpf3*output(+3)                                     //*
+//         + cofintoutpf4*output(+4)                                     //*
            + std_r_ *interest_;                                          //*
 //**************************************************************************
 

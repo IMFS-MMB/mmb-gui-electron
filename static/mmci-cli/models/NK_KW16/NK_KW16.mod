@@ -1,20 +1,20 @@
 //**************************************************************************
 // A New Comparative Approach to Macroeconomic Modeling and Policy Analysis
 //
-// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and 
+// Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and
 // Maik Wolters
 //
 //**************************************************************************
 % Model: NK_KW16
 
-% Further Reference: 
+% Further Reference:
 % Kirchner, M., S. van Wijnbergen. 2016. " Fiscal deficits, financial fragility, and the effectiveness of government policies".
 % Journal of Monetary Economics 80, pp. 51-68.
 
 % Created by Felix Strobel (10.10.17)
 % This code replicates the plot for Bank Financing' in Figure 1 of the article.
 
-var 
+var
 //**************************************************************************
 // Modelbase Variables                                                   //*
         interest inflation inflationq outputgap output fispol                //*
@@ -26,7 +26,7 @@ L           % labor hours
 w           % real wage
 C           % consumption
 U_c         % marginal utility of consumption
-Lambda      % stochastic discount factor of households 
+Lambda      % stochastic discount factor of households
 I           % investment
 K           % capital
 Q           % price of capital
@@ -39,7 +39,7 @@ F           % auxiliary variable for price setting
 Z           % auxiliary variable for price setting
 Dis         % price dispersion
 
-Rd          % real deposit rate 
+Rd          % real deposit rate
 i           % nominal interest rate
 Rk          % real rate of capital
 Rb          % real rate of bonds held by banks
@@ -68,12 +68,12 @@ L_fe           % labor hours
 w_fe           % real wage
 C_fe           % consumption
 U_c_fe         % marginal utility of consumption
-Lambda_fe      % stochastic discount factor of households 
+Lambda_fe      % stochastic discount factor of households
 I_fe           % investment
 K_fe           % capital
 Q_fe           % price of capital
 Pm_fe          % price of intermediary goods (real marginal cost for final goood producer)
-Rd_fe          % real deposit rate 
+Rd_fe          % real deposit rate
 Rk_fe          % real rate of capital
 Rb_fe          % real rate of bonds held by banks
 Rp_fe          % real rate of portfolio by banks
@@ -102,12 +102,12 @@ e_g;
 %capital quality, government spending, interest rate, technoy, and net worth shock
 varexo e_ksi e_a
 //**************************************************************************
-// Modelbase Shocks                                                      //*       
+// Modelbase Shocks                                                      //*
        interest_ fiscal_;                                                        //*
 //**************************************************************************
 
-parameters 
-//************************************************************************** 
+parameters
+//**************************************************************************
 // Modelbase Parameters                                                  //*
                                                                          //*
         cofintintb1 cofintintb2 cofintintb3 cofintintb4                  //*
@@ -125,27 +125,27 @@ parameters
     Y_ss L_ss w_ss U_c_ss Y_over_K L_over_K K_ss Ym_ss G_ss I_ss C_ss Z_ss F_ss B_ss N_ss D_ss T_ss
     a_ss ksi_ss g_ss Lambda_ss Pm_ss Phi_ss Q_ss Dis_ss infl_ss inflstar_ss Rd_ss Rp_ss Rb_ss Rk_ss i_ss
     prem_ss nu_b_ss nu_n_ss nu_k_ss portf_B_ss Om_ss Gy_ss;
-    
+
 //**************************************************************************
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           
-cd('..');                                                                
-load policy_param.mat;                                                   
-for i=1:33                                                               
-    deep_parameter_name = M_.param_names(i,:);                           
-    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])                  
-end                                                                      
-cd(thispath);   
+thispath = pwd;
+cd('..');
+load policy_param.mat;
+for i=1:33
+    deep_parameter_name = M_.param_names(i,:);
+    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
+end
+cd(thispath);
 std_r_=100;
                                                                          //*
 // Definition of Discretionary Fiscal Policy Parameter                   //*
- coffispol = 5;                                                        //*   
+ coffispol = 5;                                                        //*
 //**************************************************************************
 
 % standard Parameters
-beta=0.99;          % discount factor 
+beta=0.99;          % discount factor
 hh=0.815;           % habit formation
 delta = 0.025;      % depreciation rate
 varphi = 0.276;     % inverse of Frisch elasticity
@@ -175,7 +175,7 @@ sigma_n=0.01;     % std. dev. of net worth shock
 
 %%% steady state values of variables labelled above
 Lambda_ss = 1;                     %
-Q_ss=1;                            % 
+Q_ss=1;                            %
 Dis_ss=1;
 infl_ss=1;
 inflstar_ss=1;
@@ -196,7 +196,7 @@ ERk_ss=Rk_ss;
 ERb_ss=Rk_ss;
 nu_n_ss = (1-theta)*beta*(Rd_ss)/(1-theta*beta);
 nu_k_ss = (1-theta)*beta*(Rk_ss-Rd_ss)/(1-theta*beta);
-nu_b_ss = nu_k_ss; 
+nu_b_ss = nu_k_ss;
 lambda = nu_k_ss + nu_n_ss/Phi_ss;          % tightness parameter on incentive constraint
 chi = 1-theta*((Rk_ss-Rd_ss)*Phi_ss+Rd_ss); % share of old net worth that is given to new bankers
 w_ss = (alpha^(alpha)*(1-alpha)^(1-alpha)*Pm_ss*(Rk_ss-1+delta)^(-alpha))^(1/(1-alpha));
@@ -236,48 +236,48 @@ outputgap  = log(Y/Y_fe)*100;                                              //*
 fispol     = e_g;
 //**************************************************************************
 
-//**************************************************************************                                                                    
+//**************************************************************************
 // Policy Rule                                                           //*
                                                                          //*
 // Monetary Policy                                                       //*
 %(i) =   (i(-1))^rho_i* (i_ss*(infl)^kappa_pi*((Y)/(Y(-1)))^(kappa_y))^(1-rho_i)*(exp(-e_i)); % Taylor rule
                                                                          //*
-interest =   cofintintb1*interest(-1)                                    //* 
-           + cofintintb2*interest(-2)                                    //* 
-           + cofintintb3*interest(-3)                                    //* 
-           + cofintintb4*interest(-4)                                    //* 
-           + cofintinf0*inflationq                                       //* 
-           + cofintinfb1*inflationq(-1)                                  //* 
-           + cofintinfb2*inflationq(-2)                                  //* 
-           + cofintinfb3*inflationq(-3)                                  //* 
-           + cofintinfb4*inflationq(-4)                                  //* 
-           + cofintinff1*inflationq(+1)                                  //* 
-           + cofintinff2*inflationq(+2)                                  //* 
-           + cofintinff3*inflationq(+3)                                  //* 
-           + cofintinff4*inflationq(+4)                                  //* 
-           + cofintout*outputgap 	                                     //* 
-           + cofintoutb1*outputgap(-1)                                   //* 
-           + cofintoutb2*outputgap(-2)                                   //* 
-           + cofintoutb3*outputgap(-3)                                   //* 
-           + cofintoutb4*outputgap(-4)                                   //* 
-           + cofintoutf1*outputgap(+1)                                   //* 
-           + cofintoutf2*outputgap(+2)                                   //* 
-           + cofintoutf3*outputgap(+3)                                   //* 
+interest =   cofintintb1*interest(-1)                                    //*
+           + cofintintb2*interest(-2)                                    //*
+           + cofintintb3*interest(-3)                                    //*
+           + cofintintb4*interest(-4)                                    //*
+           + cofintinf0*inflationq                                       //*
+           + cofintinfb1*inflationq(-1)                                  //*
+           + cofintinfb2*inflationq(-2)                                  //*
+           + cofintinfb3*inflationq(-3)                                  //*
+           + cofintinfb4*inflationq(-4)                                  //*
+           + cofintinff1*inflationq(+1)                                  //*
+           + cofintinff2*inflationq(+2)                                  //*
+           + cofintinff3*inflationq(+3)                                  //*
+           + cofintinff4*inflationq(+4)                                  //*
+           + cofintout*outputgap 	                                     //*
+           + cofintoutb1*outputgap(-1)                                   //*
+           + cofintoutb2*outputgap(-2)                                   //*
+           + cofintoutb3*outputgap(-3)                                   //*
+           + cofintoutb4*outputgap(-4)                                   //*
+           + cofintoutf1*outputgap(+1)                                   //*
+           + cofintoutf2*outputgap(+2)                                   //*
+           + cofintoutf3*outputgap(+3)                                   //*
            + cofintoutf4*outputgap(+4)                                   //*
-           + cofintoutp*output 	                                         //* 
-           + cofintoutpb1*output(-1)                                     //* 
-           + cofintoutpb2*output(-2)                                     //* 
-           + cofintoutpb3*output(-3)                                     //* 
-           + cofintoutpb4*output(-4)                                     //* 
-           + cofintoutpf1*output(+1)                                     //* 
-           + cofintoutpf2*output(+2)                                     //* 
-           + cofintoutpf3*output(+3)                                     //* 
-           + cofintoutpf4*output(+4)                                     //*  
-           + std_r_ *interest_;                                          //* 
+           + cofintoutp*output 	                                         //*
+           + cofintoutpb1*output(-1)                                     //*
+           + cofintoutpb2*output(-2)                                     //*
+           + cofintoutpb3*output(-3)                                     //*
+           + cofintoutpb4*output(-4)                                     //*
+           + cofintoutpf1*output(+1)                                     //*
+           + cofintoutpf2*output(+2)                                     //*
+           + cofintoutpf3*output(+3)                                     //*
+           + cofintoutpf4*output(+4)                                     //*
+           + std_r_ *interest_;                                          //*
                                                                          //*
 // Discretionary Government Spending                                     //*
                                                                          //*
- fispol = coffispol*fiscal_;                                             //*  
+ fispol = coffispol*fiscal_;                                             //*
 //**************************************************************************
 
 % Households
@@ -295,14 +295,14 @@ beta*(Rd(+1))*(Lambda(+1))  =   1;                                       % Euler
 %(Q)  =   1 + eta_i/2*((I)/(I(-1))-1)^2
 %              + eta_i*((I)/(I(-1))-1)*(I)/(I(-1))
 %              - beta*(Lambda(+1))*eta_i*((I(+1))/(I)-1)*((I(+1))/(I))^2;     % Optimal investment decision (check out E29)
-1/(Q) =   1 - eta_i/2*((I)/(I(-1))-1)^2 
-               - eta_i*((I)/(I(-1))-1)*(I)/(I(-1)) 
+1/(Q) =   1 - eta_i/2*((I)/(I(-1))-1)^2
+               - eta_i*((I)/(I(-1))-1)*(I)/(I(-1))
                + beta*(Lambda(+1))*eta_i*((I(+1))/(I)-1)*((I(+1))/(I))^2*(Q)/(Q(+1)); //E29
 (K)  =   (1-delta)*(ksi)*(K(-1)) + (1 - eta_i/2*((I)/(I(-1))-1)^2)*(I);          % Capital accumulation equation
 
 % Retailer
 (Ym)    =   (Y)*(Dis);                                                                             % Retail output
-(Dis)    =   gam*(Dis(-1))*(infl)^epsilon + 
+(Dis)    =   gam*(Dis(-1))*(infl)^epsilon +
                 (1-gam)*((1-gam*(infl)^(epsilon-1))/(1-gam))^(-epsilon/(1-epsilon));                     % Price dispersion
 (F)       =   (Y)*(Pm) + beta*gam*(Lambda(+1))*(infl(+1))^epsilon    *(F(+1));            % Optimal price choice
 (Z)       =   (Y)         + beta*gam*(Lambda(+1))*(infl(+1))^(epsilon-1)*(Z(+1));            % Optimal price choice
@@ -311,7 +311,7 @@ beta*(Rd(+1))*(Lambda(+1))  =   1;                                       % Euler
 
 
 % Financial Intermediaries
-(nu_k)=beta*(Lambda(+1))*(((Rk(+1))-(Rd(+1)))*(1-theta)+ 
+(nu_k)=beta*(Lambda(+1))*(((Rk(+1))-(Rd(+1)))*(1-theta)+
           theta*(Q(+1))*(K(+1))/((Q)*(K))*(nu_k(+1))); % shadow excess value of loans
 (nu_b)=beta*(Lambda(+1))*(((Rb(+1))-(Rd(+1)))*(1-theta)+
           theta*(B(+1))/((B))*(nu_b(+1)));     % shadow value of bonds
@@ -324,7 +324,7 @@ beta*(Rd(+1))*(Lambda(+1))  =   1;                                       % Euler
 (N)+(D)= (Q)*(K)+(B);                   % balance sheet identity of banks
 (portf_B) = (Q)*(K)+(B);                % Banks' portfolio
 (Q)*(K) = (Om) * (Phi) * (N);           % claims on capital assets
-(B) = (1 - (Om)) * (Phi) * (N);         % claims on bonds 
+(B) = (1 - (Om)) * (Phi) * (N);         % claims on bonds
 (ERk)= (Rk(+1));                        % Expected Return on Capital
 (ERb) = (Rb(+1));                       % Expected Return on Bonds
 (prem) =   (Rk(+1))-(Rd(+1));           % Loan Premium
@@ -337,7 +337,7 @@ beta*(Rd(+1))*(Lambda(+1))  =   1;                                       % Euler
 (G) = G_ss*(g); % Government consumption
 (T) = T_ss; % Taxes
 (Gy) = (G)/Y_ss; % Share of gov. consumption in GDP
- 
+
 % Additional Equations
 (Y) =   (C) +(G) + (I); % Aggregate resource constraint
 (i(-1)) =   (Rd)*(infl); % Fisher equation
@@ -346,7 +346,7 @@ beta*(Rd(+1))*(Lambda(+1))  =   1;                                       % Euler
 % Households
 (i_fe(-1)) =   (Rd_fe)*(infl_fe); % Fisher equation
 (i_fe) =   (i_fe(-1))^rho_i* (i_ss*(infl_fe)^kappa_pi*((Y_fe)/(Y_fe(-1)))^(kappa_y))^(1-rho_i); % Taylor rule
-(Dis_fe)    =   gam_fe*(Dis_fe(-1))*(infl_fe)^epsilon + 
+(Dis_fe)    =   gam_fe*(Dis_fe(-1))*(infl_fe)^epsilon +
                 (1-gam_fe)*((1-gam_fe*(infl_fe)^(epsilon-1))/(1-gam_fe))^(-epsilon/(1-epsilon));                     % Price dispersion
 (F_fe)       =   (Y_fe)*(Pm_fe) + beta*gam_fe*(Lambda_fe(+1))*(infl_fe(+1))^epsilon    *(F_fe(+1));            % Optimal price choice
 (Z_fe)       =   (Y_fe)         + beta*gam_fe*(Lambda_fe(+1))*(infl_fe(+1))^(epsilon-1)*(Z_fe(+1));            % Optimal price choice
@@ -359,12 +359,12 @@ beta*(Rd_fe(+1))*(Lambda_fe(+1))  =   1;                                       %
 (Rk_fe)     =   ((Pm_fe)*alpha*(Ym_fe)/(K_fe(-1))+(ksi)*(Q_fe)*(1-delta))/(Q_fe(-1)); % Return on capital (Assumption: this = E26)
 (Ym_fe)     =   (a)*((ksi)*(K_fe(-1)))^alpha*(L_fe)^(1-alpha); % Production function
 (w_fe)      =   (Pm_fe)*(1-alpha)*(Ym_fe)/(L_fe); % Real Wages (Assumption: This replaces E28 (Eq. for mc))
-1/(Q_fe) =   1 - eta_i/2*((I_fe)/(I_fe(-1))-1)^2 
-               - eta_i*((I_fe)/(I_fe(-1))-1)*(I_fe)/(I_fe(-1)) 
+1/(Q_fe) =   1 - eta_i/2*((I_fe)/(I_fe(-1))-1)^2
+               - eta_i*((I_fe)/(I_fe(-1))-1)*(I_fe)/(I_fe(-1))
                + beta*(Lambda_fe(+1))*eta_i*((I_fe(+1))/(I_fe)-1)*((I_fe(+1))/(I_fe))^2*(Q_fe)/(Q_fe(+1)); //E29
 (K_fe)  =   (1-delta)*(ksi)*(K_fe(-1)) + (1 - eta_i/2*((I_fe)/(I_fe(-1))-1)^2)*(I_fe);          % Capital accumulation equation
 (Ym_fe)    =   (Y_fe);
-(nu_k_fe)=beta*(Lambda_fe(+1))*(((Rk_fe(+1))-(Rd_fe(+1)))*(1-theta)+ 
+(nu_k_fe)=beta*(Lambda_fe(+1))*(((Rk_fe(+1))-(Rd_fe(+1)))*(1-theta)+
           theta*(Q_fe(+1))*(K_fe(+1))/((Q_fe)*(K_fe))*(nu_k_fe(+1))); % shadow excess value of loans
 (nu_b_fe)=beta*(Lambda_fe(+1))*(((Rb_fe(+1))-(Rd_fe(+1)))*(1-theta)+
           theta*(B_fe(+1))/((B_fe))*(nu_b_fe(+1)));     % shadow value of bonds
@@ -376,7 +376,7 @@ beta*(Rd_fe(+1))*(Lambda_fe(+1))  =   1;                                       %
 (N_fe)+(D_fe)= (Q_fe)*(K_fe)+(B_fe);                    % balance sheet identity of banks
 (portf_B_fe) = (Q_fe)*(K_fe)+(B_fe);                    % Banks' portfolio
 (Q_fe)*(K_fe) = (Om_fe) * (Phi_fe) * (N_fe);            % claims on capital assets
-(B_fe)        = (1 - (Om_fe)) * (Phi_fe) * (N_fe);      % claims on bonds 
+(B_fe)        = (1 - (Om_fe)) * (Phi_fe) * (N_fe);      % claims on bonds
 (ERk_fe)= (Rk_fe(+1));                                  % Expected Return on Capital
 (ERb_fe) = (Rb_fe(+1));                                 % Expected Return on Bonds
 (Rp_fe) = (Rk_fe)*(Om_fe(-1))+(Rb_fe)*(1-(Om_fe(-1)));  % Return on portfolio
@@ -484,4 +484,3 @@ var interest_; stderr 1;
 end;
 
 %stoch_simul(order = 1, irf=30) Gy G ERb ERk I K Q N Phi C Y;
-    
