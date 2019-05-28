@@ -786,7 +786,7 @@ M_.params( 78 ) = 0.022812723300000;
 stdg_p = M_.params( 78 );
 M_.params( 81 ) = 0.007148784800000;
 stdmuzstar_p = M_.params( 81 );
-stdgamma_p     =   0.008103540300000  ;	 
+stdgamma_p     =   0.008103540300000  ;
 M_.params( 77 ) = 0.004633811900000;
 stdepsil_p = M_.params( 77 );
 M_.params( 84 ) = 0.489344620900000;
@@ -801,7 +801,7 @@ M_.params( 96 ) = 0.812796311400000;
 xiw_p = M_.params( 96 );
 M_.params( 41 ) = 0.735843822700000;
 b_p = M_.params( 41 );
-Fomegabar_p    =   0.005588569300000  ;	 
+Fomegabar_p    =   0.005588569300000  ;
 M_.params( 54 ) = 0.214894511100000;
 mu_p = M_.params( 54 );
 M_.params( 76 ) = 2.535553419500000;
@@ -832,14 +832,14 @@ M_.params( 68 ) = 0.1459051086113400;
 rhomuzstar_p = M_.params( 68 );
 M_.params( 64 ) = 0.8089285617540170;
 rhoepsil_p = M_.params( 64 );
-rhosigma_p     = 0.9706370265612010 ;	 
+rhosigma_p     = 0.9706370265612010 ;
 M_.params( 71 ) = 0.8968400853887450;
 rhozetac_p = M_.params( 71 );
 M_.params( 72 ) = 0.9086616567125290;
 rhozetai_p = M_.params( 72 );
 M_.params( 70 ) = 0.9743991813961140;
 rhoterm_p = M_.params( 70 );
-stdsigma1_p    = 0.0700061676650730 ;	 
+stdsigma1_p    = 0.0700061676650730 ;
 M_.params( 35 ) = 0;
 actil_p = M_.params( 35 );
 M_.params( 36 ) = 0;
@@ -916,14 +916,14 @@ M_.params( 98 ) = 1;
 zetac_p = M_.params( 98 );
 M_.params( 99 ) = 1;
 zetai_p = M_.params( 99 );
-thispath = cd;                                                           
-cd('..');                                                                
-load policy_param.mat;                                                   
-for i=1:33                                                               
-deep_parameter_name = M_.param_names(i,:);                           
-eval(['M_.params(i)  = ' deep_parameter_name ' ;'])                  
-end                                                                      
-cd(thispath);    
+thispath = pwd;
+cd('..');
+load policy_param.mat;
+for i=1:33
+deep_parameter_name = M_.param_names(i,:);
+eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
+end
+cd(thispath);
 M_.params( 32 ) = 100;
 std_r_ = M_.params( 32 );
 M_.params( 34 ) = 1/M_.params(46);
