@@ -239,7 +239,7 @@ function [base]=stoch_simul_MMB(base)
         base.pos_shock(p,base.models(base.epsilon))=ii;
 
         if ii==0
-          disp([deblank(strtrim(inno)) ' is unavailable for Model: ' strtrim(base.names(base.models(base.epsilon),:))]);
+          disp([inno ' is unavailable for this model: ']);
         else
           if base.variabledim(base.models(base.epsilon)) == 1
             vdim = 1;
@@ -281,15 +281,15 @@ function [base]=stoch_simul_MMB(base)
     end
   end
 
-  delete('*_dynamic.m');
-  delete('*_static.m');
-  delete('*.log');
-  delete('*_set_auxiliary_variables.m');
-  delete('*_results.mat');
-  delete('*.eps');
-  delete('*.fig');
-  delete('*.pdf');
-  delete('*.png');
-  delete([strtrim(deblank(base.names((base.models(base.epsilon)),:))),'.m']);
-  %rmdir(strtrim(deblank(base.names((base.models(base.epsilon)),:))), 's')
+  % delete('*_dynamic.m');
+  % delete('*_static.m');
+  % delete('*.log');
+  % delete('*_set_auxiliary_variables.m');
+  % delete('*_results.mat');
+  % delete('*.eps');
+  % delete('*.fig');
+  % delete('*.pdf');
+  % delete('*.png');
+  % delete([strtrim(deblank(base.names((base.models(base.epsilon)),:))),'.m']);
+  % rmdir(strtrim(deblank(base.names((base.models(base.epsilon)),:))), 's')
 end
