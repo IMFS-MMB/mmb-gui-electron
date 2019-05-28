@@ -27,7 +27,6 @@ function mb = make_modelbase(model, rule, options, modelpath)
 
   mb.modeltime(1) = cputime;
   mb.models(1) = 1;
-  mb.setpath(1,:) = modelpath;
   mb.epsilon = 1;
   mb.l = 1;
   mb.totaltime = cputime;
