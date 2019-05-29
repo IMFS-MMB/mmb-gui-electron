@@ -48,7 +48,6 @@
             events: {
               legendItemClick: (event) => {
                 const legendSeries = event.target;
-                console.log(HighCharts.getOptions().exporting);
                 HighCharts.charts.forEach((chart) => {
                   if (chart === legendSeries.chart) {
                     return;
