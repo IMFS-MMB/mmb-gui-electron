@@ -1,5 +1,5 @@
 function run_model_with_rules(model, rules, config, paths)
-  rmdir(paths.work);
+  rmdir(paths.work, 's');
   mkdir(paths.work);
   copyfile(fullfile(paths.models, model.name), fullfile(paths.work, model.name));
 
