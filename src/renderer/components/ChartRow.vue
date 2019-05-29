@@ -1,5 +1,5 @@
 <template>
-    <b-row class="mt-5" v-if="hasAtLeastOneSeries(charts)">
+    <b-row v-if="hasAtLeastOneSeries(charts)">
         <b-col v-for="(chart, index) of charts" :key="index">
             <Chart v-if="chart.series.length" :title="chart.title" :series="chart.series"></Chart>
         </b-col>

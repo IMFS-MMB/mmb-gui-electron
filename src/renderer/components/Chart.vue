@@ -26,6 +26,9 @@
       const [title, subtitle] = this.title.split(' - ');
 
       this.chart = new HighCharts.Chart({
+        legend: {
+          enabled: false,
+        },
         chart: {
           renderTo: this.id,
         },

@@ -58,6 +58,13 @@ const getters = {
   inProgress(state) {
     return state.inProgress;
   },
+  legendSeries(state) {
+    return state.data.map(d => ({
+      id: getSeriesId(d),
+      name: getSeriesId(d),
+      values: [],
+    }));
+  },
   acCharts(state) {
     return getAllCharts(state.data, DEFAULT_VARS, varName => `AC - ${varName}`, (data, varName) => get(data, ['AC', varName]));
   },
