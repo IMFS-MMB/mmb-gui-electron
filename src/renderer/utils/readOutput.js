@@ -10,6 +10,10 @@ function parseOutput(json) {
     switch (value) {
       case '_Inf_':
         return Infinity;
+      case '-_Inf_':
+        return -Infinity;
+      case '_NaN_':
+        return NaN;
       default:
         return value;
     }
@@ -21,5 +25,5 @@ export default async function readOutput(folder) {
 
   const outputs = await Promise.all(files.map(file => readFile(path.join(folder, file), { encoding: 'utf8' })));
 
-  return outputs.reduce((acc, json) => [...acc, ...parseOutput(json)], []);
+  return outputs.map(json => parseOutput(json));
 }
