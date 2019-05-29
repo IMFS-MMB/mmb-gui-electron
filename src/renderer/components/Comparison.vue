@@ -21,9 +21,11 @@
             </b-col>
         </b-row>
 
+        <b-row><b-col><ChartLegend></ChartLegend></b-col></b-row>
+
         <ChartRow v-if="acCharts && acCharts.length" :charts="acCharts"/>
-        <ChartRow v-if="monCharts && monCharts.length" :charts="monCharts"/>
-        <ChartRow v-if="fisCharts && fisCharts.length" :charts="fisCharts"/>
+        <ChartRow class="mt-5" v-if="monCharts && monCharts.length" :charts="monCharts"/>
+        <ChartRow class="mt-5" v-if="fisCharts && fisCharts.length" :charts="fisCharts"/>
 
         <Variances v-if="varTable && varTable.length" :varTable="varTable"/>
     </div>
@@ -37,6 +39,7 @@
   import SaveData from './SaveData';
   import Variances from './Variances';
   import ChartRow from './ChartRow';
+  import ChartLegend from './ChartLegend';
 
   export default {
     components: {
@@ -44,6 +47,7 @@
       Variances,
       SaveData,
       Chart,
+      ChartLegend,
     },
     data() {
       return {
