@@ -9,8 +9,7 @@
                             <small class="comparison-set-stats">(
                                 {{numModels}} Models,
                                 {{numPolicyRules}} Policy Rules,
-                                {{numShocks}} Shock,
-                                {{numOutputVars}} Variable Outputs
+                                {{numShocks}} Shocks,
                                 )
                             </small>
 
@@ -54,11 +53,8 @@
       };
     },
     computed: {
-      ...mapGetters('comparison', ['varTable', 'inProgress', 'show', 'data']),
-      ...mapGetters('comparison', {
-        chartRows: 'charts',
-      }),
-      ...mapGetters('settings', ['numModels', 'numPolicyRules', 'numShocks', 'numOutputVars']),
+      ...mapGetters('comparison', ['varTable', 'inProgress', 'show', 'data', 'chartRows']),
+      ...mapGetters('settings', ['numModels', 'numPolicyRules', 'numShocks']),
     },
     watch: {
       inProgress(newVal, oldVal) {
