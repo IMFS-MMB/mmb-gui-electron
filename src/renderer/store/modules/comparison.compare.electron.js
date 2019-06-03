@@ -37,7 +37,5 @@ export default async function compare(ctx) {
     logger.warn(e.message);
   }
 
-  logger.debug(JSON.stringify(output, null, true));
-
   return output;
 }

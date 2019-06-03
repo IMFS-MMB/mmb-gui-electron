@@ -1,11 +1,13 @@
 import get from 'lodash.get';
 import pick from 'lodash.pick';
+import cloneDeep from 'lodash.clonedeep';
 
 import compare from './comparison.compare.PLATFORM';
 
 const namespaced = true;
 
 const state = {
+  settings: null,
   show: false,
   inProgress: false,
   stdout: [],
@@ -45,6 +47,17 @@ function getAllCharts(allData, varNames, titleFactory, dataSelector) {
 
 const DEFAULT_VARS = ['inflation', 'interest', 'output', 'outputgap'];
 
+function getAllShockCharts(state) {
+  const { shocks } = state.settings;
+
+  return shocks.map(shock => getAllCharts(
+    state.data,
+    DEFAULT_VARS,
+    varName => `${shock.text} - ${varName}`,
+    (data, varName) => get(data, ['IRF', shock.name, varName]),
+  ));
+}
+
 const getters = {
   data(state) {
     return state.data;
@@ -65,14 +78,11 @@ const getters = {
       values: [],
     }));
   },
-  acCharts(state) {
-    return getAllCharts(state.data, DEFAULT_VARS, varName => `AC - ${varName}`, (data, varName) => get(data, ['AC', varName]));
-  },
-  monCharts(state) {
-    return getAllCharts(state.data, DEFAULT_VARS, varName => `Monetary Shock - ${varName}`, (data, varName) => get(data, ['IRF', 'interest_', varName]));
-  },
-  fisCharts(state) {
-    return getAllCharts(state.data, DEFAULT_VARS, varName => `Fiscal Shock - ${varName}`, (data, varName) => get(data, ['IRF', 'fiscal_', varName]));
+  charts(state) {
+    return [
+      getAllCharts(state.data, DEFAULT_VARS, varName => `AC - ${varName}`, (data, varName) => get(data, ['AC', varName])),
+      ...getAllShockCharts(state),
+    ];
   },
   varTable(state) {
     state.data.map((d) => {
@@ -87,7 +97,8 @@ const getters = {
 };
 
 const mutations = {
-  start(state) {
+  start(state, settings) {
+    state.settings = settings;
     state.stdout = [];
     state.stderr = [];
     state.data = [];
@@ -119,7 +130,9 @@ const mutations = {
 
 const actions = {
   async compare(ctx) {
-    ctx.commit('start');
+    const settings = cloneDeep(ctx.rootState.settings);
+
+    ctx.commit('start', settings);
 
     let result = [];
 

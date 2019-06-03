@@ -23,9 +23,7 @@
 
         <b-row><b-col><ChartLegend></ChartLegend></b-col></b-row>
 
-        <ChartRow v-if="acCharts && acCharts.length" :charts="acCharts"/>
-        <ChartRow class="mt-5" v-if="monCharts && monCharts.length" :charts="monCharts"/>
-        <ChartRow class="mt-5" v-if="fisCharts && fisCharts.length" :charts="fisCharts"/>
+        <ChartRow :class="{'mt-5': index > 0 }" v-for="(chartrow, index) in chartRows" :charts="chartrow"/>
 
         <Variances v-if="varTable && varTable.length" :varTable="varTable"/>
     </div>
@@ -56,7 +54,10 @@
       };
     },
     computed: {
-      ...mapGetters('comparison', ['varTable', 'acCharts', 'monCharts', 'fisCharts', 'inProgress', 'show', 'data']),
+      ...mapGetters('comparison', ['varTable', 'inProgress', 'show', 'data']),
+      ...mapGetters('comparison', {
+        chartRows: 'charts',
+      }),
       ...mapGetters('settings', ['numModels', 'numPolicyRules', 'numShocks', 'numOutputVars']),
     },
     watch: {
