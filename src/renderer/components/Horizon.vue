@@ -1,5 +1,5 @@
 <template>
-    <div class="outer">
+    <div>
         <div class="text">Horizon: {{model}}</div>
         <vue-slider class="slider" v-model="model" v-bind="options"></vue-slider>
     </div>
@@ -68,17 +68,8 @@
 </script>
 
 <style scoped lang="scss">
-    .outer {
-        /*border-top: 1px solid rgba(0, 0, 0, 0.125);*/
-    }
-
     .text {
         font-size: 0.9rem;
-        padding-left: 30px;
-    }
-
-    .slider {
-        margin-left: 22px;
-        margin-right: 22px;
+        padding-left: 8px;
     }
 </style>
