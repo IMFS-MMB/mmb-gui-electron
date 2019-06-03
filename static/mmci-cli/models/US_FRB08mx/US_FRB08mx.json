@@ -41,2013 +41,2013 @@
   "vars": [
     {
       "name": "ceng",
-      "human_readable": "ceng"
+      "text": "ceng"
     },
     {
       "name": "cengl1",
-      "human_readable": "cengl1"
+      "text": "cengl1"
     },
     {
       "name": "cengl2",
-      "human_readable": "cengl2"
+      "text": "cengl2"
     },
     {
       "name": "dlpl",
-      "human_readable": "dlpl"
+      "text": "dlpl"
     },
     {
       "name": "dlpll1",
-      "human_readable": "dlpll1"
+      "text": "dlpll1"
     },
     {
       "name": "dlpll2",
-      "human_readable": "dlpll2"
+      "text": "dlpll2"
     },
     {
       "name": "dlpxp",
-      "human_readable": "dlpxp"
+      "text": "dlpxp"
     },
     {
       "name": "dlpxpl1",
-      "human_readable": "dlpxpl1"
+      "text": "dlpxpl1"
     },
     {
       "name": "dlpxpl2",
-      "human_readable": "dlpxpl2"
+      "text": "dlpxpl2"
     },
     {
       "name": "dlpxpl3",
-      "human_readable": "dlpxpl3"
+      "text": "dlpxpl3"
     },
     {
       "name": "dpxb",
-      "human_readable": "dpxb"
+      "text": "dpxb"
     },
     {
       "name": "dpxbl1",
-      "human_readable": "dpxbl1"
+      "text": "dpxbl1"
     },
     {
       "name": "dpxbl2",
-      "human_readable": "dpxbl2"
+      "text": "dpxbl2"
     },
     {
       "name": "dpxbl3",
-      "human_readable": "dpxbl3"
+      "text": "dpxbl3"
     },
     {
       "name": "dpxg",
-      "human_readable": "dpxg"
+      "text": "dpxg"
     },
     {
       "name": "dpxgl1",
-      "human_readable": "dpxgl1"
+      "text": "dpxgl1"
     },
     {
       "name": "dpxgl2",
-      "human_readable": "dpxgl2"
+      "text": "dpxgl2"
     },
     {
       "name": "dpxgl3",
-      "human_readable": "dpxgl3"
+      "text": "dpxgl3"
     },
     {
       "name": "dpxnc",
-      "human_readable": "dpxnc"
+      "text": "dpxnc"
     },
     {
       "name": "dpxncl1",
-      "human_readable": "dpxncl1"
+      "text": "dpxncl1"
     },
     {
       "name": "dpxncl2",
-      "human_readable": "dpxncl2"
+      "text": "dpxncl2"
     },
     {
       "name": "drffe",
-      "human_readable": "drffe"
+      "text": "drffe"
     },
     {
       "name": "ec",
-      "human_readable": "ec"
+      "text": "ec"
     },
     {
       "name": "ecd",
-      "human_readable": "ecd"
+      "text": "ecd"
     },
     {
       "name": "ecdl1",
-      "human_readable": "ecdl1"
+      "text": "ecdl1"
     },
     {
       "name": "ech",
-      "human_readable": "ech"
+      "text": "ech"
     },
     {
       "name": "echsh",
-      "human_readable": "echsh"
+      "text": "echsh"
     },
     {
       "name": "echshl1",
-      "human_readable": "echshl1"
+      "text": "echshl1"
     },
     {
       "name": "ecnia",
-      "human_readable": "ecnia"
+      "text": "ecnia"
     },
     {
       "name": "eco",
-      "human_readable": "eco"
+      "text": "eco"
     },
     {
       "name": "ecol1",
-      "human_readable": "ecol1"
+      "text": "ecol1"
     },
     {
       "name": "efs",
-      "human_readable": "efs"
+      "text": "efs"
     },
     {
       "name": "efsl1",
-      "human_readable": "efsl1"
+      "text": "efsl1"
     },
     {
       "name": "efsl2",
-      "human_readable": "efsl2"
+      "text": "efsl2"
     },
     {
       "name": "efsl3",
-      "human_readable": "efsl3"
+      "text": "efsl3"
     },
     {
       "name": "efsl4",
-      "human_readable": "efsl4"
+      "text": "efsl4"
     },
     {
       "name": "eg",
-      "human_readable": "eg"
+      "text": "eg"
     },
     {
       "name": "egfi",
-      "human_readable": "egfi"
+      "text": "egfi"
     },
     {
       "name": "egfi_",
-      "human_readable": "egfi_"
+      "text": "egfi_"
     },
     {
       "name": "egfil1",
-      "human_readable": "egfil1"
+      "text": "egfil1"
     },
     {
       "name": "egfil2",
-      "human_readable": "egfil2"
+      "text": "egfil2"
     },
     {
       "name": "egfl",
-      "human_readable": "egfl"
+      "text": "egfl"
     },
     {
       "name": "egfl_",
-      "human_readable": "egfl_"
+      "text": "egfl_"
     },
     {
       "name": "egfll1",
-      "human_readable": "egfll1"
+      "text": "egfll1"
     },
     {
       "name": "egfll2",
-      "human_readable": "egfll2"
+      "text": "egfll2"
     },
     {
       "name": "egfo",
-      "human_readable": "egfo"
+      "text": "egfo"
     },
     {
       "name": "egfol1",
-      "human_readable": "egfol1"
+      "text": "egfol1"
     },
     {
       "name": "egfol2",
-      "human_readable": "egfol2"
+      "text": "egfol2"
     },
     {
       "name": "egsi",
-      "human_readable": "egsi"
+      "text": "egsi"
     },
     {
       "name": "egsil1",
-      "human_readable": "egsil1"
+      "text": "egsil1"
     },
     {
       "name": "egsil2",
-      "human_readable": "egsil2"
+      "text": "egsil2"
     },
     {
       "name": "egsl",
-      "human_readable": "egsl"
+      "text": "egsl"
     },
     {
       "name": "egsll1",
-      "human_readable": "egsll1"
+      "text": "egsll1"
     },
     {
       "name": "egsll2",
-      "human_readable": "egsll2"
+      "text": "egsll2"
     },
     {
       "name": "egso",
-      "human_readable": "egso"
+      "text": "egso"
     },
     {
       "name": "egsol1",
-      "human_readable": "egsol1"
+      "text": "egsol1"
     },
     {
       "name": "egsol2",
-      "human_readable": "egsol2"
+      "text": "egsol2"
     },
     {
       "name": "egt",
-      "human_readable": "egt"
+      "text": "egt"
     },
     {
       "name": "eh",
-      "human_readable": "eh"
+      "text": "eh"
     },
     {
       "name": "ehl1",
-      "human_readable": "ehl1"
+      "text": "ehl1"
     },
     {
       "name": "ehl2",
-      "human_readable": "ehl2"
+      "text": "ehl2"
     },
     {
       "name": "em",
-      "human_readable": "em"
+      "text": "em"
     },
     {
       "name": "emo",
-      "human_readable": "emo"
+      "text": "emo"
     },
     {
       "name": "emp",
-      "human_readable": "emp"
+      "text": "emp"
     },
     {
       "name": "empt",
-      "human_readable": "empt"
+      "text": "empt"
     },
     {
       "name": "epd",
-      "human_readable": "epd"
+      "text": "epd"
     },
     {
       "name": "epdc",
-      "human_readable": "epdc"
+      "text": "epdc"
     },
     {
       "name": "epdcl1",
-      "human_readable": "epdcl1"
+      "text": "epdcl1"
     },
     {
       "name": "epdcl2",
-      "human_readable": "epdcl2"
+      "text": "epdcl2"
     },
     {
       "name": "epdo",
-      "human_readable": "epdo"
+      "text": "epdo"
     },
     {
       "name": "epdol1",
-      "human_readable": "epdol1"
+      "text": "epdol1"
     },
     {
       "name": "epdol2",
-      "human_readable": "epdol2"
+      "text": "epdol2"
     },
     {
       "name": "eps",
-      "human_readable": "eps"
+      "text": "eps"
     },
     {
       "name": "epsl1",
-      "human_readable": "epsl1"
+      "text": "epsl1"
     },
     {
       "name": "epsl2",
-      "human_readable": "epsl2"
+      "text": "epsl2"
     },
     {
       "name": "ex",
-      "human_readable": "ex"
+      "text": "ex"
     },
     {
       "name": "fcbnr",
-      "human_readable": "fcbnr"
+      "text": "fcbnr"
     },
     {
       "name": "fgdp",
-      "human_readable": "fgdp"
+      "text": "fgdp"
     },
     {
       "name": "fgdpl1",
-      "human_readable": "fgdpl1"
+      "text": "fgdpl1"
     },
     {
       "name": "fgdpl2",
-      "human_readable": "fgdpl2"
+      "text": "fgdpl2"
     },
     {
       "name": "fgdpl3",
-      "human_readable": "fgdpl3"
+      "text": "fgdpl3"
     },
     {
       "name": "fgdpl4",
-      "human_readable": "fgdpl4"
+      "text": "fgdpl4"
     },
     {
       "name": "fgdpl5",
-      "human_readable": "fgdpl5"
+      "text": "fgdpl5"
     },
     {
       "name": "fgdpt",
-      "human_readable": "fgdpt"
+      "text": "fgdpt"
     },
     {
       "name": "fispol",
-      "human_readable": "fispol"
+      "text": "fispol"
     },
     {
       "name": "fnicnr",
-      "human_readable": "fnicnr"
+      "text": "fnicnr"
     },
     {
       "name": "fnilnr",
-      "human_readable": "fnilnr"
+      "text": "fnilnr"
     },
     {
       "name": "fpi10",
-      "human_readable": "fpi10"
+      "text": "fpi10"
     },
     {
       "name": "fpi10l1",
-      "human_readable": "fpi10l1"
+      "text": "fpi10l1"
     },
     {
       "name": "fpi10l2",
-      "human_readable": "fpi10l2"
+      "text": "fpi10l2"
     },
     {
       "name": "fpi10l3",
-      "human_readable": "fpi10l3"
+      "text": "fpi10l3"
     },
     {
       "name": "fpi10t",
-      "human_readable": "fpi10t"
+      "text": "fpi10t"
     },
     {
       "name": "fpic",
-      "human_readable": "fpic"
+      "text": "fpic"
     },
     {
       "name": "fpxr",
-      "human_readable": "fpxr"
+      "text": "fpxr"
     },
     {
       "name": "fpxrr",
-      "human_readable": "fpxrr"
+      "text": "fpxrr"
     },
     {
       "name": "fpxrrl1",
-      "human_readable": "fpxrrl1"
+      "text": "fpxrrl1"
     },
     {
       "name": "frl10",
-      "human_readable": "frl10"
+      "text": "frl10"
     },
     {
       "name": "frl10l1",
-      "human_readable": "frl10l1"
+      "text": "frl10l1"
     },
     {
       "name": "frs10",
-      "human_readable": "frs10"
+      "text": "frs10"
     },
     {
       "name": "fxgap",
-      "human_readable": "fxgap"
+      "text": "fxgap"
     },
     {
       "name": "fxgapl1",
-      "human_readable": "fxgapl1"
+      "text": "fxgapl1"
     },
     {
       "name": "fynicnr",
-      "human_readable": "fynicnr"
+      "text": "fynicnr"
     },
     {
       "name": "fynilnr",
-      "human_readable": "fynilnr"
+      "text": "fynilnr"
     },
     {
       "name": "gfdbtl1",
-      "human_readable": "gfdbtl1"
+      "text": "gfdbtl1"
     },
     {
       "name": "gfdbtnr",
-      "human_readable": "gfdbtnr"
+      "text": "gfdbtnr"
     },
     {
       "name": "gfdefnr",
-      "human_readable": "gfdefnr"
+      "text": "gfdefnr"
     },
     {
       "name": "gfexpnr",
-      "human_readable": "gfexpnr"
+      "text": "gfexpnr"
     },
     {
       "name": "gfintnr",
-      "human_readable": "gfintnr"
+      "text": "gfintnr"
     },
     {
       "name": "gfrecnr",
-      "human_readable": "gfrecnr"
+      "text": "gfrecnr"
     },
     {
       "name": "gftrd",
-      "human_readable": "gftrd"
+      "text": "gftrd"
     },
     {
       "name": "gsdbtl1",
-      "human_readable": "gsdbtl1"
+      "text": "gsdbtl1"
     },
     {
       "name": "gsdbtnr",
-      "human_readable": "gsdbtnr"
+      "text": "gsdbtnr"
     },
     {
       "name": "gsexpnr",
-      "human_readable": "gsexpnr"
+      "text": "gsexpnr"
     },
     {
       "name": "gsintnr",
-      "human_readable": "gsintnr"
+      "text": "gsintnr"
     },
     {
       "name": "gsrecnr",
-      "human_readable": "gsrecnr"
+      "text": "gsrecnr"
     },
     {
       "name": "gssrpnr",
-      "human_readable": "gssrpnr"
+      "text": "gssrpnr"
     },
     {
       "name": "gstrd",
-      "human_readable": "gstrd"
+      "text": "gstrd"
     },
     {
       "name": "hgemp",
-      "human_readable": "hgemp"
+      "text": "hgemp"
     },
     {
       "name": "hggdpl1",
-      "human_readable": "hggdpl1"
+      "text": "hggdpl1"
     },
     {
       "name": "hggdpl2",
-      "human_readable": "hggdpl2"
+      "text": "hggdpl2"
     },
     {
       "name": "hggdpt",
-      "human_readable": "hggdpt"
+      "text": "hggdpt"
     },
     {
       "name": "hgpmor",
-      "human_readable": "hgpmor"
+      "text": "hgpmor"
     },
     {
       "name": "hgx",
-      "human_readable": "hgx"
+      "text": "hgx"
     },
     {
       "name": "hgxgv",
-      "human_readable": "hgxgv"
+      "text": "hgxgv"
     },
     {
       "name": "hgxhhi",
-      "human_readable": "hgxhhi"
+      "text": "hgxhhi"
     },
     {
       "name": "hgxl1",
-      "human_readable": "hgxl1"
+      "text": "hgxl1"
     },
     {
       "name": "hks",
-      "human_readable": "hks"
+      "text": "hks"
     },
     {
       "name": "hlprdt",
-      "human_readable": "hlprdt"
+      "text": "hlprdt"
     },
     {
       "name": "hmfpt",
-      "human_readable": "hmfpt"
+      "text": "hmfpt"
     },
     {
       "name": "hmfptl1",
-      "human_readable": "hmfptl1"
+      "text": "hmfptl1"
     },
     {
       "name": "hprdtw",
-      "human_readable": "hprdtw"
+      "text": "hprdtw"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "jccanr",
-      "human_readable": "jccanr"
+      "text": "jccanr"
     },
     {
       "name": "kcd",
-      "human_readable": "kcd"
+      "text": "kcd"
     },
     {
       "name": "kh",
-      "human_readable": "kh"
+      "text": "kh"
     },
     {
       "name": "ki",
-      "human_readable": "ki"
+      "text": "ki"
     },
     {
       "name": "kil1",
-      "human_readable": "kil1"
+      "text": "kil1"
     },
     {
       "name": "kil2",
-      "human_readable": "kil2"
+      "text": "kil2"
     },
     {
       "name": "kil3",
-      "human_readable": "kil3"
+      "text": "kil3"
     },
     {
       "name": "kil4",
-      "human_readable": "kil4"
+      "text": "kil4"
     },
     {
       "name": "kpdc",
-      "human_readable": "kpdc"
+      "text": "kpdc"
     },
     {
       "name": "kpdo",
-      "human_readable": "kpdo"
+      "text": "kpdo"
     },
     {
       "name": "kps",
-      "human_readable": "kps"
+      "text": "kps"
     },
     {
       "name": "ks",
-      "human_readable": "ks"
+      "text": "ks"
     },
     {
       "name": "left",
-      "human_readable": "left"
+      "text": "left"
     },
     {
       "name": "leh",
-      "human_readable": "leh"
+      "text": "leh"
     },
     {
       "name": "leo",
-      "human_readable": "leo"
+      "text": "leo"
     },
     {
       "name": "lep",
-      "human_readable": "lep"
+      "text": "lep"
     },
     {
       "name": "leppol1",
-      "human_readable": "leppol1"
+      "text": "leppol1"
     },
     {
       "name": "leppol2",
-      "human_readable": "leppol2"
+      "text": "leppol2"
     },
     {
       "name": "leppot",
-      "human_readable": "leppot"
+      "text": "leppot"
     },
     {
       "name": "lest",
-      "human_readable": "lest"
+      "text": "lest"
     },
     {
       "name": "lfpr",
-      "human_readable": "lfpr"
+      "text": "lfpr"
     },
     {
       "name": "lhp",
-      "human_readable": "lhp"
+      "text": "lhp"
     },
     {
       "name": "lhpl1",
-      "human_readable": "lhpl1"
+      "text": "lhpl1"
     },
     {
       "name": "lprdt",
-      "human_readable": "lprdt"
+      "text": "lprdt"
     },
     {
       "name": "lur",
-      "human_readable": "lur"
+      "text": "lur"
     },
     {
       "name": "lurl1",
-      "human_readable": "lurl1"
+      "text": "lurl1"
     },
     {
       "name": "lurl2",
-      "human_readable": "lurl2"
+      "text": "lurl2"
     },
     {
       "name": "lurl3",
-      "human_readable": "lurl3"
+      "text": "lurl3"
     },
     {
       "name": "lurnal1",
-      "human_readable": "lurnal1"
+      "text": "lurnal1"
     },
     {
       "name": "lurnal2",
-      "human_readable": "lurnal2"
+      "text": "lurnal2"
     },
     {
       "name": "lurnal3",
-      "human_readable": "lurnal3"
+      "text": "lurnal3"
     },
     {
       "name": "lurnat",
-      "human_readable": "lurnat"
+      "text": "lurnat"
     },
     {
       "name": "lww",
-      "human_readable": "lww"
+      "text": "lww"
     },
     {
       "name": "lzecd",
-      "human_readable": "lzecd"
+      "text": "lzecd"
     },
     {
       "name": "lzeco",
-      "human_readable": "lzeco"
+      "text": "lzeco"
     },
     {
       "name": "lzeh",
-      "human_readable": "lzeh"
+      "text": "lzeh"
     },
     {
       "name": "lzgapc2",
-      "human_readable": "lzgapc2"
+      "text": "lzgapc2"
     },
     {
       "name": "lzlhp",
-      "human_readable": "lzlhp"
+      "text": "lzlhp"
     },
     {
       "name": "lzlurc",
-      "human_readable": "lzlurc"
+      "text": "lzlurc"
     },
     {
       "name": "lzlurl",
-      "human_readable": "lzlurl"
+      "text": "lzlurl"
     },
     {
       "name": "lzlurnc",
-      "human_readable": "lzlurnc"
+      "text": "lzlurnc"
     },
     {
       "name": "lzpc",
-      "human_readable": "lzpc"
+      "text": "lzpc"
     },
     {
       "name": "lzpib5",
-      "human_readable": "lzpib5"
+      "text": "lzpib5"
     },
     {
       "name": "lzpl",
-      "human_readable": "lzpl"
+      "text": "lzpl"
     },
     {
       "name": "lzpnc",
-      "human_readable": "lzpnc"
+      "text": "lzpnc"
     },
     {
       "name": "lzvpdc",
-      "human_readable": "lzvpdc"
+      "text": "lzvpdc"
     },
     {
       "name": "lzvpdo",
-      "human_readable": "lzvpdo"
+      "text": "lzvpdo"
     },
     {
       "name": "lzvpol1",
-      "human_readable": "lzvpol1"
+      "text": "lzvpol1"
     },
     {
       "name": "lzvps",
-      "human_readable": "lzvps"
+      "text": "lzvps"
     },
     {
       "name": "lzvpsl1",
-      "human_readable": "lzvpsl1"
+      "text": "lzvpsl1"
     },
     {
       "name": "lzxbc",
-      "human_readable": "lzxbc"
+      "text": "lzxbc"
     },
     {
       "name": "lzxbo",
-      "human_readable": "lzxbo"
+      "text": "lzxbo"
     },
     {
       "name": "lzxbol1",
-      "human_readable": "lzxbol1"
+      "text": "lzxbol1"
     },
     {
       "name": "lzxbs",
-      "human_readable": "lzxbs"
+      "text": "lzxbs"
     },
     {
       "name": "lzxbsl1",
-      "human_readable": "lzxbsl1"
+      "text": "lzxbsl1"
     },
     {
       "name": "lzynid",
-      "human_readable": "lzynid"
+      "text": "lzynid"
     },
     {
       "name": "mfpt",
-      "human_readable": "mfpt"
+      "text": "mfpt"
     },
     {
       "name": "one",
-      "human_readable": "one"
+      "text": "one"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "pcengl1",
-      "human_readable": "pcengl1"
+      "text": "pcengl1"
     },
     {
       "name": "pcengr",
-      "human_readable": "pcengr"
+      "text": "pcengr"
     },
     {
       "name": "pcer",
-      "human_readable": "pcer"
+      "text": "pcer"
     },
     {
       "name": "pcerl1",
-      "human_readable": "pcerl1"
+      "text": "pcerl1"
     },
     {
       "name": "pcfr",
-      "human_readable": "pcfr"
+      "text": "pcfr"
     },
     {
       "name": "pcfrl1",
-      "human_readable": "pcfrl1"
+      "text": "pcfrl1"
     },
     {
       "name": "pcfrl2",
-      "human_readable": "pcfrl2"
+      "text": "pcfrl2"
     },
     {
       "name": "pcfrl3",
-      "human_readable": "pcfrl3"
+      "text": "pcfrl3"
     },
     {
       "name": "pcniar",
-      "human_readable": "pcniar"
+      "text": "pcniar"
     },
     {
       "name": "pcxfer",
-      "human_readable": "pcxfer"
+      "text": "pcxfer"
     },
     {
       "name": "pgdpr",
-      "human_readable": "pgdpr"
+      "text": "pgdpr"
     },
     {
       "name": "picnia",
-      "human_readable": "picnia"
+      "text": "picnia"
     },
     {
       "name": "picnil1",
-      "human_readable": "picnil1"
+      "text": "picnil1"
     },
     {
       "name": "picnil2",
-      "human_readable": "picnil2"
+      "text": "picnil2"
     },
     {
       "name": "picnil3",
-      "human_readable": "picnil3"
+      "text": "picnil3"
     },
     {
       "name": "picxfe",
-      "human_readable": "picxfe"
+      "text": "picxfe"
     },
     {
       "name": "picxfl1",
-      "human_readable": "picxfl1"
+      "text": "picxfl1"
     },
     {
       "name": "picxfl2",
-      "human_readable": "picxfl2"
+      "text": "picxfl2"
     },
     {
       "name": "picxfl3",
-      "human_readable": "picxfl3"
+      "text": "picxfl3"
     },
     {
       "name": "pigdp",
-      "human_readable": "pigdp"
+      "text": "pigdp"
     },
     {
       "name": "pimor",
-      "human_readable": "pimor"
+      "text": "pimor"
     },
     {
       "name": "plminr",
-      "human_readable": "plminr"
+      "text": "plminr"
     },
     {
       "name": "plr",
-      "human_readable": "plr"
+      "text": "plr"
     },
     {
       "name": "pmor",
-      "human_readable": "pmor"
+      "text": "pmor"
     },
     {
       "name": "poilr",
-      "human_readable": "poilr"
+      "text": "poilr"
     },
     {
       "name": "poilrl1",
-      "human_readable": "poilrl1"
+      "text": "poilrl1"
     },
     {
       "name": "ppdcr",
-      "human_readable": "ppdcr"
+      "text": "ppdcr"
     },
     {
       "name": "ptr",
-      "human_readable": "ptr"
+      "text": "ptr"
     },
     {
       "name": "pxbr",
-      "human_readable": "pxbr"
+      "text": "pxbr"
     },
     {
       "name": "pxbrl1",
-      "human_readable": "pxbrl1"
+      "text": "pxbrl1"
     },
     {
       "name": "pxgr",
-      "human_readable": "pxgr"
+      "text": "pxgr"
     },
     {
       "name": "pxncr",
-      "human_readable": "pxncr"
+      "text": "pxncr"
     },
     {
       "name": "qec",
-      "human_readable": "qec"
+      "text": "qec"
     },
     {
       "name": "qecd",
-      "human_readable": "qecd"
+      "text": "qecd"
     },
     {
       "name": "qecdl1",
-      "human_readable": "qecdl1"
+      "text": "qecdl1"
     },
     {
       "name": "qecdl2",
-      "human_readable": "qecdl2"
+      "text": "qecdl2"
     },
     {
       "name": "qecdl3",
-      "human_readable": "qecdl3"
+      "text": "qecdl3"
     },
     {
       "name": "qecdl4",
-      "human_readable": "qecdl4"
+      "text": "qecdl4"
     },
     {
       "name": "qecl1",
-      "human_readable": "qecl1"
+      "text": "qecl1"
     },
     {
       "name": "qecl2",
-      "human_readable": "qecl2"
+      "text": "qecl2"
     },
     {
       "name": "qecl3",
-      "human_readable": "qecl3"
+      "text": "qecl3"
     },
     {
       "name": "qecl4",
-      "human_readable": "qecl4"
+      "text": "qecl4"
     },
     {
       "name": "qeh",
-      "human_readable": "qeh"
+      "text": "qeh"
     },
     {
       "name": "qehf1",
-      "human_readable": "qehf1"
+      "text": "qehf1"
     },
     {
       "name": "qehl1",
-      "human_readable": "qehl1"
+      "text": "qehl1"
     },
     {
       "name": "qehl2",
-      "human_readable": "qehl2"
+      "text": "qehl2"
     },
     {
       "name": "qehl3",
-      "human_readable": "qehl3"
+      "text": "qehl3"
     },
     {
       "name": "qehl4",
-      "human_readable": "qehl4"
+      "text": "qehl4"
     },
     {
       "name": "qepdc",
-      "human_readable": "qepdc"
+      "text": "qepdc"
     },
     {
       "name": "qepdo",
-      "human_readable": "qepdo"
+      "text": "qepdo"
     },
     {
       "name": "qepdol1",
-      "human_readable": "qepdol1"
+      "text": "qepdol1"
     },
     {
       "name": "qeps",
-      "human_readable": "qeps"
+      "text": "qeps"
     },
     {
       "name": "qepsl1",
-      "human_readable": "qepsl1"
+      "text": "qepsl1"
     },
     {
       "name": "qlhp",
-      "human_readable": "qlhp"
+      "text": "qlhp"
     },
     {
       "name": "qlhpl1",
-      "human_readable": "qlhpl1"
+      "text": "qlhpl1"
     },
     {
       "name": "qpcniar",
-      "human_readable": "qpcniar"
+      "text": "qpcniar"
     },
     {
       "name": "qplr",
-      "human_readable": "qplr"
+      "text": "qplr"
     },
     {
       "name": "qpxgr",
-      "human_readable": "qpxgr"
+      "text": "qpxgr"
     },
     {
       "name": "qpxncr",
-      "human_readable": "qpxncr"
+      "text": "qpxncr"
     },
     {
       "name": "qpxpr",
-      "human_readable": "qpxpr"
+      "text": "qpxpr"
     },
     {
       "name": "qynidl1",
-      "human_readable": "qynidl1"
+      "text": "qynidl1"
     },
     {
       "name": "qynidl2",
-      "human_readable": "qynidl2"
+      "text": "qynidl2"
     },
     {
       "name": "qynidl3",
-      "human_readable": "qynidl3"
+      "text": "qynidl3"
     },
     {
       "name": "qynidl4",
-      "human_readable": "qynidl4"
+      "text": "qynidl4"
     },
     {
       "name": "qynidnr",
-      "human_readable": "qynidnr"
+      "text": "qynidnr"
     },
     {
       "name": "rbaae",
-      "human_readable": "rbaae"
+      "text": "rbaae"
     },
     {
       "name": "rbaap",
-      "human_readable": "rbaap"
+      "text": "rbaap"
     },
     {
       "name": "rcar",
-      "human_readable": "rcar"
+      "text": "rcar"
     },
     {
       "name": "rcbe",
-      "human_readable": "rcbe"
+      "text": "rcbe"
     },
     {
       "name": "rcbp",
-      "human_readable": "rcbp"
+      "text": "rcbp"
     },
     {
       "name": "rcgain",
-      "human_readable": "rcgain"
+      "text": "rcgain"
     },
     {
       "name": "req",
-      "human_readable": "req"
+      "text": "req"
     },
     {
       "name": "reqp",
-      "human_readable": "reqp"
+      "text": "reqp"
     },
     {
       "name": "rffe",
-      "human_readable": "rffe"
+      "text": "rffe"
     },
     {
       "name": "rffel1",
-      "human_readable": "rffel1"
+      "text": "rffel1"
     },
     {
       "name": "rffel2",
-      "human_readable": "rffel2"
+      "text": "rffel2"
     },
     {
       "name": "rffel3",
-      "human_readable": "rffel3"
+      "text": "rffel3"
     },
     {
       "name": "rfftay",
-      "human_readable": "rfftay"
+      "text": "rfftay"
     },
     {
       "name": "rfyncl1",
-      "human_readable": "rfyncl1"
+      "text": "rfyncl1"
     },
     {
       "name": "rfynic",
-      "human_readable": "rfynic"
+      "text": "rfynic"
     },
     {
       "name": "rfynil",
-      "human_readable": "rfynil"
+      "text": "rfynil"
     },
     {
       "name": "rfynll1",
-      "human_readable": "rfynll1"
+      "text": "rfynll1"
     },
     {
       "name": "rg10e",
-      "human_readable": "rg10e"
+      "text": "rg10e"
     },
     {
       "name": "rg10p",
-      "human_readable": "rg10p"
+      "text": "rg10p"
     },
     {
       "name": "rg5e",
-      "human_readable": "rg5e"
+      "text": "rg5e"
     },
     {
       "name": "rg5el1",
-      "human_readable": "rg5el1"
+      "text": "rg5el1"
     },
     {
       "name": "rg5p",
-      "human_readable": "rg5p"
+      "text": "rg5p"
     },
     {
       "name": "rgfinl1",
-      "human_readable": "rgfinl1"
+      "text": "rgfinl1"
     },
     {
       "name": "rgfint",
-      "human_readable": "rgfint"
+      "text": "rgfint"
     },
     {
       "name": "rme",
-      "human_readable": "rme"
+      "text": "rme"
     },
     {
       "name": "rmel1",
-      "human_readable": "rmel1"
+      "text": "rmel1"
     },
     {
       "name": "rmel2",
-      "human_readable": "rmel2"
+      "text": "rmel2"
     },
     {
       "name": "rpd",
-      "human_readable": "rpd"
+      "text": "rpd"
     },
     {
       "name": "rrmet",
-      "human_readable": "rrmet"
+      "text": "rrmet"
     },
     {
       "name": "rrtr",
-      "human_readable": "rrtr"
+      "text": "rrtr"
     },
     {
       "name": "rstar",
-      "human_readable": "rstar"
+      "text": "rstar"
     },
     {
       "name": "rtbe",
-      "human_readable": "rtbe"
+      "text": "rtbe"
     },
     {
       "name": "rtbel1",
-      "human_readable": "rtbel1"
+      "text": "rtbel1"
     },
     {
       "name": "rtpdc",
-      "human_readable": "rtpdc"
+      "text": "rtpdc"
     },
     {
       "name": "rtpdo",
-      "human_readable": "rtpdo"
+      "text": "rtpdo"
     },
     {
       "name": "rtps",
-      "human_readable": "rtps"
+      "text": "rtps"
     },
     {
       "name": "rtr",
-      "human_readable": "rtr"
+      "text": "rtr"
     },
     {
       "name": "tapdda",
-      "human_readable": "tapdda"
+      "text": "tapdda"
     },
     {
       "name": "tfpnr",
-      "human_readable": "tfpnr"
+      "text": "tfpnr"
     },
     {
       "name": "trfci",
-      "human_readable": "trfci"
+      "text": "trfci"
     },
     {
       "name": "trfp",
-      "human_readable": "trfp"
+      "text": "trfp"
     },
     {
       "name": "trfpl1",
-      "human_readable": "trfpl1"
+      "text": "trfpl1"
     },
     {
       "name": "trfpt",
-      "human_readable": "trfpt"
+      "text": "trfpt"
     },
     {
       "name": "trfptl1",
-      "human_readable": "trfptl1"
+      "text": "trfptl1"
     },
     {
       "name": "trsci",
-      "human_readable": "trsci"
+      "text": "trsci"
     },
     {
       "name": "trsib",
-      "human_readable": "trsib"
+      "text": "trsib"
     },
     {
       "name": "trsp",
-      "human_readable": "trsp"
+      "text": "trsp"
     },
     {
       "name": "trspt",
-      "human_readable": "trspt"
+      "text": "trspt"
     },
     {
       "name": "trssi",
-      "human_readable": "trssi"
+      "text": "trssi"
     },
     {
       "name": "trssil1",
-      "human_readable": "trssil1"
+      "text": "trssil1"
     },
     {
       "name": "tryh",
-      "human_readable": "tryh"
+      "text": "tryh"
     },
     {
       "name": "tspnr",
-      "human_readable": "tspnr"
+      "text": "tspnr"
     },
     {
       "name": "uces",
-      "human_readable": "uces"
+      "text": "uces"
     },
     {
       "name": "ucesl1",
-      "human_readable": "ucesl1"
+      "text": "ucesl1"
     },
     {
       "name": "ucfs",
-      "human_readable": "ucfs"
+      "text": "ucfs"
     },
     {
       "name": "ucfsl1",
-      "human_readable": "ucfsl1"
+      "text": "ucfsl1"
     },
     {
       "name": "veoa",
-      "human_readable": "veoa"
+      "text": "veoa"
     },
     {
       "name": "vpdc",
-      "human_readable": "vpdc"
+      "text": "vpdc"
     },
     {
       "name": "vpdcf1",
-      "human_readable": "vpdcf1"
+      "text": "vpdcf1"
     },
     {
       "name": "vpdcl1",
-      "human_readable": "vpdcl1"
+      "text": "vpdcl1"
     },
     {
       "name": "vpdcl2",
-      "human_readable": "vpdcl2"
+      "text": "vpdcl2"
     },
     {
       "name": "vpdcl3",
-      "human_readable": "vpdcl3"
+      "text": "vpdcl3"
     },
     {
       "name": "vpdcl4",
-      "human_readable": "vpdcl4"
+      "text": "vpdcl4"
     },
     {
       "name": "vpdo",
-      "human_readable": "vpdo"
+      "text": "vpdo"
     },
     {
       "name": "vpdof1",
-      "human_readable": "vpdof1"
+      "text": "vpdof1"
     },
     {
       "name": "vpdol1",
-      "human_readable": "vpdol1"
+      "text": "vpdol1"
     },
     {
       "name": "vpdol2",
-      "human_readable": "vpdol2"
+      "text": "vpdol2"
     },
     {
       "name": "vpdol3",
-      "human_readable": "vpdol3"
+      "text": "vpdol3"
     },
     {
       "name": "vpdol4",
-      "human_readable": "vpdol4"
+      "text": "vpdol4"
     },
     {
       "name": "vps",
-      "human_readable": "vps"
+      "text": "vps"
     },
     {
       "name": "vpsf1",
-      "human_readable": "vpsf1"
+      "text": "vpsf1"
     },
     {
       "name": "vpsl1",
-      "human_readable": "vpsl1"
+      "text": "vpsl1"
     },
     {
       "name": "vpsl2",
-      "human_readable": "vpsl2"
+      "text": "vpsl2"
     },
     {
       "name": "vpsl3",
-      "human_readable": "vpsl3"
+      "text": "vpsl3"
     },
     {
       "name": "vpsl4",
-      "human_readable": "vpsl4"
+      "text": "vpsl4"
     },
     {
       "name": "wdnfcl1",
-      "human_readable": "wdnfcl1"
+      "text": "wdnfcl1"
     },
     {
       "name": "wdnfcl2",
-      "human_readable": "wdnfcl2"
+      "text": "wdnfcl2"
     },
     {
       "name": "wdnfcnr",
-      "human_readable": "wdnfcnr"
+      "text": "wdnfcnr"
     },
     {
       "name": "wpo",
-      "human_readable": "wpo"
+      "text": "wpo"
     },
     {
       "name": "wpsnr",
-      "human_readable": "wpsnr"
+      "text": "wpsnr"
     },
     {
       "name": "xb",
-      "human_readable": "xb"
+      "text": "xb"
     },
     {
       "name": "xbf1",
-      "human_readable": "xbf1"
+      "text": "xbf1"
     },
     {
       "name": "xbl1",
-      "human_readable": "xbl1"
+      "text": "xbl1"
     },
     {
       "name": "xbl2",
-      "human_readable": "xbl2"
+      "text": "xbl2"
     },
     {
       "name": "xbl3",
-      "human_readable": "xbl3"
+      "text": "xbl3"
     },
     {
       "name": "xbl4",
-      "human_readable": "xbl4"
+      "text": "xbl4"
     },
     {
       "name": "xbnr",
-      "human_readable": "xbnr"
+      "text": "xbnr"
     },
     {
       "name": "xg",
-      "human_readable": "xg"
+      "text": "xg"
     },
     {
       "name": "xgap",
-      "human_readable": "xgap"
+      "text": "xgap"
     },
     {
       "name": "xgap2",
-      "human_readable": "xgap2"
+      "text": "xgap2"
     },
     {
       "name": "xgap2l1",
-      "human_readable": "xgap2l1"
+      "text": "xgap2l1"
     },
     {
       "name": "xgap2l2",
-      "human_readable": "xgap2l2"
+      "text": "xgap2l2"
     },
     {
       "name": "xgap2l3",
-      "human_readable": "xgap2l3"
+      "text": "xgap2l3"
     },
     {
       "name": "xgapl1",
-      "human_readable": "xgapl1"
+      "text": "xgapl1"
     },
     {
       "name": "xgapl2",
-      "human_readable": "xgapl2"
+      "text": "xgapl2"
     },
     {
       "name": "xgapl3",
-      "human_readable": "xgapl3"
+      "text": "xgapl3"
     },
     {
       "name": "xgdp",
-      "human_readable": "xgdp"
+      "text": "xgdp"
     },
     {
       "name": "xgdpnl1",
-      "human_readable": "xgdpnl1"
+      "text": "xgdpnl1"
     },
     {
       "name": "xgdpnr",
-      "human_readable": "xgdpnr"
+      "text": "xgdpnr"
     },
     {
       "name": "xgdpt",
-      "human_readable": "xgdpt"
+      "text": "xgdpt"
     },
     {
       "name": "xgdptl1",
-      "human_readable": "xgdptl1"
+      "text": "xgdptl1"
     },
     {
       "name": "xgdptl2",
-      "human_readable": "xgdptl2"
+      "text": "xgdptl2"
     },
     {
       "name": "xgl1",
-      "human_readable": "xgl1"
+      "text": "xgl1"
     },
     {
       "name": "xgnr",
-      "human_readable": "xgnr"
+      "text": "xgnr"
     },
     {
       "name": "xgpot",
-      "human_readable": "xgpot"
+      "text": "xgpot"
     },
     {
       "name": "xgvt",
-      "human_readable": "xgvt"
+      "text": "xgvt"
     },
     {
       "name": "xhhit",
-      "human_readable": "xhhit"
+      "text": "xhhit"
     },
     {
       "name": "xp",
-      "human_readable": "xp"
+      "text": "xp"
     },
     {
       "name": "ycsnr",
-      "human_readable": "ycsnr"
+      "text": "ycsnr"
     },
     {
       "name": "yh",
-      "human_readable": "yh"
+      "text": "yh"
     },
     {
       "name": "yhgap",
-      "human_readable": "yhgap"
+      "text": "yhgap"
     },
     {
       "name": "yhgpl1",
-      "human_readable": "yhgpl1"
+      "text": "yhgpl1"
     },
     {
       "name": "yhgpl2",
-      "human_readable": "yhgpl2"
+      "text": "yhgpl2"
     },
     {
       "name": "yhgpl3",
-      "human_readable": "yhgpl3"
+      "text": "yhgpl3"
     },
     {
       "name": "yhibnl1",
-      "human_readable": "yhibnl1"
+      "text": "yhibnl1"
     },
     {
       "name": "yhibnr",
-      "human_readable": "yhibnr"
+      "text": "yhibnr"
     },
     {
       "name": "yhinr",
-      "human_readable": "yhinr"
+      "text": "yhinr"
     },
     {
       "name": "yhl",
-      "human_readable": "yhl"
+      "text": "yhl"
     },
     {
       "name": "yhp",
-      "human_readable": "yhp"
+      "text": "yhp"
     },
     {
       "name": "yhpgap",
-      "human_readable": "yhpgap"
+      "text": "yhpgap"
     },
     {
       "name": "yhpgpl1",
-      "human_readable": "yhpgpl1"
+      "text": "yhpgpl1"
     },
     {
       "name": "yhpgpl2",
-      "human_readable": "yhpgpl2"
+      "text": "yhpgpl2"
     },
     {
       "name": "yhpgpl3",
-      "human_readable": "yhpgpl3"
+      "text": "yhpgpl3"
     },
     {
       "name": "yhpntnr",
-      "human_readable": "yhpntnr"
+      "text": "yhpntnr"
     },
     {
       "name": "yhpshr",
-      "human_readable": "yhpshr"
+      "text": "yhpshr"
     },
     {
       "name": "yhshr",
-      "human_readable": "yhshr"
+      "text": "yhshr"
     },
     {
       "name": "yht",
-      "human_readable": "yht"
+      "text": "yht"
     },
     {
       "name": "yhtgap",
-      "human_readable": "yhtgap"
+      "text": "yhtgap"
     },
     {
       "name": "yhtgpl1",
-      "human_readable": "yhtgpl1"
+      "text": "yhtgpl1"
     },
     {
       "name": "yhtgpl2",
-      "human_readable": "yhtgpl2"
+      "text": "yhtgpl2"
     },
     {
       "name": "yhtgpl3",
-      "human_readable": "yhtgpl3"
+      "text": "yhtgpl3"
     },
     {
       "name": "yhtshr",
-      "human_readable": "yhtshr"
+      "text": "yhtshr"
     },
     {
       "name": "ynicpnr",
-      "human_readable": "ynicpnr"
+      "text": "ynicpnr"
     },
     {
       "name": "ynidnl1",
-      "human_readable": "ynidnl1"
+      "text": "ynidnl1"
     },
     {
       "name": "ynidnl2",
-      "human_readable": "ynidnl2"
+      "text": "ynidnl2"
     },
     {
       "name": "ynidnl3",
-      "human_readable": "ynidnl3"
+      "text": "ynidnl3"
     },
     {
       "name": "ynidnr",
-      "human_readable": "ynidnr"
+      "text": "ynidnr"
     },
     {
       "name": "yniinr",
-      "human_readable": "yniinr"
+      "text": "yniinr"
     },
     {
       "name": "yniish",
-      "human_readable": "yniish"
+      "text": "yniish"
     },
     {
       "name": "ynilnl1",
-      "human_readable": "ynilnl1"
+      "text": "ynilnl1"
     },
     {
       "name": "ynilnr",
-      "human_readable": "ynilnr"
+      "text": "ynilnr"
     },
     {
       "name": "yninr",
-      "human_readable": "yninr"
+      "text": "yninr"
     },
     {
       "name": "yninrl1",
-      "human_readable": "yninrl1"
+      "text": "yninrl1"
     },
     {
       "name": "ypnr",
-      "human_readable": "ypnr"
+      "text": "ypnr"
     },
     {
       "name": "zdivgr",
-      "human_readable": "zdivgr"
+      "text": "zdivgr"
     },
     {
       "name": "zecd",
-      "human_readable": "zecd"
+      "text": "zecd"
     },
     {
       "name": "zeco",
-      "human_readable": "zeco"
+      "text": "zeco"
     },
     {
       "name": "zeh",
-      "human_readable": "zeh"
+      "text": "zeh"
     },
     {
       "name": "zehf2",
-      "human_readable": "zehf2"
+      "text": "zehf2"
     },
     {
       "name": "zgap05",
-      "human_readable": "zgap05"
+      "text": "zgap05"
     },
     {
       "name": "zgap10",
-      "human_readable": "zgap10"
+      "text": "zgap10"
     },
     {
       "name": "zgap30",
-      "human_readable": "zgap30"
+      "text": "zgap30"
     },
     {
       "name": "zgapc2",
-      "human_readable": "zgapc2"
+      "text": "zgapc2"
     },
     {
       "name": "zlhp",
-      "human_readable": "zlhp"
+      "text": "zlhp"
     },
     {
       "name": "zlurc",
-      "human_readable": "zlurc"
+      "text": "zlurc"
     },
     {
       "name": "zlurl",
-      "human_readable": "zlurl"
+      "text": "zlurl"
     },
     {
       "name": "zlurnc",
-      "human_readable": "zlurnc"
+      "text": "zlurnc"
     },
     {
       "name": "zpc",
-      "human_readable": "zpc"
+      "text": "zpc"
     },
     {
       "name": "zpi10",
-      "human_readable": "zpi10"
+      "text": "zpi10"
     },
     {
       "name": "zpi5",
-      "human_readable": "zpi5"
+      "text": "zpi5"
     },
     {
       "name": "zpib5",
-      "human_readable": "zpib5"
+      "text": "zpib5"
     },
     {
       "name": "zpic30",
-      "human_readable": "zpic30"
+      "text": "zpic30"
     },
     {
       "name": "zpl",
-      "human_readable": "zpl"
+      "text": "zpl"
     },
     {
       "name": "zpnc",
-      "human_readable": "zpnc"
+      "text": "zpnc"
     },
     {
       "name": "zrff10",
-      "human_readable": "zrff10"
+      "text": "zrff10"
     },
     {
       "name": "zrff30",
-      "human_readable": "zrff30"
+      "text": "zrff30"
     },
     {
       "name": "zrff5",
-      "human_readable": "zrff5"
+      "text": "zrff5"
     },
     {
       "name": "zvpdc",
-      "human_readable": "zvpdc"
+      "text": "zvpdc"
     },
     {
       "name": "zvpdcf2",
-      "human_readable": "zvpdcf2"
+      "text": "zvpdcf2"
     },
     {
       "name": "zvpdo",
-      "human_readable": "zvpdo"
+      "text": "zvpdo"
     },
     {
       "name": "zvpdof2",
-      "human_readable": "zvpdof2"
+      "text": "zvpdof2"
     },
     {
       "name": "zvps",
-      "human_readable": "zvps"
+      "text": "zvps"
     },
     {
       "name": "zvpsf2",
-      "human_readable": "zvpsf2"
+      "text": "zvpsf2"
     },
     {
       "name": "zxbc",
-      "human_readable": "zxbc"
+      "text": "zxbc"
     },
     {
       "name": "zxbcf2",
-      "human_readable": "zxbcf2"
+      "text": "zxbcf2"
     },
     {
       "name": "zxbo",
-      "human_readable": "zxbo"
+      "text": "zxbo"
     },
     {
       "name": "zxbof2",
-      "human_readable": "zxbof2"
+      "text": "zxbof2"
     },
     {
       "name": "zxbs",
-      "human_readable": "zxbs"
+      "text": "zxbs"
     },
     {
       "name": "zxbsf2",
-      "human_readable": "zxbsf2"
+      "text": "zxbsf2"
     },
     {
       "name": "zyh",
-      "human_readable": "zyh"
+      "text": "zyh"
     },
     {
       "name": "zyhp",
-      "human_readable": "zyhp"
+      "text": "zyhp"
     },
     {
       "name": "zyhpst",
-      "human_readable": "zyhpst"
+      "text": "zyhpst"
     },
     {
       "name": "zyhst",
-      "human_readable": "zyhst"
+      "text": "zyhst"
     },
     {
       "name": "zyht",
-      "human_readable": "zyht"
+      "text": "zyht"
     },
     {
       "name": "zyhtst",
-      "human_readable": "zyhtst"
+      "text": "zyhtst"
     },
     {
       "name": "zynid",
-      "human_readable": "zynid"
+      "text": "zynid"
     }
   ],
   "shocks": [
     {
       "name": "ceng_",
-      "human_readable": "ceng_"
+      "text": "ceng_"
     },
     {
       "name": "dlpl_",
-      "human_readable": "dlpl_"
+      "text": "dlpl_"
     },
     {
       "name": "ecd_",
-      "human_readable": "ecd_"
+      "text": "ecd_"
     },
     {
       "name": "ech_",
-      "human_readable": "ech_"
+      "text": "ech_"
     },
     {
       "name": "eco_",
-      "human_readable": "eco_"
+      "text": "eco_"
     },
     {
       "name": "egsi_",
-      "human_readable": "egsi_"
+      "text": "egsi_"
     },
     {
       "name": "egsl_",
-      "human_readable": "egsl_"
+      "text": "egsl_"
     },
     {
       "name": "egso_",
-      "human_readable": "egso_"
+      "text": "egso_"
     },
     {
       "name": "eh_",
-      "human_readable": "eh_"
+      "text": "eh_"
     },
     {
       "name": "emo_",
-      "human_readable": "emo_"
+      "text": "emo_"
     },
     {
       "name": "epdc_",
-      "human_readable": "epdc_"
+      "text": "epdc_"
     },
     {
       "name": "epdo_",
-      "human_readable": "epdo_"
+      "text": "epdo_"
     },
     {
       "name": "eps_",
-      "human_readable": "eps_"
+      "text": "eps_"
     },
     {
       "name": "ex_",
-      "human_readable": "ex_"
+      "text": "ex_"
     },
     {
       "name": "fiscal_",
-      "human_readable": "fiscal_"
+      "text": "fiscal_"
     },
     {
       "name": "fpi10_",
-      "human_readable": "fpi10_"
+      "text": "fpi10_"
     },
     {
       "name": "fpxrr_",
-      "human_readable": "fpxrr_"
+      "text": "fpxrr_"
     },
     {
       "name": "frl10_",
-      "human_readable": "frl10_"
+      "text": "frl10_"
     },
     {
       "name": "fxgap_",
-      "human_readable": "fxgap_"
+      "text": "fxgap_"
     },
     {
       "name": "gftrd_",
-      "human_readable": "gftrd_"
+      "text": "gftrd_"
     },
     {
       "name": "gstrd_",
-      "human_readable": "gstrd_"
+      "text": "gstrd_"
     },
     {
       "name": "hmfpt_",
-      "human_readable": "hmfpt_"
+      "text": "hmfpt_"
     },
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     },
     {
       "name": "ki_",
-      "human_readable": "ki_"
+      "text": "ki_"
     },
     {
       "name": "lhp_",
-      "human_readable": "lhp_"
+      "text": "lhp_"
     },
     {
       "name": "mfpt_",
-      "human_readable": "mfpt_"
+      "text": "mfpt_"
     },
     {
       "name": "pcengr_",
-      "human_readable": "pcengr_"
+      "text": "pcengr_"
     },
     {
       "name": "pcer_",
-      "human_readable": "pcer_"
+      "text": "pcer_"
     },
     {
       "name": "pcfr_",
-      "human_readable": "pcfr_"
+      "text": "pcfr_"
     },
     {
       "name": "pcniar_",
-      "human_readable": "pcniar_"
+      "text": "pcniar_"
     },
     {
       "name": "pmor_",
-      "human_readable": "pmor_"
+      "text": "pmor_"
     },
     {
       "name": "poilr_",
-      "human_readable": "poilr_"
+      "text": "poilr_"
     },
     {
       "name": "pxncr_",
-      "human_readable": "pxncr_"
+      "text": "pxncr_"
     },
     {
       "name": "rbaap_",
-      "human_readable": "rbaap_"
+      "text": "rbaap_"
     },
     {
       "name": "rcar_",
-      "human_readable": "rcar_"
+      "text": "rcar_"
     },
     {
       "name": "rcbp_",
-      "human_readable": "rcbp_"
+      "text": "rcbp_"
     },
     {
       "name": "rcgain_",
-      "human_readable": "rcgain_"
+      "text": "rcgain_"
     },
     {
       "name": "reqp_",
-      "human_readable": "reqp_"
+      "text": "reqp_"
     },
     {
       "name": "rfynic_",
-      "human_readable": "rfynic_"
+      "text": "rfynic_"
     },
     {
       "name": "rfynil_",
-      "human_readable": "rfynil_"
+      "text": "rfynil_"
     },
     {
       "name": "rg10p_",
-      "human_readable": "rg10p_"
+      "text": "rg10p_"
     },
     {
       "name": "rg5p_",
-      "human_readable": "rg5p_"
+      "text": "rg5p_"
     },
     {
       "name": "rgfint_",
-      "human_readable": "rgfint_"
+      "text": "rgfint_"
     },
     {
       "name": "rme_",
-      "human_readable": "rme_"
+      "text": "rme_"
     },
     {
       "name": "rtbe_",
-      "human_readable": "rtbe_"
+      "text": "rtbe_"
     },
     {
       "name": "trfci_",
-      "human_readable": "trfci_"
+      "text": "trfci_"
     },
     {
       "name": "trfp_",
-      "human_readable": "trfp_"
+      "text": "trfp_"
     },
     {
       "name": "trsci_",
-      "human_readable": "trsci_"
+      "text": "trsci_"
     },
     {
       "name": "trsib_",
-      "human_readable": "trsib_"
+      "text": "trsib_"
     },
     {
       "name": "trsp_",
-      "human_readable": "trsp_"
+      "text": "trsp_"
     },
     {
       "name": "trssi_",
-      "human_readable": "trssi_"
+      "text": "trssi_"
     },
     {
       "name": "uces_",
-      "human_readable": "uces_"
+      "text": "uces_"
     },
     {
       "name": "ucfs_",
-      "human_readable": "ucfs_"
+      "text": "ucfs_"
     },
     {
       "name": "wdnfcnr_",
-      "human_readable": "wdnfcnr_"
+      "text": "wdnfcnr_"
     },
     {
       "name": "yhibnr_",
-      "human_readable": "yhibnr_"
+      "text": "yhibnr_"
     },
     {
       "name": "ynidnr_",
-      "human_readable": "ynidnr_"
+      "text": "ynidnr_"
     },
     {
       "name": "yniish_",
-      "human_readable": "yniish_"
+      "text": "yniish_"
     }
   ],
   "al_info": null

@@ -75,93 +75,93 @@
   "vars": [
     {
       "name": "cwp",
-      "human_readable": "cwp"
+      "text": "cwp"
     },
     {
       "name": "dis",
-      "human_readable": "dis"
+      "text": "dis"
     },
     {
       "name": "il",
-      "human_readable": "il"
+      "text": "il"
     },
     {
       "name": "infl",
-      "human_readable": "infl"
+      "text": "infl"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "is",
-      "human_readable": "is"
+      "text": "is"
     },
     {
       "name": "lagcwp1",
-      "human_readable": "lagcwp1"
+      "text": "lagcwp1"
     },
     {
       "name": "lagcwp2",
-      "human_readable": "lagcwp2"
+      "text": "lagcwp2"
     },
     {
       "name": "lagis1",
-      "human_readable": "lagis1"
+      "text": "lagis1"
     },
     {
       "name": "lagpi11",
-      "human_readable": "lagpi11"
+      "text": "lagpi11"
     },
     {
       "name": "lagpi12",
-      "human_readable": "lagpi12"
+      "text": "lagpi12"
     },
     {
       "name": "lagq1",
-      "human_readable": "lagq1"
+      "text": "lagq1"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "pi1",
-      "human_readable": "pi1"
+      "text": "pi1"
     },
     {
       "name": "q",
-      "human_readable": "q"
+      "text": "q"
     },
     {
       "name": "rl",
-      "human_readable": "rl"
+      "text": "rl"
     }
   ],
   "shocks": [
     {
       "name": "e_cw",
-      "human_readable": "e_cw"
+      "text": "e_cw"
     },
     {
       "name": "e_d",
-      "human_readable": "e_d"
+      "text": "e_d"
     },
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     }
   ],
   "al_info": null

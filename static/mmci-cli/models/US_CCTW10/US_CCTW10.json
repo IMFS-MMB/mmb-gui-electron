@@ -77,293 +77,293 @@
   "vars": [
     {
       "name": "a",
-      "human_readable": "a"
+      "text": "a"
     },
     {
       "name": "b",
-      "human_readable": "b"
+      "text": "b"
     },
     {
       "name": "c",
-      "human_readable": "c"
+      "text": "c"
     },
     {
       "name": "c_lc",
-      "human_readable": "c_lc"
+      "text": "c_lc"
     },
     {
       "name": "c_lcf",
-      "human_readable": "c_lcf"
+      "text": "c_lcf"
     },
     {
       "name": "c_nlc",
-      "human_readable": "c_nlc"
+      "text": "c_nlc"
     },
     {
       "name": "c_nlcf",
-      "human_readable": "c_nlcf"
+      "text": "c_nlcf"
     },
     {
       "name": "cf",
-      "human_readable": "cf"
+      "text": "cf"
     },
     {
       "name": "dc",
-      "human_readable": "dc"
+      "text": "dc"
     },
     {
       "name": "debt",
-      "human_readable": "debt"
+      "text": "debt"
     },
     {
       "name": "debtf",
-      "human_readable": "debtf"
+      "text": "debtf"
     },
     {
       "name": "dinve",
-      "human_readable": "dinve"
+      "text": "dinve"
     },
     {
       "name": "dlab",
-      "human_readable": "dlab"
+      "text": "dlab"
     },
     {
       "name": "dw",
-      "human_readable": "dw"
+      "text": "dw"
     },
     {
       "name": "dy",
-      "human_readable": "dy"
+      "text": "dy"
     },
     {
       "name": "eg",
-      "human_readable": "eg"
+      "text": "eg"
     },
     {
       "name": "epinfma",
-      "human_readable": "epinfma"
+      "text": "epinfma"
     },
     {
       "name": "ewma",
-      "human_readable": "ewma"
+      "text": "ewma"
     },
     {
       "name": "fispol",
-      "human_readable": "fispol"
+      "text": "fispol"
     },
     {
       "name": "g",
-      "human_readable": "g"
+      "text": "g"
     },
     {
       "name": "gry",
-      "human_readable": "gry"
+      "text": "gry"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "inve",
-      "human_readable": "inve"
+      "text": "inve"
     },
     {
       "name": "invef",
-      "human_readable": "invef"
+      "text": "invef"
     },
     {
       "name": "k",
-      "human_readable": "k"
+      "text": "k"
     },
     {
       "name": "kf",
-      "human_readable": "kf"
+      "text": "kf"
     },
     {
       "name": "kp",
-      "human_readable": "kp"
+      "text": "kp"
     },
     {
       "name": "kpf",
-      "human_readable": "kpf"
+      "text": "kpf"
     },
     {
       "name": "lab",
-      "human_readable": "lab"
+      "text": "lab"
     },
     {
       "name": "labf",
-      "human_readable": "labf"
+      "text": "labf"
     },
     {
       "name": "labobs",
-      "human_readable": "labobs"
+      "text": "labobs"
     },
     {
       "name": "mc",
-      "human_readable": "mc"
+      "text": "mc"
     },
     {
       "name": "mcf",
-      "human_readable": "mcf"
+      "text": "mcf"
     },
     {
       "name": "ms",
-      "human_readable": "ms"
+      "text": "ms"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "pinf",
-      "human_readable": "pinf"
+      "text": "pinf"
     },
     {
       "name": "pinf4",
-      "human_readable": "pinf4"
+      "text": "pinf4"
     },
     {
       "name": "pinflag1",
-      "human_readable": "pinflag1"
+      "text": "pinflag1"
     },
     {
       "name": "pinflag2",
-      "human_readable": "pinflag2"
+      "text": "pinflag2"
     },
     {
       "name": "pinfobs",
-      "human_readable": "pinfobs"
+      "text": "pinfobs"
     },
     {
       "name": "pinfobs4",
-      "human_readable": "pinfobs4"
+      "text": "pinfobs4"
     },
     {
       "name": "pk",
-      "human_readable": "pk"
+      "text": "pk"
     },
     {
       "name": "pkf",
-      "human_readable": "pkf"
+      "text": "pkf"
     },
     {
       "name": "qs",
-      "human_readable": "qs"
+      "text": "qs"
     },
     {
       "name": "r",
-      "human_readable": "r"
+      "text": "r"
     },
     {
       "name": "realinterest",
-      "human_readable": "realinterest"
+      "text": "realinterest"
     },
     {
       "name": "rk",
-      "human_readable": "rk"
+      "text": "rk"
     },
     {
       "name": "rkf",
-      "human_readable": "rkf"
+      "text": "rkf"
     },
     {
       "name": "robs",
-      "human_readable": "robs"
+      "text": "robs"
     },
     {
       "name": "robs4",
-      "human_readable": "robs4"
+      "text": "robs4"
     },
     {
       "name": "rrf",
-      "human_readable": "rrf"
+      "text": "rrf"
     },
     {
       "name": "spinf",
-      "human_readable": "spinf"
+      "text": "spinf"
     },
     {
       "name": "sw",
-      "human_readable": "sw"
+      "text": "sw"
     },
     {
       "name": "t",
-      "human_readable": "t"
+      "text": "t"
     },
     {
       "name": "tf",
-      "human_readable": "tf"
+      "text": "tf"
     },
     {
       "name": "w",
-      "human_readable": "w"
+      "text": "w"
     },
     {
       "name": "wf",
-      "human_readable": "wf"
+      "text": "wf"
     },
     {
       "name": "y",
-      "human_readable": "y"
+      "text": "y"
     },
     {
       "name": "yf",
-      "human_readable": "yf"
+      "text": "yf"
     },
     {
       "name": "zcap",
-      "human_readable": "zcap"
+      "text": "zcap"
     },
     {
       "name": "zcapf",
-      "human_readable": "zcapf"
+      "text": "zcapf"
     }
   ],
   "shocks": [
     {
       "name": "ea",
-      "human_readable": "ea"
+      "text": "ea"
     },
     {
       "name": "eb",
-      "human_readable": "eb"
+      "text": "eb"
     },
     {
       "name": "em",
-      "human_readable": "em"
+      "text": "em"
     },
     {
       "name": "epinf",
-      "human_readable": "epinf"
+      "text": "epinf"
     },
     {
       "name": "eqs",
-      "human_readable": "eqs"
+      "text": "eqs"
     },
     {
       "name": "ew",
-      "human_readable": "ew"
+      "text": "ew"
     },
     {
       "name": "fiscal_",
-      "human_readable": "fiscal_"
+      "text": "fiscal_"
     },
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     }
   ],
   "al_info": null

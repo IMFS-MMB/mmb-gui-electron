@@ -75,533 +75,533 @@
   "vars": [
     {
       "name": "A_e",
-      "human_readable": "A_e"
+      "text": "A_e"
     },
     {
       "name": "aux1",
-      "human_readable": "aux1"
+      "text": "aux1"
     },
     {
       "name": "B",
-      "human_readable": "B"
+      "text": "B"
     },
     {
       "name": "b_e",
-      "human_readable": "b_e"
+      "text": "b_e"
     },
     {
       "name": "b_ee",
-      "human_readable": "b_ee"
+      "text": "b_ee"
     },
     {
       "name": "b_eef",
-      "human_readable": "b_eef"
+      "text": "b_eef"
     },
     {
       "name": "b_ef",
-      "human_readable": "b_ef"
+      "text": "b_ef"
     },
     {
       "name": "b_h",
-      "human_readable": "b_h"
+      "text": "b_h"
     },
     {
       "name": "b_hf",
-      "human_readable": "b_hf"
+      "text": "b_hf"
     },
     {
       "name": "b_i",
-      "human_readable": "b_i"
+      "text": "b_i"
     },
     {
       "name": "b_if",
-      "human_readable": "b_if"
+      "text": "b_if"
     },
     {
       "name": "BE",
-      "human_readable": "BE"
+      "text": "BE"
     },
     {
       "name": "BEf",
-      "human_readable": "BEf"
+      "text": "BEf"
     },
     {
       "name": "Bf",
-      "human_readable": "Bf"
+      "text": "Bf"
     },
     {
       "name": "BH",
-      "human_readable": "BH"
+      "text": "BH"
     },
     {
       "name": "BHf",
-      "human_readable": "BHf"
+      "text": "BHf"
     },
     {
       "name": "bm",
-      "human_readable": "bm"
+      "text": "bm"
     },
     {
       "name": "C",
-      "human_readable": "C"
+      "text": "C"
     },
     {
       "name": "c_e",
-      "human_readable": "c_e"
+      "text": "c_e"
     },
     {
       "name": "c_ef",
-      "human_readable": "c_ef"
+      "text": "c_ef"
     },
     {
       "name": "c_i",
-      "human_readable": "c_i"
+      "text": "c_i"
     },
     {
       "name": "c_if",
-      "human_readable": "c_if"
+      "text": "c_if"
     },
     {
       "name": "c_p",
-      "human_readable": "c_p"
+      "text": "c_p"
     },
     {
       "name": "c_pf",
-      "human_readable": "c_pf"
+      "text": "c_pf"
     },
     {
       "name": "Cf",
-      "human_readable": "Cf"
+      "text": "Cf"
     },
     {
       "name": "D",
-      "human_readable": "D"
+      "text": "D"
     },
     {
       "name": "d_b",
-      "human_readable": "d_b"
+      "text": "d_b"
     },
     {
       "name": "d_bf",
-      "human_readable": "d_bf"
+      "text": "d_bf"
     },
     {
       "name": "d_p",
-      "human_readable": "d_p"
+      "text": "d_p"
     },
     {
       "name": "d_pf",
-      "human_readable": "d_pf"
+      "text": "d_pf"
     },
     {
       "name": "Df",
-      "human_readable": "Df"
+      "text": "Df"
     },
     {
       "name": "ee_j",
-      "human_readable": "ee_j"
+      "text": "ee_j"
     },
     {
       "name": "ee_qk",
-      "human_readable": "ee_qk"
+      "text": "ee_qk"
     },
     {
       "name": "ee_z",
-      "human_readable": "ee_z"
+      "text": "ee_z"
     },
     {
       "name": "eps_K_b",
-      "human_readable": "eps_K_b"
+      "text": "eps_K_b"
     },
     {
       "name": "eps_l",
-      "human_readable": "eps_l"
+      "text": "eps_l"
     },
     {
       "name": "eps_y",
-      "human_readable": "eps_y"
+      "text": "eps_y"
     },
     {
       "name": "h_i",
-      "human_readable": "h_i"
+      "text": "h_i"
     },
     {
       "name": "h_if",
-      "human_readable": "h_if"
+      "text": "h_if"
     },
     {
       "name": "h_p",
-      "human_readable": "h_p"
+      "text": "h_p"
     },
     {
       "name": "h_pf",
-      "human_readable": "h_pf"
+      "text": "h_pf"
     },
     {
       "name": "I",
-      "human_readable": "I"
+      "text": "I"
     },
     {
       "name": "If",
-      "human_readable": "If"
+      "text": "If"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "j_B",
-      "human_readable": "j_B"
+      "text": "j_B"
     },
     {
       "name": "J_B",
-      "human_readable": "J_B"
+      "text": "J_B"
     },
     {
       "name": "j_Bf",
-      "human_readable": "j_Bf"
+      "text": "j_Bf"
     },
     {
       "name": "J_Bf",
-      "human_readable": "J_Bf"
+      "text": "J_Bf"
     },
     {
       "name": "J_R",
-      "human_readable": "J_R"
+      "text": "J_R"
     },
     {
       "name": "J_Rf",
-      "human_readable": "J_Rf"
+      "text": "J_Rf"
     },
     {
       "name": "K",
-      "human_readable": "K"
+      "text": "K"
     },
     {
       "name": "K_b",
-      "human_readable": "K_b"
+      "text": "K_b"
     },
     {
       "name": "K_bf",
-      "human_readable": "K_bf"
+      "text": "K_bf"
     },
     {
       "name": "k_e",
-      "human_readable": "k_e"
+      "text": "k_e"
     },
     {
       "name": "k_ef",
-      "human_readable": "k_ef"
+      "text": "k_ef"
     },
     {
       "name": "Kf",
-      "human_readable": "Kf"
+      "text": "Kf"
     },
     {
       "name": "l_i",
-      "human_readable": "l_i"
+      "text": "l_i"
     },
     {
       "name": "l_id",
-      "human_readable": "l_id"
+      "text": "l_id"
     },
     {
       "name": "l_idf",
-      "human_readable": "l_idf"
+      "text": "l_idf"
     },
     {
       "name": "l_if",
-      "human_readable": "l_if"
+      "text": "l_if"
     },
     {
       "name": "l_p",
-      "human_readable": "l_p"
+      "text": "l_p"
     },
     {
       "name": "l_pd",
-      "human_readable": "l_pd"
+      "text": "l_pd"
     },
     {
       "name": "l_pdf",
-      "human_readable": "l_pdf"
+      "text": "l_pdf"
     },
     {
       "name": "l_pf",
-      "human_readable": "l_pf"
+      "text": "l_pf"
     },
     {
       "name": "lam_e",
-      "human_readable": "lam_e"
+      "text": "lam_e"
     },
     {
       "name": "lam_ef",
-      "human_readable": "lam_ef"
+      "text": "lam_ef"
     },
     {
       "name": "lam_i",
-      "human_readable": "lam_i"
+      "text": "lam_i"
     },
     {
       "name": "lam_if",
-      "human_readable": "lam_if"
+      "text": "lam_if"
     },
     {
       "name": "lam_p",
-      "human_readable": "lam_p"
+      "text": "lam_p"
     },
     {
       "name": "lam_pf",
-      "human_readable": "lam_pf"
+      "text": "lam_pf"
     },
     {
       "name": "m_e",
-      "human_readable": "m_e"
+      "text": "m_e"
     },
     {
       "name": "m_i",
-      "human_readable": "m_i"
+      "text": "m_i"
     },
     {
       "name": "mk_be",
-      "human_readable": "mk_be"
+      "text": "mk_be"
     },
     {
       "name": "mk_bh",
-      "human_readable": "mk_bh"
+      "text": "mk_bh"
     },
     {
       "name": "mk_d",
-      "human_readable": "mk_d"
+      "text": "mk_d"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "pie",
-      "human_readable": "pie"
+      "text": "pie"
     },
     {
       "name": "pie_wi",
-      "human_readable": "pie_wi"
+      "text": "pie_wi"
     },
     {
       "name": "pie_wp",
-      "human_readable": "pie_wp"
+      "text": "pie_wp"
     },
     {
       "name": "PIW",
-      "human_readable": "PIW"
+      "text": "PIW"
     },
     {
       "name": "q_h",
-      "human_readable": "q_h"
+      "text": "q_h"
     },
     {
       "name": "q_hf",
-      "human_readable": "q_hf"
+      "text": "q_hf"
     },
     {
       "name": "q_k",
-      "human_readable": "q_k"
+      "text": "q_k"
     },
     {
       "name": "q_kf",
-      "human_readable": "q_kf"
+      "text": "q_kf"
     },
     {
       "name": "R_b",
-      "human_readable": "R_b"
+      "text": "R_b"
     },
     {
       "name": "r_be",
-      "human_readable": "r_be"
+      "text": "r_be"
     },
     {
       "name": "r_bef",
-      "human_readable": "r_bef"
+      "text": "r_bef"
     },
     {
       "name": "R_bf",
-      "human_readable": "R_bf"
+      "text": "R_bf"
     },
     {
       "name": "r_bh",
-      "human_readable": "r_bh"
+      "text": "r_bh"
     },
     {
       "name": "r_bhf",
-      "human_readable": "r_bhf"
+      "text": "r_bhf"
     },
     {
       "name": "r_d",
-      "human_readable": "r_d"
+      "text": "r_d"
     },
     {
       "name": "r_df",
-      "human_readable": "r_df"
+      "text": "r_df"
     },
     {
       "name": "r_ib",
-      "human_readable": "r_ib"
+      "text": "r_ib"
     },
     {
       "name": "r_ibf",
-      "human_readable": "r_ibf"
+      "text": "r_ibf"
     },
     {
       "name": "r_k",
-      "human_readable": "r_k"
+      "text": "r_k"
     },
     {
       "name": "r_kf",
-      "human_readable": "r_kf"
+      "text": "r_kf"
     },
     {
       "name": "rr_e",
-      "human_readable": "rr_e"
+      "text": "rr_e"
     },
     {
       "name": "s_e",
-      "human_readable": "s_e"
+      "text": "s_e"
     },
     {
       "name": "s_ef",
-      "human_readable": "s_ef"
+      "text": "s_ef"
     },
     {
       "name": "s_i",
-      "human_readable": "s_i"
+      "text": "s_i"
     },
     {
       "name": "s_if",
-      "human_readable": "s_if"
+      "text": "s_if"
     },
     {
       "name": "spr_b",
-      "human_readable": "spr_b"
+      "text": "spr_b"
     },
     {
       "name": "u",
-      "human_readable": "u"
+      "text": "u"
     },
     {
       "name": "uf",
-      "human_readable": "uf"
+      "text": "uf"
     },
     {
       "name": "w_i",
-      "human_readable": "w_i"
+      "text": "w_i"
     },
     {
       "name": "w_if",
-      "human_readable": "w_if"
+      "text": "w_if"
     },
     {
       "name": "w_p",
-      "human_readable": "w_p"
+      "text": "w_p"
     },
     {
       "name": "w_pf",
-      "human_readable": "w_pf"
+      "text": "w_pf"
     },
     {
       "name": "x",
-      "human_readable": "x"
+      "text": "x"
     },
     {
       "name": "xf",
-      "human_readable": "xf"
+      "text": "xf"
     },
     {
       "name": "Y",
-      "human_readable": "Y"
+      "text": "Y"
     },
     {
       "name": "y_e",
-      "human_readable": "y_e"
+      "text": "y_e"
     },
     {
       "name": "y_ef",
-      "human_readable": "y_ef"
+      "text": "y_ef"
     },
     {
       "name": "Y1",
-      "human_readable": "Y1"
+      "text": "Y1"
     },
     {
       "name": "Y1f",
-      "human_readable": "Y1f"
+      "text": "Y1f"
     },
     {
       "name": "Yf",
-      "human_readable": "Yf"
+      "text": "Yf"
     }
   ],
   "shocks": [
     {
       "name": "e_A_e",
-      "human_readable": "e_A_e"
+      "text": "e_A_e"
     },
     {
       "name": "e_eps_K_b",
-      "human_readable": "e_eps_K_b"
+      "text": "e_eps_K_b"
     },
     {
       "name": "e_j",
-      "human_readable": "e_j"
+      "text": "e_j"
     },
     {
       "name": "e_l",
-      "human_readable": "e_l"
+      "text": "e_l"
     },
     {
       "name": "e_me",
-      "human_readable": "e_me"
+      "text": "e_me"
     },
     {
       "name": "e_mi",
-      "human_readable": "e_mi"
+      "text": "e_mi"
     },
     {
       "name": "e_mk_be",
-      "human_readable": "e_mk_be"
+      "text": "e_mk_be"
     },
     {
       "name": "e_mk_bh",
-      "human_readable": "e_mk_bh"
+      "text": "e_mk_bh"
     },
     {
       "name": "e_mk_d",
-      "human_readable": "e_mk_d"
+      "text": "e_mk_d"
     },
     {
       "name": "e_qk",
-      "human_readable": "e_qk"
+      "text": "e_qk"
     },
     {
       "name": "e_y",
-      "human_readable": "e_y"
+      "text": "e_y"
     },
     {
       "name": "e_z",
-      "human_readable": "e_z"
+      "text": "e_z"
     },
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     }
   ],
   "al_info": null

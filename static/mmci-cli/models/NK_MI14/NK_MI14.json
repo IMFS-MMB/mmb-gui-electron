@@ -73,149 +73,149 @@
   "vars": [
     {
       "name": "a",
-      "human_readable": "a"
+      "text": "a"
     },
     {
       "name": "c",
-      "human_readable": "c"
+      "text": "c"
     },
     {
       "name": "c_flex",
-      "human_readable": "c_flex"
+      "text": "c_flex"
     },
     {
       "name": "f",
-      "human_readable": "f"
+      "text": "f"
     },
     {
       "name": "f_flex",
-      "human_readable": "f_flex"
+      "text": "f_flex"
     },
     {
       "name": "fispol",
-      "human_readable": "fispol"
+      "text": "fispol"
     },
     {
       "name": "g",
-      "human_readable": "g"
+      "text": "g"
     },
     {
       "name": "gendo",
-      "human_readable": "gendo"
+      "text": "gendo"
     },
     {
       "name": "h",
-      "human_readable": "h"
+      "text": "h"
     },
     {
       "name": "h_flex",
-      "human_readable": "h_flex"
+      "text": "h_flex"
     },
     {
       "name": "hireg",
-      "human_readable": "hireg"
+      "text": "hireg"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "l",
-      "human_readable": "l"
+      "text": "l"
     },
     {
       "name": "l_flex",
-      "human_readable": "l_flex"
+      "text": "l_flex"
     },
     {
       "name": "mpl",
-      "human_readable": "mpl"
+      "text": "mpl"
     },
     {
       "name": "mpl_flex",
-      "human_readable": "mpl_flex"
+      "text": "mpl_flex"
     },
     {
       "name": "n",
-      "human_readable": "n"
+      "text": "n"
     },
     {
       "name": "n_flex",
-      "human_readable": "n_flex"
+      "text": "n_flex"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "pie",
-      "human_readable": "pie"
+      "text": "pie"
     },
     {
       "name": "pie_flex",
-      "human_readable": "pie_flex"
+      "text": "pie_flex"
     },
     {
       "name": "R",
-      "human_readable": "R"
+      "text": "R"
     },
     {
       "name": "R_flex",
-      "human_readable": "R_flex"
+      "text": "R_flex"
     },
     {
       "name": "th",
-      "human_readable": "th"
+      "text": "th"
     },
     {
       "name": "th_flex",
-      "human_readable": "th_flex"
+      "text": "th_flex"
     },
     {
       "name": "u",
-      "human_readable": "u"
+      "text": "u"
     },
     {
       "name": "u_flex",
-      "human_readable": "u_flex"
+      "text": "u_flex"
     },
     {
       "name": "w",
-      "human_readable": "w"
+      "text": "w"
     },
     {
       "name": "y",
-      "human_readable": "y"
+      "text": "y"
     },
     {
       "name": "y_flex",
-      "human_readable": "y_flex"
+      "text": "y_flex"
     }
   ],
   "shocks": [
     {
       "name": "epsa",
-      "human_readable": "epsa"
+      "text": "epsa"
     },
     {
       "name": "fiscal_",
-      "human_readable": "fiscal_"
+      "text": "fiscal_"
     },
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     }
   ],
   "al_info": null

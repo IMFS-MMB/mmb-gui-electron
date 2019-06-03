@@ -42,273 +42,273 @@
   "vars": [
     {
       "name": "c",
-      "human_readable": "c"
+      "text": "c"
     },
     {
       "name": "cf",
-      "human_readable": "cf"
+      "text": "cf"
     },
     {
       "name": "consumption_obs",
-      "human_readable": "consumption_obs"
+      "text": "consumption_obs"
     },
     {
       "name": "e_g",
-      "human_readable": "e_g"
+      "text": "e_g"
     },
     {
       "name": "epsil",
-      "human_readable": "epsil"
+      "text": "epsil"
     },
     {
       "name": "fispol",
-      "human_readable": "fispol"
+      "text": "fispol"
     },
     {
       "name": "Fp",
-      "human_readable": "Fp"
+      "text": "Fp"
     },
     {
       "name": "Fpf",
-      "human_readable": "Fpf"
+      "text": "Fpf"
     },
     {
       "name": "Fw",
-      "human_readable": "Fw"
+      "text": "Fw"
     },
     {
       "name": "Fwf",
-      "human_readable": "Fwf"
+      "text": "Fwf"
     },
     {
       "name": "g",
-      "human_readable": "g"
+      "text": "g"
     },
     {
       "name": "gdp_obs",
-      "human_readable": "gdp_obs"
+      "text": "gdp_obs"
     },
     {
       "name": "h",
-      "human_readable": "h"
+      "text": "h"
     },
     {
       "name": "hf",
-      "human_readable": "hf"
+      "text": "hf"
     },
     {
       "name": "hours_obs",
-      "human_readable": "hours_obs"
+      "text": "hours_obs"
     },
     {
       "name": "i",
-      "human_readable": "i"
+      "text": "i"
     },
     {
       "name": "i_f",
-      "human_readable": "i_f"
+      "text": "i_f"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflation_obs",
-      "human_readable": "inflation_obs"
+      "text": "inflation_obs"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "investment_obs",
-      "human_readable": "investment_obs"
+      "text": "investment_obs"
     },
     {
       "name": "kbar",
-      "human_readable": "kbar"
+      "text": "kbar"
     },
     {
       "name": "kbarf",
-      "human_readable": "kbarf"
+      "text": "kbarf"
     },
     {
       "name": "lambdaf",
-      "human_readable": "lambdaf"
+      "text": "lambdaf"
     },
     {
       "name": "lambdaz",
-      "human_readable": "lambdaz"
+      "text": "lambdaz"
     },
     {
       "name": "lambdazf",
-      "human_readable": "lambdazf"
+      "text": "lambdazf"
     },
     {
       "name": "muup",
-      "human_readable": "muup"
+      "text": "muup"
     },
     {
       "name": "muzstar",
-      "human_readable": "muzstar"
+      "text": "muzstar"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "phi",
-      "human_readable": "phi"
+      "text": "phi"
     },
     {
       "name": "phif",
-      "human_readable": "phif"
+      "text": "phif"
     },
     {
       "name": "pi",
-      "human_readable": "pi"
+      "text": "pi"
     },
     {
       "name": "pinvest_obs",
-      "human_readable": "pinvest_obs"
+      "text": "pinvest_obs"
     },
     {
       "name": "pitarget",
-      "human_readable": "pitarget"
+      "text": "pitarget"
     },
     {
       "name": "pstar",
-      "human_readable": "pstar"
+      "text": "pstar"
     },
     {
       "name": "q",
-      "human_readable": "q"
+      "text": "q"
     },
     {
       "name": "qf",
-      "human_readable": "qf"
+      "text": "qf"
     },
     {
       "name": "Re",
-      "human_readable": "Re"
+      "text": "Re"
     },
     {
       "name": "Re_obs",
-      "human_readable": "Re_obs"
+      "text": "Re_obs"
     },
     {
       "name": "RealRe_obs",
-      "human_readable": "RealRe_obs"
+      "text": "RealRe_obs"
     },
     {
       "name": "Ref",
-      "human_readable": "Ref"
+      "text": "Ref"
     },
     {
       "name": "rk",
-      "human_readable": "rk"
+      "text": "rk"
     },
     {
       "name": "Rk",
-      "human_readable": "Rk"
+      "text": "Rk"
     },
     {
       "name": "rkf",
-      "human_readable": "rkf"
+      "text": "rkf"
     },
     {
       "name": "Rkf",
-      "human_readable": "Rkf"
+      "text": "Rkf"
     },
     {
       "name": "s",
-      "human_readable": "s"
+      "text": "s"
     },
     {
       "name": "sf",
-      "human_readable": "sf"
+      "text": "sf"
     },
     {
       "name": "u",
-      "human_readable": "u"
+      "text": "u"
     },
     {
       "name": "uf",
-      "human_readable": "uf"
+      "text": "uf"
     },
     {
       "name": "wage_obs",
-      "human_readable": "wage_obs"
+      "text": "wage_obs"
     },
     {
       "name": "wstar",
-      "human_readable": "wstar"
+      "text": "wstar"
     },
     {
       "name": "wtilde",
-      "human_readable": "wtilde"
+      "text": "wtilde"
     },
     {
       "name": "wtildef",
-      "human_readable": "wtildef"
+      "text": "wtildef"
     },
     {
       "name": "y",
-      "human_readable": "y"
+      "text": "y"
     },
     {
       "name": "zetac",
-      "human_readable": "zetac"
+      "text": "zetac"
     },
     {
       "name": "zetai",
-      "human_readable": "zetai"
+      "text": "zetai"
     }
   ],
   "shocks": [
     {
       "name": "e_epsil",
-      "human_readable": "e_epsil"
+      "text": "e_epsil"
     },
     {
       "name": "e_lambdaf",
-      "human_readable": "e_lambdaf"
+      "text": "e_lambdaf"
     },
     {
       "name": "e_muup",
-      "human_readable": "e_muup"
+      "text": "e_muup"
     },
     {
       "name": "e_muzstar",
-      "human_readable": "e_muzstar"
+      "text": "e_muzstar"
     },
     {
       "name": "e_pitarget",
-      "human_readable": "e_pitarget"
+      "text": "e_pitarget"
     },
     {
       "name": "e_zetac",
-      "human_readable": "e_zetac"
+      "text": "e_zetac"
     },
     {
       "name": "e_zetai",
-      "human_readable": "e_zetai"
+      "text": "e_zetai"
     },
     {
       "name": "fiscal_",
-      "human_readable": "fiscal_"
+      "text": "fiscal_"
     },
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     }
   ],
   "al_info": null

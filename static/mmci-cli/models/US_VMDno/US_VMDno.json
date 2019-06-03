@@ -76,349 +76,349 @@
   "vars": [
     {
       "name": "btotAflexU",
-      "human_readable": "btotAflexU"
+      "text": "btotAflexU"
     },
     {
       "name": "btotAU",
-      "human_readable": "btotAU"
+      "text": "btotAU"
     },
     {
       "name": "btotBflexU",
-      "human_readable": "btotBflexU"
+      "text": "btotBflexU"
     },
     {
       "name": "btotBU",
-      "human_readable": "btotBU"
+      "text": "btotBU"
     },
     {
       "name": "btotSflexU",
-      "human_readable": "btotSflexU"
+      "text": "btotSflexU"
     },
     {
       "name": "btotSU",
-      "human_readable": "btotSU"
+      "text": "btotSU"
     },
     {
       "name": "cflexU",
-      "human_readable": "cflexU"
+      "text": "cflexU"
     },
     {
       "name": "chiflexU",
-      "human_readable": "chiflexU"
+      "text": "chiflexU"
     },
     {
       "name": "chiU",
-      "human_readable": "chiU"
+      "text": "chiU"
     },
     {
       "name": "CostFinancingSflexU",
-      "human_readable": "CostFinancingSflexU"
+      "text": "CostFinancingSflexU"
     },
     {
       "name": "CostFinancingSU",
-      "human_readable": "CostFinancingSU"
+      "text": "CostFinancingSU"
     },
     {
       "name": "cU",
-      "human_readable": "cU"
+      "text": "cU"
     },
     {
       "name": "eps_analystflexU",
-      "human_readable": "eps_analystflexU"
+      "text": "eps_analystflexU"
     },
     {
       "name": "eps_analystU",
-      "human_readable": "eps_analystU"
+      "text": "eps_analystU"
     },
     {
       "name": "eps_couponflexU",
-      "human_readable": "eps_couponflexU"
+      "text": "eps_couponflexU"
     },
     {
       "name": "eps_couponU",
-      "human_readable": "eps_couponU"
+      "text": "eps_couponU"
     },
     {
       "name": "FpXflexU",
-      "human_readable": "FpXflexU"
+      "text": "FpXflexU"
     },
     {
       "name": "FpXU",
-      "human_readable": "FpXU"
+      "text": "FpXU"
     },
     {
       "name": "FwXflexU",
-      "human_readable": "FwXflexU"
+      "text": "FwXflexU"
     },
     {
       "name": "FwXU",
-      "human_readable": "FwXU"
+      "text": "FwXU"
     },
     {
       "name": "hflexU",
-      "human_readable": "hflexU"
+      "text": "hflexU"
     },
     {
       "name": "hU",
-      "human_readable": "hU"
+      "text": "hU"
     },
     {
       "name": "iflexU",
-      "human_readable": "iflexU"
+      "text": "iflexU"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "iU",
-      "human_readable": "iU"
+      "text": "iU"
     },
     {
       "name": "kbarBflexU",
-      "human_readable": "kbarBflexU"
+      "text": "kbarBflexU"
     },
     {
       "name": "kbarBU",
-      "human_readable": "kbarBU"
+      "text": "kbarBU"
     },
     {
       "name": "kbarSflexU",
-      "human_readable": "kbarSflexU"
+      "text": "kbarSflexU"
     },
     {
       "name": "kbarSU",
-      "human_readable": "kbarSU"
+      "text": "kbarSU"
     },
     {
       "name": "KpXflexU",
-      "human_readable": "KpXflexU"
+      "text": "KpXflexU"
     },
     {
       "name": "KpXU",
-      "human_readable": "KpXU"
+      "text": "KpXU"
     },
     {
       "name": "KtotflexU",
-      "human_readable": "KtotflexU"
+      "text": "KtotflexU"
     },
     {
       "name": "KtotU",
-      "human_readable": "KtotU"
+      "text": "KtotU"
     },
     {
       "name": "KwXflexU",
-      "human_readable": "KwXflexU"
+      "text": "KwXflexU"
     },
     {
       "name": "KwXU",
-      "human_readable": "KwXU"
+      "text": "KwXU"
     },
     {
       "name": "lambdanflexU",
-      "human_readable": "lambdanflexU"
+      "text": "lambdanflexU"
     },
     {
       "name": "lambdanU",
-      "human_readable": "lambdanU"
+      "text": "lambdanU"
     },
     {
       "name": "levAflexU",
-      "human_readable": "levAflexU"
+      "text": "levAflexU"
     },
     {
       "name": "levAU",
-      "human_readable": "levAU"
+      "text": "levAU"
     },
     {
       "name": "levBflexU",
-      "human_readable": "levBflexU"
+      "text": "levBflexU"
     },
     {
       "name": "levBU",
-      "human_readable": "levBU"
+      "text": "levBU"
     },
     {
       "name": "levSflexU",
-      "human_readable": "levSflexU"
+      "text": "levSflexU"
     },
     {
       "name": "levSU",
-      "human_readable": "levSU"
+      "text": "levSU"
     },
     {
       "name": "nBflexU",
-      "human_readable": "nBflexU"
+      "text": "nBflexU"
     },
     {
       "name": "nBU",
-      "human_readable": "nBU"
+      "text": "nBU"
     },
     {
       "name": "nSflexU",
-      "human_readable": "nSflexU"
+      "text": "nSflexU"
     },
     {
       "name": "nSU",
-      "human_readable": "nSU"
+      "text": "nSU"
     },
     {
       "name": "ntotflexU",
-      "human_readable": "ntotflexU"
+      "text": "ntotflexU"
     },
     {
       "name": "ntotU",
-      "human_readable": "ntotU"
+      "text": "ntotU"
     },
     {
       "name": "omegabarSflexU",
-      "human_readable": "omegabarSflexU"
+      "text": "omegabarSflexU"
     },
     {
       "name": "omegabarSU",
-      "human_readable": "omegabarSU"
+      "text": "omegabarSU"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "PextSflexU",
-      "human_readable": "PextSflexU"
+      "text": "PextSflexU"
     },
     {
       "name": "PextSU",
-      "human_readable": "PextSU"
+      "text": "PextSU"
     },
     {
       "name": "piflexU",
-      "human_readable": "piflexU"
+      "text": "piflexU"
     },
     {
       "name": "piU",
-      "human_readable": "piU"
+      "text": "piU"
     },
     {
       "name": "qflexU",
-      "human_readable": "qflexU"
+      "text": "qflexU"
     },
     {
       "name": "qU",
-      "human_readable": "qU"
+      "text": "qU"
     },
     {
       "name": "RanalystXflexU",
-      "human_readable": "RanalystXflexU"
+      "text": "RanalystXflexU"
     },
     {
       "name": "RanalystXU",
-      "human_readable": "RanalystXU"
+      "text": "RanalystXU"
     },
     {
       "name": "RcouponXflexU",
-      "human_readable": "RcouponXflexU"
+      "text": "RcouponXflexU"
     },
     {
       "name": "RcouponXU",
-      "human_readable": "RcouponXU"
+      "text": "RcouponXU"
     },
     {
       "name": "ReXflexU",
-      "human_readable": "ReXflexU"
+      "text": "ReXflexU"
     },
     {
       "name": "ReXU",
-      "human_readable": "ReXU"
+      "text": "ReXU"
     },
     {
       "name": "RkBXflexU",
-      "human_readable": "RkBXflexU"
+      "text": "RkBXflexU"
     },
     {
       "name": "RkBXU",
-      "human_readable": "RkBXU"
+      "text": "RkBXU"
     },
     {
       "name": "rkSflexU",
-      "human_readable": "rkSflexU"
+      "text": "rkSflexU"
     },
     {
       "name": "rkSU",
-      "human_readable": "rkSU"
+      "text": "rkSU"
     },
     {
       "name": "RkSXflexU",
-      "human_readable": "RkSXflexU"
+      "text": "RkSXflexU"
     },
     {
       "name": "RkSXU",
-      "human_readable": "RkSXU"
+      "text": "RkSXU"
     },
     {
       "name": "SpreadflexU",
-      "human_readable": "SpreadflexU"
+      "text": "SpreadflexU"
     },
     {
       "name": "SpreadU",
-      "human_readable": "SpreadU"
+      "text": "SpreadU"
     },
     {
       "name": "stockcapitalflexU",
-      "human_readable": "stockcapitalflexU"
+      "text": "stockcapitalflexU"
     },
     {
       "name": "stockcapitalU",
-      "human_readable": "stockcapitalU"
+      "text": "stockcapitalU"
     },
     {
       "name": "uBflexU",
-      "human_readable": "uBflexU"
+      "text": "uBflexU"
     },
     {
       "name": "uBU",
-      "human_readable": "uBU"
+      "text": "uBU"
     },
     {
       "name": "uSflexU",
-      "human_readable": "uSflexU"
+      "text": "uSflexU"
     },
     {
       "name": "uSU",
-      "human_readable": "uSU"
+      "text": "uSU"
     },
     {
       "name": "wflexU",
-      "human_readable": "wflexU"
+      "text": "wflexU"
     },
     {
       "name": "wU",
-      "human_readable": "wU"
+      "text": "wU"
     },
     {
       "name": "YflexU",
-      "human_readable": "YflexU"
+      "text": "YflexU"
     },
     {
       "name": "YU",
-      "human_readable": "YU"
+      "text": "YU"
     }
   ],
   "shocks": [
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     }
   ],
   "al_info": null

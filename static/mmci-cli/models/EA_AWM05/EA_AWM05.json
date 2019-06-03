@@ -40,849 +40,849 @@
   "vars": [
     {
       "name": "can",
-      "human_readable": "can"
+      "text": "can"
     },
     {
       "name": "compr",
-      "human_readable": "compr"
+      "text": "compr"
     },
     {
       "name": "fdd",
-      "human_readable": "fdd"
+      "text": "fdd"
     },
     {
       "name": "fispol",
-      "human_readable": "fispol"
+      "text": "fispol"
     },
     {
       "name": "gcr",
-      "human_readable": "gcr"
+      "text": "gcr"
     },
     {
       "name": "gdn",
-      "human_readable": "gdn"
+      "text": "gdn"
     },
     {
       "name": "gln",
-      "human_readable": "gln"
+      "text": "gln"
     },
     {
       "name": "gln_yen",
-      "human_readable": "gln_yen"
+      "text": "gln_yen"
     },
     {
       "name": "gsn",
-      "human_readable": "gsn"
+      "text": "gsn"
     },
     {
       "name": "gyn",
-      "human_readable": "gyn"
+      "text": "gyn"
     },
     {
       "name": "ign",
-      "human_readable": "ign"
+      "text": "ign"
     },
     {
       "name": "infl",
-      "human_readable": "infl"
+      "text": "infl"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "inn",
-      "human_readable": "inn"
+      "text": "inn"
     },
     {
       "name": "innoextdend",
-      "human_readable": "innoextdend"
+      "text": "innoextdend"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "itd",
-      "human_readable": "itd"
+      "text": "itd"
     },
     {
       "name": "itn",
-      "human_readable": "itn"
+      "text": "itn"
     },
     {
       "name": "itr",
-      "human_readable": "itr"
+      "text": "itr"
     },
     {
       "name": "ksr",
-      "human_readable": "ksr"
+      "text": "ksr"
     },
     {
       "name": "lagcompr1",
-      "human_readable": "lagcompr1"
+      "text": "lagcompr1"
     },
     {
       "name": "lagcompr2",
-      "human_readable": "lagcompr2"
+      "text": "lagcompr2"
     },
     {
       "name": "laggcr1",
-      "human_readable": "laggcr1"
+      "text": "laggcr1"
     },
     {
       "name": "laggln_yen1",
-      "human_readable": "laggln_yen1"
+      "text": "laggln_yen1"
     },
     {
       "name": "laggln_yen2",
-      "human_readable": "laggln_yen2"
+      "text": "laggln_yen2"
     },
     {
       "name": "laggln_yen3",
-      "human_readable": "laggln_yen3"
+      "text": "laggln_yen3"
     },
     {
       "name": "lagitd1",
-      "human_readable": "lagitd1"
+      "text": "lagitd1"
     },
     {
       "name": "lagitd2",
-      "human_readable": "lagitd2"
+      "text": "lagitd2"
     },
     {
       "name": "lagitd3",
-      "human_readable": "lagitd3"
+      "text": "lagitd3"
     },
     {
       "name": "lagitd4",
-      "human_readable": "lagitd4"
+      "text": "lagitd4"
     },
     {
       "name": "lagitd5",
-      "human_readable": "lagitd5"
+      "text": "lagitd5"
     },
     {
       "name": "lagitd6",
-      "human_readable": "lagitd6"
+      "text": "lagitd6"
     },
     {
       "name": "lagitd7",
-      "human_readable": "lagitd7"
+      "text": "lagitd7"
     },
     {
       "name": "lagitr1",
-      "human_readable": "lagitr1"
+      "text": "lagitr1"
     },
     {
       "name": "lagitr2",
-      "human_readable": "lagitr2"
+      "text": "lagitr2"
     },
     {
       "name": "lagksr1",
-      "human_readable": "lagksr1"
+      "text": "lagksr1"
     },
     {
       "name": "lagksr2",
-      "human_readable": "lagksr2"
+      "text": "lagksr2"
     },
     {
       "name": "laglprod1",
-      "human_readable": "laglprod1"
+      "text": "laglprod1"
     },
     {
       "name": "laglprod2",
-      "human_readable": "laglprod2"
+      "text": "laglprod2"
     },
     {
       "name": "laglprod3",
-      "human_readable": "laglprod3"
+      "text": "laglprod3"
     },
     {
       "name": "laglprod4",
-      "human_readable": "laglprod4"
+      "text": "laglprod4"
     },
     {
       "name": "laglprod5",
-      "human_readable": "laglprod5"
+      "text": "laglprod5"
     },
     {
       "name": "laglsr1",
-      "human_readable": "laglsr1"
+      "text": "laglsr1"
     },
     {
       "name": "lagltn1",
-      "human_readable": "lagltn1"
+      "text": "lagltn1"
     },
     {
       "name": "lagltn10",
-      "human_readable": "lagltn10"
+      "text": "lagltn10"
     },
     {
       "name": "lagltn11",
-      "human_readable": "lagltn11"
+      "text": "lagltn11"
     },
     {
       "name": "lagltn12",
-      "human_readable": "lagltn12"
+      "text": "lagltn12"
     },
     {
       "name": "lagltn13",
-      "human_readable": "lagltn13"
+      "text": "lagltn13"
     },
     {
       "name": "lagltn14",
-      "human_readable": "lagltn14"
+      "text": "lagltn14"
     },
     {
       "name": "lagltn15",
-      "human_readable": "lagltn15"
+      "text": "lagltn15"
     },
     {
       "name": "lagltn16",
-      "human_readable": "lagltn16"
+      "text": "lagltn16"
     },
     {
       "name": "lagltn17",
-      "human_readable": "lagltn17"
+      "text": "lagltn17"
     },
     {
       "name": "lagltn18",
-      "human_readable": "lagltn18"
+      "text": "lagltn18"
     },
     {
       "name": "lagltn19",
-      "human_readable": "lagltn19"
+      "text": "lagltn19"
     },
     {
       "name": "lagltn2",
-      "human_readable": "lagltn2"
+      "text": "lagltn2"
     },
     {
       "name": "lagltn20",
-      "human_readable": "lagltn20"
+      "text": "lagltn20"
     },
     {
       "name": "lagltn21",
-      "human_readable": "lagltn21"
+      "text": "lagltn21"
     },
     {
       "name": "lagltn22",
-      "human_readable": "lagltn22"
+      "text": "lagltn22"
     },
     {
       "name": "lagltn23",
-      "human_readable": "lagltn23"
+      "text": "lagltn23"
     },
     {
       "name": "lagltn24",
-      "human_readable": "lagltn24"
+      "text": "lagltn24"
     },
     {
       "name": "lagltn25",
-      "human_readable": "lagltn25"
+      "text": "lagltn25"
     },
     {
       "name": "lagltn26",
-      "human_readable": "lagltn26"
+      "text": "lagltn26"
     },
     {
       "name": "lagltn27",
-      "human_readable": "lagltn27"
+      "text": "lagltn27"
     },
     {
       "name": "lagltn28",
-      "human_readable": "lagltn28"
+      "text": "lagltn28"
     },
     {
       "name": "lagltn29",
-      "human_readable": "lagltn29"
+      "text": "lagltn29"
     },
     {
       "name": "lagltn3",
-      "human_readable": "lagltn3"
+      "text": "lagltn3"
     },
     {
       "name": "lagltn30",
-      "human_readable": "lagltn30"
+      "text": "lagltn30"
     },
     {
       "name": "lagltn31",
-      "human_readable": "lagltn31"
+      "text": "lagltn31"
     },
     {
       "name": "lagltn32",
-      "human_readable": "lagltn32"
+      "text": "lagltn32"
     },
     {
       "name": "lagltn33",
-      "human_readable": "lagltn33"
+      "text": "lagltn33"
     },
     {
       "name": "lagltn34",
-      "human_readable": "lagltn34"
+      "text": "lagltn34"
     },
     {
       "name": "lagltn35",
-      "human_readable": "lagltn35"
+      "text": "lagltn35"
     },
     {
       "name": "lagltn36",
-      "human_readable": "lagltn36"
+      "text": "lagltn36"
     },
     {
       "name": "lagltn37",
-      "human_readable": "lagltn37"
+      "text": "lagltn37"
     },
     {
       "name": "lagltn38",
-      "human_readable": "lagltn38"
+      "text": "lagltn38"
     },
     {
       "name": "lagltn39",
-      "human_readable": "lagltn39"
+      "text": "lagltn39"
     },
     {
       "name": "lagltn4",
-      "human_readable": "lagltn4"
+      "text": "lagltn4"
     },
     {
       "name": "lagltn40",
-      "human_readable": "lagltn40"
+      "text": "lagltn40"
     },
     {
       "name": "lagltn41",
-      "human_readable": "lagltn41"
+      "text": "lagltn41"
     },
     {
       "name": "lagltn42",
-      "human_readable": "lagltn42"
+      "text": "lagltn42"
     },
     {
       "name": "lagltn43",
-      "human_readable": "lagltn43"
+      "text": "lagltn43"
     },
     {
       "name": "lagltn44",
-      "human_readable": "lagltn44"
+      "text": "lagltn44"
     },
     {
       "name": "lagltn45",
-      "human_readable": "lagltn45"
+      "text": "lagltn45"
     },
     {
       "name": "lagltn46",
-      "human_readable": "lagltn46"
+      "text": "lagltn46"
     },
     {
       "name": "lagltn47",
-      "human_readable": "lagltn47"
+      "text": "lagltn47"
     },
     {
       "name": "lagltn5",
-      "human_readable": "lagltn5"
+      "text": "lagltn5"
     },
     {
       "name": "lagltn6",
-      "human_readable": "lagltn6"
+      "text": "lagltn6"
     },
     {
       "name": "lagltn7",
-      "human_readable": "lagltn7"
+      "text": "lagltn7"
     },
     {
       "name": "lagltn8",
-      "human_readable": "lagltn8"
+      "text": "lagltn8"
     },
     {
       "name": "lagltn9",
-      "human_readable": "lagltn9"
+      "text": "lagltn9"
     },
     {
       "name": "lagmtd1",
-      "human_readable": "lagmtd1"
+      "text": "lagmtd1"
     },
     {
       "name": "lagmtd2",
-      "human_readable": "lagmtd2"
+      "text": "lagmtd2"
     },
     {
       "name": "lagmtd3",
-      "human_readable": "lagmtd3"
+      "text": "lagmtd3"
     },
     {
       "name": "lagmtd4",
-      "human_readable": "lagmtd4"
+      "text": "lagmtd4"
     },
     {
       "name": "lagmtd5",
-      "human_readable": "lagmtd5"
+      "text": "lagmtd5"
     },
     {
       "name": "lagmtd6",
-      "human_readable": "lagmtd6"
+      "text": "lagmtd6"
     },
     {
       "name": "lagnfa1",
-      "human_readable": "lagnfa1"
+      "text": "lagnfa1"
     },
     {
       "name": "lagpcd1",
-      "human_readable": "lagpcd1"
+      "text": "lagpcd1"
     },
     {
       "name": "lagpcd2",
-      "human_readable": "lagpcd2"
+      "text": "lagpcd2"
     },
     {
       "name": "lagpcd3",
-      "human_readable": "lagpcd3"
+      "text": "lagpcd3"
     },
     {
       "name": "lagpcd4",
-      "human_readable": "lagpcd4"
+      "text": "lagpcd4"
     },
     {
       "name": "lagpcd5",
-      "human_readable": "lagpcd5"
+      "text": "lagpcd5"
     },
     {
       "name": "lagpieen1",
-      "human_readable": "lagpieen1"
+      "text": "lagpieen1"
     },
     {
       "name": "lagpieen2",
-      "human_readable": "lagpieen2"
+      "text": "lagpieen2"
     },
     {
       "name": "lagpipcd1",
-      "human_readable": "lagpipcd1"
+      "text": "lagpipcd1"
     },
     {
       "name": "lagpipcd2",
-      "human_readable": "lagpipcd2"
+      "text": "lagpipcd2"
     },
     {
       "name": "lagpipcd3",
-      "human_readable": "lagpipcd3"
+      "text": "lagpipcd3"
     },
     {
       "name": "lagpipcd4",
-      "human_readable": "lagpipcd4"
+      "text": "lagpipcd4"
     },
     {
       "name": "lagpixtd1",
-      "human_readable": "lagpixtd1"
+      "text": "lagpixtd1"
     },
     {
       "name": "lagpixtd2",
-      "human_readable": "lagpixtd2"
+      "text": "lagpixtd2"
     },
     {
       "name": "lagpiyer1",
-      "human_readable": "lagpiyer1"
+      "text": "lagpiyer1"
     },
     {
       "name": "lagpiyer2",
-      "human_readable": "lagpiyer2"
+      "text": "lagpiyer2"
     },
     {
       "name": "lagpiyet1",
-      "human_readable": "lagpiyet1"
+      "text": "lagpiyet1"
     },
     {
       "name": "lagpiyfd1",
-      "human_readable": "lagpiyfd1"
+      "text": "lagpiyfd1"
     },
     {
       "name": "lagpiyfd2",
-      "human_readable": "lagpiyfd2"
+      "text": "lagpiyfd2"
     },
     {
       "name": "lagpiywdx1",
-      "human_readable": "lagpiywdx1"
+      "text": "lagpiywdx1"
     },
     {
       "name": "lagpiywdx2",
-      "human_readable": "lagpiywdx2"
+      "text": "lagpiywdx2"
     },
     {
       "name": "lagstn1",
-      "human_readable": "lagstn1"
+      "text": "lagstn1"
     },
     {
       "name": "lagult1",
-      "human_readable": "lagult1"
+      "text": "lagult1"
     },
     {
       "name": "lagult2",
-      "human_readable": "lagult2"
+      "text": "lagult2"
     },
     {
       "name": "lagult3",
-      "human_readable": "lagult3"
+      "text": "lagult3"
     },
     {
       "name": "lagwrn1",
-      "human_readable": "lagwrn1"
+      "text": "lagwrn1"
     },
     {
       "name": "lagwrn2",
-      "human_readable": "lagwrn2"
+      "text": "lagwrn2"
     },
     {
       "name": "lagwrn3",
-      "human_readable": "lagwrn3"
+      "text": "lagwrn3"
     },
     {
       "name": "lagwrn4",
-      "human_readable": "lagwrn4"
+      "text": "lagwrn4"
     },
     {
       "name": "lagwrn5",
-      "human_readable": "lagwrn5"
+      "text": "lagwrn5"
     },
     {
       "name": "lagxtr1",
-      "human_readable": "lagxtr1"
+      "text": "lagxtr1"
     },
     {
       "name": "lagxtr2",
-      "human_readable": "lagxtr2"
+      "text": "lagxtr2"
     },
     {
       "name": "lagxtr3",
-      "human_readable": "lagxtr3"
+      "text": "lagxtr3"
     },
     {
       "name": "lagxtr4",
-      "human_readable": "lagxtr4"
+      "text": "lagxtr4"
     },
     {
       "name": "lagxtr5",
-      "human_readable": "lagxtr5"
+      "text": "lagxtr5"
     },
     {
       "name": "lagxtr6",
-      "human_readable": "lagxtr6"
+      "text": "lagxtr6"
     },
     {
       "name": "lagxtr7",
-      "human_readable": "lagxtr7"
+      "text": "lagxtr7"
     },
     {
       "name": "lagywd1",
-      "human_readable": "lagywd1"
+      "text": "lagywd1"
     },
     {
       "name": "lagywd2",
-      "human_readable": "lagywd2"
+      "text": "lagywd2"
     },
     {
       "name": "lagywd3",
-      "human_readable": "lagywd3"
+      "text": "lagywd3"
     },
     {
       "name": "lagywr1",
-      "human_readable": "lagywr1"
+      "text": "lagywr1"
     },
     {
       "name": "lagywr2",
-      "human_readable": "lagywr2"
+      "text": "lagywr2"
     },
     {
       "name": "lagywrx1",
-      "human_readable": "lagywrx1"
+      "text": "lagywrx1"
     },
     {
       "name": "lagywrx2",
-      "human_readable": "lagywrx2"
+      "text": "lagywrx2"
     },
     {
       "name": "lagywrx3",
-      "human_readable": "lagywrx3"
+      "text": "lagywrx3"
     },
     {
       "name": "lagywrx4",
-      "human_readable": "lagywrx4"
+      "text": "lagywrx4"
     },
     {
       "name": "lagywrx5",
-      "human_readable": "lagywrx5"
+      "text": "lagywrx5"
     },
     {
       "name": "lagywrx6",
-      "human_readable": "lagywrx6"
+      "text": "lagywrx6"
     },
     {
       "name": "lagywrx7",
-      "human_readable": "lagywrx7"
+      "text": "lagywrx7"
     },
     {
       "name": "lnn",
-      "human_readable": "lnn"
+      "text": "lnn"
     },
     {
       "name": "lprod",
-      "human_readable": "lprod"
+      "text": "lprod"
     },
     {
       "name": "lsr",
-      "human_readable": "lsr"
+      "text": "lsr"
     },
     {
       "name": "ltn",
-      "human_readable": "ltn"
+      "text": "ltn"
     },
     {
       "name": "mtd",
-      "human_readable": "mtd"
+      "text": "mtd"
     },
     {
       "name": "mtn",
-      "human_readable": "mtn"
+      "text": "mtn"
     },
     {
       "name": "mtr",
-      "human_readable": "mtr"
+      "text": "mtr"
     },
     {
       "name": "nfa",
-      "human_readable": "nfa"
+      "text": "nfa"
     },
     {
       "name": "nfn",
-      "human_readable": "nfn"
+      "text": "nfn"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "pcd",
-      "human_readable": "pcd"
+      "text": "pcd"
     },
     {
       "name": "pcn",
-      "human_readable": "pcn"
+      "text": "pcn"
     },
     {
       "name": "pcr",
-      "human_readable": "pcr"
+      "text": "pcr"
     },
     {
       "name": "picompr",
-      "human_readable": "picompr"
+      "text": "picompr"
     },
     {
       "name": "pieen",
-      "human_readable": "pieen"
+      "text": "pieen"
     },
     {
       "name": "pimtd",
-      "human_readable": "pimtd"
+      "text": "pimtd"
     },
     {
       "name": "pipcd",
-      "human_readable": "pipcd"
+      "text": "pipcd"
     },
     {
       "name": "pipyr",
-      "human_readable": "pipyr"
+      "text": "pipyr"
     },
     {
       "name": "pixtd",
-      "human_readable": "pixtd"
+      "text": "pixtd"
     },
     {
       "name": "piyer",
-      "human_readable": "piyer"
+      "text": "piyer"
     },
     {
       "name": "piyet",
-      "human_readable": "piyet"
+      "text": "piyet"
     },
     {
       "name": "piyfd",
-      "human_readable": "piyfd"
+      "text": "piyfd"
     },
     {
       "name": "piywdx",
-      "human_readable": "piywdx"
+      "text": "piywdx"
     },
     {
       "name": "pyn",
-      "human_readable": "pyn"
+      "text": "pyn"
     },
     {
       "name": "pyr",
-      "human_readable": "pyr"
+      "text": "pyr"
     },
     {
       "name": "scr",
-      "human_readable": "scr"
+      "text": "scr"
     },
     {
       "name": "stn",
-      "human_readable": "stn"
+      "text": "stn"
     },
     {
       "name": "strq",
-      "human_readable": "strq"
+      "text": "strq"
     },
     {
       "name": "tbn",
-      "human_readable": "tbn"
+      "text": "tbn"
     },
     {
       "name": "tbr",
-      "human_readable": "tbr"
+      "text": "tbr"
     },
     {
       "name": "tdn",
-      "human_readable": "tdn"
+      "text": "tdn"
     },
     {
       "name": "tdn_yen",
-      "human_readable": "tdn_yen"
+      "text": "tdn_yen"
     },
     {
       "name": "trn",
-      "human_readable": "trn"
+      "text": "trn"
     },
     {
       "name": "ulc",
-      "human_readable": "ulc"
+      "text": "ulc"
     },
     {
       "name": "ult",
-      "human_readable": "ult"
+      "text": "ult"
     },
     {
       "name": "urx",
-      "human_readable": "urx"
+      "text": "urx"
     },
     {
       "name": "win",
-      "human_readable": "win"
+      "text": "win"
     },
     {
       "name": "wln",
-      "human_readable": "wln"
+      "text": "wln"
     },
     {
       "name": "wrn",
-      "human_readable": "wrn"
+      "text": "wrn"
     },
     {
       "name": "xtd",
-      "human_readable": "xtd"
+      "text": "xtd"
     },
     {
       "name": "xtn",
-      "human_readable": "xtn"
+      "text": "xtn"
     },
     {
       "name": "xtr",
-      "human_readable": "xtr"
+      "text": "xtr"
     },
     {
       "name": "yer",
-      "human_readable": "yer"
+      "text": "yer"
     },
     {
       "name": "yet",
-      "human_readable": "yet"
+      "text": "yet"
     },
     {
       "name": "yett",
-      "human_readable": "yett"
+      "text": "yett"
     },
     {
       "name": "ywd",
-      "human_readable": "ywd"
+      "text": "ywd"
     },
     {
       "name": "ywdx",
-      "human_readable": "ywdx"
+      "text": "ywdx"
     },
     {
       "name": "ywr",
-      "human_readable": "ywr"
+      "text": "ywr"
     },
     {
       "name": "ywrx",
-      "human_readable": "ywrx"
+      "text": "ywrx"
     }
   ],
   "shocks": [
     {
       "name": "fiscal_",
-      "human_readable": "fiscal_"
+      "text": "fiscal_"
     },
     {
       "name": "innoeitd",
-      "human_readable": "innoeitd"
+      "text": "innoeitd"
     },
     {
       "name": "innoeitr",
-      "human_readable": "innoeitr"
+      "text": "innoeitr"
     },
     {
       "name": "innoelnn",
-      "human_readable": "innoelnn"
+      "text": "innoelnn"
     },
     {
       "name": "innoelsr",
-      "human_readable": "innoelsr"
+      "text": "innoelsr"
     },
     {
       "name": "innoeltn",
-      "human_readable": "innoeltn"
+      "text": "innoeltn"
     },
     {
       "name": "innoemtd",
-      "human_readable": "innoemtd"
+      "text": "innoemtd"
     },
     {
       "name": "innoemtr",
-      "human_readable": "innoemtr"
+      "text": "innoemtr"
     },
     {
       "name": "innoepcd",
-      "human_readable": "innoepcd"
+      "text": "innoepcd"
     },
     {
       "name": "innoepcr",
-      "human_readable": "innoepcr"
+      "text": "innoepcr"
     },
     {
       "name": "innoewrn",
-      "human_readable": "innoewrn"
+      "text": "innoewrn"
     },
     {
       "name": "innoextd",
-      "human_readable": "innoextd"
+      "text": "innoextd"
     },
     {
       "name": "innoextr",
-      "human_readable": "innoextr"
+      "text": "innoextr"
     },
     {
       "name": "innoeyfd",
-      "human_readable": "innoeyfd"
+      "text": "innoeyfd"
     },
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     }
   ],
   "al_info": null

@@ -40,313 +40,313 @@
   "vars": [
     {
       "name": "a",
-      "human_readable": "a"
+      "text": "a"
     },
     {
       "name": "da",
-      "human_readable": "da"
+      "text": "da"
     },
     {
       "name": "e",
-      "human_readable": "e"
+      "text": "e"
     },
     {
       "name": "g",
-      "human_readable": "g"
+      "text": "g"
     },
     {
       "name": "gam",
-      "human_readable": "gam"
+      "text": "gam"
     },
     {
       "name": "i",
-      "human_readable": "i"
+      "text": "i"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "l",
-      "human_readable": "l"
+      "text": "l"
     },
     {
       "name": "l1",
-      "human_readable": "l1"
+      "text": "l1"
     },
     {
       "name": "l10",
-      "human_readable": "l10"
+      "text": "l10"
     },
     {
       "name": "l2",
-      "human_readable": "l2"
+      "text": "l2"
     },
     {
       "name": "l3",
-      "human_readable": "l3"
+      "text": "l3"
     },
     {
       "name": "l4",
-      "human_readable": "l4"
+      "text": "l4"
     },
     {
       "name": "l5",
-      "human_readable": "l5"
+      "text": "l5"
     },
     {
       "name": "l6",
-      "human_readable": "l6"
+      "text": "l6"
     },
     {
       "name": "l7",
-      "human_readable": "l7"
+      "text": "l7"
     },
     {
       "name": "l8",
-      "human_readable": "l8"
+      "text": "l8"
     },
     {
       "name": "l9",
-      "human_readable": "l9"
+      "text": "l9"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "p",
-      "human_readable": "p"
+      "text": "p"
     },
     {
       "name": "p1",
-      "human_readable": "p1"
+      "text": "p1"
     },
     {
       "name": "p10",
-      "human_readable": "p10"
+      "text": "p10"
     },
     {
       "name": "p2",
-      "human_readable": "p2"
+      "text": "p2"
     },
     {
       "name": "p3",
-      "human_readable": "p3"
+      "text": "p3"
     },
     {
       "name": "p4",
-      "human_readable": "p4"
+      "text": "p4"
     },
     {
       "name": "p5",
-      "human_readable": "p5"
+      "text": "p5"
     },
     {
       "name": "p6",
-      "human_readable": "p6"
+      "text": "p6"
     },
     {
       "name": "p7",
-      "human_readable": "p7"
+      "text": "p7"
     },
     {
       "name": "p8",
-      "human_readable": "p8"
+      "text": "p8"
     },
     {
       "name": "p9",
-      "human_readable": "p9"
+      "text": "p9"
     },
     {
       "name": "pi",
-      "human_readable": "pi"
+      "text": "pi"
     },
     {
       "name": "R",
-      "human_readable": "R"
+      "text": "R"
     },
     {
       "name": "R1",
-      "human_readable": "R1"
+      "text": "R1"
     },
     {
       "name": "R10",
-      "human_readable": "R10"
+      "text": "R10"
     },
     {
       "name": "R2",
-      "human_readable": "R2"
+      "text": "R2"
     },
     {
       "name": "R3",
-      "human_readable": "R3"
+      "text": "R3"
     },
     {
       "name": "R4",
-      "human_readable": "R4"
+      "text": "R4"
     },
     {
       "name": "R5",
-      "human_readable": "R5"
+      "text": "R5"
     },
     {
       "name": "R6",
-      "human_readable": "R6"
+      "text": "R6"
     },
     {
       "name": "R7",
-      "human_readable": "R7"
+      "text": "R7"
     },
     {
       "name": "R8",
-      "human_readable": "R8"
+      "text": "R8"
     },
     {
       "name": "R9",
-      "human_readable": "R9"
+      "text": "R9"
     },
     {
       "name": "v",
-      "human_readable": "v"
+      "text": "v"
     },
     {
       "name": "w",
-      "human_readable": "w"
+      "text": "w"
     },
     {
       "name": "w1",
-      "human_readable": "w1"
+      "text": "w1"
     },
     {
       "name": "w10",
-      "human_readable": "w10"
+      "text": "w10"
     },
     {
       "name": "w2",
-      "human_readable": "w2"
+      "text": "w2"
     },
     {
       "name": "w3",
-      "human_readable": "w3"
+      "text": "w3"
     },
     {
       "name": "w4",
-      "human_readable": "w4"
+      "text": "w4"
     },
     {
       "name": "w5",
-      "human_readable": "w5"
+      "text": "w5"
     },
     {
       "name": "w6",
-      "human_readable": "w6"
+      "text": "w6"
     },
     {
       "name": "w7",
-      "human_readable": "w7"
+      "text": "w7"
     },
     {
       "name": "w8",
-      "human_readable": "w8"
+      "text": "w8"
     },
     {
       "name": "w9",
-      "human_readable": "w9"
+      "text": "w9"
     },
     {
       "name": "x",
-      "human_readable": "x"
+      "text": "x"
     },
     {
       "name": "y",
-      "human_readable": "y"
+      "text": "y"
     },
     {
       "name": "y1",
-      "human_readable": "y1"
+      "text": "y1"
     },
     {
       "name": "y10",
-      "human_readable": "y10"
+      "text": "y10"
     },
     {
       "name": "y100",
-      "human_readable": "y100"
+      "text": "y100"
     },
     {
       "name": "y2",
-      "human_readable": "y2"
+      "text": "y2"
     },
     {
       "name": "y3",
-      "human_readable": "y3"
+      "text": "y3"
     },
     {
       "name": "y4",
-      "human_readable": "y4"
+      "text": "y4"
     },
     {
       "name": "y5",
-      "human_readable": "y5"
+      "text": "y5"
     },
     {
       "name": "y6",
-      "human_readable": "y6"
+      "text": "y6"
     },
     {
       "name": "y7",
-      "human_readable": "y7"
+      "text": "y7"
     },
     {
       "name": "y8",
-      "human_readable": "y8"
+      "text": "y8"
     },
     {
       "name": "y9",
-      "human_readable": "y9"
+      "text": "y9"
     },
     {
       "name": "yn",
-      "human_readable": "yn"
+      "text": "yn"
     }
   ],
   "shocks": [
     {
       "name": "a_e",
-      "human_readable": "a_e"
+      "text": "a_e"
     },
     {
       "name": "e_e",
-      "human_readable": "e_e"
+      "text": "e_e"
     },
     {
       "name": "g_e",
-      "human_readable": "g_e"
+      "text": "g_e"
     },
     {
       "name": "gam_e",
-      "human_readable": "gam_e"
+      "text": "gam_e"
     },
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     },
     {
       "name": "v_e",
-      "human_readable": "v_e"
+      "text": "v_e"
     }
   ],
   "al_info": null

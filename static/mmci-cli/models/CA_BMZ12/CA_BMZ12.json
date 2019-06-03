@@ -75,297 +75,297 @@
   "vars": [
     {
       "name": "auxt",
-      "human_readable": "auxt"
+      "text": "auxt"
     },
     {
       "name": "auxtfp",
-      "human_readable": "auxtfp"
+      "text": "auxtfp"
     },
     {
       "name": "bigXt",
-      "human_readable": "bigXt"
+      "text": "bigXt"
     },
     {
       "name": "bigZt",
-      "human_readable": "bigZt"
+      "text": "bigZt"
     },
     {
       "name": "bt",
-      "human_readable": "bt"
+      "text": "bt"
     },
     {
       "name": "ce",
-      "human_readable": "ce"
+      "text": "ce"
     },
     {
       "name": "cg",
-      "human_readable": "cg"
+      "text": "cg"
     },
     {
       "name": "cgn",
-      "human_readable": "cgn"
+      "text": "cgn"
     },
     {
       "name": "ct",
-      "human_readable": "ct"
+      "text": "ct"
     },
     {
       "name": "ctfp",
-      "human_readable": "ctfp"
+      "text": "ctfp"
     },
     {
       "name": "efc",
-      "human_readable": "efc"
+      "text": "efc"
     },
     {
       "name": "eqti",
-      "human_readable": "eqti"
+      "text": "eqti"
     },
     {
       "name": "expi",
-      "human_readable": "expi"
+      "text": "expi"
     },
     {
       "name": "ft",
-      "human_readable": "ft"
+      "text": "ft"
     },
     {
       "name": "ht",
-      "human_readable": "ht"
+      "text": "ht"
     },
     {
       "name": "htb",
-      "human_readable": "htb"
+      "text": "htb"
     },
     {
       "name": "htfp",
-      "human_readable": "htfp"
+      "text": "htfp"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "it",
-      "human_readable": "it"
+      "text": "it"
     },
     {
       "name": "itfp",
-      "human_readable": "itfp"
+      "text": "itfp"
     },
     {
       "name": "kc",
-      "human_readable": "kc"
+      "text": "kc"
     },
     {
       "name": "kl",
-      "human_readable": "kl"
+      "text": "kl"
     },
     {
       "name": "kt",
-      "human_readable": "kt"
+      "text": "kt"
     },
     {
       "name": "ktfp",
-      "human_readable": "ktfp"
+      "text": "ktfp"
     },
     {
       "name": "lambdat",
-      "human_readable": "lambdat"
+      "text": "lambdat"
     },
     {
       "name": "lambdatfp",
-      "human_readable": "lambdatfp"
+      "text": "lambdatfp"
     },
     {
       "name": "lev",
-      "human_readable": "lev"
+      "text": "lev"
     },
     {
       "name": "llt",
-      "human_readable": "llt"
+      "text": "llt"
     },
     {
       "name": "lltfp",
-      "human_readable": "lltfp"
+      "text": "lltfp"
     },
     {
       "name": "lnit",
-      "human_readable": "lnit"
+      "text": "lnit"
     },
     {
       "name": "lnygap",
-      "human_readable": "lnygap"
+      "text": "lnygap"
     },
     {
       "name": "lnyt",
-      "human_readable": "lnyt"
+      "text": "lnyt"
     },
     {
       "name": "mcb",
-      "human_readable": "mcb"
+      "text": "mcb"
     },
     {
       "name": "mcc",
-      "human_readable": "mcc"
+      "text": "mcc"
     },
     {
       "name": "mcd",
-      "human_readable": "mcd"
+      "text": "mcd"
     },
     {
       "name": "mce",
-      "human_readable": "mce"
+      "text": "mce"
     },
     {
       "name": "mck",
-      "human_readable": "mck"
+      "text": "mck"
     },
     {
       "name": "mcl",
-      "human_readable": "mcl"
+      "text": "mcl"
     },
     {
       "name": "mct",
-      "human_readable": "mct"
+      "text": "mct"
     },
     {
       "name": "mctfp",
-      "human_readable": "mctfp"
+      "text": "mctfp"
     },
     {
       "name": "mpk",
-      "human_readable": "mpk"
+      "text": "mpk"
     },
     {
       "name": "mpl",
-      "human_readable": "mpl"
+      "text": "mpl"
     },
     {
       "name": "nt",
-      "human_readable": "nt"
+      "text": "nt"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "pit",
-      "human_readable": "pit"
+      "text": "pit"
     },
     {
       "name": "pref",
-      "human_readable": "pref"
+      "text": "pref"
     },
     {
       "name": "pstart",
-      "human_readable": "pstart"
+      "text": "pstart"
     },
     {
       "name": "qgap",
-      "human_readable": "qgap"
+      "text": "qgap"
     },
     {
       "name": "qt",
-      "human_readable": "qt"
+      "text": "qt"
     },
     {
       "name": "qtfp",
-      "human_readable": "qtfp"
+      "text": "qtfp"
     },
     {
       "name": "rkt",
-      "human_readable": "rkt"
+      "text": "rkt"
     },
     {
       "name": "rktfp",
-      "human_readable": "rktfp"
+      "text": "rktfp"
     },
     {
       "name": "rnt",
-      "human_readable": "rnt"
+      "text": "rnt"
     },
     {
       "name": "rntfp",
-      "human_readable": "rntfp"
+      "text": "rntfp"
     },
     {
       "name": "rw",
-      "human_readable": "rw"
+      "text": "rw"
     },
     {
       "name": "st",
-      "human_readable": "st"
+      "text": "st"
     },
     {
       "name": "ste",
-      "human_readable": "ste"
+      "text": "ste"
     },
     {
       "name": "taut",
-      "human_readable": "taut"
+      "text": "taut"
     },
     {
       "name": "uu",
-      "human_readable": "uu"
+      "text": "uu"
     },
     {
       "name": "vf",
-      "human_readable": "vf"
+      "text": "vf"
     },
     {
       "name": "xt",
-      "human_readable": "xt"
+      "text": "xt"
     },
     {
       "name": "ygap",
-      "human_readable": "ygap"
+      "text": "ygap"
     },
     {
       "name": "yt",
-      "human_readable": "yt"
+      "text": "yt"
     },
     {
       "name": "ytfp",
-      "human_readable": "ytfp"
+      "text": "ytfp"
     },
     {
       "name": "zt",
-      "human_readable": "zt"
+      "text": "zt"
     }
   ],
   "shocks": [
     {
       "name": "epsft",
-      "human_readable": "epsft"
+      "text": "epsft"
     },
     {
       "name": "epspt",
-      "human_readable": "epspt"
+      "text": "epspt"
     },
     {
       "name": "epsxt",
-      "human_readable": "epsxt"
+      "text": "epsxt"
     },
     {
       "name": "epszt",
-      "human_readable": "epszt"
+      "text": "epszt"
     },
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     }
   ],
   "al_info": null

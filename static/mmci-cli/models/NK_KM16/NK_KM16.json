@@ -74,277 +74,277 @@
   "vars": [
     {
       "name": "c",
-      "human_readable": "c"
+      "text": "c"
     },
     {
       "name": "c_obs",
-      "human_readable": "c_obs"
+      "text": "c_obs"
     },
     {
       "name": "cn",
-      "human_readable": "cn"
+      "text": "cn"
     },
     {
       "name": "D",
-      "human_readable": "D"
+      "text": "D"
     },
     {
       "name": "D_obs",
-      "human_readable": "D_obs"
+      "text": "D_obs"
     },
     {
       "name": "Dbs",
-      "human_readable": "Dbs"
+      "text": "Dbs"
     },
     {
       "name": "Disp",
-      "human_readable": "Disp"
+      "text": "Disp"
     },
     {
       "name": "Dn",
-      "human_readable": "Dn"
+      "text": "Dn"
     },
     {
       "name": "Dn_obs",
-      "human_readable": "Dn_obs"
+      "text": "Dn_obs"
     },
     {
       "name": "Dnew",
-      "human_readable": "Dnew"
+      "text": "Dnew"
     },
     {
       "name": "Dnew_obs",
-      "human_readable": "Dnew_obs"
+      "text": "Dnew_obs"
     },
     {
       "name": "Dnewn",
-      "human_readable": "Dnewn"
+      "text": "Dnewn"
     },
     {
       "name": "epsi_R",
-      "human_readable": "epsi_R"
+      "text": "epsi_R"
     },
     {
       "name": "fispol",
-      "human_readable": "fispol"
+      "text": "fispol"
     },
     {
       "name": "G",
-      "human_readable": "G"
+      "text": "G"
     },
     {
       "name": "G_",
-      "human_readable": "G_"
+      "text": "G_"
     },
     {
       "name": "h",
-      "human_readable": "h"
+      "text": "h"
     },
     {
       "name": "h_obs",
-      "human_readable": "h_obs"
+      "text": "h_obs"
     },
     {
       "name": "hn",
-      "human_readable": "hn"
+      "text": "hn"
     },
     {
       "name": "i",
-      "human_readable": "i"
+      "text": "i"
     },
     {
       "name": "i_D",
-      "human_readable": "i_D"
+      "text": "i_D"
     },
     {
       "name": "i_Dn",
-      "human_readable": "i_Dn"
+      "text": "i_Dn"
     },
     {
       "name": "i_Dnew",
-      "human_readable": "i_Dnew"
+      "text": "i_Dnew"
     },
     {
       "name": "i_Dnew_obs",
-      "human_readable": "i_Dnew_obs"
+      "text": "i_Dnew_obs"
     },
     {
       "name": "i_Dnewn",
-      "human_readable": "i_Dnewn"
+      "text": "i_Dnewn"
     },
     {
       "name": "i_obs",
-      "human_readable": "i_obs"
+      "text": "i_obs"
     },
     {
       "name": "in",
-      "human_readable": "in"
+      "text": "in"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "lamda",
-      "human_readable": "lamda"
+      "text": "lamda"
     },
     {
       "name": "lamdan",
-      "human_readable": "lamdan"
+      "text": "lamdan"
     },
     {
       "name": "m",
-      "human_readable": "m"
+      "text": "m"
     },
     {
       "name": "m_obs",
-      "human_readable": "m_obs"
+      "text": "m_obs"
     },
     {
       "name": "MC",
-      "human_readable": "MC"
+      "text": "MC"
     },
     {
       "name": "mn",
-      "human_readable": "mn"
+      "text": "mn"
     },
     {
       "name": "mu",
-      "human_readable": "mu"
+      "text": "mu"
     },
     {
       "name": "mu_obs",
-      "human_readable": "mu_obs"
+      "text": "mu_obs"
     },
     {
       "name": "mun",
-      "human_readable": "mun"
+      "text": "mun"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "pi",
-      "human_readable": "pi"
+      "text": "pi"
     },
     {
       "name": "pi_obs",
-      "human_readable": "pi_obs"
+      "text": "pi_obs"
     },
     {
       "name": "PIESTAR",
-      "human_readable": "PIESTAR"
+      "text": "PIESTAR"
     },
     {
       "name": "PIESTARn",
-      "human_readable": "PIESTARn"
+      "text": "PIESTARn"
     },
     {
       "name": "pin",
-      "human_readable": "pin"
+      "text": "pin"
     },
     {
       "name": "pistar",
-      "human_readable": "pistar"
+      "text": "pistar"
     },
     {
       "name": "R",
-      "human_readable": "R"
+      "text": "R"
     },
     {
       "name": "Rn",
-      "human_readable": "Rn"
+      "text": "Rn"
     },
     {
       "name": "Rrate",
-      "human_readable": "Rrate"
+      "text": "Rrate"
     },
     {
       "name": "tau",
-      "human_readable": "tau"
+      "text": "tau"
     },
     {
       "name": "tau_obs",
-      "human_readable": "tau_obs"
+      "text": "tau_obs"
     },
     {
       "name": "taun",
-      "human_readable": "taun"
+      "text": "taun"
     },
     {
       "name": "taun_obs",
-      "human_readable": "taun_obs"
+      "text": "taun_obs"
     },
     {
       "name": "w",
-      "human_readable": "w"
+      "text": "w"
     },
     {
       "name": "w_obs",
-      "human_readable": "w_obs"
+      "text": "w_obs"
     },
     {
       "name": "wn",
-      "human_readable": "wn"
+      "text": "wn"
     },
     {
       "name": "y",
-      "human_readable": "y"
+      "text": "y"
     },
     {
       "name": "y_obs",
-      "human_readable": "y_obs"
+      "text": "y_obs"
     },
     {
       "name": "yn",
-      "human_readable": "yn"
+      "text": "yn"
     },
     {
       "name": "yn_obs",
-      "human_readable": "yn_obs"
+      "text": "yn_obs"
     },
     {
       "name": "Z1",
-      "human_readable": "Z1"
+      "text": "Z1"
     },
     {
       "name": "Z2",
-      "human_readable": "Z2"
+      "text": "Z2"
     }
   ],
   "shocks": [
     {
       "name": "epsi_D",
-      "human_readable": "epsi_D"
+      "text": "epsi_D"
     },
     {
       "name": "eta_PIESTAR",
-      "human_readable": "eta_PIESTAR"
+      "text": "eta_PIESTAR"
     },
     {
       "name": "eta_r",
-      "human_readable": "eta_r"
+      "text": "eta_r"
     },
     {
       "name": "fiscal_",
-      "human_readable": "fiscal_"
+      "text": "fiscal_"
     },
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     }
   ],
   "al_info": null

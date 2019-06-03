@@ -74,185 +74,185 @@
   "vars": [
     {
       "name": "C",
-      "human_readable": "C"
+      "text": "C"
     },
     {
       "name": "Cf",
-      "human_readable": "Cf"
+      "text": "Cf"
     },
     {
       "name": "eps_A",
-      "human_readable": "eps_A"
+      "text": "eps_A"
     },
     {
       "name": "eps_B",
-      "human_readable": "eps_B"
+      "text": "eps_B"
     },
     {
       "name": "eps_G",
-      "human_readable": "eps_G"
+      "text": "eps_G"
     },
     {
       "name": "eps_I",
-      "human_readable": "eps_I"
+      "text": "eps_I"
     },
     {
       "name": "eps_L",
-      "human_readable": "eps_L"
+      "text": "eps_L"
     },
     {
       "name": "epsinno_G",
-      "human_readable": "epsinno_G"
+      "text": "epsinno_G"
     },
     {
       "name": "fispol",
-      "human_readable": "fispol"
+      "text": "fispol"
     },
     {
       "name": "I",
-      "human_readable": "I"
+      "text": "I"
     },
     {
       "name": "If",
-      "human_readable": "If"
+      "text": "If"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "K",
-      "human_readable": "K"
+      "text": "K"
     },
     {
       "name": "Kf",
-      "human_readable": "Kf"
+      "text": "Kf"
     },
     {
       "name": "L",
-      "human_readable": "L"
+      "text": "L"
     },
     {
       "name": "Lf",
-      "human_readable": "Lf"
+      "text": "Lf"
     },
     {
       "name": "N",
-      "human_readable": "N"
+      "text": "N"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "pi",
-      "human_readable": "pi"
+      "text": "pi"
     },
     {
       "name": "Prem",
-      "human_readable": "Prem"
+      "text": "Prem"
     },
     {
       "name": "Q",
-      "human_readable": "Q"
+      "text": "Q"
     },
     {
       "name": "Qf",
-      "human_readable": "Qf"
+      "text": "Qf"
     },
     {
       "name": "R",
-      "human_readable": "R"
+      "text": "R"
     },
     {
       "name": "Rauxil",
-      "human_readable": "Rauxil"
+      "text": "Rauxil"
     },
     {
       "name": "ren",
-      "human_readable": "ren"
+      "text": "ren"
     },
     {
       "name": "renf",
-      "human_readable": "renf"
+      "text": "renf"
     },
     {
       "name": "Rf",
-      "human_readable": "Rf"
+      "text": "Rf"
     },
     {
       "name": "Rk",
-      "human_readable": "Rk"
+      "text": "Rk"
     },
     {
       "name": "Rkforward",
-      "human_readable": "Rkforward"
+      "text": "Rkforward"
     },
     {
       "name": "Rn",
-      "human_readable": "Rn"
+      "text": "Rn"
     },
     {
       "name": "w",
-      "human_readable": "w"
+      "text": "w"
     },
     {
       "name": "wf",
-      "human_readable": "wf"
+      "text": "wf"
     },
     {
       "name": "Y",
-      "human_readable": "Y"
+      "text": "Y"
     },
     {
       "name": "Yf",
-      "human_readable": "Yf"
+      "text": "Yf"
     }
   ],
   "shocks": [
     {
       "name": "epsinno_A",
-      "human_readable": "epsinno_A"
+      "text": "epsinno_A"
     },
     {
       "name": "epsinno_B",
-      "human_readable": "epsinno_B"
+      "text": "epsinno_B"
     },
     {
       "name": "epsinno_I",
-      "human_readable": "epsinno_I"
+      "text": "epsinno_I"
     },
     {
       "name": "epsinno_L",
-      "human_readable": "epsinno_L"
+      "text": "epsinno_L"
     },
     {
       "name": "eta_p",
-      "human_readable": "eta_p"
+      "text": "eta_p"
     },
     {
       "name": "eta_w",
-      "human_readable": "eta_w"
+      "text": "eta_w"
     },
     {
       "name": "fiscal_",
-      "human_readable": "fiscal_"
+      "text": "fiscal_"
     },
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     }
   ],
   "al_info": null

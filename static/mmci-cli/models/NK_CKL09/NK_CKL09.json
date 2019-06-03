@@ -76,237 +76,237 @@
   "vars": [
     {
       "name": "cflext",
-      "human_readable": "cflext"
+      "text": "cflext"
     },
     {
       "name": "ct",
-      "human_readable": "ct"
+      "text": "ct"
     },
     {
       "name": "deltaFflext",
-      "human_readable": "deltaFflext"
+      "text": "deltaFflext"
     },
     {
       "name": "deltaFt",
-      "human_readable": "deltaFt"
+      "text": "deltaFt"
     },
     {
       "name": "Deltastarflext",
-      "human_readable": "Deltastarflext"
+      "text": "Deltastarflext"
     },
     {
       "name": "Deltastart",
-      "human_readable": "Deltastart"
+      "text": "Deltastart"
     },
     {
       "name": "deltaWflext",
-      "human_readable": "deltaWflext"
+      "text": "deltaWflext"
     },
     {
       "name": "deltaWt",
-      "human_readable": "deltaWt"
+      "text": "deltaWt"
     },
     {
       "name": "ebargaint",
-      "human_readable": "ebargaint"
+      "text": "ebargaint"
     },
     {
       "name": "ebt",
-      "human_readable": "ebt"
+      "text": "ebt"
     },
     {
       "name": "eCt",
-      "human_readable": "eCt"
+      "text": "eCt"
     },
     {
       "name": "ekappat",
-      "human_readable": "ekappat"
+      "text": "ekappat"
     },
     {
       "name": "emoneyt",
-      "human_readable": "emoneyt"
+      "text": "emoneyt"
     },
     {
       "name": "esept",
-      "human_readable": "esept"
+      "text": "esept"
     },
     {
       "name": "fispol",
-      "human_readable": "fispol"
+      "text": "fispol"
     },
     {
       "name": "g_",
-      "human_readable": "g_"
+      "text": "g_"
     },
     {
       "name": "gt",
-      "human_readable": "gt"
+      "text": "gt"
     },
     {
       "name": "hflext",
-      "human_readable": "hflext"
+      "text": "hflext"
     },
     {
       "name": "ht",
-      "human_readable": "ht"
+      "text": "ht"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "Jstarflext",
-      "human_readable": "Jstarflext"
+      "text": "Jstarflext"
     },
     {
       "name": "Jstart",
-      "human_readable": "Jstart"
+      "text": "Jstart"
     },
     {
       "name": "lambdaflext",
-      "human_readable": "lambdaflext"
+      "text": "lambdaflext"
     },
     {
       "name": "lambdat",
-      "human_readable": "lambdat"
+      "text": "lambdat"
     },
     {
       "name": "mct",
-      "human_readable": "mct"
+      "text": "mct"
     },
     {
       "name": "mflext",
-      "human_readable": "mflext"
+      "text": "mflext"
     },
     {
       "name": "mt",
-      "human_readable": "mt"
+      "text": "mt"
     },
     {
       "name": "nt",
-      "human_readable": "nt"
+      "text": "nt"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "Piannt",
-      "human_readable": "Piannt"
+      "text": "Piannt"
     },
     {
       "name": "Pit",
-      "human_readable": "Pit"
+      "text": "Pit"
     },
     {
       "name": "qflext",
-      "human_readable": "qflext"
+      "text": "qflext"
     },
     {
       "name": "qt",
-      "human_readable": "qt"
+      "text": "qt"
     },
     {
       "name": "Rt",
-      "human_readable": "Rt"
+      "text": "Rt"
     },
     {
       "name": "sflext",
-      "human_readable": "sflext"
+      "text": "sflext"
     },
     {
       "name": "st",
-      "human_readable": "st"
+      "text": "st"
     },
     {
       "name": "ut",
-      "human_readable": "ut"
+      "text": "ut"
     },
     {
       "name": "vflext",
-      "human_readable": "vflext"
+      "text": "vflext"
     },
     {
       "name": "vt",
-      "human_readable": "vt"
+      "text": "vt"
     },
     {
       "name": "wflext",
-      "human_readable": "wflext"
+      "text": "wflext"
     },
     {
       "name": "wstart",
-      "human_readable": "wstart"
+      "text": "wstart"
     },
     {
       "name": "wt",
-      "human_readable": "wt"
+      "text": "wt"
     },
     {
       "name": "xLflext",
-      "human_readable": "xLflext"
+      "text": "xLflext"
     },
     {
       "name": "xLt",
-      "human_readable": "xLt"
+      "text": "xLt"
     },
     {
       "name": "yflext",
-      "human_readable": "yflext"
+      "text": "yflext"
     },
     {
       "name": "yt",
-      "human_readable": "yt"
+      "text": "yt"
     },
     {
       "name": "zt",
-      "human_readable": "zt"
+      "text": "zt"
     }
   ],
   "shocks": [
     {
       "name": "fiscal_",
-      "human_readable": "fiscal_"
+      "text": "fiscal_"
     },
     {
       "name": "inno_ebargaint",
-      "human_readable": "inno_ebargaint"
+      "text": "inno_ebargaint"
     },
     {
       "name": "inno_ebt",
-      "human_readable": "inno_ebt"
+      "text": "inno_ebt"
     },
     {
       "name": "inno_eCt",
-      "human_readable": "inno_eCt"
+      "text": "inno_eCt"
     },
     {
       "name": "inno_ekappat",
-      "human_readable": "inno_ekappat"
+      "text": "inno_ekappat"
     },
     {
       "name": "inno_esept",
-      "human_readable": "inno_esept"
+      "text": "inno_esept"
     },
     {
       "name": "inno_zt",
-      "human_readable": "inno_zt"
+      "text": "inno_zt"
     },
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     }
   ],
   "al_info": null

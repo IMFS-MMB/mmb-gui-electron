@@ -76,201 +76,201 @@
   "vars": [
     {
       "name": "aC",
-      "human_readable": "aC"
+      "text": "aC"
     },
     {
       "name": "b",
-      "human_readable": "b"
+      "text": "b"
     },
     {
       "name": "bB",
-      "human_readable": "bB"
+      "text": "bB"
     },
     {
       "name": "c",
-      "human_readable": "c"
+      "text": "c"
     },
     {
       "name": "cB",
-      "human_readable": "cB"
+      "text": "cB"
     },
     {
       "name": "d",
-      "human_readable": "d"
+      "text": "d"
     },
     {
       "name": "dB",
-      "human_readable": "dB"
+      "text": "dB"
     },
     {
       "name": "deltabB",
-      "human_readable": "deltabB"
+      "text": "deltabB"
     },
     {
       "name": "deltac",
-      "human_readable": "deltac"
+      "text": "deltac"
     },
     {
       "name": "deltacB",
-      "human_readable": "deltacB"
+      "text": "deltacB"
     },
     {
       "name": "deltap",
-      "human_readable": "deltap"
+      "text": "deltap"
     },
     {
       "name": "deltapC",
-      "human_readable": "deltapC"
+      "text": "deltapC"
     },
     {
       "name": "deltapD",
-      "human_readable": "deltapD"
+      "text": "deltapD"
     },
     {
       "name": "dstar",
-      "human_readable": "dstar"
+      "text": "dstar"
     },
     {
       "name": "i",
-      "human_readable": "i"
+      "text": "i"
     },
     {
       "name": "iB",
-      "human_readable": "iB"
+      "text": "iB"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "lC",
-      "human_readable": "lC"
+      "text": "lC"
     },
     {
       "name": "lCB",
-      "human_readable": "lCB"
+      "text": "lCB"
     },
     {
       "name": "lCtot",
-      "human_readable": "lCtot"
+      "text": "lCtot"
     },
     {
       "name": "lD",
-      "human_readable": "lD"
+      "text": "lD"
     },
     {
       "name": "lDB",
-      "human_readable": "lDB"
+      "text": "lDB"
     },
     {
       "name": "lDtot",
-      "human_readable": "lDtot"
+      "text": "lDtot"
     },
     {
       "name": "mu",
-      "human_readable": "mu"
+      "text": "mu"
     },
     {
       "name": "muB",
-      "human_readable": "muB"
+      "text": "muB"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "p",
-      "human_readable": "p"
+      "text": "p"
     },
     {
       "name": "pC",
-      "human_readable": "pC"
+      "text": "pC"
     },
     {
       "name": "pD",
-      "human_readable": "pD"
+      "text": "pD"
     },
     {
       "name": "q",
-      "human_readable": "q"
+      "text": "q"
     },
     {
       "name": "r",
-      "human_readable": "r"
+      "text": "r"
     },
     {
       "name": "rL",
-      "human_readable": "rL"
+      "text": "rL"
     },
     {
       "name": "v",
-      "human_readable": "v"
+      "text": "v"
     },
     {
       "name": "wC",
-      "human_readable": "wC"
+      "text": "wC"
     },
     {
       "name": "wD",
-      "human_readable": "wD"
+      "text": "wD"
     },
     {
       "name": "xiD",
-      "human_readable": "xiD"
+      "text": "xiD"
     },
     {
       "name": "y",
-      "human_readable": "y"
+      "text": "y"
     },
     {
       "name": "yC",
-      "human_readable": "yC"
+      "text": "yC"
     },
     {
       "name": "yCstar",
-      "human_readable": "yCstar"
+      "text": "yCstar"
     },
     {
       "name": "yD",
-      "human_readable": "yD"
+      "text": "yD"
     },
     {
       "name": "yDstar",
-      "human_readable": "yDstar"
+      "text": "yDstar"
     },
     {
       "name": "ystar",
-      "human_readable": "ystar"
+      "text": "ystar"
     }
   ],
   "shocks": [
     {
       "name": "eps_A",
-      "human_readable": "eps_A"
+      "text": "eps_A"
     },
     {
       "name": "eps_D",
-      "human_readable": "eps_D"
+      "text": "eps_D"
     },
     {
       "name": "eps_v",
-      "human_readable": "eps_v"
+      "text": "eps_v"
     },
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     }
   ],
   "al_info": null

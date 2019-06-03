@@ -42,381 +42,381 @@
   "vars": [
     {
       "name": "A",
-      "human_readable": "A"
+      "text": "A"
     },
     {
       "name": "A_CB",
-      "human_readable": "A_CB"
+      "text": "A_CB"
     },
     {
       "name": "C",
-      "human_readable": "C"
+      "text": "C"
     },
     {
       "name": "CY",
-      "human_readable": "CY"
+      "text": "CY"
     },
     {
       "name": "DD",
-      "human_readable": "DD"
+      "text": "DD"
     },
     {
       "name": "DELTA",
-      "human_readable": "DELTA"
+      "text": "DELTA"
     },
     {
       "name": "EGG",
-      "human_readable": "EGG"
+      "text": "EGG"
     },
     {
       "name": "EPI",
-      "human_readable": "EPI"
+      "text": "EPI"
     },
     {
       "name": "EPIC",
-      "human_readable": "EPIC"
+      "text": "EPIC"
     },
     {
       "name": "ERE",
-      "human_readable": "ERE"
+      "text": "ERE"
     },
     {
       "name": "ERN",
-      "human_readable": "ERN"
+      "text": "ERN"
     },
     {
       "name": "ERR",
-      "human_readable": "ERR"
+      "text": "ERR"
     },
     {
       "name": "ERR_CB",
-      "human_readable": "ERR_CB"
+      "text": "ERR_CB"
     },
     {
       "name": "ERR_CBS",
-      "human_readable": "ERR_CBS"
+      "text": "ERR_CBS"
     },
     {
       "name": "ETA",
-      "human_readable": "ETA"
+      "text": "ETA"
     },
     {
       "name": "ETA_CB",
-      "human_readable": "ETA_CB"
+      "text": "ETA_CB"
     },
     {
       "name": "EY",
-      "human_readable": "EY"
+      "text": "EY"
     },
     {
       "name": "EYG",
-      "human_readable": "EYG"
+      "text": "EYG"
     },
     {
       "name": "EYNG",
-      "human_readable": "EYNG"
+      "text": "EYNG"
     },
     {
       "name": "G",
-      "human_readable": "G"
+      "text": "G"
     },
     {
       "name": "G_CB",
-      "human_readable": "G_CB"
+      "text": "G_CB"
     },
     {
       "name": "GG",
-      "human_readable": "GG"
+      "text": "GG"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "L",
-      "human_readable": "L"
+      "text": "L"
     },
     {
       "name": "MC",
-      "human_readable": "MC"
+      "text": "MC"
     },
     {
       "name": "NA",
-      "human_readable": "NA"
+      "text": "NA"
     },
     {
       "name": "NC",
-      "human_readable": "NC"
+      "text": "NC"
     },
     {
       "name": "NCY",
-      "human_readable": "NCY"
+      "text": "NCY"
     },
     {
       "name": "NETA",
-      "human_readable": "NETA"
+      "text": "NETA"
     },
     {
       "name": "NGG",
-      "human_readable": "NGG"
+      "text": "NGG"
     },
     {
       "name": "NL",
-      "human_readable": "NL"
+      "text": "NL"
     },
     {
       "name": "NMC",
-      "human_readable": "NMC"
+      "text": "NMC"
     },
     {
       "name": "NN",
-      "human_readable": "NN"
+      "text": "NN"
     },
     {
       "name": "NO",
-      "human_readable": "NO"
+      "text": "NO"
     },
     {
       "name": "NOC",
-      "human_readable": "NOC"
+      "text": "NOC"
     },
     {
       "name": "NOMEGA",
-      "human_readable": "NOMEGA"
+      "text": "NOMEGA"
     },
     {
       "name": "NOY",
-      "human_readable": "NOY"
+      "text": "NOY"
     },
     {
       "name": "NPI",
-      "human_readable": "NPI"
+      "text": "NPI"
     },
     {
       "name": "NPIY",
-      "human_readable": "NPIY"
+      "text": "NPIY"
     },
     {
       "name": "NQ",
-      "human_readable": "NQ"
+      "text": "NQ"
     },
     {
       "name": "NR",
-      "human_readable": "NR"
+      "text": "NR"
     },
     {
       "name": "NRe",
-      "human_readable": "NRe"
+      "text": "NRe"
     },
     {
       "name": "NRfe",
-      "human_readable": "NRfe"
+      "text": "NRfe"
     },
     {
       "name": "NRn",
-      "human_readable": "NRn"
+      "text": "NRn"
     },
     {
       "name": "NTY",
-      "human_readable": "NTY"
+      "text": "NTY"
     },
     {
       "name": "NWP",
-      "human_readable": "NWP"
+      "text": "NWP"
     },
     {
       "name": "NX",
-      "human_readable": "NX"
+      "text": "NX"
     },
     {
       "name": "NY",
-      "human_readable": "NY"
+      "text": "NY"
     },
     {
       "name": "NY_aux",
-      "human_readable": "NY_aux"
+      "text": "NY_aux"
     },
     {
       "name": "NYe",
-      "human_readable": "NYe"
+      "text": "NYe"
     },
     {
       "name": "NYfe",
-      "human_readable": "NYfe"
+      "text": "NYfe"
     },
     {
       "name": "NYn",
-      "human_readable": "NYn"
+      "text": "NYn"
     },
     {
       "name": "NZ",
-      "human_readable": "NZ"
+      "text": "NZ"
     },
     {
       "name": "O",
-      "human_readable": "O"
+      "text": "O"
     },
     {
       "name": "OC",
-      "human_readable": "OC"
+      "text": "OC"
     },
     {
       "name": "OMEGA",
-      "human_readable": "OMEGA"
+      "text": "OMEGA"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "OY",
-      "human_readable": "OY"
+      "text": "OY"
     },
     {
       "name": "PI",
-      "human_readable": "PI"
+      "text": "PI"
     },
     {
       "name": "PIY",
-      "human_readable": "PIY"
+      "text": "PIY"
     },
     {
       "name": "Q",
-      "human_readable": "Q"
+      "text": "Q"
     },
     {
       "name": "R",
-      "human_readable": "R"
+      "text": "R"
     },
     {
       "name": "R1",
-      "human_readable": "R1"
+      "text": "R1"
     },
     {
       "name": "R2",
-      "human_readable": "R2"
+      "text": "R2"
     },
     {
       "name": "Re",
-      "human_readable": "Re"
+      "text": "Re"
     },
     {
       "name": "Rfe",
-      "human_readable": "Rfe"
+      "text": "Rfe"
     },
     {
       "name": "Rfe_CB",
-      "human_readable": "Rfe_CB"
+      "text": "Rfe_CB"
     },
     {
       "name": "Rn",
-      "human_readable": "Rn"
+      "text": "Rn"
     },
     {
       "name": "TY",
-      "human_readable": "TY"
+      "text": "TY"
     },
     {
       "name": "UTIL",
-      "human_readable": "UTIL"
+      "text": "UTIL"
     },
     {
       "name": "WELF",
-      "human_readable": "WELF"
+      "text": "WELF"
     },
     {
       "name": "WP",
-      "human_readable": "WP"
+      "text": "WP"
     },
     {
       "name": "X",
-      "human_readable": "X"
+      "text": "X"
     },
     {
       "name": "Y",
-      "human_readable": "Y"
+      "text": "Y"
     },
     {
       "name": "Y_aux",
-      "human_readable": "Y_aux"
+      "text": "Y_aux"
     },
     {
       "name": "Y_gap",
-      "human_readable": "Y_gap"
+      "text": "Y_gap"
     },
     {
       "name": "Y_gap_CB",
-      "human_readable": "Y_gap_CB"
+      "text": "Y_gap_CB"
     },
     {
       "name": "Ye",
-      "human_readable": "Ye"
+      "text": "Ye"
     },
     {
       "name": "Yfe",
-      "human_readable": "Yfe"
+      "text": "Yfe"
     },
     {
       "name": "Yfe_CB",
-      "human_readable": "Yfe_CB"
+      "text": "Yfe_CB"
     },
     {
       "name": "Yn",
-      "human_readable": "Yn"
+      "text": "Yn"
     },
     {
       "name": "Yn_gap",
-      "human_readable": "Yn_gap"
+      "text": "Yn_gap"
     },
     {
       "name": "Z",
-      "human_readable": "Z"
+      "text": "Z"
     },
     {
       "name": "Z_CB",
-      "human_readable": "Z_CB"
+      "text": "Z_CB"
     }
   ],
   "shocks": [
     {
       "name": "EA",
-      "human_readable": "EA"
+      "text": "EA"
     },
     {
       "name": "EERR",
-      "human_readable": "EERR"
+      "text": "EERR"
     },
     {
       "name": "EG",
-      "human_readable": "EG"
+      "text": "EG"
     },
     {
       "name": "EOMEGA",
-      "human_readable": "EOMEGA"
+      "text": "EOMEGA"
     },
     {
       "name": "EZ",
-      "human_readable": "EZ"
+      "text": "EZ"
     },
     {
       "name": "fiscal_",
-      "human_readable": "fiscal_"
+      "text": "fiscal_"
     },
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     }
   ],
   "al_info": null

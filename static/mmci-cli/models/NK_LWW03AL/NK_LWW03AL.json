@@ -91,77 +91,77 @@
   "vars": [
     {
       "name": "drff",
-      "human_readable": "drff"
+      "text": "drff"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "inflationql",
-      "human_readable": "inflationql"
+      "text": "inflationql"
     },
     {
       "name": "inflationql2",
-      "human_readable": "inflationql2"
+      "text": "inflationql2"
     },
     {
       "name": "inflationqls",
-      "human_readable": "inflationqls"
+      "text": "inflationqls"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "pdot",
-      "human_readable": "pdot"
+      "text": "pdot"
     },
     {
       "name": "pdotsh",
-      "human_readable": "pdotsh"
+      "text": "pdotsh"
     },
     {
       "name": "pinf4",
-      "human_readable": "pinf4"
+      "text": "pinf4"
     },
     {
       "name": "rff",
-      "human_readable": "rff"
+      "text": "rff"
     },
     {
       "name": "rstar",
-      "human_readable": "rstar"
+      "text": "rstar"
     },
     {
       "name": "ygap",
-      "human_readable": "ygap"
+      "text": "ygap"
     }
   ],
   "shocks": [
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     },
     {
       "name": "pdotsh_",
-      "human_readable": "pdotsh_"
+      "text": "pdotsh_"
     },
     {
       "name": "rstar_",
-      "human_readable": "rstar_"
+      "text": "rstar_"
     }
   ]
 }

@@ -76,1017 +76,1017 @@
   "vars": [
     {
       "name": "EA_B",
-      "human_readable": "EA_B"
+      "text": "EA_B"
     },
     {
       "name": "EA_BF",
-      "human_readable": "EA_BF"
+      "text": "EA_BF"
     },
     {
       "name": "EA_BY",
-      "human_readable": "EA_BY"
+      "text": "EA_BY"
     },
     {
       "name": "EA_C",
-      "human_readable": "EA_C"
+      "text": "EA_C"
     },
     {
       "name": "EA_CI",
-      "human_readable": "EA_CI"
+      "text": "EA_CI"
     },
     {
       "name": "EA_CJ",
-      "human_readable": "EA_CJ"
+      "text": "EA_CJ"
     },
     {
       "name": "EA_CY",
-      "human_readable": "EA_CY"
+      "text": "EA_CY"
     },
     {
       "name": "EA_D",
-      "human_readable": "EA_D"
+      "text": "EA_D"
     },
     {
       "name": "EA_EPSG",
-      "human_readable": "EA_EPSG"
+      "text": "EA_EPSG"
     },
     {
       "name": "EA_EPSILONM",
-      "human_readable": "EA_EPSILONM"
+      "text": "EA_EPSILONM"
     },
     {
       "name": "EA_FH",
-      "human_readable": "EA_FH"
+      "text": "EA_FH"
     },
     {
       "name": "EA_FI",
-      "human_readable": "EA_FI"
+      "text": "EA_FI"
     },
     {
       "name": "EA_FJ",
-      "human_readable": "EA_FJ"
+      "text": "EA_FJ"
     },
     {
       "name": "EA_FX",
-      "human_readable": "EA_FX"
+      "text": "EA_FX"
     },
     {
       "name": "EA_G",
-      "human_readable": "EA_G"
+      "text": "EA_G"
     },
     {
       "name": "EA_GAMMAB",
-      "human_readable": "EA_GAMMAB"
+      "text": "EA_GAMMAB"
     },
     {
       "name": "EA_GAMMAI",
-      "human_readable": "EA_GAMMAI"
+      "text": "EA_GAMMAI"
     },
     {
       "name": "EA_GAMMAIDER",
-      "human_readable": "EA_GAMMAIDER"
+      "text": "EA_GAMMAIDER"
     },
     {
       "name": "EA_GAMMAIMC",
-      "human_readable": "EA_GAMMAIMC"
+      "text": "EA_GAMMAIMC"
     },
     {
       "name": "EA_GAMMAIMCDAG",
-      "human_readable": "EA_GAMMAIMCDAG"
+      "text": "EA_GAMMAIMCDAG"
     },
     {
       "name": "EA_GAMMAIMI",
-      "human_readable": "EA_GAMMAIMI"
+      "text": "EA_GAMMAIMI"
     },
     {
       "name": "EA_GAMMAIMIDAG",
-      "human_readable": "EA_GAMMAIMIDAG"
+      "text": "EA_GAMMAIMIDAG"
     },
     {
       "name": "EA_GAMMAU",
-      "human_readable": "EA_GAMMAU"
+      "text": "EA_GAMMAU"
     },
     {
       "name": "EA_GAMMAUDER",
-      "human_readable": "EA_GAMMAUDER"
+      "text": "EA_GAMMAUDER"
     },
     {
       "name": "EA_GAMMAV",
-      "human_readable": "EA_GAMMAV"
+      "text": "EA_GAMMAV"
     },
     {
       "name": "EA_GAMMAVI",
-      "human_readable": "EA_GAMMAVI"
+      "text": "EA_GAMMAVI"
     },
     {
       "name": "EA_GAMMAVIDER",
-      "human_readable": "EA_GAMMAVIDER"
+      "text": "EA_GAMMAVIDER"
     },
     {
       "name": "EA_GAMMAVJ",
-      "human_readable": "EA_GAMMAVJ"
+      "text": "EA_GAMMAVJ"
     },
     {
       "name": "EA_GAMMAVJDER",
-      "human_readable": "EA_GAMMAVJDER"
+      "text": "EA_GAMMAVJDER"
     },
     {
       "name": "EA_GH",
-      "human_readable": "EA_GH"
+      "text": "EA_GH"
     },
     {
       "name": "EA_GI",
-      "human_readable": "EA_GI"
+      "text": "EA_GI"
     },
     {
       "name": "EA_GJ",
-      "human_readable": "EA_GJ"
+      "text": "EA_GJ"
     },
     {
       "name": "EA_GX",
-      "human_readable": "EA_GX"
+      "text": "EA_GX"
     },
     {
       "name": "EA_GY",
-      "human_readable": "EA_GY"
+      "text": "EA_GY"
     },
     {
       "name": "EA_H",
-      "human_readable": "EA_H"
+      "text": "EA_H"
     },
     {
       "name": "EA_HC",
-      "human_readable": "EA_HC"
+      "text": "EA_HC"
     },
     {
       "name": "EA_HI",
-      "human_readable": "EA_HI"
+      "text": "EA_HI"
     },
     {
       "name": "EA_I",
-      "human_readable": "EA_I"
+      "text": "EA_I"
     },
     {
       "name": "EA_II",
-      "human_readable": "EA_II"
+      "text": "EA_II"
     },
     {
       "name": "EA_IM",
-      "human_readable": "EA_IM"
+      "text": "EA_IM"
     },
     {
       "name": "EA_IMC",
-      "human_readable": "EA_IMC"
+      "text": "EA_IMC"
     },
     {
       "name": "EA_IMCY",
-      "human_readable": "EA_IMCY"
+      "text": "EA_IMCY"
     },
     {
       "name": "EA_IMI",
-      "human_readable": "EA_IMI"
+      "text": "EA_IMI"
     },
     {
       "name": "EA_IMIY",
-      "human_readable": "EA_IMIY"
+      "text": "EA_IMIY"
     },
     {
       "name": "EA_IMY",
-      "human_readable": "EA_IMY"
+      "text": "EA_IMY"
     },
     {
       "name": "EA_IY",
-      "human_readable": "EA_IY"
+      "text": "EA_IY"
     },
     {
       "name": "EA_K",
-      "human_readable": "EA_K"
+      "text": "EA_K"
     },
     {
       "name": "EA_KD",
-      "human_readable": "EA_KD"
+      "text": "EA_KD"
     },
     {
       "name": "EA_KI",
-      "human_readable": "EA_KI"
+      "text": "EA_KI"
     },
     {
       "name": "EA_LAMBDAI",
-      "human_readable": "EA_LAMBDAI"
+      "text": "EA_LAMBDAI"
     },
     {
       "name": "EA_LAMBDAJ",
-      "human_readable": "EA_LAMBDAJ"
+      "text": "EA_LAMBDAJ"
     },
     {
       "name": "EA_M",
-      "human_readable": "EA_M"
+      "text": "EA_M"
     },
     {
       "name": "EA_MC",
-      "human_readable": "EA_MC"
+      "text": "EA_MC"
     },
     {
       "name": "EA_MI",
-      "human_readable": "EA_MI"
+      "text": "EA_MI"
     },
     {
       "name": "EA_MJ",
-      "human_readable": "EA_MJ"
+      "text": "EA_MJ"
     },
     {
       "name": "EA_ND",
-      "human_readable": "EA_ND"
+      "text": "EA_ND"
     },
     {
       "name": "EA_NDI",
-      "human_readable": "EA_NDI"
+      "text": "EA_NDI"
     },
     {
       "name": "EA_NDJ",
-      "human_readable": "EA_NDJ"
+      "text": "EA_NDJ"
     },
     {
       "name": "EA_NI",
-      "human_readable": "EA_NI"
+      "text": "EA_NI"
     },
     {
       "name": "EA_NJ",
-      "human_readable": "EA_NJ"
+      "text": "EA_NJ"
     },
     {
       "name": "EA_PH",
-      "human_readable": "EA_PH"
+      "text": "EA_PH"
     },
     {
       "name": "EA_PHTILDE",
-      "human_readable": "EA_PHTILDE"
+      "text": "EA_PHTILDE"
     },
     {
       "name": "EA_PI",
-      "human_readable": "EA_PI"
+      "text": "EA_PI"
     },
     {
       "name": "EA_PIC",
-      "human_readable": "EA_PIC"
+      "text": "EA_PIC"
     },
     {
       "name": "EA_PIC4",
-      "human_readable": "EA_PIC4"
+      "text": "EA_PIC4"
     },
     {
       "name": "EA_PIH",
-      "human_readable": "EA_PIH"
+      "text": "EA_PIH"
     },
     {
       "name": "EA_PIIM",
-      "human_readable": "EA_PIIM"
+      "text": "EA_PIIM"
     },
     {
       "name": "EA_PIM",
-      "human_readable": "EA_PIM"
+      "text": "EA_PIM"
     },
     {
       "name": "EA_PIMTILDE",
-      "human_readable": "EA_PIMTILDE"
+      "text": "EA_PIMTILDE"
     },
     {
       "name": "EA_PY",
-      "human_readable": "EA_PY"
+      "text": "EA_PY"
     },
     {
       "name": "EA_Q",
-      "human_readable": "EA_Q"
+      "text": "EA_Q"
     },
     {
       "name": "EA_QC",
-      "human_readable": "EA_QC"
+      "text": "EA_QC"
     },
     {
       "name": "EA_QI",
-      "human_readable": "EA_QI"
+      "text": "EA_QI"
     },
     {
       "name": "EA_R",
-      "human_readable": "EA_R"
+      "text": "EA_R"
     },
     {
       "name": "EA_RER",
-      "human_readable": "EA_RER"
+      "text": "EA_RER"
     },
     {
       "name": "EA_RERDEP",
-      "human_readable": "EA_RERDEP"
+      "text": "EA_RERDEP"
     },
     {
       "name": "EA_RK",
-      "human_readable": "EA_RK"
+      "text": "EA_RK"
     },
     {
       "name": "EA_RP",
-      "human_readable": "EA_RP"
+      "text": "EA_RP"
     },
     {
       "name": "EA_RR",
-      "human_readable": "EA_RR"
+      "text": "EA_RR"
     },
     {
       "name": "EA_RRSTAR",
-      "human_readable": "EA_RRSTAR"
+      "text": "EA_RRSTAR"
     },
     {
       "name": "EA_SH",
-      "human_readable": "EA_SH"
+      "text": "EA_SH"
     },
     {
       "name": "EA_SI",
-      "human_readable": "EA_SI"
+      "text": "EA_SI"
     },
     {
       "name": "EA_SJ",
-      "human_readable": "EA_SJ"
+      "text": "EA_SJ"
     },
     {
       "name": "EA_SX",
-      "human_readable": "EA_SX"
+      "text": "EA_SX"
     },
     {
       "name": "EA_T",
-      "human_readable": "EA_T"
+      "text": "EA_T"
     },
     {
       "name": "EA_TAUC",
-      "human_readable": "EA_TAUC"
+      "text": "EA_TAUC"
     },
     {
       "name": "EA_TAUD",
-      "human_readable": "EA_TAUD"
+      "text": "EA_TAUD"
     },
     {
       "name": "EA_TAUK",
-      "human_readable": "EA_TAUK"
+      "text": "EA_TAUK"
     },
     {
       "name": "EA_TAUN",
-      "human_readable": "EA_TAUN"
+      "text": "EA_TAUN"
     },
     {
       "name": "EA_TAUWF",
-      "human_readable": "EA_TAUWF"
+      "text": "EA_TAUWF"
     },
     {
       "name": "EA_TAUWH",
-      "human_readable": "EA_TAUWH"
+      "text": "EA_TAUWH"
     },
     {
       "name": "EA_TB",
-      "human_readable": "EA_TB"
+      "text": "EA_TB"
     },
     {
       "name": "EA_TI",
-      "human_readable": "EA_TI"
+      "text": "EA_TI"
     },
     {
       "name": "EA_TJ",
-      "human_readable": "EA_TJ"
+      "text": "EA_TJ"
     },
     {
       "name": "EA_TOT",
-      "human_readable": "EA_TOT"
+      "text": "EA_TOT"
     },
     {
       "name": "EA_TR",
-      "human_readable": "EA_TR"
+      "text": "EA_TR"
     },
     {
       "name": "EA_TRI",
-      "human_readable": "EA_TRI"
+      "text": "EA_TRI"
     },
     {
       "name": "EA_TRJ",
-      "human_readable": "EA_TRJ"
+      "text": "EA_TRJ"
     },
     {
       "name": "EA_TRY",
-      "human_readable": "EA_TRY"
+      "text": "EA_TRY"
     },
     {
       "name": "EA_TY",
-      "human_readable": "EA_TY"
+      "text": "EA_TY"
     },
     {
       "name": "EA_U",
-      "human_readable": "EA_U"
+      "text": "EA_U"
     },
     {
       "name": "EA_UTILI",
-      "human_readable": "EA_UTILI"
+      "text": "EA_UTILI"
     },
     {
       "name": "EA_UTILJ",
-      "human_readable": "EA_UTILJ"
+      "text": "EA_UTILJ"
     },
     {
       "name": "EA_VI",
-      "human_readable": "EA_VI"
+      "text": "EA_VI"
     },
     {
       "name": "EA_VJ",
-      "human_readable": "EA_VJ"
+      "text": "EA_VJ"
     },
     {
       "name": "EA_W",
-      "human_readable": "EA_W"
+      "text": "EA_W"
     },
     {
       "name": "EA_WI",
-      "human_readable": "EA_WI"
+      "text": "EA_WI"
     },
     {
       "name": "EA_WITILDE",
-      "human_readable": "EA_WITILDE"
+      "text": "EA_WITILDE"
     },
     {
       "name": "EA_WJ",
-      "human_readable": "EA_WJ"
+      "text": "EA_WJ"
     },
     {
       "name": "EA_WJTILDE",
-      "human_readable": "EA_WJTILDE"
+      "text": "EA_WJTILDE"
     },
     {
       "name": "EA_Y",
-      "human_readable": "EA_Y"
+      "text": "EA_Y"
     },
     {
       "name": "EA_YGAP",
-      "human_readable": "EA_YGAP"
+      "text": "EA_YGAP"
     },
     {
       "name": "EA_YGROWTH",
-      "human_readable": "EA_YGROWTH"
+      "text": "EA_YGROWTH"
     },
     {
       "name": "EA_YS",
-      "human_readable": "EA_YS"
+      "text": "EA_YS"
     },
     {
       "name": "EA_YSHARE",
-      "human_readable": "EA_YSHARE"
+      "text": "EA_YSHARE"
     },
     {
       "name": "EA_Z",
-      "human_readable": "EA_Z"
+      "text": "EA_Z"
     },
     {
       "name": "EAUS_RER",
-      "human_readable": "EAUS_RER"
+      "text": "EAUS_RER"
     },
     {
       "name": "fispol",
-      "human_readable": "fispol"
+      "text": "fispol"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "US_B",
-      "human_readable": "US_B"
+      "text": "US_B"
     },
     {
       "name": "US_BF",
-      "human_readable": "US_BF"
+      "text": "US_BF"
     },
     {
       "name": "US_BY",
-      "human_readable": "US_BY"
+      "text": "US_BY"
     },
     {
       "name": "US_C",
-      "human_readable": "US_C"
+      "text": "US_C"
     },
     {
       "name": "US_CI",
-      "human_readable": "US_CI"
+      "text": "US_CI"
     },
     {
       "name": "US_CJ",
-      "human_readable": "US_CJ"
+      "text": "US_CJ"
     },
     {
       "name": "US_CY",
-      "human_readable": "US_CY"
+      "text": "US_CY"
     },
     {
       "name": "US_D",
-      "human_readable": "US_D"
+      "text": "US_D"
     },
     {
       "name": "US_EPSILONM",
-      "human_readable": "US_EPSILONM"
+      "text": "US_EPSILONM"
     },
     {
       "name": "US_FH",
-      "human_readable": "US_FH"
+      "text": "US_FH"
     },
     {
       "name": "US_FI",
-      "human_readable": "US_FI"
+      "text": "US_FI"
     },
     {
       "name": "US_FJ",
-      "human_readable": "US_FJ"
+      "text": "US_FJ"
     },
     {
       "name": "US_FX",
-      "human_readable": "US_FX"
+      "text": "US_FX"
     },
     {
       "name": "US_G",
-      "human_readable": "US_G"
+      "text": "US_G"
     },
     {
       "name": "US_GAMMAI",
-      "human_readable": "US_GAMMAI"
+      "text": "US_GAMMAI"
     },
     {
       "name": "US_GAMMAIDER",
-      "human_readable": "US_GAMMAIDER"
+      "text": "US_GAMMAIDER"
     },
     {
       "name": "US_GAMMAIMC",
-      "human_readable": "US_GAMMAIMC"
+      "text": "US_GAMMAIMC"
     },
     {
       "name": "US_GAMMAIMCDAG",
-      "human_readable": "US_GAMMAIMCDAG"
+      "text": "US_GAMMAIMCDAG"
     },
     {
       "name": "US_GAMMAIMI",
-      "human_readable": "US_GAMMAIMI"
+      "text": "US_GAMMAIMI"
     },
     {
       "name": "US_GAMMAIMIDAG",
-      "human_readable": "US_GAMMAIMIDAG"
+      "text": "US_GAMMAIMIDAG"
     },
     {
       "name": "US_GAMMAU",
-      "human_readable": "US_GAMMAU"
+      "text": "US_GAMMAU"
     },
     {
       "name": "US_GAMMAUDER",
-      "human_readable": "US_GAMMAUDER"
+      "text": "US_GAMMAUDER"
     },
     {
       "name": "US_GAMMAV",
-      "human_readable": "US_GAMMAV"
+      "text": "US_GAMMAV"
     },
     {
       "name": "US_GAMMAVI",
-      "human_readable": "US_GAMMAVI"
+      "text": "US_GAMMAVI"
     },
     {
       "name": "US_GAMMAVIDER",
-      "human_readable": "US_GAMMAVIDER"
+      "text": "US_GAMMAVIDER"
     },
     {
       "name": "US_GAMMAVJ",
-      "human_readable": "US_GAMMAVJ"
+      "text": "US_GAMMAVJ"
     },
     {
       "name": "US_GAMMAVJDER",
-      "human_readable": "US_GAMMAVJDER"
+      "text": "US_GAMMAVJDER"
     },
     {
       "name": "US_GH",
-      "human_readable": "US_GH"
+      "text": "US_GH"
     },
     {
       "name": "US_GI",
-      "human_readable": "US_GI"
+      "text": "US_GI"
     },
     {
       "name": "US_GJ",
-      "human_readable": "US_GJ"
+      "text": "US_GJ"
     },
     {
       "name": "US_GX",
-      "human_readable": "US_GX"
+      "text": "US_GX"
     },
     {
       "name": "US_GY",
-      "human_readable": "US_GY"
+      "text": "US_GY"
     },
     {
       "name": "US_H",
-      "human_readable": "US_H"
+      "text": "US_H"
     },
     {
       "name": "US_HC",
-      "human_readable": "US_HC"
+      "text": "US_HC"
     },
     {
       "name": "US_HI",
-      "human_readable": "US_HI"
+      "text": "US_HI"
     },
     {
       "name": "US_I",
-      "human_readable": "US_I"
+      "text": "US_I"
     },
     {
       "name": "US_II",
-      "human_readable": "US_II"
+      "text": "US_II"
     },
     {
       "name": "US_IM",
-      "human_readable": "US_IM"
+      "text": "US_IM"
     },
     {
       "name": "US_IMC",
-      "human_readable": "US_IMC"
+      "text": "US_IMC"
     },
     {
       "name": "US_IMCY",
-      "human_readable": "US_IMCY"
+      "text": "US_IMCY"
     },
     {
       "name": "US_IMI",
-      "human_readable": "US_IMI"
+      "text": "US_IMI"
     },
     {
       "name": "US_IMIY",
-      "human_readable": "US_IMIY"
+      "text": "US_IMIY"
     },
     {
       "name": "US_IMY",
-      "human_readable": "US_IMY"
+      "text": "US_IMY"
     },
     {
       "name": "US_IY",
-      "human_readable": "US_IY"
+      "text": "US_IY"
     },
     {
       "name": "US_K",
-      "human_readable": "US_K"
+      "text": "US_K"
     },
     {
       "name": "US_KD",
-      "human_readable": "US_KD"
+      "text": "US_KD"
     },
     {
       "name": "US_KI",
-      "human_readable": "US_KI"
+      "text": "US_KI"
     },
     {
       "name": "US_LAMBDAI",
-      "human_readable": "US_LAMBDAI"
+      "text": "US_LAMBDAI"
     },
     {
       "name": "US_LAMBDAJ",
-      "human_readable": "US_LAMBDAJ"
+      "text": "US_LAMBDAJ"
     },
     {
       "name": "US_M",
-      "human_readable": "US_M"
+      "text": "US_M"
     },
     {
       "name": "US_MC",
-      "human_readable": "US_MC"
+      "text": "US_MC"
     },
     {
       "name": "US_MI",
-      "human_readable": "US_MI"
+      "text": "US_MI"
     },
     {
       "name": "US_MJ",
-      "human_readable": "US_MJ"
+      "text": "US_MJ"
     },
     {
       "name": "US_ND",
-      "human_readable": "US_ND"
+      "text": "US_ND"
     },
     {
       "name": "US_NDI",
-      "human_readable": "US_NDI"
+      "text": "US_NDI"
     },
     {
       "name": "US_NDJ",
-      "human_readable": "US_NDJ"
+      "text": "US_NDJ"
     },
     {
       "name": "US_NI",
-      "human_readable": "US_NI"
+      "text": "US_NI"
     },
     {
       "name": "US_NJ",
-      "human_readable": "US_NJ"
+      "text": "US_NJ"
     },
     {
       "name": "US_PH",
-      "human_readable": "US_PH"
+      "text": "US_PH"
     },
     {
       "name": "US_PHTILDE",
-      "human_readable": "US_PHTILDE"
+      "text": "US_PHTILDE"
     },
     {
       "name": "US_PI",
-      "human_readable": "US_PI"
+      "text": "US_PI"
     },
     {
       "name": "US_PIC",
-      "human_readable": "US_PIC"
+      "text": "US_PIC"
     },
     {
       "name": "US_PIC4",
-      "human_readable": "US_PIC4"
+      "text": "US_PIC4"
     },
     {
       "name": "US_PIH",
-      "human_readable": "US_PIH"
+      "text": "US_PIH"
     },
     {
       "name": "US_PIIM",
-      "human_readable": "US_PIIM"
+      "text": "US_PIIM"
     },
     {
       "name": "US_PIM",
-      "human_readable": "US_PIM"
+      "text": "US_PIM"
     },
     {
       "name": "US_PIMTILDE",
-      "human_readable": "US_PIMTILDE"
+      "text": "US_PIMTILDE"
     },
     {
       "name": "US_PY",
-      "human_readable": "US_PY"
+      "text": "US_PY"
     },
     {
       "name": "US_Q",
-      "human_readable": "US_Q"
+      "text": "US_Q"
     },
     {
       "name": "US_QC",
-      "human_readable": "US_QC"
+      "text": "US_QC"
     },
     {
       "name": "US_QI",
-      "human_readable": "US_QI"
+      "text": "US_QI"
     },
     {
       "name": "US_R",
-      "human_readable": "US_R"
+      "text": "US_R"
     },
     {
       "name": "US_RK",
-      "human_readable": "US_RK"
+      "text": "US_RK"
     },
     {
       "name": "US_RR",
-      "human_readable": "US_RR"
+      "text": "US_RR"
     },
     {
       "name": "US_RRSTAR",
-      "human_readable": "US_RRSTAR"
+      "text": "US_RRSTAR"
     },
     {
       "name": "US_SH",
-      "human_readable": "US_SH"
+      "text": "US_SH"
     },
     {
       "name": "US_SI",
-      "human_readable": "US_SI"
+      "text": "US_SI"
     },
     {
       "name": "US_SJ",
-      "human_readable": "US_SJ"
+      "text": "US_SJ"
     },
     {
       "name": "US_SX",
-      "human_readable": "US_SX"
+      "text": "US_SX"
     },
     {
       "name": "US_T",
-      "human_readable": "US_T"
+      "text": "US_T"
     },
     {
       "name": "US_TAUC",
-      "human_readable": "US_TAUC"
+      "text": "US_TAUC"
     },
     {
       "name": "US_TAUD",
-      "human_readable": "US_TAUD"
+      "text": "US_TAUD"
     },
     {
       "name": "US_TAUK",
-      "human_readable": "US_TAUK"
+      "text": "US_TAUK"
     },
     {
       "name": "US_TAUN",
-      "human_readable": "US_TAUN"
+      "text": "US_TAUN"
     },
     {
       "name": "US_TAUWF",
-      "human_readable": "US_TAUWF"
+      "text": "US_TAUWF"
     },
     {
       "name": "US_TAUWH",
-      "human_readable": "US_TAUWH"
+      "text": "US_TAUWH"
     },
     {
       "name": "US_TI",
-      "human_readable": "US_TI"
+      "text": "US_TI"
     },
     {
       "name": "US_TJ",
-      "human_readable": "US_TJ"
+      "text": "US_TJ"
     },
     {
       "name": "US_TR",
-      "human_readable": "US_TR"
+      "text": "US_TR"
     },
     {
       "name": "US_TRI",
-      "human_readable": "US_TRI"
+      "text": "US_TRI"
     },
     {
       "name": "US_TRJ",
-      "human_readable": "US_TRJ"
+      "text": "US_TRJ"
     },
     {
       "name": "US_TRY",
-      "human_readable": "US_TRY"
+      "text": "US_TRY"
     },
     {
       "name": "US_TY",
-      "human_readable": "US_TY"
+      "text": "US_TY"
     },
     {
       "name": "US_U",
-      "human_readable": "US_U"
+      "text": "US_U"
     },
     {
       "name": "US_UTILI",
-      "human_readable": "US_UTILI"
+      "text": "US_UTILI"
     },
     {
       "name": "US_UTILJ",
-      "human_readable": "US_UTILJ"
+      "text": "US_UTILJ"
     },
     {
       "name": "US_VI",
-      "human_readable": "US_VI"
+      "text": "US_VI"
     },
     {
       "name": "US_VJ",
-      "human_readable": "US_VJ"
+      "text": "US_VJ"
     },
     {
       "name": "US_W",
-      "human_readable": "US_W"
+      "text": "US_W"
     },
     {
       "name": "US_WI",
-      "human_readable": "US_WI"
+      "text": "US_WI"
     },
     {
       "name": "US_WITILDE",
-      "human_readable": "US_WITILDE"
+      "text": "US_WITILDE"
     },
     {
       "name": "US_WJ",
-      "human_readable": "US_WJ"
+      "text": "US_WJ"
     },
     {
       "name": "US_WJTILDE",
-      "human_readable": "US_WJTILDE"
+      "text": "US_WJTILDE"
     },
     {
       "name": "US_Y",
-      "human_readable": "US_Y"
+      "text": "US_Y"
     },
     {
       "name": "US_YGAP",
-      "human_readable": "US_YGAP"
+      "text": "US_YGAP"
     },
     {
       "name": "US_YGROWTH",
-      "human_readable": "US_YGROWTH"
+      "text": "US_YGROWTH"
     },
     {
       "name": "US_YS",
-      "human_readable": "US_YS"
+      "text": "US_YS"
     },
     {
       "name": "US_YSHARE",
-      "human_readable": "US_YSHARE"
+      "text": "US_YSHARE"
     },
     {
       "name": "US_Z",
-      "human_readable": "US_Z"
+      "text": "US_Z"
     },
     {
       "name": "USEA_RER",
-      "human_readable": "USEA_RER"
+      "text": "USEA_RER"
     }
   ],
   "shocks": [
     {
       "name": "EA_EPSRP",
-      "human_readable": "EA_EPSRP"
+      "text": "EA_EPSRP"
     },
     {
       "name": "EA_EPSTAUC",
-      "human_readable": "EA_EPSTAUC"
+      "text": "EA_EPSTAUC"
     },
     {
       "name": "EA_EPSTAUD",
-      "human_readable": "EA_EPSTAUD"
+      "text": "EA_EPSTAUD"
     },
     {
       "name": "EA_EPSTAUK",
-      "human_readable": "EA_EPSTAUK"
+      "text": "EA_EPSTAUK"
     },
     {
       "name": "EA_EPSTAUN",
-      "human_readable": "EA_EPSTAUN"
+      "text": "EA_EPSTAUN"
     },
     {
       "name": "EA_EPSTAUWF",
-      "human_readable": "EA_EPSTAUWF"
+      "text": "EA_EPSTAUWF"
     },
     {
       "name": "EA_EPSTAUWH",
-      "human_readable": "EA_EPSTAUWH"
+      "text": "EA_EPSTAUWH"
     },
     {
       "name": "EA_EPSTR",
-      "human_readable": "EA_EPSTR"
+      "text": "EA_EPSTR"
     },
     {
       "name": "EA_EPSZ",
-      "human_readable": "EA_EPSZ"
+      "text": "EA_EPSZ"
     },
     {
       "name": "fiscal_",
-      "human_readable": "fiscal_"
+      "text": "fiscal_"
     },
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     },
     {
       "name": "US_EPSG",
-      "human_readable": "US_EPSG"
+      "text": "US_EPSG"
     },
     {
       "name": "US_EPSTAUC",
-      "human_readable": "US_EPSTAUC"
+      "text": "US_EPSTAUC"
     },
     {
       "name": "US_EPSTAUD",
-      "human_readable": "US_EPSTAUD"
+      "text": "US_EPSTAUD"
     },
     {
       "name": "US_EPSTAUK",
-      "human_readable": "US_EPSTAUK"
+      "text": "US_EPSTAUK"
     },
     {
       "name": "US_EPSTAUN",
-      "human_readable": "US_EPSTAUN"
+      "text": "US_EPSTAUN"
     },
     {
       "name": "US_EPSTAUWF",
-      "human_readable": "US_EPSTAUWF"
+      "text": "US_EPSTAUWF"
     },
     {
       "name": "US_EPSTAUWH",
-      "human_readable": "US_EPSTAUWH"
+      "text": "US_EPSTAUWH"
     },
     {
       "name": "US_EPSTR",
-      "human_readable": "US_EPSTR"
+      "text": "US_EPSTR"
     },
     {
       "name": "US_EPSZ",
-      "human_readable": "US_EPSZ"
+      "text": "US_EPSZ"
     }
   ],
   "al_info": null

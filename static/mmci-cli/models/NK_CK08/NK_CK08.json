@@ -75,149 +75,149 @@
   "vars": [
     {
       "name": "ct",
-      "human_readable": "ct"
+      "text": "ct"
     },
     {
       "name": "deltaFt",
-      "human_readable": "deltaFt"
+      "text": "deltaFt"
     },
     {
       "name": "Deltastart",
-      "human_readable": "Deltastart"
+      "text": "Deltastart"
     },
     {
       "name": "deltaWt",
-      "human_readable": "deltaWt"
+      "text": "deltaWt"
     },
     {
       "name": "ebt",
-      "human_readable": "ebt"
+      "text": "ebt"
     },
     {
       "name": "emoneyt",
-      "human_readable": "emoneyt"
+      "text": "emoneyt"
     },
     {
       "name": "fispol",
-      "human_readable": "fispol"
+      "text": "fispol"
     },
     {
       "name": "g_",
-      "human_readable": "g_"
+      "text": "g_"
     },
     {
       "name": "gt",
-      "human_readable": "gt"
+      "text": "gt"
     },
     {
       "name": "ht",
-      "human_readable": "ht"
+      "text": "ht"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "Jstart",
-      "human_readable": "Jstart"
+      "text": "Jstart"
     },
     {
       "name": "lambdat",
-      "human_readable": "lambdat"
+      "text": "lambdat"
     },
     {
       "name": "mct",
-      "human_readable": "mct"
+      "text": "mct"
     },
     {
       "name": "mt",
-      "human_readable": "mt"
+      "text": "mt"
     },
     {
       "name": "nt",
-      "human_readable": "nt"
+      "text": "nt"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "Piannt",
-      "human_readable": "Piannt"
+      "text": "Piannt"
     },
     {
       "name": "Pit",
-      "human_readable": "Pit"
+      "text": "Pit"
     },
     {
       "name": "qt",
-      "human_readable": "qt"
+      "text": "qt"
     },
     {
       "name": "Rt",
-      "human_readable": "Rt"
+      "text": "Rt"
     },
     {
       "name": "st",
-      "human_readable": "st"
+      "text": "st"
     },
     {
       "name": "ut",
-      "human_readable": "ut"
+      "text": "ut"
     },
     {
       "name": "vt",
-      "human_readable": "vt"
+      "text": "vt"
     },
     {
       "name": "wstart",
-      "human_readable": "wstart"
+      "text": "wstart"
     },
     {
       "name": "wt",
-      "human_readable": "wt"
+      "text": "wt"
     },
     {
       "name": "xLt",
-      "human_readable": "xLt"
+      "text": "xLt"
     },
     {
       "name": "yt",
-      "human_readable": "yt"
+      "text": "yt"
     },
     {
       "name": "zt",
-      "human_readable": "zt"
+      "text": "zt"
     }
   ],
   "shocks": [
     {
       "name": "fiscal_",
-      "human_readable": "fiscal_"
+      "text": "fiscal_"
     },
     {
       "name": "inno_ebt",
-      "human_readable": "inno_ebt"
+      "text": "inno_ebt"
     },
     {
       "name": "inno_zt",
-      "human_readable": "inno_zt"
+      "text": "inno_zt"
     },
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     }
   ],
   "al_info": null

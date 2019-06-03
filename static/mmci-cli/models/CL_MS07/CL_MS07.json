@@ -41,581 +41,581 @@
   "vars": [
     {
       "name": "ah_hat",
-      "human_readable": "ah_hat"
+      "text": "ah_hat"
     },
     {
       "name": "bF_flex",
-      "human_readable": "bF_flex"
+      "text": "bF_flex"
     },
     {
       "name": "bF_hat",
-      "human_readable": "bF_hat"
+      "text": "bF_hat"
     },
     {
       "name": "bg_flex",
-      "human_readable": "bg_flex"
+      "text": "bg_flex"
     },
     {
       "name": "bg_hat",
-      "human_readable": "bg_hat"
+      "text": "bg_hat"
     },
     {
       "name": "c_flex",
-      "human_readable": "c_flex"
+      "text": "c_flex"
     },
     {
       "name": "c_hat",
-      "human_readable": "c_hat"
+      "text": "c_hat"
     },
     {
       "name": "ca_y_flex",
-      "human_readable": "ca_y_flex"
+      "text": "ca_y_flex"
     },
     {
       "name": "ca_y_hat",
-      "human_readable": "ca_y_hat"
+      "text": "ca_y_hat"
     },
     {
       "name": "cf_flex",
-      "human_readable": "cf_flex"
+      "text": "cf_flex"
     },
     {
       "name": "cf_hat",
-      "human_readable": "cf_hat"
+      "text": "cf_hat"
     },
     {
       "name": "ch_flex",
-      "human_readable": "ch_flex"
+      "text": "ch_flex"
     },
     {
       "name": "ch_hat",
-      "human_readable": "ch_hat"
+      "text": "ch_hat"
     },
     {
       "name": "chF_flex",
-      "human_readable": "chF_flex"
+      "text": "chF_flex"
     },
     {
       "name": "chF_hat",
-      "human_readable": "chF_hat"
+      "text": "chF_hat"
     },
     {
       "name": "dc_flex",
-      "human_readable": "dc_flex"
+      "text": "dc_flex"
     },
     {
       "name": "dc_hat",
-      "human_readable": "dc_hat"
+      "text": "dc_hat"
     },
     {
       "name": "de_flex",
-      "human_readable": "de_flex"
+      "text": "de_flex"
     },
     {
       "name": "de_hat",
-      "human_readable": "de_hat"
+      "text": "de_hat"
     },
     {
       "name": "dinv_flex",
-      "human_readable": "dinv_flex"
+      "text": "dinv_flex"
     },
     {
       "name": "dinv_hat",
-      "human_readable": "dinv_hat"
+      "text": "dinv_hat"
     },
     {
       "name": "dwr_flex",
-      "human_readable": "dwr_flex"
+      "text": "dwr_flex"
     },
     {
       "name": "dwr_hat",
-      "human_readable": "dwr_hat"
+      "text": "dwr_hat"
     },
     {
       "name": "dy_flex",
-      "human_readable": "dy_flex"
+      "text": "dy_flex"
     },
     {
       "name": "dy_hat",
-      "human_readable": "dy_hat"
+      "text": "dy_hat"
     },
     {
       "name": "dyF_flex",
-      "human_readable": "dyF_flex"
+      "text": "dyF_flex"
     },
     {
       "name": "dyF_hat",
-      "human_readable": "dyF_hat"
+      "text": "dyF_hat"
     },
     {
       "name": "dys_flex",
-      "human_readable": "dys_flex"
+      "text": "dys_flex"
     },
     {
       "name": "dys_hat",
-      "human_readable": "dys_hat"
+      "text": "dys_hat"
     },
     {
       "name": "eps_gex",
-      "human_readable": "eps_gex"
+      "text": "eps_gex"
     },
     {
       "name": "fispol",
-      "human_readable": "fispol"
+      "text": "fispol"
     },
     {
       "name": "g_flex",
-      "human_readable": "g_flex"
+      "text": "g_flex"
     },
     {
       "name": "g_hat",
-      "human_readable": "g_hat"
+      "text": "g_hat"
     },
     {
       "name": "gex_hat",
-      "human_readable": "gex_hat"
+      "text": "gex_hat"
     },
     {
       "name": "i_flex",
-      "human_readable": "i_flex"
+      "text": "i_flex"
     },
     {
       "name": "i_hat",
-      "human_readable": "i_hat"
+      "text": "i_hat"
     },
     {
       "name": "iF_hat",
-      "human_readable": "iF_hat"
+      "text": "iF_hat"
     },
     {
       "name": "iFax_flex",
-      "human_readable": "iFax_flex"
+      "text": "iFax_flex"
     },
     {
       "name": "iFax_hat",
-      "human_readable": "iFax_hat"
+      "text": "iFax_hat"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "inv_flex",
-      "human_readable": "inv_flex"
+      "text": "inv_flex"
     },
     {
       "name": "inv_hat",
-      "human_readable": "inv_hat"
+      "text": "inv_hat"
     },
     {
       "name": "invf_flex",
-      "human_readable": "invf_flex"
+      "text": "invf_flex"
     },
     {
       "name": "invf_hat",
-      "human_readable": "invf_hat"
+      "text": "invf_hat"
     },
     {
       "name": "invh_flex",
-      "human_readable": "invh_flex"
+      "text": "invh_flex"
     },
     {
       "name": "invh_hat",
-      "human_readable": "invh_hat"
+      "text": "invh_hat"
     },
     {
       "name": "k_flex",
-      "human_readable": "k_flex"
+      "text": "k_flex"
     },
     {
       "name": "k_hat",
-      "human_readable": "k_hat"
+      "text": "k_hat"
     },
     {
       "name": "klag_flex",
-      "human_readable": "klag_flex"
+      "text": "klag_flex"
     },
     {
       "name": "klag_hat",
-      "human_readable": "klag_hat"
+      "text": "klag_hat"
     },
     {
       "name": "l_flex",
-      "human_readable": "l_flex"
+      "text": "l_flex"
     },
     {
       "name": "l_hat",
-      "human_readable": "l_hat"
+      "text": "l_hat"
     },
     {
       "name": "m_flex",
-      "human_readable": "m_flex"
+      "text": "m_flex"
     },
     {
       "name": "m_hat",
-      "human_readable": "m_hat"
+      "text": "m_hat"
     },
     {
       "name": "mcrh_flex",
-      "human_readable": "mcrh_flex"
+      "text": "mcrh_flex"
     },
     {
       "name": "mcrh_hat",
-      "human_readable": "mcrh_hat"
+      "text": "mcrh_hat"
     },
     {
       "name": "mo_flex",
-      "human_readable": "mo_flex"
+      "text": "mo_flex"
     },
     {
       "name": "mo_hat",
-      "human_readable": "mo_hat"
+      "text": "mo_hat"
     },
     {
       "name": "oc_flex",
-      "human_readable": "oc_flex"
+      "text": "oc_flex"
     },
     {
       "name": "oc_hat",
-      "human_readable": "oc_hat"
+      "text": "oc_hat"
     },
     {
       "name": "oh_flex",
-      "human_readable": "oh_flex"
+      "text": "oh_flex"
     },
     {
       "name": "oh_hat",
-      "human_readable": "oh_hat"
+      "text": "oh_hat"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "pic_flex",
-      "human_readable": "pic_flex"
+      "text": "pic_flex"
     },
     {
       "name": "pic_hat",
-      "human_readable": "pic_hat"
+      "text": "pic_hat"
     },
     {
       "name": "picz_flex",
-      "human_readable": "picz_flex"
+      "text": "picz_flex"
     },
     {
       "name": "picz_hat",
-      "human_readable": "picz_hat"
+      "text": "picz_hat"
     },
     {
       "name": "pif_flex",
-      "human_readable": "pif_flex"
+      "text": "pif_flex"
     },
     {
       "name": "pif_hat",
-      "human_readable": "pif_hat"
+      "text": "pif_hat"
     },
     {
       "name": "pifF_hat",
-      "human_readable": "pifF_hat"
+      "text": "pifF_hat"
     },
     {
       "name": "pihd_flex",
-      "human_readable": "pihd_flex"
+      "text": "pihd_flex"
     },
     {
       "name": "pihd_hat",
-      "human_readable": "pihd_hat"
+      "text": "pihd_hat"
     },
     {
       "name": "pihf_flex",
-      "human_readable": "pihf_flex"
+      "text": "pihf_flex"
     },
     {
       "name": "pihf_hat",
-      "human_readable": "pihf_hat"
+      "text": "pihf_hat"
     },
     {
       "name": "prf_flex",
-      "human_readable": "prf_flex"
+      "text": "prf_flex"
     },
     {
       "name": "prf_hat",
-      "human_readable": "prf_hat"
+      "text": "prf_hat"
     },
     {
       "name": "prfF_hat",
-      "human_readable": "prfF_hat"
+      "text": "prfF_hat"
     },
     {
       "name": "prhd_flex",
-      "human_readable": "prhd_flex"
+      "text": "prhd_flex"
     },
     {
       "name": "prhd_hat",
-      "human_readable": "prhd_hat"
+      "text": "prhd_hat"
     },
     {
       "name": "prhf_flex",
-      "human_readable": "prhf_flex"
+      "text": "prhf_flex"
     },
     {
       "name": "prhf_hat",
-      "human_readable": "prhf_hat"
+      "text": "prhf_hat"
     },
     {
       "name": "pri_flex",
-      "human_readable": "pri_flex"
+      "text": "pri_flex"
     },
     {
       "name": "pri_hat",
-      "human_readable": "pri_hat"
+      "text": "pri_hat"
     },
     {
       "name": "prm_flex",
-      "human_readable": "prm_flex"
+      "text": "prm_flex"
     },
     {
       "name": "prm_hat",
-      "human_readable": "prm_hat"
+      "text": "prm_hat"
     },
     {
       "name": "proF_hat",
-      "human_readable": "proF_hat"
+      "text": "proF_hat"
     },
     {
       "name": "prs_flex",
-      "human_readable": "prs_flex"
+      "text": "prs_flex"
     },
     {
       "name": "prs_hat",
-      "human_readable": "prs_hat"
+      "text": "prs_hat"
     },
     {
       "name": "prsa_flex",
-      "human_readable": "prsa_flex"
+      "text": "prsa_flex"
     },
     {
       "name": "prsa_hat",
-      "human_readable": "prsa_hat"
+      "text": "prsa_hat"
     },
     {
       "name": "prsF_hat",
-      "human_readable": "prsF_hat"
+      "text": "prsF_hat"
     },
     {
       "name": "prx_flex",
-      "human_readable": "prx_flex"
+      "text": "prx_flex"
     },
     {
       "name": "prx_hat",
-      "human_readable": "prx_hat"
+      "text": "prx_hat"
     },
     {
       "name": "pry_flex",
-      "human_readable": "pry_flex"
+      "text": "pry_flex"
     },
     {
       "name": "pry_hat",
-      "human_readable": "pry_hat"
+      "text": "pry_hat"
     },
     {
       "name": "qr_flex",
-      "human_readable": "qr_flex"
+      "text": "qr_flex"
     },
     {
       "name": "qr_hat",
-      "human_readable": "qr_hat"
+      "text": "qr_hat"
     },
     {
       "name": "r_flex",
-      "human_readable": "r_flex"
+      "text": "r_flex"
     },
     {
       "name": "r_hat",
-      "human_readable": "r_hat"
+      "text": "r_hat"
     },
     {
       "name": "rer_flex",
-      "human_readable": "rer_flex"
+      "text": "rer_flex"
     },
     {
       "name": "rer_hat",
-      "human_readable": "rer_hat"
+      "text": "rer_hat"
     },
     {
       "name": "Rk_flex",
-      "human_readable": "Rk_flex"
+      "text": "Rk_flex"
     },
     {
       "name": "Rk_hat",
-      "human_readable": "Rk_hat"
+      "text": "Rk_hat"
     },
     {
       "name": "sh_c_hat",
-      "human_readable": "sh_c_hat"
+      "text": "sh_c_hat"
     },
     {
       "name": "sh_i_hat",
-      "human_readable": "sh_i_hat"
+      "text": "sh_i_hat"
     },
     {
       "name": "sh_w_hat",
-      "human_readable": "sh_w_hat"
+      "text": "sh_w_hat"
     },
     {
       "name": "st_hat",
-      "human_readable": "st_hat"
+      "text": "st_hat"
     },
     {
       "name": "tau_flex",
-      "human_readable": "tau_flex"
+      "text": "tau_flex"
     },
     {
       "name": "tau_hat",
-      "human_readable": "tau_hat"
+      "text": "tau_hat"
     },
     {
       "name": "u_flex",
-      "human_readable": "u_flex"
+      "text": "u_flex"
     },
     {
       "name": "u_hat",
-      "human_readable": "u_hat"
+      "text": "u_hat"
     },
     {
       "name": "wr_flex",
-      "human_readable": "wr_flex"
+      "text": "wr_flex"
     },
     {
       "name": "wr_hat",
-      "human_readable": "wr_hat"
+      "text": "wr_hat"
     },
     {
       "name": "x_flex",
-      "human_readable": "x_flex"
+      "text": "x_flex"
     },
     {
       "name": "x_hat",
-      "human_readable": "x_hat"
+      "text": "x_hat"
     },
     {
       "name": "y_flex",
-      "human_readable": "y_flex"
+      "text": "y_flex"
     },
     {
       "name": "y_hat",
-      "human_readable": "y_hat"
+      "text": "y_hat"
     },
     {
       "name": "yF_hat",
-      "human_readable": "yF_hat"
+      "text": "yF_hat"
     },
     {
       "name": "yFa_flex",
-      "human_readable": "yFa_flex"
+      "text": "yFa_flex"
     },
     {
       "name": "yFa_hat",
-      "human_readable": "yFa_hat"
+      "text": "yFa_hat"
     },
     {
       "name": "yh_flex",
-      "human_readable": "yh_flex"
+      "text": "yh_flex"
     },
     {
       "name": "yh_hat",
-      "human_readable": "yh_hat"
+      "text": "yh_hat"
     },
     {
       "name": "ys_hat",
-      "human_readable": "ys_hat"
+      "text": "ys_hat"
     },
     {
       "name": "ysa_flex",
-      "human_readable": "ysa_flex"
+      "text": "ysa_flex"
     },
     {
       "name": "ysa_hat",
-      "human_readable": "ysa_hat"
+      "text": "ysa_hat"
     },
     {
       "name": "zr_flex",
-      "human_readable": "zr_flex"
+      "text": "zr_flex"
     },
     {
       "name": "zr_hat",
-      "human_readable": "zr_hat"
+      "text": "zr_hat"
     }
   ],
   "shocks": [
     {
       "name": "eps_ah",
-      "human_readable": "eps_ah"
+      "text": "eps_ah"
     },
     {
       "name": "eps_iF",
-      "human_readable": "eps_iF"
+      "text": "eps_iF"
     },
     {
       "name": "eps_piF",
-      "human_readable": "eps_piF"
+      "text": "eps_piF"
     },
     {
       "name": "eps_prfF",
-      "human_readable": "eps_prfF"
+      "text": "eps_prfF"
     },
     {
       "name": "eps_proF",
-      "human_readable": "eps_proF"
+      "text": "eps_proF"
     },
     {
       "name": "eps_prsF",
-      "human_readable": "eps_prsF"
+      "text": "eps_prsF"
     },
     {
       "name": "eps_sh_c",
-      "human_readable": "eps_sh_c"
+      "text": "eps_sh_c"
     },
     {
       "name": "eps_sh_i",
-      "human_readable": "eps_sh_i"
+      "text": "eps_sh_i"
     },
     {
       "name": "eps_sh_w",
-      "human_readable": "eps_sh_w"
+      "text": "eps_sh_w"
     },
     {
       "name": "eps_st",
-      "human_readable": "eps_st"
+      "text": "eps_st"
     },
     {
       "name": "eps_yF",
-      "human_readable": "eps_yF"
+      "text": "eps_yF"
     },
     {
       "name": "eps_ys",
-      "human_readable": "eps_ys"
+      "text": "eps_ys"
     },
     {
       "name": "fiscal_",
-      "human_readable": "fiscal_"
+      "text": "fiscal_"
     },
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     }
   ],
   "al_info": null

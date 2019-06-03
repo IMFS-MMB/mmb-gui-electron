@@ -24,7 +24,7 @@
       "$ref": "common#/definitions/arrayOfStrings"
     },
     "msr": {
-      "type": "boolean"
+      "$ref": "common#/definitions/bool"
     },
     "usr": {
       "anyOf": [

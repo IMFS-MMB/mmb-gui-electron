@@ -74,81 +74,81 @@
   "vars": [
     {
       "name": "eta",
-      "human_readable": "eta"
+      "text": "eta"
     },
     {
       "name": "i",
-      "human_readable": "i"
+      "text": "i"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "m",
-      "human_readable": "m"
+      "text": "m"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "p",
-      "human_readable": "p"
+      "text": "p"
     },
     {
       "name": "pi",
-      "human_readable": "pi"
+      "text": "pi"
     },
     {
       "name": "R",
-      "human_readable": "R"
+      "text": "R"
     },
     {
       "name": "v",
-      "human_readable": "v"
+      "text": "v"
     },
     {
       "name": "y",
-      "human_readable": "y"
+      "text": "y"
     },
     {
       "name": "ybar",
-      "human_readable": "ybar"
+      "text": "ybar"
     },
     {
       "name": "ytilde",
-      "human_readable": "ytilde"
+      "text": "ytilde"
     }
   ],
   "shocks": [
     {
       "name": "e_",
-      "human_readable": "e_"
+      "text": "e_"
     },
     {
       "name": "ev_",
-      "human_readable": "ev_"
+      "text": "ev_"
     },
     {
       "name": "ey_",
-      "human_readable": "ey_"
+      "text": "ey_"
     },
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     },
     {
       "name": "u_",
-      "human_readable": "u_"
+      "text": "u_"
     }
   ],
   "al_info": null

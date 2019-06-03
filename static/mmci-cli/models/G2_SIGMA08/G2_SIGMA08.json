@@ -76,1089 +76,1089 @@
   "vars": [
     {
       "name": "at",
-      "human_readable": "at"
+      "text": "at"
     },
     {
       "name": "atf",
-      "human_readable": "atf"
+      "text": "atf"
     },
     {
       "name": "betashk",
-      "human_readable": "betashk"
+      "text": "betashk"
     },
     {
       "name": "betashkf",
-      "human_readable": "betashkf"
+      "text": "betashkf"
     },
     {
       "name": "cc",
-      "human_readable": "cc"
+      "text": "cc"
     },
     {
       "name": "cc2gdp",
-      "human_readable": "cc2gdp"
+      "text": "cc2gdp"
     },
     {
       "name": "cc2gdpf",
-      "human_readable": "cc2gdpf"
+      "text": "cc2gdpf"
     },
     {
       "name": "ccd",
-      "human_readable": "ccd"
+      "text": "ccd"
     },
     {
       "name": "ccdf",
-      "human_readable": "ccdf"
+      "text": "ccdf"
     },
     {
       "name": "ccf",
-      "human_readable": "ccf"
+      "text": "ccf"
     },
     {
       "name": "cckey",
-      "human_readable": "cckey"
+      "text": "cckey"
     },
     {
       "name": "cckeyf",
-      "human_readable": "cckeyf"
+      "text": "cckeyf"
     },
     {
       "name": "ccopt",
-      "human_readable": "ccopt"
+      "text": "ccopt"
     },
     {
       "name": "ccoptf",
-      "human_readable": "ccoptf"
+      "text": "ccoptf"
     },
     {
       "name": "conshk",
-      "human_readable": "conshk"
+      "text": "conshk"
     },
     {
       "name": "conshkf",
-      "human_readable": "conshkf"
+      "text": "conshkf"
     },
     {
       "name": "conshkp",
-      "human_readable": "conshkp"
+      "text": "conshkp"
     },
     {
       "name": "conshkpf",
-      "human_readable": "conshkpf"
+      "text": "conshkpf"
     },
     {
       "name": "conshkt",
-      "human_readable": "conshkt"
+      "text": "conshkt"
     },
     {
       "name": "conshktf",
-      "human_readable": "conshktf"
+      "text": "conshktf"
     },
     {
       "name": "debtg",
-      "human_readable": "debtg"
+      "text": "debtg"
     },
     {
       "name": "debtgf",
-      "human_readable": "debtgf"
+      "text": "debtgf"
     },
     {
       "name": "dgdp",
-      "human_readable": "dgdp"
+      "text": "dgdp"
     },
     {
       "name": "dgdpf",
-      "human_readable": "dgdpf"
+      "text": "dgdpf"
     },
     {
       "name": "dgdpl1",
-      "human_readable": "dgdpl1"
+      "text": "dgdpl1"
     },
     {
       "name": "dgdpl1f",
-      "human_readable": "dgdpl1f"
+      "text": "dgdpl1f"
     },
     {
       "name": "dgdpl2",
-      "human_readable": "dgdpl2"
+      "text": "dgdpl2"
     },
     {
       "name": "dgdpl2f",
-      "human_readable": "dgdpl2f"
+      "text": "dgdpl2f"
     },
     {
       "name": "dgdpl3",
-      "human_readable": "dgdpl3"
+      "text": "dgdpl3"
     },
     {
       "name": "dgdpl3f",
-      "human_readable": "dgdpl3f"
+      "text": "dgdpl3f"
     },
     {
       "name": "dgdpyoy",
-      "human_readable": "dgdpyoy"
+      "text": "dgdpyoy"
     },
     {
       "name": "dgdpyoyf",
-      "human_readable": "dgdpyoyf"
+      "text": "dgdpyoyf"
     },
     {
       "name": "dpc",
-      "human_readable": "dpc"
+      "text": "dpc"
     },
     {
       "name": "dpcf",
-      "human_readable": "dpcf"
+      "text": "dpcf"
     },
     {
       "name": "dpcl1",
-      "human_readable": "dpcl1"
+      "text": "dpcl1"
     },
     {
       "name": "dpcl1f",
-      "human_readable": "dpcl1f"
+      "text": "dpcl1f"
     },
     {
       "name": "dpcl2",
-      "human_readable": "dpcl2"
+      "text": "dpcl2"
     },
     {
       "name": "dpcl2f",
-      "human_readable": "dpcl2f"
+      "text": "dpcl2f"
     },
     {
       "name": "dpcl3",
-      "human_readable": "dpcl3"
+      "text": "dpcl3"
     },
     {
       "name": "dpcl3f",
-      "human_readable": "dpcl3f"
+      "text": "dpcl3f"
     },
     {
       "name": "dpcyoy",
-      "human_readable": "dpcyoy"
+      "text": "dpcyoy"
     },
     {
       "name": "dpcyoyf",
-      "human_readable": "dpcyoyf"
+      "text": "dpcyoyf"
     },
     {
       "name": "dpm",
-      "human_readable": "dpm"
+      "text": "dpm"
     },
     {
       "name": "dpmf",
-      "human_readable": "dpmf"
+      "text": "dpmf"
     },
     {
       "name": "dpq",
-      "human_readable": "dpq"
+      "text": "dpq"
     },
     {
       "name": "dpqf",
-      "human_readable": "dpqf"
+      "text": "dpqf"
     },
     {
       "name": "dpql1",
-      "human_readable": "dpql1"
+      "text": "dpql1"
     },
     {
       "name": "dpql1f",
-      "human_readable": "dpql1f"
+      "text": "dpql1f"
     },
     {
       "name": "dpql2",
-      "human_readable": "dpql2"
+      "text": "dpql2"
     },
     {
       "name": "dpql2f",
-      "human_readable": "dpql2f"
+      "text": "dpql2f"
     },
     {
       "name": "dpql3",
-      "human_readable": "dpql3"
+      "text": "dpql3"
     },
     {
       "name": "dpql3f",
-      "human_readable": "dpql3f"
+      "text": "dpql3f"
     },
     {
       "name": "dpqyoy",
-      "human_readable": "dpqyoy"
+      "text": "dpqyoy"
     },
     {
       "name": "dpqyoya4",
-      "human_readable": "dpqyoya4"
+      "text": "dpqyoya4"
     },
     {
       "name": "dpqyoya4l1",
-      "human_readable": "dpqyoya4l1"
+      "text": "dpqyoya4l1"
     },
     {
       "name": "dpqyoya4l2",
-      "human_readable": "dpqyoya4l2"
+      "text": "dpqyoya4l2"
     },
     {
       "name": "dpqyoya4l3",
-      "human_readable": "dpqyoya4l3"
+      "text": "dpqyoya4l3"
     },
     {
       "name": "dpqyoya4l4",
-      "human_readable": "dpqyoya4l4"
+      "text": "dpqyoya4l4"
     },
     {
       "name": "dpqyoyf",
-      "human_readable": "dpqyoyf"
+      "text": "dpqyoyf"
     },
     {
       "name": "dw",
-      "human_readable": "dw"
+      "text": "dw"
     },
     {
       "name": "dwf",
-      "human_readable": "dwf"
+      "text": "dwf"
     },
     {
       "name": "er",
-      "human_readable": "er"
+      "text": "er"
     },
     {
       "name": "errgcxt",
-      "human_readable": "errgcxt"
+      "text": "errgcxt"
     },
     {
       "name": "fispol",
-      "human_readable": "fispol"
+      "text": "fispol"
     },
     {
       "name": "gat",
-      "human_readable": "gat"
+      "text": "gat"
     },
     {
       "name": "gatf1",
-      "human_readable": "gatf1"
+      "text": "gatf1"
     },
     {
       "name": "gatf2",
-      "human_readable": "gatf2"
+      "text": "gatf2"
     },
     {
       "name": "gatf3",
-      "human_readable": "gatf3"
+      "text": "gatf3"
     },
     {
       "name": "gatf4",
-      "human_readable": "gatf4"
+      "text": "gatf4"
     },
     {
       "name": "gatp",
-      "human_readable": "gatp"
+      "text": "gatp"
     },
     {
       "name": "gatpf",
-      "human_readable": "gatpf"
+      "text": "gatpf"
     },
     {
       "name": "gatt",
-      "human_readable": "gatt"
+      "text": "gatt"
     },
     {
       "name": "gattf",
-      "human_readable": "gattf"
+      "text": "gattf"
     },
     {
       "name": "gcx",
-      "human_readable": "gcx"
+      "text": "gcx"
     },
     {
       "name": "gcxf",
-      "human_readable": "gcxf"
+      "text": "gcxf"
     },
     {
       "name": "gcxp",
-      "human_readable": "gcxp"
+      "text": "gcxp"
     },
     {
       "name": "gcxpf",
-      "human_readable": "gcxpf"
+      "text": "gcxpf"
     },
     {
       "name": "gcxt",
-      "human_readable": "gcxt"
+      "text": "gcxt"
     },
     {
       "name": "gcxtf",
-      "human_readable": "gcxtf"
+      "text": "gcxtf"
     },
     {
       "name": "gdp",
-      "human_readable": "gdp"
+      "text": "gdp"
     },
     {
       "name": "gdpf",
-      "human_readable": "gdpf"
+      "text": "gdpf"
     },
     {
       "name": "gdpgap",
-      "human_readable": "gdpgap"
+      "text": "gdpgap"
     },
     {
       "name": "gdpgapa4",
-      "human_readable": "gdpgapa4"
+      "text": "gdpgapa4"
     },
     {
       "name": "gdpgapa4l1",
-      "human_readable": "gdpgapa4l1"
+      "text": "gdpgapa4l1"
     },
     {
       "name": "gdpgapa4l2",
-      "human_readable": "gdpgapa4l2"
+      "text": "gdpgapa4l2"
     },
     {
       "name": "gdpgapa4l3",
-      "human_readable": "gdpgapa4l3"
+      "text": "gdpgapa4l3"
     },
     {
       "name": "gdpgapa4l4",
-      "human_readable": "gdpgapa4l4"
+      "text": "gdpgapa4l4"
     },
     {
       "name": "gdpgapf",
-      "human_readable": "gdpgapf"
+      "text": "gdpgapf"
     },
     {
       "name": "gdppot",
-      "human_readable": "gdppot"
+      "text": "gdppot"
     },
     {
       "name": "gdppotf",
-      "human_readable": "gdppotf"
+      "text": "gdppotf"
     },
     {
       "name": "glprod",
-      "human_readable": "glprod"
+      "text": "glprod"
     },
     {
       "name": "gtech",
-      "human_readable": "gtech"
+      "text": "gtech"
     },
     {
       "name": "gtechf",
-      "human_readable": "gtechf"
+      "text": "gtechf"
     },
     {
       "name": "if",
-      "human_readable": "if"
+      "text": "if"
     },
     {
       "name": "if2gdp",
-      "human_readable": "if2gdp"
+      "text": "if2gdp"
     },
     {
       "name": "if2gdpf",
-      "human_readable": "if2gdpf"
+      "text": "if2gdpf"
     },
     {
       "name": "ifd",
-      "human_readable": "ifd"
+      "text": "ifd"
     },
     {
       "name": "ifdf",
-      "human_readable": "ifdf"
+      "text": "ifdf"
     },
     {
       "name": "iff",
-      "human_readable": "iff"
+      "text": "iff"
     },
     {
       "name": "impshk",
-      "human_readable": "impshk"
+      "text": "impshk"
     },
     {
       "name": "impshkf",
-      "human_readable": "impshkf"
+      "text": "impshkf"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "kp",
-      "human_readable": "kp"
+      "text": "kp"
     },
     {
       "name": "kp1",
-      "human_readable": "kp1"
+      "text": "kp1"
     },
     {
       "name": "kp1f",
-      "human_readable": "kp1f"
+      "text": "kp1f"
     },
     {
       "name": "kpf",
-      "human_readable": "kpf"
+      "text": "kpf"
     },
     {
       "name": "lamc",
-      "human_readable": "lamc"
+      "text": "lamc"
     },
     {
       "name": "lamcf",
-      "human_readable": "lamcf"
+      "text": "lamcf"
     },
     {
       "name": "le",
-      "human_readable": "le"
+      "text": "le"
     },
     {
       "name": "lef",
-      "human_readable": "lef"
+      "text": "lef"
     },
     {
       "name": "mcq",
-      "human_readable": "mcq"
+      "text": "mcq"
     },
     {
       "name": "mcqf",
-      "human_readable": "mcqf"
+      "text": "mcqf"
     },
     {
       "name": "mgsni",
-      "human_readable": "mgsni"
+      "text": "mgsni"
     },
     {
       "name": "mgsnic",
-      "human_readable": "mgsnic"
+      "text": "mgsnic"
     },
     {
       "name": "mgsnicf",
-      "human_readable": "mgsnicf"
+      "text": "mgsnicf"
     },
     {
       "name": "mgsnif",
-      "human_readable": "mgsnif"
+      "text": "mgsnif"
     },
     {
       "name": "mgsnii",
-      "human_readable": "mgsnii"
+      "text": "mgsnii"
     },
     {
       "name": "mgsniif",
-      "human_readable": "mgsniif"
+      "text": "mgsniif"
     },
     {
       "name": "mpl",
-      "human_readable": "mpl"
+      "text": "mpl"
     },
     {
       "name": "mplf",
-      "human_readable": "mplf"
+      "text": "mplf"
     },
     {
       "name": "mrs",
-      "human_readable": "mrs"
+      "text": "mrs"
     },
     {
       "name": "mrsf",
-      "human_readable": "mrsf"
+      "text": "mrsf"
     },
     {
       "name": "nfa",
-      "human_readable": "nfa"
+      "text": "nfa"
     },
     {
       "name": "nshrcy",
-      "human_readable": "nshrcy"
+      "text": "nshrcy"
     },
     {
       "name": "nshrgdefy",
-      "human_readable": "nshrgdefy"
+      "text": "nshrgdefy"
     },
     {
       "name": "nshrgy",
-      "human_readable": "nshrgy"
+      "text": "nshrgy"
     },
     {
       "name": "nshriy",
-      "human_readable": "nshriy"
+      "text": "nshriy"
     },
     {
       "name": "nshrmy",
-      "human_readable": "nshrmy"
+      "text": "nshrmy"
     },
     {
       "name": "nshrxy",
-      "human_readable": "nshrxy"
+      "text": "nshrxy"
     },
     {
       "name": "ntby",
-      "human_readable": "ntby"
+      "text": "ntby"
     },
     {
       "name": "one",
-      "human_readable": "one"
+      "text": "one"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "pc",
-      "human_readable": "pc"
+      "text": "pc"
     },
     {
       "name": "pcf",
-      "human_readable": "pcf"
+      "text": "pcf"
     },
     {
       "name": "pitar",
-      "human_readable": "pitar"
+      "text": "pitar"
     },
     {
       "name": "pitarf",
-      "human_readable": "pitarf"
+      "text": "pitarf"
     },
     {
       "name": "pitarp",
-      "human_readable": "pitarp"
+      "text": "pitarp"
     },
     {
       "name": "pitarpf",
-      "human_readable": "pitarpf"
+      "text": "pitarpf"
     },
     {
       "name": "pitart",
-      "human_readable": "pitart"
+      "text": "pitart"
     },
     {
       "name": "pitartf",
-      "human_readable": "pitartf"
+      "text": "pitartf"
     },
     {
       "name": "pitartl1",
-      "human_readable": "pitartl1"
+      "text": "pitartl1"
     },
     {
       "name": "pitartl2",
-      "human_readable": "pitartl2"
+      "text": "pitartl2"
     },
     {
       "name": "pitartl3",
-      "human_readable": "pitartl3"
+      "text": "pitartl3"
     },
     {
       "name": "pitartl4",
-      "human_readable": "pitartl4"
+      "text": "pitartl4"
     },
     {
       "name": "pm",
-      "human_readable": "pm"
+      "text": "pm"
     },
     {
       "name": "pmf",
-      "human_readable": "pmf"
+      "text": "pmf"
     },
     {
       "name": "pq",
-      "human_readable": "pq"
+      "text": "pq"
     },
     {
       "name": "pqf",
-      "human_readable": "pqf"
+      "text": "pqf"
     },
     {
       "name": "prabs",
-      "human_readable": "prabs"
+      "text": "prabs"
     },
     {
       "name": "prabsdt",
-      "human_readable": "prabsdt"
+      "text": "prabsdt"
     },
     {
       "name": "prabsdtf",
-      "human_readable": "prabsdtf"
+      "text": "prabsdtf"
     },
     {
       "name": "prabsf",
-      "human_readable": "prabsf"
+      "text": "prabsf"
     },
     {
       "name": "px",
-      "human_readable": "px"
+      "text": "px"
     },
     {
       "name": "pxf",
-      "human_readable": "pxf"
+      "text": "pxf"
     },
     {
       "name": "r3real",
-      "human_readable": "r3real"
+      "text": "r3real"
     },
     {
       "name": "rentks",
-      "human_readable": "rentks"
+      "text": "rentks"
     },
     {
       "name": "rentksf",
-      "human_readable": "rentksf"
+      "text": "rentksf"
     },
     {
       "name": "rerpc",
-      "human_readable": "rerpc"
+      "text": "rerpc"
     },
     {
       "name": "rerpq",
-      "human_readable": "rerpq"
+      "text": "rerpq"
     },
     {
       "name": "riskp",
-      "human_readable": "riskp"
+      "text": "riskp"
     },
     {
       "name": "riskpp",
-      "human_readable": "riskpp"
+      "text": "riskpp"
     },
     {
       "name": "riskpt",
-      "human_readable": "riskpt"
+      "text": "riskpt"
     },
     {
       "name": "rmc",
-      "human_readable": "rmc"
+      "text": "rmc"
     },
     {
       "name": "rmcf",
-      "human_readable": "rmcf"
+      "text": "rmcf"
     },
     {
       "name": "rmi",
-      "human_readable": "rmi"
+      "text": "rmi"
     },
     {
       "name": "rmif",
-      "human_readable": "rmif"
+      "text": "rmif"
     },
     {
       "name": "ronereal",
-      "human_readable": "ronereal"
+      "text": "ronereal"
     },
     {
       "name": "rpcpq",
-      "human_readable": "rpcpq"
+      "text": "rpcpq"
     },
     {
       "name": "rpcpqf",
-      "human_readable": "rpcpqf"
+      "text": "rpcpqf"
     },
     {
       "name": "rpipq",
-      "human_readable": "rpipq"
+      "text": "rpipq"
     },
     {
       "name": "rpipqf",
-      "human_readable": "rpipqf"
+      "text": "rpipqf"
     },
     {
       "name": "rpmpq",
-      "human_readable": "rpmpq"
+      "text": "rpmpq"
     },
     {
       "name": "rpmpqf",
-      "human_readable": "rpmpqf"
+      "text": "rpmpqf"
     },
     {
       "name": "rpmpx",
-      "human_readable": "rpmpx"
+      "text": "rpmpx"
     },
     {
       "name": "rpmpxf",
-      "human_readable": "rpmpxf"
+      "text": "rpmpxf"
     },
     {
       "name": "rpxpq",
-      "human_readable": "rpxpq"
+      "text": "rpxpq"
     },
     {
       "name": "rpxpqf",
-      "human_readable": "rpxpqf"
+      "text": "rpxpqf"
     },
     {
       "name": "rratek",
-      "human_readable": "rratek"
+      "text": "rratek"
     },
     {
       "name": "rs",
-      "human_readable": "rs"
+      "text": "rs"
     },
     {
       "name": "rs1",
-      "human_readable": "rs1"
+      "text": "rs1"
     },
     {
       "name": "rs1f",
-      "human_readable": "rs1f"
+      "text": "rs1f"
     },
     {
       "name": "rs1f1",
-      "human_readable": "rs1f1"
+      "text": "rs1f1"
     },
     {
       "name": "rs1f10",
-      "human_readable": "rs1f10"
+      "text": "rs1f10"
     },
     {
       "name": "rs1f11",
-      "human_readable": "rs1f11"
+      "text": "rs1f11"
     },
     {
       "name": "rs1f12",
-      "human_readable": "rs1f12"
+      "text": "rs1f12"
     },
     {
       "name": "rs1f13",
-      "human_readable": "rs1f13"
+      "text": "rs1f13"
     },
     {
       "name": "rs1f14",
-      "human_readable": "rs1f14"
+      "text": "rs1f14"
     },
     {
       "name": "rs1f15",
-      "human_readable": "rs1f15"
+      "text": "rs1f15"
     },
     {
       "name": "rs1f16",
-      "human_readable": "rs1f16"
+      "text": "rs1f16"
     },
     {
       "name": "rs1f17",
-      "human_readable": "rs1f17"
+      "text": "rs1f17"
     },
     {
       "name": "rs1f18",
-      "human_readable": "rs1f18"
+      "text": "rs1f18"
     },
     {
       "name": "rs1f19",
-      "human_readable": "rs1f19"
+      "text": "rs1f19"
     },
     {
       "name": "rs1f2",
-      "human_readable": "rs1f2"
+      "text": "rs1f2"
     },
     {
       "name": "rs1f3",
-      "human_readable": "rs1f3"
+      "text": "rs1f3"
     },
     {
       "name": "rs1f4",
-      "human_readable": "rs1f4"
+      "text": "rs1f4"
     },
     {
       "name": "rs1f5",
-      "human_readable": "rs1f5"
+      "text": "rs1f5"
     },
     {
       "name": "rs1f6",
-      "human_readable": "rs1f6"
+      "text": "rs1f6"
     },
     {
       "name": "rs1f7",
-      "human_readable": "rs1f7"
+      "text": "rs1f7"
     },
     {
       "name": "rs1f8",
-      "human_readable": "rs1f8"
+      "text": "rs1f8"
     },
     {
       "name": "rs1f9",
-      "human_readable": "rs1f9"
+      "text": "rs1f9"
     },
     {
       "name": "rsf",
-      "human_readable": "rsf"
+      "text": "rsf"
     },
     {
       "name": "sp2gdp",
-      "human_readable": "sp2gdp"
+      "text": "sp2gdp"
     },
     {
       "name": "taxk",
-      "human_readable": "taxk"
+      "text": "taxk"
     },
     {
       "name": "taxkf",
-      "human_readable": "taxkf"
+      "text": "taxkf"
     },
     {
       "name": "taxkp",
-      "human_readable": "taxkp"
+      "text": "taxkp"
     },
     {
       "name": "taxkpf",
-      "human_readable": "taxkpf"
+      "text": "taxkpf"
     },
     {
       "name": "taxkpfl1",
-      "human_readable": "taxkpfl1"
+      "text": "taxkpfl1"
     },
     {
       "name": "taxkpfl2",
-      "human_readable": "taxkpfl2"
+      "text": "taxkpfl2"
     },
     {
       "name": "taxkpl1",
-      "human_readable": "taxkpl1"
+      "text": "taxkpl1"
     },
     {
       "name": "taxkpl2",
-      "human_readable": "taxkpl2"
+      "text": "taxkpl2"
     },
     {
       "name": "taxkt",
-      "human_readable": "taxkt"
+      "text": "taxkt"
     },
     {
       "name": "taxktf",
-      "human_readable": "taxktf"
+      "text": "taxktf"
     },
     {
       "name": "taxl",
-      "human_readable": "taxl"
+      "text": "taxl"
     },
     {
       "name": "taxlf",
-      "human_readable": "taxlf"
+      "text": "taxlf"
     },
     {
       "name": "taxlshk",
-      "human_readable": "taxlshk"
+      "text": "taxlshk"
     },
     {
       "name": "taxlshkf",
-      "human_readable": "taxlshkf"
+      "text": "taxlshkf"
     },
     {
       "name": "taxlshkpf",
-      "human_readable": "taxlshkpf"
+      "text": "taxlshkpf"
     },
     {
       "name": "taxlshktf",
-      "human_readable": "taxlshktf"
+      "text": "taxlshktf"
     },
     {
       "name": "tobq",
-      "human_readable": "tobq"
+      "text": "tobq"
     },
     {
       "name": "tobqf",
-      "human_readable": "tobqf"
+      "text": "tobqf"
     },
     {
       "name": "transhk",
-      "human_readable": "transhk"
+      "text": "transhk"
     },
     {
       "name": "transhkf",
-      "human_readable": "transhkf"
+      "text": "transhkf"
     },
     {
       "name": "transhkp",
-      "human_readable": "transhkp"
+      "text": "transhkp"
     },
     {
       "name": "transhkpf",
-      "human_readable": "transhkpf"
+      "text": "transhkpf"
     },
     {
       "name": "transhkt",
-      "human_readable": "transhkt"
+      "text": "transhkt"
     },
     {
       "name": "transhktf",
-      "human_readable": "transhktf"
+      "text": "transhktf"
     },
     {
       "name": "w",
-      "human_readable": "w"
+      "text": "w"
     },
     {
       "name": "wf",
-      "human_readable": "wf"
+      "text": "wf"
     },
     {
       "name": "wmarkup",
-      "human_readable": "wmarkup"
+      "text": "wmarkup"
     },
     {
       "name": "wmarkupf",
-      "human_readable": "wmarkupf"
+      "text": "wmarkupf"
     },
     {
       "name": "zetac",
-      "human_readable": "zetac"
+      "text": "zetac"
     },
     {
       "name": "zetacf",
-      "human_readable": "zetacf"
+      "text": "zetacf"
     },
     {
       "name": "zetap",
-      "human_readable": "zetap"
+      "text": "zetap"
     },
     {
       "name": "zetapf",
-      "human_readable": "zetapf"
+      "text": "zetapf"
     }
   ],
   "shocks": [
     {
       "name": "erratp",
-      "human_readable": "erratp"
+      "text": "erratp"
     },
     {
       "name": "erratpf",
-      "human_readable": "erratpf"
+      "text": "erratpf"
     },
     {
       "name": "erratt",
-      "human_readable": "erratt"
+      "text": "erratt"
     },
     {
       "name": "errattf",
-      "human_readable": "errattf"
+      "text": "errattf"
     },
     {
       "name": "errbetashk",
-      "human_readable": "errbetashk"
+      "text": "errbetashk"
     },
     {
       "name": "errbetashkf",
-      "human_readable": "errbetashkf"
+      "text": "errbetashkf"
     },
     {
       "name": "errconshkp",
-      "human_readable": "errconshkp"
+      "text": "errconshkp"
     },
     {
       "name": "errconshkpf",
-      "human_readable": "errconshkpf"
+      "text": "errconshkpf"
     },
     {
       "name": "errconshkt",
-      "human_readable": "errconshkt"
+      "text": "errconshkt"
     },
     {
       "name": "errconshktf",
-      "human_readable": "errconshktf"
+      "text": "errconshktf"
     },
     {
       "name": "errgcxp",
-      "human_readable": "errgcxp"
+      "text": "errgcxp"
     },
     {
       "name": "errgcxpf",
-      "human_readable": "errgcxpf"
+      "text": "errgcxpf"
     },
     {
       "name": "errgcxtf",
-      "human_readable": "errgcxtf"
+      "text": "errgcxtf"
     },
     {
       "name": "errimpshk",
-      "human_readable": "errimpshk"
+      "text": "errimpshk"
     },
     {
       "name": "errimpshkf",
-      "human_readable": "errimpshkf"
+      "text": "errimpshkf"
     },
     {
       "name": "errpitarp",
-      "human_readable": "errpitarp"
+      "text": "errpitarp"
     },
     {
       "name": "errpitarpf",
-      "human_readable": "errpitarpf"
+      "text": "errpitarpf"
     },
     {
       "name": "errpitart",
-      "human_readable": "errpitart"
+      "text": "errpitart"
     },
     {
       "name": "errpitartf",
-      "human_readable": "errpitartf"
+      "text": "errpitartf"
     },
     {
       "name": "errriskpp",
-      "human_readable": "errriskpp"
+      "text": "errriskpp"
     },
     {
       "name": "errriskpt",
-      "human_readable": "errriskpt"
+      "text": "errriskpt"
     },
     {
       "name": "errtaxkp",
-      "human_readable": "errtaxkp"
+      "text": "errtaxkp"
     },
     {
       "name": "errtaxkpf",
-      "human_readable": "errtaxkpf"
+      "text": "errtaxkpf"
     },
     {
       "name": "errtaxkt",
-      "human_readable": "errtaxkt"
+      "text": "errtaxkt"
     },
     {
       "name": "errtaxktf",
-      "human_readable": "errtaxktf"
+      "text": "errtaxktf"
     },
     {
       "name": "errtaxlshk",
-      "human_readable": "errtaxlshk"
+      "text": "errtaxlshk"
     },
     {
       "name": "errtaxlshkpf",
-      "human_readable": "errtaxlshkpf"
+      "text": "errtaxlshkpf"
     },
     {
       "name": "errtaxlshktf",
-      "human_readable": "errtaxlshktf"
+      "text": "errtaxlshktf"
     },
     {
       "name": "errtranshkp",
-      "human_readable": "errtranshkp"
+      "text": "errtranshkp"
     },
     {
       "name": "errtranshkpf",
-      "human_readable": "errtranshkpf"
+      "text": "errtranshkpf"
     },
     {
       "name": "errtranshkt",
-      "human_readable": "errtranshkt"
+      "text": "errtranshkt"
     },
     {
       "name": "errtranshktf",
-      "human_readable": "errtranshktf"
+      "text": "errtranshktf"
     },
     {
       "name": "fiscal_",
-      "human_readable": "fiscal_"
+      "text": "fiscal_"
     },
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     }
   ],
   "al_info": null

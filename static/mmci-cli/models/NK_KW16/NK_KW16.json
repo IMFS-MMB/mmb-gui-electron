@@ -74,345 +74,345 @@
   "vars": [
     {
       "name": "a",
-      "human_readable": "a"
+      "text": "a"
     },
     {
       "name": "B",
-      "human_readable": "B"
+      "text": "B"
     },
     {
       "name": "B_fe",
-      "human_readable": "B_fe"
+      "text": "B_fe"
     },
     {
       "name": "C",
-      "human_readable": "C"
+      "text": "C"
     },
     {
       "name": "C_fe",
-      "human_readable": "C_fe"
+      "text": "C_fe"
     },
     {
       "name": "D",
-      "human_readable": "D"
+      "text": "D"
     },
     {
       "name": "D_fe",
-      "human_readable": "D_fe"
+      "text": "D_fe"
     },
     {
       "name": "Dis",
-      "human_readable": "Dis"
+      "text": "Dis"
     },
     {
       "name": "Dis_fe",
-      "human_readable": "Dis_fe"
+      "text": "Dis_fe"
     },
     {
       "name": "e_g",
-      "human_readable": "e_g"
+      "text": "e_g"
     },
     {
       "name": "ERb",
-      "human_readable": "ERb"
+      "text": "ERb"
     },
     {
       "name": "ERb_fe",
-      "human_readable": "ERb_fe"
+      "text": "ERb_fe"
     },
     {
       "name": "ERk",
-      "human_readable": "ERk"
+      "text": "ERk"
     },
     {
       "name": "ERk_fe",
-      "human_readable": "ERk_fe"
+      "text": "ERk_fe"
     },
     {
       "name": "F",
-      "human_readable": "F"
+      "text": "F"
     },
     {
       "name": "F_fe",
-      "human_readable": "F_fe"
+      "text": "F_fe"
     },
     {
       "name": "fispol",
-      "human_readable": "fispol"
+      "text": "fispol"
     },
     {
       "name": "g",
-      "human_readable": "g"
+      "text": "g"
     },
     {
       "name": "G",
-      "human_readable": "G"
+      "text": "G"
     },
     {
       "name": "Gy",
-      "human_readable": "Gy"
+      "text": "Gy"
     },
     {
       "name": "Gy_fe",
-      "human_readable": "Gy_fe"
+      "text": "Gy_fe"
     },
     {
       "name": "i",
-      "human_readable": "i"
+      "text": "i"
     },
     {
       "name": "I",
-      "human_readable": "I"
+      "text": "I"
     },
     {
       "name": "i_fe",
-      "human_readable": "i_fe"
+      "text": "i_fe"
     },
     {
       "name": "I_fe",
-      "human_readable": "I_fe"
+      "text": "I_fe"
     },
     {
       "name": "infl",
-      "human_readable": "infl"
+      "text": "infl"
     },
     {
       "name": "infl_fe",
-      "human_readable": "infl_fe"
+      "text": "infl_fe"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "inflstar",
-      "human_readable": "inflstar"
+      "text": "inflstar"
     },
     {
       "name": "inflstar_fe",
-      "human_readable": "inflstar_fe"
+      "text": "inflstar_fe"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "K",
-      "human_readable": "K"
+      "text": "K"
     },
     {
       "name": "K_fe",
-      "human_readable": "K_fe"
+      "text": "K_fe"
     },
     {
       "name": "ksi",
-      "human_readable": "ksi"
+      "text": "ksi"
     },
     {
       "name": "L",
-      "human_readable": "L"
+      "text": "L"
     },
     {
       "name": "L_fe",
-      "human_readable": "L_fe"
+      "text": "L_fe"
     },
     {
       "name": "Lambda",
-      "human_readable": "Lambda"
+      "text": "Lambda"
     },
     {
       "name": "Lambda_fe",
-      "human_readable": "Lambda_fe"
+      "text": "Lambda_fe"
     },
     {
       "name": "N",
-      "human_readable": "N"
+      "text": "N"
     },
     {
       "name": "N_fe",
-      "human_readable": "N_fe"
+      "text": "N_fe"
     },
     {
       "name": "nu_b",
-      "human_readable": "nu_b"
+      "text": "nu_b"
     },
     {
       "name": "nu_b_fe",
-      "human_readable": "nu_b_fe"
+      "text": "nu_b_fe"
     },
     {
       "name": "nu_k",
-      "human_readable": "nu_k"
+      "text": "nu_k"
     },
     {
       "name": "nu_k_fe",
-      "human_readable": "nu_k_fe"
+      "text": "nu_k_fe"
     },
     {
       "name": "nu_n",
-      "human_readable": "nu_n"
+      "text": "nu_n"
     },
     {
       "name": "nu_n_fe",
-      "human_readable": "nu_n_fe"
+      "text": "nu_n_fe"
     },
     {
       "name": "Om",
-      "human_readable": "Om"
+      "text": "Om"
     },
     {
       "name": "Om_fe",
-      "human_readable": "Om_fe"
+      "text": "Om_fe"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "Phi",
-      "human_readable": "Phi"
+      "text": "Phi"
     },
     {
       "name": "Phi_fe",
-      "human_readable": "Phi_fe"
+      "text": "Phi_fe"
     },
     {
       "name": "Pm",
-      "human_readable": "Pm"
+      "text": "Pm"
     },
     {
       "name": "Pm_fe",
-      "human_readable": "Pm_fe"
+      "text": "Pm_fe"
     },
     {
       "name": "portf_B",
-      "human_readable": "portf_B"
+      "text": "portf_B"
     },
     {
       "name": "portf_B_fe",
-      "human_readable": "portf_B_fe"
+      "text": "portf_B_fe"
     },
     {
       "name": "prem",
-      "human_readable": "prem"
+      "text": "prem"
     },
     {
       "name": "prem2",
-      "human_readable": "prem2"
+      "text": "prem2"
     },
     {
       "name": "Q",
-      "human_readable": "Q"
+      "text": "Q"
     },
     {
       "name": "Q_fe",
-      "human_readable": "Q_fe"
+      "text": "Q_fe"
     },
     {
       "name": "Rb",
-      "human_readable": "Rb"
+      "text": "Rb"
     },
     {
       "name": "Rb_fe",
-      "human_readable": "Rb_fe"
+      "text": "Rb_fe"
     },
     {
       "name": "Rd",
-      "human_readable": "Rd"
+      "text": "Rd"
     },
     {
       "name": "Rd_fe",
-      "human_readable": "Rd_fe"
+      "text": "Rd_fe"
     },
     {
       "name": "Rk",
-      "human_readable": "Rk"
+      "text": "Rk"
     },
     {
       "name": "Rk_fe",
-      "human_readable": "Rk_fe"
+      "text": "Rk_fe"
     },
     {
       "name": "Rp",
-      "human_readable": "Rp"
+      "text": "Rp"
     },
     {
       "name": "Rp_fe",
-      "human_readable": "Rp_fe"
+      "text": "Rp_fe"
     },
     {
       "name": "T",
-      "human_readable": "T"
+      "text": "T"
     },
     {
       "name": "T_fe",
-      "human_readable": "T_fe"
+      "text": "T_fe"
     },
     {
       "name": "U_c",
-      "human_readable": "U_c"
+      "text": "U_c"
     },
     {
       "name": "U_c_fe",
-      "human_readable": "U_c_fe"
+      "text": "U_c_fe"
     },
     {
       "name": "w",
-      "human_readable": "w"
+      "text": "w"
     },
     {
       "name": "w_fe",
-      "human_readable": "w_fe"
+      "text": "w_fe"
     },
     {
       "name": "Y",
-      "human_readable": "Y"
+      "text": "Y"
     },
     {
       "name": "Y_fe",
-      "human_readable": "Y_fe"
+      "text": "Y_fe"
     },
     {
       "name": "Ym",
-      "human_readable": "Ym"
+      "text": "Ym"
     },
     {
       "name": "Ym_fe",
-      "human_readable": "Ym_fe"
+      "text": "Ym_fe"
     },
     {
       "name": "Z",
-      "human_readable": "Z"
+      "text": "Z"
     },
     {
       "name": "Z_fe",
-      "human_readable": "Z_fe"
+      "text": "Z_fe"
     }
   ],
   "shocks": [
     {
       "name": "e_a",
-      "human_readable": "e_a"
+      "text": "e_a"
     },
     {
       "name": "e_ksi",
-      "human_readable": "e_ksi"
+      "text": "e_ksi"
     },
     {
       "name": "fiscal_",
-      "human_readable": "fiscal_"
+      "text": "fiscal_"
     },
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     }
   ],
   "al_info": null

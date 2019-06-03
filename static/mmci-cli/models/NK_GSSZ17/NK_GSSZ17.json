@@ -77,217 +77,217 @@
   "vars": [
     {
       "name": "A",
-      "human_readable": "A"
+      "text": "A"
     },
     {
       "name": "abar",
-      "human_readable": "abar"
+      "text": "abar"
     },
     {
       "name": "abar_f",
-      "human_readable": "abar_f"
+      "text": "abar_f"
     },
     {
       "name": "c",
-      "human_readable": "c"
+      "text": "c"
     },
     {
       "name": "c_f",
-      "human_readable": "c_f"
+      "text": "c_f"
     },
     {
       "name": "D",
-      "human_readable": "D"
+      "text": "D"
     },
     {
       "name": "dt",
-      "human_readable": "dt"
+      "text": "dt"
     },
     {
       "name": "dt_f",
-      "human_readable": "dt_f"
+      "text": "dt_f"
     },
     {
       "name": "F",
-      "human_readable": "F"
+      "text": "F"
     },
     {
       "name": "h",
-      "human_readable": "h"
+      "text": "h"
     },
     {
       "name": "h_f",
-      "human_readable": "h_f"
+      "text": "h_f"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "lambda",
-      "human_readable": "lambda"
+      "text": "lambda"
     },
     {
       "name": "lambda_f",
-      "human_readable": "lambda_f"
+      "text": "lambda_f"
     },
     {
       "name": "lw",
-      "human_readable": "lw"
+      "text": "lw"
     },
     {
       "name": "m",
-      "human_readable": "m"
+      "text": "m"
     },
     {
       "name": "m_f",
-      "human_readable": "m_f"
+      "text": "m_f"
     },
     {
       "name": "mu",
-      "human_readable": "mu"
+      "text": "mu"
     },
     {
       "name": "mu_f",
-      "human_readable": "mu_f"
+      "text": "mu_f"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "phi",
-      "human_readable": "phi"
+      "text": "phi"
     },
     {
       "name": "pii",
-      "human_readable": "pii"
+      "text": "pii"
     },
     {
       "name": "pii_f",
-      "human_readable": "pii_f"
+      "text": "pii_f"
     },
     {
       "name": "pii_w",
-      "human_readable": "pii_w"
+      "text": "pii_w"
     },
     {
       "name": "pii_w_f",
-      "human_readable": "pii_w_f"
+      "text": "pii_w_f"
     },
     {
       "name": "pS",
-      "human_readable": "pS"
+      "text": "pS"
     },
     {
       "name": "pS_f",
-      "human_readable": "pS_f"
+      "text": "pS_f"
     },
     {
       "name": "pt",
-      "human_readable": "pt"
+      "text": "pt"
     },
     {
       "name": "pt_f",
-      "human_readable": "pt_f"
+      "text": "pt_f"
     },
     {
       "name": "R",
-      "human_readable": "R"
+      "text": "R"
     },
     {
       "name": "R_f",
-      "human_readable": "R_f"
+      "text": "R_f"
     },
     {
       "name": "s",
-      "human_readable": "s"
+      "text": "s"
     },
     {
       "name": "s_f",
-      "human_readable": "s_f"
+      "text": "s_f"
     },
     {
       "name": "v",
-      "human_readable": "v"
+      "text": "v"
     },
     {
       "name": "v_f",
-      "human_readable": "v_f"
+      "text": "v_f"
     },
     {
       "name": "varrho",
-      "human_readable": "varrho"
+      "text": "varrho"
     },
     {
       "name": "w",
-      "human_readable": "w"
+      "text": "w"
     },
     {
       "name": "w_f",
-      "human_readable": "w_f"
+      "text": "w_f"
     },
     {
       "name": "x",
-      "human_readable": "x"
+      "text": "x"
     },
     {
       "name": "x_f",
-      "human_readable": "x_f"
+      "text": "x_f"
     },
     {
       "name": "xi",
-      "human_readable": "xi"
+      "text": "xi"
     },
     {
       "name": "xi_f",
-      "human_readable": "xi_f"
+      "text": "xi_f"
     },
     {
       "name": "y",
-      "human_readable": "y"
+      "text": "y"
     },
     {
       "name": "y_f",
-      "human_readable": "y_f"
+      "text": "y_f"
     },
     {
       "name": "z",
-      "human_readable": "z"
+      "text": "z"
     },
     {
       "name": "z_f",
-      "human_readable": "z_f"
+      "text": "z_f"
     }
   ],
   "shocks": [
     {
       "name": "eA",
-      "human_readable": "eA"
+      "text": "eA"
     },
     {
       "name": "eD",
-      "human_readable": "eD"
+      "text": "eD"
     },
     {
       "name": "eF",
-      "human_readable": "eF"
+      "text": "eF"
     },
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     }
   ],
   "al_info": null

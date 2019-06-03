@@ -74,149 +74,149 @@
   "vars": [
     {
       "name": "a_t",
-      "human_readable": "a_t"
+      "text": "a_t"
     },
     {
       "name": "c_t",
-      "human_readable": "c_t"
+      "text": "c_t"
     },
     {
       "name": "CapG_t",
-      "human_readable": "CapG_t"
+      "text": "CapG_t"
     },
     {
       "name": "co_t",
-      "human_readable": "co_t"
+      "text": "co_t"
     },
     {
       "name": "del_t",
-      "human_readable": "del_t"
+      "text": "del_t"
     },
     {
       "name": "dumden_t",
-      "human_readable": "dumden_t"
+      "text": "dumden_t"
     },
     {
       "name": "dumnum_t",
-      "human_readable": "dumnum_t"
+      "text": "dumnum_t"
     },
     {
       "name": "fo_t",
-      "human_readable": "fo_t"
+      "text": "fo_t"
     },
     {
       "name": "gam_t",
-      "human_readable": "gam_t"
+      "text": "gam_t"
     },
     {
       "name": "ho_t",
-      "human_readable": "ho_t"
+      "text": "ho_t"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "lagz_t",
-      "human_readable": "lagz_t"
+      "text": "lagz_t"
     },
     {
       "name": "mu_t",
-      "human_readable": "mu_t"
+      "text": "mu_t"
     },
     {
       "name": "n_t",
-      "human_readable": "n_t"
+      "text": "n_t"
     },
     {
       "name": "ni_t",
-      "human_readable": "ni_t"
+      "text": "ni_t"
     },
     {
       "name": "omeg_t",
-      "human_readable": "omeg_t"
+      "text": "omeg_t"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "pi_t",
-      "human_readable": "pi_t"
+      "text": "pi_t"
     },
     {
       "name": "pol_t",
-      "human_readable": "pol_t"
+      "text": "pol_t"
     },
     {
       "name": "r_t",
-      "human_readable": "r_t"
+      "text": "r_t"
     },
     {
       "name": "rl_t",
-      "human_readable": "rl_t"
+      "text": "rl_t"
     },
     {
       "name": "std_t",
-      "human_readable": "std_t"
+      "text": "std_t"
     },
     {
       "name": "Util",
-      "human_readable": "Util"
+      "text": "Util"
     },
     {
       "name": "Welf",
-      "human_readable": "Welf"
+      "text": "Welf"
     },
     {
       "name": "y_t",
-      "human_readable": "y_t"
+      "text": "y_t"
     },
     {
       "name": "z_t",
-      "human_readable": "z_t"
+      "text": "z_t"
     },
     {
       "name": "zbar_t",
-      "human_readable": "zbar_t"
+      "text": "zbar_t"
     }
   ],
   "shocks": [
     {
       "name": "epsA",
-      "human_readable": "epsA"
+      "text": "epsA"
     },
     {
       "name": "epsgam",
-      "human_readable": "epsgam"
+      "text": "epsgam"
     },
     {
       "name": "epsmu",
-      "human_readable": "epsmu"
+      "text": "epsmu"
     },
     {
       "name": "epspol",
-      "human_readable": "epspol"
+      "text": "epspol"
     },
     {
       "name": "epsstd",
-      "human_readable": "epsstd"
+      "text": "epsstd"
     },
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     }
   ],
   "al_info": null

@@ -77,317 +77,317 @@
   "vars": [
     {
       "name": "ARMAlambdap",
-      "human_readable": "ARMAlambdap"
+      "text": "ARMAlambdap"
     },
     {
       "name": "ARMAlambdaw",
-      "human_readable": "ARMAlambdaw"
+      "text": "ARMAlambdaw"
     },
     {
       "name": "b",
-      "human_readable": "b"
+      "text": "b"
     },
     {
       "name": "c",
-      "human_readable": "c"
+      "text": "c"
     },
     {
       "name": "credit",
-      "human_readable": "credit"
+      "text": "credit"
     },
     {
       "name": "cstar",
-      "human_readable": "cstar"
+      "text": "cstar"
     },
     {
       "name": "fispol",
-      "human_readable": "fispol"
+      "text": "fispol"
     },
     {
       "name": "g",
-      "human_readable": "g"
+      "text": "g"
     },
     {
       "name": "gdp",
-      "human_readable": "gdp"
+      "text": "gdp"
     },
     {
       "name": "gdpstar",
-      "human_readable": "gdpstar"
+      "text": "gdpstar"
     },
     {
       "name": "gs",
-      "human_readable": "gs"
+      "text": "gs"
     },
     {
       "name": "i",
-      "human_readable": "i"
+      "text": "i"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "istar",
-      "human_readable": "istar"
+      "text": "istar"
     },
     {
       "name": "k",
-      "human_readable": "k"
+      "text": "k"
     },
     {
       "name": "kbar",
-      "human_readable": "kbar"
+      "text": "kbar"
     },
     {
       "name": "kbarstar",
-      "human_readable": "kbarstar"
+      "text": "kbarstar"
     },
     {
       "name": "kstar",
-      "human_readable": "kstar"
+      "text": "kstar"
     },
     {
       "name": "L",
-      "human_readable": "L"
+      "text": "L"
     },
     {
       "name": "lambda",
-      "human_readable": "lambda"
+      "text": "lambda"
     },
     {
       "name": "lambdae",
-      "human_readable": "lambdae"
+      "text": "lambdae"
     },
     {
       "name": "lambdaestar",
-      "human_readable": "lambdaestar"
+      "text": "lambdaestar"
     },
     {
       "name": "lambdap",
-      "human_readable": "lambdap"
+      "text": "lambdap"
     },
     {
       "name": "lambdastar",
-      "human_readable": "lambdastar"
+      "text": "lambdastar"
     },
     {
       "name": "lambdaw",
-      "human_readable": "lambdaw"
+      "text": "lambdaw"
     },
     {
       "name": "lamefp",
-      "human_readable": "lamefp"
+      "text": "lamefp"
     },
     {
       "name": "lamnw",
-      "human_readable": "lamnw"
+      "text": "lamnw"
     },
     {
       "name": "Lstar",
-      "human_readable": "Lstar"
+      "text": "Lstar"
     },
     {
       "name": "miu",
-      "human_readable": "miu"
+      "text": "miu"
     },
     {
       "name": "mp",
-      "human_readable": "mp"
+      "text": "mp"
     },
     {
       "name": "mpk",
-      "human_readable": "mpk"
+      "text": "mpk"
     },
     {
       "name": "mpkstar",
-      "human_readable": "mpkstar"
+      "text": "mpkstar"
     },
     {
       "name": "nw",
-      "human_readable": "nw"
+      "text": "nw"
     },
     {
       "name": "nwstar",
-      "human_readable": "nwstar"
+      "text": "nwstar"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "p",
-      "human_readable": "p"
+      "text": "p"
     },
     {
       "name": "promz",
-      "human_readable": "promz"
+      "text": "promz"
     },
     {
       "name": "promzstar",
-      "human_readable": "promzstar"
+      "text": "promzstar"
     },
     {
       "name": "q",
-      "human_readable": "q"
+      "text": "q"
     },
     {
       "name": "qstar",
-      "human_readable": "qstar"
+      "text": "qstar"
     },
     {
       "name": "R",
-      "human_readable": "R"
+      "text": "R"
     },
     {
       "name": "Rd",
-      "human_readable": "Rd"
+      "text": "Rd"
     },
     {
       "name": "Rdstar",
-      "human_readable": "Rdstar"
+      "text": "Rdstar"
     },
     {
       "name": "Rk",
-      "human_readable": "Rk"
+      "text": "Rk"
     },
     {
       "name": "Rke",
-      "human_readable": "Rke"
+      "text": "Rke"
     },
     {
       "name": "Rkestar",
-      "human_readable": "Rkestar"
+      "text": "Rkestar"
     },
     {
       "name": "Rkstar",
-      "human_readable": "Rkstar"
+      "text": "Rkstar"
     },
     {
       "name": "Rl",
-      "human_readable": "Rl"
+      "text": "Rl"
     },
     {
       "name": "Rlstar",
-      "human_readable": "Rlstar"
+      "text": "Rlstar"
     },
     {
       "name": "Rstar",
-      "human_readable": "Rstar"
+      "text": "Rstar"
     },
     {
       "name": "s",
-      "human_readable": "s"
+      "text": "s"
     },
     {
       "name": "spr",
-      "human_readable": "spr"
+      "text": "spr"
     },
     {
       "name": "sprstar",
-      "human_readable": "sprstar"
+      "text": "sprstar"
     },
     {
       "name": "sstar",
-      "human_readable": "sstar"
+      "text": "sstar"
     },
     {
       "name": "u",
-      "human_readable": "u"
+      "text": "u"
     },
     {
       "name": "upsilon",
-      "human_readable": "upsilon"
+      "text": "upsilon"
     },
     {
       "name": "ustar",
-      "human_readable": "ustar"
+      "text": "ustar"
     },
     {
       "name": "w",
-      "human_readable": "w"
+      "text": "w"
     },
     {
       "name": "wgap",
-      "human_readable": "wgap"
+      "text": "wgap"
     },
     {
       "name": "wgapstar",
-      "human_readable": "wgapstar"
+      "text": "wgapstar"
     },
     {
       "name": "wstar",
-      "human_readable": "wstar"
+      "text": "wstar"
     },
     {
       "name": "y",
-      "human_readable": "y"
+      "text": "y"
     },
     {
       "name": "ystar",
-      "human_readable": "ystar"
+      "text": "ystar"
     },
     {
       "name": "z",
-      "human_readable": "z"
+      "text": "z"
     }
   ],
   "shocks": [
     {
       "name": "bs",
-      "human_readable": "bs"
+      "text": "bs"
     },
     {
       "name": "efps",
-      "human_readable": "efps"
+      "text": "efps"
     },
     {
       "name": "fiscal_",
-      "human_readable": "fiscal_"
+      "text": "fiscal_"
     },
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     },
     {
       "name": "lambdaps",
-      "human_readable": "lambdaps"
+      "text": "lambdaps"
     },
     {
       "name": "lambdaws",
-      "human_readable": "lambdaws"
+      "text": "lambdaws"
     },
     {
       "name": "mius",
-      "human_readable": "mius"
+      "text": "mius"
     },
     {
       "name": "nws",
-      "human_readable": "nws"
+      "text": "nws"
     },
     {
       "name": "Rs",
-      "human_readable": "Rs"
+      "text": "Rs"
     },
     {
       "name": "upsilons",
-      "human_readable": "upsilons"
+      "text": "upsilons"
     },
     {
       "name": "zs",
-      "human_readable": "zs"
+      "text": "zs"
     }
   ],
   "al_info": null

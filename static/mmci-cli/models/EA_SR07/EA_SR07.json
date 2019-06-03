@@ -42,501 +42,501 @@
   "vars": [
     {
       "name": "a",
-      "human_readable": "a"
+      "text": "a"
     },
     {
       "name": "af",
-      "human_readable": "af"
+      "text": "af"
     },
     {
       "name": "c_hat",
-      "human_readable": "c_hat"
+      "text": "c_hat"
     },
     {
       "name": "c_hatf",
-      "human_readable": "c_hatf"
+      "text": "c_hatf"
     },
     {
       "name": "dS",
-      "human_readable": "dS"
+      "text": "dS"
     },
     {
       "name": "dSf",
-      "human_readable": "dSf"
+      "text": "dSf"
     },
     {
       "name": "E",
-      "human_readable": "E"
+      "text": "E"
     },
     {
       "name": "epsilon",
-      "human_readable": "epsilon"
+      "text": "epsilon"
     },
     {
       "name": "epsilon_rhog",
-      "human_readable": "epsilon_rhog"
+      "text": "epsilon_rhog"
     },
     {
       "name": "fispol",
-      "human_readable": "fispol"
+      "text": "fispol"
     },
     {
       "name": "g_hat",
-      "human_readable": "g_hat"
+      "text": "g_hat"
     },
     {
       "name": "gamma_cdhat",
-      "human_readable": "gamma_cdhat"
+      "text": "gamma_cdhat"
     },
     {
       "name": "gamma_cdhatf",
-      "human_readable": "gamma_cdhatf"
+      "text": "gamma_cdhatf"
     },
     {
       "name": "gamma_fhat",
-      "human_readable": "gamma_fhat"
+      "text": "gamma_fhat"
     },
     {
       "name": "gamma_fhatf",
-      "human_readable": "gamma_fhatf"
+      "text": "gamma_fhatf"
     },
     {
       "name": "gamma_idhat",
-      "human_readable": "gamma_idhat"
+      "text": "gamma_idhat"
     },
     {
       "name": "gamma_idhatf",
-      "human_readable": "gamma_idhatf"
+      "text": "gamma_idhatf"
     },
     {
       "name": "gamma_mcdhat",
-      "human_readable": "gamma_mcdhat"
+      "text": "gamma_mcdhat"
     },
     {
       "name": "gamma_mcdhatf",
-      "human_readable": "gamma_mcdhatf"
+      "text": "gamma_mcdhatf"
     },
     {
       "name": "gamma_midhat",
-      "human_readable": "gamma_midhat"
+      "text": "gamma_midhat"
     },
     {
       "name": "gamma_midhatf",
-      "human_readable": "gamma_midhatf"
+      "text": "gamma_midhatf"
     },
     {
       "name": "gamma_xstar",
-      "human_readable": "gamma_xstar"
+      "text": "gamma_xstar"
     },
     {
       "name": "gamma_xstarf",
-      "human_readable": "gamma_xstarf"
+      "text": "gamma_xstarf"
     },
     {
       "name": "H_hat",
-      "human_readable": "H_hat"
+      "text": "H_hat"
     },
     {
       "name": "H_hatf",
-      "human_readable": "H_hatf"
+      "text": "H_hatf"
     },
     {
       "name": "i_hat",
-      "human_readable": "i_hat"
+      "text": "i_hat"
     },
     {
       "name": "i_hatf",
-      "human_readable": "i_hatf"
+      "text": "i_hatf"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "k_barhat",
-      "human_readable": "k_barhat"
+      "text": "k_barhat"
     },
     {
       "name": "k_barhatf",
-      "human_readable": "k_barhatf"
+      "text": "k_barhatf"
     },
     {
       "name": "k_hat",
-      "human_readable": "k_hat"
+      "text": "k_hat"
     },
     {
       "name": "k_hatf",
-      "human_readable": "k_hatf"
+      "text": "k_hatf"
     },
     {
       "name": "lambda_dhat",
-      "human_readable": "lambda_dhat"
+      "text": "lambda_dhat"
     },
     {
       "name": "lambda_dhatf",
-      "human_readable": "lambda_dhatf"
+      "text": "lambda_dhatf"
     },
     {
       "name": "lambda_mchat",
-      "human_readable": "lambda_mchat"
+      "text": "lambda_mchat"
     },
     {
       "name": "lambda_mchatf",
-      "human_readable": "lambda_mchatf"
+      "text": "lambda_mchatf"
     },
     {
       "name": "lambda_mihat",
-      "human_readable": "lambda_mihat"
+      "text": "lambda_mihat"
     },
     {
       "name": "lambda_mihatf",
-      "human_readable": "lambda_mihatf"
+      "text": "lambda_mihatf"
     },
     {
       "name": "lambda_x",
-      "human_readable": "lambda_x"
+      "text": "lambda_x"
     },
     {
       "name": "lambda_xf",
-      "human_readable": "lambda_xf"
+      "text": "lambda_xf"
     },
     {
       "name": "m_barhat",
-      "human_readable": "m_barhat"
+      "text": "m_barhat"
     },
     {
       "name": "m_barhatf",
-      "human_readable": "m_barhatf"
+      "text": "m_barhatf"
     },
     {
       "name": "mc",
-      "human_readable": "mc"
+      "text": "mc"
     },
     {
       "name": "mc_mc",
-      "human_readable": "mc_mc"
+      "text": "mc_mc"
     },
     {
       "name": "mc_mcf",
-      "human_readable": "mc_mcf"
+      "text": "mc_mcf"
     },
     {
       "name": "mc_mi",
-      "human_readable": "mc_mi"
+      "text": "mc_mi"
     },
     {
       "name": "mc_mif",
-      "human_readable": "mc_mif"
+      "text": "mc_mif"
     },
     {
       "name": "mc_x",
-      "human_readable": "mc_x"
+      "text": "mc_x"
     },
     {
       "name": "mc_xf",
-      "human_readable": "mc_xf"
+      "text": "mc_xf"
     },
     {
       "name": "mcf",
-      "human_readable": "mcf"
+      "text": "mcf"
     },
     {
       "name": "mu_hat",
-      "human_readable": "mu_hat"
+      "text": "mu_hat"
     },
     {
       "name": "mu_hatf",
-      "human_readable": "mu_hatf"
+      "text": "mu_hatf"
     },
     {
       "name": "mu_zhat",
-      "human_readable": "mu_zhat"
+      "text": "mu_zhat"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "P_k",
-      "human_readable": "P_k"
+      "text": "P_k"
     },
     {
       "name": "P_kf",
-      "human_readable": "P_kf"
+      "text": "P_kf"
     },
     {
       "name": "phi_tilde",
-      "human_readable": "phi_tilde"
+      "text": "phi_tilde"
     },
     {
       "name": "pi_bar",
-      "human_readable": "pi_bar"
+      "text": "pi_bar"
     },
     {
       "name": "pi_c",
-      "human_readable": "pi_c"
+      "text": "pi_c"
     },
     {
       "name": "pi_cf",
-      "human_readable": "pi_cf"
+      "text": "pi_cf"
     },
     {
       "name": "pi_hat",
-      "human_readable": "pi_hat"
+      "text": "pi_hat"
     },
     {
       "name": "pi_hatf",
-      "human_readable": "pi_hatf"
+      "text": "pi_hatf"
     },
     {
       "name": "pi_mc",
-      "human_readable": "pi_mc"
+      "text": "pi_mc"
     },
     {
       "name": "pi_mcf",
-      "human_readable": "pi_mcf"
+      "text": "pi_mcf"
     },
     {
       "name": "pi_mi",
-      "human_readable": "pi_mi"
+      "text": "pi_mi"
     },
     {
       "name": "pi_mif",
-      "human_readable": "pi_mif"
+      "text": "pi_mif"
     },
     {
       "name": "pi_x",
-      "human_readable": "pi_x"
+      "text": "pi_x"
     },
     {
       "name": "pi_xf",
-      "human_readable": "pi_xf"
+      "text": "pi_xf"
     },
     {
       "name": "pistar_hat",
-      "human_readable": "pistar_hat"
+      "text": "pistar_hat"
     },
     {
       "name": "pistar_hatf",
-      "human_readable": "pistar_hatf"
+      "text": "pistar_hatf"
     },
     {
       "name": "psi_zhat",
-      "human_readable": "psi_zhat"
+      "text": "psi_zhat"
     },
     {
       "name": "psi_zhatf",
-      "human_readable": "psi_zhatf"
+      "text": "psi_zhatf"
     },
     {
       "name": "q_hat",
-      "human_readable": "q_hat"
+      "text": "q_hat"
     },
     {
       "name": "q_hatf",
-      "human_readable": "q_hatf"
+      "text": "q_hatf"
     },
     {
       "name": "R_fhat",
-      "human_readable": "R_fhat"
+      "text": "R_fhat"
     },
     {
       "name": "R_fhatf",
-      "human_readable": "R_fhatf"
+      "text": "R_fhatf"
     },
     {
       "name": "R_hat",
-      "human_readable": "R_hat"
+      "text": "R_hat"
     },
     {
       "name": "R_hatf",
-      "human_readable": "R_hatf"
+      "text": "R_hatf"
     },
     {
       "name": "rk_hat",
-      "human_readable": "rk_hat"
+      "text": "rk_hat"
     },
     {
       "name": "rk_hatf",
-      "human_readable": "rk_hatf"
+      "text": "rk_hatf"
     },
     {
       "name": "Rstar_hat",
-      "human_readable": "Rstar_hat"
+      "text": "Rstar_hat"
     },
     {
       "name": "Rstar_hatf",
-      "human_readable": "Rstar_hatf"
+      "text": "Rstar_hatf"
     },
     {
       "name": "tauc_hat",
-      "human_readable": "tauc_hat"
+      "text": "tauc_hat"
     },
     {
       "name": "tauk_hat",
-      "human_readable": "tauk_hat"
+      "text": "tauk_hat"
     },
     {
       "name": "tauw_hat",
-      "human_readable": "tauw_hat"
+      "text": "tauw_hat"
     },
     {
       "name": "tauy_hat",
-      "human_readable": "tauy_hat"
+      "text": "tauy_hat"
     },
     {
       "name": "u",
-      "human_readable": "u"
+      "text": "u"
     },
     {
       "name": "uf",
-      "human_readable": "uf"
+      "text": "uf"
     },
     {
       "name": "Upsilon",
-      "human_readable": "Upsilon"
+      "text": "Upsilon"
     },
     {
       "name": "w_barhat",
-      "human_readable": "w_barhat"
+      "text": "w_barhat"
     },
     {
       "name": "w_barhatf",
-      "human_readable": "w_barhatf"
+      "text": "w_barhatf"
     },
     {
       "name": "x",
-      "human_readable": "x"
+      "text": "x"
     },
     {
       "name": "xf",
-      "human_readable": "xf"
+      "text": "xf"
     },
     {
       "name": "y_hat",
-      "human_readable": "y_hat"
+      "text": "y_hat"
     },
     {
       "name": "y_hatf",
-      "human_readable": "y_hatf"
+      "text": "y_hatf"
     },
     {
       "name": "ystar_hat",
-      "human_readable": "ystar_hat"
+      "text": "ystar_hat"
     },
     {
       "name": "ystar_hatf",
-      "human_readable": "ystar_hatf"
+      "text": "ystar_hatf"
     },
     {
       "name": "z_tildestar",
-      "human_readable": "z_tildestar"
+      "text": "z_tildestar"
     },
     {
       "name": "zeta_c",
-      "human_readable": "zeta_c"
+      "text": "zeta_c"
     },
     {
       "name": "zeta_h",
-      "human_readable": "zeta_h"
+      "text": "zeta_h"
     }
   ],
   "shocks": [
     {
       "name": "epsilon_epsilon",
-      "human_readable": "epsilon_epsilon"
+      "text": "epsilon_epsilon"
     },
     {
       "name": "epsilon_lambdad",
-      "human_readable": "epsilon_lambdad"
+      "text": "epsilon_lambdad"
     },
     {
       "name": "epsilon_lambdamc",
-      "human_readable": "epsilon_lambdamc"
+      "text": "epsilon_lambdamc"
     },
     {
       "name": "epsilon_lambdami",
-      "human_readable": "epsilon_lambdami"
+      "text": "epsilon_lambdami"
     },
     {
       "name": "epsilon_lambdax",
-      "human_readable": "epsilon_lambdax"
+      "text": "epsilon_lambdax"
     },
     {
       "name": "epsilon_muz",
-      "human_readable": "epsilon_muz"
+      "text": "epsilon_muz"
     },
     {
       "name": "epsilon_phitilde",
-      "human_readable": "epsilon_phitilde"
+      "text": "epsilon_phitilde"
     },
     {
       "name": "epsilon_pibar",
-      "human_readable": "epsilon_pibar"
+      "text": "epsilon_pibar"
     },
     {
       "name": "epsilon_pistar",
-      "human_readable": "epsilon_pistar"
+      "text": "epsilon_pistar"
     },
     {
       "name": "epsilon_Rstar",
-      "human_readable": "epsilon_Rstar"
+      "text": "epsilon_Rstar"
     },
     {
       "name": "epsilon_tauc",
-      "human_readable": "epsilon_tauc"
+      "text": "epsilon_tauc"
     },
     {
       "name": "epsilon_tauk",
-      "human_readable": "epsilon_tauk"
+      "text": "epsilon_tauk"
     },
     {
       "name": "epsilon_tauw",
-      "human_readable": "epsilon_tauw"
+      "text": "epsilon_tauw"
     },
     {
       "name": "epsilon_tauy",
-      "human_readable": "epsilon_tauy"
+      "text": "epsilon_tauy"
     },
     {
       "name": "epsilon_Upsilon",
-      "human_readable": "epsilon_Upsilon"
+      "text": "epsilon_Upsilon"
     },
     {
       "name": "epsilon_ystar",
-      "human_readable": "epsilon_ystar"
+      "text": "epsilon_ystar"
     },
     {
       "name": "epsilon_zetac",
-      "human_readable": "epsilon_zetac"
+      "text": "epsilon_zetac"
     },
     {
       "name": "epsilon_zetah",
-      "human_readable": "epsilon_zetah"
+      "text": "epsilon_zetah"
     },
     {
       "name": "epsilon_ztildestar",
-      "human_readable": "epsilon_ztildestar"
+      "text": "epsilon_ztildestar"
     },
     {
       "name": "fiscal_",
-      "human_readable": "fiscal_"
+      "text": "fiscal_"
     },
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     }
   ],
   "al_info": null

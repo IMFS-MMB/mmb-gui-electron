@@ -73,273 +73,273 @@
   "vars": [
     {
       "name": "c",
-      "human_readable": "c"
+      "text": "c"
     },
     {
       "name": "c_F",
-      "human_readable": "c_F"
+      "text": "c_F"
     },
     {
       "name": "c_F_star",
-      "human_readable": "c_F_star"
+      "text": "c_F_star"
     },
     {
       "name": "c_H",
-      "human_readable": "c_H"
+      "text": "c_H"
     },
     {
       "name": "c_H_star",
-      "human_readable": "c_H_star"
+      "text": "c_H_star"
     },
     {
       "name": "c_N",
-      "human_readable": "c_N"
+      "text": "c_N"
     },
     {
       "name": "c_N_star",
-      "human_readable": "c_N_star"
+      "text": "c_N_star"
     },
     {
       "name": "c_star",
-      "human_readable": "c_star"
+      "text": "c_star"
     },
     {
       "name": "dy",
-      "human_readable": "dy"
+      "text": "dy"
     },
     {
       "name": "dy_star",
-      "human_readable": "dy_star"
+      "text": "dy_star"
     },
     {
       "name": "g_N",
-      "human_readable": "g_N"
+      "text": "g_N"
     },
     {
       "name": "g_N_star",
-      "human_readable": "g_N_star"
+      "text": "g_N_star"
     },
     {
       "name": "g_T",
-      "human_readable": "g_T"
+      "text": "g_T"
     },
     {
       "name": "g_T_star",
-      "human_readable": "g_T_star"
+      "text": "g_T_star"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "l",
-      "human_readable": "l"
+      "text": "l"
     },
     {
       "name": "l_N",
-      "human_readable": "l_N"
+      "text": "l_N"
     },
     {
       "name": "l_N_star",
-      "human_readable": "l_N_star"
+      "text": "l_N_star"
     },
     {
       "name": "l_star",
-      "human_readable": "l_star"
+      "text": "l_star"
     },
     {
       "name": "l_T",
-      "human_readable": "l_T"
+      "text": "l_T"
     },
     {
       "name": "l_T_star",
-      "human_readable": "l_T_star"
+      "text": "l_T_star"
     },
     {
       "name": "mu",
-      "human_readable": "mu"
+      "text": "mu"
     },
     {
       "name": "mu_star",
-      "human_readable": "mu_star"
+      "text": "mu_star"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "pi",
-      "human_readable": "pi"
+      "text": "pi"
     },
     {
       "name": "pi_EMU",
-      "human_readable": "pi_EMU"
+      "text": "pi_EMU"
     },
     {
       "name": "pi_F",
-      "human_readable": "pi_F"
+      "text": "pi_F"
     },
     {
       "name": "pi_H",
-      "human_readable": "pi_H"
+      "text": "pi_H"
     },
     {
       "name": "pi_N",
-      "human_readable": "pi_N"
+      "text": "pi_N"
     },
     {
       "name": "pi_N_star",
-      "human_readable": "pi_N_star"
+      "text": "pi_N_star"
     },
     {
       "name": "pi_star",
-      "human_readable": "pi_star"
+      "text": "pi_star"
     },
     {
       "name": "r",
-      "human_readable": "r"
+      "text": "r"
     },
     {
       "name": "rer",
-      "human_readable": "rer"
+      "text": "rer"
     },
     {
       "name": "t_F",
-      "human_readable": "t_F"
+      "text": "t_F"
     },
     {
       "name": "t_F_star",
-      "human_readable": "t_F_star"
+      "text": "t_F_star"
     },
     {
       "name": "t_H",
-      "human_readable": "t_H"
+      "text": "t_H"
     },
     {
       "name": "t_H_star",
-      "human_readable": "t_H_star"
+      "text": "t_H_star"
     },
     {
       "name": "t_N",
-      "human_readable": "t_N"
+      "text": "t_N"
     },
     {
       "name": "t_N_star",
-      "human_readable": "t_N_star"
+      "text": "t_N_star"
     },
     {
       "name": "t_T",
-      "human_readable": "t_T"
+      "text": "t_T"
     },
     {
       "name": "t_T_star",
-      "human_readable": "t_T_star"
+      "text": "t_T_star"
     },
     {
       "name": "w",
-      "human_readable": "w"
+      "text": "w"
     },
     {
       "name": "w_star",
-      "human_readable": "w_star"
+      "text": "w_star"
     },
     {
       "name": "y",
-      "human_readable": "y"
+      "text": "y"
     },
     {
       "name": "y_EMU",
-      "human_readable": "y_EMU"
+      "text": "y_EMU"
     },
     {
       "name": "y_F_star",
-      "human_readable": "y_F_star"
+      "text": "y_F_star"
     },
     {
       "name": "y_H",
-      "human_readable": "y_H"
+      "text": "y_H"
     },
     {
       "name": "y_N",
-      "human_readable": "y_N"
+      "text": "y_N"
     },
     {
       "name": "y_N_star",
-      "human_readable": "y_N_star"
+      "text": "y_N_star"
     },
     {
       "name": "y_star",
-      "human_readable": "y_star"
+      "text": "y_star"
     },
     {
       "name": "z_N",
-      "human_readable": "z_N"
+      "text": "z_N"
     },
     {
       "name": "z_N_star",
-      "human_readable": "z_N_star"
+      "text": "z_N_star"
     },
     {
       "name": "z_T",
-      "human_readable": "z_T"
+      "text": "z_T"
     },
     {
       "name": "z_T_star",
-      "human_readable": "z_T_star"
+      "text": "z_T_star"
     }
   ],
   "shocks": [
     {
       "name": "eps_GN",
-      "human_readable": "eps_GN"
+      "text": "eps_GN"
     },
     {
       "name": "eps_GN_star",
-      "human_readable": "eps_GN_star"
+      "text": "eps_GN_star"
     },
     {
       "name": "eps_GT",
-      "human_readable": "eps_GT"
+      "text": "eps_GT"
     },
     {
       "name": "eps_GT_star",
-      "human_readable": "eps_GT_star"
+      "text": "eps_GT_star"
     },
     {
       "name": "eps_Z",
-      "human_readable": "eps_Z"
+      "text": "eps_Z"
     },
     {
       "name": "eps_ZN",
-      "human_readable": "eps_ZN"
+      "text": "eps_ZN"
     },
     {
       "name": "eps_ZN_star",
-      "human_readable": "eps_ZN_star"
+      "text": "eps_ZN_star"
     },
     {
       "name": "eps_ZT",
-      "human_readable": "eps_ZT"
+      "text": "eps_ZT"
     },
     {
       "name": "eps_ZT_star",
-      "human_readable": "eps_ZT_star"
+      "text": "eps_ZT_star"
     },
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     }
   ],
   "al_info": null
