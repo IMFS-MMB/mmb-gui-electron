@@ -39,7 +39,94 @@
   "msr": null,
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "epsilon_epsilon",
+      "text": "epsilon_epsilon"
+    },
+    {
+      "name": "epsilon_lambdad",
+      "text": "epsilon_lambdad"
+    },
+    {
+      "name": "epsilon_lambdamc",
+      "text": "epsilon_lambdamc"
+    },
+    {
+      "name": "epsilon_lambdami",
+      "text": "epsilon_lambdami"
+    },
+    {
+      "name": "epsilon_lambdax",
+      "text": "epsilon_lambdax"
+    },
+    {
+      "name": "epsilon_muz",
+      "text": "epsilon_muz"
+    },
+    {
+      "name": "epsilon_phitilde",
+      "text": "epsilon_phitilde"
+    },
+    {
+      "name": "epsilon_pibar",
+      "text": "epsilon_pibar"
+    },
+    {
+      "name": "epsilon_pistar",
+      "text": "epsilon_pistar"
+    },
+    {
+      "name": "epsilon_Rstar",
+      "text": "epsilon_Rstar"
+    },
+    {
+      "name": "epsilon_tauc",
+      "text": "epsilon_tauc"
+    },
+    {
+      "name": "epsilon_tauk",
+      "text": "epsilon_tauk"
+    },
+    {
+      "name": "epsilon_tauw",
+      "text": "epsilon_tauw"
+    },
+    {
+      "name": "epsilon_tauy",
+      "text": "epsilon_tauy"
+    },
+    {
+      "name": "epsilon_Upsilon",
+      "text": "epsilon_Upsilon"
+    },
+    {
+      "name": "epsilon_ystar",
+      "text": "epsilon_ystar"
+    },
+    {
+      "name": "epsilon_zetac",
+      "text": "epsilon_zetac"
+    },
+    {
+      "name": "epsilon_zetah",
+      "text": "epsilon_zetah"
+    },
+    {
+      "name": "epsilon_ztildestar",
+      "text": "epsilon_ztildestar"
+    },
+    {
+      "name": "fiscal_",
+      "text": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "a",
       "text": "a"
@@ -452,92 +539,5 @@
       "name": "zeta_h",
       "text": "zeta_h"
     }
-  ],
-  "shocks": [
-    {
-      "name": "epsilon_epsilon",
-      "text": "epsilon_epsilon"
-    },
-    {
-      "name": "epsilon_lambdad",
-      "text": "epsilon_lambdad"
-    },
-    {
-      "name": "epsilon_lambdamc",
-      "text": "epsilon_lambdamc"
-    },
-    {
-      "name": "epsilon_lambdami",
-      "text": "epsilon_lambdami"
-    },
-    {
-      "name": "epsilon_lambdax",
-      "text": "epsilon_lambdax"
-    },
-    {
-      "name": "epsilon_muz",
-      "text": "epsilon_muz"
-    },
-    {
-      "name": "epsilon_phitilde",
-      "text": "epsilon_phitilde"
-    },
-    {
-      "name": "epsilon_pibar",
-      "text": "epsilon_pibar"
-    },
-    {
-      "name": "epsilon_pistar",
-      "text": "epsilon_pistar"
-    },
-    {
-      "name": "epsilon_Rstar",
-      "text": "epsilon_Rstar"
-    },
-    {
-      "name": "epsilon_tauc",
-      "text": "epsilon_tauc"
-    },
-    {
-      "name": "epsilon_tauk",
-      "text": "epsilon_tauk"
-    },
-    {
-      "name": "epsilon_tauw",
-      "text": "epsilon_tauw"
-    },
-    {
-      "name": "epsilon_tauy",
-      "text": "epsilon_tauy"
-    },
-    {
-      "name": "epsilon_Upsilon",
-      "text": "epsilon_Upsilon"
-    },
-    {
-      "name": "epsilon_ystar",
-      "text": "epsilon_ystar"
-    },
-    {
-      "name": "epsilon_zetac",
-      "text": "epsilon_zetac"
-    },
-    {
-      "name": "epsilon_zetah",
-      "text": "epsilon_zetah"
-    },
-    {
-      "name": "epsilon_ztildestar",
-      "text": "epsilon_ztildestar"
-    },
-    {
-      "name": "fiscal_",
-      "text": "fiscal_"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    }
-  ],
-  "al_info": null
+  ]
 }

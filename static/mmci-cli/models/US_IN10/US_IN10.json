@@ -72,7 +72,46 @@
   ],
   "variabledim": 2,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "eps_c",
+      "text": "eps_c"
+    },
+    {
+      "name": "eps_h",
+      "text": "eps_h"
+    },
+    {
+      "name": "eps_j",
+      "text": "eps_j"
+    },
+    {
+      "name": "eps_k",
+      "text": "eps_k"
+    },
+    {
+      "name": "eps_p",
+      "text": "eps_p"
+    },
+    {
+      "name": "eps_s",
+      "text": "eps_s"
+    },
+    {
+      "name": "eps_t",
+      "text": "eps_t"
+    },
+    {
+      "name": "eps_z",
+      "text": "eps_z"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "a_c",
       "text": "a_c"
@@ -413,44 +452,5 @@
       "name": "zkhf",
       "text": "zkhf"
     }
-  ],
-  "shocks": [
-    {
-      "name": "eps_c",
-      "text": "eps_c"
-    },
-    {
-      "name": "eps_h",
-      "text": "eps_h"
-    },
-    {
-      "name": "eps_j",
-      "text": "eps_j"
-    },
-    {
-      "name": "eps_k",
-      "text": "eps_k"
-    },
-    {
-      "name": "eps_p",
-      "text": "eps_p"
-    },
-    {
-      "name": "eps_s",
-      "text": "eps_s"
-    },
-    {
-      "name": "eps_t",
-      "text": "eps_t"
-    },
-    {
-      "name": "eps_z",
-      "text": "eps_z"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    }
-  ],
-  "al_info": null
+  ]
 }

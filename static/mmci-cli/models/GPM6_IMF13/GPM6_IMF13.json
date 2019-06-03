@@ -76,7 +76,302 @@
   ],
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "interest_",
+      "text": "interest_"
+    },
+    {
+      "name": "RES_BLT_BAR_EU",
+      "text": "RES_BLT_BAR_EU"
+    },
+    {
+      "name": "RES_BLT_BAR_JA",
+      "text": "RES_BLT_BAR_JA"
+    },
+    {
+      "name": "RES_BLT_BAR_US",
+      "text": "RES_BLT_BAR_US"
+    },
+    {
+      "name": "RES_BLT_EU",
+      "text": "RES_BLT_EU"
+    },
+    {
+      "name": "RES_BLT_JA",
+      "text": "RES_BLT_JA"
+    },
+    {
+      "name": "RES_BLT_US",
+      "text": "RES_BLT_US"
+    },
+    {
+      "name": "RES_DOT_LZ_BAR_EA6",
+      "text": "RES_DOT_LZ_BAR_EA6"
+    },
+    {
+      "name": "RES_DOT_LZ_BAR_LA6",
+      "text": "RES_DOT_LZ_BAR_LA6"
+    },
+    {
+      "name": "RES_DOT_LZ_BAR_RC6",
+      "text": "RES_DOT_LZ_BAR_RC6"
+    },
+    {
+      "name": "RES_G_EA6",
+      "text": "RES_G_EA6"
+    },
+    {
+      "name": "RES_G_EU",
+      "text": "RES_G_EU"
+    },
+    {
+      "name": "RES_G_JA",
+      "text": "RES_G_JA"
+    },
+    {
+      "name": "RES_G_LA6",
+      "text": "RES_G_LA6"
+    },
+    {
+      "name": "RES_G_RC6",
+      "text": "RES_G_RC6"
+    },
+    {
+      "name": "RES_G_US",
+      "text": "RES_G_US"
+    },
+    {
+      "name": "RES_LGDP_BAR_EA6",
+      "text": "RES_LGDP_BAR_EA6"
+    },
+    {
+      "name": "RES_LGDP_BAR_EU",
+      "text": "RES_LGDP_BAR_EU"
+    },
+    {
+      "name": "RES_LGDP_BAR_JA",
+      "text": "RES_LGDP_BAR_JA"
+    },
+    {
+      "name": "RES_LGDP_BAR_LA6",
+      "text": "RES_LGDP_BAR_LA6"
+    },
+    {
+      "name": "RES_LGDP_BAR_RC6",
+      "text": "RES_LGDP_BAR_RC6"
+    },
+    {
+      "name": "RES_LGDP_BAR_US",
+      "text": "RES_LGDP_BAR_US"
+    },
+    {
+      "name": "RES_LZ_BAR_EA6",
+      "text": "RES_LZ_BAR_EA6"
+    },
+    {
+      "name": "RES_LZ_BAR_EU",
+      "text": "RES_LZ_BAR_EU"
+    },
+    {
+      "name": "RES_LZ_BAR_JA",
+      "text": "RES_LZ_BAR_JA"
+    },
+    {
+      "name": "RES_LZ_BAR_LA6",
+      "text": "RES_LZ_BAR_LA6"
+    },
+    {
+      "name": "RES_LZ_BAR_RC6",
+      "text": "RES_LZ_BAR_RC6"
+    },
+    {
+      "name": "RES_PIE_EA6",
+      "text": "RES_PIE_EA6"
+    },
+    {
+      "name": "RES_PIE_EU",
+      "text": "RES_PIE_EU"
+    },
+    {
+      "name": "RES_PIE_JA",
+      "text": "RES_PIE_JA"
+    },
+    {
+      "name": "RES_PIE_LA6",
+      "text": "RES_PIE_LA6"
+    },
+    {
+      "name": "RES_PIE_RC6",
+      "text": "RES_PIE_RC6"
+    },
+    {
+      "name": "RES_PIE_US",
+      "text": "RES_PIE_US"
+    },
+    {
+      "name": "RES_PIETAR_EA6",
+      "text": "RES_PIETAR_EA6"
+    },
+    {
+      "name": "RES_PIETAR_LA6",
+      "text": "RES_PIETAR_LA6"
+    },
+    {
+      "name": "RES_PIETAR_RC6",
+      "text": "RES_PIETAR_RC6"
+    },
+    {
+      "name": "RES_RR_BAR_EA6",
+      "text": "RES_RR_BAR_EA6"
+    },
+    {
+      "name": "RES_RR_BAR_EU",
+      "text": "RES_RR_BAR_EU"
+    },
+    {
+      "name": "RES_RR_BAR_JA",
+      "text": "RES_RR_BAR_JA"
+    },
+    {
+      "name": "RES_RR_BAR_LA6",
+      "text": "RES_RR_BAR_LA6"
+    },
+    {
+      "name": "RES_RR_BAR_RC6",
+      "text": "RES_RR_BAR_RC6"
+    },
+    {
+      "name": "RES_RR_BAR_US",
+      "text": "RES_RR_BAR_US"
+    },
+    {
+      "name": "RES_RR_DIFF_EA6",
+      "text": "RES_RR_DIFF_EA6"
+    },
+    {
+      "name": "RES_RR_DIFF_EU",
+      "text": "RES_RR_DIFF_EU"
+    },
+    {
+      "name": "RES_RR_DIFF_JA",
+      "text": "RES_RR_DIFF_JA"
+    },
+    {
+      "name": "RES_RR_DIFF_LA6",
+      "text": "RES_RR_DIFF_LA6"
+    },
+    {
+      "name": "RES_RR_DIFF_RC6",
+      "text": "RES_RR_DIFF_RC6"
+    },
+    {
+      "name": "RES_RS_EA6",
+      "text": "RES_RS_EA6"
+    },
+    {
+      "name": "RES_RS_EU",
+      "text": "RES_RS_EU"
+    },
+    {
+      "name": "RES_RS_JA",
+      "text": "RES_RS_JA"
+    },
+    {
+      "name": "RES_RS_LA6",
+      "text": "RES_RS_LA6"
+    },
+    {
+      "name": "RES_RS_RC6",
+      "text": "RES_RS_RC6"
+    },
+    {
+      "name": "RES_UNR_BAR_EU",
+      "text": "RES_UNR_BAR_EU"
+    },
+    {
+      "name": "RES_UNR_BAR_JA",
+      "text": "RES_UNR_BAR_JA"
+    },
+    {
+      "name": "RES_UNR_BAR_US",
+      "text": "RES_UNR_BAR_US"
+    },
+    {
+      "name": "RES_UNR_G_EU",
+      "text": "RES_UNR_G_EU"
+    },
+    {
+      "name": "RES_UNR_G_JA",
+      "text": "RES_UNR_G_JA"
+    },
+    {
+      "name": "RES_UNR_G_US",
+      "text": "RES_UNR_G_US"
+    },
+    {
+      "name": "RES_UNR_GAP_EU",
+      "text": "RES_UNR_GAP_EU"
+    },
+    {
+      "name": "RES_UNR_GAP_JA",
+      "text": "RES_UNR_GAP_JA"
+    },
+    {
+      "name": "RES_UNR_GAP_US",
+      "text": "RES_UNR_GAP_US"
+    },
+    {
+      "name": "RES_Y_EA6",
+      "text": "RES_Y_EA6"
+    },
+    {
+      "name": "RES_Y_EU",
+      "text": "RES_Y_EU"
+    },
+    {
+      "name": "RES_Y_JA",
+      "text": "RES_Y_JA"
+    },
+    {
+      "name": "RES_Y_LA6",
+      "text": "RES_Y_LA6"
+    },
+    {
+      "name": "RES_Y_RC6",
+      "text": "RES_Y_RC6"
+    },
+    {
+      "name": "RES_Y_US",
+      "text": "RES_Y_US"
+    },
+    {
+      "name": "RES_YY_EA6",
+      "text": "RES_YY_EA6"
+    },
+    {
+      "name": "RES_YY_EU",
+      "text": "RES_YY_EU"
+    },
+    {
+      "name": "RES_YY_JA",
+      "text": "RES_YY_JA"
+    },
+    {
+      "name": "RES_YY_LA6",
+      "text": "RES_YY_LA6"
+    },
+    {
+      "name": "RES_YY_RC6",
+      "text": "RES_YY_RC6"
+    },
+    {
+      "name": "RES_YY_US",
+      "text": "RES_YY_US"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "BLT_BAR_EU",
       "text": "BLT_BAR_EU"
@@ -1261,300 +1556,5 @@
       "name": "Y_US",
       "text": "Y_US"
     }
-  ],
-  "shocks": [
-    {
-      "name": "interest_",
-      "text": "interest_"
-    },
-    {
-      "name": "RES_BLT_BAR_EU",
-      "text": "RES_BLT_BAR_EU"
-    },
-    {
-      "name": "RES_BLT_BAR_JA",
-      "text": "RES_BLT_BAR_JA"
-    },
-    {
-      "name": "RES_BLT_BAR_US",
-      "text": "RES_BLT_BAR_US"
-    },
-    {
-      "name": "RES_BLT_EU",
-      "text": "RES_BLT_EU"
-    },
-    {
-      "name": "RES_BLT_JA",
-      "text": "RES_BLT_JA"
-    },
-    {
-      "name": "RES_BLT_US",
-      "text": "RES_BLT_US"
-    },
-    {
-      "name": "RES_DOT_LZ_BAR_EA6",
-      "text": "RES_DOT_LZ_BAR_EA6"
-    },
-    {
-      "name": "RES_DOT_LZ_BAR_LA6",
-      "text": "RES_DOT_LZ_BAR_LA6"
-    },
-    {
-      "name": "RES_DOT_LZ_BAR_RC6",
-      "text": "RES_DOT_LZ_BAR_RC6"
-    },
-    {
-      "name": "RES_G_EA6",
-      "text": "RES_G_EA6"
-    },
-    {
-      "name": "RES_G_EU",
-      "text": "RES_G_EU"
-    },
-    {
-      "name": "RES_G_JA",
-      "text": "RES_G_JA"
-    },
-    {
-      "name": "RES_G_LA6",
-      "text": "RES_G_LA6"
-    },
-    {
-      "name": "RES_G_RC6",
-      "text": "RES_G_RC6"
-    },
-    {
-      "name": "RES_G_US",
-      "text": "RES_G_US"
-    },
-    {
-      "name": "RES_LGDP_BAR_EA6",
-      "text": "RES_LGDP_BAR_EA6"
-    },
-    {
-      "name": "RES_LGDP_BAR_EU",
-      "text": "RES_LGDP_BAR_EU"
-    },
-    {
-      "name": "RES_LGDP_BAR_JA",
-      "text": "RES_LGDP_BAR_JA"
-    },
-    {
-      "name": "RES_LGDP_BAR_LA6",
-      "text": "RES_LGDP_BAR_LA6"
-    },
-    {
-      "name": "RES_LGDP_BAR_RC6",
-      "text": "RES_LGDP_BAR_RC6"
-    },
-    {
-      "name": "RES_LGDP_BAR_US",
-      "text": "RES_LGDP_BAR_US"
-    },
-    {
-      "name": "RES_LZ_BAR_EA6",
-      "text": "RES_LZ_BAR_EA6"
-    },
-    {
-      "name": "RES_LZ_BAR_EU",
-      "text": "RES_LZ_BAR_EU"
-    },
-    {
-      "name": "RES_LZ_BAR_JA",
-      "text": "RES_LZ_BAR_JA"
-    },
-    {
-      "name": "RES_LZ_BAR_LA6",
-      "text": "RES_LZ_BAR_LA6"
-    },
-    {
-      "name": "RES_LZ_BAR_RC6",
-      "text": "RES_LZ_BAR_RC6"
-    },
-    {
-      "name": "RES_PIE_EA6",
-      "text": "RES_PIE_EA6"
-    },
-    {
-      "name": "RES_PIE_EU",
-      "text": "RES_PIE_EU"
-    },
-    {
-      "name": "RES_PIE_JA",
-      "text": "RES_PIE_JA"
-    },
-    {
-      "name": "RES_PIE_LA6",
-      "text": "RES_PIE_LA6"
-    },
-    {
-      "name": "RES_PIE_RC6",
-      "text": "RES_PIE_RC6"
-    },
-    {
-      "name": "RES_PIE_US",
-      "text": "RES_PIE_US"
-    },
-    {
-      "name": "RES_PIETAR_EA6",
-      "text": "RES_PIETAR_EA6"
-    },
-    {
-      "name": "RES_PIETAR_LA6",
-      "text": "RES_PIETAR_LA6"
-    },
-    {
-      "name": "RES_PIETAR_RC6",
-      "text": "RES_PIETAR_RC6"
-    },
-    {
-      "name": "RES_RR_BAR_EA6",
-      "text": "RES_RR_BAR_EA6"
-    },
-    {
-      "name": "RES_RR_BAR_EU",
-      "text": "RES_RR_BAR_EU"
-    },
-    {
-      "name": "RES_RR_BAR_JA",
-      "text": "RES_RR_BAR_JA"
-    },
-    {
-      "name": "RES_RR_BAR_LA6",
-      "text": "RES_RR_BAR_LA6"
-    },
-    {
-      "name": "RES_RR_BAR_RC6",
-      "text": "RES_RR_BAR_RC6"
-    },
-    {
-      "name": "RES_RR_BAR_US",
-      "text": "RES_RR_BAR_US"
-    },
-    {
-      "name": "RES_RR_DIFF_EA6",
-      "text": "RES_RR_DIFF_EA6"
-    },
-    {
-      "name": "RES_RR_DIFF_EU",
-      "text": "RES_RR_DIFF_EU"
-    },
-    {
-      "name": "RES_RR_DIFF_JA",
-      "text": "RES_RR_DIFF_JA"
-    },
-    {
-      "name": "RES_RR_DIFF_LA6",
-      "text": "RES_RR_DIFF_LA6"
-    },
-    {
-      "name": "RES_RR_DIFF_RC6",
-      "text": "RES_RR_DIFF_RC6"
-    },
-    {
-      "name": "RES_RS_EA6",
-      "text": "RES_RS_EA6"
-    },
-    {
-      "name": "RES_RS_EU",
-      "text": "RES_RS_EU"
-    },
-    {
-      "name": "RES_RS_JA",
-      "text": "RES_RS_JA"
-    },
-    {
-      "name": "RES_RS_LA6",
-      "text": "RES_RS_LA6"
-    },
-    {
-      "name": "RES_RS_RC6",
-      "text": "RES_RS_RC6"
-    },
-    {
-      "name": "RES_UNR_BAR_EU",
-      "text": "RES_UNR_BAR_EU"
-    },
-    {
-      "name": "RES_UNR_BAR_JA",
-      "text": "RES_UNR_BAR_JA"
-    },
-    {
-      "name": "RES_UNR_BAR_US",
-      "text": "RES_UNR_BAR_US"
-    },
-    {
-      "name": "RES_UNR_G_EU",
-      "text": "RES_UNR_G_EU"
-    },
-    {
-      "name": "RES_UNR_G_JA",
-      "text": "RES_UNR_G_JA"
-    },
-    {
-      "name": "RES_UNR_G_US",
-      "text": "RES_UNR_G_US"
-    },
-    {
-      "name": "RES_UNR_GAP_EU",
-      "text": "RES_UNR_GAP_EU"
-    },
-    {
-      "name": "RES_UNR_GAP_JA",
-      "text": "RES_UNR_GAP_JA"
-    },
-    {
-      "name": "RES_UNR_GAP_US",
-      "text": "RES_UNR_GAP_US"
-    },
-    {
-      "name": "RES_Y_EA6",
-      "text": "RES_Y_EA6"
-    },
-    {
-      "name": "RES_Y_EU",
-      "text": "RES_Y_EU"
-    },
-    {
-      "name": "RES_Y_JA",
-      "text": "RES_Y_JA"
-    },
-    {
-      "name": "RES_Y_LA6",
-      "text": "RES_Y_LA6"
-    },
-    {
-      "name": "RES_Y_RC6",
-      "text": "RES_Y_RC6"
-    },
-    {
-      "name": "RES_Y_US",
-      "text": "RES_Y_US"
-    },
-    {
-      "name": "RES_YY_EA6",
-      "text": "RES_YY_EA6"
-    },
-    {
-      "name": "RES_YY_EU",
-      "text": "RES_YY_EU"
-    },
-    {
-      "name": "RES_YY_JA",
-      "text": "RES_YY_JA"
-    },
-    {
-      "name": "RES_YY_LA6",
-      "text": "RES_YY_LA6"
-    },
-    {
-      "name": "RES_YY_RC6",
-      "text": "RES_YY_RC6"
-    },
-    {
-      "name": "RES_YY_US",
-      "text": "RES_YY_US"
-    }
-  ],
-  "al_info": null
+  ]
 }

@@ -40,7 +40,110 @@
   "msr": null,
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "epsBankCapital",
+      "text": "epsBankCapital"
+    },
+    {
+      "name": "epsdS",
+      "text": "epsdS"
+    },
+    {
+      "name": "epsEPSB",
+      "text": "epsEPSB"
+    },
+    {
+      "name": "epshG",
+      "text": "epshG"
+    },
+    {
+      "name": "epsIG",
+      "text": "epsIG"
+    },
+    {
+      "name": "epsLAMBDACM",
+      "text": "epsLAMBDACM"
+    },
+    {
+      "name": "epsLAMBDACY",
+      "text": "epsLAMBDACY"
+    },
+    {
+      "name": "epsLAMBDAIY",
+      "text": "epsLAMBDAIY"
+    },
+    {
+      "name": "epsLAMBDAK",
+      "text": "epsLAMBDAK"
+    },
+    {
+      "name": "epsLAMBDALT",
+      "text": "epsLAMBDALT"
+    },
+    {
+      "name": "epsLAMW",
+      "text": "epsLAMW"
+    },
+    {
+      "name": "epsMU",
+      "text": "epsMU"
+    },
+    {
+      "name": "epsMW",
+      "text": "epsMW"
+    },
+    {
+      "name": "epsnuB",
+      "text": "epsnuB"
+    },
+    {
+      "name": "epsPIEW",
+      "text": "epsPIEW"
+    },
+    {
+      "name": "epsPOILS",
+      "text": "epsPOILS"
+    },
+    {
+      "name": "epsPRAWS",
+      "text": "epsPRAWS"
+    },
+    {
+      "name": "epsUPSILON",
+      "text": "epsUPSILON"
+    },
+    {
+      "name": "epsUPSILONMC",
+      "text": "epsUPSILONMC"
+    },
+    {
+      "name": "epsUPSILONX",
+      "text": "epsUPSILONX"
+    },
+    {
+      "name": "epsXX",
+      "text": "epsXX"
+    },
+    {
+      "name": "epsZETACH",
+      "text": "epsZETACH"
+    },
+    {
+      "name": "epsZETAEUR",
+      "text": "epsZETAEUR"
+    },
+    {
+      "name": "fiscal_",
+      "text": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "astar",
       "text": "astar"
@@ -613,108 +716,5 @@
       "name": "zetaEUR",
       "text": "zetaEUR"
     }
-  ],
-  "shocks": [
-    {
-      "name": "epsBankCapital",
-      "text": "epsBankCapital"
-    },
-    {
-      "name": "epsdS",
-      "text": "epsdS"
-    },
-    {
-      "name": "epsEPSB",
-      "text": "epsEPSB"
-    },
-    {
-      "name": "epshG",
-      "text": "epshG"
-    },
-    {
-      "name": "epsIG",
-      "text": "epsIG"
-    },
-    {
-      "name": "epsLAMBDACM",
-      "text": "epsLAMBDACM"
-    },
-    {
-      "name": "epsLAMBDACY",
-      "text": "epsLAMBDACY"
-    },
-    {
-      "name": "epsLAMBDAIY",
-      "text": "epsLAMBDAIY"
-    },
-    {
-      "name": "epsLAMBDAK",
-      "text": "epsLAMBDAK"
-    },
-    {
-      "name": "epsLAMBDALT",
-      "text": "epsLAMBDALT"
-    },
-    {
-      "name": "epsLAMW",
-      "text": "epsLAMW"
-    },
-    {
-      "name": "epsMU",
-      "text": "epsMU"
-    },
-    {
-      "name": "epsMW",
-      "text": "epsMW"
-    },
-    {
-      "name": "epsnuB",
-      "text": "epsnuB"
-    },
-    {
-      "name": "epsPIEW",
-      "text": "epsPIEW"
-    },
-    {
-      "name": "epsPOILS",
-      "text": "epsPOILS"
-    },
-    {
-      "name": "epsPRAWS",
-      "text": "epsPRAWS"
-    },
-    {
-      "name": "epsUPSILON",
-      "text": "epsUPSILON"
-    },
-    {
-      "name": "epsUPSILONMC",
-      "text": "epsUPSILONMC"
-    },
-    {
-      "name": "epsUPSILONX",
-      "text": "epsUPSILONX"
-    },
-    {
-      "name": "epsXX",
-      "text": "epsXX"
-    },
-    {
-      "name": "epsZETACH",
-      "text": "epsZETACH"
-    },
-    {
-      "name": "epsZETAEUR",
-      "text": "epsZETAEUR"
-    },
-    {
-      "name": "fiscal_",
-      "text": "fiscal_"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    }
-  ],
-  "al_info": null
+  ]
 }

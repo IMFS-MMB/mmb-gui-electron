@@ -37,7 +37,74 @@
   "msr": null,
   "variabledim": 2,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "E_A",
+      "text": "E_A"
+    },
+    {
+      "name": "E_A_D",
+      "text": "E_A_D"
+    },
+    {
+      "name": "E_B",
+      "text": "E_B"
+    },
+    {
+      "name": "E_Bankcap",
+      "text": "E_Bankcap"
+    },
+    {
+      "name": "E_H",
+      "text": "E_H"
+    },
+    {
+      "name": "E_I",
+      "text": "E_I"
+    },
+    {
+      "name": "E_P",
+      "text": "E_P"
+    },
+    {
+      "name": "E_R",
+      "text": "E_R"
+    },
+    {
+      "name": "E_R_D",
+      "text": "E_R_D"
+    },
+    {
+      "name": "E_R_L",
+      "text": "E_R_L"
+    },
+    {
+      "name": "E_R_L_E",
+      "text": "E_R_L_E"
+    },
+    {
+      "name": "E_SIG",
+      "text": "E_SIG"
+    },
+    {
+      "name": "E_SIG_HH",
+      "text": "E_SIG_HH"
+    },
+    {
+      "name": "E_W",
+      "text": "E_W"
+    },
+    {
+      "name": "fiscal_",
+      "text": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "AP",
       "text": "AP"
@@ -1546,72 +1613,5 @@
       "name": "ZWNR2_D",
       "text": "ZWNR2_D"
     }
-  ],
-  "shocks": [
-    {
-      "name": "E_A",
-      "text": "E_A"
-    },
-    {
-      "name": "E_A_D",
-      "text": "E_A_D"
-    },
-    {
-      "name": "E_B",
-      "text": "E_B"
-    },
-    {
-      "name": "E_Bankcap",
-      "text": "E_Bankcap"
-    },
-    {
-      "name": "E_H",
-      "text": "E_H"
-    },
-    {
-      "name": "E_I",
-      "text": "E_I"
-    },
-    {
-      "name": "E_P",
-      "text": "E_P"
-    },
-    {
-      "name": "E_R",
-      "text": "E_R"
-    },
-    {
-      "name": "E_R_D",
-      "text": "E_R_D"
-    },
-    {
-      "name": "E_R_L",
-      "text": "E_R_L"
-    },
-    {
-      "name": "E_R_L_E",
-      "text": "E_R_L_E"
-    },
-    {
-      "name": "E_SIG",
-      "text": "E_SIG"
-    },
-    {
-      "name": "E_SIG_HH",
-      "text": "E_SIG_HH"
-    },
-    {
-      "name": "E_W",
-      "text": "E_W"
-    },
-    {
-      "name": "fiscal_",
-      "text": "fiscal_"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    }
-  ],
-  "al_info": null
+  ]
 }

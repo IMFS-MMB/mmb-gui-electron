@@ -71,7 +71,38 @@
   ],
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "cwsh",
+      "text": "cwsh"
+    },
+    {
+      "name": "ecsh",
+      "text": "ecsh"
+    },
+    {
+      "name": "efish",
+      "text": "efish"
+    },
+    {
+      "name": "eiish",
+      "text": "eiish"
+    },
+    {
+      "name": "exsh",
+      "text": "exsh"
+    },
+    {
+      "name": "fiscal_",
+      "text": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "cwage",
       "text": "cwage"
@@ -236,36 +267,5 @@
       "name": "yp",
       "text": "yp"
     }
-  ],
-  "shocks": [
-    {
-      "name": "cwsh",
-      "text": "cwsh"
-    },
-    {
-      "name": "ecsh",
-      "text": "ecsh"
-    },
-    {
-      "name": "efish",
-      "text": "efish"
-    },
-    {
-      "name": "eiish",
-      "text": "eiish"
-    },
-    {
-      "name": "exsh",
-      "text": "exsh"
-    },
-    {
-      "name": "fiscal_",
-      "text": "fiscal_"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    }
-  ],
-  "al_info": null
+  ]
 }

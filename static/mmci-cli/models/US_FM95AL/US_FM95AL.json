@@ -69,7 +69,21 @@
       "inflationq"
     ]
   },
-  "vars": [
+  "shocks": [
+    {
+      "name": "epsilon_p",
+      "text": "epsilon_p"
+    },
+    {
+      "name": "epsilon_y",
+      "text": "epsilon_y"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "variables": [
     {
       "name": "f",
       "text": "f"
@@ -169,20 +183,6 @@
     {
       "name": "zll",
       "text": "zll"
-    }
-  ],
-  "shocks": [
-    {
-      "name": "epsilon_p",
-      "text": "epsilon_p"
-    },
-    {
-      "name": "epsilon_y",
-      "text": "epsilon_y"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
     }
   ]
 }

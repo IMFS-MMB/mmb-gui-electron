@@ -72,7 +72,46 @@
   ],
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "bs",
+      "text": "bs"
+    },
+    {
+      "name": "fiscal_",
+      "text": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    },
+    {
+      "name": "lambdaps",
+      "text": "lambdaps"
+    },
+    {
+      "name": "lambdaws",
+      "text": "lambdaws"
+    },
+    {
+      "name": "mius",
+      "text": "mius"
+    },
+    {
+      "name": "Rs",
+      "text": "Rs"
+    },
+    {
+      "name": "upsilons",
+      "text": "upsilons"
+    },
+    {
+      "name": "zs",
+      "text": "zs"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "ARMAlambdap",
       "text": "ARMAlambdap"
@@ -281,44 +320,5 @@
       "name": "z",
       "text": "z"
     }
-  ],
-  "shocks": [
-    {
-      "name": "bs",
-      "text": "bs"
-    },
-    {
-      "name": "fiscal_",
-      "text": "fiscal_"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    },
-    {
-      "name": "lambdaps",
-      "text": "lambdaps"
-    },
-    {
-      "name": "lambdaws",
-      "text": "lambdaws"
-    },
-    {
-      "name": "mius",
-      "text": "mius"
-    },
-    {
-      "name": "Rs",
-      "text": "Rs"
-    },
-    {
-      "name": "upsilons",
-      "text": "upsilons"
-    },
-    {
-      "name": "zs",
-      "text": "zs"
-    }
-  ],
-  "al_info": null
+  ]
 }

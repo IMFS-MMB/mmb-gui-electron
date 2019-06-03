@@ -71,7 +71,114 @@
   ],
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "e_a",
+      "text": "e_a"
+    },
+    {
+      "name": "e_a_f",
+      "text": "e_a_f"
+    },
+    {
+      "name": "e_a_h",
+      "text": "e_a_h"
+    },
+    {
+      "name": "e_beta",
+      "text": "e_beta"
+    },
+    {
+      "name": "e_beta_f",
+      "text": "e_beta_f"
+    },
+    {
+      "name": "e_beta_h",
+      "text": "e_beta_h"
+    },
+    {
+      "name": "e_g",
+      "text": "e_g"
+    },
+    {
+      "name": "e_g_f",
+      "text": "e_g_f"
+    },
+    {
+      "name": "e_g_h",
+      "text": "e_g_h"
+    },
+    {
+      "name": "e_ib",
+      "text": "e_ib"
+    },
+    {
+      "name": "e_ib_f",
+      "text": "e_ib_f"
+    },
+    {
+      "name": "e_ib_h",
+      "text": "e_ib_h"
+    },
+    {
+      "name": "e_n",
+      "text": "e_n"
+    },
+    {
+      "name": "e_n_f",
+      "text": "e_n_f"
+    },
+    {
+      "name": "e_n_h",
+      "text": "e_n_h"
+    },
+    {
+      "name": "e_q",
+      "text": "e_q"
+    },
+    {
+      "name": "e_q_f",
+      "text": "e_q_f"
+    },
+    {
+      "name": "e_q_h",
+      "text": "e_q_h"
+    },
+    {
+      "name": "e_r",
+      "text": "e_r"
+    },
+    {
+      "name": "e_rL",
+      "text": "e_rL"
+    },
+    {
+      "name": "e_rL_f",
+      "text": "e_rL_f"
+    },
+    {
+      "name": "e_rL_h",
+      "text": "e_rL_h"
+    },
+    {
+      "name": "e_w",
+      "text": "e_w"
+    },
+    {
+      "name": "e_w_f",
+      "text": "e_w_f"
+    },
+    {
+      "name": "e_w_h",
+      "text": "e_w_h"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "a_f",
       "text": "a_f"
@@ -772,112 +879,5 @@
       "name": "z_hfp",
       "text": "z_hfp"
     }
-  ],
-  "shocks": [
-    {
-      "name": "e_a",
-      "text": "e_a"
-    },
-    {
-      "name": "e_a_f",
-      "text": "e_a_f"
-    },
-    {
-      "name": "e_a_h",
-      "text": "e_a_h"
-    },
-    {
-      "name": "e_beta",
-      "text": "e_beta"
-    },
-    {
-      "name": "e_beta_f",
-      "text": "e_beta_f"
-    },
-    {
-      "name": "e_beta_h",
-      "text": "e_beta_h"
-    },
-    {
-      "name": "e_g",
-      "text": "e_g"
-    },
-    {
-      "name": "e_g_f",
-      "text": "e_g_f"
-    },
-    {
-      "name": "e_g_h",
-      "text": "e_g_h"
-    },
-    {
-      "name": "e_ib",
-      "text": "e_ib"
-    },
-    {
-      "name": "e_ib_f",
-      "text": "e_ib_f"
-    },
-    {
-      "name": "e_ib_h",
-      "text": "e_ib_h"
-    },
-    {
-      "name": "e_n",
-      "text": "e_n"
-    },
-    {
-      "name": "e_n_f",
-      "text": "e_n_f"
-    },
-    {
-      "name": "e_n_h",
-      "text": "e_n_h"
-    },
-    {
-      "name": "e_q",
-      "text": "e_q"
-    },
-    {
-      "name": "e_q_f",
-      "text": "e_q_f"
-    },
-    {
-      "name": "e_q_h",
-      "text": "e_q_h"
-    },
-    {
-      "name": "e_r",
-      "text": "e_r"
-    },
-    {
-      "name": "e_rL",
-      "text": "e_rL"
-    },
-    {
-      "name": "e_rL_f",
-      "text": "e_rL_f"
-    },
-    {
-      "name": "e_rL_h",
-      "text": "e_rL_h"
-    },
-    {
-      "name": "e_w",
-      "text": "e_w"
-    },
-    {
-      "name": "e_w_f",
-      "text": "e_w_f"
-    },
-    {
-      "name": "e_w_h",
-      "text": "e_w_h"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    }
-  ],
-  "al_info": null
+  ]
 }

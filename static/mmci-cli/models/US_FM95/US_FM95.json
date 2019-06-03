@@ -38,7 +38,22 @@
   "msr": null,
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "epsilon_p",
+      "text": "epsilon_p"
+    },
+    {
+      "name": "epsilon_y",
+      "text": "epsilon_y"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "f",
       "text": "f"
@@ -87,20 +102,5 @@
       "name": "ytilde",
       "text": "ytilde"
     }
-  ],
-  "shocks": [
-    {
-      "name": "epsilon_p",
-      "text": "epsilon_p"
-    },
-    {
-      "name": "epsilon_y",
-      "text": "epsilon_y"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    }
-  ],
-  "al_info": null
+  ]
 }

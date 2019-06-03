@@ -71,7 +71,70 @@
   ],
   "variabledim": 2,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "e_prefc",
+      "text": "e_prefc"
+    },
+    {
+      "name": "e_prefc_s",
+      "text": "e_prefc_s"
+    },
+    {
+      "name": "e_prefd",
+      "text": "e_prefd"
+    },
+    {
+      "name": "e_prefd_com",
+      "text": "e_prefd_com"
+    },
+    {
+      "name": "e_prefd_s",
+      "text": "e_prefd_s"
+    },
+    {
+      "name": "e_premium",
+      "text": "e_premium"
+    },
+    {
+      "name": "e_risk",
+      "text": "e_risk"
+    },
+    {
+      "name": "e_risk_s",
+      "text": "e_risk_s"
+    },
+    {
+      "name": "e_tech",
+      "text": "e_tech"
+    },
+    {
+      "name": "e_techc",
+      "text": "e_techc"
+    },
+    {
+      "name": "e_techc_com",
+      "text": "e_techc_com"
+    },
+    {
+      "name": "e_techc_s",
+      "text": "e_techc_s"
+    },
+    {
+      "name": "e_techd",
+      "text": "e_techd"
+    },
+    {
+      "name": "e_techd_s",
+      "text": "e_techd_s"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "b",
       "text": "b"
@@ -912,68 +975,5 @@
       "name": "yf_s",
       "text": "yf_s"
     }
-  ],
-  "shocks": [
-    {
-      "name": "e_prefc",
-      "text": "e_prefc"
-    },
-    {
-      "name": "e_prefc_s",
-      "text": "e_prefc_s"
-    },
-    {
-      "name": "e_prefd",
-      "text": "e_prefd"
-    },
-    {
-      "name": "e_prefd_com",
-      "text": "e_prefd_com"
-    },
-    {
-      "name": "e_prefd_s",
-      "text": "e_prefd_s"
-    },
-    {
-      "name": "e_premium",
-      "text": "e_premium"
-    },
-    {
-      "name": "e_risk",
-      "text": "e_risk"
-    },
-    {
-      "name": "e_risk_s",
-      "text": "e_risk_s"
-    },
-    {
-      "name": "e_tech",
-      "text": "e_tech"
-    },
-    {
-      "name": "e_techc",
-      "text": "e_techc"
-    },
-    {
-      "name": "e_techc_com",
-      "text": "e_techc_com"
-    },
-    {
-      "name": "e_techc_s",
-      "text": "e_techc_s"
-    },
-    {
-      "name": "e_techd",
-      "text": "e_techd"
-    },
-    {
-      "name": "e_techd_s",
-      "text": "e_techd_s"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    }
-  ],
-  "al_info": null
+  ]
 }

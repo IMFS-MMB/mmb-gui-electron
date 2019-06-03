@@ -37,7 +37,38 @@
   "msr": null,
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "e_a",
+      "text": "e_a"
+    },
+    {
+      "name": "e_Gamma",
+      "text": "e_Gamma"
+    },
+    {
+      "name": "e_ksi",
+      "text": "e_ksi"
+    },
+    {
+      "name": "e_Ne",
+      "text": "e_Ne"
+    },
+    {
+      "name": "e_psi",
+      "text": "e_psi"
+    },
+    {
+      "name": "fiscal_",
+      "text": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "a",
       "text": "a"
@@ -562,36 +593,5 @@
       "name": "Zf",
       "text": "Zf"
     }
-  ],
-  "shocks": [
-    {
-      "name": "e_a",
-      "text": "e_a"
-    },
-    {
-      "name": "e_Gamma",
-      "text": "e_Gamma"
-    },
-    {
-      "name": "e_ksi",
-      "text": "e_ksi"
-    },
-    {
-      "name": "e_Ne",
-      "text": "e_Ne"
-    },
-    {
-      "name": "e_psi",
-      "text": "e_psi"
-    },
-    {
-      "name": "fiscal_",
-      "text": "fiscal_"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    }
-  ],
-  "al_info": null
+  ]
 }

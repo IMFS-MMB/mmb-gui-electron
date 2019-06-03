@@ -125,7 +125,41 @@
       "interest"
     ]
   },
-  "vars": [
+  "shocks": [
+    {
+      "name": "ea",
+      "text": "ea"
+    },
+    {
+      "name": "eb",
+      "text": "eb"
+    },
+    {
+      "name": "em",
+      "text": "em"
+    },
+    {
+      "name": "epinf",
+      "text": "epinf"
+    },
+    {
+      "name": "eqs",
+      "text": "eqs"
+    },
+    {
+      "name": "ew",
+      "text": "ew"
+    },
+    {
+      "name": "fiscal_",
+      "text": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "variables": [
     {
       "name": "a",
       "text": "a"
@@ -301,40 +335,6 @@
     {
       "name": "zcapf",
       "text": "zcapf"
-    }
-  ],
-  "shocks": [
-    {
-      "name": "ea",
-      "text": "ea"
-    },
-    {
-      "name": "eb",
-      "text": "eb"
-    },
-    {
-      "name": "em",
-      "text": "em"
-    },
-    {
-      "name": "epinf",
-      "text": "epinf"
-    },
-    {
-      "name": "eqs",
-      "text": "eqs"
-    },
-    {
-      "name": "ew",
-      "text": "ew"
-    },
-    {
-      "name": "fiscal_",
-      "text": "fiscal_"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
     }
   ]
 }

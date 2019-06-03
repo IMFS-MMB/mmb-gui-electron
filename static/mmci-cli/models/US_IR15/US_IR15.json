@@ -32,7 +32,42 @@
   "msr": null,
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "epsilon_pi",
+      "text": "epsilon_pi"
+    },
+    {
+      "name": "epsilon_tau",
+      "text": "epsilon_tau"
+    },
+    {
+      "name": "epsilon_v",
+      "text": "epsilon_v"
+    },
+    {
+      "name": "epsilon_y",
+      "text": "epsilon_y"
+    },
+    {
+      "name": "eta_16",
+      "text": "eta_16"
+    },
+    {
+      "name": "eta_4",
+      "text": "eta_4"
+    },
+    {
+      "name": "eta_8",
+      "text": "eta_8"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "epsilon_r",
       "text": "epsilon_r"
@@ -177,40 +212,5 @@
       "name": "y_8_a",
       "text": "y_8_a"
     }
-  ],
-  "shocks": [
-    {
-      "name": "epsilon_pi",
-      "text": "epsilon_pi"
-    },
-    {
-      "name": "epsilon_tau",
-      "text": "epsilon_tau"
-    },
-    {
-      "name": "epsilon_v",
-      "text": "epsilon_v"
-    },
-    {
-      "name": "epsilon_y",
-      "text": "epsilon_y"
-    },
-    {
-      "name": "eta_16",
-      "text": "eta_16"
-    },
-    {
-      "name": "eta_4",
-      "text": "eta_4"
-    },
-    {
-      "name": "eta_8",
-      "text": "eta_8"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    }
-  ],
-  "al_info": null
+  ]
 }

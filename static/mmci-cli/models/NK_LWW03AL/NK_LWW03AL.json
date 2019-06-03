@@ -88,7 +88,21 @@
       "outputgap"
     ]
   },
-  "vars": [
+  "shocks": [
+    {
+      "name": "interest_",
+      "text": "interest_"
+    },
+    {
+      "name": "pdotsh_",
+      "text": "pdotsh_"
+    },
+    {
+      "name": "rstar_",
+      "text": "rstar_"
+    }
+  ],
+  "variables": [
     {
       "name": "drff",
       "text": "drff"
@@ -148,20 +162,6 @@
     {
       "name": "ygap",
       "text": "ygap"
-    }
-  ],
-  "shocks": [
-    {
-      "name": "interest_",
-      "text": "interest_"
-    },
-    {
-      "name": "pdotsh_",
-      "text": "pdotsh_"
-    },
-    {
-      "name": "rstar_",
-      "text": "rstar_"
     }
   ]
 }

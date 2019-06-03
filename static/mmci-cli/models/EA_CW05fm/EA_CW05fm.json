@@ -72,7 +72,22 @@
   ],
   "variabledim": 2,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "e_cw",
+      "text": "e_cw"
+    },
+    {
+      "name": "e_d",
+      "text": "e_d"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "cwp",
       "text": "cwp"
@@ -217,20 +232,5 @@
       "name": "vindex",
       "text": "vindex"
     }
-  ],
-  "shocks": [
-    {
-      "name": "e_cw",
-      "text": "e_cw"
-    },
-    {
-      "name": "e_d",
-      "text": "e_d"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    }
-  ],
-  "al_info": null
+  ]
 }

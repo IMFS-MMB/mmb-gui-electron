@@ -74,7 +74,30 @@
   ],
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "eps_muups_",
+      "text": "eps_muups_"
+    },
+    {
+      "name": "eps_muz_",
+      "text": "eps_muz_"
+    },
+    {
+      "name": "epsilon_M_",
+      "text": "epsilon_M_"
+    },
+    {
+      "name": "epsilon_t_",
+      "text": "epsilon_t_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "c_t",
       "text": "c_t"
@@ -355,28 +378,5 @@
       "name": "ytildef_t",
       "text": "ytildef_t"
     }
-  ],
-  "shocks": [
-    {
-      "name": "eps_muups_",
-      "text": "eps_muups_"
-    },
-    {
-      "name": "eps_muz_",
-      "text": "eps_muz_"
-    },
-    {
-      "name": "epsilon_M_",
-      "text": "epsilon_M_"
-    },
-    {
-      "name": "epsilon_t_",
-      "text": "epsilon_t_"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    }
-  ],
-  "al_info": null
+  ]
 }

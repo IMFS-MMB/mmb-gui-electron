@@ -74,7 +74,46 @@
   ],
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "ekt",
+      "text": "ekt"
+    },
+    {
+      "name": "ewt",
+      "text": "ewt"
+    },
+    {
+      "name": "ezt",
+      "text": "ezt"
+    },
+    {
+      "name": "fiscal_",
+      "text": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    },
+    {
+      "name": "uct",
+      "text": "uct"
+    },
+    {
+      "name": "ugt",
+      "text": "ugt"
+    },
+    {
+      "name": "ukt",
+      "text": "ukt"
+    },
+    {
+      "name": "uwt",
+      "text": "uwt"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "bdt",
       "text": "bdt"
@@ -327,44 +366,5 @@
       "name": "ytF",
       "text": "ytF"
     }
-  ],
-  "shocks": [
-    {
-      "name": "ekt",
-      "text": "ekt"
-    },
-    {
-      "name": "ewt",
-      "text": "ewt"
-    },
-    {
-      "name": "ezt",
-      "text": "ezt"
-    },
-    {
-      "name": "fiscal_",
-      "text": "fiscal_"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    },
-    {
-      "name": "uct",
-      "text": "uct"
-    },
-    {
-      "name": "ugt",
-      "text": "ugt"
-    },
-    {
-      "name": "ukt",
-      "text": "ukt"
-    },
-    {
-      "name": "uwt",
-      "text": "uwt"
-    }
-  ],
-  "al_info": null
+  ]
 }

@@ -38,7 +38,214 @@
   "msr": null,
   "variabledim": 2,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "dlfgdp_",
+      "text": "dlfgdp_"
+    },
+    {
+      "name": "dlfpc_",
+      "text": "dlfpc_"
+    },
+    {
+      "name": "dlfpxr_",
+      "text": "dlfpxr_"
+    },
+    {
+      "name": "dlpl_",
+      "text": "dlpl_"
+    },
+    {
+      "name": "dlpxp_",
+      "text": "dlpxp_"
+    },
+    {
+      "name": "ec_",
+      "text": "ec_"
+    },
+    {
+      "name": "ecdo_",
+      "text": "ecdo_"
+    },
+    {
+      "name": "ecdv_",
+      "text": "ecdv_"
+    },
+    {
+      "name": "egsi_",
+      "text": "egsi_"
+    },
+    {
+      "name": "egsl_",
+      "text": "egsl_"
+    },
+    {
+      "name": "egso_",
+      "text": "egso_"
+    },
+    {
+      "name": "eh_",
+      "text": "eh_"
+    },
+    {
+      "name": "emo_",
+      "text": "emo_"
+    },
+    {
+      "name": "epd_",
+      "text": "epd_"
+    },
+    {
+      "name": "eps_",
+      "text": "eps_"
+    },
+    {
+      "name": "ex_",
+      "text": "ex_"
+    },
+    {
+      "name": "fiscal_",
+      "text": "fiscal_"
+    },
+    {
+      "name": "gftrd_",
+      "text": "gftrd_"
+    },
+    {
+      "name": "gstrd_",
+      "text": "gstrd_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    },
+    {
+      "name": "kimt_",
+      "text": "kimt_"
+    },
+    {
+      "name": "kio_",
+      "text": "kio_"
+    },
+    {
+      "name": "leor_",
+      "text": "leor_"
+    },
+    {
+      "name": "lep_",
+      "text": "lep_"
+    },
+    {
+      "name": "lf_",
+      "text": "lf_"
+    },
+    {
+      "name": "lhp_",
+      "text": "lhp_"
+    },
+    {
+      "name": "lwps_",
+      "text": "lwps_"
+    },
+    {
+      "name": "pcengr_",
+      "text": "pcengr_"
+    },
+    {
+      "name": "pcr_",
+      "text": "pcr_"
+    },
+    {
+      "name": "pgasr_",
+      "text": "pgasr_"
+    },
+    {
+      "name": "pmor_",
+      "text": "pmor_"
+    },
+    {
+      "name": "poilr_",
+      "text": "poilr_"
+    },
+    {
+      "name": "ptr_",
+      "text": "ptr_"
+    },
+    {
+      "name": "rcar_",
+      "text": "rcar_"
+    },
+    {
+      "name": "rcbe_",
+      "text": "rcbe_"
+    },
+    {
+      "name": "rdp_",
+      "text": "rdp_"
+    },
+    {
+      "name": "rffvar_",
+      "text": "rffvar_"
+    },
+    {
+      "name": "rg10e_",
+      "text": "rg10e_"
+    },
+    {
+      "name": "rg5e_",
+      "text": "rg5e_"
+    },
+    {
+      "name": "rgfint_",
+      "text": "rgfint_"
+    },
+    {
+      "name": "rme_",
+      "text": "rme_"
+    },
+    {
+      "name": "rtbe_",
+      "text": "rtbe_"
+    },
+    {
+      "name": "rtr_",
+      "text": "rtr_"
+    },
+    {
+      "name": "trfci_",
+      "text": "trfci_"
+    },
+    {
+      "name": "trfp_",
+      "text": "trfp_"
+    },
+    {
+      "name": "trsci_",
+      "text": "trsci_"
+    },
+    {
+      "name": "trsib_",
+      "text": "trsib_"
+    },
+    {
+      "name": "trsp_",
+      "text": "trsp_"
+    },
+    {
+      "name": "trssi_",
+      "text": "trssi_"
+    },
+    {
+      "name": "yhibnr_",
+      "text": "yhibnr_"
+    },
+    {
+      "name": "ynidnr_",
+      "text": "ynidnr_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "cashfl",
       "text": "cashfl"
@@ -1167,212 +1374,5 @@
       "name": "zynid",
       "text": "zynid"
     }
-  ],
-  "shocks": [
-    {
-      "name": "dlfgdp_",
-      "text": "dlfgdp_"
-    },
-    {
-      "name": "dlfpc_",
-      "text": "dlfpc_"
-    },
-    {
-      "name": "dlfpxr_",
-      "text": "dlfpxr_"
-    },
-    {
-      "name": "dlpl_",
-      "text": "dlpl_"
-    },
-    {
-      "name": "dlpxp_",
-      "text": "dlpxp_"
-    },
-    {
-      "name": "ec_",
-      "text": "ec_"
-    },
-    {
-      "name": "ecdo_",
-      "text": "ecdo_"
-    },
-    {
-      "name": "ecdv_",
-      "text": "ecdv_"
-    },
-    {
-      "name": "egsi_",
-      "text": "egsi_"
-    },
-    {
-      "name": "egsl_",
-      "text": "egsl_"
-    },
-    {
-      "name": "egso_",
-      "text": "egso_"
-    },
-    {
-      "name": "eh_",
-      "text": "eh_"
-    },
-    {
-      "name": "emo_",
-      "text": "emo_"
-    },
-    {
-      "name": "epd_",
-      "text": "epd_"
-    },
-    {
-      "name": "eps_",
-      "text": "eps_"
-    },
-    {
-      "name": "ex_",
-      "text": "ex_"
-    },
-    {
-      "name": "fiscal_",
-      "text": "fiscal_"
-    },
-    {
-      "name": "gftrd_",
-      "text": "gftrd_"
-    },
-    {
-      "name": "gstrd_",
-      "text": "gstrd_"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    },
-    {
-      "name": "kimt_",
-      "text": "kimt_"
-    },
-    {
-      "name": "kio_",
-      "text": "kio_"
-    },
-    {
-      "name": "leor_",
-      "text": "leor_"
-    },
-    {
-      "name": "lep_",
-      "text": "lep_"
-    },
-    {
-      "name": "lf_",
-      "text": "lf_"
-    },
-    {
-      "name": "lhp_",
-      "text": "lhp_"
-    },
-    {
-      "name": "lwps_",
-      "text": "lwps_"
-    },
-    {
-      "name": "pcengr_",
-      "text": "pcengr_"
-    },
-    {
-      "name": "pcr_",
-      "text": "pcr_"
-    },
-    {
-      "name": "pgasr_",
-      "text": "pgasr_"
-    },
-    {
-      "name": "pmor_",
-      "text": "pmor_"
-    },
-    {
-      "name": "poilr_",
-      "text": "poilr_"
-    },
-    {
-      "name": "ptr_",
-      "text": "ptr_"
-    },
-    {
-      "name": "rcar_",
-      "text": "rcar_"
-    },
-    {
-      "name": "rcbe_",
-      "text": "rcbe_"
-    },
-    {
-      "name": "rdp_",
-      "text": "rdp_"
-    },
-    {
-      "name": "rffvar_",
-      "text": "rffvar_"
-    },
-    {
-      "name": "rg10e_",
-      "text": "rg10e_"
-    },
-    {
-      "name": "rg5e_",
-      "text": "rg5e_"
-    },
-    {
-      "name": "rgfint_",
-      "text": "rgfint_"
-    },
-    {
-      "name": "rme_",
-      "text": "rme_"
-    },
-    {
-      "name": "rtbe_",
-      "text": "rtbe_"
-    },
-    {
-      "name": "rtr_",
-      "text": "rtr_"
-    },
-    {
-      "name": "trfci_",
-      "text": "trfci_"
-    },
-    {
-      "name": "trfp_",
-      "text": "trfp_"
-    },
-    {
-      "name": "trsci_",
-      "text": "trsci_"
-    },
-    {
-      "name": "trsib_",
-      "text": "trsib_"
-    },
-    {
-      "name": "trsp_",
-      "text": "trsp_"
-    },
-    {
-      "name": "trssi_",
-      "text": "trssi_"
-    },
-    {
-      "name": "yhibnr_",
-      "text": "yhibnr_"
-    },
-    {
-      "name": "ynidnr_",
-      "text": "ynidnr_"
-    }
-  ],
-  "al_info": null
+  ]
 }

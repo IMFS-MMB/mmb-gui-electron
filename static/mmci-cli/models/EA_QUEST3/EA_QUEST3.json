@@ -73,7 +73,90 @@
   ],
   "variabledim": 2,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "E_EPS_C",
+      "text": "E_EPS_C"
+    },
+    {
+      "name": "E_EPS_ETA",
+      "text": "E_EPS_ETA"
+    },
+    {
+      "name": "E_EPS_ETAM",
+      "text": "E_EPS_ETAM"
+    },
+    {
+      "name": "E_EPS_ETAX",
+      "text": "E_EPS_ETAX"
+    },
+    {
+      "name": "E_EPS_EX",
+      "text": "E_EPS_EX"
+    },
+    {
+      "name": "E_EPS_IG",
+      "text": "E_EPS_IG"
+    },
+    {
+      "name": "E_EPS_INOMW",
+      "text": "E_EPS_INOMW"
+    },
+    {
+      "name": "E_EPS_L",
+      "text": "E_EPS_L"
+    },
+    {
+      "name": "E_EPS_LOL",
+      "text": "E_EPS_LOL"
+    },
+    {
+      "name": "E_EPS_M",
+      "text": "E_EPS_M"
+    },
+    {
+      "name": "E_EPS_PPI",
+      "text": "E_EPS_PPI"
+    },
+    {
+      "name": "E_EPS_PW",
+      "text": "E_EPS_PW"
+    },
+    {
+      "name": "E_EPS_RPREME",
+      "text": "E_EPS_RPREME"
+    },
+    {
+      "name": "E_EPS_RPREMK",
+      "text": "E_EPS_RPREMK"
+    },
+    {
+      "name": "E_EPS_TR",
+      "text": "E_EPS_TR"
+    },
+    {
+      "name": "E_EPS_W",
+      "text": "E_EPS_W"
+    },
+    {
+      "name": "E_EPS_Y",
+      "text": "E_EPS_Y"
+    },
+    {
+      "name": "E_EPS_YW",
+      "text": "E_EPS_YW"
+    },
+    {
+      "name": "fiscal_",
+      "text": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "E_BGYN",
       "text": "E_BGYN"
@@ -514,88 +597,5 @@
       "name": "outputgap",
       "text": "outputgap"
     }
-  ],
-  "shocks": [
-    {
-      "name": "E_EPS_C",
-      "text": "E_EPS_C"
-    },
-    {
-      "name": "E_EPS_ETA",
-      "text": "E_EPS_ETA"
-    },
-    {
-      "name": "E_EPS_ETAM",
-      "text": "E_EPS_ETAM"
-    },
-    {
-      "name": "E_EPS_ETAX",
-      "text": "E_EPS_ETAX"
-    },
-    {
-      "name": "E_EPS_EX",
-      "text": "E_EPS_EX"
-    },
-    {
-      "name": "E_EPS_IG",
-      "text": "E_EPS_IG"
-    },
-    {
-      "name": "E_EPS_INOMW",
-      "text": "E_EPS_INOMW"
-    },
-    {
-      "name": "E_EPS_L",
-      "text": "E_EPS_L"
-    },
-    {
-      "name": "E_EPS_LOL",
-      "text": "E_EPS_LOL"
-    },
-    {
-      "name": "E_EPS_M",
-      "text": "E_EPS_M"
-    },
-    {
-      "name": "E_EPS_PPI",
-      "text": "E_EPS_PPI"
-    },
-    {
-      "name": "E_EPS_PW",
-      "text": "E_EPS_PW"
-    },
-    {
-      "name": "E_EPS_RPREME",
-      "text": "E_EPS_RPREME"
-    },
-    {
-      "name": "E_EPS_RPREMK",
-      "text": "E_EPS_RPREMK"
-    },
-    {
-      "name": "E_EPS_TR",
-      "text": "E_EPS_TR"
-    },
-    {
-      "name": "E_EPS_W",
-      "text": "E_EPS_W"
-    },
-    {
-      "name": "E_EPS_Y",
-      "text": "E_EPS_Y"
-    },
-    {
-      "name": "E_EPS_YW",
-      "text": "E_EPS_YW"
-    },
-    {
-      "name": "fiscal_",
-      "text": "fiscal_"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    }
-  ],
-  "al_info": null
+  ]
 }

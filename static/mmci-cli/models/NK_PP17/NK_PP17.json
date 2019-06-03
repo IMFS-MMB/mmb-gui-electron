@@ -72,7 +72,30 @@
   ],
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "eta_a",
+      "text": "eta_a"
+    },
+    {
+      "name": "eta_l",
+      "text": "eta_l"
+    },
+    {
+      "name": "eta_m",
+      "text": "eta_m"
+    },
+    {
+      "name": "eta_n",
+      "text": "eta_n"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "a",
       "text": "a"
@@ -177,28 +200,5 @@
       "name": "zf",
       "text": "zf"
     }
-  ],
-  "shocks": [
-    {
-      "name": "eta_a",
-      "text": "eta_a"
-    },
-    {
-      "name": "eta_l",
-      "text": "eta_l"
-    },
-    {
-      "name": "eta_m",
-      "text": "eta_m"
-    },
-    {
-      "name": "eta_n",
-      "text": "eta_n"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    }
-  ],
-  "al_info": null
+  ]
 }

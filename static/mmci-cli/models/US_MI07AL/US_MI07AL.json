@@ -90,7 +90,21 @@
       "u"
     ]
   },
-  "vars": [
+  "shocks": [
+    {
+      "name": "interest_",
+      "text": "interest_"
+    },
+    {
+      "name": "v_r",
+      "text": "v_r"
+    },
+    {
+      "name": "v_u",
+      "text": "v_u"
+    }
+  ],
+  "variables": [
     {
       "name": "i",
       "text": "i"
@@ -150,20 +164,6 @@
     {
       "name": "x_tilde",
       "text": "x_tilde"
-    }
-  ],
-  "shocks": [
-    {
-      "name": "interest_",
-      "text": "interest_"
-    },
-    {
-      "name": "v_r",
-      "text": "v_r"
-    },
-    {
-      "name": "v_u",
-      "text": "v_u"
     }
   ]
 }

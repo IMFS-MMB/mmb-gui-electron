@@ -72,7 +72,38 @@
   ],
   "variabledim": 2,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "e_cw_eu",
+      "text": "e_cw_eu"
+    },
+    {
+      "name": "e_cw_ja",
+      "text": "e_cw_ja"
+    },
+    {
+      "name": "e_cw_us",
+      "text": "e_cw_us"
+    },
+    {
+      "name": "e_d_eu",
+      "text": "e_d_eu"
+    },
+    {
+      "name": "e_d_ja",
+      "text": "e_d_ja"
+    },
+    {
+      "name": "e_d_us",
+      "text": "e_d_us"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "cwp_eu",
       "text": "cwp_eu"
@@ -209,36 +240,5 @@
       "name": "rl_us",
       "text": "rl_us"
     }
-  ],
-  "shocks": [
-    {
-      "name": "e_cw_eu",
-      "text": "e_cw_eu"
-    },
-    {
-      "name": "e_cw_ja",
-      "text": "e_cw_ja"
-    },
-    {
-      "name": "e_cw_us",
-      "text": "e_cw_us"
-    },
-    {
-      "name": "e_d_eu",
-      "text": "e_d_eu"
-    },
-    {
-      "name": "e_d_ja",
-      "text": "e_d_ja"
-    },
-    {
-      "name": "e_d_us",
-      "text": "e_d_us"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    }
-  ],
-  "al_info": null
+  ]
 }

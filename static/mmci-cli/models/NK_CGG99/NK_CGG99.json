@@ -72,7 +72,22 @@
   ],
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "demand_",
+      "text": "demand_"
+    },
+    {
+      "name": "inflation_",
+      "text": "inflation_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "i",
       "text": "i"
@@ -101,20 +116,5 @@
       "name": "x",
       "text": "x"
     }
-  ],
-  "shocks": [
-    {
-      "name": "demand_",
-      "text": "demand_"
-    },
-    {
-      "name": "inflation_",
-      "text": "inflation_"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    }
-  ],
-  "al_info": null
+  ]
 }

@@ -38,7 +38,30 @@
   "msr": null,
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "epsa",
+      "text": "epsa"
+    },
+    {
+      "name": "epseta",
+      "text": "epseta"
+    },
+    {
+      "name": "epsy",
+      "text": "epsy"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    },
+    {
+      "name": "mu_p",
+      "text": "mu_p"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "a",
       "text": "a"
@@ -111,28 +134,5 @@
       "name": "y_stern",
       "text": "y_stern"
     }
-  ],
-  "shocks": [
-    {
-      "name": "epsa",
-      "text": "epsa"
-    },
-    {
-      "name": "epseta",
-      "text": "epseta"
-    },
-    {
-      "name": "epsy",
-      "text": "epsy"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    },
-    {
-      "name": "mu_p",
-      "text": "mu_p"
-    }
-  ],
-  "al_info": null
+  ]
 }

@@ -37,7 +37,30 @@
   "msr": null,
   "variabledim": 2,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "interest_",
+      "text": "interest_"
+    },
+    {
+      "name": "u_a",
+      "text": "u_a"
+    },
+    {
+      "name": "u_b",
+      "text": "u_b"
+    },
+    {
+      "name": "u_e",
+      "text": "u_e"
+    },
+    {
+      "name": "u_x",
+      "text": "u_x"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "a",
       "text": "a"
@@ -194,28 +217,5 @@
       "name": "z_f",
       "text": "z_f"
     }
-  ],
-  "shocks": [
-    {
-      "name": "interest_",
-      "text": "interest_"
-    },
-    {
-      "name": "u_a",
-      "text": "u_a"
-    },
-    {
-      "name": "u_b",
-      "text": "u_b"
-    },
-    {
-      "name": "u_e",
-      "text": "u_e"
-    },
-    {
-      "name": "u_x",
-      "text": "u_x"
-    }
-  ],
-  "al_info": null
+  ]
 }

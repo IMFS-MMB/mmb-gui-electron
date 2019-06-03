@@ -71,7 +71,26 @@
   ],
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "eps_a1",
+      "text": "eps_a1"
+    },
+    {
+      "name": "eps_a2",
+      "text": "eps_a2"
+    },
+    {
+      "name": "eps_a3",
+      "text": "eps_a3"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "a1",
       "text": "a1"
@@ -184,24 +203,5 @@
       "name": "xi",
       "text": "xi"
     }
-  ],
-  "shocks": [
-    {
-      "name": "eps_a1",
-      "text": "eps_a1"
-    },
-    {
-      "name": "eps_a2",
-      "text": "eps_a2"
-    },
-    {
-      "name": "eps_a3",
-      "text": "eps_a3"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    }
-  ],
-  "al_info": null
+  ]
 }

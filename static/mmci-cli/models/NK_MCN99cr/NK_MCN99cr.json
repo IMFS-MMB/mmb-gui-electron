@@ -71,7 +71,30 @@
   ],
   "variabledim": 2,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "e_",
+      "text": "e_"
+    },
+    {
+      "name": "ev_",
+      "text": "ev_"
+    },
+    {
+      "name": "ey_",
+      "text": "ey_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    },
+    {
+      "name": "u_",
+      "text": "u_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "eta",
       "text": "eta"
@@ -128,28 +151,5 @@
       "name": "ytilde",
       "text": "ytilde"
     }
-  ],
-  "shocks": [
-    {
-      "name": "e_",
-      "text": "e_"
-    },
-    {
-      "name": "ev_",
-      "text": "ev_"
-    },
-    {
-      "name": "ey_",
-      "text": "ey_"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    },
-    {
-      "name": "u_",
-      "text": "u_"
-    }
-  ],
-  "al_info": null
+  ]
 }

@@ -39,7 +39,46 @@
   "msr": null,
   "variabledim": 2,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "e_epsil",
+      "text": "e_epsil"
+    },
+    {
+      "name": "e_lambdaf",
+      "text": "e_lambdaf"
+    },
+    {
+      "name": "e_muup",
+      "text": "e_muup"
+    },
+    {
+      "name": "e_muzstar",
+      "text": "e_muzstar"
+    },
+    {
+      "name": "e_pitarget",
+      "text": "e_pitarget"
+    },
+    {
+      "name": "e_zetac",
+      "text": "e_zetac"
+    },
+    {
+      "name": "e_zetai",
+      "text": "e_zetai"
+    },
+    {
+      "name": "fiscal_",
+      "text": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "c",
       "text": "c"
@@ -272,44 +311,5 @@
       "name": "zetai",
       "text": "zetai"
     }
-  ],
-  "shocks": [
-    {
-      "name": "e_epsil",
-      "text": "e_epsil"
-    },
-    {
-      "name": "e_lambdaf",
-      "text": "e_lambdaf"
-    },
-    {
-      "name": "e_muup",
-      "text": "e_muup"
-    },
-    {
-      "name": "e_muzstar",
-      "text": "e_muzstar"
-    },
-    {
-      "name": "e_pitarget",
-      "text": "e_pitarget"
-    },
-    {
-      "name": "e_zetac",
-      "text": "e_zetac"
-    },
-    {
-      "name": "e_zetai",
-      "text": "e_zetai"
-    },
-    {
-      "name": "fiscal_",
-      "text": "fiscal_"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    }
-  ],
-  "al_info": null
+  ]
 }

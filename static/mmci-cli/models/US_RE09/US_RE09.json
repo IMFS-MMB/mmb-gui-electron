@@ -70,7 +70,34 @@
   ],
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "e_deltaa",
+      "text": "e_deltaa"
+    },
+    {
+      "name": "e_eps",
+      "text": "e_eps"
+    },
+    {
+      "name": "e_g",
+      "text": "e_g"
+    },
+    {
+      "name": "e_gam",
+      "text": "e_gam"
+    },
+    {
+      "name": "e_nuu",
+      "text": "e_nuu"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "a",
       "text": "a"
@@ -167,32 +194,5 @@
       "name": "zwage",
       "text": "zwage"
     }
-  ],
-  "shocks": [
-    {
-      "name": "e_deltaa",
-      "text": "e_deltaa"
-    },
-    {
-      "name": "e_eps",
-      "text": "e_eps"
-    },
-    {
-      "name": "e_g",
-      "text": "e_g"
-    },
-    {
-      "name": "e_gam",
-      "text": "e_gam"
-    },
-    {
-      "name": "e_nuu",
-      "text": "e_nuu"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    }
-  ],
-  "al_info": null
+  ]
 }

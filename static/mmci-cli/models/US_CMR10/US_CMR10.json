@@ -39,7 +39,62 @@
   "msr": null,
   "variabledim": 2,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "e_chiiU",
+      "text": "e_chiiU"
+    },
+    {
+      "name": "e_epsilU",
+      "text": "e_epsilU"
+    },
+    {
+      "name": "e_gammaU",
+      "text": "e_gammaU"
+    },
+    {
+      "name": "e_gU",
+      "text": "e_gU"
+    },
+    {
+      "name": "e_lambdafU",
+      "text": "e_lambdafU"
+    },
+    {
+      "name": "e_muupU",
+      "text": "e_muupU"
+    },
+    {
+      "name": "e_muzstarU",
+      "text": "e_muzstarU"
+    },
+    {
+      "name": "e_pitargetU",
+      "text": "e_pitargetU"
+    },
+    {
+      "name": "e_sigmaU",
+      "text": "e_sigmaU"
+    },
+    {
+      "name": "e_tauoU",
+      "text": "e_tauoU"
+    },
+    {
+      "name": "e_xbU",
+      "text": "e_xbU"
+    },
+    {
+      "name": "e_zetaiU",
+      "text": "e_zetaiU"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "btotflexU",
       "text": "btotflexU"
@@ -352,60 +407,5 @@
       "name": "zetaiU",
       "text": "zetaiU"
     }
-  ],
-  "shocks": [
-    {
-      "name": "e_chiiU",
-      "text": "e_chiiU"
-    },
-    {
-      "name": "e_epsilU",
-      "text": "e_epsilU"
-    },
-    {
-      "name": "e_gammaU",
-      "text": "e_gammaU"
-    },
-    {
-      "name": "e_gU",
-      "text": "e_gU"
-    },
-    {
-      "name": "e_lambdafU",
-      "text": "e_lambdafU"
-    },
-    {
-      "name": "e_muupU",
-      "text": "e_muupU"
-    },
-    {
-      "name": "e_muzstarU",
-      "text": "e_muzstarU"
-    },
-    {
-      "name": "e_pitargetU",
-      "text": "e_pitargetU"
-    },
-    {
-      "name": "e_sigmaU",
-      "text": "e_sigmaU"
-    },
-    {
-      "name": "e_tauoU",
-      "text": "e_tauoU"
-    },
-    {
-      "name": "e_xbU",
-      "text": "e_xbU"
-    },
-    {
-      "name": "e_zetaiU",
-      "text": "e_zetaiU"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    }
-  ],
-  "al_info": null
+  ]
 }

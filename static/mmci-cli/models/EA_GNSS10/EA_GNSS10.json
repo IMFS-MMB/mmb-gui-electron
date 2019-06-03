@@ -72,7 +72,62 @@
   ],
   "variabledim": 2,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "e_A_e",
+      "text": "e_A_e"
+    },
+    {
+      "name": "e_eps_K_b",
+      "text": "e_eps_K_b"
+    },
+    {
+      "name": "e_j",
+      "text": "e_j"
+    },
+    {
+      "name": "e_l",
+      "text": "e_l"
+    },
+    {
+      "name": "e_me",
+      "text": "e_me"
+    },
+    {
+      "name": "e_mi",
+      "text": "e_mi"
+    },
+    {
+      "name": "e_mk_be",
+      "text": "e_mk_be"
+    },
+    {
+      "name": "e_mk_bh",
+      "text": "e_mk_bh"
+    },
+    {
+      "name": "e_mk_d",
+      "text": "e_mk_d"
+    },
+    {
+      "name": "e_qk",
+      "text": "e_qk"
+    },
+    {
+      "name": "e_y",
+      "text": "e_y"
+    },
+    {
+      "name": "e_z",
+      "text": "e_z"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "A_e",
       "text": "A_e"
@@ -549,60 +604,5 @@
       "name": "Yf",
       "text": "Yf"
     }
-  ],
-  "shocks": [
-    {
-      "name": "e_A_e",
-      "text": "e_A_e"
-    },
-    {
-      "name": "e_eps_K_b",
-      "text": "e_eps_K_b"
-    },
-    {
-      "name": "e_j",
-      "text": "e_j"
-    },
-    {
-      "name": "e_l",
-      "text": "e_l"
-    },
-    {
-      "name": "e_me",
-      "text": "e_me"
-    },
-    {
-      "name": "e_mi",
-      "text": "e_mi"
-    },
-    {
-      "name": "e_mk_be",
-      "text": "e_mk_be"
-    },
-    {
-      "name": "e_mk_bh",
-      "text": "e_mk_bh"
-    },
-    {
-      "name": "e_mk_d",
-      "text": "e_mk_d"
-    },
-    {
-      "name": "e_qk",
-      "text": "e_qk"
-    },
-    {
-      "name": "e_y",
-      "text": "e_y"
-    },
-    {
-      "name": "e_z",
-      "text": "e_z"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    }
-  ],
-  "al_info": null
+  ]
 }

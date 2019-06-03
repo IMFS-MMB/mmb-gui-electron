@@ -73,7 +73,42 @@
   ],
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "fiscal_",
+      "text": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    },
+    {
+      "name": "psi_b",
+      "text": "psi_b"
+    },
+    {
+      "name": "psi_laf",
+      "text": "psi_laf"
+    },
+    {
+      "name": "psi_law",
+      "text": "psi_law"
+    },
+    {
+      "name": "psi_mu",
+      "text": "psi_mu"
+    },
+    {
+      "name": "psi_sigw",
+      "text": "psi_sigw"
+    },
+    {
+      "name": "psi_z",
+      "text": "psi_z"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "$\\bar{k}$",
       "text": "$\\bar{k}$"
@@ -258,40 +293,5 @@
       "name": "ztil",
       "text": "ztil"
     }
-  ],
-  "shocks": [
-    {
-      "name": "fiscal_",
-      "text": "fiscal_"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    },
-    {
-      "name": "psi_b",
-      "text": "psi_b"
-    },
-    {
-      "name": "psi_laf",
-      "text": "psi_laf"
-    },
-    {
-      "name": "psi_law",
-      "text": "psi_law"
-    },
-    {
-      "name": "psi_mu",
-      "text": "psi_mu"
-    },
-    {
-      "name": "psi_sigw",
-      "text": "psi_sigw"
-    },
-    {
-      "name": "psi_z",
-      "text": "psi_z"
-    }
-  ],
-  "al_info": null
+  ]
 }

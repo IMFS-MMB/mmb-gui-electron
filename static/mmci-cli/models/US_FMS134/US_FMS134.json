@@ -72,7 +72,38 @@
   ],
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "fiscal_",
+      "text": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    },
+    {
+      "name": "zetab",
+      "text": "zetab"
+    },
+    {
+      "name": "zetap",
+      "text": "zetap"
+    },
+    {
+      "name": "zetaw",
+      "text": "zetaw"
+    },
+    {
+      "name": "zetax",
+      "text": "zetax"
+    },
+    {
+      "name": "zetaz",
+      "text": "zetaz"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "c",
       "text": "c"
@@ -285,36 +316,5 @@
       "name": "zetag",
       "text": "zetag"
     }
-  ],
-  "shocks": [
-    {
-      "name": "fiscal_",
-      "text": "fiscal_"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    },
-    {
-      "name": "zetab",
-      "text": "zetab"
-    },
-    {
-      "name": "zetap",
-      "text": "zetap"
-    },
-    {
-      "name": "zetaw",
-      "text": "zetaw"
-    },
-    {
-      "name": "zetax",
-      "text": "zetax"
-    },
-    {
-      "name": "zetaz",
-      "text": "zetaz"
-    }
-  ],
-  "al_info": null
+  ]
 }

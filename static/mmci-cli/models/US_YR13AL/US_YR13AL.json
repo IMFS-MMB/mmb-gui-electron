@@ -115,7 +115,37 @@
       "ewma"
     ]
   },
-  "vars": [
+  "shocks": [
+    {
+      "name": "ea",
+      "text": "ea"
+    },
+    {
+      "name": "eb",
+      "text": "eb"
+    },
+    {
+      "name": "epinf",
+      "text": "epinf"
+    },
+    {
+      "name": "eqs",
+      "text": "eqs"
+    },
+    {
+      "name": "ew",
+      "text": "ew"
+    },
+    {
+      "name": "fiscal_",
+      "text": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "variables": [
     {
       "name": "a",
       "text": "a"
@@ -271,36 +301,6 @@
     {
       "name": "zcap",
       "text": "zcap"
-    }
-  ],
-  "shocks": [
-    {
-      "name": "ea",
-      "text": "ea"
-    },
-    {
-      "name": "eb",
-      "text": "eb"
-    },
-    {
-      "name": "epinf",
-      "text": "epinf"
-    },
-    {
-      "name": "eqs",
-      "text": "eqs"
-    },
-    {
-      "name": "ew",
-      "text": "ew"
-    },
-    {
-      "name": "fiscal_",
-      "text": "fiscal_"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
     }
   ]
 }

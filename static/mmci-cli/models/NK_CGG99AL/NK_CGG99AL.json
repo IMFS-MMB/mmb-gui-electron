@@ -89,7 +89,21 @@
       "interest"
     ]
   },
-  "vars": [
+  "shocks": [
+    {
+      "name": "demand_",
+      "text": "demand_"
+    },
+    {
+      "name": "inflation_",
+      "text": "inflation_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "variables": [
     {
       "name": "i",
       "text": "i"
@@ -129,20 +143,6 @@
     {
       "name": "x",
       "text": "x"
-    }
-  ],
-  "shocks": [
-    {
-      "name": "demand_",
-      "text": "demand_"
-    },
-    {
-      "name": "inflation_",
-      "text": "inflation_"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
     }
   ]
 }

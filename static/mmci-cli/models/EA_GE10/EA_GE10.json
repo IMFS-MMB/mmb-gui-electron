@@ -71,7 +71,42 @@
   ],
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "fiscal_",
+      "text": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    },
+    {
+      "name": "ua",
+      "text": "ua"
+    },
+    {
+      "name": "ub",
+      "text": "ub"
+    },
+    {
+      "name": "ul",
+      "text": "ul"
+    },
+    {
+      "name": "ulambdapi",
+      "text": "ulambdapi"
+    },
+    {
+      "name": "uw",
+      "text": "uw"
+    },
+    {
+      "name": "ux",
+      "text": "ux"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "a",
       "text": "a"
@@ -228,40 +263,5 @@
       "name": "zf",
       "text": "zf"
     }
-  ],
-  "shocks": [
-    {
-      "name": "fiscal_",
-      "text": "fiscal_"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    },
-    {
-      "name": "ua",
-      "text": "ua"
-    },
-    {
-      "name": "ub",
-      "text": "ub"
-    },
-    {
-      "name": "ul",
-      "text": "ul"
-    },
-    {
-      "name": "ulambdapi",
-      "text": "ulambdapi"
-    },
-    {
-      "name": "uw",
-      "text": "uw"
-    },
-    {
-      "name": "ux",
-      "text": "ux"
-    }
-  ],
-  "al_info": null
+  ]
 }

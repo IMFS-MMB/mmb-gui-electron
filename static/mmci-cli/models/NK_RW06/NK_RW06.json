@@ -36,7 +36,18 @@
   "msr": null,
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "interest_",
+      "text": "interest_"
+    },
+    {
+      "name": "u",
+      "text": "u"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "inflation",
       "text": "inflation"
@@ -65,16 +76,5 @@
       "name": "x",
       "text": "x"
     }
-  ],
-  "shocks": [
-    {
-      "name": "interest_",
-      "text": "interest_"
-    },
-    {
-      "name": "u",
-      "text": "u"
-    }
-  ],
-  "al_info": null
+  ]
 }

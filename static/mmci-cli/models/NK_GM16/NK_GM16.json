@@ -38,7 +38,34 @@
   "msr": null,
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "ea",
+      "text": "ea"
+    },
+    {
+      "name": "et",
+      "text": "et"
+    },
+    {
+      "name": "ez",
+      "text": "ez"
+    },
+    {
+      "name": "ezx1",
+      "text": "ezx1"
+    },
+    {
+      "name": "ezx2",
+      "text": "ezx2"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "a",
       "text": "a"
@@ -187,32 +214,5 @@
       "name": "zx2",
       "text": "zx2"
     }
-  ],
-  "shocks": [
-    {
-      "name": "ea",
-      "text": "ea"
-    },
-    {
-      "name": "et",
-      "text": "et"
-    },
-    {
-      "name": "ez",
-      "text": "ez"
-    },
-    {
-      "name": "ezx1",
-      "text": "ezx1"
-    },
-    {
-      "name": "ezx2",
-      "text": "ezx2"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    }
-  ],
-  "al_info": null
+  ]
 }
