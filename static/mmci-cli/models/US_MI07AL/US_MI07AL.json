@@ -93,77 +93,77 @@
   "vars": [
     {
       "name": "i",
-      "human_readable": "i"
+      "text": "i"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "inflationql",
-      "human_readable": "inflationql"
+      "text": "inflationql"
     },
     {
       "name": "inflationql2",
-      "human_readable": "inflationql2"
+      "text": "inflationql2"
     },
     {
       "name": "inflationqls",
-      "human_readable": "inflationqls"
+      "text": "inflationqls"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "pi",
-      "human_readable": "pi"
+      "text": "pi"
     },
     {
       "name": "pi_tilde",
-      "human_readable": "pi_tilde"
+      "text": "pi_tilde"
     },
     {
       "name": "r_n",
-      "human_readable": "r_n"
+      "text": "r_n"
     },
     {
       "name": "u",
-      "human_readable": "u"
+      "text": "u"
     },
     {
       "name": "x",
-      "human_readable": "x"
+      "text": "x"
     },
     {
       "name": "x_tilde",
-      "human_readable": "x_tilde"
+      "text": "x_tilde"
     }
   ],
   "shocks": [
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     },
     {
       "name": "v_r",
-      "human_readable": "v_r"
+      "text": "v_r"
     },
     {
       "name": "v_u",
-      "human_readable": "v_u"
+      "text": "v_u"
     }
   ]
 }

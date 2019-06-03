@@ -76,529 +76,529 @@
   "vars": [
     {
       "name": "c",
-      "human_readable": "c"
+      "text": "c"
     },
     {
       "name": "cf",
-      "human_readable": "cf"
+      "text": "cf"
     },
     {
       "name": "consumption_obs",
-      "human_readable": "consumption_obs"
+      "text": "consumption_obs"
     },
     {
       "name": "credit_obs",
-      "human_readable": "credit_obs"
+      "text": "credit_obs"
     },
     {
       "name": "e_g",
-      "human_readable": "e_g"
+      "text": "e_g"
     },
     {
       "name": "EFP",
-      "human_readable": "EFP"
+      "text": "EFP"
     },
     {
       "name": "epsil",
-      "human_readable": "epsil"
+      "text": "epsil"
     },
     {
       "name": "fispol",
-      "human_readable": "fispol"
+      "text": "fispol"
     },
     {
       "name": "Fp",
-      "human_readable": "Fp"
+      "text": "Fp"
     },
     {
       "name": "Fpf",
-      "human_readable": "Fpf"
+      "text": "Fpf"
     },
     {
       "name": "Fw",
-      "human_readable": "Fw"
+      "text": "Fw"
     },
     {
       "name": "Fwf",
-      "human_readable": "Fwf"
+      "text": "Fwf"
     },
     {
       "name": "g",
-      "human_readable": "g"
+      "text": "g"
     },
     {
       "name": "gamma",
-      "human_readable": "gamma"
+      "text": "gamma"
     },
     {
       "name": "gdp_obs",
-      "human_readable": "gdp_obs"
+      "text": "gdp_obs"
     },
     {
       "name": "h",
-      "human_readable": "h"
+      "text": "h"
     },
     {
       "name": "hf",
-      "human_readable": "hf"
+      "text": "hf"
     },
     {
       "name": "hours_obs",
-      "human_readable": "hours_obs"
+      "text": "hours_obs"
     },
     {
       "name": "i",
-      "human_readable": "i"
+      "text": "i"
     },
     {
       "name": "i_f",
-      "human_readable": "i_f"
+      "text": "i_f"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflation_obs",
-      "human_readable": "inflation_obs"
+      "text": "inflation_obs"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "investment_obs",
-      "human_readable": "investment_obs"
+      "text": "investment_obs"
     },
     {
       "name": "kbar",
-      "human_readable": "kbar"
+      "text": "kbar"
     },
     {
       "name": "kbarf",
-      "human_readable": "kbarf"
+      "text": "kbarf"
     },
     {
       "name": "lambdaf",
-      "human_readable": "lambdaf"
+      "text": "lambdaf"
     },
     {
       "name": "lambdaz",
-      "human_readable": "lambdaz"
+      "text": "lambdaz"
     },
     {
       "name": "lambdazf",
-      "human_readable": "lambdazf"
+      "text": "lambdazf"
     },
     {
       "name": "lc",
-      "human_readable": "lc"
+      "text": "lc"
     },
     {
       "name": "lhours",
-      "human_readable": "lhours"
+      "text": "lhours"
     },
     {
       "name": "linv",
-      "human_readable": "linv"
+      "text": "linv"
     },
     {
       "name": "lkbar",
-      "human_readable": "lkbar"
+      "text": "lkbar"
     },
     {
       "name": "lnw",
-      "human_readable": "lnw"
+      "text": "lnw"
     },
     {
       "name": "log_lambdaz",
-      "human_readable": "log_lambdaz"
+      "text": "log_lambdaz"
     },
     {
       "name": "log_lambdazf",
-      "human_readable": "log_lambdazf"
+      "text": "log_lambdazf"
     },
     {
       "name": "log_muzstar",
-      "human_readable": "log_muzstar"
+      "text": "log_muzstar"
     },
     {
       "name": "log_pi",
-      "human_readable": "log_pi"
+      "text": "log_pi"
     },
     {
       "name": "log_term",
-      "human_readable": "log_term"
+      "text": "log_term"
     },
     {
       "name": "log_xi0",
-      "human_readable": "log_xi0"
+      "text": "log_xi0"
     },
     {
       "name": "log_xi1",
-      "human_readable": "log_xi1"
+      "text": "log_xi1"
     },
     {
       "name": "log_xi2",
-      "human_readable": "log_xi2"
+      "text": "log_xi2"
     },
     {
       "name": "log_xi3",
-      "human_readable": "log_xi3"
+      "text": "log_xi3"
     },
     {
       "name": "log_xi4",
-      "human_readable": "log_xi4"
+      "text": "log_xi4"
     },
     {
       "name": "log_xi5",
-      "human_readable": "log_xi5"
+      "text": "log_xi5"
     },
     {
       "name": "log_xi6",
-      "human_readable": "log_xi6"
+      "text": "log_xi6"
     },
     {
       "name": "log_xi7",
-      "human_readable": "log_xi7"
+      "text": "log_xi7"
     },
     {
       "name": "log_xi8",
-      "human_readable": "log_xi8"
+      "text": "log_xi8"
     },
     {
       "name": "log_zetac",
-      "human_readable": "log_zetac"
+      "text": "log_zetac"
     },
     {
       "name": "lq",
-      "human_readable": "lq"
+      "text": "lq"
     },
     {
       "name": "lrborr",
-      "human_readable": "lrborr"
+      "text": "lrborr"
     },
     {
       "name": "lrealRe",
-      "human_readable": "lrealRe"
+      "text": "lrealRe"
     },
     {
       "name": "lrk",
-      "human_readable": "lrk"
+      "text": "lrk"
     },
     {
       "name": "lu",
-      "human_readable": "lu"
+      "text": "lu"
     },
     {
       "name": "lwage",
-      "human_readable": "lwage"
+      "text": "lwage"
     },
     {
       "name": "ly",
-      "human_readable": "ly"
+      "text": "ly"
     },
     {
       "name": "muup",
-      "human_readable": "muup"
+      "text": "muup"
     },
     {
       "name": "muzstar",
-      "human_readable": "muzstar"
+      "text": "muzstar"
     },
     {
       "name": "n",
-      "human_readable": "n"
+      "text": "n"
     },
     {
       "name": "networth_obs",
-      "human_readable": "networth_obs"
+      "text": "networth_obs"
     },
     {
       "name": "nf",
-      "human_readable": "nf"
+      "text": "nf"
     },
     {
       "name": "omegabar",
-      "human_readable": "omegabar"
+      "text": "omegabar"
     },
     {
       "name": "omegabarf",
-      "human_readable": "omegabarf"
+      "text": "omegabarf"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "phi",
-      "human_readable": "phi"
+      "text": "phi"
     },
     {
       "name": "phif",
-      "human_readable": "phif"
+      "text": "phif"
     },
     {
       "name": "pi",
-      "human_readable": "pi"
+      "text": "pi"
     },
     {
       "name": "pinvest_obs",
-      "human_readable": "pinvest_obs"
+      "text": "pinvest_obs"
     },
     {
       "name": "pitarget",
-      "human_readable": "pitarget"
+      "text": "pitarget"
     },
     {
       "name": "premium_obs",
-      "human_readable": "premium_obs"
+      "text": "premium_obs"
     },
     {
       "name": "pstar",
-      "human_readable": "pstar"
+      "text": "pstar"
     },
     {
       "name": "q",
-      "human_readable": "q"
+      "text": "q"
     },
     {
       "name": "qf",
-      "human_readable": "qf"
+      "text": "qf"
     },
     {
       "name": "Re",
-      "human_readable": "Re"
+      "text": "Re"
     },
     {
       "name": "Re_obs",
-      "human_readable": "Re_obs"
+      "text": "Re_obs"
     },
     {
       "name": "RealRe_obs",
-      "human_readable": "RealRe_obs"
+      "text": "RealRe_obs"
     },
     {
       "name": "Ref",
-      "human_readable": "Ref"
+      "text": "Ref"
     },
     {
       "name": "rk",
-      "human_readable": "rk"
+      "text": "rk"
     },
     {
       "name": "Rk",
-      "human_readable": "Rk"
+      "text": "Rk"
     },
     {
       "name": "rkf",
-      "human_readable": "rkf"
+      "text": "rkf"
     },
     {
       "name": "Rkf",
-      "human_readable": "Rkf"
+      "text": "Rkf"
     },
     {
       "name": "rL",
-      "human_readable": "rL"
+      "text": "rL"
     },
     {
       "name": "RL",
-      "human_readable": "RL"
+      "text": "RL"
     },
     {
       "name": "rLf",
-      "human_readable": "rLf"
+      "text": "rLf"
     },
     {
       "name": "RLf",
-      "human_readable": "RLf"
+      "text": "RLf"
     },
     {
       "name": "s",
-      "human_readable": "s"
+      "text": "s"
     },
     {
       "name": "sf",
-      "human_readable": "sf"
+      "text": "sf"
     },
     {
       "name": "sigma",
-      "human_readable": "sigma"
+      "text": "sigma"
     },
     {
       "name": "Spread1_obs",
-      "human_readable": "Spread1_obs"
+      "text": "Spread1_obs"
     },
     {
       "name": "term",
-      "human_readable": "term"
+      "text": "term"
     },
     {
       "name": "u",
-      "human_readable": "u"
+      "text": "u"
     },
     {
       "name": "uf",
-      "human_readable": "uf"
+      "text": "uf"
     },
     {
       "name": "volEquity",
-      "human_readable": "volEquity"
+      "text": "volEquity"
     },
     {
       "name": "volEquityf",
-      "human_readable": "volEquityf"
+      "text": "volEquityf"
     },
     {
       "name": "wage_obs",
-      "human_readable": "wage_obs"
+      "text": "wage_obs"
     },
     {
       "name": "wstar",
-      "human_readable": "wstar"
+      "text": "wstar"
     },
     {
       "name": "wtilde",
-      "human_readable": "wtilde"
+      "text": "wtilde"
     },
     {
       "name": "wtildef",
-      "human_readable": "wtildef"
+      "text": "wtildef"
     },
     {
       "name": "xi0",
-      "human_readable": "xi0"
+      "text": "xi0"
     },
     {
       "name": "xi1",
-      "human_readable": "xi1"
+      "text": "xi1"
     },
     {
       "name": "xi2",
-      "human_readable": "xi2"
+      "text": "xi2"
     },
     {
       "name": "xi3",
-      "human_readable": "xi3"
+      "text": "xi3"
     },
     {
       "name": "xi4",
-      "human_readable": "xi4"
+      "text": "xi4"
     },
     {
       "name": "xi5",
-      "human_readable": "xi5"
+      "text": "xi5"
     },
     {
       "name": "xi6",
-      "human_readable": "xi6"
+      "text": "xi6"
     },
     {
       "name": "xi7",
-      "human_readable": "xi7"
+      "text": "xi7"
     },
     {
       "name": "xi8",
-      "human_readable": "xi8"
+      "text": "xi8"
     },
     {
       "name": "y",
-      "human_readable": "y"
+      "text": "y"
     },
     {
       "name": "zetac",
-      "human_readable": "zetac"
+      "text": "zetac"
     },
     {
       "name": "zetai",
-      "human_readable": "zetai"
+      "text": "zetai"
     }
   ],
   "shocks": [
     {
       "name": "e_epsil",
-      "human_readable": "e_epsil"
+      "text": "e_epsil"
     },
     {
       "name": "e_gamma",
-      "human_readable": "e_gamma"
+      "text": "e_gamma"
     },
     {
       "name": "e_lambdaf",
-      "human_readable": "e_lambdaf"
+      "text": "e_lambdaf"
     },
     {
       "name": "e_muup",
-      "human_readable": "e_muup"
+      "text": "e_muup"
     },
     {
       "name": "e_muzstar",
-      "human_readable": "e_muzstar"
+      "text": "e_muzstar"
     },
     {
       "name": "e_sigma",
-      "human_readable": "e_sigma"
+      "text": "e_sigma"
     },
     {
       "name": "e_term",
-      "human_readable": "e_term"
+      "text": "e_term"
     },
     {
       "name": "e_xi1",
-      "human_readable": "e_xi1"
+      "text": "e_xi1"
     },
     {
       "name": "e_xi2",
-      "human_readable": "e_xi2"
+      "text": "e_xi2"
     },
     {
       "name": "e_xi3",
-      "human_readable": "e_xi3"
+      "text": "e_xi3"
     },
     {
       "name": "e_xi4",
-      "human_readable": "e_xi4"
+      "text": "e_xi4"
     },
     {
       "name": "e_xi5",
-      "human_readable": "e_xi5"
+      "text": "e_xi5"
     },
     {
       "name": "e_xi6",
-      "human_readable": "e_xi6"
+      "text": "e_xi6"
     },
     {
       "name": "e_xi7",
-      "human_readable": "e_xi7"
+      "text": "e_xi7"
     },
     {
       "name": "e_xi8",
-      "human_readable": "e_xi8"
+      "text": "e_xi8"
     },
     {
       "name": "e_zetac",
-      "human_readable": "e_zetac"
+      "text": "e_zetac"
     },
     {
       "name": "e_zetai",
-      "human_readable": "e_zetai"
+      "text": "e_zetai"
     },
     {
       "name": "fiscal_",
-      "human_readable": "fiscal_"
+      "text": "fiscal_"
     },
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     }
   ],
   "al_info": null

@@ -41,65 +41,65 @@
   "vars": [
     {
       "name": "f",
-      "human_readable": "f"
+      "text": "f"
     },
     {
       "name": "infl",
-      "human_readable": "infl"
+      "text": "infl"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "p",
-      "human_readable": "p"
+      "text": "p"
     },
     {
       "name": "rho",
-      "human_readable": "rho"
+      "text": "rho"
     },
     {
       "name": "x",
-      "human_readable": "x"
+      "text": "x"
     },
     {
       "name": "ypsilon",
-      "human_readable": "ypsilon"
+      "text": "ypsilon"
     },
     {
       "name": "ytilde",
-      "human_readable": "ytilde"
+      "text": "ytilde"
     }
   ],
   "shocks": [
     {
       "name": "epsilon_p",
-      "human_readable": "epsilon_p"
+      "text": "epsilon_p"
     },
     {
       "name": "epsilon_y",
-      "human_readable": "epsilon_y"
+      "text": "epsilon_y"
     },
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     }
   ],
   "al_info": null

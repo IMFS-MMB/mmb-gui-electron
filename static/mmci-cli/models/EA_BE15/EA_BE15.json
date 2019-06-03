@@ -73,105 +73,105 @@
   "vars": [
     {
       "name": "ea",
-      "human_readable": "ea"
+      "text": "ea"
     },
     {
       "name": "ei",
-      "human_readable": "ei"
+      "text": "ei"
     },
     {
       "name": "en",
-      "human_readable": "en"
+      "text": "en"
     },
     {
       "name": "ep",
-      "human_readable": "ep"
+      "text": "ep"
     },
     {
       "name": "eu",
-      "human_readable": "eu"
+      "text": "eu"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "ir",
-      "human_readable": "ir"
+      "text": "ir"
     },
     {
       "name": "mn",
-      "human_readable": "mn"
+      "text": "mn"
     },
     {
       "name": "mnf",
-      "human_readable": "mnf"
+      "text": "mnf"
     },
     {
       "name": "mp",
-      "human_readable": "mp"
+      "text": "mp"
     },
     {
       "name": "mpf",
-      "human_readable": "mpf"
+      "text": "mpf"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "pi",
-      "human_readable": "pi"
+      "text": "pi"
     },
     {
       "name": "vel",
-      "human_readable": "vel"
+      "text": "vel"
     },
     {
       "name": "y",
-      "human_readable": "y"
+      "text": "y"
     },
     {
       "name": "yf",
-      "human_readable": "yf"
+      "text": "yf"
     }
   ],
   "shocks": [
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     },
     {
       "name": "ua",
-      "human_readable": "ua"
+      "text": "ua"
     },
     {
       "name": "ui",
-      "human_readable": "ui"
+      "text": "ui"
     },
     {
       "name": "un",
-      "human_readable": "un"
+      "text": "un"
     },
     {
       "name": "up",
-      "human_readable": "up"
+      "text": "up"
     },
     {
       "name": "uu",
-      "human_readable": "uu"
+      "text": "uu"
     }
   ],
   "al_info": null

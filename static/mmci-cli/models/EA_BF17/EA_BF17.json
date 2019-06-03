@@ -74,85 +74,85 @@
   "vars": [
     {
       "name": "at",
-      "human_readable": "at"
+      "text": "at"
     },
     {
       "name": "ei",
-      "human_readable": "ei"
+      "text": "ei"
     },
     {
       "name": "em",
-      "human_readable": "em"
+      "text": "em"
     },
     {
       "name": "ep",
-      "human_readable": "ep"
+      "text": "ep"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "mp",
-      "human_readable": "mp"
+      "text": "mp"
     },
     {
       "name": "mpf",
-      "human_readable": "mpf"
+      "text": "mpf"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "pi",
-      "human_readable": "pi"
+      "text": "pi"
     },
     {
       "name": "r",
-      "human_readable": "r"
+      "text": "r"
     },
     {
       "name": "y",
-      "human_readable": "y"
+      "text": "y"
     },
     {
       "name": "yf",
-      "human_readable": "yf"
+      "text": "yf"
     }
   ],
   "shocks": [
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     },
     {
       "name": "ua",
-      "human_readable": "ua"
+      "text": "ua"
     },
     {
       "name": "ui",
-      "human_readable": "ui"
+      "text": "ui"
     },
     {
       "name": "um",
-      "human_readable": "um"
+      "text": "um"
     },
     {
       "name": "up",
-      "human_readable": "up"
+      "text": "up"
     }
   ],
   "al_info": null

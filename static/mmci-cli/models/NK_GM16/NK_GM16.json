@@ -41,177 +41,177 @@
   "vars": [
     {
       "name": "a",
-      "human_readable": "a"
+      "text": "a"
     },
     {
       "name": "c",
-      "human_readable": "c"
+      "text": "c"
     },
     {
       "name": "cgap",
-      "human_readable": "cgap"
+      "text": "cgap"
     },
     {
       "name": "cn",
-      "human_readable": "cn"
+      "text": "cn"
     },
     {
       "name": "de",
-      "human_readable": "de"
+      "text": "de"
     },
     {
       "name": "dp",
-      "human_readable": "dp"
+      "text": "dp"
     },
     {
       "name": "dpc",
-      "human_readable": "dpc"
+      "text": "dpc"
     },
     {
       "name": "dw",
-      "human_readable": "dw"
+      "text": "dw"
     },
     {
       "name": "e",
-      "human_readable": "e"
+      "text": "e"
     },
     {
       "name": "i",
-      "human_readable": "i"
+      "text": "i"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "n",
-      "human_readable": "n"
+      "text": "n"
     },
     {
       "name": "ne",
-      "human_readable": "ne"
+      "text": "ne"
     },
     {
       "name": "ngap",
-      "human_readable": "ngap"
+      "text": "ngap"
     },
     {
       "name": "ngapx",
-      "human_readable": "ngapx"
+      "text": "ngapx"
     },
     {
       "name": "nn",
-      "human_readable": "nn"
+      "text": "nn"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "p",
-      "human_readable": "p"
+      "text": "p"
     },
     {
       "name": "pc",
-      "human_readable": "pc"
+      "text": "pc"
     },
     {
       "name": "r",
-      "human_readable": "r"
+      "text": "r"
     },
     {
       "name": "s",
-      "human_readable": "s"
+      "text": "s"
     },
     {
       "name": "sgap",
-      "human_readable": "sgap"
+      "text": "sgap"
     },
     {
       "name": "sn",
-      "human_readable": "sn"
+      "text": "sn"
     },
     {
       "name": "t",
-      "human_readable": "t"
+      "text": "t"
     },
     {
       "name": "w",
-      "human_readable": "w"
+      "text": "w"
     },
     {
       "name": "wgap",
-      "human_readable": "wgap"
+      "text": "wgap"
     },
     {
       "name": "wp",
-      "human_readable": "wp"
+      "text": "wp"
     },
     {
       "name": "wpn",
-      "human_readable": "wpn"
+      "text": "wpn"
     },
     {
       "name": "y",
-      "human_readable": "y"
+      "text": "y"
     },
     {
       "name": "ygap",
-      "human_readable": "ygap"
+      "text": "ygap"
     },
     {
       "name": "yn",
-      "human_readable": "yn"
+      "text": "yn"
     },
     {
       "name": "z",
-      "human_readable": "z"
+      "text": "z"
     },
     {
       "name": "zx1",
-      "human_readable": "zx1"
+      "text": "zx1"
     },
     {
       "name": "zx2",
-      "human_readable": "zx2"
+      "text": "zx2"
     }
   ],
   "shocks": [
     {
       "name": "ea",
-      "human_readable": "ea"
+      "text": "ea"
     },
     {
       "name": "et",
-      "human_readable": "et"
+      "text": "et"
     },
     {
       "name": "ez",
-      "human_readable": "ez"
+      "text": "ez"
     },
     {
       "name": "ezx1",
-      "human_readable": "ezx1"
+      "text": "ezx1"
     },
     {
       "name": "ezx2",
-      "human_readable": "ezx2"
+      "text": "ezx2"
     },
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     }
   ],
   "al_info": null

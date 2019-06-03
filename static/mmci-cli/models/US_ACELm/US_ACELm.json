@@ -77,305 +77,305 @@
   "vars": [
     {
       "name": "c_t",
-      "human_readable": "c_t"
+      "text": "c_t"
     },
     {
       "name": "c_tlead",
-      "human_readable": "c_tlead"
+      "text": "c_tlead"
     },
     {
       "name": "c_tpred",
-      "human_readable": "c_tpred"
+      "text": "c_tpred"
     },
     {
       "name": "cf_t",
-      "human_readable": "cf_t"
+      "text": "cf_t"
     },
     {
       "name": "cf_tlead",
-      "human_readable": "cf_tlead"
+      "text": "cf_tlead"
     },
     {
       "name": "cf_tpred",
-      "human_readable": "cf_tpred"
+      "text": "cf_tpred"
     },
     {
       "name": "eps_M_t",
-      "human_readable": "eps_M_t"
+      "text": "eps_M_t"
     },
     {
       "name": "eps_muups_t",
-      "human_readable": "eps_muups_t"
+      "text": "eps_muups_t"
     },
     {
       "name": "eps_muz_t",
-      "human_readable": "eps_muz_t"
+      "text": "eps_muz_t"
     },
     {
       "name": "epsilon_t",
-      "human_readable": "epsilon_t"
+      "text": "epsilon_t"
     },
     {
       "name": "h_t",
-      "human_readable": "h_t"
+      "text": "h_t"
     },
     {
       "name": "hf_t",
-      "human_readable": "hf_t"
+      "text": "hf_t"
     },
     {
       "name": "i_t",
-      "human_readable": "i_t"
+      "text": "i_t"
     },
     {
       "name": "i_tlead",
-      "human_readable": "i_tlead"
+      "text": "i_tlead"
     },
     {
       "name": "i_tpred",
-      "human_readable": "i_tpred"
+      "text": "i_tpred"
     },
     {
       "name": "if_t",
-      "human_readable": "if_t"
+      "text": "if_t"
     },
     {
       "name": "if_tlead",
-      "human_readable": "if_tlead"
+      "text": "if_tlead"
     },
     {
       "name": "if_tpred",
-      "human_readable": "if_tpred"
+      "text": "if_tpred"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "kbar_t1",
-      "human_readable": "kbar_t1"
+      "text": "kbar_t1"
     },
     {
       "name": "kbarf_t1",
-      "human_readable": "kbarf_t1"
+      "text": "kbarf_t1"
     },
     {
       "name": "lambda_zstar_t",
-      "human_readable": "lambda_zstar_t"
+      "text": "lambda_zstar_t"
     },
     {
       "name": "lambda_zstarf_t",
-      "human_readable": "lambda_zstarf_t"
+      "text": "lambda_zstarf_t"
     },
     {
       "name": "m_t",
-      "human_readable": "m_t"
+      "text": "m_t"
     },
     {
       "name": "mf_t",
-      "human_readable": "mf_t"
+      "text": "mf_t"
     },
     {
       "name": "mu_ups_t",
-      "human_readable": "mu_ups_t"
+      "text": "mu_ups_t"
     },
     {
       "name": "mu_z_t",
-      "human_readable": "mu_z_t"
+      "text": "mu_z_t"
     },
     {
       "name": "mutilde_t",
-      "human_readable": "mutilde_t"
+      "text": "mutilde_t"
     },
     {
       "name": "mutilde_tlead",
-      "human_readable": "mutilde_tlead"
+      "text": "mutilde_tlead"
     },
     {
       "name": "mutilde_tpred",
-      "human_readable": "mutilde_tpred"
+      "text": "mutilde_tpred"
     },
     {
       "name": "mutildef_t",
-      "human_readable": "mutildef_t"
+      "text": "mutildef_t"
     },
     {
       "name": "mutildef_tlead",
-      "human_readable": "mutildef_tlead"
+      "text": "mutildef_tlead"
     },
     {
       "name": "mutildef_tpred",
-      "human_readable": "mutildef_tpred"
+      "text": "mutildef_tpred"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "pi_t",
-      "human_readable": "pi_t"
+      "text": "pi_t"
     },
     {
       "name": "pi_tlead",
-      "human_readable": "pi_tlead"
+      "text": "pi_tlead"
     },
     {
       "name": "pi_tpred",
-      "human_readable": "pi_tpred"
+      "text": "pi_tpred"
     },
     {
       "name": "pif_t",
-      "human_readable": "pif_t"
+      "text": "pif_t"
     },
     {
       "name": "pif_tlead",
-      "human_readable": "pif_tlead"
+      "text": "pif_tlead"
     },
     {
       "name": "pif_tpred",
-      "human_readable": "pif_tpred"
+      "text": "pif_tpred"
     },
     {
       "name": "q_t",
-      "human_readable": "q_t"
+      "text": "q_t"
     },
     {
       "name": "qf_t",
-      "human_readable": "qf_t"
+      "text": "qf_t"
     },
     {
       "name": "R_t",
-      "human_readable": "R_t"
+      "text": "R_t"
     },
     {
       "name": "Rf_t",
-      "human_readable": "Rf_t"
+      "text": "Rf_t"
     },
     {
       "name": "rhotilde_t",
-      "human_readable": "rhotilde_t"
+      "text": "rhotilde_t"
     },
     {
       "name": "rhotildef_t",
-      "human_readable": "rhotildef_t"
+      "text": "rhotildef_t"
     },
     {
       "name": "s_t",
-      "human_readable": "s_t"
+      "text": "s_t"
     },
     {
       "name": "sf_t",
-      "human_readable": "sf_t"
+      "text": "sf_t"
     },
     {
       "name": "u_t",
-      "human_readable": "u_t"
+      "text": "u_t"
     },
     {
       "name": "u_tlead",
-      "human_readable": "u_tlead"
+      "text": "u_tlead"
     },
     {
       "name": "u_tpred",
-      "human_readable": "u_tpred"
+      "text": "u_tpred"
     },
     {
       "name": "uf_t",
-      "human_readable": "uf_t"
+      "text": "uf_t"
     },
     {
       "name": "uf_tlead",
-      "human_readable": "uf_tlead"
+      "text": "uf_tlead"
     },
     {
       "name": "uf_tpred",
-      "human_readable": "uf_tpred"
+      "text": "uf_tpred"
     },
     {
       "name": "wtilde_t",
-      "human_readable": "wtilde_t"
+      "text": "wtilde_t"
     },
     {
       "name": "wtilde_tlead",
-      "human_readable": "wtilde_tlead"
+      "text": "wtilde_tlead"
     },
     {
       "name": "wtilde_tpred",
-      "human_readable": "wtilde_tpred"
+      "text": "wtilde_tpred"
     },
     {
       "name": "wtildef_t",
-      "human_readable": "wtildef_t"
+      "text": "wtildef_t"
     },
     {
       "name": "wtildef_tlead",
-      "human_readable": "wtildef_tlead"
+      "text": "wtildef_tlead"
     },
     {
       "name": "wtildef_tpred",
-      "human_readable": "wtildef_tpred"
+      "text": "wtildef_tpred"
     },
     {
       "name": "x_M_t",
-      "human_readable": "x_M_t"
+      "text": "x_M_t"
     },
     {
       "name": "x_t",
-      "human_readable": "x_t"
+      "text": "x_t"
     },
     {
       "name": "x_ups_t",
-      "human_readable": "x_ups_t"
+      "text": "x_ups_t"
     },
     {
       "name": "x_z_t",
-      "human_readable": "x_z_t"
+      "text": "x_z_t"
     },
     {
       "name": "xf_t",
-      "human_readable": "xf_t"
+      "text": "xf_t"
     },
     {
       "name": "ytilde_t",
-      "human_readable": "ytilde_t"
+      "text": "ytilde_t"
     },
     {
       "name": "ytildef_t",
-      "human_readable": "ytildef_t"
+      "text": "ytildef_t"
     }
   ],
   "shocks": [
     {
       "name": "eps_muups_",
-      "human_readable": "eps_muups_"
+      "text": "eps_muups_"
     },
     {
       "name": "eps_muz_",
-      "human_readable": "eps_muz_"
+      "text": "eps_muz_"
     },
     {
       "name": "epsilon_M_",
-      "human_readable": "epsilon_M_"
+      "text": "epsilon_M_"
     },
     {
       "name": "epsilon_t_",
-      "human_readable": "epsilon_t_"
+      "text": "epsilon_t_"
     },
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     }
   ],
   "al_info": null

@@ -47,7 +47,7 @@
       "type": "string"
     },
     "al": {
-      "type": "boolean"
+      "$ref": "common#/definitions/bool"
     },
     "al_info": {
       "anyOf": [
@@ -104,22 +104,22 @@
       ],
       "properties": {
         "interest": {
-          "type": "boolean"
+          "$ref": "common#/definitions/bool"
         },
         "inflation": {
-          "type": "boolean"
+          "$ref": "common#/definitions/bool"
         },
         "outputgap": {
-          "type": "boolean"
+          "$ref": "common#/definitions/bool"
         },
         "output": {
-          "type": "boolean"
+          "$ref": "common#/definitions/bool"
         },
         "mp_shock": {
-          "type": "boolean"
+          "$ref": "common#/definitions/bool"
         },
         "fiscal_shock": {
-          "type": "boolean"
+          "$ref": "common#/definitions/bool"
         }
       }
     },

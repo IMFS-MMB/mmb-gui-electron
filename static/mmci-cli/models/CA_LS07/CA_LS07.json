@@ -40,85 +40,85 @@
   "vars": [
     {
       "name": "deltae",
-      "human_readable": "deltae"
+      "text": "deltae"
     },
     {
       "name": "deltaq",
-      "human_readable": "deltaq"
+      "text": "deltaq"
     },
     {
       "name": "deltay_star",
-      "human_readable": "deltay_star"
+      "text": "deltay_star"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "pi",
-      "human_readable": "pi"
+      "text": "pi"
     },
     {
       "name": "pi_star",
-      "human_readable": "pi_star"
+      "text": "pi_star"
     },
     {
       "name": "R",
-      "human_readable": "R"
+      "text": "R"
     },
     {
       "name": "y",
-      "human_readable": "y"
+      "text": "y"
     },
     {
       "name": "y_bar",
-      "human_readable": "y_bar"
+      "text": "y_bar"
     },
     {
       "name": "y_star",
-      "human_readable": "y_star"
+      "text": "y_star"
     },
     {
       "name": "z",
-      "human_readable": "z"
+      "text": "z"
     }
   ],
   "shocks": [
     {
       "name": "epspi_star",
-      "human_readable": "epspi_star"
+      "text": "epspi_star"
     },
     {
       "name": "epsq",
-      "human_readable": "epsq"
+      "text": "epsq"
     },
     {
       "name": "epsy_star",
-      "human_readable": "epsy_star"
+      "text": "epsy_star"
     },
     {
       "name": "epsz",
-      "human_readable": "epsz"
+      "text": "epsz"
     },
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     }
   ],
   "al_info": null

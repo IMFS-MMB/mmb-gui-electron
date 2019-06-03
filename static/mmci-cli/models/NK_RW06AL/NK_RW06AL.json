@@ -55,61 +55,61 @@
   "vars": [
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "inflationql",
-      "human_readable": "inflationql"
+      "text": "inflationql"
     },
     {
       "name": "inflationql2",
-      "human_readable": "inflationql2"
+      "text": "inflationql2"
     },
     {
       "name": "inflationqls",
-      "human_readable": "inflationqls"
+      "text": "inflationqls"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "pi",
-      "human_readable": "pi"
+      "text": "pi"
     },
     {
       "name": "pinf4",
-      "human_readable": "pinf4"
+      "text": "pinf4"
     },
     {
       "name": "R",
-      "human_readable": "R"
+      "text": "R"
     },
     {
       "name": "x",
-      "human_readable": "x"
+      "text": "x"
     }
   ],
   "shocks": [
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     },
     {
       "name": "u",
-      "human_readable": "u"
+      "text": "u"
     }
   ]
 }

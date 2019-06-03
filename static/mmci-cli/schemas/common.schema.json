@@ -2,6 +2,14 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "common",
   "definitions": {
+    "bool": {
+      "enum": [
+        0,
+        1,
+        true,
+        false
+      ]
+    },
     "arrayOfStrings": {
       "type": "array",
       "items": {
@@ -12,21 +20,21 @@
       "type": "array",
       "additionalItems": false,
       "items": {
-        "$ref": "#/definitions/nameAndHumanReadableName"
+        "$ref": "#/definitions/nameAndText"
       }
     },
-    "nameAndHumanReadableName": {
+    "nameAndText": {
       "type": "object",
       "required": [
         "name",
-        "human_readable"
+        "text"
       ],
       "additionalProperties": false,
       "properties": {
         "name": {
           "type": "string"
         },
-        "human_readable": {
+        "text": {
           "type": "string"
         }
       }

@@ -73,245 +73,245 @@
   "vars": [
     {
       "name": "A",
-      "human_readable": "A"
+      "text": "A"
     },
     {
       "name": "alpha",
-      "human_readable": "alpha"
+      "text": "alpha"
     },
     {
       "name": "b",
-      "human_readable": "b"
+      "text": "b"
     },
     {
       "name": "b_fe",
-      "human_readable": "b_fe"
+      "text": "b_fe"
     },
     {
       "name": "c",
-      "human_readable": "c"
+      "text": "c"
     },
     {
       "name": "c_fe",
-      "human_readable": "c_fe"
+      "text": "c_fe"
     },
     {
       "name": "d",
-      "human_readable": "d"
+      "text": "d"
     },
     {
       "name": "d_fe",
-      "human_readable": "d_fe"
+      "text": "d_fe"
     },
     {
       "name": "delta_k",
-      "human_readable": "delta_k"
+      "text": "delta_k"
     },
     {
       "name": "delta_k_fe",
-      "human_readable": "delta_k_fe"
+      "text": "delta_k_fe"
     },
     {
       "name": "EFP",
-      "human_readable": "EFP"
+      "text": "EFP"
     },
     {
       "name": "EFP_fe",
-      "human_readable": "EFP_fe"
+      "text": "EFP_fe"
     },
     {
       "name": "f",
-      "human_readable": "f"
+      "text": "f"
     },
     {
       "name": "f_fe",
-      "human_readable": "f_fe"
+      "text": "f_fe"
     },
     {
       "name": "i",
-      "human_readable": "i"
+      "text": "i"
     },
     {
       "name": "i_fe",
-      "human_readable": "i_fe"
+      "text": "i_fe"
     },
     {
       "name": "IMP",
-      "human_readable": "IMP"
+      "text": "IMP"
     },
     {
       "name": "IMP_fe",
-      "human_readable": "IMP_fe"
+      "text": "IMP_fe"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "k",
-      "human_readable": "k"
+      "text": "k"
     },
     {
       "name": "k_fe",
-      "human_readable": "k_fe"
+      "text": "k_fe"
     },
     {
       "name": "l",
-      "human_readable": "l"
+      "text": "l"
     },
     {
       "name": "l_fe",
-      "human_readable": "l_fe"
+      "text": "l_fe"
     },
     {
       "name": "lambda",
-      "human_readable": "lambda"
+      "text": "lambda"
     },
     {
       "name": "lambda_fe",
-      "human_readable": "lambda_fe"
+      "text": "lambda_fe"
     },
     {
       "name": "m",
-      "human_readable": "m"
+      "text": "m"
     },
     {
       "name": "m_fe",
-      "human_readable": "m_fe"
+      "text": "m_fe"
     },
     {
       "name": "n",
-      "human_readable": "n"
+      "text": "n"
     },
     {
       "name": "n_fe",
-      "human_readable": "n_fe"
+      "text": "n_fe"
     },
     {
       "name": "omega",
-      "human_readable": "omega"
+      "text": "omega"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "pi",
-      "human_readable": "pi"
+      "text": "pi"
     },
     {
       "name": "psi",
-      "human_readable": "psi"
+      "text": "psi"
     },
     {
       "name": "psi_fe",
-      "human_readable": "psi_fe"
+      "text": "psi_fe"
     },
     {
       "name": "R",
-      "human_readable": "R"
+      "text": "R"
     },
     {
       "name": "R_fe",
-      "human_readable": "R_fe"
+      "text": "R_fe"
     },
     {
       "name": "Rd",
-      "human_readable": "Rd"
+      "text": "Rd"
     },
     {
       "name": "Rd_fe",
-      "human_readable": "Rd_fe"
+      "text": "Rd_fe"
     },
     {
       "name": "Rl",
-      "human_readable": "Rl"
+      "text": "Rl"
     },
     {
       "name": "Rl_fe",
-      "human_readable": "Rl_fe"
+      "text": "Rl_fe"
     },
     {
       "name": "rmc",
-      "human_readable": "rmc"
+      "text": "rmc"
     },
     {
       "name": "rmc_fe",
-      "human_readable": "rmc_fe"
+      "text": "rmc_fe"
     },
     {
       "name": "theta",
-      "human_readable": "theta"
+      "text": "theta"
     },
     {
       "name": "w",
-      "human_readable": "w"
+      "text": "w"
     },
     {
       "name": "w_fe",
-      "human_readable": "w_fe"
+      "text": "w_fe"
     },
     {
       "name": "xi",
-      "human_readable": "xi"
+      "text": "xi"
     },
     {
       "name": "xi_fe",
-      "human_readable": "xi_fe"
+      "text": "xi_fe"
     },
     {
       "name": "y",
-      "human_readable": "y"
+      "text": "y"
     },
     {
       "name": "y_fe",
-      "human_readable": "y_fe"
+      "text": "y_fe"
     },
     {
       "name": "yk",
-      "human_readable": "yk"
+      "text": "yk"
     },
     {
       "name": "yk_fe",
-      "human_readable": "yk_fe"
+      "text": "yk_fe"
     },
     {
       "name": "yn",
-      "human_readable": "yn"
+      "text": "yn"
     },
     {
       "name": "yn_fe",
-      "human_readable": "yn_fe"
+      "text": "yn_fe"
     }
   ],
   "shocks": [
     {
       "name": "epsilon_theta",
-      "human_readable": "epsilon_theta"
+      "text": "epsilon_theta"
     },
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     },
     {
       "name": "j",
-      "human_readable": "j"
+      "text": "j"
     },
     {
       "name": "q",
-      "human_readable": "q"
+      "text": "q"
     }
   ],
   "al_info": null

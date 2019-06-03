@@ -75,245 +75,245 @@
   "vars": [
     {
       "name": "c",
-      "human_readable": "c"
+      "text": "c"
     },
     {
       "name": "cf",
-      "human_readable": "cf"
+      "text": "cf"
     },
     {
       "name": "cstar",
-      "human_readable": "cstar"
+      "text": "cstar"
     },
     {
       "name": "cstarf",
-      "human_readable": "cstarf"
+      "text": "cstarf"
     },
     {
       "name": "dcobs",
-      "human_readable": "dcobs"
+      "text": "dcobs"
     },
     {
       "name": "dgobs",
-      "human_readable": "dgobs"
+      "text": "dgobs"
     },
     {
       "name": "dwobs",
-      "human_readable": "dwobs"
+      "text": "dwobs"
     },
     {
       "name": "dxobs",
-      "human_readable": "dxobs"
+      "text": "dxobs"
     },
     {
       "name": "dyobs",
-      "human_readable": "dyobs"
+      "text": "dyobs"
     },
     {
       "name": "eb",
-      "human_readable": "eb"
+      "text": "eb"
     },
     {
       "name": "eg",
-      "human_readable": "eg"
+      "text": "eg"
     },
     {
       "name": "ep",
-      "human_readable": "ep"
+      "text": "ep"
     },
     {
       "name": "ew",
-      "human_readable": "ew"
+      "text": "ew"
     },
     {
       "name": "ex",
-      "human_readable": "ex"
+      "text": "ex"
     },
     {
       "name": "ez",
-      "human_readable": "ez"
+      "text": "ez"
     },
     {
       "name": "fispol",
-      "human_readable": "fispol"
+      "text": "fispol"
     },
     {
       "name": "g",
-      "human_readable": "g"
+      "text": "g"
     },
     {
       "name": "gf",
-      "human_readable": "gf"
+      "text": "gf"
     },
     {
       "name": "infl",
-      "human_readable": "infl"
+      "text": "infl"
     },
     {
       "name": "infl4",
-      "human_readable": "infl4"
+      "text": "infl4"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "inflobs",
-      "human_readable": "inflobs"
+      "text": "inflobs"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "k",
-      "human_readable": "k"
+      "text": "k"
     },
     {
       "name": "kf",
-      "human_readable": "kf"
+      "text": "kf"
     },
     {
       "name": "kp",
-      "human_readable": "kp"
+      "text": "kp"
     },
     {
       "name": "kpf",
-      "human_readable": "kpf"
+      "text": "kpf"
     },
     {
       "name": "labobs2",
-      "human_readable": "labobs2"
+      "text": "labobs2"
     },
     {
       "name": "labor",
-      "human_readable": "labor"
+      "text": "labor"
     },
     {
       "name": "laborf",
-      "human_readable": "laborf"
+      "text": "laborf"
     },
     {
       "name": "lambda",
-      "human_readable": "lambda"
+      "text": "lambda"
     },
     {
       "name": "lambdaf",
-      "human_readable": "lambdaf"
+      "text": "lambdaf"
     },
     {
       "name": "mc",
-      "human_readable": "mc"
+      "text": "mc"
     },
     {
       "name": "mrs",
-      "human_readable": "mrs"
+      "text": "mrs"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "q",
-      "human_readable": "q"
+      "text": "q"
     },
     {
       "name": "qf",
-      "human_readable": "qf"
+      "text": "qf"
     },
     {
       "name": "r",
-      "human_readable": "r"
+      "text": "r"
     },
     {
       "name": "rf",
-      "human_readable": "rf"
+      "text": "rf"
     },
     {
       "name": "rk",
-      "human_readable": "rk"
+      "text": "rk"
     },
     {
       "name": "rkf",
-      "human_readable": "rkf"
+      "text": "rkf"
     },
     {
       "name": "robs",
-      "human_readable": "robs"
+      "text": "robs"
     },
     {
       "name": "u",
-      "human_readable": "u"
+      "text": "u"
     },
     {
       "name": "uf",
-      "human_readable": "uf"
+      "text": "uf"
     },
     {
       "name": "w",
-      "human_readable": "w"
+      "text": "w"
     },
     {
       "name": "wf",
-      "human_readable": "wf"
+      "text": "wf"
     },
     {
       "name": "x",
-      "human_readable": "x"
+      "text": "x"
     },
     {
       "name": "xf",
-      "human_readable": "xf"
+      "text": "xf"
     },
     {
       "name": "y",
-      "human_readable": "y"
+      "text": "y"
     },
     {
       "name": "yf",
-      "human_readable": "yf"
+      "text": "yf"
     },
     {
       "name": "zetag",
-      "human_readable": "zetag"
+      "text": "zetag"
     }
   ],
   "shocks": [
     {
       "name": "fiscal_",
-      "human_readable": "fiscal_"
+      "text": "fiscal_"
     },
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     },
     {
       "name": "zetab",
-      "human_readable": "zetab"
+      "text": "zetab"
     },
     {
       "name": "zetap",
-      "human_readable": "zetap"
+      "text": "zetap"
     },
     {
       "name": "zetaw",
-      "human_readable": "zetaw"
+      "text": "zetaw"
     },
     {
       "name": "zetax",
-      "human_readable": "zetax"
+      "text": "zetax"
     },
     {
       "name": "zetaz",
-      "human_readable": "zetaz"
+      "text": "zetaz"
     }
   ],
   "al_info": null

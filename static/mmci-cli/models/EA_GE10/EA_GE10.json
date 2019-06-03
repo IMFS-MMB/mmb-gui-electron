@@ -74,193 +74,193 @@
   "vars": [
     {
       "name": "a",
-      "human_readable": "a"
+      "text": "a"
     },
     {
       "name": "c",
-      "human_readable": "c"
+      "text": "c"
     },
     {
       "name": "cf",
-      "human_readable": "cf"
+      "text": "cf"
     },
     {
       "name": "eb",
-      "human_readable": "eb"
+      "text": "eb"
     },
     {
       "name": "el",
-      "human_readable": "el"
+      "text": "el"
     },
     {
       "name": "EMP",
-      "human_readable": "EMP"
+      "text": "EMP"
     },
     {
       "name": "fispol",
-      "human_readable": "fispol"
+      "text": "fispol"
     },
     {
       "name": "g",
-      "human_readable": "g"
+      "text": "g"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "inv",
-      "human_readable": "inv"
+      "text": "inv"
     },
     {
       "name": "invf",
-      "human_readable": "invf"
+      "text": "invf"
     },
     {
       "name": "k",
-      "human_readable": "k"
+      "text": "k"
     },
     {
       "name": "kf",
-      "human_readable": "kf"
+      "text": "kf"
     },
     {
       "name": "l",
-      "human_readable": "l"
+      "text": "l"
     },
     {
       "name": "lf",
-      "human_readable": "lf"
+      "text": "lf"
     },
     {
       "name": "mc",
-      "human_readable": "mc"
+      "text": "mc"
     },
     {
       "name": "mcf",
-      "human_readable": "mcf"
+      "text": "mcf"
     },
     {
       "name": "nw",
-      "human_readable": "nw"
+      "text": "nw"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "pi",
-      "human_readable": "pi"
+      "text": "pi"
     },
     {
       "name": "q",
-      "human_readable": "q"
+      "text": "q"
     },
     {
       "name": "qf",
-      "human_readable": "qf"
+      "text": "qf"
     },
     {
       "name": "r",
-      "human_readable": "r"
+      "text": "r"
     },
     {
       "name": "rf",
-      "human_readable": "rf"
+      "text": "rf"
     },
     {
       "name": "rk",
-      "human_readable": "rk"
+      "text": "rk"
     },
     {
       "name": "rkf",
-      "human_readable": "rkf"
+      "text": "rkf"
     },
     {
       "name": "rn",
-      "human_readable": "rn"
+      "text": "rn"
     },
     {
       "name": "S",
-      "human_readable": "S"
+      "text": "S"
     },
     {
       "name": "ug",
-      "human_readable": "ug"
+      "text": "ug"
     },
     {
       "name": "wp",
-      "human_readable": "wp"
+      "text": "wp"
     },
     {
       "name": "wpf",
-      "human_readable": "wpf"
+      "text": "wpf"
     },
     {
       "name": "x",
-      "human_readable": "x"
+      "text": "x"
     },
     {
       "name": "y",
-      "human_readable": "y"
+      "text": "y"
     },
     {
       "name": "ypot",
-      "human_readable": "ypot"
+      "text": "ypot"
     },
     {
       "name": "z",
-      "human_readable": "z"
+      "text": "z"
     },
     {
       "name": "zf",
-      "human_readable": "zf"
+      "text": "zf"
     }
   ],
   "shocks": [
     {
       "name": "fiscal_",
-      "human_readable": "fiscal_"
+      "text": "fiscal_"
     },
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     },
     {
       "name": "ua",
-      "human_readable": "ua"
+      "text": "ua"
     },
     {
       "name": "ub",
-      "human_readable": "ub"
+      "text": "ub"
     },
     {
       "name": "ul",
-      "human_readable": "ul"
+      "text": "ul"
     },
     {
       "name": "ulambdapi",
-      "human_readable": "ulambdapi"
+      "text": "ulambdapi"
     },
     {
       "name": "uw",
-      "human_readable": "uw"
+      "text": "uw"
     },
     {
       "name": "ux",
-      "human_readable": "ux"
+      "text": "ux"
     }
   ],
   "al_info": null

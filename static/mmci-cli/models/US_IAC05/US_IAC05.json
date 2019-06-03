@@ -73,161 +73,161 @@
   "vars": [
     {
       "name": "Ahat",
-      "human_readable": "Ahat"
+      "text": "Ahat"
     },
     {
       "name": "b2hat",
-      "human_readable": "b2hat"
+      "text": "b2hat"
     },
     {
       "name": "b2hatf",
-      "human_readable": "b2hatf"
+      "text": "b2hatf"
     },
     {
       "name": "bhat",
-      "human_readable": "bhat"
+      "text": "bhat"
     },
     {
       "name": "bhatf",
-      "human_readable": "bhatf"
+      "text": "bhatf"
     },
     {
       "name": "c1hat",
-      "human_readable": "c1hat"
+      "text": "c1hat"
     },
     {
       "name": "c1hatf",
-      "human_readable": "c1hatf"
+      "text": "c1hatf"
     },
     {
       "name": "c2hat",
-      "human_readable": "c2hat"
+      "text": "c2hat"
     },
     {
       "name": "c2hatf",
-      "human_readable": "c2hatf"
+      "text": "c2hatf"
     },
     {
       "name": "chat",
-      "human_readable": "chat"
+      "text": "chat"
     },
     {
       "name": "chatf",
-      "human_readable": "chatf"
+      "text": "chatf"
     },
     {
       "name": "h2hat",
-      "human_readable": "h2hat"
+      "text": "h2hat"
     },
     {
       "name": "h2hatf",
-      "human_readable": "h2hatf"
+      "text": "h2hatf"
     },
     {
       "name": "hhat",
-      "human_readable": "hhat"
+      "text": "hhat"
     },
     {
       "name": "hhatf",
-      "human_readable": "hhatf"
+      "text": "hhatf"
     },
     {
       "name": "Ihat",
-      "human_readable": "Ihat"
+      "text": "Ihat"
     },
     {
       "name": "Ihatf",
-      "human_readable": "Ihatf"
+      "text": "Ihatf"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "jhat",
-      "human_readable": "jhat"
+      "text": "jhat"
     },
     {
       "name": "Khat",
-      "human_readable": "Khat"
+      "text": "Khat"
     },
     {
       "name": "Khatf",
-      "human_readable": "Khatf"
+      "text": "Khatf"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "pihat",
-      "human_readable": "pihat"
+      "text": "pihat"
     },
     {
       "name": "qhat",
-      "human_readable": "qhat"
+      "text": "qhat"
     },
     {
       "name": "qhatf",
-      "human_readable": "qhatf"
+      "text": "qhatf"
     },
     {
       "name": "Rhat",
-      "human_readable": "Rhat"
+      "text": "Rhat"
     },
     {
       "name": "rrhat",
-      "human_readable": "rrhat"
+      "text": "rrhat"
     },
     {
       "name": "rrhatf",
-      "human_readable": "rrhatf"
+      "text": "rrhatf"
     },
     {
       "name": "uhat",
-      "human_readable": "uhat"
+      "text": "uhat"
     },
     {
       "name": "Xhat",
-      "human_readable": "Xhat"
+      "text": "Xhat"
     },
     {
       "name": "Yhat",
-      "human_readable": "Yhat"
+      "text": "Yhat"
     },
     {
       "name": "Yhatf",
-      "human_readable": "Yhatf"
+      "text": "Yhatf"
     }
   ],
   "shocks": [
     {
       "name": "eAhat",
-      "human_readable": "eAhat"
+      "text": "eAhat"
     },
     {
       "name": "ejhat",
-      "human_readable": "ejhat"
+      "text": "ejhat"
     },
     {
       "name": "euhat",
-      "human_readable": "euhat"
+      "text": "euhat"
     },
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     }
   ],
   "al_info": null

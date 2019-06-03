@@ -41,97 +41,97 @@
   "vars": [
     {
       "name": "a",
-      "human_readable": "a"
+      "text": "a"
     },
     {
       "name": "e",
-      "human_readable": "e"
+      "text": "e"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "pi",
-      "human_readable": "pi"
+      "text": "pi"
     },
     {
       "name": "pi_H",
-      "human_readable": "pi_H"
+      "text": "pi_H"
     },
     {
       "name": "q_dach",
-      "human_readable": "q_dach"
+      "text": "q_dach"
     },
     {
       "name": "r",
-      "human_readable": "r"
+      "text": "r"
     },
     {
       "name": "rr",
-      "human_readable": "rr"
+      "text": "rr"
     },
     {
       "name": "s",
-      "human_readable": "s"
+      "text": "s"
     },
     {
       "name": "shock_eta",
-      "human_readable": "shock_eta"
+      "text": "shock_eta"
     },
     {
       "name": "x",
-      "human_readable": "x"
+      "text": "x"
     },
     {
       "name": "y",
-      "human_readable": "y"
+      "text": "y"
     },
     {
       "name": "y_n",
-      "human_readable": "y_n"
+      "text": "y_n"
     },
     {
       "name": "y_stern",
-      "human_readable": "y_stern"
+      "text": "y_stern"
     }
   ],
   "shocks": [
     {
       "name": "epsa",
-      "human_readable": "epsa"
+      "text": "epsa"
     },
     {
       "name": "epseta",
-      "human_readable": "epseta"
+      "text": "epseta"
     },
     {
       "name": "epsy",
-      "human_readable": "epsy"
+      "text": "epsy"
     },
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     },
     {
       "name": "mu_p",
-      "human_readable": "mu_p"
+      "text": "mu_p"
     }
   ],
   "al_info": null

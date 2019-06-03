@@ -74,809 +74,809 @@
   "vars": [
     {
       "name": "a_f",
-      "human_readable": "a_f"
+      "text": "a_f"
     },
     {
       "name": "a_h",
-      "human_readable": "a_h"
+      "text": "a_h"
     },
     {
       "name": "b_h",
-      "human_readable": "b_h"
+      "text": "b_h"
     },
     {
       "name": "b_hfp",
-      "human_readable": "b_hfp"
+      "text": "b_hfp"
     },
     {
       "name": "beta_shock_f",
-      "human_readable": "beta_shock_f"
+      "text": "beta_shock_f"
     },
     {
       "name": "beta_shock_h",
-      "human_readable": "beta_shock_h"
+      "text": "beta_shock_h"
     },
     {
       "name": "bk_f",
-      "human_readable": "bk_f"
+      "text": "bk_f"
     },
     {
       "name": "bk_ffp",
-      "human_readable": "bk_ffp"
+      "text": "bk_ffp"
     },
     {
       "name": "bk_h",
-      "human_readable": "bk_h"
+      "text": "bk_h"
     },
     {
       "name": "bk_hfp",
-      "human_readable": "bk_hfp"
+      "text": "bk_hfp"
     },
     {
       "name": "c_ea",
-      "human_readable": "c_ea"
+      "text": "c_ea"
     },
     {
       "name": "c_eafp",
-      "human_readable": "c_eafp"
+      "text": "c_eafp"
     },
     {
       "name": "c_f",
-      "human_readable": "c_f"
+      "text": "c_f"
     },
     {
       "name": "c_ffp",
-      "human_readable": "c_ffp"
+      "text": "c_ffp"
     },
     {
       "name": "c_h",
-      "human_readable": "c_h"
+      "text": "c_h"
     },
     {
       "name": "c_hfp",
-      "human_readable": "c_hfp"
+      "text": "c_hfp"
     },
     {
       "name": "CA",
-      "human_readable": "CA"
+      "text": "CA"
     },
     {
       "name": "CAfp",
-      "human_readable": "CAfp"
+      "text": "CAfp"
     },
     {
       "name": "g_f",
-      "human_readable": "g_f"
+      "text": "g_f"
     },
     {
       "name": "g_h",
-      "human_readable": "g_h"
+      "text": "g_h"
     },
     {
       "name": "h_f",
-      "human_readable": "h_f"
+      "text": "h_f"
     },
     {
       "name": "h_ffp",
-      "human_readable": "h_ffp"
+      "text": "h_ffp"
     },
     {
       "name": "h_h",
-      "human_readable": "h_h"
+      "text": "h_h"
     },
     {
       "name": "h_hfp",
-      "human_readable": "h_hfp"
+      "text": "h_hfp"
     },
     {
       "name": "i_ea",
-      "human_readable": "i_ea"
+      "text": "i_ea"
     },
     {
       "name": "i_eafp",
-      "human_readable": "i_eafp"
+      "text": "i_eafp"
     },
     {
       "name": "i_f",
-      "human_readable": "i_f"
+      "text": "i_f"
     },
     {
       "name": "i_ffp",
-      "human_readable": "i_ffp"
+      "text": "i_ffp"
     },
     {
       "name": "i_h",
-      "human_readable": "i_h"
+      "text": "i_h"
     },
     {
       "name": "i_hfp",
-      "human_readable": "i_hfp"
+      "text": "i_hfp"
     },
     {
       "name": "IB_ea",
-      "human_readable": "IB_ea"
+      "text": "IB_ea"
     },
     {
       "name": "IB_eafp",
-      "human_readable": "IB_eafp"
+      "text": "IB_eafp"
     },
     {
       "name": "ib_shock_f",
-      "human_readable": "ib_shock_f"
+      "text": "ib_shock_f"
     },
     {
       "name": "ib_shock_h",
-      "human_readable": "ib_shock_h"
+      "text": "ib_shock_h"
     },
     {
       "name": "IBd_f",
-      "human_readable": "IBd_f"
+      "text": "IBd_f"
     },
     {
       "name": "IBd_ffp",
-      "human_readable": "IBd_ffp"
+      "text": "IBd_ffp"
     },
     {
       "name": "IBd_h",
-      "human_readable": "IBd_h"
+      "text": "IBd_h"
     },
     {
       "name": "IBd_hfp",
-      "human_readable": "IBd_hfp"
+      "text": "IBd_hfp"
     },
     {
       "name": "ibn_f",
-      "human_readable": "ibn_f"
+      "text": "ibn_f"
     },
     {
       "name": "ibn_ffp",
-      "human_readable": "ibn_ffp"
+      "text": "ibn_ffp"
     },
     {
       "name": "ibn_h",
-      "human_readable": "ibn_h"
+      "text": "ibn_h"
     },
     {
       "name": "ibn_hfp",
-      "human_readable": "ibn_hfp"
+      "text": "ibn_hfp"
     },
     {
       "name": "IBs_f",
-      "human_readable": "IBs_f"
+      "text": "IBs_f"
     },
     {
       "name": "IBs_ffp",
-      "human_readable": "IBs_ffp"
+      "text": "IBs_ffp"
     },
     {
       "name": "IBs_h",
-      "human_readable": "IBs_h"
+      "text": "IBs_h"
     },
     {
       "name": "IBs_hfp",
-      "human_readable": "IBs_hfp"
+      "text": "IBs_hfp"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "k_f",
-      "human_readable": "k_f"
+      "text": "k_f"
     },
     {
       "name": "k_ffp",
-      "human_readable": "k_ffp"
+      "text": "k_ffp"
     },
     {
       "name": "k_h",
-      "human_readable": "k_h"
+      "text": "k_h"
     },
     {
       "name": "k_hfp",
-      "human_readable": "k_hfp"
+      "text": "k_hfp"
     },
     {
       "name": "ku_f",
-      "human_readable": "ku_f"
+      "text": "ku_f"
     },
     {
       "name": "ku_ffp",
-      "human_readable": "ku_ffp"
+      "text": "ku_ffp"
     },
     {
       "name": "ku_h",
-      "human_readable": "ku_h"
+      "text": "ku_h"
     },
     {
       "name": "ku_hfp",
-      "human_readable": "ku_hfp"
+      "text": "ku_hfp"
     },
     {
       "name": "ld_f",
-      "human_readable": "ld_f"
+      "text": "ld_f"
     },
     {
       "name": "ld_ffp",
-      "human_readable": "ld_ffp"
+      "text": "ld_ffp"
     },
     {
       "name": "ld_h",
-      "human_readable": "ld_h"
+      "text": "ld_h"
     },
     {
       "name": "ld_hfp",
-      "human_readable": "ld_hfp"
+      "text": "ld_hfp"
     },
     {
       "name": "ls_ea",
-      "human_readable": "ls_ea"
+      "text": "ls_ea"
     },
     {
       "name": "ls_eafp",
-      "human_readable": "ls_eafp"
+      "text": "ls_eafp"
     },
     {
       "name": "ls_f",
-      "human_readable": "ls_f"
+      "text": "ls_f"
     },
     {
       "name": "ls_ffp",
-      "human_readable": "ls_ffp"
+      "text": "ls_ffp"
     },
     {
       "name": "ls_h",
-      "human_readable": "ls_h"
+      "text": "ls_h"
     },
     {
       "name": "ls_hfp",
-      "human_readable": "ls_hfp"
+      "text": "ls_hfp"
     },
     {
       "name": "mc_f",
-      "human_readable": "mc_f"
+      "text": "mc_f"
     },
     {
       "name": "mc_ffp",
-      "human_readable": "mc_ffp"
+      "text": "mc_ffp"
     },
     {
       "name": "mc_h",
-      "human_readable": "mc_h"
+      "text": "mc_h"
     },
     {
       "name": "mc_hfp",
-      "human_readable": "mc_hfp"
+      "text": "mc_hfp"
     },
     {
       "name": "mcL_f",
-      "human_readable": "mcL_f"
+      "text": "mcL_f"
     },
     {
       "name": "mcL_ffp",
-      "human_readable": "mcL_ffp"
+      "text": "mcL_ffp"
     },
     {
       "name": "mcL_h",
-      "human_readable": "mcL_h"
+      "text": "mcL_h"
     },
     {
       "name": "mcL_hfp",
-      "human_readable": "mcL_hfp"
+      "text": "mcL_hfp"
     },
     {
       "name": "n_E_f",
-      "human_readable": "n_E_f"
+      "text": "n_E_f"
     },
     {
       "name": "n_E_ffp",
-      "human_readable": "n_E_ffp"
+      "text": "n_E_ffp"
     },
     {
       "name": "n_E_h",
-      "human_readable": "n_E_h"
+      "text": "n_E_h"
     },
     {
       "name": "n_E_hfp",
-      "human_readable": "n_E_hfp"
+      "text": "n_E_hfp"
     },
     {
       "name": "n_shock_f",
-      "human_readable": "n_shock_f"
+      "text": "n_shock_f"
     },
     {
       "name": "n_shock_h",
-      "human_readable": "n_shock_h"
+      "text": "n_shock_h"
     },
     {
       "name": "nk_f",
-      "human_readable": "nk_f"
+      "text": "nk_f"
     },
     {
       "name": "nk_ffp",
-      "human_readable": "nk_ffp"
+      "text": "nk_ffp"
     },
     {
       "name": "nk_h",
-      "human_readable": "nk_h"
+      "text": "nk_h"
     },
     {
       "name": "nk_hfp",
-      "human_readable": "nk_hfp"
+      "text": "nk_hfp"
     },
     {
       "name": "omega_f",
-      "human_readable": "omega_f"
+      "text": "omega_f"
     },
     {
       "name": "omega_ffp",
-      "human_readable": "omega_ffp"
+      "text": "omega_ffp"
     },
     {
       "name": "omega_h",
-      "human_readable": "omega_h"
+      "text": "omega_h"
     },
     {
       "name": "omega_hfp",
-      "human_readable": "omega_hfp"
+      "text": "omega_hfp"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "p_Ffp",
-      "human_readable": "p_Ffp"
+      "text": "p_Ffp"
     },
     {
       "name": "p_Hfp",
-      "human_readable": "p_Hfp"
+      "text": "p_Hfp"
     },
     {
       "name": "p_IB_f",
-      "human_readable": "p_IB_f"
+      "text": "p_IB_f"
     },
     {
       "name": "p_IB_ffp",
-      "human_readable": "p_IB_ffp"
+      "text": "p_IB_ffp"
     },
     {
       "name": "p_IB_h",
-      "human_readable": "p_IB_h"
+      "text": "p_IB_h"
     },
     {
       "name": "p_IB_hfp",
-      "human_readable": "p_IB_hfp"
+      "text": "p_IB_hfp"
     },
     {
       "name": "pi_ea",
-      "human_readable": "pi_ea"
+      "text": "pi_ea"
     },
     {
       "name": "pi_eafp",
-      "human_readable": "pi_eafp"
+      "text": "pi_eafp"
     },
     {
       "name": "pi_f",
-      "human_readable": "pi_f"
+      "text": "pi_f"
     },
     {
       "name": "pi_ffp",
-      "human_readable": "pi_ffp"
+      "text": "pi_ffp"
     },
     {
       "name": "pi_h",
-      "human_readable": "pi_h"
+      "text": "pi_h"
     },
     {
       "name": "pi_hfp",
-      "human_readable": "pi_hfp"
+      "text": "pi_hfp"
     },
     {
       "name": "pic_f",
-      "human_readable": "pic_f"
+      "text": "pic_f"
     },
     {
       "name": "pic_ffp",
-      "human_readable": "pic_ffp"
+      "text": "pic_ffp"
     },
     {
       "name": "pic_h",
-      "human_readable": "pic_h"
+      "text": "pic_h"
     },
     {
       "name": "pic_hfp",
-      "human_readable": "pic_hfp"
+      "text": "pic_hfp"
     },
     {
       "name": "pl_f",
-      "human_readable": "pl_f"
+      "text": "pl_f"
     },
     {
       "name": "pl_ffp",
-      "human_readable": "pl_ffp"
+      "text": "pl_ffp"
     },
     {
       "name": "pl_h",
-      "human_readable": "pl_h"
+      "text": "pl_h"
     },
     {
       "name": "pl_hfp",
-      "human_readable": "pl_hfp"
+      "text": "pl_hfp"
     },
     {
       "name": "q_f",
-      "human_readable": "q_f"
+      "text": "q_f"
     },
     {
       "name": "q_ffp",
-      "human_readable": "q_ffp"
+      "text": "q_ffp"
     },
     {
       "name": "q_h",
-      "human_readable": "q_h"
+      "text": "q_h"
     },
     {
       "name": "q_hfp",
-      "human_readable": "q_hfp"
+      "text": "q_hfp"
     },
     {
       "name": "q_shock_f",
-      "human_readable": "q_shock_f"
+      "text": "q_shock_f"
     },
     {
       "name": "q_shock_h",
-      "human_readable": "q_shock_h"
+      "text": "q_shock_h"
     },
     {
       "name": "r",
-      "human_readable": "r"
+      "text": "r"
     },
     {
       "name": "r_IB_f",
-      "human_readable": "r_IB_f"
+      "text": "r_IB_f"
     },
     {
       "name": "r_IB_ffp",
-      "human_readable": "r_IB_ffp"
+      "text": "r_IB_ffp"
     },
     {
       "name": "r_IB_h",
-      "human_readable": "r_IB_h"
+      "text": "r_IB_h"
     },
     {
       "name": "r_IB_hfp",
-      "human_readable": "r_IB_hfp"
+      "text": "r_IB_hfp"
     },
     {
       "name": "r_K_f",
-      "human_readable": "r_K_f"
+      "text": "r_K_f"
     },
     {
       "name": "r_K_ffp",
-      "human_readable": "r_K_ffp"
+      "text": "r_K_ffp"
     },
     {
       "name": "r_K_h",
-      "human_readable": "r_K_h"
+      "text": "r_K_h"
     },
     {
       "name": "r_K_hfp",
-      "human_readable": "r_K_hfp"
+      "text": "r_K_hfp"
     },
     {
       "name": "r_L_f",
-      "human_readable": "r_L_f"
+      "text": "r_L_f"
     },
     {
       "name": "r_L_ffp",
-      "human_readable": "r_L_ffp"
+      "text": "r_L_ffp"
     },
     {
       "name": "r_L_h",
-      "human_readable": "r_L_h"
+      "text": "r_L_h"
     },
     {
       "name": "r_L_hfp",
-      "human_readable": "r_L_hfp"
+      "text": "r_L_hfp"
     },
     {
       "name": "r_shock",
-      "human_readable": "r_shock"
+      "text": "r_shock"
     },
     {
       "name": "rL_shock_f",
-      "human_readable": "rL_shock_f"
+      "text": "rL_shock_f"
     },
     {
       "name": "rL_shock_h",
-      "human_readable": "rL_shock_h"
+      "text": "rL_shock_h"
     },
     {
       "name": "rr_f",
-      "human_readable": "rr_f"
+      "text": "rr_f"
     },
     {
       "name": "rr_ffp",
-      "human_readable": "rr_ffp"
+      "text": "rr_ffp"
     },
     {
       "name": "rr_h",
-      "human_readable": "rr_h"
+      "text": "rr_h"
     },
     {
       "name": "rr_hfp",
-      "human_readable": "rr_hfp"
+      "text": "rr_hfp"
     },
     {
       "name": "s_B_f",
-      "human_readable": "s_B_f"
+      "text": "s_B_f"
     },
     {
       "name": "s_B_ffp",
-      "human_readable": "s_B_ffp"
+      "text": "s_B_ffp"
     },
     {
       "name": "s_B_h",
-      "human_readable": "s_B_h"
+      "text": "s_B_h"
     },
     {
       "name": "s_B_hfp",
-      "human_readable": "s_B_hfp"
+      "text": "s_B_hfp"
     },
     {
       "name": "s_f",
-      "human_readable": "s_f"
+      "text": "s_f"
     },
     {
       "name": "s_ffp",
-      "human_readable": "s_ffp"
+      "text": "s_ffp"
     },
     {
       "name": "s_h",
-      "human_readable": "s_h"
+      "text": "s_h"
     },
     {
       "name": "s_hfp",
-      "human_readable": "s_hfp"
+      "text": "s_hfp"
     },
     {
       "name": "ToT",
-      "human_readable": "ToT"
+      "text": "ToT"
     },
     {
       "name": "ToTfp",
-      "human_readable": "ToTfp"
+      "text": "ToTfp"
     },
     {
       "name": "u_f",
-      "human_readable": "u_f"
+      "text": "u_f"
     },
     {
       "name": "u_ffp",
-      "human_readable": "u_ffp"
+      "text": "u_ffp"
     },
     {
       "name": "u_h",
-      "human_readable": "u_h"
+      "text": "u_h"
     },
     {
       "name": "u_hfp",
-      "human_readable": "u_hfp"
+      "text": "u_hfp"
     },
     {
       "name": "v_E_f",
-      "human_readable": "v_E_f"
+      "text": "v_E_f"
     },
     {
       "name": "v_E_ffp",
-      "human_readable": "v_E_ffp"
+      "text": "v_E_ffp"
     },
     {
       "name": "v_E_h",
-      "human_readable": "v_E_h"
+      "text": "v_E_h"
     },
     {
       "name": "v_E_hfp",
-      "human_readable": "v_E_hfp"
+      "text": "v_E_hfp"
     },
     {
       "name": "w_f",
-      "human_readable": "w_f"
+      "text": "w_f"
     },
     {
       "name": "w_ffp",
-      "human_readable": "w_ffp"
+      "text": "w_ffp"
     },
     {
       "name": "w_h",
-      "human_readable": "w_h"
+      "text": "w_h"
     },
     {
       "name": "w_hfp",
-      "human_readable": "w_hfp"
+      "text": "w_hfp"
     },
     {
       "name": "w_shock_f",
-      "human_readable": "w_shock_f"
+      "text": "w_shock_f"
     },
     {
       "name": "w_shock_h",
-      "human_readable": "w_shock_h"
+      "text": "w_shock_h"
     },
     {
       "name": "wh_f",
-      "human_readable": "wh_f"
+      "text": "wh_f"
     },
     {
       "name": "wh_ffp",
-      "human_readable": "wh_ffp"
+      "text": "wh_ffp"
     },
     {
       "name": "wh_h",
-      "human_readable": "wh_h"
+      "text": "wh_h"
     },
     {
       "name": "wh_hfp",
-      "human_readable": "wh_hfp"
+      "text": "wh_hfp"
     },
     {
       "name": "y_ea",
-      "human_readable": "y_ea"
+      "text": "y_ea"
     },
     {
       "name": "y_eafp",
-      "human_readable": "y_eafp"
+      "text": "y_eafp"
     },
     {
       "name": "y_f",
-      "human_readable": "y_f"
+      "text": "y_f"
     },
     {
       "name": "y_ffp",
-      "human_readable": "y_ffp"
+      "text": "y_ffp"
     },
     {
       "name": "y_h",
-      "human_readable": "y_h"
+      "text": "y_h"
     },
     {
       "name": "y_hfp",
-      "human_readable": "y_hfp"
+      "text": "y_hfp"
     },
     {
       "name": "z_f",
-      "human_readable": "z_f"
+      "text": "z_f"
     },
     {
       "name": "z_ffp",
-      "human_readable": "z_ffp"
+      "text": "z_ffp"
     },
     {
       "name": "z_h",
-      "human_readable": "z_h"
+      "text": "z_h"
     },
     {
       "name": "z_hfp",
-      "human_readable": "z_hfp"
+      "text": "z_hfp"
     }
   ],
   "shocks": [
     {
       "name": "e_a",
-      "human_readable": "e_a"
+      "text": "e_a"
     },
     {
       "name": "e_a_f",
-      "human_readable": "e_a_f"
+      "text": "e_a_f"
     },
     {
       "name": "e_a_h",
-      "human_readable": "e_a_h"
+      "text": "e_a_h"
     },
     {
       "name": "e_beta",
-      "human_readable": "e_beta"
+      "text": "e_beta"
     },
     {
       "name": "e_beta_f",
-      "human_readable": "e_beta_f"
+      "text": "e_beta_f"
     },
     {
       "name": "e_beta_h",
-      "human_readable": "e_beta_h"
+      "text": "e_beta_h"
     },
     {
       "name": "e_g",
-      "human_readable": "e_g"
+      "text": "e_g"
     },
     {
       "name": "e_g_f",
-      "human_readable": "e_g_f"
+      "text": "e_g_f"
     },
     {
       "name": "e_g_h",
-      "human_readable": "e_g_h"
+      "text": "e_g_h"
     },
     {
       "name": "e_ib",
-      "human_readable": "e_ib"
+      "text": "e_ib"
     },
     {
       "name": "e_ib_f",
-      "human_readable": "e_ib_f"
+      "text": "e_ib_f"
     },
     {
       "name": "e_ib_h",
-      "human_readable": "e_ib_h"
+      "text": "e_ib_h"
     },
     {
       "name": "e_n",
-      "human_readable": "e_n"
+      "text": "e_n"
     },
     {
       "name": "e_n_f",
-      "human_readable": "e_n_f"
+      "text": "e_n_f"
     },
     {
       "name": "e_n_h",
-      "human_readable": "e_n_h"
+      "text": "e_n_h"
     },
     {
       "name": "e_q",
-      "human_readable": "e_q"
+      "text": "e_q"
     },
     {
       "name": "e_q_f",
-      "human_readable": "e_q_f"
+      "text": "e_q_f"
     },
     {
       "name": "e_q_h",
-      "human_readable": "e_q_h"
+      "text": "e_q_h"
     },
     {
       "name": "e_r",
-      "human_readable": "e_r"
+      "text": "e_r"
     },
     {
       "name": "e_rL",
-      "human_readable": "e_rL"
+      "text": "e_rL"
     },
     {
       "name": "e_rL_f",
-      "human_readable": "e_rL_f"
+      "text": "e_rL_f"
     },
     {
       "name": "e_rL_h",
-      "human_readable": "e_rL_h"
+      "text": "e_rL_h"
     },
     {
       "name": "e_w",
-      "human_readable": "e_w"
+      "text": "e_w"
     },
     {
       "name": "e_w_f",
-      "human_readable": "e_w_f"
+      "text": "e_w_f"
     },
     {
       "name": "e_w_h",
-      "human_readable": "e_w_h"
+      "text": "e_w_h"
     },
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     }
   ],
   "al_info": null

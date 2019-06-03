@@ -76,97 +76,97 @@
   "vars": [
     {
       "name": "b",
-      "human_readable": "b"
+      "text": "b"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "lambdda",
-      "human_readable": "lambdda"
+      "text": "lambdda"
     },
     {
       "name": "lambddap",
-      "human_readable": "lambddap"
+      "text": "lambddap"
     },
     {
       "name": "lambddastar",
-      "human_readable": "lambddastar"
+      "text": "lambddastar"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "p",
-      "human_readable": "p"
+      "text": "p"
     },
     {
       "name": "pit",
-      "human_readable": "pit"
+      "text": "pit"
     },
     {
       "name": "R",
-      "human_readable": "R"
+      "text": "R"
     },
     {
       "name": "Rstar",
-      "human_readable": "Rstar"
+      "text": "Rstar"
     },
     {
       "name": "w",
-      "human_readable": "w"
+      "text": "w"
     },
     {
       "name": "wstar",
-      "human_readable": "wstar"
+      "text": "wstar"
     },
     {
       "name": "y",
-      "human_readable": "y"
+      "text": "y"
     },
     {
       "name": "ystar",
-      "human_readable": "ystar"
+      "text": "ystar"
     },
     {
       "name": "z",
-      "human_readable": "z"
+      "text": "z"
     }
   ],
   "shocks": [
     {
       "name": "bs",
-      "human_readable": "bs"
+      "text": "bs"
     },
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     },
     {
       "name": "lambddaps",
-      "human_readable": "lambddaps"
+      "text": "lambddaps"
     },
     {
       "name": "pits",
-      "human_readable": "pits"
+      "text": "pits"
     },
     {
       "name": "zs",
-      "human_readable": "zs"
+      "text": "zs"
     }
   ],
   "al_info": null

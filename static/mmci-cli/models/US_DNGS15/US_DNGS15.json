@@ -76,225 +76,225 @@
   "vars": [
     {
       "name": "$\\bar{k}$",
-      "human_readable": "$\\bar{k}$"
+      "text": "$\\bar{k}$"
     },
     {
       "name": "$\\pi$",
-      "human_readable": "$\\pi$"
+      "text": "$\\pi$"
     },
     {
       "name": "$\\tilde{R}^k$",
-      "human_readable": "$\\tilde{R}^k$"
+      "text": "$\\tilde{R}^k$"
     },
     {
       "name": "$q^k$",
-      "human_readable": "$q^k$"
+      "text": "$q^k$"
     },
     {
       "name": "$r^k$",
-      "human_readable": "$r^k$"
+      "text": "$r^k$"
     },
     {
       "name": "b",
-      "human_readable": "b"
+      "text": "b"
     },
     {
       "name": "c",
-      "human_readable": "c"
+      "text": "c"
     },
     {
       "name": "c_f",
-      "human_readable": "c_f"
+      "text": "c_f"
     },
     {
       "name": "fispol",
-      "human_readable": "fispol"
+      "text": "fispol"
     },
     {
       "name": "g",
-      "human_readable": "g"
+      "text": "g"
     },
     {
       "name": "i",
-      "human_readable": "i"
+      "text": "i"
     },
     {
       "name": "i_f",
-      "human_readable": "i_f"
+      "text": "i_f"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "k",
-      "human_readable": "k"
+      "text": "k"
     },
     {
       "name": "k_f",
-      "human_readable": "k_f"
+      "text": "k_f"
     },
     {
       "name": "kbar",
-      "human_readable": "kbar"
+      "text": "kbar"
     },
     {
       "name": "kbar_f",
-      "human_readable": "kbar_f"
+      "text": "kbar_f"
     },
     {
       "name": "L",
-      "human_readable": "L"
+      "text": "L"
     },
     {
       "name": "L_f",
-      "human_readable": "L_f"
+      "text": "L_f"
     },
     {
       "name": "laf",
-      "human_readable": "laf"
+      "text": "laf"
     },
     {
       "name": "law",
-      "human_readable": "law"
+      "text": "law"
     },
     {
       "name": "mc",
-      "human_readable": "mc"
+      "text": "mc"
     },
     {
       "name": "mu",
-      "human_readable": "mu"
+      "text": "mu"
     },
     {
       "name": "n",
-      "human_readable": "n"
+      "text": "n"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "pi",
-      "human_readable": "pi"
+      "text": "pi"
     },
     {
       "name": "psi_g",
-      "human_readable": "psi_g"
+      "text": "psi_g"
     },
     {
       "name": "qk",
-      "human_readable": "qk"
+      "text": "qk"
     },
     {
       "name": "qk_f",
-      "human_readable": "qk_f"
+      "text": "qk_f"
     },
     {
       "name": "R",
-      "human_readable": "R"
+      "text": "R"
     },
     {
       "name": "r_f",
-      "human_readable": "r_f"
+      "text": "r_f"
     },
     {
       "name": "rk",
-      "human_readable": "rk"
+      "text": "rk"
     },
     {
       "name": "rk_f",
-      "human_readable": "rk_f"
+      "text": "rk_f"
     },
     {
       "name": "Rktil",
-      "human_readable": "Rktil"
+      "text": "Rktil"
     },
     {
       "name": "sigw",
-      "human_readable": "sigw"
+      "text": "sigw"
     },
     {
       "name": "u",
-      "human_readable": "u"
+      "text": "u"
     },
     {
       "name": "u_f",
-      "human_readable": "u_f"
+      "text": "u_f"
     },
     {
       "name": "w",
-      "human_readable": "w"
+      "text": "w"
     },
     {
       "name": "w_f",
-      "human_readable": "w_f"
+      "text": "w_f"
     },
     {
       "name": "wh",
-      "human_readable": "wh"
+      "text": "wh"
     },
     {
       "name": "y",
-      "human_readable": "y"
+      "text": "y"
     },
     {
       "name": "y_f",
-      "human_readable": "y_f"
+      "text": "y_f"
     },
     {
       "name": "z",
-      "human_readable": "z"
+      "text": "z"
     },
     {
       "name": "ztil",
-      "human_readable": "ztil"
+      "text": "ztil"
     }
   ],
   "shocks": [
     {
       "name": "fiscal_",
-      "human_readable": "fiscal_"
+      "text": "fiscal_"
     },
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     },
     {
       "name": "psi_b",
-      "human_readable": "psi_b"
+      "text": "psi_b"
     },
     {
       "name": "psi_laf",
-      "human_readable": "psi_laf"
+      "text": "psi_laf"
     },
     {
       "name": "psi_law",
-      "human_readable": "psi_law"
+      "text": "psi_law"
     },
     {
       "name": "psi_mu",
-      "human_readable": "psi_mu"
+      "text": "psi_mu"
     },
     {
       "name": "psi_sigw",
-      "human_readable": "psi_sigw"
+      "text": "psi_sigw"
     },
     {
       "name": "psi_z",
-      "human_readable": "psi_z"
+      "text": "psi_z"
     }
   ],
   "al_info": null

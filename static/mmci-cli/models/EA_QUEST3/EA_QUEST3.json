@@ -76,525 +76,525 @@
   "vars": [
     {
       "name": "E_BGYN",
-      "human_readable": "E_BGYN"
+      "text": "E_BGYN"
     },
     {
       "name": "E_BWRY",
-      "human_readable": "E_BWRY"
+      "text": "E_BWRY"
     },
     {
       "name": "E_CLCSN",
-      "human_readable": "E_CLCSN"
+      "text": "E_CLCSN"
     },
     {
       "name": "E_DBGYN",
-      "human_readable": "E_DBGYN"
+      "text": "E_DBGYN"
     },
     {
       "name": "E_EPS_G",
-      "human_readable": "E_EPS_G"
+      "text": "E_EPS_G"
     },
     {
       "name": "E_ETA",
-      "human_readable": "E_ETA"
+      "text": "E_ETA"
     },
     {
       "name": "E_GC",
-      "human_readable": "E_GC"
+      "text": "E_GC"
     },
     {
       "name": "E_GCL",
-      "human_readable": "E_GCL"
+      "text": "E_GCL"
     },
     {
       "name": "E_GCLC",
-      "human_readable": "E_GCLC"
+      "text": "E_GCLC"
     },
     {
       "name": "E_GCNLC",
-      "human_readable": "E_GCNLC"
+      "text": "E_GCNLC"
     },
     {
       "name": "E_GE",
-      "human_readable": "E_GE"
+      "text": "E_GE"
     },
     {
       "name": "E_GEX",
-      "human_readable": "E_GEX"
+      "text": "E_GEX"
     },
     {
       "name": "E_GEXL",
-      "human_readable": "E_GEXL"
+      "text": "E_GEXL"
     },
     {
       "name": "E_GG",
-      "human_readable": "E_GG"
+      "text": "E_GG"
     },
     {
       "name": "E_GGL",
-      "human_readable": "E_GGL"
+      "text": "E_GGL"
     },
     {
       "name": "E_GI",
-      "human_readable": "E_GI"
+      "text": "E_GI"
     },
     {
       "name": "E_GIG",
-      "human_readable": "E_GIG"
+      "text": "E_GIG"
     },
     {
       "name": "E_GIL",
-      "human_readable": "E_GIL"
+      "text": "E_GIL"
     },
     {
       "name": "E_GIM",
-      "human_readable": "E_GIM"
+      "text": "E_GIM"
     },
     {
       "name": "E_GIML",
-      "human_readable": "E_GIML"
+      "text": "E_GIML"
     },
     {
       "name": "E_GK",
-      "human_readable": "E_GK"
+      "text": "E_GK"
     },
     {
       "name": "E_GKG",
-      "human_readable": "E_GKG"
+      "text": "E_GKG"
     },
     {
       "name": "E_GL",
-      "human_readable": "E_GL"
+      "text": "E_GL"
     },
     {
       "name": "E_GSN",
-      "human_readable": "E_GSN"
+      "text": "E_GSN"
     },
     {
       "name": "E_GTAX",
-      "human_readable": "E_GTAX"
+      "text": "E_GTAX"
     },
     {
       "name": "E_GTFP",
-      "human_readable": "E_GTFP"
+      "text": "E_GTFP"
     },
     {
       "name": "E_GTFPUCAP",
-      "human_readable": "E_GTFPUCAP"
+      "text": "E_GTFPUCAP"
     },
     {
       "name": "E_GTR",
-      "human_readable": "E_GTR"
+      "text": "E_GTR"
     },
     {
       "name": "E_GUC",
-      "human_readable": "E_GUC"
+      "text": "E_GUC"
     },
     {
       "name": "E_GUCAP",
-      "human_readable": "E_GUCAP"
+      "text": "E_GUCAP"
     },
     {
       "name": "E_GWRY",
-      "human_readable": "E_GWRY"
+      "text": "E_GWRY"
     },
     {
       "name": "E_GY",
-      "human_readable": "E_GY"
+      "text": "E_GY"
     },
     {
       "name": "E_GYL",
-      "human_readable": "E_GYL"
+      "text": "E_GYL"
     },
     {
       "name": "E_GYPOT",
-      "human_readable": "E_GYPOT"
+      "text": "E_GYPOT"
     },
     {
       "name": "E_GYW",
-      "human_readable": "E_GYW"
+      "text": "E_GYW"
     },
     {
       "name": "E_INOM",
-      "human_readable": "E_INOM"
+      "text": "E_INOM"
     },
     {
       "name": "E_INOMW",
-      "human_readable": "E_INOMW"
+      "text": "E_INOMW"
     },
     {
       "name": "E_LBGYN",
-      "human_readable": "E_LBGYN"
+      "text": "E_LBGYN"
     },
     {
       "name": "E_LCLCSN",
-      "human_readable": "E_LCLCSN"
+      "text": "E_LCLCSN"
     },
     {
       "name": "E_LCNLCSN",
-      "human_readable": "E_LCNLCSN"
+      "text": "E_LCNLCSN"
     },
     {
       "name": "E_LCSN",
-      "human_readable": "E_LCSN"
+      "text": "E_LCSN"
     },
     {
       "name": "E_LCY",
-      "human_readable": "E_LCY"
+      "text": "E_LCY"
     },
     {
       "name": "E_LER",
-      "human_readable": "E_LER"
+      "text": "E_LER"
     },
     {
       "name": "E_LEXYN",
-      "human_readable": "E_LEXYN"
+      "text": "E_LEXYN"
     },
     {
       "name": "E_LGSN",
-      "human_readable": "E_LGSN"
+      "text": "E_LGSN"
     },
     {
       "name": "E_LGY",
-      "human_readable": "E_LGY"
+      "text": "E_LGY"
     },
     {
       "name": "E_LIGSN",
-      "human_readable": "E_LIGSN"
+      "text": "E_LIGSN"
     },
     {
       "name": "E_LIK",
-      "human_readable": "E_LIK"
+      "text": "E_LIK"
     },
     {
       "name": "E_LIKG",
-      "human_readable": "E_LIKG"
+      "text": "E_LIKG"
     },
     {
       "name": "E_LIMYN",
-      "human_readable": "E_LIMYN"
+      "text": "E_LIMYN"
     },
     {
       "name": "E_LISN",
-      "human_readable": "E_LISN"
+      "text": "E_LISN"
     },
     {
       "name": "E_LL",
-      "human_readable": "E_LL"
+      "text": "E_LL"
     },
     {
       "name": "E_LL0",
-      "human_readable": "E_LL0"
+      "text": "E_LL0"
     },
     {
       "name": "E_LOL",
-      "human_readable": "E_LOL"
+      "text": "E_LOL"
     },
     {
       "name": "E_LPCP",
-      "human_readable": "E_LPCP"
+      "text": "E_LPCP"
     },
     {
       "name": "E_LPMP",
-      "human_readable": "E_LPMP"
+      "text": "E_LPMP"
     },
     {
       "name": "E_LPXP",
-      "human_readable": "E_LPXP"
+      "text": "E_LPXP"
     },
     {
       "name": "E_LTRYN",
-      "human_readable": "E_LTRYN"
+      "text": "E_LTRYN"
     },
     {
       "name": "E_LUCLCYN",
-      "human_readable": "E_LUCLCYN"
+      "text": "E_LUCLCYN"
     },
     {
       "name": "E_LUCYN",
-      "human_readable": "E_LUCYN"
+      "text": "E_LUCYN"
     },
     {
       "name": "E_LWS",
-      "human_readable": "E_LWS"
+      "text": "E_LWS"
     },
     {
       "name": "E_LYGAP",
-      "human_readable": "E_LYGAP"
+      "text": "E_LYGAP"
     },
     {
       "name": "E_LYKPPI",
-      "human_readable": "E_LYKPPI"
+      "text": "E_LYKPPI"
     },
     {
       "name": "E_LYWR",
-      "human_readable": "E_LYWR"
+      "text": "E_LYWR"
     },
     {
       "name": "E_LYWY",
-      "human_readable": "E_LYWY"
+      "text": "E_LYWY"
     },
     {
       "name": "E_MRY",
-      "human_readable": "E_MRY"
+      "text": "E_MRY"
     },
     {
       "name": "E_PHI",
-      "human_readable": "E_PHI"
+      "text": "E_PHI"
     },
     {
       "name": "E_PHIC",
-      "human_readable": "E_PHIC"
+      "text": "E_PHIC"
     },
     {
       "name": "E_PHIM",
-      "human_readable": "E_PHIM"
+      "text": "E_PHIM"
     },
     {
       "name": "E_PHIML",
-      "human_readable": "E_PHIML"
+      "text": "E_PHIML"
     },
     {
       "name": "E_PHIPI",
-      "human_readable": "E_PHIPI"
+      "text": "E_PHIPI"
     },
     {
       "name": "E_PHIW",
-      "human_readable": "E_PHIW"
+      "text": "E_PHIW"
     },
     {
       "name": "E_PHIX",
-      "human_readable": "E_PHIX"
+      "text": "E_PHIX"
     },
     {
       "name": "E_PHIXL",
-      "human_readable": "E_PHIXL"
+      "text": "E_PHIXL"
     },
     {
       "name": "E_Q",
-      "human_readable": "E_Q"
+      "text": "E_Q"
     },
     {
       "name": "E_R",
-      "human_readable": "E_R"
+      "text": "E_R"
     },
     {
       "name": "E_TAXYN",
-      "human_readable": "E_TAXYN"
+      "text": "E_TAXYN"
     },
     {
       "name": "E_TBYN",
-      "human_readable": "E_TBYN"
+      "text": "E_TBYN"
     },
     {
       "name": "E_TRTAXYN",
-      "human_readable": "E_TRTAXYN"
+      "text": "E_TRTAXYN"
     },
     {
       "name": "E_TRW",
-      "human_readable": "E_TRW"
+      "text": "E_TRW"
     },
     {
       "name": "E_TRYN",
-      "human_readable": "E_TRYN"
+      "text": "E_TRYN"
     },
     {
       "name": "E_TW",
-      "human_readable": "E_TW"
+      "text": "E_TW"
     },
     {
       "name": "E_UCAP",
-      "human_readable": "E_UCAP"
+      "text": "E_UCAP"
     },
     {
       "name": "E_UCAP0",
-      "human_readable": "E_UCAP0"
+      "text": "E_UCAP0"
     },
     {
       "name": "E_VL",
-      "human_readable": "E_VL"
+      "text": "E_VL"
     },
     {
       "name": "E_VLLC",
-      "human_readable": "E_VLLC"
+      "text": "E_VLLC"
     },
     {
       "name": "E_WPHI",
-      "human_readable": "E_WPHI"
+      "text": "E_WPHI"
     },
     {
       "name": "E_WRPHI",
-      "human_readable": "E_WRPHI"
+      "text": "E_WRPHI"
     },
     {
       "name": "E_WS",
-      "human_readable": "E_WS"
+      "text": "E_WS"
     },
     {
       "name": "E_WSW",
-      "human_readable": "E_WSW"
+      "text": "E_WSW"
     },
     {
       "name": "E_ZEPS_C",
-      "human_readable": "E_ZEPS_C"
+      "text": "E_ZEPS_C"
     },
     {
       "name": "E_ZEPS_ETA",
-      "human_readable": "E_ZEPS_ETA"
+      "text": "E_ZEPS_ETA"
     },
     {
       "name": "E_ZEPS_ETAM",
-      "human_readable": "E_ZEPS_ETAM"
+      "text": "E_ZEPS_ETAM"
     },
     {
       "name": "E_ZEPS_ETAX",
-      "human_readable": "E_ZEPS_ETAX"
+      "text": "E_ZEPS_ETAX"
     },
     {
       "name": "E_ZEPS_EX",
-      "human_readable": "E_ZEPS_EX"
+      "text": "E_ZEPS_EX"
     },
     {
       "name": "E_ZEPS_G",
-      "human_readable": "E_ZEPS_G"
+      "text": "E_ZEPS_G"
     },
     {
       "name": "E_ZEPS_IG",
-      "human_readable": "E_ZEPS_IG"
+      "text": "E_ZEPS_IG"
     },
     {
       "name": "E_ZEPS_L",
-      "human_readable": "E_ZEPS_L"
+      "text": "E_ZEPS_L"
     },
     {
       "name": "E_ZEPS_M",
-      "human_readable": "E_ZEPS_M"
+      "text": "E_ZEPS_M"
     },
     {
       "name": "E_ZEPS_PPI",
-      "human_readable": "E_ZEPS_PPI"
+      "text": "E_ZEPS_PPI"
     },
     {
       "name": "E_ZEPS_RPREME",
-      "human_readable": "E_ZEPS_RPREME"
+      "text": "E_ZEPS_RPREME"
     },
     {
       "name": "E_ZEPS_RPREMK",
-      "human_readable": "E_ZEPS_RPREMK"
+      "text": "E_ZEPS_RPREMK"
     },
     {
       "name": "E_ZEPS_TR",
-      "human_readable": "E_ZEPS_TR"
+      "text": "E_ZEPS_TR"
     },
     {
       "name": "E_ZEPS_W",
-      "human_readable": "E_ZEPS_W"
+      "text": "E_ZEPS_W"
     },
     {
       "name": "E_ZPHIT",
-      "human_readable": "E_ZPHIT"
+      "text": "E_ZPHIT"
     },
     {
       "name": "fispol",
-      "human_readable": "fispol"
+      "text": "fispol"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     }
   ],
   "shocks": [
     {
       "name": "E_EPS_C",
-      "human_readable": "E_EPS_C"
+      "text": "E_EPS_C"
     },
     {
       "name": "E_EPS_ETA",
-      "human_readable": "E_EPS_ETA"
+      "text": "E_EPS_ETA"
     },
     {
       "name": "E_EPS_ETAM",
-      "human_readable": "E_EPS_ETAM"
+      "text": "E_EPS_ETAM"
     },
     {
       "name": "E_EPS_ETAX",
-      "human_readable": "E_EPS_ETAX"
+      "text": "E_EPS_ETAX"
     },
     {
       "name": "E_EPS_EX",
-      "human_readable": "E_EPS_EX"
+      "text": "E_EPS_EX"
     },
     {
       "name": "E_EPS_IG",
-      "human_readable": "E_EPS_IG"
+      "text": "E_EPS_IG"
     },
     {
       "name": "E_EPS_INOMW",
-      "human_readable": "E_EPS_INOMW"
+      "text": "E_EPS_INOMW"
     },
     {
       "name": "E_EPS_L",
-      "human_readable": "E_EPS_L"
+      "text": "E_EPS_L"
     },
     {
       "name": "E_EPS_LOL",
-      "human_readable": "E_EPS_LOL"
+      "text": "E_EPS_LOL"
     },
     {
       "name": "E_EPS_M",
-      "human_readable": "E_EPS_M"
+      "text": "E_EPS_M"
     },
     {
       "name": "E_EPS_PPI",
-      "human_readable": "E_EPS_PPI"
+      "text": "E_EPS_PPI"
     },
     {
       "name": "E_EPS_PW",
-      "human_readable": "E_EPS_PW"
+      "text": "E_EPS_PW"
     },
     {
       "name": "E_EPS_RPREME",
-      "human_readable": "E_EPS_RPREME"
+      "text": "E_EPS_RPREME"
     },
     {
       "name": "E_EPS_RPREMK",
-      "human_readable": "E_EPS_RPREMK"
+      "text": "E_EPS_RPREMK"
     },
     {
       "name": "E_EPS_TR",
-      "human_readable": "E_EPS_TR"
+      "text": "E_EPS_TR"
     },
     {
       "name": "E_EPS_W",
-      "human_readable": "E_EPS_W"
+      "text": "E_EPS_W"
     },
     {
       "name": "E_EPS_Y",
-      "human_readable": "E_EPS_Y"
+      "text": "E_EPS_Y"
     },
     {
       "name": "E_EPS_YW",
-      "human_readable": "E_EPS_YW"
+      "text": "E_EPS_YW"
     },
     {
       "name": "fiscal_",
-      "human_readable": "fiscal_"
+      "text": "fiscal_"
     },
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     }
   ],
   "al_info": null

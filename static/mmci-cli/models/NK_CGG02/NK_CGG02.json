@@ -75,117 +75,117 @@
   "vars": [
     {
       "name": "a",
-      "human_readable": "a"
+      "text": "a"
     },
     {
       "name": "astar",
-      "human_readable": "astar"
+      "text": "astar"
     },
     {
       "name": "infl",
-      "human_readable": "infl"
+      "text": "infl"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "infstar",
-      "human_readable": "infstar"
+      "text": "infstar"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "r",
-      "human_readable": "r"
+      "text": "r"
     },
     {
       "name": "rr",
-      "human_readable": "rr"
+      "text": "rr"
     },
     {
       "name": "rrstar",
-      "human_readable": "rrstar"
+      "text": "rrstar"
     },
     {
       "name": "rstar",
-      "human_readable": "rstar"
+      "text": "rstar"
     },
     {
       "name": "u",
-      "human_readable": "u"
+      "text": "u"
     },
     {
       "name": "ustar",
-      "human_readable": "ustar"
+      "text": "ustar"
     },
     {
       "name": "y",
-      "human_readable": "y"
+      "text": "y"
     },
     {
       "name": "ybar",
-      "human_readable": "ybar"
+      "text": "ybar"
     },
     {
       "name": "ybarstar",
-      "human_readable": "ybarstar"
+      "text": "ybarstar"
     },
     {
       "name": "ystar",
-      "human_readable": "ystar"
+      "text": "ystar"
     },
     {
       "name": "ytilde",
-      "human_readable": "ytilde"
+      "text": "ytilde"
     },
     {
       "name": "ytildestar",
-      "human_readable": "ytildestar"
+      "text": "ytildestar"
     }
   ],
   "shocks": [
     {
       "name": "a_",
-      "human_readable": "a_"
+      "text": "a_"
     },
     {
       "name": "astar_",
-      "human_readable": "astar_"
+      "text": "astar_"
     },
     {
       "name": "inf_",
-      "human_readable": "inf_"
+      "text": "inf_"
     },
     {
       "name": "infstar_",
-      "human_readable": "infstar_"
+      "text": "infstar_"
     },
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     },
     {
       "name": "rstar_",
-      "human_readable": "rstar_"
+      "text": "rstar_"
     },
     {
       "name": "ystar_",
-      "human_readable": "ystar_"
+      "text": "ystar_"
     }
   ],
   "al_info": null

@@ -74,197 +74,197 @@
   "vars": [
     {
       "name": "cwage",
-      "human_readable": "cwage"
+      "text": "cwage"
     },
     {
       "name": "cwage1",
-      "human_readable": "cwage1"
+      "text": "cwage1"
     },
     {
       "name": "cwage2",
-      "human_readable": "cwage2"
+      "text": "cwage2"
     },
     {
       "name": "drff",
-      "human_readable": "drff"
+      "text": "drff"
     },
     {
       "name": "dygap",
-      "human_readable": "dygap"
+      "text": "dygap"
     },
     {
       "name": "ec",
-      "human_readable": "ec"
+      "text": "ec"
     },
     {
       "name": "efi",
-      "human_readable": "efi"
+      "text": "efi"
     },
     {
       "name": "efi1",
-      "human_readable": "efi1"
+      "text": "efi1"
     },
     {
       "name": "efi2",
-      "human_readable": "efi2"
+      "text": "efi2"
     },
     {
       "name": "eg",
-      "human_readable": "eg"
+      "text": "eg"
     },
     {
       "name": "egsh",
-      "human_readable": "egsh"
+      "text": "egsh"
     },
     {
       "name": "eii",
-      "human_readable": "eii"
+      "text": "eii"
     },
     {
       "name": "eii1",
-      "human_readable": "eii1"
+      "text": "eii1"
     },
     {
       "name": "eii2",
-      "human_readable": "eii2"
+      "text": "eii2"
     },
     {
       "name": "ex",
-      "human_readable": "ex"
+      "text": "ex"
     },
     {
       "name": "fispol",
-      "human_readable": "fispol"
+      "text": "fispol"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "pdot",
-      "human_readable": "pdot"
+      "text": "pdot"
     },
     {
       "name": "pinf",
-      "human_readable": "pinf"
+      "text": "pinf"
     },
     {
       "name": "pitarg",
-      "human_readable": "pitarg"
+      "text": "pitarg"
     },
     {
       "name": "plevel",
-      "human_readable": "plevel"
+      "text": "plevel"
     },
     {
       "name": "plevel1",
-      "human_readable": "plevel1"
+      "text": "plevel1"
     },
     {
       "name": "plevel2",
-      "human_readable": "plevel2"
+      "text": "plevel2"
     },
     {
       "name": "plevel3",
-      "human_readable": "plevel3"
+      "text": "plevel3"
     },
     {
       "name": "rff",
-      "human_readable": "rff"
+      "text": "rff"
     },
     {
       "name": "rff1",
-      "human_readable": "rff1"
+      "text": "rff1"
     },
     {
       "name": "rho1",
-      "human_readable": "rho1"
+      "text": "rho1"
     },
     {
       "name": "rho16",
-      "human_readable": "rho16"
+      "text": "rho16"
     },
     {
       "name": "rho28",
-      "human_readable": "rho28"
+      "text": "rho28"
     },
     {
       "name": "rho40",
-      "human_readable": "rho40"
+      "text": "rho40"
     },
     {
       "name": "rl",
-      "human_readable": "rl"
+      "text": "rl"
     },
     {
       "name": "rrl",
-      "human_readable": "rrl"
+      "text": "rrl"
     },
     {
       "name": "vindex",
-      "human_readable": "vindex"
+      "text": "vindex"
     },
     {
       "name": "ygap",
-      "human_readable": "ygap"
+      "text": "ygap"
     },
     {
       "name": "ygap1",
-      "human_readable": "ygap1"
+      "text": "ygap1"
     },
     {
       "name": "ygap2",
-      "human_readable": "ygap2"
+      "text": "ygap2"
     },
     {
       "name": "yp",
-      "human_readable": "yp"
+      "text": "yp"
     }
   ],
   "shocks": [
     {
       "name": "cwsh",
-      "human_readable": "cwsh"
+      "text": "cwsh"
     },
     {
       "name": "ecsh",
-      "human_readable": "ecsh"
+      "text": "ecsh"
     },
     {
       "name": "efish",
-      "human_readable": "efish"
+      "text": "efish"
     },
     {
       "name": "eiish",
-      "human_readable": "eiish"
+      "text": "eiish"
     },
     {
       "name": "exsh",
-      "human_readable": "exsh"
+      "text": "exsh"
     },
     {
       "name": "fiscal_",
-      "human_readable": "fiscal_"
+      "text": "fiscal_"
     },
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     }
   ],
   "al_info": null

@@ -40,365 +40,365 @@
   "vars": [
     {
       "name": "a_c",
-      "human_readable": "a_c"
+      "text": "a_c"
     },
     {
       "name": "a_d",
-      "human_readable": "a_d"
+      "text": "a_d"
     },
     {
       "name": "b_b",
-      "human_readable": "b_b"
+      "text": "b_b"
     },
     {
       "name": "b_bf",
-      "human_readable": "b_bf"
+      "text": "b_bf"
     },
     {
       "name": "c",
-      "human_readable": "c"
+      "text": "c"
     },
     {
       "name": "c_ast",
-      "human_readable": "c_ast"
+      "text": "c_ast"
     },
     {
       "name": "c_b",
-      "human_readable": "c_b"
+      "text": "c_b"
     },
     {
       "name": "c_bf",
-      "human_readable": "c_bf"
+      "text": "c_bf"
     },
     {
       "name": "c_s",
-      "human_readable": "c_s"
+      "text": "c_s"
     },
     {
       "name": "c_sf",
-      "human_readable": "c_sf"
+      "text": "c_sf"
     },
     {
       "name": "cf",
-      "human_readable": "cf"
+      "text": "cf"
     },
     {
       "name": "d",
-      "human_readable": "d"
+      "text": "d"
     },
     {
       "name": "d_ast",
-      "human_readable": "d_ast"
+      "text": "d_ast"
     },
     {
       "name": "d_b",
-      "human_readable": "d_b"
+      "text": "d_b"
     },
     {
       "name": "d_bf",
-      "human_readable": "d_bf"
+      "text": "d_bf"
     },
     {
       "name": "d_s",
-      "human_readable": "d_s"
+      "text": "d_s"
     },
     {
       "name": "d_sf",
-      "human_readable": "d_sf"
+      "text": "d_sf"
     },
     {
       "name": "df",
-      "human_readable": "df"
+      "text": "df"
     },
     {
       "name": "e",
-      "human_readable": "e"
+      "text": "e"
     },
     {
       "name": "epsg",
-      "human_readable": "epsg"
+      "text": "epsg"
     },
     {
       "name": "epsmu_c_aux",
-      "human_readable": "epsmu_c_aux"
+      "text": "epsmu_c_aux"
     },
     {
       "name": "epsmu_d_aux",
-      "human_readable": "epsmu_d_aux"
+      "text": "epsmu_d_aux"
     },
     {
       "name": "fispol",
-      "human_readable": "fispol"
+      "text": "fispol"
     },
     {
       "name": "g",
-      "human_readable": "g"
+      "text": "g"
     },
     {
       "name": "i_d_ast",
-      "human_readable": "i_d_ast"
+      "text": "i_d_ast"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "LTV",
-      "human_readable": "LTV"
+      "text": "LTV"
     },
     {
       "name": "mc_c",
-      "human_readable": "mc_c"
+      "text": "mc_c"
     },
     {
       "name": "mc_d",
-      "human_readable": "mc_d"
+      "text": "mc_d"
     },
     {
       "name": "n",
-      "human_readable": "n"
+      "text": "n"
     },
     {
       "name": "n_c",
-      "human_readable": "n_c"
+      "text": "n_c"
     },
     {
       "name": "n_c_b",
-      "human_readable": "n_c_b"
+      "text": "n_c_b"
     },
     {
       "name": "n_c_bf",
-      "human_readable": "n_c_bf"
+      "text": "n_c_bf"
     },
     {
       "name": "n_c_s",
-      "human_readable": "n_c_s"
+      "text": "n_c_s"
     },
     {
       "name": "n_c_sf",
-      "human_readable": "n_c_sf"
+      "text": "n_c_sf"
     },
     {
       "name": "n_cf",
-      "human_readable": "n_cf"
+      "text": "n_cf"
     },
     {
       "name": "n_d",
-      "human_readable": "n_d"
+      "text": "n_d"
     },
     {
       "name": "n_d_b",
-      "human_readable": "n_d_b"
+      "text": "n_d_b"
     },
     {
       "name": "n_d_bf",
-      "human_readable": "n_d_bf"
+      "text": "n_d_bf"
     },
     {
       "name": "n_d_s",
-      "human_readable": "n_d_s"
+      "text": "n_d_s"
     },
     {
       "name": "n_d_sf",
-      "human_readable": "n_d_sf"
+      "text": "n_d_sf"
     },
     {
       "name": "n_df",
-      "human_readable": "n_df"
+      "text": "n_df"
     },
     {
       "name": "nf",
-      "human_readable": "nf"
+      "text": "nf"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "p_c_ast",
-      "human_readable": "p_c_ast"
+      "text": "p_c_ast"
     },
     {
       "name": "p_d_ast",
-      "human_readable": "p_d_ast"
+      "text": "p_d_ast"
     },
     {
       "name": "p_dc",
-      "human_readable": "p_dc"
+      "text": "p_dc"
     },
     {
       "name": "p_dc_ast",
-      "human_readable": "p_dc_ast"
+      "text": "p_dc_ast"
     },
     {
       "name": "pi_c",
-      "human_readable": "pi_c"
+      "text": "pi_c"
     },
     {
       "name": "pi_c_f",
-      "human_readable": "pi_c_f"
+      "text": "pi_c_f"
     },
     {
       "name": "pi_c_h",
-      "human_readable": "pi_c_h"
+      "text": "pi_c_h"
     },
     {
       "name": "pi_d_h",
-      "human_readable": "pi_d_h"
+      "text": "pi_d_h"
     },
     {
       "name": "psi",
-      "human_readable": "psi"
+      "text": "psi"
     },
     {
       "name": "psif",
-      "human_readable": "psif"
+      "text": "psif"
     },
     {
       "name": "r",
-      "human_readable": "r"
+      "text": "r"
     },
     {
       "name": "rf",
-      "human_readable": "rf"
+      "text": "rf"
     },
     {
       "name": "s_c",
-      "human_readable": "s_c"
+      "text": "s_c"
     },
     {
       "name": "s_d",
-      "human_readable": "s_d"
+      "text": "s_d"
     },
     {
       "name": "shock_d_b",
-      "human_readable": "shock_d_b"
+      "text": "shock_d_b"
     },
     {
       "name": "shock_d_s",
-      "human_readable": "shock_d_s"
+      "text": "shock_d_s"
     },
     {
       "name": "shock_d_stern",
-      "human_readable": "shock_d_stern"
+      "text": "shock_d_stern"
     },
     {
       "name": "shock_mu_c",
-      "human_readable": "shock_mu_c"
+      "text": "shock_mu_c"
     },
     {
       "name": "shock_mu_d",
-      "human_readable": "shock_mu_d"
+      "text": "shock_mu_d"
     },
     {
       "name": "wp_c",
-      "human_readable": "wp_c"
+      "text": "wp_c"
     },
     {
       "name": "wp_cf",
-      "human_readable": "wp_cf"
+      "text": "wp_cf"
     },
     {
       "name": "wp_d",
-      "human_readable": "wp_d"
+      "text": "wp_d"
     },
     {
       "name": "wp_df",
-      "human_readable": "wp_df"
+      "text": "wp_df"
     },
     {
       "name": "y",
-      "human_readable": "y"
+      "text": "y"
     },
     {
       "name": "y_c",
-      "human_readable": "y_c"
+      "text": "y_c"
     },
     {
       "name": "y_cf",
-      "human_readable": "y_cf"
+      "text": "y_cf"
     },
     {
       "name": "y_d",
-      "human_readable": "y_d"
+      "text": "y_d"
     },
     {
       "name": "y_df",
-      "human_readable": "y_df"
+      "text": "y_df"
     },
     {
       "name": "yf",
-      "human_readable": "yf"
+      "text": "yf"
     }
   ],
   "shocks": [
     {
       "name": "epsa_c",
-      "human_readable": "epsa_c"
+      "text": "epsa_c"
     },
     {
       "name": "epsa_d",
-      "human_readable": "epsa_d"
+      "text": "epsa_d"
     },
     {
       "name": "epsc_ast",
-      "human_readable": "epsc_ast"
+      "text": "epsc_ast"
     },
     {
       "name": "epsd_ast",
-      "human_readable": "epsd_ast"
+      "text": "epsd_ast"
     },
     {
       "name": "epsd_b",
-      "human_readable": "epsd_b"
+      "text": "epsd_b"
     },
     {
       "name": "epsd_s",
-      "human_readable": "epsd_s"
+      "text": "epsd_s"
     },
     {
       "name": "epsd_stern",
-      "human_readable": "epsd_stern"
+      "text": "epsd_stern"
     },
     {
       "name": "epsLTV",
-      "human_readable": "epsLTV"
+      "text": "epsLTV"
     },
     {
       "name": "epsmu_c",
-      "human_readable": "epsmu_c"
+      "text": "epsmu_c"
     },
     {
       "name": "epsmu_d",
-      "human_readable": "epsmu_d"
+      "text": "epsmu_d"
     },
     {
       "name": "epsp_c_ast",
-      "human_readable": "epsp_c_ast"
+      "text": "epsp_c_ast"
     },
     {
       "name": "epsp_d_ast",
-      "human_readable": "epsp_d_ast"
+      "text": "epsp_d_ast"
     },
     {
       "name": "fiscal_",
-      "human_readable": "fiscal_"
+      "text": "fiscal_"
     },
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     }
   ],
   "al_info": null

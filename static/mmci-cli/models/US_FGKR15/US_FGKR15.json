@@ -77,293 +77,293 @@
   "vars": [
     {
       "name": "bdt",
-      "human_readable": "bdt"
+      "text": "bdt"
     },
     {
       "name": "bdtF",
-      "human_readable": "bdtF"
+      "text": "bdtF"
     },
     {
       "name": "ct",
-      "human_readable": "ct"
+      "text": "ct"
     },
     {
       "name": "ctF",
-      "human_readable": "ctF"
+      "text": "ctF"
     },
     {
       "name": "dt",
-      "human_readable": "dt"
+      "text": "dt"
     },
     {
       "name": "egt",
-      "human_readable": "egt"
+      "text": "egt"
     },
     {
       "name": "fispol",
-      "human_readable": "fispol"
+      "text": "fispol"
     },
     {
       "name": "gct",
-      "human_readable": "gct"
+      "text": "gct"
     },
     {
       "name": "gctF",
-      "human_readable": "gctF"
+      "text": "gctF"
     },
     {
       "name": "git",
-      "human_readable": "git"
+      "text": "git"
     },
     {
       "name": "gitF",
-      "human_readable": "gitF"
+      "text": "gitF"
     },
     {
       "name": "gt",
-      "human_readable": "gt"
+      "text": "gt"
     },
     {
       "name": "gtF",
-      "human_readable": "gtF"
+      "text": "gtF"
     },
     {
       "name": "gwt",
-      "human_readable": "gwt"
+      "text": "gwt"
     },
     {
       "name": "gwtF",
-      "human_readable": "gwtF"
+      "text": "gwtF"
     },
     {
       "name": "gyt",
-      "human_readable": "gyt"
+      "text": "gyt"
     },
     {
       "name": "gytF",
-      "human_readable": "gytF"
+      "text": "gytF"
     },
     {
       "name": "gzt",
-      "human_readable": "gzt"
+      "text": "gzt"
     },
     {
       "name": "ht",
-      "human_readable": "ht"
+      "text": "ht"
     },
     {
       "name": "htF",
-      "human_readable": "htF"
+      "text": "htF"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "inflt",
-      "human_readable": "inflt"
+      "text": "inflt"
     },
     {
       "name": "infltF",
-      "human_readable": "infltF"
+      "text": "infltF"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "invt",
-      "human_readable": "invt"
+      "text": "invt"
     },
     {
       "name": "invtF",
-      "human_readable": "invtF"
+      "text": "invtF"
     },
     {
       "name": "kbt",
-      "human_readable": "kbt"
+      "text": "kbt"
     },
     {
       "name": "kbtF",
-      "human_readable": "kbtF"
+      "text": "kbtF"
     },
     {
       "name": "kt",
-      "human_readable": "kt"
+      "text": "kt"
     },
     {
       "name": "ktF",
-      "human_readable": "ktF"
+      "text": "ktF"
     },
     {
       "name": "lamt",
-      "human_readable": "lamt"
+      "text": "lamt"
     },
     {
       "name": "lamtF",
-      "human_readable": "lamtF"
+      "text": "lamtF"
     },
     {
       "name": "mct",
-      "human_readable": "mct"
+      "text": "mct"
     },
     {
       "name": "mctF",
-      "human_readable": "mctF"
+      "text": "mctF"
     },
     {
       "name": "miubt",
-      "human_readable": "miubt"
+      "text": "miubt"
     },
     {
       "name": "miubtF",
-      "human_readable": "miubtF"
+      "text": "miubtF"
     },
     {
       "name": "miut",
-      "human_readable": "miut"
+      "text": "miut"
     },
     {
       "name": "miutF",
-      "human_readable": "miutF"
+      "text": "miutF"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "proft",
-      "human_readable": "proft"
+      "text": "proft"
     },
     {
       "name": "proftF",
-      "human_readable": "proftF"
+      "text": "proftF"
     },
     {
       "name": "rkt",
-      "human_readable": "rkt"
+      "text": "rkt"
     },
     {
       "name": "rktF",
-      "human_readable": "rktF"
+      "text": "rktF"
     },
     {
       "name": "Rt",
-      "human_readable": "Rt"
+      "text": "Rt"
     },
     {
       "name": "RtF",
-      "human_readable": "RtF"
+      "text": "RtF"
     },
     {
       "name": "sigct",
-      "human_readable": "sigct"
+      "text": "sigct"
     },
     {
       "name": "siggt",
-      "human_readable": "siggt"
+      "text": "siggt"
     },
     {
       "name": "sigkt",
-      "human_readable": "sigkt"
+      "text": "sigkt"
     },
     {
       "name": "sigwt",
-      "human_readable": "sigwt"
+      "text": "sigwt"
     },
     {
       "name": "tauct",
-      "human_readable": "tauct"
+      "text": "tauct"
     },
     {
       "name": "tauctF",
-      "human_readable": "tauctF"
+      "text": "tauctF"
     },
     {
       "name": "taukt",
-      "human_readable": "taukt"
+      "text": "taukt"
     },
     {
       "name": "tauktF",
-      "human_readable": "tauktF"
+      "text": "tauktF"
     },
     {
       "name": "tauwt",
-      "human_readable": "tauwt"
+      "text": "tauwt"
     },
     {
       "name": "tauwtF",
-      "human_readable": "tauwtF"
+      "text": "tauwtF"
     },
     {
       "name": "utilt",
-      "human_readable": "utilt"
+      "text": "utilt"
     },
     {
       "name": "utiltF",
-      "human_readable": "utiltF"
+      "text": "utiltF"
     },
     {
       "name": "wt",
-      "human_readable": "wt"
+      "text": "wt"
     },
     {
       "name": "wtF",
-      "human_readable": "wtF"
+      "text": "wtF"
     },
     {
       "name": "yt",
-      "human_readable": "yt"
+      "text": "yt"
     },
     {
       "name": "ytF",
-      "human_readable": "ytF"
+      "text": "ytF"
     }
   ],
   "shocks": [
     {
       "name": "ekt",
-      "human_readable": "ekt"
+      "text": "ekt"
     },
     {
       "name": "ewt",
-      "human_readable": "ewt"
+      "text": "ewt"
     },
     {
       "name": "ezt",
-      "human_readable": "ezt"
+      "text": "ezt"
     },
     {
       "name": "fiscal_",
-      "human_readable": "fiscal_"
+      "text": "fiscal_"
     },
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     },
     {
       "name": "uct",
-      "human_readable": "uct"
+      "text": "uct"
     },
     {
       "name": "ugt",
-      "human_readable": "ugt"
+      "text": "ugt"
     },
     {
       "name": "ukt",
-      "human_readable": "ukt"
+      "text": "ukt"
     },
     {
       "name": "uwt",
-      "human_readable": "uwt"
+      "text": "uwt"
     }
   ],
   "al_info": null

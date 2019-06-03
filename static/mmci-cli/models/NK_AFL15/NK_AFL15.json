@@ -74,237 +74,237 @@
   "vars": [
     {
       "name": "a",
-      "human_readable": "a"
+      "text": "a"
     },
     {
       "name": "bk",
-      "human_readable": "bk"
+      "text": "bk"
     },
     {
       "name": "bkf",
-      "human_readable": "bkf"
+      "text": "bkf"
     },
     {
       "name": "br",
-      "human_readable": "br"
+      "text": "br"
     },
     {
       "name": "brf",
-      "human_readable": "brf"
+      "text": "brf"
     },
     {
       "name": "c",
-      "human_readable": "c"
+      "text": "c"
     },
     {
       "name": "cf",
-      "human_readable": "cf"
+      "text": "cf"
     },
     {
       "name": "cpai",
-      "human_readable": "cpai"
+      "text": "cpai"
     },
     {
       "name": "crun",
-      "human_readable": "crun"
+      "text": "crun"
     },
     {
       "name": "crunf",
-      "human_readable": "crunf"
+      "text": "crunf"
     },
     {
       "name": "d",
-      "human_readable": "d"
+      "text": "d"
     },
     {
       "name": "deprat",
-      "human_readable": "deprat"
+      "text": "deprat"
     },
     {
       "name": "depratf",
-      "human_readable": "depratf"
+      "text": "depratf"
     },
     {
       "name": "df",
-      "human_readable": "df"
+      "text": "df"
     },
     {
       "name": "fai",
-      "human_readable": "fai"
+      "text": "fai"
     },
     {
       "name": "faif",
-      "human_readable": "faif"
+      "text": "faif"
     },
     {
       "name": "fispol",
-      "human_readable": "fispol"
+      "text": "fispol"
     },
     {
       "name": "Fk",
-      "human_readable": "Fk"
+      "text": "Fk"
     },
     {
       "name": "Fkf",
-      "human_readable": "Fkf"
+      "text": "Fkf"
     },
     {
       "name": "Fn",
-      "human_readable": "Fn"
+      "text": "Fn"
     },
     {
       "name": "Fnf",
-      "human_readable": "Fnf"
+      "text": "Fnf"
     },
     {
       "name": "g",
-      "human_readable": "g"
+      "text": "g"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "inv",
-      "human_readable": "inv"
+      "text": "inv"
     },
     {
       "name": "invf",
-      "human_readable": "invf"
+      "text": "invf"
     },
     {
       "name": "k",
-      "human_readable": "k"
+      "text": "k"
     },
     {
       "name": "kf",
-      "human_readable": "kf"
+      "text": "kf"
     },
     {
       "name": "mc",
-      "human_readable": "mc"
+      "text": "mc"
     },
     {
       "name": "mcf",
-      "human_readable": "mcf"
+      "text": "mcf"
     },
     {
       "name": "n",
-      "human_readable": "n"
+      "text": "n"
     },
     {
       "name": "nf",
-      "human_readable": "nf"
+      "text": "nf"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "pai",
-      "human_readable": "pai"
+      "text": "pai"
     },
     {
       "name": "q",
-      "human_readable": "q"
+      "text": "q"
     },
     {
       "name": "qf",
-      "human_readable": "qf"
+      "text": "qf"
     },
     {
       "name": "ra",
-      "human_readable": "ra"
+      "text": "ra"
     },
     {
       "name": "raf",
-      "human_readable": "raf"
+      "text": "raf"
     },
     {
       "name": "rd",
-      "human_readable": "rd"
+      "text": "rd"
     },
     {
       "name": "rdf",
-      "human_readable": "rdf"
+      "text": "rdf"
     },
     {
       "name": "rn",
-      "human_readable": "rn"
+      "text": "rn"
     },
     {
       "name": "rnf",
-      "human_readable": "rnf"
+      "text": "rnf"
     },
     {
       "name": "rok",
-      "human_readable": "rok"
+      "text": "rok"
     },
     {
       "name": "rokf",
-      "human_readable": "rokf"
+      "text": "rokf"
     },
     {
       "name": "uc",
-      "human_readable": "uc"
+      "text": "uc"
     },
     {
       "name": "ucf",
-      "human_readable": "ucf"
+      "text": "ucf"
     },
     {
       "name": "ug",
-      "human_readable": "ug"
+      "text": "ug"
     },
     {
       "name": "un",
-      "human_readable": "un"
+      "text": "un"
     },
     {
       "name": "unf",
-      "human_readable": "unf"
+      "text": "unf"
     },
     {
       "name": "y",
-      "human_readable": "y"
+      "text": "y"
     },
     {
       "name": "yf",
-      "human_readable": "yf"
+      "text": "yf"
     },
     {
       "name": "z",
-      "human_readable": "z"
+      "text": "z"
     },
     {
       "name": "zf",
-      "human_readable": "zf"
+      "text": "zf"
     }
   ],
   "shocks": [
     {
       "name": "fiscal_",
-      "human_readable": "fiscal_"
+      "text": "fiscal_"
     },
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     },
     {
       "name": "ua",
-      "human_readable": "ua"
+      "text": "ua"
     }
   ],
   "al_info": null

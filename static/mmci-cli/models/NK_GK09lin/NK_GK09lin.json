@@ -40,297 +40,297 @@
   "vars": [
     {
       "name": "a",
-      "human_readable": "a"
+      "text": "a"
     },
     {
       "name": "af",
-      "human_readable": "af"
+      "text": "af"
     },
     {
       "name": "c",
-      "human_readable": "c"
+      "text": "c"
     },
     {
       "name": "cf",
-      "human_readable": "cf"
+      "text": "cf"
     },
     {
       "name": "d",
-      "human_readable": "d"
+      "text": "d"
     },
     {
       "name": "delta",
-      "human_readable": "delta"
+      "text": "delta"
     },
     {
       "name": "deltaf",
-      "human_readable": "deltaf"
+      "text": "deltaf"
     },
     {
       "name": "efp",
-      "human_readable": "efp"
+      "text": "efp"
     },
     {
       "name": "efpf",
-      "human_readable": "efpf"
+      "text": "efpf"
     },
     {
       "name": "epsilon",
-      "human_readable": "epsilon"
+      "text": "epsilon"
     },
     {
       "name": "epsilonf",
-      "human_readable": "epsilonf"
+      "text": "epsilonf"
     },
     {
       "name": "erk",
-      "human_readable": "erk"
+      "text": "erk"
     },
     {
       "name": "erkf",
-      "human_readable": "erkf"
+      "text": "erkf"
     },
     {
       "name": "eta",
-      "human_readable": "eta"
+      "text": "eta"
     },
     {
       "name": "etaf",
-      "human_readable": "etaf"
+      "text": "etaf"
     },
     {
       "name": "f",
-      "human_readable": "f"
+      "text": "f"
     },
     {
       "name": "f1",
-      "human_readable": "f1"
+      "text": "f1"
     },
     {
       "name": "i",
-      "human_readable": "i"
+      "text": "i"
     },
     {
       "name": "if",
-      "human_readable": "if"
+      "text": "if"
     },
     {
       "name": "in",
-      "human_readable": "in"
+      "text": "in"
     },
     {
       "name": "inf1",
-      "human_readable": "inf1"
+      "text": "inf1"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "k",
-      "human_readable": "k"
+      "text": "k"
     },
     {
       "name": "kf",
-      "human_readable": "kf"
+      "text": "kf"
     },
     {
       "name": "l",
-      "human_readable": "l"
+      "text": "l"
     },
     {
       "name": "lambda",
-      "human_readable": "lambda"
+      "text": "lambda"
     },
     {
       "name": "lambdaf",
-      "human_readable": "lambdaf"
+      "text": "lambdaf"
     },
     {
       "name": "lf",
-      "human_readable": "lf"
+      "text": "lf"
     },
     {
       "name": "mc",
-      "human_readable": "mc"
+      "text": "mc"
     },
     {
       "name": "n",
-      "human_readable": "n"
+      "text": "n"
     },
     {
       "name": "ne",
-      "human_readable": "ne"
+      "text": "ne"
     },
     {
       "name": "nef",
-      "human_readable": "nef"
+      "text": "nef"
     },
     {
       "name": "nf",
-      "human_readable": "nf"
+      "text": "nf"
     },
     {
       "name": "nn",
-      "human_readable": "nn"
+      "text": "nn"
     },
     {
       "name": "nnf",
-      "human_readable": "nnf"
+      "text": "nnf"
     },
     {
       "name": "nu",
-      "human_readable": "nu"
+      "text": "nu"
     },
     {
       "name": "nuf",
-      "human_readable": "nuf"
+      "text": "nuf"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "phi",
-      "human_readable": "phi"
+      "text": "phi"
     },
     {
       "name": "phic",
-      "human_readable": "phic"
+      "text": "phic"
     },
     {
       "name": "phicf",
-      "human_readable": "phicf"
+      "text": "phicf"
     },
     {
       "name": "phif",
-      "human_readable": "phif"
+      "text": "phif"
     },
     {
       "name": "pi",
-      "human_readable": "pi"
+      "text": "pi"
     },
     {
       "name": "pistar",
-      "human_readable": "pistar"
+      "text": "pistar"
     },
     {
       "name": "pm",
-      "human_readable": "pm"
+      "text": "pm"
     },
     {
       "name": "pmn",
-      "human_readable": "pmn"
+      "text": "pmn"
     },
     {
       "name": "psi",
-      "human_readable": "psi"
+      "text": "psi"
     },
     {
       "name": "psif",
-      "human_readable": "psif"
+      "text": "psif"
     },
     {
       "name": "q",
-      "human_readable": "q"
+      "text": "q"
     },
     {
       "name": "qf",
-      "human_readable": "qf"
+      "text": "qf"
     },
     {
       "name": "r",
-      "human_readable": "r"
+      "text": "r"
     },
     {
       "name": "rf",
-      "human_readable": "rf"
+      "text": "rf"
     },
     {
       "name": "rk",
-      "human_readable": "rk"
+      "text": "rk"
     },
     {
       "name": "rkf",
-      "human_readable": "rkf"
+      "text": "rkf"
     },
     {
       "name": "rn",
-      "human_readable": "rn"
+      "text": "rn"
     },
     {
       "name": "u",
-      "human_readable": "u"
+      "text": "u"
     },
     {
       "name": "uc",
-      "human_readable": "uc"
+      "text": "uc"
     },
     {
       "name": "ucf",
-      "human_readable": "ucf"
+      "text": "ucf"
     },
     {
       "name": "uf",
-      "human_readable": "uf"
+      "text": "uf"
     },
     {
       "name": "x",
-      "human_readable": "x"
+      "text": "x"
     },
     {
       "name": "xf",
-      "human_readable": "xf"
+      "text": "xf"
     },
     {
       "name": "y",
-      "human_readable": "y"
+      "text": "y"
     },
     {
       "name": "yf",
-      "human_readable": "yf"
+      "text": "yf"
     },
     {
       "name": "ym",
-      "human_readable": "ym"
+      "text": "ym"
     },
     {
       "name": "z",
-      "human_readable": "z"
+      "text": "z"
     },
     {
       "name": "zf",
-      "human_readable": "zf"
+      "text": "zf"
     }
   ],
   "shocks": [
     {
       "name": "e_a",
-      "human_readable": "e_a"
+      "text": "e_a"
     },
     {
       "name": "e_epsilon",
-      "human_readable": "e_epsilon"
+      "text": "e_epsilon"
     },
     {
       "name": "e_n",
-      "human_readable": "e_n"
+      "text": "e_n"
     },
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     }
   ],
   "al_info": null

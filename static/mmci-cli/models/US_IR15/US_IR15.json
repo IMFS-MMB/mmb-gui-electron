@@ -35,181 +35,181 @@
   "vars": [
     {
       "name": "epsilon_r",
-      "human_readable": "epsilon_r"
+      "text": "epsilon_r"
     },
     {
       "name": "g_pi",
-      "human_readable": "g_pi"
+      "text": "g_pi"
     },
     {
       "name": "g_pi_a",
-      "human_readable": "g_pi_a"
+      "text": "g_pi_a"
     },
     {
       "name": "g_r",
-      "human_readable": "g_r"
+      "text": "g_r"
     },
     {
       "name": "g_y",
-      "human_readable": "g_y"
+      "text": "g_y"
     },
     {
       "name": "g_y_obs",
-      "human_readable": "g_y_obs"
+      "text": "g_y_obs"
     },
     {
       "name": "inflation",
-      "human_readable": "inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
-      "human_readable": "inflationq"
+      "text": "inflationq"
     },
     {
       "name": "interest",
-      "human_readable": "interest"
+      "text": "interest"
     },
     {
       "name": "output",
-      "human_readable": "output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "human_readable": "outputgap"
+      "text": "outputgap"
     },
     {
       "name": "P_y_12",
-      "human_readable": "P_y_12"
+      "text": "P_y_12"
     },
     {
       "name": "P_y_12_a",
-      "human_readable": "P_y_12_a"
+      "text": "P_y_12_a"
     },
     {
       "name": "P_y_16",
-      "human_readable": "P_y_16"
+      "text": "P_y_16"
     },
     {
       "name": "P_y_16_a",
-      "human_readable": "P_y_16_a"
+      "text": "P_y_16_a"
     },
     {
       "name": "P_y_20",
-      "human_readable": "P_y_20"
+      "text": "P_y_20"
     },
     {
       "name": "P_y_20_a",
-      "human_readable": "P_y_20_a"
+      "text": "P_y_20_a"
     },
     {
       "name": "P_y_4",
-      "human_readable": "P_y_4"
+      "text": "P_y_4"
     },
     {
       "name": "P_y_4_a",
-      "human_readable": "P_y_4_a"
+      "text": "P_y_4_a"
     },
     {
       "name": "P_y_8",
-      "human_readable": "P_y_8"
+      "text": "P_y_8"
     },
     {
       "name": "P_y_8_a",
-      "human_readable": "P_y_8_a"
+      "text": "P_y_8_a"
     },
     {
       "name": "pi",
-      "human_readable": "pi"
+      "text": "pi"
     },
     {
       "name": "r",
-      "human_readable": "r"
+      "text": "r"
     },
     {
       "name": "r_a",
-      "human_readable": "r_a"
+      "text": "r_a"
     },
     {
       "name": "tau",
-      "human_readable": "tau"
+      "text": "tau"
     },
     {
       "name": "v",
-      "human_readable": "v"
+      "text": "v"
     },
     {
       "name": "y_12",
-      "human_readable": "y_12"
+      "text": "y_12"
     },
     {
       "name": "y_12_a",
-      "human_readable": "y_12_a"
+      "text": "y_12_a"
     },
     {
       "name": "y_16",
-      "human_readable": "y_16"
+      "text": "y_16"
     },
     {
       "name": "y_16_a",
-      "human_readable": "y_16_a"
+      "text": "y_16_a"
     },
     {
       "name": "y_20",
-      "human_readable": "y_20"
+      "text": "y_20"
     },
     {
       "name": "y_20_a",
-      "human_readable": "y_20_a"
+      "text": "y_20_a"
     },
     {
       "name": "y_4",
-      "human_readable": "y_4"
+      "text": "y_4"
     },
     {
       "name": "y_4_a",
-      "human_readable": "y_4_a"
+      "text": "y_4_a"
     },
     {
       "name": "y_8",
-      "human_readable": "y_8"
+      "text": "y_8"
     },
     {
       "name": "y_8_a",
-      "human_readable": "y_8_a"
+      "text": "y_8_a"
     }
   ],
   "shocks": [
     {
       "name": "epsilon_pi",
-      "human_readable": "epsilon_pi"
+      "text": "epsilon_pi"
     },
     {
       "name": "epsilon_tau",
-      "human_readable": "epsilon_tau"
+      "text": "epsilon_tau"
     },
     {
       "name": "epsilon_v",
-      "human_readable": "epsilon_v"
+      "text": "epsilon_v"
     },
     {
       "name": "epsilon_y",
-      "human_readable": "epsilon_y"
+      "text": "epsilon_y"
     },
     {
       "name": "eta_16",
-      "human_readable": "eta_16"
+      "text": "eta_16"
     },
     {
       "name": "eta_4",
-      "human_readable": "eta_4"
+      "text": "eta_4"
     },
     {
       "name": "eta_8",
-      "human_readable": "eta_8"
+      "text": "eta_8"
     },
     {
       "name": "interest_",
-      "human_readable": "interest_"
+      "text": "interest_"
     }
   ],
   "al_info": null
