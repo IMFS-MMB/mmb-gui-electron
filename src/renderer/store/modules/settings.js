@@ -1,3 +1,5 @@
+import commonShocks from '@/data/shocks';
+
 const namespaced = true;
 
 const state = {
@@ -82,6 +84,18 @@ const getters = {
   },
 };
 
+function isShockSelectable(selectedModels, shock) {
+  if (commonShocks.some(s => s.name === shock.name)) {
+    return true;
+  }
+
+  switch (selectedModels.length) {
+    case 0: return false;
+    case 1: return selectedModels[0].shocks.some(s => s.name === shock.name);
+    default: return false;
+  }
+}
+
 const mutations = {
   setHorizon(state, data) {
     state.horizon = data;
@@ -91,6 +105,8 @@ const mutations = {
   },
   setModels(state, data) {
     state.models = data;
+
+    state.shocks = state.shocks.filter(shock => isShockSelectable(state.models, shock));
   },
   setPolicyRules(state, data) {
     state.policyRules = data;

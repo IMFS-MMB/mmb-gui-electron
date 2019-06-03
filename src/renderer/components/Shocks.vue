@@ -3,7 +3,8 @@
         <div class="ctrl-set-header">
             <div class="ctrl-set-title">
                 Shocks
-                <small class="ctrl-set-stats">({{selectedIndex}}/{{total}} Selected)</small>
+                <small class="ctrl-set-stats">({{numSelected}}/{{total}} Selected)</small>
+                <a href="javascript:void(0)" class="ctrl-set-clear" @click="selectAll">Select all</a>
                 <a href="javascript:void(0)" class="ctrl-set-clear" @click="clear">&nbsp;Clear</a>
             </div>
         </div>
@@ -21,19 +22,25 @@
 </template>
 <script>
   import { mapMutations, mapGetters, mapActions } from 'vuex'; // eslint-disable-line no-unused-vars
-  import shocks from '@/data/shocks';
+  import commonShocks from '@/data/shocks';
 
   export default {
-    data() {
-      return {
-        shocks,
-      };
-    },
     computed: {
       ...mapGetters('settings', {
-        selectedIndex: 'numShocks',
+        numSelected: 'numShocks',
         shockSelection: 'shocks',
+        modelSelection: 'models',
       }),
+      shocks() {
+        if (this.modelSelection.length !== 1) {
+          return commonShocks;
+        }
+
+        return [
+          ...commonShocks,
+          ...this.modelSelection[0].shocks.filter(s => !commonShocks.some(cs => cs.name === s.name)),
+        ];
+      },
       selection: {
         get() {
           return this.shockSelection;
@@ -52,6 +59,9 @@
         clear: 'clearShocks',
         setShocks: 'setShocks',
       }),
+      selectAll() {
+        this.setShocks(this.shocks);
+      },
     },
   };
 </script>
