@@ -55,7 +55,21 @@
       "interest"
     ]
   },
-  "vars": [
+  "shocks": [
+    {
+      "name": "fiscal_",
+      "text": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    },
+    {
+      "name": "u_",
+      "text": "u_"
+    }
+  ],
+  "variables": [
     {
       "name": "fispol",
       "text": "fispol"
@@ -127,20 +141,6 @@
     {
       "name": "ynat",
       "text": "ynat"
-    }
-  ],
-  "shocks": [
-    {
-      "name": "fiscal_",
-      "text": "fiscal_"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    },
-    {
-      "name": "u_",
-      "text": "u_"
     }
   ]
 }

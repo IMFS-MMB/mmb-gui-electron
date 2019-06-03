@@ -70,7 +70,22 @@
   ],
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "epsa",
+      "text": "epsa"
+    },
+    {
+      "name": "fiscal_",
+      "text": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "a",
       "text": "a"
@@ -203,20 +218,5 @@
       "name": "y_flex",
       "text": "y_flex"
     }
-  ],
-  "shocks": [
-    {
-      "name": "epsa",
-      "text": "epsa"
-    },
-    {
-      "name": "fiscal_",
-      "text": "fiscal_"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    }
-  ],
-  "al_info": null
+  ]
 }

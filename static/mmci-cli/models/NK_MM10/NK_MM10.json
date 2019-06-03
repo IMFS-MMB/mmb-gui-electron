@@ -68,7 +68,18 @@
   ],
   "variabledim": 2,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "interest_",
+      "text": "interest_"
+    },
+    {
+      "name": "techShock",
+      "text": "techShock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "bigA",
       "text": "bigA"
@@ -393,16 +404,5 @@
       "name": "Yf",
       "text": "Yf"
     }
-  ],
-  "shocks": [
-    {
-      "name": "interest_",
-      "text": "interest_"
-    },
-    {
-      "name": "techShock",
-      "text": "techShock"
-    }
-  ],
-  "al_info": null
+  ]
 }

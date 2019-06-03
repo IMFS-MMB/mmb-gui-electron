@@ -39,7 +39,38 @@
   "msr": null,
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "EA",
+      "text": "EA"
+    },
+    {
+      "name": "EERR",
+      "text": "EERR"
+    },
+    {
+      "name": "EG",
+      "text": "EG"
+    },
+    {
+      "name": "EOMEGA",
+      "text": "EOMEGA"
+    },
+    {
+      "name": "EZ",
+      "text": "EZ"
+    },
+    {
+      "name": "fiscal_",
+      "text": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "A",
       "text": "A"
@@ -388,36 +419,5 @@
       "name": "Z_CB",
       "text": "Z_CB"
     }
-  ],
-  "shocks": [
-    {
-      "name": "EA",
-      "text": "EA"
-    },
-    {
-      "name": "EERR",
-      "text": "EERR"
-    },
-    {
-      "name": "EG",
-      "text": "EG"
-    },
-    {
-      "name": "EOMEGA",
-      "text": "EOMEGA"
-    },
-    {
-      "name": "EZ",
-      "text": "EZ"
-    },
-    {
-      "name": "fiscal_",
-      "text": "fiscal_"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    }
-  ],
-  "al_info": null
+  ]
 }

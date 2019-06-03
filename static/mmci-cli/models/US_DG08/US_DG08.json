@@ -71,7 +71,42 @@
   ],
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "epsinno_A",
+      "text": "epsinno_A"
+    },
+    {
+      "name": "epsinno_B",
+      "text": "epsinno_B"
+    },
+    {
+      "name": "epsinno_I",
+      "text": "epsinno_I"
+    },
+    {
+      "name": "epsinno_L",
+      "text": "epsinno_L"
+    },
+    {
+      "name": "eta_p",
+      "text": "eta_p"
+    },
+    {
+      "name": "eta_w",
+      "text": "eta_w"
+    },
+    {
+      "name": "fiscal_",
+      "text": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "C",
       "text": "C"
@@ -220,40 +255,5 @@
       "name": "Yf",
       "text": "Yf"
     }
-  ],
-  "shocks": [
-    {
-      "name": "epsinno_A",
-      "text": "epsinno_A"
-    },
-    {
-      "name": "epsinno_B",
-      "text": "epsinno_B"
-    },
-    {
-      "name": "epsinno_I",
-      "text": "epsinno_I"
-    },
-    {
-      "name": "epsinno_L",
-      "text": "epsinno_L"
-    },
-    {
-      "name": "eta_p",
-      "text": "eta_p"
-    },
-    {
-      "name": "eta_w",
-      "text": "eta_w"
-    },
-    {
-      "name": "fiscal_",
-      "text": "fiscal_"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    }
-  ],
-  "al_info": null
+  ]
 }

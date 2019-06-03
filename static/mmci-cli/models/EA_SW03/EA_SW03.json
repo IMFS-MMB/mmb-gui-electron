@@ -72,7 +72,70 @@
   ],
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "ea",
+      "text": "ea"
+    },
+    {
+      "name": "eas",
+      "text": "eas"
+    },
+    {
+      "name": "eb",
+      "text": "eb"
+    },
+    {
+      "name": "econs",
+      "text": "econs"
+    },
+    {
+      "name": "einv",
+      "text": "einv"
+    },
+    {
+      "name": "elab",
+      "text": "elab"
+    },
+    {
+      "name": "els",
+      "text": "els"
+    },
+    {
+      "name": "em",
+      "text": "em"
+    },
+    {
+      "name": "epinf",
+      "text": "epinf"
+    },
+    {
+      "name": "eps",
+      "text": "eps"
+    },
+    {
+      "name": "eqs",
+      "text": "eqs"
+    },
+    {
+      "name": "ew",
+      "text": "ew"
+    },
+    {
+      "name": "ey",
+      "text": "ey"
+    },
+    {
+      "name": "fiscal_",
+      "text": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "a",
       "text": "a"
@@ -333,68 +396,5 @@
       "name": "zcapf",
       "text": "zcapf"
     }
-  ],
-  "shocks": [
-    {
-      "name": "ea",
-      "text": "ea"
-    },
-    {
-      "name": "eas",
-      "text": "eas"
-    },
-    {
-      "name": "eb",
-      "text": "eb"
-    },
-    {
-      "name": "econs",
-      "text": "econs"
-    },
-    {
-      "name": "einv",
-      "text": "einv"
-    },
-    {
-      "name": "elab",
-      "text": "elab"
-    },
-    {
-      "name": "els",
-      "text": "els"
-    },
-    {
-      "name": "em",
-      "text": "em"
-    },
-    {
-      "name": "epinf",
-      "text": "epinf"
-    },
-    {
-      "name": "eps",
-      "text": "eps"
-    },
-    {
-      "name": "eqs",
-      "text": "eqs"
-    },
-    {
-      "name": "ew",
-      "text": "ew"
-    },
-    {
-      "name": "ey",
-      "text": "ey"
-    },
-    {
-      "name": "fiscal_",
-      "text": "fiscal_"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    }
-  ],
-  "al_info": null
+  ]
 }

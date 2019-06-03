@@ -73,7 +73,146 @@
   ],
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "erratp",
+      "text": "erratp"
+    },
+    {
+      "name": "erratpf",
+      "text": "erratpf"
+    },
+    {
+      "name": "erratt",
+      "text": "erratt"
+    },
+    {
+      "name": "errattf",
+      "text": "errattf"
+    },
+    {
+      "name": "errbetashk",
+      "text": "errbetashk"
+    },
+    {
+      "name": "errbetashkf",
+      "text": "errbetashkf"
+    },
+    {
+      "name": "errconshkp",
+      "text": "errconshkp"
+    },
+    {
+      "name": "errconshkpf",
+      "text": "errconshkpf"
+    },
+    {
+      "name": "errconshkt",
+      "text": "errconshkt"
+    },
+    {
+      "name": "errconshktf",
+      "text": "errconshktf"
+    },
+    {
+      "name": "errgcxp",
+      "text": "errgcxp"
+    },
+    {
+      "name": "errgcxpf",
+      "text": "errgcxpf"
+    },
+    {
+      "name": "errgcxtf",
+      "text": "errgcxtf"
+    },
+    {
+      "name": "errimpshk",
+      "text": "errimpshk"
+    },
+    {
+      "name": "errimpshkf",
+      "text": "errimpshkf"
+    },
+    {
+      "name": "errpitarp",
+      "text": "errpitarp"
+    },
+    {
+      "name": "errpitarpf",
+      "text": "errpitarpf"
+    },
+    {
+      "name": "errpitart",
+      "text": "errpitart"
+    },
+    {
+      "name": "errpitartf",
+      "text": "errpitartf"
+    },
+    {
+      "name": "errriskpp",
+      "text": "errriskpp"
+    },
+    {
+      "name": "errriskpt",
+      "text": "errriskpt"
+    },
+    {
+      "name": "errtaxkp",
+      "text": "errtaxkp"
+    },
+    {
+      "name": "errtaxkpf",
+      "text": "errtaxkpf"
+    },
+    {
+      "name": "errtaxkt",
+      "text": "errtaxkt"
+    },
+    {
+      "name": "errtaxktf",
+      "text": "errtaxktf"
+    },
+    {
+      "name": "errtaxlshk",
+      "text": "errtaxlshk"
+    },
+    {
+      "name": "errtaxlshkpf",
+      "text": "errtaxlshkpf"
+    },
+    {
+      "name": "errtaxlshktf",
+      "text": "errtaxlshktf"
+    },
+    {
+      "name": "errtranshkp",
+      "text": "errtranshkp"
+    },
+    {
+      "name": "errtranshkpf",
+      "text": "errtranshkpf"
+    },
+    {
+      "name": "errtranshkt",
+      "text": "errtranshkt"
+    },
+    {
+      "name": "errtranshktf",
+      "text": "errtranshktf"
+    },
+    {
+      "name": "fiscal_",
+      "text": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "at",
       "text": "at"
@@ -1022,144 +1161,5 @@
       "name": "zetapf",
       "text": "zetapf"
     }
-  ],
-  "shocks": [
-    {
-      "name": "erratp",
-      "text": "erratp"
-    },
-    {
-      "name": "erratpf",
-      "text": "erratpf"
-    },
-    {
-      "name": "erratt",
-      "text": "erratt"
-    },
-    {
-      "name": "errattf",
-      "text": "errattf"
-    },
-    {
-      "name": "errbetashk",
-      "text": "errbetashk"
-    },
-    {
-      "name": "errbetashkf",
-      "text": "errbetashkf"
-    },
-    {
-      "name": "errconshkp",
-      "text": "errconshkp"
-    },
-    {
-      "name": "errconshkpf",
-      "text": "errconshkpf"
-    },
-    {
-      "name": "errconshkt",
-      "text": "errconshkt"
-    },
-    {
-      "name": "errconshktf",
-      "text": "errconshktf"
-    },
-    {
-      "name": "errgcxp",
-      "text": "errgcxp"
-    },
-    {
-      "name": "errgcxpf",
-      "text": "errgcxpf"
-    },
-    {
-      "name": "errgcxtf",
-      "text": "errgcxtf"
-    },
-    {
-      "name": "errimpshk",
-      "text": "errimpshk"
-    },
-    {
-      "name": "errimpshkf",
-      "text": "errimpshkf"
-    },
-    {
-      "name": "errpitarp",
-      "text": "errpitarp"
-    },
-    {
-      "name": "errpitarpf",
-      "text": "errpitarpf"
-    },
-    {
-      "name": "errpitart",
-      "text": "errpitart"
-    },
-    {
-      "name": "errpitartf",
-      "text": "errpitartf"
-    },
-    {
-      "name": "errriskpp",
-      "text": "errriskpp"
-    },
-    {
-      "name": "errriskpt",
-      "text": "errriskpt"
-    },
-    {
-      "name": "errtaxkp",
-      "text": "errtaxkp"
-    },
-    {
-      "name": "errtaxkpf",
-      "text": "errtaxkpf"
-    },
-    {
-      "name": "errtaxkt",
-      "text": "errtaxkt"
-    },
-    {
-      "name": "errtaxktf",
-      "text": "errtaxktf"
-    },
-    {
-      "name": "errtaxlshk",
-      "text": "errtaxlshk"
-    },
-    {
-      "name": "errtaxlshkpf",
-      "text": "errtaxlshkpf"
-    },
-    {
-      "name": "errtaxlshktf",
-      "text": "errtaxlshktf"
-    },
-    {
-      "name": "errtranshkp",
-      "text": "errtranshkp"
-    },
-    {
-      "name": "errtranshkpf",
-      "text": "errtranshkpf"
-    },
-    {
-      "name": "errtranshkt",
-      "text": "errtranshkt"
-    },
-    {
-      "name": "errtranshktf",
-      "text": "errtranshktf"
-    },
-    {
-      "name": "fiscal_",
-      "text": "fiscal_"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    }
-  ],
-  "al_info": null
+  ]
 }

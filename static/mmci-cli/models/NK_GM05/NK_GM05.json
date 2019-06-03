@@ -37,7 +37,22 @@
   "msr": null,
   "variabledim": 2,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "a_",
+      "text": "a_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    },
+    {
+      "name": "ystar_",
+      "text": "ystar_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "a",
       "text": "a"
@@ -114,20 +129,5 @@
       "name": "ystar",
       "text": "ystar"
     }
-  ],
-  "shocks": [
-    {
-      "name": "a_",
-      "text": "a_"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    },
-    {
-      "name": "ystar_",
-      "text": "ystar_"
-    }
-  ],
-  "al_info": null
+  ]
 }

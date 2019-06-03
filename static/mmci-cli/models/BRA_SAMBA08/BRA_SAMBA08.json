@@ -74,7 +74,66 @@
   ],
   "variabledim": 2,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "a_",
+      "text": "a_"
+    },
+    {
+      "name": "c_",
+      "text": "c_"
+    },
+    {
+      "name": "fii_",
+      "text": "fii_"
+    },
+    {
+      "name": "fiistar_",
+      "text": "fiistar_"
+    },
+    {
+      "name": "fiscal_",
+      "text": "fiscal_"
+    },
+    {
+      "name": "gbar_",
+      "text": "gbar_"
+    },
+    {
+      "name": "i_",
+      "text": "i_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    },
+    {
+      "name": "mstar_",
+      "text": "mstar_"
+    },
+    {
+      "name": "n_",
+      "text": "n_"
+    },
+    {
+      "name": "pibar_",
+      "text": "pibar_"
+    },
+    {
+      "name": "pistar_",
+      "text": "pistar_"
+    },
+    {
+      "name": "r_",
+      "text": "r_"
+    },
+    {
+      "name": "rstar_",
+      "text": "rstar_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "a",
       "text": "a"
@@ -267,64 +326,5 @@
       "name": "zr",
       "text": "zr"
     }
-  ],
-  "shocks": [
-    {
-      "name": "a_",
-      "text": "a_"
-    },
-    {
-      "name": "c_",
-      "text": "c_"
-    },
-    {
-      "name": "fii_",
-      "text": "fii_"
-    },
-    {
-      "name": "fiistar_",
-      "text": "fiistar_"
-    },
-    {
-      "name": "fiscal_",
-      "text": "fiscal_"
-    },
-    {
-      "name": "gbar_",
-      "text": "gbar_"
-    },
-    {
-      "name": "i_",
-      "text": "i_"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    },
-    {
-      "name": "mstar_",
-      "text": "mstar_"
-    },
-    {
-      "name": "n_",
-      "text": "n_"
-    },
-    {
-      "name": "pibar_",
-      "text": "pibar_"
-    },
-    {
-      "name": "pistar_",
-      "text": "pistar_"
-    },
-    {
-      "name": "r_",
-      "text": "r_"
-    },
-    {
-      "name": "rstar_",
-      "text": "rstar_"
-    }
-  ],
-  "al_info": null
+  ]
 }

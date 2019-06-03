@@ -71,7 +71,30 @@
   ],
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "interest_",
+      "text": "interest_"
+    },
+    {
+      "name": "ua",
+      "text": "ua"
+    },
+    {
+      "name": "ui",
+      "text": "ui"
+    },
+    {
+      "name": "um",
+      "text": "um"
+    },
+    {
+      "name": "up",
+      "text": "up"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "at",
       "text": "at"
@@ -132,28 +155,5 @@
       "name": "yf",
       "text": "yf"
     }
-  ],
-  "shocks": [
-    {
-      "name": "interest_",
-      "text": "interest_"
-    },
-    {
-      "name": "ua",
-      "text": "ua"
-    },
-    {
-      "name": "ui",
-      "text": "ui"
-    },
-    {
-      "name": "um",
-      "text": "um"
-    },
-    {
-      "name": "up",
-      "text": "up"
-    }
-  ],
-  "al_info": null
+  ]
 }

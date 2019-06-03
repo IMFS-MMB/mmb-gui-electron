@@ -71,7 +71,54 @@
   ],
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "e_b_g",
+      "text": "e_b_g"
+    },
+    {
+      "name": "e_C_bar_b",
+      "text": "e_C_bar_b"
+    },
+    {
+      "name": "e_C_bar_s",
+      "text": "e_C_bar_s"
+    },
+    {
+      "name": "e_chi_tilde",
+      "text": "e_chi_tilde"
+    },
+    {
+      "name": "e_H_bar",
+      "text": "e_H_bar"
+    },
+    {
+      "name": "e_mu_w",
+      "text": "e_mu_w"
+    },
+    {
+      "name": "e_tau",
+      "text": "e_tau"
+    },
+    {
+      "name": "e_Xi_tilde",
+      "text": "e_Xi_tilde"
+    },
+    {
+      "name": "e_Z",
+      "text": "e_Z"
+    },
+    {
+      "name": "fiscal_",
+      "text": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "b",
       "text": "b"
@@ -296,52 +343,5 @@
       "name": "Z_hat",
       "text": "Z_hat"
     }
-  ],
-  "shocks": [
-    {
-      "name": "e_b_g",
-      "text": "e_b_g"
-    },
-    {
-      "name": "e_C_bar_b",
-      "text": "e_C_bar_b"
-    },
-    {
-      "name": "e_C_bar_s",
-      "text": "e_C_bar_s"
-    },
-    {
-      "name": "e_chi_tilde",
-      "text": "e_chi_tilde"
-    },
-    {
-      "name": "e_H_bar",
-      "text": "e_H_bar"
-    },
-    {
-      "name": "e_mu_w",
-      "text": "e_mu_w"
-    },
-    {
-      "name": "e_tau",
-      "text": "e_tau"
-    },
-    {
-      "name": "e_Xi_tilde",
-      "text": "e_Xi_tilde"
-    },
-    {
-      "name": "e_Z",
-      "text": "e_Z"
-    },
-    {
-      "name": "fiscal_",
-      "text": "fiscal_"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    }
-  ],
-  "al_info": null
+  ]
 }

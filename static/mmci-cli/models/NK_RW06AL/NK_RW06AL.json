@@ -52,7 +52,17 @@
       "outputgap"
     ]
   },
-  "vars": [
+  "shocks": [
+    {
+      "name": "interest_",
+      "text": "interest_"
+    },
+    {
+      "name": "u",
+      "text": "u"
+    }
+  ],
+  "variables": [
     {
       "name": "inflation",
       "text": "inflation"
@@ -100,16 +110,6 @@
     {
       "name": "x",
       "text": "x"
-    }
-  ],
-  "shocks": [
-    {
-      "name": "interest_",
-      "text": "interest_"
-    },
-    {
-      "name": "u",
-      "text": "u"
     }
   ]
 }

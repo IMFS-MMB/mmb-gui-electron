@@ -38,7 +38,66 @@
   "msr": null,
   "variabledim": 2,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "E_CAPAF",
+      "text": "E_CAPAF"
+    },
+    {
+      "name": "E_CAPAH",
+      "text": "E_CAPAH"
+    },
+    {
+      "name": "E_GAH",
+      "text": "E_GAH"
+    },
+    {
+      "name": "E_GAMMAF",
+      "text": "E_GAMMAF"
+    },
+    {
+      "name": "E_GAMMAH",
+      "text": "E_GAMMAH"
+    },
+    {
+      "name": "E_LANDF",
+      "text": "E_LANDF"
+    },
+    {
+      "name": "E_LANDH",
+      "text": "E_LANDH"
+    },
+    {
+      "name": "E_ZBH",
+      "text": "E_ZBH"
+    },
+    {
+      "name": "E_ZEYEF",
+      "text": "E_ZEYEF"
+    },
+    {
+      "name": "E_ZEYEH",
+      "text": "E_ZEYEH"
+    },
+    {
+      "name": "E_ZUF",
+      "text": "E_ZUF"
+    },
+    {
+      "name": "E_ZUH",
+      "text": "E_ZUH"
+    },
+    {
+      "name": "fiscal_",
+      "text": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "AF",
       "text": "AF"
@@ -1003,64 +1062,5 @@
       "name": "ZZ_XBALH_TOT_RAT",
       "text": "ZZ_XBALH_TOT_RAT"
     }
-  ],
-  "shocks": [
-    {
-      "name": "E_CAPAF",
-      "text": "E_CAPAF"
-    },
-    {
-      "name": "E_CAPAH",
-      "text": "E_CAPAH"
-    },
-    {
-      "name": "E_GAH",
-      "text": "E_GAH"
-    },
-    {
-      "name": "E_GAMMAF",
-      "text": "E_GAMMAF"
-    },
-    {
-      "name": "E_GAMMAH",
-      "text": "E_GAMMAH"
-    },
-    {
-      "name": "E_LANDF",
-      "text": "E_LANDF"
-    },
-    {
-      "name": "E_LANDH",
-      "text": "E_LANDH"
-    },
-    {
-      "name": "E_ZBH",
-      "text": "E_ZBH"
-    },
-    {
-      "name": "E_ZEYEF",
-      "text": "E_ZEYEF"
-    },
-    {
-      "name": "E_ZEYEH",
-      "text": "E_ZEYEH"
-    },
-    {
-      "name": "E_ZUF",
-      "text": "E_ZUF"
-    },
-    {
-      "name": "E_ZUH",
-      "text": "E_ZUH"
-    },
-    {
-      "name": "fiscal_",
-      "text": "fiscal_"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    }
-  ],
-  "al_info": null
+  ]
 }

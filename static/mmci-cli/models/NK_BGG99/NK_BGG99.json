@@ -72,7 +72,22 @@
   ],
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "e_a",
+      "text": "e_a"
+    },
+    {
+      "name": "fiscal_",
+      "text": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "aH",
       "text": "aH"
@@ -209,20 +224,5 @@
       "name": "yHf",
       "text": "yHf"
     }
-  ],
-  "shocks": [
-    {
-      "name": "e_a",
-      "text": "e_a"
-    },
-    {
-      "name": "fiscal_",
-      "text": "fiscal_"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    }
-  ],
-  "al_info": null
+  ]
 }

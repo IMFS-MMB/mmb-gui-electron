@@ -71,7 +71,22 @@
   ],
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "fiscal_",
+      "text": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    },
+    {
+      "name": "ua",
+      "text": "ua"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "a",
       "text": "a"
@@ -292,20 +307,5 @@
       "name": "zf",
       "text": "zf"
     }
-  ],
-  "shocks": [
-    {
-      "name": "fiscal_",
-      "text": "fiscal_"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    },
-    {
-      "name": "ua",
-      "text": "ua"
-    }
-  ],
-  "al_info": null
+  ]
 }

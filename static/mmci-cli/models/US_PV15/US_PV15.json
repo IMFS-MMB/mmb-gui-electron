@@ -71,7 +71,54 @@
   ],
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "e_a",
+      "text": "e_a"
+    },
+    {
+      "name": "e_b",
+      "text": "e_b"
+    },
+    {
+      "name": "e_e",
+      "text": "e_e"
+    },
+    {
+      "name": "e_i",
+      "text": "e_i"
+    },
+    {
+      "name": "e_l",
+      "text": "e_l"
+    },
+    {
+      "name": "e_m",
+      "text": "e_m"
+    },
+    {
+      "name": "e_n",
+      "text": "e_n"
+    },
+    {
+      "name": "e_p",
+      "text": "e_p"
+    },
+    {
+      "name": "e_w",
+      "text": "e_w"
+    },
+    {
+      "name": "fiscal_",
+      "text": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "c",
       "text": "c"
@@ -552,52 +599,5 @@
       "name": "zn",
       "text": "zn"
     }
-  ],
-  "shocks": [
-    {
-      "name": "e_a",
-      "text": "e_a"
-    },
-    {
-      "name": "e_b",
-      "text": "e_b"
-    },
-    {
-      "name": "e_e",
-      "text": "e_e"
-    },
-    {
-      "name": "e_i",
-      "text": "e_i"
-    },
-    {
-      "name": "e_l",
-      "text": "e_l"
-    },
-    {
-      "name": "e_m",
-      "text": "e_m"
-    },
-    {
-      "name": "e_n",
-      "text": "e_n"
-    },
-    {
-      "name": "e_p",
-      "text": "e_p"
-    },
-    {
-      "name": "e_w",
-      "text": "e_w"
-    },
-    {
-      "name": "fiscal_",
-      "text": "fiscal_"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    }
-  ],
-  "al_info": null
+  ]
 }

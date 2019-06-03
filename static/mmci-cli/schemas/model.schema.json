@@ -12,7 +12,7 @@
     "al",
     "al_info",
     "shocks",
-    "vars"
+    "variables"
   ],
   "additionalProperties": false,
   "if": {
@@ -89,7 +89,7 @@
     "shocks": {
       "$ref": "common#/definitions/arrayOfNamesHumanReadableNames"
     },
-    "vars": {
+    "variables": {
       "$ref": "common#/definitions/arrayOfNamesHumanReadableNames"
     },
     "capabilities": {

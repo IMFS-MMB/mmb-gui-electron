@@ -39,7 +39,54 @@
   "msr": null,
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "epsA",
+      "text": "epsA"
+    },
+    {
+      "name": "epsd",
+      "text": "epsd"
+    },
+    {
+      "name": "epsmu_I",
+      "text": "epsmu_I"
+    },
+    {
+      "name": "epsphi",
+      "text": "epsphi"
+    },
+    {
+      "name": "epspi",
+      "text": "epspi"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    },
+    {
+      "name": "uA",
+      "text": "uA"
+    },
+    {
+      "name": "ud",
+      "text": "ud"
+    },
+    {
+      "name": "um",
+      "text": "um"
+    },
+    {
+      "name": "umu",
+      "text": "umu"
+    },
+    {
+      "name": "uphi",
+      "text": "uphi"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "c",
       "text": "c"
@@ -248,52 +295,5 @@
       "name": "ydf",
       "text": "ydf"
     }
-  ],
-  "shocks": [
-    {
-      "name": "epsA",
-      "text": "epsA"
-    },
-    {
-      "name": "epsd",
-      "text": "epsd"
-    },
-    {
-      "name": "epsmu_I",
-      "text": "epsmu_I"
-    },
-    {
-      "name": "epsphi",
-      "text": "epsphi"
-    },
-    {
-      "name": "epspi",
-      "text": "epspi"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    },
-    {
-      "name": "uA",
-      "text": "uA"
-    },
-    {
-      "name": "ud",
-      "text": "ud"
-    },
-    {
-      "name": "um",
-      "text": "um"
-    },
-    {
-      "name": "umu",
-      "text": "umu"
-    },
-    {
-      "name": "uphi",
-      "text": "uphi"
-    }
-  ],
-  "al_info": null
+  ]
 }

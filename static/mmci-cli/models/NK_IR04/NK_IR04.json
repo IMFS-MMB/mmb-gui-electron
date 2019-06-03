@@ -70,7 +70,26 @@
   ],
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "epsa_",
+      "text": "epsa_"
+    },
+    {
+      "name": "epse_",
+      "text": "epse_"
+    },
+    {
+      "name": "epsz_",
+      "text": "epsz_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "a",
       "text": "a"
@@ -119,24 +138,5 @@
       "name": "z",
       "text": "z"
     }
-  ],
-  "shocks": [
-    {
-      "name": "epsa_",
-      "text": "epsa_"
-    },
-    {
-      "name": "epse_",
-      "text": "epse_"
-    },
-    {
-      "name": "epsz_",
-      "text": "epsz_"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    }
-  ],
-  "al_info": null
+  ]
 }

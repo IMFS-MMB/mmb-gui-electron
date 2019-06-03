@@ -72,7 +72,30 @@
   ],
   "variabledim": 2,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "epsft",
+      "text": "epsft"
+    },
+    {
+      "name": "epspt",
+      "text": "epspt"
+    },
+    {
+      "name": "epsxt",
+      "text": "epsxt"
+    },
+    {
+      "name": "epszt",
+      "text": "epszt"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "auxt",
       "text": "auxt"
@@ -345,28 +368,5 @@
       "name": "zt",
       "text": "zt"
     }
-  ],
-  "shocks": [
-    {
-      "name": "epsft",
-      "text": "epsft"
-    },
-    {
-      "name": "epspt",
-      "text": "epspt"
-    },
-    {
-      "name": "epsxt",
-      "text": "epsxt"
-    },
-    {
-      "name": "epszt",
-      "text": "epszt"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    }
-  ],
-  "al_info": null
+  ]
 }

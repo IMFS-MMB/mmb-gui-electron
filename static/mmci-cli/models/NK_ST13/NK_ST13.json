@@ -70,7 +70,26 @@
   ],
   "variabledim": 2,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "epsilon_theta",
+      "text": "epsilon_theta"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    },
+    {
+      "name": "j",
+      "text": "j"
+    },
+    {
+      "name": "q",
+      "text": "q"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "A",
       "text": "A"
@@ -295,24 +314,5 @@
       "name": "yn_fe",
       "text": "yn_fe"
     }
-  ],
-  "shocks": [
-    {
-      "name": "epsilon_theta",
-      "text": "epsilon_theta"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    },
-    {
-      "name": "j",
-      "text": "j"
-    },
-    {
-      "name": "q",
-      "text": "q"
-    }
-  ],
-  "al_info": null
+  ]
 }

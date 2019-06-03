@@ -73,7 +73,14 @@
   ],
   "variabledim": 2,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "btotAflexU",
       "text": "btotAflexU"
@@ -414,12 +421,5 @@
       "name": "YU",
       "text": "YU"
     }
-  ],
-  "shocks": [
-    {
-      "name": "interest_",
-      "text": "interest_"
-    }
-  ],
-  "al_info": null
+  ]
 }

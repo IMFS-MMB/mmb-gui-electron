@@ -37,7 +37,70 @@
   "msr": null,
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "fiscal_",
+      "text": "fiscal_"
+    },
+    {
+      "name": "innoeitd",
+      "text": "innoeitd"
+    },
+    {
+      "name": "innoeitr",
+      "text": "innoeitr"
+    },
+    {
+      "name": "innoelnn",
+      "text": "innoelnn"
+    },
+    {
+      "name": "innoelsr",
+      "text": "innoelsr"
+    },
+    {
+      "name": "innoeltn",
+      "text": "innoeltn"
+    },
+    {
+      "name": "innoemtd",
+      "text": "innoemtd"
+    },
+    {
+      "name": "innoemtr",
+      "text": "innoemtr"
+    },
+    {
+      "name": "innoepcd",
+      "text": "innoepcd"
+    },
+    {
+      "name": "innoepcr",
+      "text": "innoepcr"
+    },
+    {
+      "name": "innoewrn",
+      "text": "innoewrn"
+    },
+    {
+      "name": "innoextd",
+      "text": "innoextd"
+    },
+    {
+      "name": "innoextr",
+      "text": "innoextr"
+    },
+    {
+      "name": "innoeyfd",
+      "text": "innoeyfd"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "can",
       "text": "can"
@@ -822,68 +885,5 @@
       "name": "ywrx",
       "text": "ywrx"
     }
-  ],
-  "shocks": [
-    {
-      "name": "fiscal_",
-      "text": "fiscal_"
-    },
-    {
-      "name": "innoeitd",
-      "text": "innoeitd"
-    },
-    {
-      "name": "innoeitr",
-      "text": "innoeitr"
-    },
-    {
-      "name": "innoelnn",
-      "text": "innoelnn"
-    },
-    {
-      "name": "innoelsr",
-      "text": "innoelsr"
-    },
-    {
-      "name": "innoeltn",
-      "text": "innoeltn"
-    },
-    {
-      "name": "innoemtd",
-      "text": "innoemtd"
-    },
-    {
-      "name": "innoemtr",
-      "text": "innoemtr"
-    },
-    {
-      "name": "innoepcd",
-      "text": "innoepcd"
-    },
-    {
-      "name": "innoepcr",
-      "text": "innoepcr"
-    },
-    {
-      "name": "innoewrn",
-      "text": "innoewrn"
-    },
-    {
-      "name": "innoextd",
-      "text": "innoextd"
-    },
-    {
-      "name": "innoextr",
-      "text": "innoextr"
-    },
-    {
-      "name": "innoeyfd",
-      "text": "innoeyfd"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    }
-  ],
-  "al_info": null
+  ]
 }

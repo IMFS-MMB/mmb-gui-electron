@@ -73,7 +73,30 @@
   ],
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "bs",
+      "text": "bs"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    },
+    {
+      "name": "lambddaps",
+      "text": "lambddaps"
+    },
+    {
+      "name": "pits",
+      "text": "pits"
+    },
+    {
+      "name": "zs",
+      "text": "zs"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "b",
       "text": "b"
@@ -146,28 +169,5 @@
       "name": "z",
       "text": "z"
     }
-  ],
-  "shocks": [
-    {
-      "name": "bs",
-      "text": "bs"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    },
-    {
-      "name": "lambddaps",
-      "text": "lambddaps"
-    },
-    {
-      "name": "pits",
-      "text": "pits"
-    },
-    {
-      "name": "zs",
-      "text": "zs"
-    }
-  ],
-  "al_info": null
+  ]
 }

@@ -37,7 +37,30 @@
   "msr": null,
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "epspi_star",
+      "text": "epspi_star"
+    },
+    {
+      "name": "epsq",
+      "text": "epsq"
+    },
+    {
+      "name": "epsy_star",
+      "text": "epsy_star"
+    },
+    {
+      "name": "epsz",
+      "text": "epsz"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "deltae",
       "text": "deltae"
@@ -98,28 +121,5 @@
       "name": "z",
       "text": "z"
     }
-  ],
-  "shocks": [
-    {
-      "name": "epspi_star",
-      "text": "epspi_star"
-    },
-    {
-      "name": "epsq",
-      "text": "epsq"
-    },
-    {
-      "name": "epsy_star",
-      "text": "epsy_star"
-    },
-    {
-      "name": "epsz",
-      "text": "epsz"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    }
-  ],
-  "al_info": null
+  ]
 }

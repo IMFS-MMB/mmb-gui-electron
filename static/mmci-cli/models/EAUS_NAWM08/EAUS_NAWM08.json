@@ -73,7 +73,90 @@
   ],
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "EA_EPSRP",
+      "text": "EA_EPSRP"
+    },
+    {
+      "name": "EA_EPSTAUC",
+      "text": "EA_EPSTAUC"
+    },
+    {
+      "name": "EA_EPSTAUD",
+      "text": "EA_EPSTAUD"
+    },
+    {
+      "name": "EA_EPSTAUK",
+      "text": "EA_EPSTAUK"
+    },
+    {
+      "name": "EA_EPSTAUN",
+      "text": "EA_EPSTAUN"
+    },
+    {
+      "name": "EA_EPSTAUWF",
+      "text": "EA_EPSTAUWF"
+    },
+    {
+      "name": "EA_EPSTAUWH",
+      "text": "EA_EPSTAUWH"
+    },
+    {
+      "name": "EA_EPSTR",
+      "text": "EA_EPSTR"
+    },
+    {
+      "name": "EA_EPSZ",
+      "text": "EA_EPSZ"
+    },
+    {
+      "name": "fiscal_",
+      "text": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    },
+    {
+      "name": "US_EPSG",
+      "text": "US_EPSG"
+    },
+    {
+      "name": "US_EPSTAUC",
+      "text": "US_EPSTAUC"
+    },
+    {
+      "name": "US_EPSTAUD",
+      "text": "US_EPSTAUD"
+    },
+    {
+      "name": "US_EPSTAUK",
+      "text": "US_EPSTAUK"
+    },
+    {
+      "name": "US_EPSTAUN",
+      "text": "US_EPSTAUN"
+    },
+    {
+      "name": "US_EPSTAUWF",
+      "text": "US_EPSTAUWF"
+    },
+    {
+      "name": "US_EPSTAUWH",
+      "text": "US_EPSTAUWH"
+    },
+    {
+      "name": "US_EPSTR",
+      "text": "US_EPSTR"
+    },
+    {
+      "name": "US_EPSZ",
+      "text": "US_EPSZ"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "EA_B",
       "text": "EA_B"
@@ -1006,88 +1089,5 @@
       "name": "USEA_RER",
       "text": "USEA_RER"
     }
-  ],
-  "shocks": [
-    {
-      "name": "EA_EPSRP",
-      "text": "EA_EPSRP"
-    },
-    {
-      "name": "EA_EPSTAUC",
-      "text": "EA_EPSTAUC"
-    },
-    {
-      "name": "EA_EPSTAUD",
-      "text": "EA_EPSTAUD"
-    },
-    {
-      "name": "EA_EPSTAUK",
-      "text": "EA_EPSTAUK"
-    },
-    {
-      "name": "EA_EPSTAUN",
-      "text": "EA_EPSTAUN"
-    },
-    {
-      "name": "EA_EPSTAUWF",
-      "text": "EA_EPSTAUWF"
-    },
-    {
-      "name": "EA_EPSTAUWH",
-      "text": "EA_EPSTAUWH"
-    },
-    {
-      "name": "EA_EPSTR",
-      "text": "EA_EPSTR"
-    },
-    {
-      "name": "EA_EPSZ",
-      "text": "EA_EPSZ"
-    },
-    {
-      "name": "fiscal_",
-      "text": "fiscal_"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    },
-    {
-      "name": "US_EPSG",
-      "text": "US_EPSG"
-    },
-    {
-      "name": "US_EPSTAUC",
-      "text": "US_EPSTAUC"
-    },
-    {
-      "name": "US_EPSTAUD",
-      "text": "US_EPSTAUD"
-    },
-    {
-      "name": "US_EPSTAUK",
-      "text": "US_EPSTAUK"
-    },
-    {
-      "name": "US_EPSTAUN",
-      "text": "US_EPSTAUN"
-    },
-    {
-      "name": "US_EPSTAUWF",
-      "text": "US_EPSTAUWF"
-    },
-    {
-      "name": "US_EPSTAUWH",
-      "text": "US_EPSTAUWH"
-    },
-    {
-      "name": "US_EPSTR",
-      "text": "US_EPSTR"
-    },
-    {
-      "name": "US_EPSZ",
-      "text": "US_EPSZ"
-    }
-  ],
-  "al_info": null
+  ]
 }

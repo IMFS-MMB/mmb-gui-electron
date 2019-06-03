@@ -70,7 +70,26 @@
   ],
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "eAhat",
+      "text": "eAhat"
+    },
+    {
+      "name": "ejhat",
+      "text": "ejhat"
+    },
+    {
+      "name": "euhat",
+      "text": "euhat"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "Ahat",
       "text": "Ahat"
@@ -211,24 +230,5 @@
       "name": "Yhatf",
       "text": "Yhatf"
     }
-  ],
-  "shocks": [
-    {
-      "name": "eAhat",
-      "text": "eAhat"
-    },
-    {
-      "name": "ejhat",
-      "text": "ejhat"
-    },
-    {
-      "name": "euhat",
-      "text": "euhat"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    }
-  ],
-  "al_info": null
+  ]
 }

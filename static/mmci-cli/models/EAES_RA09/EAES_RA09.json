@@ -70,7 +70,50 @@
   ],
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "eps_GN",
+      "text": "eps_GN"
+    },
+    {
+      "name": "eps_GN_star",
+      "text": "eps_GN_star"
+    },
+    {
+      "name": "eps_GT",
+      "text": "eps_GT"
+    },
+    {
+      "name": "eps_GT_star",
+      "text": "eps_GT_star"
+    },
+    {
+      "name": "eps_Z",
+      "text": "eps_Z"
+    },
+    {
+      "name": "eps_ZN",
+      "text": "eps_ZN"
+    },
+    {
+      "name": "eps_ZN_star",
+      "text": "eps_ZN_star"
+    },
+    {
+      "name": "eps_ZT",
+      "text": "eps_ZT"
+    },
+    {
+      "name": "eps_ZT_star",
+      "text": "eps_ZT_star"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "c",
       "text": "c"
@@ -299,48 +342,5 @@
       "name": "z_T_star",
       "text": "z_T_star"
     }
-  ],
-  "shocks": [
-    {
-      "name": "eps_GN",
-      "text": "eps_GN"
-    },
-    {
-      "name": "eps_GN_star",
-      "text": "eps_GN_star"
-    },
-    {
-      "name": "eps_GT",
-      "text": "eps_GT"
-    },
-    {
-      "name": "eps_GT_star",
-      "text": "eps_GT_star"
-    },
-    {
-      "name": "eps_Z",
-      "text": "eps_Z"
-    },
-    {
-      "name": "eps_ZN",
-      "text": "eps_ZN"
-    },
-    {
-      "name": "eps_ZN_star",
-      "text": "eps_ZN_star"
-    },
-    {
-      "name": "eps_ZT",
-      "text": "eps_ZT"
-    },
-    {
-      "name": "eps_ZT_star",
-      "text": "eps_ZT_star"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    }
-  ],
-  "al_info": null
+  ]
 }

@@ -71,7 +71,38 @@
   ],
   "variabledim": 2,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "epsA",
+      "text": "epsA"
+    },
+    {
+      "name": "epsC",
+      "text": "epsC"
+    },
+    {
+      "name": "epsksi",
+      "text": "epsksi"
+    },
+    {
+      "name": "epsL",
+      "text": "epsL"
+    },
+    {
+      "name": "epsthet",
+      "text": "epsthet"
+    },
+    {
+      "name": "fiscal_",
+      "text": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "A",
       "text": "A"
@@ -208,36 +239,5 @@
       "name": "Yf",
       "text": "Yf"
     }
-  ],
-  "shocks": [
-    {
-      "name": "epsA",
-      "text": "epsA"
-    },
-    {
-      "name": "epsC",
-      "text": "epsC"
-    },
-    {
-      "name": "epsksi",
-      "text": "epsksi"
-    },
-    {
-      "name": "epsL",
-      "text": "epsL"
-    },
-    {
-      "name": "epsthet",
-      "text": "epsthet"
-    },
-    {
-      "name": "fiscal_",
-      "text": "fiscal_"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    }
-  ],
-  "al_info": null
+  ]
 }

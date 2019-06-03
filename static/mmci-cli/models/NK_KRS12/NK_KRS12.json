@@ -73,7 +73,26 @@
   ],
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "eps_A",
+      "text": "eps_A"
+    },
+    {
+      "name": "eps_D",
+      "text": "eps_D"
+    },
+    {
+      "name": "eps_v",
+      "text": "eps_v"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "aC",
       "text": "aC"
@@ -254,24 +273,5 @@
       "name": "ystar",
       "text": "ystar"
     }
-  ],
-  "shocks": [
-    {
-      "name": "eps_A",
-      "text": "eps_A"
-    },
-    {
-      "name": "eps_D",
-      "text": "eps_D"
-    },
-    {
-      "name": "eps_v",
-      "text": "eps_v"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    }
-  ],
-  "al_info": null
+  ]
 }

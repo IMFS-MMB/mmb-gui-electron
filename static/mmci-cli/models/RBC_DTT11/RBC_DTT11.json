@@ -71,7 +71,34 @@
   ],
   "variabledim": 2,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "epsA",
+      "text": "epsA"
+    },
+    {
+      "name": "epsgam",
+      "text": "epsgam"
+    },
+    {
+      "name": "epsmu",
+      "text": "epsmu"
+    },
+    {
+      "name": "epspol",
+      "text": "epspol"
+    },
+    {
+      "name": "epsstd",
+      "text": "epsstd"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "a_t",
       "text": "a_t"
@@ -192,32 +219,5 @@
       "name": "zbar_t",
       "text": "zbar_t"
     }
-  ],
-  "shocks": [
-    {
-      "name": "epsA",
-      "text": "epsA"
-    },
-    {
-      "name": "epsgam",
-      "text": "epsgam"
-    },
-    {
-      "name": "epsmu",
-      "text": "epsmu"
-    },
-    {
-      "name": "epspol",
-      "text": "epspol"
-    },
-    {
-      "name": "epsstd",
-      "text": "epsstd"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    }
-  ],
-  "al_info": null
+  ]
 }

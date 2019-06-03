@@ -71,7 +71,50 @@
   ],
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "eps_beta",
+      "text": "eps_beta"
+    },
+    {
+      "name": "eps_meas",
+      "text": "eps_meas"
+    },
+    {
+      "name": "eps_meas_sp",
+      "text": "eps_meas_sp"
+    },
+    {
+      "name": "eps_p",
+      "text": "eps_p"
+    },
+    {
+      "name": "eps_tau",
+      "text": "eps_tau"
+    },
+    {
+      "name": "eps_tau_trans",
+      "text": "eps_tau_trans"
+    },
+    {
+      "name": "eps_w",
+      "text": "eps_w"
+    },
+    {
+      "name": "eps_z",
+      "text": "eps_z"
+    },
+    {
+      "name": "fiscal_",
+      "text": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "A_eff",
       "text": "A_eff"
@@ -444,48 +487,5 @@
       "name": "z_t",
       "text": "z_t"
     }
-  ],
-  "shocks": [
-    {
-      "name": "eps_beta",
-      "text": "eps_beta"
-    },
-    {
-      "name": "eps_meas",
-      "text": "eps_meas"
-    },
-    {
-      "name": "eps_meas_sp",
-      "text": "eps_meas_sp"
-    },
-    {
-      "name": "eps_p",
-      "text": "eps_p"
-    },
-    {
-      "name": "eps_tau",
-      "text": "eps_tau"
-    },
-    {
-      "name": "eps_tau_trans",
-      "text": "eps_tau_trans"
-    },
-    {
-      "name": "eps_w",
-      "text": "eps_w"
-    },
-    {
-      "name": "eps_z",
-      "text": "eps_z"
-    },
-    {
-      "name": "fiscal_",
-      "text": "fiscal_"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    }
-  ],
-  "al_info": null
+  ]
 }

@@ -72,7 +72,38 @@
   ],
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "a_",
+      "text": "a_"
+    },
+    {
+      "name": "astar_",
+      "text": "astar_"
+    },
+    {
+      "name": "inf_",
+      "text": "inf_"
+    },
+    {
+      "name": "infstar_",
+      "text": "infstar_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    },
+    {
+      "name": "rstar_",
+      "text": "rstar_"
+    },
+    {
+      "name": "ystar_",
+      "text": "ystar_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "a",
       "text": "a"
@@ -157,36 +188,5 @@
       "name": "ytildestar",
       "text": "ytildestar"
     }
-  ],
-  "shocks": [
-    {
-      "name": "a_",
-      "text": "a_"
-    },
-    {
-      "name": "astar_",
-      "text": "astar_"
-    },
-    {
-      "name": "inf_",
-      "text": "inf_"
-    },
-    {
-      "name": "infstar_",
-      "text": "infstar_"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    },
-    {
-      "name": "rstar_",
-      "text": "rstar_"
-    },
-    {
-      "name": "ystar_",
-      "text": "ystar_"
-    }
-  ],
-  "al_info": null
+  ]
 }

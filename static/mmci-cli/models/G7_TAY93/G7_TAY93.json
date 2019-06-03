@@ -71,7 +71,430 @@
   ],
   "variabledim": 2,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "c3_",
+      "text": "c3_"
+    },
+    {
+      "name": "c4_",
+      "text": "c4_"
+    },
+    {
+      "name": "cd0_",
+      "text": "cd0_"
+    },
+    {
+      "name": "cd1_",
+      "text": "cd1_"
+    },
+    {
+      "name": "cd2_",
+      "text": "cd2_"
+    },
+    {
+      "name": "cd5_",
+      "text": "cd5_"
+    },
+    {
+      "name": "cd6_",
+      "text": "cd6_"
+    },
+    {
+      "name": "cn0_",
+      "text": "cn0_"
+    },
+    {
+      "name": "cn1_",
+      "text": "cn1_"
+    },
+    {
+      "name": "cn2_",
+      "text": "cn2_"
+    },
+    {
+      "name": "cn5_",
+      "text": "cn5_"
+    },
+    {
+      "name": "cn6_",
+      "text": "cn6_"
+    },
+    {
+      "name": "cs0_",
+      "text": "cs0_"
+    },
+    {
+      "name": "cs1_",
+      "text": "cs1_"
+    },
+    {
+      "name": "cs2_",
+      "text": "cs2_"
+    },
+    {
+      "name": "cs5_",
+      "text": "cs5_"
+    },
+    {
+      "name": "cs6_",
+      "text": "cs6_"
+    },
+    {
+      "name": "fiscal_",
+      "text": "fiscal_"
+    },
+    {
+      "name": "if1_",
+      "text": "if1_"
+    },
+    {
+      "name": "if3_",
+      "text": "if3_"
+    },
+    {
+      "name": "if4_",
+      "text": "if4_"
+    },
+    {
+      "name": "ii0_",
+      "text": "ii0_"
+    },
+    {
+      "name": "ii1_",
+      "text": "ii1_"
+    },
+    {
+      "name": "ii2_",
+      "text": "ii2_"
+    },
+    {
+      "name": "ii3_",
+      "text": "ii3_"
+    },
+    {
+      "name": "ii4_",
+      "text": "ii4_"
+    },
+    {
+      "name": "ii5_",
+      "text": "ii5_"
+    },
+    {
+      "name": "ii6_",
+      "text": "ii6_"
+    },
+    {
+      "name": "in2_",
+      "text": "in2_"
+    },
+    {
+      "name": "in5_",
+      "text": "in5_"
+    },
+    {
+      "name": "in6_",
+      "text": "in6_"
+    },
+    {
+      "name": "ine0_",
+      "text": "ine0_"
+    },
+    {
+      "name": "ins0_",
+      "text": "ins0_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    },
+    {
+      "name": "ir0_",
+      "text": "ir0_"
+    },
+    {
+      "name": "ir2_",
+      "text": "ir2_"
+    },
+    {
+      "name": "ir5_",
+      "text": "ir5_"
+    },
+    {
+      "name": "ir6_",
+      "text": "ir6_"
+    },
+    {
+      "name": "lex0_",
+      "text": "lex0_"
+    },
+    {
+      "name": "lex1_",
+      "text": "lex1_"
+    },
+    {
+      "name": "lex2_",
+      "text": "lex2_"
+    },
+    {
+      "name": "lex3_",
+      "text": "lex3_"
+    },
+    {
+      "name": "lex4_",
+      "text": "lex4_"
+    },
+    {
+      "name": "lex5_",
+      "text": "lex5_"
+    },
+    {
+      "name": "lex6_",
+      "text": "lex6_"
+    },
+    {
+      "name": "lg1_",
+      "text": "lg1_"
+    },
+    {
+      "name": "lg2_",
+      "text": "lg2_"
+    },
+    {
+      "name": "lg3_",
+      "text": "lg3_"
+    },
+    {
+      "name": "lg4_",
+      "text": "lg4_"
+    },
+    {
+      "name": "lg5_",
+      "text": "lg5_"
+    },
+    {
+      "name": "lg6_",
+      "text": "lg6_"
+    },
+    {
+      "name": "lim0_",
+      "text": "lim0_"
+    },
+    {
+      "name": "lim1_",
+      "text": "lim1_"
+    },
+    {
+      "name": "lim2_",
+      "text": "lim2_"
+    },
+    {
+      "name": "lim3_",
+      "text": "lim3_"
+    },
+    {
+      "name": "lim4_",
+      "text": "lim4_"
+    },
+    {
+      "name": "lim5_",
+      "text": "lim5_"
+    },
+    {
+      "name": "lim6_",
+      "text": "lim6_"
+    },
+    {
+      "name": "lp0_",
+      "text": "lp0_"
+    },
+    {
+      "name": "lp1_",
+      "text": "lp1_"
+    },
+    {
+      "name": "lp2_",
+      "text": "lp2_"
+    },
+    {
+      "name": "lp3_",
+      "text": "lp3_"
+    },
+    {
+      "name": "lp4_",
+      "text": "lp4_"
+    },
+    {
+      "name": "lp5_",
+      "text": "lp5_"
+    },
+    {
+      "name": "lp6_",
+      "text": "lp6_"
+    },
+    {
+      "name": "lpe0_",
+      "text": "lpe0_"
+    },
+    {
+      "name": "lpe1_",
+      "text": "lpe1_"
+    },
+    {
+      "name": "lpe2_",
+      "text": "lpe2_"
+    },
+    {
+      "name": "lpe3_",
+      "text": "lpe3_"
+    },
+    {
+      "name": "lpe4_",
+      "text": "lpe4_"
+    },
+    {
+      "name": "lpe5_",
+      "text": "lpe5_"
+    },
+    {
+      "name": "lpe6_",
+      "text": "lpe6_"
+    },
+    {
+      "name": "lpi0_",
+      "text": "lpi0_"
+    },
+    {
+      "name": "lpi1_",
+      "text": "lpi1_"
+    },
+    {
+      "name": "lpi2_",
+      "text": "lpi2_"
+    },
+    {
+      "name": "lpi3_",
+      "text": "lpi3_"
+    },
+    {
+      "name": "lpi4_",
+      "text": "lpi4_"
+    },
+    {
+      "name": "lpi5_",
+      "text": "lpi5_"
+    },
+    {
+      "name": "lpi6_",
+      "text": "lpi6_"
+    },
+    {
+      "name": "lx0_",
+      "text": "lx0_"
+    },
+    {
+      "name": "lx1_",
+      "text": "lx1_"
+    },
+    {
+      "name": "lx2_",
+      "text": "lx2_"
+    },
+    {
+      "name": "lx3_",
+      "text": "lx3_"
+    },
+    {
+      "name": "lx4_",
+      "text": "lx4_"
+    },
+    {
+      "name": "lx5_",
+      "text": "lx5_"
+    },
+    {
+      "name": "lx6_",
+      "text": "lx6_"
+    },
+    {
+      "name": "rl0_",
+      "text": "rl0_"
+    },
+    {
+      "name": "rl1_",
+      "text": "rl1_"
+    },
+    {
+      "name": "rl2_",
+      "text": "rl2_"
+    },
+    {
+      "name": "rl3_",
+      "text": "rl3_"
+    },
+    {
+      "name": "rl4_",
+      "text": "rl4_"
+    },
+    {
+      "name": "rl5_",
+      "text": "rl5_"
+    },
+    {
+      "name": "rl6_",
+      "text": "rl6_"
+    },
+    {
+      "name": "rs1_",
+      "text": "rs1_"
+    },
+    {
+      "name": "rs2_",
+      "text": "rs2_"
+    },
+    {
+      "name": "rs3_",
+      "text": "rs3_"
+    },
+    {
+      "name": "rs4_",
+      "text": "rs4_"
+    },
+    {
+      "name": "rs5_",
+      "text": "rs5_"
+    },
+    {
+      "name": "rs6_",
+      "text": "rs6_"
+    },
+    {
+      "name": "ule1_",
+      "text": "ule1_"
+    },
+    {
+      "name": "ule2_",
+      "text": "ule2_"
+    },
+    {
+      "name": "ule3_",
+      "text": "ule3_"
+    },
+    {
+      "name": "ule4_",
+      "text": "ule4_"
+    },
+    {
+      "name": "ule5_",
+      "text": "ule5_"
+    },
+    {
+      "name": "ule6_",
+      "text": "ule6_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "c3",
       "text": "c3"
@@ -1496,428 +1919,5 @@
       "name": "yl76",
       "text": "yl76"
     }
-  ],
-  "shocks": [
-    {
-      "name": "c3_",
-      "text": "c3_"
-    },
-    {
-      "name": "c4_",
-      "text": "c4_"
-    },
-    {
-      "name": "cd0_",
-      "text": "cd0_"
-    },
-    {
-      "name": "cd1_",
-      "text": "cd1_"
-    },
-    {
-      "name": "cd2_",
-      "text": "cd2_"
-    },
-    {
-      "name": "cd5_",
-      "text": "cd5_"
-    },
-    {
-      "name": "cd6_",
-      "text": "cd6_"
-    },
-    {
-      "name": "cn0_",
-      "text": "cn0_"
-    },
-    {
-      "name": "cn1_",
-      "text": "cn1_"
-    },
-    {
-      "name": "cn2_",
-      "text": "cn2_"
-    },
-    {
-      "name": "cn5_",
-      "text": "cn5_"
-    },
-    {
-      "name": "cn6_",
-      "text": "cn6_"
-    },
-    {
-      "name": "cs0_",
-      "text": "cs0_"
-    },
-    {
-      "name": "cs1_",
-      "text": "cs1_"
-    },
-    {
-      "name": "cs2_",
-      "text": "cs2_"
-    },
-    {
-      "name": "cs5_",
-      "text": "cs5_"
-    },
-    {
-      "name": "cs6_",
-      "text": "cs6_"
-    },
-    {
-      "name": "fiscal_",
-      "text": "fiscal_"
-    },
-    {
-      "name": "if1_",
-      "text": "if1_"
-    },
-    {
-      "name": "if3_",
-      "text": "if3_"
-    },
-    {
-      "name": "if4_",
-      "text": "if4_"
-    },
-    {
-      "name": "ii0_",
-      "text": "ii0_"
-    },
-    {
-      "name": "ii1_",
-      "text": "ii1_"
-    },
-    {
-      "name": "ii2_",
-      "text": "ii2_"
-    },
-    {
-      "name": "ii3_",
-      "text": "ii3_"
-    },
-    {
-      "name": "ii4_",
-      "text": "ii4_"
-    },
-    {
-      "name": "ii5_",
-      "text": "ii5_"
-    },
-    {
-      "name": "ii6_",
-      "text": "ii6_"
-    },
-    {
-      "name": "in2_",
-      "text": "in2_"
-    },
-    {
-      "name": "in5_",
-      "text": "in5_"
-    },
-    {
-      "name": "in6_",
-      "text": "in6_"
-    },
-    {
-      "name": "ine0_",
-      "text": "ine0_"
-    },
-    {
-      "name": "ins0_",
-      "text": "ins0_"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    },
-    {
-      "name": "ir0_",
-      "text": "ir0_"
-    },
-    {
-      "name": "ir2_",
-      "text": "ir2_"
-    },
-    {
-      "name": "ir5_",
-      "text": "ir5_"
-    },
-    {
-      "name": "ir6_",
-      "text": "ir6_"
-    },
-    {
-      "name": "lex0_",
-      "text": "lex0_"
-    },
-    {
-      "name": "lex1_",
-      "text": "lex1_"
-    },
-    {
-      "name": "lex2_",
-      "text": "lex2_"
-    },
-    {
-      "name": "lex3_",
-      "text": "lex3_"
-    },
-    {
-      "name": "lex4_",
-      "text": "lex4_"
-    },
-    {
-      "name": "lex5_",
-      "text": "lex5_"
-    },
-    {
-      "name": "lex6_",
-      "text": "lex6_"
-    },
-    {
-      "name": "lg1_",
-      "text": "lg1_"
-    },
-    {
-      "name": "lg2_",
-      "text": "lg2_"
-    },
-    {
-      "name": "lg3_",
-      "text": "lg3_"
-    },
-    {
-      "name": "lg4_",
-      "text": "lg4_"
-    },
-    {
-      "name": "lg5_",
-      "text": "lg5_"
-    },
-    {
-      "name": "lg6_",
-      "text": "lg6_"
-    },
-    {
-      "name": "lim0_",
-      "text": "lim0_"
-    },
-    {
-      "name": "lim1_",
-      "text": "lim1_"
-    },
-    {
-      "name": "lim2_",
-      "text": "lim2_"
-    },
-    {
-      "name": "lim3_",
-      "text": "lim3_"
-    },
-    {
-      "name": "lim4_",
-      "text": "lim4_"
-    },
-    {
-      "name": "lim5_",
-      "text": "lim5_"
-    },
-    {
-      "name": "lim6_",
-      "text": "lim6_"
-    },
-    {
-      "name": "lp0_",
-      "text": "lp0_"
-    },
-    {
-      "name": "lp1_",
-      "text": "lp1_"
-    },
-    {
-      "name": "lp2_",
-      "text": "lp2_"
-    },
-    {
-      "name": "lp3_",
-      "text": "lp3_"
-    },
-    {
-      "name": "lp4_",
-      "text": "lp4_"
-    },
-    {
-      "name": "lp5_",
-      "text": "lp5_"
-    },
-    {
-      "name": "lp6_",
-      "text": "lp6_"
-    },
-    {
-      "name": "lpe0_",
-      "text": "lpe0_"
-    },
-    {
-      "name": "lpe1_",
-      "text": "lpe1_"
-    },
-    {
-      "name": "lpe2_",
-      "text": "lpe2_"
-    },
-    {
-      "name": "lpe3_",
-      "text": "lpe3_"
-    },
-    {
-      "name": "lpe4_",
-      "text": "lpe4_"
-    },
-    {
-      "name": "lpe5_",
-      "text": "lpe5_"
-    },
-    {
-      "name": "lpe6_",
-      "text": "lpe6_"
-    },
-    {
-      "name": "lpi0_",
-      "text": "lpi0_"
-    },
-    {
-      "name": "lpi1_",
-      "text": "lpi1_"
-    },
-    {
-      "name": "lpi2_",
-      "text": "lpi2_"
-    },
-    {
-      "name": "lpi3_",
-      "text": "lpi3_"
-    },
-    {
-      "name": "lpi4_",
-      "text": "lpi4_"
-    },
-    {
-      "name": "lpi5_",
-      "text": "lpi5_"
-    },
-    {
-      "name": "lpi6_",
-      "text": "lpi6_"
-    },
-    {
-      "name": "lx0_",
-      "text": "lx0_"
-    },
-    {
-      "name": "lx1_",
-      "text": "lx1_"
-    },
-    {
-      "name": "lx2_",
-      "text": "lx2_"
-    },
-    {
-      "name": "lx3_",
-      "text": "lx3_"
-    },
-    {
-      "name": "lx4_",
-      "text": "lx4_"
-    },
-    {
-      "name": "lx5_",
-      "text": "lx5_"
-    },
-    {
-      "name": "lx6_",
-      "text": "lx6_"
-    },
-    {
-      "name": "rl0_",
-      "text": "rl0_"
-    },
-    {
-      "name": "rl1_",
-      "text": "rl1_"
-    },
-    {
-      "name": "rl2_",
-      "text": "rl2_"
-    },
-    {
-      "name": "rl3_",
-      "text": "rl3_"
-    },
-    {
-      "name": "rl4_",
-      "text": "rl4_"
-    },
-    {
-      "name": "rl5_",
-      "text": "rl5_"
-    },
-    {
-      "name": "rl6_",
-      "text": "rl6_"
-    },
-    {
-      "name": "rs1_",
-      "text": "rs1_"
-    },
-    {
-      "name": "rs2_",
-      "text": "rs2_"
-    },
-    {
-      "name": "rs3_",
-      "text": "rs3_"
-    },
-    {
-      "name": "rs4_",
-      "text": "rs4_"
-    },
-    {
-      "name": "rs5_",
-      "text": "rs5_"
-    },
-    {
-      "name": "rs6_",
-      "text": "rs6_"
-    },
-    {
-      "name": "ule1_",
-      "text": "ule1_"
-    },
-    {
-      "name": "ule2_",
-      "text": "ule2_"
-    },
-    {
-      "name": "ule3_",
-      "text": "ule3_"
-    },
-    {
-      "name": "ule4_",
-      "text": "ule4_"
-    },
-    {
-      "name": "ule5_",
-      "text": "ule5_"
-    },
-    {
-      "name": "ule6_",
-      "text": "ule6_"
-    }
-  ],
-  "al_info": null
+  ]
 }

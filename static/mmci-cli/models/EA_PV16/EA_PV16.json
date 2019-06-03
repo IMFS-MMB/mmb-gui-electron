@@ -72,7 +72,478 @@
   ],
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "ea_a",
+      "text": "ea_a"
+    },
+    {
+      "name": "ea_btar",
+      "text": "ea_btar"
+    },
+    {
+      "name": "ea_bwyt",
+      "text": "ea_bwyt"
+    },
+    {
+      "name": "ea_eps_ben",
+      "text": "ea_eps_ben"
+    },
+    {
+      "name": "ea_eps_clc",
+      "text": "ea_eps_clc"
+    },
+    {
+      "name": "ea_eps_cnlc",
+      "text": "ea_eps_cnlc"
+    },
+    {
+      "name": "ea_eps_eta",
+      "text": "ea_eps_eta"
+    },
+    {
+      "name": "ea_eps_etax",
+      "text": "ea_eps_etax"
+    },
+    {
+      "name": "ea_eps_g",
+      "text": "ea_eps_g"
+    },
+    {
+      "name": "ea_eps_i",
+      "text": "ea_eps_i"
+    },
+    {
+      "name": "ea_eps_ig",
+      "text": "ea_eps_ig"
+    },
+    {
+      "name": "ea_eps_im",
+      "text": "ea_eps_im"
+    },
+    {
+      "name": "ea_eps_l",
+      "text": "ea_eps_l"
+    },
+    {
+      "name": "ea_eps_ltfp",
+      "text": "ea_eps_ltfp"
+    },
+    {
+      "name": "EA_eps_qe",
+      "text": "EA_eps_qe"
+    },
+    {
+      "name": "ea_eps_rpremb",
+      "text": "ea_eps_rpremb"
+    },
+    {
+      "name": "ea_eps_rpreme",
+      "text": "ea_eps_rpreme"
+    },
+    {
+      "name": "ea_eps_rpremk",
+      "text": "ea_eps_rpremk"
+    },
+    {
+      "name": "ea_eps_tl",
+      "text": "ea_eps_tl"
+    },
+    {
+      "name": "ea_eps_tr",
+      "text": "ea_eps_tr"
+    },
+    {
+      "name": "ea_eps_trlc",
+      "text": "ea_eps_trlc"
+    },
+    {
+      "name": "ea_eps_ucap",
+      "text": "ea_eps_ucap"
+    },
+    {
+      "name": "ea_eps_v",
+      "text": "ea_eps_v"
+    },
+    {
+      "name": "ea_eps_w",
+      "text": "ea_eps_w"
+    },
+    {
+      "name": "ea_ex_ben",
+      "text": "ea_ex_ben"
+    },
+    {
+      "name": "ea_ex_by",
+      "text": "ea_ex_by"
+    },
+    {
+      "name": "ea_ex_gby",
+      "text": "ea_ex_gby"
+    },
+    {
+      "name": "ea_ex_gs",
+      "text": "ea_ex_gs"
+    },
+    {
+      "name": "ea_ex_igs",
+      "text": "ea_ex_igs"
+    },
+    {
+      "name": "ea_ex_inf",
+      "text": "ea_ex_inf"
+    },
+    {
+      "name": "ea_ex_ltfp",
+      "text": "ea_ex_ltfp"
+    },
+    {
+      "name": "ea_ex_tl",
+      "text": "ea_ex_tl"
+    },
+    {
+      "name": "ea_ex_trlc",
+      "text": "ea_ex_trlc"
+    },
+    {
+      "name": "ea_ex_tvat",
+      "text": "ea_ex_tvat"
+    },
+    {
+      "name": "ea_fcl",
+      "text": "ea_fcl"
+    },
+    {
+      "name": "ea_fcy",
+      "text": "ea_fcy"
+    },
+    {
+      "name": "ea_ig",
+      "text": "ea_ig"
+    },
+    {
+      "name": "ea_im1lag",
+      "text": "ea_im1lag"
+    },
+    {
+      "name": "EA_inoml",
+      "text": "EA_inoml"
+    },
+    {
+      "name": "ea_libdum",
+      "text": "ea_libdum"
+    },
+    {
+      "name": "ea_npart",
+      "text": "ea_npart"
+    },
+    {
+      "name": "EA_profcb",
+      "text": "EA_profcb"
+    },
+    {
+      "name": "ea_rpremb",
+      "text": "ea_rpremb"
+    },
+    {
+      "name": "ea_rpremk",
+      "text": "ea_rpremk"
+    },
+    {
+      "name": "ea_size",
+      "text": "ea_size"
+    },
+    {
+      "name": "ea_slc",
+      "text": "ea_slc"
+    },
+    {
+      "name": "ea_ssc",
+      "text": "ea_ssc"
+    },
+    {
+      "name": "ea_taxdum",
+      "text": "ea_taxdum"
+    },
+    {
+      "name": "ea_taxshare",
+      "text": "ea_taxshare"
+    },
+    {
+      "name": "ea_tc",
+      "text": "ea_tc"
+    },
+    {
+      "name": "ea_trshare",
+      "text": "ea_trshare"
+    },
+    {
+      "name": "ea_tryshare",
+      "text": "ea_tryshare"
+    },
+    {
+      "name": "ea_tvat",
+      "text": "ea_tvat"
+    },
+    {
+      "name": "ea_upi",
+      "text": "ea_upi"
+    },
+    {
+      "name": "fiscal_",
+      "text": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    },
+    {
+      "name": "null",
+      "text": "null"
+    },
+    {
+      "name": "r_a",
+      "text": "r_a"
+    },
+    {
+      "name": "r_btar",
+      "text": "r_btar"
+    },
+    {
+      "name": "r_e",
+      "text": "r_e"
+    },
+    {
+      "name": "r_eps_ben",
+      "text": "r_eps_ben"
+    },
+    {
+      "name": "r_eps_clc",
+      "text": "r_eps_clc"
+    },
+    {
+      "name": "r_eps_cnlc",
+      "text": "r_eps_cnlc"
+    },
+    {
+      "name": "r_eps_eta",
+      "text": "r_eps_eta"
+    },
+    {
+      "name": "r_eps_etax",
+      "text": "r_eps_etax"
+    },
+    {
+      "name": "r_eps_g",
+      "text": "r_eps_g"
+    },
+    {
+      "name": "r_eps_i",
+      "text": "r_eps_i"
+    },
+    {
+      "name": "r_eps_ig",
+      "text": "r_eps_ig"
+    },
+    {
+      "name": "r_eps_im",
+      "text": "r_eps_im"
+    },
+    {
+      "name": "r_eps_l",
+      "text": "r_eps_l"
+    },
+    {
+      "name": "r_eps_ltfp",
+      "text": "r_eps_ltfp"
+    },
+    {
+      "name": "r_eps_m",
+      "text": "r_eps_m"
+    },
+    {
+      "name": "r_eps_poil",
+      "text": "r_eps_poil"
+    },
+    {
+      "name": "R_eps_qe",
+      "text": "R_eps_qe"
+    },
+    {
+      "name": "r_eps_rpremb",
+      "text": "r_eps_rpremb"
+    },
+    {
+      "name": "r_eps_rpremk",
+      "text": "r_eps_rpremk"
+    },
+    {
+      "name": "r_eps_tl",
+      "text": "r_eps_tl"
+    },
+    {
+      "name": "r_eps_tr",
+      "text": "r_eps_tr"
+    },
+    {
+      "name": "r_eps_trlc",
+      "text": "r_eps_trlc"
+    },
+    {
+      "name": "r_eps_ucap",
+      "text": "r_eps_ucap"
+    },
+    {
+      "name": "r_eps_v",
+      "text": "r_eps_v"
+    },
+    {
+      "name": "r_eps_w",
+      "text": "r_eps_w"
+    },
+    {
+      "name": "r_ex_ben",
+      "text": "r_ex_ben"
+    },
+    {
+      "name": "r_ex_by",
+      "text": "r_ex_by"
+    },
+    {
+      "name": "r_ex_gby",
+      "text": "r_ex_gby"
+    },
+    {
+      "name": "r_ex_gs",
+      "text": "r_ex_gs"
+    },
+    {
+      "name": "r_ex_igs",
+      "text": "r_ex_igs"
+    },
+    {
+      "name": "r_ex_inf",
+      "text": "r_ex_inf"
+    },
+    {
+      "name": "r_ex_ltfp",
+      "text": "r_ex_ltfp"
+    },
+    {
+      "name": "r_ex_tl",
+      "text": "r_ex_tl"
+    },
+    {
+      "name": "r_ex_trlc",
+      "text": "r_ex_trlc"
+    },
+    {
+      "name": "r_ex_tvat",
+      "text": "r_ex_tvat"
+    },
+    {
+      "name": "r_fcl",
+      "text": "r_fcl"
+    },
+    {
+      "name": "r_fcy",
+      "text": "r_fcy"
+    },
+    {
+      "name": "r_g",
+      "text": "r_g"
+    },
+    {
+      "name": "r_ig",
+      "text": "r_ig"
+    },
+    {
+      "name": "r_ilag",
+      "text": "r_ilag"
+    },
+    {
+      "name": "r_im1lag",
+      "text": "r_im1lag"
+    },
+    {
+      "name": "R_inoml",
+      "text": "R_inoml"
+    },
+    {
+      "name": "r_npart",
+      "text": "r_npart"
+    },
+    {
+      "name": "r_rpremb",
+      "text": "r_rpremb"
+    },
+    {
+      "name": "r_rpremk",
+      "text": "r_rpremk"
+    },
+    {
+      "name": "r_size",
+      "text": "r_size"
+    },
+    {
+      "name": "r_slc",
+      "text": "r_slc"
+    },
+    {
+      "name": "r_ssc",
+      "text": "r_ssc"
+    },
+    {
+      "name": "r_taxdum",
+      "text": "r_taxdum"
+    },
+    {
+      "name": "r_taxshare",
+      "text": "r_taxshare"
+    },
+    {
+      "name": "r_tc",
+      "text": "r_tc"
+    },
+    {
+      "name": "r_tinf",
+      "text": "r_tinf"
+    },
+    {
+      "name": "r_trshare",
+      "text": "r_trshare"
+    },
+    {
+      "name": "r_tryshare",
+      "text": "r_tryshare"
+    },
+    {
+      "name": "r_tvat",
+      "text": "r_tvat"
+    },
+    {
+      "name": "r_ty",
+      "text": "r_ty"
+    },
+    {
+      "name": "r_upi",
+      "text": "r_upi"
+    },
+    {
+      "name": "w_coreinf",
+      "text": "w_coreinf"
+    },
+    {
+      "name": "w_gpop",
+      "text": "w_gpop"
+    },
+    {
+      "name": "w_gtfp",
+      "text": "w_gtfp"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "ea_b",
       "text": "ea_b"
@@ -1041,476 +1512,5 @@
       "name": "R_yobs",
       "text": "R_yobs"
     }
-  ],
-  "shocks": [
-    {
-      "name": "ea_a",
-      "text": "ea_a"
-    },
-    {
-      "name": "ea_btar",
-      "text": "ea_btar"
-    },
-    {
-      "name": "ea_bwyt",
-      "text": "ea_bwyt"
-    },
-    {
-      "name": "ea_eps_ben",
-      "text": "ea_eps_ben"
-    },
-    {
-      "name": "ea_eps_clc",
-      "text": "ea_eps_clc"
-    },
-    {
-      "name": "ea_eps_cnlc",
-      "text": "ea_eps_cnlc"
-    },
-    {
-      "name": "ea_eps_eta",
-      "text": "ea_eps_eta"
-    },
-    {
-      "name": "ea_eps_etax",
-      "text": "ea_eps_etax"
-    },
-    {
-      "name": "ea_eps_g",
-      "text": "ea_eps_g"
-    },
-    {
-      "name": "ea_eps_i",
-      "text": "ea_eps_i"
-    },
-    {
-      "name": "ea_eps_ig",
-      "text": "ea_eps_ig"
-    },
-    {
-      "name": "ea_eps_im",
-      "text": "ea_eps_im"
-    },
-    {
-      "name": "ea_eps_l",
-      "text": "ea_eps_l"
-    },
-    {
-      "name": "ea_eps_ltfp",
-      "text": "ea_eps_ltfp"
-    },
-    {
-      "name": "EA_eps_qe",
-      "text": "EA_eps_qe"
-    },
-    {
-      "name": "ea_eps_rpremb",
-      "text": "ea_eps_rpremb"
-    },
-    {
-      "name": "ea_eps_rpreme",
-      "text": "ea_eps_rpreme"
-    },
-    {
-      "name": "ea_eps_rpremk",
-      "text": "ea_eps_rpremk"
-    },
-    {
-      "name": "ea_eps_tl",
-      "text": "ea_eps_tl"
-    },
-    {
-      "name": "ea_eps_tr",
-      "text": "ea_eps_tr"
-    },
-    {
-      "name": "ea_eps_trlc",
-      "text": "ea_eps_trlc"
-    },
-    {
-      "name": "ea_eps_ucap",
-      "text": "ea_eps_ucap"
-    },
-    {
-      "name": "ea_eps_v",
-      "text": "ea_eps_v"
-    },
-    {
-      "name": "ea_eps_w",
-      "text": "ea_eps_w"
-    },
-    {
-      "name": "ea_ex_ben",
-      "text": "ea_ex_ben"
-    },
-    {
-      "name": "ea_ex_by",
-      "text": "ea_ex_by"
-    },
-    {
-      "name": "ea_ex_gby",
-      "text": "ea_ex_gby"
-    },
-    {
-      "name": "ea_ex_gs",
-      "text": "ea_ex_gs"
-    },
-    {
-      "name": "ea_ex_igs",
-      "text": "ea_ex_igs"
-    },
-    {
-      "name": "ea_ex_inf",
-      "text": "ea_ex_inf"
-    },
-    {
-      "name": "ea_ex_ltfp",
-      "text": "ea_ex_ltfp"
-    },
-    {
-      "name": "ea_ex_tl",
-      "text": "ea_ex_tl"
-    },
-    {
-      "name": "ea_ex_trlc",
-      "text": "ea_ex_trlc"
-    },
-    {
-      "name": "ea_ex_tvat",
-      "text": "ea_ex_tvat"
-    },
-    {
-      "name": "ea_fcl",
-      "text": "ea_fcl"
-    },
-    {
-      "name": "ea_fcy",
-      "text": "ea_fcy"
-    },
-    {
-      "name": "ea_ig",
-      "text": "ea_ig"
-    },
-    {
-      "name": "ea_im1lag",
-      "text": "ea_im1lag"
-    },
-    {
-      "name": "EA_inoml",
-      "text": "EA_inoml"
-    },
-    {
-      "name": "ea_libdum",
-      "text": "ea_libdum"
-    },
-    {
-      "name": "ea_npart",
-      "text": "ea_npart"
-    },
-    {
-      "name": "EA_profcb",
-      "text": "EA_profcb"
-    },
-    {
-      "name": "ea_rpremb",
-      "text": "ea_rpremb"
-    },
-    {
-      "name": "ea_rpremk",
-      "text": "ea_rpremk"
-    },
-    {
-      "name": "ea_size",
-      "text": "ea_size"
-    },
-    {
-      "name": "ea_slc",
-      "text": "ea_slc"
-    },
-    {
-      "name": "ea_ssc",
-      "text": "ea_ssc"
-    },
-    {
-      "name": "ea_taxdum",
-      "text": "ea_taxdum"
-    },
-    {
-      "name": "ea_taxshare",
-      "text": "ea_taxshare"
-    },
-    {
-      "name": "ea_tc",
-      "text": "ea_tc"
-    },
-    {
-      "name": "ea_trshare",
-      "text": "ea_trshare"
-    },
-    {
-      "name": "ea_tryshare",
-      "text": "ea_tryshare"
-    },
-    {
-      "name": "ea_tvat",
-      "text": "ea_tvat"
-    },
-    {
-      "name": "ea_upi",
-      "text": "ea_upi"
-    },
-    {
-      "name": "fiscal_",
-      "text": "fiscal_"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    },
-    {
-      "name": "null",
-      "text": "null"
-    },
-    {
-      "name": "r_a",
-      "text": "r_a"
-    },
-    {
-      "name": "r_btar",
-      "text": "r_btar"
-    },
-    {
-      "name": "r_e",
-      "text": "r_e"
-    },
-    {
-      "name": "r_eps_ben",
-      "text": "r_eps_ben"
-    },
-    {
-      "name": "r_eps_clc",
-      "text": "r_eps_clc"
-    },
-    {
-      "name": "r_eps_cnlc",
-      "text": "r_eps_cnlc"
-    },
-    {
-      "name": "r_eps_eta",
-      "text": "r_eps_eta"
-    },
-    {
-      "name": "r_eps_etax",
-      "text": "r_eps_etax"
-    },
-    {
-      "name": "r_eps_g",
-      "text": "r_eps_g"
-    },
-    {
-      "name": "r_eps_i",
-      "text": "r_eps_i"
-    },
-    {
-      "name": "r_eps_ig",
-      "text": "r_eps_ig"
-    },
-    {
-      "name": "r_eps_im",
-      "text": "r_eps_im"
-    },
-    {
-      "name": "r_eps_l",
-      "text": "r_eps_l"
-    },
-    {
-      "name": "r_eps_ltfp",
-      "text": "r_eps_ltfp"
-    },
-    {
-      "name": "r_eps_m",
-      "text": "r_eps_m"
-    },
-    {
-      "name": "r_eps_poil",
-      "text": "r_eps_poil"
-    },
-    {
-      "name": "R_eps_qe",
-      "text": "R_eps_qe"
-    },
-    {
-      "name": "r_eps_rpremb",
-      "text": "r_eps_rpremb"
-    },
-    {
-      "name": "r_eps_rpremk",
-      "text": "r_eps_rpremk"
-    },
-    {
-      "name": "r_eps_tl",
-      "text": "r_eps_tl"
-    },
-    {
-      "name": "r_eps_tr",
-      "text": "r_eps_tr"
-    },
-    {
-      "name": "r_eps_trlc",
-      "text": "r_eps_trlc"
-    },
-    {
-      "name": "r_eps_ucap",
-      "text": "r_eps_ucap"
-    },
-    {
-      "name": "r_eps_v",
-      "text": "r_eps_v"
-    },
-    {
-      "name": "r_eps_w",
-      "text": "r_eps_w"
-    },
-    {
-      "name": "r_ex_ben",
-      "text": "r_ex_ben"
-    },
-    {
-      "name": "r_ex_by",
-      "text": "r_ex_by"
-    },
-    {
-      "name": "r_ex_gby",
-      "text": "r_ex_gby"
-    },
-    {
-      "name": "r_ex_gs",
-      "text": "r_ex_gs"
-    },
-    {
-      "name": "r_ex_igs",
-      "text": "r_ex_igs"
-    },
-    {
-      "name": "r_ex_inf",
-      "text": "r_ex_inf"
-    },
-    {
-      "name": "r_ex_ltfp",
-      "text": "r_ex_ltfp"
-    },
-    {
-      "name": "r_ex_tl",
-      "text": "r_ex_tl"
-    },
-    {
-      "name": "r_ex_trlc",
-      "text": "r_ex_trlc"
-    },
-    {
-      "name": "r_ex_tvat",
-      "text": "r_ex_tvat"
-    },
-    {
-      "name": "r_fcl",
-      "text": "r_fcl"
-    },
-    {
-      "name": "r_fcy",
-      "text": "r_fcy"
-    },
-    {
-      "name": "r_g",
-      "text": "r_g"
-    },
-    {
-      "name": "r_ig",
-      "text": "r_ig"
-    },
-    {
-      "name": "r_ilag",
-      "text": "r_ilag"
-    },
-    {
-      "name": "r_im1lag",
-      "text": "r_im1lag"
-    },
-    {
-      "name": "R_inoml",
-      "text": "R_inoml"
-    },
-    {
-      "name": "r_npart",
-      "text": "r_npart"
-    },
-    {
-      "name": "r_rpremb",
-      "text": "r_rpremb"
-    },
-    {
-      "name": "r_rpremk",
-      "text": "r_rpremk"
-    },
-    {
-      "name": "r_size",
-      "text": "r_size"
-    },
-    {
-      "name": "r_slc",
-      "text": "r_slc"
-    },
-    {
-      "name": "r_ssc",
-      "text": "r_ssc"
-    },
-    {
-      "name": "r_taxdum",
-      "text": "r_taxdum"
-    },
-    {
-      "name": "r_taxshare",
-      "text": "r_taxshare"
-    },
-    {
-      "name": "r_tc",
-      "text": "r_tc"
-    },
-    {
-      "name": "r_tinf",
-      "text": "r_tinf"
-    },
-    {
-      "name": "r_trshare",
-      "text": "r_trshare"
-    },
-    {
-      "name": "r_tryshare",
-      "text": "r_tryshare"
-    },
-    {
-      "name": "r_tvat",
-      "text": "r_tvat"
-    },
-    {
-      "name": "r_ty",
-      "text": "r_ty"
-    },
-    {
-      "name": "r_upi",
-      "text": "r_upi"
-    },
-    {
-      "name": "w_coreinf",
-      "text": "w_coreinf"
-    },
-    {
-      "name": "w_gpop",
-      "text": "w_gpop"
-    },
-    {
-      "name": "w_gtfp",
-      "text": "w_gtfp"
-    }
-  ],
-  "al_info": null
+  ]
 }

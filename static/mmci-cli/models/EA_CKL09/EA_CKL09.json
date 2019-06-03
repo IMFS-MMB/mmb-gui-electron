@@ -73,7 +73,42 @@
   ],
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "fiscal_",
+      "text": "fiscal_"
+    },
+    {
+      "name": "inno_ebargaint",
+      "text": "inno_ebargaint"
+    },
+    {
+      "name": "inno_ebt",
+      "text": "inno_ebt"
+    },
+    {
+      "name": "inno_eCt",
+      "text": "inno_eCt"
+    },
+    {
+      "name": "inno_ekappat",
+      "text": "inno_ekappat"
+    },
+    {
+      "name": "inno_esept",
+      "text": "inno_esept"
+    },
+    {
+      "name": "inno_zt",
+      "text": "inno_zt"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "cflext",
       "text": "cflext"
@@ -274,40 +309,5 @@
       "name": "zt",
       "text": "zt"
     }
-  ],
-  "shocks": [
-    {
-      "name": "fiscal_",
-      "text": "fiscal_"
-    },
-    {
-      "name": "inno_ebargaint",
-      "text": "inno_ebargaint"
-    },
-    {
-      "name": "inno_ebt",
-      "text": "inno_ebt"
-    },
-    {
-      "name": "inno_eCt",
-      "text": "inno_eCt"
-    },
-    {
-      "name": "inno_ekappat",
-      "text": "inno_ekappat"
-    },
-    {
-      "name": "inno_esept",
-      "text": "inno_esept"
-    },
-    {
-      "name": "inno_zt",
-      "text": "inno_zt"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    }
-  ],
-  "al_info": null
+  ]
 }

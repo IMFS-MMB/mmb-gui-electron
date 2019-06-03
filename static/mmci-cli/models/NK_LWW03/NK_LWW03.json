@@ -72,7 +72,22 @@
   ],
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "interest_",
+      "text": "interest_"
+    },
+    {
+      "name": "pdotsh_",
+      "text": "pdotsh_"
+    },
+    {
+      "name": "rstar_",
+      "text": "rstar_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "drff",
       "text": "drff"
@@ -113,20 +128,5 @@
       "name": "ygap",
       "text": "ygap"
     }
-  ],
-  "shocks": [
-    {
-      "name": "interest_",
-      "text": "interest_"
-    },
-    {
-      "name": "pdotsh_",
-      "text": "pdotsh_"
-    },
-    {
-      "name": "rstar_",
-      "text": "rstar_"
-    }
-  ],
-  "al_info": null
+  ]
 }

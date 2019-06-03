@@ -73,7 +73,50 @@
   ],
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "epsilona",
+      "text": "epsilona"
+    },
+    {
+      "name": "epsilonb",
+      "text": "epsilonb"
+    },
+    {
+      "name": "epsiloni",
+      "text": "epsiloni"
+    },
+    {
+      "name": "epsilonp",
+      "text": "epsilonp"
+    },
+    {
+      "name": "epsilontk",
+      "text": "epsilontk"
+    },
+    {
+      "name": "epsilontl",
+      "text": "epsilontl"
+    },
+    {
+      "name": "epsilonw",
+      "text": "epsilonw"
+    },
+    {
+      "name": "epsilonz",
+      "text": "epsilonz"
+    },
+    {
+      "name": "fiscal_",
+      "text": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "b",
       "text": "b"
@@ -326,48 +369,5 @@
       "name": "zstar",
       "text": "zstar"
     }
-  ],
-  "shocks": [
-    {
-      "name": "epsilona",
-      "text": "epsilona"
-    },
-    {
-      "name": "epsilonb",
-      "text": "epsilonb"
-    },
-    {
-      "name": "epsiloni",
-      "text": "epsiloni"
-    },
-    {
-      "name": "epsilonp",
-      "text": "epsilonp"
-    },
-    {
-      "name": "epsilontk",
-      "text": "epsilontk"
-    },
-    {
-      "name": "epsilontl",
-      "text": "epsilontl"
-    },
-    {
-      "name": "epsilonw",
-      "text": "epsilonw"
-    },
-    {
-      "name": "epsilonz",
-      "text": "epsilonz"
-    },
-    {
-      "name": "fiscal_",
-      "text": "fiscal_"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    }
-  ],
-  "al_info": null
+  ]
 }

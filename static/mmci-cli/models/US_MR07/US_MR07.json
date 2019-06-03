@@ -37,7 +37,34 @@
   "msr": null,
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "a_e",
+      "text": "a_e"
+    },
+    {
+      "name": "e_e",
+      "text": "e_e"
+    },
+    {
+      "name": "g_e",
+      "text": "g_e"
+    },
+    {
+      "name": "gam_e",
+      "text": "gam_e"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    },
+    {
+      "name": "v_e",
+      "text": "v_e"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "a",
       "text": "a"
@@ -322,32 +349,5 @@
       "name": "yn",
       "text": "yn"
     }
-  ],
-  "shocks": [
-    {
-      "name": "a_e",
-      "text": "a_e"
-    },
-    {
-      "name": "e_e",
-      "text": "e_e"
-    },
-    {
-      "name": "g_e",
-      "text": "g_e"
-    },
-    {
-      "name": "gam_e",
-      "text": "gam_e"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    },
-    {
-      "name": "v_e",
-      "text": "v_e"
-    }
-  ],
-  "al_info": null
+  ]
 }

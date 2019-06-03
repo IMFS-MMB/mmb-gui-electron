@@ -71,7 +71,30 @@
   ],
   "variabledim": 1,
   "al": false,
-  "vars": [
+  "shocks": [
+    {
+      "name": "epsi_D",
+      "text": "epsi_D"
+    },
+    {
+      "name": "eta_PIESTAR",
+      "text": "eta_PIESTAR"
+    },
+    {
+      "name": "eta_r",
+      "text": "eta_r"
+    },
+    {
+      "name": "fiscal_",
+      "text": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
     {
       "name": "c",
       "text": "c"
@@ -324,28 +347,5 @@
       "name": "Z2",
       "text": "Z2"
     }
-  ],
-  "shocks": [
-    {
-      "name": "epsi_D",
-      "text": "epsi_D"
-    },
-    {
-      "name": "eta_PIESTAR",
-      "text": "eta_PIESTAR"
-    },
-    {
-      "name": "eta_r",
-      "text": "eta_r"
-    },
-    {
-      "name": "fiscal_",
-      "text": "fiscal_"
-    },
-    {
-      "name": "interest_",
-      "text": "interest_"
-    }
-  ],
-  "al_info": null
+  ]
 }
