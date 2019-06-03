@@ -7,7 +7,7 @@ import compare from './comparison.compare.PLATFORM';
 const namespaced = true;
 
 const state = {
-  settings: null,
+  settings: {},
   show: false,
   inProgress: false,
   stdout: [],
@@ -76,19 +76,32 @@ const getters = {
       values: [],
     }));
   },
-  charts(state) {
-    return [
-      getChartRow(
+  chartRows(state) {
+    if (!state.show) {
+      return [];
+    }
+
+    const chartRows = getShockChartRows(state);
+
+    if (state.settings.plotAutocorrelation) {
+      const acRow = getChartRow(
         state.data,
         state.settings.variables,
-        variable => `AC - ${variable.text}`,
+        variable => `Autocorrelation - ${variable.text}`,
         (data, variable) => get(data, ['AC', variable.name]),
-      ),
-      ...getShockChartRows(state),
-    ];
+      );
+
+      chartRows.unshift(acRow);
+    }
+
+    return chartRows;
   },
   varTable(state) {
-    state.data.map((d) => {
+    if (!state.settings.plotVariance) {
+      return null;
+    }
+
+    return state.data.map((d) => {
       const vars = pick(d.data.VAR, state.settings.variables.map(v => v.name));
 
       return {
