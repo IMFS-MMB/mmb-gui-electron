@@ -8,8 +8,8 @@
 
         <div class="ctrl-set-body">
             <div class="ctrl-set-listing">
-                <b-form-checkbox :model="plotAutocorrelationModel">Plot autocorrelation functions</b-form-checkbox>
-                <b-form-checkbox :model="plotVarianceModel">Plot variances</b-form-checkbox>
+                <b-form-checkbox v-model="plotAutocorrelationModel">Plot autocorrelation functions</b-form-checkbox>
+                <b-form-checkbox v-model="plotVarianceModel">Plot variances</b-form-checkbox>
 
                 <Horizon class="mt-2" v-if="$isElectron"/>
                 <Gain class="mt-1" v-if="$isElectron"/>
