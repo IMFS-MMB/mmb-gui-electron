@@ -73,6 +73,11 @@
 </script>
 
 <style scoped lang="scss">
+    .text {
+        font-size: 0.9rem;
+        padding-left: 8px;
+    }
+
     .gain {
         opacity: 0;
         transition: opacity .1s ease-in-out;
@@ -80,15 +85,5 @@
         &.show {
             opacity: 1;
         }
-    }
-
-    .text {
-        font-size: 0.9rem;
-        padding-left: 30px;
-    }
-
-    .slider {
-        margin-left: 22px;
-        margin-right: 22px;
     }
 </style>

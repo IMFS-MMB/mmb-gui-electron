@@ -37,24 +37,22 @@ function getChart(data, title, dataSelector) {
   };
 }
 
-function getAllCharts(allData, varNames, titleFactory, dataSelector) {
-  return varNames.map(varName => getChart(
+function getChartRow(allData, variables, titleFactory, dataSelector) {
+  return variables.map(variable => getChart(
     allData,
-    titleFactory(varName),
-    d => dataSelector(d, varName),
+    titleFactory(variable),
+    d => dataSelector(d, variable),
   ));
 }
 
-const DEFAULT_VARS = ['inflation', 'interest', 'output', 'outputgap'];
+function getShockChartRows(state) {
+  const { shocks, variables } = state.settings;
 
-function getAllShockCharts(state) {
-  const { shocks } = state.settings;
-
-  return shocks.map(shock => getAllCharts(
+  return shocks.map(shock => getChartRow(
     state.data,
-    DEFAULT_VARS,
-    varName => `${shock.text} - ${varName}`,
-    (data, varName) => get(data, ['IRF', shock.name, varName]),
+    variables,
+    variable => `${shock.text} - ${variable.text}`,
+    (data, variable) => get(data, ['IRF', shock.name, variable.name]),
   ));
 }
 
@@ -80,13 +78,18 @@ const getters = {
   },
   charts(state) {
     return [
-      getAllCharts(state.data, DEFAULT_VARS, varName => `AC - ${varName}`, (data, varName) => get(data, ['AC', varName])),
-      ...getAllShockCharts(state),
+      getChartRow(
+        state.data,
+        state.settings.variables,
+        variable => `AC - ${variable.text}`,
+        (data, variable) => get(data, ['AC', variable.name]),
+      ),
+      ...getShockChartRows(state),
     ];
   },
   varTable(state) {
     state.data.map((d) => {
-      const vars = pick(d.data.VAR, DEFAULT_VARS);
+      const vars = pick(d.data.VAR, state.settings.variables.map(v => v.name));
 
       return {
         title: getSeriesId(d),

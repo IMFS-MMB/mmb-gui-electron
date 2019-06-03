@@ -1,4 +1,5 @@
 import commonShocks from '@/data/shocks';
+import commonVariables from '@/data/variables';
 
 const namespaced = true;
 
@@ -6,7 +7,11 @@ const state = {
   models: [],
   policyRules: [],
   shocks: [],
-  outputVars: [],
+  variables: [
+    ...commonVariables,
+  ],
+  plotAutocorrelation: true,
+  plotVariance: true,
   horizon: 20,
   gain: 0.01,
 };
@@ -28,8 +33,14 @@ const getters = {
   shocks(state) {
     return state.shocks;
   },
-  outputVars(state) {
-    return state.outputVars;
+  variables(state) {
+    return state.variables;
+  },
+  plotAutocorrelation(state) {
+    return state.plotAutocorrelation;
+  },
+  plotVariance(state) {
+    return state.plotVariance;
   },
 
   numModels(state) {
@@ -41,8 +52,8 @@ const getters = {
   numShocks(state) {
     return state.shocks.length;
   },
-  numOutputVars(state) {
-    return state.outputVars.length;
+  numVariables(state) {
+    return state.variables.length;
   },
 
   isModelDisabled(state, getters) {
@@ -90,9 +101,12 @@ function isShockSelectable(selectedModels, shock) {
   }
 
   switch (selectedModels.length) {
-    case 0: return false;
-    case 1: return selectedModels[0].shocks.some(s => s.name === shock.name);
-    default: return false;
+    case 0:
+      return false;
+    case 1:
+      return selectedModels[0].shocks.some(s => s.name === shock.name);
+    default:
+      return false;
   }
 }
 
@@ -114,8 +128,14 @@ const mutations = {
   setShocks(state, data) {
     state.shocks = data;
   },
-  setOutputVars(state, data) {
-    state.outputVars = data;
+  setVariables(state, data) {
+    state.variables = data;
+  },
+  setPlotAutocorrelation(state, data) {
+    state.plotAutocorrelation = data;
+  },
+  setPlotVariance(state, data) {
+    state.plotVariance = data;
   },
 
   clearModels(state) {
@@ -127,15 +147,15 @@ const mutations = {
   clearShocks(state) {
     state.shocks = [];
   },
-  clearOutputVars(state) {
-    state.outputVars = [];
+  clearVariables(state) {
+    state.variables = [];
   },
 
   clearAll(state) {
     state.models = [];
     state.policyRules = [];
     state.shocks = [];
-    state.outputVars = [];
+    state.variables = [];
   },
 };
 

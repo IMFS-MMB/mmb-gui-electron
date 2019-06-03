@@ -21,9 +21,11 @@
                 </b-col>
 
                 <b-col>
-                    <OutputVars/>
-                    <Horizon class="mt-2" v-if="$isElectron"/>
-                    <Gain class="mt-1" v-if="$isElectron"/>
+                    <Variables/>
+                </b-col>
+
+                <b-col>
+                    <Options/>
                 </b-col>
             </b-row>
 
@@ -64,9 +66,9 @@
   import OcpHeader from '@/components/OcpHeader.vue';
   import Models from '@/components/Models.vue';
   import Shocks from '@/components/Shocks.vue';
-  import OutputVars from '@/components/OutputVars.vue';
   import PolicyRules from '@/components/PolicyRules.vue';
   import Comparison from '@/components/Comparison.vue';
+  import Options from '@/components/Options.vue';
 
   import HelpModal from '@/modals/HelpModal.vue';
   import SettingsModal from '@/modals/SettingsModal.vue';
@@ -77,6 +79,7 @@
   import Horizon from './Horizon';
   import Gain from './Gain';
   import { isElectron } from '../../constants';
+  import Variables from './Variables';
 
   const platformComponents = isElectron ? {
     SettingsModal,
@@ -86,12 +89,13 @@
 
   export default {
     components: {
+      Variables,
       Horizon,
       Gain,
       OcpHeader,
       Models,
       Shocks,
-      OutputVars,
+      Options,
       PolicyRules,
       Comparison,
       HelpModal,
