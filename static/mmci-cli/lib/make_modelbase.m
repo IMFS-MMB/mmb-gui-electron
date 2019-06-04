@@ -13,7 +13,7 @@ function mb = make_modelbase(model, rule, options, modelpath)
   mb.AL = model.al;
   if (model.al)
     mb.AL_.forwards = model.al_info.forwards;
-    mb.AL_.states = default(options, 'states', model.al_info.states_long);
+    mb.AL_.states = default(options, { 'states', model.name }, model.al_info.states_long);
 
     mb.ModelStates(1)={ mb.AL_.states };
   end

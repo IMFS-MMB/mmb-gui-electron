@@ -53,7 +53,10 @@
           "$ref": "common#/definitions/arrayOfStrings"
         },
         "states": {
-          "$ref": "common#/definitions/arrayOfStrings"
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "common#/definitions/arrayOfStrings"
+          }
         }
       }
     }
