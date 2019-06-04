@@ -1,7 +1,20 @@
-function result = default (base, fieldname, default_value)
-  if (isfield(base, fieldname))
-    result = base.(fieldname);
+function result = default (base, fieldnameOrFieldnames, default_value)
+  if (iscell(fieldnameOrFieldnames))
+    fieldnames = fieldnameOrFieldnames;
   else
-    result = default_value;
+    fieldnames = { fieldnameOrFieldnames };
   end
+
+  for cell = fieldnames
+    fieldname = cell{1};
+
+    if (isfield(base, fieldname))
+      base = base.(fieldname);
+    else
+      result = default_value;
+      return;
+    end
+  end
+
+  result = base;
 end
