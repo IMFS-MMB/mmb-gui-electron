@@ -1,6 +1,6 @@
 import get from 'lodash.get';
 import pick from 'lodash.pick';
-import deepClone from 'deepclone';
+import deepClone from 'lodash.clonedeep';
 
 import compare from './comparison.compare.PLATFORM';
 
