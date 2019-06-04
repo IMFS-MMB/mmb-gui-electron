@@ -12,22 +12,24 @@ import './plugins/bootstrap';
 import './plugins/highcharts';
 import './plugins/chatscroll';
 
-if (isWeb) {
-  if (isProduction) {
+if (isProduction) {
+  if (isWeb) {
     const Sentry = require('@sentry/browser');
 
     Sentry.init({
       dsn: sentry.dsnWeb,
       integrations: [new Sentry.Integrations.Vue({ Vue })],
     });
+  } else {
+    const Sentry = require('@sentry/electron');
+
+    Sentry.init({
+      dsn: sentry.dsnElectron,
+    });
   }
-} else {
-  const Sentry = require('@sentry/electron');
+}
 
-  Sentry.init({
-    dsn: sentry.dsnElectron,
-  });
-
+if (isElectron) {
   Vue.use(require('vue-electron'));
 }
 
