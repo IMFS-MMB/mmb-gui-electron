@@ -52,10 +52,20 @@ function useUSR(rules) {
   return rules.some(r => r.id === USER_RULE);
 }
 
-export default function buildMatlabScript(models, rules, shocks, horizon, gain, userRule, dynare) {
+export default function buildMatlabScript({
+  dynare,
+  gain,
+  horizon,
+  models,
+  rules,
+  shocks,
+  states,
+  userRule,
+}) {
   const config = {
     dynare: dynare.path,
-    rules: rules.filter(r => r.id !== USER_RULE && r.id !== MODEL_RULE).map(r => r.name),
+    rules: rules.filter(r => r.id !== USER_RULE && r.id !== MODEL_RULE)
+      .map(r => r.name),
     models: models.map(m => m.name),
     msr: useMSR(rules),
     usr: useUSR(rules) ? userrule9x4to1x33(userRule) : false,
@@ -63,6 +73,7 @@ export default function buildMatlabScript(models, rules, shocks, horizon, gain, 
       shocks: shocks.map(s => s.name),
       gain,
       horizon,
+      states,
     },
   };
 
