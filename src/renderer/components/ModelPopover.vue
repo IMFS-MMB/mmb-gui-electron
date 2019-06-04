@@ -29,3 +29,8 @@
     },
   };
 </script>
+<style scoped lang="scss">
+    p:last-of-type {
+        margin-bottom: 0 !important;
+    }
+</style>
