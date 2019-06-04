@@ -1,6 +1,6 @@
 import get from 'lodash.get';
 import pick from 'lodash.pick';
-import cloneDeep from 'lodash.clonedeep';
+import deepClone from 'deepclone';
 
 import compare from './comparison.compare.PLATFORM';
 
@@ -146,7 +146,7 @@ const mutations = {
 
 const actions = {
   async compare(ctx) {
-    const settings = cloneDeep(ctx.rootState.settings);
+    const settings = deepClone(ctx.rootState.settings);
 
     ctx.commit('start', settings);
 
