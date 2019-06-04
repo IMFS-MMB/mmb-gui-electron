@@ -16,6 +16,23 @@
                                  :value="variable">
                     {{variable.text}}
                 </b-form-checkbox>
+                <template v-if="modelSpecificVariablesUnavailable">
+                    <div id="model-specific-variables-unavailable" >
+                        <b-form-checkbox :value="null" :disabled="true" >
+                            Model Specific Variables
+                        </b-form-checkbox>
+                    </div>
+                    <b-popover target="model-specific-variables-unavailable"
+                               :delay="{ show: 250, hide: 0 }"
+                               placement="left"
+                               triggers="hover"
+                               boundary="viewport">
+                        <div>
+                            <p>Model specific variables are unavailable with your current settings.</p>
+                            <p class="mb-0">Select <em>exactly one</em> model to make its specific variables available.</p>
+                        </div>
+                    </b-popover>
+                </template>
             </b-form-checkbox-group>
         </div>
     </div>
@@ -26,6 +43,7 @@
 
   export default {
     computed: {
+      ...mapGetters('settings', ['modelSpecificVariablesUnavailable']),
       ...mapGetters('settings', {
         numSelected: 'numVariables',
         variableSelection: 'variables',
