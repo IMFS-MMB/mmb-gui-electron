@@ -1,4 +1,4 @@
-import deepClone from 'deepclone';
+import deepClone from 'lodash.clonedeep';
 
 const namespaced = true;
 
