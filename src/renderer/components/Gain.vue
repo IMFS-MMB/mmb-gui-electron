@@ -1,7 +1,7 @@
 <template>
-    <div class="gain" :class="classes">
+    <div>
         <div class="text">Gain: {{model}}</div>
-        <vue-slider class="slider" v-model="model" v-bind="options"></vue-slider>
+        <vue-slider class="slider" v-model="model" v-bind="options" :disabled="!alModelSelected"></vue-slider>
     </div>
 </template>
 
@@ -51,12 +51,7 @@
       };
     },
     computed: {
-      ...mapGetters('settings', ['gain', 'models']),
-      classes() {
-        return {
-          show: this.models.some(m => !!m.al),
-        };
-      },
+      ...mapGetters('settings', ['gain', 'alModelSelected']),
       model: {
         get() {
           return this.gain;
@@ -76,14 +71,5 @@
     .text {
         font-size: 0.9rem;
         padding-left: 8px;
-    }
-
-    .gain {
-        opacity: 0;
-        transition: opacity .1s ease-in-out;
-
-        &.show {
-            opacity: 1;
-        }
     }
 </style>

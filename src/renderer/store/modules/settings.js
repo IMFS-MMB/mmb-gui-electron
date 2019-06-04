@@ -1,5 +1,16 @@
 import commonShocks from '@/data/shocks';
 import commonVariables from '@/data/variables';
+import allModels from '@/data/models';
+
+function defaultStates() {
+  return allModels.reduce((states, model) => {
+    if (model.al) {
+      states[model.name] = [...model.al_info.states_long];
+    }
+
+    return states;
+  }, {});
+}
 
 const namespaced = true;
 
@@ -10,6 +21,7 @@ const state = {
   variables: [
     ...commonVariables,
   ],
+  states: defaultStates(),
   plotAutocorrelation: true,
   plotVariance: true,
   horizon: 20,
@@ -23,9 +35,12 @@ const getters = {
   gain(state) {
     return state.gain;
   },
-
   models(state) {
-    return state.models;
+    return state.models.sort((a, b) => a.name.localeCompare(b.name));
+  },
+  alModels(state) {
+    return state.models.filter(model => !!model.al)
+      .sort((a, b) => a.name.localeCompare(b.name));
   },
   policyRules(state) {
     return state.policyRules;
@@ -42,7 +57,17 @@ const getters = {
   plotVariance(state) {
     return state.plotVariance;
   },
+  states(state) {
+    return modelname => state.states[modelname];
+  },
+  statesForSelectedModels(state, getters) {
+    const { models, states } = getters;
 
+    return models.reduce((relevantStates, model) => ({
+      ...relevantStates,
+      [model.name]: states(model.name),
+    }), {});
+  },
   numModels(state) {
     return state.models.length;
   },
@@ -55,7 +80,9 @@ const getters = {
   numVariables(state) {
     return state.variables.length;
   },
-
+  alModelSelected(state) {
+    return state.models.some(model => !!model.al);
+  },
   isModelDisabled(state, getters) {
     return (model) => {
       const { policyRules } = getters;
@@ -111,6 +138,9 @@ function isShockSelectable(selectedModels, shock) {
 }
 
 const mutations = {
+  setStates(state, { modelname, states }) {
+    state.states[modelname] = states;
+  },
   setHorizon(state, data) {
     state.horizon = data;
   },

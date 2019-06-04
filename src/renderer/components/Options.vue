@@ -10,11 +10,15 @@
             <div class="ctrl-set-listing">
                 <b-form-checkbox v-model="plotAutocorrelationModel">Plot autocorrelation functions</b-form-checkbox>
                 <b-form-checkbox v-model="plotVarianceModel">Plot variances</b-form-checkbox>
-
                 <Horizon class="mt-2" v-if="$isElectron"/>
                 <Gain class="mt-1" v-if="$isElectron"/>
+                <button class="btn btn-primary btn-sm" v-if="$isElectron" :disabled="!alModelSelected" v-b-modal.modelStatesModal>Select states</button>
             </div>
         </div>
+
+        <template v-if="$isElectron">
+            <ModelStatesModal/>
+        </template>
     </div>
 </template>
 <script>
@@ -22,14 +26,22 @@
   import { mapMutations, mapGetters, mapActions } from 'vuex';
   import Horizon from '@/components/Horizon';
   import Gain from '@/components/Gain';
+  import ModelStatesModal from '@/modals/ModelStatesModal';
+  import { isElectron } from '../../constants';
+
+  const platformComponents = isElectron ? {
+    ModelStatesModal,
+  } : {};
 
   export default {
     components: {
       Gain,
       Horizon,
+      ...platformComponents,
     },
     computed: {
       ...mapGetters('settings', [
+        'alModelSelected',
         'plotAutocorrelation',
         'plotVariance',
       ]),
@@ -62,3 +74,9 @@
     },
   };
 </script>
+<style lang="scss" scoped>
+    button.btn {
+        width: calc(100% - 10px);
+        margin: 5px;
+    }
+</style>

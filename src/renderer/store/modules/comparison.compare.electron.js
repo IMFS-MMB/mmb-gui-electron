@@ -8,14 +8,15 @@ import { mmbFolder } from '../../../../config/paths';
 export default async function compare(ctx) {
   const cwd = mmbFolder;
 
-  const models = ctx.rootGetters['settings/models'];
-  const policyRules = ctx.rootGetters['settings/policyRules'];
-  const shocks = ctx.rootGetters['settings/shocks'];
-  const horizon = ctx.rootGetters['settings/horizon'];
-  const gain = ctx.rootGetters['settings/gain'];
-  const userRule = ctx.rootGetters['userrule/params'];
-  const executable = ctx.rootGetters['backends/selected'];
   const dynare = ctx.rootGetters['dynare/selected'];
+  const executable = ctx.rootGetters['backends/selected'];
+  const gain = ctx.rootGetters['settings/gain'];
+  const horizon = ctx.rootGetters['settings/horizon'];
+  const models = ctx.rootGetters['settings/models'];
+  const rules = ctx.rootGetters['settings/policyRules'];
+  const shocks = ctx.rootGetters['settings/shocks'];
+  const states = ctx.rootGetters['settings/statesForSelectedModels'];
+  const userRule = ctx.rootGetters['userrule/params'];
 
   const backend = create({
     path: executable.path,
@@ -24,7 +25,16 @@ export default async function compare(ctx) {
   });
 
   await backend.runCode(
-    buildMatlabScript(models, policyRules, shocks, horizon, gain, userRule, dynare),
+    buildMatlabScript({
+      dynare,
+      gain,
+      horizon,
+      models,
+      rules,
+      shocks,
+      states,
+      userRule,
+    }),
     data => ctx.commit('addStdOut', data.toString()),
     data => ctx.commit('addStdOut', data.toString()), // todo: handle errors differently if needed
   );
