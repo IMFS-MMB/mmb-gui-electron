@@ -83,6 +83,14 @@ const getters = {
   alModelSelected(state) {
     return state.models.some(model => !!model.al);
   },
+
+  modelSpecificShocksUnavailable(state) {
+    return state.models.length !== 1;
+  },
+  modelSpecificVariablesUnavailable(state) {
+    return state.models.length !== 1;
+  },
+
   isModelDisabled(state, getters) {
     return (model) => {
       const { policyRules } = getters;

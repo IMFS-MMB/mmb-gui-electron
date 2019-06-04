@@ -16,6 +16,23 @@
                                  :value="shock">
                     {{shock.text}}
                 </b-form-checkbox>
+                <template v-if="modelSpecificShocksUnavailable">
+                    <div id="model-specific-shocks-unavailable" >
+                        <b-form-checkbox :value="null" :disabled="true" >
+                            Model Specific Shocks
+                        </b-form-checkbox>
+                    </div>
+                    <b-popover target="model-specific-shocks-unavailable"
+                               :delay="{ show: 250, hide: 0 }"
+                               placement="left"
+                               triggers="hover"
+                               boundary="viewport">
+                        <div>
+                            <p>Model specific shocks are unavailable with your current settings.</p>
+                            <p class="mb-0">Select <em>exactly one</em> model to make its specific shocks available.</p>
+                        </div>
+                    </b-popover>
+                </template>
             </b-form-checkbox-group>
         </div>
     </div>
@@ -26,6 +43,7 @@
 
   export default {
     computed: {
+      ...mapGetters('settings', ['modelSpecificShocksUnavailable']),
       ...mapGetters('settings', {
         numSelected: 'numShocks',
         shockSelection: 'shocks',
