@@ -33,9 +33,12 @@ body {
 }
 
 .wrapper {
+  $wrapper-margin: 1rem;
+
   padding:2rem 4rem;
   background:#fff;
-  margin: 1rem auto;
+  margin: $wrapper-margin;
+  width: calc(  100% - 2 * #{$wrapper-margin});
   border-radius: 10px;
 }
 
