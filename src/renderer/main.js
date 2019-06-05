@@ -11,6 +11,7 @@ import './global.scss';
 import './plugins/bootstrap';
 import './plugins/highcharts';
 import './plugins/chatscroll';
+import resizeEvents from './utils/resize';
 
 if (isProduction) {
   if (isWeb) {
@@ -47,5 +48,7 @@ const vue = new Vue({
   store,
   template: '<App/>',
 }).$mount('#app');
+
+resizeEvents(vue);
 
 window.vue = vue;

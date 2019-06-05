@@ -1,8 +1,8 @@
 <template>
-    <b-container class="wrapper">
+    <b-container fluid class="wrapper">
         <OcpHeader/>
 
-        <b-container class="mt-2">
+        <b-container fluid class="mt-2">
             <b-row>
                 <b-col>
                     <Models/>

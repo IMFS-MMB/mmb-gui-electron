@@ -1,6 +1,6 @@
 <template>
     <header>
-        <b-container>
+        <b-container fluid>
             <b-row class="mt-4">
                 <b-col>
                     <h1>Macroeconomic Model Database</h1>

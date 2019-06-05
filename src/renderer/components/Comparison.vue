@@ -1,5 +1,5 @@
 <template>
-    <div ref="host" class="container mt-2" v-if="show && !inProgress">
+    <b-container fluid ref="host" class="mt-2" v-if="show && !inProgress">
         <b-row class="mt-2">
             <b-col>
                 <div class="comparison-set">
@@ -25,7 +25,7 @@
         <ChartRow :class="{'mt-5': index > 0 }" v-for="(chartrow, index) in chartRows" :charts="chartrow"/>
 
         <Variances v-if="varTable && varTable.length" :varTable="varTable"/>
-    </div>
+    </b-container>
 </template>
 
 <script>
