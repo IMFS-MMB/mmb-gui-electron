@@ -12,6 +12,7 @@ import './plugins/bootstrap';
 import './plugins/highcharts';
 import './plugins/chatscroll';
 import resizeEvents from './utils/resize';
+import userId from '../userid';
 
 if (isProduction) {
   if (isWeb) {
@@ -27,8 +28,15 @@ if (isProduction) {
     Sentry.init({
       dsn: sentry.dsnElectron,
     });
+
+    Sentry.configureScope((scope) => {
+      scope.setUser({
+        id: userId,
+      });
+    });
   }
 }
+
 
 if (isElectron) {
   Vue.use(require('vue-electron'));
