@@ -16,6 +16,8 @@ function mmb (jsonconfig)
     addpath(fullfile(paths.lib, 'jsonlab'));
 
     delete(fullfile(paths.out, '*'));
+    diary(fullfile(paths.out, 'diary.log'));
+    diary('on');
 
     config = load_config(jsonconfig);
 
