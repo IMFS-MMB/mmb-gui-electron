@@ -144,7 +144,7 @@ const getters = {
     }
 
     if (!getters.numPolicyRules) {
-      hints.push('Select at least 1 model from the rules section');
+      hints.push('Select at least 1 rule from the rules section');
     }
 
     return hints.length ? { hints } : false;
