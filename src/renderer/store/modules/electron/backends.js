@@ -102,7 +102,7 @@ const actions = {
 
       const options = {
         filters,
-        properties: ['openFile'],
+        properties: ['openFile', 'treatPackageAsDirectory'],
         message: `Please select the ${type} executable`,
       };
 
