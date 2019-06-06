@@ -5,7 +5,7 @@ import App from './App';
 import router from './router';
 import store from './store';
 
-import { isElectron, isProduction, isWeb, sentry } from '../constants';
+import { isElectron, isWeb, sentry } from '../constants';
 
 import './global.scss';
 import './plugins/bootstrap';
@@ -14,28 +14,28 @@ import './plugins/chatscroll';
 import resizeEvents from './utils/resize';
 import userId from '../userid';
 
-if (isProduction) {
-  if (isWeb) {
-    const Sentry = require('@sentry/browser');
+// if (isProduction) {
+if (isWeb) {
+  const Sentry = require('@sentry/browser');
 
-    Sentry.init({
-      dsn: sentry.dsnWeb,
-      integrations: [new Sentry.Integrations.Vue({ Vue })],
-    });
-  } else {
-    const Sentry = require('@sentry/electron');
+  Sentry.init({
+    dsn: sentry.dsnWeb,
+    integrations: [new Sentry.Integrations.Vue({ Vue })],
+  });
+} else {
+  const Sentry = require('@sentry/electron');
 
-    Sentry.init({
-      dsn: sentry.dsnElectron,
-    });
+  Sentry.init({
+    dsn: sentry.dsnElectron,
+  });
 
-    Sentry.configureScope((scope) => {
-      scope.setUser({
-        id: userId,
-      });
+  Sentry.configureScope((scope) => {
+    scope.setUser({
+      id: userId,
     });
-  }
+  });
 }
+// }
 
 
 if (isElectron) {
