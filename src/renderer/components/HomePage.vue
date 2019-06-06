@@ -33,7 +33,22 @@
 
             <b-row class="mt-4 justify-content-center">
                 <div class="col-4">
-                    <b-btn variant="primary" block @click="startComparison" :disabled="!canCompare">Compare</b-btn>
+                    <div id="compare-button">
+                        <b-btn variant="primary" block @click="startComparison" :disabled="!!compareDisabled">Compare
+                        </b-btn>
+                    </div>
+                    <b-popover target="compare-button"
+                               :disabled="!compareDisabled"
+                               :delay="{ show: 0, hide: 0 }"
+                               placement="top"
+                               triggers="hover"
+                               boundary="viewport">
+
+                        <p class="text-danger"
+                           :class="{ 'mb-0' : index === compareDisabled.hints.length - 1 }"
+                           v-for="(hint, index) of compareDisabled.hints"
+                           :key="hint">{{hint}}</p>
+                    </b-popover>
                 </div>
             </b-row>
 
@@ -103,7 +118,7 @@
     },
     computed: {
       ...mapGetters('backends', ['executables']),
-      ...mapGetters('settings', ['canCompare']),
+      ...mapGetters('settings', ['compareDisabled']),
       ...mapGetters('comparison', {
         showComparison: 'show',
       }),

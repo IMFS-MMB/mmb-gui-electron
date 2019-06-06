@@ -125,9 +125,31 @@ const getters = {
     };
   },
 
-  canCompare(state, getters) {
-    return getters.numModels && getters.numPolicyRules;
+  compareDisabled(state, getters, rootState, rootGetters) {
+    const dynare = rootGetters['dynare/selected'];
+    const backend = rootGetters['backends/selected'];
+
+    const hints = [];
+
+    if (!backend) {
+      hints.push('Select a Matlab or Dynare executable from the settings menu');
+    }
+
+    if (!dynare) {
+      hints.push('Select a dynare path from the settings menu');
+    }
+
+    if (!getters.numModels) {
+      hints.push('Select at least 1 model from the model section');
+    }
+
+    if (!getters.numPolicyRules) {
+      hints.push('Select at least 1 model from the rules section');
+    }
+
+    return hints.length ? { hints } : false;
   },
+
 };
 
 function isShockSelectable(selectedModels, shock) {
