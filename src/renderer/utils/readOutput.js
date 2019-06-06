@@ -23,7 +23,9 @@ function parseOutput(json) {
 export default async function readOutput(folder) {
   const files = await readDir(folder);
 
-  const outputs = await Promise.all(files.map(file => readFile(path.join(folder, file), { encoding: 'utf8' })));
+  const outputs = await Promise.all(files
+    .filter(file => file.endsWith('.json'))
+    .map(file => readFile(path.join(folder, file), { encoding: 'utf8' })));
 
   return outputs.map(json => parseOutput(json));
 }
