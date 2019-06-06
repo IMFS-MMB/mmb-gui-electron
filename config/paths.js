@@ -26,6 +26,6 @@ export const dynare = {
   ],
   win32: [
     // Use forward slashes. '/' is mapped to 'C:\'
-
+    '/dynare/*',
   ],
 }[platform()];
