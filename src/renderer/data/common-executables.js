@@ -16,6 +16,10 @@ const commonExecutables = {
       type: 'matlab',
       path: '/Applications/MATLAB_*.app/bin/matlab',
     },
+    {
+      type: 'octave',
+      path: '/Applications/Octave*.app/bin/octave',
+    },
   ],
   win32: [
     // Use forward slashes. '/' is mapped to 'C:\'
