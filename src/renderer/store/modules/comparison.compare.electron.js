@@ -24,17 +24,21 @@ export default async function compare(ctx) {
     cwd,
   });
 
+  const script = buildMatlabScript({
+    dynare,
+    gain,
+    horizon,
+    models,
+    rules,
+    shocks,
+    states,
+    userRule,
+  });
+
+  console.log(script);
+
   await backend.runCode(
-    buildMatlabScript({
-      dynare,
-      gain,
-      horizon,
-      models,
-      rules,
-      shocks,
-      states,
-      userRule,
-    }),
+    script,
     data => ctx.commit('addStdOut', data.toString()),
     data => ctx.commit('addStdOut', data.toString()), // todo: handle errors differently if needed
   );
