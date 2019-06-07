@@ -1,8 +1,11 @@
 import get from 'lodash.get';
 import pick from 'lodash.pick';
 import deepClone from 'lodash.clonedeep';
+import { isElectron } from '../../../constants';
+import captureBackendException from '../../utils/electron/capture-backend-exception';
+import normalizeError from '../../utils/electron/normalize-error';
 
-import compare from './comparison.compare.PLATFORM';
+const { default: compare } = isElectron ? require('./comparison.compare.electron') : require('./comparison.compare.web');
 
 const namespaced = true;
 
@@ -59,6 +62,9 @@ function getShockChartRows(state) {
 const getters = {
   data(state) {
     return state.data;
+  },
+  error(state) {
+    return state.error;
   },
   show(state) {
     return state.show;
@@ -150,15 +156,25 @@ const actions = {
 
     ctx.commit('start', settings);
 
-    let result = [];
+    let data = [];
 
     try {
-      result = await compare(ctx);
+      const result = await compare(ctx);
+
+      // eslint-disable-next-line prefer-destructuring
+      data = result.data;
+
+      if (result.error) {
+        const error = normalizeError(result.error);
+
+        captureBackendException(error);
+        ctx.commit('error', error);
+      }
     } catch (e) {
       ctx.commit('error', e);
       throw e;
     } finally {
-      ctx.commit('done', result);
+      ctx.commit('done', data);
     }
   },
 };

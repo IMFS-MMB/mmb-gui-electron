@@ -1,13 +1,20 @@
 <template>
-    <b-modal id="matlabOutputModal" size="lg" centered :no-close-on-backdrop="inProgress" :no-close-on-esc="inProgress">
-        <h5 slot="modal-header" class="modal-title">{{ inProgress ? 'Simulating...' : 'Simulation done' }}</h5>
+    <b-modal id="matlabOutputModal" size="lg" :header-text-variant="error ? 'danger' : 'default' " centered :no-close-on-backdrop="inProgress" :no-close-on-esc="inProgress">
+        <h5 slot="modal-header" class="modal-title">{{ title }}</h5>
 
         <!-- content start -->
         <div class="container" v-chat-scroll>
-            <pre v-for="part of stdout">{{part}}</pre>
+            <pre v-if="!error" v-for="part of stdout">{{part}}</pre>
+
+            <div v-if="error">
+                <h4>{{error.identifier}}</h4>
+                <p>{{error.message}}</p>
+            </div>
         </div>
 
-        <button slot="modal-footer" class="btn btn-primary" :disabled="inProgress" @click="close">{{ inProgress ? 'Please wait...' : 'Close' }}</button>
+        <button slot="modal-footer" class="btn btn-primary" :disabled="inProgress" @click="close">{{ inProgress ?
+            'Please wait...' : 'Close' }}
+        </button>
     </b-modal>
 </template>
 <script>
@@ -16,7 +23,14 @@
   export default {
     name: 'MatlabOutputModal',
     computed: {
-      ...mapGetters('comparison', ['stdout', 'inProgress']),
+      ...mapGetters('comparison', ['stdout', 'inProgress', 'error']),
+      title() {
+        if (this.error) {
+          return 'An error has occurred!';
+        }
+
+        return this.inProgress ? 'Simulating...' : 'Simulation done';
+      },
     },
     methods: {
       close() {

@@ -1,7 +1,7 @@
 import path from 'path';
 import { create } from '@/utils/electron/interface';
-import buildMatlabScript from '@/utils/electron/build-matlab-script';
 import logger from '@/utils/logger';
+import buildMatlabScript from '@/utils/electron/build-matlab-script';
 import readOutput from '@/utils/readOutput';
 import { mmbFolder } from '../../../../config/paths';
 
@@ -35,21 +35,13 @@ export default async function compare(ctx) {
     userRule,
   });
 
-  console.log(script);
+  logger.debug(script);
 
   await backend.runCode(
     script,
     data => ctx.commit('addStdOut', data.toString()),
-    data => ctx.commit('addStdOut', data.toString()), // todo: handle errors differently if needed
+    data => ctx.commit('addStdOut', data.toString()),
   );
 
-  let output = [];
-
-  try {
-    output = await readOutput(path.join(cwd, 'out'));
-  } catch (e) {
-    logger.warn(e.message);
-  }
-
-  return output;
+  return readOutput(path.join(cwd, 'out'));
 }
