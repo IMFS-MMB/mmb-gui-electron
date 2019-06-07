@@ -2,6 +2,7 @@ import { remote } from 'electron'; // eslint-disable-line
 import { promisify } from 'util';
 import _glob from 'glob';
 import getDynareVersion from '@/utils/electron/get-dynare-version';
+import path from 'path';
 import { dynare } from '../../../../../config/paths';
 
 const glob = promisify(_glob);
@@ -35,8 +36,11 @@ const mutations = {
   add(state, dynares) {
     dynares = Array.isArray(dynares) ? dynares : [dynares];
 
-    const filtered = dynares.filter(newDynare =>
-      !state.dynares.some(dynare => dynare.path === newDynare.path));
+    // eslint-disable-next-line no-return-assign
+    dynares.forEach(dynare => dynare.path = path.normalize(dynare.path));
+
+    const filtered = dynares
+      .filter(newDynare => !state.dynares.some(dynare => dynare.path === newDynare.path));
 
     state.dynares.push(...filtered);
 

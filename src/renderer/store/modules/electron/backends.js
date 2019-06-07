@@ -1,6 +1,7 @@
 import { remote } from 'electron'; // eslint-disable-line
 import { getExecutableInfo, findExecutables } from '@/utils/electron/find-executables';
 import { platform } from 'os';
+import path from 'path';
 
 const { dialog } = remote;
 
@@ -29,6 +30,8 @@ const getters = {
 
 const mutations = {
   add(state, info) {
+    info.path = path.normalize(info.path);
+
     if (state.executables.some(executable => executable.path === info.path)) {
       return;
     }
