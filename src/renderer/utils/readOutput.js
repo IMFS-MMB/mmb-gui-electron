@@ -4,8 +4,17 @@ import path from 'path';
 
 const readFile = promisify(fs.readFile);
 const readDir = promisify(fs.readdir);
+const fileExists = promisify(fs.exists);
 
-function parseOutput(json) {
+async function readJsonFile(folder, file) {
+  const filepath = path.join(folder, file);
+
+  if (!(await fileExists(filepath))) {
+    return null;
+  }
+
+  const json = await readFile(filepath, { encoding: 'utf8' });
+
   return JSON.parse(json, (key, value) => {
     switch (value) {
       case '_Inf_':
@@ -22,10 +31,14 @@ function parseOutput(json) {
 
 export default async function readOutput(folder) {
   const files = await readDir(folder);
+  const dataFiles = files.filter(file => file.endsWith('.output.json'));
 
-  const outputs = await Promise.all(files
-    .filter(file => file.endsWith('.json'))
-    .map(file => readFile(path.join(folder, file), { encoding: 'utf8' })));
+  const data = await Promise.all(dataFiles.map(file => readJsonFile(folder, file)));
 
-  return outputs.map(json => parseOutput(json));
+  const error = await readJsonFile(folder, 'error.json');
+
+  return {
+    data,
+    error,
+  };
 }

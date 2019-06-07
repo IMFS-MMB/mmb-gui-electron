@@ -33,6 +33,8 @@ function mmb (jsonconfig)
   catch e
     print_error(e);
 
+    save_error(e, fullfile(paths.out, 'error.json'));
+
     cd(paths.root);
   end
 end

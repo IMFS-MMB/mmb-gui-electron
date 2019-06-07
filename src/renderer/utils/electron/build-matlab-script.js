@@ -1,4 +1,3 @@
-import logger from '@/utils/logger';
 import { MODEL_RULE, USER_RULE } from '../../../../config/constants';
 
 function userrule9x4to1x33(old) {
@@ -80,8 +79,6 @@ export default function buildMatlabScript({
   const jsonconfig = JSON.stringify(config);
 
   const result = `mmb('${jsonconfig}');exit();`;
-
-  logger.info(jsonconfig);
 
   return result;
 }
