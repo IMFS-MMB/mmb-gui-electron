@@ -22,10 +22,15 @@ class Base {
   }
 
   async getVersion() {
+    const pattern = /%version-start%(.*)%version-end%/;
     let version = '';
 
-    await this.runCode('fprintf(version); exit()', (data) => {
-      version += data.toString();
+    await this.runCode('disp([\'%version-start%\' version() \'%version-end%\']); exit()', (data) => {
+      const match = data.toString().match(pattern);
+
+      if (match) {
+        [, version] = match;
+      }
     });
 
     return version;
