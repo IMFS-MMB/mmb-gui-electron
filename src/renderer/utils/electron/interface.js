@@ -77,7 +77,11 @@ export class Matlab extends Base {
   }
 
   async runCode(code, onData, onError) {
-    const args = this.getArgs('-r', code);
+    if (platform() === 'win32') {
+      code = code.replace(/"/g, '\\"');
+    }
+
+    const args = this.getArgs('-batch', code);
 
     return this.execute(args, onData, onError);
   }
