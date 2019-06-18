@@ -42,11 +42,11 @@ var cbal,cbal_cor,defn_yn,defn_yn_ss,den_w,deprk,dr1rown,gbn_cor,gbn_yn,gbn_yn_s
 
 //**************************************************************************
 // Modelbase Variables                                                   //*
-    interest, inflation, inflationq, outputgap, fispol;                  //*
+    interest, inflation, inflationq, outputgap, output, fispol;                  //*
 //**************************************************************************  
 
 
-varexo lyrow_shk,lpcomrow_shk,lxdc_shk,lforexn_shk,lc_shk,gn_yn_shk,la_shk,
+varexo lyrow_shk,lpcomrow_shk,lxdc_shk,lforexn_shk,lc_shk,la_shk,
 
 
 //**************************************************************************
@@ -199,7 +199,8 @@ lm0_shk = 0.00000000e+00;
 lpcomrow_prow_shk = 0.00000000e+00;
 lprow2_shk = 0.00000000e+00;
 lprow_shk = 0.00000000e+00;
-lpxrow_prow_shk = 0.00000000e+00;
+%lpxrow_prow_shk = 0.00000000e+00;
+lpxrow_prow_shk = 0.035521;
 lrelc_a = 2.06587440e-03;
 lrelc_gbn_yn_ss = 1.56537880e-03;
 lrelc_lk = 5.27127110e-08;
@@ -305,7 +306,7 @@ interest   = 4*(r1n - r1n_ss_ss);                                       //*
 inflationq = 4*(infq - infq_ss);                                        //*
 inflation  = 1*(infq+infq(-1)+infq(-2)+infq(-3) - 4*infq_ss);           //*
 outputgap  = 1*(ly_gap-ly_gap_ss);                                      //*
-//output     = (ly - ly_ss);                                            
+output     = (ly - ly_ss);                                            
 fispol     = gn_yn_cor ;                                                //*
 //**************************************************************************
 
@@ -688,7 +689,7 @@ var lpcomrow_shk; stderr 0.6*100;
 var la_shk; stderr 0.01*100;
 var lyrow_shk; stderr 0.002*100;
 var lxdc_shk; stderr 0.002*100;
-var gn_yn_shk; stderr 0.02*100;
+%var gn_yn_shk; stderr 0.02*100;
 end;
 options_.Schur_vec_tol = 1e-6;
 //stoch_simul (irf = 0, ar=100, noprint);

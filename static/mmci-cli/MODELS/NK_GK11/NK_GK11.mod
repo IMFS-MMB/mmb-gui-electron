@@ -111,7 +111,10 @@ tau        =   0.001;  %Costs of credit policy
 %Starting values for some steady state values
 L0      =   L_mom;
 K0      =   9.5;      
- 
+
+omega  =  0.002227780412604;
+lambda =  0.381494985929782;
+chi    =  2.033128776217254;
 
 //**************************************************************************
 // Specification of Modelbase Parameters                                 //*
@@ -421,11 +424,89 @@ g = rho_g* g(-1) + e_g;
 
 end;
 
+
+initval;
+Y =                		 0.241516;
+Ym =               		 0.241516;
+K   =              		 2.13917;
+Keff =             		 2.13917;
+L    =             		 -0.693147;
+I    =             		 -1.54971;
+C    =             		 -0.215382;
+G    =             		 -1.36792;
+Q    =             		 0;
+varrho=            		 0.258493;
+Lambda =           		 0;
+Rk     =           		 0.0125223;
+R      =           		 0.0100503;
+N      =           		 0.752872;
+Ne     =           		 0.743921;
+Nn     =           		 -3.96758;
+nu     =           		 -5.58873;
+eta    =           		 0.412785;
+phi    =           		 1.38629;
+z      =           		 0.0199017;
+x      =           		 0.0199017;
+Pm     =           		 -0.274412;
+w      =           		 0.259774;
+VMPK   =           		 -3.28072;
+U      =           		 0;
+X      =           		 0.274412;
+D      =           		 0;
+F      =           		 1.44206;
+Z      =           		 1.71647;
+i      =           		 0.0100503;
+prem   =           		 0.00247194;
+delta  =           		 -3.68888;
+In     =           		 0;
+Welf   =           		 -256.074;
+infl   =           		 0;
+inflstar=          		 0;
+Yf      =          		 0.241516;
+Ymf     =          		 0.241516;
+Kf      =          		 2.13917;
+Kefff   =          		 2.13917;
+Lf      =          		 -0.693147;
+If      =          		 -1.54971;
+Cf      =          		 -0.215382;
+Gf      =          		 -1.36792;
+Qf      =          		 0;
+varrhof =          		 0.258493;
+Lambdaf =          		 0;
+Rkf     =          		 0.0125223;
+Rf      =          		 0.0100503;
+Nf      =          		 0.752872;
+Nef     =          		 0.743921;
+Nnf     =          		 -3.96758;
+nuf     =          		 -5.58873;
+etaf    =          		 0.412785;
+phif    =          		 1.38629;
+zf      =          		 0.0199017;
+xf      =          		 0.0199017;
+wf      =          		 0.259774;
+VMPKf   =          		 -3.28072;
+Uf      =          		 0;
+premf   =          		 0.00247194;
+deltaf  =          		 -3.68888;
+In_f    =          		 0;
+Welff   =          		 -256.074;
+a       =          		 0;
+ksi     =          		 0;
+g       =          		 0;
+e_g     =          		 0;
+interest=          		 0;
+inflation=         		 0;
+inflationq=        		 0;
+outputgap  =       		 0;
+output      =      		 0;
+fispol=            		 0;
+end;
+
 shocks;
-var e_a=0;//=sigma_a^2;
-var e_ksi=0;//=sigma_ksi^2;
-//var e_g=0;//=sigma_g^2;
-var e_Ne=0;//=sigma_Ne^2;
+var e_a=sigma_a^2;
+var e_ksi=sigma_ksi^2;
+//var e_g=sigma_g^2;
+var e_Ne=sigma_Ne^2;
 //var e_i=sigma_i^2;
 var fiscal_;  stderr (sigma_g/coffispol);
 end;

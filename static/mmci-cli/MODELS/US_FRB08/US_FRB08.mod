@@ -2552,8 +2552,44 @@ lzpnc  =  zpnc(+1);
 one    =   one(-1);
 end;
 
+shocks;
+var ceng_ ; stderr 0.01;
+var dlpl_ ; stderr 0.01;
+var ecd_ ; stderr 0.01;
+var ech_ ; stderr 0.01;
+var eco_ ; stderr 0.01;
+var egsi_ ; stderr 0.01;
+var egsl_ ; stderr 0.01;
+var egso_ ; stderr 0.01;
+var eh_ ; stderr 0.01;
+var emo_ ; stderr 0.01;
+var epdc_ ; stderr 0.01;
+var epdo_ ; stderr 0.01;
+var eps_ ; stderr 0.01;
+var ex_ ; stderr 0.01;
+var fiscal_ ; stderr 0.01;
+var fpi10_      ; stderr 0.01;
+var fpxrr_ ; stderr 0.01;
+var frl10_ ; stderr 0.01;
+var fxgap_ ; stderr 0.01;
+var gftrd_ ; stderr 0.01;
+var gstrd_ ; stderr 0.01;
+var hmfpt_ ; stderr 0.01;
+var interest_ ; stderr 0.01;
+var ki_ ; stderr 0.01;
+var lhp_ ; stderr 0.01;
+var mfpt_  ; stderr 0.01;
+var pcengr_ ; stderr 0.01;
+var pcer_ ; stderr 0.01;
+var pcfr_ ; stderr 0.01;
+var pcniar_ ; stderr 0.01;
+var pmor_ ; stderr 0.01;
+var poilr_ ; stderr 0.01;
+var pxncr_ ; stderr 0.01;
 
-load Sigma_US_FRB08.mat;
+end;
+
+load('Sigma_US_FRB08.mat');
 
 M_.Sigma_e = Sigma_e_;
 options_.Schur_vec_tol = 1e-6;

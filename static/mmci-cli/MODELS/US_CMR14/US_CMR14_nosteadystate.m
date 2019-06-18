@@ -1,3 +1,11 @@
+%%
+% This file is relabeled 'nosteadystate', as the use of fzero is not compatible with
+% Octave 4.5.1. Instead the the steady state values are calculated using
+% previously calculated results of this file as initial values in the
+% mod-file and using steady(solve_algo=1); as an option for the calculation of the
+% steady state in dynare
+%%
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Compute the steady state.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -73,8 +81,7 @@ try
     %if cee == 1
     %    Fomegabar_p=[];mu_p=[];gamma_p=[];we_p=[];bigtheta_p=[];
     %end
-    
-    [rk,n,kbar,h,i,wtilde,d,c,lambdaz,yz,sigma,omegabar,phi,s,pitild,pstar,piw, ...
+[rk,n,kbar,h,i,wtilde,d,c,lambdaz,yz,sigma,omegabar,phi,s,pitild,pstar,piw, ...
         pitildw,wstar,wplus,Rk,Re,Fp,Kp,Fw,Kw,uzc,q,Gamma,Gam_muG,g,y] = nobanks_ss1(lambdaf_p,infl, ...
         muzstar_p,beta_p,delta_p,Fomegabar_p,mu_p,alpha_p,gamma_p,sigmaL_p, ...
         psiL_p,lambdaw_p,we_p,bigtheta_p,b_p,phi_p, ...

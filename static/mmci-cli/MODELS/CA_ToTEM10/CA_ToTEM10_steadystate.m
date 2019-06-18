@@ -244,6 +244,7 @@ interest = 0.00000000e+00;
 inflation = 0.00000000e+00;
 inflationq = 0.00000000e+00;
 outputgap = 0.00000000e+00;
+output = 0.00000000e+00;
 fispol = 0.00000000e+00;
 
 CA_ToTEM10_set_auxiliary_variables(ys,exe);

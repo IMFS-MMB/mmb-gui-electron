@@ -25,7 +25,7 @@ check = 0;
 
 
 %% Enter model equations here
-
+if isoctave==0;
 options=optimoptions('fsolve'); %options=optimset(); % set options for numerical solver
 
 %% The steady state computation
@@ -72,6 +72,9 @@ xx0= [QS_guess,ETAS_guess,TYS_guess,DS_guess,OS_guess,XS_guess];
 SOL=fsolve(FF,xx0,options);
 
 NETA = SOL(2);
+else
+NETA = 0.536561;
+end
 %NQ  = 1/ZS*(1/(1-NETA));    
 NQ  = ((1/ZS)*(1/(1-(NETA/XI))))^(XI); 
 NTY = (NQ)^(-GAMMA/(1-GAMMA));
