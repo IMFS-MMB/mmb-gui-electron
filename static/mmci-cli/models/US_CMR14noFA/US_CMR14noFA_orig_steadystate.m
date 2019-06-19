@@ -1,3 +1,9 @@
+%%
+%This file has been relabeled and therefore removed from the calculation of the steady state 
+%as it is not compatible with Octave 4.5.1. Instead, the steady state is calculated withing the .mod file, using 
+% precalculated results of this file as initvals and using the option:
+% steady(maxit=1000, solve_algo=1); in the .mod-file 
+%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Compute the steady state.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

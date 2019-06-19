@@ -77,7 +77,11 @@ ARG_STR.mu       =mu;
 ARG_STR.Lambda   =Lambda;
 ARG_STR.mu_bar   =mu_bar;
 %lambda = [0 0 0 0 0];
+if isoctave==0;
 [lambda,fval,exitf]  =   fsolve(@f_lambda,lambda0,options,ARG_STR); 
+else
+lambda = 1.0e+06 * [ -0.427640419937800   0.016909522949438   3.836540225591086  -0.101693151675527 -0.590761872971721];
+end
 %[Abar_n,Bprinme_n]=Abar_n_Bbar_n(Abar_1,Bprime_1,Sigma,mu,lambda,Lambda,(n-1)); 
 [~,Bprinme_4]=Abar_n_Bbar_n(Abar_1,Bprime_1,Sigma,P,mu,lambda,Lambda,3);
 [~,Bprinme_8]=Abar_n_Bbar_n(Abar_1,Bprime_1,Sigma,P,mu,lambda,Lambda,7);

@@ -46,6 +46,7 @@ switch switch_print
         options     =   optimset('Display','off');
 end;
 
+if isoctave==0;
 [XX,diff,exitf]     =   fsolve(@f_mom,[omega0 lambda0 chi0],options,params,starting,moments,switches);
 
 
@@ -71,7 +72,13 @@ params.chi      =   chi;
 
 K    =   log(XX_ss(1));
 L    =   log(XX_ss(2));
- 
+else
+omega  =  0.002227780412604;
+lambda =  0.381494985929782;
+chi    =  2.033128776217254;
+K    =   2.139166489312412;
+L    =   -0.693147175025597;
+end
 
 %Calculating the equilibrium K and N values given the parameters
 switch switches.switch_print
