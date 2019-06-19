@@ -67,6 +67,7 @@ switch switch_print
         options     =   optimset('Display','off');
 end;
 
+if isoctave==0
 [XX,diff,exitf]     =   fsolve(@f_PB_PQ,[3 3],options,params);                                                                              
 ssPB=XX(1);
 ssPQ=XX(2);
@@ -76,6 +77,23 @@ params.ssPQ=ssPQ;
 i = log(1/exp(PB));                                                                                                                         %(B.43)   
 [XX,diff,exitf]     =   fsolve(@f_i_Q,2,options,params);
 iQ=XX;                                                                                                                                      %(B.44)
+else
+PB=-0.012269;
+PQ=-0.113471;
+params.ssPQ=PQ;
+i = log(1/exp(PB));   
+iQ= 0.0109982;
+end
+
+%[XX,diff,exitf]     =   fsolve(@f_PB_PQ,[3 3],options,params);                                                                              
+%ssPB=XX(1);
+%ssPQ=XX(2);
+%PB=ssPB;                                                                                                                                    %(B.41)
+%PQ=ssPQ;                                                                                                                                    %(B.42)
+%params.ssPQ=ssPQ;
+%i = log(1/exp(PB));                                                                                                                         %(B.43)   
+%[XX,diff,exitf]     =   fsolve(@f_i_Q,2,options,params);
+%iQ=XX;                                                                                                                                      %(B.44)
 
 %---------------------------------------------------------------------------
 % 2. Steady States in Flex Price Economy
