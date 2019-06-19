@@ -189,7 +189,7 @@ L = -w + (1+1/psi)*ren + K(-1);
 pi = beta/(1+beta*gamma_p)*pi(+1)+gamma_p/(1+beta*gamma_p)*pi(-1)
 +1/(1+beta*gamma_p)*(1-beta*xi_p)*(1-xi_p)/xi_p*(alpha*ren+(1-alpha)*w-eps_A)+eta_p;
 
-K = (1-tau) * K(-1) + tau * I(-1) + tau*(1+beta)*phi* eps_I(-1);
+K = (1-tau) * K(-1) + tau * I + tau*(1+beta)*phi* eps_I;
 
 I = 1/(1+beta)*I(-1) + beta/(1+beta)*I(+1) + 1/(phi*(1+beta)) *  Q + eps_I;
 
@@ -236,7 +236,7 @@ Lf = -wf + (1+1/psi)*renf + Kf(-1);
 
 alpha * renf + (1-alpha)*wf = eps_A;
 
-Kf = (1-tau) * Kf(-1) + tau * If(-1) + tau *(1+beta)*phi * eps_I(-1);
+Kf = (1-tau) * Kf(-1) + tau * If + tau *(1+beta)*phi * eps_I;
 
 If = 1/(1+beta)*If(-1) + beta/(1+beta)*If(+1) + 1/(phi*(1+beta)) * Qf + eps_I;
 
