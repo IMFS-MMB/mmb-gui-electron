@@ -100,12 +100,7 @@ const actions = {
   },
   find({ commit, state }) {
     const options = {
-      filters: [
-        {
-          name: '.m files',
-          extensions: ['dynare.m'],
-        },
-      ],
+      filters: [],
       title: 'Select dynare folder',
       properties: ['openDirectory'],
       message: 'Please select the root folder of the dynare installation you want to use.',
