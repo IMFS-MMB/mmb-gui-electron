@@ -1,6 +1,5 @@
 {
   "$schema": "../../schemas/model.schema.json",
-  "id": 76,
   "name": "US_FM95AL",
   "capabilities": {
     "interest": true,

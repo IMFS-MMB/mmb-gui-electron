@@ -1,6 +1,5 @@
 {
   "$schema": "../../schemas/model.schema.json",
-  "id": 64,
   "name": "CA_BMZ12",
   "capabilities": {
     "interest": true,

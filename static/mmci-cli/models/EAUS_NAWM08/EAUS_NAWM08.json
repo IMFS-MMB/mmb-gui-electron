@@ -1,6 +1,5 @@
 {
   "$schema": "../../schemas/model.schema.json",
-  "id": 46,
   "name": "EAUS_NAWM08",
   "capabilities": {
     "interest": true,

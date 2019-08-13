@@ -1,6 +1,5 @@
 {
   "$schema": "../../schemas/model.schema.json",
-  "id": 92,
   "name": "NK_AFL15",
   "capabilities": {
     "interest": true,

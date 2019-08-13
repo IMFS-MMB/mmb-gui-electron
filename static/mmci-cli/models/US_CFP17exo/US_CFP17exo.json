@@ -1,6 +1,5 @@
 {
   "$schema": "../../schemas/model.schema.json",
-  "id": 105,
   "name": "US_CFP17exo",
   "capabilities": {
     "interest": true,

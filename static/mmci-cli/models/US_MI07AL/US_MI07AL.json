@@ -1,6 +1,5 @@
 {
   "$schema": "../../schemas/model.schema.json",
-  "id": 78,
   "name": "US_MI07AL",
   "capabilities": {
     "interest": true,

@@ -1,6 +1,5 @@
 {
   "$schema": "../../schemas/model.schema.json",
-  "id": 87,
   "name": "US_JPT11",
   "capabilities": {
     "interest": true,

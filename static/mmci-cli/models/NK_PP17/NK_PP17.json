@@ -1,6 +1,5 @@
 {
   "$schema": "../../schemas/model.schema.json",
-  "id": 99,
   "name": "NK_PP17",
   "capabilities": {
     "interest": true,

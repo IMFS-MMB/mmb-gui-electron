@@ -1,6 +1,5 @@
 {
   "$schema": "../../schemas/model.schema.json",
-  "id": 43,
   "name": "G3_CW03",
   "capabilities": {
     "interest": true,

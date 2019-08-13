@@ -1,6 +1,5 @@
 {
   "$schema": "../../schemas/model.schema.json",
-  "id": 124,
   "name": "NK_FLMF18",
   "capabilities": {
     "interest": true,

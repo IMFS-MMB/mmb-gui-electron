@@ -1,6 +1,5 @@
 {
   "$schema": "../../schemas/model.schema.json",
-  "id": 56,
   "name": "US_VMDop",
   "capabilities": {
     "interest": true,

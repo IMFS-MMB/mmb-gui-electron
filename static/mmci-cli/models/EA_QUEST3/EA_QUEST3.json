@@ -1,6 +1,5 @@
 {
   "$schema": "../../schemas/model.schema.json",
-  "id": 39,
   "name": "EA_QUEST3",
   "capabilities": {
     "interest": true,

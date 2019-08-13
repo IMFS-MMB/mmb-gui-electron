@@ -1,6 +1,5 @@
 {
   "$schema": "../../schemas/model.schema.json",
-  "id": 42,
   "name": "G7_TAY93",
   "capabilities": {
     "interest": true,

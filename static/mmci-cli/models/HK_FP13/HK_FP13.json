@@ -1,6 +1,5 @@
 {
   "$schema": "../../schemas/model.schema.json",
-  "id": 60,
   "name": "HK_FP13",
   "capabilities": {
     "interest": true,

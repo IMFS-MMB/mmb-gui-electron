@@ -1,6 +1,5 @@
 {
   "$schema": "../../schemas/model.schema.json",
-  "id": 114,
   "name": "NK_GLSV07",
   "capabilities": {
     "interest": true,

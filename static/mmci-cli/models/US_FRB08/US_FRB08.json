@@ -1,6 +1,5 @@
 {
   "$schema": "../../schemas/model.schema.json",
-  "id": 16,
   "name": "US_FRB08",
   "capabilities": {
     "interest": true,
