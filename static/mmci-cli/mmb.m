@@ -15,6 +15,7 @@ function mmb (jsonconfig)
     addpath(fullfile(paths.lib, 'ALTOOL'));
     addpath(fullfile(paths.lib, 'jsonlab'));
 
+    mkdir(paths.out);
     delete(fullfile(paths.out, '*'));
     diary(fullfile(paths.out, 'diary.log'));
     diary('on');
