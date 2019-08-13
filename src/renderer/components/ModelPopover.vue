@@ -1,5 +1,5 @@
 <template>
-    <b-popover :target="'cb-wrapper-' + model.id"
+    <b-popover :target="'cb-wrapper-' + model.name"
                :delay="{ show: 500, hide: 0 }"
                placement="left"
                triggers="hover"
