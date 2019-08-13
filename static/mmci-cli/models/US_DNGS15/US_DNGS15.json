@@ -1,6 +1,5 @@
 {
   "$schema": "../../schemas/model.schema.json",
-  "id": 90,
   "name": "US_DNGS15",
   "capabilities": {
     "interest": true,

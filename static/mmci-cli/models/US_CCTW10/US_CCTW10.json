@@ -1,6 +1,5 @@
 {
   "$schema": "../../schemas/model.schema.json",
-  "id": 32,
   "name": "US_CCTW10",
   "capabilities": {
     "interest": true,

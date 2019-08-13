@@ -1,6 +1,5 @@
 {
   "$schema": "../../schemas/model.schema.json",
-  "id": 19,
   "name": "US_ACELm",
   "capabilities": {
     "interest": true,

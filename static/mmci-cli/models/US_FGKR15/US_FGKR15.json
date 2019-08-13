@@ -1,6 +1,5 @@
 {
   "$schema": "../../schemas/model.schema.json",
-  "id": 93,
   "name": "US_FGKR15",
   "capabilities": {
     "interest": true,

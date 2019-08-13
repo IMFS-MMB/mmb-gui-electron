@@ -1,6 +1,5 @@
 {
   "$schema": "../../schemas/model.schema.json",
-  "id": 85,
   "name": "RBC_DTT11",
   "capabilities": {
     "interest": true,

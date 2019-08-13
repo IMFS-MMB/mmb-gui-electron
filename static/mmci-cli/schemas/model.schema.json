@@ -3,7 +3,6 @@
   "$id": "model",
   "type": "object",
   "required": [
-    "id",
     "name",
     "capabilities",
     "msr",
@@ -39,9 +38,6 @@
   "properties": {
     "$schema": {
       "type": "string"
-    },
-    "id": {
-      "type": "integer"
     },
     "name": {
       "type": "string"

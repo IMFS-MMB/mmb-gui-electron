@@ -1,6 +1,5 @@
 {
   "$schema": "../../schemas/model.schema.json",
-  "id": 82,
   "name": "EA_DKR11",
   "capabilities": {
     "interest": true,

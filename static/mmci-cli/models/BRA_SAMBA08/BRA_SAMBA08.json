@@ -1,6 +1,5 @@
 {
   "$schema": "../../schemas/model.schema.json",
-  "id": 49,
   "name": "BRA_SAMBA08",
   "capabilities": {
     "interest": true,

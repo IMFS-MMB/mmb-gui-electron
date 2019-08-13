@@ -1,6 +1,5 @@
 {
   "$schema": "../../schemas/model.schema.json",
-  "id": 13,
   "name": "US_CMR14noFA",
   "capabilities": {
     "interest": true,

@@ -1,6 +1,5 @@
 {
   "$schema": "../../schemas/model.schema.json",
-  "id": 35,
   "name": "EA_CW05fm",
   "capabilities": {
     "interest": true,

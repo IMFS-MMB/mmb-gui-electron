@@ -1,6 +1,5 @@
 {
   "$schema": "../../schemas/model.schema.json",
-  "id": 118,
   "name": "EA_BE15",
   "capabilities": {
     "interest": true,

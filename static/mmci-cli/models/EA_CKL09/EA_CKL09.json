@@ -1,6 +1,5 @@
 {
   "$schema": "../../schemas/model.schema.json",
-  "id": 40,
   "name": "EA_CKL09",
   "capabilities": {
     "interest": true,

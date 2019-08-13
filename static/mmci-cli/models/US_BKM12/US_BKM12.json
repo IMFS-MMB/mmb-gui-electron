@@ -1,6 +1,5 @@
 {
   "$schema": "../../schemas/model.schema.json",
-  "id": 115,
   "name": "US_BKM12",
   "capabilities": {
     "interest": true,
