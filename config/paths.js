@@ -19,6 +19,7 @@ export const schemasFolder = path.join(mmbFolder, 'schemas');
 export const dynare = {
   linux: [
     '/usr/lib/dynare',
+    '/usr/local/lib/dynare',
   ],
   darwin: [
     // darwin is macOS
