@@ -2,19 +2,20 @@
   "$schema": "../../schemas/model.schema.json",
   "name": "NK_MM10",
   "capabilities": {
-    "interest": true,
-    "inflation": true,
-    "outputgap": true,
-    "output": true,
-    "mp_shock": true,
     "fiscal_shock": false,
+    "inflation": true,
+    "interest": true,
+    "mp_shock": true,
+    "output": true,
+    "outputgap": true,
     "rules": [
       4,
       6,
       9,
       10,
       11
-    ]
+    ],
+    "unconditional_variances": null
   },
   "description": {
     "ac_ref": "Meh & Moran (2010)",

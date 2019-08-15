@@ -2,12 +2,12 @@
   "$schema": "../../schemas/model.schema.json",
   "name": "US_FV10",
   "capabilities": {
-    "interest": true,
-    "inflation": true,
-    "outputgap": true,
-    "output": true,
-    "mp_shock": true,
     "fiscal_shock": true,
+    "inflation": true,
+    "interest": true,
+    "mp_shock": true,
+    "output": true,
+    "outputgap": true,
     "rules": [
       4,
       5,
@@ -15,7 +15,8 @@
       8,
       9,
       11
-    ]
+    ],
+    "unconditional_variances": null
   },
   "description": {
     "ac_ref": "Fernández-Villaverde (2010)",

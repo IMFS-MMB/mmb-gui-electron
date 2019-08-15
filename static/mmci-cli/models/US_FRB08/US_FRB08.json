@@ -2,12 +2,12 @@
   "$schema": "../../schemas/model.schema.json",
   "name": "US_FRB08",
   "capabilities": {
-    "interest": true,
-    "inflation": true,
-    "outputgap": true,
-    "output": true,
-    "mp_shock": true,
     "fiscal_shock": true,
+    "inflation": true,
+    "interest": true,
+    "mp_shock": true,
+    "output": true,
+    "outputgap": true,
     "rules": [
       3,
       4,
@@ -16,7 +16,8 @@
       8,
       9,
       10
-    ]
+    ],
+    "unconditional_variances": null
   },
   "description": {
     "ac_ref": "Federal Reserve Board model II",

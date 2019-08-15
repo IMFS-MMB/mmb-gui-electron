@@ -2,12 +2,12 @@
   "$schema": "../../schemas/model.schema.json",
   "name": "NK_RW06",
   "capabilities": {
-    "interest": true,
-    "inflation": true,
-    "outputgap": true,
-    "output": false,
-    "mp_shock": true,
     "fiscal_shock": false,
+    "inflation": true,
+    "interest": true,
+    "mp_shock": true,
+    "output": false,
+    "outputgap": true,
     "rules": [
       3,
       4,
@@ -16,7 +16,8 @@
       7,
       9,
       11
-    ]
+    ],
+    "unconditional_variances": null
   },
   "description": {
     "ac_ref": "Ravenna & Walsh (2006)",

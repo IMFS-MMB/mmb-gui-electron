@@ -2,18 +2,19 @@
   "$schema": "../../schemas/model.schema.json",
   "name": "US_IR15",
   "capabilities": {
-    "interest": true,
-    "inflation": true,
-    "outputgap": true,
-    "output": true,
-    "mp_shock": true,
     "fiscal_shock": true,
+    "inflation": true,
+    "interest": true,
+    "mp_shock": true,
+    "output": true,
+    "outputgap": true,
     "rules": [
       3,
       5,
       6,
       8
-    ]
+    ],
+    "unconditional_variances": null
   },
   "description": {
     "ac_ref": "Ireland (2015)",
