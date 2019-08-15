@@ -1,14 +1,6 @@
-const fs = require('fs');
-const models = require('./models');
+const forEachModel = require('./for-each-model');
 
-models.forEach((model) => {
-  const modFile = `./${model}/${model}.mod`;
-  const jsonFile = `./${model}/${model}.json`;
-
-  // eslint-disable-next-line import/no-dynamic-require
-  const json = require(jsonFile);
-  const mod = fs.readFileSync(modFile, { encoding: 'utf8' });
-
+forEachModel((json, mod) => {
   json.shocks = mod
     .split(/\r?\n/)
     .map(line => line.replace(/\/\/.*$/, '')) // remove // style comments
@@ -41,6 +33,4 @@ models.forEach((model) => {
       name: varname,
       human_readable: varname,
     }), []);
-
-  fs.writeFileSync(jsonFile, JSON.stringify(json, null, 2));
 });
