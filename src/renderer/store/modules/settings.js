@@ -54,8 +54,8 @@ const getters = {
   plotAutocorrelation(state) {
     return state.plotAutocorrelation;
   },
-  plotVariance(state) {
-    return state.plotVariance;
+  plotVariance(state, getters) {
+    return getters.isPlotVarianceAvailable && state.plotVariance;
   },
   states(state) {
     return modelname => state.states[modelname];
