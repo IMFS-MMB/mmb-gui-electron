@@ -2,12 +2,12 @@
   "$schema": "../../schemas/model.schema.json",
   "name": "EA_AWM05",
   "capabilities": {
-    "interest": true,
-    "inflation": true,
-    "outputgap": true,
-    "output": true,
-    "mp_shock": true,
     "fiscal_shock": true,
+    "inflation": true,
+    "interest": true,
+    "mp_shock": true,
+    "output": true,
+    "outputgap": true,
     "rules": [
       3,
       4,
@@ -16,7 +16,8 @@
       7,
       8,
       11
-    ]
+    ],
+    "unconditional_variances": null
   },
   "description": {
     "ac_ref": "ECB's area-wide model",

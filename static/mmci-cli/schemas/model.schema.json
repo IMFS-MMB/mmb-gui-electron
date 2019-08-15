@@ -91,6 +91,7 @@
     "capabilities": {
       "type": "object",
       "required": [
+        "unconditional_variances",
         "interest",
         "inflation",
         "outputgap",
@@ -99,6 +100,9 @@
         "fiscal_shock"
       ],
       "properties": {
+        "unconditional_variances": {
+          "$ref": "common#/definitions/bool"
+        },
         "interest": {
           "$ref": "common#/definitions/bool"
         },

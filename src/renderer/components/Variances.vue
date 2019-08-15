@@ -14,10 +14,13 @@
                 <tbody>
                 <tr v-for="variance of varTable">
                     <th>{{variance.title}}</th>
-                    <td>{{variance.data.inflation}}</td>
-                    <td>{{variance.data.interest}}</td>
-                    <td>{{variance.data.output}}</td>
-                    <td>{{variance.data.outputgap}}</td>
+                    <template v-if="variance.data">
+                        <td>{{variance.data.inflation}}</td>
+                        <td>{{variance.data.interest}}</td>
+                        <td>{{variance.data.output}}</td>
+                        <td>{{variance.data.outputgap}}</td>
+                    </template>
+                    <td v-else colspan="4"><i>Unconditional variances are unavailable for this model</i></td>
                 </tr>
                 </tbody>
             </table>

@@ -107,8 +107,12 @@ const getters = {
       return null;
     }
 
-    return state.data.map((d) => {
-      const vars = pick(d.data.VAR, state.settings.variables.map(v => v.name));
+    return state.data.map((d, i) => {
+      const model = state.settings.models[i];
+
+      const vars = model.capabilities.unconditional_variances
+        ? pick(d.data.VAR, state.settings.variables.map(v => v.name))
+        : null;
 
       return {
         title: getSeriesId(d),

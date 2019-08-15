@@ -2,12 +2,12 @@
   "$schema": "../../schemas/model.schema.json",
   "name": "GPM6_IMF13",
   "capabilities": {
-    "interest": true,
-    "inflation": true,
-    "outputgap": true,
-    "output": true,
-    "mp_shock": true,
     "fiscal_shock": false,
+    "inflation": true,
+    "interest": true,
+    "mp_shock": true,
+    "output": true,
+    "outputgap": true,
     "rules": [
       3,
       4,
@@ -18,7 +18,8 @@
       9,
       10,
       11
-    ]
+    ],
+    "unconditional_variances": null
   },
   "description": {
     "ac_ref": "IMF global projection model (2013)\n",

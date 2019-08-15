@@ -2,12 +2,12 @@
   "$schema": "../../schemas/model.schema.json",
   "name": "EAUS_NAWMctww",
   "capabilities": {
-    "interest": true,
-    "inflation": true,
-    "outputgap": true,
-    "output": true,
-    "mp_shock": true,
     "fiscal_shock": true,
+    "inflation": true,
+    "interest": true,
+    "mp_shock": true,
+    "output": true,
+    "outputgap": true,
     "rules": [
       3,
       4,
@@ -18,7 +18,8 @@
       9,
       10,
       11
-    ]
+    ],
+    "unconditional_variances": null
   },
   "description": {
     "ac_ref": "Cogan et al. (2013)",
