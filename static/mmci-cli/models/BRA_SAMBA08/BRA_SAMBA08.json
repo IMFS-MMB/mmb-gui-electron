@@ -19,7 +19,7 @@
       10,
       11
     ],
-    "unconditional_variances": false
+    "unconditional_variances": null
   },
   "description": {
     "ac_ref": "Gouvea et al. (2008)",
