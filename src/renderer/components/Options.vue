@@ -9,7 +9,7 @@
         <div class="ctrl-set-body">
             <div class="ctrl-set-listing">
                 <b-form-checkbox v-model="plotAutocorrelationModel">Plot autocorrelation functions</b-form-checkbox>
-                <b-form-checkbox v-model="plotVarianceModel">Plot variances</b-form-checkbox>
+                <b-form-checkbox v-model="plotVarianceModel" :disabled="!isPlotVarianceAvailable">Plot variances</b-form-checkbox>
                 <Horizon class="mt-2" v-if="$isElectron"/>
                 <Gain class="mt-1" v-if="$isElectron"/>
                 <button class="btn btn-primary btn-sm" v-if="$isElectron" :disabled="!alModelSelected" v-b-modal.modelStatesModal>Select states</button>
@@ -44,6 +44,7 @@
         'alModelSelected',
         'plotAutocorrelation',
         'plotVariance',
+        'isPlotVarianceAvailable',
       ]),
       plotAutocorrelationModel: {
         get() {
