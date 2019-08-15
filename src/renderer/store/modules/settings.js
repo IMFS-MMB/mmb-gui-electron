@@ -91,6 +91,10 @@ const getters = {
     return state.models.length !== 1;
   },
 
+  isPlotVarianceAvailable(state) {
+    return state.models.some(model => model.capabilities.unconditional_variances);
+  },
+
   isModelDisabled(state, getters) {
     return (model) => {
       const { policyRules } = getters;
