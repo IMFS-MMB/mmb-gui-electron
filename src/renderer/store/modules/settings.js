@@ -22,8 +22,8 @@ const state = {
     ...commonVariables,
   ],
   states: defaultStates(),
-  plotAutocorrelation: true,
-  plotVariance: true,
+  plotAutocorrelation: false,
+  plotVariance: false,
   horizon: 20,
   gain: 0.01,
 };
