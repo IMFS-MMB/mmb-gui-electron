@@ -1,6 +1,12 @@
-const forEachModel = require('./for-each-model');
+const alterModel = require('./alter-model');
 
-forEachModel((json, mod) => {
+const model = process.argv[2];
+
+if (!model) {
+  throw new Error('Please provide model name as first argument');
+}
+
+alterModel(model, (json, mod) => {
   json.shocks = mod
     .split(/\r?\n/)
     .map(line => line.replace(/\/\/.*$/, '')) // remove // style comments
@@ -14,10 +20,10 @@ forEachModel((json, mod) => {
     .sort((a, b) => a.localeCompare(b))
     .reduce((acc, shockname) => acc.concat({
       name: shockname,
-      human_readable: shockname,
+      text: shockname,
     }), []);
 
-  json.vars = mod
+  json.variables = mod
     .split(/\r?\n/)
     .map(line => line.replace(/\/\/.*$/, '')) // remove // style comments
     .map(line => line.replace(/%.*$/, '')) // remove % style comments
@@ -31,6 +37,8 @@ forEachModel((json, mod) => {
     .sort((a, b) => a.localeCompare(b))
     .reduce((acc, varname) => acc.concat({
       name: varname,
-      human_readable: varname,
+      text: varname,
     }), []);
+
+  console.log(`Extracted ${json.shocks.length} shocks, ${json.variables.length} variables`);
 });
