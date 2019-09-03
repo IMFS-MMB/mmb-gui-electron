@@ -19,7 +19,7 @@
       10,
       11
     ],
-    "unconditional_variances": null
+    "unconditional_variances": true
   },
   "description": {
     "ac_ref": "Christiano et al. (2014) II",

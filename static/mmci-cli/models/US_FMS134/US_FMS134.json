@@ -18,7 +18,7 @@
       9,
       11
     ],
-    "unconditional_variances": null
+    "unconditional_variances": true
   },
   "description": {
     "ac_ref": "Fève et al. (2013)",

@@ -15,7 +15,7 @@
       10,
       11
     ],
-    "unconditional_variances": null
+    "unconditional_variances": true
   },
   "description": {
     "ac_ref": "Meh & Moran (2010)",

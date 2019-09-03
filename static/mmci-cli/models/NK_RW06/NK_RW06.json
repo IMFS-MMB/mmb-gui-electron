@@ -17,7 +17,7 @@
       9,
       11
     ],
-    "unconditional_variances": null
+    "unconditional_variances": true
   },
   "description": {
     "ac_ref": "Ravenna & Walsh (2006)",

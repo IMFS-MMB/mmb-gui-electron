@@ -18,7 +18,7 @@
       10,
       11
     ],
-    "unconditional_variances": null
+    "unconditional_variances": true
   },
   "description": {
     "ac_ref": "Krause & Moyen (2016)",
