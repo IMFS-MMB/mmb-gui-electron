@@ -19,7 +19,7 @@
       10,
       11
     ],
-    "unconditional_variances": null
+    "unconditional_variances": true
   },
   "description": {
     "ac_ref": "Blanchard & Gali (2010) EU",

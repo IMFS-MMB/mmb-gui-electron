@@ -19,7 +19,7 @@
       10,
       11
     ],
-    "unconditional_variances": null
+    "unconditional_variances": true
   },
   "description": {
     "ac_ref": "Altig et al. (2005) IV",
