@@ -1,6 +1,9 @@
 function run_model_with_rules(model, rules, config, paths)
-  rmdir(paths.work, 's');
+  if (exist(paths.work, 'dir'))
+    rmdir(paths.work, 's');
+  end
   mkdir(paths.work);
+
   copyfile(fullfile(paths.models, model.name), fullfile(paths.work, model.name));
 
   % run with user specified rule
