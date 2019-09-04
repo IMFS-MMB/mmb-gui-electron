@@ -1,6 +1,7 @@
 import { platform } from 'os';
 import semver from 'semver';
 import execute from './execute';
+import { isProduction } from '../../../constants';
 
 class Base {
   constructor(options) {
@@ -18,7 +19,7 @@ class Base {
     this.path = path;
     this.cwd = cwd;
     this.defaultArgs = defaultArgs;
-    this.ver = ver || '0.0.0';
+    this.semver = semver.coerce(ver || '0.0.0');
   }
 
   getArgs(...args) {
@@ -88,16 +89,25 @@ export class Matlab extends Base {
   }
 
   async runCode(code, onData, onError) {
-    if (platform() === 'win32') {
+    const isWindows = platform() === 'win32';
+
+    if (isWindows) {
       code = code.replace(/"/g, '\\"');
     }
 
-    const ver = semver.coerce(this.ver);
     let args;
 
-    if (semver.satisfies(ver, '<9.6.0')) {
+    const matchesVersion = ver => semver.satisfies(this.semver, ver);
+
+    if (matchesVersion('<9.6.0')) {
+      if (isWindows && !isProduction) {
+        // < R2019a doesn't have any output through stdout, so we need the actual matlab window
+        // to show errors
+        code = code.replace('exit();', '');
+      }
+
       args = this.getArgs('-r', code);
-    } else if (semver.satisfies(ver, '>=9.6.0')) {
+    } else if (matchesVersion('>=9.6.0')) {
       args = this.getArgs('-batch', code);
     }
 
