@@ -21,6 +21,7 @@ export default async function compare(ctx) {
   const backend = create({
     path: executable.path,
     type: executable.type,
+    ver: executable.ver,
     cwd,
   });
 
