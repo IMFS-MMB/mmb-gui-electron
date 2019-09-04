@@ -15,7 +15,7 @@ function mmb (jsonconfig)
     addpath(fullfile(paths.lib, 'ALTOOL'));
     addpath(fullfile(paths.lib, 'jsonlab'));
 
-    if(~exist(paths.out, 'dir')
+    if(~exist(paths.out, 'dir'))
       mkdir(paths.out);
     end
 
