@@ -1,9 +1,12 @@
 import { platform } from 'os';
+import semver from 'semver';
 import execute from './execute';
 
 class Base {
   constructor(options) {
-    const { path, cwd, defaultArgs } = options;
+    const {
+      path, cwd, defaultArgs, ver,
+    } = options;
 
     const pathExists = true;
     // const pathExists = commandExists.sync(path) || isExecutableSync(path);
@@ -15,6 +18,7 @@ class Base {
     this.path = path;
     this.cwd = cwd;
     this.defaultArgs = defaultArgs;
+    this.ver = ver || '0.0.0';
   }
 
   getArgs(...args) {
@@ -26,7 +30,8 @@ class Base {
     let version = '';
 
     await this.runCode('disp([\'%version-start%\' version() \'%version-end%\']); exit()', (data) => {
-      const match = data.toString().match(pattern);
+      const match = data.toString()
+        .match(pattern);
 
       if (match) {
         [, version] = match;
@@ -44,7 +49,8 @@ class Base {
   }
 
   // eslint-disable-next-line
-  async destroy() {}
+  async destroy() {
+  }
 }
 
 export class Octave extends Base {
@@ -86,7 +92,14 @@ export class Matlab extends Base {
       code = code.replace(/"/g, '\\"');
     }
 
-    const args = this.getArgs('-batch', code);
+    const ver = semver.coerce(this.ver);
+    let args;
+
+    if (semver.satisfies(ver, '<9.6.0')) {
+      args = this.getArgs('-r', code);
+    } else if (semver.satisfies(ver, '>=9.6.0')) {
+      args = this.getArgs('-batch', code);
+    }
 
     return this.execute(args, onData, onError);
   }
