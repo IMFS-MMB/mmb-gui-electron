@@ -1,0 +1,1064 @@
+{
+  "$schema": "../../schemas/model.schema.json",
+  "name": "CA_ToTEM10",
+  "capabilities": {
+    "fiscal_shock": true,
+    "inflation": true,
+    "interest": true,
+    "mp_shock": true,
+    "output":true,
+    "outputgap": true,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Murchison & Rennison (2006)",
+    "paper_title": "ToTEM: The Bank of Canada's New Canadian Projection Model",
+    "journal": "Bank of Canada Technical Report",
+    "replicants_name": "",
+    "pub_date": "2006",
+    "keywords": [],
+    "description": "Model specific monetary policy rule was included without any shock to the inflation target",
+    "category": "Estimated other-country model",
+    "authors": [
+      "Murchison, Stephen",
+      "Rennison, Andrew"
+    ]
+  },
+    "msr": [
+    "0.8",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "(1-0.8)*2.5",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "fiscal_",
+      "text": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    },
+    {
+      "name": "la_shk",
+      "text": "la_shk"
+    },
+    {
+      "name": "lc_shk",
+      "text": "lc_shk"
+    },
+    {
+      "name": "lforexn_shk",
+      "text": "lforexn_shk"
+    },
+    {
+      "name": "lpcomrow_shk",
+      "text": "lpcomrow_shk"
+    },
+    {
+      "name": "lxdc_shk",
+      "text": "lxdc_shk"
+    },
+    {
+      "name": "lyrow_shk",
+      "text": "lyrow_shk"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "cbal",
+      "text": "cbal"
+    },
+    {
+      "name": "cbal_cor",
+      "text": "cbal_cor"
+    },
+    {
+      "name": "defn_yn",
+      "text": "defn_yn"
+    },
+    {
+      "name": "defn_yn_ss",
+      "text": "defn_yn_ss"
+    },
+    {
+      "name": "den_w",
+      "text": "den_w"
+    },
+    {
+      "name": "deprk",
+      "text": "deprk"
+    },
+    {
+      "name": "dr1rown",
+      "text": "dr1rown"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "gbn_cor",
+      "text": "gbn_cor"
+    },
+    {
+      "name": "gbn_yn",
+      "text": "gbn_yn"
+    },
+    {
+      "name": "gbn_yn_ss",
+      "text": "gbn_yn_ss"
+    },
+    {
+      "name": "gn_yn_cor",
+      "text": "gn_yn_cor"
+    },
+    {
+      "name": "gn_yn_ss",
+      "text": "gn_yn_ss"
+    },
+    {
+      "name": "inff",
+      "text": "inff"
+    },
+    {
+      "name": "inflation",
+      "text": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "infprow",
+      "text": "infprow"
+    },
+    {
+      "name": "infq",
+      "text": "infq"
+    },
+    {
+      "name": "infq_pg",
+      "text": "infq_pg"
+    },
+    {
+      "name": "infq_row",
+      "text": "infq_row"
+    },
+    {
+      "name": "infq2",
+      "text": "infq2"
+    },
+    {
+      "name": "infrow",
+      "text": "infrow"
+    },
+    {
+      "name": "infrow_ss",
+      "text": "infrow_ss"
+    },
+    {
+      "name": "infrow2",
+      "text": "infrow2"
+    },
+    {
+      "name": "interest",
+      "text": "interest"
+    },
+    {
+      "name": "la",
+      "text": "la"
+    },
+    {
+      "name": "la_inv",
+      "text": "la_inv"
+    },
+    {
+      "name": "la_tot",
+      "text": "la_tot"
+    },
+    {
+      "name": "la0_cor",
+      "text": "la0_cor"
+    },
+    {
+      "name": "la5_cor",
+      "text": "la5_cor"
+    },
+    {
+      "name": "la9_cor",
+      "text": "la9_cor"
+    },
+    {
+      "name": "ladotrow",
+      "text": "ladotrow"
+    },
+    {
+      "name": "lc",
+      "text": "lc"
+    },
+    {
+      "name": "lc_cor",
+      "text": "lc_cor"
+    },
+    {
+      "name": "lc_cor_tot",
+      "text": "lc_cor_tot"
+    },
+    {
+      "name": "lc0_cor",
+      "text": "lc0_cor"
+    },
+    {
+      "name": "lc995_cor",
+      "text": "lc995_cor"
+    },
+    {
+      "name": "lcfl",
+      "text": "lcfl"
+    },
+    {
+      "name": "lchm",
+      "text": "lchm"
+    },
+    {
+      "name": "lckl",
+      "text": "lckl"
+    },
+    {
+      "name": "lcklc",
+      "text": "lcklc"
+    },
+    {
+      "name": "lcklcm",
+      "text": "lcklcm"
+    },
+    {
+      "name": "lcm",
+      "text": "lcm"
+    },
+    {
+      "name": "lcom",
+      "text": "lcom"
+    },
+    {
+      "name": "lcomc",
+      "text": "lcomc"
+    },
+    {
+      "name": "lcomd",
+      "text": "lcomd"
+    },
+    {
+      "name": "lcomdc",
+      "text": "lcomdc"
+    },
+    {
+      "name": "lcomdg",
+      "text": "lcomdg"
+    },
+    {
+      "name": "lcomdinv",
+      "text": "lcomdinv"
+    },
+    {
+      "name": "lcomdx",
+      "text": "lcomdx"
+    },
+    {
+      "name": "lcomx",
+      "text": "lcomx"
+    },
+    {
+      "name": "lcomy",
+      "text": "lcomy"
+    },
+    {
+      "name": "lcshare",
+      "text": "lcshare"
+    },
+    {
+      "name": "lcshare_add",
+      "text": "lcshare_add"
+    },
+    {
+      "name": "lcshare_sreq",
+      "text": "lcshare_sreq"
+    },
+    {
+      "name": "lcx8",
+      "text": "lcx8"
+    },
+    {
+      "name": "leec",
+      "text": "leec"
+    },
+    {
+      "name": "leeg",
+      "text": "leeg"
+    },
+    {
+      "name": "leeinv",
+      "text": "leeinv"
+    },
+    {
+      "name": "leex",
+      "text": "leex"
+    },
+    {
+      "name": "lforex",
+      "text": "lforex"
+    },
+    {
+      "name": "lforexn_cor",
+      "text": "lforexn_cor"
+    },
+    {
+      "name": "lforexn_cor_tot",
+      "text": "lforexn_cor_tot"
+    },
+    {
+      "name": "lforexn0_cor",
+      "text": "lforexn0_cor"
+    },
+    {
+      "name": "lg",
+      "text": "lg"
+    },
+    {
+      "name": "lgbn_r",
+      "text": "lgbn_r"
+    },
+    {
+      "name": "lgkl",
+      "text": "lgkl"
+    },
+    {
+      "name": "lgklc",
+      "text": "lgklc"
+    },
+    {
+      "name": "lgklcm",
+      "text": "lgklcm"
+    },
+    {
+      "name": "lgm",
+      "text": "lgm"
+    },
+    {
+      "name": "lhaw",
+      "text": "lhaw"
+    },
+    {
+      "name": "lhaw_sreq",
+      "text": "lhaw_sreq"
+    },
+    {
+      "name": "lhawc",
+      "text": "lhawc"
+    },
+    {
+      "name": "lhawc_sreq",
+      "text": "lhawc_sreq"
+    },
+    {
+      "name": "lhawcom",
+      "text": "lhawcom"
+    },
+    {
+      "name": "lhawcom_sreq",
+      "text": "lhawcom_sreq"
+    },
+    {
+      "name": "lhawg",
+      "text": "lhawg"
+    },
+    {
+      "name": "lhawg_sreq",
+      "text": "lhawg_sreq"
+    },
+    {
+      "name": "lhawinv",
+      "text": "lhawinv"
+    },
+    {
+      "name": "lhawinv_sreq",
+      "text": "lhawinv_sreq"
+    },
+    {
+      "name": "lhawx",
+      "text": "lhawx"
+    },
+    {
+      "name": "lhawx_sreq",
+      "text": "lhawx_sreq"
+    },
+    {
+      "name": "lindex_w",
+      "text": "lindex_w"
+    },
+    {
+      "name": "linv",
+      "text": "linv"
+    },
+    {
+      "name": "linv_add",
+      "text": "linv_add"
+    },
+    {
+      "name": "linv_cor",
+      "text": "linv_cor"
+    },
+    {
+      "name": "linv_cor1",
+      "text": "linv_cor1"
+    },
+    {
+      "name": "linvc",
+      "text": "linvc"
+    },
+    {
+      "name": "linvcom",
+      "text": "linvcom"
+    },
+    {
+      "name": "linvg",
+      "text": "linvg"
+    },
+    {
+      "name": "linvinv",
+      "text": "linvinv"
+    },
+    {
+      "name": "linvkl",
+      "text": "linvkl"
+    },
+    {
+      "name": "linvklc",
+      "text": "linvklc"
+    },
+    {
+      "name": "linvklcm",
+      "text": "linvklcm"
+    },
+    {
+      "name": "linvm",
+      "text": "linvm"
+    },
+    {
+      "name": "linvx",
+      "text": "linvx"
+    },
+    {
+      "name": "lk",
+      "text": "lk"
+    },
+    {
+      "name": "lk_cor",
+      "text": "lk_cor"
+    },
+    {
+      "name": "lkcom",
+      "text": "lkcom"
+    },
+    {
+      "name": "lkg",
+      "text": "lkg"
+    },
+    {
+      "name": "lkinv",
+      "text": "lkinv"
+    },
+    {
+      "name": "lktotal",
+      "text": "lktotal"
+    },
+    {
+      "name": "lkx",
+      "text": "lkx"
+    },
+    {
+      "name": "ll",
+      "text": "ll"
+    },
+    {
+      "name": "llabshare",
+      "text": "llabshare"
+    },
+    {
+      "name": "llabshare_add",
+      "text": "llabshare_add"
+    },
+    {
+      "name": "llabshare_sreq",
+      "text": "llabshare_sreq"
+    },
+    {
+      "name": "llagrlpc",
+      "text": "llagrlpc"
+    },
+    {
+      "name": "llc",
+      "text": "llc"
+    },
+    {
+      "name": "llcom",
+      "text": "llcom"
+    },
+    {
+      "name": "llg",
+      "text": "llg"
+    },
+    {
+      "name": "llinv",
+      "text": "llinv"
+    },
+    {
+      "name": "llx",
+      "text": "llx"
+    },
+    {
+      "name": "lm",
+      "text": "lm"
+    },
+    {
+      "name": "lm_cor",
+      "text": "lm_cor"
+    },
+    {
+      "name": "lm_cor_tot",
+      "text": "lm_cor_tot"
+    },
+    {
+      "name": "lm0_cor",
+      "text": "lm0_cor"
+    },
+    {
+      "name": "lmanx",
+      "text": "lmanx"
+    },
+    {
+      "name": "lmc_r",
+      "text": "lmc_r"
+    },
+    {
+      "name": "lmcg_r",
+      "text": "lmcg_r"
+    },
+    {
+      "name": "lmcinv_r",
+      "text": "lmcinv_r"
+    },
+    {
+      "name": "lmcm_r",
+      "text": "lmcm_r"
+    },
+    {
+      "name": "lmcsum_r",
+      "text": "lmcsum_r"
+    },
+    {
+      "name": "lmcx_r",
+      "text": "lmcx_r"
+    },
+    {
+      "name": "lmpk",
+      "text": "lmpk"
+    },
+    {
+      "name": "lmpkcom",
+      "text": "lmpkcom"
+    },
+    {
+      "name": "lmpkg",
+      "text": "lmpkg"
+    },
+    {
+      "name": "lmpkinv",
+      "text": "lmpkinv"
+    },
+    {
+      "name": "lmpkx",
+      "text": "lmpkx"
+    },
+    {
+      "name": "lmpl",
+      "text": "lmpl"
+    },
+    {
+      "name": "lp_r",
+      "text": "lp_r"
+    },
+    {
+      "name": "lpc_cor",
+      "text": "lpc_cor"
+    },
+    {
+      "name": "lpc_r",
+      "text": "lpc_r"
+    },
+    {
+      "name": "lpcom_r",
+      "text": "lpcom_r"
+    },
+    {
+      "name": "lpcomd_r",
+      "text": "lpcomd_r"
+    },
+    {
+      "name": "lpcomdsum_r",
+      "text": "lpcomdsum_r"
+    },
+    {
+      "name": "lpcomrow_prow",
+      "text": "lpcomrow_prow"
+    },
+    {
+      "name": "lpcrow_r",
+      "text": "lpcrow_r"
+    },
+    {
+      "name": "lpfx_r",
+      "text": "lpfx_r"
+    },
+    {
+      "name": "lpg_r",
+      "text": "lpg_r"
+    },
+    {
+      "name": "lpinv_r",
+      "text": "lpinv_r"
+    },
+    {
+      "name": "lpinvsum_r",
+      "text": "lpinvsum_r"
+    },
+    {
+      "name": "lpm_fit_r",
+      "text": "lpm_fit_r"
+    },
+    {
+      "name": "lpm_fitsum_r",
+      "text": "lpm_fitsum_r"
+    },
+    {
+      "name": "lpm_r",
+      "text": "lpm_r"
+    },
+    {
+      "name": "lpmanx_r",
+      "text": "lpmanx_r"
+    },
+    {
+      "name": "lprow_cor",
+      "text": "lprow_cor"
+    },
+    {
+      "name": "lprow2_cor",
+      "text": "lprow2_cor"
+    },
+    {
+      "name": "lprow2_r",
+      "text": "lprow2_r"
+    },
+    {
+      "name": "lpx_r",
+      "text": "lpx_r"
+    },
+    {
+      "name": "lpxrow_prow",
+      "text": "lpxrow_prow"
+    },
+    {
+      "name": "lpxrow_r",
+      "text": "lpxrow_r"
+    },
+    {
+      "name": "lq_r",
+      "text": "lq_r"
+    },
+    {
+      "name": "lqcom_r",
+      "text": "lqcom_r"
+    },
+    {
+      "name": "lqg_r",
+      "text": "lqg_r"
+    },
+    {
+      "name": "lqinv_r",
+      "text": "lqinv_r"
+    },
+    {
+      "name": "lqx_r",
+      "text": "lqx_r"
+    },
+    {
+      "name": "ltdnr_r",
+      "text": "ltdnr_r"
+    },
+    {
+      "name": "ltincr_r",
+      "text": "ltincr_r"
+    },
+    {
+      "name": "ltransf_r",
+      "text": "ltransf_r"
+    },
+    {
+      "name": "lw",
+      "text": "lw"
+    },
+    {
+      "name": "lwn_r",
+      "text": "lwn_r"
+    },
+    {
+      "name": "lwsum_r",
+      "text": "lwsum_r"
+    },
+    {
+      "name": "lx",
+      "text": "lx"
+    },
+    {
+      "name": "lx_cor",
+      "text": "lx_cor"
+    },
+    {
+      "name": "lxdc_cor",
+      "text": "lxdc_cor"
+    },
+    {
+      "name": "lxdc_cor_tot",
+      "text": "lxdc_cor_tot"
+    },
+    {
+      "name": "lxdc0_cor",
+      "text": "lxdc0_cor"
+    },
+    {
+      "name": "lxdg_cor",
+      "text": "lxdg_cor"
+    },
+    {
+      "name": "lxdinv_cor",
+      "text": "lxdinv_cor"
+    },
+    {
+      "name": "lxdx_cor",
+      "text": "lxdx_cor"
+    },
+    {
+      "name": "lxf_cor",
+      "text": "lxf_cor"
+    },
+    {
+      "name": "lxkl",
+      "text": "lxkl"
+    },
+    {
+      "name": "lxklc",
+      "text": "lxklc"
+    },
+    {
+      "name": "lxklcm",
+      "text": "lxklcm"
+    },
+    {
+      "name": "lxm",
+      "text": "lxm"
+    },
+    {
+      "name": "lxw_cor",
+      "text": "lxw_cor"
+    },
+    {
+      "name": "lxw_cor_tot",
+      "text": "lxw_cor_tot"
+    },
+    {
+      "name": "lxw_r",
+      "text": "lxw_r"
+    },
+    {
+      "name": "lxw0_cor",
+      "text": "lxw0_cor"
+    },
+    {
+      "name": "ly",
+      "text": "ly"
+    },
+    {
+      "name": "ly_gap",
+      "text": "ly_gap"
+    },
+    {
+      "name": "lykl",
+      "text": "lykl"
+    },
+    {
+      "name": "lyrow",
+      "text": "lyrow"
+    },
+    {
+      "name": "lyrow_cor",
+      "text": "lyrow_cor"
+    },
+    {
+      "name": "lyrow_gap",
+      "text": "lyrow_gap"
+    },
+    {
+      "name": "lyrow_sreq",
+      "text": "lyrow_sreq"
+    },
+    {
+      "name": "nfa",
+      "text": "nfa"
+    },
+    {
+      "name": "nfa_ss",
+      "text": "nfa_ss"
+    },
+    {
+      "name": "num_w",
+      "text": "num_w"
+    },
+    {
+      "name": "output",
+      "text": "output"
+    },
+    {
+      "name": "outputgap",
+      "text": "outputgap"
+    },
+    {
+      "name": "pcomrow_prow_ss",
+      "text": "pcomrow_prow_ss"
+    },
+    {
+      "name": "pertarget",
+      "text": "pertarget"
+    },
+    {
+      "name": "pertran",
+      "text": "pertran"
+    },
+    {
+      "name": "profit",
+      "text": "profit"
+    },
+    {
+      "name": "r1",
+      "text": "r1"
+    },
+    {
+      "name": "r1n",
+      "text": "r1n"
+    },
+    {
+      "name": "r1n_ss",
+      "text": "r1n_ss"
+    },
+    {
+      "name": "r1n_tran",
+      "text": "r1n_tran"
+    },
+    {
+      "name": "r1row",
+      "text": "r1row"
+    },
+    {
+      "name": "r1row_ss",
+      "text": "r1row_ss"
+    },
+    {
+      "name": "r1rown",
+      "text": "r1rown"
+    },
+    {
+      "name": "r1rown_des",
+      "text": "r1rown_des"
+    },
+    {
+      "name": "rf_prem",
+      "text": "rf_prem"
+    },
+    {
+      "name": "rfn",
+      "text": "rfn"
+    },
+    {
+      "name": "rgb",
+      "text": "rgb"
+    },
+    {
+      "name": "rgb_ss",
+      "text": "rgb_ss"
+    },
+    {
+      "name": "rgbn",
+      "text": "rgbn"
+    },
+    {
+      "name": "rgbn_cor",
+      "text": "rgbn_cor"
+    },
+    {
+      "name": "rgbn_ss",
+      "text": "rgbn_ss"
+    },
+    {
+      "name": "rh_prem",
+      "text": "rh_prem"
+    },
+    {
+      "name": "rhn",
+      "text": "rhn"
+    },
+    {
+      "name": "risk",
+      "text": "risk"
+    },
+    {
+      "name": "risk_cor",
+      "text": "risk_cor"
+    },
+    {
+      "name": "risk_dyn",
+      "text": "risk_dyn"
+    },
+    {
+      "name": "risk_ss",
+      "text": "risk_ss"
+    },
+    {
+      "name": "rkn",
+      "text": "rkn"
+    },
+    {
+      "name": "target",
+      "text": "target"
+    },
+    {
+      "name": "tdn",
+      "text": "tdn"
+    },
+    {
+      "name": "tdn_cor",
+      "text": "tdn_cor"
+    },
+    {
+      "name": "tdn_ss",
+      "text": "tdn_ss"
+    },
+    {
+      "name": "tinc",
+      "text": "tinc"
+    },
+    {
+      "name": "tinc_cor",
+      "text": "tinc_cor"
+    },
+    {
+      "name": "tinc_ss",
+      "text": "tinc_ss"
+    },
+    {
+      "name": "tincr_yn_ss",
+      "text": "tincr_yn_ss"
+    },
+    {
+      "name": "transf_r_cor",
+      "text": "transf_r_cor"
+    },
+    {
+      "name": "transf_yn",
+      "text": "transf_yn"
+    },
+    {
+      "name": "transf_yn_ss",
+      "text": "transf_yn_ss"
+    },
+    {
+      "name": "u",
+      "text": "u"
+    },
+    {
+      "name": "ucom",
+      "text": "ucom"
+    },
+    {
+      "name": "ug",
+      "text": "ug"
+    },
+    {
+      "name": "uinv",
+      "text": "uinv"
+    },
+    {
+      "name": "usact",
+      "text": "usact"
+    },
+    {
+      "name": "usum",
+      "text": "usum"
+    },
+    {
+      "name": "utotal",
+      "text": "utotal"
+    },
+    {
+      "name": "ux",
+      "text": "ux"
+    },
+    {
+      "name": "w_inf",
+      "text": "w_inf"
+    }
+  ]
+}

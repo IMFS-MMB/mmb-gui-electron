@@ -1,0 +1,507 @@
+{
+  "$schema": "../../schemas/model.schema.json",
+  "name": "US_HL16",
+  "capabilities": {
+    "fiscal_shock": false,
+    "inflation": true,
+    "interest": true,
+    "mp_shock": true,
+    "output": true,
+    "outputgap": true,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Hollander & Liu (2016)",
+    "paper_title": "The equity price channel in a New-Keynesian DSGE model with financial frictions and banking",
+    "journal": "Economic Modelling (2016)",
+    "replicants_name": "Original code provided by Hylton Hollander, implemented into MMB by Nora Lamersdorf",
+    "pub_date": "2016",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated US model",
+    "authors": [
+      "Hollander, Hylton",
+      "Liu, Guangling"
+    ]
+  },
+  "msr": [
+    "0.531388206265248",
+    "0",
+    "0",
+    "0",
+    "(1-0.531388206265248)*2.096293260647889",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "(1-0.531388206265248)*0.278679937511816*4",
+    "-(1-0.531388206265248)*0.278679937511816*4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "epsilon_d",
+      "text": "epsilon_d"
+    },
+    {
+      "name": "epsilon_e",
+      "text": "epsilon_e"
+    },
+    {
+      "name": "epsilon_h",
+      "text": "epsilon_h"
+    },
+    {
+      "name": "epsilon_nu_e",
+      "text": "epsilon_nu_e"
+    },
+    {
+      "name": "epsilon_nu_h",
+      "text": "epsilon_nu_h"
+    },
+    {
+      "name": "epsilon_p",
+      "text": "epsilon_p"
+    },
+    {
+      "name": "epsilon_psi",
+      "text": "epsilon_psi"
+    },
+    {
+      "name": "epsilon_z",
+      "text": "epsilon_z"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "c",
+      "text": "c"
+    },
+    {
+      "name": "c_b",
+      "text": "c_b"
+    },
+    {
+      "name": "c_bf",
+      "text": "c_bf"
+    },
+    {
+      "name": "c_s",
+      "text": "c_s"
+    },
+    {
+      "name": "c_sf",
+      "text": "c_sf"
+    },
+    {
+      "name": "cf",
+      "text": "cf"
+    },
+    {
+      "name": "d",
+      "text": "d"
+    },
+    {
+      "name": "d_obs",
+      "text": "d_obs"
+    },
+    {
+      "name": "d_obsf",
+      "text": "d_obsf"
+    },
+    {
+      "name": "df",
+      "text": "df"
+    },
+    {
+      "name": "div",
+      "text": "div"
+    },
+    {
+      "name": "divf",
+      "text": "divf"
+    },
+    {
+      "name": "h",
+      "text": "h"
+    },
+    {
+      "name": "h_b",
+      "text": "h_b"
+    },
+    {
+      "name": "h_bf",
+      "text": "h_bf"
+    },
+    {
+      "name": "h_s",
+      "text": "h_s"
+    },
+    {
+      "name": "h_sf",
+      "text": "h_sf"
+    },
+    {
+      "name": "hf",
+      "text": "hf"
+    },
+    {
+      "name": "i_d",
+      "text": "i_d"
+    },
+    {
+      "name": "i_d_obs",
+      "text": "i_d_obs"
+    },
+    {
+      "name": "i_d_obsf",
+      "text": "i_d_obsf"
+    },
+    {
+      "name": "i_df",
+      "text": "i_df"
+    },
+    {
+      "name": "i_e",
+      "text": "i_e"
+    },
+    {
+      "name": "i_e_obs",
+      "text": "i_e_obs"
+    },
+    {
+      "name": "i_e_obsf",
+      "text": "i_e_obsf"
+    },
+    {
+      "name": "i_ef",
+      "text": "i_ef"
+    },
+    {
+      "name": "i_h",
+      "text": "i_h"
+    },
+    {
+      "name": "i_h_obs",
+      "text": "i_h_obs"
+    },
+    {
+      "name": "i_h_obsf",
+      "text": "i_h_obsf"
+    },
+    {
+      "name": "i_hf",
+      "text": "i_hf"
+    },
+    {
+      "name": "i_l",
+      "text": "i_l"
+    },
+    {
+      "name": "i_lf",
+      "text": "i_lf"
+    },
+    {
+      "name": "inflation",
+      "text": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "interest"
+    },
+    {
+      "name": "k_B",
+      "text": "k_B"
+    },
+    {
+      "name": "k_Bf",
+      "text": "k_Bf"
+    },
+    {
+      "name": "k_BL",
+      "text": "k_BL"
+    },
+    {
+      "name": "k_BLf",
+      "text": "k_BLf"
+    },
+    {
+      "name": "k_e",
+      "text": "k_e"
+    },
+    {
+      "name": "k_ef",
+      "text": "k_ef"
+    },
+    {
+      "name": "l",
+      "text": "l"
+    },
+    {
+      "name": "l_e",
+      "text": "l_e"
+    },
+    {
+      "name": "l_e_obs",
+      "text": "l_e_obs"
+    },
+    {
+      "name": "l_e_obsf",
+      "text": "l_e_obsf"
+    },
+    {
+      "name": "l_ef",
+      "text": "l_ef"
+    },
+    {
+      "name": "l_h",
+      "text": "l_h"
+    },
+    {
+      "name": "l_h_obs",
+      "text": "l_h_obs"
+    },
+    {
+      "name": "l_h_obsf",
+      "text": "l_h_obsf"
+    },
+    {
+      "name": "l_hf",
+      "text": "l_hf"
+    },
+    {
+      "name": "lambda",
+      "text": "lambda"
+    },
+    {
+      "name": "lambda_e",
+      "text": "lambda_e"
+    },
+    {
+      "name": "lambda_ef",
+      "text": "lambda_ef"
+    },
+    {
+      "name": "lambdaf",
+      "text": "lambdaf"
+    },
+    {
+      "name": "lf",
+      "text": "lf"
+    },
+    {
+      "name": "nu_e",
+      "text": "nu_e"
+    },
+    {
+      "name": "nu_ef",
+      "text": "nu_ef"
+    },
+    {
+      "name": "nu_h",
+      "text": "nu_h"
+    },
+    {
+      "name": "nu_hf",
+      "text": "nu_hf"
+    },
+    {
+      "name": "output",
+      "text": "output"
+    },
+    {
+      "name": "outputgap",
+      "text": "outputgap"
+    },
+    {
+      "name": "pi",
+      "text": "pi"
+    },
+    {
+      "name": "pi_B",
+      "text": "pi_B"
+    },
+    {
+      "name": "pi_Bf",
+      "text": "pi_Bf"
+    },
+    {
+      "name": "pi_obs",
+      "text": "pi_obs"
+    },
+    {
+      "name": "pi_obsf",
+      "text": "pi_obsf"
+    },
+    {
+      "name": "psi_b",
+      "text": "psi_b"
+    },
+    {
+      "name": "psi_bf",
+      "text": "psi_bf"
+    },
+    {
+      "name": "psi_s",
+      "text": "psi_s"
+    },
+    {
+      "name": "psi_sf",
+      "text": "psi_sf"
+    },
+    {
+      "name": "q_k",
+      "text": "q_k"
+    },
+    {
+      "name": "q_kf",
+      "text": "q_kf"
+    },
+    {
+      "name": "q_psi",
+      "text": "q_psi"
+    },
+    {
+      "name": "q_psi_obs",
+      "text": "q_psi_obs"
+    },
+    {
+      "name": "q_psi_obsf",
+      "text": "q_psi_obsf"
+    },
+    {
+      "name": "q_psif",
+      "text": "q_psif"
+    },
+    {
+      "name": "v",
+      "text": "v"
+    },
+    {
+      "name": "varepsilon_e",
+      "text": "varepsilon_e"
+    },
+    {
+      "name": "varepsilon_ef",
+      "text": "varepsilon_ef"
+    },
+    {
+      "name": "varepsilon_h",
+      "text": "varepsilon_h"
+    },
+    {
+      "name": "varepsilon_hf",
+      "text": "varepsilon_hf"
+    },
+    {
+      "name": "vf",
+      "text": "vf"
+    },
+    {
+      "name": "w",
+      "text": "w"
+    },
+    {
+      "name": "wf",
+      "text": "wf"
+    },
+    {
+      "name": "x",
+      "text": "x"
+    },
+    {
+      "name": "xf",
+      "text": "xf"
+    },
+    {
+      "name": "xi_d",
+      "text": "xi_d"
+    },
+    {
+      "name": "xi_df",
+      "text": "xi_df"
+    },
+    {
+      "name": "xi_p",
+      "text": "xi_p"
+    },
+    {
+      "name": "xi_pf",
+      "text": "xi_pf"
+    },
+    {
+      "name": "xi_psi",
+      "text": "xi_psi"
+    },
+    {
+      "name": "xi_psif",
+      "text": "xi_psif"
+    },
+    {
+      "name": "xi_z",
+      "text": "xi_z"
+    },
+    {
+      "name": "xi_zf",
+      "text": "xi_zf"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "y_obs",
+      "text": "y_obs"
+    },
+    {
+      "name": "y_obsf",
+      "text": "y_obsf"
+    },
+    {
+      "name": "yf",
+      "text": "yf"
+    }
+  ]
+}

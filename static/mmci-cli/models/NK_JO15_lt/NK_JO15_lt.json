@@ -1,0 +1,208 @@
+{
+  "$schema": "../../schemas/model.schema.json",
+  "name": "NK_JO15_lt",
+  "capabilities": {
+    "fiscal_shock": false,
+    "inflation": true,
+    "interest": true,
+    "mp_shock": true,
+    "output": true,
+    "outputgap": true,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Jang & Okano (2015)",
+    "paper_title": "Productivity Shocks and Monetary Policy in a Two-Country Model",
+    "journal": "Front. Econ. China, 2015, 10(1): 7-37.",
+    "replicants_name": "Lazar Milivojevic",
+    "pub_date": "2015",
+    "keywords": [],
+    "description": "Low level of trade (alpha=0.1)",
+    "category": "Calibrated model",
+    "authors": [
+      "Jang, Tae-Seok",
+      "Okano, Eiji"
+    ]
+  },
+  "msr": [
+    "0.4",
+    "0",
+    "0",
+    "0",
+    "(1-0.4)*1.5",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "(1-0.4)*0.5*4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 2,
+  "al": false,
+  "shocks": [
+    {
+      "name": "interest_",
+      "text": "interest_"
+    },
+    {
+      "name": "m_star",
+      "text": "m_star"
+    },
+    {
+      "name": "xi",
+      "text": "xi"
+    },
+    {
+      "name": "xi_star",
+      "text": "xi_star"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "a",
+      "text": "a"
+    },
+    {
+      "name": "a_star",
+      "text": "a_star"
+    },
+    {
+      "name": "e",
+      "text": "e"
+    },
+    {
+      "name": "inflation",
+      "text": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "interest"
+    },
+    {
+      "name": "mc",
+      "text": "mc"
+    },
+    {
+      "name": "mc_star",
+      "text": "mc_star"
+    },
+    {
+      "name": "output",
+      "text": "output"
+    },
+    {
+      "name": "outputgap",
+      "text": "outputgap"
+    },
+    {
+      "name": "p",
+      "text": "p"
+    },
+    {
+      "name": "p_star",
+      "text": "p_star"
+    },
+    {
+      "name": "pi",
+      "text": "pi"
+    },
+    {
+      "name": "pi_F_star",
+      "text": "pi_F_star"
+    },
+    {
+      "name": "pi_H",
+      "text": "pi_H"
+    },
+    {
+      "name": "pi_star",
+      "text": "pi_star"
+    },
+    {
+      "name": "q",
+      "text": "q"
+    },
+    {
+      "name": "r",
+      "text": "r"
+    },
+    {
+      "name": "r_bar",
+      "text": "r_bar"
+    },
+    {
+      "name": "r_bar_star",
+      "text": "r_bar_star"
+    },
+    {
+      "name": "r_star",
+      "text": "r_star"
+    },
+    {
+      "name": "s",
+      "text": "s"
+    },
+    {
+      "name": "x",
+      "text": "x"
+    },
+    {
+      "name": "x_star",
+      "text": "x_star"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "y_bar",
+      "text": "y_bar"
+    },
+    {
+      "name": "y_bar_star",
+      "text": "y_bar_star"
+    },
+    {
+      "name": "y_star",
+      "text": "y_star"
+    }
+  ]
+}

@@ -1,0 +1,340 @@
+{
+  "$schema": "../../schemas/model.schema.json",
+  "name": "US_KK14",
+  "capabilities": {
+    "fiscal_shock": true,
+    "inflation": true,
+    "interest": true,
+    "mp_shock": true,
+    "output": true,
+    "outputgap": true,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Kliem & Kriwoluzky (2014)",
+    "paper_title": "Toward a Taylor rule for fiscal policy",
+    "journal": "Review of Economic Dynamics, Vol. 17(2), 294-302",
+    "replicants_name": "Felix Strobel",
+    "pub_date": "2014",
+    "keywords": [],
+    "description": "Monetary policy rule implemented with reaction to output instead of GDP, where GDP=output-resource costs of capital utilization rate adjustment",
+    "category": "Estimated US model",
+    "authors": [
+      "Kliem, Martin",
+      "Kriwoluzky, Alexander"
+    ]
+  },
+  "msr": [
+    "0.833",
+    "0",
+    "0",
+    "0",
+    "(1-0.833)*1.933",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "(1-0.833)*0.035*4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "e_i",
+      "text": "e_i"
+    },
+    {
+      "name": "e_pm",
+      "text": "e_pm"
+    },
+    {
+      "name": "e_q",
+      "text": "e_q"
+    },
+    {
+      "name": "e_wm",
+      "text": "e_wm"
+    },
+    {
+      "name": "e_y",
+      "text": "e_y"
+    },
+    {
+      "name": "e_z",
+      "text": "e_z"
+    },
+    {
+      "name": "eps_tauk",
+      "text": "eps_tauk"
+    },
+    {
+      "name": "eps_tauw",
+      "text": "eps_tauw"
+    },
+    {
+      "name": "eps_tr",
+      "text": "eps_tr"
+    },
+    {
+      "name": "fiscal_",
+      "text": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "b",
+      "text": "b"
+    },
+    {
+      "name": "bf",
+      "text": "bf"
+    },
+    {
+      "name": "c",
+      "text": "c"
+    },
+    {
+      "name": "cf",
+      "text": "cf"
+    },
+    {
+      "name": "cg",
+      "text": "cg"
+    },
+    {
+      "name": "eps_cg",
+      "text": "eps_cg"
+    },
+    {
+      "name": "eps_i",
+      "text": "eps_i"
+    },
+    {
+      "name": "eps_pm",
+      "text": "eps_pm"
+    },
+    {
+      "name": "eps_q",
+      "text": "eps_q"
+    },
+    {
+      "name": "eps_wm",
+      "text": "eps_wm"
+    },
+    {
+      "name": "eps_z",
+      "text": "eps_z"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "GDP",
+      "text": "GDP"
+    },
+    {
+      "name": "GDPf",
+      "text": "GDPf"
+    },
+    {
+      "name": "I",
+      "text": "I"
+    },
+    {
+      "name": "If",
+      "text": "If"
+    },
+    {
+      "name": "inf_p",
+      "text": "inf_p"
+    },
+    {
+      "name": "inf_w",
+      "text": "inf_w"
+    },
+    {
+      "name": "inflation",
+      "text": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "interest"
+    },
+    {
+      "name": "k",
+      "text": "k"
+    },
+    {
+      "name": "kf",
+      "text": "kf"
+    },
+    {
+      "name": "l",
+      "text": "l"
+    },
+    {
+      "name": "lf",
+      "text": "lf"
+    },
+    {
+      "name": "mc",
+      "text": "mc"
+    },
+    {
+      "name": "MRS",
+      "text": "MRS"
+    },
+    {
+      "name": "MRSf",
+      "text": "MRSf"
+    },
+    {
+      "name": "muc",
+      "text": "muc"
+    },
+    {
+      "name": "mucf",
+      "text": "mucf"
+    },
+    {
+      "name": "output",
+      "text": "output"
+    },
+    {
+      "name": "outputgap",
+      "text": "outputgap"
+    },
+    {
+      "name": "q",
+      "text": "q"
+    },
+    {
+      "name": "qf",
+      "text": "qf"
+    },
+    {
+      "name": "R",
+      "text": "R"
+    },
+    {
+      "name": "Rb",
+      "text": "Rb"
+    },
+    {
+      "name": "Rbf",
+      "text": "Rbf"
+    },
+    {
+      "name": "rk",
+      "text": "rk"
+    },
+    {
+      "name": "rkf",
+      "text": "rkf"
+    },
+    {
+      "name": "tau_k",
+      "text": "tau_k"
+    },
+    {
+      "name": "tau_kf",
+      "text": "tau_kf"
+    },
+    {
+      "name": "tau_w",
+      "text": "tau_w"
+    },
+    {
+      "name": "tau_wf",
+      "text": "tau_wf"
+    },
+    {
+      "name": "tax",
+      "text": "tax"
+    },
+    {
+      "name": "tax_rev_tauk",
+      "text": "tax_rev_tauk"
+    },
+    {
+      "name": "tax_rev_tauw",
+      "text": "tax_rev_tauw"
+    },
+    {
+      "name": "taxf",
+      "text": "taxf"
+    },
+    {
+      "name": "tr",
+      "text": "tr"
+    },
+    {
+      "name": "u",
+      "text": "u"
+    },
+    {
+      "name": "uf",
+      "text": "uf"
+    },
+    {
+      "name": "w",
+      "text": "w"
+    },
+    {
+      "name": "wf",
+      "text": "wf"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "yf",
+      "text": "yf"
+    }
+  ]
+}
