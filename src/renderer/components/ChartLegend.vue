@@ -49,7 +49,7 @@
               legendItemClick: (event) => {
                 const legendSeries = event.target;
                 HighCharts.charts.forEach((chart) => {
-                  if (chart === legendSeries.chart) {
+                  if (!chart || chart === legendSeries.chart) {
                     return;
                   }
 

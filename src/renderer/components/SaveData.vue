@@ -1,7 +1,10 @@
 <template>
-    <span>
-        <a href="javascript:void(0)" @click="saveCSV">CSV</a>, <a href="javascript:void(0)" @click="saveJSON">JSON</a>
-    </span>
+    <div class="d-flex flex-column align-items-center">
+        <span class="text">Export data</span>
+        <span class="text">
+            <a href="javascript:void(0)" @click="saveCSV">CSV</a>, <a href="javascript:void(0)" @click="saveJSON">JSON</a>
+        </span>
+    </div>
 </template>
 <script>
 import { saveAs } from 'file-saver';
@@ -32,3 +35,8 @@ export default {
   },
 };
 </script>
+<style lang="scss">
+    .text {
+        font-size: 0.9rem;
+    }
+</style>

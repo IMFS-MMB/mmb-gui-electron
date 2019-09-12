@@ -13,7 +13,10 @@
                                 )
                             </small>
 
-                            <SaveData class="float-right" :data="data"/>
+                            <div class="comparison-set-header-actions">
+                                <ColsPerRow style="max-width: 250px"></ColsPerRow>
+                                <SaveData :data="data"/>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -37,9 +40,11 @@
   import Variances from './Variances';
   import ChartRow from './ChartRow';
   import ChartLegend from './ChartLegend';
+  import ColsPerRow from './ColsPerRow';
 
   export default {
     components: {
+      ColsPerRow,
       ChartRow,
       Variances,
       SaveData,
@@ -53,7 +58,7 @@
       };
     },
     computed: {
-      ...mapGetters('comparison', ['varTable', 'inProgress', 'show', 'data', 'chartRows']),
+      ...mapGetters('comparison', ['varTable', 'inProgress', 'show', 'data', 'chartRows', 'colsPerRow']),
       ...mapGetters('settings', ['numModels', 'numPolicyRules', 'numShocks']),
     },
     watch: {
@@ -67,3 +72,15 @@
   };
 </script>
 
+<style lang="scss">
+    .comparison-set-header-actions {
+        float: right;
+
+        display: inline-flex;
+        align-items: center;
+
+        > :not(:first-child) {
+            margin-left: 1em;
+        }
+    }
+</style>
