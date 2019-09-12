@@ -4,6 +4,7 @@ import deepClone from 'lodash.clonedeep';
 import { isElectron } from '../../../constants';
 import captureBackendException from '../../utils/electron/capture-backend-exception';
 import normalizeError from '../../utils/electron/normalize-error';
+import chunkArray from '../../utils/chunkArray';
 
 const { default: compare } = isElectron ? require('./comparison.compare.electron') : require('./comparison.compare.web');
 
@@ -11,6 +12,7 @@ const namespaced = true;
 
 const state = {
   settings: {},
+  colsPerRow: 4,
   show: false,
   inProgress: false,
   stdout: [],
@@ -40,7 +42,7 @@ function getChart(data, title, dataSelector) {
   };
 }
 
-function getChartRow(allData, variables, titleFactory, dataSelector) {
+function getChartRows(allData, variables, titleFactory, dataSelector) {
   return variables.map(variable => getChart(
     allData,
     titleFactory(variable),
@@ -51,12 +53,33 @@ function getChartRow(allData, variables, titleFactory, dataSelector) {
 function getShockChartRows(state) {
   const { shocks, variables } = state.settings;
 
-  return shocks.map(shock => getChartRow(
+  const result = shocks.map((shock) => {
+    const rows = getChartRows(
+      state.data,
+      variables,
+      variable => `${shock.text} - ${variable.text}`,
+      (data, variable) => get(data, ['IRF', shock.name, variable.name]),
+    );
+
+    return chunkArray(rows, state.colsPerRow);
+  }).reduce((flat, shockRows) => flat.concat(shockRows), []);
+
+  return result;
+}
+
+function getACChartRows(state) {
+  if (!state.settings.plotAutocorrelation) {
+    return [];
+  }
+
+  const rows = getChartRows(
     state.data,
-    variables,
-    variable => `${shock.text} - ${variable.text}`,
-    (data, variable) => get(data, ['IRF', shock.name, variable.name]),
-  ));
+    state.settings.variables,
+    variable => `Autocorrelation - ${variable.text}`,
+    (data, variable) => get(data, ['AC', variable.name]),
+  );
+
+  return chunkArray(rows, state.colsPerRow);
 }
 
 const getters = {
@@ -71,6 +94,9 @@ const getters = {
   },
   stdout(state) {
     return state.stdout;
+  },
+  colsPerRow(state) {
+    return state.colsPerRow;
   },
   inProgress(state) {
     return state.inProgress;
@@ -87,20 +113,10 @@ const getters = {
       return [];
     }
 
-    const chartRows = getShockChartRows(state);
-
-    if (state.settings.plotAutocorrelation) {
-      const acRow = getChartRow(
-        state.data,
-        state.settings.variables,
-        variable => `Autocorrelation - ${variable.text}`,
-        (data, variable) => get(data, ['AC', variable.name]),
-      );
-
-      chartRows.unshift(acRow);
-    }
-
-    return chartRows;
+    return [
+      ...getShockChartRows(state),
+      ...getACChartRows(state),
+    ];
   },
   varTable(state) {
     if (!state.settings.plotVariance) {
@@ -143,6 +159,9 @@ const mutations = {
   },
   addData(state, data) {
     state.data = (state.data || []).concat(data);
+  },
+  setColsPerRow(state, colsPerRow) {
+    state.colsPerRow = colsPerRow;
   },
   error(state, error) {
     state.error = error;
