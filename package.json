@@ -21,7 +21,8 @@
     "pack:main": "cross-env NODE_ENV=production webpack --progress --colors --config .electron-vue/webpack.main.config.js",
     "pack:renderer": "cross-env NODE_ENV=production webpack --progress --colors --config .electron-vue/webpack.renderer.config.js",
     "postinstall": "npm run lint:fix",
-    "deploy": "node .scripts/deploy.sh"
+    "deploy": "node .scripts/deploy.sh",
+    "test": "cross-env NODE_ENV=test mocha"
   },
   "dependencies": {
     "@babel/runtime": "^7.4.3",
@@ -49,8 +50,6 @@
     "lodash.debounce": "^4.0.8",
     "lodash.get": "^4.4.2",
     "lodash.pick": "^4.4.0",
-    "monaco-editor": "^0.17.1",
-    "monaco-editor-webpack-plugin": "^1.7.0",
     "papaparse": "^4.6.3",
     "semver": "^6.3.0",
     "vue": "^2.5.21",
@@ -109,6 +108,7 @@
     "file-loader": "^1.1.11",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "0.4.0",
+    "mocha": "^6.1.4",
     "multispinner": "^0.2.1",
     "node-loader": "^0.6.0",
     "node-sass": "^4.11.0",
@@ -120,7 +120,7 @@
     "vue-loader": "^15.2.4",
     "vue-style-loader": "^4.1.0",
     "vue-template-compiler": "^2.5.21",
-    "webpack": "^4.40.1",
+    "webpack": "^4.28.0",
     "webpack-cli": "^3.0.8",
     "webpack-dev-server": "^3.1.14",
     "webpack-hot-middleware": "^2.22.2",
