@@ -33,7 +33,7 @@
 <script>
   import ModelList from '@/components/ModelList.vue';
   import ModelSearch from '@/components/ModelSearch.vue';
-  import { mapMutations, mapGetters, mapActions } from 'vuex'; // eslint-disable-line no-unused-vars
+  import { mapGetters, mapMutations } from 'vuex';
 
   export default {
     components: {

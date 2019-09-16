@@ -2,6 +2,8 @@
     <b-container fluid class="wrapper">
         <OcpHeader/>
 
+        <Editor></Editor>
+
         <b-container fluid class="mt-2">
             <b-row>
                 <b-col>
@@ -91,10 +93,13 @@
   import MatlabOutputModal from '@/modals/MatlabOutputModal.vue';
 
   import { mapGetters, mapActions } from 'vuex';
+  import Editor from './Editor/Editor';
+
   import Horizon from './Horizon';
   import Gain from './Gain';
   import { isElectron } from '../../constants';
   import Variables from './Variables';
+  import DirectoryView from './Editor/DirectoryView/DirectoryView';
 
   const platformComponents = isElectron ? {
     SettingsModal,
@@ -104,6 +109,8 @@
 
   export default {
     components: {
+      Editor,
+      DirectoryView,
       Variables,
       Horizon,
       Gain,
