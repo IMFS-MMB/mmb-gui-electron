@@ -22,7 +22,7 @@
     "pack:renderer": "cross-env NODE_ENV=production webpack --progress --colors --config .electron-vue/webpack.renderer.config.js",
     "postinstall": "npm run lint:fix",
     "deploy": "node .scripts/deploy.sh",
-    "test": "NODE_ENV=test mocha"
+    "test": "cross-env NODE_ENV=test mocha"
   },
   "dependencies": {
     "@babel/runtime": "^7.4.3",
