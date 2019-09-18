@@ -1,0 +1,219 @@
+{
+  "$schema": "../../schemas/model.schema.json",
+  "name": "US_KS15",
+  "capabilities": {
+    "fiscal_shock": true,
+    "inflation": true,
+    "interest": true,
+    "mp_shock": true,
+    "output": true,
+    "outputgap": true,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Kriwoluzky & Stoltenberg (2015)",
+    "paper_title": "Monetary Policy and the Transaction Role of Money in the US",
+    "journal": "Economic Journal, Vol 125, 1452-1473 ",
+    "replicants_name": "F. Strobel",
+    "pub_date": "2015",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated US model",
+    "authors": [
+      "A. Kriwoluzky",
+      "C. Stoltenberg"
+    ]
+  },
+  "msr": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "2.3829",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "eps_z",
+      "text": "eps_z"
+    },
+    {
+      "name": "eps_nu",
+      "text": "eps_nu"
+    },
+    {
+      "name": "eps_mu",
+      "text": "eps_mu"
+    },
+    {
+      "name": "eps_a",
+      "text": "eps_a"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    },
+    {
+      "name": "fiscal_",
+      "text": "fiscal_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "c",
+      "text": "c"
+    },
+    {
+      "name": "m",
+      "text": "m"
+    },
+    {
+      "name": "pit",
+      "text": "pit"
+    },
+    {
+      "name": "z",
+      "text": "z"
+    },
+    {
+      "name": "nu",
+      "text": "nu"
+    },
+    {
+      "name": "l",
+      "text": "l"
+    },
+    {
+      "name": "mu",
+      "text": "mu"
+    },
+    {
+      "name": "w",
+      "text": "w"
+    },
+    {
+      "name": "R",
+      "text": "R"
+    },
+    {
+      "name": "psi",
+      "text": "psi"
+    },
+    {
+      "name": "a",
+      "text": "a"
+    },
+    {
+      "name": "g",
+      "text": "g"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "RR",
+      "text": "RR"
+    },
+    {
+      "name": "eps_g",
+      "text": "eps_g"
+    },
+    {
+      "name": "cf",
+      "text": "cf"
+    },
+    {
+      "name": "lambdaf",
+      "text": "lambdaf"
+    },
+    {
+      "name": "mf",
+      "text": "mf"
+    },
+    {
+      "name": "lf",
+      "text": "lf"
+    },
+    {
+      "name": "wf",
+      "text": "wf"
+    },
+    {
+      "name": "psif",
+      "text": "psif"
+    },
+    {
+      "name": "yf",
+      "text": "yf"
+    },
+    {
+      "name": "RRf",
+      "text": "RRf"
+    },
+    {
+      "name": "inflation",
+      "text": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "interest"
+    },
+    {
+      "name": "output",
+      "text": "output"
+    },
+    {
+      "name": "outputgap",
+      "text": "outputgap"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    }
+  ]
+}

@@ -1,0 +1,263 @@
+{
+  "$schema": "../../schemas/model.schema.json",
+  "name": "US_YR13",
+  "capabilities": {
+    "fiscal_shock": true,
+    "inflation": true,
+    "interest": true,
+    "mp_shock": true,
+    "output": true,
+    "outputgap": true,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Rychalovska (2016)",
+    "paper_title": "The implications of financial frictions and imperfect knowledge in the estimated dsge model of the U.S. economy",
+    "journal": "Journal of Economic Dynamics and Control 73, pp. 259-282",
+    "replicants_name": "S. Slobodyan",
+    "pub_date": "2016",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated US model",
+    "authors": [
+      "Rychalovska, Yuliya"
+    ]
+  },
+  "msr": [
+    "0.9209",
+    "0",
+    "0",
+    "0",
+    "(1-0.9209)*1.6692",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "((1-0.9209)*0.1372+0.1004) ",
+    "-0.1004",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "ea",
+      "text": "ea"
+    },
+    {
+      "name": "eb",
+      "text": "eb"
+    },
+    {
+      "name": "epinf",
+      "text": "epinf"
+    },
+    {
+      "name": "eqs",
+      "text": "eqs"
+    },
+    {
+      "name": "ew",
+      "text": "ew"
+    },
+    {
+      "name": "fiscal_",
+      "text": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null, 
+  "variables": [
+    {
+      "name": "a",
+      "text": "a"
+    },
+    {
+      "name": "b",
+      "text": "b"
+    },
+    {
+      "name": "c",
+      "text": "c"
+    },
+    {
+      "name": "ec",
+      "text": "ec"
+    },
+    {
+      "name": "eg",
+      "text": "eg"
+    },
+    {
+      "name": "epinfma",
+      "text": "epinfma"
+    },
+    {
+      "name": "er",
+      "text": "er"
+    },
+    {
+      "name": "ewma",
+      "text": "ewma"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "g",
+      "text": "g"
+    },
+    {
+      "name": "inflation",
+      "text": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "inflationql",
+      "text": "inflationql"
+    },
+    {
+      "name": "inflationql2",
+      "text": "inflationql2"
+    },
+    {
+      "name": "inflationqls",
+      "text": "inflationqls"
+    },
+    {
+      "name": "interest",
+      "text": "interest"
+    },
+    {
+      "name": "inve",
+      "text": "inve"
+    },
+    {
+      "name": "k",
+      "text": "k"
+    },
+    {
+      "name": "kp",
+      "text": "kp"
+    },
+    {
+      "name": "lab",
+      "text": "lab"
+    },
+    {
+      "name": "mc",
+      "text": "mc"
+    },
+    {
+      "name": "newv_long",
+      "text": "newv_long"
+    },
+    {
+      "name": "newv_short",
+      "text": "newv_short"
+    },
+    {
+      "name": "nw",
+      "text": "nw"
+    },
+    {
+      "name": "output",
+      "text": "output"
+    },
+    {
+      "name": "outputgap",
+      "text": "outputgap"
+    },
+    {
+      "name": "pinf",
+      "text": "pinf"
+    },
+    {
+      "name": "pinf4",
+      "text": "pinf4"
+    },
+    {
+      "name": "pk",
+      "text": "pk"
+    },
+    {
+      "name": "prem",
+      "text": "prem"
+    },
+    {
+      "name": "qs",
+      "text": "qs"
+    },
+    {
+      "name": "r",
+      "text": "r"
+    },
+    {
+      "name": "rk",
+      "text": "rk"
+    },
+    {
+      "name": "rr",
+      "text": "rr"
+    },
+    {
+      "name": "spinf",
+      "text": "spinf"
+    },
+    {
+      "name": "sw",
+      "text": "sw"
+    },
+    {
+      "name": "w",
+      "text": "w"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "zcap",
+      "text": "zcap"
+    }
+  ]
+}
