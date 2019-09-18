@@ -390,7 +390,7 @@ Sss = taukss*rkss*kss + taulss*lss*wss + taucss*css - gcss - zss;
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
 
-thispath = cd;                                                           
+thispath = pwd;                                                           
 cd('..');                                                                
 load policy_param.mat;                                                   
 for i=1:33                                                               
