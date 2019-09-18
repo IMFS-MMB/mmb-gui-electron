@@ -59,7 +59,7 @@ scale_Y XI GAMMA KAPPA ALPHA NU PHI_HEAD PHI_CORE PHI_COMM RHO_Z RHO_OMEGA RHO_A
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           
+thispath = pwd;                                                           
 cd('..');                                                                
 load policy_param.mat;                                                   
 for i=1:33                                                               

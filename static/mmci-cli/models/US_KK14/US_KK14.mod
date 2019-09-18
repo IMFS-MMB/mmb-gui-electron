@@ -150,7 +150,7 @@ b_SS    = 1/(1-1/beta)*(tr_SS+cg_SS-tax_SS);
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           
+thispath = pwd;                                                           
 cd('..');                                                                
 load policy_param.mat;                                                   
 for i=1:33                                                               
