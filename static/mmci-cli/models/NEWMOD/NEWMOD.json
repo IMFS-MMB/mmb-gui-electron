@@ -1,11 +1,11 @@
 {
   "$schema": "../../schemas/model.schema.json",
-  "name": "NK_BGG99",
+  "name": "NEWMO2",
   "capabilities": {
-    "fiscal_shock": false,
-    "inflation": false,
+    "fiscal_shock": true,
+    "inflation": true,
     "interest": true,
-    "mp_shock": false,
+    "mp_shock": true,
     "output": true,
     "outputgap": true,
     "rules": [
@@ -18,10 +18,10 @@
       10,
       11
     ],
-    "unconditional_variances": true
+    "unconditional_variances": null
   },
   "description": {
-    "ac_ref": "Bernanke et al. (1999)",
+    "ac_ref": "Bla et al. (3000)",
     "paper_title": "The financial accelerator in a quantitative business",
     "journal": "Taylor, J. B., Woodford, M. (Eds.), Handbook of Macroeconomics Volume 1, pp. 1341-1393",
     "replicants_name": "S. Schmidt",
@@ -189,16 +189,8 @@
       "text": "qH"
     },
     {
-      "name": "qHf",
-      "text": "qHf"
-    },
-    {
       "name": "r_kH",
       "text": "r_kH"
-    },
-    {
-      "name": "r_kHf",
-      "text": "r_kHf"
     },
     {
       "name": "r_nH",
@@ -209,20 +201,12 @@
       "text": "rH"
     },
     {
-      "name": "rHf",
-      "text": "rHf"
-    },
-    {
       "name": "xH",
       "text": "xH"
     },
     {
       "name": "yH",
       "text": "yH"
-    },
-    {
-      "name": "yHf",
-      "text": "yHf"
     }
   ]
 }

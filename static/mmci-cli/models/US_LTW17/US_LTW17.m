@@ -1199,7 +1199,7 @@ M_.params( 125 ) = M_.params(87)*M_.params(115);
 TCss = M_.params( 125 );
 M_.params( 126 ) = M_.params(87)*M_.params(115)+M_.params(86)*M_.params(103)*M_.params(113)+M_.params(97)*M_.params(85)*M_.params(109)-M_.params(119)-M_.params(117);
 Sss = M_.params( 126 );
-thispath = cd;                                                           
+thispath = pwd;                                                           
 cd('..');                                                                
 load policy_param.mat;                                                   
 for i=1:33                                                               

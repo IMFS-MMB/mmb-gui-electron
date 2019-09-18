@@ -68,7 +68,8 @@ rho_pi rho_y g_o_y rho_z rho_nu rho_mu rho_a rho_g eta_R rho_R;
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           
+%thispath = pwd;                                                           
+thispath = pwd;                                                           
 cd('..');                                                                
 load policy_param.mat;                                                   
 for i=1:33                                                               

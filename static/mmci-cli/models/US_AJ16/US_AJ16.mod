@@ -229,7 +229,7 @@ s_meas       =  0.148;
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           
+thispath = pwd;                                                           
 cd('..');                                                                
 load policy_param.mat;                                                   
 for i=1:33                                                               
