@@ -21,7 +21,8 @@ var ewma epinfma  mc zcap rk k pk
 	   outputgap output fispol neww;         //*
 //**************************************************************************
 
-varexo  ea eb eqs  em  epinf ew
+varexo  ea eb eqs  epinf ew
+//em
 //**************************************************************************
 // Modelbase Shocks                                                      //*
        interest_ fiscal_;                                                //*
@@ -261,8 +262,8 @@ var fiscal_;
 stderr 0.4635;
 var eqs;
 stderr 0.3959;
-var em;
-stderr 0.2005;
+//var em;
+//stderr 0.2005;
 var epinf;
 stderr 0.1852;
 var ew;
