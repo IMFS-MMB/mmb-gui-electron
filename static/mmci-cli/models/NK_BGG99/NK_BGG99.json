@@ -2,10 +2,10 @@
   "$schema": "../../schemas/model.schema.json",
   "name": "NK_BGG99",
   "capabilities": {
-    "fiscal_shock": true,
-    "inflation": true,
+    "fiscal_shock": false,
+    "inflation": false,
     "interest": true,
-    "mp_shock": true,
+    "mp_shock": false,
     "output": true,
     "outputgap": true,
     "rules": [

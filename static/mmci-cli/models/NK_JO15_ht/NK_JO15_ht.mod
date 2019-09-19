@@ -53,7 +53,7 @@ delta sigma_omega oomega_2 rho rho_star phi_pi phi_pi_star phi_x phi_x_star varr
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           
+thispath = pwd;                                                           
 cd('..');                                                                
 load policy_param.mat;                                                   
 for i=1:33                                                               

@@ -1,0 +1,473 @@
+{
+  "$schema": "../../schemas/model.schema.json",
+  "name": "US_LTW17gz",
+  "capabilities": {
+    "fiscal_shock": true,
+    "inflation": true,
+    "interest": true,
+    "mp_shock": true,
+    "output": true,
+    "outputgap": true,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Leeper, Traum & Walker (2017)",
+    "paper_title": "Clearing Up the Fiscal Multiplier Morass",
+    "journal": "American Economic Review 2017, 107(8): 2409–2454",
+    "replicants_name": "Balint Tatar",
+    "pub_date": "2017",
+    "keywords": [],
+    "description": "The version with different fiscal rule",
+    "category": "Estimated US model",
+    "authors": [
+      "Eric M. Leeper",
+      "Nora Traum",
+      "Todd B. Walker"
+    ]
+  },
+  "msr": [
+    "0.756483804459602",
+    "0",
+    "0",
+    "0",
+    "(1-0.756483804459602)*1.142492263502070",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "(1-0.756483804459602)*0.178225311630840*4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "euz",
+      "text": "euz"
+    },
+    {
+      "name": "eua",
+      "text": "eua"
+    },
+    {
+      "name": "eub",
+      "text": "eub"
+    },
+    {
+      "name": "eum",
+      "text": "eum"
+    },
+    {
+      "name": "eui",
+      "text": "eui"
+    },
+    {
+      "name": "euw",
+      "text": "euw"
+    },
+    {
+      "name": "eup",
+      "text": "eup"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    },
+    {
+      "name": "fiscal_",
+      "text": "fiscal_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "cs",
+      "text": "cs"
+    },
+    {
+      "name": "cn",
+      "text": "cn"
+    },
+    {
+      "name": "R",
+      "text": "R"
+    },
+    {
+      "name": "i",
+      "text": "i"
+    },
+    {
+      "name": "k",
+      "text": "k"
+    },
+    {
+      "name": "l",
+      "text": "l"
+    },
+    {
+      "name": "v",
+      "text": "v"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "gc",
+      "text": "gc"
+    },
+    {
+      "name": "c",
+      "text": "c"
+    },
+    {
+      "name": "q",
+      "text": "q"
+    },
+    {
+      "name": "rk",
+      "text": "rk"
+    },
+    {
+      "name": "w",
+      "text": "w"
+    },
+    {
+      "name": "pi",
+      "text": "pi"
+    },
+    {
+      "name": "b",
+      "text": "b"
+    },
+    {
+      "name": "sb",
+      "text": "sb"
+    },
+    {
+      "name": "tauk",
+      "text": "tauk"
+    },
+    {
+      "name": "taul",
+      "text": "taul"
+    },
+    {
+      "name": "tauc",
+      "text": "tauc"
+    },
+    {
+      "name": "r",
+      "text": "r"
+    },
+    {
+      "name": "z",
+      "text": "z"
+    },
+    {
+      "name": "mc",
+      "text": "mc"
+    },
+    {
+      "name": "kbar",
+      "text": "kbar"
+    },
+    {
+      "name": "lambda",
+      "text": "lambda"
+    },
+    {
+      "name": "Pb",
+      "text": "Pb"
+    },
+    {
+      "name": "cstar",
+      "text": "cstar"
+    },
+    {
+      "name": "pil",
+      "text": "pil"
+    },
+    {
+      "name": "rL",
+      "text": "rL"
+    },
+    {
+      "name": "S",
+      "text": "S"
+    },
+    {
+      "name": "rb",
+      "text": "rb"
+    },
+    {
+      "name": "Tk",
+      "text": "Tk"
+    },
+    {
+      "name": "Tl",
+      "text": "Tl"
+    },
+    {
+      "name": "Tc",
+      "text": "Tc"
+    },
+    {
+      "name": "cobs",
+      "text": "cobs"
+    },
+    {
+      "name": "iobs",
+      "text": "iobs"
+    },
+    {
+      "name": "gcobs",
+      "text": "gcobs"
+    },
+    {
+      "name": "wobs",
+      "text": "wobs"
+    },
+    {
+      "name": "bobs",
+      "text": "bobs"
+    },
+    {
+      "name": "Robs",
+      "text": "Robs"
+    },
+    {
+      "name": "Piobs",
+      "text": "Piobs"
+    },
+    {
+      "name": "Lobs",
+      "text": "Lobs"
+    },
+    {
+      "name": "ugc",
+      "text": "ugc"
+    },
+    {
+      "name": "uz",
+      "text": "uz"
+    },
+    {
+      "name": "ua",
+      "text": "ua"
+    },
+    {
+      "name": "ub",
+      "text": "ub"
+    },
+    {
+      "name": "um",
+      "text": "um"
+    },
+    {
+      "name": "ui",
+      "text": "ui"
+    },
+    {
+      "name": "uw",
+      "text": "uw"
+    },
+    {
+      "name": "up",
+      "text": "up"
+    },
+    {
+      "name": "csf",
+      "text": "csf"
+    },
+    {
+      "name": "cnf",
+      "text": "cnf"
+    },
+    {
+      "name": "if",
+      "text": "if"
+    },
+    {
+      "name": "kf",
+      "text": "kf"
+    },
+    {
+      "name": "lf",
+      "text": "lf"
+    },
+    {
+      "name": "vf",
+      "text": "vf"
+    },
+    {
+      "name": "yf",
+      "text": "yf"
+    },
+    {
+      "name": "gcf",
+      "text": "gcf"
+    },
+    {
+      "name": "cf",
+      "text": "cf"
+    },
+    {
+      "name": "qf",
+      "text": "qf"
+    },
+    {
+      "name": "rkf",
+      "text": "rkf"
+    },
+    {
+      "name": "wf",
+      "text": "wf"
+    },
+    {
+      "name": "bf",
+      "text": "bf"
+    },
+    {
+      "name": "sbf",
+      "text": "sbf"
+    },
+    {
+      "name": "taukf",
+      "text": "taukf"
+    },
+    {
+      "name": "taulf",
+      "text": "taulf"
+    },
+    {
+      "name": "taucf",
+      "text": "taucf"
+    },
+    {
+      "name": "rf",
+      "text": "rf"
+    },
+    {
+      "name": "zf",
+      "text": "zf"
+    },
+    {
+      "name": "mcf",
+      "text": "mcf"
+    },
+    {
+      "name": "kbarf",
+      "text": "kbarf"
+    },
+    {
+      "name": "lambdaf",
+      "text": "lambdaf"
+    },
+    {
+      "name": "cstarf",
+      "text": "cstarf"
+    },
+    {
+      "name": "Sf",
+      "text": "Sf"
+    },
+    {
+      "name": "rbf",
+      "text": "rbf"
+    },
+    {
+      "name": "Tkf",
+      "text": "Tkf"
+    },
+    {
+      "name": "Tlf",
+      "text": "Tlf"
+    },
+    {
+      "name": "Tcf",
+      "text": "Tcf"
+    },
+    {
+      "name": "cobsf",
+      "text": "cobsf"
+    },
+    {
+      "name": "iobsf",
+      "text": "iobsf"
+    },
+    {
+      "name": "gcobsf",
+      "text": "gcobsf"
+    },
+    {
+      "name": "wobsf",
+      "text": "wobsf"
+    },
+    {
+      "name": "bobsf",
+      "text": "bobsf"
+    },
+    {
+      "name": "Lobsf",
+      "text": "Lobsf"
+    },
+    {
+      "name": "inflation",
+      "text": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "interest"
+    },
+    {
+      "name": "output",
+      "text": "output"
+    },
+    {
+      "name": "outputgap",
+      "text": "outputgap"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    }
+  ]
+}
