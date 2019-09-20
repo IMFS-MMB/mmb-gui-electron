@@ -8,10 +8,10 @@ app.configure(rest()
   .axios(axios));
 
 export default async function compare(ctx) {
-  const models = ctx.rootGetters['settings/models'];
-  const policyRules = ctx.rootGetters['settings/policyRules'];
-  const funcs = ctx.rootGetters['settings/outputVars']; // todo fix naming (funcs vs outputVars)
-  const shocks = ctx.rootGetters['settings/shocks'];
+  const models = ctx.rootGetters['options/models'];
+  const policyRules = ctx.rootGetters['options/policyRules'];
+  const funcs = ctx.rootGetters['options/outputVars']; // todo fix naming (funcs vs outputVars)
+  const shocks = ctx.rootGetters['options/shocks'];
 
   const query = {
     model: {

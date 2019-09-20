@@ -9,14 +9,12 @@ $theme-colors: (
 @import '~font-awesome/css/font-awesome.css';
 
 @mixin scrolling-shadows($background-color: #ffffff, $shadow-intensity: 0.2, $shadow-color: rgb(0,0,0), $cover-size: 40px, $shadow-size: 6px) {
-  background:
-          // Shadow covers
-          linear-gradient($background-color 30%, rgba($background-color,0)),
-          linear-gradient(rgba($background-color,0), $background-color 70%) 0 100%,
-
+  background: // Shadow covers
+          linear-gradient($background-color 30%, rgba($background-color, 0)),
+          linear-gradient(rgba($background-color, 0), $background-color 70%) 0 100%,
             // Shadows
-          radial-gradient(farthest-side at 50% 0, rgba($shadow-color,$shadow-intensity), rgba($shadow-color,0)),
-          radial-gradient(farthest-side at 50% 100%, rgba($shadow-color,$shadow-intensity), rgba($shadow-color,0)) 0 100%;
+          radial-gradient(farthest-side at 50% 0, rgba($shadow-color, $shadow-intensity), rgba($shadow-color, 0)),
+          radial-gradient(farthest-side at 50% 100%, rgba($shadow-color, $shadow-intensity), rgba($shadow-color, 0)) 0 100%;
   background-repeat: no-repeat;
   background-color: $background-color;
   background-size: 100% $cover-size, 100% $cover-size, 100% $shadow-size, 100% $shadow-size;
@@ -26,40 +24,43 @@ $theme-colors: (
 }
 
 body {
-  font-family: Roboto,sans-serif;
+  font-family: Roboto, sans-serif;
   font-weight: 300;
   color: #6a7786;
-  background:#444;
+  background: #444;
 }
 
-.wrapper {
+.app-wrapper {
   $wrapper-margin: 1rem;
 
-  padding:2rem 4rem;
-  background:#fff;
+  padding: 2rem 4rem;
+  background: #fff;
   margin: $wrapper-margin;
-  width: calc(  100% - 2 * #{$wrapper-margin});
+  width: calc(100% - 2 * #{$wrapper-margin});
   border-radius: 10px;
 }
 
 .mmb-branding a {
-  display:flex;
-  align-items:center;
+  display: flex;
+  align-items: center;
   justify-content: flex-end;
-  text-decoration:none;
-  color:#000;
-  font-family:Rajdhani, sans-serif;
-  font-weight:500;
+  text-decoration: none;
+  color: #000;
+  font-family: Rajdhani, sans-serif;
+  font-weight: 500;
   font-size: 1.7rem;
   line-height: 1.9rem;
+
   .site-logo {
-    margin:0 .8rem 0 0;
+    margin: 0 .8rem 0 0;
+
     img {
-      height:70px;
+      height: 70px;
     }
   }
+
   .site-title {
-    margin:0;
+    margin: 0;
   }
 }
 
@@ -67,81 +68,110 @@ h1 {
   font-size: 2rem;
 }
 
+.spinner-box {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .ctrl-set {
   .ctrl-set-header {
     padding: 0.75rem 0;
+
     .ctrl-set-title {
       font-size: 1.4rem;
       display: inline-block;
+
       small {
         font-size: 0.8rem;
-        margin-left:0.5rem;
+        margin-left: 0.5rem;
       }
+
       .ctrl-set-clear {
         font-size: 0.8rem;
         font-weight: bold;
 
       }
     }
+
     .ctrl-search {
-      float:right;
+      float: right;
     }
   }
-  .ctrl-set-models .ctrl-set-header {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+
+  .ctrl-set-models {
+    .ctrl-set-listing {
+      height: 220px;
+    }
+
+    .ctrl-set-header {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    }
   }
+
   .ctrl-set-body {
     .category-title {
       font-weight: bold;
       font-size: 0.8rem;
       line-height: 1.2;
       min-height: 2rem;
-      margin:0.3rem 0 0.3rem 0;
+      margin: 0.3rem 0 0.3rem 0;
       display: flex;
       align-items: flex-end;
     }
+
     .ctrl-set-listing {
-      padding:0.5rem 0;
+      padding: 0.5rem 0;
       position: relative;
-      max-height:220px;
+      height: 220px;
       border-top: 1px solid rgba(0, 0, 0, 0.125);
       overflow-y: scroll;
       @include scrolling-shadows;
+
       &::-webkit-scrollbar {
         -webkit-appearance: none;
         width: 7px;
       }
+
       &::-webkit-scrollbar-thumb {
         border-radius: 4px;
-        background-color: rgba(0,0,0,.5);
-        -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+        background-color: rgba(0, 0, 0, .5);
+        -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
       }
+
       .custom-checkbox {
-        padding:0;
+        padding: 0;
         position: relative;
+
         &:hover {
           background: rgba(53, 110, 180, 0.1);
         }
+
         &.disabled {
           .custom-control-label {
             cursor: not-allowed;
-            color:#c3cad0;
+            color: #c3cad0;
           }
+
           &:hover {
-            background:transparent;
+            background: transparent;
           }
         }
       }
+
       .custom-control-label {
         display: block;
         font-size: 0.9rem;
-        padding:2px 5px 2px 30px;
+        padding: 2px 5px 2px 30px;
         cursor: pointer;
+
         &:before, &:after {
           left: 5px;
         }
       }
     }
+
     .ctrl-set-models .ctrl-set-listing {
       height: 190px;
     }
@@ -159,19 +189,22 @@ h1 {
 .comparison-set-header {
   padding: 0.75rem 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+
   .comparison-set-title {
     font-size: 1.4rem;
+
     small {
       font-size: 0.8rem;
-      margin-left:0.5rem;
+      margin-left: 0.5rem;
     }
   }
 }
 
-input+label {
+input + label {
   transition: opacity .15s ease-in-out;
 }
-input[disabled]+label {
+
+input[disabled] + label {
   opacity: .5;
 }
 

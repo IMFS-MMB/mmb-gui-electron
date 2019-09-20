@@ -1,5 +1,5 @@
 {
-  "$schema": "../../schemas/model.schema.json",
+  "$schema": "model",
   "name": "EA_CW05fm",
   "capabilities": {
     "fiscal_shock": false,

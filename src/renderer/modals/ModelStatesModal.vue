@@ -3,7 +3,7 @@
         <h5 slot="modal-header" class="modal-title">Select States</h5>
 
         <b-tabs content-class="mt-3" :lazy="true">
-            <b-tab v-for="(model, index) in alModels" :active="index === 0" :title="model.name">
+            <b-tab v-for="(model, index) in alModels" :active="index === 0" :key="model.name" :title="model.name">
                 <ModelStates :model="model"/>
             </b-tab>
         </b-tabs>
@@ -17,7 +17,7 @@
   export default {
     components: { ModelStates },
     computed: {
-      ...mapGetters('settings', ['alModels']),
+      ...mapGetters('options', ['alModels']),
     },
     methods: {
       hideModal() {

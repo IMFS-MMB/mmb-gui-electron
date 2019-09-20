@@ -1,13 +1,19 @@
 <template>
     <div class="tree-item">
         <div class="tree-item-label" :class="{bold: isFolder}" @click="onItemClick">
-            {{ item.name }}
+            <span>
+                <i v-if="isActive" class="tree-item-active-icon fa fa-chevron-right"></i>
+                {{ item.name }}
+            </span>
+
+
 
             <!--              <span v-if="isFolder">-->
             <!--                <i v-if="isOpen" class="fa fa-chevron-down"></i>-->
             <!--                <i v-else class="fa fa-chevron-right"></i>-->
             <!--            </span>-->
-            <div class="tree-item-path-container">
+
+            <div >
                 <div class="tree-item-path" v-for="n in depth"
                      :class="{ open: isOpen, closed: !isOpen, last: last }"
                      :style="{ left: `calc(-1.5em + ${n - 1} * (-1em + 1px))` }">
@@ -22,6 +28,7 @@
                     :key="index"
                     :depth="depth + 1"
                     :item="child"
+                    :active-item="activeItem"
                     :last="index === (item.children.length - 1)"
                     @item="$emit('item', $event)"
             ></TreeItem>
@@ -37,6 +44,9 @@
         type: Number,
       },
       item: {
+        type: Object,
+      },
+      activeItem: {
         type: Object,
       },
       last: {
@@ -56,6 +66,9 @@
         return {
           open: this.isOpen,
         };
+      },
+      isActive() {
+        return this.item && this.item === this.activeItem;
       },
     },
     methods: {
@@ -79,6 +92,11 @@
         cursor: pointer;
         white-space: nowrap;
     }
+
+/*    .tree-item-active-icon {
+        position: absolute;
+        left: -24px;
+    }*/
 
     .tree-item-path {
         height: 100%;

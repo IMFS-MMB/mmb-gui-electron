@@ -11,23 +11,27 @@
 
         <div class="ctrl-set-body">
             <b-form-checkbox-group class="ctrl-set-listing" stacked v-model="selection">
-                <b-form-checkbox v-if="$isElectron" class="cb-user-rule" :key="1" :value="{ id: 1 }" :disabled="isRuleDisabled(1)">
-                    User specified rule
-                    <a href="javascript:void(0)" v-b-modal.userSpecifiedRuleModal>(edit)</a>
-                </b-form-checkbox>
-                <b-form-checkbox :key="2" :value="{ id: 2 }" :disabled="isRuleDisabled(2)">
-                    <span class="rule-caption">Model specific rule</span>
-                </b-form-checkbox>
+                <template v-if="rules.length">
+                    <b-form-checkbox v-if="$isElectron" class="cb-user-rule" :key="1" :value="{ id: 1 }" :disabled="isRuleDisabled(1)">
+                        User specified rule
+                        <a href="javascript:void(0)" v-b-modal.userSpecifiedRuleModal>(edit)</a>
+                    </b-form-checkbox>
+                    <b-form-checkbox :key="2" :value="{ id: 2 }" :disabled="isRuleDisabled(2)">
+                        <span class="rule-caption">Model specific rule</span>
+                    </b-form-checkbox>
+                    <template v-for="(rule, index) in rules">
+                        <div :id="'cb-rule-' + rule.id">
+                            <b-form-checkbox ref="cb" :value="rule" :disabled="isRuleDisabled(rule.id)">
+                                {{ rule && rule.description && rule.description.ac_ref }}
+                            </b-form-checkbox>
 
-                <template v-for="(rule, index) in rules">
-                    <div :id="'cb-rule-' + rule.id">
-                        <b-form-checkbox ref="cb" :value="rule" :disabled="isRuleDisabled(rule.id)">
-                            {{ rule && rule.description && rule.description.ac_ref }}
-                        </b-form-checkbox>
-
-                    </div>
-                    <RulePopover :rule="rule"/>
+                        </div>
+                        <RulePopover :rule="rule"/>
+                    </template>
                 </template>
+                <div class="spinner-box" v-if="!rules.length">
+                    <b-spinner variant="primary" type="grow" label="Spinning"></b-spinner>
+                </div>
             </b-form-checkbox-group>
         </div>
 
@@ -49,7 +53,7 @@
     },
     computed: {
       ...mapGetters('rules', ['rules']),
-      ...mapGetters('settings', {
+      ...mapGetters('options', {
         isRuleDisabled: 'isRuleDisabled',
         selectedIndex: 'numPolicyRules',
         policyRuleSelection: 'policyRules',
@@ -64,7 +68,7 @@
       },
     },
     methods: {
-      ...mapMutations('settings', {
+      ...mapMutations('options', {
         clear: 'clearPolicyRules',
         setPolicyRules: 'setPolicyRules',
       }),

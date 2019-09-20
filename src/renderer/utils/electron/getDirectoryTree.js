@@ -11,7 +11,7 @@ function foldersFirst(items) {
 }
 
 // adoption from https://gist.github.com/sdras/f5665c5bcd98b48b4a3a9aed1312fd37
-export default function getDirectoryTree(base) {
+export default function getDirectoryTree(base, filter = () => true) {
   function recurse(filename) {
     const stats = fs.lstatSync(filename);
     const info = {
@@ -22,7 +22,9 @@ export default function getDirectoryTree(base) {
     if (stats.isDirectory()) {
       info.type = 'folder';
 
-      const children = fs.readdirSync(filename).map(child => recurse(`${filename}/${child}`));
+      const children = fs.readdirSync(filename)
+        .filter(filename => filter(filename))
+        .map(child => recurse(`${filename}/${child}`));
 
       info.children = foldersFirst(children);
     } else {

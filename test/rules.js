@@ -1,8 +1,12 @@
+// eslint-disable-next-line no-unused-vars
 /* global describe, it, before */
 
 import { assert } from 'chai';
-import ajv from './utils/ajv';
 import rules from './utils/rules';
+
+import { schemasFolder } from '../src/config/paths';
+import loadAjvWithSchemas from '../src/worker/util/ajv';
+const ajv = loadAjvWithSchemas(schemasFolder);
 
 function ruleTests(rule) {
   describe(`${rule.name}`, () => {

@@ -3,7 +3,7 @@
         <div class="editor-container d-flex flex-row align-items-stretch" style="max-height: 60vh;">
             <div class="flex-grow-1 d-flex flex-column align-items-stretch" style="width: 100%;">
                 <div class="flex-shrink-0 mb-3 d-flex flex-row align-items-center">
-                    <h4 class="mr-5 mb-0 ml-4">Current file: {{file ? file.name : 'none' }}</h4>
+<!--                    <h4 class="mr-5 mb-0 ml-4">Current file: {{ file ? file.name : 'none' }}</h4>-->
                     <span class="flex-grow-1"></span>
                     <b-btn variant="primary">Save</b-btn>
                 </div>
@@ -31,12 +31,12 @@
   import fs from 'fs';
   import path from 'path';
 
-  import MonacoEditor from '../MonacoEditor';
+  import MonacoEditor from './MonacoEditor';
   import DirectoryView from './DirectoryView/DirectoryView';
   import ModelsDropdown from './ModelsDropdown';
   import ModelsList from './ModelsList';
 
-  import { modelsFolder } from '../../../../config/paths';
+  import { modelsFolder } from '../../../config/paths';
 
   export default {
     components: {

@@ -1,11 +1,15 @@
+// eslint-disable-next-line no-unused-vars
 /* global describe, it, before */
 
 import { assert } from 'chai';
-import ajv from './utils/ajv';
 import models from './utils/models';
 import getBackend from './utils/backend';
-import { MODEL_RULE } from '../config/constants';
+import { MODEL_RULE } from '../src/config/constants';
 import getTestScript from './utils/matlab-code';
+
+import { schemasFolder } from '../src/config/paths';
+import loadAjvWithSchemas from '../src/worker/util/ajv';
+const ajv = loadAjvWithSchemas(schemasFolder);
 
 async function runSimulation(backend, models = [], rules = [], output = [], shocks = []) {
   const code = getTestScript(models, rules, output, shocks);

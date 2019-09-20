@@ -1,5 +1,5 @@
 {
-  "$schema": "../../schemas/model.schema.json",
+  "$schema": "model",
   "name": "EA_BF17",
   "capabilities": {
     "fiscal_shock": false,

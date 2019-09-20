@@ -19,6 +19,7 @@ function loadFilter(filter, name) {
   } else if (typeof filter === 'function') {
     return filter;
   }
+
   throw new Error(`[Vuex Electron] Filter "${name}" should be Array or Function. Please, read the docs.`);
 }
 

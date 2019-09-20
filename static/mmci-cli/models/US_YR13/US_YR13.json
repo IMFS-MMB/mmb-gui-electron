@@ -1,5 +1,5 @@
 {
-  "$schema": "../../schemas/model.schema.json",
+  "$schema": "model",
   "name": "US_YR13",
   "capabilities": {
     "fiscal_shock": true,
@@ -101,7 +101,7 @@
       "text": "interest_"
     }
   ],
-  "al_info": null, 
+  "al_info": null,
   "variables": [
     {
       "name": "a",

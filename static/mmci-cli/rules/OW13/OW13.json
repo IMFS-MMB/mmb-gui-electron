@@ -1,5 +1,5 @@
 {
-  "$schema": "../../schemas/rule.schema.json",
+  "$schema": "rule",
   "id": 9,
   "name": "OW13",
   "coefficients": [

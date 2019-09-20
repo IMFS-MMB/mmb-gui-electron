@@ -1,5 +1,5 @@
 {
-  "$schema": "../../schemas/model.schema.json",
+  "$schema": "model",
   "name": "G7_TAY93",
   "capabilities": {
     "fiscal_shock": true,

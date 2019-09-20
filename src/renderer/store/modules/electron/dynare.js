@@ -1,11 +1,6 @@
 import { remote } from 'electron'; // eslint-disable-line
-import { promisify } from 'util';
-import _glob from 'glob';
-import getDynareVersion from '@/utils/electron/get-dynare-version';
 import path from 'path';
-import { dynare } from '../../../../../config/paths';
-
-const glob = promisify(_glob);
+import worker from '../../../../worker';
 
 const { dialog } = remote;
 
@@ -14,7 +9,6 @@ const namespaced = true;
 const state = {
   dynares: [],
   selectedIndex: null,
-  scanning: false,
 };
 
 const getters = {
@@ -26,9 +20,6 @@ const getters = {
   },
   selected(state) {
     return state.dynares[state.selectedIndex];
-  },
-  scanning(state) {
-    return state.scanning;
   },
 };
 
@@ -64,9 +55,6 @@ const mutations = {
   select(state, index) {
     state.selectedIndex = index;
   },
-  setScanning(state, bool) {
-    state.scanning = bool;
-  },
 };
 
 const actions = {
@@ -74,28 +62,12 @@ const actions = {
     commit('remove', getters.selected);
   },
   async scan({ commit }) {
-    commit('setScanning', true);
-
     try {
-      // eslint-disable-next-line no-restricted-syntax
-      for (const pattern of dynare) {
-        // eslint-disable-next-line no-await-in-loop
-        const dynares = await glob(pattern, {
-          absolute: true,
-          cwd: '/',
-          silent: true,
-          strict: false,
-        });
+      const dynares = await worker.scanForDynare();
 
-        dynares.forEach(dynare => commit('add', {
-          path: dynare,
-          version: getDynareVersion(dynare),
-        }));
-      }
+      commit('add', dynares);
     } catch (e) {
-      console.warn(e);
-    } finally {
-      commit('setScanning', false);
+      // console.warn(e);
     }
   },
   find({ commit, state }) {
@@ -115,7 +87,7 @@ const actions = {
 
       commit('add', {
         path,
-        version: getDynareVersion(path),
+        version: await worker.getDynareVersion(path),
       });
       commit('select', state.dynares.indexOf(path));
     }));

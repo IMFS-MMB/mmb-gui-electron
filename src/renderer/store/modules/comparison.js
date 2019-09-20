@@ -1,17 +1,15 @@
 import get from 'lodash.get';
 import pick from 'lodash.pick';
 import deepClone from 'lodash.clonedeep';
-import { isElectron } from '../../../constants';
-import captureBackendException from '../../utils/electron/capture-backend-exception';
-import normalizeError from '../../utils/electron/normalize-error';
+import captureBackendException from './compare/electron/capture-backend-exception';
+import normalizeError from './compare/electron/normalize-error';
 import chunkArray from '../../utils/chunkArray';
-
-const { default: compare } = isElectron ? require('./comparison.compare.electron') : require('./comparison.compare.web');
+import compare from './compare';
 
 const namespaced = true;
 
 const state = {
-  settings: {},
+  options: {},
   colsPerRow: 4,
   show: false,
   inProgress: false,
@@ -51,7 +49,7 @@ function getChartRows(allData, variables, titleFactory, dataSelector) {
 }
 
 function getShockChartRows(state) {
-  const { shocks, variables } = state.settings;
+  const { shocks, variables } = state.options;
 
   const result = shocks.map((shock) => {
     const rows = getChartRows(
@@ -68,13 +66,13 @@ function getShockChartRows(state) {
 }
 
 function getACChartRows(state) {
-  if (!state.settings.plotAutocorrelation) {
+  if (!state.options.plotAutocorrelation) {
     return [];
   }
 
   const rows = getChartRows(
     state.data,
-    state.settings.variables,
+    state.options.variables,
     variable => `Autocorrelation - ${variable.text}`,
     (data, variable) => get(data, ['AC', variable.name]),
   );
@@ -119,15 +117,15 @@ const getters = {
     ];
   },
   varTable(state) {
-    if (!state.settings.plotVariance) {
+    if (!state.options.plotVariance) {
       return null;
     }
 
     return state.data.map((d, i) => {
-      const model = state.settings.models[i];
+      const model = state.options.models[i];
 
       const vars = model.capabilities.unconditional_variances
-        ? pick(d.data.VAR, state.settings.variables.map(v => v.name))
+        ? pick(d.data.VAR, state.options.variables.map(v => v.name))
         : null;
 
       return {
@@ -139,8 +137,8 @@ const getters = {
 };
 
 const mutations = {
-  start(state, settings) {
-    state.settings = settings;
+  start(state, options) {
+    state.options = options;
     state.stdout = [];
     state.stderr = [];
     state.data = [];
@@ -175,9 +173,9 @@ const mutations = {
 
 const actions = {
   async compare(ctx) {
-    const settings = deepClone(ctx.rootState.settings);
+    const options = deepClone(ctx.rootState.options);
 
-    ctx.commit('start', settings);
+    ctx.commit('start', options);
 
     let data = [];
 

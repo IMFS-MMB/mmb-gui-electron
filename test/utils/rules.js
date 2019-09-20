@@ -2,7 +2,7 @@
 
 import { join } from 'path';
 import glob from 'glob';
-import { rulesFolder } from '../../config/paths';
+import { rulesFolder } from '../../src/config/paths';
 
 const files = glob.sync('*/*.json', {
   cwd: rulesFolder,

@@ -25,7 +25,7 @@
 
         <b-row><b-col><ChartLegend></ChartLegend></b-col></b-row>
 
-        <ChartRow :class="{'mt-5': index > 0 }" v-for="(chartrow, index) in chartRows" :charts="chartrow"/>
+        <ChartRow :class="{'mt-5': index > 0 }" v-for="(chartrow, index) in chartRows" :key="index" :charts="chartrow"/>
 
         <Variances v-if="varTable && varTable.length" :varTable="varTable"/>
     </b-container>
@@ -59,7 +59,7 @@
     },
     computed: {
       ...mapGetters('comparison', ['varTable', 'inProgress', 'show', 'data', 'chartRows', 'colsPerRow']),
-      ...mapGetters('settings', ['numModels', 'numPolicyRules', 'numShocks']),
+      ...mapGetters('options', ['numModels', 'numPolicyRules', 'numShocks']),
     },
     watch: {
       inProgress(newVal, oldVal) {

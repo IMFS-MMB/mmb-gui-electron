@@ -51,7 +51,7 @@
       };
     },
     computed: {
-      ...mapGetters('settings', ['gain', 'alModelSelected']),
+      ...mapGetters('options', ['gain', 'alModelSelected']),
       model: {
         get() {
           return this.gain;
@@ -62,7 +62,7 @@
       },
     },
     methods: {
-      ...mapMutations('settings', ['setGain']),
+      ...mapMutations('options', ['setGain']),
     },
   };
 </script>

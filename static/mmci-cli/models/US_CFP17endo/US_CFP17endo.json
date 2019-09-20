@@ -1,5 +1,5 @@
 {
-  "$schema": "../../schemas/model.schema.json",
+  "$schema": "model",
   "name": "US_CFP17endo",
   "capabilities": {
     "fiscal_shock": false,

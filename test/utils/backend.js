@@ -1,5 +1,5 @@
-import { create } from '../../src/renderer/utils/electron/interface';
-import { mmbFolder } from '../../config/paths';
+import { create } from '../../src/common/backend/interface';
+import { mmbFolder } from '../../src/config/paths';
 
 export default function getBackend(type = 'octave') {
   if (type === 'octave' && process.env.OCTAVE_PATH) {

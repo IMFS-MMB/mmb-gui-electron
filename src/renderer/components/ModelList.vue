@@ -5,6 +5,9 @@
         </div>
 
         <b-form-checkbox-group class="ctrl-set-listing" stacked v-model="selection">
+            <div class="spinner-box" v-if="!models.length">
+                <b-spinner variant="primary" type="grow" label="Spinning"></b-spinner>
+            </div>
             <template v-for="model in models">
                 <div :id="'cb-wrapper-' + model.name">
                     <b-form-checkbox :value="model" :disabled="isModelDisabled(model)">{{model.name}}</b-form-checkbox>
@@ -32,7 +35,7 @@
       },
     },
     computed: {
-      ...mapGetters('settings', { modelSelection: 'models', isModelDisabled: 'isModelDisabled' }),
+      ...mapGetters('options', { modelSelection: 'models', isModelDisabled: 'isModelDisabled' }),
       selection: {
         get() {
           return this.modelSelection;
@@ -47,8 +50,7 @@
       },
     },
     methods: {
-      ...mapMutations('settings', { setModelSelection: 'setModels' }),
+      ...mapMutations('options', { setModelSelection: 'setModels' }),
     },
   };
 </script>
-

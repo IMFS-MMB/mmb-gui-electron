@@ -33,6 +33,11 @@ function createWindow() {
    * Initial window options
    */
   mainWindow = new BrowserWindow({
+    webPreferences: {
+      nodeIntegration: true,
+      nodeIntegrationInWorker: true,
+    },
+
     x: mainWindowState.x,
     y: mainWindowState.y,
     width: mainWindowState.width,

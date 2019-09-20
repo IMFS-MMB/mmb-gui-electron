@@ -1,7 +1,7 @@
 <template>
     <div v-if="model">
         <b-form-checkbox-group class="ctrl-set-listing" stacked v-model="statesModel">
-            <b-form-checkbox v-for="state in model.al_info.states_long" :value="state">{{state}}</b-form-checkbox>
+            <b-form-checkbox v-for="state in model.al_info.states_long" :key="model.al_info.states_long" :value="state">{{state}}</b-form-checkbox>
         </b-form-checkbox-group>
     </div>
 </template>
@@ -15,7 +15,7 @@
       model: {},
     },
     computed: {
-      ...mapGetters('settings', ['states']),
+      ...mapGetters('options', ['states']),
       statesModel: {
         get() {
           return this.model ? this.states(this.model.name) : [];
@@ -26,7 +26,7 @@
       },
     },
     methods: {
-      ...mapMutations('settings', [
+      ...mapMutations('options', [
         'setStates',
       ]),
     },
