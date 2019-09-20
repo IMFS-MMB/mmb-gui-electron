@@ -1,5 +1,5 @@
 {
-  "$schema": "../../schemas/model.schema.json",
+  "$schema": "model",
   "name": "G2_SIGMA08",
   "capabilities": {
     "fiscal_shock": true,

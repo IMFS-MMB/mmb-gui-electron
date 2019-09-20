@@ -2,7 +2,7 @@
 
 import { join } from 'path';
 import glob from 'glob';
-import { modelsFolder } from '../../config/paths';
+import { modelsFolder } from '../../src/config/paths';
 
 const files = glob.sync('*/*.json', {
   cwd: modelsFolder,

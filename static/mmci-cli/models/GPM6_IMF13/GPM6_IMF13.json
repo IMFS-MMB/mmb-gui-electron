@@ -1,5 +1,5 @@
 {
-  "$schema": "../../schemas/model.schema.json",
+  "$schema": "model",
   "name": "GPM6_IMF13",
   "capabilities": {
     "fiscal_shock": false,

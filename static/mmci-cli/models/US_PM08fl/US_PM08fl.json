@@ -1,5 +1,5 @@
 {
-  "$schema": "../../schemas/model.schema.json",
+  "$schema": "model",
   "name": "US_PM08fl",
   "capabilities": {
     "fiscal_shock": false,

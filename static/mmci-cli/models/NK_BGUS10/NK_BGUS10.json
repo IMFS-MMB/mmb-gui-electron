@@ -1,5 +1,5 @@
 {
-  "$schema": "../../schemas/model.schema.json",
+  "$schema": "model",
   "name": "NK_BGUS10",
   "capabilities": {
     "fiscal_shock": true,

@@ -1,8 +1,8 @@
 <template>
-    <b-container fluid class="wrapper">
+    <b-container fluid class="app-wrapper">
         <OcpHeader/>
 
-        <Editor></Editor>
+        <MalformedDataWarning/>
 
         <b-container fluid class="mt-2">
             <b-row>
@@ -88,18 +88,14 @@
   import Options from '@/components/Options.vue';
 
   import HelpModal from '@/modals/HelpModal.vue';
-  import SettingsModal from '@/modals/SettingsModal.vue';
+  import SettingsModal from '@/modals/settings/SettingsModal.vue';
   import UserSpecifiedRuleModal from '@/modals/UserSpecifiedRuleModal.vue';
   import MatlabOutputModal from '@/modals/MatlabOutputModal.vue';
 
-  import { mapGetters, mapActions } from 'vuex';
-  import Editor from './Editor/Editor';
-
-  import Horizon from './Horizon';
-  import Gain from './Gain';
+  import { mapActions, mapGetters } from 'vuex';
   import { isElectron } from '../../constants';
   import Variables from './Variables';
-  import DirectoryView from './Editor/DirectoryView/DirectoryView';
+  import MalformedDataWarning from './MalformedDataWarning';
 
   const platformComponents = isElectron ? {
     SettingsModal,
@@ -109,11 +105,8 @@
 
   export default {
     components: {
-      Editor,
-      DirectoryView,
+      MalformedDataWarning,
       Variables,
-      Horizon,
-      Gain,
       OcpHeader,
       Models,
       Shocks,
@@ -125,13 +118,15 @@
     },
     computed: {
       ...mapGetters('backends', ['executables']),
-      ...mapGetters('settings', ['compareDisabled']),
+      ...mapGetters('options', ['compareDisabled']),
       ...mapGetters('comparison', {
         showComparison: 'show',
       }),
     },
     methods: {
       ...mapActions('comparison', ['compare']),
+      ...mapActions('models', ['loadModels']),
+      ...mapActions('rules', ['loadRules']),
       startComparison() {
         this.$root.$emit('bv::show::modal', 'matlabOutputModal');
 
@@ -143,6 +138,9 @@
         if (!this.executables || !this.executables.length) {
           this.$root.$emit('bv::show::modal', 'settingsModal');
         }
+
+        this.loadModels();
+        this.loadRules();
       }
     },
   };

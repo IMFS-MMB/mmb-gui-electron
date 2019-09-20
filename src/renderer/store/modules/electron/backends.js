@@ -1,8 +1,8 @@
-import { remote } from 'electron'; // eslint-disable-line
-import { getExecutableInfo, findExecutables } from '@/utils/electron/find-executables';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { remote } from 'electron';
 import { platform } from 'os';
 import path from 'path';
-
+import worker from '../../../../worker';
 const { dialog } = remote;
 
 const namespaced = true;
@@ -10,7 +10,6 @@ const namespaced = true;
 const state = {
   executables: [],
   selectedIndex: null,
-  scanning: false,
 };
 
 const getters = {
@@ -22,9 +21,6 @@ const getters = {
   },
   selected(state) {
     return state.executables[state.selectedIndex];
-  },
-  scanning(state) {
-    return state.scanning;
   },
 };
 
@@ -58,9 +54,6 @@ const mutations = {
   select(state, path) {
     state.selectedIndex = path;
   },
-  setScanning(state, bool) {
-    state.scanning = bool;
-  },
 };
 
 const actions = {
@@ -68,15 +61,11 @@ const actions = {
     commit('remove', getters.selected);
   },
   async scan({ commit }) {
-    commit('setScanning', true);
-
-    const infos = await findExecutables();
+    const infos = await worker.scanForBackends();
 
     infos.forEach((info) => {
       commit('add', info);
     });
-
-    commit('setScanning', false);
   },
   find({ commit, state }) {
     let type;
@@ -122,7 +111,7 @@ const actions = {
           path += '/bin/matlab';
         }
 
-        const info = await getExecutableInfo({
+        const info = await worker.getExecutableInfo({
           path,
           type,
         });

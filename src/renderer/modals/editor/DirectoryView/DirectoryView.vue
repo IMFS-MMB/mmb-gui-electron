@@ -26,7 +26,7 @@
 
     computed: {
       treeData() {
-        return getDirectoryTree(this.base);
+        return getDirectoryTree(this.base, filename => !filename.endsWith('.js'));
       },
     },
   };

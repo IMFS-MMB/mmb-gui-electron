@@ -12,6 +12,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { VueLoaderPlugin } = require('vue-loader');
 const MonacoWebpackPlugin = require('monaco-editor-webpack-plugin');
+// const WorkerLoader = require('worker-loader');
 
 /**
  * List of node_modules to include in webpack bundle
@@ -20,7 +21,7 @@ const MonacoWebpackPlugin = require('monaco-editor-webpack-plugin');
  * that provide pure *.vue files that need compiling
  * https://simulatedgreg.gitbooks.io/electron-vue/content/en/webpack-configurations.html#white-listing-externals
  */
-let whiteListedModules = ['vue'];
+let whiteListedModules = ['vue', 'bootstrap-vue'];
 
 let rendererConfig = {
   devtool: '#cheap-module-eval-source-map',
@@ -133,7 +134,8 @@ let rendererConfig = {
       templateParameters(compilation, assets, options) {
         return {
           compilation: compilation,
-          webpack: compilation.getStats().toJson(),
+          webpack: compilation.getStats()
+            .toJson(),
           webpackConfig: compilation.options,
           htmlWebpackPlugin: {
             files: assets,
@@ -160,7 +162,8 @@ let rendererConfig = {
   output: {
     filename: '[name].js',
     libraryTarget: 'commonjs2',
-    path: path.join(__dirname, '../dist/electron')
+    path: path.join(__dirname, '../dist/electron'),
+    globalObject: 'self'
   },
   resolve: {
     alias: {

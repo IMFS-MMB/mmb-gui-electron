@@ -51,7 +51,7 @@
       };
     },
     computed: {
-      ...mapGetters('settings', ['horizon']),
+      ...mapGetters('options', ['horizon']),
       model: {
         get() {
           return this.horizon;
@@ -62,7 +62,7 @@
       },
     },
     methods: {
-      ...mapMutations('settings', ['setHorizon']),
+      ...mapMutations('options', ['setHorizon']),
     },
   };
 </script>

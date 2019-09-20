@@ -28,7 +28,7 @@
                                triggers="hover"
                                boundary="viewport">
                         <div>
-                            <p>Model specific variables are unavailable with your current settings.</p>
+                            <p>Model specific variables are unavailable with your current options.</p>
                             <p class="mb-0">Select <em>exactly one</em> model to make its specific variables available.</p>
                         </div>
                     </b-popover>
@@ -43,8 +43,8 @@
 
   export default {
     computed: {
-      ...mapGetters('settings', ['modelSpecificVariablesUnavailable']),
-      ...mapGetters('settings', {
+      ...mapGetters('options', ['modelSpecificVariablesUnavailable']),
+      ...mapGetters('options', {
         numSelected: 'numVariables',
         variableSelection: 'variables',
         modelSelection: 'models',
@@ -74,7 +74,7 @@
       },
     },
     methods: {
-      ...mapMutations('settings', {
+      ...mapMutations('options', {
         clear: 'clearVariables',
         setVariables: 'setVariables',
       }),

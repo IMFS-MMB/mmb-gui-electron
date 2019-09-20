@@ -1,4 +1,4 @@
-import { MODEL_RULE, USER_RULE } from '../../../../config/constants';
+import { MODEL_RULE, USER_RULE } from '../../../../../config/constants';
 
 function userrule9x4to1x33(old) {
   // for legacy reasons the user rule used to be a 9x4 matrix in matlab,
@@ -78,7 +78,5 @@ export default function buildMatlabScript({
 
   const jsonconfig = JSON.stringify(config);
 
-  const result = `mmb('${jsonconfig}');exit();`;
-
-  return result;
+  return `mmb('${jsonconfig}');exit();`;
 }

@@ -25,22 +25,48 @@
                         </a>
                     </div>
                     <div class="text-sm-right" v-if="$isElectron">
-                        <div @click="">
-                            <a href="javascript:void(0)" v-b-modal.settingsModal>
-                                <span class="m-1">Settings</span>
+                        <b-dropdown right class="mt-md-2" variant="outline-primary">
+                            <template v-slot:button-content>
+                                Menu
+                            </template>
+                            <b-dropdown-item v-b-modal.editorModal>
+                                <i class="fa fa-edit"></i>
+                                <span class="m-1">Edit Rules/Models</span>
+                            </b-dropdown-item>
+                            <b-dropdown-item @click="reload">
+                                <i class="fa fa-refresh"></i>
+                                <span class="m-1">Reload Data</span>
+                            </b-dropdown-item>
+                            <b-dropdown-item v-b-modal.settingsModal>
                                 <i class="fa fa-cog"></i>
-                            </a>
-                        </div>
+                                <span class="m-1">Settings</span>
+                            </b-dropdown-item>
+                        </b-dropdown>
                     </div>
                 </b-col>
             </b-row>
         </b-container>
-
+        <EditorModal/>
     </header>
 </template>
 
 <script>
-  export default {};
+  import { mapActions } from 'vuex';
+  import EditorModal from '../modals/editor/EditorModal';
+
+  export default {
+    components: {
+      EditorModal,
+    },
+    methods: {
+      ...mapActions('rules', ['loadRules']),
+      ...mapActions('models', ['loadModels']),
+      reload() {
+        this.loadRules();
+        this.loadModels();
+      },
+    },
+  };
 </script>
 
 <style scoped lang="scss">

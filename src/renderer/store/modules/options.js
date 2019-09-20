@@ -136,11 +136,11 @@ const getters = {
     const hints = [];
 
     if (!backend) {
-      hints.push('Select a Matlab or Dynare executable from the settings menu');
+      hints.push('Select a Matlab or Dynare executable in the settings menu');
     }
 
     if (!dynare) {
-      hints.push('Select a dynare path from the settings menu');
+      hints.push('Select a dynare path in the settings menu');
     }
 
     if (!getters.numModels) {

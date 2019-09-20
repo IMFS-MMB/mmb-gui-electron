@@ -1,5 +1,5 @@
 {
-  "$schema": "../../schemas/model.schema.json",
+  "$schema": "model",
   "name": "NK_CW09",
   "capabilities": {
     "fiscal_shock": true,

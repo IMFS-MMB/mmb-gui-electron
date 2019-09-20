@@ -1,21 +1,21 @@
 import path from 'path';
-import { create } from '@/utils/electron/interface';
 import logger from '@/utils/logger';
-import buildMatlabScript from '@/utils/electron/build-matlab-script';
-import readOutput from '@/utils/readOutput';
-import { mmbFolder } from '../../../../config/paths';
+import { create } from '../../../../../common/backend/interface';
+import buildMatlabScript from './build-matlab-script';
+import readOutput from './read-output';
+import { mmbFolder } from '../../../../../config/paths';
 
 export default async function compare(ctx) {
   const cwd = mmbFolder;
 
   const dynare = ctx.rootGetters['dynare/selected'];
   const executable = ctx.rootGetters['backends/selected'];
-  const gain = ctx.rootGetters['settings/gain'];
-  const horizon = ctx.rootGetters['settings/horizon'];
-  const models = ctx.rootGetters['settings/models'];
-  const rules = ctx.rootGetters['settings/policyRules'];
-  const shocks = ctx.rootGetters['settings/shocks'];
-  const states = ctx.rootGetters['settings/statesForSelectedModels'];
+  const gain = ctx.rootGetters['options/gain'];
+  const horizon = ctx.rootGetters['options/horizon'];
+  const models = ctx.rootGetters['options/models'];
+  const rules = ctx.rootGetters['options/policyRules'];
+  const shocks = ctx.rootGetters['options/shocks'];
+  const states = ctx.rootGetters['options/statesForSelectedModels'];
   const userRule = ctx.rootGetters['userrule/params'];
 
   const backend = create({

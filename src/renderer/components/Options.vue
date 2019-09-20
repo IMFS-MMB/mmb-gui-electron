@@ -40,7 +40,7 @@
       ...platformComponents,
     },
     computed: {
-      ...mapGetters('settings', [
+      ...mapGetters('options', [
         'alModelSelected',
         'plotAutocorrelation',
         'plotVariance',
@@ -68,7 +68,7 @@
       },
     },
     methods: {
-      ...mapMutations('settings', [
+      ...mapMutations('options', [
         'setPlotAutocorrelation',
         'setPlotVariance',
       ]),

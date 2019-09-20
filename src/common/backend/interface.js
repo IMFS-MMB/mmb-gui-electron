@@ -1,7 +1,7 @@
 import { platform } from 'os';
 import semver from 'semver';
 import execute from './execute';
-import { isProduction } from '../../../constants';
+import { isProduction } from '../../constants';
 
 class Base {
   constructor(options) {
@@ -119,9 +119,7 @@ export class Matlab extends Base {
     const headerAndVersion = await super.getVersion();
     const split = headerAndVersion.split('\n');
 
-    const version = split[split.length - 1];
-
-    return version;
+    return split[split.length - 1];
   }
 }
 
