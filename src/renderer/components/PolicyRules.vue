@@ -1,12 +1,9 @@
 <template>
     <div class="ctrl-set ctrl-set-prules">
         <div class="ctrl-set-header">
-            <div class="ctrl-set-title">
-                Policy Rules
-                <small class="ctrl-set-stats">({{selectedIndex}}/{{rules.length}} Selected)</small>
-                <a href="javascript:void(0)" class="ctrl-set-clear" @click="clear">&nbsp;Clear</a>
-
-            </div>
+            <span class="ctrl-set-title">Policy Rules</span>
+            <small class="ctrl-set-stats">({{selectedIndex}}/{{rules.length}})</small>
+            <a href="javascript:void(0)" class="ctrl-set-clear" @click="clear">&nbsp;Clear</a>
         </div>
 
         <div class="ctrl-set-body">
@@ -35,7 +32,7 @@
             </b-form-checkbox-group>
         </div>
 
-            <b-row class="justify-content-center ctrl-links">
+            <b-row class="mt-3 justify-content-center ctrl-links">
                         <div class="col text-center">
                             <a href="http://www.macromodelbase.com/files/MMB_MPrule_description.pdf" target="_blank"><i class="fa fa-question-circle"></i>
                                Documentation of Policy Rules</a>
@@ -44,7 +41,7 @@
     </div>
 </template>
 <script>
-  import { mapMutations, mapGetters } from 'vuex'; // eslint-disable-line no-unused-vars
+  import { mapMutations, mapGetters } from 'vuex';
   import RulePopover from './RulePopover';
 
   export default {

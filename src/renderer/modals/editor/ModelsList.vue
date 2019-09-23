@@ -4,7 +4,7 @@
     </ul>
 </template>
 <script>
-  import { mapGetters } from 'vuex'; // eslint-disable-line no-unused-vars
+  import { mapGetters } from 'vuex';
 
   export default {
     components: {

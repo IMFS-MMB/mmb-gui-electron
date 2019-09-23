@@ -1,9 +1,7 @@
 <template>
     <div class="ctrl-set ctrl-set-output">
         <div class="ctrl-set-header">
-            <div class="ctrl-set-title">
-                Options
-            </div>
+            <span class="ctrl-set-title">Options</span>
         </div>
 
         <div class="ctrl-set-body">
@@ -22,8 +20,7 @@
     </div>
 </template>
 <script>
-  // eslint-disable-next-line no-unused-vars
-  import { mapMutations, mapGetters, mapActions } from 'vuex';
+  import { mapMutations, mapGetters } from 'vuex';
   import Horizon from '@/components/Horizon';
   import Gain from '@/components/Gain';
   import ModelStatesModal from '@/modals/ModelStatesModal';

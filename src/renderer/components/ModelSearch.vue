@@ -1,6 +1,6 @@
 <template>
     <form class="ctrl-search form-inline">
-        <input id="search" class="form-control form-control-sm mr-2 typeahead" autocomplete="off"
+        <input id="search" class="form-control form-control-sm typeahead" autocomplete="off"
                placeholder="Search models..." aria-label="Search" v-model="search" @keydown.enter.prevent>
         <b-popover target="search"
                    :delay="{ show: 500, hide: 0 }"

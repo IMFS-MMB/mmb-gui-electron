@@ -10,8 +10,7 @@
     </b-modal>
 </template>
 <script>
-  // eslint-disable-next-line no-unused-vars
-  import { mapMutations, mapGetters, mapActions } from 'vuex';
+  import { mapGetters } from 'vuex';
   import ModelStates from './ModelStates';
 
   export default {

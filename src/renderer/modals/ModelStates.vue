@@ -6,8 +6,7 @@
     </div>
 </template>
 <script>
-  // eslint-disable-next-line no-unused-vars
-  import { mapMutations, mapGetters, mapActions } from 'vuex';
+  import { mapMutations, mapGetters } from 'vuex';
 
   export default {
     name: 'ModelStates',

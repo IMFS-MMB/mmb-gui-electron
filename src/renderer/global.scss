@@ -33,7 +33,18 @@ body {
 .app-wrapper {
   $wrapper-margin: 1rem;
 
-  padding: 2rem 4rem;
+  @include media-breakpoint-down(sm) {
+    padding: 1rem;
+  }
+
+  @include media-breakpoint-up(md) {
+    padding: 2rem;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 2rem 3rem;
+  }
+
   background: #fff;
   margin: $wrapper-margin;
   width: calc(100% - 2 * #{$wrapper-margin});
@@ -41,26 +52,19 @@ body {
 }
 
 .mmb-branding a {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  text-decoration: none;
-  color: #000;
-  font-family: Rajdhani, sans-serif;
-  font-weight: 500;
-  font-size: 1.7rem;
-  line-height: 1.9rem;
-
-  .site-logo {
-    margin: 0 .8rem 0 0;
-
-    img {
-      height: 70px;
-    }
+  img.site-logo {
+    height: 70px;
   }
 
   .site-title {
     margin: 0;
+
+    text-decoration: none;
+    color: #000;
+    font-family: Rajdhani, sans-serif;
+    font-weight: 500;
+    font-size: 1.7rem;
+    line-height: 1.9rem;
   }
 }
 
@@ -79,6 +83,15 @@ h1 {
   .ctrl-set-header {
     padding: 0.75rem 0;
 
+    display: flex;
+    flex-grow: 1;
+    align-items: baseline;
+    white-space: nowrap;
+
+    > :not(:first-child) {
+      margin-left: .5em;
+    }
+
     .ctrl-set-title {
       font-size: 1.4rem;
       display: inline-block;
@@ -87,16 +100,15 @@ h1 {
         font-size: 0.8rem;
         margin-left: 0.5rem;
       }
+    }
 
-      .ctrl-set-clear {
-        font-size: 0.8rem;
-        font-weight: bold;
-
-      }
+    .ctrl-set-clear {
+      font-size: 0.8rem;
+      font-weight: bold;
     }
 
     .ctrl-search {
-      float: right;
+      margin-left: auto;
     }
   }
 
@@ -182,10 +194,6 @@ h1 {
   font-size: 0.9rem;
 }
 
-.comparison-set {
-
-}
-
 .comparison-set-header {
   padding: 0.75rem 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
@@ -195,7 +203,6 @@ h1 {
 
     small {
       font-size: 0.8rem;
-      margin-left: 0.5rem;
     }
   }
 }

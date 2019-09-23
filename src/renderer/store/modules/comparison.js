@@ -5,12 +5,16 @@ import captureBackendException from './compare/electron/capture-backend-exceptio
 import normalizeError from './compare/electron/normalize-error';
 import chunkArray from '../../utils/chunkArray';
 import compare from './compare';
+import responsiveValue from '../../utils/responsive-value';
 
 const namespaced = true;
 
 const state = {
   options: {},
-  colsPerRow: 4,
+  colsPerRow: responsiveValue({
+    mdDown: 2,
+    lgUp: 4,
+  }),
   show: false,
   inProgress: false,
   stdout: [],
@@ -60,7 +64,8 @@ function getShockChartRows(state) {
     );
 
     return chunkArray(rows, state.colsPerRow);
-  }).reduce((flat, shockRows) => flat.concat(shockRows), []);
+  })
+    .reduce((flat, shockRows) => flat.concat(shockRows), []);
 
   return result;
 }
