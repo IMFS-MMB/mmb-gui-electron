@@ -1,12 +1,10 @@
 <template>
     <div class="ctrl-set ctrl-set-variables">
         <div class="ctrl-set-header">
-            <div class="ctrl-set-title">
-                Variables
-                <small class="ctrl-set-stats">({{numSelected}}/{{total}} Selected)</small>
-                <a href="javascript:void(0)" class="ctrl-set-clear" @click="selectAll">Select all</a>
-                <a href="javascript:void(0)" class="ctrl-set-clear" @click="clear">&nbsp;Clear</a>
-            </div>
+            <span class="ctrl-set-title">Variables</span>
+            <small class="ctrl-set-stats">({{numSelected}}/{{total}})</small>
+            <a href="javascript:void(0)" class="ctrl-set-clear" @click="selectAll">Select all</a>
+            <a href="javascript:void(0)" class="ctrl-set-clear" @click="clear">&nbsp;Clear</a>
         </div>
 
         <div class="ctrl-set-body">
@@ -38,7 +36,7 @@
     </div>
 </template>
 <script>
-  import { mapMutations, mapGetters, mapActions } from 'vuex'; // eslint-disable-line no-unused-vars
+  import { mapMutations, mapGetters } from 'vuex';
   import commonVariables from '@/data/variables';
 
   export default {

@@ -14,19 +14,19 @@
             <hr class="mt-4">
 
             <b-row class="mt-4">
-                <b-col>
+                <b-col cols="12" sm="6" xl="3">
                     <PolicyRules/>
                 </b-col>
 
-                <b-col>
+                <b-col cols="12" sm="6" xl="3">
                     <Shocks/>
                 </b-col>
 
-                <b-col>
+                <b-col cols="12" sm="6" xl="3">
                     <Variables/>
                 </b-col>
 
-                <b-col>
+                <b-col cols="12" sm="6" xl="3">
                     <Options/>
                 </b-col>
             </b-row>

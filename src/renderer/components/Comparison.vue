@@ -3,21 +3,18 @@
         <b-row class="mt-2">
             <b-col>
                 <div class="comparison-set">
-                    <div class="comparison-set-header">
-                        <div class="comparison-set-title">
-                            Comparison
-                            <small class="comparison-set-stats">(
-                                {{numModels}} Models,
-                                {{numPolicyRules}} Policy Rules,
-                                {{numShocks}} Shocks,
-                                )
-                            </small>
-
-                            <div class="comparison-set-header-actions">
-                                <ColsPerRow style="max-width: 250px"></ColsPerRow>
-                                <SaveData :data="data"/>
-                            </div>
-                        </div>
+                    <div class="row comparison-set-header">
+                        <b-col cols="12" sm="6" class="comparison-set-title">
+                                <span>Comparison</span>
+                                <small class="d-none d-md-inline-block">({{numModels}} Model{{ numModels === 1 ? '' : 's' }},
+                                    {{numPolicyRules}} Policy Rule{{ numPolicyRules === 1 ? '' : 's' }},
+                                    {{numShocks}} Shock{{ numShocks === 1 ? '' : 's' }})
+                                </small>
+                        </b-col>
+                        <b-col cols="12" sm="6" class="d-flex align-items-center justify-content-between justify-content-sm-end">
+                            <SaveData :data="data"/>
+                            <ColsPerRow class="order-sm-first mr-3"></ColsPerRow>
+                        </b-col>
                     </div>
                 </div>
             </b-col>
@@ -71,16 +68,3 @@
     },
   };
 </script>
-
-<style lang="scss">
-    .comparison-set-header-actions {
-        float: right;
-
-        display: inline-flex;
-        align-items: center;
-
-        > :not(:first-child) {
-            margin-left: 1em;
-        }
-    }
-</style>

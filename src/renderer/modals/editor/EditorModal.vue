@@ -5,6 +5,7 @@
              lazy
              no-close-on-backdrop
              no-close-on-esc
+             ok-title="Close"
              ok-only>
 
         <template slot="modal-header">
@@ -68,7 +69,7 @@
             return 'json';
           }
           default: {
-            return '';
+            return 'default';
           }
         }
       },

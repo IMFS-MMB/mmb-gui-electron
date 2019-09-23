@@ -1,14 +1,10 @@
 <template>
     <div class="ctrl-set ctrl-set-models">
         <div class="ctrl-set-header">
-            <div class="ctrl-set-title">
-                Models
-                <small class="ctrl-set-stats">({{selectedIndex}}/{{total}} Selected)</small>
-                &nbsp;
-                <a href="javascript:void(0)" class="ctrl-set-clear" @click="clearModels">Clear</a>
-
-            </div>
-
+            <span class="ctrl-set-title">Models</span>
+            <small class="ctrl-set-stats">({{selectedIndex}}/{{total}})</small>
+            &nbsp;
+            <a href="javascript:void(0)" class="ctrl-set-clear" @click="clearModels">Clear</a>
             <ModelSearch/>
         </div>
         <div class="ctrl-set-body">
@@ -21,7 +17,7 @@
             </b-row>
         </div>
 
-            <b-row class="justify-content-center ctrl-links">
+            <b-row class="mt-3 justify-content-center ctrl-links">
                         <div class="col text-center">
                             <a href="http://www.macromodelbase.com/files/MMB_model_list_3_0.pdf" target="_blank"><i class="fa fa-question-circle"></i>
                                Documentation of Models</a>
