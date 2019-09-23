@@ -229,9 +229,9 @@ fispol = coffispol*fiscal_;                                              //*
 # b2_coef=NWSS/BTOTSS;
 btot = b1_coef*(q + k + pC) - b2_coef*nwe;
 
-% Tobin's Q (FOC, capital stock)
+% Tobin's Q (FOC, capital stock), with the correction from August 2019 noted by the authors
 q = 1/(1+bet*RBSS)*( bet*sspieY*(1-delta+delta*ssTAXKR)*q(+1) - bet*RBSS*rb + bet*sspieY/ssQ*(RRK*(1-ssTAXKR)*(rK(+1)- pC(+1)) ))
-  + pieY(+1) + pieC(+1) - pC ;
+  + pieY(+1) + pC(+1) - pC ;
 
 % Entrepreneur's net worth
 # c1star = RRK*RPC*(1-ssTAXKR) + (1-delta+delta*ssTAXKR)*ssQ*RPC;
@@ -254,8 +254,8 @@ N1*nwe = N2*k(-1) + N3*rK + N4*q + N5*q(-1) + N6*nwe(-1) + N7*rb(-1) + N8*pieY +
 rb = (kappaB/(EPSBSS-1+(1+bet)*kappaB))*rb(-1) + (bet*kappaB/(EPSBSS-1+(1+bet)*kappaB))*rb(+1)
     + ((EPSBSS-1)/(EPSBSS-1+(1+bet)*kappaB))*RB-(epsb/(EPSBSS-1+(1+bet)*kappaB));
 
-% Net wholesale loan rate
-RB = rFI - (kappaKB/RBSS*(ssnuBank^3))*(kbank - btot - nuB);
+% Net wholesale loan rate, with the correction from August 2019 noted by the authors
+RB = rFI - (kappaKB/(ssR-1)*(ssnuBank^3))*(kbank - btot - nuB);
 
 % Bank capital
 kbank = (1-deltaBank)/ssMU/sspieY*(kbank(-1) - pieY - mu - epsKB) + (1-(1-deltaBank)/ssMU/sspieY)*bankprofits;
@@ -528,9 +528,9 @@ ds=rhodS*ds(-1)+epsdS;
 % Total loans
 btotf = b1_coef*(qf + kf + pCf) - b2_coef*nwef;
 
-% Tobin's Q (FOC, capital stock)
+% Tobin's Q (FOC, capital stock) 
 qf = 1/(1+bet*RBSS)*( bet*sspieY*(1-delta+delta*ssTAXKR)*qf(+1) - bet*RBSS*rbf + bet*sspieY/ssQ*(RRK*(1-ssTAXKR)*(rKf(+1)- pCf(+1)) ))
-  + pieYf(+1) + pieCf(+1) - pCf ;
+  + pieYf(+1) + pCf(+1) - pCf ;
 
 % Entrepreneur's net worth
 N1*nwef = N2*kf(-1) + N3*rKf + N4*qf + N5*qf(-1) + N6*nwef(-1) + N7*rbf(-1) + N8*pieYf + N9*mu + N11*pCf + N12*pCf(-1);
@@ -540,7 +540,7 @@ rbf = (kappaB/(EPSBSS-1+(1+bet)*kappaB))*rbf(-1) + (bet*kappaB/(EPSBSS-1+(1+bet)
     + ((EPSBSS-1)/(EPSBSS-1+(1+bet)*kappaB))*RBf-(epsb/(EPSBSS-1+(1+bet)*kappaB));
 
 % Net wholesale loan rate
-RBf = rFIf - (kappaKB/RBSS*(ssnuBank^3))*(kbankf - btotf - nuB);
+RBf = rFIf - (kappaKB/(ssR-1)*(ssnuBank^3))*(kbankf - btotf - nuB);
 
 % Bank capital
 kbankf = (1-deltaBank)/ssMU/sspieY*(kbankf(-1) - pieYf - mu - epsKB) + (1-(1-deltaBank)/ssMU/sspieY)*bankprofitsf;
