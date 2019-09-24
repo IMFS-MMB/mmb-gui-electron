@@ -1,10 +1,11 @@
 <template>
     <div class="directory-tree-view">
-        <Tree :data="treeData" @item="$emit('item', $event)"></Tree>
+        <Tree v-if="treeData" :data="treeData" @item="$emit('item', $event)"></Tree>
     </div>
 </template>
 
 <script>
+  import { FSWatcher } from 'chokidar';
   import Tree from './Tree';
   import getDirectoryTree from '../../../utils/electron/getDirectoryTree';
 
@@ -20,14 +21,30 @@
     },
     data() {
       return {
-
+        watcher: null,
+        treeData: null,
       };
     },
-
-    computed: {
-      treeData() {
-        return getDirectoryTree(this.base, filename => !filename.endsWith('.js'));
+    methods: {
+      update() {
+        this.treeData = getDirectoryTree(this.base, filename => !filename.endsWith('.js'));
       },
+    },
+    beforeDestroy() {
+      this.watcher.close();
+    },
+    created() {
+      this.watcher = new FSWatcher({
+        cwd: '/',
+        ignoreInitial: true,
+      });
+
+      this.watcher.add(this.base);
+
+      this.watcher.on('ready', () => this.update());
+      this.watcher.on('all', (eventname) => {
+        if (eventname !== 'change') { this.update(); }
+      });
     },
   };
 </script>
