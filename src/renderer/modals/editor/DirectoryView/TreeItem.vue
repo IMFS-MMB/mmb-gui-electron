@@ -68,7 +68,7 @@
         };
       },
       isActive() {
-        return this.item && this.item === this.activeItem;
+        return !!(this.item && this.activeItem && this.item.path === this.activeItem.path);
       },
     },
     methods: {
