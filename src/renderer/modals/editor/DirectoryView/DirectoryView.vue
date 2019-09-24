@@ -52,7 +52,5 @@
 <style scoped lang="scss">
     .directory-tree-view {
         user-select: none;
-        padding-left: 2em;
-        padding-right: 1em;
     }
 </style>

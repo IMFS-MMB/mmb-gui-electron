@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="tree-base">
         <TreeItem :item="data"
                   :active-item="activeItem"
                   :depth="1"
@@ -36,5 +36,9 @@
     .text {
         font-size: 0.9rem;
         padding-left: 8px;
+    }
+
+    .tree-base {
+        margin-left: 2em;
     }
 </style>
