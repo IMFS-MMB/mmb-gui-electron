@@ -1,4 +1,6 @@
+import fs from 'fs';
 import path from 'path';
+import tempy from 'tempy';
 import logger from '@/utils/logger';
 import { create } from '../../../../../common/backend/interface';
 import buildMatlabScript from './build-matlab-script';
@@ -25,7 +27,7 @@ export default async function compare(ctx) {
     cwd,
   });
 
-  const script = buildMatlabScript({
+  const options = buildMatlabScript({
     dynare,
     gain,
     horizon,
@@ -36,7 +38,13 @@ export default async function compare(ctx) {
     userRule,
   });
 
-  logger.debug(script);
+  logger.debug(options);
+
+  const tmpfile = tempy.file();
+
+  fs.writeFileSync(tmpfile, JSON.stringify(options, null, 2), { encoding: 'utf8' });
+
+  const script = `mmb('${tmpfile}');exit();`;
 
   await backend.runCode(
     script,

@@ -76,7 +76,6 @@ export default function buildMatlabScript({
     },
   };
 
-  const jsonconfig = JSON.stringify(config);
 
-  return `mmb('${jsonconfig}');exit();`;
+  return config;
 }
