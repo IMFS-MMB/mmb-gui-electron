@@ -6,18 +6,41 @@
         <p class="lead"></p>
 
         <b-form-select v-model="selectedOption" class="mb-3" :disabled="scanning">
-            <option :value="index" v-for="(executable, index) in executables">{{executable.path}}
-                ({{executable.ver}})
+            <option :value="index" v-for="(executable, index) in executables">
+                {{executable.path}} ({{executable.ver}})
             </option>
         </b-form-select>
 
-        <b-btn variant="primary" block @click="startScan" :disabled="scanning">{{ scanning ? 'Scanning...' : 'Scan'}}
-        </b-btn>
-        <b-btn id="select-backend-manually" variant="primary" :disabled="scanning" block @click="find">Find manually</b-btn>
-        <b-btn variant="warning" block @click="removeSelected" :disabled="scanning || selectedIndex === null">Remove selected
-        </b-btn>
+        <b-row>
+            <b-col>
+                <b-btn id="btn-backend-scan" variant="primary" block @click="startScan" :disabled="scanning">
+                    {{ scanning ? 'Scanning...' : 'Scan'}}
+                </b-btn>
+            </b-col>
+            <b-col>
+                <b-btn id="btn-backend-select" variant="primary" :disabled="scanning" block @click="find">
+                    Find manually
+                </b-btn>
+            </b-col>
+            <b-col>
+                <b-btn variant="warning" block @click="removeSelected" :disabled="scanning || selectedIndex === null">
+                    Remove selected
+                </b-btn>
+            </b-col>
+        </b-row>
 
-        <b-popover target="select-backend-manually"
+
+        <b-popover target="btn-backend-scan"
+                   placement="top"
+                   triggers="hover"
+                   boundary="viewport">
+            <p>
+                Scan for executables automatically. Depending on your system this can take up to several minutes.
+            </p>
+            <p v-if="isWindows">You might see flashing MATLAB windows in the process. Please don't close them manually.</p>
+        </b-popover>
+
+        <b-popover target="btn-backend-select"
                    placement="top"
                    triggers="hover"
                    boundary="viewport">
@@ -34,6 +57,7 @@
 </template>
 <script>
   import { mapActions, mapGetters, mapMutations } from 'vuex';
+  import { platform } from 'os';
   import { exampleMatlab, exampleOctave } from '../../../config/paths';
 
   export default {
@@ -43,6 +67,7 @@
         exampleMatlab,
         exampleOctave,
         scanning: false,
+        isWindows: platform() === 'win32',
       };
     },
     computed: {

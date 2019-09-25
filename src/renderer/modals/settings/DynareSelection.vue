@@ -3,14 +3,28 @@
         <b-card-title>Dynare</b-card-title>
 
         <b-form-select v-model="selectedOption" class="mb-3" :disabled="scanning">
-            <option :value="index" v-for="(dynare, index) in dynares">{{dynare.path}} ({{dynare.version || 'unknown version'}})
+            <option :value="index" v-for="(dynare, index) in dynares">
+                {{dynare.path}} ({{dynare.version || 'unknown version'}})
             </option>
         </b-form-select>
 
-        <b-btn variant="primary" block @click="startScan" :disabled="scanning">{{ scanning ? 'Scanning...' : 'Scan'}}</b-btn>
-        <b-btn id="select-dynare-manually" variant="primary" :disabled="scanning" block @click="find">Find manually</b-btn>
-        <b-btn variant="warning" block @click="removeSelected" :disabled="scanning || selectedIndex === null">Remove selected
-        </b-btn>
+        <b-row>
+            <b-col>
+                <b-btn variant="primary" block @click="startScan" :disabled="scanning">
+                    {{ scanning ? 'Scanning...' : 'Scan'}}
+                </b-btn>
+            </b-col>
+            <b-col>
+                <b-btn id="select-dynare-manually" variant="primary" :disabled="scanning" block @click="find">
+                    Find manually
+                </b-btn>
+            </b-col>
+            <b-col>
+                <b-btn variant="warning" block @click="removeSelected" :disabled="scanning || selectedIndex === null">
+                    Remove selected
+                </b-btn>
+            </b-col>
+        </b-row>
 
         <b-popover target="select-dynare-manually"
                    placement="top"
