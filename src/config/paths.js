@@ -3,10 +3,9 @@ import { platform, homedir } from 'os';
 
 const staticFolder = path.resolve(__dirname, '..', '..', 'static');
 
-export const mmbFolder = path.resolve(staticFolder, 'mmci-cli');
-export const modelsFolder = path.resolve(mmbFolder, 'models');
-export const rulesFolder = path.resolve(mmbFolder, 'rules');
-export const schemasFolder = path.resolve(mmbFolder, 'schemas');
+export const staticMmbFolder = path.resolve(staticFolder, 'mmci-cli');
+export const staticModelsFolder = path.resolve(staticMmbFolder, 'models');
+export const staticRulesFolder = path.resolve(staticMmbFolder, 'rules');
 
 /**
  * A collection of paths and patterns the application crawls to find MATLAB and/or Octave.

@@ -31,7 +31,7 @@
 </template>
 <script>
   import { mapGetters } from 'vuex';
-  import fs from 'fs';
+  import { writeFile, readFileSync } from 'fs-extra';
   import path from 'path';
   import MonacoEditor from './MonacoEditor';
   import DirectoryView from './DirectoryView/DirectoryView';
@@ -77,11 +77,11 @@
     methods: {
       loadFile(file) {
         this.file = file;
-        this.code = fs.readFileSync(file.path, { encoding: 'utf8' });
+        this.code = readFileSync(file.path, { encoding: 'utf8' });
       },
-      saveFile() {
+      async saveFile() {
         try {
-          fs.writeFileSync(this.file.path, this.code, {
+          await writeFile(this.file.path, this.code, {
             encoding: 'utf8',
           });
 

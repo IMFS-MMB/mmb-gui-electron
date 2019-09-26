@@ -1,15 +1,10 @@
-import fs from 'fs';
-import { promisify } from 'util';
 import path from 'path';
-
-const readFile = promisify(fs.readFile);
-const readDir = promisify(fs.readdir);
-const fileExists = promisify(fs.exists);
+import { exists, readdir, readFile } from 'fs-extra';
 
 async function readJsonFile(folder, file) {
   const filepath = path.join(folder, file);
 
-  if (!(await fileExists(filepath))) {
+  if (!(await exists(filepath))) {
     return null;
   }
 
@@ -30,7 +25,7 @@ async function readJsonFile(folder, file) {
 }
 
 export default async function readOutput(folder) {
-  const files = await readDir(folder);
+  const files = await readdir(folder);
   const dataFiles = files.filter(file => file.endsWith('.output.json'));
 
   const data = await Promise.all(dataFiles.map(file => readJsonFile(folder, file)));
