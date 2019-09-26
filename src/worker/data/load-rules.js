@@ -1,5 +1,5 @@
 import path from 'path';
-import { readdir, stat, readFile } from '../util/fs';
+import { readdir, stat, readFile } from 'fs-extra';
 import { filter, forEach } from '../util/async';
 import serializableError from '../util/serializable-error';
 import ajv from '../util/ajv';

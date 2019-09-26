@@ -1,6 +1,6 @@
 import glob from 'glob';
 
-import { isExecutable } from './is-executable';
+import isExecutable from './is-executable';
 import { create } from '../../common/backend/interface';
 import { backends } from '../../config/paths';
 import findPaths from '../util/find-paths';

@@ -1,7 +1,4 @@
-import { promisify } from 'util';
-import fs, { statSync } from 'fs';
-
-const stat = promisify(fs.stat);
+import { stat } from 'fs-extra';
 
 function hasExecPermissions(mode, gid, uid) {
   if (process.platform === 'win32') {
@@ -19,17 +16,7 @@ function hasExecPermissions(mode, gid, uid) {
   }
 }
 
-export function isExecutableSync(path) {
-  try {
-    const stats = statSync(path);
-
-    return stats && stats.isFile() && hasExecPermissions(stats.mode, stats.gid, stats.uid);
-  } catch (e) {
-    return false;
-  }
-}
-
-export async function isExecutable(path) {
+export default async function isExecutable(path) {
   try {
     const stats = await stat(path);
 
