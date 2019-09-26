@@ -17,13 +17,12 @@
                         <span class="rule-caption">Model specific rule</span>
                     </b-form-checkbox>
                     <template v-for="(rule, index) in rules">
-                        <div :id="'cb-rule-' + rule.id">
+                        <div :id="'cb-rule-' + rule.id" :key="'cb-rule-' + rule.name">
                             <b-form-checkbox ref="cb" :value="rule" :disabled="isRuleDisabled(rule.id)">
                                 {{ rule && rule.description && rule.description.ac_ref }}
                             </b-form-checkbox>
-
                         </div>
-                        <RulePopover :rule="rule"/>
+                        <RulePopover :rule="rule" :key="'popover-rule-' + rule.name"/>
                     </template>
                 </template>
                 <div class="spinner-box" v-if="!rules.length">
