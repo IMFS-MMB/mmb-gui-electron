@@ -14,11 +14,11 @@
                 <b-spinner variant="primary" type="grow" label="Spinning"></b-spinner>
             </div>
             <template v-for="model in models">
-                <div :id="'cb-wrapper-' + model.name">
+                <div :id="'cb-wrapper-' + model.name" :key="'cb-model-' + model.name">
                     <b-form-checkbox :value="model" :disabled="isModelDisabled(model)">{{model.name}}</b-form-checkbox>
                 </div>
 
-                <ModelPopover :model="model"/>
+                <ModelPopover :model="model" :key="'popover-model-' + model.name"/>
             </template>
         </b-form-checkbox-group>
     </b-col>
