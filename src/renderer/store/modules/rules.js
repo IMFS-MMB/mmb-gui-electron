@@ -8,9 +8,6 @@ const state = {
 };
 
 const getters = {
-  ruleErrors(state) {
-    return state.errors;
-  },
   rules(state) {
     return state.rules;
   },
@@ -27,18 +24,28 @@ const mutations = {
 
 const actions = {
   async loadRules({ commit, rootGetters }) {
-    const rulesFolder = rootGetters['settings/rulesFolder'];
-
     commit('setRules', []);
     commit('setErrors', []);
 
-    try {
-      const { rules, errors } = await worker.loadRules(rulesFolder);
+    const rulesFolder = rootGetters['settings/rulesFolder'];
 
+    let errors = [];
+    let rules = [];
+
+    try {
+      ({ errors, rules } = await worker.loadRules(rulesFolder));
+    } catch (e) {
+      errors = [e];
+    } finally {
       commit('setRules', rules);
       commit('setErrors', errors);
-    } catch (e) {
-      commit('setErrors', [e]);
+
+      errors.forEach((err) => {
+        window.vue.$bvToast.toast(`There was an error loading rule ${err.rule}:\n${err.message}`, {
+          title: 'Rule Error',
+          variant: 'danger',
+        });
+      });
     }
   },
 };

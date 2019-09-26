@@ -2,8 +2,6 @@
     <b-container fluid class="app-wrapper">
         <OcpHeader/>
 
-        <MalformedDataWarning/>
-
         <b-container fluid class="mt-2">
             <b-row>
                 <b-col>
@@ -95,7 +93,6 @@
   import { mapActions, mapGetters } from 'vuex';
   import { isElectron } from '../../constants';
   import Variables from './Variables';
-  import MalformedDataWarning from './MalformedDataWarning';
 
   const platformComponents = isElectron ? {
     SettingsModal,
@@ -105,7 +102,6 @@
 
   export default {
     components: {
-      MalformedDataWarning,
       Variables,
       OcpHeader,
       Models,

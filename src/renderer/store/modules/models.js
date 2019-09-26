@@ -8,9 +8,6 @@ const state = {
 };
 
 const getters = {
-  modelErrors(state) {
-    return state.errors;
-  },
   sortedModels(state) {
     return state.models.sort((a, b) => a.name.localeCompare(b.name));
   },
@@ -76,18 +73,28 @@ const mutations = {
 
 const actions = {
   async loadModels({ commit, rootGetters }) {
-    const modelsFolder = rootGetters['settings/modelsFolder'];
-
     commit('setModels', []);
     commit('setErrors', []);
 
-    try {
-      const { models, errors } = await worker.loadModels(modelsFolder);
+    const modelsFolder = rootGetters['settings/modelsFolder'];
 
+    let models = [];
+    let errors = [];
+
+    try {
+      ({ models, errors } = await worker.loadModels(modelsFolder));
+    } catch (e) {
+      errors = [e];
+    } finally {
       commit('setModels', models);
       commit('setErrors', errors);
-    } catch (e) {
-      commit('setErrors', [e]);
+
+      errors.forEach((err) => {
+        window.vue.$bvToast.toast(`There was an error loading model ${err.model}:\n${err.message}`, {
+          title: 'Model Error',
+          variant: 'danger',
+        });
+      });
     }
   },
 };
