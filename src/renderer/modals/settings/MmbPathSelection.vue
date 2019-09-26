@@ -28,17 +28,17 @@
             Click to show folder in the system's file explorer
         </b-popover>
 
-        <b-popover target="btn-mmb-select"
-                   placement="top"
-                   triggers="hover"
-                   boundary="viewport">
-            Extract bundled MMB files
-        </b-popover>
-        <b-popover target="btn-select-mmb-manually"
+        <b-popover target="btn-mmb-extract"
                    placement="top"
                    triggers="hover"
                    boundary="viewport">
             Select an empty folder to unpack bundled mmb files
+        </b-popover>
+        <b-popover target="btn-mmb-select"
+                   placement="top"
+                   triggers="hover"
+                   boundary="viewport">
+            Select a folder containing MMB 3.1 compatible files
         </b-popover>
     </b-card>
 </template>
