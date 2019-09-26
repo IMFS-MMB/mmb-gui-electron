@@ -36,7 +36,7 @@ export default async function compare(ctx) {
     userRule,
   });
 
-  logger.info('generated config:', JSON.stringify(options));
+  logger.info(`generated config: ${JSON.stringify(options)}`);
   const tmpfile = tempy.file({ extension: 'json' });
   logger.info(`config file: ${tmpfile}`);
   await writeFile(tmpfile, JSON.stringify(options, null, 2), { encoding: 'utf8' });
