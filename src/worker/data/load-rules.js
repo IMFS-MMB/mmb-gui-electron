@@ -1,5 +1,5 @@
 import path from 'path';
-import { readdir, stat, readFile } from 'fs-extra';
+import { readdir, stat, readJson } from 'fs-extra';
 import { filter, forEach } from '../util/async';
 import serializableError from '../util/serializable-error';
 import ajv from '../util/ajv';
@@ -16,9 +16,7 @@ export default async function loadRules(base) {
     try {
       const jsonPath = path.resolve(base, folder, `${folder}.json`);
 
-      const json = await readFile(jsonPath, { encoding: 'utf8' });
-
-      const rule = JSON.parse(json);
+      const rule = await readJson(jsonPath);
 
       if (!ajv.validate('rule', rule)) {
         throw new Error(`${folder}.json exists but doesn't validate against rule schema: ${ajv.errorsText()}`);

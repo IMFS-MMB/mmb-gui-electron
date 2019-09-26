@@ -1,5 +1,5 @@
 import path from 'path';
-import { readdir, stat, exists, readFile } from 'fs-extra';
+import { readdir, stat, exists, readJson } from 'fs-extra';
 import { filter, forEach } from '../util/async';
 import serializableError from '../util/serializable-error';
 import ajv from '../util/ajv';
@@ -17,14 +17,12 @@ export default async function loadModels(base) {
       const jsonPath = path.resolve(base, folder, `${folder}.json`);
       const modPath = path.resolve(base, folder, `${folder}.mod`);
 
-      const json = await readFile(jsonPath, { encoding: 'utf8' });
+      const model = await readJson(jsonPath);
       const modExists = await exists(modPath, { encoding: 'utf8' });
 
       if (!modExists) {
         throw new Error(`${folder} found, but ${folder}.mod doesn't exist`);
       }
-
-      const model = JSON.parse(json);
 
       if (!ajv.validate('model', model)) {
         throw new Error(`${folder}.json exists but doesn't validate against model schema: ${ajv.errorsText()}`);
