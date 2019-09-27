@@ -1,7 +1,8 @@
 import winston from 'winston';
+import { isProduction } from '../../constants';
 
 const logger = winston.createLogger({
-  level: 'debug',
+  level: isProduction ? 'warn' : 'debug',
   format: winston.format.json(),
   transports: [
     new winston.transports.Console({
