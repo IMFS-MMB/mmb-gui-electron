@@ -91,10 +91,6 @@ export class Matlab extends Base {
   async runCode(code, onData, onError) {
     const isWindows = platform() === 'win32';
 
-    if (isWindows) {
-      code = code.replace(/"/g, '\\"');
-    }
-
     let args;
 
     const matchesVersion = ver => semver.satisfies(this.semver, ver);
