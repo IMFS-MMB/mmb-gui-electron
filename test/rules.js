@@ -5,8 +5,7 @@ import { assert } from 'chai';
 import rules from './utils/rules';
 
 import { schemasFolder } from '../src/config/paths';
-import loadAjvWithSchemas from '../src/worker/util/ajv';
-const ajv = loadAjvWithSchemas(schemasFolder);
+import ajv from '../src/worker/util/ajv';
 
 function ruleTests(rule) {
   describe(`${rule.name}`, () => {

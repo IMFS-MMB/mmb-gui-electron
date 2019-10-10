@@ -8,8 +8,8 @@ import { MODEL_RULE } from '../src/config/constants';
 import getTestScript from './utils/matlab-code';
 
 import { schemasFolder } from '../src/config/paths';
-import loadAjvWithSchemas from '../src/worker/util/ajv';
-const ajv = loadAjvWithSchemas(schemasFolder);
+import ajv from '../src/worker/util/ajv';
+// const ajv = loadAjvWithSchemas(schemasFolder);
 
 async function runSimulation(backend, models = [], rules = [], output = [], shocks = []) {
   const code = getTestScript(models, rules, output, shocks);
