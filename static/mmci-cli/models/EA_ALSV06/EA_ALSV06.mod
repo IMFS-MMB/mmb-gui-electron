@@ -1,6 +1,6 @@
 // Model: ALSV06
 
-// Reference: Javier Andrés, J. David López-Salido and Javier Vallés 
+// Reference: Javier Andrï¿½s, J. David Lï¿½pez-Salido and Javier Vallï¿½s 
 // "Money in an estimated business cycle model of the Euro area"
 // The Economic Journal, 2006, 116 (April), 457-477.
 
@@ -93,7 +93,7 @@ sigmar = 0.0019;
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           
+thispath = pwd;                                                           
 cd('..');                                                                
 load policy_param.mat;                                                   
 for i=1:33                                                               
