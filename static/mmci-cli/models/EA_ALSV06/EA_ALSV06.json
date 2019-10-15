@@ -1,0 +1,126 @@
+{
+  "$schema": "model",
+  "name": "EA_ALSV06",
+  "capabilities": {
+    "fiscal_shock": false,
+    "inflation": true,
+    "interest": true,
+    "mp_shock": true,
+    "output": true,
+    "outputgap": true,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Andrés, López-Salido, Vallés (2006)",
+    "paper_title": "Money in an estimated business cycle model of the euro area",
+    "journal": "The Economic Journal 116(April), pp. 457-477",
+    "replicants_name": "J. Wendelborn and S. Usman",
+    "pub_date": "2006",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated euro area model",
+    "authors": [
+      "Andrés, Javier",
+      "López-Salido, J. David",
+      "Vallés, Javier"
+    ]
+  },
+  "msr": null,
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "epsa_",
+      "text": "epsa_"
+    },
+    {
+      "name": "epse_",
+      "text": "epse_"
+    },
+    {
+      "name": "epsz_",
+      "text": "epsz_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "a",
+      "text": "a"
+    },
+    {
+      "name": "e",
+      "text": "e"
+    },
+    {
+      "name": "inflation",
+      "text": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "interest"
+    },
+    {
+      "name": "m",
+      "text": "m"
+    },
+    {
+      "name": "output",
+      "text": "output"
+    },
+    {
+      "name": "outputgap",
+      "text": "outputgap"
+    },
+    {
+      "name": "pi",
+      "text": "pi"
+    },
+    {
+      "name": "r",
+      "text": "r"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "z",
+      "text": "z"
+    },
+    {
+      "name": "mc",
+      "text": "mc"
+    },
+    {
+      "name": "mu",
+      "text": "mu"
+    },
+    {
+      "name": "y_flex",
+      "text": "y_flex"
+    },
+    {
+      "name": "m_flex",
+      "text": "m_flex"
+    }
+  ]
+}
