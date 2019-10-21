@@ -1,0 +1,194 @@
+{
+  "$schema": "model",
+  "name": "NK_DT12",
+  "capabilities": {
+    "fiscal_shock": false,
+    "inflation": true,
+    "interest": true,
+    "mp_shock": true,
+    "output": true,
+    "outputgap": true,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "De Fiore & Tristani (2012)",
+    "paper_title": "Optimal Monetary Policy in a Model of the Credit Channel",
+    "journal": "The Economic Journal 123(571), pp. 906-931",
+    "replicants_name": "C. Mücke and J. Binder",
+    "pub_date": "2012",
+    "keywords": [],
+    "description": "",
+    "category": "Calibrated model",
+    "authors": [
+      "De Fiore, Fiorella",
+      "Tristani, Oreste"
+    ]
+  },
+  "msr": null,
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "epsA",
+      "text": "epsA"
+    },
+    {
+      "name": "epsmu",
+      "text": "epsmu"
+    },
+    {
+      "name": "epstau",
+      "text": "epstau"
+    },
+    {
+      "name": "epsstd",
+      "text": "epsstd"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "cons_h",
+      "text": "cons_h"
+    },
+    {
+      "name": "i_dep",
+      "text": "i_dep"
+    },
+    {
+      "name": "infl",
+      "text": "infl"
+    },
+    {
+      "name": "omeg_t",
+      "text": "omeg_t"
+    },
+    {
+      "name": "s_t",
+      "text": "s_t"
+    },
+    {
+      "name": "chi_t",
+      "text": "chi_t"
+    },
+    {
+      "name": "thet1_t",
+      "text": "thet1_t"
+    },
+    {
+      "name": "thet2_t",
+      "text": "thet2_t"
+    },
+    {
+      "name": "y_t",
+      "text": "y_t"
+    },
+    {
+      "name": "spread",
+      "text": "spread"
+    },
+    {
+      "name": "q_t",
+      "text": "q_t"
+    },
+    {
+      "name": "inflation",
+      "text": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "interest"
+    },
+    {
+      "name": "ygap",
+      "text": "ygap"
+    },
+    {
+      "name": "cons_e",
+      "text": "cons_e"
+    },
+    {
+      "name": "mon_cost",
+      "text": "mon_cost"
+    },
+    {
+      "name": "Bankrupt",
+      "text": "Bankrupt"
+    },
+    {
+      "name": "output",
+      "text": "output"
+    },
+    {
+      "name": "outputgap",
+      "text": "outputgap"
+    },
+    {
+      "name": "fo_t",
+      "text": "fo_t"
+    },
+    {
+      "name": "ho_t",
+      "text": "ho_t"
+    },
+    {
+      "name": "i_l",
+      "text": "i_l"
+    },
+    {
+      "name": "credit",
+      "text": "credit"
+    },
+    {
+      "name": "stdoi_t",
+      "text": "stdoi_t"
+    },
+    {
+      "name": "Util",
+      "text": "Util"
+    },
+    {
+      "name": "Welf",
+      "text": "Welf"
+    },
+    {
+      "name": "i_e",
+      "text": "i_e"
+    },
+    {
+      "name": "y_e",
+      "text": "y_e"
+    },
+    {
+      "name": "a_t",
+      "text": "a_t"
+    },
+    {
+      "name": "mu_t",
+      "text": "mu_t"
+    },
+    {
+      "name": "tau_t",
+      "text": "tau_t"
+    }
+  ]
+}
