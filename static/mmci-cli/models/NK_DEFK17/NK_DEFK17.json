@@ -1,0 +1,327 @@
+{
+  "$schema": "model",
+  "name": "NK_DEFK17",
+  "capabilities": {
+    "fiscal_shock": true,
+    "inflation": true,
+    "interest": true,
+    "mp_shock": true,
+    "output": true,
+    "outputgap": true,
+    "rules": [
+      3,
+      8,
+      9,
+      11
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Del Negro et al. (2017)",
+    "paper_title": "The Great Escape? A Quantitative Evaluation of the Fed's Liquidity Facilities",
+    "journal": "American Economic Review 107 (3), pp. 824-857",
+    "replicants_name": "S. Girstmair and A. Yambolov",
+    "pub_date": "2017",
+    "keywords": [],
+    "description": "",
+    "category": "Calibrated model",
+    "authors": [
+      "Del Negro, Marco",
+      "Eggertsson, Gauti",
+      "Ferrero, Andrea",
+      "Kiyotaki, Nobuhiro"
+    ]
+  },
+  "msr": null,
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "e_a",
+      "text": "e_a"
+    },
+    {
+      "name": "e_phi",
+      "text": "e_phi"
+    },
+    {
+      "name": "fiscal_",
+      "text": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "A",
+      "text": "A"
+    },
+    {
+      "name": "G",
+      "text": "G"
+    },
+    {
+      "name": "e_g",
+      "text": "e_g"
+    },    
+    {
+      "name": "C",
+      "text": "C"
+    },
+    {
+      "name": "Inv",
+      "text": "Inv"
+    },
+    {
+      "name": "S_Inv",
+      "text": "S_Inv"
+    },
+    {
+      "name": "dS_Inv",
+      "text": "dS_Inv"
+    },
+    {
+      "name": "H",
+      "text": "H"
+    },
+    {
+      "name": "Y",
+      "text": "Y"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "tau",
+      "text": "tau"
+    },
+    {
+      "name": "K",
+      "text": "K"
+    },
+    {
+      "name": "N",
+      "text": "N"
+    },
+    {
+      "name": "inflation",
+      "text": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "interest"
+    },
+    {
+      "name": "Ng",
+      "text": "Ng"
+    },
+    {
+      "name": "LY",
+      "text": "LY"
+    },
+    {
+      "name": "QK",
+      "text": "QK"
+    },
+    {
+      "name": "GDP",
+      "text": "GDP"
+    },
+    {
+      "name": "output",
+      "text": "output"
+    },
+    {
+      "name": "outputgap",
+      "text": "outputgap"
+    },
+    {
+      "name": "R",
+      "text": "R"
+    },
+    {
+      "name": "Q",
+      "text": "Q"
+    },
+    {
+      "name": "pI",
+      "text": "pI"
+    },
+    {
+      "name": "RK",
+      "text": "RK"
+    },
+    {
+      "name": "rK",
+      "text": "rK"
+    },
+    {
+      "name": "rr",
+      "text": "rr"
+    },
+    {
+      "name": "ERQ",
+      "text": "ERQ"
+    },
+    {
+      "name": "w",
+      "text": "w"
+    },
+    {
+      "name": "infl_w",
+      "text": "infl_w"
+    },
+    {
+      "name": "X1w",
+      "text": "X1w"
+    },
+    {
+      "name": "X2w",
+      "text": "X2w"
+    },
+    {
+      "name": "mc",
+      "text": "mc"
+    },
+    {
+      "name": "infl",
+      "text": "infl"
+    },
+    {
+      "name": "X1p",
+      "text": "X1p"
+    },
+    {
+      "name": "X2p",
+      "text": "X2p"
+    },
+    {
+      "name": "Delta_p",
+      "text": "Delta_p"
+    },
+    {
+      "name": "CY",
+      "text": "CY"
+    },
+    {
+      "name": "Spr",
+      "text": "Spr"
+    },
+    {
+      "name": "phi",
+      "text": "phi"
+    },
+    {
+      "name": "C_f",
+      "text": "C_f"
+    },
+    {
+      "name": "Inv_f",
+      "text": "Inv_f"
+    },
+    {
+      "name": "S_Inv_f",
+      "text": "S_Inv_f"
+    },
+    {
+      "name": "dS_Inv_f",
+      "text": "dS_Inv_f"
+    },
+    {
+      "name": "H_f",
+      "text": "H_f"
+    },
+    {
+      "name": "Y_f",
+      "text": "Y_f"
+    },
+    {
+      "name": "tau_f",
+      "text": "tau_f"
+    },
+    {
+      "name": "K_f",
+      "text": "K_f"
+    },
+    {
+      "name": "N_f",
+      "text": "N_f"
+    },
+    {
+      "name": "Ng_f",
+      "text": "Ng_f"
+    },
+    {
+      "name": "LY_f",
+      "text": "LY_f"
+    },
+    {
+      "name": "QK_f",
+      "text": "QK_f"
+    },
+    {
+      "name": "GDP_f",
+      "text": "GDP_f"
+    },
+    {
+      "name": "R_f",
+      "text": "R_f"
+    },
+    {
+      "name": "R0_f",
+      "text": "R0_f"
+    },    
+    {
+      "name": "Q_f",
+      "text": "Q_f"
+    },
+    {
+      "name": "pI_f",
+      "text": "pI_f"
+    },
+    {
+      "name": "RK_f",
+      "text": "RK_f"
+    },
+    {
+      "name": "rK_f",
+      "text": "rK_f"
+    },
+    {
+      "name": "ERQ_f",
+      "text": "ERQ_f"
+    },
+    {
+      "name": "w_f",
+      "text": "w_f"
+    },
+    {
+      "name": "infl_w",
+      "text": "infl_w"
+    },
+    {
+      "name": "mc_f",
+      "text": "mc_f"
+    },
+    {
+      "name": "CY_f",
+      "text": "CY_f"
+    },
+    {
+      "name": "Spr_f",
+      "text": "Spr_f"
+    },
+    {
+      "name": "phi_f",
+      "text": "phi_f"    
+    }
+  ]
+}
