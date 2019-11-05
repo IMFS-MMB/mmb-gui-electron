@@ -1,0 +1,300 @@
+{
+  "$schema": "model",
+  "name": "US_SW07",
+  "capabilities": {
+    "fiscal_shock": true,
+    "inflation": true,
+    "interest": true,
+    "mp_shock": true,
+    "output": true,
+    "outputgap": true,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Smets & Wouters (2007)",
+    "paper_title": "Shocks and frictions in US business cycles: A bayesian DSGE approach",
+    "journal": "The American Economic Review 97(3), pp. 586-606",
+    "replicants_name": "S. Schmidt",
+    "pub_date": "2007",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated US model",
+    "authors": [
+      "Smets, Frank",
+      "Wouters, Rafael"
+    ]
+  },
+  "msr": [
+    "0.8103",
+    "0",
+    "0",
+    "0",
+    "(1-0.8103)*2.0443",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "((1-0.8103)*0.0882+0.2247)*4",
+    "-0.2247*4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "ea",
+      "text": "ea"
+    },
+    {
+      "name": "eb",
+      "text": "eb"
+    },
+    {
+      "name": "em",
+      "text": "em"
+    },
+    {
+      "name": "epinf",
+      "text": "epinf"
+    },
+    {
+      "name": "eqs",
+      "text": "eqs"
+    },
+    {
+      "name": "ew",
+      "text": "ew"
+    },
+    {
+      "name": "fiscal_",
+      "text": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "a",
+      "text": "a"
+    },
+    {
+      "name": "b",
+      "text": "b"
+    },
+    {
+      "name": "c",
+      "text": "c"
+    },
+    {
+      "name": "dc",
+      "text": "dc"
+    },
+    {
+      "name": "dinve",
+      "text": "dinve"
+    },
+    {
+      "name": "dw",
+      "text": "dw"
+    },
+    {
+      "name": "dy",
+      "text": "dy"
+    },
+    {
+      "name": "eg",
+      "text": "eg"
+    },
+    {
+      "name": "epinfma",
+      "text": "epinfma"
+    },
+    {
+      "name": "ewma",
+      "text": "ewma"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "g",
+      "text": "g"
+    },
+    {
+      "name": "inflation",
+      "text": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "interest"
+    },
+    {
+      "name": "inve",
+      "text": "inve"
+    },
+    {
+      "name": "invef",
+      "text": "invef"
+    },
+    {
+      "name": "k",
+      "text": "k"
+    },
+    {
+      "name": "kf",
+      "text": "kf"
+    },
+    {
+      "name": "kp",
+      "text": "kp"
+    },
+    {
+      "name": "kpf",
+      "text": "kpf"
+    },
+    {
+      "name": "lab",
+      "text": "lab"
+    },
+    {
+      "name": "labf",
+      "text": "labf"
+    },
+    {
+      "name": "labobs",
+      "text": "labobs"
+    },
+    {
+      "name": "mc",
+      "text": "mc"
+    },
+    {
+      "name": "ms",
+      "text": "ms"
+    },
+    {
+      "name": "output",
+      "text": "output"
+    },
+    {
+      "name": "outputgap",
+      "text": "outputgap"
+    },
+    {
+      "name": "pinf",
+      "text": "pinf"
+    },
+    {
+      "name": "pinf4",
+      "text": "pinf4"
+    },
+    {
+      "name": "pinfobs",
+      "text": "pinfobs"
+    },
+    {
+      "name": "pk",
+      "text": "pk"
+    },
+    {
+      "name": "pkf",
+      "text": "pkf"
+    },
+    {
+      "name": "qs",
+      "text": "qs"
+    },
+    {
+      "name": "r",
+      "text": "r"
+    },
+    {
+      "name": "rk",
+      "text": "rk"
+    },
+    {
+      "name": "rkf",
+      "text": "rkf"
+    },
+    {
+      "name": "robs",
+      "text": "robs"
+    },
+    {
+      "name": "rrf",
+      "text": "rrf"
+    },
+    {
+      "name": "spinf",
+      "text": "spinf"
+    },
+    {
+      "name": "sw",
+      "text": "sw"
+    },
+    {
+      "name": "w",
+      "text": "w"
+    },
+    {
+      "name": "wf",
+      "text": "wf"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "yf",
+      "text": "yf"
+    },
+    {
+      "name": "zcap",
+      "text": "zcap"
+    },
+    {
+      "name": "zcapf",
+      "text": "zcapf"
+    }
+  ]
+}
