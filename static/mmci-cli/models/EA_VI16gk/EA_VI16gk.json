@@ -1,6 +1,6 @@
 {
   "$schema": "model",
-  "name": "US_VI16bgg",
+  "name": "EA_VI16gk",
   "capabilities": {
     "fiscal_shock": true,
     "inflation": true,
@@ -29,7 +29,7 @@
     "pub_date": "2016",
     "keywords": [],
     "description": "",
-    "category": "Estimated US model",
+    "category": "Estimated Euro Area model",
     "authors": [
       "Villa, Stefania"
     ]
@@ -116,8 +116,36 @@
       "text": "cf"
     },
     {
+      "name": "d",
+      "text": "d"
+    },
+    {
+      "name": "dc",
+      "text": "dc"
+    },
+    {
+      "name": "df",
+      "text": "df"
+    },
+    {
+      "name": "dfi",
+      "text": "dfi"
+    },
+    {
+      "name": "dw",
+      "text": "dw"
+    },
+    {
+      "name": "dy",
+      "text": "dy"
+    },
+    {
       "name": "e_g",
       "text": "e_g"
+    },
+    {
+      "name": "emp",
+      "text": "emp"
     },
     {
       "name": "eps_k",
@@ -126,6 +154,10 @@
     {
       "name": "eps_p",
       "text": "Price markup shock process"
+    },
+    {
+      "name": "eps_r",
+      "text": "eps_r"
     },
     {
       "name": "eps_w",
@@ -184,16 +216,56 @@
       "text": "Hours worked"
     },
     {
+      "name": "Lambda",
+      "text": "Lambda"
+    },
+    {
+      "name": "Lambdaf",
+      "text": "Lambdaf"
+    },
+    {
+      "name": "lev",
+      "text": "lev"
+    },
+    {
+      "name": "levf",
+      "text": "levf"
+    },
+    {
       "name": "lf",
       "text": "lf"
     },
     {
-      "name": "n",
+      "name": "mu",
+      "text": "mu"
+    },
+    {
+      "name": "muf",
+      "text": "muf"
+    },
+    {
+      "name": "n", 
       "text": "n"
+    },
+    {
+      "name": "ne",
+      "text": "ne"
+    },
+    {
+      "name": "nef",
+      "text": "nef"
     },
     {
       "name": "nf",
       "text": "nf"
+    },
+    {
+      "name": "nn",
+      "text": "nn"
+    },
+    {
+      "name": "nnf",
+      "text": "nnf"
     },
     {
       "name": "output",
@@ -206,6 +278,10 @@
     {
       "name": "pi",
       "text": "pi"
+    },
+    {
+      "name": "piobs",
+      "text": "piobs"
     },
     {
       "name": "q",
@@ -235,6 +311,10 @@
       "name": "rn",
       "text": "rn"
     },
+    {
+      "name": "robs",
+      "text": "robs"
+    },
      {
       "name": "u",
       "text": "Capital utilization rate"
@@ -242,6 +322,14 @@
     {
       "name": "uf",
       "text": "uf"
+    },
+    {
+      "name": "v",
+      "text": "v"
+    },
+    {
+      "name": "vf",
+      "text": "vf"
     },
    {
       "name": "w",
@@ -252,12 +340,28 @@
       "text": "wf"
     },
     {
+      "name": "x",
+      "text": "x"
+    },
+    {
+      "name": "xf",
+      "text": "xf"
+    },
+    {
       "name": "y",
       "text": "y"
     },
     {
       "name": "yf",
       "text": "yf"
+    },
+    {
+      "name": "z",
+      "text": "z"
+    },
+    {
+      "name": "zf",
+      "text": "zf"
     },
     {
       "name": "zk",
@@ -268,4 +372,4 @@
       "text": "zkf"
     }
   ]
-}
+} 
