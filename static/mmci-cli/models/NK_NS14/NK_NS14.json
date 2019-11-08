@@ -84,7 +84,7 @@
   "variables": [
     {
       "name": "c",
-      "text": "c"
+      "text": "Consumption"
     },
     {
       "name": "c_n",
@@ -124,7 +124,7 @@
     },
     {
       "name": "i",
-      "text": "i"
+      "text": "Investment"
     },
     {
       "name": "i_n",
@@ -152,7 +152,7 @@
     },
     {
       "name": "k",
-      "text": "k"
+      "text": "Capital"
     },
     {
       "name": "k_n",
@@ -168,7 +168,7 @@
     },
     {
       "name": "l",
-      "text": "l"
+      "text": "Labour"
     },
     {
       "name": "l_n",
@@ -240,7 +240,7 @@
     },
     {
       "name": "r",
-      "text": "r"
+      "text": "Real interest rate"
     },
     {
       "name": "r_n",
@@ -256,7 +256,7 @@
     },
     {
       "name": "sH",
-      "text": "sH"
+      "text": "Marginal cost"
     },
     {
       "name": "sH_n",
@@ -264,7 +264,7 @@
     },
     {
       "name": "w",
-      "text": "w"
+      "text": "Real wage"
     },
     {
       "name": "w_n",

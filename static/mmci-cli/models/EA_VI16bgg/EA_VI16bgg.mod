@@ -7,15 +7,13 @@
 // Working Paper, 2009
 //**************************************************************************
 
-// Model: US_V16
+// Model: EA_V16
 
 // Further references:
 // "Stefania Villa, S. 2016."Financial frictions in the Euro Area and the United States: a Bayesian assessment"
 // Macroeconomic Dynamics, 20(05), pp. 1313-1340.
 
-// Estimation for US
-    
-// Last edited: 30/06/2019 by T. Spital
+// Last edited: 19/06/2019 by T. Spital
 
 
 var y  c  i  w  l  pi r rn zk  u  k  q  rk   ext_pr   n             
@@ -27,7 +25,7 @@ var y  c  i  w  l  pi r rn zk  u  k  q  rk   ext_pr   n
         interest inflation inflationq outputgap output fispol;           //*
 //**************************************************************************
  
-varexo e_a e_x  e_p e_w e_k %e_r
+varexo e_a e_x e_p e_w e_k %e_r
 
 //**************************************************************************
 // Modelbase Shocks                                                      //*       
@@ -61,38 +59,39 @@ beta      = 0.990;    % Discount factor
 delta     = 0.025;    % Steady state depreciation rate
 epsilon_w = 6.000;    % Elasticity across different types of labour, set to target M_w=1.20
 epsilon   = 6.000;    % Elasticity of substitution in goods market, set to target M=1.20
-M         = 1.200;    % gross steady state mark-up  
+M         = 1.200;    % the mark-up  
 G_Y       = 0.200;    % G/Y
 N_K       = 0.500;    % N/K, net worth-to-capital
-theta     = 0.972;   % Probability the firm survives next period
+theta     = 0.9715;   % Probability the firm survives next period
 
 // estimated parameters initialisation
-phi       = 1.69;      % Inverse Frisch elasticity of L supply
-Theta     = 1.28;      % FCP: fixed costs in production (in Villa)
-ksi       = 4.75;      % 2nd derivative of Inv adjustment cost
-h         = 0.48;      % Habit parameter   
-zeta      = 0.79;      % Elasticity of capital utilization
-sigma_w   = 0.82;      % Calvo wages, calvo parameter for unions
-sigma_p   = 0.89;      % Calvo prices, calvo parameter for retail firms
-sigma_wi  = 0.31;      % Indexation to past wage inflation
-sigma_pi  = 0.35;      % indexation to past inflation
-kappa     = 0.05;      % Elasticity of external finance 
+phi       = 1.34;     % Inverse Frisch elasticity of L supply
+Theta     = 1.33;     % FCP: fixed costs in production (in Villa)
+ksi       = 4.59;     % 2nd derivative of Inv adjustment cost
+h         = 0.69;     % Habit parameter   
+zeta      = 0.95;     % EDCU
+sigma_w   = 0.77;     % Calvo wages, calvo parameter for unions
+sigma_p   = 0.82;     % Calvo prices, calvo parameter for retail firms
+sigma_wi  = 0.37;     % Indexation to past wage inflation
+sigma_pi  = 0.15;     % indexation to past inflation
+kappa     = 0.04;     % Elasticity of external finance 
 
-rho_pi    = 1.83;      % Response to inflation in Taylor rule
-rho_r     = 0.84;      % Interest rate smoothing in Taylor rule
-rho_y     = 0.12;      % Response to output gap in Taylor rule
-rho_dy    = 0.18;
+rho_pi    = 1.8;    % Response to inflation in Taylor rule
+rho_r     = 0.88;   % Interest rate smoothing in Taylor rule
+rho_y     = 0.09;   % Response to output gap in Taylor rule
+rho_dy    = 0.06;
 
-rho_a     = 0.92;      % Persistence of technological shock
-rho_k     = 0.97;
-rho_g     = 0.95;
-rho_x     = 0.96;      % Persistence of shock to K
-rho_ri    = 0.27;
-rho_p     = 0.32;
-rho_w     = 0.17;
+rho_a     = 0.87;   % Persistency of technological shock
+rho_k     = 0.99;
+rho_g     = 0.92;
+rho_x     = 0.97;   % Persistency of shock to K
+rho_ri    = 0.25;
+rho_p     = 0.81;
+rho_w     = 0.59;
+ 
 
-// Derived from steady state
-bas_point = 150;       % Steady state spread
+// derived from steady state
+bas_point = 150;
 s_coef    = (bas_point + 40000)/40000;
 
 //**************************************************************************
@@ -200,7 +199,6 @@ yf      = C_Y*cf + I_Y*if + G_Y*g + ZK*K_Y*uf ;
 yf      = Theta*(a + alpha*(kf(-1)+eps_k + uf) +(1-alpha)*lf);  
 wf      = phi*lf	+ (1/(1-h))*cf - h/(1-h)*cf(-1) ;
 kf      = (1-delta)*(kf(-1)+eps_k) + I_K*if + I_K*ksi*eps_x ; 
-%ef     = (1/(1+beta))*(ef(-1) + beta*ef(+1) - (1-sigma_e*beta)*(1-sigma_e)/sigma_e*(lf-ef)) 
 
 
 // sticky price - wage economy
@@ -218,7 +216,6 @@ pi=  (1/(1+beta*sigma_pi)) * (sigma_pi*pi(-1) + beta*pi(+1) -((1-sigma_p)
   *(1-beta*sigma_p)/sigma_p)*(a - alpha*zk-(1-alpha)*w)) + eps_p ; 
 // rn= rho_r*rn(-1) +(1-rho_r)*(rho_pi*pi +rho_y *(y-yf))+rho_dy*(y-yf-(y(-1)-yf(-1)))+eps_r ;
 rn= r + pi(+1);
-%e = (1/(1+beta))*(e(-1) + beta*e(+1) - (1-sigma_e*beta)*(1-sigma_e)/sigma_e*(l-e));  
 rk = (ZK/RK)*zk + (1-delta)/RK*(q+eps_k)- q(-1); 
 ext_pr= kappa*(q + k - n);  
 rk(+1)= ext_pr +r;  
@@ -236,14 +233,14 @@ end;
 
  
 shocks;
-var e_a;     stderr  0.42;
-var e_k;     stderr  0.25;
-var fiscal_; stderr  2.23;
-var e_x;     stderr  1.04;
-//var e_r;   stderr  0.13;
-var e_p;     stderr  0.12;
-var e_w;     stderr  0.29;
+var e_a; stderr  1.09;
+var e_k; stderr  0.24;
+var fiscal_; stderr  1.46;
+var e_x; stderr  2.33;
+//var e_r; stderr  0.11;
+var e_p; stderr  0.07;
+var e_w; stderr  0.12;
  
 end;
 
-%stoch_simul(irf=20, nograph) y i pi n ext_pr  ;
+//stoch_simul(irf=20, irf_shocks=(e_x)) y i pi n ext_pr  ;

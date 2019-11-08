@@ -72,7 +72,7 @@
   "shocks": [
     {
       "name": "e_a",
-      "text": "e_a"
+      "text": "Technology shock"
     },
     {
       "name": "fiscal_",
@@ -87,7 +87,7 @@
   "variables": [
     {
       "name": "a",
-      "text": "a"
+      "text": "Technology shock process"
     },
     {
       "name": "C",
@@ -115,7 +115,7 @@
     },
     {
       "name": "Cp",
-      "text": "Cp"
+      "text": "Consumption"
     },
     {
       "name": "Cp_fe",
@@ -143,7 +143,7 @@
     },
     {
       "name": "I",
-      "text": "I"
+      "text": "Investment"
     },
     {
       "name": "I_fe",
@@ -163,7 +163,7 @@
     },
     {
       "name": "K",
-      "text": "K"
+      "text": "Capital"
     },
     {
       "name": "K_fe",
@@ -171,7 +171,7 @@
     },
     {
       "name": "l",
-      "text": "l"
+      "text": "Labour"
     },
     {
       "name": "L",
@@ -211,7 +211,7 @@
     },
     {
       "name": "mc",
-      "text": "mc"
+      "text": "Marginal cost"
     },
     {
       "name": "mc_fe",
@@ -219,7 +219,7 @@
     },
     {
       "name": "N",
-      "text": "N"
+      "text": "Entepreneurial net worth"
     },
     {
       "name": "N_fe",
@@ -315,7 +315,7 @@
     },
     {
       "name": "Rk",
-      "text": "Rk"
+      "text": "Capital rent"
     },
     {
       "name": "rk_fe",
@@ -351,7 +351,7 @@
     },
     {
       "name": "U",
-      "text": "U"
+      "text": "Capital utilization rate"
     },
     {
       "name": "U_fe",
@@ -375,7 +375,7 @@
     },
     {
       "name": "w",
-      "text": "w"
+      "text": "Real wage"
     },
     {
       "name": "w_fe",

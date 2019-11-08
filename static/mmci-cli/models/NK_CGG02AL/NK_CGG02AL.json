@@ -106,7 +106,7 @@
   "shocks": [
     {
       "name": "a_",
-      "text": "a_"
+      "text": "Technology shock"
     },
     {
       "name": "astar_",
@@ -114,7 +114,7 @@
     },
     {
       "name": "inf_",
-      "text": "inf_"
+      "text": "Price markup shock"
     },
     {
       "name": "infstar_",
@@ -136,7 +136,7 @@
   "variables": [
     {
       "name": "a",
-      "text": "a"
+      "text": "Technology shock process"
     },
     {
       "name": "astar",
@@ -208,7 +208,7 @@
     },
     {
       "name": "u",
-      "text": "u"
+      "text": "Price markup shock process"
     },
     {
       "name": "ustar",
