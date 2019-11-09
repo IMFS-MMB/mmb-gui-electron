@@ -1,6 +1,8 @@
 import commonShocks from '@/data/shocks';
 import commonVariables from '@/data/variables';
 import allModels from '@/data/models';
+import intersection from '../../utils/intersection';
+import partition from '../../utils/partition';
 
 function defaultStates() {
   return allModels.reduce((states, model) => {
@@ -50,6 +52,18 @@ const getters = {
   },
   variables(state) {
     return state.variables;
+  },
+  variablesAvailable(state, getters) {
+    const variables = getters.models.map(model => model.variables);
+    const common = intersection(variables, variable => variable.text);
+
+    const [humanReadable, nonHumanReadable] =
+      partition(common, variable => variable.text !== variable.name);
+
+    return commonVariables
+      .concat(humanReadable)
+      .concat(nonHumanReadable)
+      .filter((v, i, a) => a.indexOf(v) === i);
   },
   plotAutocorrelation(state) {
     return state.plotAutocorrelation;
@@ -183,6 +197,18 @@ const mutations = {
   },
   setModels(state, data) {
     state.models = data;
+
+    if (state.models.length) {
+      const allVariables = [
+        state.variables,
+        // commonVariables,
+        ...state.models.map(m => m.variables),
+      ];
+      state.variables = intersection(allVariables, v => v.text);
+    } else {
+      state.variables = [];
+      state.shocks = [];
+    }
 
     state.shocks = state.shocks.filter(shock => isShockSelectable(state.models, shock));
   },

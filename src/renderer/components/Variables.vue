@@ -15,8 +15,8 @@
                     {{variable.text}}
                 </b-form-checkbox>
                 <template v-if="modelSpecificVariablesUnavailable">
-                    <div id="model-specific-variables-unavailable" >
-                        <b-form-checkbox :value="null" :disabled="true" >
+                    <div id="model-specific-variables-unavailable">
+                        <b-form-checkbox :value="null" :disabled="true">
                             Model Specific Variables
                         </b-form-checkbox>
                     </div>
@@ -37,7 +37,6 @@
 </template>
 <script>
   import { mapMutations, mapGetters } from 'vuex';
-  import commonVariables from '@/data/variables';
 
   export default {
     computed: {
@@ -45,19 +44,8 @@
       ...mapGetters('options', {
         numSelected: 'numVariables',
         variableSelection: 'variables',
-        modelSelection: 'models',
+        variables: 'variablesAvailable',
       }),
-      variables() {
-        if (this.modelSelection.length !== 1) {
-          return commonVariables;
-        }
-
-        return [
-          ...commonVariables,
-          ...this.modelSelection[0].variables.filter(v =>
-            !commonVariables.some(cv => cv.name === v.name)),
-        ];
-      },
       selection: {
         get() {
           return this.variableSelection;
