@@ -3,14 +3,14 @@
 //
 // Frank Smets, Anders Warne, Rafael Wouters
 //
-// International Journal of Forecasting 30 (2014) 981–995
+// International Journal of Forecasting 30 (2014) 981ï¿½995
 //**************************************************************************
 // Model: EA_SWW14
 // Further references:
 // Frank Smets, Anders Warne, Rafael Wouters 2013. "Professional Forecasters and the Real-Time 
 // Forecasting Performance of an Estimated New Keynesian Model for the Euro Area"
 // ECB Working Paper Series NO 1571 / August 2013
-// Last edited: 7/1/19 by N. Telia, A. Dück
+// Last edited: 7/1/19 by N. Telia, A. Dï¿½ck
 
 var     c    // consumption
         pi   // inflation
@@ -185,7 +185,7 @@ crhoga  =   0.19 ; //measures the effect of TFP innovations on exogenous spendin
 // Specification of Modelbase Parameters                                 //*
                                                                          //*
 // Load Modelbase Monetary Policy Parameters                             //*
-thispath = cd;                                                           
+thispath = pwd;                                                           
 cd('..');                                                                
 load policy_param.mat;                                                   
 for i=1:33                                                               
