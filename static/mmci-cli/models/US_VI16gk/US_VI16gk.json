@@ -1,0 +1,375 @@
+{
+  "$schema": "model",
+  "name": "US_VI16gk",
+  "capabilities": {
+    "fiscal_shock": true,
+    "inflation": true,
+    "interest": true,
+    "mp_shock": true,
+    "output": true,
+    "outputgap": true,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Villa (2016)",
+    "paper_title": "Financial frictions in the Euro Area and the United States: a Bayesian assessment",
+    "journal": "Macroeconomic Dynamics, 20(05), pp. 1313-1340.",
+    "replicants_name": "A. Dück",
+    "pub_date": "2016",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated US model",
+    "authors": [
+      "Villa, Stefania"
+    ]
+  },
+  "msr": [
+    "0.84",
+    "0",
+    "0",
+    "0",
+    "(1-0.84)*1.83",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "((1-0.84)*0.12+0.18)*4",
+    "-0.18*4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "e_a",
+      "text": "Technology shock"
+    },
+    {
+      "name": "e_k",
+      "text": "e_k"
+    },
+    {
+      "name": "e_p",
+      "text": "Price markup shock"
+    },
+    {
+      "name": "e_w",
+      "text": "Wage markup shock"
+    },
+    {
+      "name": "e_x",
+      "text": "Investment technology shock"
+    },
+    {
+      "name": "fiscal_",
+      "text": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "a",
+      "text": "Technology shock process"
+    },
+    {
+      "name": "c",
+      "text": "Consumption"
+    },
+    {
+      "name": "cf",
+      "text": "cf"
+    },
+    {
+      "name": "d",
+      "text": "d"
+    },
+    {
+      "name": "dc",
+      "text": "dc"
+    },
+    {
+      "name": "df",
+      "text": "df"
+    },
+    {
+      "name": "dfi",
+      "text": "dfi"
+    },
+    {
+      "name": "dw",
+      "text": "dw"
+    },
+    {
+      "name": "dy",
+      "text": "dy"
+    },
+    {
+      "name": "e_g",
+      "text": "e_g"
+    },
+    {
+      "name": "emp",
+      "text": "emp"
+    },
+    {
+      "name": "eps_k",
+      "text": "eps_k"
+    },
+    {
+      "name": "eps_p",
+      "text": "Price markup shock process"
+    },
+    {
+      "name": "eps_r",
+      "text": "eps_r"
+    },
+    {
+      "name": "eps_w",
+      "text": "Wage markup shock process"
+    },
+    {
+      "name": "eps_x",
+      "text": "Investment technology shock process"
+    },
+    {
+      "name": "ext_pr",
+      "text": "ext_pr"
+    },
+    {
+      "name": "ext_prf",
+      "text": "ext_prf"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "g",
+      "text": "g"
+    },
+    {
+      "name": "inflation",
+      "text": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "interest"
+    },
+    {
+      "name": "i",
+      "text": "Investment"
+    },
+    {
+      "name": "if",
+      "text": "if"
+    },
+    {
+      "name": "k",
+      "text": "Capital"
+    },
+    {
+      "name": "kf",
+      "text": "kf"
+    },
+    {
+      "name": "l",
+      "text": "Hours worked"
+    },
+    {
+      "name": "Lambda",
+      "text": "Lambda"
+    },
+    {
+      "name": "Lambdaf",
+      "text": "Lambdaf"
+    },
+    {
+      "name": "lev",
+      "text": "lev"
+    },
+    {
+      "name": "levf",
+      "text": "levf"
+    },
+    {
+      "name": "lf",
+      "text": "lf"
+    },
+    {
+      "name": "mu",
+      "text": "mu"
+    },
+    {
+      "name": "muf",
+      "text": "muf"
+    },
+    {
+      "name": "n", 
+      "text": "n"
+    },
+    {
+      "name": "ne",
+      "text": "ne"
+    },
+    {
+      "name": "nef",
+      "text": "nef"
+    },
+    {
+      "name": "nf",
+      "text": "nf"
+    },
+    {
+      "name": "nn",
+      "text": "nn"
+    },
+    {
+      "name": "nnf",
+      "text": "nnf"
+    },
+    {
+      "name": "output",
+      "text": "output"
+    },
+    {
+      "name": "outputgap",
+      "text": "outputgap"
+    },
+    {
+      "name": "pi",
+      "text": "pi"
+    },
+    {
+      "name": "piobs",
+      "text": "piobs"
+    },
+    {
+      "name": "q",
+      "text": "q"
+    },
+    {
+      "name": "qf",
+      "text": "qf"
+    },
+    {
+      "name": "r",
+      "text": "Real interest rate"
+    },
+    {
+      "name": "rf",
+      "text": "rf"
+    },
+    {
+      "name": "rk",
+      "text": "Capital rent"
+    },
+    {
+      "name": "rkf",
+      "text": "rkf"
+    },
+    {
+      "name": "rn",
+      "text": "rn"
+    },
+    {
+      "name": "robs",
+      "text": "robs"
+    },
+     {
+      "name": "u",
+      "text": "Capital utilization rate"
+    },
+    {
+      "name": "uf",
+      "text": "uf"
+    },
+    {
+      "name": "v",
+      "text": "v"
+    },
+    {
+      "name": "vf",
+      "text": "vf"
+    },
+   {
+      "name": "w",
+      "text": "Real wage"
+    },
+    {
+      "name": "wf",
+      "text": "wf"
+    },
+    {
+      "name": "x",
+      "text": "x"
+    },
+    {
+      "name": "xf",
+      "text": "xf"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "yf",
+      "text": "yf"
+    },
+    {
+      "name": "z",
+      "text": "z"
+    },
+    {
+      "name": "zf",
+      "text": "zf"
+    },
+    {
+      "name": "zk",
+      "text": "zk"
+    },
+    {
+      "name": "zkf",
+      "text": "zkf"
+    }
+  ]
+} 
