@@ -1,0 +1,509 @@
+{
+  "$schema": "model",
+  "name": "US_CET15",
+  "capabilities": {
+    "fiscal_shock": false,
+    "inflation": true,
+    "interest": true,
+    "mp_shock": true,
+    "output": true,
+    "outputgap": true,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Christiano, Lawrence J., Martin S. Eichenbaum, and Mathias Trabandt (2015)",
+    "paper_title": "Understanding the Great Recession",
+    "journal": "American Economic Journal",
+    "replicants_name": "",
+    "pub_date": "",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated US model",
+    "authors": [
+      "Christiano, Lawrence J.",
+      "Martin S. Eichenbaum",
+      "Mathias Trabandt"
+    ]
+  },
+  "msr": [
+    "0.7503",
+    "0",
+    "0",
+    "0",
+    "(1-0.7503)*1.6663/4",
+    "(1-0.7503)*1.6663/4",
+    "(1-0.7503)*1.6663/4",
+    "(1-0.7503)*1.6663/4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0.2471",
+    "0",
+    "0",
+    "0",
+    "-0.2471",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "interest_",
+      "text": "interest_"
+    },
+    {
+      "name": "mupsi_eps",
+      "text": "mupsi_eps"
+    },
+    {
+      "name": "muz_eps",
+      "text": "muz_eps"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "A_R",
+      "text": "A_R"
+    },
+    {
+      "name": "AF",
+      "text": "AF"
+    },
+    {
+      "name": "cAGG",
+      "text": "cAGG"
+    },
+    {
+      "name": "cF",
+      "text": "cF"
+    },
+    {
+      "name": "cHF",
+      "text": "cHF"
+    },
+    {
+      "name": "cHR",
+      "text": "cHR"
+    },
+    {
+      "name": "cR",
+      "text": "Consumption"
+    },
+    {
+      "name": "DispF",
+      "text": "DispF"
+    },
+    {
+      "name": "DispR",
+      "text": "DispR"
+    },
+    {
+      "name": "eF",
+      "text": "eF"
+    },
+    {
+      "name": "eR",
+      "text": "eR"
+    },
+    {
+      "name": "fAGG",
+      "text": "fAGG"
+    },
+    {
+      "name": "fF",
+      "text": "fF"
+    },
+    {
+      "name": "FF",
+      "text": "FF"
+    },
+    {
+      "name": "fR",
+      "text": "fR"
+    },
+    {
+      "name": "FR",
+      "text": "FR"
+    },
+    {
+      "name": "GDPAGG",
+      "text": "GDPAGG"
+    },
+    {
+      "name": "GDPF",
+      "text": "GDPF"
+    },
+    {
+      "name": "GDPR",
+      "text": "GDPR"
+    },
+    {
+      "name": "iAGG",
+      "text": "iAGG"
+    },
+    {
+      "name": "iF",
+      "text": "iF"
+    },
+    {
+      "name": "inflation",
+      "text": "inflation"
+    },
+    {
+      "name": "inflationF",
+      "text": "inflationF"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "inflationqF",
+      "text": "inflationqF"
+    },
+    {
+      "name": "inflationqR",
+      "text": "inflationqR"
+    },
+    {
+      "name": "inflationR",
+      "text": "inflationR"
+    },
+    {
+      "name": "interest",
+      "text": "interest"
+    },
+    {
+      "name": "interestF",
+      "text": "interestF"
+    },
+    {
+      "name": "interestR",
+      "text": "interestR"
+    },
+    {
+      "name": "iR",
+      "text": "Investment"
+    },
+    {
+      "name": "JF",
+      "text": "JF"
+    },
+    {
+      "name": "JR",
+      "text": "JR"
+    },
+    {
+      "name": "KF",
+      "text": "KF"
+    },
+    {
+      "name": "KR",
+      "text": "KR"
+    },
+    {
+      "name": "kststF",
+      "text": "kststF"
+    },
+    {
+      "name": "kststR",
+      "text": "Capital"
+    },
+    {
+      "name": "lAGG",
+      "text": "lAGG"
+    },
+    {
+      "name": "LAGG",
+      "text": "LAGG"
+    },
+    {
+      "name": "lambda_CF",
+      "text": "lambda_CF"
+    },
+    {
+      "name": "lambda_CR",
+      "text": "lambda_CR"
+    },
+    {
+      "name": "LcalF",
+      "text": "LcalF"
+    },
+    {
+      "name": "LcalR",
+      "text": "LcalR"
+    },
+    {
+      "name": "lF",
+      "text": "lF"
+    },
+    {
+      "name": "LF",
+      "text": "LF"
+    },
+    {
+      "name": "lR",
+      "text": "Hours worked"
+    },
+    {
+      "name": "LR",
+      "text": "Labor"
+    },
+    {
+      "name": "muF",
+      "text": "muF"
+    },
+    {
+      "name": "mupsiF",
+      "text": "mupsiF"
+    },
+    {
+      "name": "muzF",
+      "text": "muzF"
+    },
+    {
+      "name": "NF",
+      "text": "NF"
+    },
+    {
+      "name": "nGF",
+      "text": "nGF"
+    },
+    {
+      "name": "nGR",
+      "text": "nGR"
+    },
+    {
+      "name": "NR",
+      "text": "NR"
+    },
+    {
+      "name": "output",
+      "text": "output"
+    },
+    {
+      "name": "outputF",
+      "text": "outputF"
+    },
+    {
+      "name": "outputgap",
+      "text": "outputgap"
+    },
+    {
+      "name": "outputgapF",
+      "text": "outputgapF"
+    },
+    {
+      "name": "outputgapR",
+      "text": "outputgapR"
+    },
+    {
+      "name": "outputR",
+      "text": "outputR"
+    },
+    {
+      "name": "pi4F",
+      "text": "pi4F"
+    },
+    {
+      "name": "piAGG",
+      "text": "piAGG"
+    },
+    {
+      "name": "piF",
+      "text": "piF"
+    },
+    {
+      "name": "pinvestAGG",
+      "text": "pinvestAGG"
+    },
+    {
+      "name": "piR",
+      "text": "Inflation"
+    },
+    {
+      "name": "pkF",
+      "text": "pkF"
+    },
+    {
+      "name": "pkR",
+      "text": "Capital rent"
+    },
+    {
+      "name": "plF",
+      "text": "plF"
+    },
+    {
+      "name": "plR",
+      "text": "plR"
+    },
+    {
+      "name": "QF",
+      "text": "QF"
+    },
+    {
+      "name": "QR",
+      "text": "QR"
+    },
+    {
+      "name": "RAGG",
+      "text": "RAGG"
+    },
+    {
+      "name": "RF",
+      "text": "RF"
+    },
+    {
+      "name": "RR",
+      "text": "RR"
+    },
+    {
+      "name": "UcHF",
+      "text": "UcHF"
+    },
+    {
+      "name": "UcHR",
+      "text": "UcHR"
+    },
+    {
+      "name": "UF",
+      "text": "UF"
+    },
+    {
+      "name": "ukAGG",
+      "text": "ukAGG"
+    },
+    {
+      "name": "ukF",
+      "text": "ukF"
+    },
+    {
+      "name": "ukR",
+      "text": "Capital utilization rate"
+    },
+    {
+      "name": "unempAGG",
+      "text": "unempAGG"
+    },
+    {
+      "name": "unempF",
+      "text": "unempF"
+    },
+    {
+      "name": "unempR",
+      "text": "unempR"
+    },
+    {
+      "name": "UR",
+      "text": "UR"
+    },
+    {
+      "name": "varthetF",
+      "text": "varthetF"
+    },
+    {
+      "name": "varthetpF",
+      "text": "varthetpF"
+    },
+    {
+      "name": "varthetpR",
+      "text": "varthetpR"
+    },
+    {
+      "name": "varthetR",
+      "text": "varthetR"
+    },
+    {
+      "name": "vF",
+      "text": "vF"
+    },
+    {
+      "name": "VF",
+      "text": "VF"
+    },
+    {
+      "name": "vR",
+      "text": "vR"
+    },
+    {
+      "name": "VR",
+      "text": "VR"
+    },
+    {
+      "name": "vTotAGG",
+      "text": "vTotAGG"
+    },
+    {
+      "name": "vTotF",
+      "text": "vTotF"
+    },
+    {
+      "name": "vTotR",
+      "text": "vTotR"
+    },
+    {
+      "name": "wAGG",
+      "text": "wAGG"
+    },
+    {
+      "name": "wF",
+      "text": "wF"
+    },
+    {
+      "name": "wpF",
+      "text": "wpF"
+    },
+    {
+      "name": "wpR",
+      "text": "wpR"
+    },
+    {
+      "name": "wR",
+      "text": "Real wage"
+    },
+    {
+      "name": "xF",
+      "text": "xF"
+    },
+    {
+      "name": "xR",
+      "text": "xR"
+    },
+    {
+      "name": "yF",
+      "text": "yF"
+    },
+    {
+      "name": "yR",
+      "text": "yR"
+    }
+  ]
+}
