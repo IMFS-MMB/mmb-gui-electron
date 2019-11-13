@@ -382,7 +382,6 @@ NYn = (NA)^(1/(1-ALPHA))*(ALPHA/MU/NQ)^(ALPHA/(1-ALPHA))*((1-ALPHA)/MU/(NQ^(-GAM
 Yn  = ln(NYn);
 
 Yn_gap = Y_aux-Yn;
-
 NYe = (NA)^(1/(1-ALPHA))*(ALPHA/MU*NZ)^(ALPHA/(1-ALPHA))*((1-ALPHA)/MU/(NZ^(GAMMA/(1-GAMMA))-ALPHA/MU))^(1/(1+NU));
 Ye  = ln(NYe);
 

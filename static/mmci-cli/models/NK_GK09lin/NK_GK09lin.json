@@ -40,15 +40,15 @@
   "shocks": [
     {
       "name": "e_a",
-      "text": "e_a"
+      "text": "Technology shock"
     },
     {
       "name": "e_epsilon",
-      "text": "e_epsilon"
+      "text": "Quality of capital shock"
     },
     {
       "name": "e_n",
-      "text": "e_n"
+      "text": "Net worth shock"
     },
     {
       "name": "interest_",
@@ -59,7 +59,7 @@
   "variables": [
     {
       "name": "a",
-      "text": "a"
+      "text": "Technology"
     },
     {
       "name": "af",
@@ -67,7 +67,7 @@
     },
     {
       "name": "c",
-      "text": "c"
+      "text": "Consumption"
     },
     {
       "name": "cf",
@@ -75,11 +75,11 @@
     },
     {
       "name": "d",
-      "text": "d"
+      "text": "Price dispersion"
     },
     {
       "name": "delta",
-      "text": "delta"
+      "text": "Depreciation rate"
     },
     {
       "name": "deltaf",
@@ -87,7 +87,7 @@
     },
     {
       "name": "efp",
-      "text": "efp"
+      "text": "risk premium"
     },
     {
       "name": "efpf",
@@ -95,7 +95,7 @@
     },
     {
       "name": "epsilon",
-      "text": "epsilon"
+      "text": "Quality of capital"
     },
     {
       "name": "epsilonf",
@@ -103,7 +103,7 @@
     },
     {
       "name": "erk",
-      "text": "erk"
+      "text": "Intermediary asset return"
     },
     {
       "name": "erkf",
@@ -111,7 +111,7 @@
     },
     {
       "name": "eta",
-      "text": "eta"
+      "text": "Expected discounted marginal value of wealth"
     },
     {
       "name": "etaf",
@@ -127,7 +127,7 @@
     },
     {
       "name": "i",
-      "text": "i"
+      "text": "Investment"
     },
     {
       "name": "if",
@@ -135,11 +135,11 @@
     },
     {
       "name": "in",
-      "text": "in"
+      "text": "Net investment"
     },
     {
       "name": "inf1",
-      "text": "inf1"
+      "text": "Net investment"
     },
     {
       "name": "inflation",
@@ -155,7 +155,7 @@
     },
     {
       "name": "k",
-      "text": "k"
+      "text": "Capital"
     },
     {
       "name": "kf",
@@ -163,15 +163,15 @@
     },
     {
       "name": "l",
-      "text": "l"
+      "text": "Labour"
     },
     {
       "name": "lambda",
-      "text": "lambda"
+      "text": "Stochastic discount"
     },
     {
       "name": "lambdaf",
-      "text": "lambdaf"
+      "text": "lambdaf "
     },
     {
       "name": "lf",
@@ -179,15 +179,15 @@
     },
     {
       "name": "mc",
-      "text": "mc"
+      "text": "Marginal cost"
     },
     {
       "name": "n",
-      "text": "n"
+      "text": "Net worth"
     },
     {
       "name": "ne",
-      "text": "ne"
+      "text": "Existing banks'net worth"
     },
     {
       "name": "nef",
@@ -199,7 +199,7 @@
     },
     {
       "name": "nn",
-      "text": "nn"
+      "text": "New banks'net worth"
     },
     {
       "name": "nnf",
@@ -207,7 +207,7 @@
     },
     {
       "name": "nu",
-      "text": "nu"
+      "text": "Expected discounted marginal gain of asset"
     },
     {
       "name": "nuf",
@@ -223,11 +223,11 @@
     },
     {
       "name": "phi",
-      "text": "phi"
+      "text": "Leverage ratio for privately intermediated funds"
     },
     {
       "name": "phic",
-      "text": "phic"
+      "text": "Leverage ratio for total intermediated funds"
     },
     {
       "name": "phicf",
@@ -247,15 +247,15 @@
     },
     {
       "name": "pm",
-      "text": "pm"
+      "text": "Price of intermediate good"
     },
     {
       "name": "pmn",
-      "text": "pmn"
+      "text": "Real price of intermediate good "
     },
     {
       "name": "psi",
-      "text": "psi"
+      "text": "Intensity of credit policy"
     },
     {
       "name": "psif",
@@ -263,7 +263,7 @@
     },
     {
       "name": "q",
-      "text": "q"
+      "text": "Price of one unit capital"
     },
     {
       "name": "qf",
@@ -279,7 +279,7 @@
     },
     {
       "name": "rk",
-      "text": "rk"
+      "text": "Capital return"
     },
     {
       "name": "rkf",
@@ -287,15 +287,15 @@
     },
     {
       "name": "rn",
-      "text": "rn"
+      "text": "real interest rate"
     },
     {
       "name": "u",
-      "text": "u"
+      "text": "Capital utilization rate"
     },
     {
       "name": "uc",
-      "text": "uc"
+      "text": "Marginal utility"
     },
     {
       "name": "ucf",
@@ -307,7 +307,7 @@
     },
     {
       "name": "x",
-      "text": "x"
+      "text": "Gross growth rate of asset"
     },
     {
       "name": "xf",
@@ -323,11 +323,11 @@
     },
     {
       "name": "ym",
-      "text": "ym"
+      "text": "Retail output"
     },
     {
       "name": "z",
-      "text": "z"
+      "text": "Gross growth rate of net worth"
     },
     {
       "name": "zf",

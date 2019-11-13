@@ -106,7 +106,7 @@
     },
     {
       "name": "e_Z",
-      "text": "e_Z"
+      "text": "Productivity shock"
     },
     {
       "name": "fiscal_",
@@ -165,7 +165,7 @@
     },
     {
       "name": "Delta",
-      "text": "Delta"
+      "text": "Price dispersion"
     },
     {
       "name": "Delta_hat",
@@ -197,7 +197,7 @@
     },
     {
       "name": "H_bar",
-      "text": "H_bar"
+      "text": "Labour"
     },
     {
       "name": "H_bar_hat",
@@ -209,7 +209,7 @@
     },
     {
       "name": "i_d",
-      "text": "i_d"
+      "text": "saver interest"
     },
     {
       "name": "i_d_hat",
@@ -245,7 +245,7 @@
     },
     {
       "name": "lambda_b",
-      "text": "lambda_b"
+      "text": "Marginal utility of (real) income of type b"
     },
     {
       "name": "lambda_b_hat",
@@ -257,7 +257,7 @@
     },
     {
       "name": "lambda_s",
-      "text": "lambda_s"
+      "text": "Marginal utility of (real) income of type s"
     },
     {
       "name": "lambda_s_hat",
@@ -337,7 +337,7 @@
     },
     {
       "name": "Z",
-      "text": "Z"
+      "text": "Productivity"
     },
     {
       "name": "Z_hat",

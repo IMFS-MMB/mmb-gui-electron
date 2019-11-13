@@ -1,6 +1,6 @@
 //**************************************************************************
 // A New Comparative Approach to Macroeconomic Modeling and Policy Analysis
-    //
+    //C:\Users\THUY TRANG\mmb-gui-electron\static\mmci-cli\models\NK_CGG02
 // Volker Wieland, Tobias Cwik, Gernot J. Mueller, Sebastian Schmidt and
 // Maik Wolters
 //

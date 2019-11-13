@@ -79,18 +79,18 @@
     },
     {
       "name": "pdotsh_",
-      "text": "pdotsh_"
+      "text": "Inflation shock"
     },
     {
       "name": "rstar_",
-      "text": "rstar_"
+      "text": "Short-term interest shock"
     }
   ],
   "al_info": null,
   "variables": [
     {
       "name": "drff",
-      "text": "drff"
+      "text": "Change in interest"
     },
     {
       "name": "inflation",
@@ -114,7 +114,7 @@
     },
     {
       "name": "pdotsh",
-      "text": "pdotsh"
+      "text": "inflation (shock process)"
     },
     {
       "name": "rff",
@@ -122,7 +122,7 @@
     },
     {
       "name": "rstar",
-      "text": "rstar"
+      "text": "Short-term real interest"
     },
     {
       "name": "ygap",

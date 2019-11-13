@@ -86,7 +86,7 @@
   "variables": [
     {
       "name": "b",
-      "text": "b"
+      "text": "Government budget"
     },
     {
       "name": "bf",
@@ -94,7 +94,7 @@
     },
     {
       "name": "c",
-      "text": "c"
+      "text": "Consumption"
     },
     {
       "name": "cf",
@@ -102,7 +102,7 @@
     },
     {
       "name": "e_g",
-      "text": "e_g"
+      "text": "Government spending shock"
     },
     {
       "name": "fispol",
@@ -110,7 +110,7 @@
     },
     {
       "name": "g",
-      "text": "g"
+      "text": "Government spending"
     },
     {
       "name": "inflation",
@@ -126,7 +126,7 @@
     },
     {
       "name": "k",
-      "text": "k"
+      "text": "Capital"
     },
     {
       "name": "kf",
@@ -134,7 +134,7 @@
     },
     {
       "name": "n",
-      "text": "n"
+      "text": "Labour"
     },
     {
       "name": "nf",

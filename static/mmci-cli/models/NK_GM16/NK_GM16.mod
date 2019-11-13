@@ -16,7 +16,7 @@
 // variables are in log deviations from respective steady states
 var
 y         // output
-c         // consumtion
+c         // consumption
 s         // terms of trade (TOT) in SOE
 z         // exogenous preference shifter
 zx1
@@ -32,7 +32,7 @@ t       // labor tax
 wp     // real wage
 dw       // wage inflation
 w         // nominal wages
-pc         // price level in SOE
+pc         // price level 
 r       // real interest rate
 de
 ygap // gaps

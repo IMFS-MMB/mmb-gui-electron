@@ -75,11 +75,11 @@
   "shocks": [
     {
       "name": "eta_a",
-      "text": "eta_a"
+      "text": "Technology shock"
     },
     {
       "name": "eta_n",
-      "text": "eta_n"
+      "text": "Net worth shock"
     },
     {
       "name": "eta_pi",
@@ -94,11 +94,11 @@
   "variables": [
     {
       "name": "a",
-      "text": "a"
+      "text": "Technology"
     },
     {
       "name": "d",
-      "text": "d"
+      "text": "Dividends"
     },
     {
       "name": "df",
@@ -106,7 +106,7 @@
     },
     {
       "name": "e",
-      "text": "e"
+      "text": "Entrepreneur's equity share holdings"
     },
     {
       "name": "ef",
@@ -114,7 +114,7 @@
     },
     {
       "name": "eps_pi",
-      "text": "eps_pi"
+      "text": "Markup shock process"
     },
     {
       "name": "inflation",
@@ -130,15 +130,15 @@
     },
     {
       "name": "L",
-      "text": "L"
+      "text": "labor input 1"
     },
     {
       "name": "Lf",
-      "text": "Lf"
+      "text": "flex-price labor input 1"
     },
     {
       "name": "n",
-      "text": "n"
+      "text": "Net worth"
     },
     {
       "name": "output",
@@ -150,7 +150,7 @@
     },
     {
       "name": "phi",
-      "text": "phi"
+      "text": "Credit distortion"
     },
     {
       "name": "phif",
@@ -162,7 +162,7 @@
     },
     {
       "name": "q",
-      "text": "q"
+      "text": "Asset price"
     },
     {
       "name": "qf",
@@ -186,15 +186,15 @@
     },
     {
       "name": "u",
-      "text": "u"
+      "text": "Labor input 2"
     },
     {
       "name": "uf",
-      "text": "uf"
+      "text": ""
     },
     {
       "name": "w",
-      "text": "w"
+      "text": "Real wage"
     },
     {
       "name": "wf",
@@ -206,7 +206,7 @@
     },
     {
       "name": "yeff",
-      "text": "yeff"
+      "text": "Effective output"
     },
     {
       "name": "yf",
@@ -222,7 +222,7 @@
     },
     {
       "name": "z",
-      "text": "z"
+      "text": "Marginal cost"
     },
     {
       "name": "zf",

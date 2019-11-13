@@ -164,9 +164,9 @@ c           = y-gam_p/2*(pii-1)^2*c;
 0           = - eta_w*zeta*h^gam_h*h*(x-D)^gam_x*pt+(eta_w - 1)*w*h
               + gam_w*(pii_w-1)*pii_w*w*h-m(+1)*gam_w*(pii_w(+1)-1)*pii_w(+1)*w(+1)*h(+1);
 pii_w       = w/w(-1)*pii;
-1           = m(+1)*R/pii(+1);
+1           = m(+1)*R/pii(+1); //26
 pS          = m(+1)/pii(+1)*(dt(+1)+pS(+1));
-m           = beta*((x-D)^-gam_x)/((x(-1)-D(-1))^-gam_x)*(pt(-1))/(pt);
+m           = beta*((x-D)^-gam_x)/((x(-1)-D(-1))^-gam_x)*(pt(-1))/(pt); //26
 dt          = (1-gam_p*(pii-1)^2 - (c+phi)^(1/alpha)*w/(c*A))*c;
 z           = (log(abar)+0.5*sig^2)/sig;
 abar        = A/w*c/((c+phi)^(1/alpha))*(1-gam_p/2*(pii-1)^2);
