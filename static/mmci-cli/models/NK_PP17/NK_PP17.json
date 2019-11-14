@@ -75,7 +75,7 @@
   "shocks": [
     {
       "name": "eta_a",
-      "text": "Technology shock"
+      "text": "eta_a"
     },
     {
       "name": "eta_l",
@@ -83,11 +83,11 @@
     },
     {
       "name": "eta_m",
-      "text": "Price markup shock"
+      "text": "eta_m"
     },
     {
       "name": "eta_n",
-      "text": "Net worth shock"
+      "text": "eta_n"
     },
     {
       "name": "interest_",
@@ -98,7 +98,7 @@
   "variables": [
     {
       "name": "a",
-      "text": "Technology shock process"
+      "text": "a"
     },
     {
       "name": "del",
@@ -110,7 +110,7 @@
     },
     {
       "name": "eps_m",
-      "text": "Price markup shock process"
+      "text": "eps_m"
     },
     {
       "name": "inflation",
@@ -138,7 +138,7 @@
     },
     {
       "name": "ns",
-      "text": "Net worth shock process"
+      "text": "ns"
     },
     {
       "name": "output",
@@ -194,7 +194,7 @@
     },
     {
       "name": "z",
-      "text": "Marginal cost"
+      "text": "z"
     },
     {
       "name": "zf",

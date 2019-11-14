@@ -75,7 +75,7 @@
   "shocks": [
     {
       "name": "eA",
-      "text": "Technology shock"
+      "text": "eA"
     },
     {
       "name": "fiscal_",
@@ -90,11 +90,11 @@
   "variables": [
     {
       "name": "a",
-      "text": "Technology shock process"
+      "text": "a"
     },
     {
       "name": "c",
-      "text": "Consumption"
+      "text": "c"
     },
     {
       "name": "ce",
@@ -130,7 +130,7 @@
     },
     {
       "name": "i",
-      "text": "Investment"
+      "text": "i"
     },
     {
       "name": "if",
@@ -150,7 +150,7 @@
     },
     {
       "name": "k",
-      "text": "Capital"
+      "text": "k"
     },
     {
       "name": "kf",
@@ -158,7 +158,7 @@
     },
     {
       "name": "n",
-      "text": "Entepreneurial net worth"
+      "text": "n"
     },
     {
       "name": "nf",
@@ -194,7 +194,7 @@
     },
     {
       "name": "r",
-      "text": "Real interest rate"
+      "text": "r"
     },
     {
       "name": "rf",
@@ -202,7 +202,7 @@
     },
     {
       "name": "rk",
-      "text": "Capital rent"
+      "text": "rk"
     },
     {
       "name": "rkf",

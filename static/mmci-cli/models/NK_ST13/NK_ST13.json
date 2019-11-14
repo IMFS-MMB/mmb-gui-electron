@@ -73,7 +73,7 @@
   "shocks": [
     {
       "name": "epsilon_theta",
-      "text": "Technology shock"
+      "text": "epsilon_theta"
     },
     {
       "name": "interest_",
@@ -108,7 +108,7 @@
     },
     {
       "name": "c",
-      "text": "Consumption"
+      "text": "c"
     },
     {
       "name": "c_fe",
@@ -148,7 +148,7 @@
     },
     {
       "name": "i",
-      "text": "Investment"
+      "text": "i"
     },
     {
       "name": "i_fe",
@@ -176,7 +176,7 @@
     },
     {
       "name": "k",
-      "text": "Capital"
+      "text": "k"
     },
     {
       "name": "k_fe",
@@ -200,7 +200,7 @@
     },
     {
       "name": "m",
-      "text": "Money balances"
+      "text": "m"
     },
     {
       "name": "m_fe",
@@ -208,7 +208,7 @@
     },
     {
       "name": "n",
-      "text": "Hours worked"
+      "text": "n"
     },
     {
       "name": "n_fe",
@@ -264,7 +264,7 @@
     },
     {
       "name": "rmc",
-      "text": "Marginal cost"
+      "text": "rmc"
     },
     {
       "name": "rmc_fe",
@@ -272,11 +272,11 @@
     },
     {
       "name": "theta",
-      "text": "Technology shock process"
+      "text": "theta"
     },
     {
       "name": "w",
-      "text": "Real wage"
+      "text": "w"
     },
     {
       "name": "w_fe",

@@ -97,7 +97,7 @@
   "variables": [
     {
       "name": "c",
-      "text": "c"
+      "text": "Consumption"
     },
     {
       "name": "c_obs",
@@ -121,7 +121,7 @@
     },
     {
       "name": "Disp",
-      "text": "Disp"
+      "text": "Price dispersion"
     },
     {
       "name": "Dn",
@@ -153,11 +153,11 @@
     },
     {
       "name": "G",
-      "text": "G"
+      "text": "Government spending"
     },
     {
       "name": "G_",
-      "text": "G_"
+      "text": "Government spending shock process"
     },
     {
       "name": "h",
@@ -169,7 +169,7 @@
     },
     {
       "name": "hn",
-      "text": "hn"
+      "text": "Labour"
     },
     {
       "name": "i",
@@ -217,7 +217,7 @@
     },
     {
       "name": "lamda",
-      "text": "lamda"
+      "text": "Marginal utility"
     },
     {
       "name": "lamdan",
@@ -225,7 +225,7 @@
     },
     {
       "name": "m",
-      "text": "m"
+      "text": "Money balances"
     },
     {
       "name": "m_obs",
@@ -233,7 +233,7 @@
     },
     {
       "name": "MC",
-      "text": "MC"
+      "text": "Marginal cost"
     },
     {
       "name": "mn",
@@ -285,7 +285,7 @@
     },
     {
       "name": "R",
-      "text": "R"
+      "text": "Real interest rate"
     },
     {
       "name": "Rn",
@@ -297,7 +297,7 @@
     },
     {
       "name": "tau",
-      "text": "tau"
+      "text": "Tax rate"
     },
     {
       "name": "tau_obs",
@@ -313,7 +313,7 @@
     },
     {
       "name": "w",
-      "text": "w"
+      "text": "Real wage"
     },
     {
       "name": "w_obs",

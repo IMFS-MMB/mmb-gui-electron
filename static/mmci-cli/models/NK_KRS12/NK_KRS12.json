@@ -76,15 +76,15 @@
   "shocks": [
     {
       "name": "eps_A",
-      "text": "eps_A"
+      "text": "Technology shock"
     },
     {
       "name": "eps_D",
-      "text": "eps_D"
+      "text": "Preference shock"
     },
     {
       "name": "eps_v",
-      "text": "eps_v"
+      "text": "Price markup shock"
     },
     {
       "name": "interest_",
@@ -95,7 +95,7 @@
   "variables": [
     {
       "name": "aC",
-      "text": "aC"
+      "text": "Technology"
     },
     {
       "name": "b",
@@ -107,19 +107,19 @@
     },
     {
       "name": "c",
-      "text": "c"
+      "text": "Saver Consumption"
     },
     {
       "name": "cB",
-      "text": "cB"
+      "text": "Borrower Consumption"
     },
     {
       "name": "d",
-      "text": "d"
+      "text": "Saver deposits"
     },
     {
       "name": "dB",
-      "text": "dB"
+      "text": "Borrower deposits"
     },
     {
       "name": "deltabB",
@@ -135,7 +135,7 @@
     },
     {
       "name": "deltap",
-      "text": "deltap"
+      "text": "Price change"
     },
     {
       "name": "deltapC",
@@ -151,11 +151,11 @@
     },
     {
       "name": "i",
-      "text": "i"
+      "text": "Saver investment"
     },
     {
       "name": "iB",
-      "text": "iB"
+      "text": "Borrower investment"
     },
     {
       "name": "inflation",
@@ -215,11 +215,11 @@
     },
     {
       "name": "pC",
-      "text": "pC"
+      "text": "Nondurable price level"
     },
     {
       "name": "pD",
-      "text": "pD"
+      "text": "Durable price level"
     },
     {
       "name": "q",
@@ -235,7 +235,7 @@
     },
     {
       "name": "v",
-      "text": "v"
+      "text": "Markup"
     },
     {
       "name": "wC",
@@ -247,7 +247,7 @@
     },
     {
       "name": "xiD",
-      "text": "xiD"
+      "text": "Preference shifter"
     },
     {
       "name": "y",

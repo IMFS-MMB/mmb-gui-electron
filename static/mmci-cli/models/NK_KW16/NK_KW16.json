@@ -74,11 +74,11 @@
   "shocks": [
     {
       "name": "e_a",
-      "text": "e_a"
+      "text": "Technology shock"
     },
     {
       "name": "e_ksi",
-      "text": "e_ksi"
+      "text": "Capital quality shock"
     },
     {
       "name": "fiscal_",
@@ -93,11 +93,11 @@
   "variables": [
     {
       "name": "a",
-      "text": "a"
+      "text": "Technology"
     },
     {
       "name": "B",
-      "text": "B"
+      "text": "Government debt"
     },
     {
       "name": "B_fe",
@@ -105,7 +105,7 @@
     },
     {
       "name": "C",
-      "text": "C"
+      "text": "Consumption"
     },
     {
       "name": "C_fe",
@@ -121,7 +121,7 @@
     },
     {
       "name": "Dis",
-      "text": "Dis"
+      "text": "Price dispersion"
     },
     {
       "name": "Dis_fe",
@@ -129,7 +129,7 @@
     },
     {
       "name": "e_g",
-      "text": "e_g"
+      "text": "Government spending shock"
     },
     {
       "name": "ERb",
@@ -141,7 +141,7 @@
     },
     {
       "name": "ERk",
-      "text": "ERk"
+      "text": "Ected real rate of capital"
     },
     {
       "name": "ERk_fe",
@@ -149,7 +149,7 @@
     },
     {
       "name": "F",
-      "text": "F"
+      "text": "Auxiliary variable for price setting"
     },
     {
       "name": "F_fe",
@@ -161,15 +161,15 @@
     },
     {
       "name": "g",
-      "text": "g"
+      "text": "Government spending (shock process)"
     },
     {
       "name": "G",
-      "text": "G"
+      "text": "Government spending"
     },
     {
       "name": "Gy",
-      "text": "Gy"
+      "text": "Government spending share of output"
     },
     {
       "name": "Gy_fe",
@@ -181,7 +181,7 @@
     },
     {
       "name": "I",
-      "text": "I"
+      "text": "Investment"
     },
     {
       "name": "i_fe",
@@ -209,7 +209,7 @@
     },
     {
       "name": "inflstar",
-      "text": "inflstar"
+      "text": "Optimal price divided by past price level"
     },
     {
       "name": "inflstar_fe",
@@ -221,7 +221,7 @@
     },
     {
       "name": "K",
-      "text": "K"
+      "text": "Capital"
     },
     {
       "name": "K_fe",
@@ -229,11 +229,11 @@
     },
     {
       "name": "ksi",
-      "text": "ksi"
+      "text": "Capital quality"
     },
     {
       "name": "L",
-      "text": "L"
+      "text": "Labour"
     },
     {
       "name": "L_fe",
@@ -241,7 +241,7 @@
     },
     {
       "name": "Lambda",
-      "text": "Lambda"
+      "text": "Stochastic discount factor"
     },
     {
       "name": "Lambda_fe",
@@ -249,7 +249,7 @@
     },
     {
       "name": "N",
-      "text": "N"
+      "text": "Net worth"
     },
     {
       "name": "N_fe",
@@ -257,7 +257,7 @@
     },
     {
       "name": "nu_b",
-      "text": "nu_b"
+      "text": "Value of having another unit of bonds (banks)"
     },
     {
       "name": "nu_b_fe",
@@ -265,7 +265,7 @@
     },
     {
       "name": "nu_k",
-      "text": "nu_k"
+      "text": "Value of having another unit of capital assets"
     },
     {
       "name": "nu_k_fe",
@@ -273,15 +273,15 @@
     },
     {
       "name": "nu_n",
-      "text": "nu_n"
+      "text": "value of having another unit of net worth"
     },
     {
       "name": "nu_n_fe",
-      "text": "nu_n_fe"
+      "text": "flex-price value of having another unit of net worth"
     },
     {
       "name": "Om",
-      "text": "Om"
+      "text": "Portfolio share of capital assets"
     },
     {
       "name": "Om_fe",
@@ -297,7 +297,7 @@
     },
     {
       "name": "Phi",
-      "text": "Phi"
+      "text": "Leverage ratio of banks"
     },
     {
       "name": "Phi_fe",
@@ -305,7 +305,7 @@
     },
     {
       "name": "Pm",
-      "text": "Pm"
+      "text": "Price of intermediary goods"
     },
     {
       "name": "Pm_fe",
@@ -313,7 +313,7 @@
     },
     {
       "name": "portf_B",
-      "text": "portf_B"
+      "text": "Portfolio of banks"
     },
     {
       "name": "portf_B_fe",
@@ -321,7 +321,7 @@
     },
     {
       "name": "prem",
-      "text": "prem"
+      "text": "Risk premium"
     },
     {
       "name": "prem2",
@@ -329,7 +329,7 @@
     },
     {
       "name": "Q",
-      "text": "Q"
+      "text": "Price of capital"
     },
     {
       "name": "Q_fe",
@@ -337,7 +337,7 @@
     },
     {
       "name": "Rb",
-      "text": "Rb"
+      "text": "Real rate of bonds held by banks"
     },
     {
       "name": "Rb_fe",
@@ -345,7 +345,7 @@
     },
     {
       "name": "Rd",
-      "text": "Rd"
+      "text": "Real deposit rate"
     },
     {
       "name": "Rd_fe",
@@ -353,7 +353,7 @@
     },
     {
       "name": "Rk",
-      "text": "Rk"
+      "text": "Real rate of capital"
     },
     {
       "name": "Rk_fe",
@@ -361,7 +361,7 @@
     },
     {
       "name": "Rp",
-      "text": "Rp"
+      "text": "Real return of portfolio by banks"
     },
     {
       "name": "Rp_fe",
@@ -369,7 +369,7 @@
     },
     {
       "name": "T",
-      "text": "T"
+      "text": "Taxes"
     },
     {
       "name": "T_fe",
@@ -377,7 +377,7 @@
     },
     {
       "name": "U_c",
-      "text": "U_c"
+      "text": "Marginal utility of consumption"
     },
     {
       "name": "U_c_fe",
@@ -385,7 +385,7 @@
     },
     {
       "name": "w",
-      "text": "w"
+      "text": "Real wage"
     },
     {
       "name": "w_fe",
@@ -401,7 +401,7 @@
     },
     {
       "name": "Ym",
-      "text": "Ym"
+      "text": "Intermediary output"
     },
     {
       "name": "Ym_fe",

@@ -74,11 +74,11 @@
   "shocks": [
     {
       "name": "epsA",
-      "text": "epsA"
+      "text": "Technology shock"
     },
     {
       "name": "epsC",
-      "text": "epsC"
+      "text": "Preference shock"
     },
     {
       "name": "epsksi",
@@ -86,11 +86,11 @@
     },
     {
       "name": "epsL",
-      "text": "epsL"
+      "text": "Labor supply shock"
     },
     {
       "name": "epsthet",
-      "text": "epsthet"
+      "text": "Price markup shock"
     },
     {
       "name": "fiscal_",
@@ -105,19 +105,19 @@
   "variables": [
     {
       "name": "A",
-      "text": "A"
+      "text": "Technology"
     },
     {
       "name": "b",
-      "text": "b"
+      "text": "Short-term bond demand by banks"
     },
     {
       "name": "C",
-      "text": "C"
+      "text": "Consumption"
     },
     {
       "name": "ChiC",
-      "text": "ChiC"
+      "text": "Chic"
     },
     {
       "name": "ChiL",
@@ -125,15 +125,15 @@
     },
     {
       "name": "D",
-      "text": "D"
+      "text": "Price dispersion"
     },
     {
       "name": "epsG",
-      "text": "epsG"
+      "text": "Government spending shock process"
     },
     {
       "name": "F",
-      "text": "F"
+      "text": "Auxiliary variable in Phillips Curve"
     },
     {
       "name": "fispol",
@@ -141,7 +141,7 @@
     },
     {
       "name": "G",
-      "text": "G"
+      "text": "Government spending"
     },
     {
       "name": "Gf",
@@ -169,15 +169,15 @@
     },
     {
       "name": "K",
-      "text": "K"
+      "text": "Auxiliary variable in Phillips Curve"
     },
     {
       "name": "ksi",
-      "text": "ksi"
+      "text": "Unconventional monetary policy"
     },
     {
       "name": "L",
-      "text": "L"
+      "text": "Labour"
     },
     {
       "name": "output",
@@ -189,7 +189,7 @@
     },
     {
       "name": "PB",
-      "text": "PB"
+      "text": "Price of short-term bond"
     },
     {
       "name": "Pi",
@@ -197,11 +197,11 @@
     },
     {
       "name": "PQ",
-      "text": "PQ"
+      "text": "Price of long-term bond"
     },
     {
       "name": "Ps",
-      "text": "Ps"
+      "text": "Price of aggregate saving"
     },
     {
       "name": "Pss",
@@ -213,7 +213,7 @@
     },
     {
       "name": "qbar",
-      "text": "qbar"
+      "text": "Long-term bond supply "
     },
     {
       "name": "qCB",
@@ -221,15 +221,15 @@
     },
     {
       "name": "s",
-      "text": "s"
+      "text": "Real HH saving"
     },
     {
       "name": "theta",
-      "text": "theta"
+      "text": "Intratemporal elasticity of substitution"
     },
     {
       "name": "w",
-      "text": "w"
+      "text": "Real wage"
     },
     {
       "name": "Y",

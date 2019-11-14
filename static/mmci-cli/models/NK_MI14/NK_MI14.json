@@ -73,7 +73,7 @@
   "shocks": [
     {
       "name": "epsa",
-      "text": "Technology shock"
+      "text": "epsa"
     },
     {
       "name": "fiscal_",
@@ -88,11 +88,11 @@
   "variables": [
     {
       "name": "a",
-      "text": "Technology shock process"
+      "text": "a"
     },
     {
       "name": "c",
-      "text": "Consumption"
+      "text": "c"
     },
     {
       "name": "c_flex",
@@ -160,7 +160,7 @@
     },
     {
       "name": "n",
-      "text": "Labour"
+      "text": "n"
     },
     {
       "name": "n_flex",
@@ -208,7 +208,7 @@
     },
     {
       "name": "w",
-      "text": "Real wage"
+      "text": "w"
     },
     {
       "name": "y",

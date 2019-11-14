@@ -79,30 +79,30 @@
     },
     {
       "name": "m_star",
-      "text": "m_star"
+      "text": "Monetary policy shock"
     },
     {
       "name": "xi",
-      "text": "xi"
+      "text": "Technology shock (country H)"
     },
     {
       "name": "xi_star",
-      "text": "xi_star"
+      "text": "Technology shock (country F)"
     }
   ],
   "al_info": null,
   "variables": [
     {
       "name": "a",
-      "text": "a"
+      "text": "Technology (country H)"
     },
     {
       "name": "a_star",
-      "text": "a_star"
+      "text": "Technology (country F)"
     },
     {
       "name": "e",
-      "text": "e"
+      "text": "Nominal exchange rate"
     },
     {
       "name": "inflation",
@@ -118,11 +118,11 @@
     },
     {
       "name": "mc",
-      "text": "mc"
+      "text": "Marginal costs (country H)"
     },
     {
       "name": "mc_star",
-      "text": "mc_star"
+      "text": "Marginal costs (country F)"
     },
     {
       "name": "output",
@@ -133,32 +133,32 @@
       "text": "outputgap"
     },
     {
-      "name": "p",
-      "text": "p"
+      "name": "P",
+      "text": "Price (country H)"
     },
     {
       "name": "p_star",
-      "text": "p_star"
+      "text": "Price (country F)"
     },
     {
       "name": "pi",
-      "text": "pi"
+      "text": "CPI inflation (country H)"
     },
     {
       "name": "pi_F_star",
-      "text": "pi_F_star"
+      "text": "PPI inflation (country F)"
     },
     {
       "name": "pi_H",
-      "text": "pi_H"
+      "text": "PPI inflation (country H)"
     },
     {
       "name": "pi_star",
-      "text": "pi_star"
+      "text": "CPI inflation (country F)"
     },
     {
       "name": "q",
-      "text": "q"
+      "text": "Real exchange rate"
     },
     {
       "name": "r",
@@ -166,11 +166,11 @@
     },
     {
       "name": "r_bar",
-      "text": "r_bar"
+      "text": "Real interest rates (country H)"
     },
     {
       "name": "r_bar_star",
-      "text": "r_bar_star"
+      "text": "Real interest rates (country F)"
     },
     {
       "name": "r_star",
@@ -178,7 +178,7 @@
     },
     {
       "name": "s",
-      "text": "s"
+      "text": "Terms of trade "
     },
     {
       "name": "x",

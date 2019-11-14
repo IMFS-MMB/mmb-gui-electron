@@ -75,7 +75,7 @@
   "shocks": [
     {
       "name": "e_a",
-      "text": "e_a"
+      "text": "Technology shock "
     },
     {
       "name": "fiscal_",
@@ -90,15 +90,15 @@
   "variables": [
     {
       "name": "aH",
-      "text": "aH"
+      "text": "Technology"
     },
     {
       "name": "c_eH",
-      "text": "c_eH"
+      "text": "Entrepreneurial consumption"
     },
     {
       "name": "cH",
-      "text": "cH"
+      "text": "Consumption"
     },
     {
       "name": "cHf",
@@ -106,11 +106,11 @@
     },
     {
       "name": "e_g",
-      "text": "e_g"
+      "text": "Demand shock process"
     },
     {
       "name": "e_piH",
-      "text": "e_piH"
+      "text": "Expected inflation"
     },
     {
       "name": "fispol",
@@ -118,11 +118,11 @@
     },
     {
       "name": "gH",
-      "text": "gH"
+      "text": "Government spending"
     },
     {
       "name": "hH",
-      "text": "hH"
+      "text": "Labor"
     },
     {
       "name": "hHf",
@@ -130,7 +130,7 @@
     },
     {
       "name": "iH",
-      "text": "iH"
+      "text": "Investment"
     },
     {
       "name": "iHf",
@@ -150,7 +150,7 @@
     },
     {
       "name": "kH",
-      "text": "kH"
+      "text": "Capital"
     },
     {
       "name": "kHf",
@@ -158,7 +158,7 @@
     },
     {
       "name": "nH",
-      "text": "nH"
+      "text": "Entrepreneurial net worth"
     },
     {
       "name": "nHf",
@@ -186,7 +186,7 @@
     },
     {
       "name": "qH",
-      "text": "qH"
+      "text": "Price of capital"
     },
     {
       "name": "qHf",
@@ -194,7 +194,7 @@
     },
     {
       "name": "r_kH",
-      "text": "r_kH"
+      "text": "Capital rent"
     },
     {
       "name": "r_kHf",
@@ -206,7 +206,7 @@
     },
     {
       "name": "rH",
-      "text": "rH"
+      "text": "Real interest rate"
     },
     {
       "name": "rHf",
@@ -214,7 +214,7 @@
     },
     {
       "name": "xH",
-      "text": "xH"
+      "text": "Markup"
     },
     {
       "name": "yH",

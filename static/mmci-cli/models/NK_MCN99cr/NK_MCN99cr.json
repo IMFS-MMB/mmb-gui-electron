@@ -74,11 +74,11 @@
   "shocks": [
     {
       "name": "e_",
-      "text": "Investment technology shock"
+      "text": "e_"
     },
     {
       "name": "ev_",
-      "text": "Demand shock"
+      "text": "ev_"
     },
     {
       "name": "ey_",
@@ -101,7 +101,7 @@
     },
     {
       "name": "i",
-      "text": "Investment"
+      "text": "i"
     },
     {
       "name": "inflation",
@@ -137,7 +137,7 @@
     },
     {
       "name": "v",
-      "text": "Demand shock process"
+      "text": "v"
     },
     {
       "name": "y",

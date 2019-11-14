@@ -74,11 +74,11 @@
   "shocks": [
     {
       "name": "e_A_e",
-      "text": "e_A_e"
+      "text": "Technology shock"
     },
     {
       "name": "e_mk_y",
-      "text": "e_mk_y"
+      "text": "Price markup shock"
     },
     {
       "name": "interest_",
@@ -89,15 +89,15 @@
   "variables": [
     {
       "name": "A_e",
-      "text": "A_e"
+      "text": "Technology"
     },
     {
       "name": "B",
-      "text": "B"
+      "text": "Loans"
     },
     {
       "name": "b_ee",
-      "text": "b_ee"
+      "text": "Entrepreneur loans"
     },
     {
       "name": "b_eef",
@@ -109,11 +109,11 @@
     },
     {
       "name": "C",
-      "text": "C"
+      "text": "Consumption"
     },
     {
       "name": "c_e",
-      "text": "c_e"
+      "text": "Entrepreneur consumption"
     },
     {
       "name": "c_ef",
@@ -121,7 +121,7 @@
     },
     {
       "name": "c_p",
-      "text": "c_p"
+      "text": "Household consumption"
     },
     {
       "name": "c_pf",
@@ -133,11 +133,11 @@
     },
     {
       "name": "D",
-      "text": "D"
+      "text": "Deposits"
     },
     {
       "name": "d_p",
-      "text": "d_p"
+      "text": "Bank deposits (entrepreneur)"
     },
     {
       "name": "d_pf",
@@ -149,7 +149,7 @@
     },
     {
       "name": "I",
-      "text": "I"
+      "text": "Investment"
     },
     {
       "name": "If",
@@ -169,7 +169,7 @@
     },
     {
       "name": "J_B",
-      "text": "J_B"
+      "text": "Bank's profit"
     },
     {
       "name": "J_Bf",
@@ -185,11 +185,11 @@
     },
     {
       "name": "K",
-      "text": "K"
+      "text": "Capital"
     },
     {
       "name": "K_b",
-      "text": "K_b"
+      "text": "Bank fund"
     },
     {
       "name": "K_bf",
@@ -197,7 +197,7 @@
     },
     {
       "name": "k_e",
-      "text": "k_e"
+      "text": "Entrepreneurs's capital"
     },
     {
       "name": "k_ef",
@@ -209,11 +209,11 @@
     },
     {
       "name": "l_p",
-      "text": "l_p"
+      "text": "Labour supply"
     },
     {
       "name": "l_pd",
-      "text": "l_pd"
+      "text": "Labour demand"
     },
     {
       "name": "l_pdf",
@@ -225,7 +225,7 @@
     },
     {
       "name": "lam_e",
-      "text": "lam_e"
+      "text": "Marginal utility (entrepreneur)"
     },
     {
       "name": "lam_ef",
@@ -233,7 +233,7 @@
     },
     {
       "name": "lam_p",
-      "text": "lam_p"
+      "text": "Marginal utility (household)"
     },
     {
       "name": "lam_pf",
@@ -241,7 +241,7 @@
     },
     {
       "name": "lev",
-      "text": "lev"
+      "text": "Bank leverage"
     },
     {
       "name": "levf",
@@ -249,7 +249,7 @@
     },
     {
       "name": "mc_E",
-      "text": "mc_E"
+      "text": "Marginal costs"
     },
     {
       "name": "mc_Ef",
@@ -257,7 +257,7 @@
     },
     {
       "name": "mk_y",
-      "text": "mk_y"
+      "text": "Markup"
     },
     {
       "name": "output",
@@ -269,11 +269,11 @@
     },
     {
       "name": "pie",
-      "text": "pie"
+      "text": "inflation"
     },
     {
       "name": "q_k",
-      "text": "q_k"
+      "text": "Price of capital"
     },
     {
       "name": "q_kf",
@@ -281,11 +281,11 @@
     },
     {
       "name": "r_b",
-      "text": "r_b"
+      "text": "Interest rate (entrepreneur loans)"
     },
     {
       "name": "R_b",
-      "text": "R_b"
+      "text": "Wholesale loan rate"
     },
     {
       "name": "r_bf",
@@ -305,7 +305,7 @@
     },
     {
       "name": "r_k",
-      "text": "r_k"
+      "text": "Capital rent"
     },
     {
       "name": "r_kf",
@@ -313,7 +313,7 @@
     },
     {
       "name": "rr",
-      "text": "rr"
+      "text": "Real interest rate"
     },
     {
       "name": "rrf",
@@ -329,7 +329,7 @@
     },
     {
       "name": "spread",
-      "text": "spread"
+      "text": "Loan spread"
     },
     {
       "name": "spreadf",
@@ -345,7 +345,7 @@
     },
     {
       "name": "x",
-      "text": "x"
+      "text": "Markup"
     },
     {
       "name": "xf",
@@ -365,7 +365,7 @@
     },
     {
       "name": "Y1",
-      "text": "Y1"
+      "text": "Auxiliary variable 1"
     },
     {
       "name": "Y1f",

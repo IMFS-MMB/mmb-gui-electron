@@ -77,15 +77,15 @@
   "shocks": [
     {
       "name": "eA",
-      "text": "eA"
+      "text": "Technology shock"
     },
     {
       "name": "eD",
-      "text": "eD"
+      "text": "Demand shock"
     },
     {
       "name": "eF",
-      "text": "eF"
+      "text": "Finance shock"
     },
     {
       "name": "interest_",
@@ -96,11 +96,11 @@
   "variables": [
     {
       "name": "A",
-      "text": "A"
+      "text": "Technology"
     },
     {
       "name": "abar",
-      "text": "abar"
+      "text": "Idiosyncratic cost level "
     },
     {
       "name": "abar_f",
@@ -108,7 +108,7 @@
     },
     {
       "name": "c",
-      "text": "c"
+      "text": "Consumption"
     },
     {
       "name": "c_f",
@@ -116,11 +116,11 @@
     },
     {
       "name": "D",
-      "text": "D"
+      "text": "Demand"
     },
     {
       "name": "dt",
-      "text": "dt"
+      "text": "Dividend"
     },
     {
       "name": "dt_f",
@@ -128,11 +128,11 @@
     },
     {
       "name": "F",
-      "text": "F"
+      "text": "Financial condition"
     },
     {
       "name": "h",
-      "text": "h"
+      "text": "Labour"
     },
     {
       "name": "h_f",
@@ -164,7 +164,7 @@
     },
     {
       "name": "m",
-      "text": "m"
+      "text": "Stochastic discount factor"
     },
     {
       "name": "m_f",
@@ -172,7 +172,7 @@
     },
     {
       "name": "mu",
-      "text": "mu"
+      "text": "Markup"
     },
     {
       "name": "mu_f",
@@ -188,7 +188,7 @@
     },
     {
       "name": "phi",
-      "text": "phi"
+      "text": "Dilution cost"
     },
     {
       "name": "pii",
@@ -208,7 +208,7 @@
     },
     {
       "name": "pS",
-      "text": "pS"
+      "text": "Stock return"
     },
     {
       "name": "pS_f",
@@ -232,7 +232,7 @@
     },
     {
       "name": "s",
-      "text": "s"
+      "text": "Habit stock"
     },
     {
       "name": "s_f",
@@ -248,7 +248,7 @@
     },
     {
       "name": "varrho",
-      "text": "varrho"
+      "text": "Equity dilution costs"
     },
     {
       "name": "w",
@@ -260,7 +260,7 @@
     },
     {
       "name": "x",
-      "text": "x"
+      "text": "Consumption bundle "
     },
     {
       "name": "x_f",

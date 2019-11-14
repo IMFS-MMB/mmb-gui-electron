@@ -82,18 +82,18 @@
     },
     {
       "name": "ua",
-      "text": "ua"
+      "text": "Technology shock"
     }
   ],
   "al_info": null,
   "variables": [
     {
       "name": "a",
-      "text": "a"
+      "text": "Technology"
     },
     {
       "name": "bk",
-      "text": "bk"
+      "text": "Bank capital"
     },
     {
       "name": "bkf",
@@ -101,7 +101,7 @@
     },
     {
       "name": "br",
-      "text": "br"
+      "text": "Bank riskiness"
     },
     {
       "name": "brf",
@@ -109,7 +109,7 @@
     },
     {
       "name": "c",
-      "text": "c"
+      "text": "Consumption"
     },
     {
       "name": "cf",
@@ -117,11 +117,11 @@
     },
     {
       "name": "cpai",
-      "text": "cpai"
+      "text": "Cost of inflation"
     },
     {
       "name": "crun",
-      "text": "crun"
+      "text": "Cost of run"
     },
     {
       "name": "crunf",
@@ -129,11 +129,11 @@
     },
     {
       "name": "d",
-      "text": "d"
+      "text": "Demand deposits"
     },
     {
       "name": "deprat",
-      "text": "deprat"
+      "text": "Deposit ratio"
     },
     {
       "name": "depratf",
@@ -165,7 +165,7 @@
     },
     {
       "name": "Fn",
-      "text": "Fn"
+      "text": "Marginal productivity of labour"
     },
     {
       "name": "Fnf",
@@ -173,7 +173,7 @@
     },
     {
       "name": "g",
-      "text": "g"
+      "text": "Government spending"
     },
     {
       "name": "inflation",
@@ -189,7 +189,7 @@
     },
     {
       "name": "inv",
-      "text": "inv"
+      "text": "Investment"
     },
     {
       "name": "invf",
@@ -197,7 +197,7 @@
     },
     {
       "name": "k",
-      "text": "k"
+      "text": "Capital"
     },
     {
       "name": "kf",
@@ -205,7 +205,7 @@
     },
     {
       "name": "mc",
-      "text": "mc"
+      "text": "Marginal costs"
     },
     {
       "name": "mcf",
@@ -213,7 +213,7 @@
     },
     {
       "name": "n",
-      "text": "n"
+      "text": "Labour"
     },
     {
       "name": "nf",
@@ -233,7 +233,7 @@
     },
     {
       "name": "q",
-      "text": "q"
+      "text": "Tobin's q"
     },
     {
       "name": "qf",
@@ -241,7 +241,7 @@
     },
     {
       "name": "ra",
-      "text": "ra"
+      "text": "Capital rent"
     },
     {
       "name": "raf",
@@ -249,7 +249,7 @@
     },
     {
       "name": "rd",
-      "text": "rd"
+      "text": "Return on deposits"
     },
     {
       "name": "rdf",
@@ -265,7 +265,7 @@
     },
     {
       "name": "rok",
-      "text": "rok"
+      "text": "Capital rent"
     },
     {
       "name": "rokf",
@@ -273,7 +273,7 @@
     },
     {
       "name": "uc",
-      "text": "uc"
+      "text": "Marginal utility from consumption"
     },
     {
       "name": "ucf",
@@ -281,11 +281,11 @@
     },
     {
       "name": "ug",
-      "text": "ug"
+      "text": "government spending process"
     },
     {
       "name": "un",
-      "text": "un"
+      "text": "Marginal disutility from labour"
     },
     {
       "name": "unf",
@@ -301,7 +301,7 @@
     },
     {
       "name": "z",
-      "text": "z"
+      "text": "Cost of capital"
     },
     {
       "name": "zf",

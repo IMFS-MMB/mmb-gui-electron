@@ -86,11 +86,11 @@
   "variables": [
     {
       "name": "C",
-      "text": "C"
+      "text": "Consumption"
     },
     {
       "name": "C_m",
-      "text": "C_m"
+      "text": "Market good consumption"
     },
     {
       "name": "C_mf",
@@ -98,7 +98,7 @@
     },
     {
       "name": "C_n",
-      "text": "C_n"
+      "text": "Home goods consumption"
     },
     {
       "name": "C_nf",
@@ -110,7 +110,7 @@
     },
     {
       "name": "D",
-      "text": "D"
+      "text": "Price dispersion"
     },
     {
       "name": "Df",
@@ -122,15 +122,15 @@
     },
     {
       "name": "g",
-      "text": "g"
+      "text": "Government spending shock process"
     },
     {
       "name": "G",
-      "text": "G"
+      "text": "Government spending "
     },
     {
       "name": "h_m",
-      "text": "h_m"
+      "text": "Labour (market good)"
     },
     {
       "name": "h_mf",
@@ -138,7 +138,7 @@
     },
     {
       "name": "h_n",
-      "text": "h_n"
+      "text": "Labour (home good)"
     },
     {
       "name": "h_nf",
@@ -146,7 +146,7 @@
     },
     {
       "name": "I",
-      "text": "I"
+      "text": "Investment"
     },
     {
       "name": "If",
@@ -182,11 +182,11 @@
     },
     {
       "name": "K",
-      "text": "K"
+      "text": "Capital"
     },
     {
       "name": "K_m",
-      "text": "K_m"
+      "text": "Capital (market good)"
     },
     {
       "name": "K_mf",
@@ -194,7 +194,7 @@
     },
     {
       "name": "K_n",
-      "text": "K_n"
+      "text": "Capital (home goods)"
     },
     {
       "name": "K_nf",
@@ -206,7 +206,7 @@
     },
     {
       "name": "lambda",
-      "text": "lambda"
+      "text": "Marginal utility (market good)"
     },
     {
       "name": "lambdaf",
@@ -226,7 +226,7 @@
     },
     {
       "name": "r_k",
-      "text": "r_k"
+      "text": "Capital rent"
     },
     {
       "name": "r_kf",
@@ -238,7 +238,7 @@
     },
     {
       "name": "RMC",
-      "text": "RMC"
+      "text": "Marginal  costs"
     },
     {
       "name": "RMCf",
@@ -246,7 +246,7 @@
     },
     {
       "name": "W",
-      "text": "W"
+      "text": "Real wage"
     },
     {
       "name": "Wf",
@@ -254,7 +254,7 @@
     },
     {
       "name": "x_1",
-      "text": "x_1"
+      "text": "Auxiliary variable 1"
     },
     {
       "name": "x_1f",
@@ -262,7 +262,7 @@
     },
     {
       "name": "x_2",
-      "text": "x_2"
+      "text": "Auxiliary variable 2"
     },
     {
       "name": "x_2f",

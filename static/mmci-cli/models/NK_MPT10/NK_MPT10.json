@@ -86,7 +86,7 @@
   "variables": [
     {
       "name": "a",
-      "text": "Technology shock process"
+      "text": "a"
     },
     {
       "name": "a_fe",
@@ -94,7 +94,7 @@
     },
     {
       "name": "c",
-      "text": "Consumption"
+      "text": "c"
     },
     {
       "name": "c_fe",
@@ -134,7 +134,7 @@
     },
     {
       "name": "i",
-      "text": "Investment"
+      "text": "i"
     },
     {
       "name": "i_fe",
@@ -166,7 +166,7 @@
     },
     {
       "name": "k",
-      "text": "Capital"
+      "text": "k"
     },
     {
       "name": "k_fe",
@@ -198,7 +198,7 @@
     },
     {
       "name": "mc",
-      "text": "Marginal cost"
+      "text": "mc"
     },
     {
       "name": "mc_fe",
@@ -206,7 +206,7 @@
     },
     {
       "name": "n",
-      "text": "Labour"
+      "text": "n"
     },
     {
       "name": "n_fe",
@@ -270,7 +270,7 @@
     },
     {
       "name": "r",
-      "text": "Real interest rate"
+      "text": "r"
     },
     {
       "name": "r_fe",
@@ -278,7 +278,7 @@
     },
     {
       "name": "rk",
-      "text": "Capital rent"
+      "text": "rk"
     },
     {
       "name": "rk_fe",
