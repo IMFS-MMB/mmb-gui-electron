@@ -87,7 +87,7 @@
     },
     {
       "name": "efp",
-      "text": "risk premium"
+      "text": "Risk premium"
     },
     {
       "name": "efpf",
@@ -139,7 +139,7 @@
     },
     {
       "name": "inf1",
-      "text": "Net investment"
+      "text": "inf1"
     },
     {
       "name": "inflation",
@@ -179,7 +179,7 @@
     },
     {
       "name": "mc",
-      "text": "Marginal cost"
+      "text": "Marginal costs"
     },
     {
       "name": "n",
@@ -279,7 +279,7 @@
     },
     {
       "name": "rk",
-      "text": "Capital return"
+      "text": "Capital rent"
     },
     {
       "name": "rkf",
@@ -287,7 +287,7 @@
     },
     {
       "name": "rn",
-      "text": "real interest rate"
+      "text": "Real interest rate"
     },
     {
       "name": "u",

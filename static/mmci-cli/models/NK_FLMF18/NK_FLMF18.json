@@ -73,7 +73,7 @@
   "variables": [
     {
       "name": "A",
-      "text": "Technology"
+      "text": "A"
     },
     {
       "name": "A_CB",
@@ -149,7 +149,7 @@
     },
     {
       "name": "G",
-      "text": "Preference shift"
+      "text": "Preference shifter"
     },
     {
       "name": "G_CB",
@@ -173,11 +173,11 @@
     },
     {
       "name": "L",
-      "text": "Labour"
+      "text": "L"
     },
     {
       "name": "MC",
-      "text": "Marginal cost"
+      "text": "MC"
     },
     {
       "name": "NA",
@@ -197,7 +197,7 @@
     },
     {
       "name": "NGG",
-      "text": "government spending"
+      "text": "Government spending"
     },
     {
       "name": "NL",
@@ -205,11 +205,11 @@
     },
     {
       "name": "NMC",
-      "text": "NMC"
+      "text": "Marginal costs"
     },
     {
       "name": "NN",
-      "text": "auxiliary variable 2"
+      "text": "Auxiliary variable 2"
     },
     {
       "name": "NO",

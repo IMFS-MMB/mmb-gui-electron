@@ -78,7 +78,7 @@
     },
     {
       "name": "epsC",
-      "text": "Preference shock to consumption"
+      "text": "Preference shock"
     },
     {
       "name": "epsksi",
@@ -86,11 +86,11 @@
     },
     {
       "name": "epsL",
-      "text": "Preference shock to labor supply"
+      "text": "Labor supply shock"
     },
     {
       "name": "epsthet",
-      "text": "Markup shock"
+      "text": "Price markup shock"
     },
     {
       "name": "fiscal_",
@@ -105,7 +105,7 @@
   "variables": [
     {
       "name": "A",
-      "text": "technology"
+      "text": "Technology"
     },
     {
       "name": "b",
@@ -229,7 +229,7 @@
     },
     {
       "name": "w",
-      "text": "real wage"
+      "text": "Real wage"
     },
     {
       "name": "Y",

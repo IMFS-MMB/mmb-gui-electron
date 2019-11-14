@@ -78,7 +78,7 @@
     },
     {
       "name": "e_mk_y",
-      "text": "Markup shock"
+      "text": "Price markup shock"
     },
     {
       "name": "interest_",
@@ -249,7 +249,7 @@
     },
     {
       "name": "mc_E",
-      "text": "Marginal cost"
+      "text": "Marginal costs"
     },
     {
       "name": "mc_Ef",
@@ -305,7 +305,7 @@
     },
     {
       "name": "r_k",
-      "text": "Capital return"
+      "text": "Capital rent"
     },
     {
       "name": "r_kf",

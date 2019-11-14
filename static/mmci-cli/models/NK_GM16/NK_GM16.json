@@ -96,11 +96,11 @@
     },
     {
       "name": "dw",
-      "text": "Wage inflation"
+      "text": "Wage change"
     },
     {
       "name": "e",
-      "text": "nominal exchange rate"
+      "text": "Nominal exchange rate"
     },
     {
       "name": "i",
@@ -152,7 +152,7 @@
     },
     {
       "name": "pc",
-      "text": "Price level "
+      "text": "Price level"
     },
     {
       "name": "r",
@@ -176,7 +176,7 @@
     },
     {
       "name": "w",
-      "text": "real wage"
+      "text": "Real wage"
     },
     {
       "name": "wgap",

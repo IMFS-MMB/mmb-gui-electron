@@ -127,7 +127,7 @@
     },
     {
       "name": "deltac",
-      "text": "Consumption change"
+      "text": "deltac"
     },
     {
       "name": "deltacB",
@@ -155,7 +155,7 @@
     },
     {
       "name": "iB",
-      "text": "Borrower investmentv"
+      "text": "Borrower investment"
     },
     {
       "name": "inflation",

@@ -83,11 +83,11 @@
     },
     {
       "name": "inf_",
-      "text": "Cost push shock"
+      "text": "Price markup shock"
     },
     {
       "name": "infstar_",
-      "text": "Coreign cost push shock"
+      "text": "Foreign cost push shock"
     },
     {
       "name": "interest_",

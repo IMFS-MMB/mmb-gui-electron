@@ -106,7 +106,7 @@
     },
     {
       "name": "e_g",
-      "text": "Demand shocks process"
+      "text": "Demand shock process"
     },
     {
       "name": "e_piH",
@@ -194,7 +194,7 @@
     },
     {
       "name": "r_kH",
-      "text": "Capital return"
+      "text": "Capital rent"
     },
     {
       "name": "r_kHf",

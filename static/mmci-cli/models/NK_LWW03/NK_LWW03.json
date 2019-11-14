@@ -79,11 +79,11 @@
     },
     {
       "name": "pdotsh_",
-      "text": "Inflation shock"
+      "text": "Price markup shock"
     },
     {
       "name": "rstar_",
-      "text": "Short-term interest shock"
+      "text": "rstar_"
     }
   ],
   "al_info": null,
