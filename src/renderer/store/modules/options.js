@@ -1,3 +1,4 @@
+import memoize from 'memoize-one';
 import commonShocks from '@/data/shocks';
 import commonVariables from '@/data/variables';
 import allModels from '@/data/models';
@@ -30,6 +31,32 @@ const state = {
   gain: 0.01,
 };
 
+const getAvailableVars = memoize((models) => {
+  const variables = models.map(model => model.variables);
+  const common = intersection(variables, variable => variable.text);
+
+  const [humanReadable, nonHumanReadable] =
+    partition(common, variable => variable.text !== variable.name);
+
+  return commonVariables
+    .concat(humanReadable)
+    .concat(nonHumanReadable)
+    .filter((v, i, a) => a.findIndex(v_ => v.name === v_.name) === i);
+});
+
+const getAvailableShocks = memoize((models) => {
+  const shocks = models.map(model => model.shocks);
+  const common = intersection(shocks, shock => shock.text);
+
+  const [humanReadable, nonHumanReadable] =
+    partition(common, shock => shock.text !== shock.name);
+
+  return commonShocks
+    .concat(humanReadable)
+    .concat(nonHumanReadable)
+    .filter((v, i, a) => a.findIndex(v_ => v.name === v_.name) === i);
+});
+
 const getters = {
   horizon(state) {
     return state.horizon;
@@ -54,16 +81,7 @@ const getters = {
     return state.variables;
   },
   variablesAvailable(state, getters) {
-    const variables = getters.models.map(model => model.variables);
-    const common = intersection(variables, variable => variable.text);
-
-    const [humanReadable, nonHumanReadable] =
-      partition(common, variable => variable.text !== variable.name);
-
-    return commonVariables
-      .concat(humanReadable)
-      .concat(nonHumanReadable)
-      .filter((v, i, a) => a.indexOf(v) === i);
+    return getAvailableVars(getters.models);
   },
   plotAutocorrelation(state) {
     return state.plotAutocorrelation;
@@ -198,17 +216,16 @@ const mutations = {
   setModels(state, data) {
     state.models = data;
 
-    if (state.models.length) {
-      const allVariables = [
-        state.variables,
-        // commonVariables,
-        ...state.models.map(m => m.variables),
-      ];
-      state.variables = intersection(allVariables, v => v.text);
-    } else {
-      state.variables = [];
-      state.shocks = [];
-    }
+    // if (state.models.length) {
+    const nextAvailableVariables = getAvailableVars(state.models);
+    state.variables = intersection([nextAvailableVariables, state.variables], v => v.text);
+
+    const nextAvailableShocks = getAvailableShocks(state.models);
+    state.shocks = intersection([nextAvailableShocks, state.shocks], v => v.text);
+    // } else {
+    //   state.variables = [];
+    //   state.shocks = [];
+    // }
 
     state.shocks = state.shocks.filter(shock => isShockSelectable(state.models, shock));
   },

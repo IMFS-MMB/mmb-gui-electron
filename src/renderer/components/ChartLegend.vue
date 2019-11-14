@@ -5,6 +5,7 @@
 <script>
   import * as HighCharts from 'highcharts';
   import { mapGetters } from 'vuex';
+  import { charts } from './Chart';
 
   const legendId = 'chart-legend';
 
@@ -48,7 +49,8 @@
             events: {
               legendItemClick: (event) => {
                 const legendSeries = event.target;
-                HighCharts.charts.forEach((chart) => {
+
+                charts.forEach((chart) => {
                   if (!chart || chart === legendSeries.chart) {
                     return;
                   }

@@ -61,6 +61,13 @@ export default function buildMatlabScript({
   states,
   userRule,
 }) {
+  const allShocks = shocks
+    .reduce((all, shock) => [
+      ...all,
+      ...models.map(m => m.shocks.find(modelShock => modelShock.text === shock.text)),
+    ], [])
+    .filter(s => !!s);
+
   const config = {
     dynare: dynare.path,
     rules: rules.filter(r => r.id !== USER_RULE && r.id !== MODEL_RULE)
@@ -69,7 +76,7 @@ export default function buildMatlabScript({
     msr: useMSR(rules),
     usr: useUSR(rules) ? userrule9x4to1x33(userRule) : false,
     options: {
-      shocks: shocks.map(s => s.name),
+      shocks: allShocks.map(s => s.name),
       gain,
       horizon,
       states,

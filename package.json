@@ -53,6 +53,7 @@
     "lodash.debounce": "^4.0.8",
     "lodash.get": "^4.4.2",
     "lodash.pick": "^4.4.0",
+    "memoize-one": "^5.1.1",
     "monaco-editor": "^0.17.1",
     "monaco-editor-webpack-plugin": "^1.7.0",
     "papaparse": "^4.6.3",
