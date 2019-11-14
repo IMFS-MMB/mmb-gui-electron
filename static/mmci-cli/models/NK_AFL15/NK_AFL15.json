@@ -241,7 +241,7 @@
     },
     {
       "name": "ra",
-      "text": "return on capital"
+      "text": "Capital return"
     },
     {
       "name": "raf",
@@ -249,7 +249,7 @@
     },
     {
       "name": "rd",
-      "text": "return on deposits"
+      "text": "Return on deposits"
     },
     {
       "name": "rdf",
