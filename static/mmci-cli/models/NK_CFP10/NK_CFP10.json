@@ -83,7 +83,7 @@
     },
     {
       "name": "eta_pi",
-      "text": "eta_pi"
+      "text": "Price markup shock"
     },
     {
       "name": "interest_",
@@ -130,11 +130,11 @@
     },
     {
       "name": "L",
-      "text": "labor input 1"
+      "text": "Labor input 1"
     },
     {
       "name": "Lf",
-      "text": "flex-price labor input 1"
+      "text": "Lf"
     },
     {
       "name": "n",
@@ -170,7 +170,7 @@
     },
     {
       "name": "r",
-      "text": "r"
+      "text": "Capital rent"
     },
     {
       "name": "R",
@@ -190,7 +190,7 @@
     },
     {
       "name": "uf",
-      "text": ""
+      "text": "uf"
     },
     {
       "name": "w",
