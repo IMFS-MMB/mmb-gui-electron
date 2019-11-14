@@ -74,7 +74,7 @@
   "shocks": [
     {
       "name": "epsA",
-      "text": "epsA"
+      "text": "Technology shock"
     },
     {
       "name": "epsgam",
@@ -101,11 +101,11 @@
   "variables": [
     {
       "name": "a_t",
-      "text": "a_t"
+      "text": "Technology shock process"
     },
     {
       "name": "c_t",
-      "text": "c_t"
+      "text": "Consumption"
     },
     {
       "name": "CapG_t",
@@ -161,7 +161,7 @@
     },
     {
       "name": "n_t",
-      "text": "n_t"
+      "text": "Hours worked"
     },
     {
       "name": "ni_t",

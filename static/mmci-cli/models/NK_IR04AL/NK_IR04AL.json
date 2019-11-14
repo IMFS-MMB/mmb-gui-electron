@@ -101,7 +101,7 @@
     },
     {
       "name": "epsz_",
-      "text": "epsz_"
+      "text": "Price markup shock"
     },
     {
       "name": "interest_",
@@ -143,7 +143,7 @@
     },
     {
       "name": "m",
-      "text": "m"
+      "text": "Money balances"
     },
     {
       "name": "output",
@@ -171,7 +171,7 @@
     },
     {
       "name": "z",
-      "text": "z"
+      "text": "Price markup shock process"
     }
   ]
 }

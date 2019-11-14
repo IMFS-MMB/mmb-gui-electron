@@ -1,0 +1,349 @@
+{
+  "$schema": "model",
+  "name": "EA_SWW14",
+  "capabilities": {
+    "fiscal_shock": true,
+    "inflation": true,
+    "interest": true,
+    "mp_shock": true,
+    "output": true,
+    "outputgap": true,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Smets, Warne & Wouters (2014)",
+    "paper_title": "Professional forecasters and real-time forecasting with a DSGE model",
+    "journal": "International Journal of Forecasting 30 (2014) 981–995",
+    "replicants_name": "A. Dück",
+    "pub_date": "2014",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated euro area model",
+    "authors": [
+      "Smets, Frank",
+      "Warne, Anders",
+      "Wouters, Rafael"
+    ]
+  },
+  "msr": [
+    "0.86",
+    "0",
+    "0",
+    "0",
+    "(1-0.86)*1.27",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "((1-0.86)*0.19+0.02)*4",
+    "-0.02*4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "etaa",
+      "text": "Technology shock"
+    },
+    {
+      "name": "etab",
+      "text": "Risk premium shock"
+    },
+    {
+      "name": "etai",
+      "text": "Investment technology shock"
+    },
+    {
+      "name": "etap",
+      "text": "Price markup shock"
+    },
+    {
+      "name": "etar",
+      "text": "etar"
+    },
+    {
+      "name": "etas",
+      "text": "Labour supply shock"
+    },
+    {
+      "name": "etaw",
+      "text": "Wage markup shock"
+    },
+    {
+      "name": "fiscal_",
+      "text": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "c",
+      "text": "Consumption"
+    },
+    {
+      "name": "cf",
+      "text": "cf"
+    },
+    {
+      "name": "dcobs",
+      "text": "dcobs"
+    },
+    {
+      "name": "deobs",
+      "text": "deobs"
+    },
+    {
+      "name": "diobs",
+      "text": "diobs"
+    },
+    {
+      "name": "dwobs",
+      "text": "dwobs"
+    },
+    {
+      "name": "dyobs",
+      "text": "dyobs"
+    },
+    {
+      "name": "e",
+      "text": "e"
+    },
+    {
+      "name": "ef",
+      "text": "ef"
+    },
+    {
+      "name": "ep",
+      "text": "ep"
+    },
+    {
+      "name": "epsa",
+      "text": "Technology shock process"
+    },
+    {
+      "name": "epsb",
+      "text": "epsb"
+    },
+    {
+      "name": "epsg",
+      "text": "epsg"
+    },
+    {
+      "name": "epsi",
+      "text": "Investment technology shock process"
+    },
+    {
+      "name": "epsp",
+      "text": "Price markup shock process"
+    },
+    {
+      "name": "epsr",
+      "text": "epsr"
+    },
+    {
+      "name": "epss",
+      "text": "Labour supply shock process"
+    },
+    {
+      "name": "epsw",
+      "text": "Wage markup shock process"
+    },
+    {
+      "name": "ew",
+      "text": "ew"
+    },
+    {
+      "name": "etag",
+      "text": "etag"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "i",
+      "text": "Investment"
+    },
+    {
+      "name": "iflex",
+      "text": "iflex"
+    },
+    {
+      "name": "interest",
+      "text": "interest"
+    },
+    {
+      "name": "inflation",
+      "text": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "k",
+      "text": "k"
+    },
+    {
+      "name": "kbar",
+      "text": "Capital"
+    },
+    {
+      "name": "kbarf",
+      "text": "kbarf"
+    },
+    {
+      "name": "kf",
+      "text": "kf"
+    },
+    {
+      "name": "l",
+      "text": "Labour"
+    },
+    {
+      "name": "mc",
+      "text": "Marginal cost"
+    },
+    {
+      "name": "n",
+      "text": "Hours worked"
+    },
+    {
+      "name": "nf",
+      "text": "nf"
+    },
+    {
+      "name": "output",
+      "text": "output"
+    },
+    {
+      "name": "outputgap",
+      "text": "outputgap"
+    },
+    {
+      "name": "pi",
+      "text": "pi"
+    },
+    {
+      "name": "piobs",
+      "text": "piobs"
+    },
+    {
+      "name": "piyear",
+      "text": "piyear"
+    },
+    {
+      "name": "q",
+      "text": "q"
+    },
+    {
+      "name": "qf",
+      "text": "qf"
+    },
+    {
+      "name": "r",
+      "text": "r"
+    },
+    {
+      "name": "rk",
+      "text": "Capital rent"
+    },
+    {
+      "name": "rkf",
+      "text": "rkf"
+    },
+    {
+      "name": "robs",
+      "text": "robs"
+    },
+    {
+      "name": "rrf",
+      "text": "rrf"
+    },
+    {
+      "name": "ryear",
+      "text": "ryear"
+    },
+    {
+      "name": "u",
+      "text": "u"
+    },
+    {
+      "name": "uobs",
+      "text": "uobs"
+    },
+    {
+      "name": "un",
+      "text": "un"
+    },
+    {
+      "name": "v",
+      "text": "Capital utilization rate"
+    },
+    {
+      "name": "vf",
+      "text": "vf"
+    },
+    {
+      "name": "w",
+      "text": "Real wage"
+    },
+    {
+      "name": "wf",
+      "text": "wf"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "yf",
+      "text": "yf"
+    },
+    {
+      "name": "z",
+      "text": "z"
+    },
+    {
+      "name": "zf",
+      "text": "zf"
+    }
+  ]
+}
