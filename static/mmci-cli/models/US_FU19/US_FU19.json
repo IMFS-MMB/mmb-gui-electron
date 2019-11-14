@@ -1,0 +1,256 @@
+{
+  "$schema": "model",
+  "name": "US_FU19",
+  "capabilities": {
+    "fiscal_shock": true,
+    "inflation": true,
+    "interest": true,
+    "mp_shock": true,
+    "output": true,
+    "outputgap": true,
+    "rules": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Chiara Fratto and Harald Uhlig (2019)",
+    "paper_title": "Accounting for Post Crisis Inflation: A Retro Analysis",
+    "journal": "Review of Economic Dynamics",
+    "replicants_name": "",
+    "pub_date": "",
+    "keywords": [],
+    "description": "",
+    "category": "Estimated US model",
+    "authors": [
+      "Chiara Fratto",
+      "Harald Uhlig"
+    ]
+  },
+  "msr": [
+    "0.88",
+    "0",
+    "0",
+    "0",
+    "(1-0.88)*1.68",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "((1-0.88)*0.11)+0.15",
+    "-0.15",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "eb2",
+      "text": "eb2"
+    },
+    {
+      "name": "emu",
+      "text": "emu"
+    },
+    {
+      "name": "ep",
+      "text": "ep"
+    },
+    {
+      "name": "ew",
+      "text": "ew"
+    },
+    {
+      "name": "eZ",
+      "text": "eZ"
+    },
+    {
+      "name": "fiscal_",
+      "text": "fiscal_"
+    },
+    {
+      "name": "interest_",
+      "text": "interest_"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "b2",
+      "text": "b2"
+    },
+    {
+      "name": "c",
+      "text": "c"
+    },
+    {
+      "name": "c_flex",
+      "text": "c_flex"
+    },
+    {
+      "name": "eg",
+      "text": "eg"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "g",
+      "text": "g"
+    },
+    {
+      "name": "i",
+      "text": "i"
+    },
+    {
+      "name": "i_flex",
+      "text": "i_flex"
+    },
+    {
+      "name": "inflation",
+      "text": "inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "interest"
+    },
+    {
+      "name": "k",
+      "text": "k"
+    },
+    {
+      "name": "k_bar",
+      "text": "k_bar"
+    },
+    {
+      "name": "k_bar_flex",
+      "text": "k_bar_flex"
+    },
+    {
+      "name": "k_flex",
+      "text": "k_flex"
+    },
+    {
+      "name": "L",
+      "text": "L"
+    },
+    {
+      "name": "L_flex",
+      "text": "L_flex"
+    },
+    {
+      "name": "lambda_p",
+      "text": "lambda_p"
+    },
+    {
+      "name": "lambda_w",
+      "text": "lambda_w"
+    },
+    {
+      "name": "mc",
+      "text": "mc"
+    },
+    {
+      "name": "mu",
+      "text": "mu"
+    },
+    {
+      "name": "output",
+      "text": "output"
+    },
+    {
+      "name": "outputgap",
+      "text": "outputgap"
+    },
+    {
+      "name": "pi",
+      "text": "pi"
+    },
+    {
+      "name": "Q",
+      "text": "Q"
+    },
+    {
+      "name": "Q_flex",
+      "text": "Q_flex"
+    },
+    {
+      "name": "R",
+      "text": "R"
+    },
+    {
+      "name": "R_flex",
+      "text": "R_flex"
+    },
+    {
+      "name": "r_k",
+      "text": "r_k"
+    },
+    {
+      "name": "r_k_flex",
+      "text": "r_k_flex"
+    },
+    {
+      "name": "u",
+      "text": "u"
+    },
+    {
+      "name": "u_flex",
+      "text": "u_flex"
+    },
+    {
+      "name": "w",
+      "text": "w"
+    },
+    {
+      "name": "w_flex",
+      "text": "w_flex"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "y_flex",
+      "text": "y_flex"
+    },
+    {
+      "name": "Z",
+      "text": "Z"
+    }
+  ]
+}
