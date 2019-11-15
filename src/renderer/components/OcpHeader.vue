@@ -28,6 +28,11 @@
                                         <i class="fa fa-cog"></i>
                                         <span class="m-1">Settings</span>
                                     </b-dropdown-item>
+                                    <hr>
+                                    <b-dropdown-item v-b-modal.helpModal>
+                                        <i class="fa fa-question-circle"></i>
+                                        <span class="m-1">Help</span>
+                                    </b-dropdown-item>
                                 </b-dropdown>
                             </div>
                         </b-col>
