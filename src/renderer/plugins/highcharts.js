@@ -40,6 +40,7 @@ HighCharts.setOptions({
   },
   plotOptions: {
     series: {
+      animation: false,
       lineWidth: 4,
       marker: {
         enabled: false,
