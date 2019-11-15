@@ -1,10 +1,18 @@
 <template>
-    <b-modal id="matlabOutputModal" size="lg" :header-text-variant="error ? 'danger' : 'default' " centered :no-close-on-backdrop="inProgress" :no-close-on-esc="inProgress">
+    <b-modal id="matlabOutputModal"
+             size="lg"
+             centered
+             :header-text-variant="error ? 'danger' : 'default' "
+             :no-close-on-backdrop="inProgress"
+             :no-close-on-esc="inProgress">
         <h5 slot="modal-header" class="modal-title">{{ title }}</h5>
 
         <!-- content start -->
-        <div class="container" v-chat-scroll>
-            <pre v-if="!error" v-for="part of stdout">{{part}}</pre>
+        <div class="container" style="height:100%;" v-chat-scroll>
+            <template v-if="!error" v-for="part of stdout">
+                <pre v-if="part !== '\n'">{{part}}</pre>
+            </template>
+
 
             <div v-if="error">
                 <h4>{{error.identifier}}</h4>
@@ -12,8 +20,8 @@
             </div>
         </div>
 
-        <button slot="modal-footer" class="btn btn-primary" :disabled="inProgress" @click="close">{{ inProgress ?
-            'Please wait...' : 'Close' }}
+        <button slot="modal-footer" class="btn btn-primary" :disabled="inProgress" @click="close">
+            {{ inProgress ? 'Please wait...' : 'Close' }}
         </button>
     </b-modal>
 </template>
@@ -41,29 +49,22 @@
 </script>
 <style lang="scss">
     #matlabOutputModal {
-        .modal-content {
-            max-height: 80vh;
-        }
-
-        .modal-header, .modal-footer {
-            flex-shrink: 0;
+        pre {
+            margin: 0;
         }
 
         .modal-body {
-            display: flex;
-            flex-direction: column;
             padding: 0;
         }
 
         .container {
-            flex: 1;
-            overflow: auto;
-            padding-bottom: 1rem;
-
-            pre {
-                margin-bottom: 0;
-                white-space: pre-wrap;
-            }
+            overflow-y: auto;
         }
+    }
+
+    .modal-body {
+        max-height: 60vh;
+        display: flex;
+        flex-direction: column;
     }
 </style>
