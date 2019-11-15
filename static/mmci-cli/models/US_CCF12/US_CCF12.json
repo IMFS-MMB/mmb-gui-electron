@@ -72,7 +72,7 @@
     {
       "name": "eps_B",
       "text": "eps_B"
-    },            
+    },
     {
       "name": "fiscal_",
       "text": "fiscal_"
@@ -170,7 +170,7 @@
     },
     {
       "name": "inflation",
-      "text": "inflation"
+      "text": "Inflation"
     },
     {
       "name": "inflationq",
@@ -178,7 +178,7 @@
     },
     {
       "name": "interest",
-      "text": "interest"
+      "text": "Interest"
     },
     {
       "name": "mu",
@@ -230,11 +230,11 @@
     },
     {
       "name": "output",
-      "text": "output"
+      "text": "Output"
     },
     {
       "name": "outputgap",
-      "text": "outputgap"
+      "text": "Output Gap"
     },
     {
       "name": "Bz",
@@ -343,7 +343,7 @@
     {
       "name": "pif",
       "text": "pif"
-    },    
+    },
     {
       "name": "rkf",
       "text": "rkf"
@@ -467,6 +467,6 @@
     {
       "name": "ygap",
       "text": "ygap"
-    }  
+    }
   ]
 }

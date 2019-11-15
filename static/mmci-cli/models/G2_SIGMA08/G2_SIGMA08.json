@@ -619,7 +619,7 @@
     },
     {
       "name": "inflation",
-      "text": "inflation"
+      "text": "Inflation"
     },
     {
       "name": "inflationq",
@@ -627,7 +627,7 @@
     },
     {
       "name": "interest",
-      "text": "interest"
+      "text": "Interest"
     },
     {
       "name": "kp",
@@ -747,11 +747,11 @@
     },
     {
       "name": "output",
-      "text": "output"
+      "text": "Output"
     },
     {
       "name": "outputgap",
-      "text": "outputgap"
+      "text": "Output Gap"
     },
     {
       "name": "pc",

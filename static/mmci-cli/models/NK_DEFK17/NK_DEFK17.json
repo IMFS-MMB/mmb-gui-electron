@@ -66,7 +66,7 @@
     {
       "name": "e_g",
       "text": "e_g"
-    },    
+    },
     {
       "name": "C",
       "text": "C"
@@ -109,7 +109,7 @@
     },
     {
       "name": "inflation",
-      "text": "inflation"
+      "text": "Inflation"
     },
     {
       "name": "inflationq",
@@ -117,7 +117,7 @@
     },
     {
       "name": "interest",
-      "text": "interest"
+      "text": "Interest"
     },
     {
       "name": "Ng",
@@ -137,11 +137,11 @@
     },
     {
       "name": "output",
-      "text": "output"
+      "text": "Output"
     },
     {
       "name": "outputgap",
-      "text": "outputgap"
+      "text": "Output Gap"
     },
     {
       "name": "R",
@@ -278,7 +278,7 @@
     {
       "name": "R0_f",
       "text": "R0_f"
-    },    
+    },
     {
       "name": "Q_f",
       "text": "Q_f"
@@ -317,7 +317,7 @@
     },
     {
       "name": "phi_f",
-      "text": "phi_f"    
+      "text": "phi_f"
     }
   ]
 }

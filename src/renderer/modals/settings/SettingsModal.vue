@@ -8,15 +8,20 @@
         <BackendSelection/>
         <DynareSelection class="mt-3"/>
         <MmbPathSelection class="mt-3"></MmbPathSelection>
+
+        <CompatibilityTest slot="modal-footer" style="margin-right: auto;"/>
+        <b-btn slot="modal-footer" @click="hideModal">Close</b-btn>
     </b-modal>
 </template>
 <script>
   import DynareSelection from './DynareSelection';
   import BackendSelection from './BackendSelection';
   import MmbPathSelection from './MmbPathSelection';
+  import CompatibilityTest from './CompatibilityTest/CompatibilityTest';
 
   export default {
     components: {
+      CompatibilityTest,
       BackendSelection,
       DynareSelection,
       MmbPathSelection,
