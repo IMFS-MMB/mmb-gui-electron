@@ -76,7 +76,7 @@
   "shocks": [
     {
       "name": "fiscal_",
-      "text": "fiscal_"
+      "text": "Fiscal Policy Shock"
     },
     {
       "name": "inno_ebargaint",
@@ -104,7 +104,7 @@
     },
     {
       "name": "interest_",
-      "text": "interest_"
+      "text": "Monetary Policy Shock"
     }
   ],
   "al_info": null,

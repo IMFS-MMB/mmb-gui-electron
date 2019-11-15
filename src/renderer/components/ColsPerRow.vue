@@ -1,6 +1,6 @@
 <template>
     <div class="d-flex flex-column">
-        <div class="text">{{model}} Columns per row</div>
+        <div class="text">Max {{model}} columns per row</div>
         <vue-slider class="slider" v-model="model" v-bind="options"></vue-slider>
     </div>
 </template>
