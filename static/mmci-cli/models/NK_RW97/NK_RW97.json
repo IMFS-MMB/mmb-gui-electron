@@ -40,11 +40,11 @@
   "shocks": [
     {
       "name": "fiscal_",
-      "text": "fiscal_"
+      "text": "Fiscal Policy Shock"
     },
     {
       "name": "interest_",
-      "text": "interest_"
+      "text": "Monetary Policy Shock"
     },
     {
       "name": "u_",

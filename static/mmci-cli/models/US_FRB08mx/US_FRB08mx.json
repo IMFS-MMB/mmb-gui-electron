@@ -97,7 +97,7 @@
     },
     {
       "name": "fiscal_",
-      "text": "fiscal_"
+      "text": "Fiscal Policy Shock"
     },
     {
       "name": "fpi10_",
@@ -129,7 +129,7 @@
     },
     {
       "name": "interest_",
-      "text": "interest_"
+      "text": "Monetary Policy Shock"
     },
     {
       "name": "ki_",
