@@ -37,7 +37,8 @@
 </template>
 <script>
   import { mapMutations, mapGetters } from 'vuex';
-  import commonShocks from '@/data/shocks';
+  import intersection from '../utils/intersection';
+  import partition from '../utils/partition';
 
   export default {
     computed: {
@@ -48,14 +49,13 @@
         modelSelection: 'models',
       }),
       shocks() {
-        if (this.modelSelection.length !== 1) {
-          return commonShocks;
-        }
+        const shocks = this.modelSelection.map(model => model.shocks);
+        const common = intersection(shocks, shock => shock.text);
 
-        return [
-          ...commonShocks,
-          ...this.modelSelection[0].shocks.filter(s => !commonShocks.some(cs => cs.name === s.name)),
-        ];
+        const [humanReadable, nonHumanReadable] =
+          partition(common, shock => shock.text !== shock.name);
+
+        return humanReadable.concat(nonHumanReadable);
       },
       selection: {
         get() {

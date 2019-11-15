@@ -1,4 +1,4 @@
-import * as comlink from 'comlink';
+// import * as comlink from 'comlink';
 import getDynareVersion from './dynare/get-dynare-version';
 import scanForDynare from './dynare/scan-for-dynare';
 import { getExecutableInfo, scanForBackends } from './backend/scan-for-backends';
@@ -14,4 +14,6 @@ const api = {
   loadRules,
 };
 
-comlink.expose(api);
+// comlink.expose(api);
+
+export default api;
