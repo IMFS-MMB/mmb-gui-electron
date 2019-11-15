@@ -271,8 +271,6 @@ const getters = {
       ...getACChartRows(state),
     ];
 
-    console.log(sections);
-
     return sections;
   },
   varTable(state) {
