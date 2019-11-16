@@ -1,0 +1,32 @@
+{
+  "dynare": "/usr/lib/dynare",
+  "rules": [],
+  "models": [
+    "US_YR13AL"
+  ],
+  "msr": true,
+  "usr": false,
+  "options": {
+    "gain": 0.01,
+    "horizon": 20,
+    "states": {
+      "US_YR13AL": [
+        "c",
+        "ec",
+        "inve",
+        "kp",
+        "inflationq",
+        "nw",
+        "w",
+        "a",
+        "b",
+        "g",
+        "qs",
+        "spinf",
+        "epinfma",
+        "sw",
+        "ewma"
+      ]
+    }
+  }
+}
