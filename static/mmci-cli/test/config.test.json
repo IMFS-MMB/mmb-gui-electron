@@ -1,0 +1,16 @@
+{
+  "dynare": "/usr/lib/dynare",
+  "rules": [
+    "Taylor"
+  ],
+  "models": [
+    "NK_RW97"
+  ],
+  "msr": false,
+  "usr": false,
+  "options": {
+    "shocks":["interest_"],
+    "gain": 0.01,
+    "horizon": 20
+  }
+}
