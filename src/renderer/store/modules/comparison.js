@@ -6,6 +6,7 @@ import normalizeError from './compare/electron/normalize-error';
 import chunkArray from '../../utils/chunkArray';
 import compare from './compare';
 import responsiveValue from '../../utils/responsive-value';
+import sortSeries from '../../utils/sortSeries';
 
 const namespaced = true;
 
@@ -163,7 +164,7 @@ function getSections({
           });
 
           charts.push({
-            series,
+            series: series.sort(sortSeries),
             title: getChartTitle(group2),
           });
         });
@@ -234,7 +235,7 @@ const getters = {
     return state.error;
   },
   show(state) {
-    return state.show;
+    return state.show && !state.error;
   },
   stdout(state) {
     return state.stdout;
@@ -250,15 +251,23 @@ const getters = {
 
     state.options.models.forEach((m) => {
       state.options.policyRules.forEach((r) => {
+        let ruleName = r.name;
+
+        if (r.id === 1) {
+          ruleName = 'User';
+        } else if (r.id === 2) {
+          ruleName = 'Model';
+        }
+
         series.push({
-          id: getSeriesId(m.name, r.name),
-          name: getSeriesId(m.name, r.name),
+          id: getSeriesId(m.name, ruleName),
+          name: getSeriesId(m.name, ruleName),
           values: [],
         });
       });
     });
 
-    return series;
+    return series.sort(sortSeries);
   },
 
   sections(state) {
@@ -335,14 +344,15 @@ const actions = {
     try {
       const result = await compare(ctx);
 
-      // eslint-disable-next-line prefer-destructuring
-      data = result.data;
-
       if (result.error) {
         const error = normalizeError(result.error);
 
         captureBackendException(error);
+
         ctx.commit('error', error);
+      } else {
+        // eslint-disable-next-line prefer-destructuring
+        data = result.data;
       }
     } catch (e) {
       ctx.commit('error', e);

@@ -77,6 +77,9 @@ const getters = {
   shocks(state) {
     return state.shocks;
   },
+  shocksAvailable(state, getters) {
+    return getAvailableShocks(getters.models);
+  },
   variables(state) {
     return state.variables;
   },
@@ -117,10 +120,10 @@ const getters = {
   },
 
   modelSpecificShocksUnavailable(state) {
-    return state.models.length !== 1;
+    return state.models.length === 0;
   },
   modelSpecificVariablesUnavailable(state) {
-    return state.models.length !== 1;
+    return state.models.length === 0;
   },
 
   isPlotVarianceAvailable(state) {
