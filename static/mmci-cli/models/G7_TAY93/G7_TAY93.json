@@ -142,7 +142,7 @@
     },
     {
       "name": "fiscal_",
-      "text": "fiscal_"
+      "text": "Fiscal Policy Shock"
     },
     {
       "name": "if1_",
@@ -206,7 +206,7 @@
     },
     {
       "name": "interest_",
-      "text": "interest_"
+      "text": "Monetary Policy Shock"
     },
     {
       "name": "ir0_",
