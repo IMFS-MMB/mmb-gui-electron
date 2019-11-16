@@ -27,7 +27,7 @@
                                boundary="viewport">
                         <div>
                             <p>Model specific variables are unavailable with your current options.</p>
-                            <p class="mb-0">Select <em>exactly one</em> model to make its specific variables available.</p>
+                            <p class="mb-0">Select one model to make its specific variables available. Or several models to get select from variables they have in common.</p>
                         </div>
                     </b-popover>
                 </template>

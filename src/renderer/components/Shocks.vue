@@ -27,7 +27,7 @@
                                boundary="viewport">
                         <div>
                             <p>Model specific shocks are unavailable with the current options.</p>
-                            <p class="mb-0">Select <em>exactly one</em> model to make its specific shocks available.</p>
+                            <p class="mb-0">Select one model to make its specific shocks available. Or several models to get select from shocks they have in common.</p>
                         </div>
                     </b-popover>
                 </template>
@@ -37,8 +37,6 @@
 </template>
 <script>
   import { mapMutations, mapGetters } from 'vuex';
-  import intersection from '../utils/intersection';
-  import partition from '../utils/partition';
 
   export default {
     computed: {
@@ -46,17 +44,8 @@
       ...mapGetters('options', {
         numSelected: 'numShocks',
         shockSelection: 'shocks',
-        modelSelection: 'models',
+        shocks: 'shocksAvailable',
       }),
-      shocks() {
-        const shocks = this.modelSelection.map(model => model.shocks);
-        const common = intersection(shocks, shock => shock.text);
-
-        const [humanReadable, nonHumanReadable] =
-          partition(common, shock => shock.text !== shock.name);
-
-        return humanReadable.concat(nonHumanReadable);
-      },
       selection: {
         get() {
           return this.shockSelection;
