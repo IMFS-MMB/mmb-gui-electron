@@ -7,6 +7,7 @@ import chunkArray from '../../utils/chunkArray';
 import compare from './compare';
 import responsiveValue from '../../utils/responsive-value';
 import sortSeries from '../../utils/sortSeries';
+import orders from '../../data/orders';
 
 const namespaced = true;
 
@@ -21,6 +22,7 @@ const state = {
   stdout: [],
   stderr: [],
   data: [],
+  order: orders.VariableModelRule,
   error: false,
 };
 
@@ -147,6 +149,29 @@ function getSections({
     return [];
   }
 
+  const colorsById = new Map();
+  const COLORS = [
+    '#4572A7',
+    '#AA4643',
+    '#89A54E',
+    '#80699B',
+    '#3D96AE',
+    '#DB843D',
+    '#92A8CD',
+    '#A47D7C',
+    '#B5CA92',
+  ];
+  let nextColorIndex = 0;
+
+  const getColor = (id) => {
+    if (!colorsById.has(id)) {
+      colorsById.set(id, COLORS[nextColorIndex]);
+      nextColorIndex = (nextColorIndex + 1) % COLORS.length;
+    }
+
+    return colorsById.get(id);
+  };
+
   groupBy(data, d => d[key1])
     .forEach((data1, group1) => {
       const charts = [];
@@ -156,10 +181,14 @@ function getSections({
           const series = [];
 
           data2.forEach((d) => {
+            const id = getSeriesId(d[key3], d[key4]);
+            const name = getSeriesName(d[key3], d[key4]);
+
             series.push({
-              id: getSeriesId(d[key3], d[key4]),
-              name: getSeriesName(d[key3], d[key4]),
+              id,
+              name,
               data: d.values,
+              color: getColor(id),
             });
           });
 
@@ -178,11 +207,11 @@ function getSections({
   return sections;
 }
 
-function getACSections(data, chartsPerRow) {
+function getACSections(data, chartsPerRow, order) {
   return getSections({
     data,
     chartsPerRow,
-    keys: ['resulttype', 'variable', 'model', 'rule'],
+    keys: ['resulttype', ...order],
     getSectionTitle: () => 'Autocorrelation functions',
     getChartTitle: group2 => group2,
     getSeriesId: (group3, group4) => getSeriesId(group3, group4),
@@ -190,11 +219,11 @@ function getACSections(data, chartsPerRow) {
   });
 }
 
-function getIRFSections(data, chartsPerRow) {
+function getIRFSections(data, chartsPerRow, order) {
   return getSections({
     data,
     chartsPerRow,
-    keys: ['shock', 'variable', 'model', 'rule'],
+    keys: ['shock', ...order],
     getSectionTitle: group1 => group1,
     getChartTitle: group2 => group2,
     getSeriesId: (group3, group4) => getSeriesId(group3, group4),
@@ -203,17 +232,17 @@ function getIRFSections(data, chartsPerRow) {
 }
 
 function getShockChartRows(state) {
-  const { options, data } = state;
+  const { options, data, order } = state;
   const { shocks, variables, models } = options;
 
   const normalized = normalizeIRFData(data, shocks, variables, models);
 
-  return getIRFSections(normalized.filter(d => d.resulttype === 'IRF'), state.colsPerRow);
+  return getIRFSections(normalized.filter(d => d.resulttype === 'IRF'), state.colsPerRow, order);
 }
 
 
 function getACChartRows(state) {
-  const { options, data } = state;
+  const { options, data, order } = state;
   const {
     variables, models, plotAutocorrelation,
   } = options;
@@ -224,7 +253,7 @@ function getACChartRows(state) {
 
   const normalized = normalizeACData(data, variables, models);
 
-  return getACSections(normalized.filter(d => d.resulttype === 'AC'), state.colsPerRow);
+  return getACSections(normalized.filter(d => d.resulttype === 'AC'), state.colsPerRow, order);
 }
 
 const getters = {
@@ -246,28 +275,27 @@ const getters = {
   inProgress(state) {
     return state.inProgress;
   },
-  legendSeries(state) {
-    const series = [];
+  legendSeries(state, getters) {
+    const allSeries = new Map();
 
-    state.options.models.forEach((m) => {
-      state.options.policyRules.forEach((r) => {
-        let ruleName = r.name;
+    getters.sections.forEach((section) => {
+      section.rows.forEach((chunk) => {
+        chunk.forEach((chart) => {
+          chart.series.forEach((s) => {
+            if (!allSeries.has(s.id)) {
+              const {
+                data,
+                ...lSeries
+              } = s;
 
-        if (r.id === 1) {
-          ruleName = 'User';
-        } else if (r.id === 2) {
-          ruleName = 'Model';
-        }
-
-        series.push({
-          id: getSeriesId(m.name, ruleName),
-          name: getSeriesId(m.name, ruleName),
-          values: [],
+              allSeries.set(s.id, lSeries);
+            }
+          });
         });
       });
     });
 
-    return series.sort(sortSeries);
+    return [...allSeries.values()].sort(sortSeries);
   },
 
   sections(state) {
@@ -295,6 +323,9 @@ const getters = {
         data: vars,
       };
     });
+  },
+  order(state) {
+    return state.order;
   },
 };
 
@@ -330,6 +361,9 @@ const mutations = {
     state.data = data;
     state.inProgress = false;
     state.show = true;
+  },
+  setOrder(state, data) {
+    state.order = data;
   },
 };
 
