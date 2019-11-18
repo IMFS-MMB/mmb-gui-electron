@@ -26,7 +26,7 @@
     </b-modal>
 </template>
 <script>
-  import { mapActions, mapGetters, mapMutations } from 'vuex'; // eslint-disable-line
+  import { mapGetters } from 'vuex';
 
   export default {
     name: 'MatlabOutputModal',

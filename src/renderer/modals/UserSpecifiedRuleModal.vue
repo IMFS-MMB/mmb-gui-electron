@@ -88,7 +88,7 @@
     </b-modal>
 </template>
 <script>
-  import { mapActions, mapGetters, mapMutations } from 'vuex'; // eslint-disable-line
+  import { mapGetters, mapMutations } from 'vuex';
 
   export default {
     data() {

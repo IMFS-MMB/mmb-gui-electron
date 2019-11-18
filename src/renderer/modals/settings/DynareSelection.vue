@@ -74,7 +74,7 @@
     },
     created() {
       if (!this.dynares.length) {
-        // this.scan();
+        this.scan();
       }
     },
   };
