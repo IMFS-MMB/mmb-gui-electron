@@ -15,6 +15,7 @@
                         <b-col cols="12" sm="6"
                                class="d-flex align-items-center justify-content-between justify-content-sm-end">
                             <SaveData :data="data"/>
+                            <DataOrder class="order-sm-first mr-3" style="margin-top: 0 !important;"/>
                             <ColsPerRow class="order-sm-first mr-3"></ColsPerRow>
                         </b-col>
                     </div>
@@ -38,8 +39,6 @@
 </template>
 
 <script>
-  import Chart from '@/components/Chart.vue';
-
   import { mapGetters } from 'vuex';
   import scrollIntoView from '@/utils/scrollIntoView';
   import SaveData from './SaveData';
@@ -47,14 +46,15 @@
   import ChartRow from './ChartRow';
   import ChartLegend from './ChartLegend';
   import ColsPerRow from './ColsPerRow';
+  import DataOrder from './DataOrder';
 
   export default {
     components: {
+      DataOrder,
       ColsPerRow,
       ChartRow,
       Variances,
       SaveData,
-      Chart,
       ChartLegend,
     },
     data() {

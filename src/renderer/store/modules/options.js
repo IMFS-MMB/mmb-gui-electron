@@ -18,6 +18,7 @@ function defaultStates() {
 const namespaced = true;
 
 const state = {
+  isTouchDevice: false,
   models: [],
   policyRules: [],
   shocks: [],

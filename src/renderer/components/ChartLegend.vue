@@ -22,6 +22,7 @@
     mounted() {
       this.chart = new HighCharts.Chart({
         chart: {
+          animation: false,
           renderTo: this.id,
           height: 100,
         },
@@ -71,7 +72,17 @@
         },
       });
     },
+    watch: {
+      legendSeries(newVal) {
+        if (Array.isArray(newVal)) {
+          // HighCharts mutates the series array on removal
+          // shallow copy the array before looping to catch all elements
+          [...this.chart.series].forEach(s => s.remove());
 
+          newVal.forEach(s => this.chart.addSeries(s));
+        }
+      },
+    },
     beforeDestroy() {
       try {
         this.chart.destroy();
