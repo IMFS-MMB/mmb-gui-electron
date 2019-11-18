@@ -68,6 +68,7 @@ const actions = {
 
       commit('add', dynares);
     } catch (e) {
+      // eslint-disable-next-line no-console
       console.warn(e);
     }
   },
