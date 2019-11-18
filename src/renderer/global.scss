@@ -28,6 +28,12 @@ body {
   font-weight: 300;
   color: #6a7786;
   background: #444;
+
+  // prevent buggy chart resizing behavior on dialog close
+  &,&.modal-open {
+    overflow-y: scroll !important;
+    padding-right: 0 !important;
+  }
 }
 
 .app-wrapper {
