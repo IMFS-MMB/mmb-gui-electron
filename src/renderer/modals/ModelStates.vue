@@ -1,7 +1,7 @@
 <template>
     <div v-if="model">
         <b-form-checkbox-group class="ctrl-set-listing" stacked v-model="statesModel">
-            <b-form-checkbox v-for="state in model.al_info.states_long" :key="model.al_info.states_long" :value="state">{{state}}</b-form-checkbox>
+            <b-form-checkbox v-for="state in model.al_info.states_long" :key="state" :value="state">{{state}}</b-form-checkbox>
         </b-form-checkbox-group>
     </div>
 </template>
