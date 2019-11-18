@@ -231,32 +231,31 @@ function getIRFSections(data, chartsPerRow, order) {
   });
 }
 
-function getShockChartRows(state) {
-  const { options, data, order } = state;
-  const { shocks, variables, models } = options;
-
-  const normalized = normalizeIRFData(data, shocks, variables, models);
-
-  return getIRFSections(normalized.filter(d => d.resulttype === 'IRF'), state.colsPerRow, order);
-}
-
-
-function getACChartRows(state) {
-  const { options, data, order } = state;
-  const {
-    variables, models, plotAutocorrelation,
-  } = options;
-
-  if (!plotAutocorrelation) {
-    return [];
-  }
-
-  const normalized = normalizeACData(data, variables, models);
-
-  return getACSections(normalized.filter(d => d.resulttype === 'AC'), state.colsPerRow, order);
-}
-
 const getters = {
+  normalizedACdata(state) {
+    const {
+      data,
+      options: {
+        variables,
+        models,
+        plotAutocorrelation,
+      },
+    } = state;
+
+    return plotAutocorrelation ? normalizeACData(data, variables, models) : [];
+  },
+  normalizedIRFdata(state) {
+    const {
+      data,
+      options: {
+        models,
+        shocks,
+        variables,
+      },
+    } = state;
+
+    return normalizeIRFData(data, shocks, variables, models);
+  },
   data(state) {
     return state.data;
   },
@@ -298,17 +297,15 @@ const getters = {
     return [...allSeries.values()].sort(sortSeries);
   },
 
-  sections(state) {
+  sections(state, getters) {
     if (!state.show) {
       return [];
     }
 
-    const sections = [
-      ...getShockChartRows(state),
-      ...getACChartRows(state),
+    return [
+      ...getIRFSections(getters.normalizedIRFdata.filter(d => d.resulttype === 'IRF'), state.colsPerRow, state.order),
+      ...getACSections(getters.normalizedACdata.filter(d => d.resulttype === 'AC'), state.colsPerRow, state.order),
     ];
-
-    return sections;
   },
   varTable(state) {
     if (!state.options.plotVariance) {
