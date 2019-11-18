@@ -21,7 +21,8 @@
     },
     data() {
       return {
-        id: `chart-${nextId++}`, // eslint-disable-line
+        // eslint-disable-next-line no-plusplus
+        id: `chart-${nextId++}`,
         chart: undefined,
       };
     },

@@ -15,18 +15,9 @@ HighCharts.setOptions({
     text: '',
   },
   yAxis: {
-    // title: {
-    //   text: 'output'
-    // }
-
     title: false,
   },
   credits: false,
-  legend: {
-    // layout: 'vertical',
-    // align: 'right',
-    // verticalAlign: 'middle'
-  },
   plotOptions: {
     series: {
       animation: false,

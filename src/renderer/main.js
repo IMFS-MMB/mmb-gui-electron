@@ -14,7 +14,6 @@ import './plugins/chatscroll';
 import resizeEvents from './utils/resize';
 import userId from '../userid';
 
-// if (isProduction) {
 if (isWeb) {
   const Sentry = require('@sentry/browser');
 
@@ -35,7 +34,6 @@ if (isWeb) {
     });
   });
 }
-// }
 
 
 if (isElectron) {

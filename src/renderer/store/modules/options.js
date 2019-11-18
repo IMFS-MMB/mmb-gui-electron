@@ -3,6 +3,7 @@ import commonShocks from '@/data/shocks';
 import commonVariables from '@/data/variables';
 import intersection from '../../utils/intersection';
 import partition from '../../utils/partition';
+import { MODEL_RULE, USER_RULE } from '../../../config/constants';
 
 function defaultModelStates(models) {
   return models.reduce((states, model) => {
@@ -151,10 +152,10 @@ const getters = {
   isRuleDisabled(state, getters) {
     return (id) => {
       switch (id) {
-        case 1:
+        case USER_RULE:
           // user specified
           return false;
-        case 2:
+        case MODEL_RULE:
           // model specific
           return getters.models.some(m => !m.msr);
         default:
@@ -221,16 +222,11 @@ const mutations = {
   setModels(state, data) {
     state.models = data;
 
-    // if (state.models.length) {
     const nextAvailableVariables = getAvailableVars(state.models);
     state.variables = intersection([nextAvailableVariables, state.variables], v => v.text);
 
     const nextAvailableShocks = getAvailableShocks(state.models);
     state.shocks = intersection([nextAvailableShocks, state.shocks], v => v.text);
-    // } else {
-    //   state.variables = [];
-    //   state.shocks = [];
-    // }
 
     state.shocks = state.shocks.filter(shock => isShockSelectable(state.models, shock));
   },
