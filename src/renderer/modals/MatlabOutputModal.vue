@@ -51,20 +51,19 @@
     #matlabOutputModal {
         pre {
             margin: 0;
+            white-space: pre-wrap;
         }
 
         .modal-body {
             padding: 0;
+            min-height: 60vh;
+            max-height: 60vh;
+            display: flex;
+            flex-direction: column;
         }
 
         .container {
             overflow-y: auto;
         }
-    }
-
-    .modal-body {
-        max-height: 60vh;
-        display: flex;
-        flex-direction: column;
     }
 </style>
