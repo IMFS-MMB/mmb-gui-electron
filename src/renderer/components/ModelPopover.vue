@@ -2,28 +2,31 @@
     <b-popover :target="'cb-wrapper-' + model.name"
                :delay="{ show: 500, hide: 0 }"
                placement="left"
-               triggers="hover"
+               :triggers="popoverTriggers"
                boundary="viewport">
         <template slot="title">Model {{model.name}}</template>
         <div>
             <p>
-                {{ d.ac_ref }}: {{ d.paper_title }}, <i>{{ d.journal }}</i>
+                {{ modelDescription.ac_ref }}: {{ modelDescription.paper_title }}, <i>{{ modelDescription.journal }}</i>
             </p>
-            <p v-if="d.description.length > 0">
+            <p v-if="modelDescription.description.length > 0">
                 <b>Description:</b>
-                {{ d.description ? d.description : '(no description)' }}
+                {{ modelDescription.description ? modelDescription.description : '(no description)' }}
             </p>
         </div>
     </b-popover>
 </template>
 <script>
+  import { mapGetters } from 'vuex';
+
   export default {
     name: 'ModelPopover',
     props: {
       model: {},
     },
     computed: {
-      d() {
+      ...mapGetters('ui', ['popoverTriggers']),
+      modelDescription() {
         return this.model.description;
       },
     },

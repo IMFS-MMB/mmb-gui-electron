@@ -23,7 +23,7 @@
                     <b-popover target="model-specific-shocks-unavailable"
                                :delay="{ show: 250, hide: 0 }"
                                placement="left"
-                               triggers="hover"
+                               :triggers="popoverTriggers"
                                boundary="viewport">
                         <div>
                             <p>Model specific shocks are unavailable with the current options.</p>
@@ -46,6 +46,7 @@
         shockSelection: 'shocks',
         shocks: 'shocksAvailable',
       }),
+      ...mapGetters('ui', ['popoverTriggers']),
       selection: {
         get() {
           return this.shockSelection;

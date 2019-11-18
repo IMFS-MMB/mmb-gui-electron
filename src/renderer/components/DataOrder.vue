@@ -21,7 +21,7 @@
                 <span >Rule</span>
             </b-dropdown-item>
         </b-dropdown>
-        <b-tooltip target="comparison-data-order-dropdown" triggers="hover focus">
+        <b-tooltip target="comparison-data-order-dropdown" :triggers="tooltipTriggers">
             Define how data is grouped. Default is one chart per variable.
         </b-tooltip>
     </div>
@@ -39,6 +39,7 @@
     },
     computed: {
       ...mapGetters('comparison', ['order']),
+      ...mapGetters('ui', ['tooltipTriggers']),
     },
     methods: {
       ...mapMutations('comparison', ['setOrder']),
