@@ -1,12 +1,11 @@
 import memoize from 'memoize-one';
 import commonShocks from '@/data/shocks';
 import commonVariables from '@/data/variables';
-import allModels from '@/data/models';
 import intersection from '../../utils/intersection';
 import partition from '../../utils/partition';
 
-function defaultStates() {
-  return allModels.reduce((states, model) => {
+function defaultModelStates(models) {
+  return models.reduce((states, model) => {
     if (model.al) {
       states[model.name] = [...model.al_info.states_long];
     }
@@ -24,7 +23,7 @@ const state = {
   variables: [
     ...commonVariables,
   ],
-  states: defaultStates(),
+  states: null,
   plotAutocorrelation: false,
   plotVariance: false,
   horizon: 20,
@@ -207,6 +206,9 @@ function isShockSelectable(selectedModels, shock) {
 }
 
 const mutations = {
+  setDefaultStates(state, models) {
+    state.states = defaultModelStates(models);
+  },
   setStates(state, { modelname, states }) {
     state.states[modelname] = states;
   },
