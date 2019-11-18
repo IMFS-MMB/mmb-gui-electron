@@ -40,11 +40,9 @@ const mutations = {
 const actions = {
   userHasTouched({ commit }) {
     commit('setCanTouch');
-    console.log('user has touched');
   },
   userHasMovedMouse({ commit }) {
     commit('setCanHover');
-    console.log('user has moved mouse');
   },
 };
 
