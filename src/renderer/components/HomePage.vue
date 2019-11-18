@@ -41,7 +41,7 @@
                                :disabled="!compareDisabled"
                                :delay="{ show: 0, hide: 0 }"
                                placement="top"
-                               triggers="hover"
+                               :triggers="popoverTriggers"
                                boundary="viewport">
 
                         <p class="text-danger"
@@ -118,6 +118,7 @@
       ...mapGetters('comparison', {
         showComparison: 'show',
       }),
+      ...mapGetters('ui', ['popoverTriggers']),
     },
     methods: {
       ...mapActions('comparison', ['compare']),

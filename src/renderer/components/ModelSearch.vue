@@ -5,7 +5,7 @@
         <b-popover target="search"
                    :delay="{ show: 500, hide: 0 }"
                    placement="left"
-                   triggers="hover"
+                   :triggers="popoverTriggers"
                    boundary="viewport">
             Search models by name, title, paper, authors, year of publication...
         </b-popover>
@@ -18,6 +18,7 @@
   export default {
     computed: {
       ...mapGetters('search', ['text']),
+      ...mapGetters('ui', ['popoverTriggers']),
       search: {
         get() {
           return this.text;

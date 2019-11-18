@@ -23,7 +23,7 @@
                     <b-popover target="model-specific-variables-unavailable"
                                :delay="{ show: 250, hide: 0 }"
                                placement="left"
-                               triggers="hover"
+                               :triggers="popoverTriggers"
                                boundary="viewport">
                         <div>
                             <p>Model specific variables are unavailable with your current options.</p>
@@ -46,6 +46,7 @@
         variableSelection: 'variables',
         variables: 'variablesAvailable',
       }),
+      ...mapGetters('ui', ['popoverTriggers']),
       selection: {
         get() {
           return this.variableSelection;
