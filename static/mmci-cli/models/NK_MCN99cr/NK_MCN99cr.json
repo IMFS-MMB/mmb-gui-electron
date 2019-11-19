@@ -86,7 +86,7 @@
     },
     {
       "name": "interest_",
-      "text": "Monetary Policy Shock"
+      "text": "interest_"
     },
     {
       "name": "u_",
@@ -105,7 +105,7 @@
     },
     {
       "name": "inflation",
-      "text": "Inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
@@ -113,7 +113,7 @@
     },
     {
       "name": "interest",
-      "text": "Interest"
+      "text": "interest"
     },
     {
       "name": "m",
@@ -121,7 +121,7 @@
     },
     {
       "name": "outputgap",
-      "text": "Output Gap"
+      "text": "outputgap"
     },
     {
       "name": "p",

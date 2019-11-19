@@ -75,7 +75,7 @@
   "shocks": [
     {
       "name": "interest_",
-      "text": "Monetary Policy Shock"
+      "text": "interest_"
     },
     {
       "name": "m_star",
@@ -106,7 +106,7 @@
     },
     {
       "name": "inflation",
-      "text": "Inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
@@ -114,7 +114,7 @@
     },
     {
       "name": "interest",
-      "text": "Interest"
+      "text": "interest"
     },
     {
       "name": "mc",
@@ -126,11 +126,11 @@
     },
     {
       "name": "output",
-      "text": "Output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "text": "Output Gap"
+      "text": "outputgap"
     },
     {
       "name": "p",

@@ -79,7 +79,7 @@
   "shocks": [
     {
       "name": "interest_",
-      "text": "Monetary Policy Shock"
+      "text": "interest_"
     },
     {
       "name": "RES_BLT_BAR_EU",
@@ -830,7 +830,7 @@
     },
     {
       "name": "inflation",
-      "text": "Inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
@@ -838,7 +838,7 @@
     },
     {
       "name": "interest",
-      "text": "Interest"
+      "text": "interest"
     },
     {
       "name": "LCPI_EA6",
@@ -1086,11 +1086,11 @@
     },
     {
       "name": "output",
-      "text": "Output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "text": "Output Gap"
+      "text": "outputgap"
     },
     {
       "name": "PIE_EA6",

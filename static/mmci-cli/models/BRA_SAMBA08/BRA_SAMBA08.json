@@ -93,7 +93,7 @@
     },
     {
       "name": "fiscal_",
-      "text": "Fiscal Policy Shock"
+      "text": "fiscal_"
     },
     {
       "name": "gbar_",
@@ -105,7 +105,7 @@
     },
     {
       "name": "interest_",
-      "text": "Monetary Policy Shock"
+      "text": "interest_"
     },
     {
       "name": "mstar_",
@@ -184,7 +184,7 @@
     },
     {
       "name": "inflation",
-      "text": "Inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
@@ -192,7 +192,7 @@
     },
     {
       "name": "interest",
-      "text": "Interest"
+      "text": "interest"
     },
     {
       "name": "k",
@@ -228,11 +228,11 @@
     },
     {
       "name": "output",
-      "text": "Output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "text": "Output Gap"
+      "text": "outputgap"
     },
     {
       "name": "pi",

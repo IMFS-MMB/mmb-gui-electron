@@ -72,12 +72,12 @@ var
             // Shocks:     
             ugc       //51 gc shock 
             uz        //52 z shock
-            ua        //53 general preference shock
-            ub        //54 investment shock in adjustment costs
-            um        //55 technology shock
-            ui        //56 wage markup shock
-            uw        //57 price markup shock
-            up        //58 monetary policy shock
+            ua        //53 technology shock
+            ub        //54 general preference shock
+            um        //55 monetary policy shock
+            ui        //56 investment shock in adjustment costs
+            uw        //57 wage markup shock
+            up        //58 price markup shock
 
 
 //Flexprice Economy
@@ -136,12 +136,12 @@ var
 varexo 
 //            eugc       //1 gc shock 
             euz        //2 z shock
-            eua        //3 general preference shock
-            eub        //4 investment shock in adjustment costs
-            eum        //5 technology shock
-            eui        //6 wage markup shock
-            euw        //7 price markup shock
-            eup        //8 monetary policy shock
+            eua        //3 technology shock
+            eub        //4 general preference shock
+            eum        //5 monetary policy shock
+            eui        //6 investment shock in adjustment costs
+            euw        //7 wage markup shock
+            eup        //8 price markup shock
 
 //**************************************************************************
 // Modelbase Shocks                                                      //*       

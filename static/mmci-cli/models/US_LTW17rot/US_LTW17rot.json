@@ -80,11 +80,11 @@
     },
     {
       "name": "eua",
-      "text": "eua"
+      "text": "Technology shock"
     },
     {
       "name": "eub",
-      "text": "eub"
+      "text": "General preference shock"
     },
     {
       "name": "eum",
@@ -96,19 +96,19 @@
     },
     {
       "name": "euw",
-      "text": "euw"
+      "text": "Wage markup shock"
     },
     {
       "name": "eup",
-      "text": "eup"
+      "text": "Price markup shock"
     },
     {
       "name": "interest_",
-      "text": "Monetary Policy Shock"
+      "text": "interest_"
     },
     {
       "name": "fiscal_",
-      "text": "Fiscal Policy Shock"
+      "text": "fiscal_"
     }
   ],
   "al_info": null,
@@ -127,7 +127,7 @@
     },
     {
       "name": "i",
-      "text": "i"
+      "text": "Investment"
     },
     {
       "name": "k",
@@ -135,11 +135,11 @@
     },
     {
       "name": "l",
-      "text": "l"
+      "text": "Labor"
     },
     {
       "name": "v",
-      "text": "v"
+      "text": "Capital utilization rate"
     },
     {
       "name": "y",
@@ -151,7 +151,7 @@
     },
     {
       "name": "c",
-      "text": "c"
+      "text": "Consumption"
     },
     {
       "name": "q",
@@ -159,11 +159,11 @@
     },
     {
       "name": "rk",
-      "text": "rk"
+      "text": "Capital rent"
     },
     {
       "name": "w",
-      "text": "w"
+      "text": "Real wage"
     },
     {
       "name": "pi",
@@ -191,7 +191,7 @@
     },
     {
       "name": "r",
-      "text": "r"
+      "text": "Real interest rate"
     },
     {
       "name": "z",
@@ -199,11 +199,11 @@
     },
     {
       "name": "mc",
-      "text": "mc"
+      "text": "Marginal cost"
     },
     {
       "name": "kbar",
-      "text": "kbar"
+      "text": "Capital"
     },
     {
       "name": "lambda",
@@ -287,11 +287,11 @@
     },
     {
       "name": "ua",
-      "text": "ua"
+      "text": "Technology shock process"
     },
     {
       "name": "ub",
-      "text": "ub"
+      "text": "General preference shock process"
     },
     {
       "name": "um",
@@ -303,11 +303,11 @@
     },
     {
       "name": "uw",
-      "text": "uw"
+      "text": "Wage markup shock process"
     },
     {
       "name": "up",
-      "text": "up"
+      "text": "Price markup shock process"
     },
     {
       "name": "csf",
@@ -447,7 +447,7 @@
     },
     {
       "name": "inflation",
-      "text": "Inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
@@ -455,15 +455,15 @@
     },
     {
       "name": "interest",
-      "text": "Interest"
+      "text": "interest"
     },
     {
       "name": "output",
-      "text": "Output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "text": "Output Gap"
+      "text": "outputgap"
     },
     {
       "name": "fispol",

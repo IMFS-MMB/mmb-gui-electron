@@ -174,7 +174,7 @@
     },
     {
       "name": "interest_",
-      "text": "Monetary Policy Shock"
+      "text": "interest_"
     }
   ],
   "al_info": null,
@@ -365,7 +365,7 @@
     },
     {
       "name": "inflation",
-      "text": "Inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
@@ -373,7 +373,7 @@
     },
     {
       "name": "interest",
-      "text": "Interest"
+      "text": "interest"
     },
     {
       "name": "k_f",
@@ -537,11 +537,11 @@
     },
     {
       "name": "output",
-      "text": "Output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "text": "Output Gap"
+      "text": "outputgap"
     },
     {
       "name": "p_Ffp",

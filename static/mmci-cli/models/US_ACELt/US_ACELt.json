@@ -93,14 +93,14 @@
     },
     {
       "name": "interest_",
-      "text": "Monetary Policy Shock"
+      "text": "interest_"
     }
   ],
   "al_info": null,
   "variables": [
     {
       "name": "c_t",
-      "text": "c_t"
+      "text": "Consumption"
     },
     {
       "name": "cf_t",
@@ -124,7 +124,7 @@
     },
     {
       "name": "h_t",
-      "text": "h_t"
+      "text": "Labor"
     },
     {
       "name": "hf_t",
@@ -132,7 +132,7 @@
     },
     {
       "name": "i_t",
-      "text": "i_t"
+      "text": "Investment"
     },
     {
       "name": "if_t",
@@ -140,7 +140,7 @@
     },
     {
       "name": "inflation",
-      "text": "Inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
@@ -148,11 +148,11 @@
     },
     {
       "name": "interest",
-      "text": "Interest"
+      "text": "interest"
     },
     {
       "name": "kbar_t1",
-      "text": "kbar_t1"
+      "text": "Capital"
     },
     {
       "name": "kbarf_t1",
@@ -192,11 +192,11 @@
     },
     {
       "name": "output",
-      "text": "Output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "text": "Output Gap"
+      "text": "outputgap"
     },
     {
       "name": "pi_t",
@@ -240,7 +240,7 @@
     },
     {
       "name": "u_t",
-      "text": "u_t"
+      "text": "Capital utilization rate"
     },
     {
       "name": "uf_t",
