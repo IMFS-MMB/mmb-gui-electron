@@ -87,11 +87,11 @@
     },
     {
       "name": "lc_shk",
-      "text": "lc_shk"
+      "text": "Demand shock"
     },
     {
       "name": "lforexn_shk",
-      "text": "lforexn_shk"
+      "text": "Risk premium shock"
     },
     {
       "name": "lpcomrow_shk",
@@ -99,7 +99,7 @@
     },
     {
       "name": "lxdc_shk",
-      "text": "lxdc_shk"
+      "text": "Price markup shock"
     },
     {
       "name": "lyrow_shk",
@@ -238,7 +238,7 @@
     },
     {
       "name": "lc",
-      "text": "lc"
+      "text": "Consumption"
     },
     {
       "name": "lc_cor",
@@ -246,7 +246,7 @@
     },
     {
       "name": "lc_cor_tot",
-      "text": "lc_cor_tot"
+      "text": "Demand shock process"
     },
     {
       "name": "lc0_cor",
@@ -358,7 +358,7 @@
     },
     {
       "name": "lforexn_cor_tot",
-      "text": "lforexn_cor_tot"
+      "text": "Risk premium shock process"
     },
     {
       "name": "lforexn0_cor",
@@ -390,7 +390,7 @@
     },
     {
       "name": "lhaw",
-      "text": "lhaw"
+      "text": "Hours worked"
     },
     {
       "name": "lhaw_sreq",
@@ -442,7 +442,7 @@
     },
     {
       "name": "linv",
-      "text": "linv"
+      "text": "Investment"
     },
     {
       "name": "linv_add",
@@ -514,7 +514,7 @@
     },
     {
       "name": "lktotal",
-      "text": "lktotal"
+      "text": "Capital"
     },
     {
       "name": "lkx",
@@ -522,7 +522,7 @@
     },
     {
       "name": "ll",
-      "text": "ll"
+      "text": "Labour"
     },
     {
       "name": "llabshare",
@@ -750,7 +750,7 @@
     },
     {
       "name": "lw",
-      "text": "lw"
+      "text": "Real wage"
     },
     {
       "name": "lwn_r",
@@ -774,7 +774,7 @@
     },
     {
       "name": "lxdc_cor_tot",
-      "text": "lxdc_cor_tot"
+      "text": "Price markup shock process"
     },
     {
       "name": "lxdc0_cor",
