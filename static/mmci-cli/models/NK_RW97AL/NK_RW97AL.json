@@ -58,11 +58,11 @@
   "shocks": [
     {
       "name": "fiscal_",
-      "text": "fiscal_"
+      "text": "Fiscal Policy Shock"
     },
     {
       "name": "interest_",
-      "text": "interest_"
+      "text": "Monetary Policy Shock"
     },
     {
       "name": "u_",
@@ -88,7 +88,7 @@
     },
     {
       "name": "inflation",
-      "text": "inflation"
+      "text": "Inflation"
     },
     {
       "name": "inflationq",
@@ -108,15 +108,15 @@
     },
     {
       "name": "interest",
-      "text": "interest"
+      "text": "Interest"
     },
     {
       "name": "output",
-      "text": "output"
+      "text": "Output"
     },
     {
       "name": "outputgap",
-      "text": "outputgap"
+      "text": "Output Gap"
     },
     {
       "name": "pi",

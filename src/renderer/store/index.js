@@ -7,6 +7,7 @@ import options from './modules/options';
 import comparison from './modules/comparison';
 import rules from './modules/rules';
 import params from './modules/params';
+import ui from './modules/ui';
 
 import { modules, plugins } from './store.PLATFORM';
 
@@ -20,6 +21,7 @@ const store = new Vuex.Store({
     models,
     rules,
     params,
+    ui,
 
     ...modules,
   },

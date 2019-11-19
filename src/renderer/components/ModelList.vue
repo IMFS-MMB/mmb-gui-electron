@@ -26,7 +26,7 @@
 
 <script>
   import { mapMutations, mapGetters } from 'vuex';
-  import deepEqual from 'fast-deep-equal';
+  import memoize from 'memoize-one';
   import ModelPopover from './ModelPopover.vue';
 
   export default {
@@ -48,13 +48,13 @@
         get() {
           return this.modelSelection;
         },
-        set(value) {
-          // all 5 model lists share the same model, so this is somehow triggered 5 times on change
-          // serializing state is expensive, so only set vuex state if necessary
-          if (!deepEqual(this.selection, value)) {
-            this.setModelSelection(value);
-          }
-        },
+        // all 5 model lists share the same model, so this is somehow triggered 5 times on change
+        // serializing state is expensive, so only set vuex state if necessary
+
+        // eslint-disable-next-line func-names
+        set: memoize(function (value) {
+          this.setModelSelection(value);
+        }),
       },
     },
     methods: {

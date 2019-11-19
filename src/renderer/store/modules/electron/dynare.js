@@ -1,4 +1,5 @@
-import { remote } from 'electron'; // eslint-disable-line
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { remote } from 'electron';
 import path from 'path';
 import worker from '../../../../worker';
 
@@ -67,7 +68,8 @@ const actions = {
 
       commit('add', dynares);
     } catch (e) {
-      // console.warn(e);
+      // eslint-disable-next-line no-console
+      console.warn(e);
     }
   },
   find({ commit, state }) {

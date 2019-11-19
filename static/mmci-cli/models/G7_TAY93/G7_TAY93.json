@@ -142,7 +142,7 @@
     },
     {
       "name": "fiscal_",
-      "text": "fiscal_"
+      "text": "Fiscal Policy Shock"
     },
     {
       "name": "if1_",
@@ -206,7 +206,7 @@
     },
     {
       "name": "interest_",
-      "text": "interest_"
+      "text": "Monetary Policy Shock"
     },
     {
       "name": "ir0_",
@@ -657,7 +657,7 @@
     },
     {
       "name": "inflation",
-      "text": "inflation"
+      "text": "Inflation"
     },
     {
       "name": "inflationq",
@@ -669,7 +669,7 @@
     },
     {
       "name": "interest",
-      "text": "interest"
+      "text": "Interest"
     },
     {
       "name": "ir0",
@@ -1409,11 +1409,11 @@
     },
     {
       "name": "output",
-      "text": "output"
+      "text": "Output"
     },
     {
       "name": "outputgap",
-      "text": "outputgap"
+      "text": "Output Gap"
     },
     {
       "name": "pdot0",

@@ -1,4 +1,4 @@
-import get from 'lodash.get';
+import memoize from 'memoize-one';
 import pick from 'lodash.pick';
 import deepClone from 'lodash.clonedeep';
 import captureBackendException from './compare/electron/capture-backend-exception';
@@ -6,6 +6,8 @@ import normalizeError from './compare/electron/normalize-error';
 import chunkArray from '../../utils/chunkArray';
 import compare from './compare';
 import responsiveValue from '../../utils/responsive-value';
+import sortSeries from '../../utils/sortSeries';
+import orders from '../../data/orders';
 
 const namespaced = true;
 
@@ -20,72 +22,240 @@ const state = {
   stdout: [],
   stderr: [],
   data: [],
+  order: orders.VariableModelRule,
   error: false,
 };
 
-function getSeriesId(d) {
-  return `${d.model}, ${d.rule}`;
+function getSeriesId(a, b) {
+  return `${a}, ${b}`;
 }
 
-function getAllSeries(data, nameSelector, dataSelector) {
-  return data
-    .map(d => ({
-      id: nameSelector(d),
-      name: nameSelector(d),
-      data: dataSelector(d.data),
-    }))
-    .filter(series => series.data && series.data.length);
+function getAllShocks(shocks, models) {
+  return shocks
+    .reduce((all, shock) => [
+      ...all,
+      ...models.map(m => m.shocks.find(modelShock => modelShock.text === shock.text)),
+    ], [])
+    .filter(s => !!s);
 }
 
-function getChart(data, title, dataSelector) {
-  return {
-    title,
-    series: getAllSeries(data, d => getSeriesId(d), d => dataSelector(d)),
-  };
+function getAllVariables(variables, models) {
+  return variables
+    .reduce((all, variable) => [
+      ...all,
+      ...models.map(m => m.variables.find(modelVariable => modelVariable.text === variable.text)),
+    ], [])
+    .filter(s => !!s);
 }
 
-function getChartRows(allData, variables, titleFactory, dataSelector) {
-  return variables.map(variable => getChart(
-    allData,
-    titleFactory(variable),
-    d => dataSelector(d, variable),
-  ));
+function uniqueBy(selector) {
+  return (v, i, a) => a.findIndex(b => selector(b) === selector(v)) === i;
 }
 
-function getShockChartRows(state) {
-  const { shocks, variables } = state.options;
+const normalizeIRFData = memoize((data, shocks, variables, models) => {
+  const resulttype = 'IRF';
+  const result = [];
 
-  const result = shocks.map((shock) => {
-    const rows = getChartRows(
-      state.data,
-      variables,
-      variable => `${shock.text} - ${variable.text}`,
-      (data, variable) => get(data, ['IRF', shock.name, variable.name]),
-    );
+  const allShocks = getAllShocks(shocks, models).filter(uniqueBy(s => s.text));
+  const allVariables = getAllVariables(variables, models).filter(uniqueBy(v => v.text));
 
-    return chunkArray(rows, state.colsPerRow);
-  })
-    .reduce((flat, shockRows) => flat.concat(shockRows), []);
+  models.forEach((model) => {
+    data
+      .filter(d => d.model === model.name)
+      .forEach((d) => {
+        allShocks
+          .filter(shock => !!d.data[resulttype][shock.name])
+          .forEach((shock) => {
+            allVariables
+              .filter(variable => !!d.data[resulttype][shock.name][variable.name])
+              .forEach((variable) => {
+                result.push({
+                  resulttype,
+                  rule: d.rule,
+                  model: model.name,
+                  shock: shock.text,
+                  variable: variable.text,
+                  values: d.data[resulttype][shock.name][variable.name],
+                });
+              });
+          });
+      });
+  });
+
+  return result;
+});
+
+const normalizeACData = memoize((data, variables, models) => {
+  const resulttype = 'AC';
+  const result = [];
+
+  const allVariables = getAllVariables(variables, models).filter(uniqueBy(v => v.text));
+
+  models.forEach((model) => {
+    data
+      .filter(d => d.model === model.name)
+      .forEach((d) => {
+        allVariables
+          .filter(variable => !!d.data[resulttype][variable.name])
+          .forEach((variable) => {
+            result.push({
+              resulttype,
+              rule: d.rule,
+              model: model.name,
+              shock: null,
+              variable: variable.text,
+              values: d.data[resulttype][variable.name],
+            });
+          });
+      });
+  });
+
+  return result;
+});
+
+function groupBy(data, selector) {
+  const result = new Map();
+
+  if (!Array.isArray(data)) {
+    throw new Error(`groupBy function expects array. Got ${data}`);
+  }
+
+  data.forEach((d) => {
+    const key = selector(d);
+
+    if (!result.has(key)) {
+      result.set(key, []);
+    }
+
+    result.get(key)
+      .push(d);
+  });
 
   return result;
 }
 
-function getACChartRows(state) {
-  if (!state.options.plotAutocorrelation) {
+function getSections({
+  data,
+  chartsPerRow,
+  keys: [key1, key2, key3, key4],
+  getSeriesId,
+  getSeriesName,
+  getChartTitle,
+  getSectionTitle,
+}) {
+  const sections = [];
+
+  if (!data.length) {
     return [];
   }
 
-  const rows = getChartRows(
-    state.data,
-    state.options.variables,
-    variable => `Autocorrelation - ${variable.text}`,
-    (data, variable) => get(data, ['AC', variable.name]),
-  );
+  const colorsById = new Map();
+  const COLORS = [
+    '#4572A7',
+    '#AA4643',
+    '#89A54E',
+    '#80699B',
+    '#3D96AE',
+    '#DB843D',
+    '#92A8CD',
+    '#A47D7C',
+    '#B5CA92',
+  ];
+  let nextColorIndex = 0;
 
-  return chunkArray(rows, state.colsPerRow);
+  const getColor = (id) => {
+    if (!colorsById.has(id)) {
+      colorsById.set(id, COLORS[nextColorIndex]);
+      nextColorIndex = (nextColorIndex + 1) % COLORS.length;
+    }
+
+    return colorsById.get(id);
+  };
+
+  groupBy(data, d => d[key1])
+    .forEach((data1, group1) => {
+      const charts = [];
+
+      groupBy(data1, d => d[key2])
+        .forEach((data2, group2) => {
+          const series = [];
+
+          data2.forEach((d) => {
+            const id = getSeriesId(d[key3], d[key4]);
+            const name = getSeriesName(d[key3], d[key4]);
+
+            series.push({
+              id,
+              name,
+              data: d.values,
+              color: getColor(id),
+            });
+          });
+
+          charts.push({
+            series: series.sort(sortSeries),
+            title: getChartTitle(group2),
+          });
+        });
+
+      sections.push({
+        rows: chunkArray(charts, chartsPerRow),
+        title: getSectionTitle(group1),
+      });
+    });
+
+  return sections;
+}
+
+function getACSections(data, chartsPerRow, order) {
+  return getSections({
+    data,
+    chartsPerRow,
+    keys: ['resulttype', ...order],
+    getSectionTitle: () => 'Autocorrelation functions',
+    getChartTitle: group2 => group2,
+    getSeriesId: (group3, group4) => getSeriesId(group3, group4),
+    getSeriesName: (group3, group4) => `${group3}, ${group4}`,
+  });
+}
+
+function getIRFSections(data, chartsPerRow, order) {
+  return getSections({
+    data,
+    chartsPerRow,
+    keys: ['shock', ...order],
+    getSectionTitle: group1 => group1,
+    getChartTitle: group2 => group2,
+    getSeriesId: (group3, group4) => getSeriesId(group3, group4),
+    getSeriesName: (group3, group4) => `${group3}, ${group4}`,
+  });
 }
 
 const getters = {
+  normalizedACdata(state) {
+    const {
+      data,
+      options: {
+        variables,
+        models,
+        plotAutocorrelation,
+      },
+    } = state;
+
+    return plotAutocorrelation ? normalizeACData(data, variables, models) : [];
+  },
+  normalizedIRFdata(state) {
+    const {
+      data,
+      options: {
+        models,
+        shocks,
+        variables,
+      },
+    } = state;
+
+    return normalizeIRFData(data, shocks, variables, models);
+  },
   data(state) {
     return state.data;
   },
@@ -93,7 +263,7 @@ const getters = {
     return state.error;
   },
   show(state) {
-    return state.show;
+    return state.show && !state.error;
   },
   stdout(state) {
     return state.stdout;
@@ -104,21 +274,37 @@ const getters = {
   inProgress(state) {
     return state.inProgress;
   },
-  legendSeries(state) {
-    return state.data.map(d => ({
-      id: getSeriesId(d),
-      name: getSeriesId(d),
-      values: [],
-    }));
+  legendSeries(state, getters) {
+    const allSeries = new Map();
+
+    getters.sections.forEach((section) => {
+      section.rows.forEach((chunk) => {
+        chunk.forEach((chart) => {
+          chart.series.forEach((s) => {
+            if (!allSeries.has(s.id)) {
+              const {
+                data,
+                ...lSeries
+              } = s;
+
+              allSeries.set(s.id, lSeries);
+            }
+          });
+        });
+      });
+    });
+
+    return [...allSeries.values()].sort(sortSeries);
   },
-  chartRows(state) {
+
+  sections(state, getters) {
     if (!state.show) {
       return [];
     }
 
     return [
-      ...getShockChartRows(state),
-      ...getACChartRows(state),
+      ...getIRFSections(getters.normalizedIRFdata.filter(d => d.resulttype === 'IRF'), state.colsPerRow, state.order),
+      ...getACSections(getters.normalizedACdata.filter(d => d.resulttype === 'AC'), state.colsPerRow, state.order),
     ];
   },
   varTable(state) {
@@ -130,10 +316,13 @@ const getters = {
       const vars = pick(d.data.VAR, state.options.variables.map(v => v.name));
 
       return {
-        title: getSeriesId(d),
+        title: getSeriesId(d.model, d.rule),
         data: vars,
       };
     });
+  },
+  order(state) {
+    return state.order;
   },
 };
 
@@ -170,6 +359,9 @@ const mutations = {
     state.inProgress = false;
     state.show = true;
   },
+  setOrder(state, data) {
+    state.order = data;
+  },
 };
 
 const actions = {
@@ -183,14 +375,15 @@ const actions = {
     try {
       const result = await compare(ctx);
 
-      // eslint-disable-next-line prefer-destructuring
-      data = result.data;
-
       if (result.error) {
         const error = normalizeError(result.error);
 
         captureBackendException(error);
+
         ctx.commit('error', error);
+      } else {
+        // eslint-disable-next-line prefer-destructuring
+        data = result.data;
       }
     } catch (e) {
       ctx.commit('error', e);

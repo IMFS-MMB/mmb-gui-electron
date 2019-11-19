@@ -15,19 +15,19 @@
                     {{variable.text}}
                 </b-form-checkbox>
                 <template v-if="modelSpecificVariablesUnavailable">
-                    <div id="model-specific-variables-unavailable" >
-                        <b-form-checkbox :value="null" :disabled="true" >
+                    <div id="model-specific-variables-unavailable">
+                        <b-form-checkbox :value="null" :disabled="true">
                             Model Specific Variables
                         </b-form-checkbox>
                     </div>
                     <b-popover target="model-specific-variables-unavailable"
                                :delay="{ show: 250, hide: 0 }"
                                placement="left"
-                               triggers="hover"
+                               :triggers="popoverTriggers"
                                boundary="viewport">
                         <div>
                             <p>Model specific variables are unavailable with your current options.</p>
-                            <p class="mb-0">Select <em>exactly one</em> model to make its specific variables available.</p>
+                            <p class="mb-0">Select one model to make its specific variables available. Or several models to get select from variables they have in common.</p>
                         </div>
                     </b-popover>
                 </template>
@@ -37,7 +37,6 @@
 </template>
 <script>
   import { mapMutations, mapGetters } from 'vuex';
-  import commonVariables from '@/data/variables';
 
   export default {
     computed: {
@@ -45,19 +44,9 @@
       ...mapGetters('options', {
         numSelected: 'numVariables',
         variableSelection: 'variables',
-        modelSelection: 'models',
+        variables: 'variablesAvailable',
       }),
-      variables() {
-        if (this.modelSelection.length !== 1) {
-          return commonVariables;
-        }
-
-        return [
-          ...commonVariables,
-          ...this.modelSelection[0].variables.filter(v =>
-            !commonVariables.some(cv => cv.name === v.name)),
-        ];
-      },
+      ...mapGetters('ui', ['popoverTriggers']),
       selection: {
         get() {
           return this.variableSelection;

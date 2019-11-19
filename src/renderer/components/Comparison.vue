@@ -5,14 +5,17 @@
                 <div class="comparison-set">
                     <div class="row comparison-set-header">
                         <b-col cols="12" sm="6" class="comparison-set-title">
-                                <span>Comparison</span>
-                                <small class="d-none d-md-inline-block">({{numModels}} Model{{ numModels === 1 ? '' : 's' }},
-                                    {{numPolicyRules}} Policy Rule{{ numPolicyRules === 1 ? '' : 's' }},
-                                    {{numShocks}} Shock{{ numShocks === 1 ? '' : 's' }})
-                                </small>
+                            <span>Comparison</span>
+                            <small class="d-none d-md-inline-block">({{numModels}} Model{{ numModels === 1 ? '' : 's'
+                                }},
+                                {{numPolicyRules}} Policy Rule{{ numPolicyRules === 1 ? '' : 's' }},
+                                {{numShocks}} Shock{{ numShocks === 1 ? '' : 's' }})
+                            </small>
                         </b-col>
-                        <b-col cols="12" sm="6" class="d-flex align-items-center justify-content-between justify-content-sm-end">
+                        <b-col cols="12" sm="6"
+                               class="d-flex align-items-center justify-content-between justify-content-sm-end">
                             <SaveData :data="data"/>
+                            <DataOrder class="order-sm-first mr-3" style="margin-top: 0 !important;"/>
                             <ColsPerRow class="order-sm-first mr-3"></ColsPerRow>
                         </b-col>
                     </div>
@@ -20,17 +23,22 @@
             </b-col>
         </b-row>
 
-        <b-row><b-col><ChartLegend></ChartLegend></b-col></b-row>
+        <b-row>
+            <b-col>
+                <ChartLegend></ChartLegend>
+            </b-col>
+        </b-row>
 
-        <ChartRow :class="{'mt-5': index > 0 }" v-for="(chartrow, index) in chartRows" :key="index" :charts="chartrow"/>
+        <template v-for="(section, index1) in sections">
+            <h4 class="text-center">{{section.title}}</h4>
+            <ChartRow :class="{'mt-5': index2 > 0 }" v-for="(chartrow, index2) in section.rows" :key="`${index1}-${index2}`" :charts="chartrow"/>
+        </template>
 
         <Variances v-if="varTable && varTable.length" :varTable="varTable"/>
     </b-container>
 </template>
 
 <script>
-  import Chart from '@/components/Chart.vue';
-
   import { mapGetters } from 'vuex';
   import scrollIntoView from '@/utils/scrollIntoView';
   import SaveData from './SaveData';
@@ -38,14 +46,15 @@
   import ChartRow from './ChartRow';
   import ChartLegend from './ChartLegend';
   import ColsPerRow from './ColsPerRow';
+  import DataOrder from './DataOrder';
 
   export default {
     components: {
+      DataOrder,
       ColsPerRow,
       ChartRow,
       Variances,
       SaveData,
-      Chart,
       ChartLegend,
     },
     data() {
@@ -55,7 +64,7 @@
       };
     },
     computed: {
-      ...mapGetters('comparison', ['varTable', 'inProgress', 'show', 'data', 'chartRows', 'colsPerRow']),
+      ...mapGetters('comparison', ['varTable', 'inProgress', 'show', 'data', 'sections', 'colsPerRow']),
       ...mapGetters('options', ['numModels', 'numPolicyRules', 'numShocks']),
     },
     watch: {

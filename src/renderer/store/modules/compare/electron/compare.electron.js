@@ -33,7 +33,7 @@ export default async function compare(ctx) {
     rules,
     shocks,
     states,
-    userRule,
+    userRule: userRule.length === 31 ? userRule.concat([1, 0.25]) : userRule,
   });
 
   logger.info(`generated config: ${JSON.stringify(options)}`);

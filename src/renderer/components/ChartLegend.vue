@@ -5,6 +5,7 @@
 <script>
   import * as HighCharts from 'highcharts';
   import { mapGetters } from 'vuex';
+  import { charts } from './Chart';
 
   const legendId = 'chart-legend';
 
@@ -21,6 +22,7 @@
     mounted() {
       this.chart = new HighCharts.Chart({
         chart: {
+          animation: false,
           renderTo: this.id,
           height: 100,
         },
@@ -48,7 +50,8 @@
             events: {
               legendItemClick: (event) => {
                 const legendSeries = event.target;
-                HighCharts.charts.forEach((chart) => {
+
+                charts.forEach((chart) => {
                   if (!chart || chart === legendSeries.chart) {
                     return;
                   }
@@ -69,7 +72,17 @@
         },
       });
     },
+    watch: {
+      legendSeries(newVal) {
+        if (Array.isArray(newVal)) {
+          // HighCharts mutates the series array on removal
+          // shallow copy the array before looping to catch all elements
+          [...this.chart.series].forEach(s => s.remove());
 
+          newVal.forEach(s => this.chart.addSeries(s));
+        }
+      },
+    },
     beforeDestroy() {
       try {
         this.chart.destroy();

@@ -1,9 +1,12 @@
+import memoize from 'memoize-one';
 import commonShocks from '@/data/shocks';
 import commonVariables from '@/data/variables';
-import allModels from '@/data/models';
+import intersection from '../../utils/intersection';
+import partition from '../../utils/partition';
+import { MODEL_RULE, USER_RULE } from '../../../config/constants';
 
-function defaultStates() {
-  return allModels.reduce((states, model) => {
+function defaultModelStates(models) {
+  return models.reduce((states, model) => {
     if (model.al) {
       states[model.name] = [...model.al_info.states_long];
     }
@@ -21,12 +24,38 @@ const state = {
   variables: [
     ...commonVariables,
   ],
-  states: defaultStates(),
+  states: null,
   plotAutocorrelation: false,
   plotVariance: false,
   horizon: 20,
   gain: 0.01,
 };
+
+const getAvailableVars = memoize((models) => {
+  const variables = models.map(model => model.variables);
+  const common = intersection(variables, variable => variable.text);
+
+  const [humanReadable, nonHumanReadable] =
+    partition(common, variable => variable.text !== variable.name);
+
+  return commonVariables
+    .concat(humanReadable)
+    .concat(nonHumanReadable)
+    .filter((v, i, a) => a.findIndex(v_ => v.name === v_.name) === i);
+});
+
+const getAvailableShocks = memoize((models) => {
+  const shocks = models.map(model => model.shocks);
+  const common = intersection(shocks, shock => shock.text);
+
+  const [humanReadable, nonHumanReadable] =
+    partition(common, shock => shock.text !== shock.name);
+
+  return commonShocks
+    .concat(humanReadable)
+    .concat(nonHumanReadable)
+    .filter((v, i, a) => a.findIndex(v_ => v.name === v_.name) === i);
+});
 
 const getters = {
   horizon(state) {
@@ -48,8 +77,14 @@ const getters = {
   shocks(state) {
     return state.shocks;
   },
+  shocksAvailable(state, getters) {
+    return getAvailableShocks(getters.models);
+  },
   variables(state) {
     return state.variables;
+  },
+  variablesAvailable(state, getters) {
+    return getAvailableVars(getters.models);
   },
   plotAutocorrelation(state) {
     return state.plotAutocorrelation;
@@ -85,10 +120,10 @@ const getters = {
   },
 
   modelSpecificShocksUnavailable(state) {
-    return state.models.length !== 1;
+    return state.models.length === 0;
   },
   modelSpecificVariablesUnavailable(state) {
-    return state.models.length !== 1;
+    return state.models.length === 0;
   },
 
   isPlotVarianceAvailable(state) {
@@ -117,10 +152,10 @@ const getters = {
   isRuleDisabled(state, getters) {
     return (id) => {
       switch (id) {
-        case 1:
+        case USER_RULE:
           // user specified
           return false;
-        case 2:
+        case MODEL_RULE:
           // model specific
           return getters.models.some(m => !m.msr);
         default:
@@ -172,6 +207,9 @@ function isShockSelectable(selectedModels, shock) {
 }
 
 const mutations = {
+  setDefaultStates(state, models) {
+    state.states = defaultModelStates(models);
+  },
   setStates(state, { modelname, states }) {
     state.states[modelname] = states;
   },
@@ -183,6 +221,12 @@ const mutations = {
   },
   setModels(state, data) {
     state.models = data;
+
+    const nextAvailableVariables = getAvailableVars(state.models);
+    state.variables = intersection([nextAvailableVariables, state.variables], v => v.text);
+
+    const nextAvailableShocks = getAvailableShocks(state.models);
+    state.shocks = intersection([nextAvailableShocks, state.shocks], v => v.text);
 
     state.shocks = state.shocks.filter(shock => isShockSelectable(state.models, shock));
   },

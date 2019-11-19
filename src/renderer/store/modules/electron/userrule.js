@@ -1,30 +1,27 @@
-import deepClone from 'lodash.clonedeep';
-
 const namespaced = true;
 
 const state = {
   params: [
-    [NaN, 0, 0, 0],
-    [0, 0, 0, 0],
-    [0, 0, 0, 0],
-    [0, 0, 0, 0],
-    [0, 0, 0, 0],
-    [NaN, 0, 0, 0],
-    [NaN, 0, 0, 0],
-    [NaN, 0, 0, 0],
-    [NaN, 0, 0, 0],
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0,
   ],
 };
 
 const getters = {
   params(state) {
-    return deepClone(state.params);
+    return [...state.params];
   },
 };
 
 const mutations = {
   setParams(state, data) {
-    state.params = deepClone(data);
+    state.params = [...data];
   },
 };
 

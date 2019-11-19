@@ -5,6 +5,9 @@
 <script>
   import * as HighCharts from 'highcharts';
 
+  export const charts = new Set();
+  export const colors = new Map();
+
   let nextId = 0;
 
   export default {
@@ -18,7 +21,8 @@
     },
     data() {
       return {
-        id: `chart-${nextId++}`, // eslint-disable-line
+        // eslint-disable-next-line no-plusplus
+        id: `chart-${nextId++}`,
         chart: undefined,
       };
     },
@@ -40,9 +44,12 @@
           },
           series: this.series,
         });
+
+        charts.add(this.chart);
       },
       destroyChart() {
         if (this.chart) {
+          charts.delete(this.chart);
           this.chart.destroy();
           this.chart = null;
         }
