@@ -14,7 +14,7 @@
                         </b-col>
                         <b-col cols="12" sm="6"
                                class="d-flex align-items-center justify-content-between justify-content-sm-end">
-                            <SaveData :data="data"/>
+                            <SaveData :nested="data" :normalized="normalizedData"/>
                             <DataOrder class="order-sm-first mr-3" style="margin-top: 0 !important;"/>
                             <ColsPerRow class="order-sm-first mr-3"></ColsPerRow>
                         </b-col>
@@ -63,7 +63,15 @@
       };
     },
     computed: {
-      ...mapGetters('comparison', ['varTable', 'inProgress', 'show', 'data', 'sections', 'colsPerRow']),
+      ...mapGetters('comparison', [
+        'varTable',
+        'inProgress',
+        'show',
+        'data',
+        'normalizedData',
+        'sections',
+        'colsPerRow',
+      ]),
       ...mapGetters('options', ['numModels', 'numPolicyRules', 'numShocks']),
     },
   };
