@@ -10,6 +10,7 @@ const BabiliWebpackPlugin = require('babili-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CspHtmlWebpackPlugin = require('csp-html-webpack-plugin');
 const { VueLoaderPlugin } = require('vue-loader');
 const MonacoWebpackPlugin = require('monaco-editor-webpack-plugin');
 // const WorkerLoader = require('worker-loader');
@@ -152,6 +153,29 @@ let rendererConfig = {
       nodeModules: process.env.NODE_ENV !== 'production'
         ? path.resolve(__dirname, '../node_modules')
         : false
+    }),
+    new CspHtmlWebpackPlugin({
+      'object-src': "'none'",
+      'frame-src': "'none'",
+      'media-src': "'none'",
+
+      'base-uri': "'self'",
+      // todo: disallow unsafe-eval (still needed for ajv.compile)
+      'script-src': ["'self'", "'unsafe-eval'"],
+      'font-src': "'self'",
+
+      'style-src': ["'self'", "'unsafe-inline'"],
+    }, {
+      enabled: process.env.NODE_ENV === 'production',
+      hashingMethod: 'sha256',
+      hashEnabled: {
+        'script-src': true,
+        'style-src': true
+      },
+      nonceEnabled: {
+        'script-src': false,
+        'style-src': false
+      }
     }),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
