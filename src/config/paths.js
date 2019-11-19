@@ -1,7 +1,9 @@
 import path from 'path';
 import { platform, homedir } from 'os';
 
-export const staticMmbFolder = path.resolve(__static, 'mmci-cli');
+const staticFolder = process.env.NODE_ENV === 'test' ? path.resolve(__dirname, '..', '..', 'static') : __static;
+
+export const staticMmbFolder = path.resolve(staticFolder, 'mmci-cli');
 export const staticModelsFolder = path.resolve(staticMmbFolder, 'models');
 export const staticRulesFolder = path.resolve(staticMmbFolder, 'rules');
 
