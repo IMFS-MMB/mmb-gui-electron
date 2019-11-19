@@ -73,15 +73,15 @@
   "shocks": [
     {
       "name": "epsa",
-      "text": "epsa"
+      "text": "Preference shock"
     },
     {
       "name": "epse",
-      "text": "epse"
+      "text": "Price markup shock"
     },
     {
       "name": "epsz",
-      "text": "epsz"
+      "text": "Technology shock"
     },
     {
       "name": "interest_",
@@ -92,11 +92,11 @@
   "variables": [
     {
       "name": "a",
-      "text": "a"
+      "text": "Preference shock process"
     },
     {
       "name": "e",
-      "text": "e"
+      "text": "Price markup shock process"
     },
     {
       "name": "g",
@@ -104,7 +104,7 @@
     },
     {
       "name": "inflation",
-      "text": "Inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
@@ -112,7 +112,7 @@
     },
     {
       "name": "interest",
-      "text": "Interest"
+      "text": "interest"
     },
     {
       "name": "lambda",
@@ -120,11 +120,11 @@
     },
     {
       "name": "output",
-      "text": "Output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "text": "Output Gap"
+      "text": "outputgap"
     },
     {
       "name": "pi",
@@ -148,7 +148,7 @@
     },
     {
       "name": "z",
-      "text": "z"
+      "text": "Technology shock process"
     }
   ]
 }

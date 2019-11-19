@@ -75,19 +75,19 @@
   "shocks": [
     {
       "name": "e_i",
-      "text": "e_i"
+      "text": "Investment technology shock"
     },
     {
       "name": "e_pm",
-      "text": "e_pm"
+      "text": "Price markup shock"
     },
     {
       "name": "e_q",
-      "text": "e_q"
+      "text": "Preference shock"
     },
     {
       "name": "e_wm",
-      "text": "e_wm"
+      "text": "Wage markup shock"
     },
     {
       "name": "e_y",
@@ -95,7 +95,7 @@
     },
     {
       "name": "e_z",
-      "text": "e_z"
+      "text": "Technology shock"
     },
     {
       "name": "eps_tauk",
@@ -107,7 +107,7 @@
     },
     {
       "name": "eps_tr",
-      "text": "eps_tr"
+      "text": "Government transfers shock"
     },
     {
       "name": "fiscal_",
@@ -130,7 +130,7 @@
     },
     {
       "name": "c",
-      "text": "c"
+      "text": "Consumption"
     },
     {
       "name": "cf",
@@ -146,23 +146,23 @@
     },
     {
       "name": "eps_i",
-      "text": "eps_i"
+      "text": "Investment technology shock process"
     },
     {
       "name": "eps_pm",
-      "text": "eps_pm"
+      "text": "Price markup shock process"
     },
     {
       "name": "eps_q",
-      "text": "eps_q"
+      "text": "Preference shock process"
     },
     {
       "name": "eps_wm",
-      "text": "eps_wm"
+      "text": "Wage markup shock process"
     },
     {
       "name": "eps_z",
-      "text": "eps_z"
+      "text": "Technology shock process"
     },
     {
       "name": "fispol",
@@ -178,7 +178,7 @@
     },
     {
       "name": "I",
-      "text": "I"
+      "text": "Investment"
     },
     {
       "name": "If",
@@ -194,7 +194,7 @@
     },
     {
       "name": "inflation",
-      "text": "Inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
@@ -202,11 +202,11 @@
     },
     {
       "name": "interest",
-      "text": "Interest"
+      "text": "interest"
     },
     {
       "name": "k",
-      "text": "k"
+      "text": "Capital"
     },
     {
       "name": "kf",
@@ -214,7 +214,7 @@
     },
     {
       "name": "l",
-      "text": "l"
+      "text": "Labour"
     },
     {
       "name": "lf",
@@ -222,7 +222,7 @@
     },
     {
       "name": "mc",
-      "text": "mc"
+      "text": "Marginal costs"
     },
     {
       "name": "MRS",
@@ -242,11 +242,11 @@
     },
     {
       "name": "output",
-      "text": "Output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "text": "Output Gap"
+      "text": "outputgap"
     },
     {
       "name": "q",
@@ -270,7 +270,7 @@
     },
     {
       "name": "rk",
-      "text": "rk"
+      "text": "Capital rent"
     },
     {
       "name": "rkf",
@@ -310,11 +310,11 @@
     },
     {
       "name": "tr",
-      "text": "tr"
+      "text": "Government transfers shock process"
     },
     {
       "name": "u",
-      "text": "u"
+      "text": "Capital utilitzation rate"
     },
     {
       "name": "uf",
@@ -322,7 +322,7 @@
     },
     {
       "name": "w",
-      "text": "w"
+      "text": "Real wage"
     },
     {
       "name": "wf",

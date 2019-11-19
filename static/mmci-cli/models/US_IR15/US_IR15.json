@@ -35,7 +35,7 @@
   "shocks": [
     {
       "name": "epsilon_pi",
-      "text": "epsilon_pi"
+      "text": "Price markup shock"
     },
     {
       "name": "epsilon_tau",
@@ -94,7 +94,7 @@
     },
     {
       "name": "inflation",
-      "text": "Inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
@@ -102,15 +102,15 @@
     },
     {
       "name": "interest",
-      "text": "Interest"
+      "text": "interest"
     },
     {
       "name": "output",
-      "text": "Output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "text": "Output Gap"
+      "text": "outputgap"
     },
     {
       "name": "P_y_12",
@@ -134,7 +134,7 @@
     },
     {
       "name": "P_y_20_a",
-      "text": "P_y_20_a"
+      "text": "RP_y_20_a"
     },
     {
       "name": "P_y_4",

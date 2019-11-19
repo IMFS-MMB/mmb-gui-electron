@@ -76,7 +76,7 @@
   "shocks": [
     {
       "name": "epsilona",
-      "text": "epsilona"
+      "text": "Technology shock"
     },
     {
       "name": "epsilonb",
@@ -88,7 +88,7 @@
     },
     {
       "name": "epsilonp",
-      "text": "epsilonp"
+      "text": "Price markup shock"
     },
     {
       "name": "epsilontk",
@@ -100,11 +100,11 @@
     },
     {
       "name": "epsilonw",
-      "text": "epsilonw"
+      "text": "Wage markup shock"
     },
     {
       "name": "epsilonz",
-      "text": "epsilonz"
+      "text": "Government transfers shock"
     },
     {
       "name": "fiscal_",
@@ -127,7 +127,7 @@
     },
     {
       "name": "c",
-      "text": "c"
+      "text": "Consumption"
     },
     {
       "name": "cnr",
@@ -163,11 +163,11 @@
     },
     {
       "name": "i",
-      "text": "i"
+      "text": "Investment"
     },
     {
       "name": "inflation",
-      "text": "Inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
@@ -175,7 +175,7 @@
     },
     {
       "name": "interest",
-      "text": "Interest"
+      "text": "interest"
     },
     {
       "name": "istar",
@@ -183,7 +183,7 @@
     },
     {
       "name": "k",
-      "text": "k"
+      "text": "Capital"
     },
     {
       "name": "kbar",
@@ -199,7 +199,7 @@
     },
     {
       "name": "l",
-      "text": "l"
+      "text": "Labour"
     },
     {
       "name": "lstar",
@@ -207,7 +207,7 @@
     },
     {
       "name": "mc",
-      "text": "mc"
+      "text": "Marginal costs"
     },
     {
       "name": "mcstar",
@@ -215,11 +215,11 @@
     },
     {
       "name": "output",
-      "text": "Output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "text": "Output Gap"
+      "text": "outputgap"
     },
     {
       "name": "pi",
@@ -235,7 +235,7 @@
     },
     {
       "name": "r",
-      "text": "r"
+      "text": "Real interest rate"
     },
     {
       "name": "R",
@@ -243,7 +243,7 @@
     },
     {
       "name": "rk",
-      "text": "rk"
+      "text": "Capital rent"
     },
     {
       "name": "rkstar",
@@ -295,11 +295,11 @@
     },
     {
       "name": "ua",
-      "text": "ua"
+      "text": "Technology shock process"
     },
     {
       "name": "ub",
-      "text": "ub"
+      "text": "Preference shock process"
     },
     {
       "name": "ug",
@@ -315,7 +315,7 @@
     },
     {
       "name": "up",
-      "text": "up"
+      "text": "Price markup shock process"
     },
     {
       "name": "utk",
@@ -327,15 +327,15 @@
     },
     {
       "name": "uw",
-      "text": "uw"
+      "text": "Wage markup shock process"
     },
     {
       "name": "uz",
-      "text": "uz"
+      "text": "Government transfers shock process"
     },
     {
       "name": "v",
-      "text": "v"
+      "text": "Capital utilization rate"
     },
     {
       "name": "vstar",
@@ -343,7 +343,7 @@
     },
     {
       "name": "w",
-      "text": "w"
+      "text": "Real wage"
     },
     {
       "name": "wstar",

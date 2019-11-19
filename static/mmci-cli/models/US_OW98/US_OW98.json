@@ -125,7 +125,7 @@
     },
     {
       "name": "ec",
-      "text": "ec"
+      "text": "Consumption"
     },
     {
       "name": "efi",
@@ -169,7 +169,7 @@
     },
     {
       "name": "inflation",
-      "text": "Inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
@@ -177,15 +177,15 @@
     },
     {
       "name": "interest",
-      "text": "Interest"
+      "text": "interest"
     },
     {
       "name": "output",
-      "text": "Output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "text": "Output Gap"
+      "text": "outputgap"
     },
     {
       "name": "pdot",

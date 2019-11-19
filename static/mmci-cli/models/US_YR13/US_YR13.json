@@ -74,23 +74,23 @@
   "shocks": [
     {
       "name": "ea",
-      "text": "ea"
+      "text": "Technology shock"
     },
     {
       "name": "eb",
-      "text": "eb"
+      "text": "Risk premium shock"
     },
     {
       "name": "epinf",
-      "text": "epinf"
+      "text": "Price markup shock"
     },
     {
       "name": "eqs",
-      "text": "eqs"
+      "text": "Investment technology shock"
     },
     {
       "name": "ew",
-      "text": "ew"
+      "text": "Wage markup shock"
     },
     {
       "name": "fiscal_",
@@ -105,15 +105,15 @@
   "variables": [
     {
       "name": "a",
-      "text": "a"
+      "text": "Technology shock process"
     },
     {
       "name": "b",
-      "text": "b"
+      "text": "Risk Premium shock process"
     },
     {
       "name": "c",
-      "text": "c"
+      "text": "Consumption"
     },
     {
       "name": "ec",
@@ -145,7 +145,7 @@
     },
     {
       "name": "inflation",
-      "text": "Inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
@@ -165,15 +165,15 @@
     },
     {
       "name": "interest",
-      "text": "Interest"
+      "text": "interest"
     },
     {
       "name": "inve",
-      "text": "inve"
+      "text": "Investment"
     },
     {
       "name": "k",
-      "text": "k"
+      "text": "Capital"
     },
     {
       "name": "kp",
@@ -181,11 +181,11 @@
     },
     {
       "name": "lab",
-      "text": "lab"
+      "text": "Labour"
     },
     {
       "name": "mc",
-      "text": "mc"
+      "text": "Marginal costs"
     },
     {
       "name": "newv_long",
@@ -197,15 +197,15 @@
     },
     {
       "name": "nw",
-      "text": "nw"
+      "text": "Entrepreneurial net worth"
     },
     {
       "name": "output",
-      "text": "Output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "text": "Output Gap"
+      "text": "outputgap"
     },
     {
       "name": "pinf",
@@ -225,7 +225,7 @@
     },
     {
       "name": "qs",
-      "text": "qs"
+      "text": "Investment technology shock process"
     },
     {
       "name": "r",
@@ -233,7 +233,7 @@
     },
     {
       "name": "rk",
-      "text": "rk"
+      "text": "Capital rent"
     },
     {
       "name": "rr",
@@ -241,15 +241,15 @@
     },
     {
       "name": "spinf",
-      "text": "spinf"
+      "text": "Price markup shock process"
     },
     {
       "name": "sw",
-      "text": "sw"
+      "text": "Wage markup shock process"
     },
     {
       "name": "w",
-      "text": "w"
+      "text": "Real wage"
     },
     {
       "name": "y",
@@ -257,7 +257,7 @@
     },
     {
       "name": "zcap",
-      "text": "zcap"
+      "text": "Capital utilization rate"
     }
   ]
 }

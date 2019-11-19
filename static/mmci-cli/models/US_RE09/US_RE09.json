@@ -73,7 +73,7 @@
   "shocks": [
     {
       "name": "e_deltaa",
-      "text": "e_deltaa"
+      "text": "Technology shock"
     },
     {
       "name": "e_eps",
@@ -85,11 +85,11 @@
     },
     {
       "name": "e_gam",
-      "text": "e_gam"
+      "text": "Wage markup shock"
     },
     {
       "name": "e_nuu",
-      "text": "e_nuu"
+      "text": "Price mrkup shock"
     },
     {
       "name": "interest_",
@@ -104,7 +104,7 @@
     },
     {
       "name": "deltaa",
-      "text": "deltaa"
+      "text": "Technology shock process"
     },
     {
       "name": "eps",
@@ -116,7 +116,7 @@
     },
     {
       "name": "gam",
-      "text": "gam"
+      "text": "Wage markup shock process"
     },
     {
       "name": "i",
@@ -124,7 +124,7 @@
     },
     {
       "name": "inflation",
-      "text": "Inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
@@ -132,23 +132,23 @@
     },
     {
       "name": "interest",
-      "text": "Interest"
+      "text": "interest"
     },
     {
       "name": "l",
-      "text": "l"
+      "text": "Labour"
     },
     {
       "name": "nuu",
-      "text": "nuu"
+      "text": "Price markup shock process"
     },
     {
       "name": "output",
-      "text": "Output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "text": "Output Gap"
+      "text": "outputgap"
     },
     {
       "name": "p",
@@ -160,7 +160,7 @@
     },
     {
       "name": "R",
-      "text": "R"
+      "text": "Long-term Real Interest Rate"
     },
     {
       "name": "w",

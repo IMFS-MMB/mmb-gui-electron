@@ -74,11 +74,11 @@
   "shocks": [
     {
       "name": "e_a",
-      "text": "e_a"
+      "text": "Technology shock"
     },
     {
       "name": "e_b",
-      "text": "e_b"
+      "text": "Preference shock"
     },
     {
       "name": "e_e",
@@ -98,15 +98,15 @@
     },
     {
       "name": "e_n",
-      "text": "e_n"
+      "text": "Net worth shock"
     },
     {
       "name": "e_p",
-      "text": "e_p"
+      "text": "Price marksup shock"
     },
     {
       "name": "e_w",
-      "text": "e_w"
+      "text": "Wage markup shock"
     },
     {
       "name": "fiscal_",
@@ -121,7 +121,7 @@
   "variables": [
     {
       "name": "c",
-      "text": "c"
+      "text": "Consumption"
     },
     {
       "name": "c_obs",
@@ -157,7 +157,7 @@
     },
     {
       "name": "h",
-      "text": "h"
+      "text": "Hours worked"
     },
     {
       "name": "h_obs",
@@ -185,7 +185,7 @@
     },
     {
       "name": "i",
-      "text": "i"
+      "text": "Investment"
     },
     {
       "name": "i_obs",
@@ -197,7 +197,7 @@
     },
     {
       "name": "inflation",
-      "text": "Inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
@@ -205,11 +205,11 @@
     },
     {
       "name": "interest",
-      "text": "Interest"
+      "text": "interest"
     },
     {
       "name": "k",
-      "text": "k"
+      "text": "Capital"
     },
     {
       "name": "kn",
@@ -289,7 +289,7 @@
     },
     {
       "name": "mc",
-      "text": "mc"
+      "text": "Marginal costs"
     },
     {
       "name": "mcL",
@@ -345,7 +345,7 @@
     },
     {
       "name": "nn",
-      "text": "nn"
+      "text": "Entrepreneurial net worth"
     },
     {
       "name": "nnn",
@@ -365,11 +365,11 @@
     },
     {
       "name": "output",
-      "text": "Output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "text": "Output Gap"
+      "text": "outputgap"
     },
     {
       "name": "p",
@@ -413,7 +413,7 @@
     },
     {
       "name": "q",
-      "text": "q"
+      "text": "Tobin's q"
     },
     {
       "name": "qn",
@@ -429,7 +429,7 @@
     },
     {
       "name": "rK",
-      "text": "rK"
+      "text": "Capital rent"
     },
     {
       "name": "rKn",
@@ -449,7 +449,7 @@
     },
     {
       "name": "rr",
-      "text": "rr"
+      "text": "Real interest rate"
     },
     {
       "name": "rrn",
@@ -461,11 +461,11 @@
     },
     {
       "name": "s_a",
-      "text": "s_a"
+      "text": "Technology shock process"
     },
     {
       "name": "s_b",
-      "text": "s_b"
+      "text": "Preference shock process"
     },
     {
       "name": "s_e",
@@ -485,11 +485,11 @@
     },
     {
       "name": "s_n",
-      "text": "s_n"
+      "text": "Net worth shock process"
     },
     {
       "name": "s_p",
-      "text": "s_p"
+      "text": "Price markup shock process"
     },
     {
       "name": "s_r",
@@ -497,7 +497,7 @@
     },
     {
       "name": "s_w",
-      "text": "s_w"
+      "text": "Wage markup shock process"
     },
     {
       "name": "sn",
@@ -505,7 +505,7 @@
     },
     {
       "name": "u",
-      "text": "u"
+      "text": "Capital utilization rate"
     },
     {
       "name": "uc",
@@ -537,7 +537,7 @@
     },
     {
       "name": "w",
-      "text": "w"
+      "text": "Real wage"
     },
     {
       "name": "w_inf",

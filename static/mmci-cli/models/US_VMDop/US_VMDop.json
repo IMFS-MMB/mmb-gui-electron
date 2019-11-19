@@ -127,7 +127,7 @@
     },
     {
       "name": "cU",
-      "text": "cU"
+      "text": "Consumption"
     },
     {
       "name": "eps_analystflexU",
@@ -167,7 +167,7 @@
     },
     {
       "name": "hU",
-      "text": "hU"
+      "text": "Hours worked"
     },
     {
       "name": "iflexU",
@@ -175,7 +175,7 @@
     },
     {
       "name": "inflation",
-      "text": "Inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
@@ -183,11 +183,11 @@
     },
     {
       "name": "interest",
-      "text": "Interest"
+      "text": "interest"
     },
     {
       "name": "iU",
-      "text": "iU"
+      "text": "Investment"
     },
     {
       "name": "kbarBflexU",
@@ -219,7 +219,7 @@
     },
     {
       "name": "KtotU",
-      "text": "KtotU"
+      "text": "Capital"
     },
     {
       "name": "KwXflexU",
@@ -283,7 +283,7 @@
     },
     {
       "name": "ntotU",
-      "text": "ntotU"
+      "text": "Entrepreneurial net worth"
     },
     {
       "name": "omegabarSflexU",
@@ -295,11 +295,11 @@
     },
     {
       "name": "output",
-      "text": "Output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "text": "Output Gap"
+      "text": "outputgap"
     },
     {
       "name": "PextSflexU",

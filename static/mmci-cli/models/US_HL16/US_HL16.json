@@ -86,7 +86,7 @@
     },
     {
       "name": "epsilon_nu_e",
-      "text": "epsilon_nu_e"
+      "text": "Net worth shock"
     },
     {
       "name": "epsilon_nu_h",
@@ -94,7 +94,7 @@
     },
     {
       "name": "epsilon_p",
-      "text": "epsilon_p"
+      "text": "Price markup shock"
     },
     {
       "name": "epsilon_psi",
@@ -102,7 +102,7 @@
     },
     {
       "name": "epsilon_z",
-      "text": "epsilon_z"
+      "text": "Technology shock"
     },
     {
       "name": "interest_",
@@ -113,7 +113,7 @@
   "variables": [
     {
       "name": "c",
-      "text": "c"
+      "text": "Consumption"
     },
     {
       "name": "c_b",
@@ -161,7 +161,7 @@
     },
     {
       "name": "h",
-      "text": "h"
+      "text": "Hours worked"
     },
     {
       "name": "h_b",
@@ -241,7 +241,7 @@
     },
     {
       "name": "inflation",
-      "text": "Inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
@@ -249,7 +249,7 @@
     },
     {
       "name": "interest",
-      "text": "Interest"
+      "text": "interest"
     },
     {
       "name": "k_B",
@@ -269,7 +269,7 @@
     },
     {
       "name": "k_e",
-      "text": "k_e"
+      "text": "Capital"
     },
     {
       "name": "k_ef",
@@ -333,7 +333,7 @@
     },
     {
       "name": "nu_e",
-      "text": "nu_e"
+      "text": "Net worth shock process"
     },
     {
       "name": "nu_ef",
@@ -349,11 +349,11 @@
     },
     {
       "name": "output",
-      "text": "Output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "text": "Output Gap"
+      "text": "outputgap"
     },
     {
       "name": "pi",
@@ -417,7 +417,7 @@
     },
     {
       "name": "v",
-      "text": "v"
+      "text": "Investment"
     },
     {
       "name": "varepsilon_e",
@@ -441,7 +441,7 @@
     },
     {
       "name": "w",
-      "text": "w"
+      "text": "Real wage"
     },
     {
       "name": "wf",
@@ -465,7 +465,7 @@
     },
     {
       "name": "xi_p",
-      "text": "xi_p"
+      "text": "Price markup shock process"
     },
     {
       "name": "xi_pf",
@@ -481,7 +481,7 @@
     },
     {
       "name": "xi_z",
-      "text": "xi_z"
+      "text": "Technology shock process"
     },
     {
       "name": "xi_zf",

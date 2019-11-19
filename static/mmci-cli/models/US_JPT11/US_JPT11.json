@@ -75,7 +75,7 @@
   "shocks": [
     {
       "name": "bs",
-      "text": "bs"
+      "text": "Preference shock"
     },
     {
       "name": "fiscal_",
@@ -87,15 +87,15 @@
     },
     {
       "name": "lambdaps",
-      "text": "lambdaps"
+      "text": "Price markup shock"
     },
     {
       "name": "lambdaws",
-      "text": "lambdaws"
+      "text": "Wage markup shock"
     },
     {
       "name": "mius",
-      "text": "mius"
+      "text": "Investment technology shock"
     },
     {
       "name": "Rs",
@@ -107,7 +107,7 @@
     },
     {
       "name": "zs",
-      "text": "zs"
+      "text": "Technology shock"
     }
   ],
   "al_info": null,
@@ -122,11 +122,11 @@
     },
     {
       "name": "b",
-      "text": "b"
+      "text": "Preference shock process"
     },
     {
       "name": "c",
-      "text": "c"
+      "text": "Consumption"
     },
     {
       "name": "cstar",
@@ -154,11 +154,11 @@
     },
     {
       "name": "i",
-      "text": "i"
+      "text": "Investment"
     },
     {
       "name": "inflation",
-      "text": "Inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
@@ -166,7 +166,7 @@
     },
     {
       "name": "interest",
-      "text": "Interest"
+      "text": "interest"
     },
     {
       "name": "istar",
@@ -174,7 +174,7 @@
     },
     {
       "name": "k",
-      "text": "k"
+      "text": "Capital"
     },
     {
       "name": "kbar",
@@ -190,7 +190,7 @@
     },
     {
       "name": "L",
-      "text": "L"
+      "text": "Labour"
     },
     {
       "name": "lambda",
@@ -198,7 +198,7 @@
     },
     {
       "name": "lambdap",
-      "text": "lambdap"
+      "text": "Price markup shock process"
     },
     {
       "name": "lambdastar",
@@ -206,7 +206,7 @@
     },
     {
       "name": "lambdaw",
-      "text": "lambdaw"
+      "text": "Wage markup shock process"
     },
     {
       "name": "Lstar",
@@ -214,7 +214,7 @@
     },
     {
       "name": "miu",
-      "text": "miu"
+      "text": "Investment technology shock process"
     },
     {
       "name": "mp",
@@ -230,11 +230,11 @@
     },
     {
       "name": "output",
-      "text": "Output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "text": "Output Gap"
+      "text": "outputgap"
     },
     {
       "name": "p",
@@ -262,7 +262,7 @@
     },
     {
       "name": "Rk",
-      "text": "Rk"
+      "text": "Capital rent"
     },
     {
       "name": "Rkstar",
@@ -274,7 +274,7 @@
     },
     {
       "name": "s",
-      "text": "s"
+      "text": "Marginal costs"
     },
     {
       "name": "sstar",
@@ -282,7 +282,7 @@
     },
     {
       "name": "u",
-      "text": "u"
+      "text": "Capital utilization rate"
     },
     {
       "name": "upsilon",
@@ -294,7 +294,7 @@
     },
     {
       "name": "w",
-      "text": "w"
+      "text": "Real wage"
     },
     {
       "name": "wgap",
@@ -318,7 +318,7 @@
     },
     {
       "name": "z",
-      "text": "z"
+      "text": "Technology shock process"
     }
   ]
 }

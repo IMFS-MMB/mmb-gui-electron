@@ -86,7 +86,7 @@
     },
     {
       "name": "RES_PIE_US",
-      "text": "RES_PIE_US"
+      "text": "Price markup shock"
     },
     {
       "name": "RES_RR_US_BAR",
@@ -98,7 +98,7 @@
     },
     {
       "name": "RES_Y_US",
-      "text": "RES_Y_US"
+      "text": "Demand shock"
     }
   ],
   "al_info": null,
@@ -125,7 +125,7 @@
     },
     {
       "name": "inflation",
-      "text": "Inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
@@ -133,15 +133,15 @@
     },
     {
       "name": "interest",
-      "text": "Interest"
+      "text": "interest"
     },
     {
       "name": "output",
-      "text": "Output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "text": "Output Gap"
+      "text": "outputgap"
     },
     {
       "name": "PIE_US4h",
@@ -157,7 +157,7 @@
     },
     {
       "name": "RR_USh",
-      "text": "RR_USh"
+      "text": "Real interest rate"
     },
     {
       "name": "RS_USh",
