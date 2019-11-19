@@ -256,6 +256,42 @@ const getters = {
 
     return normalizeIRFData(data, shocks, variables, models);
   },
+  normalizedVARdata(state) {
+    if (!state.options.plotVariance) {
+      return [];
+    }
+
+    const result = [];
+
+    getAllVariables(state.options.variables, state.options.models).forEach((v) => {
+      state.data.forEach((d) => {
+        const variance = d.data.VAR[v.name];
+
+        result.push({
+          resulttype: 'VAR',
+          rule: d.rule,
+          model: d.model,
+          shock: null,
+          variable: v.text,
+          values: [variance],
+        });
+      });
+    });
+
+    result
+      .filter(uniqueBy('text'))
+      .sort((a, b) => a.rule.localeCompare(b.rule))
+      .sort((a, b) => a.model.localeCompare(b.model));
+
+    return result;
+  },
+  normalizedData(state, getters) {
+    return [
+      ...getters.normalizedACdata,
+      ...getters.normalizedIRFdata,
+      ...getters.normalizedVARdata,
+    ];
+  },
   data(state) {
     return state.data;
   },
