@@ -73,7 +73,7 @@
   "shocks": [
     {
       "name": "eAhat",
-      "text": "eAhat"
+      "text": "Technology shock"
     },
     {
       "name": "ejhat",
@@ -92,7 +92,7 @@
   "variables": [
     {
       "name": "Ahat",
-      "text": "Ahat"
+      "text": "Technology shock process"
     },
     {
       "name": "b2hat",
@@ -128,7 +128,7 @@
     },
     {
       "name": "chat",
-      "text": "chat"
+      "text": "Consumption"
     },
     {
       "name": "chatf",
@@ -152,7 +152,7 @@
     },
     {
       "name": "Ihat",
-      "text": "Ihat"
+      "text": "Investment"
     },
     {
       "name": "Ihatf",
@@ -176,7 +176,7 @@
     },
     {
       "name": "Khat",
-      "text": "Khat"
+      "text": "Capital"
     },
     {
       "name": "Khatf",
@@ -208,7 +208,7 @@
     },
     {
       "name": "rrhat",
-      "text": "rrhat"
+      "text": "Real interest rate"
     },
     {
       "name": "rrhatf",

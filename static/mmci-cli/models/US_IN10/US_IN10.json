@@ -87,11 +87,11 @@
     },
     {
       "name": "eps_k",
-      "text": "eps_k"
+      "text": "Investment technology shock"
     },
     {
       "name": "eps_p",
-      "text": "eps_p"
+      "text": "Price markup shock"
     },
     {
       "name": "eps_s",
@@ -99,11 +99,11 @@
     },
     {
       "name": "eps_t",
-      "text": "eps_t"
+      "text": "Labour supply shock"
     },
     {
       "name": "eps_z",
-      "text": "eps_z"
+      "text": "Preference shock"
     },
     {
       "name": "interest_",
@@ -126,7 +126,7 @@
     },
     {
       "name": "a_k",
-      "text": "a_k"
+      "text": "Investment technology shock process"
     },
     {
       "name": "a_s",
@@ -134,11 +134,11 @@
     },
     {
       "name": "a_t",
-      "text": "a_t"
+      "text": "Labour supply shock process"
     },
     {
       "name": "a_z",
-      "text": "a_z"
+      "text": "Preference shock supply"
     },
     {
       "name": "b",
@@ -150,7 +150,7 @@
     },
     {
       "name": "c",
-      "text": "c"
+      "text": "Consumption"
     },
     {
       "name": "c1",
