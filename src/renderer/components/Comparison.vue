@@ -1,5 +1,5 @@
 <template>
-    <b-container fluid ref="host" class="mt-2" v-if="show && !inProgress">
+    <b-container id="comparison" fluid class="mt-2" v-if="show && !inProgress">
         <b-row class="mt-2">
             <b-col>
                 <div class="comparison-set">
@@ -40,7 +40,6 @@
 
 <script>
   import { mapGetters } from 'vuex';
-  import scrollIntoView from '@/utils/scrollIntoView';
   import SaveData from './SaveData';
   import Variances from './Variances';
   import ChartRow from './ChartRow';
@@ -66,14 +65,6 @@
     computed: {
       ...mapGetters('comparison', ['varTable', 'inProgress', 'show', 'data', 'sections', 'colsPerRow']),
       ...mapGetters('options', ['numModels', 'numPolicyRules', 'numShocks']),
-    },
-    watch: {
-      inProgress(newVal, oldVal) {
-        if (oldVal && !newVal) {
-          // true -> false
-          setTimeout(() => scrollIntoView(this.$refs.host));
-        }
-      },
     },
   };
 </script>

@@ -2,6 +2,7 @@
     <b-modal id="matlabOutputModal"
              size="lg"
              centered
+             @hidden="scrollToComparison"
              :header-text-variant="error ? 'danger' : 'default' "
              :no-close-on-backdrop="inProgress"
              :no-close-on-esc="inProgress">
@@ -27,6 +28,7 @@
 </template>
 <script>
   import { mapGetters } from 'vuex';
+  import scrollIntoView from '../utils/scrollIntoView';
 
   export default {
     name: 'MatlabOutputModal',
@@ -43,6 +45,9 @@
     methods: {
       close() {
         this.$root.$emit('bv::hide::modal', 'matlabOutputModal');
+      },
+      scrollToComparison() {
+        setTimeout(() => scrollIntoView('comparison'), 25);
       },
     },
   };
