@@ -97,7 +97,7 @@
     },
     {
       "name": "B",
-      "text": "Government debt"
+      "text": "B"
     },
     {
       "name": "B_fe",
@@ -141,7 +141,7 @@
     },
     {
       "name": "ERk",
-      "text": "Ected real rate of capital"
+      "text": "ERk"
     },
     {
       "name": "ERk_fe",
@@ -149,7 +149,7 @@
     },
     {
       "name": "F",
-      "text": "Auxiliary variable for price setting"
+      "text": "F"
     },
     {
       "name": "F_fe",
@@ -161,7 +161,7 @@
     },
     {
       "name": "g",
-      "text": "Government spending (shock process)"
+      "text": "Government spending shock process"
     },
     {
       "name": "G",
@@ -169,7 +169,7 @@
     },
     {
       "name": "Gy",
-      "text": "Government spending share of output"
+      "text": "Gy"
     },
     {
       "name": "Gy_fe",
@@ -209,7 +209,7 @@
     },
     {
       "name": "inflstar",
-      "text": "Optimal price divided by past price level"
+      "text": "inflstar"
     },
     {
       "name": "inflstar_fe",
@@ -229,7 +229,7 @@
     },
     {
       "name": "ksi",
-      "text": "Capital quality"
+      "text": "Quality of capital"
     },
     {
       "name": "L",
@@ -241,7 +241,7 @@
     },
     {
       "name": "Lambda",
-      "text": "Stochastic discount factor"
+      "text": "Lambda"
     },
     {
       "name": "Lambda_fe",
@@ -257,7 +257,7 @@
     },
     {
       "name": "nu_b",
-      "text": "Value of having another unit of bonds (banks)"
+      "text": "nu_b"
     },
     {
       "name": "nu_b_fe",
@@ -265,7 +265,7 @@
     },
     {
       "name": "nu_k",
-      "text": "Value of having another unit of capital assets"
+      "text": "nu_k"
     },
     {
       "name": "nu_k_fe",
@@ -273,15 +273,15 @@
     },
     {
       "name": "nu_n",
-      "text": "value of having another unit of net worth"
+      "text": "nu_n"
     },
     {
       "name": "nu_n_fe",
-      "text": "flex-price value of having another unit of net worth"
+      "text": "nu_n_fe"
     },
     {
       "name": "Om",
-      "text": "Portfolio share of capital assets"
+      "text": "Om"
     },
     {
       "name": "Om_fe",
@@ -337,7 +337,7 @@
     },
     {
       "name": "Rb",
-      "text": "Real rate of bonds held by banks"
+      "text": "Real rate of bonds"
     },
     {
       "name": "Rb_fe",
@@ -353,7 +353,7 @@
     },
     {
       "name": "Rk",
-      "text": "Real rate of capital"
+      "text": "Capital rent"
     },
     {
       "name": "Rk_fe",
@@ -361,7 +361,7 @@
     },
     {
       "name": "Rp",
-      "text": "Real return of portfolio by banks"
+      "text": "Portfolio return"
     },
     {
       "name": "Rp_fe",
@@ -377,7 +377,7 @@
     },
     {
       "name": "U_c",
-      "text": "Marginal utility of consumption"
+      "text": "Marginal utility"
     },
     {
       "name": "U_c_fe",

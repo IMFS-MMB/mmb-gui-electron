@@ -74,15 +74,15 @@
   "shocks": [
     {
       "name": "eps_a1",
-      "text": "Productivity shock"
+      "text": "a1"
     },
     {
       "name": "eps_a2",
-      "text": "Technology shock "
+      "text": "Technology shock"
     },
     {
       "name": "eps_a3",
-      "text": "Technology shock (no trend)"
+      "text": "eps_a3"
     },
     {
       "name": "interest_",
@@ -93,7 +93,7 @@
   "variables": [
     {
       "name": "a1",
-      "text": "Productivity (shock process)"
+      "text": "a1"
     },
     {
       "name": "a2",
@@ -113,7 +113,7 @@
     },
     {
       "name": "CEFP",
-      "text": "Risk premium of collateralized loans"
+      "text": "CEFP"
     },
     {
       "name": "dp",
@@ -141,11 +141,11 @@
     },
     {
       "name": "lambda",
-      "text": "Lagrangian multiplier"
+      "text": "lambda"
     },
     {
       "name": "m",
-      "text": "Labor demand (banking operation)"
+      "text": "Banking labor demand"
     },
     {
       "name": "mc",
@@ -153,7 +153,7 @@
     },
     {
       "name": "n",
-      "text": "Labor demanded (producer) "
+      "text": "Producer labor demanded"
     },
     {
       "name": "omega",
@@ -181,11 +181,11 @@
     },
     {
       "name": "rIB",
-      "text": "Interbank market rate"
+      "text": "Interbank rate"
     },
     {
       "name": "rL",
-      "text": "Interest rate on collateralized loans"
+      "text": "rL"
     },
     {
       "name": "rT",
@@ -197,11 +197,11 @@
     },
     {
       "name": "w",
-      "text": "Wage rate"
+      "text": "Real wage"
     },
     {
       "name": "xi",
-      "text": "Lagrangian multiplier"
+      "text": "xi"
     }
   ]
 }

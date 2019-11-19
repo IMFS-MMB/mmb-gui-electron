@@ -109,7 +109,7 @@
     },
     {
       "name": "b",
-      "text": "Short-term bond demand by banks"
+      "text": "Short-term bond"
     },
     {
       "name": "C",
@@ -133,7 +133,7 @@
     },
     {
       "name": "F",
-      "text": "Auxiliary variable in Phillips Curve"
+      "text": "F"
     },
     {
       "name": "fispol",
@@ -169,7 +169,7 @@
     },
     {
       "name": "K",
-      "text": "Auxiliary variable in Phillips Curve"
+      "text": "K"
     },
     {
       "name": "ksi",
@@ -225,7 +225,7 @@
     },
     {
       "name": "theta",
-      "text": "Intratemporal elasticity of substitution"
+      "text": "Intratemporal elasticity"
     },
     {
       "name": "w",

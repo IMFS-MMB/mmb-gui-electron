@@ -49,7 +49,7 @@
     },
     {
       "name": "ez",
-      "text": "Domestic demand shock"
+      "text": "Demand shock"
     },
     {
       "name": "ezx1",
@@ -84,7 +84,7 @@
     },
     {
       "name": "de",
-      "text": "Change in exchange rate"
+      "text": "Exchange rate change"
     },
     {
       "name": "dp",
@@ -92,7 +92,7 @@
     },
     {
       "name": "dpc",
-      "text": "CPI inflation"
+      "text": "dpc"
     },
     {
       "name": "dw",
@@ -100,7 +100,7 @@
     },
     {
       "name": "e",
-      "text": "Nominal exchange rate"
+      "text": "e"
     },
     {
       "name": "i",
@@ -136,7 +136,7 @@
     },
     {
       "name": "nn",
-      "text": "Natural employment"
+      "text": "Employment rate"
     },
     {
       "name": "output",
@@ -148,11 +148,11 @@
     },
     {
       "name": "p",
-      "text": "Domestic price level"
+      "text": "p"
     },
     {
       "name": "pc",
-      "text": "Price level"
+      "text": "pc"
     },
     {
       "name": "r",
@@ -212,7 +212,7 @@
     },
     {
       "name": "zx2",
-      "text": "World interest"
+      "text": "World interest rate"
     }
   ]
 }

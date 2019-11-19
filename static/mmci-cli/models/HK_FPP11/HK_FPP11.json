@@ -57,7 +57,7 @@
     },
     {
       "name": "mu_p",
-      "text": "Price markup shock"
+      "text": "mu_p"
     }
   ],
   "al_info": null,

@@ -61,7 +61,7 @@
   "variables": [
     {
       "name": "cons_h",
-      "text": "Household consumption"
+      "text": "cons_h"
     },
     {
       "name": "i_dep",
@@ -97,7 +97,7 @@
     },
     {
       "name": "spread",
-      "text": "Spread between the Loan Rate and the Deposit Rate"
+      "text": "Spread"
     },
     {
       "name": "q_t",
@@ -121,7 +121,7 @@
     },
     {
       "name": "cons_e",
-      "text": "entrepreneur consumption"
+      "text": "cons_e"
     },
     {
       "name": "mon_cost",

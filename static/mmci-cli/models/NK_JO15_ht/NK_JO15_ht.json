@@ -83,26 +83,26 @@
     },
     {
       "name": "xi",
-      "text": "Technology shock (country H)"
+      "text": "Technology shock"
     },
     {
       "name": "xi_star",
-      "text": "Technology shock (country F)"
+      "text": "xi_star"
     }
   ],
   "al_info": null,
   "variables": [
     {
       "name": "a",
-      "text": "Technology (country H)"
+      "text": "Technology"
     },
     {
       "name": "a_star",
-      "text": "Technology (country F)"
+      "text": "a_star"
     },
     {
       "name": "e",
-      "text": "Nominal exchange rate"
+      "text": "e"
     },
     {
       "name": "inflation",
@@ -118,11 +118,11 @@
     },
     {
       "name": "mc",
-      "text": "Marginal costs (country H)"
+      "text": "Marginal costs"
     },
     {
       "name": "mc_star",
-      "text": "Marginal costs (country F)"
+      "text": "mc_star"
     },
     {
       "name": "output",
@@ -134,27 +134,27 @@
     },
     {
       "name": "P",
-      "text": "Price (country H)"
+      "text": "Price"
     },
     {
       "name": "p_star",
-      "text": "Price (country F)"
+      "text": "p_star"
     },
     {
       "name": "pi",
-      "text": "CPI inflation (country H)"
+      "text": "pi"
     },
     {
       "name": "pi_F_star",
-      "text": "PPI inflation (country F)"
+      "text": "pi_F_star"
     },
     {
       "name": "pi_H",
-      "text": "PPI inflation (country H)"
+      "text": "pi_H"
     },
     {
       "name": "pi_star",
-      "text": "CPI inflation (country F)"
+      "text": "pi_star"
     },
     {
       "name": "q",
@@ -166,11 +166,11 @@
     },
     {
       "name": "r_bar",
-      "text": "Real interest rates (country H)"
+      "text": "Real interest rate"
     },
     {
       "name": "r_bar_star",
-      "text": "Real interest rates (country F)"
+      "text": "r_bar_star"
     },
     {
       "name": "r_star",

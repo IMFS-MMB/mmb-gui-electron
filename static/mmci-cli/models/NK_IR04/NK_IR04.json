@@ -73,11 +73,11 @@
   "shocks": [
     {
       "name": "epsa_",
-      "text": "Preference shock 1"
+      "text": "Preference shock"
     },
     {
       "name": "epse_",
-      "text": "Preference shock 2"
+      "text": "epse_"
     },
     {
       "name": "epsz_",
@@ -92,11 +92,11 @@
   "variables": [
     {
       "name": "a",
-      "text": "Preference shift 1"
+      "text": "Preference shifter"
     },
     {
       "name": "e",
-      "text": "Preference shift 2"
+      "text": "e"
     },
     {
       "name": "inflation",

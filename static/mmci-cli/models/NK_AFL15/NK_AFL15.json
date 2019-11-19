@@ -165,7 +165,7 @@
     },
     {
       "name": "Fn",
-      "text": "Marginal productivity of labour"
+      "text": "Marginal productivity"
     },
     {
       "name": "Fnf",
@@ -273,7 +273,7 @@
     },
     {
       "name": "uc",
-      "text": "Marginal utility from consumption"
+      "text": "Marginal utility"
     },
     {
       "name": "ucf",
@@ -281,11 +281,11 @@
     },
     {
       "name": "ug",
-      "text": "government spending process"
+      "text": "ug"
     },
     {
       "name": "un",
-      "text": "Marginal disutility from labour"
+      "text": "Marginal disutility"
     },
     {
       "name": "unf",
@@ -301,7 +301,7 @@
     },
     {
       "name": "z",
-      "text": "Cost of capital"
+      "text": "Price of capital"
     },
     {
       "name": "zf",

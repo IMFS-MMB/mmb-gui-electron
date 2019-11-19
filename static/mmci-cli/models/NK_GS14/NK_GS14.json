@@ -97,7 +97,7 @@
     },
     {
       "name": "b_ee",
-      "text": "Entrepreneur loans"
+      "text": "b_ee"
     },
     {
       "name": "b_eef",
@@ -113,7 +113,7 @@
     },
     {
       "name": "c_e",
-      "text": "Entrepreneur consumption"
+      "text": "c_e"
     },
     {
       "name": "c_ef",
@@ -121,7 +121,7 @@
     },
     {
       "name": "c_p",
-      "text": "Household consumption"
+      "text": "c_p"
     },
     {
       "name": "c_pf",
@@ -137,7 +137,7 @@
     },
     {
       "name": "d_p",
-      "text": "Bank deposits (entrepreneur)"
+      "text": "Bank deposits"
     },
     {
       "name": "d_pf",
@@ -209,11 +209,11 @@
     },
     {
       "name": "l_p",
-      "text": "Labour supply"
+      "text": "Labour"
     },
     {
       "name": "l_pd",
-      "text": "Labour demand"
+      "text": "l_pd"
     },
     {
       "name": "l_pdf",
@@ -225,7 +225,7 @@
     },
     {
       "name": "lam_e",
-      "text": "Marginal utility (entrepreneur)"
+      "text": "Entrepreneur marginal utility"
     },
     {
       "name": "lam_ef",
@@ -233,7 +233,7 @@
     },
     {
       "name": "lam_p",
-      "text": "Marginal utility (household)"
+      "text": "Household marginal utility"
     },
     {
       "name": "lam_pf",
@@ -281,7 +281,7 @@
     },
     {
       "name": "r_b",
-      "text": "Interest rate (entrepreneur loans)"
+      "text": "r_b"
     },
     {
       "name": "R_b",
@@ -345,7 +345,7 @@
     },
     {
       "name": "x",
-      "text": "Markup"
+      "text": "Price markup"
     },
     {
       "name": "xf",
@@ -365,7 +365,7 @@
     },
     {
       "name": "Y1",
-      "text": "Auxiliary variable 1"
+      "text": "Y1"
     },
     {
       "name": "Y1f",

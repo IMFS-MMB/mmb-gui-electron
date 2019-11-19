@@ -79,7 +79,7 @@
     },
     {
       "name": "inno_ebt",
-      "text": "Discount factor shock"
+      "text": "inno_ebt"
     },
     {
       "name": "inno_zt",
@@ -98,15 +98,15 @@
     },
     {
       "name": "deltaFt",
-      "text": "Surplus of firm (wage rise)"
+      "text": "deltaFt"
     },
     {
       "name": "Deltastart",
-      "text": "Surplus of worker (reset wage)"
+      "text": "Deltastart"
     },
     {
       "name": "deltaWt",
-      "text": "Surplus of worker(wage rise)"
+      "text": "deltaWt"
     },
     {
       "name": "ebt",
@@ -146,11 +146,11 @@
     },
     {
       "name": "Jstart",
-      "text": "Value of firm (reset wage)"
+      "text": "Jstart"
     },
     {
       "name": "lambdat",
-      "text": "Marginal utility of consumption"
+      "text": "Marginal utility"
     },
     {
       "name": "mct",

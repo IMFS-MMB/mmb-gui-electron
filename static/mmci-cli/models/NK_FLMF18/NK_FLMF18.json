@@ -89,7 +89,7 @@
     },
     {
       "name": "DD",
-      "text": "Auxiliary variable 1"
+      "text": "DD"
     },
     {
       "name": "DELTA",
@@ -189,7 +189,7 @@
     },
     {
       "name": "NCY",
-      "text": "Final  goods  consumption "
+      "text": "NCY"
     },
     {
       "name": "NETA",
@@ -209,7 +209,7 @@
     },
     {
       "name": "NN",
-      "text": "Auxiliary variable 2"
+      "text": "NN"
     },
     {
       "name": "NO",
@@ -217,7 +217,7 @@
     },
     {
       "name": "NOC",
-      "text": "Household demand  for  the commodity"
+      "text": "NOC"
     },
     {
       "name": "NOMEGA",
@@ -225,7 +225,7 @@
     },
     {
       "name": "NOY",
-      "text": "Firm demand for commodity"
+      "text": "NOY"
     },
     {
       "name": "NPI",
@@ -241,7 +241,7 @@
     },
     {
       "name": "NR",
-      "text": "Riskless nominal gross interest rate"
+      "text": "NR"
     },
     {
       "name": "NRe",
@@ -257,7 +257,7 @@
     },
     {
       "name": "NTY",
-      "text": "Relative price"
+      "text": "NTY"
     },
     {
       "name": "NWP",

@@ -87,15 +87,15 @@
     },
     {
       "name": "ph",
-      "text": "Domestic price level"
+      "text": "ph"
     },
     {
       "name": "pi",
-      "text": "CPI inflation"
+      "text": "pi"
     },
     {
       "name": "pih",
-      "text": "Domestic inflation"
+      "text": "pih"
     },
     {
       "name": "pistar",

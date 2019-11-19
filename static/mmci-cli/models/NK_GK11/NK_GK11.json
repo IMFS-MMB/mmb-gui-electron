@@ -91,7 +91,7 @@
     },
     {
       "name": "eta",
-      "text": "Expected discounted marginal value of wealth"
+      "text": "eta"
     },
     {
       "name": "etaf",
@@ -219,7 +219,7 @@
     },
     {
       "name": "nu",
-      "text": "Expected discounted marginal gain of asset"
+      "text": "nu"
     },
     {
       "name": "nuf",
@@ -235,7 +235,7 @@
     },
     {
       "name": "phi",
-      "text": "Leverage ratio for privately intermediated funds"
+      "text": "phi"
     },
     {
       "name": "phif",
@@ -247,7 +247,7 @@
     },
     {
       "name": "prem",
-      "text": " Risk premium"
+      "text": "Risk premium"
     },
     {
       "name": "premf",
@@ -255,7 +255,7 @@
     },
     {
       "name": "Q",
-      "text": "Price of one unit capital"
+      "text": "Price of capital"
     },
     {
       "name": "Qf",
@@ -303,7 +303,7 @@
     },
     {
       "name": "w",
-      "text": "Wage"
+      "text": "Real Wage"
     },
     {
       "name": "Welf",
@@ -315,7 +315,7 @@
     },
     {
       "name": "wf",
-      "text": "wage"
+      "text": "wf"
     },
     {
       "name": "x",
@@ -347,7 +347,7 @@
     },
     {
       "name": "z",
-      "text": "Gross growth rate of net worth"
+      "text": "z"
     },
     {
       "name": "Z",

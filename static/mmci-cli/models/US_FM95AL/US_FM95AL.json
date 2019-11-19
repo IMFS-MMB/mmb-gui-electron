@@ -76,7 +76,7 @@
     },
     {
       "name": "epsilon_y",
-      "text": "Demand shock"
+      "text": "epsilon_y"
     },
     {
       "name": "interest_",

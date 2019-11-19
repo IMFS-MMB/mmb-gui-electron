@@ -106,7 +106,7 @@
     },
     {
       "name": "e_Z",
-      "text": "Productivity shock"
+      "text": "Technology shock"
     },
     {
       "name": "fiscal_",
@@ -245,7 +245,7 @@
     },
     {
       "name": "lambda_b",
-      "text": "Marginal utility of (real) income of type b"
+      "text": "lambda_b"
     },
     {
       "name": "lambda_b_hat",
@@ -257,7 +257,7 @@
     },
     {
       "name": "lambda_s",
-      "text": "Marginal utility of (real) income of type s"
+      "text": "lambda_s"
     },
     {
       "name": "lambda_s_hat",
@@ -337,7 +337,7 @@
     },
     {
       "name": "Z",
-      "text": "Productivity"
+      "text": "Technology"
     },
     {
       "name": "Z_hat",

@@ -84,7 +84,7 @@
     },
     {
       "name": "inno_ebt",
-      "text": "Discount factor shock"
+      "text": "inno_ebt"
     },
     {
       "name": "inno_eCt",
@@ -92,7 +92,7 @@
     },
     {
       "name": "inno_ekappat",
-      "text": "Vacancy posting costs shock"
+      "text": "inno_ekappat"
     },
     {
       "name": "inno_esept",
@@ -123,7 +123,7 @@
     },
     {
       "name": "deltaFt",
-      "text": "Partial surplus of firm (wage rise)"
+      "text": "deltaFt"
     },
     {
       "name": "Deltastarflext",
@@ -131,7 +131,7 @@
     },
     {
       "name": "Deltastart",
-      "text": "Surplus of worker (reset wage)"
+      "text": "Deltastart"
     },
     {
       "name": "deltaWflext",
@@ -139,7 +139,7 @@
     },
     {
       "name": "deltaWt",
-      "text": "Partial surplus of worker(wage rise)"
+      "text": "deltaWt"
     },
     {
       "name": "ebargaint",
@@ -171,7 +171,7 @@
     },
     {
       "name": "g_",
-      "text": "Government spending shock process"
+      "text": "g_"
     },
     {
       "name": "gt",
@@ -203,7 +203,7 @@
     },
     {
       "name": "Jstart",
-      "text": "Value of firm(reset wage)"
+      "text": "Jstart"
     },
     {
       "name": "lambdaflext",
@@ -211,11 +211,11 @@
     },
     {
       "name": "lambdat",
-      "text": "Marginal utility of consumption"
+      "text": "Marginal utility"
     },
     {
       "name": "mct",
-      "text": "Marginal cost"
+      "text": "Marginal costs"
     },
     {
       "name": "mflext",
@@ -287,7 +287,7 @@
     },
     {
       "name": "wt",
-      "text": "Wage"
+      "text": "Real wage"
     },
     {
       "name": "xLflext",

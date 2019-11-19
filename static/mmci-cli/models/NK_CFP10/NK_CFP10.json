@@ -106,7 +106,7 @@
     },
     {
       "name": "e",
-      "text": "Entrepreneur's equity share holdings"
+      "text": "Entrepreneur's equity"
     },
     {
       "name": "ef",
@@ -130,7 +130,7 @@
     },
     {
       "name": "L",
-      "text": "Labor input 1"
+      "text": "Labour"
     },
     {
       "name": "Lf",
@@ -162,7 +162,7 @@
     },
     {
       "name": "q",
-      "text": "Asset price"
+      "text": "Price of capital"
     },
     {
       "name": "qf",
@@ -186,7 +186,7 @@
     },
     {
       "name": "u",
-      "text": "Labor input 2"
+      "text": "u"
     },
     {
       "name": "uf",

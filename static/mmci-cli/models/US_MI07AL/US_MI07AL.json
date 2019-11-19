@@ -101,7 +101,7 @@
     },
     {
       "name": "v_u",
-      "text": "Price markup shock"
+      "text": "v_u"
     }
   ],
   "variables": [
@@ -155,7 +155,7 @@
     },
     {
       "name": "u",
-      "text": "Price markup shock process"
+      "text": "u"
     },
     {
       "name": "x",

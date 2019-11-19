@@ -90,7 +90,7 @@
     },
     {
       "name": "C_m",
-      "text": "Market good consumption"
+      "text": "Market goods consumption"
     },
     {
       "name": "C_mf",
@@ -126,11 +126,11 @@
     },
     {
       "name": "G",
-      "text": "Government spending "
+      "text": "Government spending"
     },
     {
       "name": "h_m",
-      "text": "Labour (market good)"
+      "text": "h_m"
     },
     {
       "name": "h_mf",
@@ -138,7 +138,7 @@
     },
     {
       "name": "h_n",
-      "text": "Labour (home good)"
+      "text": "h_n"
     },
     {
       "name": "h_nf",
@@ -186,7 +186,7 @@
     },
     {
       "name": "K_m",
-      "text": "Capital (market good)"
+      "text": "Market goods capital"
     },
     {
       "name": "K_mf",
@@ -194,7 +194,7 @@
     },
     {
       "name": "K_n",
-      "text": "Capital (home goods)"
+      "text": "Home goods capital"
     },
     {
       "name": "K_nf",
@@ -206,7 +206,7 @@
     },
     {
       "name": "lambda",
-      "text": "Marginal utility (market good)"
+      "text": "Marginal utility"
     },
     {
       "name": "lambdaf",
@@ -254,7 +254,7 @@
     },
     {
       "name": "x_1",
-      "text": "Auxiliary variable 1"
+      "text": "x_1"
     },
     {
       "name": "x_1f",
@@ -262,7 +262,7 @@
     },
     {
       "name": "x_2",
-      "text": "Auxiliary variable 2"
+      "text": "x_2"
     },
     {
       "name": "x_2f",

@@ -87,7 +87,7 @@
     },
     {
       "name": "infstar_",
-      "text": "Foreign cost push shock"
+      "text": "infstar_"
     },
     {
       "name": "interest_",
@@ -95,7 +95,7 @@
     },
     {
       "name": "rstar_",
-      "text": "Foreign monetary policy shock"
+      "text": "rstar_"
     },
     {
       "name": "ystar_",
@@ -146,11 +146,11 @@
     },
     {
       "name": "rr",
-      "text": "Real interest rate (domestic)"
+      "text": "Real interest rate"
     },
     {
       "name": "rrstar",
-      "text": "Real interest rate (foreign)"
+      "text": "rrstar"
     },
     {
       "name": "rstar",
@@ -170,15 +170,15 @@
     },
     {
       "name": "ybar",
-      "text": "Domestic natural output"
+      "text": "ybar"
     },
     {
       "name": "ybarstar",
-      "text": "Foreign natural output"
+      "text": "ybarstar"
     },
     {
       "name": "ystar",
-      "text": "Domestic output"
+      "text": "ystar"
     },
     {
       "name": "ytilde",

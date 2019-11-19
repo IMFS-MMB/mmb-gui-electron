@@ -111,7 +111,7 @@
     },
     {
       "name": "eta",
-      "text": "Expected discounted marginal value of wealth"
+      "text": "eta"
     },
     {
       "name": "etaf",
@@ -207,7 +207,7 @@
     },
     {
       "name": "nu",
-      "text": "Expected discounted marginal gain of asset"
+      "text": "nu"
     },
     {
       "name": "nuf",
@@ -223,11 +223,11 @@
     },
     {
       "name": "phi",
-      "text": "Leverage ratio for privately intermediated funds"
+      "text": "phi"
     },
     {
       "name": "phic",
-      "text": "Leverage ratio for total intermediated funds"
+      "text": "phic"
     },
     {
       "name": "phicf",
@@ -247,11 +247,11 @@
     },
     {
       "name": "pm",
-      "text": "Price of intermediate good"
+      "text": "pm"
     },
     {
       "name": "pmn",
-      "text": "Real price of intermediate good "
+      "text": "pmn"
     },
     {
       "name": "psi",
@@ -263,7 +263,7 @@
     },
     {
       "name": "q",
-      "text": "Price of one unit capital"
+      "text": "Price of capital"
     },
     {
       "name": "qf",
@@ -327,7 +327,7 @@
     },
     {
       "name": "z",
-      "text": "Gross growth rate of net worth"
+      "text": "z"
     },
     {
       "name": "zf",
