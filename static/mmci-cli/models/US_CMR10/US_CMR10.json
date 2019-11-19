@@ -46,7 +46,7 @@
     },
     {
       "name": "e_epsilU",
-      "text": "e_epsilU"
+      "text": "Technology shock"
     },
     {
       "name": "e_gammaU",
@@ -58,7 +58,7 @@
     },
     {
       "name": "e_lambdafU",
-      "text": "e_lambdafU"
+      "text": "Price markup shock"
     },
     {
       "name": "e_muupU",
@@ -113,7 +113,7 @@
     },
     {
       "name": "cU",
-      "text": "cU"
+      "text": "Consumption"
     },
     {
       "name": "dmflexU",
@@ -125,7 +125,7 @@
     },
     {
       "name": "epsilU",
-      "text": "epsilU"
+      "text": "Technology shock process"
     },
     {
       "name": "evflexU",
@@ -165,7 +165,7 @@
     },
     {
       "name": "hU",
-      "text": "hU"
+      "text": "Hours worked"
     },
     {
       "name": "iflexU",
@@ -173,7 +173,7 @@
     },
     {
       "name": "inflation",
-      "text": "Inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
@@ -181,11 +181,11 @@
     },
     {
       "name": "interest",
-      "text": "Interest"
+      "text": "interest"
     },
     {
       "name": "iU",
-      "text": "iU"
+      "text": "Investment"
     },
     {
       "name": "kbarflexU",
@@ -193,11 +193,11 @@
     },
     {
       "name": "kbarU",
-      "text": "kbarU"
+      "text": "Capital"
     },
     {
       "name": "lambdafU",
-      "text": "lambdafU"
+      "text": "Price markup shock process"
     },
     {
       "name": "lambdazflexU",
@@ -213,7 +213,7 @@
     },
     {
       "name": "mbU",
-      "text": "mbU"
+      "text": "Money balances"
     },
     {
       "name": "mflexU",
@@ -237,7 +237,7 @@
     },
     {
       "name": "nU",
-      "text": "nU"
+      "text": "Entrepreneurial net worth"
     },
     {
       "name": "omegabarflexU",
@@ -249,11 +249,11 @@
     },
     {
       "name": "output",
-      "text": "Output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "text": "Output Gap"
+      "text": "outputgap"
     },
     {
       "name": "piflexU",
@@ -301,7 +301,7 @@
     },
     {
       "name": "rkU",
-      "text": "rkU"
+      "text": "Capital rent"
     },
     {
       "name": "RkXflexU",
@@ -337,7 +337,7 @@
     },
     {
       "name": "sU",
-      "text": "sU"
+      "text": "Marginal costs"
     },
     {
       "name": "tauoU",
@@ -349,7 +349,7 @@
     },
     {
       "name": "uU",
-      "text": "uU"
+      "text": "Capital utilization rate"
     },
     {
       "name": "uzcflexU",
@@ -377,7 +377,7 @@
     },
     {
       "name": "wU",
-      "text": "wU"
+      "text": "Real wage"
     },
     {
       "name": "xbU",
