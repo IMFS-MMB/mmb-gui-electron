@@ -42,19 +42,19 @@
   "shocks": [
     {
       "name": "epsA",
-      "text": "epsA"
+      "text": "Technology shock"
     },
     {
       "name": "epsd",
-      "text": "epsd"
+      "text": "Preference shock"
     },
     {
       "name": "epsmu_I",
-      "text": "epsmu_I"
+      "text": "Investement technology shock"
     },
     {
       "name": "epsphi",
-      "text": "epsphi"
+      "text": "Labour supply shock"
     },
     {
       "name": "epspi",
@@ -89,7 +89,7 @@
   "variables": [
     {
       "name": "c",
-      "text": "c"
+      "text": "Consumption"
     },
     {
       "name": "cf",
@@ -97,7 +97,7 @@
     },
     {
       "name": "d",
-      "text": "d"
+      "text": "Preference"
     },
     {
       "name": "f",
@@ -141,7 +141,7 @@
     },
     {
       "name": "k",
-      "text": "k"
+      "text": "Capital"
     },
     {
       "name": "kf",
@@ -169,7 +169,7 @@
     },
     {
       "name": "mc",
-      "text": "mc"
+      "text": "Marginal costs"
     },
     {
       "name": "mu_A",
@@ -193,7 +193,7 @@
     },
     {
       "name": "phi",
-      "text": "phi"
+      "text": "Labour shock process"
     },
     {
       "name": "PI",
@@ -217,7 +217,7 @@
     },
     {
       "name": "r",
-      "text": "r"
+      "text": "Capital rent"
     },
     {
       "name": "R",
@@ -253,7 +253,7 @@
     },
     {
       "name": "u",
-      "text": "u"
+      "text": "Capital utilization rate"
     },
     {
       "name": "uf",
@@ -269,7 +269,7 @@
     },
     {
       "name": "w",
-      "text": "w"
+      "text": "Real wage"
     },
     {
       "name": "wf",
@@ -281,7 +281,7 @@
     },
     {
       "name": "x",
-      "text": "x"
+      "text": "Investment"
     },
     {
       "name": "xf",

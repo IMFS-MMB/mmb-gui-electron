@@ -40,11 +40,11 @@
   "shocks": [
     {
       "name": "eps",
-      "text": "eps"
+      "text": "Price markup shock"
     },
     {
       "name": "eta",
-      "text": "eta"
+      "text": "Demand shock"
     },
     {
       "name": "interest_",

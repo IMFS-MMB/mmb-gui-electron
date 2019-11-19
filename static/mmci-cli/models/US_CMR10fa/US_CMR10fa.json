@@ -42,7 +42,7 @@
   "shocks": [
     {
       "name": "e_epsilU",
-      "text": "e_epsilU"
+      "text": "Technology shock"
     },
     {
       "name": "e_gammaU",
@@ -54,7 +54,7 @@
     },
     {
       "name": "e_lambdafU",
-      "text": "e_lambdafU"
+      "text": "Price markup shock"
     },
     {
       "name": "e_muupU",
@@ -101,11 +101,11 @@
     },
     {
       "name": "cU",
-      "text": "cU"
+      "text": "Consumption"
     },
     {
       "name": "epsilU",
-      "text": "epsilU"
+      "text": "Technology shock process"
     },
     {
       "name": "FpXflexU",
@@ -137,7 +137,7 @@
     },
     {
       "name": "hU",
-      "text": "hU"
+      "text": "Hours worked"
     },
     {
       "name": "iflexU",
@@ -169,7 +169,7 @@
     },
     {
       "name": "lambdafU",
-      "text": "lambdafU"
+      "text": "Price markup shock process"
     },
     {
       "name": "lambdazflexU",
@@ -193,7 +193,7 @@
     },
     {
       "name": "nU",
-      "text": "nU"
+      "text": "Entrepreneurial net worth"
     },
     {
       "name": "omegabarflexU",
@@ -269,7 +269,7 @@
     },
     {
       "name": "sU",
-      "text": "sU"
+      "text": "Marginal costs"
     },
     {
       "name": "tauoU",
@@ -281,7 +281,7 @@
     },
     {
       "name": "uU",
-      "text": "uU"
+      "text": "Capital utilization rate"
     },
     {
       "name": "wflexU",
@@ -293,7 +293,7 @@
     },
     {
       "name": "wU",
-      "text": "wU"
+      "text": "Real wage"
     },
     {
       "name": "YflexU",

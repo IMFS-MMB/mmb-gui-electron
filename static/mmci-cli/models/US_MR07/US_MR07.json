@@ -40,7 +40,7 @@
   "shocks": [
     {
       "name": "a_e",
-      "text": "a_e"
+      "text": "Technology shock"
     },
     {
       "name": "e_e",
@@ -67,7 +67,7 @@
   "variables": [
     {
       "name": "a",
-      "text": "a"
+      "text": "Technology shock process"
     },
     {
       "name": "da",
@@ -103,7 +103,7 @@
     },
     {
       "name": "l",
-      "text": "l"
+      "text": "Labour"
     },
     {
       "name": "l1",

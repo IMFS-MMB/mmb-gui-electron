@@ -35,7 +35,7 @@
   "shocks": [
     {
       "name": "epsilon_pi",
-      "text": "epsilon_pi"
+      "text": "Price markup shock"
     },
     {
       "name": "epsilon_tau",
