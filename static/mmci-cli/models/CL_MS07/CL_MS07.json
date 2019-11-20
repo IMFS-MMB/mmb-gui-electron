@@ -41,7 +41,7 @@
   "shocks": [
     {
       "name": "eps_ah",
-      "text": "eps_ah"
+      "text": "Technology shock"
     },
     {
       "name": "eps_iF",
@@ -65,7 +65,7 @@
     },
     {
       "name": "eps_sh_c",
-      "text": "eps_sh_c"
+      "text": "Preference shock"
     },
     {
       "name": "eps_sh_i",
@@ -73,7 +73,7 @@
     },
     {
       "name": "eps_sh_w",
-      "text": "eps_sh_w"
+      "text": "Labour supply shock"
     },
     {
       "name": "eps_st",
@@ -100,7 +100,7 @@
   "variables": [
     {
       "name": "ah_hat",
-      "text": "ah_hat"
+      "text": "Technology shock process"
     },
     {
       "name": "bF_flex",
@@ -124,7 +124,7 @@
     },
     {
       "name": "c_hat",
-      "text": "c_hat"
+      "text": "Consumption"
     },
     {
       "name": "ca_y_flex",
@@ -164,7 +164,7 @@
     },
     {
       "name": "dc_hat",
-      "text": "dc_hat"
+      "text": "Consumption change"
     },
     {
       "name": "de_flex",
@@ -180,7 +180,7 @@
     },
     {
       "name": "dinv_hat",
-      "text": "dinv_hat"
+      "text": "Investment change"
     },
     {
       "name": "dwr_flex",
@@ -272,7 +272,7 @@
     },
     {
       "name": "inv_hat",
-      "text": "inv_hat"
+      "text": "Investment"
     },
     {
       "name": "invf_flex",
@@ -296,7 +296,7 @@
     },
     {
       "name": "k_hat",
-      "text": "k_hat"
+      "text": "Capital"
     },
     {
       "name": "klag_flex",
@@ -312,7 +312,7 @@
     },
     {
       "name": "l_hat",
-      "text": "l_hat"
+      "text": "Labour"
     },
     {
       "name": "m_flex",
@@ -328,7 +328,7 @@
     },
     {
       "name": "mcrh_hat",
-      "text": "mcrh_hat"
+      "text": "Marginal costs"
     },
     {
       "name": "mo_flex",
@@ -520,11 +520,11 @@
     },
     {
       "name": "Rk_hat",
-      "text": "Rk_hat"
+      "text": "Capital rent"
     },
     {
       "name": "sh_c_hat",
-      "text": "sh_c_hat"
+      "text": "Preference shock process"
     },
     {
       "name": "sh_i_hat",
@@ -532,7 +532,7 @@
     },
     {
       "name": "sh_w_hat",
-      "text": "sh_w_hat"
+      "text": "Labour supply shock process"
     },
     {
       "name": "st_hat",
@@ -560,7 +560,7 @@
     },
     {
       "name": "wr_hat",
-      "text": "wr_hat"
+      "text": "Real wage"
     },
     {
       "name": "x_flex",
@@ -616,7 +616,7 @@
     },
     {
       "name": "zr_hat",
-      "text": "zr_hat"
+      "text": "Capital utilization rate"
     }
   ]
 }
