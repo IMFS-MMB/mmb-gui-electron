@@ -240,7 +240,7 @@
     },
     {
       "name": "r",
-      "text": "Real interest rate"
+      "text": "r"
     },
     {
       "name": "r_n",
@@ -256,7 +256,7 @@
     },
     {
       "name": "sH",
-      "text": "Marginal cost"
+      "text": "Marginal costs"
     },
     {
       "name": "sH_n",
