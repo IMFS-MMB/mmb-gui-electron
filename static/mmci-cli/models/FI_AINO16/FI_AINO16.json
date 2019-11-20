@@ -71,7 +71,7 @@
     },
     {
       "name": "epsLAMBDAIY",
-      "text": "epsLAMBDAIY"
+      "text": "Investment technology shock"
     },
     {
       "name": "epsLAMBDAK",
@@ -83,7 +83,7 @@
     },
     {
       "name": "epsLAMW",
-      "text": "epsLAMW"
+      "text": "Labour supply shock"
     },
     {
       "name": "epsMU",
@@ -127,11 +127,11 @@
     },
     {
       "name": "epsZETACH",
-      "text": "epsZETACH"
+      "text": "Preference shock"
     },
     {
       "name": "epsZETAEUR",
-      "text": "epsZETAEUR"
+      "text": "Risk premium shock"
     },
     {
       "name": "fiscal_",
@@ -194,7 +194,7 @@
     },
     {
       "name": "c",
-      "text": "c"
+      "text": "Consumption"
     },
     {
       "name": "cf",
@@ -250,7 +250,7 @@
     },
     {
       "name": "h",
-      "text": "h"
+      "text": "Hours worked"
     },
     {
       "name": "hf",
@@ -294,7 +294,7 @@
     },
     {
       "name": "iT",
-      "text": "iT"
+      "text": "Investment"
     },
     {
       "name": "iTf",
@@ -302,7 +302,7 @@
     },
     {
       "name": "k",
-      "text": "k"
+      "text": "Capital"
     },
     {
       "name": "kbank",
@@ -326,7 +326,7 @@
     },
     {
       "name": "lamIY",
-      "text": "lamIY"
+      "text": "Investment technology shock process"
     },
     {
       "name": "lamK",
@@ -338,7 +338,7 @@
     },
     {
       "name": "lamW",
-      "text": "lamW"
+      "text": "Labour supply shock process"
     },
     {
       "name": "lev_e",
@@ -370,7 +370,7 @@
     },
     {
       "name": "mcY",
-      "text": "mcY"
+      "text": "Marginal costs"
     },
     {
       "name": "mcYf",
@@ -410,7 +410,7 @@
     },
     {
       "name": "nwe",
-      "text": "nwe"
+      "text": "Entepreneurial net worth"
     },
     {
       "name": "nwef",
@@ -550,7 +550,7 @@
     },
     {
       "name": "q",
-      "text": "q"
+      "text": "Tobin's q"
     },
     {
       "name": "qf",
@@ -586,7 +586,7 @@
     },
     {
       "name": "rK",
-      "text": "rK"
+      "text": "Capital rent"
     },
     {
       "name": "rKf",
@@ -602,7 +602,7 @@
     },
     {
       "name": "rwage",
-      "text": "rwage"
+      "text": "Real wage"
     },
     {
       "name": "rwagef",
@@ -710,11 +710,11 @@
     },
     {
       "name": "zetaCH",
-      "text": "zetaCH"
+      "text": "Preference shock process"
     },
     {
       "name": "zetaEUR",
-      "text": "zetaEUR"
+      "text": "Risk premium shock process"
     }
   ]
 }

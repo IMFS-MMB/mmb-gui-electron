@@ -198,7 +198,7 @@
     },
     {
       "name": "mc",
-      "text": "Marginal cost"
+      "text": "Marginal costs"
     },
     {
       "name": "mc_fe",
@@ -330,7 +330,7 @@
     },
     {
       "name": "w",
-      "text": "w"
+      "text": "Real wage"
     },
     {
       "name": "w_bar",
