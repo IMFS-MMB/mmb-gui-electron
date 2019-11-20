@@ -86,7 +86,7 @@
     },
     {
       "name": "eps_p",
-      "text": "eps_p"
+      "text": "Price markup shock"
     },
     {
       "name": "eps_tau",
@@ -98,19 +98,19 @@
     },
     {
       "name": "eps_w",
-      "text": "eps_w"
+      "text": "Wage markup shock"
     },
     {
       "name": "eps_z",
-      "text": "eps_z"
+      "text": "Technology shock"
     },
     {
       "name": "fiscal_",
-      "text": "Fiscal Policy Shock"
+      "text": "fiscal_"
     },
     {
       "name": "interest_",
-      "text": "Monetary Policy Shock"
+      "text": "interest_"
     }
   ],
   "al_info": null,
@@ -153,7 +153,7 @@
     },
     {
       "name": "chat",
-      "text": "chat"
+      "text": "Consumption"
     },
     {
       "name": "chi_k",
@@ -217,11 +217,11 @@
     },
     {
       "name": "e_p",
-      "text": "e_p"
+      "text": "Price markup shock"
     },
     {
       "name": "e_w",
-      "text": "e_w"
+      "text": "Wage markup shock"
     },
     {
       "name": "eps_g",
@@ -277,11 +277,11 @@
     },
     {
       "name": "Ihat",
-      "text": "Ihat"
+      "text": "Investment"
     },
     {
       "name": "inflation",
-      "text": "Inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
@@ -289,7 +289,7 @@
     },
     {
       "name": "interest",
-      "text": "Interest"
+      "text": "interest"
     },
     {
       "name": "invQ_til_As",
@@ -309,11 +309,11 @@
     },
     {
       "name": "Kbar",
-      "text": "Kbar"
+      "text": "Capital"
     },
     {
       "name": "l",
-      "text": "l"
+      "text": "Hours worked"
     },
     {
       "name": "l_ob_t",
@@ -337,7 +337,7 @@
     },
     {
       "name": "mchat",
-      "text": "mchat"
+      "text": "Marginal cost"
     },
     {
       "name": "N_t",
@@ -345,11 +345,11 @@
     },
     {
       "name": "output",
-      "text": "Output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "text": "Output Gap"
+      "text": "outputgap"
     },
     {
       "name": "phi_t",
@@ -401,11 +401,11 @@
     },
     {
       "name": "r",
-      "text": "r"
+      "text": "Real interest rate"
     },
     {
       "name": "rK",
-      "text": "rK"
+      "text": "Capital rent"
     },
     {
       "name": "S",
@@ -473,7 +473,7 @@
     },
     {
       "name": "what_t",
-      "text": "what_t"
+      "text": "Real wage"
     },
     {
       "name": "ygap_t",
@@ -481,7 +481,7 @@
     },
     {
       "name": "yhat",
-      "text": "yhat"
+      "text": "Output"
     },
     {
       "name": "z_t",

@@ -76,7 +76,7 @@
   "shocks": [
     {
       "name": "interest_",
-      "text": "Monetary Policy Shock"
+      "text": "interest_"
     },
     {
       "name": "mupsi_eps",

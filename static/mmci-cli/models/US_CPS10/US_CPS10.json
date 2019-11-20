@@ -80,11 +80,11 @@
     },
     {
       "name": "interest_",
-      "text": "Monetary Policy Shock"
+      "text": "interest_"
     },
     {
       "name": "lambddaps",
-      "text": "lambddaps"
+      "text": "Price markup shock"
     },
     {
       "name": "pits",
@@ -92,7 +92,7 @@
     },
     {
       "name": "zs",
-      "text": "zs"
+      "text": "Technology shock"
     }
   ],
   "al_info": null,
@@ -103,7 +103,7 @@
     },
     {
       "name": "inflation",
-      "text": "Inflation"
+      "text": "inflation"
     },
     {
       "name": "inflationq",
@@ -111,7 +111,7 @@
     },
     {
       "name": "interest",
-      "text": "Interest"
+      "text": "interest"
     },
     {
       "name": "lambdda",
@@ -119,7 +119,7 @@
     },
     {
       "name": "lambddap",
-      "text": "lambddap"
+      "text": "Price markup shock process"
     },
     {
       "name": "lambddastar",
@@ -127,11 +127,11 @@
     },
     {
       "name": "output",
-      "text": "Output"
+      "text": "output"
     },
     {
       "name": "outputgap",
-      "text": "Output Gap"
+      "text": "outputgap"
     },
     {
       "name": "p",
@@ -151,7 +151,7 @@
     },
     {
       "name": "w",
-      "text": "w"
+      "text": "Real wage"
     },
     {
       "name": "wstar",
@@ -167,7 +167,7 @@
     },
     {
       "name": "z",
-      "text": "z"
+      "text": "Technology shock process"
     }
   ]
 }
