@@ -73,7 +73,7 @@
   "shocks": [
     {
       "name": "epsa_",
-      "text": "epsa_"
+      "text": "Preference shock"
     },
     {
       "name": "epse_",
@@ -81,7 +81,7 @@
     },
     {
       "name": "epsz_",
-      "text": "epsz_"
+      "text": "Technology shock"
     },
     {
       "name": "interest_",
@@ -92,7 +92,7 @@
   "variables": [
     {
       "name": "a",
-      "text": "a"
+      "text": "Preference shifter"
     },
     {
       "name": "e",
@@ -112,7 +112,7 @@
     },
     {
       "name": "m",
-      "text": "m"
+      "text": "Money balances"
     },
     {
       "name": "output",
@@ -136,7 +136,7 @@
     },
     {
       "name": "z",
-      "text": "z"
+      "text": "Technology"
     }
   ]
 }

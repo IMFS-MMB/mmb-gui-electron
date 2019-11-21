@@ -41,7 +41,7 @@
   "shocks": [
     {
       "name": "a_",
-      "text": "a_"
+      "text": "Technology shock"
     },
     {
       "name": "fiscal_",
@@ -56,11 +56,11 @@
   "variables": [
     {
       "name": "a",
-      "text": "a"
+      "text": "Technology"
     },
     {
       "name": "c",
-      "text": "c"
+      "text": "Consumption"
     },
     {
       "name": "cf",
@@ -88,11 +88,11 @@
     },
     {
       "name": "mc",
-      "text": "mc"
+      "text": "Marginal costs"
     },
     {
       "name": "n",
-      "text": "n"
+      "text": "Labour"
     },
     {
       "name": "nf",
@@ -116,7 +116,7 @@
     },
     {
       "name": "uhat",
-      "text": "uhat"
+      "text": "Unemployment rate"
     },
     {
       "name": "uhatf",
@@ -124,7 +124,7 @@
     },
     {
       "name": "xhat",
-      "text": "xhat"
+      "text": "Labor market tightness"
     },
     {
       "name": "xhatf",

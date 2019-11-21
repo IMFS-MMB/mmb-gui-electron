@@ -106,7 +106,7 @@
     },
     {
       "name": "e_Z",
-      "text": "e_Z"
+      "text": "Technology shock"
     },
     {
       "name": "fiscal_",
@@ -165,7 +165,7 @@
     },
     {
       "name": "Delta",
-      "text": "Delta"
+      "text": "Price dispersion"
     },
     {
       "name": "Delta_hat",
@@ -197,7 +197,7 @@
     },
     {
       "name": "H_bar",
-      "text": "H_bar"
+      "text": "Labour"
     },
     {
       "name": "H_bar_hat",
@@ -209,7 +209,7 @@
     },
     {
       "name": "i_d",
-      "text": "i_d"
+      "text": "Saver interest"
     },
     {
       "name": "i_d_hat",
@@ -337,7 +337,7 @@
     },
     {
       "name": "Z",
-      "text": "Z"
+      "text": "Technology"
     },
     {
       "name": "Z_hat",

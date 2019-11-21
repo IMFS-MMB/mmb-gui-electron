@@ -40,23 +40,23 @@
   "shocks": [
     {
       "name": "e_a",
-      "text": "e_a"
+      "text": "Technology shock"
     },
     {
       "name": "e_Gamma",
-      "text": "e_Gamma"
+      "text": "Bond policy shock"
     },
     {
       "name": "e_ksi",
-      "text": "e_ksi"
+      "text": "Capital quality shock"
     },
     {
       "name": "e_Ne",
-      "text": "e_Ne"
+      "text": "Net worth shock"
     },
     {
       "name": "e_psi",
-      "text": "e_psi"
+      "text": "Credit policy shock"
     },
     {
       "name": "fiscal_",
@@ -71,7 +71,7 @@
   "variables": [
     {
       "name": "a",
-      "text": "a"
+      "text": "Technology"
     },
     {
       "name": "af",
@@ -95,7 +95,7 @@
     },
     {
       "name": "C",
-      "text": "C"
+      "text": "Consumption"
     },
     {
       "name": "Cf",
@@ -103,11 +103,11 @@
     },
     {
       "name": "D",
-      "text": "D"
+      "text": "Price dispersion"
     },
     {
       "name": "Dep",
-      "text": "Dep"
+      "text": "Deposit"
     },
     {
       "name": "Depf",
@@ -131,7 +131,7 @@
     },
     {
       "name": "G",
-      "text": "G"
+      "text": "Government spending"
     },
     {
       "name": "Gamma",
@@ -155,7 +155,7 @@
     },
     {
       "name": "I",
-      "text": "I"
+      "text": "Investment"
     },
     {
       "name": "ib",
@@ -203,7 +203,7 @@
     },
     {
       "name": "K",
-      "text": "K"
+      "text": "Capital"
     },
     {
       "name": "Kb",
@@ -223,7 +223,7 @@
     },
     {
       "name": "Keff",
-      "text": "Keff"
+      "text": "Effective capital"
     },
     {
       "name": "Kefff",
@@ -251,7 +251,7 @@
     },
     {
       "name": "L",
-      "text": "L"
+      "text": "labor"
     },
     {
       "name": "Lambda",
@@ -283,7 +283,7 @@
     },
     {
       "name": "N",
-      "text": "N"
+      "text": "Net worth"
     },
     {
       "name": "Nbook",
@@ -355,7 +355,7 @@
     },
     {
       "name": "Pm",
-      "text": "Pm"
+      "text": "Price of intermediate good"
     },
     {
       "name": "prem_B",
@@ -487,7 +487,7 @@
     },
     {
       "name": "R",
-      "text": "R"
+      "text": "Real interest rate"
     },
     {
       "name": "rb",
@@ -511,7 +511,7 @@
     },
     {
       "name": "Rk",
-      "text": "Rk"
+      "text": "Capital rent"
     },
     {
       "name": "Rkf",
@@ -535,7 +535,7 @@
     },
     {
       "name": "varrho",
-      "text": "varrho"
+      "text": "Marginal utility"
     },
     {
       "name": "varrhof",
@@ -543,11 +543,11 @@
     },
     {
       "name": "w",
-      "text": "w"
+      "text": "Real wage"
     },
     {
       "name": "Welf",
-      "text": "Welf"
+      "text": "Welfare"
     },
     {
       "name": "Welff",
@@ -563,7 +563,7 @@
     },
     {
       "name": "X",
-      "text": "X"
+      "text": "Markup"
     },
     {
       "name": "xf",
