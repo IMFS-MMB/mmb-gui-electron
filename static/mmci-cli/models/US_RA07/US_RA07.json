@@ -74,11 +74,11 @@
   "shocks": [
     {
       "name": "epsa",
-      "text": "epsa"
+      "text": "Technology shock"
     },
     {
       "name": "epsp",
-      "text": "epsp"
+      "text": "Price markup shock"
     },
     {
       "name": "fiscal_",
@@ -93,11 +93,11 @@
   "variables": [
     {
       "name": "a",
-      "text": "a"
+      "text": "Technology shock process"
     },
     {
       "name": "c",
-      "text": "c"
+      "text": "Consumption"
     },
     {
       "name": "cf",
@@ -117,7 +117,7 @@
     },
     {
       "name": "i",
-      "text": "i"
+      "text": "Investment"
     },
     {
       "name": "if",
@@ -137,7 +137,7 @@
     },
     {
       "name": "k",
-      "text": "k"
+      "text": "Capital"
     },
     {
       "name": "kf",
@@ -153,11 +153,11 @@
     },
     {
       "name": "mc",
-      "text": "mc"
+      "text": "Marginal Costs"
     },
     {
       "name": "n",
-      "text": "n"
+      "text": "Labour"
     },
     {
       "name": "nf",
@@ -177,7 +177,7 @@
     },
     {
       "name": "q",
-      "text": "q"
+      "text": "Tobin's q"
     },
     {
       "name": "qf",
@@ -189,7 +189,7 @@
     },
     {
       "name": "rk",
-      "text": "rk"
+      "text": "Capital rent"
     },
     {
       "name": "rkf",
@@ -201,7 +201,7 @@
     },
     {
       "name": "u",
-      "text": "u"
+      "text": "Capital utilization"
     },
     {
       "name": "uf",
@@ -209,7 +209,7 @@
     },
     {
       "name": "w",
-      "text": "w"
+      "text": "Real wage"
     },
     {
       "name": "wf",

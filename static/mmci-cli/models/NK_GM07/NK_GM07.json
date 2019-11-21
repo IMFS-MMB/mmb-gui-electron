@@ -74,11 +74,11 @@
   "shocks": [
     {
       "name": "eps_a1",
-      "text": "eps_a1"
+      "text": "a1"
     },
     {
       "name": "eps_a2",
-      "text": "eps_a2"
+      "text": "Technology shock"
     },
     {
       "name": "eps_a3",
@@ -97,19 +97,19 @@
     },
     {
       "name": "a2",
-      "text": "a2"
+      "text": "Technology"
     },
     {
       "name": "a3",
-      "text": "a3"
+      "text": "Technology (no trend)"
     },
     {
       "name": "b",
-      "text": "b"
+      "text": "Bond"
     },
     {
       "name": "c",
-      "text": "c"
+      "text": "Consumption"
     },
     {
       "name": "CEFP",
@@ -125,7 +125,7 @@
     },
     {
       "name": "h",
-      "text": "h"
+      "text": "Money stock"
     },
     {
       "name": "inflation",
@@ -145,19 +145,19 @@
     },
     {
       "name": "m",
-      "text": "m"
+      "text": "Banking labor demand"
     },
     {
       "name": "mc",
-      "text": "mc"
+      "text": "Marginal cost"
     },
     {
       "name": "n",
-      "text": "n"
+      "text": "Producer labor demanded"
     },
     {
       "name": "omega",
-      "text": "omega"
+      "text": "Marginal value of collateral"
     },
     {
       "name": "output",
@@ -173,15 +173,15 @@
     },
     {
       "name": "q",
-      "text": "q"
+      "text": "Price of capital"
     },
     {
       "name": "rB",
-      "text": "rB"
+      "text": "Bond rate"
     },
     {
       "name": "rIB",
-      "text": "rIB"
+      "text": "Interbank rate"
     },
     {
       "name": "rL",
@@ -193,11 +193,11 @@
     },
     {
       "name": "UEFP",
-      "text": "UEFP"
+      "text": "Risk premium"
     },
     {
       "name": "w",
-      "text": "w"
+      "text": "Real wage"
     },
     {
       "name": "xi",

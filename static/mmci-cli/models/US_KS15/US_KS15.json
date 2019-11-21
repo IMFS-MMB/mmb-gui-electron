@@ -78,15 +78,15 @@
     },
     {
       "name": "eps_nu",
-      "text": "eps_nu"
+      "text": "Preference shock"
     },
     {
       "name": "eps_mu",
-      "text": "eps_mu"
+      "text": "Labour supply shock"
     },
     {
       "name": "eps_a",
-      "text": "eps_a"
+      "text": "Technology shock"
     },
     {
       "name": "interest_",
@@ -101,11 +101,11 @@
   "variables": [
     {
       "name": "c",
-      "text": "c"
+      "text": "Consumption"
     },
     {
       "name": "m",
-      "text": "m"
+      "text": "Money balances"
     },
     {
       "name": "pit",
@@ -117,19 +117,19 @@
     },
     {
       "name": "nu",
-      "text": "nu"
+      "text": "Preference shock process"
     },
     {
       "name": "l",
-      "text": "l"
+      "text": "Labour"
     },
     {
       "name": "mu",
-      "text": "mu"
+      "text": "Labour supply shock process"
     },
     {
       "name": "w",
-      "text": "w"
+      "text": "Real wage"
     },
     {
       "name": "R",
@@ -137,11 +137,11 @@
     },
     {
       "name": "psi",
-      "text": "psi"
+      "text": "Marginal costs"
     },
     {
       "name": "a",
-      "text": "a"
+      "text": "Technology shock process"
     },
     {
       "name": "g",
@@ -153,7 +153,7 @@
     },
     {
       "name": "RR",
-      "text": "RR"
+      "text": "Real interest rate"
     },
     {
       "name": "eps_g",

@@ -38,7 +38,7 @@
   "shocks": [
     {
       "name": "epsA",
-      "text": "epsA"
+      "text": "Technology shock"
     },
     {
       "name": "epsmu",
@@ -65,7 +65,7 @@
     },
     {
       "name": "i_dep",
-      "text": "i_dep"
+      "text": "Interest on deposits"
     },
     {
       "name": "infl",
@@ -73,7 +73,7 @@
     },
     {
       "name": "omeg_t",
-      "text": "omeg_t"
+      "text": "Bankruptcy threshold"
     },
     {
       "name": "s_t",
@@ -97,7 +97,7 @@
     },
     {
       "name": "spread",
-      "text": "spread"
+      "text": "Spread"
     },
     {
       "name": "q_t",
@@ -129,7 +129,7 @@
     },
     {
       "name": "Bankrupt",
-      "text": "Bankrupt"
+      "text": "Bankruptcy rate"
     },
     {
       "name": "output",
@@ -141,7 +141,7 @@
     },
     {
       "name": "fo_t",
-      "text": "fo_t"
+      "text": "Output share of entrepreneur"
     },
     {
       "name": "ho_t",
@@ -153,7 +153,7 @@
     },
     {
       "name": "credit",
-      "text": "credit"
+      "text": "Credit stock"
     },
     {
       "name": "stdoi_t",
@@ -161,11 +161,11 @@
     },
     {
       "name": "Util",
-      "text": "Util"
+      "text": "Utility"
     },
     {
       "name": "Welf",
-      "text": "Welf"
+      "text": "Welfare"
     },
     {
       "name": "i_e",
@@ -177,7 +177,7 @@
     },
     {
       "name": "a_t",
-      "text": "a_t"
+      "text": "Technology"
     },
     {
       "name": "mu_t",

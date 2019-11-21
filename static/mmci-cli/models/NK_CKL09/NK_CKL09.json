@@ -80,7 +80,7 @@
     },
     {
       "name": "inno_ebargaint",
-      "text": "inno_ebargaint"
+      "text": "Bargaining power shock"
     },
     {
       "name": "inno_ebt",
@@ -88,7 +88,7 @@
     },
     {
       "name": "inno_eCt",
-      "text": "inno_eCt"
+      "text": "Price markup shock"
     },
     {
       "name": "inno_ekappat",
@@ -96,11 +96,11 @@
     },
     {
       "name": "inno_esept",
-      "text": "inno_esept"
+      "text": "Separation rate shock"
     },
     {
       "name": "inno_zt",
-      "text": "inno_zt"
+      "text": "Technology shock"
     },
     {
       "name": "interest_",
@@ -115,7 +115,7 @@
     },
     {
       "name": "ct",
-      "text": "ct"
+      "text": "Consumption"
     },
     {
       "name": "deltaFflext",
@@ -143,27 +143,27 @@
     },
     {
       "name": "ebargaint",
-      "text": "ebargaint"
+      "text": "Bargaining power"
     },
     {
       "name": "ebt",
-      "text": "ebt"
+      "text": "Discount factor"
     },
     {
       "name": "eCt",
-      "text": "eCt"
+      "text": "Markup"
     },
     {
       "name": "ekappat",
-      "text": "ekappat"
+      "text": "Vacancy posting costs"
     },
     {
       "name": "emoneyt",
-      "text": "emoneyt"
+      "text": "Monetary policy"
     },
     {
       "name": "esept",
-      "text": "esept"
+      "text": "Separation rate"
     },
     {
       "name": "fispol",
@@ -175,7 +175,7 @@
     },
     {
       "name": "gt",
-      "text": "gt"
+      "text": "Government spending"
     },
     {
       "name": "hflext",
@@ -183,7 +183,7 @@
     },
     {
       "name": "ht",
-      "text": "ht"
+      "text": "Labour"
     },
     {
       "name": "inflation",
@@ -211,11 +211,11 @@
     },
     {
       "name": "lambdat",
-      "text": "lambdat"
+      "text": "Marginal utility"
     },
     {
       "name": "mct",
-      "text": "mct"
+      "text": "Marginal costs"
     },
     {
       "name": "mflext",
@@ -223,11 +223,11 @@
     },
     {
       "name": "mt",
-      "text": "mt"
+      "text": "New matches"
     },
     {
       "name": "nt",
-      "text": "nt"
+      "text": "Employment rate"
     },
     {
       "name": "output",
@@ -251,11 +251,11 @@
     },
     {
       "name": "qt",
-      "text": "qt"
+      "text": "Job-filling rate"
     },
     {
       "name": "Rt",
-      "text": "Rt"
+      "text": "Rt
     },
     {
       "name": "sflext",
@@ -263,11 +263,11 @@
     },
     {
       "name": "st",
-      "text": "st"
+      "text": "Job-finding rate"
     },
     {
       "name": "ut",
-      "text": "ut"
+      "text": "Unemployment rate"
     },
     {
       "name": "vflext",
@@ -275,7 +275,7 @@
     },
     {
       "name": "vt",
-      "text": "vt"
+      "text": "Number of job vacancies"
     },
     {
       "name": "wflext",
@@ -283,11 +283,11 @@
     },
     {
       "name": "wstart",
-      "text": "wstart"
+      "text": "Employed wage"
     },
     {
       "name": "wt",
-      "text": "wt"
+      "text": "Real wage"
     },
     {
       "name": "xLflext",
@@ -307,7 +307,7 @@
     },
     {
       "name": "zt",
-      "text": "zt"
+      "text": "Technology"
     }
   ]
 }

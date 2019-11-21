@@ -77,7 +77,7 @@
     },
     {
       "name": "ua",
-      "text": "ua"
+      "text": "Technology shock"
     },
     {
       "name": "ui",
@@ -93,14 +93,14 @@
     },
     {
       "name": "uu",
-      "text": "uu"
+      "text": "Preference shock"
     }
   ],
   "al_info": null,
   "variables": [
     {
       "name": "ea",
-      "text": "ea"
+      "text": "Technology shock Process"
     },
     {
       "name": "ei",
@@ -116,7 +116,7 @@
     },
     {
       "name": "eu",
-      "text": "eu"
+      "text": "Preference shock Process"
     },
     {
       "name": "inflation",

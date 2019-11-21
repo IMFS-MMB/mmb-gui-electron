@@ -119,7 +119,7 @@
     },
     {
       "name": "e_z",
-      "text": "e_z"
+      "text": "Preference shock"
     },
     {
       "name": "interest_",
@@ -198,7 +198,7 @@
     },
     {
       "name": "C",
-      "text": "C"
+      "text": "Consumption"
     },
     {
       "name": "c_e",
@@ -262,7 +262,7 @@
     },
     {
       "name": "ee_z",
-      "text": "ee_z"
+      "text": "Preference shock process"
     },
     {
       "name": "eps_K_b",
@@ -338,7 +338,7 @@
     },
     {
       "name": "K",
-      "text": "K"
+      "text": "Capital"
     },
     {
       "name": "K_b",
@@ -550,7 +550,7 @@
     },
     {
       "name": "u",
-      "text": "u"
+      "text": "Capital utilization rate"
     },
     {
       "name": "uf",

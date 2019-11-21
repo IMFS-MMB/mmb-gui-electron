@@ -90,14 +90,14 @@
     },
     {
       "name": "u_",
-      "text": "u_"
+      "text": "Preference shock"
     }
   ],
   "al_info": null,
   "variables": [
     {
       "name": "eta",
-      "text": "eta"
+      "text": "Preference shock process"
     },
     {
       "name": "i",

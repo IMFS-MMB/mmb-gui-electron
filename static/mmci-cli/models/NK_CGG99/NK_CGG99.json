@@ -75,11 +75,11 @@
   "shocks": [
     {
       "name": "demand_",
-      "text": "demand_"
+      "text": "Demand shock"
     },
     {
       "name": "inflation_",
-      "text": "inflation_"
+      "text": "Price markup shock"
     },
     {
       "name": "interest_",

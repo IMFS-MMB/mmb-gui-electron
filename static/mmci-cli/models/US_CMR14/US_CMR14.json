@@ -76,7 +76,7 @@
   "shocks": [
     {
       "name": "e_epsil",
-      "text": "e_epsil"
+      "text": "Technology shock"
     },
     {
       "name": "e_gamma",
@@ -84,7 +84,7 @@
     },
     {
       "name": "e_lambdaf",
-      "text": "e_lambdaf"
+      "text": "Price markup shock"
     },
     {
       "name": "e_muup",
@@ -155,7 +155,7 @@
   "variables": [
     {
       "name": "c",
-      "text": "c"
+      "text": "Consumption"
     },
     {
       "name": "cf",
@@ -179,7 +179,7 @@
     },
     {
       "name": "epsil",
-      "text": "epsil"
+      "text": "Technology shock process"
     },
     {
       "name": "fispol",
@@ -215,7 +215,7 @@
     },
     {
       "name": "h",
-      "text": "h"
+      "text": "Hours worked"
     },
     {
       "name": "hf",
@@ -227,7 +227,7 @@
     },
     {
       "name": "i",
-      "text": "i"
+      "text": "Investment"
     },
     {
       "name": "i_f",
@@ -255,7 +255,7 @@
     },
     {
       "name": "kbar",
-      "text": "kbar"
+      "text": "Capital"
     },
     {
       "name": "kbarf",
@@ -263,7 +263,7 @@
     },
     {
       "name": "lambdaf",
-      "text": "lambdaf"
+      "text": "Price markup shock process"
     },
     {
       "name": "lambdaz",
@@ -391,7 +391,7 @@
     },
     {
       "name": "n",
-      "text": "n"
+      "text": "Entrepreneurial net worth"
     },
     {
       "name": "networth_obs",
@@ -471,7 +471,7 @@
     },
     {
       "name": "rk",
-      "text": "rk"
+      "text": "Capital rent"
     },
     {
       "name": "Rk",
@@ -503,7 +503,7 @@
     },
     {
       "name": "s",
-      "text": "s"
+      "text": "Marginal costs"
     },
     {
       "name": "sf",
@@ -523,7 +523,7 @@
     },
     {
       "name": "u",
-      "text": "u"
+      "text": "Capital utilization rate"
     },
     {
       "name": "uf",
@@ -547,7 +547,7 @@
     },
     {
       "name": "wtilde",
-      "text": "wtilde"
+      "text": "Real wage"
     },
     {
       "name": "wtildef",
