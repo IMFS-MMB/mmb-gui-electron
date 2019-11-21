@@ -1,7 +1,7 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { remote } from 'electron';
 import path from 'path';
-import worker from '../../../../worker';
+import worker from '../../../worker';
 
 const { dialog } = remote;
 

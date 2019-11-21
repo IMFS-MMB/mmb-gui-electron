@@ -3,8 +3,8 @@ import path from 'path';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { remote } from 'electron';
 import { copy } from 'fs-extra';
-import { staticMmbFolder } from '../../../../config/paths';
-import isEmptyFolder from '../../../../common/util/is-empty-folder';
+import { staticMmbFolder } from '../../../config/paths';
+import isEmptyFolder from '../../../common/util/is-empty-folder';
 
 const namespaced = true;
 

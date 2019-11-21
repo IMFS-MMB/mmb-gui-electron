@@ -7,7 +7,7 @@
 <script>
   import { FSWatcher } from 'chokidar';
   import Tree from './Tree';
-  import getDirectoryTree from '../../../utils/electron/getDirectoryTree';
+  import getDirectoryTree from '../../../utils/getDirectoryTree';
 
   export default {
     components: {

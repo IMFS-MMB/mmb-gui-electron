@@ -1,10 +1,10 @@
 import pick from 'lodash.pick';
 
-import backends from './modules/electron/backends';
-import dynare from './modules/electron/dynare';
-import userrule from './modules/electron/userrule';
-import settings from './modules/electron/settings';
-import store from '../../storage';
+import backends from './modules/backends';
+import dynare from './modules/dynare';
+import userrule from './modules/userrule';
+import settings from './modules/settings';
+import store from '../utils/storage';
 import createPersistedState from './persisted-state';
 
 function whitelistNamespaces(namespaces) {
