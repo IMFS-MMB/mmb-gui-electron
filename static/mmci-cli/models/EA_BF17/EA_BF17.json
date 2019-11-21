@@ -78,7 +78,7 @@
     },
     {
       "name": "ua",
-      "text": "ua"
+      "text": "Technology shock"
     },
     {
       "name": "ui",
@@ -90,14 +90,14 @@
     },
     {
       "name": "up",
-      "text": "up"
+      "text": "Price markup shock"
     }
   ],
   "al_info": null,
   "variables": [
     {
       "name": "at",
-      "text": "at"
+      "text": "Technology shock process"
     },
     {
       "name": "ei",
@@ -109,7 +109,7 @@
     },
     {
       "name": "ep",
-      "text": "ep"
+      "text": "Price markup shock process"
     },
     {
       "name": "inflation",
@@ -125,7 +125,7 @@
     },
     {
       "name": "mp",
-      "text": "mp"
+      "text": "Money balances"
     },
     {
       "name": "mpf",

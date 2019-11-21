@@ -46,7 +46,7 @@
     },
     {
       "name": "epsilon_lambdad",
-      "text": "epsilon_lambdad"
+      "text": "Price markup shock"
     },
     {
       "name": "epsilon_lambdamc",
@@ -66,7 +66,7 @@
     },
     {
       "name": "epsilon_phitilde",
-      "text": "epsilon_phitilde"
+      "text": "Risk premium shock"
     },
     {
       "name": "epsilon_pibar",
@@ -106,11 +106,11 @@
     },
     {
       "name": "epsilon_zetac",
-      "text": "epsilon_zetac"
+      "text": "Preference Shock"
     },
     {
       "name": "epsilon_zetah",
-      "text": "epsilon_zetah"
+      "text": "Labour supply shock"
     },
     {
       "name": "epsilon_ztildestar",
@@ -137,7 +137,7 @@
     },
     {
       "name": "c_hat",
-      "text": "c_hat"
+      "text": "Consumption"
     },
     {
       "name": "c_hatf",
@@ -221,7 +221,7 @@
     },
     {
       "name": "H_hat",
-      "text": "H_hat"
+      "text": "Labour"
     },
     {
       "name": "H_hatf",
@@ -229,7 +229,7 @@
     },
     {
       "name": "i_hat",
-      "text": "i_hat"
+      "text": "Investment"
     },
     {
       "name": "i_hatf",
@@ -249,7 +249,7 @@
     },
     {
       "name": "k_barhat",
-      "text": "k_barhat"
+      "text": "Capital"
     },
     {
       "name": "k_barhatf",
@@ -265,7 +265,7 @@
     },
     {
       "name": "lambda_dhat",
-      "text": "lambda_dhat"
+      "text": "Price markup shock process"
     },
     {
       "name": "lambda_dhatf",
@@ -305,7 +305,7 @@
     },
     {
       "name": "mc",
-      "text": "mc"
+      "text": "Marginal costs"
     },
     {
       "name": "mc_mc",
@@ -365,7 +365,7 @@
     },
     {
       "name": "phi_tilde",
-      "text": "phi_tilde"
+      "text": "Risk premium shock process"
     },
     {
       "name": "pi_bar",
@@ -453,7 +453,7 @@
     },
     {
       "name": "rk_hat",
-      "text": "rk_hat"
+      "text": "Capital rent"
     },
     {
       "name": "rk_hatf",
@@ -485,7 +485,7 @@
     },
     {
       "name": "u",
-      "text": "u"
+      "text": "Capital utilization rate"
     },
     {
       "name": "uf",
@@ -533,11 +533,11 @@
     },
     {
       "name": "zeta_c",
-      "text": "zeta_c"
+      "text": "Preference shock process"
     },
     {
       "name": "zeta_h",
-      "text": "zeta_h"
+      "text": "Labour supply shock process"
     }
   ]
 }

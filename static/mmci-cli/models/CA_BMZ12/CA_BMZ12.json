@@ -79,7 +79,7 @@
     },
     {
       "name": "epspt",
-      "text": "epspt"
+      "text": "Preference shock"
     },
     {
       "name": "epsxt",
@@ -87,7 +87,7 @@
     },
     {
       "name": "epszt",
-      "text": "epszt"
+      "text": "Technology shock"
     },
     {
       "name": "interest_",
@@ -130,7 +130,7 @@
     },
     {
       "name": "ct",
-      "text": "ct"
+      "text": "Consumption"
     },
     {
       "name": "ctfp",
@@ -178,7 +178,7 @@
     },
     {
       "name": "it",
-      "text": "it"
+      "text": "Investment"
     },
     {
       "name": "itfp",
@@ -194,7 +194,7 @@
     },
     {
       "name": "kt",
-      "text": "kt"
+      "text": "Capital"
     },
     {
       "name": "ktfp",
@@ -258,7 +258,7 @@
     },
     {
       "name": "mct",
-      "text": "mct"
+      "text": "Marginal costs"
     },
     {
       "name": "mctfp",
@@ -274,7 +274,7 @@
     },
     {
       "name": "nt",
-      "text": "nt"
+      "text": "Entrepreneurial net worth"
     },
     {
       "name": "output",
@@ -290,7 +290,7 @@
     },
     {
       "name": "pref",
-      "text": "pref"
+      "text": "Preference shock process"
     },
     {
       "name": "pstart",
@@ -366,7 +366,7 @@
     },
     {
       "name": "zt",
-      "text": "zt"
+      "text": "Technology shock process"
     }
   ]
 }
