@@ -2,7 +2,7 @@
 import { remote } from 'electron';
 import { platform } from 'os';
 import path from 'path';
-import worker from '../../../../worker';
+import worker from '../../../worker';
 const { dialog } = remote;
 
 const namespaced = true;

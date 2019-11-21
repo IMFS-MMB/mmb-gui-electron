@@ -1,5 +1,4 @@
 import { spawn } from 'cross-spawn';
-import logger from '../../renderer/utils/logger';
 
 /**
  * Runs an executable

@@ -11,7 +11,7 @@ import './plugins/bootstrap';
 import './plugins/highcharts';
 import './plugins/chatscroll';
 import resizeEvents from './utils/resize';
-import userId from '../userid';
+import userId from './utils/userid';
 
 if (isWeb) {
   const Sentry = require('@sentry/browser');
