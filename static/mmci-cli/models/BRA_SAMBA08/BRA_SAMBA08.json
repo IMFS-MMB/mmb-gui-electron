@@ -77,11 +77,11 @@
   "shocks": [
     {
       "name": "a_",
-      "text": "a_"
+      "text": "Technology shock"
     },
     {
       "name": "c_",
-      "text": "c_"
+      "text": "Preference shock"
     },
     {
       "name": "fii_",
@@ -113,7 +113,7 @@
     },
     {
       "name": "n_",
-      "text": "n_"
+      "text": "Labour supply shock"
     },
     {
       "name": "pibar_",
@@ -136,7 +136,7 @@
   "variables": [
     {
       "name": "a",
-      "text": "a"
+      "text": "Technology shock process"
     },
     {
       "name": "bby",
@@ -148,7 +148,7 @@
     },
     {
       "name": "c",
-      "text": "c"
+      "text": "Consumption"
     },
     {
       "name": "co",
@@ -180,7 +180,7 @@
     },
     {
       "name": "i",
-      "text": "i"
+      "text": "Investment"
     },
     {
       "name": "inflation",
@@ -196,7 +196,7 @@
     },
     {
       "name": "k",
-      "text": "k"
+      "text": "Capital"
     },
     {
       "name": "m",
@@ -204,7 +204,7 @@
     },
     {
       "name": "mc",
-      "text": "mc"
+      "text": "Marginal costs"
     },
     {
       "name": "mstar",
@@ -212,7 +212,7 @@
     },
     {
       "name": "n",
-      "text": "n"
+      "text": "Labour"
     },
     {
       "name": "no",
@@ -280,11 +280,11 @@
     },
     {
       "name": "u",
-      "text": "u"
+      "text": "Capital utilization rate"
     },
     {
       "name": "wr",
-      "text": "wr"
+      "text": "Real wage"
     },
     {
       "name": "x",
@@ -300,7 +300,7 @@
     },
     {
       "name": "zc",
-      "text": "zc"
+      "text": "Preference shock process"
     },
     {
       "name": "zfii",
@@ -320,7 +320,7 @@
     },
     {
       "name": "zn",
-      "text": "zn"
+      "text": "Labour supply shock process"
     },
     {
       "name": "zr",

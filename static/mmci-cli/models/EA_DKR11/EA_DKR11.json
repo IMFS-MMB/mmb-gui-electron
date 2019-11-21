@@ -40,7 +40,7 @@
   "shocks": [
     {
       "name": "E_A",
-      "text": "E_A"
+      "text": "Technology shock"
     },
     {
       "name": "E_A_D",
@@ -48,7 +48,7 @@
     },
     {
       "name": "E_B",
-      "text": "E_B"
+      "text": "Preference shock"
     },
     {
       "name": "E_Bankcap",
@@ -64,7 +64,7 @@
     },
     {
       "name": "E_P",
-      "text": "E_P"
+      "text": "Price markup shock"
     },
     {
       "name": "E_R",
@@ -92,7 +92,7 @@
     },
     {
       "name": "E_W",
-      "text": "E_W"
+      "text": "Labour supply shock"
     },
     {
       "name": "fiscal_",
@@ -411,7 +411,7 @@
     },
     {
       "name": "EE_A",
-      "text": "EE_A"
+      "text": "Technology shock process"
     },
     {
       "name": "EE_A_D",
@@ -419,7 +419,7 @@
     },
     {
       "name": "EE_B",
-      "text": "EE_B"
+      "text": "Preference shock process"
     },
     {
       "name": "EE_Bankcap",
@@ -455,7 +455,7 @@
     },
     {
       "name": "EE_P",
-      "text": "EE_P"
+      "text": "Price markup shock process"
     },
     {
       "name": "EE_P_D",
@@ -575,7 +575,7 @@
     },
     {
       "name": "EE_W",
-      "text": "EE_W"
+      "text": "Labour supply shock process"
     },
     {
       "name": "EE_Wf",
@@ -635,7 +635,7 @@
     },
     {
       "name": "I",
-      "text": "I"
+      "text": "Investment"
     },
     {
       "name": "I_C",
@@ -695,7 +695,7 @@
     },
     {
       "name": "K",
-      "text": "K"
+      "text": "Capital"
     },
     {
       "name": "K_C",
@@ -1359,7 +1359,7 @@
     },
     {
       "name": "W",
-      "text": "W"
+      "text": "Real wage"
     },
     {
       "name": "W_C",

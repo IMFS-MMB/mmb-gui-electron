@@ -99,7 +99,7 @@
     },
     {
       "name": "ea_eps_eta",
-      "text": "ea_eps_eta"
+      "text": "Price markup shock"
     },
     {
       "name": "ea_eps_etax",
@@ -123,7 +123,7 @@
     },
     {
       "name": "ea_eps_l",
-      "text": "ea_eps_l"
+      "text": "Labour supply shock"
     },
     {
       "name": "ea_eps_ltfp",
@@ -151,7 +151,7 @@
     },
     {
       "name": "ea_eps_tr",
-      "text": "ea_eps_tr"
+      "text": "Government transfers shock"
     },
     {
       "name": "ea_eps_trlc",
@@ -586,7 +586,7 @@
     },
     {
       "name": "ea_c",
-      "text": "ea_c"
+      "text": "Consumption"
     },
     {
       "name": "ea_cay",
@@ -934,11 +934,11 @@
     },
     {
       "name": "ea_q",
-      "text": "ea_q"
+      "text": "Tonbin's q"
     },
     {
       "name": "ea_r",
-      "text": "ea_r"
+      "text": "Real interest rate"
     },
     {
       "name": "ea_realint",
@@ -1002,7 +1002,7 @@
     },
     {
       "name": "ea_wr",
-      "text": "ea_wr"
+      "text": "Real wage"
     },
     {
       "name": "ea_wrinf",
