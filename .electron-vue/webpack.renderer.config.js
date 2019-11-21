@@ -124,6 +124,7 @@ let rendererConfig = {
     __filename: process.env.NODE_ENV !== 'production'
   },
   plugins: [
+    new webpack.ProgressPlugin(),
     new MonacoWebpackPlugin({
       languages: ['json']
     }),
