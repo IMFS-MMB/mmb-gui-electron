@@ -83,7 +83,7 @@
     },
     {
       "name": "inno_zt",
-      "text": "inno_zt"
+      "text": "Technology shock"
     },
     {
       "name": "interest_",
@@ -94,7 +94,7 @@
   "variables": [
     {
       "name": "ct",
-      "text": "ct"
+      "text": "Consumption"
     },
     {
       "name": "deltaFt",
@@ -110,11 +110,11 @@
     },
     {
       "name": "ebt",
-      "text": "ebt"
+      "text": "Discount factor"
     },
     {
       "name": "emoneyt",
-      "text": "emoneyt"
+      "text": "Monetary policy"
     },
     {
       "name": "fispol",
@@ -126,11 +126,11 @@
     },
     {
       "name": "gt",
-      "text": "gt"
+      "text": "Government spending"
     },
     {
       "name": "ht",
-      "text": "ht"
+      "text": "Labour"
     },
     {
       "name": "inflation",
@@ -150,19 +150,19 @@
     },
     {
       "name": "lambdat",
-      "text": "lambdat"
+      "text": "Marginal utility"
     },
     {
       "name": "mct",
-      "text": "mct"
+      "text": "Marginal costs"
     },
     {
       "name": "mt",
-      "text": "mt"
+      "text": "New matches"
     },
     {
       "name": "nt",
-      "text": "nt"
+      "text": "Employment rate"
     },
     {
       "name": "output",
@@ -182,7 +182,7 @@
     },
     {
       "name": "qt",
-      "text": "qt"
+      "text": "Job-filling rate"
     },
     {
       "name": "Rt",
@@ -190,23 +190,23 @@
     },
     {
       "name": "st",
-      "text": "st"
+      "text": "Job-finding rate"
     },
     {
       "name": "ut",
-      "text": "ut"
+      "text": "Unemployment rate"
     },
     {
       "name": "vt",
-      "text": "vt"
+      "text": "Number of job vacancies"
     },
     {
       "name": "wstart",
-      "text": "wstart"
+      "text": "Employed wage"
     },
     {
       "name": "wt",
-      "text": "wt"
+      "text": "Real wage"
     },
     {
       "name": "xLt",
@@ -218,7 +218,7 @@
     },
     {
       "name": "zt",
-      "text": "zt"
+      "text": "Technology"
     }
   ]
 }

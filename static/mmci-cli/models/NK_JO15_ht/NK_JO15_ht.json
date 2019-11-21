@@ -79,11 +79,11 @@
     },
     {
       "name": "m_star",
-      "text": "m_star"
+      "text": "Monetary policy shock"
     },
     {
       "name": "xi",
-      "text": "xi"
+      "text": "Technology shock"
     },
     {
       "name": "xi_star",
@@ -94,7 +94,7 @@
   "variables": [
     {
       "name": "a",
-      "text": "a"
+      "text": "Technology"
     },
     {
       "name": "a_star",
@@ -118,7 +118,7 @@
     },
     {
       "name": "mc",
-      "text": "mc"
+      "text": "Marginal costs"
     },
     {
       "name": "mc_star",
@@ -133,8 +133,8 @@
       "text": "Output Gap"
     },
     {
-      "name": "p",
-      "text": "p"
+      "name": "P",
+      "text": "Price"
     },
     {
       "name": "p_star",
@@ -158,7 +158,7 @@
     },
     {
       "name": "q",
-      "text": "q"
+      "text": "Real exchange rate"
     },
     {
       "name": "r",
@@ -166,7 +166,7 @@
     },
     {
       "name": "r_bar",
-      "text": "r_bar"
+      "text": "Real interest rate"
     },
     {
       "name": "r_bar_star",
@@ -178,7 +178,7 @@
     },
     {
       "name": "s",
-      "text": "s"
+      "text": "Terms of trade "
     },
     {
       "name": "x",
