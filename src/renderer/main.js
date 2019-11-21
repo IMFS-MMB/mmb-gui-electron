@@ -2,10 +2,9 @@ import Vue from 'vue';
 import axios from 'axios';
 
 import App from './App';
-import router from './router';
 import store from './store';
 
-import { isElectron, isWeb, sentry } from '../constants';
+import { isElectron, isWeb, sentry } from '../config/constants';
 
 import './global.scss';
 import './plugins/bootstrap';
@@ -50,7 +49,6 @@ Vue.config.productionTip = false;
 /* eslint-disable no-new */
 const vue = new Vue({
   components: { App },
-  router,
   store,
   template: '<App/>',
 }).$mount('#app');

@@ -91,7 +91,7 @@
   import MatlabOutputModal from '@/modals/MatlabOutputModal.vue';
 
   import { mapActions, mapGetters } from 'vuex';
-  import { isElectron } from '../../constants';
+  import { isElectron } from '../../config/constants';
   import Variables from './Variables';
 
   const platformComponents = isElectron ? {

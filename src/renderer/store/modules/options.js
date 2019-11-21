@@ -153,10 +153,8 @@ const getters = {
     return (id) => {
       switch (id) {
         case USER_RULE:
-          // user specified
           return false;
         case MODEL_RULE:
-          // model specific
           return getters.models.some(m => !m.msr);
         default:
           return getters.models.some(m => !m.capabilities.rules.includes(id));

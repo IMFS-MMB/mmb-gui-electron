@@ -1,5 +1,5 @@
 import winston from 'winston';
-import { isProduction } from '../../constants';
+import { isProduction } from '../../config/constants';
 
 const logger = winston.createLogger({
   level: isProduction ? 'warn' : 'debug',

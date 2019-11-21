@@ -7,18 +7,6 @@ import logger from '../../renderer/utils/logger';
 export default async function execute(path, cwd, args, onData, onError) {
   return new Promise((resolve, reject) => {
     try {
-      // // todo sanitize paths instead of omitting them completely
-      // addBreadcrumb({
-      //   type: 'spawn',
-      //   data: {
-      //     // path,
-      //     args,
-      //     // cwd,
-      //   },
-      // });
-
-      logger.debug(JSON.stringify({ path, args, cwd }, null, 2));
-
       const child = spawn(path, args, {
         cwd,
       });
