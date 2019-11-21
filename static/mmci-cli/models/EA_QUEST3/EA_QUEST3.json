@@ -76,11 +76,11 @@
   "shocks": [
     {
       "name": "E_EPS_C",
-      "text": "E_EPS_C"
+      "text": "Preference shock"
     },
     {
       "name": "E_EPS_ETA",
-      "text": "E_EPS_ETA"
+      "text": "Price markup shock"
     },
     {
       "name": "E_EPS_ETAM",
@@ -104,7 +104,7 @@
     },
     {
       "name": "E_EPS_L",
-      "text": "E_EPS_L"
+      "text": "Labour supply shock"
     },
     {
       "name": "E_EPS_LOL",
@@ -319,7 +319,7 @@
     },
     {
       "name": "E_LCSN",
-      "text": "E_LCSN"
+      "text": "Consumption"
     },
     {
       "name": "E_LCY",
@@ -455,11 +455,11 @@
     },
     {
       "name": "E_Q",
-      "text": "E_Q"
+      "text": "Tobin's q"
     },
     {
       "name": "E_R",
-      "text": "E_R"
+      "text": "Real interest rate"
     },
     {
       "name": "E_TAXYN",
@@ -487,7 +487,7 @@
     },
     {
       "name": "E_UCAP",
-      "text": "E_UCAP"
+      "text": "Capital utilization rate"
     },
     {
       "name": "E_UCAP0",
@@ -519,11 +519,11 @@
     },
     {
       "name": "E_ZEPS_C",
-      "text": "E_ZEPS_C"
+      "text": "Preference shock process"
     },
     {
       "name": "E_ZEPS_ETA",
-      "text": "E_ZEPS_ETA"
+      "text": "Price markup shock process"
     },
     {
       "name": "E_ZEPS_ETAM",
@@ -547,7 +547,7 @@
     },
     {
       "name": "E_ZEPS_L",
-      "text": "E_ZEPS_L"
+      "text": "Labour supply shock process"
     },
     {
       "name": "E_ZEPS_M",

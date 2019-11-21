@@ -84,11 +84,11 @@
     },
     {
       "name": "inno_ebt",
-      "text": "inno_ebt"
+      "text": "Risk premium shock"
     },
     {
       "name": "inno_eCt",
-      "text": "inno_eCt"
+      "text": "Price markup shock"
     },
     {
       "name": "inno_ekappat",
@@ -115,7 +115,7 @@
     },
     {
       "name": "ct",
-      "text": "ct"
+      "text": "Consumption"
     },
     {
       "name": "deltaFflext",
@@ -147,11 +147,11 @@
     },
     {
       "name": "ebt",
-      "text": "ebt"
+      "text": "Risk premium shock process"
     },
     {
       "name": "eCt",
-      "text": "eCt"
+      "text": "Price markup shock process"
     },
     {
       "name": "ekappat",
@@ -183,7 +183,7 @@
     },
     {
       "name": "ht",
-      "text": "ht"
+      "text": "Hours worked"
     },
     {
       "name": "inflation",
@@ -215,7 +215,7 @@
     },
     {
       "name": "mct",
-      "text": "mct"
+      "text": "Marginal costs"
     },
     {
       "name": "mflext",
@@ -287,7 +287,7 @@
     },
     {
       "name": "wt",
-      "text": "wt"
+      "text": "Real wage"
     },
     {
       "name": "xLflext",

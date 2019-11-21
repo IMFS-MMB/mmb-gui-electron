@@ -82,23 +82,23 @@
     },
     {
       "name": "ua",
-      "text": "ua"
+      "text": "Technology shock"
     },
     {
       "name": "ub",
-      "text": "ub"
+      "text": "Preference shock"
     },
     {
       "name": "ul",
-      "text": "ul"
+      "text": "Labor supply shock"
     },
     {
       "name": "ulambdapi",
-      "text": "ulambdapi"
+      "text": "Price markup shock"
     },
     {
       "name": "uw",
-      "text": "uw"
+      "text": "Wage markup shock"
     },
     {
       "name": "ux",
@@ -109,11 +109,11 @@
   "variables": [
     {
       "name": "a",
-      "text": "a"
+      "text": "Technology shock process"
     },
     {
       "name": "c",
-      "text": "c"
+      "text": "Consumption"
     },
     {
       "name": "cf",
@@ -121,11 +121,11 @@
     },
     {
       "name": "eb",
-      "text": "eb"
+      "text": "Preference shock process"
     },
     {
       "name": "el",
-      "text": "el"
+      "text": "Labor supply shock process"
     },
     {
       "name": "EMP",
@@ -153,7 +153,7 @@
     },
     {
       "name": "inv",
-      "text": "inv"
+      "text": "Investment"
     },
     {
       "name": "invf",
@@ -161,7 +161,7 @@
     },
     {
       "name": "k",
-      "text": "k"
+      "text": "Capital"
     },
     {
       "name": "kf",
@@ -169,7 +169,7 @@
     },
     {
       "name": "l",
-      "text": "l"
+      "text": "Hours worked"
     },
     {
       "name": "lf",
@@ -177,7 +177,7 @@
     },
     {
       "name": "mc",
-      "text": "mc"
+      "text": "Marginal costs"
     },
     {
       "name": "mcf",
@@ -185,7 +185,7 @@
     },
     {
       "name": "nw",
-      "text": "nw"
+      "text": "Entrepreneurial net worth"
     },
     {
       "name": "output",
@@ -209,7 +209,7 @@
     },
     {
       "name": "r",
-      "text": "r"
+      "text": "Real interest rate"
     },
     {
       "name": "rf",
@@ -237,7 +237,7 @@
     },
     {
       "name": "wp",
-      "text": "wp"
+      "text": "Real wage"
     },
     {
       "name": "wpf",
@@ -257,7 +257,7 @@
     },
     {
       "name": "z",
-      "text": "z"
+      "text": "Capital rent"
     },
     {
       "name": "zf",
