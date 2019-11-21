@@ -6,7 +6,7 @@ const path = require('path');
 const { dependencies } = require('../package.json');
 const webpack = require('webpack');
 
-const BabiliWebpackPlugin = require('babili-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -156,16 +156,16 @@ let rendererConfig = {
         : false
     }),
     new CspHtmlWebpackPlugin({
-      'object-src': "'none'",
-      'frame-src': "'none'",
-      'media-src': "'none'",
+      'object-src': '\'none\'',
+      'frame-src': '\'none\'',
+      'media-src': '\'none\'',
 
-      'base-uri': "'self'",
+      'base-uri': '\'self\'',
       // todo: disallow unsafe-eval (still needed for ajv.compile)
-      'script-src': ["'self'", "'unsafe-eval'"],
-      'font-src': "'self'",
+      'script-src': ['\'self\'', '\'unsafe-eval\''],
+      'font-src': '\'self\'',
 
-      'style-src': ["'self'", "'unsafe-inline'"],
+      'style-src': ['\'self\'', '\'unsafe-inline\''],
     }, {
       enabled: process.env.NODE_ENV === 'production',
       hashingMethod: 'sha256',
@@ -217,9 +217,11 @@ if (process.env.NODE_ENV !== 'production') {
  */
 if (process.env.NODE_ENV === 'production') {
   rendererConfig.devtool = '';
-
+  rendererConfig.optimization = {
+    minimize: true,
+    minimizer: [new TerserPlugin()],
+  };
   rendererConfig.plugins.push(
-    new BabiliWebpackPlugin(),
     new CopyWebpackPlugin([
       {
         from: path.join(__dirname, '../static'),
