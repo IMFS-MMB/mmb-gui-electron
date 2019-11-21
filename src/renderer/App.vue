@@ -1,14 +1,16 @@
 <template>
   <div id="app" :class="{ busy: comparisonInProgress }">
-    <router-view></router-view>
+    <HomePage></HomePage>
   </div>
 </template>
 
 <script>
   import { mapActions, mapGetters } from 'vuex';
+  import HomePage from './components/HomePage';
 
   export default {
     name: 'mmb-electron',
+    components: { HomePage },
     computed: {
       ...mapGetters('comparison', {
         comparisonInProgress: 'inProgress',

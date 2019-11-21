@@ -1,20 +1,13 @@
 import { platform } from 'os';
 import semver from 'semver';
 import execute from './execute';
-import { isProduction } from '../../constants';
+import { isProduction } from '../../config/constants';
 
 class Base {
   constructor(options) {
     const {
       path, cwd, defaultArgs, ver,
     } = options;
-
-    const pathExists = true;
-    // const pathExists = commandExists.sync(path) || isExecutableSync(path);
-
-    if (!pathExists) {
-      throw new Error(`${path} doesn't exist or is not executable.`);
-    }
 
     this.path = path;
     this.cwd = cwd;

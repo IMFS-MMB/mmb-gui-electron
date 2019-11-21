@@ -24,7 +24,7 @@
   import Horizon from '@/components/Horizon';
   import Gain from '@/components/Gain';
   import ModelStatesModal from '@/modals/ModelStatesModal';
-  import { isElectron } from '../../constants';
+  import { isElectron } from '../../config/constants';
 
   const platformComponents = isElectron ? {
     ModelStatesModal,
