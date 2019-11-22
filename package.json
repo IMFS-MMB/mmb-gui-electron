@@ -29,7 +29,7 @@
     "@feathersjs/feathers": "^3.3.0",
     "@feathersjs/rest-client": "^1.4.6",
     "@sentry/browser": "^4.6.6",
-    "@sentry/electron": "^1.0.0",
+    "@sentry/electron": "^1.1.0-beta.0",
     "ajv": "^6.10.2",
     "axios": "^0.18.1",
     "bootstrap-scss": "^4.1.3",
