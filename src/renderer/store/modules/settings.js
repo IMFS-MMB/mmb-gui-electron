@@ -34,7 +34,7 @@ const actions = {
   async useBuiltinMmbFolder(ctx) {
     ctx.commit('setMmbFolder', staticMmbFolder);
   },
-  async setMmbFolder(ctx) {
+  async selectMmbFolder(ctx) {
     const options = {
       filters: [],
       title: 'Select folder containing MMB files',
@@ -42,7 +42,14 @@ const actions = {
       message: 'Please select a folder containing MMB 3.1 compatible files',
     };
 
-    const [destination] = remote.dialog.showOpenDialog(options);
+    const {
+      canceled,
+      filePaths: [destination],
+    } = await remote.dialog.showOpenDialog(options);
+
+    if (canceled) {
+      return;
+    }
 
     ctx.commit('setMmbFolder', destination);
   },
@@ -54,9 +61,12 @@ const actions = {
       message: 'Please select an empty folder MMB files will be copied to',
     };
 
-    const [destination] = remote.dialog.showOpenDialog(options);
+    const {
+      canceled,
+      filePaths: [destination],
+    } = await remote.dialog.showOpenDialog(options);
 
-    if (!destination) {
+    if (!destination || canceled) {
       return;
     }
 

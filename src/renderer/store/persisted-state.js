@@ -66,7 +66,7 @@ class PersistedState {
     const state = this.getState(this.options.storage, this.options.storageKey);
 
     if (state) {
-      const selectedState = this.options.selectState(state);
+      const selectedState = this.options.selectState(state, true);
       const mergedState = merge(this.store.state, selectedState, this.options.mergeOptions);
       this.store.replaceState(mergedState);
     }

@@ -233,6 +233,10 @@ function getIRFSections(data, chartsPerRow, order) {
 
 const getters = {
   normalizedACdata(state) {
+    if (!state.data.length) {
+      return [];
+    }
+
     const {
       data,
       options: {
@@ -245,6 +249,10 @@ const getters = {
     return plotAutocorrelation ? normalizeACData(data, variables, models) : [];
   },
   normalizedIRFdata(state) {
+    if (!state.data.length) {
+      return [];
+    }
+
     const {
       data,
       options: {
@@ -257,7 +265,7 @@ const getters = {
     return normalizeIRFData(data, shocks, variables, models);
   },
   normalizedVARdata(state) {
-    if (!state.options.plotVariance) {
+    if (!state.options.plotVariance || !state.data.length) {
       return [];
     }
 

@@ -7,63 +7,47 @@ import settings from './modules/settings';
 import store from '../utils/storage';
 import createPersistedState from './persisted-state';
 
+// Only add more functions to this array! Do not alter existing ones!
+const migrations = [
+  () => ({}),
+];
+
+function selectState(state, initialLoad) {
+  const versionField = '__version';
+  const currentVersion = migrations.length - 1;
+  let newState = state;
+
+  if (initialLoad) {
+    if (!state) {
+      newState = {};
+    } else {
+      const stateVersion = typeof state[versionField] !== 'undefined' ? state[versionField] : -1;
+      for (let i = stateVersion, l = migrations.length; i < l; i += 1) {
+        if (stateVersion < i) {
+          try {
+            console.info(`Migrating to ${i}`);
+            newState = migrations[i](newState);
+          } catch (e) {
+            // eslint-disable-next-line no-console
+            console.warn(`There was an error migrating the persisted state to a new version: ${e}, resetting to defaults.`);
+            newState = {};
+            break;
+          }
+        }
+      }
+    }
+  }
+
+  return {
+    [versionField]: currentVersion,
+    ...pick(newState, ['backends', 'userrule', 'dynare', 'settings']),
+  };
+}
+
 function whitelistNamespaces(namespaces) {
   namespaces = Array.isArray(namespaces) ? namespaces : [namespaces];
 
   return mutation => namespaces.some(namespace => mutation.type.startsWith(namespace));
-}
-
-function userrule9x4to1x33(old) {
-  // for legacy reasons the user rule used to be a 9x4 matrix in matlab,
-  // although other coefficient matrices were 1x33. The user rule is 1x33 now, too.
-
-  const result = [];
-
-  result.push(old[1][0]);
-  result.push(old[2][0]);
-  result.push(old[3][0]);
-  result.push(old[4][0]);
-  result.push(old[0][1]);
-  result.push(old[1][1]);
-  result.push(old[2][1]);
-  result.push(old[3][1]);
-  result.push(old[4][1]);
-  result.push(old[5][1]);
-  result.push(old[6][1]);
-  result.push(old[7][1]);
-  result.push(old[8][1]);
-  result.push(old[0][2]);
-  result.push(old[1][2]);
-  result.push(old[2][2]);
-  result.push(old[3][2]);
-  result.push(old[4][2]);
-  result.push(old[5][2]);
-  result.push(old[6][2]);
-  result.push(old[7][2]);
-  result.push(old[8][2]);
-  result.push(old[0][3]);
-  result.push(old[1][3]);
-  result.push(old[2][3]);
-  result.push(old[3][3]);
-  result.push(old[4][3]);
-  result.push(old[5][3]);
-  result.push(old[6][3]);
-  result.push(old[7][3]);
-  result.push(old[8][3]);
-  result.push('1');
-  result.push('0.25');
-
-  return result;
-}
-
-function selectState(state) {
-  const newState = pick(state, ['backends', 'userrule', 'dynare', 'settings']);
-
-  if (newState.userrule.params.some(e => Array.isArray(e))) {
-    newState.userrule.params = userrule9x4to1x33(newState.userrule.params);
-  }
-
-  return newState;
 }
 
 export const modules = {
