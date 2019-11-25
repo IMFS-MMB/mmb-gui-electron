@@ -102,9 +102,9 @@ const actions = {
     const {
       canceled,
       filePaths,
-    } = dialog.showOpenDialog(options);
+    } = await dialog.showOpenDialog(options);
 
-    if (!canceled) {
+    if (canceled) {
       return;
     }
 
