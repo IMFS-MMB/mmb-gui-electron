@@ -90,7 +90,7 @@
     },
     {
       "name": "C_m",
-      "text": "Market goods consumption"
+      "text": "C_m"
     },
     {
       "name": "C_mf",
@@ -98,7 +98,7 @@
     },
     {
       "name": "C_n",
-      "text": "Home goods consumption"
+      "text": "C_n"
     },
     {
       "name": "C_nf",
@@ -110,7 +110,7 @@
     },
     {
       "name": "D",
-      "text": "Price dispersion"
+      "text": "D"
     },
     {
       "name": "Df",
@@ -122,11 +122,11 @@
     },
     {
       "name": "g",
-      "text": "Government spending shock process"
+      "text": "g"
     },
     {
       "name": "G",
-      "text": "Government spending"
+      "text": "G"
     },
     {
       "name": "h_m",
@@ -186,7 +186,7 @@
     },
     {
       "name": "K_m",
-      "text": "Market goods capital"
+      "text": "K_m"
     },
     {
       "name": "K_mf",
@@ -194,7 +194,7 @@
     },
     {
       "name": "K_n",
-      "text": "Home goods capital"
+      "text": "K_n"
     },
     {
       "name": "K_nf",
@@ -206,7 +206,7 @@
     },
     {
       "name": "lambda",
-      "text": "Marginal utility"
+      "text": "lambda"
     },
     {
       "name": "lambdaf",
@@ -238,7 +238,7 @@
     },
     {
       "name": "RMC",
-      "text": "Marginal  costs"
+      "text": "Marginal costs"
     },
     {
       "name": "RMCf",

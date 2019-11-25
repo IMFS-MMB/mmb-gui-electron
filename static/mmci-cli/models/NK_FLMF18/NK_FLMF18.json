@@ -50,7 +50,7 @@
     },
     {
       "name": "EG",
-      "text": "Government spending shock"
+      "text": "Preference shock"
     },
     {
       "name": "EOMEGA",
@@ -58,7 +58,7 @@
     },
     {
       "name": "EZ",
-      "text": "Commodity price shock"
+      "text": "EZ"
     },
     {
       "name": "fiscal_",
@@ -73,7 +73,7 @@
   "variables": [
     {
       "name": "A",
-      "text": "A"
+      "text": "Technology shock process"
     },
     {
       "name": "A_CB",
@@ -81,7 +81,7 @@
     },
     {
       "name": "C",
-      "text": "C"
+      "text": "Consumption"
     },
     {
       "name": "CY",
@@ -93,11 +93,11 @@
     },
     {
       "name": "DELTA",
-      "text": "Price dispersion"
+      "text": "DELTA"
     },
     {
       "name": "EGG",
-      "text": "Government spending shock process"
+      "text": "EGG"
     },
     {
       "name": "EPI",
@@ -117,7 +117,7 @@
     },
     {
       "name": "ERR",
-      "text": "Monetary policy"
+      "text": "ERR"
     },
     {
       "name": "ERR_CB",
@@ -149,7 +149,7 @@
     },
     {
       "name": "G",
-      "text": "Preference shifter"
+      "text": "Preference shock process"
     },
     {
       "name": "G_CB",
@@ -157,7 +157,7 @@
     },
     {
       "name": "GG",
-      "text": "Government spending"
+      "text": "GG"
     },
     {
       "name": "inflation",
@@ -173,19 +173,19 @@
     },
     {
       "name": "L",
-      "text": "L"
+      "text": "Labour"
     },
     {
       "name": "MC",
-      "text": "MC"
+      "text": "Marginal costs"
     },
     {
       "name": "NA",
-      "text": "Technology"
+      "text": "NA"
     },
     {
       "name": "NC",
-      "text": "Consumption "
+      "text": "NC"
     },
     {
       "name": "NCY",
@@ -197,15 +197,15 @@
     },
     {
       "name": "NGG",
-      "text": "Government spending"
+      "text": "NGG"
     },
     {
       "name": "NL",
-      "text": "Labour"
+      "text": "NL"
     },
     {
       "name": "NMC",
-      "text": "Marginal costs"
+      "text": "NMC"
     },
     {
       "name": "NN",
@@ -213,7 +213,7 @@
     },
     {
       "name": "NO",
-      "text": "Total commodity demand"
+      "text": "NO"
     },
     {
       "name": "NOC",
@@ -237,7 +237,7 @@
     },
     {
       "name": "NQ",
-      "text": "Real commodity price"
+      "text": "NQ"
     },
     {
       "name": "NR",
@@ -261,7 +261,7 @@
     },
     {
       "name": "NWP",
-      "text": "Wage price ratio"
+      "text": "NWP"
     },
     {
       "name": "NX",
@@ -289,7 +289,7 @@
     },
     {
       "name": "NZ",
-      "text": "Commodity price"
+      "text": "NZ"
     },
     {
       "name": "O",
@@ -301,7 +301,7 @@
     },
     {
       "name": "OMEGA",
-      "text": "Fringe size"
+      "text": "OMEGA"
     },
     {
       "name": "output",
@@ -369,7 +369,7 @@
     },
     {
       "name": "WP",
-      "text": "WP"
+      "text": "Real wage"
     },
     {
       "name": "X",
@@ -413,7 +413,7 @@
     },
     {
       "name": "Z",
-      "text": "Commodity price"
+      "text": "Z"
     },
     {
       "name": "Z_CB",

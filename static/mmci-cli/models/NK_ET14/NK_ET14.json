@@ -86,7 +86,7 @@
     },
     {
       "name": "epsL",
-      "text": "Labor supply shock"
+      "text": "Labour supply shock"
     },
     {
       "name": "epsthet",
@@ -105,11 +105,11 @@
   "variables": [
     {
       "name": "A",
-      "text": "Technology"
+      "text": "Technology shock process"
     },
     {
       "name": "b",
-      "text": "Short-term bond"
+      "text": "b"
     },
     {
       "name": "C",
@@ -117,19 +117,19 @@
     },
     {
       "name": "ChiC",
-      "text": "Chic"
+      "text": "Preference shock process"
     },
     {
       "name": "ChiL",
-      "text": "ChiL"
+      "text": "Labour supply shock process"
     },
     {
       "name": "D",
-      "text": "Price dispersion"
+      "text": "D"
     },
     {
       "name": "epsG",
-      "text": "Government spending shock process"
+      "text": "epsG"
     },
     {
       "name": "F",
@@ -141,7 +141,7 @@
     },
     {
       "name": "G",
-      "text": "Government spending"
+      "text": "G"
     },
     {
       "name": "Gf",
@@ -173,7 +173,7 @@
     },
     {
       "name": "ksi",
-      "text": "Unconventional monetary policy"
+      "text": "ksi"
     },
     {
       "name": "L",
@@ -189,7 +189,7 @@
     },
     {
       "name": "PB",
-      "text": "Price of short-term bond"
+      "text": "PB"
     },
     {
       "name": "Pi",
@@ -197,11 +197,11 @@
     },
     {
       "name": "PQ",
-      "text": "Price of long-term bond"
+      "text": "PQ"
     },
     {
       "name": "Ps",
-      "text": "Price of aggregate saving"
+      "text": "Ps"
     },
     {
       "name": "Pss",
@@ -213,7 +213,7 @@
     },
     {
       "name": "qbar",
-      "text": "Long-term bond supply "
+      "text": "qbar"
     },
     {
       "name": "qCB",
@@ -221,11 +221,11 @@
     },
     {
       "name": "s",
-      "text": "Real HH saving"
+      "text": "s"
     },
     {
       "name": "theta",
-      "text": "Intratemporal elasticity"
+      "text": "theta"
     },
     {
       "name": "w",

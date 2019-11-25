@@ -78,7 +78,7 @@
     },
     {
       "name": "e_ksi",
-      "text": "Capital quality shock"
+      "text": "e_ksi"
     },
     {
       "name": "fiscal_",
@@ -93,7 +93,7 @@
   "variables": [
     {
       "name": "a",
-      "text": "Technology"
+      "text": "Technology shock process"
     },
     {
       "name": "B",
@@ -121,7 +121,7 @@
     },
     {
       "name": "Dis",
-      "text": "Price dispersion"
+      "text": "Dis"
     },
     {
       "name": "Dis_fe",
@@ -129,7 +129,7 @@
     },
     {
       "name": "e_g",
-      "text": "Government spending shock"
+      "text": "e_g"
     },
     {
       "name": "ERb",
@@ -161,11 +161,11 @@
     },
     {
       "name": "g",
-      "text": "Government spending shock process"
+      "text": "g"
     },
     {
       "name": "G",
-      "text": "Government spending"
+      "text": "G"
     },
     {
       "name": "Gy",
@@ -229,7 +229,7 @@
     },
     {
       "name": "ksi",
-      "text": "Quality of capital"
+      "text": "ksi"
     },
     {
       "name": "L",
@@ -249,7 +249,7 @@
     },
     {
       "name": "N",
-      "text": "Net worth"
+      "text": "N"
     },
     {
       "name": "N_fe",
@@ -297,7 +297,7 @@
     },
     {
       "name": "Phi",
-      "text": "Leverage ratio of banks"
+      "text": "Phi"
     },
     {
       "name": "Phi_fe",
@@ -305,7 +305,7 @@
     },
     {
       "name": "Pm",
-      "text": "Price of intermediary goods"
+      "text": "Pm"
     },
     {
       "name": "Pm_fe",
@@ -313,7 +313,7 @@
     },
     {
       "name": "portf_B",
-      "text": "Portfolio of banks"
+      "text": "portf_B"
     },
     {
       "name": "portf_B_fe",
@@ -321,7 +321,7 @@
     },
     {
       "name": "prem",
-      "text": "Risk premium"
+      "text": "prem"
     },
     {
       "name": "prem2",
@@ -329,7 +329,7 @@
     },
     {
       "name": "Q",
-      "text": "Price of capital"
+      "text": "Q"
     },
     {
       "name": "Q_fe",
@@ -337,7 +337,7 @@
     },
     {
       "name": "Rb",
-      "text": "Real rate of bonds"
+      "text": "Rb"
     },
     {
       "name": "Rb_fe",
@@ -345,7 +345,7 @@
     },
     {
       "name": "Rd",
-      "text": "Real deposit rate"
+      "text": "Rd"
     },
     {
       "name": "Rd_fe",
@@ -361,7 +361,7 @@
     },
     {
       "name": "Rp",
-      "text": "Portfolio return"
+      "text": "Rp"
     },
     {
       "name": "Rp_fe",
@@ -369,7 +369,7 @@
     },
     {
       "name": "T",
-      "text": "Taxes"
+      "text": "T"
     },
     {
       "name": "T_fe",
@@ -377,7 +377,7 @@
     },
     {
       "name": "U_c",
-      "text": "Marginal utility"
+      "text": "U_c"
     },
     {
       "name": "U_c_fe",
@@ -401,7 +401,7 @@
     },
     {
       "name": "Ym",
-      "text": "Intermediary output"
+      "text": "Ym"
     },
     {
       "name": "Ym_fe",

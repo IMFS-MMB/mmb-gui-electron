@@ -44,7 +44,7 @@
     },
     {
       "name": "e_ksi",
-      "text": "Quality of capital shock"
+      "text": "e_ksi"
     },
     {
       "name": "e_Ne",
@@ -63,7 +63,7 @@
   "variables": [
     {
       "name": "a",
-      "text": "Technology"
+      "text": "Technology shock process"
     },
     {
       "name": "C",
@@ -75,11 +75,11 @@
     },
     {
       "name": "D",
-      "text": "Price dispersion"
+      "text": "D"
     },
     {
       "name": "delta",
-      "text": "Depreciation rate"
+      "text": "delta"
     },
     {
       "name": "deltaf",
@@ -87,7 +87,7 @@
     },
     {
       "name": "e_g",
-      "text": "Government spending shock"
+      "text": "e_g"
     },
     {
       "name": "eta",
@@ -107,11 +107,11 @@
     },
     {
       "name": "g",
-      "text": "Government spending shock process"
+      "text": "g"
     },
     {
       "name": "G",
-      "text": "Government spending"
+      "text": "G"
     },
     {
       "name": "Gf",
@@ -131,7 +131,7 @@
     },
     {
       "name": "In",
-      "text": "Net investment"
+      "text": "In"
     },
     {
       "name": "In_f",
@@ -163,7 +163,7 @@
     },
     {
       "name": "Keff",
-      "text": "Effective capital"
+      "text": "Keff"
     },
     {
       "name": "Kefff",
@@ -175,7 +175,7 @@
     },
     {
       "name": "ksi",
-      "text": "Quality of capital"
+      "text": "ksi"
     },
     {
       "name": "L",
@@ -183,7 +183,7 @@
     },
     {
       "name": "Lambda",
-      "text": "Stochastic discount factor"
+      "text": "Lambda"
     },
     {
       "name": "Lambdaf",
@@ -195,7 +195,7 @@
     },
     {
       "name": "N",
-      "text": "Net worth"
+      "text": "N"
     },
     {
       "name": "Ne",
@@ -211,11 +211,11 @@
     },
     {
       "name": "Nn",
-      "text": "New banks'net worth"
+      "text": "Nn"
     },
     {
       "name": "Nnf",
-      "text": "Nnf "
+      "text": "Nnf"
     },
     {
       "name": "nu",
@@ -223,7 +223,7 @@
     },
     {
       "name": "nuf",
-      "text": "nuf "
+      "text": "nuf"
     },
     {
       "name": "output",
@@ -243,11 +243,11 @@
     },
     {
       "name": "Pm",
-      "text": "Price of intermediate good"
+      "text": "Pm"
     },
     {
       "name": "prem",
-      "text": "Risk premium"
+      "text": "prem"
     },
     {
       "name": "premf",
@@ -255,7 +255,7 @@
     },
     {
       "name": "Q",
-      "text": "Price of capital"
+      "text": "Q"
     },
     {
       "name": "Qf",
@@ -267,7 +267,7 @@
     },
     {
       "name": "Rf",
-      "text": "R"
+      "text": "Rf"
     },
     {
       "name": "Rk",
@@ -275,7 +275,7 @@
     },
     {
       "name": "Rkf",
-      "text": "Rkf "
+      "text": "Rkf"
     },
     {
       "name": "U",
@@ -287,7 +287,7 @@
     },
     {
       "name": "varrho",
-      "text": "Marginal utility"
+      "text": "varrho"
     },
     {
       "name": "varrhof",
@@ -303,11 +303,11 @@
     },
     {
       "name": "w",
-      "text": "Real Wage"
+      "text": "Real wage"
     },
     {
       "name": "Welf",
-      "text": "Welfare"
+      "text": "Welf"
     },
     {
       "name": "Welff",
@@ -319,15 +319,15 @@
     },
     {
       "name": "x",
-      "text": "Gross growth rate of asset"
+      "text": "x"
     },
     {
       "name": "X",
-      "text": "Markup"
+      "text": "X"
     },
     {
       "name": "xf",
-      "text": "xf "
+      "text": "xf"
     },
     {
       "name": "Y",
@@ -335,7 +335,7 @@
     },
     {
       "name": "Yf",
-      "text": "Y"
+      "text": "Yf"
     },
     {
       "name": "Ym",
@@ -343,7 +343,7 @@
     },
     {
       "name": "Ymf",
-      "text": "Ym"
+      "text": "Ymf"
     },
     {
       "name": "z",

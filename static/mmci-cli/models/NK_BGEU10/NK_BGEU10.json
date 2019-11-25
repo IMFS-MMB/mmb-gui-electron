@@ -56,7 +56,7 @@
   "variables": [
     {
       "name": "a",
-      "text": "Technology"
+      "text": "Technology shock process"
     },
     {
       "name": "c",
@@ -116,7 +116,7 @@
     },
     {
       "name": "uhat",
-      "text": "Unemployment rate"
+      "text": "uhat"
     },
     {
       "name": "uhatf",
@@ -124,7 +124,7 @@
     },
     {
       "name": "xhat",
-      "text": "Labor market tightness"
+      "text": "xhat"
     },
     {
       "name": "xhatf",

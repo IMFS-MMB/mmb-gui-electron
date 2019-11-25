@@ -45,7 +45,7 @@
     },
     {
       "name": "et",
-      "text": "Payroll tax shock"
+      "text": "et"
     },
     {
       "name": "ez",
@@ -53,11 +53,11 @@
     },
     {
       "name": "ezx1",
-      "text": "Export shock"
+      "text": "ezx1"
     },
     {
       "name": "ezx2",
-      "text": "World interest rate shock"
+      "text": "ezx2"
     },
     {
       "name": "interest_",
@@ -68,7 +68,7 @@
   "variables": [
     {
       "name": "a",
-      "text": "Technology"
+      "text": "Technology shock process"
     },
     {
       "name": "c",
@@ -76,7 +76,7 @@
     },
     {
       "name": "cgap",
-      "text": "Consumption gap"
+      "text": "cgap"
     },
     {
       "name": "cn",
@@ -84,7 +84,7 @@
     },
     {
       "name": "de",
-      "text": "Exchange rate change"
+      "text": "de"
     },
     {
       "name": "dp",
@@ -128,7 +128,7 @@
     },
     {
       "name": "ngap",
-      "text": "Labour gap"
+      "text": "ngap"
     },
     {
       "name": "ngapx",
@@ -136,7 +136,7 @@
     },
     {
       "name": "nn",
-      "text": "Employment rate"
+      "text": "nn"
     },
     {
       "name": "output",
@@ -160,11 +160,11 @@
     },
     {
       "name": "s",
-      "text": "Terms of trade"
+      "text": "s"
     },
     {
       "name": "sgap",
-      "text": "Terms of trade gap"
+      "text": "sgap"
     },
     {
       "name": "sn",
@@ -172,7 +172,7 @@
     },
     {
       "name": "t",
-      "text": "Labor tax"
+      "text": "t"
     },
     {
       "name": "w",
@@ -204,15 +204,15 @@
     },
     {
       "name": "z",
-      "text": "Preference shifter"
+      "text": "Demand shock process"
     },
     {
       "name": "zx1",
-      "text": "Export"
+      "text": "zx1"
     },
     {
       "name": "zx2",
-      "text": "World interest rate"
+      "text": "zx2"
     }
   ]
 }

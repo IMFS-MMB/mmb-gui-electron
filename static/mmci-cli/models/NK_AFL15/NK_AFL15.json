@@ -89,11 +89,11 @@
   "variables": [
     {
       "name": "a",
-      "text": "Technology"
+      "text": "Technology shock process"
     },
     {
       "name": "bk",
-      "text": "Bank capital"
+      "text": "bk"
     },
     {
       "name": "bkf",
@@ -101,7 +101,7 @@
     },
     {
       "name": "br",
-      "text": "Bank riskiness"
+      "text": "br"
     },
     {
       "name": "brf",
@@ -117,11 +117,11 @@
     },
     {
       "name": "cpai",
-      "text": "Cost of inflation"
+      "text": "cpai"
     },
     {
       "name": "crun",
-      "text": "Cost of run"
+      "text": "crun"
     },
     {
       "name": "crunf",
@@ -129,11 +129,11 @@
     },
     {
       "name": "d",
-      "text": "Demand deposits"
+      "text": "d"
     },
     {
       "name": "deprat",
-      "text": "Deposit ratio"
+      "text": "deprat"
     },
     {
       "name": "depratf",
@@ -165,7 +165,7 @@
     },
     {
       "name": "Fn",
-      "text": "Marginal productivity"
+      "text": "Fn"
     },
     {
       "name": "Fnf",
@@ -173,7 +173,7 @@
     },
     {
       "name": "g",
-      "text": "Government spending"
+      "text": "g"
     },
     {
       "name": "inflation",
@@ -249,7 +249,7 @@
     },
     {
       "name": "rd",
-      "text": "Return on deposits"
+      "text": "rd"
     },
     {
       "name": "rdf",
@@ -265,7 +265,7 @@
     },
     {
       "name": "rok",
-      "text": "Capital rent"
+      "text": "rok"
     },
     {
       "name": "rokf",
@@ -273,7 +273,7 @@
     },
     {
       "name": "uc",
-      "text": "Marginal utility"
+      "text": "uc"
     },
     {
       "name": "ucf",
@@ -285,7 +285,7 @@
     },
     {
       "name": "un",
-      "text": "Marginal disutility"
+      "text": "un"
     },
     {
       "name": "unf",
@@ -301,7 +301,7 @@
     },
     {
       "name": "z",
-      "text": "Price of capital"
+      "text": "z"
     },
     {
       "name": "zf",

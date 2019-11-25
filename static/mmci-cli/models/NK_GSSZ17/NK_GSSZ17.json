@@ -85,7 +85,7 @@
     },
     {
       "name": "eF",
-      "text": "Finance shock"
+      "text": "eF"
     },
     {
       "name": "interest_",
@@ -96,11 +96,11 @@
   "variables": [
     {
       "name": "A",
-      "text": "Technology"
+      "text": "Technology shock process"
     },
     {
       "name": "abar",
-      "text": "Idiosyncratic cost level"
+      "text": "abar"
     },
     {
       "name": "abar_f",
@@ -116,11 +116,11 @@
     },
     {
       "name": "D",
-      "text": "Demand"
+      "text": "Demand shock process"
     },
     {
       "name": "dt",
-      "text": "Dividend"
+      "text": "dt"
     },
     {
       "name": "dt_f",
@@ -128,7 +128,7 @@
     },
     {
       "name": "F",
-      "text": "Financial condition"
+      "text": "F"
     },
     {
       "name": "h",
@@ -164,7 +164,7 @@
     },
     {
       "name": "m",
-      "text": "Stochastic discount factor"
+      "text": "m"
     },
     {
       "name": "m_f",
@@ -172,7 +172,7 @@
     },
     {
       "name": "mu",
-      "text": "Markup"
+      "text": "mu"
     },
     {
       "name": "mu_f",
@@ -188,7 +188,7 @@
     },
     {
       "name": "phi",
-      "text": "Dilution cost"
+      "text": "phi"
     },
     {
       "name": "pii",
@@ -208,7 +208,7 @@
     },
     {
       "name": "pS",
-      "text": "Stock return"
+      "text": "pS"
     },
     {
       "name": "pS_f",
@@ -232,7 +232,7 @@
     },
     {
       "name": "s",
-      "text": "Habit stock"
+      "text": "s"
     },
     {
       "name": "s_f",
@@ -248,7 +248,7 @@
     },
     {
       "name": "varrho",
-      "text": "Equity dilution costs"
+      "text": "varrho"
     },
     {
       "name": "w",
@@ -260,7 +260,7 @@
     },
     {
       "name": "x",
-      "text": "Consumption bundle"
+      "text": "x"
     },
     {
       "name": "x_f",
