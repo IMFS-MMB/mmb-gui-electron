@@ -25,6 +25,7 @@ function selectState(state, initialLoad) {
       for (let i = stateVersion, l = migrations.length; i < l; i += 1) {
         if (stateVersion < i) {
           try {
+            // eslint-disable-next-line no-console
             console.info(`Migrating to ${i}`);
             newState = migrations[i](newState);
           } catch (e) {
