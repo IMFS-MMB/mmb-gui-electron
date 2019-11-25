@@ -165,7 +165,7 @@
     },
     {
       "name": "Delta",
-      "text": "Price dispersion"
+      "text": "Delta"
     },
     {
       "name": "Delta_hat",
@@ -209,7 +209,7 @@
     },
     {
       "name": "i_d",
-      "text": "Saver interest"
+      "text": "i_d"
     },
     {
       "name": "i_d_hat",
@@ -337,7 +337,7 @@
     },
     {
       "name": "Z",
-      "text": "Technology"
+      "text": "Technology shock process"
     },
     {
       "name": "Z_hat",

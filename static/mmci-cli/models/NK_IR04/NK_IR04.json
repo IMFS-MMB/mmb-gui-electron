@@ -92,7 +92,7 @@
   "variables": [
     {
       "name": "a",
-      "text": "Preference shifter"
+      "text": "Preference shock process"
     },
     {
       "name": "e",
@@ -136,7 +136,7 @@
     },
     {
       "name": "z",
-      "text": "Technology"
+      "text": "Technology shock process"
     }
   ]
 }

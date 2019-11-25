@@ -121,7 +121,7 @@
     },
     {
       "name": "Disp",
-      "text": "Price dispersion"
+      "text": "Disp"
     },
     {
       "name": "Dn",
@@ -153,11 +153,11 @@
     },
     {
       "name": "G",
-      "text": "Government spending"
+      "text": "G"
     },
     {
       "name": "G_",
-      "text": "Government spending shock process"
+      "text": "G_"
     },
     {
       "name": "h",
@@ -217,7 +217,7 @@
     },
     {
       "name": "lamda",
-      "text": "Marginal utility"
+      "text": "lamda"
     },
     {
       "name": "lamdan",
@@ -233,7 +233,7 @@
     },
     {
       "name": "MC",
-      "text": "Marginal cost"
+      "text": "Marginal costs"
     },
     {
       "name": "mn",
@@ -285,7 +285,7 @@
     },
     {
       "name": "R",
-      "text": "Real interest rate"
+      "text": "R"
     },
     {
       "name": "Rn",
@@ -297,7 +297,7 @@
     },
     {
       "name": "tau",
-      "text": "Tax rate"
+      "text": "tau"
     },
     {
       "name": "tau_obs",

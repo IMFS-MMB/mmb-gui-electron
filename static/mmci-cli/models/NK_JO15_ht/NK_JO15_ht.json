@@ -79,7 +79,7 @@
     },
     {
       "name": "m_star",
-      "text": "Monetary policy shock"
+      "text": "m_star"
     },
     {
       "name": "xi",
@@ -94,7 +94,7 @@
   "variables": [
     {
       "name": "a",
-      "text": "Technology"
+      "text": "Technology shock process"
     },
     {
       "name": "a_star",
@@ -134,7 +134,7 @@
     },
     {
       "name": "P",
-      "text": "Price"
+      "text": "P"
     },
     {
       "name": "p_star",
@@ -158,15 +158,15 @@
     },
     {
       "name": "q",
-      "text": "Real exchange rate"
+      "text": "q"
     },
     {
       "name": "r",
-      "text": "r"
+      "text": "Real interest rate"
     },
     {
       "name": "r_bar",
-      "text": "Real interest rate"
+      "text": "r_bar"
     },
     {
       "name": "r_bar_star",
@@ -178,7 +178,7 @@
     },
     {
       "name": "s",
-      "text": "Terms of trade "
+      "text": "s"
     },
     {
       "name": "x",

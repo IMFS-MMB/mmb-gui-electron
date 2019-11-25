@@ -80,11 +80,11 @@
     },
     {
       "name": "inno_ebargaint",
-      "text": "Bargaining power shock"
+      "text": "inno_ebargaint"
     },
     {
       "name": "inno_ebt",
-      "text": "inno_ebt"
+      "text": "Preference shock"
     },
     {
       "name": "inno_eCt",
@@ -96,7 +96,7 @@
     },
     {
       "name": "inno_esept",
-      "text": "Separation rate shock"
+      "text": "inno_esept"
     },
     {
       "name": "inno_zt",
@@ -143,27 +143,27 @@
     },
     {
       "name": "ebargaint",
-      "text": "Bargaining power"
+      "text": "ebargaint"
     },
     {
       "name": "ebt",
-      "text": "Discount factor"
+      "text": "Preference shock process"
     },
     {
       "name": "eCt",
-      "text": "Markup"
+      "text": "Price markup shock process"
     },
     {
       "name": "ekappat",
-      "text": "Vacancy posting costs"
+      "text": "ekappat"
     },
     {
       "name": "emoneyt",
-      "text": "Monetary policy"
+      "text": "emoneyt"
     },
     {
       "name": "esept",
-      "text": "Separation rate"
+      "text": "esept"
     },
     {
       "name": "fispol",
@@ -175,7 +175,7 @@
     },
     {
       "name": "gt",
-      "text": "Government spending"
+      "text": "gt"
     },
     {
       "name": "hflext",
@@ -211,7 +211,7 @@
     },
     {
       "name": "lambdat",
-      "text": "Marginal utility"
+      "text": "lambdat"
     },
     {
       "name": "mct",
@@ -223,11 +223,11 @@
     },
     {
       "name": "mt",
-      "text": "New matches"
+      "text": "mt"
     },
     {
       "name": "nt",
-      "text": "Employment rate"
+      "text": "nt"
     },
     {
       "name": "output",
@@ -251,7 +251,7 @@
     },
     {
       "name": "qt",
-      "text": "Job-filling rate"
+      "text": "qt"
     },
     {
       "name": "Rt",
@@ -263,11 +263,11 @@
     },
     {
       "name": "st",
-      "text": "Job-finding rate"
+      "text": "st"
     },
     {
       "name": "ut",
-      "text": "Unemployment rate"
+      "text": "ut"
     },
     {
       "name": "vflext",
@@ -275,7 +275,7 @@
     },
     {
       "name": "vt",
-      "text": "Number of job vacancies"
+      "text": "vt"
     },
     {
       "name": "wflext",
@@ -283,7 +283,7 @@
     },
     {
       "name": "wstart",
-      "text": "Employed wage"
+      "text": "wstart"
     },
     {
       "name": "wt",
@@ -307,7 +307,7 @@
     },
     {
       "name": "zt",
-      "text": "Technology"
+      "text": "Technology shock process"
     }
   ]
 }

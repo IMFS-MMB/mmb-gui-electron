@@ -79,7 +79,7 @@
     },
     {
       "name": "inno_ebt",
-      "text": "inno_ebt"
+      "text": "Preference shock"
     },
     {
       "name": "inno_zt",
@@ -110,11 +110,11 @@
     },
     {
       "name": "ebt",
-      "text": "Discount factor"
+      "text": "Preference shock process"
     },
     {
       "name": "emoneyt",
-      "text": "Monetary policy"
+      "text": "emoneyt"
     },
     {
       "name": "fispol",
@@ -126,7 +126,7 @@
     },
     {
       "name": "gt",
-      "text": "Government spending"
+      "text": "gt"
     },
     {
       "name": "ht",
@@ -150,7 +150,7 @@
     },
     {
       "name": "lambdat",
-      "text": "Marginal utility"
+      "text": "lambdat"
     },
     {
       "name": "mct",
@@ -158,11 +158,11 @@
     },
     {
       "name": "mt",
-      "text": "New matches"
+      "text": "mt"
     },
     {
       "name": "nt",
-      "text": "Employment rate"
+      "text": "nt"
     },
     {
       "name": "output",
@@ -182,7 +182,7 @@
     },
     {
       "name": "qt",
-      "text": "Job-filling rate"
+      "text": "qt"
     },
     {
       "name": "Rt",
@@ -190,19 +190,19 @@
     },
     {
       "name": "st",
-      "text": "Job-finding rate"
+      "text": "st"
     },
     {
       "name": "ut",
-      "text": "Unemployment rate"
+      "text": "ut"
     },
     {
       "name": "vt",
-      "text": "Number of job vacancies"
+      "text": "vt"
     },
     {
       "name": "wstart",
-      "text": "Employed wage"
+      "text": "wstart"
     },
     {
       "name": "wt",
@@ -218,7 +218,7 @@
     },
     {
       "name": "zt",
-      "text": "Technology"
+      "text": "Technology shock process"
     }
   ]
 }

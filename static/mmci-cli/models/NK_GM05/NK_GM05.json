@@ -48,14 +48,14 @@
     },
     {
       "name": "ystar_",
-      "text": "World output shock"
+      "text": "ystar_"
     }
   ],
   "al_info": null,
   "variables": [
     {
       "name": "a",
-      "text": "Technology"
+      "text": "Technology shock process"
     },
     {
       "name": "e",
@@ -83,7 +83,7 @@
     },
     {
       "name": "p",
-      "text": "Price level"
+      "text": "p"
     },
     {
       "name": "ph",
@@ -99,7 +99,7 @@
     },
     {
       "name": "pistar",
-      "text": "World inflation"
+      "text": "pistar"
     },
     {
       "name": "r",
@@ -107,11 +107,11 @@
     },
     {
       "name": "rnat",
-      "text": "Real interest rate"
+      "text": "rnat"
     },
     {
       "name": "s",
-      "text": "Term of trade"
+      "text": "s"
     },
     {
       "name": "x",
@@ -127,7 +127,7 @@
     },
     {
       "name": "ystar",
-      "text": "World output"
+      "text": "ystar"
     }
   ]
 }
