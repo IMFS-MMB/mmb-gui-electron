@@ -74,7 +74,7 @@
   "shocks": [
     {
       "name": "epsinno_A",
-      "text": "epsinno_A"
+      "text": "Technology shock"
     },
     {
       "name": "epsinno_B",
@@ -82,19 +82,19 @@
     },
     {
       "name": "epsinno_I",
-      "text": "epsinno_I"
+      "text": "Investment technology shock"
     },
     {
       "name": "epsinno_L",
-      "text": "epsinno_L"
+      "text": "Labor supply shock"
     },
     {
       "name": "eta_p",
-      "text": "eta_p"
+      "text": "Price markup shock"
     },
     {
       "name": "eta_w",
-      "text": "eta_w"
+      "text": "Wage markup shock"
     },
     {
       "name": "fiscal_",
@@ -109,7 +109,7 @@
   "variables": [
     {
       "name": "C",
-      "text": "C"
+      "text": "Consumption"
     },
     {
       "name": "Cf",
@@ -117,7 +117,7 @@
     },
     {
       "name": "eps_A",
-      "text": "eps_A"
+      "text": "Technology shock process"
     },
     {
       "name": "eps_B",
@@ -129,11 +129,11 @@
     },
     {
       "name": "eps_I",
-      "text": "eps_I"
+      "text": "Investment technology shock process"
     },
     {
       "name": "eps_L",
-      "text": "eps_L"
+      "text": "Labor supply shock process"
     },
     {
       "name": "epsinno_G",
@@ -145,7 +145,7 @@
     },
     {
       "name": "I",
-      "text": "I"
+      "text": "Investment"
     },
     {
       "name": "If",
@@ -165,7 +165,7 @@
     },
     {
       "name": "K",
-      "text": "K"
+      "text": "Capital"
     },
     {
       "name": "Kf",
@@ -173,7 +173,7 @@
     },
     {
       "name": "L",
-      "text": "L"
+      "text": "Labor"
     },
     {
       "name": "Lf",
@@ -209,7 +209,7 @@
     },
     {
       "name": "R",
-      "text": "R"
+      "text": "Real interest rate"
     },
     {
       "name": "Rauxil",
@@ -229,7 +229,7 @@
     },
     {
       "name": "Rk",
-      "text": "Rk"
+      "text": "Capital rent"
     },
     {
       "name": "Rkforward",
@@ -241,7 +241,7 @@
     },
     {
       "name": "w",
-      "text": "w"
+      "text": "Real wage"
     },
     {
       "name": "wf",

@@ -124,7 +124,7 @@
     },
     {
       "name": "ct",
-      "text": "ct"
+      "text": "Consumption"
     },
     {
       "name": "ctF",
@@ -188,7 +188,7 @@
     },
     {
       "name": "ht",
-      "text": "ht"
+      "text": "Labor"
     },
     {
       "name": "htF",
@@ -216,7 +216,7 @@
     },
     {
       "name": "invt",
-      "text": "invt"
+      "text": "Investment"
     },
     {
       "name": "invtF",
@@ -232,7 +232,7 @@
     },
     {
       "name": "kt",
-      "text": "kt"
+      "text": "Capital"
     },
     {
       "name": "ktF",
@@ -248,7 +248,7 @@
     },
     {
       "name": "mct",
-      "text": "mct"
+      "text": "Marginal cost"
     },
     {
       "name": "mctF",
@@ -288,7 +288,7 @@
     },
     {
       "name": "rkt",
-      "text": "rkt"
+      "text": "Capital rent"
     },
     {
       "name": "rktF",
@@ -344,7 +344,7 @@
     },
     {
       "name": "utilt",
-      "text": "utilt"
+      "text": "Capital utilization rate"
     },
     {
       "name": "utiltF",
@@ -352,7 +352,7 @@
     },
     {
       "name": "wt",
-      "text": "wt"
+      "text": "Real wage"
     },
     {
       "name": "wtF",
