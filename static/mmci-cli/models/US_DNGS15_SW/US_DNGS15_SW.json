@@ -88,11 +88,11 @@
     },
     {
       "name": "psi_laf",
-      "text": "psi_laf"
+      "text": "Price markup shock"
     },
     {
       "name": "psi_law",
-      "text": "psi_law"
+      "text": "Wage markup shock"
     },
     {
       "name": "psi_mu",
@@ -104,7 +104,7 @@
     },
     {
       "name": "psi_z",
-      "text": "psi_z"
+      "text": "Technology shock"
     }
   ],
   "al_info": null,
@@ -135,7 +135,7 @@
     },
     {
       "name": "c",
-      "text": "c"
+      "text": "Consumption"
     },
     {
       "name": "c_f",
@@ -151,7 +151,7 @@
     },
     {
       "name": "i",
-      "text": "i"
+      "text": "Investment"
     },
     {
       "name": "i_f",
@@ -179,7 +179,7 @@
     },
     {
       "name": "kbar",
-      "text": "kbar"
+      "text": "Capital"
     },
     {
       "name": "kbar_f",
@@ -187,7 +187,7 @@
     },
     {
       "name": "L",
-      "text": "L"
+      "text": "Labour"
     },
     {
       "name": "L_f",
@@ -195,15 +195,15 @@
     },
     {
       "name": "laf",
-      "text": "laf"
+      "text": "Price markup shock process"
     },
     {
       "name": "law",
-      "text": "law"
+      "text": "Wage markup shock process"
     },
     {
       "name": "mc",
-      "text": "mc"
+      "text": "Marginal costs"
     },
     {
       "name": "mu",
@@ -243,7 +243,7 @@
     },
     {
       "name": "rk",
-      "text": "rk"
+      "text": "Capital returns"
     },
     {
       "name": "rk_f",
@@ -259,7 +259,7 @@
     },
     {
       "name": "u",
-      "text": "u"
+      "text": "Capital utilization rate"
     },
     {
       "name": "u_f",
@@ -267,7 +267,7 @@
     },
     {
       "name": "w",
-      "text": "w"
+      "text": "Real wage"
     },
     {
       "name": "w_f",
@@ -287,7 +287,7 @@
     },
     {
       "name": "z",
-      "text": "z"
+      "text": "Technology shock process"
     },
     {
       "name": "ztil",

@@ -75,23 +75,23 @@
   "shocks": [
     {
       "name": "eb2",
-      "text": "eb2"
+      "text": "Risk premium shock"
     },
     {
       "name": "emu",
-      "text": "emu"
+      "text": "Investment technology shock"
     },
     {
       "name": "ep",
-      "text": "ep"
+      "text": "Price markup shock"
     },
     {
       "name": "ew",
-      "text": "ew"
+      "text": "Wage markup shock"
     },
     {
       "name": "eZ",
-      "text": "eZ"
+      "text": "Technology shock"
     },
     {
       "name": "fiscal_",
@@ -106,11 +106,11 @@
   "variables": [
     {
       "name": "b2",
-      "text": "b2"
+      "text": "Risk premium shock process"
     },
     {
       "name": "c",
-      "text": "c"
+      "text": "Consumption"
     },
     {
       "name": "c_flex",
@@ -130,7 +130,7 @@
     },
     {
       "name": "i",
-      "text": "i"
+      "text": "Investment"
     },
     {
       "name": "i_flex",
@@ -138,7 +138,7 @@
     },
     {
       "name": "inflation",
-      "text": "inflation"
+      "text": "Inflation"
     },
     {
       "name": "inflationq",
@@ -146,7 +146,7 @@
     },
     {
       "name": "interest",
-      "text": "interest"
+      "text": "Interest"
     },
     {
       "name": "k",
@@ -154,7 +154,7 @@
     },
     {
       "name": "k_bar",
-      "text": "k_bar"
+      "text": "Capital"
     },
     {
       "name": "k_bar_flex",
@@ -166,7 +166,7 @@
     },
     {
       "name": "L",
-      "text": "L"
+      "text": "Labour"
     },
     {
       "name": "L_flex",
@@ -174,27 +174,27 @@
     },
     {
       "name": "lambda_p",
-      "text": "lambda_p"
+      "text": "Price markup shock process"
     },
     {
       "name": "lambda_w",
-      "text": "lambda_w"
+      "text": "Wage markup shock process"
     },
     {
       "name": "mc",
-      "text": "mc"
+      "text": "Marginal costs"
     },
     {
       "name": "mu",
-      "text": "mu"
+      "text": "Investment technology shock process"
     },
     {
       "name": "output",
-      "text": "output"
+      "text": "Output"
     },
     {
       "name": "outputgap",
-      "text": "outputgap"
+      "text": "Output Gap"
     },
     {
       "name": "pi",
@@ -218,7 +218,7 @@
     },
     {
       "name": "r_k",
-      "text": "r_k"
+      "text": "Capital returns"
     },
     {
       "name": "r_k_flex",
@@ -226,7 +226,7 @@
     },
     {
       "name": "u",
-      "text": "u"
+      "text": "Capital utilization rate"
     },
     {
       "name": "u_flex",
@@ -234,7 +234,7 @@
     },
     {
       "name": "w",
-      "text": "w"
+      "text": "Real wage"
     },
     {
       "name": "w_flex",
@@ -250,7 +250,7 @@
     },
     {
       "name": "Z",
-      "text": "Z"
+      "text": "Technology shock process"
     }
   ]
 }

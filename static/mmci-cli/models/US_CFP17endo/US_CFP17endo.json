@@ -76,7 +76,7 @@
   "shocks": [
     {
       "name": "eps_a",
-      "text": "eps_a"
+      "text": "Technology shock process"
     },
     {
       "name": "eps_b2",
@@ -88,11 +88,11 @@
     },
     {
       "name": "eps_mk",
-      "text": "eps_mk"
+      "text": "Price markup shock"
     },
     {
       "name": "eps_mkw",
-      "text": "eps_mkw"
+      "text": "Wage markup shock"
     },
     {
       "name": "eps_mp",
@@ -115,7 +115,7 @@
   "variables": [
     {
       "name": "a",
-      "text": "a"
+      "text": "Technology shock process"
     },
     {
       "name": "ann_pin",
@@ -147,7 +147,7 @@
     },
     {
       "name": "c",
-      "text": "c"
+      "text": "Consumption"
     },
     {
       "name": "cf",
@@ -183,7 +183,7 @@
     },
     {
       "name": "i",
-      "text": "i"
+      "text": "Investment"
     },
     {
       "name": "i_growth",
@@ -211,7 +211,7 @@
     },
     {
       "name": "k",
-      "text": "k"
+      "text": "Capital"
     },
     {
       "name": "kf",
@@ -219,7 +219,7 @@
     },
     {
       "name": "L",
-      "text": "L"
+      "text": "Labour"
     },
     {
       "name": "labor_dist",
@@ -243,7 +243,7 @@
     },
     {
       "name": "mc",
-      "text": "mc"
+      "text": "Marginal costs"
     },
     {
       "name": "mf",
@@ -251,11 +251,11 @@
     },
     {
       "name": "mk",
-      "text": "mk"
+      "text": "Price markup shock process"
     },
     {
       "name": "mkw",
-      "text": "mkw"
+      "text": "Wage markup shock process"
     },
     {
       "name": "mp",
@@ -387,7 +387,7 @@
     },
     {
       "name": "rk",
-      "text": "rk"
+      "text": "Capital returns"
     },
     {
       "name": "rkf",
@@ -415,7 +415,7 @@
     },
     {
       "name": "w",
-      "text": "w"
+      "text": "Real wage"
     },
     {
       "name": "wf",

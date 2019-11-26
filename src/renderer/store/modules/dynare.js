@@ -72,7 +72,7 @@ const actions = {
       console.warn(e);
     }
   },
-  find({ commit, state }) {
+  async find({ commit, state }) {
     const options = {
       filters: [],
       title: 'Select dynare folder',
@@ -80,19 +80,23 @@ const actions = {
       message: 'Please select the root folder of the dynare installation you want to use.',
     };
 
-    dialog.showOpenDialog(options, (async (filePaths) => {
-      if (!filePaths) {
-        return;
-      }
+    const {
+      canceled,
+      filePaths,
+    } = await dialog.showOpenDialog(options);
 
-      const path = filePaths[0];
+    if (canceled) {
+      return;
+    }
 
-      commit('add', {
-        path,
-        version: await worker.getDynareVersion(path),
-      });
-      commit('select', state.dynares.indexOf(path));
-    }));
+    const path = filePaths[0];
+
+    const data = {
+      path,
+      version: await worker.getDynareVersion(path),
+    };
+    commit('add', data);
+    commit('select', state.dynares.indexOf(data));
   },
 };
 

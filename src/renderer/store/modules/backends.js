@@ -67,70 +67,73 @@ const actions = {
       commit('add', info);
     });
   },
-  find({ commit, state }) {
+  async find({ commit, state }) {
     let type;
 
-    dialog.showMessageBox({
+    const { response } = await dialog.showMessageBox({
       type: 'question',
       message: 'Do you want to add Matlab or Octave to the list of executables?',
       buttons: ['Cancel', 'Matlab', 'Octave'],
-    }, (result) => {
-      const filters = {};
-
-      switch (result) {
-        case 0:
-          return;
-        case 1:
-          type = 'matlab';
-          break;
-        case 2:
-          type = 'octave';
-
-          filters.name = process.platform === 'win32' ? 'octave-cli.exe' : 'octave';
-          break;
-        default:
-          throw new Error('invalid selection');
-      }
-
-      const options = {
-        filters,
-        properties: ['openFile', 'treatPackageAsDirectory'],
-        message: `Please select the ${type} executable`,
-      };
-
-      dialog.showOpenDialog(options, (async (filePaths) => {
-        if (!filePaths) {
-          return;
-        }
-
-        let path = filePaths[0];
-
-        if (platform() === 'darwin' && type === 'matlab' && path.endsWith('.app')) {
-          // special treatment for matlab on macOS
-          // the matlab .app "file" actually is a folder, so append the proper path
-          path += '/bin/matlab';
-        }
-
-        const info = await worker.getExecutableInfo({
-          path,
-          type,
-        });
-
-        if (!info.isExecutable) {
-          dialog.showErrorBox(
-            'Not an executable',
-            `The file you provided (${info.path}) is not an executable or you lack execution permissions. Please select an executable file.`,
-          );
-
-          return;
-        }
-
-        commit('add', info);
-
-        const index = state.executables.indexOf(info);
-        commit('select', index);
-      }));
     });
+
+    const filters = {};
+
+    switch (response) {
+      case 0:
+        return;
+      case 1:
+        type = 'matlab';
+        break;
+      case 2:
+        type = 'octave';
+
+        filters.name = process.platform === 'win32' ? 'octave-cli.exe' : 'octave';
+        break;
+      default:
+        throw new Error('invalid selection');
+    }
+
+    const options = {
+      filters,
+      properties: ['openFile', 'treatPackageAsDirectory'],
+      message: `Please select the ${type} executable`,
+    };
+
+    const {
+      canceled,
+      filePaths,
+    } = dialog.showOpenDialog(options);
+
+    if (!canceled) {
+      return;
+    }
+
+    let path = filePaths[0];
+
+    if (platform() === 'darwin' && type === 'matlab' && path.endsWith('.app')) {
+      // special treatment for matlab on macOS
+      // the matlab .app "file" actually is a folder, so append the proper path
+      path += '/bin/matlab';
+    }
+
+    const info = await worker.getExecutableInfo({
+      path,
+      type,
+    });
+
+    if (!info.isExecutable) {
+      dialog.showErrorBox(
+        'Not an executable',
+        `The file you provided (${info.path}) is not an executable or you lack execution permissions. Please select an executable file.`,
+      );
+
+      return;
+    }
+
+    commit('add', info);
+
+    const index = state.executables.indexOf(info);
+    commit('select', index);
   },
 };
 

@@ -99,14 +99,14 @@
     },
     {
       "name": "zetaz",
-      "text": "zetaz"
+      "text": "Technology shock"
     }
   ],
   "al_info": null,
   "variables": [
     {
       "name": "c",
-      "text": "c"
+      "text": "Consumption"
     },
     {
       "name": "cf",
@@ -162,7 +162,7 @@
     },
     {
       "name": "ez",
-      "text": "ez"
+      "text": "Technology shock process"
     },
     {
       "name": "fispol",
@@ -210,7 +210,7 @@
     },
     {
       "name": "kp",
-      "text": "kp"
+      "text": "Capital"
     },
     {
       "name": "kpf",
@@ -222,7 +222,7 @@
     },
     {
       "name": "labor",
-      "text": "labor"
+      "text": "Labour"
     },
     {
       "name": "laborf",
@@ -238,7 +238,7 @@
     },
     {
       "name": "mc",
-      "text": "mc"
+      "text": "Marginal costs"
     },
     {
       "name": "mrs",
@@ -254,7 +254,7 @@
     },
     {
       "name": "q",
-      "text": "q"
+      "text": "Tobin's q"
     },
     {
       "name": "qf",
@@ -270,7 +270,7 @@
     },
     {
       "name": "rk",
-      "text": "rk"
+      "text": "Capital returns"
     },
     {
       "name": "rkf",
@@ -282,7 +282,7 @@
     },
     {
       "name": "u",
-      "text": "u"
+      "text": "Capital utilization rate"
     },
     {
       "name": "uf",
@@ -290,7 +290,7 @@
     },
     {
       "name": "w",
-      "text": "w"
+      "text": "Real wage"
     },
     {
       "name": "wf",
@@ -298,7 +298,7 @@
     },
     {
       "name": "x",
-      "text": "x"
+      "text": "Investment"
     },
     {
       "name": "xf",

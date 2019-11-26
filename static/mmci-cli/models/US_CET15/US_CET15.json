@@ -175,7 +175,7 @@
     },
     {
       "name": "inflation",
-      "text": "inflation"
+      "text": "Inflation"
     },
     {
       "name": "inflationF",
@@ -199,7 +199,7 @@
     },
     {
       "name": "interest",
-      "text": "interest"
+      "text": "Interest"
     },
     {
       "name": "interestF",
@@ -275,7 +275,7 @@
     },
     {
       "name": "LR",
-      "text": "Labor"
+      "text": "Labour"
     },
     {
       "name": "muF",
@@ -307,7 +307,7 @@
     },
     {
       "name": "output",
-      "text": "output"
+      "text": "Output"
     },
     {
       "name": "outputF",
@@ -315,7 +315,7 @@
     },
     {
       "name": "outputgap",
-      "text": "outputgap"
+      "text": "Output Gap"
     },
     {
       "name": "outputgapF",
@@ -355,7 +355,7 @@
     },
     {
       "name": "pkR",
-      "text": "Capital rent"
+      "text": "Capital returns"
     },
     {
       "name": "plF",

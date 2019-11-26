@@ -3,7 +3,7 @@
              size="lg"
              centered
              @hidden="scrollToComparison"
-             :header-text-variant="error ? 'danger' : 'default' "
+             header-text-variant="default"
              :no-close-on-backdrop="inProgress"
              :no-close-on-esc="inProgress">
         <h5 slot="modal-header" class="modal-title">{{ title }}</h5>
@@ -14,11 +14,16 @@
                 <pre v-if="part !== '\n'">{{part}}</pre>
             </template>
 
+            <b-alert show variant="danger" v-if="error" style="margin-top: 1rem">
+                <h4 class="alert-heading">{{error.message}}</h4>
 
-            <div v-if="error">
-                <h4>{{error.identifier}}</h4>
-                <p>{{error.message}}</p>
-            </div>
+                <template v-for="frame in error.stack">
+                    <hr>
+                    <p class="mb-0">
+                        {{frame.file.split(/[/\\]/).reverse()[0]}}, function '{{frame.name}}', line {{frame.line}}
+                    </p>
+                </template>
+            </b-alert>
         </div>
 
         <button slot="modal-footer" class="btn btn-primary" :disabled="inProgress" @click="close">

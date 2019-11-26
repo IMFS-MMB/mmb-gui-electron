@@ -80,11 +80,11 @@
     },
     {
       "name": "eua",
-      "text": "eua"
+      "text": "Technology shock"
     },
     {
       "name": "eub",
-      "text": "eub"
+      "text": "Preference shock"
     },
     {
       "name": "eum",
@@ -96,11 +96,11 @@
     },
     {
       "name": "euw",
-      "text": "euw"
+      "text": "Wage markup shock"
     },
     {
       "name": "eup",
-      "text": "eup"
+      "text": "Price markup shock"
     },
     {
       "name": "interest_",
@@ -127,7 +127,7 @@
     },
     {
       "name": "i",
-      "text": "i"
+      "text": "Investment"
     },
     {
       "name": "k",
@@ -135,11 +135,11 @@
     },
     {
       "name": "l",
-      "text": "l"
+      "text": "Labour"
     },
     {
       "name": "v",
-      "text": "v"
+      "text": "Capital utilization rate"
     },
     {
       "name": "y",
@@ -151,7 +151,7 @@
     },
     {
       "name": "c",
-      "text": "c"
+      "text": "Consumption"
     },
     {
       "name": "q",
@@ -159,11 +159,11 @@
     },
     {
       "name": "rk",
-      "text": "rk"
+      "text": "Capital returns"
     },
     {
       "name": "w",
-      "text": "w"
+      "text": "Real wage"
     },
     {
       "name": "pi",
@@ -191,7 +191,7 @@
     },
     {
       "name": "r",
-      "text": "r"
+      "text": "Real interest rate"
     },
     {
       "name": "z",
@@ -199,11 +199,11 @@
     },
     {
       "name": "mc",
-      "text": "mc"
+      "text": "Marginal costs"
     },
     {
       "name": "kbar",
-      "text": "kbar"
+      "text": "Capital"
     },
     {
       "name": "lambda",
@@ -287,11 +287,11 @@
     },
     {
       "name": "ua",
-      "text": "ua"
+      "text": "Technology shock process"
     },
     {
       "name": "ub",
-      "text": "ub"
+      "text": "Preference shock process"
     },
     {
       "name": "um",
@@ -303,11 +303,11 @@
     },
     {
       "name": "uw",
-      "text": "uw"
+      "text": "Wage markup shock process"
     },
     {
       "name": "up",
-      "text": "up"
+      "text": "Price markup shock process"
     },
     {
       "name": "csf",

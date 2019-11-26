@@ -100,7 +100,7 @@
   "variables": [
     {
       "name": "c_t",
-      "text": "c_t"
+      "text": "Consumption"
     },
     {
       "name": "c_tlead",
@@ -140,7 +140,7 @@
     },
     {
       "name": "h_t",
-      "text": "h_t"
+      "text": "Labour"
     },
     {
       "name": "hf_t",
@@ -148,7 +148,7 @@
     },
     {
       "name": "i_t",
-      "text": "i_t"
+      "text": "Investment"
     },
     {
       "name": "i_tlead",
@@ -184,7 +184,7 @@
     },
     {
       "name": "kbar_t1",
-      "text": "kbar_t1"
+      "text": "Capital"
     },
     {
       "name": "kbarf_t1",
@@ -304,7 +304,7 @@
     },
     {
       "name": "u_t",
-      "text": "u_t"
+      "text": "Capital utilization rate"
     },
     {
       "name": "u_tlead",

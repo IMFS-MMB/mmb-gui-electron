@@ -84,7 +84,7 @@
     },
     {
       "name": "lambddaps",
-      "text": "lambddaps"
+      "text": "Price markup shock"
     },
     {
       "name": "pits",
@@ -92,7 +92,7 @@
     },
     {
       "name": "zs",
-      "text": "zs"
+      "text": "Technology shock"
     }
   ],
   "al_info": null,
@@ -119,7 +119,7 @@
     },
     {
       "name": "lambddap",
-      "text": "lambddap"
+      "text": "Price markup shock process"
     },
     {
       "name": "lambddastar",
@@ -151,7 +151,7 @@
     },
     {
       "name": "w",
-      "text": "w"
+      "text": "Real wage"
     },
     {
       "name": "wstar",
@@ -167,7 +167,7 @@
     },
     {
       "name": "z",
-      "text": "z"
+      "text": "Technology shock process"
     }
   ]
 }

@@ -44,7 +44,7 @@
     },
     {
       "name": "u_a",
-      "text": "u_a"
+      "text": "Technology shock"
     },
     {
       "name": "u_b",
@@ -52,7 +52,7 @@
     },
     {
       "name": "u_e",
-      "text": "u_e"
+      "text": "Preference shock"
     },
     {
       "name": "u_x",
@@ -63,7 +63,7 @@
   "variables": [
     {
       "name": "a",
-      "text": "a"
+      "text": "Technology shock process"
     },
     {
       "name": "b",
@@ -71,7 +71,7 @@
     },
     {
       "name": "c",
-      "text": "c"
+      "text": "Consumption"
     },
     {
       "name": "c_f",
@@ -83,7 +83,7 @@
     },
     {
       "name": "e",
-      "text": "e"
+      "text": "Preference shock process"
     },
     {
       "name": "f",
@@ -95,7 +95,7 @@
     },
     {
       "name": "h",
-      "text": "h"
+      "text": "Labour"
     },
     {
       "name": "h_f",
@@ -103,7 +103,7 @@
     },
     {
       "name": "i",
-      "text": "i"
+      "text": "Investment"
     },
     {
       "name": "i_f",
@@ -123,7 +123,7 @@
     },
     {
       "name": "k",
-      "text": "k"
+      "text": "Capital"
     },
     {
       "name": "k_f",
@@ -139,7 +139,7 @@
     },
     {
       "name": "m",
-      "text": "m"
+      "text": "Money balances"
     },
     {
       "name": "m_f",
@@ -171,7 +171,7 @@
     },
     {
       "name": "q",
-      "text": "q"
+      "text": "Capital returns"
     },
     {
       "name": "q_f",
@@ -191,7 +191,7 @@
     },
     {
       "name": "w",
-      "text": "w"
+      "text": "Real wage"
     },
     {
       "name": "w_f",
