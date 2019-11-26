@@ -86,7 +86,7 @@
     },
     {
       "name": "epsinno_L",
-      "text": "Labor supply shock"
+      "text": "Labour supply shock"
     },
     {
       "name": "eta_p",
@@ -133,7 +133,7 @@
     },
     {
       "name": "eps_L",
-      "text": "Labor supply shock process"
+      "text": "Labour supply shock process"
     },
     {
       "name": "epsinno_G",
@@ -173,7 +173,7 @@
     },
     {
       "name": "L",
-      "text": "Labor"
+      "text": "Labour"
     },
     {
       "name": "Lf",

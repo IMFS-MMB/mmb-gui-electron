@@ -337,7 +337,7 @@
     },
     {
       "name": "mchat",
-      "text": "Marginal cost"
+      "text": "Marginal costs"
     },
     {
       "name": "N_t",
@@ -481,7 +481,7 @@
     },
     {
       "name": "yhat",
-      "text": "Output"
+      "text": "yhat"
     },
     {
       "name": "z_t",

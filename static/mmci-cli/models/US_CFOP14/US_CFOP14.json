@@ -77,7 +77,7 @@
   "shocks": [
     {
       "name": "bs",
-      "text": "General preference shock"
+      "text": "Preference shock"
     },
     {
       "name": "efps",
@@ -132,7 +132,7 @@
     },
     {
       "name": "b",
-      "text": "General preference shock process"
+      "text": "Preference shock process"
     },
     {
       "name": "c",
@@ -204,7 +204,7 @@
     },
     {
       "name": "L",
-      "text": "Labor"
+      "text": "Labour"
     },
     {
       "name": "lambda",
