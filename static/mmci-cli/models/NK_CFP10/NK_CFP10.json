@@ -94,11 +94,11 @@
   "variables": [
     {
       "name": "a",
-      "text": "Technology"
+      "text": "Technology shock process"
     },
     {
       "name": "d",
-      "text": "Dividends"
+      "text": "d"
     },
     {
       "name": "df",
@@ -106,7 +106,7 @@
     },
     {
       "name": "e",
-      "text": "Entrepreneur's equity"
+      "text": "e"
     },
     {
       "name": "ef",
@@ -114,7 +114,7 @@
     },
     {
       "name": "eps_pi",
-      "text": "Markup shock process"
+      "text": "Price markup shock process"
     },
     {
       "name": "inflation",
@@ -138,7 +138,7 @@
     },
     {
       "name": "n",
-      "text": "Net worth"
+      "text": "Net worth shock process"
     },
     {
       "name": "output",
@@ -150,7 +150,7 @@
     },
     {
       "name": "phi",
-      "text": "Credit distortion"
+      "text": "phi"
     },
     {
       "name": "phif",
@@ -162,7 +162,7 @@
     },
     {
       "name": "q",
-      "text": "Price of capital"
+      "text": "q"
     },
     {
       "name": "qf",
@@ -206,7 +206,7 @@
     },
     {
       "name": "yeff",
-      "text": "Effective output"
+      "text": "yeff"
     },
     {
       "name": "yf",

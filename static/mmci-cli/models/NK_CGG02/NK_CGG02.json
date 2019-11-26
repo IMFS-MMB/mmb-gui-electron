@@ -79,7 +79,7 @@
     },
     {
       "name": "astar_",
-      "text": "Foreign technology shock "
+      "text": "astar_"
     },
     {
       "name": "inf_",
@@ -99,18 +99,18 @@
     },
     {
       "name": "ystar_",
-      "text": "Foreign output shock"
+      "text": "ystar_"
     }
   ],
   "al_info": null,
   "variables": [
     {
       "name": "a",
-      "text": "Technology"
+      "text": "Technology shock process"
     },
     {
       "name": "astar",
-      "text": "Foreign technology"
+      "text": "astar"
     },
     {
       "name": "infl",
@@ -126,7 +126,7 @@
     },
     {
       "name": "infstar",
-      "text": "Foreign inflation"
+      "text": "infstar"
     },
     {
       "name": "interest",
@@ -146,7 +146,7 @@
     },
     {
       "name": "rr",
-      "text": "Real interest rate"
+      "text": "rr"
     },
     {
       "name": "rrstar",
@@ -158,11 +158,11 @@
     },
     {
       "name": "u",
-      "text": "Cost push"
+      "text": "Price markup shock process"
     },
     {
       "name": "ustar",
-      "text": "Foreign cost push"
+      "text": "ustar"
     },
     {
       "name": "y",

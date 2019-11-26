@@ -89,11 +89,11 @@
   "variables": [
     {
       "name": "A_e",
-      "text": "Technology"
+      "text": "Technology shock process"
     },
     {
       "name": "B",
-      "text": "Loans"
+      "text": "B"
     },
     {
       "name": "b_ee",
@@ -133,11 +133,11 @@
     },
     {
       "name": "D",
-      "text": "Deposits"
+      "text": "D"
     },
     {
       "name": "d_p",
-      "text": "Bank deposits"
+      "text": "d_p"
     },
     {
       "name": "d_pf",
@@ -169,7 +169,7 @@
     },
     {
       "name": "J_B",
-      "text": "Bank's profit"
+      "text": "J_B"
     },
     {
       "name": "J_Bf",
@@ -189,7 +189,7 @@
     },
     {
       "name": "K_b",
-      "text": "Bank fund"
+      "text": "K_b"
     },
     {
       "name": "K_bf",
@@ -197,7 +197,7 @@
     },
     {
       "name": "k_e",
-      "text": "Entrepreneurs's capital"
+      "text": "k_e"
     },
     {
       "name": "k_ef",
@@ -225,7 +225,7 @@
     },
     {
       "name": "lam_e",
-      "text": "Entrepreneur marginal utility"
+      "text": "lam_e"
     },
     {
       "name": "lam_ef",
@@ -233,7 +233,7 @@
     },
     {
       "name": "lam_p",
-      "text": "Household marginal utility"
+      "text": "lam_p"
     },
     {
       "name": "lam_pf",
@@ -241,7 +241,7 @@
     },
     {
       "name": "lev",
-      "text": "Bank leverage"
+      "text": "lev"
     },
     {
       "name": "levf",
@@ -257,7 +257,7 @@
     },
     {
       "name": "mk_y",
-      "text": "Markup"
+      "text": "mk_y"
     },
     {
       "name": "output",
@@ -269,11 +269,11 @@
     },
     {
       "name": "pie",
-      "text": "inflation"
+      "text": "pie"
     },
     {
       "name": "q_k",
-      "text": "Price of capital"
+      "text": "q_k"
     },
     {
       "name": "q_kf",
@@ -285,7 +285,7 @@
     },
     {
       "name": "R_b",
-      "text": "Wholesale loan rate"
+      "text": "R_b"
     },
     {
       "name": "r_bf",
@@ -329,7 +329,7 @@
     },
     {
       "name": "spread",
-      "text": "Loan spread"
+      "text": "spread"
     },
     {
       "name": "spreadf",
@@ -345,7 +345,7 @@
     },
     {
       "name": "x",
-      "text": "Price markup"
+      "text": "x"
     },
     {
       "name": "xf",

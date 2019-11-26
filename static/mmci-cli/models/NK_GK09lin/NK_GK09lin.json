@@ -44,7 +44,7 @@
     },
     {
       "name": "e_epsilon",
-      "text": "Quality of capital shock"
+      "text": "e_epsilon"
     },
     {
       "name": "e_n",
@@ -59,7 +59,7 @@
   "variables": [
     {
       "name": "a",
-      "text": "Technology"
+      "text": "Technology shock process"
     },
     {
       "name": "af",
@@ -75,11 +75,11 @@
     },
     {
       "name": "d",
-      "text": "Price dispersion"
+      "text": "d"
     },
     {
       "name": "delta",
-      "text": "Depreciation rate"
+      "text": "delta"
     },
     {
       "name": "deltaf",
@@ -87,7 +87,7 @@
     },
     {
       "name": "efp",
-      "text": "Risk premium"
+      "text": "efp"
     },
     {
       "name": "efpf",
@@ -95,7 +95,7 @@
     },
     {
       "name": "epsilon",
-      "text": "Quality of capital"
+      "text": "epsilon"
     },
     {
       "name": "epsilonf",
@@ -103,7 +103,7 @@
     },
     {
       "name": "erk",
-      "text": "Intermediary asset return"
+      "text": "erk"
     },
     {
       "name": "erkf",
@@ -135,7 +135,7 @@
     },
     {
       "name": "in",
-      "text": "Net investment"
+      "text": "in"
     },
     {
       "name": "inf1",
@@ -167,11 +167,11 @@
     },
     {
       "name": "lambda",
-      "text": "Stochastic discount"
+      "text": "lambda"
     },
     {
       "name": "lambdaf",
-      "text": "lambdaf "
+      "text": "lambdaf"
     },
     {
       "name": "lf",
@@ -183,11 +183,11 @@
     },
     {
       "name": "n",
-      "text": "Net worth"
+      "text": "n"
     },
     {
       "name": "ne",
-      "text": "Existing banks'net worth"
+      "text": "ne"
     },
     {
       "name": "nef",
@@ -199,7 +199,7 @@
     },
     {
       "name": "nn",
-      "text": "New banks'net worth"
+      "text": "nn"
     },
     {
       "name": "nnf",
@@ -255,7 +255,7 @@
     },
     {
       "name": "psi",
-      "text": "Intensity of credit policy"
+      "text": "psi"
     },
     {
       "name": "psif",
@@ -263,7 +263,7 @@
     },
     {
       "name": "q",
-      "text": "Price of capital"
+      "text": "q"
     },
     {
       "name": "qf",
@@ -295,7 +295,7 @@
     },
     {
       "name": "uc",
-      "text": "Marginal utility"
+      "text": "uc"
     },
     {
       "name": "ucf",
@@ -307,7 +307,7 @@
     },
     {
       "name": "x",
-      "text": "Gross growth rate of asset"
+      "text": "x"
     },
     {
       "name": "xf",
@@ -323,7 +323,7 @@
     },
     {
       "name": "ym",
-      "text": "Retail output"
+      "text": "ym"
     },
     {
       "name": "z",

@@ -74,7 +74,7 @@
   "shocks": [
     {
       "name": "eps_a1",
-      "text": "a1"
+      "text": "eps_a1"
     },
     {
       "name": "eps_a2",
@@ -97,15 +97,15 @@
     },
     {
       "name": "a2",
-      "text": "Technology"
+      "text": "Technology shock proces"
     },
     {
       "name": "a3",
-      "text": "Technology (no trend)"
+      "text": "a3"
     },
     {
       "name": "b",
-      "text": "Bond"
+      "text": "b"
     },
     {
       "name": "c",
@@ -125,7 +125,7 @@
     },
     {
       "name": "h",
-      "text": "Money stock"
+      "text": "Money balances"
     },
     {
       "name": "inflation",
@@ -145,19 +145,19 @@
     },
     {
       "name": "m",
-      "text": "Banking labor demand"
+      "text": "m"
     },
     {
       "name": "mc",
-      "text": "Marginal cost"
+      "text": "Marginal costs"
     },
     {
       "name": "n",
-      "text": "Producer labor demanded"
+      "text": "n"
     },
     {
       "name": "omega",
-      "text": "Marginal value of collateral"
+      "text": "omega"
     },
     {
       "name": "output",
@@ -173,15 +173,15 @@
     },
     {
       "name": "q",
-      "text": "Price of capital"
+      "text": "q"
     },
     {
       "name": "rB",
-      "text": "Bond rate"
+      "text": "rB"
     },
     {
       "name": "rIB",
-      "text": "Interbank rate"
+      "text": "rIB"
     },
     {
       "name": "rL",

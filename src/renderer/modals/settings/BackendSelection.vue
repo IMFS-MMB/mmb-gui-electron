@@ -37,6 +37,9 @@
             <p>
                 Scan for executables automatically. Depending on your system this can take up to several minutes.
             </p>
+            <p>
+              <strong>Your installation may not be detected if it's in an uncommon location.</strong>
+            </p>
             <p v-if="isWindows">You might see flashing MATLAB windows in the process. Please don't close them manually.</p>
         </b-popover>
 

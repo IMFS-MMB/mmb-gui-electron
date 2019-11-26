@@ -44,11 +44,11 @@
     },
     {
       "name": "e_Gamma",
-      "text": "Bond policy shock"
+      "text": "e_Gamma"
     },
     {
       "name": "e_ksi",
-      "text": "Capital quality shock"
+      "text": "e_ksi"
     },
     {
       "name": "e_Ne",
@@ -56,7 +56,7 @@
     },
     {
       "name": "e_psi",
-      "text": "Credit policy shock"
+      "text": "e_psi"
     },
     {
       "name": "fiscal_",
@@ -71,7 +71,7 @@
   "variables": [
     {
       "name": "a",
-      "text": "Technology"
+      "text": "Technology shock process"
     },
     {
       "name": "af",
@@ -103,11 +103,11 @@
     },
     {
       "name": "D",
-      "text": "Price dispersion"
+      "text": "D"
     },
     {
       "name": "Dep",
-      "text": "Deposit"
+      "text": "Dep"
     },
     {
       "name": "Depf",
@@ -131,7 +131,7 @@
     },
     {
       "name": "G",
-      "text": "Government spending"
+      "text": "G"
     },
     {
       "name": "Gamma",
@@ -223,7 +223,7 @@
     },
     {
       "name": "Keff",
-      "text": "Effective capital"
+      "text": "Keff"
     },
     {
       "name": "Kefff",
@@ -251,7 +251,7 @@
     },
     {
       "name": "L",
-      "text": "labor"
+      "text": "Labour"
     },
     {
       "name": "Lambda",
@@ -283,7 +283,7 @@
     },
     {
       "name": "N",
-      "text": "Net worth"
+      "text": "N"
     },
     {
       "name": "Nbook",
@@ -355,7 +355,7 @@
     },
     {
       "name": "Pm",
-      "text": "Price of intermediate good"
+      "text": "Pm"
     },
     {
       "name": "prem_B",
@@ -535,7 +535,7 @@
     },
     {
       "name": "varrho",
-      "text": "Marginal utility"
+      "text": "varrho"
     },
     {
       "name": "varrhof",
@@ -543,11 +543,11 @@
     },
     {
       "name": "w",
-      "text": "Real wage"
+      "text": "w"
     },
     {
       "name": "Welf",
-      "text": "Welfare"
+      "text": "Welf"
     },
     {
       "name": "Welff",
@@ -563,7 +563,7 @@
     },
     {
       "name": "X",
-      "text": "Markup"
+      "text": "X"
     },
     {
       "name": "xf",

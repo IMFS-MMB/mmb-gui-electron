@@ -90,11 +90,11 @@
   "variables": [
     {
       "name": "aH",
-      "text": "Technology"
+      "text": "Technology shock process"
     },
     {
       "name": "c_eH",
-      "text": "Entrepreneurial consumption"
+      "text": "c_eH"
     },
     {
       "name": "cH",
@@ -106,7 +106,7 @@
     },
     {
       "name": "e_g",
-      "text": "Demand shock process"
+      "text": "e_g"
     },
     {
       "name": "e_piH",
@@ -118,7 +118,7 @@
     },
     {
       "name": "gH",
-      "text": "Government spending"
+      "text": "gH"
     },
     {
       "name": "hH",
@@ -186,7 +186,7 @@
     },
     {
       "name": "qH",
-      "text": "Price of capital"
+      "text": "qH"
     },
     {
       "name": "qHf",

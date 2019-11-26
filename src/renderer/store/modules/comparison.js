@@ -56,8 +56,8 @@ const normalizeIRFData = memoize((data, shocks, variables, models) => {
   const resulttype = 'IRF';
   const result = [];
 
-  const allShocks = getAllShocks(shocks, models).filter(uniqueBy(s => s.text));
-  const allVariables = getAllVariables(variables, models).filter(uniqueBy(v => v.text));
+  const allShocks = getAllShocks(shocks, models);
+  const allVariables = getAllVariables(variables, models);
 
   models.forEach((model) => {
     data
@@ -89,7 +89,7 @@ const normalizeACData = memoize((data, variables, models) => {
   const resulttype = 'AC';
   const result = [];
 
-  const allVariables = getAllVariables(variables, models).filter(uniqueBy(v => v.text));
+  const allVariables = getAllVariables(variables, models);
 
   models.forEach((model) => {
     data
