@@ -19,6 +19,10 @@ export const backends = {
       path: `${homedir()}/MATLAB/**/bin/matlab`,
     },
     {
+      type: 'matlab',
+      path: '/usr/local/bin/matlab',
+    },
+    {
       type: 'octave',
       path: '/usr/bin/octave',
     },
