@@ -1,5 +1,4 @@
 import memoize from 'memoize-one';
-import pick from 'lodash.pick';
 import deepClone from 'lodash.clonedeep';
 import captureBackendException from './compare/electron/capture-backend-exception';
 import normalizeError from './compare/electron/normalize-error';
@@ -46,10 +45,6 @@ function getAllVariables(variables, models) {
       ...models.map(m => m.variables.find(modelVariable => modelVariable.text === variable.text)),
     ], [])
     .filter(s => !!s);
-}
-
-function uniqueBy(selector) {
-  return (v, i, a) => a.findIndex(b => selector(b) === selector(v)) === i;
 }
 
 const normalizeIRFData = memoize((data, shocks, variables, models) => {
@@ -271,9 +266,14 @@ const getters = {
 
     const result = [];
 
-    getAllVariables(state.options.variables, state.options.models).forEach((v) => {
+    const allVariables = getAllVariables(state.options.variables, state.options.models)
+      .filter((v, i, a) => i === a.findIndex(_v => v.name === _v.name && v.text === _v.text));
+
+    allVariables.forEach((v) => {
       state.data.forEach((d) => {
         const variance = d.data.VAR[v.name];
+
+        if (typeof variance === 'undefined') return;
 
         result.push({
           resulttype: 'VAR',
@@ -287,7 +287,7 @@ const getters = {
     });
 
     result
-      .filter(uniqueBy('text'))
+    // .filter(uniqueBy('text'))
       .sort((a, b) => a.rule.localeCompare(b.rule))
       .sort((a, b) => a.model.localeCompare(b.model));
 
@@ -351,19 +351,36 @@ const getters = {
       ...getACSections(getters.normalizedACdata.filter(d => d.resulttype === 'AC'), state.colsPerRow, state.order),
     ];
   },
-  varTable(state) {
+  varTable(state, getters) {
     if (!state.options.plotVariance) {
       return null;
     }
 
-    return state.data.map((d) => {
-      const vars = pick(d.data.VAR, state.options.variables.map(v => v.name));
+    const data = getters.normalizedVARdata;
 
-      return {
-        title: getSeriesId(d.model, d.rule),
-        data: vars,
-      };
-    });
+    const header = [...groupBy(data, data => data.variable).keys()]
+      .sort((a, b) => a.localeCompare(b));
+
+    const rows = [];
+
+    groupBy(data, data => getSeriesId(data.model, data.rule))
+      .forEach(((data, title) => {
+        const values = data
+          .sort((a, b) => a.variable.localeCompare(b.variable))
+          .map(d => d.values[0]);
+
+        rows.push({
+          title,
+          values,
+        });
+      }));
+
+    header.sort((a, b) => a.localeCompare(b));
+
+    return {
+      header,
+      rows,
+    };
   },
   order(state) {
     return state.order;

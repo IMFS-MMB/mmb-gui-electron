@@ -5,22 +5,13 @@
                 <thead>
                 <tr>
                     <th>Variances (all quarterly)</th>
-                    <th>Inflation</th>
-                    <th>Interest Rate</th>
-                    <th>Output</th>
-                    <th>Output Gap</th>
+                    <th v-for="header of varTable.header">{{header}}</th>
                 </tr>
                 </thead>
                 <tbody>
-                <tr v-for="variance of varTable">
-                    <th>{{variance.title}}</th>
-                    <template v-if="variance.data">
-                        <td>{{variance.data.inflation}}</td>
-                        <td>{{variance.data.interest}}</td>
-                        <td>{{variance.data.output}}</td>
-                        <td>{{variance.data.outputgap}}</td>
-                    </template>
-                    <td v-else colspan="4"><i>Unconditional variances are unavailable for this model</i></td>
+                <tr v-for="row of varTable.rows">
+                    <th>{{row.title}}</th>
+                    <td v-for="val of row.values">{{val}}</td>
                 </tr>
                 </tbody>
             </table>
