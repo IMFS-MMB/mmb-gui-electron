@@ -34,7 +34,7 @@
             <ChartRow :class="{'mt-5': index2 > 0 }" v-for="(chartrow, index2) in section.rows" :key="`${index1}-${index2}`" :charts="chartrow"/>
         </template>
 
-        <Variances v-if="varTable && varTable.length" :varTable="varTable"/>
+        <Variances v-if="varTable" :varTable="varTable"/>
     </b-container>
 </template>
 
