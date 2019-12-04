@@ -15,7 +15,7 @@
     <div id="app"></div>
 
     <script>
-      window.__buildtime = "<%= process.env.NODE_ENV !== 'development' ? new Date(Date.now()).toLocaleString('en') : 'Development build' %>";
+      window.__buildtime = "<%= process.env.NODE_ENV !== 'development' ? new Date(Date.now()).toLocaleString('en', { timeZone: 'UTC' }) + ' UTC' : 'Development build' %>";
     </script>
 
     <!-- Set `__static` path to static files in production -->
