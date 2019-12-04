@@ -6,7 +6,6 @@
   import * as HighCharts from 'highcharts';
 
   export const charts = new Set();
-  export const colors = new Map();
 
   let nextId = 0;
 

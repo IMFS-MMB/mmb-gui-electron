@@ -47,22 +47,34 @@ function getAllVariables(variables, models) {
     .filter(s => !!s);
 }
 
+function uniqueByText(item, index, arr) {
+  return index === arr.findIndex(item1 => item1.text === item.text);
+}
+
+function findModelVariableByText(model, text) {
+  return model.variables.find(variable => variable.text === text);
+}
+
+function findModelShockByText(model, text) {
+  return model.shocks.find(shock => shock.text === text);
+}
+
 const normalizeIRFData = memoize((data, shocks, variables, models) => {
   const resulttype = 'IRF';
   const result = [];
 
-  const allShocks = getAllShocks(shocks, models);
-  const allVariables = getAllVariables(variables, models);
+  const allShocks = getAllShocks(shocks, models).filter(uniqueByText);
+  const allVariables = getAllVariables(variables, models).filter(uniqueByText);
 
   models.forEach((model) => {
     data
       .filter(d => d.model === model.name)
       .forEach((d) => {
         allShocks
-          .filter(shock => !!d.data[resulttype][shock.name])
+          .map(shock => findModelShockByText(model, shock.text))
           .forEach((shock) => {
             allVariables
-              .filter(variable => !!d.data[resulttype][shock.name][variable.name])
+              .map(variable => findModelVariableByText(model, variable.text))
               .forEach((variable) => {
                 result.push({
                   resulttype,
@@ -91,7 +103,7 @@ const normalizeACData = memoize((data, variables, models) => {
       .filter(d => d.model === model.name)
       .forEach((d) => {
         allVariables
-          .filter(variable => !!d.data[resulttype][variable.name])
+          .map(variable => findModelVariableByText(model, variable.text))
           .forEach((variable) => {
             result.push({
               resulttype,
@@ -104,6 +116,41 @@ const normalizeACData = memoize((data, variables, models) => {
           });
       });
   });
+
+  return result;
+});
+
+const normalizeVARData = memoize((data, variables, models) => {
+  const result = [];
+
+  const allVariables = getAllVariables(variables, models).filter(uniqueByText);
+
+  models.forEach((model) => {
+    data
+      .filter(d => d.model === model.name)
+      .forEach((d) => {
+        allVariables
+          .map(variable => findModelVariableByText(model, variable.text))
+          .forEach((v) => {
+            const variance = d.data.VAR[v.name];
+
+            if (typeof variance === 'undefined') return;
+
+            result.push({
+              resulttype: 'VAR',
+              rule: d.rule,
+              model: d.model,
+              shock: null,
+              variable: v.text,
+              values: [variance],
+            });
+          });
+      });
+  });
+
+  result
+    .sort((a, b) => a.rule.localeCompare(b.rule))
+    .sort((a, b) => a.model.localeCompare(b.model));
 
   return result;
 });
@@ -264,34 +311,15 @@ const getters = {
       return [];
     }
 
-    const result = [];
+    const {
+      data,
+      options: {
+        models,
+        variables,
+      },
+    } = state;
 
-    const allVariables = getAllVariables(state.options.variables, state.options.models)
-      .filter((v, i, a) => i === a.findIndex(_v => v.name === _v.name && v.text === _v.text));
-
-    allVariables.forEach((v) => {
-      state.data.forEach((d) => {
-        const variance = d.data.VAR[v.name];
-
-        if (typeof variance === 'undefined') return;
-
-        result.push({
-          resulttype: 'VAR',
-          rule: d.rule,
-          model: d.model,
-          shock: null,
-          variable: v.text,
-          values: [variance],
-        });
-      });
-    });
-
-    result
-    // .filter(uniqueBy('text'))
-      .sort((a, b) => a.rule.localeCompare(b.rule))
-      .sort((a, b) => a.model.localeCompare(b.model));
-
-    return result;
+    return normalizeVARData(data, variables, models);
   },
   normalizedData(state, getters) {
     return [
