@@ -13,6 +13,11 @@
   </head>
   <body>
     <div id="app"></div>
+
+    <script>
+      window.__buildtime = "<%= process.env.NODE_ENV !== 'development' ? new Date(Date.now()).toLocaleString('en') : 'Development build' %>";
+    </script>
+
     <!-- Set `__static` path to static files in production -->
     <% if (!process.browser) { %>
       <script>

@@ -1,5 +1,5 @@
 <template>
-    <b-container fluid class="app-wrapper">
+    <b-container fluid class="app-wrapper pb-1">
         <OcpHeader/>
 
         <b-container fluid class="mt-2">
@@ -74,6 +74,12 @@
             <UserSpecifiedRuleModal/>
             <MatlabOutputModal/>
         </template>
+
+        <b-row>
+            <b-col class="text-right">
+                <small>Build time: {{buildtime}}</small>
+            </b-col>
+        </b-row>
     </b-container>
 </template>
 
@@ -111,6 +117,12 @@
       Comparison,
       HelpModal,
       ...platformComponents,
+    },
+    data() {
+      return {
+        // eslint-disable-next-line no-underscore-dangle
+        buildtime: window.__buildtime,
+      };
     },
     computed: {
       ...mapGetters('backends', ['executables']),
