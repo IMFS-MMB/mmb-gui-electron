@@ -1,5 +1,5 @@
 function result = load_models (models, modelspath)
-  result = arrayfun(@(x) load_model(x{1}, modelspath), models);
+  result = arrayfun(@(x) load_model(x{1}, modelspath), models, 'UniformOutput', false);
 end
 
 function result = load_model (model, modelspath)
