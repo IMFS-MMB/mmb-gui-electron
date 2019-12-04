@@ -31,7 +31,8 @@ function mmb (jsonconfig)
     models = load_models(config.models, paths.models);
     rules = load_rules(config.rules, paths.rules);
 
-    for model = models
+    for i = 1:length(models)
+      model = models{i};
       run_model_with_rules(model, rules, config, paths);
     end
   catch e
