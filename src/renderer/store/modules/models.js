@@ -89,6 +89,7 @@ const actions = {
       commit('setModels', models);
       commit('setErrors', errors);
       commit('options/setDefaultStates', models, { root: true });
+      commit('options/clearModels', null, { root: true });
 
       errors.forEach((err) => {
         window.vue.$bvToast.toast(`There was an error loading model ${err.model}:\n${err.message}`, {
