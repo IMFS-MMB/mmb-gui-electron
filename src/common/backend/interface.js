@@ -1,5 +1,7 @@
 import { platform } from 'os';
 import semver from 'semver';
+import { readFileSync } from 'fs';
+import { resolve } from 'path';
 import execute from './execute';
 import { isProduction } from '../../config/constants';
 
@@ -104,11 +106,18 @@ export class Matlab extends Base {
   }
 
   async getVersion() {
-    // matlab prints a header to stdout. remove it by just getting everything after the last \n
-    const headerAndVersion = await super.getVersion();
-    const split = headerAndVersion.split('\n');
+    try {
+      const versionFile = readFileSync(resolve(this.path, '..', '..', 'VersionInfo.xml'), { encoding: 'utf8' });
+      const [, version] = versionFile.match(/<version>(.*)<\/version>/);
 
-    return split[split.length - 1];
+      if (version) {
+        return version;
+      }
+    } catch (e) {
+      // noop
+    }
+
+    return super.getVersion();
   }
 }
 
