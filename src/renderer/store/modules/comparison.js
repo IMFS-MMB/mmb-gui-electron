@@ -72,9 +72,11 @@ const normalizeIRFData = memoize((data, shocks, variables, models) => {
       .forEach((d) => {
         allShocks
           .map(shock => findModelShockByText(model, shock.text))
+          .filter(shock => !!shock)
           .forEach((shock) => {
             allVariables
               .map(variable => findModelVariableByText(model, variable.text))
+              .filter(variable => !!variable)
               .forEach((variable) => {
                 result.push({
                   resulttype,
