@@ -2,12 +2,6 @@
   "$schema": "model",
   "name": "GPM6_IMF13",
   "capabilities": {
-    "fiscal_shock": false,
-    "inflation": true,
-    "interest": true,
-    "mp_shock": true,
-    "output": true,
-    "outputgap": true,
     "rules": [
       3,
       4,

@@ -91,13 +91,7 @@
     "capabilities": {
       "type": "object",
       "required": [
-        "unconditional_variances",
-        "interest",
-        "inflation",
-        "outputgap",
-        "output",
-        "mp_shock",
-        "fiscal_shock"
+        "unconditional_variances"
       ],
       "properties": {
         "unconditional_variances": {

@@ -2,12 +2,6 @@
   "$schema": "model",
   "name": "US_MI07",
   "capabilities": {
-    "fiscal_shock": false,
-    "inflation": true,
-    "interest": true,
-    "mp_shock": true,
-    "output": false,
-    "outputgap": true,
     "rules": [
       3,
       4,

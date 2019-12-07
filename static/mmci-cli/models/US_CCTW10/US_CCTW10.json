@@ -2,12 +2,6 @@
   "$schema": "model",
   "name": "US_CCTW10",
   "capabilities": {
-    "fiscal_shock": true,
-    "inflation": true,
-    "interest": true,
-    "mp_shock": true,
-    "output": true,
-    "outputgap": true,
     "rules": [
       3,
       4,
