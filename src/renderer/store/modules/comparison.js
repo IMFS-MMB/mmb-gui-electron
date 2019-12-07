@@ -106,6 +106,7 @@ const normalizeACData = memoize((data, variables, models) => {
       .forEach((d) => {
         allVariables
           .map(variable => findModelVariableByText(model, variable.text))
+          .filter(variable => !!variable)
           .forEach((variable) => {
             result.push({
               resulttype,
@@ -132,9 +133,10 @@ const normalizeVARData = memoize((data, variables, models) => {
       .filter(d => d.model === model.name)
       .forEach((d) => {
         allVariables
-          .map(variable => findModelVariableByText(model, variable.text))
-          .forEach((v) => {
-            const variance = d.data.VAR[v.name];
+          .forEach((variable) => {
+            const modelVariable = findModelVariableByText(model, variable.text);
+
+            const variance = modelVariable ? d.data.VAR[modelVariable.name] : '';
 
             if (typeof variance === 'undefined') return;
 
@@ -143,7 +145,7 @@ const normalizeVARData = memoize((data, variables, models) => {
               rule: d.rule,
               model: d.model,
               shock: null,
-              variable: v.text,
+              variable: variable.text,
               values: [variance],
             });
           });
