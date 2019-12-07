@@ -12,9 +12,7 @@ export async function getExecutableInfo(exe) {
     ver: 'unknown version',
   };
 
-  result.isExecutable = await isExecutable(exe.path);
-
-  if (result.isExecutable) {
+  if (await isExecutable(exe.path)) {
     try {
       const backend = create({
         ...exe,
@@ -22,8 +20,9 @@ export async function getExecutableInfo(exe) {
       });
 
       result.ver = await backend.getVersion();
+      result.isExecutable = !!result.ver;
     } catch (e) {
-      result.ver = 'unknown version';
+      result.isExecutable = false;
     }
   }
 

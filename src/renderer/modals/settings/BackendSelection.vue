@@ -98,7 +98,7 @@
 
     created() {
       if (!this.executables.length) {
-        this.scan();
+        this.startScan();
       }
     },
   };
