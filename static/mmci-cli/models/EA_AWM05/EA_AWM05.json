@@ -3,13 +3,13 @@
   "name": "EA_AWM05",
   "capabilities": {
     "rules": [
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      11
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW08",
+      "CMR"
     ],
     "unconditional_variances": true
   },

@@ -3,14 +3,14 @@
   "name": "US_OR03",
   "capabilities": {
     "rules": [
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      10,
-      11
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW08",
+      "Coenen",
+      "CMR"
     ],
     "unconditional_variances": true
   },

@@ -3,13 +3,13 @@
   "name": "EA_DKR11",
   "capabilities": {
     "rules": [
-      4,
-      5,
-      6,
-      8,
-      9,
-      10,
-      11
+      "GR",
+      "LWW",
+      "SW",
+      "OW08",
+      "OW13",
+      "Coenen",
+      "CMR"
     ],
     "unconditional_variances": true
   },

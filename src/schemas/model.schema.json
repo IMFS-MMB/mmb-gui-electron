@@ -90,6 +90,7 @@
     },
     "capabilities": {
       "type": "object",
+      "additionalProperties": false,
       "required": [
         "unconditional_variances"
       ],
@@ -97,23 +98,8 @@
         "unconditional_variances": {
           "$ref": "common#/definitions/bool"
         },
-        "interest": {
-          "$ref": "common#/definitions/bool"
-        },
-        "inflation": {
-          "$ref": "common#/definitions/bool"
-        },
-        "outputgap": {
-          "$ref": "common#/definitions/bool"
-        },
-        "output": {
-          "$ref": "common#/definitions/bool"
-        },
-        "mp_shock": {
-          "$ref": "common#/definitions/bool"
-        },
-        "fiscal_shock": {
-          "$ref": "common#/definitions/bool"
+        "rules": {
+          "$ref": "common#/definitions/arrayOfStrings"
         }
       }
     },

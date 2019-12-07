@@ -3,15 +3,15 @@
   "name": "CA_ToTEM10",
   "capabilities": {
     "rules": [
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW08",
+      "OW13",
+      "Coenen",
+      "CMR"
     ],
     "unconditional_variances": true
   },
@@ -29,7 +29,7 @@
       "Rennison, Andrew"
     ]
   },
-    "msr": [
+  "msr": [
     "0.8",
     "0",
     "0",

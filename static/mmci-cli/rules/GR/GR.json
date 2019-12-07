@@ -1,6 +1,5 @@
 {
   "$schema": "rule",
-  "id": 4,
   "name": "GR",
   "coefficients": [
     "0.87^3",

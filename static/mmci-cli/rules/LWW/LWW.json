@@ -1,6 +1,5 @@
 {
   "$schema": "rule",
-  "id": 5,
   "name": "LWW",
   "coefficients": [
     "0.755226",

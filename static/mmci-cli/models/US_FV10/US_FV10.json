@@ -1,14 +1,14 @@
-  {
+{
   "$schema": "model",
   "name": "US_FV10",
   "capabilities": {
     "rules": [
-      4,
-      5,
-      6,
-      8,
-      9,
-      11
+      "GR",
+      "LWW",
+      "SW",
+      "OW08",
+      "OW13",
+      "CMR"
     ],
     "unconditional_variances": true
   },

@@ -1,6 +1,5 @@
 {
   "$schema": "rule",
-  "id": 10,
   "name": "Coenen",
   "coefficients": [
     "0.7",

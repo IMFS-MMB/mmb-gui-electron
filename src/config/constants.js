@@ -3,8 +3,8 @@ export const sentry = {
   dsnWeb: 'https://69d6aff76a234100a714aa1507b79985@sentry.macromodelbase.com/3',
 };
 
-export const USER_RULE = 1;
-export const MODEL_RULE = 2;
+export const USER_RULE = 'User';
+export const MODEL_RULE = 'Model';
 
 export const isWeb = !!process.env.IS_WEB;
 export const isElectron = !isWeb;

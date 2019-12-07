@@ -3,10 +3,10 @@
   "name": "US_IR15",
   "capabilities": {
     "rules": [
-      3,
-      5,
-      6,
-      8
+      "Taylor",
+      "LWW",
+      "SW",
+      "OW08"
     ],
     "unconditional_variances": true
   },

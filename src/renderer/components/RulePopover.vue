@@ -1,5 +1,5 @@
 <template>
-    <b-popover :target="'cb-rule-' + rule.id"
+    <b-popover :target="'cb-rule-' + rule.name"
                :delay="{ show: 500, hide: 0 }"
                placement="left"
                :triggers="popoverTriggers"

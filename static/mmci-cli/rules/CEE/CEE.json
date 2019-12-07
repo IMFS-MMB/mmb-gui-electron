@@ -1,6 +1,5 @@
 {
   "$schema": "rule",
-  "id": 7,
   "name": "CEE",
   "coefficients": [
     "0.8",

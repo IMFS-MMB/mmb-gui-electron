@@ -3,12 +3,12 @@
   "name": "NK_BGG99AL",
   "capabilities": {
     "rules": [
-      3,
-      4,
-      5,
-      6,
-      7,
-      11
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "CMR"
     ],
     "unconditional_variances": true
   },

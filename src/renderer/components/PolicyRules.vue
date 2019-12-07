@@ -9,16 +9,16 @@
         <div class="ctrl-set-body">
             <b-form-checkbox-group class="ctrl-set-listing" stacked v-model="selection">
                 <template v-if="rules.length">
-                    <b-form-checkbox v-if="$isElectron" class="cb-user-rule" :key="1" :value="{ id: 1 }" :disabled="isRuleDisabled(1)">
+                    <b-form-checkbox v-if="$isElectron" class="cb-user-rule" :key="'cb-rule-' + USER_RULE" :value="{ name: USER_RULE }" :disabled="isRuleDisabled(USER_RULE)">
                         User specified rule
                         <a href="javascript:void(0)" v-b-modal.userSpecifiedRuleModal>(edit)</a>
                     </b-form-checkbox>
-                    <b-form-checkbox :key="2" :value="{ id: 2 }" :disabled="isRuleDisabled(2)">
+                    <b-form-checkbox :key="'cb-rule-' + MODEL_RULE" :value="{ name: MODEL_RULE }" :disabled="isRuleDisabled(MODEL_RULE)">
                         <span class="rule-caption">Model specific rule</span>
                     </b-form-checkbox>
                     <template v-for="(rule, index) in rules">
-                        <div :id="'cb-rule-' + rule.id" :key="'cb-rule-' + rule.name">
-                            <b-form-checkbox ref="cb" :value="rule" :disabled="isRuleDisabled(rule.id)">
+                        <div :id="'cb-rule-' + rule.name" :key="'cb-rule-' + rule.name">
+                            <b-form-checkbox ref="cb" :value="rule" :disabled="isRuleDisabled(rule.name)">
                                 {{ rule && rule.description && rule.description.ac_ref }}
                             </b-form-checkbox>
                         </div>
@@ -42,10 +42,17 @@
 <script>
   import { mapMutations, mapGetters } from 'vuex';
   import RulePopover from './RulePopover';
+  import { MODEL_RULE, USER_RULE } from '../../config/constants';
 
   export default {
     components: {
       RulePopover,
+    },
+    data() {
+      return {
+        USER_RULE,
+        MODEL_RULE,
+      };
     },
     computed: {
       ...mapGetters('rules', ['rules']),

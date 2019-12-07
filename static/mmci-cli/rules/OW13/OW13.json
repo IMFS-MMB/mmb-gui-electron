@@ -1,6 +1,5 @@
 {
   "$schema": "rule",
-  "id": 9,
   "name": "OW13",
   "coefficients": [
     "1",

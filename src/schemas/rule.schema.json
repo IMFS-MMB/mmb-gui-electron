@@ -3,7 +3,6 @@
   "$id": "rule",
   "type": "object",
   "required": [
-    "id",
     "name",
     "description",
     "coefficients"
@@ -12,9 +11,6 @@
   "properties": {
     "$schema": {
       "type": "string"
-    },
-    "id": {
-      "type": "integer"
     },
     "name": {
       "type": "string"

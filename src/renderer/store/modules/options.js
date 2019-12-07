@@ -135,13 +135,13 @@ const getters = {
       const { policyRules } = getters;
 
       const hasUnsupportedRules = policyRules.some((rule) => {
-        switch (rule.id) {
-          case 1:
+        switch (rule.name) {
+          case USER_RULE:
             return false;
-          case 2:
+          case MODEL_RULE:
             return !model.msr;
           default:
-            return !model.capabilities.rules.includes(rule.id);
+            return !model.capabilities.rules.includes(rule.name);
         }
       });
 
@@ -150,14 +150,14 @@ const getters = {
   },
 
   isRuleDisabled(state, getters) {
-    return (id) => {
-      switch (id) {
+    return (name) => {
+      switch (name) {
         case USER_RULE:
           return false;
         case MODEL_RULE:
           return getters.models.some(m => !m.msr);
         default:
-          return getters.models.some(m => !m.capabilities.rules.includes(id));
+          return getters.models.some(m => !m.capabilities.rules.includes(name));
       }
     };
   },

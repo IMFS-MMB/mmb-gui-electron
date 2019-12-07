@@ -3,10 +3,10 @@
   "name": "NK_DEFK17",
   "capabilities": {
     "rules": [
-      3,
-      8,
-      9,
-      11
+      "Taylor",
+      "OW08",
+      "OW13",
+      "CMR"
     ],
     "unconditional_variances": true
   },

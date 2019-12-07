@@ -3,11 +3,11 @@
   "name": "NK_MM10",
   "capabilities": {
     "rules": [
-      4,
-      6,
-      9,
-      10,
-      11
+      "GR",
+      "SW",
+      "OW13",
+      "Coenen",
+      "CMR"
     ],
     "unconditional_variances": true
   },

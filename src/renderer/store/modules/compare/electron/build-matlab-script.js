@@ -1,11 +1,11 @@
 import { MODEL_RULE, USER_RULE } from '../../../../../config/constants';
 
 function useMSR(rules) {
-  return rules.some(r => r.id === MODEL_RULE);
+  return rules.some(r => r.name === MODEL_RULE);
 }
 
 function useUSR(rules) {
-  return rules.some(r => r.id === USER_RULE);
+  return rules.some(r => r.name === USER_RULE);
 }
 
 export default function buildMatlabScript({
@@ -27,7 +27,7 @@ export default function buildMatlabScript({
 
   const config = {
     dynare: dynare.path,
-    rules: rules.filter(r => r.id !== USER_RULE && r.id !== MODEL_RULE)
+    rules: rules.filter(r => r.name !== USER_RULE && r.name !== MODEL_RULE)
       .map(r => r.name),
     models: models.map(m => m.name),
     msr: useMSR(rules),

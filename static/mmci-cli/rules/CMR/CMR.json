@@ -1,6 +1,5 @@
 {
   "$schema": "rule",
-  "id": 11,
   "name": "CMR",
   "coefficients": [
     "0.850296450300000",
