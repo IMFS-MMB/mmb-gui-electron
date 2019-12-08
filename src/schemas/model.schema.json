@@ -40,24 +40,30 @@
       "type": "string"
     },
     "name": {
+      "description": "Name appearing in the GUI. Should be in AA_EXAMPLE form for consistency",
       "type": "string"
     },
     "al": {
+      "description": "Set to true if this is an adaptive learning model",
       "$ref": "common#/definitions/bool"
     },
     "al_info": {
+      "description": "A list of states the model provides",
       "anyOf": [
         {
           "type": "object",
           "additionalProperties": false,
           "properties": {
             "forwards": {
+              "description": "List of state names",
               "$ref": "common#/definitions/arrayOfStrings"
             },
             "states_long": {
+              "description": "List of state names",
               "$ref": "common#/definitions/arrayOfStrings"
             },
             "states_short": {
+              "description": "List of state names",
               "$ref": "common#/definitions/arrayOfStrings"
             }
           }
@@ -67,6 +73,7 @@
       ]
     },
     "variabledim": {
+      "description": "Choose 2 if the model is written in percent/100 terms",
       "enum": [
         1,
         2
@@ -83,9 +90,11 @@
       ]
     },
     "shocks": {
+      "description": "A list of available shocks",
       "$ref": "common#/definitions/arrayOfNamesHumanReadableNames"
     },
     "variables": {
+      "description": "A list of available variables",
       "$ref": "common#/definitions/arrayOfNamesHumanReadableNames"
     },
     "capabilities": {
@@ -94,11 +103,14 @@
       "required": [
         "unconditional_variances"
       ],
+      "description": "Determines (un)available features",
       "properties": {
         "unconditional_variances": {
+          "description": "Set to true of the model provides unconditional variances (currently without effect)",
           "$ref": "common#/definitions/bool"
         },
         "rules": {
+          "description": "Names of supported common policy rules. Use name from corresponding rule's .json file",
           "$ref": "common#/definitions/arrayOfStrings"
         }
       }

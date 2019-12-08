@@ -13,6 +13,7 @@
       "type": "string"
     },
     "name": {
+      "description": "Name of the rule. Displayed in the GUI and used to specify rule compatibility in models' .json files",
       "type": "string"
     },
     "coefficients": {

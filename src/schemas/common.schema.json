@@ -32,14 +32,17 @@
       "additionalProperties": false,
       "properties": {
         "name": {
+          "description": "Internal name used by the model",
           "type": "string"
         },
         "text": {
+          "description": "Human readable name displayed in the GUI",
           "type": "string"
         }
       }
     },
     "arrayOfCoefficients": {
+      "description": "A list of 33 coefficients. These can be numbers or a Matlab syntax expression with a numeric result (like \"3 * 0.05\")",
       "type": "array",
       "items": {
         "type": [
@@ -51,6 +54,7 @@
       "maxItems": 33
     },
     "description": {
+      "description": "Descriptive metadata",
       "type": "object",
       "required": [
         "ac_ref",
@@ -67,30 +71,37 @@
           "type": "string"
         },
         "paper_title": {
+          "description": "Paper title",
           "type": "string"
         },
         "journal": {
+          "description": "Name of journal",
           "type": [
             "string",
             "null"
           ]
         },
         "replicants_name": {
+          "description": "Name of replicant(s)",
           "type": [
             "string",
             "null"
           ]
         },
         "pub_date": {
+          "description": "Date of publication",
           "type": "string"
         },
         "keywords": {
+          "description": "List of keywords (currenctly without effect)",
           "type": "array"
         },
         "description": {
+          "description": "Short description shown in the GUI",
           "type": "string"
         },
         "authors": {
+          "description": "List of authors",
           "$ref": "#/definitions/arrayOfStrings"
         }
       }
