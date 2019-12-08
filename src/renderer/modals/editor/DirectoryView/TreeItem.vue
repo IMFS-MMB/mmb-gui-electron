@@ -6,14 +6,7 @@
                 {{ item.name }}
             </span>
 
-
-
-            <!--              <span v-if="isFolder">-->
-            <!--                <i v-if="isOpen" class="fa fa-chevron-down"></i>-->
-            <!--                <i v-else class="fa fa-chevron-right"></i>-->
-            <!--            </span>-->
-
-            <div >
+            <div>
                 <div class="tree-item-path" v-for="n in depth"
                      :class="{ open: isOpen, closed: !isOpen, last: last }"
                      :style="{ left: `calc(-1.5em + ${n - 1} * (-1em + 1px))` }">
@@ -92,11 +85,6 @@
         cursor: pointer;
         white-space: nowrap;
     }
-
-/*    .tree-item-active-icon {
-        position: absolute;
-        left: -24px;
-    }*/
 
     .tree-item-path {
         height: 100%;

@@ -9,69 +9,27 @@ import getTestScript from './utils/matlab-code';
 
 import { schemasFolder } from '../src/config/paths';
 import ajv from '../src/worker/util/ajv';
-// const ajv = loadAjvWithSchemas(schemasFolder);
+import { makeModelScaffoldJson } from '../src/renderer/utils/createModelScaffold';
 
-async function runSimulation(backend, models = [], rules = [], output = [], shocks = []) {
-  const code = getTestScript(models, rules, output, shocks);
-
-  let out = '';
-
-  try {
-    await backend.runCode(
-      code,
-      // eslint-disable-next-line no-return-assign
-      o => out += o.toString(),
-      // eslint-disable-next-line no-return-assign
-      o => out += o.toString(),
-    );
-  } catch (e) {
-    console.warn(out);
-    throw e;
-  }
-}
-
-const tests = [
-  {
-    caption: 'runs with model-specific rule',
-    condition: model => model.capabilities.model_specific_rule,
-    run: async (model, backend) => runSimulation(backend, [model.id], [MODEL_RULE], [], []),
-  },
-  {
-    caption: 'runs with fiscal shock',
-    condition: model => model.capabilities.fiscal_shock,
-    run: async (model, backend) => runSimulation(backend, [model.id], [MODEL_RULE], [], []),
-  },
-  {
-    caption: 'runs with monetary policy shock',
-    condition: model => model.capabilities.mp_shock,
-    run: async (model, backend) => runSimulation(backend, [model.id], [MODEL_RULE], [], []),
-  },
-];
-
-function modelTests(model, backend) {
-  if (!backend) {
-    return;
-  }
-
-  tests.forEach((test) => {
-    if (test.condition(model)) {
-      it(test.caption, () => test.run(model, backend));
-    }
-  });
+function assertCorrectModelJson(json) {
+  assert.equal(ajv.validate('model', json), true, ajv.errorsText(ajv.errors));
 }
 
 describe('Models', () => {
-  const octave = getBackend('octave');
-  const matlab = getBackend('matlab');
-
   models.forEach((model) => {
     describe(`${model.name}`, () => {
       it('.json passes validation', () => {
-        assert.equal(ajv.validate('model', model), true, ajv.errorsText(ajv.errors));
+        assertCorrectModelJson(model);
       });
-
-      describe('Octave', () => modelTests(model, octave));
-      describe('Matlab', () => modelTests(model, matlab));
     });
   });
 });
+
+describe('Model scaffold', () => {
+  const json = makeModelScaffoldJson('XX_TEST');
+
+  it('.json passes validation', () => {
+    const model = JSON.parse(json);
+    assertCorrectModelJson(model);
+  })
+})

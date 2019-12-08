@@ -9,9 +9,25 @@
              ok-only>
 
         <template slot="modal-header">
-            <span class="font-weight-bold" v-if="file">Current file: {{relativeFilePath}}</span><span v-else>Select a file to edit</span>
+            <b-modal id="modal-newmodel"
+                     title="New model"
+                     @ok="createScaffold(newname)"
+                     :ok-disabled="!newNameIsValid">
+                <b-form-input v-model="newname" placeholder="Enter model name"></b-form-input>
+            </b-modal>
+            <b-button variant="outline-primary" v-b-tooltip="'Add a model'" v-b-modal.modal-newmodel>
+                <i class="fa fa-plus-square-o"></i>
+            </b-button>
+            <b-button variant="outline-primary"
+                      v-b-tooltip="'Show current file in Explorer'"
+                      v-if="file"
+                      @click="showInExlorer(file.path)">
+                <i class="fa fa-folder-open-o"></i>
+            </b-button>
             <span class="flex-grow-1"></span>
-            <b-button variant="primary" :disabled="!file" @click="saveFile">Save</b-button>
+            <span v-if="file" style="user-select: none;">{{relativeFilePath}}</span><span v-else style="user-select: none;">Select a file to edit</span>
+            <span class="flex-grow-1"></span>
+            <b-button variant="outline-primary" v-if="file" @click="saveFile">Save</b-button>
         </template>
 
         <div class="content-wrapper d-flex flex-row align-items-stretch">
@@ -30,11 +46,15 @@
     </b-modal>
 </template>
 <script>
+  // eslint-disable-next-line import/no-extraneous-dependencies
+  import { remote } from 'electron';
   import { mapGetters } from 'vuex';
   import { writeFile, readFileSync } from 'fs-extra';
   import path from 'path';
   import MonacoEditor from './MonacoEditor';
   import DirectoryView from './DirectoryView/DirectoryView';
+  import { writeModelScaffold } from '../../utils/createModelScaffold';
+
 
   export default {
     components: {
@@ -43,6 +63,7 @@
     },
     data() {
       return {
+        newname: 'AA_EXAMPLE',
         code: '',
         file: null,
         monacoOptions: {
@@ -73,8 +94,22 @@
           }
         }
       },
+      newNameIsValid() {
+        return !!this.models && this.models.every(model => model.name !== this.newname);
+      },
     },
     methods: {
+      async createScaffold() {
+        try {
+          // console.log(this.modelsFolder, this.newname);
+          writeModelScaffold(this.modelsFolder, this.newname);
+        } catch (e) {
+          throw e;
+        }
+      },
+      showInExlorer(path) {
+        remote.shell.showItemInFolder(path);
+      },
       loadFile(file) {
         this.file = file;
         this.code = readFileSync(file.path, { encoding: 'utf8' });
