@@ -31,6 +31,8 @@
 
             <hr class="mt-4">
 
+            <OctaveALWarning/>
+
             <b-row class="mt-4 justify-content-center">
                 <div class="col-4">
                     <div id="compare-button">
@@ -99,6 +101,7 @@
   import { mapActions, mapGetters } from 'vuex';
   import { isElectron } from '../../config/constants';
   import Variables from './Variables';
+  import OctaveALWarning from './OctaveALWarning';
 
   const platformComponents = isElectron ? {
     SettingsModal,
@@ -108,6 +111,7 @@
 
   export default {
     components: {
+      OctaveALWarning,
       Variables,
       OcpHeader,
       Models,
