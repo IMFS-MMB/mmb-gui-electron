@@ -84,7 +84,7 @@
           const [, testoutput] = output.split('---OUTPUT-START---');
 
           if (testoutput) {
-            if (testoutput.includes('4 out of 4 successful')) {
+            if (testoutput.includes('6 out of 6 successful')) {
               // eslint-disable-next-line no-alert
               alert('All tests passed. Your current selection of Dynare and MATLAB/Octave seems to be compatible.');
             } else {
