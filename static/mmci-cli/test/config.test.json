@@ -1,5 +1,5 @@
 {
-  "dynare": "/usr/lib/dynare",
+  "dynare": "/Applications/Dynare/4.5.7",
   "rules": [
     "Taylor"
   ],
