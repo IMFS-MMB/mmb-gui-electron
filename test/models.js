@@ -20,7 +20,7 @@ function assertCorrectModelJson(json) {
 const tests = [
   {
     title: `Doesn't use 'cd' to get current path`,
-    pattern: /=\scd\s*;?\s*$/m,
+    pattern: /=\scd\s*;/,
     message: `Do not use 'cd' to get the current path. Use 'pwd' which works consistently across Matlab and Octave`
   }
 ];
