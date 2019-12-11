@@ -1,5 +1,5 @@
 {
-  "dynare": "/Applications/Dynare/4.5.7",
+  "dynare": "/usr/lib/dynare",
   "rules": [],
   "models": [
     "US_YR13AL"

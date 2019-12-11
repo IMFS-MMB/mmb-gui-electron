@@ -8,7 +8,7 @@
 
 // Model: NK_GK13, created by Peter Karadi
 
-// Model replication coded by:  S�ren Karau (Soerenkarau@web.de)
+// Model replication coded by:  Sören Karau (Soerenkarau@web.de)
 //                              Arne Vogler (Arne.Vogler@web.de)
 
 // Last edited: March 2016
