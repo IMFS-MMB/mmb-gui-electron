@@ -32,6 +32,7 @@
             <hr class="mt-4">
 
             <OctaveALWarning/>
+            <MissingVariableWarning/>
 
             <b-row class="mt-4 justify-content-center">
                 <div class="col-4">
@@ -102,6 +103,7 @@
   import { isElectron } from '../../config/constants';
   import Variables from './Variables';
   import OctaveALWarning from './OctaveALWarning';
+  import MissingVariableWarning from './MissingVariableWarning';
 
   const platformComponents = isElectron ? {
     SettingsModal,
@@ -111,6 +113,7 @@
 
   export default {
     components: {
+      MissingVariableWarning,
       OctaveALWarning,
       Variables,
       OcpHeader,
