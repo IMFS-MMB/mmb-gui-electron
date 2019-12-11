@@ -98,7 +98,7 @@ const normalizeACData = memoize((data, variables, models) => {
   const resulttype = 'AC';
   const result = [];
 
-  const allVariables = getAllVariables(variables, models);
+  const allVariables = getAllVariables(variables, models).filter(uniqueByText);
 
   models.forEach((model) => {
     data
