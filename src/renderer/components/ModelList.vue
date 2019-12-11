@@ -10,7 +10,7 @@
         </div>
 
         <b-form-checkbox-group class="ctrl-set-listing" stacked v-model="selection">
-            <div class="spinner-box" v-if="!models.length">
+            <div class="spinner-box" v-if="!models.length && !isSearching">
                 <b-spinner variant="primary" type="grow" label="Spinning"></b-spinner>
             </div>
             <template v-for="model in models">
@@ -44,6 +44,10 @@
         modelSelection: 'models',
         isModelDisabled: 'isModelDisabled',
       }),
+      ...mapGetters('search', ['text']),
+      isSearching() {
+        return !!this.text;
+      },
       selection: {
         get() {
           return this.modelSelection;
