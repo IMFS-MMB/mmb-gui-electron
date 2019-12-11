@@ -176,7 +176,7 @@ function [base]=stoch_simul_MMB(base)
       options_.irf = base.horizon; % horizon for ACFs
 
       if AL       % HAVE TO REMEMBER MAKE R_sim IN DECLARATION ORDER!
-        n_sims = 200;
+        n_sims = 25;
         len_sim = 500;
         R_sim = zeros(nvar,len_sim,n_sims);
         Covar = zeros(nvar,nvar,n_sims);

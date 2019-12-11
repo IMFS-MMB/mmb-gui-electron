@@ -2,7 +2,7 @@
     <b-row>
         <b-col>
             <b-alert class="m-0" variant="warning" :show="showWarning">
-                <b>Warning:</b> calculating AC functions and/or variances will take about 10 minutes per model/policy rule combination
+                <b>Warning:</b> the sample size for calculating AC functions and variances is small due to speed considerations. Estimates will be of inferior precision.
             </b-alert>
         </b-col>
     </b-row>
