@@ -35,7 +35,6 @@ function modFileTests(model) {
   tests.forEach(test => {
     it(test.title, () => {
       const result = !!mod.match(test.pattern);
-      debugger;
       assert.isFalse(result, test.message);
     });
   });
