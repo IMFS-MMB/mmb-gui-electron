@@ -30,5 +30,5 @@ function test(config, configAl)
   % irfinflation10 = 0.680700015500000;
   successful = successful + expect('[AL] Input response functions', -0.6807, round_to(resultsAL.data.IRF.interest_.inflation(10), 4));
 
-  disp(sprintf('%d out of 6 successful', successful));
+  disp(sprintf('%d out of 4 successful', successful));
 end
