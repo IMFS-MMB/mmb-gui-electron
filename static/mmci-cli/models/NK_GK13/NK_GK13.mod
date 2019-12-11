@@ -8,7 +8,7 @@
 
 // Model: NK_GK13, created by Peter Karadi
 
-// Model replication coded by:  Sören Karau (Soerenkarau@web.de)
+// Model replication coded by:  SÃ¶ren Karau (Soerenkarau@web.de)
 //                              Arne Vogler (Arne.Vogler@web.de)
 
 // Last edited: March 2016
@@ -251,7 +251,7 @@ parameters
 //	Specification	of	Modelbase	Parameters                           //*
                                                                          //*
 //	Load	Modelbase	Monetary	Policy	Parameters                   //*
-thispath	=	cd;                                                      //*
+thispath	=	pwd;                                                      //*
 cd('..');                                                                //*
 load	policy_param.mat;                                                //*
 for	i=1:33                                                               //*
