@@ -121,13 +121,18 @@ export class Matlab extends Base {
   }
 }
 
+export const InterfaceType = {
+  Matlab: 'matlab',
+  Octave: 'octave',
+};
+
 export function create(options) {
   const { type, ...options1 } = options;
 
   switch (type) {
-    case 'matlab':
+    case InterfaceType.Matlab:
       return new Matlab(options1);
-    case 'octave':
+    case InterfaceType.Octave:
       return new Octave(options1);
     default:
       throw new Error(`Unknown type: ${type}`);
