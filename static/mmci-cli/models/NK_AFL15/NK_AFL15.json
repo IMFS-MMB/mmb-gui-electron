@@ -26,7 +26,7 @@
     "replicants_name": "Original code provided (Sören Karau and Philipp Lieberknecht edited)",
     "pub_date": "2015",
     "keywords": [],
-    "description": "",
+    "description": "NOTE: Solving this model requires the MATLAB Optimization Toolbox.",
     "category": "Calibrated model",
     "authors": [
       "Angeloni, Ignazio",

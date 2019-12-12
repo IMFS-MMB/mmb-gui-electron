@@ -28,7 +28,7 @@
     "replicants_name": "M. Kuete",
     "pub_date": "2014",
     "keywords": [],
-    "description": "Version without financial frictions",
+    "description": "Version without financial frictions. NOTE: Solving this models requires the Statistics Toolbox for MATLAB or the statistics and io package for Octave.",
     "category": "Estimated US model",
     "authors": [
       "Christiano, Lawrence J.",
