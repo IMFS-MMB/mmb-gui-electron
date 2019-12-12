@@ -12,7 +12,7 @@
 // Model replication coded by: Philipp Lieberknecht,
 //                             e_mail: philipp.lieberknecht@gmail.com
 // based on original author code, for info see below
-// Last edited: 10/01/2019
+// Last updated 12/12/2019 by Lazar Milivojevic
 
 /*
  * Aino 2.0 model
@@ -22,13 +22,17 @@
  * Kilponen, Orjasniemi, Ripatti and Verona, "The Aino 2.0 model",
  * Bank of Finland Research Discussion Paper No. 16 / 2016
 
+ * First version:  20 May 2016 
+ * Second version: 23 August 2019 (correct typos in Tobin's Q equation (equation A.2 in Appendix A) 
+ *                                 and in the net wholesale loan rate (equation A.5 in Appendix A))  
+ * This version:   19 November 2019 (correct typos in Wage Phillips curve equation (equation A.17 in Appendix A) 
+
  * The file "all_parameters_February2016.mat" contains the results of the Bayesian estimation of the model, which are needed to run the simulation
  * The code produces the impulse response functions following a temporary capital productivity shock (the blue line in figure 6 in the paper)
  * To obtain the impulse response functions following other shocks, just uncomment the respective line in the "shocks" block in the Dynare code
 
  * This file was originally written by Antti Ripatti
  * and has been updated by Juha Kilponen and Fabio Verona
- * It should work with Dynare 4.3.3 and Matlab 2012b and 2015b
  * Please cite the source if you use the code.
 
  * If you spot mistakes, please email us at
@@ -299,16 +303,16 @@ rFI-rEUR = -phia*astar + zetaEUR;
 %  Capital accumulation equation
 k =((1-delta)/ssMU)*(k(-1)-mu)+(1-(1-delta)/ssMU)*(iH);
 
-%  Wage setting
-# calcoef=(1-xiW)*(1-bet*xiW)/(xiW*(1+bet)*(1-(sigmaL*(1-ssHG)*(lambdaW/(1+lambdaW)))));
+
+%   Wage setting (FOC, Household labour supply); typo corrected in November 2019                 
+# calcoef=(1-xiW)*(1-bet*xiW)/(xiW*(1+bet)*(1-(sigmaL*(1-ssHG)*(lambdaW/(1-lambdaW)))));    
 
 wF-pC=(1/(1+bet))*(wF(-1)-pC(-1))
-      -(1/(1+bet))*(pC-pC(-1)+pieY-pieY(-1))+(bet/(1+bet))*(pC(+1)-pC+pieY(+1)-pieY)
-      -(1/(1+bet))*(pC-pC(-1))+(bet/(1+bet))*(pC(+1)-pC)
-      +(bet/(1+bet))*(wF(+1)-pC(+1))
-      +calcoef*(sigmaL*((1-ssHG)*hF+ssHG*hG)-psi+lamW)
-      -calcoef*wF
-      +calcoef*pC;
+     -(1/(1+bet))*(pC-pC(-1)+pieY-pieY(-1))+(bet/(1+bet))*(pC(+1)-pC+pieY(+1)-pieY)
+     +(bet/(1+bet))*(wF(+1)-pC(+1))
+     +calcoef*(sigmaL*((1-ssHG)*hF+ssHG*hG)-psi+lamW)
+     -calcoef*wF
+     +calcoef*pC;
 
 rwage = wF-pC;
 
@@ -584,16 +588,17 @@ rFIf-rEUR = -phia*astarf + zetaEUR;
 %  Capital accumulation equation
 kf =((1-delta)/ssMU)*(kf(-1)-mu)+(1-(1-delta)/ssMU)*(iHf);
 
-%  Wage setting
+%  Wage setting, typo corrected in November 2019 
+
 wFf-pCf=(1/(1+bet))*(wFf(-1)-pCf(-1))
-      -(1/(1+bet))*(pCf-pCf(-1)+pieYf-pieYf(-1))+(bet/(1+bet))*(pCf(+1)-pCf+pieYf(+1)-pieYf)
-      -(1/(1+bet))*(pCf-pCf(-1))+(bet/(1+bet))*(pCf(+1)-pCf)
-      +(bet/(1+bet))*(wFf(+1)-pCf(+1))
-      +calcoef*(sigmaL*((1-ssHG)*hFf+ssHG*hG)-psif+lamW)
-      -calcoef*wFf
-      +calcoef*pCf;
+     -(1/(1+bet))*(pCf-pCf(-1)+pieYf-pieYf(-1))+(bet/(1+bet))*(pCf(+1)-pCf+pieYf(+1)-pieYf)
+     +(bet/(1+bet))*(wFf(+1)-pCf(+1))
+     +calcoef*(sigmaL*((1-ssHG)*hFf+ssHG*hG)-psif+lamW)
+     -calcoef*wFf
+     +calcoef*pCf;
 
 rwagef = wFf-pCf;
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Domestic intermediate goods producer %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
