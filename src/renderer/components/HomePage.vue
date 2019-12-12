@@ -31,7 +31,7 @@
 
             <hr class="mt-4">
 
-            <OctaveALWarning/>
+            <ALACCovWarning/>
             <MissingVariableWarning/>
 
             <b-row class="mt-4 justify-content-center">
@@ -102,7 +102,7 @@
   import { mapActions, mapGetters } from 'vuex';
   import { isElectron } from '../../config/constants';
   import Variables from './Variables';
-  import OctaveALWarning from './OctaveALWarning';
+  import ALACCovWarning from './ALACCovWarning';
   import MissingVariableWarning from './MissingVariableWarning';
 
   const platformComponents = isElectron ? {
@@ -114,7 +114,7 @@
   export default {
     components: {
       MissingVariableWarning,
-      OctaveALWarning,
+      ALACCovWarning,
       Variables,
       OcpHeader,
       Models,
