@@ -2,7 +2,7 @@
     <b-row>
         <b-col>
             <b-alert class="m-0" variant="warning" :show="showWarning">
-                <b>Warning:</b> the sample size for calculating AC functions and variances for AL models is small due to speed considerations. Estimates of these values will be of inferior precision.
+                <b>Warning:</b> the sample size for calculating AC functions and variances is small due to speed considerations. Estimates of these values will be of inferior precision.
             </b-alert>
         </b-col>
     </b-row>
@@ -31,7 +31,7 @@
         return this.plotAutocorrelation || this.plotVariance;
       },
       showWarning() {
-        return this.isOctave && this.isALModel && this.isACOrVAR;
+        return this.isALModel && this.isACOrVAR;
       },
     },
   };
