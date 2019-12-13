@@ -21,7 +21,7 @@
     "replicants_name": "Original code provided (Jinhyuk Yoo edited)",
     "pub_date": "2014",
     "keywords": [],
-    "description": "",
+    "description": "NOTE: Solving these models requires the Statistics Toolbox for MATLAB or the statistics and io package for Octave.",
     "category": "Estimated euro area model",
     "authors": [
       "Quint, Dominic",
