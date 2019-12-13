@@ -6,6 +6,8 @@
 
 // This file simulates the dynamic response of the model to specific shocks
 
+// The model was implemented by T. Krahnke and L. Milivojevic
+
 // Replication of IRF to monetary policy shock (one standard deviation)
 // Replication of IRF to productivity shock (one standard deviation)
 //------------------------------------------------------------------------------------------------------------------------
