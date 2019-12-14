@@ -33,7 +33,7 @@
 
             <b-row class="mt-3 justify-content-center ctrl-links">
                         <div class="col text-center">
-                            <a href="http://www.macromodelbase.com/files/MMB_MPrule_description.pdf" target="_blank"><i class="fa fa-question-circle"></i>
+                            <a href="http://www.macromodelbase.com/files/mmb-mprule-description.pdf" target="_blank"><i class="fa fa-question-circle"></i>
                                Documentation of Policy Rules</a>
                         </div>
             </b-row>
