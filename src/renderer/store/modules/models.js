@@ -95,7 +95,7 @@ const actions = {
       commit('options/clearModels', null, { root: true });
 
       errors.forEach((err) => {
-        window.vue.$bvToast.toast(`There was an error loading model ${err.model}:\n${err.message}`, {
+        window.vue.$bvToast.toast(`There was an error loading model ${err.model}:\n${err.message}. If you wanted to add this model yourself, use the "Add a model" functionallity under "Edit Rules/Models" to create a JSON file.`, {
           title: 'Model Error',
           variant: 'danger',
         });
