@@ -17,12 +17,18 @@ export default async function loadModels(base) {
       const jsonPath = path.resolve(base, folder, `${folder}.json`);
       const modPath = path.resolve(base, folder, `${folder}.mod`);
 
-      const model = await readJson(jsonPath);
       const modExists = await exists(modPath, { encoding: 'utf8' });
+      const jsonExists = await exists(jsonPath, { encoding: 'utf8' });
+
+      if (!jsonExists) {
+        throw new Error(`${folder} found, but ${folder}.json doesn't exist`);
+      }
 
       if (!modExists) {
         throw new Error(`${folder} found, but ${folder}.mod doesn't exist`);
       }
+
+      const model = await readJson(jsonPath);
 
       if (!ajv.validate('model', model)) {
         throw new Error(`${folder}.json exists but doesn't validate against model schema: ${ajv.errorsText()}`);

@@ -1,5 +1,5 @@
 import path from 'path';
-import { readdir, stat, readJson } from 'fs-extra';
+import { readdir, stat, readJson, exists } from 'fs-extra';
 import { filter, forEach } from '../util/async';
 import serializableError from '../util/serializable-error';
 import ajv from '../util/ajv';
@@ -15,6 +15,12 @@ export default async function loadRules(base) {
   await forEach(folders, async (folder) => {
     try {
       const jsonPath = path.resolve(base, folder, `${folder}.json`);
+
+      const jsonExists = await exists(jsonPath, { encoding: 'utf8' });
+
+      if (!jsonExists) {
+        throw new Error(`${folder} found, but ${folder}.json doesn't exist`);
+      }
 
       const rule = await readJson(jsonPath);
 
