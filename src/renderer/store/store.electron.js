@@ -1,4 +1,5 @@
 import pick from 'lodash.pick';
+import fs from 'fs-extra';
 
 import backends from './modules/backends';
 import dynare from './modules/dynare';
@@ -11,6 +12,13 @@ import createPersistedState from './persisted-state';
 const migrations = [
   () => ({}),
 ];
+
+function removeNonExistentMmbPath(state) {
+  // eslint-disable-next-line max-len
+  if (state && state.settings && state.settings.mmbFolder && !fs.existsSync(state.settings.mmbFolder)) {
+    delete state.settings.mmbFolder;
+  }
+}
 
 function selectState(state, initialLoad) {
   const versionField = '__version';
@@ -36,6 +44,8 @@ function selectState(state, initialLoad) {
           }
         }
       }
+
+      removeNonExistentMmbPath(state);
     }
   }
 
