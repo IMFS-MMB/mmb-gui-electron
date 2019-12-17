@@ -27,6 +27,13 @@ HighCharts.setOptions({
       },
     },
   },
+  exporting: {
+    chartOptions: {
+      legend: {
+        enabled: true,
+      },
+    },
+  },
   responsive: [
     {
       rules: [{
