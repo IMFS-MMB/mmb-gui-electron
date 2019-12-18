@@ -28,6 +28,11 @@ HighCharts.setOptions({
     },
   },
   exporting: {
+    buttons: {
+      contextButton: {
+        menuItems: ['downloadPNG', 'downloadJPEG', 'downloadPDF', 'downloadSVG'],
+      },
+    },
     chartOptions: {
       legend: {
         enabled: true,
