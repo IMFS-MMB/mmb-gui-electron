@@ -23,3 +23,5 @@ linux:
   icon: build/icons/png
   target:
     - "tar.xz"
+nsis:
+  uninstallDisplayName: Macromodelbase
