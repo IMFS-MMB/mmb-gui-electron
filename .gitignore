@@ -2,6 +2,7 @@
 dist/
 build/
 !build/icons
+!build/installer.nsh
 node_modules/
 npm-debug.log
 npm-debug.log.*
