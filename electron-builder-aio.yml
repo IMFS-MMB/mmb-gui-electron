@@ -1,0 +1,13 @@
+productName: mmb-electron
+appId: com.macromodelbase.mmci
+artifactName: ${productName}-${os}-${arch}-aio.${ext}
+asar: false
+directories:
+  output: build
+files:
+  - dist/electron/**/*
+win:
+  icon: build/icons/win/icon.ico
+nsis:
+  uninstallDisplayName: Macromodelbase
+  include: build/installer-aio.nsh

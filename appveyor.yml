@@ -28,7 +28,7 @@ install:
   - node --version
 
 build_script:
-  - npm run build
+  - npm run build:windows
 #  - npm run build:web
 
 after_build:
