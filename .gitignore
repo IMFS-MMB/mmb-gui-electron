@@ -9,7 +9,3 @@ npm-debug.log.*
 thumbs.db
 .idea/
 !.gitkeep
-
-/server/public/
-!/server/public/favicon.ico
-!/server/public/data
