@@ -12,3 +12,4 @@ thumbs.db
 
 /server/public/
 !/server/public/favicon.ico
+!/server/public/data
