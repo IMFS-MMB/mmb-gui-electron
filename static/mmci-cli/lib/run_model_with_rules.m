@@ -14,7 +14,7 @@ function run_model_with_rules(model, rules, config, paths)
       usr = num2cell(config.usr);
     end
 
-    rule = make_rule('User', config.usr);
+    rule = make_rule('User', usr);
 
     result = run_dynare_and_simulate(model, rule, config.options, paths.work);
     save_result(result, get_output_filename(paths.out, model.name, rule.name), model.name, rule.name);
