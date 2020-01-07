@@ -186,6 +186,10 @@ const getters = {
       }
     }
 
+    if (!getters.plotAutocorrelation || !getters.plotVariance || !getters.numShocks) {
+      hints.push('Select at least 1 shock or choose to plot variances or auto correlation functions');
+    }
+
     if (!getters.numModels) {
       hints.push('Select at least 1 model from the model section');
     }
