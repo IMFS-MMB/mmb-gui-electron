@@ -53,17 +53,23 @@
                 </b-col>
             </b-row>
         </b-container>
-        <EditorModal/>
+        <template v-if="$isElectron">
+            <EditorModal/>
+        </template>
     </header>
 </template>
 
 <script>
   import { mapActions } from 'vuex';
-  import EditorModal from '../modals/editor/EditorModal';
+
+
+  const platformComponents = !process.env.IS_WEB ? {
+    EditorModal: require('../modals/editor/EditorModal').default,
+  } : {};
 
   export default {
     components: {
-      EditorModal,
+      ...platformComponents,
     },
     methods: {
       ...mapActions('rules', ['loadRules']),

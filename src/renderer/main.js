@@ -4,16 +4,15 @@ import axios from 'axios';
 import App from './App';
 import store from './store';
 
-import { isElectron, isWeb, sentry } from '../config/constants';
+import { sentry } from '../config/constants';
 
 import './global.scss';
 import './plugins/bootstrap';
 import './plugins/highcharts';
 import './plugins/chatscroll';
 import resizeEvents from './utils/resize';
-import userId from './utils/userid';
 
-if (isWeb) {
+if (process.env.IS_WEB) {
   const Sentry = require('@sentry/browser');
 
   Sentry.init({
@@ -22,6 +21,7 @@ if (isWeb) {
   });
 } else {
   const Sentry = require('@sentry/electron');
+  const id = require('./utils/userid').default;
 
   Sentry.init({
     dsn: sentry.dsnElectron,
@@ -29,20 +29,20 @@ if (isWeb) {
 
   Sentry.configureScope((scope) => {
     scope.setUser({
-      id: userId,
+      id,
     });
   });
 }
 
 
-if (isElectron) {
+if (!process.env.IS_WEB) {
   Vue.use(require('vue-electron'));
 }
 
 Vue.http = Vue.prototype.$http = axios;
 
-Vue.prototype.$isWeb = isWeb;
-Vue.prototype.$isElectron = isElectron;
+Vue.prototype.$isWeb = !!process.env.IS_WEB;
+Vue.prototype.$isElectron = !process.env.IS_WEB;
 
 Vue.config.productionTip = false;
 

@@ -14,7 +14,7 @@
                                  :value="variable">
                     {{variable.text}}
                 </b-form-checkbox>
-                <template v-if="modelSpecificVariablesUnavailable">
+                <template v-if="$isElectron && modelSpecificVariablesUnavailable">
                     <div id="model-specific-variables-unavailable">
                         <b-form-checkbox :value="null" :disabled="true">
                             Model Specific Variables

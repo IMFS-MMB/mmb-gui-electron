@@ -9,6 +9,6 @@
 
 // export default worker;
 
-import worker from './worker';
+const worker = process.env.IS_WEB ? {} : require('./worker').default;
 
 export default worker;

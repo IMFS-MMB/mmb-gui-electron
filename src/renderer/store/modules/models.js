@@ -84,23 +84,28 @@ const actions = {
     let models = [];
     let errors = [];
 
-    try {
-      ({ models, errors } = await worker.loadModels(modelsFolder));
-    } catch (e) {
-      errors = [e];
-    } finally {
-      commit('setModels', models);
-      commit('setErrors', errors);
-      commit('options/setDefaultStates', models, { root: true });
-      commit('options/clearModels', null, { root: true });
-
-      errors.forEach((err) => {
-        window.vue.$bvToast.toast(`There was an error loading model ${err.model}:\n${err.message}. If you wanted to add this model yourself, use the "Add a model" functionallity under "Edit Rules/Models" to create a JSON file.`, {
-          title: 'Model Error',
-          variant: 'danger',
-        });
-      });
+    if (process.env.IS_WEB) {
+      const ctx = require.context('../../../../static/mmci-cli/models', true, /^\.\/.*\/.*\.json$/);
+      models = ctx.keys().reduce((arr, key) => arr.concat(ctx(key)), []);
+    } else {
+      try {
+        ({ models, errors } = await worker.loadModels(modelsFolder));
+      } catch (e) {
+        errors = [e];
+      }
     }
+
+    commit('setModels', models);
+    commit('setErrors', errors);
+    commit('options/setDefaultStates', models, { root: true });
+    commit('options/clearModels', null, { root: true });
+
+    errors.forEach((err) => {
+      window.vue.$bvToast.toast(`There was an error loading model ${err.model}:\n${err.message}. If you wanted to add this model yourself, use the "Add a model" functionallity under "Edit Rules/Models" to create a JSON file.`, {
+        title: 'Model Error',
+        variant: 'danger',
+      });
+    });
   },
 };
 
