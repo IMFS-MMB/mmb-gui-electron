@@ -186,7 +186,7 @@ const getters = {
       }
     }
 
-    if (!getters.plotAutocorrelation || !getters.plotVariance || !getters.numShocks) {
+    if (!getters.plotAutocorrelation && !getters.plotVariance && !getters.numShocks) {
       hints.push('Select at least 1 shock or choose to plot variances or auto correlation functions');
     }
 
