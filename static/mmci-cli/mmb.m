@@ -1,4 +1,6 @@
-function mmb (jsonconfig)
+function mmb (jsonconfig, keep)
+  keep = exist('keep','var');
+
   try
     [paths.root] = fileparts(mfilename('fullpath'));
     paths.models = fullfile(paths.root, 'models');
@@ -19,7 +21,10 @@ function mmb (jsonconfig)
       mkdir(paths.out);
     end
 
-    delete(fullfile(paths.out, '*'));
+    if (~keep)
+      delete(fullfile(paths.out, '*'));
+    end
+
     diary(fullfile(paths.out, 'diary.log'));
     diary('on');
 

@@ -51,7 +51,7 @@ readdirSync(modelsFolder, { withFileTypes: true })
 
     writeJsonSync(configPath, config, { spaces: 2 });
 
-    mLines.push(`mmb('${configPath}')`);
+    mLines.push(`mmb('${configPath}', 1)`);
   });
 
 const mPath = path.join(tmpFolder, `crunch.m`);
