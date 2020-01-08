@@ -25,3 +25,5 @@ linux:
     - "tar.xz"
 nsis:
   uninstallDisplayName: Macromodelbase
+  license: LICENSE
+  runAfterFinish: false

@@ -10,4 +10,6 @@ win:
   icon: build/icons/win/icon.ico
 nsis:
   uninstallDisplayName: Macromodelbase
+  license: LICENSE
   include: build/installer-aio.nsh
+  runAfterFinish: false
