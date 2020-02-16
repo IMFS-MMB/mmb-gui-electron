@@ -14,7 +14,7 @@
                                  :value="shock">
                     {{shock.text}}
                 </b-form-checkbox>
-                <template v-if="modelSpecificShocksUnavailable">
+                <template v-if="$isElectron && modelSpecificShocksUnavailable">
                     <div id="model-specific-shocks-unavailable" >
                         <b-form-checkbox :value="null" :disabled="true" >
                             Model Specific Shocks

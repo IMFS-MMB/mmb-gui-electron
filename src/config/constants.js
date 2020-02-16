@@ -6,6 +6,4 @@ export const sentry = {
 export const USER_RULE = 'User';
 export const MODEL_RULE = 'Model';
 
-export const isWeb = !!process.env.IS_WEB;
-export const isElectron = !isWeb;
 export const isProduction = process.env.NODE_ENV === 'production';

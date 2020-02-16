@@ -23,11 +23,9 @@
   import { mapMutations, mapGetters } from 'vuex';
   import Horizon from '@/components/Horizon';
   import Gain from '@/components/Gain';
-  import ModelStatesModal from '@/modals/ModelStatesModal';
-  import { isElectron } from '../../config/constants';
 
-  const platformComponents = isElectron ? {
-    ModelStatesModal,
+  const platformComponents = !process.env.IS_WEB ? {
+    ModelStatesModal: require('@/modals/ModelStatesModal').default,
   } : {};
 
   export default {

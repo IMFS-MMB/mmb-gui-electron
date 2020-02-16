@@ -31,7 +31,10 @@
 
             <hr class="mt-4">
 
-            <ALACCovWarning/>
+            <template v-if="$isElectron">
+                <ALACCovWarning/>
+            </template>
+
             <MissingVariableWarning/>
 
             <b-row class="mt-4 justify-content-center">
@@ -95,26 +98,21 @@
   import Options from '@/components/Options.vue';
 
   import HelpModal from '@/modals/HelpModal.vue';
-  import SettingsModal from '@/modals/settings/SettingsModal.vue';
-  import UserSpecifiedRuleModal from '@/modals/UserSpecifiedRuleModal.vue';
-  import MatlabOutputModal from '@/modals/MatlabOutputModal.vue';
 
   import { mapActions, mapGetters } from 'vuex';
-  import { isElectron } from '../../config/constants';
   import Variables from './Variables';
-  import ALACCovWarning from './ALACCovWarning';
   import MissingVariableWarning from './MissingVariableWarning';
 
-  const platformComponents = isElectron ? {
-    SettingsModal,
-    UserSpecifiedRuleModal,
-    MatlabOutputModal,
+  const platformComponents = !process.env.IS_WEB ? {
+    SettingsModal: require('../modals/settings/SettingsModal.vue').default,
+    UserSpecifiedRuleModal: require('@/modals/UserSpecifiedRuleModal.vue').default,
+    MatlabOutputModal: require('@/modals/MatlabOutputModal.vue').default,
+    ALACCovWarning: require('./ALACCovWarning').default,
   } : {};
 
   export default {
     components: {
       MissingVariableWarning,
-      ALACCovWarning,
       Variables,
       OcpHeader,
       Models,
@@ -150,14 +148,14 @@
       },
     },
     mounted() {
-      if (isElectron) {
+      if (!process.env.IS_WEB) {
         if (!this.executables || !this.executables.length) {
           this.$root.$emit('bv::show::modal', 'settingsModal');
         }
-
-        this.loadModels();
-        this.loadRules();
       }
+
+      this.loadModels();
+      this.loadRules();
     },
   };
 </script>

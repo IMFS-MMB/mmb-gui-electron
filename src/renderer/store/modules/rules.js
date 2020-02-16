@@ -32,21 +32,27 @@ const actions = {
     let errors = [];
     let rules = [];
 
-    try {
-      ({ errors, rules } = await worker.loadRules(rulesFolder));
-    } catch (e) {
-      errors = [e];
-    } finally {
-      commit('setRules', rules);
-      commit('setErrors', errors);
+    if (process.env.IS_WEB) {
+      const ctx = require.context('../../../../static/mmci-cli/rules', true, /^\.\/.*\/.*\.json$/);
 
-      errors.forEach((err) => {
-        window.vue.$bvToast.toast(`There was an error loading rule ${err.rule}:\n${err.message}`, {
-          title: 'Rule Error',
-          variant: 'danger',
-        });
-      });
+      rules = ctx.keys().reduce((arr, key) => arr.concat(ctx(key)), []);
+    } else {
+      try {
+        ({ errors, rules } = await worker.loadRules(rulesFolder));
+      } catch (e) {
+        errors = [e];
+      }
     }
+
+    commit('setRules', rules);
+    commit('setErrors', errors);
+
+    errors.forEach((err) => {
+      window.vue.$bvToast.toast(`There was an error loading rule ${err.rule}:\n${err.message}`, {
+        title: 'Rule Error',
+        variant: 'danger',
+      });
+    });
   },
 };
 export default {

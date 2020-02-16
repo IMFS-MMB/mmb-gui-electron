@@ -32,6 +32,10 @@ const state = {
 };
 
 const getAvailableVars = memoize((models) => {
+  if (process.env.IS_WEB) {
+    return [...commonVariables];
+  }
+
   const variables = models.map(model => model.variables);
   const common = intersection(variables, variable => variable.text);
 
@@ -45,6 +49,10 @@ const getAvailableVars = memoize((models) => {
 });
 
 const getAvailableShocks = memoize((models) => {
+  if (process.env.IS_WEB) {
+    return [...commonShocks];
+  }
+
   const shocks = models.map(model => model.shocks);
   const common = intersection(shocks, shock => shock.text);
 
@@ -163,17 +171,23 @@ const getters = {
   },
 
   compareDisabled(state, getters, rootState, rootGetters) {
-    const dynare = rootGetters['dynare/selected'];
-    const backend = rootGetters['backends/selected'];
-
     const hints = [];
 
-    if (!backend) {
-      hints.push('Select a Matlab or Dynare executable in the settings menu');
+    if (!process.env.IS_WEB) {
+      const dynare = rootGetters['dynare/selected'];
+      const backend = rootGetters['backends/selected'];
+
+      if (!backend) {
+        hints.push('Select a Matlab or Dynare executable in the settings menu');
+      }
+
+      if (!dynare) {
+        hints.push('Select a dynare path in the settings menu');
+      }
     }
 
-    if (!dynare) {
-      hints.push('Select a dynare path in the settings menu');
+    if (!getters.plotAutocorrelation && !getters.plotVariance && !getters.numShocks) {
+      hints.push('Select at least 1 shock or choose to plot variances or auto correlation functions');
     }
 
     if (!getters.numModels) {
