@@ -13,6 +13,7 @@
     "build:windows": "npm run build && node .scripts/download-deps.js && electron-builder -c electron-builder-aio.yml",
     "build:dir": "npm run test && node .electron-vue/build.js && electron-builder --dir",
     "build:clean": "cross-env BUILD_TARGET=clean node .electron-vue/build.js",
+    "build:ocp": "npm run build:web && cp -r dist/web/* server/public/",
     "build:web": "npm run test && cross-env BUILD_TARGET=web node .electron-vue/build.js",
     "dev": "node .electron-vue/dev-runner.js",
     "lint": "eslint --ext .js,.vue -f ./node_modules/eslint-friendly-formatter src",
