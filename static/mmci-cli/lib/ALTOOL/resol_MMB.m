@@ -100,9 +100,19 @@ end
 if M.exo_nbr == 0
     oo.exo_steady_state = [] ;
 end
+d_version = dynare_version;
+if str2num(d_version([1 3])) >=46  
+     if  convertCharsToStrings(M.fname) == "CA_ToTEM10" % reason: dynare 4.6 uses a different tolerence level than 4.5
+                                                        % In the model, the steady state residuals that was originally
+                                                        % accepted by 4.5 is no longer accepted by dy4.6
 
-[dr.ys,M.params,info] = evaluate_steady_state(oo.steady_state,M,options,oo,~options.steadystate.nocheck);
-
+        [dr.ys,M.params,info] = evaluate_steady_state_CA_ToTEM10(oo.steady_state,M,options,oo,~options.steadystate.nocheck);
+     else
+        [dr.ys,M.params,info] = evaluate_steady_state(oo.steady_state,M,options,oo,~options.steadystate.nocheck);
+     end
+else
+    [dr.ys,M.params,info] = evaluate_steady_state(oo.steady_state,M,options,oo,~options.steadystate.nocheck);
+end
 if info(1)
     oo.dr = dr;
     return

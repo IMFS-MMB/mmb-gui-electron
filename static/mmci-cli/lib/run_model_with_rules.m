@@ -6,6 +6,23 @@ function run_model_with_rules(model, rules, config, paths)
 
   copyfile(fullfile(paths.models, model.name), fullfile(paths.work, model.name));
 
+  d_version = dynare_version;
+  
+  oldpath=pwd;
+  
+  cd(paths.work)
+  % If dynare version >=4.6 adjust code (written for <4.6)
+  if str2num(d_version([1 3])) >=46  % changed for dynare 4.6
+    convert_code(model.name); %this copies original file as name_orig.mod
+  end
+  
+  % If steady state file exists, check dynare version and copy paste steady
+  % state file
+  %cd(path.work)
+  get_steadystate_file(model.name,d_version,paths.work);
+  
+  cd(oldpath)
+  
   % run with user specified rule
   if (iscell(config.usr) || size(config.usr, 2) > 1)
     if (iscell(config.usr))
