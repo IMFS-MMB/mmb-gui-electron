@@ -107,7 +107,8 @@ function [base]=stoch_simul_MMB(base)
     base.info(base.models(base.epsilon)) = 1;
     if base.option(2)==1
       if strcmp(base.innos(1,:),'all_shocks')  % this is the case if only one model and then all shocks for this model have been chosen
-        shocks= M_.exo_names(M_.exo_names_orig_ord,:);
+        %shocks= M_.exo_names(M_.exo_names_orig_ord,:);
+        shocks= M_.exo_names{M_.exo_names_orig_ord,:};
         inv_lgx_orig_ord_(M_.exo_names_orig_ord)=(1:M_.exo_nbr)';
         base.innos = shocks; % put all shocks in the choice vector for the IRFs
         base.namesshocks = shocks; % put the right shock names for correct plots
@@ -228,12 +229,26 @@ function [base]=stoch_simul_MMB(base)
       inv_lgx_orig_ord_(M_.exo_names_orig_ord)=(1:M_.exo_nbr)'; % save the order
 
       for p=1:size(base.innos,1)
-        inno = base.innos(p,:);
+         inno = base.innos(p,:);
 
         if AL
-          ii=loc(M_.exo_names, inno); %Position of the shock
+             if str2num(d_version([1 3])) < 46  % changed for dynare 4.6
+               ii=loc(M_.exo_names, inno); %Position of the shock
+             else 
+               ii=find(strcmp(M_.exo_names, deblank(inno)));%Position of the shock
+               if isempty(ii)
+                   ii=0;
+               end
+             end
         else
-          ii=loc(M_.exo_names(inv_lgx_orig_ord_,:), inno); %Position of the shock
+             if str2num(d_version([1 3])) < 46  % changed for dynare 4.6
+               ii=loc(M_.exo_names(inv_lgx_orig_ord_,:), inno); %Position of the shock
+             else 
+               ii=find(strcmp(M_.exo_names(inv_lgx_orig_ord_,:), deblank(inno)));%Position of the shock
+               if isempty(ii)
+                   ii=0;
+               end
+             end
         end
 
         base.pos_shock(p,base.models(base.epsilon))=ii;
@@ -260,7 +275,12 @@ function [base]=stoch_simul_MMB(base)
             R=irf_AL_alt_gain(oo_.dr,cs(:,ii), options_.irf, base.AL_,gain);
             R(oo_.dr.order_var,:) = R;
           else
-            R=irf(oo_.dr,cs(M_.exo_names_orig_ord,ii), options_.irf, options_.drop, options_.replic, options_.order);
+              if  str2num(d_version([1 3])) < 46;  % changed for dynare 4.6
+                R=irf(oo_.dr,cs(M_.exo_names_orig_ord,ii), options_.irf, options_.drop, options_.replic, options_.order);
+              else
+                R=irf(M_, options_,oo_.dr,cs(M_.exo_names_orig_ord,ii), options_.irf, options_.drop, options_.replic, options_.order);
+              end
+              
           end
           base.IRF(:,:,p) = [zeros(size(R,1),1),R];
           base.IRFendo_names(:,:)=M_.endo_names;

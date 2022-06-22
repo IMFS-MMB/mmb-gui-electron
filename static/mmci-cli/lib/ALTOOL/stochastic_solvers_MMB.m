@@ -112,13 +112,23 @@ end
 
 it_ = M_.maximum_lag + 1;
 z = repmat(dr.ys,1,klen);
+d_version = dynare_version;
+
 if local_order == 1
     if (options_.bytecode)
         [chck, junk, loc_dr] = bytecode('dynamic','evaluate', z,exo_simul, ...
                                         M_.params, dr.ys, 1);
         jacobia_ = [loc_dr.g1 loc_dr.g1_x loc_dr.g1_xd];
     else
-        [junk,jacobia_] = feval([M_.fname '_dynamic'],z(iyr0),exo_simul, M_.params, dr.ys, it_);
+        if str2num(d_version([1 3])) < 46
+            [junk,jacobia_] = feval([M_.fname '_dynamic'],z(iyr0),exo_simul, M_.params, dr.ys, it_);
+        else  % changed for dynare 4.6
+    %        workmodelfolder =  pwd;
+    %        dynamicfolderpath = strcat(workmodelfolder, '\+',options_.dirname   )
+   %         cd(dynamicfolderpath)
+   %         [junk,jacobia_] = dynamic(z(iyr0),exo_simul, M_.params, dr.ys, it_);
+            [junk,jacobia_] = feval([M_.fname '.dynamic'],z(iyr0),exo_simul, M_.params, dr.ys, it_);
+        end
     end;
 elseif local_order == 2
     if (options_.bytecode)
