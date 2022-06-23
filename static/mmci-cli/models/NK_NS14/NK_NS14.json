@@ -8,8 +8,7 @@
       "LWW",
       "SW",
       "CEE",
-      "OW13",
-      "CMR"
+      "OW13"
     ],
     "unconditional_variances": true
   },
