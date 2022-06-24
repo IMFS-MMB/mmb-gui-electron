@@ -19,7 +19,7 @@
 // Last edited:
 
 //Allows for 16 lagged information sets to restrict computational time, adjust as desired (note: if so also adjust the parameter value of T in line 81)
-@#define lags = [1:16]
+@#define lags = 1:16
 
 var y a l p w yinfn i R pi x yclas deltaa g nuu gam eps z zwage zoutput
 //y: output, a: productivity, l: labor, p: price, w: wage, yinfn: output 100 periods ahead (steady state output)
