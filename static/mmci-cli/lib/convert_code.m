@@ -22,7 +22,7 @@ sequence_change = {};   %sequence to search
 lines_change={};        %lines to add
 
 %Loading policy rule coefficients
-sequence_change{end+1} = "deep_parameter_name = M_.param_names(i,:);";
+sequence_change{end+1} = "M_.param_names(i,:)";
 lines_change{end+1}="    deep_parameter_name = M_.param_names{i};";
 
 sequence_change{end+1} = "name = deblank(M_.param_names(i,:));";

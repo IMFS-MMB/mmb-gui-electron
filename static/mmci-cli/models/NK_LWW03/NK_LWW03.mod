@@ -43,10 +43,10 @@ parameters
         cofintoutpf1 cofintoutpf2 cofintoutpf3 cofintoutpf4              //*
         std_r_ std_r_quart coffispol                                     //*
 //**************************************************************************
-discount sigma phi wtrl rhorstar rhopish;
+discountt sigma phi wtrl rhorstar rhopish;
 
 
-discount = 0.990;
+discountt = 0.990;
 sigma	 = 1/(0.157);
 phi	 = 0.024;
 wtrl	 = 0.975;
@@ -110,7 +110,7 @@ interest =   cofintintb1*interest(-1)                                    //*
 // Original Model Code:
 
 ygap  =  ygap(+1) - 0.25*sigma *( rff - pdot(+1) -rstar);
-pdot  =  discount*pdot(+1) + 4*phi*ygap + pdotsh;
+pdot  =  discountt*pdot(+1) + 4*phi*ygap + pdotsh;
 drff  =  rff - rff(-1);
 rstar =  rhorstar*rstar(-1)+ rstar_;
 pdotsh = rhopish*pdotsh(-1) + pdotsh_;

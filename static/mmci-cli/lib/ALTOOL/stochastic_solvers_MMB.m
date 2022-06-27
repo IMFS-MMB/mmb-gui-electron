@@ -53,6 +53,14 @@ if options_.linear
 end
 
 local_order = options_.order;
+if ~isfield(M_,'hessian_eq_zero') % accomodate some changes in 4.6, where if local_order ==1 then this field does not exist
+    if local_order==1
+        M_.hessian_eq_zero =0;
+    else
+        error("error with solving: Hessian does not exist and order >1")
+    end
+end
+
 if M_.hessian_eq_zero && local_order~=1
     local_order = 1;
     warning('stochastic_solvers: using order = 1 because Hessian is equal to zero');
@@ -235,6 +243,10 @@ b = zeros(M_.endo_nbr,M_.endo_nbr);
 b(:,cols_b) = jacobia_(:,cols_j);
 
 dr.jacobia = jacobia_; %Added by the MMB team (Meguy Kuete)
+
+if str2num(d_version([1 3])) >= 50 % the field is reduced in dynare 5
+    options_.risky_steadystate =false;
+end
 
 if M_.maximum_endo_lead == 0
     % backward models: simplified code exist only at order == 1
