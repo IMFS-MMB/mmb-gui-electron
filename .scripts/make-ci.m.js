@@ -63,4 +63,14 @@ readdirSync(modelsFolder, { withFileTypes: true })
 
 const mPath = path.join(cliFolder, `ci.m`);
 
-writeFileSync(mPath, mLines.join(';\n'), { encoding: 'utf8' });
+const code = `try
+  ${mLines.join(';\n  ')}
+catch e
+    msg = strrep(getReport(e), newline, '%0A');
+    disp(strcat('::error::', msg));
+    
+    rethrow(e);
+end
+`
+
+writeFileSync(mPath, code, { encoding: 'utf8' });
