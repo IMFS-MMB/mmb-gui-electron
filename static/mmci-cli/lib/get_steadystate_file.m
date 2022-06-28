@@ -21,10 +21,10 @@ for i =1:size(all,1)
         %if dynare version >=4.6, take the first file (without "_dy45")
          if str2num(d_version([1 3])) >=46
             filename=inside(1).name;
-            copyfile(fullfile(workpath,"\",modelname,"\steadystate\",filename),fullfile(workpath,"\",modelname,"\",filename_work));
+            copyfile(fullfile(workpath,modelname,"steadystate",filename),fullfile(workpath,modelname,filename_work));
         else %else take the second file one without "_dy45"
             filename=inside(2).name;
-            copyfile(fullfile(workpath,"\",modelname,"\steadystate\",filename),fullfile(workpath,"\",modelname,"\",filename_work));
+            copyfile(fullfile(workpath,modelname,"steadystate",filename),fullfile(workpath,modelname,filename_work));
         end
     end
 end
