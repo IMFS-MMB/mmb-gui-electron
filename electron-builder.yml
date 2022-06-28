@@ -7,6 +7,7 @@ directories:
 files:
   - dist/electron/**/*
 dmg:
+  writeUpdateInfo: false
   contents:
     - x: 410
       y: 150
@@ -17,6 +18,8 @@ dmg:
       type: file
 mac:
   icon: build/icons/mac/icon.icns
+  target:
+    - "dmg"
 win:
   icon: build/icons/win/icon.ico
 linux:
@@ -27,3 +30,7 @@ nsis:
   uninstallDisplayName: Macromodelbase
   license: LICENSE
   runAfterFinish: false
+  differentialPackage: false
+publish:
+  provider: github
+  publishAutoUpdate: false

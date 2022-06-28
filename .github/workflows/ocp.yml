@@ -1,0 +1,114 @@
+name: Calculate OCP data
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+
+concurrency:
+  group: 'Calculate OCP data'
+  cancel-in-progress: true
+
+jobs:
+  list-models:
+    outputs:
+      models: ${{ steps.list-models.outputs.models }}
+    name: List Models
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+        
+      - id: list-models
+        # thanks, https://code.dblock.org/2021/09/03/generating-task-matrix-by-looping-over-repo-files-with-github-actions.html
+        # set xargs -n[NUM] to calculate more than 1 model per job, e.g. xargs -n5. cave: this will break caching!
+        run: echo "::set-output name=models::$(ls -l static/mmci-cli/models | awk '/^d/ {print $9}' | xargs -n1 | sed 's| |,|g' | jq -R -s -c 'split("\n")[:-1]')"
+        
+  simulate:
+    needs: 
+      - list-models
+      
+    name: Run Simulation
+    runs-on: ubuntu-22.04
+    strategy:
+      fail-fast: false
+      matrix:
+        # linter yells "invalid type", but the parsed json will fit in here just fine
+        MODEL_NAMES: ${{ fromJson(needs.list-models.outputs.models) }}
+        
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+    
+      - uses: actions/cache@v3
+        id: cache-results
+        with:
+          path: static/mmci-cli/out/*.json
+          # depends on all files except those specific to other models
+          key: ${{ hashFiles('static/mmci-cli/**/*', '!static/mmci-cli/models/**/*', format('static/mmci-cli/models/{0}/**/*', matrix.MODEL_NAMES)) }}
+    
+      - if: steps.cache-results.outputs.cache-hit != 'true'
+        name: Set up Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14
+
+      - if: steps.cache-results.outputs.cache-hit != 'true'
+        name: Create Script
+        run: node .scripts/make-ci.m.js
+        env: 
+          MODEL_NAMES: ${{ matrix.MODEL_NAMES }}
+
+      - if: steps.cache-results.outputs.cache-hit != 'true'
+        name: Set up MATLAB
+        uses: matlab-actions/setup-matlab@v1
+        
+      - if: steps.cache-results.outputs.cache-hit != 'true'
+        name: Set up Dynare
+        run: "DEBIAN_FRONTEND=noninteractive sudo apt-get install --no-upgrade --no-install-recommends -y dynare dynare-matlab x13as"
+
+      - if: steps.cache-results.outputs.cache-hit != 'true'
+        name: Run script
+        uses: matlab-actions/run-command@v1
+        env:
+          LD_PRELOAD: "/usr/lib/x86_64-linux-gnu/libstdc++.so.6"
+        with:
+          command: cd('static/mmci-cli'), ci
+
+      - if: startsWith(github.ref, 'refs/tags/v')
+        name: Upload artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: data
+          path: static/mmci-cli/out/*.json
+
+  deploy:
+    if: startsWith(github.ref, 'refs/tags/v')
+
+    needs:
+      - simulate
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+          cache: 'npm'
+
+      - run: npm i
+      - run: npm run build:ocp
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: data
+          path: dist/web/data
+            
+        # todo: switch to official pages action when it's prod ready (https://github.com/actions/deploy-pages)
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        with:
+          branch: gh-pages
+          folder: server/public

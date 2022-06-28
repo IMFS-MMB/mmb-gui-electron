@@ -13,3 +13,7 @@ nsis:
   license: LICENSE
   include: build/installer-aio.nsh
   runAfterFinish: false
+  differentialPackage: false
+publish:
+  provider: github
+  publishAutoUpdate: false

@@ -1,0 +1,49 @@
+name: Build/Release
+
+on: 
+  push:
+    tags: ["v*"]
+
+  workflow_dispatch:
+
+concurrency:
+  group: "Build/Release"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: macos-latest 
+            config: electron-builder.yml
+          - os: ubuntu-latest 
+            config: electron-builder.yml
+          - os: windows-latest
+            config: electron-builder.yml
+          - os: windows-latest
+            config: electron-builder-aio.yml
+            downloadDeps: true
+
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v3
+
+      - name: Install Node.js, NPM and Yarn
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14
+
+      - name: Download Octave/Dynare binaries
+        if: matrix.downloadDeps
+        run: npm i && node .scripts/download-deps.js
+
+      - name: Build/release Electron app
+        uses: samuelmeuli/action-electron-builder@v1.6.0
+        with:
+          github_token: ${{ secrets.github_token }}
+          release: ${{ startsWith(github.ref, 'refs/tags/v') }}
+          args: "-c ${{ matrix.config }}"

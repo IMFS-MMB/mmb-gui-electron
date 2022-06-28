@@ -43,6 +43,10 @@ function mmb (jsonconfig, keep)
   catch e
     print_error(e);
 
+    if(~isempty(getenv('CI'))) 
+      rethrow(e);
+    end
+
     save_error(e, fullfile(paths.out, 'error.json'));
 
     cd(paths.root);
