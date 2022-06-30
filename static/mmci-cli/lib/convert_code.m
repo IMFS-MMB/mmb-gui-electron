@@ -23,10 +23,7 @@ lines_change={};        %lines to add
 
 %Loading policy rule coefficients
 sequence_change{end+1} = "M_.param_names(i,:)";
-lines_change{end+1}="    deep_parameter_name = M_.param_names{i};";
-
-sequence_change{end+1} = "name = deblank(M_.param_names(i,:));";
-lines_change{end+1}="        name = deblank(M_.param_names{i});";
+lines_change{end+1}= "M_.param_names{i}";
 
 % copy paste original code
 %copyfile(name+".mod",name+"_orig.mod");
@@ -42,7 +39,8 @@ for j=1:size(sequence_change,2)
         index_sequ_start = strfind(code,sequence_change{1,j});
         index_sequ_start = find(~cellfun(@isempty,index_sequ_start)); 
         if isempty(index_sequ_start)==false
-            code = vertcat(code(1:index_sequ_start-1),lines_change{1,j},code(index_sequ_start+1:end));
+            code(index_sequ_start) = strrep(code(index_sequ_start),sequence_change{1,j},lines_change{1,j});
+            %code = vertcat(code(1:index_sequ_start-1),lines_change{1,j},code(index_sequ_start+1:end));
             check=1;
             do=1;
         end
