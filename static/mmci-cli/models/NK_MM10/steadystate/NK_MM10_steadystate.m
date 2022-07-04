@@ -1,4 +1,4 @@
-% computes the steady state of BankCapital.mod. 
+% computes the steady state of BankCapital.mod.
 % Taken from an example file by S. Adjemian on Dynare Forum
 % January 2011, Kevin Moran
 
@@ -6,14 +6,14 @@ function  [ys,params,check]= BankCapital_steadystate(ys,exo,M_,options_)
 % function [ys,params,check] = NK_baseline_steadystate(ys,exo,M_,options_)
 % computes the steady state for the NK_baseline.mod and uses a numerical
 % solver to do so
-% Inputs: 
+% Inputs:
 %   - ys        [vector] vector of initial values for the steady state of
 %                   the endogenous variables
 %   - exo       [vector] vector of values for the exogenous variables
 %   - M_        [structure] Dynare model structure
 %   - options   [structure] Dynare options structure
 %
-% Output: 
+% Output:
 %   - ys        [vector] vector of steady state values for the the endogenous variables
 %   - params    [vector] vector of parameter values
 %   - check     [scalar] set to 0 if steady state computation worked and to
@@ -44,21 +44,24 @@ check = 0;
 infl_ss = pi_ss;
 
 Rd_ss = pi_ss/bet;
-
-kk1 = delta*theta_k/(alphag*bigR*(1/bet-1+delta)); 
+which mtimes
+which isShapeOnXY
+which power
+disp(delta)
+kk1 = delta*theta_k/(alphag*bigR*(1/bet-1+delta));
 betatemp  = 1/bet;
 
 q_ss = kk1*(alphag*tau_b*mu_ss*betatemp/delalpha-(1+mu_ss+alphag*mu_ss/(Rd_ss*delalpha)));
 q_ss = q_ss/(alphag*smallb*kk1/(Rd_ss*delalpha)-alphag*bigR*kk1/Rd_ss-theta_e-theta_b-bby-alphag*tau_e*smallb*kk1*betatemp/delalpha);
 
 G_ss = 1+mu_ss-(q_ss*alphag/Rd_ss)*(bigR-mu_ss/(q_ss*delalpha)-smallb/delalpha);
-   
+
 IY = kk1/q_ss;
 
-KY = alphag*bigR*IY/delta; 
+KY = alphag*bigR*IY/delta;
 
 KeY = tau_e*alphag*smallb*IY/delalpha;
-    
+
 KbY = tau_b*alphag*mu_ss*IY/(q_ss*delalpha);
 
 KhY = KY - KeY - KbY;
@@ -104,7 +107,7 @@ Cb_ss = CbY*Y_ss;
 ch_ss = ChY*Y_ss/eta_h;
 
 bigA_ss = eta_b*wb_ss+(rk_ss+q_ss*(1-delta))*Kb_ss+bby*Y_ss;
-			
+
 bigN_ss = eta_e*we_ss+(rk_ss+q_ss*(1-delta))*Ke_ss;
 
 totC_ss = Ce_ss+Cb_ss+eta_h*ch_ss;
@@ -112,7 +115,7 @@ totC_ss = Ce_ss+Cb_ss+eta_h*ch_ss;
 lam_ss = (1-bet*habit)/((1-habit)*(ch_ss));
 
 smalld_ss = alphag*q_ss*( bigR - smallb/delalpha - mu_ss/(q_ss*delalpha))*I_ss/(Rd_ss*eta_b);
-   
+
 p_ss = (Rd_ss-1)*lam_ss/ ( (Rd_ss-1)*lam_ss*eta_b*smalld_ss + eta_h*reta);
 
 mc_ss = reta*p_ss/((Rd_ss-1)*lam_ss);
@@ -140,27 +143,27 @@ gY_ss = 1;
 u_ss = 1;
 
 % Now ready to assign these "*_ss values to all variables
-s = s_ss; 
+s = s_ss;
 u = u_ss;
 infl = infl_ss;
 expinfl = expinfl_ss;
 mgrowth = mgrowth_ss;
 gY = gY_ss;
-Rd = Rd_ss; 
+Rd = Rd_ss;
 interest= 0;
 inflation  = 0;
 inflationq  = 0;
 %interest=(Rd_ss-1)*4
-%inflation  = (infl_ss-1)*4;                           
-%inflationq = (infl_ss-1)*4;                                                     
-output     = 0;                                                       
+%inflation  = (infl_ss-1)*4;
+%inflationq = (infl_ss-1)*4;
+output     = 0;
 outputgap  = 0;
 q = q_ss;
 G = G_ss;
 H = H_ss;
 K = K_ss;
 Y = Y_ss;
-I = I_ss;          
+I = I_ss;
 rk = rk_ss;
 w_h = wh_ss;
 w_e = we_ss;
@@ -172,13 +175,13 @@ Cb = Cb_ss;
 ch = ch_ss;
 totC = totC_ss;
 lam = lam_ss;
-bigA = bigA_ss;			
+bigA = bigA_ss;
 bigN = bigN_ss;
-smalld = smalld_ss;   
+smalld = smalld_ss;
 p = p_ss;
 mc = mc_ss;
 Ra = Ra_ss;
-TL = TL_ss; 
+TL = TL_ss;
 numw = numw_ss;
 denw = denw_ss;
 wtilde = wtilde_ss;
@@ -198,10 +201,10 @@ Cef=Ce_ss;    % 2- entrepreneurial consumption
 Cbf =Cb_ss;    % 3- banking consumption
 Hf = H_ss;     % 4- aggregate (composite) labour input
 Yf =Y_ss;   % 5- Output
-If =I_ss;    % 6- Investment 
-bigNf = bigN_ss; % 7- entrepreneurial net worth 
+If =I_ss;    % 6- Investment
+bigNf = bigN_ss; % 7- entrepreneurial net worth
 bigAf =bigA_ss; % 8- net worth of banking sector (bank capital)
-Gf  =G_ss;   % 9- inverse of leverage 
+Gf  =G_ss;   % 9- inverse of leverage
 qf = q_ss;     % 10- relative price of capital goods
 rkf =rk_ss;    % 11- rental rate on capital
 smalldf =smalld_ss;
@@ -221,7 +224,7 @@ log_yf = log(Yf);
 log_If = log(If);
 TLf = TL_ss;
 expinflf = expinfl_ss;
-uf = u_ss;  % utilization rate on physical capital 
+uf = u_ss;  % utilization rate on physical capital
 kefff = K_ss;  % effective capital services
 Kf =K_ss;    % total physical capital
 Kbf =Kb_ss;   % holdings of physical capital by banking sector
