@@ -50,7 +50,7 @@ disp(theta_k)
 disp(alphag)
 disp(bigR)
 disp(bet)
-which(delta)
+which('delta')
 kk1 = delta*theta_k/(alphag*bigR*(1/bet-1+delta));
 betatemp  = 1/bet;
 
