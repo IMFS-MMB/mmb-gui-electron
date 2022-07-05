@@ -44,10 +44,13 @@ check = 0;
 infl_ss = pi_ss;
 
 Rd_ss = pi_ss/bet;
-which mtimes
-which isShapeOnXY
-which power
+
 disp(delta)
+disp(theta_k)
+disp(alphag)
+disp(bigR)
+disp(bet)
+
 kk1 = delta*theta_k/(alphag*bigR*(1/bet-1+delta));
 betatemp  = 1/bet;
 
