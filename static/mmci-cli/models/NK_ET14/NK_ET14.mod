@@ -109,7 +109,7 @@ parameters
 //************************************************************************** 
 
 betta       // HH discount factor            
-delta       // Inverse elasticity of intertemporal substitution in consumption
+cdelta       // Inverse elasticity of intertemporal substitution in consumption
 psii        // Inverse Frisch elasticity of labor supply
 SStheta     // Steady-state value of intratemporal elasticity of substitution
 phi         // Inverse of returns to scale in production
