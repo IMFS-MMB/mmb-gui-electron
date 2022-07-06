@@ -132,7 +132,7 @@ parameters
 
 habit
 bet
-delta
+cdelta
 reta
 psi_l
 elas_l
@@ -178,7 +178,7 @@ sigmabk
 
 habit = 0.65;  %parameter governing habit formation (CEE 2005 use 0.65)
 bet = 0.99;    %discount factor
-delta = 0.02;  %depreciation of physical capital
+cdelta = 0.02;  %depreciation of physical capital
 reta = 0.001832219;
 psi_l = 4.55;
 elas_l = 0.429;
@@ -280,7 +280,7 @@ std_r_ = 100;                                                            //*
 % steady-state computations:
 
 
-kk1 = delta*theta_k/(alphag*bigR*(1/bet-1+delta));
+kk1 = cdelta*theta_k/(alphag*bigR*(1/bet-1+cdelta));
 betatemp  = 1/bet;
 
 infl_temp = pi_ss;
@@ -293,7 +293,7 @@ Gtemp = 1+mu-(qtemp*alphag/Rd_temp)*(bigR-mu/(qtemp*delalpha)-smallb/delalpha);
 
 IY = kk1/qtemp;
 
-KY = alphag*bigR*IY/delta;
+KY = alphag*bigR*IY/cdelta;
 
 KeY = tau_e*alphag*smallb*IY/delalpha;
 
@@ -354,9 +354,9 @@ Cbtemp = CbY*Ytemp;
 
 chtemp = ChY*Ytemp/eta_h;
 
-bigAtemp = eta_b*w_btemp+(rktemp+qtemp*(1-delta))*Kbtemp+bby*Ytemp
+bigAtemp = eta_b*w_btemp+(rktemp+qtemp*(1-cdelta))*Kbtemp+bby*Ytemp
 
-bigNtemp = eta_e*w_etemp+(rktemp+qtemp*(1-delta))*Ketemp;
+bigNtemp = eta_e*w_etemp+(rktemp+qtemp*(1-cdelta))*Ketemp;
 
 totCtemp = Cetemp+Cbtemp+eta_h*chtemp;
 
@@ -466,7 +466,7 @@ Rdf = steady_state(Rd);
 
 rkf = chi1 + chi2*(uf - 1);
 
-qf*lamf = bet* (lamf(+1)* ( qf(+1)*(1-delta) + rkf(+1)*uf- ( chi1*(uf-1)+0.5*chi2*(uf(+1)-1)^2 ) ));
+qf*lamf = bet* (lamf(+1)* ( qf(+1)*(1-cdelta) + rkf(+1)*uf- ( chi1*(uf-1)+0.5*chi2*(uf(+1)-1)^2 ) ));
 
 lamf = bet*lamf(+1)*Rdf/inflf;
 
@@ -496,9 +496,9 @@ Kbf = tau_b*alphag*mu*If/(qf*delalpha);
 
 Kef = tau_e*alphag*smallb*If/delalpha;
 
-bigAf = ( rkf + qf*(1-delta*exp(lbk)))*Kbf(-1) + eta_b*w_bf;
+bigAf = ( rkf + qf*(1-cdelta*exp(lbk)))*Kbf(-1) + eta_b*w_bf;
 
-bigNf = ( rkf + qf*(1-delta))*Kef(-1) + eta_e*w_ef;
+bigNf = ( rkf + qf*(1-cdelta))*Kef(-1) + eta_e*w_ef;
 
 Cbf = (1-tau_b)*alphag*mu*If/delalpha;
 
@@ -506,7 +506,7 @@ Cef = (1-tau_e)*alphag*qf*smallb*If/delalpha;
 
 eta_h *chf + Cef + Cbf + If + If*mu = Yf;
 
-Kf = (1-delta)*Kf(-1) + alphag*bigR*If;
+Kf = (1-cdelta)*Kf(-1) + alphag*bigR*If;
 
 Yf = exp(lz)* (kefff^theta_k)*(Hf^theta_h)*(eta_e^theta_e)*(eta_b^theta_b) - bigtheta;
 
@@ -534,7 +534,7 @@ reta/(mc/p) = (Rd-1)*lam;
 
 rk = chi1 + chi2*(u - 1);
 
-q*lam = bet* (lam(+1)* ( q(+1)*(1-delta) + rk(+1)*u- ( chi1*(u-1)+0.5*chi2*(u(+1)-1)^2 ) ));
+q*lam = bet* (lam(+1)* ( q(+1)*(1-cdelta) + rk(+1)*u- ( chi1*(u-1)+0.5*chi2*(u(+1)-1)^2 ) ));
 
 lam = bet*lam(+1)*Rd(+1)/infl(+1);
 
@@ -576,9 +576,9 @@ Kb = tau_b*alphag*mu*I/(q*delalpha);
 
 Ke = tau_e*alphag*smallb*I/delalpha;
 
-bigA = ( rk + q*(1-delta*exp(lbk)))*Kb(-1) + eta_b*w_b;
+bigA = ( rk + q*(1-cdelta*exp(lbk)))*Kb(-1) + eta_b*w_b;
 
-bigN = ( rk + q*(1-delta))*Ke(-1) + eta_e*w_e;
+bigN = ( rk + q*(1-cdelta))*Ke(-1) + eta_e*w_e;
 
 Cb = (1-tau_b)*alphag*mu*I/delalpha;
 
@@ -586,7 +586,7 @@ Ce = (1-tau_e)*alphag*q*smallb*I/delalpha;
 
 eta_h *ch + Ce + Cb + I + I*mu = Y;
 
-K = (1-delta)*K(-1) + alphag*bigR*I;
+K = (1-cdelta)*K(-1) + alphag*bigR*I;
 
 %log(Rd/steady_state(Rd)) = lam_r*log( Rd(-1)/steady_state(Rd) ) + (1-lam_r) * ( lam_pi*log(infl/steady_state(infl)) + lam_y*log(Y/steady_state(Y)) ) + lmp;
 

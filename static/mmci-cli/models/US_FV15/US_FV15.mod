@@ -104,7 +104,7 @@ parameters
            betta        //discount factor
            gammma1      //capital utilization, linear term
            gammma2      //capital utilization, quadratic term
-           delta        //depreciation rate
+           cdelta        //depreciation rate
            kappa        //capital adjustment costs parameter
            eta          //elasticity of substitution between labor varieties
            epsilon      //elasticity of substitution between goods varieties
@@ -150,7 +150,7 @@ parameters
 ;
 
 //Fixed parameters, taken from FV(2015), Table 5.1, p. 225
-delta       = 0.025;
+cdelta       = 0.025;
 epsilon     = 10;
 eta         = 10;
 Phi         = 0;
@@ -184,7 +184,7 @@ Lambdamu    = 3.4e-3;
 LambdaA     = 2.8e-3;
 
 /*
-gammma1     = mu_z*mu_I/betta-(1-delta);
+gammma1     = mu_z*mu_I/betta-(1-cdelta);
 Rbar        = 1+(PIbar*mu_z/betta-1);
 LambdaYd    = (LambdaA+alppha*Lambdamu)/(1-alppha);
 Lambdax     = exp(LambdaYd);
@@ -288,7 +288,7 @@ lambda=betta*lambda(+1)*mu_z(+1)^(-1)/PI(+1)*R;
 //3. FOC capital utilization
 r=gammma1+gammma2*(u-1);
 //4. FOC capital
-q=betta*lambda(+1)/lambda*mu_z(+1)^(-1)*mu_I(+1)^(-1)*((1-delta)*q(+1)+r(+1)*u(+1)-(gammma1*(u(+1)-1)+gammma2/2*(u(+1)-1)^2));
+q=betta*lambda(+1)/lambda*mu_z(+1)^(-1)*mu_I(+1)^(-1)*((1-cdelta)*q(+1)+r(+1)*u(+1)-(gammma1*(u(+1)-1)+gammma2/2*(u(+1)-1)^2));
 //5. FOC investment
 1=q*(1-(kappa/2*(x/x(-1)*mu_z-Lambdax)^2)-(kappa*(x/x(-1)*mu_z-Lambdax)*x/x(-1)*mu_z))
   +betta*q(+1)*lambda(+1)/lambda*mu_z(+1)^(-1)*kappa*(x(+1)/x*mu_z(+1)-Lambdax)*(x(+1)/x*mu_z(+1))^2;
@@ -316,7 +316,7 @@ l=vw*ld;
 vp=thetap*(PI(-1)^chi/PI)^(-epsilon)*vp(-1)+(1-thetap)*PIstar^(-epsilon);
 vw=thetaw*(w(-1)/w*mu_z^(-1)*PI(-1)^chiw/PI)^(-eta)*vw(-1)+(1-thetaw)*(PIstarw)^(-eta);
 //21. Law of motion for capital
-k(+1)*mu_z*mu_I-(1-delta)*k-mu_z*mu_I*(1-kappa/2*(x/x(-1)*mu_z-Lambdax)^2)*x=0;
+k(+1)*mu_z*mu_I-(1-cdelta)*k-mu_z*mu_I*(1-kappa/2*(x/x(-1)*mu_z-Lambdax)^2)*x=0;
 //22. Profits
 F=yd-1/(1-alppha)*w*ld;
 //23. definition optimal wage inflation
@@ -342,7 +342,7 @@ lambdaf=betta*lambdaf(+1)*mu_z(+1)^(-1)/PIbar*Rf;
 //31. FOC capital utilization
 rf=gammma1+gammma2*(uf-1);
 //32. FOC capital
-qf=betta*lambdaf(+1)/lambdaf*mu_z(+1)^(-1)*mu_I(+1)^(-1)*((1-delta)*qf(+1)+rf(+1)*uf(+1)-(gammma1*(uf(+1)-1)+gammma2/2*(uf(+1)-1)^2));
+qf=betta*lambdaf(+1)/lambdaf*mu_z(+1)^(-1)*mu_I(+1)^(-1)*((1-cdelta)*qf(+1)+rf(+1)*uf(+1)-(gammma1*(uf(+1)-1)+gammma2/2*(uf(+1)-1)^2));
 //33. FOC investment
 1=qf*(1-(kappa/2*(xf/xf(-1)*mu_z-Lambdax)^2)-(kappa*(xf/xf(-1)*mu_z-Lambdax)*xf/xf(-1)*mu_z))
   +betta*qf(+1)*lambdaf(+1)/lambdaf*mu_z(+1)^(-1)*kappa*(xf(+1)/xf*mu_z(+1)-Lambdax)*(xf(+1)/xf*mu_z(+1))^2;
@@ -355,7 +355,7 @@ uf*kf/ldf=alppha/(1-alppha)*wf/rf*mu_z*mu_I;
 ydf=cf+xf+mu_z^(-1)*mu_I^(-1)*(gammma1*(uf-1)+gammma2/2*(uf-1)^2)*kf;
 ydf=(mu_A*mu_z^(-1)*(uf*kf)^alppha*ldf^(1-alppha)-Phi);
 //39. Law of motion for capital
-kf(+1)*mu_z*mu_I-(1-delta)*kf-mu_z*mu_I*(1-kappa/2*(xf/xf(-1)*mu_z-Lambdax)^2)*xf=0;
+kf(+1)*mu_z*mu_I-(1-cdelta)*kf-mu_z*mu_I*(1-kappa/2*(xf/xf(-1)*mu_z-Lambdax)^2)*xf=0;
 //40. Profits
 Ff=ydf-1/(1-alppha)*wf*ldf;
 

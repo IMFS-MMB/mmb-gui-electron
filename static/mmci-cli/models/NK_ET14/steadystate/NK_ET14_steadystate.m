@@ -1,7 +1,7 @@
 %% Steady State File
 % Ellison, M. and Tischbirek, A.: ``Unconventional government debt 
 % purchases as a supplement to conventional monetary policy''
-% In: Journal of Economic Dynamics and Control (2014), no. 43, pp. 199–217.
+% In: Journal of Economic Dynamics and Control (2014), no. 43, pp. 199â€“217.
 
 %%
 function [ys,params,check] = NK_ET14_steadystate(ys,exo,M_,options_)
@@ -37,14 +37,14 @@ fispol  = 0;
 
 D       = log((1-alfa)/(1-alfa*exp(Pi)^(exp(theta)*phi))*((1-alfa*exp(Pi)^(exp(theta)-1))/(1-alfa))^(exp(theta)*phi/(exp(theta)-1)));       %(B.27)
 Y       = log(((1-alfa*betta*exp(Pi)^(exp(theta)-1))/(1-alfa*betta*exp(Pi)^(exp(theta)*phi))*...                                            %(B.28)
-          exp(theta)*phi/(exp(theta)-1)*(exp(D))^(psii)*(1-gbar)^delta*...
-         ((1-alfa*(exp(Pi))^(exp(theta)-1))/(1-alfa))^((exp(theta)*(phi-1)+1)/(exp(theta)-1)))^(1/(1-delta-phi*(psii+1))));                 
+          exp(theta)*phi/(exp(theta)-1)*(exp(D))^(psii)*(1-gbar)^cdelta*...
+         ((1-alfa*(exp(Pi))^(exp(theta)-1))/(1-alfa))^((exp(theta)*(phi-1)+1)/(exp(theta)-1)))^(1/(1-cdelta-phi*(psii+1))));                 
 G       = log(gbar*exp(Y));                                                                                                                 %(B.29)
 C       = log(exp(Y)-exp(G));                                                                                                               %(B.30)
-F       = log(exp(Y)*exp(C)^(-delta)/(1-alfa*betta*exp(Pi)^(exp(theta)-1)));                                                                %(B.31)
+F       = log(exp(Y)*exp(C)^(-cdelta)/(1-alfa*betta*exp(Pi)^(exp(theta)-1)));                                                                %(B.31)
 K       = log(1/(1-alfa*betta*exp(Pi)^(exp(theta)*phi))*exp(theta)*phi/(exp(theta)-1)*exp(D)^(psii)*exp(Y)^(phi*(psii+1)));                 %(B.32)
 L       = log(exp(D)*exp(Y)^(phi));                                                                                                         %(B.33)
-w       = log(exp(L)^(psii)*exp(C)^(delta));                                                                                                %(B.34)
+w       = log(exp(L)^(psii)*exp(C)^(cdelta));                                                                                                %(B.34)
 Ps      = log(betta/exp(Pi));                                                                                                               %(B.35)
 qCB     = 0;                                                                                                                                %(B.36)
 qbar    = log(f*exp(Y));                                                                                                                    %(B.37)
@@ -101,8 +101,8 @@ end
 %---------------------------------------------------------------------------
 
 Yf = log(((1-alfaf*betta*exp(Pi)^(exp(theta)-1))/(1-alfaf*betta*exp(Pi)^(exp(theta)*phi))...
-     *exp(theta)*phi/(exp(theta)-1)*(1-gbar)^(delta)...
-     *((1-alfaf*exp(Pi)^(exp(theta)-1))/(1-alfaf))^((exp(theta)*(phi-1)+1)/(exp(theta)-1)))^(1/(1-delta-phi*(psii+1))));                    %(B.28)
+     *exp(theta)*phi/(exp(theta)-1)*(1-gbar)^(cdelta)...
+     *((1-alfaf*exp(Pi)^(exp(theta)-1))/(1-alfaf))^((exp(theta)*(phi-1)+1)/(exp(theta)-1)))^(1/(1-cdelta-phi*(psii+1))));                    %(B.28)
 Gf = log(gbar*exp(Yf));                                                                                                                     %(B.29)
 %---------------------------------------------------------------------------
 % 3. MMB Variables

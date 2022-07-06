@@ -19,7 +19,7 @@
 // Further references:
 // Ellison, M. and Tischbirek, A.: ``Unconventional government debt 
 //        purchases as a supplement to conventional monetary policy''
-// In: Journal of Economic Dynamics and Control (2014), no. 43, pp. 199–217.
+// In: Journal of Economic Dynamics and Control (2014), no. 43, pp. 199â€“217.
 //**************************************************************************
 
 
@@ -109,7 +109,7 @@ parameters
 //************************************************************************** 
 
 betta       // HH discount factor            
-delta       // Inverse elasticity of intertemporal substitution in consumption
+cdelta       // Inverse elasticity of intertemporal substitution in consumption
 psii        // Inverse Frisch elasticity of labor supply
 SStheta     // Steady-state value of intratemporal elasticity of substitution
 phi         // Inverse of returns to scale in production
@@ -149,7 +149,7 @@ vfiscal_;   // Variance of fiscal policy shock
 %---------------------------------------------------------------------------
 
 betta    = 0.99;
-delta    = 2;
+cdelta    = 2;
 psii     = 0.5;
 SStheta  = log(6);      // inserted as log of level
 phi      = 1.1;
@@ -269,13 +269,13 @@ fispol = coffispol*fiscal_;                                              //*
 
 exp(C) + exp(Ps)*exp(s) + exp(G) = exp(s(-1))*(exp(Pi))^(-1) + tpi*exp(w)*exp(L) + (1-tpi)*exp(Y);                          //(B.1)
 
-1 = betta*exp(ChiC(+1))/exp(ChiC)*(exp(C(+1))/exp(C))^(-delta)*(exp(Ps)*exp(Pi(+1)))^(-1);                                  //(B.2)
+1 = betta*exp(ChiC(+1))/exp(ChiC)*(exp(C(+1))/exp(C))^(-cdelta)*(exp(Ps)*exp(Pi(+1)))^(-1);                                  //(B.2)
 
-exp(w) = exp(ChiL)/exp(ChiC)*exp(L)^(psii)*exp(C)^(delta);                                                                  //(B.3)
+exp(w) = exp(ChiL)/exp(ChiC)*exp(L)^(psii)*exp(C)^(cdelta);                                                                  //(B.3)
 
 (1-alfa*(exp(Pi))^(exp(theta)-1))/(1-alfa) = (exp(F)/exp(K))^((exp(theta)-1)/(exp(theta)*(phi-1)+1));                       //(B.4)
 
-exp(F) = exp(ChiC)*(exp(C))^(-delta)*exp(Y) + alfa*betta*(exp(Pi(+1)))^(exp(theta)-1)*exp(F(+1));                           //(B.5)
+exp(F) = exp(ChiC)*(exp(C))^(-cdelta)*exp(Y) + alfa*betta*(exp(Pi(+1)))^(exp(theta)-1)*exp(F(+1));                           //(B.5)
 
 exp(K) = exp(theta)*phi/(exp(theta)-1)*exp(ChiL)*exp(L)^(psii)*(exp(Y)/exp(A))^(phi) 
        + alfa*betta*(exp(Pi(+1)))^(exp(theta)*phi)*exp(K(+1));                                                              //(B.6)
@@ -344,7 +344,7 @@ ksi = rhoksi*ksi(-1) + epsksi;                                                  
 % 5.(b) Flexible Model Equations
 %---------------------------------------------------------------------------
 
-exp(ChiC)/exp(ChiL)*exp(Yf)^(1-phi-phi*psii)*(exp(Yf)-exp(Gf))^(-delta)*exp(A)^(phi+phi*psii) 
+exp(ChiC)/exp(ChiL)*exp(Yf)^(1-phi-phi*psii)*(exp(Yf)-exp(Gf))^(-cdelta)*exp(A)^(phi+phi*psii) 
   = exp(theta)*phi/(exp(theta)-1);                                                                                          // Flex Price Output, explicit solution in terms of shocks under alfa = 0
 
 Gf - steady_state(Gf) = rhoG* (Gf(-1) - steady_state(Gf)) + epsG;                                                           //(B.23)

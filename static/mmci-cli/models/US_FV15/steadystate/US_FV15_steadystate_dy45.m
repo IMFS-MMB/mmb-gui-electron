@@ -45,7 +45,7 @@ mu_A=exp(LambdaA);
 Lambdax=mu_z;
 
 %set the parameter gammma1
-gammma1=mu_z*mu_I/betta-(1-delta);
+gammma1=mu_z*mu_I/betta-(1-cdelta);
 if gammma1<0 % parameter violates restriction; Preventing this cannot be implemented via prior restriction as it is a composite of different parameters and the valid prior region has unknown form
     check=1; %set failure indicator
     return; %return without updating steady states
@@ -70,7 +70,7 @@ tempvaromega=alppha/(1-alppha)*w/r*mu_z*mu_I;
 
 [ld,fval,exitflag]=fzero(@(ld)(1-betta*thetaw*mu_z^(eta-1)*PI^(-(1-chiw)*(1-eta)))/(1-betta*thetaw*mu_z^(eta*(1+gammma))*PI^(eta*(1-chiw)*(1+gammma)))...
 -(eta-1)/eta*wstar/(varpsi*PIstarw^(-eta*gammma)*ld^gammma)*((1-h*mu_z^(-1))^(-1)-betta*h*(mu_z-h)^(-1))*...
-((mu_A*mu_z^(-1)*vp^(-1)*tempvaromega^alppha-tempvaromega*(1-(1-delta)*(mu_z*mu_I)^(-1)))*ld-vp^(-1)*Phi)^(-1),0.25,options);
+((mu_A*mu_z^(-1)*vp^(-1)*tempvaromega^alppha-tempvaromega*(1-(1-cdelta)*(mu_z*mu_I)^(-1)))*ld-vp^(-1)*Phi)^(-1),0.25,options);
 if exitflag <1
     %indicate the SS computation was not sucessful; this would also be detected by Dynare
     %setting the indicator here shows how to use this functionality to
@@ -82,9 +82,9 @@ end
 
 l=vw*ld;
 k=tempvaromega*ld;
-x=(1-(1-delta)*(mu_z*mu_I)^(-1))*k;
+x=(1-(1-cdelta)*(mu_z*mu_I)^(-1))*k;
 yd=(mu_A/mu_z*k^alppha*ld^(1-alppha)-Phi)/vp;
-c=(mu_A*mu_z^(-1)*vp^(-1)*tempvaromega^alppha-tempvaromega*(1-(1-delta)*(mu_z*mu_I)^(-1)))*ld-vp^(-1)*Phi;
+c=(mu_A*mu_z^(-1)*vp^(-1)*tempvaromega^alppha-tempvaromega*(1-(1-cdelta)*(mu_z*mu_I)^(-1)))*ld-vp^(-1)*Phi;
 lambda=(1-h*betta*mu_z^(-1))*(1-h/mu_z)^(-1)/c;
 F=yd-1/(1-alppha)*w*ld;
 f=(eta-1)/eta*wstar*PIstarw^(-eta)*lambda*ld/(1-betta*thetaw*mu_z^(eta-1)*PI^(-(1-chiw)*(1-eta)));
@@ -110,7 +110,7 @@ mu_A=exp(LambdaA);
 Lambdax=mu_z;
 
 %set the parameter gammma1
-gammma1=mu_z*mu_I/betta-(1-delta);
+gammma1=mu_z*mu_I/betta-(1-cdelta);
 if gammma1<0 % parameter violates restriction; Preventing this cannot be implemented via prior restriction as it is a composite of different parameters and the valid prior region has unknown form
     check=1; %set failure indicator
     return; %return without updating steady states
@@ -135,7 +135,7 @@ tempvaromegaf=alppha/(1-alppha)*wf/rf*mu_z*mu_I;
 
 [ldf,fval,exitflag]=fzero(@(ld)(1-betta*0*mu_z^(eta-1)*PIf^(-(1-0)*(1-eta)))/(1-betta*0*mu_z^(eta*(1+gammma))*PIf^(eta*(1-0)*(1+gammma)))...
 -(eta-1)/eta*wstarf/(varpsi*PIstarwf^(-eta*gammma)*ld^gammma)*((1-h*mu_z^(-1))^(-1)-betta*h*(mu_z-h)^(-1))*...
-((mu_A*mu_z^(-1)*vpf^(-1)*tempvaromegaf^alppha-tempvaromegaf*(1-(1-delta)*(mu_z*mu_I)^(-1)))*ld-vpf^(-1)*Phi)^(-1),0.25,options);
+((mu_A*mu_z^(-1)*vpf^(-1)*tempvaromegaf^alppha-tempvaromegaf*(1-(1-cdelta)*(mu_z*mu_I)^(-1)))*ld-vpf^(-1)*Phi)^(-1),0.25,options);
 if exitflag <1
     %indicate the SS computation was not sucessful; this would also be detected by Dynare
     %setting the indicator here shows how to use this functionality to
@@ -147,9 +147,9 @@ end
 
 lf=vwf*ldf;
 kf=tempvaromegaf*ldf;
-xf=(1-(1-delta)*(mu_z*mu_I)^(-1))*kf;
+xf=(1-(1-cdelta)*(mu_z*mu_I)^(-1))*kf;
 ydf=(mu_A/mu_z*kf^alppha*ldf^(1-alppha)-Phi)/vpf;
-cf=(mu_A*mu_z^(-1)*vpf^(-1)*tempvaromegaf^alppha-tempvaromegaf*(1-(1-delta)*(mu_z*mu_I)^(-1)))*ldf-vpf^(-1)*Phi;
+cf=(mu_A*mu_z^(-1)*vpf^(-1)*tempvaromegaf^alppha-tempvaromegaf*(1-(1-cdelta)*(mu_z*mu_I)^(-1)))*ldf-vpf^(-1)*Phi;
 lambdaf=(1-h*betta*mu_z^(-1))*(1-h/mu_z)^(-1)/cf;
 Ff=ydf-1/(1-alppha)*wf*ldf;
 
