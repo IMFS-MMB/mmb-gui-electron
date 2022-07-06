@@ -7,7 +7,7 @@ on:
       - master
 
 concurrency:
-  group: 'Calculate OCP data'
+  group: simulate-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -19,16 +19,16 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v3
-        
+
       - id: list-models
         # thanks, https://code.dblock.org/2021/09/03/generating-task-matrix-by-looping-over-repo-files-with-github-actions.html
         # set xargs -n[NUM] to calculate more than 1 model per job, e.g. xargs -n5. cave: this will break caching!
         run: echo "::set-output name=models::$(ls -l static/mmci-cli/models | awk '/^d/ {print $9}' | xargs -n1 | sed 's| |,|g' | jq -R -s -c 'split("\n")[:-1]')"
-        
+
   simulate:
-    needs: 
+    needs:
       - list-models
-      
+
     name: Run Simulation
     runs-on: ubuntu-22.04
     strategy:
@@ -36,18 +36,18 @@ jobs:
       matrix:
         # linter yells "invalid type", but the parsed json will fit in here just fine
         MODEL_NAMES: ${{ fromJson(needs.list-models.outputs.models) }}
-        
+
     steps:
       - name: Check out repository
         uses: actions/checkout@v3
-    
+
       - uses: actions/cache@v3
         id: cache-results
         with:
           path: static/mmci-cli/out/*.json
           # depends on all files except those specific to other models
           key: ${{ hashFiles('static/mmci-cli/**/*', '!static/mmci-cli/models/**/*', format('static/mmci-cli/models/{0}/**/*', matrix.MODEL_NAMES)) }}
-    
+
       - if: steps.cache-results.outputs.cache-hit != 'true'
         name: Set up Node
         uses: actions/setup-node@v3
@@ -57,13 +57,13 @@ jobs:
       - if: steps.cache-results.outputs.cache-hit != 'true'
         name: Create Script
         run: node .scripts/make-ci.m.js
-        env: 
+        env:
           MODEL_NAMES: ${{ matrix.MODEL_NAMES }}
 
       - if: steps.cache-results.outputs.cache-hit != 'true'
         name: Set up MATLAB
         uses: matlab-actions/setup-matlab@v1
-        
+
       - if: steps.cache-results.outputs.cache-hit != 'true'
         name: Set up Dynare
         run: "DEBIAN_FRONTEND=noninteractive sudo apt-get install --no-upgrade --no-install-recommends -y dynare dynare-matlab x13as"
@@ -106,7 +106,7 @@ jobs:
         with:
           name: data
           path: dist/web/data
-            
+
         # todo: switch to official pages action when it's prod ready (https://github.com/actions/deploy-pages)
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.3.3
