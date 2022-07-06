@@ -32,7 +32,7 @@ infl_ss = pi_ss;
 
 Rd_ss = pi_ss/bet;
 
-kk1 = delta*theta_k/(alphag*bigR*(1/bet-1+delta)); 
+kk1 = cdelta*theta_k/(alphag*bigR*(1/bet-1+cdelta)); 
 betatemp  = 1/bet;
 
 q_ss = kk1*(alphag*tau_b*mu_ss*betatemp/delalpha-(1+mu_ss+alphag*mu_ss/(Rd_ss*delalpha)));
@@ -42,7 +42,7 @@ G_ss = 1+mu_ss-(q_ss*alphag/Rd_ss)*(bigR-mu_ss/(q_ss*delalpha)-smallb/delalpha);
    
 IY = kk1/q_ss;
 
-KY = alphag*bigR*IY/delta; 
+KY = alphag*bigR*IY/cdelta; 
 
 KeY = tau_e*alphag*smallb*IY/delalpha;
     
@@ -90,9 +90,9 @@ Cb_ss = CbY*Y_ss;
 
 ch_ss = ChY*Y_ss/eta_h;
 
-bigA_ss = eta_b*wb_ss+(rk_ss+q_ss*(1-delta))*Kb_ss+bby*Y_ss;
+bigA_ss = eta_b*wb_ss+(rk_ss+q_ss*(1-cdelta))*Kb_ss+bby*Y_ss;
 			
-bigN_ss = eta_e*we_ss+(rk_ss+q_ss*(1-delta))*Ke_ss;
+bigN_ss = eta_e*we_ss+(rk_ss+q_ss*(1-cdelta))*Ke_ss;
 
 totC_ss = Ce_ss+Cb_ss+eta_h*ch_ss;
 
