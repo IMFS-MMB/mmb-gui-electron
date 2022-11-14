@@ -11,7 +11,7 @@
 
 // Further references:
 // Christiano, Lawrence J., Martin S. Eichenbaum, and Mathias Trabandt (2015). 
-// ìUnderstanding the Great Recession.î American Economic Journal: Macroeconomics (1): 110-167.                                            
+// ‚ÄúUnderstanding the Great Recession.‚Äù American Economic Journal: Macroeconomics (1): 110-167.                                            
 
 // Implemented and last edited: 25/02/19 by Felix Strobel
 
@@ -322,10 +322,10 @@ exp(nGR)=nG;
 // Definition of Modelbase Variables in Terms of Original Model Variables //*
 
 interest    = 400*(RAGG-steady_state(RAGG));                             
-inflation   = inflationq+inflationq(-1)+inflationq(-2)+inflationq(-3);	 
+inflation   = 1/4*(inflationq+inflationq(-1)+inflationq(-2)+inflationq(-3));	 
 inflationq  = 400*(piAGG-steady_state(piAGG));                          
 outputgap   = GDPAGG -steady_state(GDPAGG);                             
-output      = (GDPAGG -steady_state(GDPAGG));                                                              
+output      = 100*(GDPAGG -steady_state(GDPAGG));                                                              
 
 interestF    = 400*(RF-steady_state(RR));                             
 inflationF   = inflationq+inflationq(-1)+inflationq(-2)+inflationq(-3);	 
