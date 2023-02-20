@@ -305,7 +305,7 @@ model;
                                                                         //*
 interest     = 400*(r-STEADY_STATE(r));                                              //*
 inflation    = inflationq +inflationq(-1) + inflationq(-2) +inflationq(-3);                                 //*
-inflationq   = 400*ln_pi;                                                    //*
+inflationq   = 4*ln_pi;                                                    //*
 outputgap    = ln_y-ln_yn;                                                     //*
 output       = ln_y;                                    //*
 
