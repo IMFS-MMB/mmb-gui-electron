@@ -34,3 +34,4 @@ nsis:
 publish:
   provider: github
   publishAutoUpdate: false
+  releaseType: release
