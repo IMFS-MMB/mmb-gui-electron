@@ -8,13 +8,13 @@ const ALGORITHM = 'sha512';
 
 const files = [
   {
-    url: 'https://www.dynare.org/release/windows/dynare-5.1-win.exe',
+    url: 'https://www.dynare.org/release/windows/dynare-4.5.7-win.exe',
     filename: 'dynare-installer.exe',
-    [ALGORITHM]: 'c94f51a41050d0ffb205e92fd9e67d0647da8f8ede198d9c498ef39fbbc3d5578cd99327f53a9bb471930da5a63c7687b32c7022c962793b96ff6dd5fea04f6e',
+    [ALGORITHM]: '0da74e3163809407049b0d9305220b281aa14731c2d34f0f32245dc3d1b98b02e1265122100cd75dfc9d7b801c7953ec293a84146e2154cf406b981f7383b767',
   }, {
-    url: 'https://ftp.gnu.org/gnu/octave/windows/octave-6.4.0-w64-installer.exe',
+    url: 'https://ftpmirror.gnu.org/octave/windows/octave-4.4.1-w64-installer.exe',
     filename: 'octave-installer.exe',
-    [ALGORITHM]: '242fb064c50972914f4207fcf7c199191cb07447fe79b9cdbc93144d960d6281465c1256f345540e7c08a49a512ba8cf6069a5039637a04fef08ace7fe94cafe',
+    [ALGORITHM]: 'a6abcbcec3b3c0f1e4ddf91fc0e77b3a877f3b842a77896d9b0e79b072d8bbebd63f0d2b174d4b5a91761f64cf128bed15354ca409c33334a63009d157c71169',
   },
 ];
 
