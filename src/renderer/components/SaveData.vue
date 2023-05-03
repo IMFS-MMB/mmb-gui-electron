@@ -10,6 +10,7 @@
 <script>
   import { saveAs } from 'file-saver';
   import pp from 'papaparse';
+  import { mapGetters } from 'vuex';
 
   export default {
     name: 'SaveData',
@@ -22,6 +23,9 @@
         default: () => [],
       },
     },
+    computed: {
+      ...mapGetters('options', ['horizon']),
+    },
     methods: {
       saveCSV() {
         const data = this.normalized.map((n) => {
@@ -33,8 +37,10 @@
           ];
         });
 
+        const moreFields = new Array(this.horizon).fill().map((_, i) => String(i + 1));
+
         const csv = pp.unparse({
-          fields: ['resulttype', 'rule', 'model', 'shock', 'variable', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21'],
+          fields: ['resulttype', 'rule', 'model', 'shock', 'variable', ...moreFields],
           data,
         }, {
           header: true,
