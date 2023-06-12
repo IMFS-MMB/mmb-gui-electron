@@ -301,13 +301,13 @@ model;
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables //*
 
-interest   = 400*(exp(r_ib)-r_ib_ss);
-inflation  = (pie+pie(-1)+pie(-2)+pie(-3))*100;
-inflationq = pie*400;
-outputgap  = (Y-Yf)*100;
-output     = (Y-0.273582784533271)*100;
-//outputgap  = (Y1-Y1f)*100;
-//output     = (Y1-0.250953431249047)*100;
+interest   = 4*(exp(r_ib)-r_ib_ss);
+inflation  = (pie+pie(-1)+pie(-2)+pie(-3));
+inflationq = pie*4;
+outputgap  = (Y-Yf);
+output     = (Y-0.273582784533271);
+//outputgap  = (Y1-Y1f);
+//output     = (Y1-0.250953431249047);
 //**************************************************************************
 
 //**************************************************************************
