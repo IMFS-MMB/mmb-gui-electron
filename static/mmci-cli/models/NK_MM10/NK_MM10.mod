@@ -406,14 +406,14 @@ model;
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables //*
                                                                           //*
-//interest   = (Rd^4-steady_state(Rd)^4)/(steady_state(Rd)^4)*100;
-interest = log(Rd/steady_state(Rd))*400;
-inflationq = log(infl/steady_state(infl))*400;
+//interest   = (Rd^4-steady_state(Rd)^4)/(steady_state(Rd)^4);
+interest = log(Rd/steady_state(Rd))*4;
+inflationq = log(infl/steady_state(infl))*4;
 inflation = 1/4*(inflationq+inflationq(-1)+inflationq(-2)+inflationq(-3));
 //inflation  = (infl*infl(-1)*infl(-2)*infl(-3)-steady_state(infl)^4)/(steady_state(infl)^4)*100;    //*
 //inflationq = ((infl^4-steady_state(infl)^4)/steady_state(infl)^4)*100;    //*
-output     =  (log(Y)-log(steady_state(Y)))*100;                          //*
-outputgap  =  (log(Y)-log(Yf))*100;                                        //*
+output     =  (log(Y)-log(steady_state(Y)));                          //*
+outputgap  =  (log(Y)-log(Yf));                                        //*
 //**************************************************************************
 
 //**************************************************************************
