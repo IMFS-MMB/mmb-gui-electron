@@ -221,10 +221,10 @@ model;
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables //*
 
-interest   = 100*((E_INOM+1)^4-interestq_exog^4)/interestq_exog^4;                //*
+interest   = ((E_INOM+1)^4-interestq_exog^4)/interestq_exog^4;                //*
 inflation = (1/4)*(inflationq+inflationq(-1)+inflationq(-2)+inflationq(-3));      //*
-inflationq = 100*(4*E_PHIC+1-inflationannual_exog)/inflationannual_exog;          //*
-outputgap  = 100*E_LYGAP;                                                         //*
+inflationq = (4*E_PHIC+1-inflationannual_exog)/inflationannual_exog;          //*
+outputgap  = E_LYGAP;                                                         //*
 fispol = E_EPS_G;                                                                 //*
  //**************************************************************************
 
