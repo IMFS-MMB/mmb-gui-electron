@@ -166,13 +166,13 @@ model ;
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables //*
 
-interest   = 400*(r-log(1/BETA));
-inflation  = (dp+dp(-1)+dp(-2)+dp(-3))*100;
-inflationq = dp*400;
-%outputgap  = (Y -Yf)*100;
-%output     = (Y-0.9308)*100;
-outputgap  = (zata_GDP-zata_GDPf)*100;
-output     = (zata_GDP-0.9308)*100;
+interest   = 4*(r-log(1/BETA));
+inflation  = (dp+dp(-1)+dp(-2)+dp(-3))*1;
+inflationq = dp*4;
+%outputgap  = (Y -Yf)*1;
+%output     = (Y-0.9308)*1;
+outputgap  = (zata_GDP-zata_GDPf)*1;
+output     = (zata_GDP-0.9308)*1;
 //**************************************************************************
 //**************************************************************************
 // Policy Rule                                                           //*

@@ -221,11 +221,11 @@ model;
 
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables   //*
-interest   = log(rnt/rn_ss)*400;                                            //*
-inflationq = log(pit/pi_ss)*400;                                            //*
+interest   = log(rnt/rn_ss)*4;                                              //*
+inflationq = log(pit/pi_ss)*4;                                              //*
 inflation  = 1/4*(inflationq+inflationq(-1)+inflationq(-2)+inflationq(-3)); //*
-output     = log(yt/y_ss)*100;                                              //*
-outputgap  = log(yt/ytfp)*100;                                              //*
+output     = log(yt/y_ss);                                                  //*
+outputgap  = log(yt/ytfp);                                                  //*
 //fispol   = e_g;                                                           //*
 //**************************************************************************
 

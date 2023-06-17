@@ -176,11 +176,11 @@ model(linear);
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables //*
 
-interest   = is_us*100;                                                   //*
-inflation  = pi4_us*100;                                                  //*
-inflationq = pi1_us*4*100;                                                //*
-outputgap  = q_us*100;                                                    //*
-output     = q_us*100;                                                    //*
+interest   = is_us;                                                   //*
+inflation  = pi4_us;                                                  //*
+inflationq = pi1_us*4;                                                //*
+outputgap  = q_us;                                                    //*
+output     = q_us;                                                    //*
 //**************************************************************************
 
 

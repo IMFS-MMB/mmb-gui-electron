@@ -157,11 +157,11 @@ model;
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables//*
                                                                          //*
-interest     = 400*(log(rn) - log(rnss));                                            //*
-inflation    = 100*(log(pai) + log(pai(-1)) + log(pai(-2)) + log(pai(-3)) - 4*log(PAIss));            //*
-inflationq   = 400*(log(pai) - log(PAIss));                                          //*
-outputgap    = 100*(log(y) - log(yf) - (log(yss) - steady_state(log(yf))));                      //*
-output       = 100*(log(y) - log(yss));                                                //*
+interest     = 4(log(rn) - log(rnss));                                            //*
+inflation    = (log(pai) + log(pai(-1)) + log(pai(-2)) + log(pai(-3)) - 4*log(PAIss));            //*
+inflationq   = (log(pai) - log(PAIss));                                          //*
+outputgap    = (log(y) - log(yf) - (log(yss) - steady_state(log(yf))));                      //*
+output       = (log(y) - log(yss));                                                //*
 fispol       = ug;                                                       //*
 //**************************************************************************
 

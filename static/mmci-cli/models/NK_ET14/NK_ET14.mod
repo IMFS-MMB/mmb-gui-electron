@@ -212,11 +212,11 @@ model;
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables//*
                                                                          //* 
-interest     = 400*(i - steady_state(i));                                //* 
-inflation    = (Pi + Pi(-1) + Pi(-2) + Pi(-3) - 4*steady_state(Pi))*100; //*
-inflationq   = 400*(Pi - steady_state(Pi));                              //*     
-outputgap    = (Y - Yf - (steady_state(Y) - steady_state(Yf)))*100;      //*
-output       = 100*(Y - steady_state(Y));                                //*
+interest     = 4*(i - steady_state(i));                                //* 
+inflation    = (Pi + Pi(-1) + Pi(-2) + Pi(-3) - 4*steady_state(Pi)); //*
+inflationq   = 4*(Pi - steady_state(Pi));                              //*     
+outputgap    = (Y - Yf - (steady_state(Y) - steady_state(Yf)));      //*
+output       = (Y - steady_state(Y));                                //*
 fispol       = epsG;                                                     //*
 //**************************************************************************
 

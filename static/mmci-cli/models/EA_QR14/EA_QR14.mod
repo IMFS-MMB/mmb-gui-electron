@@ -236,11 +236,11 @@ model;
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables //*
 
-interest   = 400*(r-log(RR_bar));
-inflation  = (dpemu + dpemu(-1) + dpemu(-2) + dpemu(-3))*100;
-inflationq = dpemu*400;
-outputgap  = (y_emu - y_emuf)*100;
-output     = (y_emu - log(L_total_bar))*100;
+interest   = 4*(r-log(RR_bar));
+inflation  = (dpemu + dpemu(-1) + dpemu(-2) + dpemu(-3));
+inflationq = dpemu*4;
+outputgap  = (y_emu - y_emuf);
+output     = (y_emu - log(L_total_bar));
 //**************************************************************************
 
 //**************************************************************************

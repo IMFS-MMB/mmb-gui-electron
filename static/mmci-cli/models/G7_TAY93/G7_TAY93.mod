@@ -378,11 +378,11 @@ model(linear);
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables //*
 
-interest   = 100*rs0;                                                    //*
-inflation  = 100*(lp0-lp40);                                             //*
-inflationq = 100*4*(lp0-lp10);                                  		 //*
-outputgap  = 100*ygap0;                                                  //*
-output     = 100*y0/ybar0;                                               //*
+interest   = rs0;                                                    //*
+inflation  = (lp0-lp40);                                             //*
+inflationq = 4*(lp0-lp10);                                  		 //*
+outputgap  = ygap0;                                                  //*
+output     = 0/ybar0;                                               //*
 fispol     = lg0_;                                                       //*
 //**************************************************************************
 

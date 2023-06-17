@@ -244,12 +244,12 @@ model ;
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables
 
-interest     = 400*(Rt-log(Rs));
-inflation    = ((inflt+inflt(-1)+inflt(-2)+inflt(-3))*100) - 400*log(infls);
-inflationq   = 400*(inflt-log(infls));
-outputgap    = ((exp(yt)/exp(ytF))-1)*100;
-output       = 100*(yt-log(ys));
-fispol       = egt*100;
+interest     = 4*(Rt-log(Rs));
+inflation    = ((inflt+inflt(-1)+inflt(-2)+inflt(-3))*1) - 4*log(infls);
+inflationq   = 4*(inflt-log(infls));
+outputgap    = ((exp(yt)/exp(ytF))-1)*1;
+output       = 1*(yt-log(ys));
+fispol       = egt*1;
 
 // **************************************************************************
 

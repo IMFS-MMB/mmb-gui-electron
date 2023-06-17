@@ -321,21 +321,21 @@ exp(nGR)=nG;
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables //*
 
-interest    = 400*(RAGG-steady_state(RAGG));                             
+interest    = 4*(RAGG-steady_state(RAGG));                             
 inflation   = 1/4*(inflationq+inflationq(-1)+inflationq(-2)+inflationq(-3));	 
-inflationq  = 400*(piAGG-steady_state(piAGG));                          
+inflationq  = 4*(piAGG-steady_state(piAGG));                          
 outputgap   = GDPAGG -steady_state(GDPAGG);                             
-output      = 100*(GDPAGG -steady_state(GDPAGG));                                                              
+output      = 1*(GDPAGG -steady_state(GDPAGG));                                                              
 
-interestF    = 400*(RF-steady_state(RR));                             
+interestF    = 4*(RF-steady_state(RR));                             
 inflationF   = inflationq+inflationq(-1)+inflationq(-2)+inflationq(-3);	 
-inflationqF  = 400*(piF-steady_state(piR));                          
+inflationqF  = 4*(piF-steady_state(piR));                          
 outputgapF   = GDPF -steady_state(GDPR);                             
 outputF      = (GDPF -steady_state(GDPR));                                                              
 
-interestR    = 400*(RR-steady_state(RR));                             
+interestR    = 4*(RR-steady_state(RR));                             
 inflationR   = inflationq+inflationq(-1)+inflationq(-2)+inflationq(-3);	 
-inflationqR  = 400*(piR-steady_state(piR));                          
+inflationqR  = 4*(piR-steady_state(piR));                          
 outputgapR   = GDPR -steady_state(GDPR);                             
 outputR      = (GDPR -steady_state(GDPR));                                                              
 
