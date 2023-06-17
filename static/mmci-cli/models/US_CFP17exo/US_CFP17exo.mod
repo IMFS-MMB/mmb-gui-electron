@@ -103,11 +103,11 @@ model;
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables //*
 
-interest   =   ann_r1*100;                                              //*
-inflation =    (pin + pin(-1) + pin(-2) + pin(-3))*100;                                                //*
-inflationq  =  400*pin; //(1/4)*infl*100;                                          //*
-outputgap  =   ygap*100;                                                    //*
-output =       y*100;                                                       //*                                                            //*
+interest   =   ann_r1*1;                                              //*
+inflation =    (pin + pin(-1) + pin(-2) + pin(-3))*1;                                                //*
+inflationq  =  4*pin; //(1/4)*infl*1;                                          //*
+outputgap  =   ygap*1;                                                    //*
+output =       y*1;                                                       //*                                                            //*
 //**************************************************************************
 //**************************************************************************
 // Policy Rule                                                           //*
