@@ -138,7 +138,7 @@ for i=1:33
     eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
 end
 cd(thispath);
-std_r_=100;
+//std_r_=100;
                                                                          //*
 // Definition of Discretionary Fiscal Policy Parameter                   //*
  coffispol = 5;                                                        //*
@@ -228,11 +228,11 @@ model;
 
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables   //*
-interest   = log(i/i_ss)*400;                                            //*
-inflationq = log(infl/infl_ss)*400;                                            //*
+interest   = log(i/i_ss)*4;                                            //*
+inflationq = log(infl/infl_ss)*4;                                            //*
 inflation  = 1/4*(inflationq+inflationq(-1)+inflationq(-2)+inflationq(-3)); //*
-output     = log(Y/Y_ss)*100;                                              //*
-outputgap  = log(Y/Y_fe)*100;                                              //*
+output     = log(Y/Y_ss)*1;                                              //*
+outputgap  = log(Y/Y_fe)*1;                                              //*
 fispol     = e_g;
 //**************************************************************************
 
