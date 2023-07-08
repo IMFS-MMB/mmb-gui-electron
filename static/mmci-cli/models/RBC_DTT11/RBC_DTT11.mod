@@ -81,10 +81,10 @@ model;
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables //*
 
-interest   = 400*r_t;                                                       //*
-inflation  = (100/4)*(4*pi_t+4*pi_t(-1)+4*pi_t(-2)+4*pi_t(-3));             //*
-inflationq = 400*pi_t;                                                      //*
-output     = 100*y_t;                                                       //*
+interest   = 4*r_t;                                                       //*
+inflation  = (1/4)*(4*pi_t+4*pi_t(-1)+4*pi_t(-2)+4*pi_t(-3));             //*
+inflationq = 4*pi_t;                                                      //*
+output     = 1*y_t;                                                       //*
 outputgap = 0;                                                              //*
 //**************************************************************************
 
