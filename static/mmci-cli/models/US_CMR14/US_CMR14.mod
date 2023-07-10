@@ -11,7 +11,7 @@
 
 // Further references:
 //Christiano, L. J., Motto, R., Rostagno, M., 2014. Risk shocks. 
-//American Economic Review 104 (1), 27–65.
+//American Economic Review 104 (1), 27â€“65.
 
 // Last edited: 2016/02/24 by M. Kuete 
 
@@ -167,7 +167,7 @@ for i=1:33
     eval(['M_.params(i)  = ' deep_parameter_name ' ;'])                  
 end                                                                      
 cd(thispath);                                                            
- std_r_=100;                                                                        
+ std_r_=1;                                                                        
 // Definition of Discretionary Fiscal Policy Parameter                   //*
 coffispol =  1/etag_p;                                                           //*
 //**************************************************************************
@@ -296,13 +296,13 @@ model;
 //*****************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables   //*
 
-  interest   = 100*( (1+Re)^4 - (1+Re_p)^4 )/((1+Re_p)^4);  // 400*(Re - Re_p);//*
-  inflationq = 100*(pi^4-pi_p^4)/(pi_p^4);                                     //*
+  interest   = 1*( (1+Re)^4 - (1+Re_p)^4 )/((1+Re_p)^4);  // 400*(Re - Re_p);//*
+  inflationq = 1*(pi^4-pi_p^4)/(pi_p^4);                                     //*
   inflation  = 1/4*(inflationq+inflationq(-1)+inflationq(-2)+inflationq(-3));  //*  
 //  output     = (log(yz)-log(steady_state(yz)))*100;                            //*
 //  outputgap  = (log(yz)-log(yzf))*100;                                         //* 
-  output     = (log(y)-log(steady_state(y)))*100;                              //*
-  outputgap  = (log(y)-log(yf))*100;                                           //*  
+  output     = (log(y)-log(steady_state(y)))*1;                              //*
+  outputgap  = (log(y)-log(yf))*1;                                           //*  
   fispol     = e_g;                                                            //*
 //**************************************************************************
 
