@@ -580,7 +580,7 @@ for i=1:33
     eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
 end
 cd(thispath);
-    std_r_ = 1;                                                        //*
+    std_r_ = 100;                                                        //*
                                                                          //*
 // Definition of Discretionary Fiscal Policy Parameter                   //*
 coffispol = 1/xgdp9;                                                     //*
@@ -595,7 +595,7 @@ interest   = rffe;                                                       //*
 inflation  = (1/4)*(picnia+ picnia(-1)+ picnia(-2)+ picnia(-3));         //*
 inflationq = picnia;                                                     //*
 outputgap  = xgap2;                                                      //*
-output     = xgdp*1;                                                   //*
+output     = xgdp*100;                                                   //*
 fispol     = egfl_;                                                      //*
 fispol     = egfi_;                                                      //*
 fispol     = egfos;                                                      //*
@@ -674,8 +674,8 @@ dlfpxr  = fpxr - fpxr(-1);
 xgdp    = xgdp1*ecnia + xgdp2*eh + xgdp3*epd + xgdp4*eps + xgdp5*(ki1*kimt + ki2*kio) + xgdp6*(ki1*kimt(-1) + ki2*kio(-1)) + xgdp7*ex + xgdp8*(em1*emo  + em2*(emp1*xg + emp2*xgpot)) + xgdp9*(egf1*egfo + egf2*egfi + egf3*egfl) + xgdp10*(egs1*egso + egs2*egsi + egs3*egsl);
 xp      = xp1*ecnia + xp2*eh + xp3*epd + xp4*eps  + xp5*ex + xp6*egfi + xp7*egfo+ xp8*egsi+ xp9*egso;
 xb      = xb1*xgdp + xb2*(xgv1*egfl + xgv2*egsl) + xb3*xgpot;
-xgap    = 1*(xg - xgpot)  ;
-xgap2   = 1*(xgdp - xgdpt);
+xgap    = 100*(xg - xgpot)  ;
+xgap2   = 100*(xgdp - xgdpt);
 vpda    = vpda1*vpda(-1) + vpda2*(.1*(vpd(-2)+vpdl2(-1)+vpdl2(-2)+vpdl4(-1)+vpdl4(-2)+vpdl6(-1)+vpdl6(-2)+vpdl8(-1)+vpdl8(-2)+vpdl10(-1)) );
 veoa    = vpda1*veoa(-1) + vpda2*(-.1*(pcengr(-2)+pcengrl2(-1)+pcengrl2(-2)+pcengrl4(-1)+pcengrl4(-2)+pcengrl6(-1)+pcengrl6(-2)+pcengrl8(-1)+pcengrl8(-2)+pcengr10(-1)) );
 ltfpt   = ltfpt1*ltfpt(-1);
@@ -700,7 +700,7 @@ plr     = plr(-1) + dlpl - dlpxp ;
 dlpl    = 0.0298564306096*(qplr(-1)-plr(-1))+ 0.231414207389*dlpl(-1) + 0.210488499183*dlpl(-2)+ 0.2673366641778989*dlpll2(-1) + datet*zpl+ (1-datet)*lzpl(-1)- (1 + pwfix/1.41)*0.0110869464785*(datet*zlur2+ (1-datet)*lzlur2(-1))+ 0.0226916552639*(plminr - plminr(-1) + pxbr - pxbr(-1) + dlpxp - .25*(dlpl(-1)+dlpl(-2)+dlpll2(-1)+dlpll2(-2)))+ dlpl_;
 pmor    = pmor(-1) + pxbr - pxbr(-1) + 0.122770433843*(qpmor(-1) - pmor(-1)) + 0.364224968853*(pmor(-1)-pxbr(-1)-(pmor(-2)-pxbr(-2)))+ 0.152572766338*(pmor(-2)-pxbr(-2)-(pmorl2(-1)-pxbrl2(-1))) + 0.820102224398*(dlfpc -.25*(dlfpc(-1)+dlfpc(-2)+dlfpcl2(-1)+dlfpcl2(-2)))- 0.21894291106*(dlfpx -.25*(dlfpx(-1)+dlfpx(-2)+dlfpxl2(-1)+dlfpxl2(-2)))+ pmor_;
 pcr     = pcr(-1) - pcrec*pcr(-1)+ 0.328778501444*(pcr(-1)-pcr(-2))- 0.671221498556*(dlpcr1*(trsib-trsib(-1)))+ pcr_;
-picnia  = 4*(pcr - pcr(-1) + dlpxp);
+picnia  = 400*(pcr - pcr(-1) + dlpxp);
 pcengr  = pcengr(-1) - 0.132995794168*(pcengr(-1)-pcengr(-2))- 0.0791398065385*pcengr(-1)+ 0.0709795052728*poilr(-1) + 0.73643556277*(poilr-poilr(-1))+ pcengr_;
 pgasr   = pgasr(-1) - pgasrec*pgasr(-1) + 0.104506774375*(pgasr(-1)-pgasr(-2)) + 0.284297987947*(poilr-poilr(-1))+ pgasr_;
 pxbr    = xbnr - xb;
