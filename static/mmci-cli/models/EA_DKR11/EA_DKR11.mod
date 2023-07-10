@@ -413,7 +413,7 @@ for i=1:33
     eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
 end
 cd(thispath);
-std_r_ = 100;                                                            //*
+std_r_ = 1;                                                            //*
                                                                          //*
 // Definition of Discretionary Fiscal Policy Parameter                   //*
 coffispol = 1/GSS;                                               //*
@@ -521,12 +521,12 @@ model;
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables //*
 
-interest   = log((1+R)/(1+RSS))*400;                                        //*
-inflation  = (log(1+CPI)+log(1+CPI(-1))+log(1+CPI(-2))+log(1+CPI(-3)))*100; //*
-inflationq = log(1+CPI)*400;                                                //*
+interest   = log((1+R)/(1+RSS))*4;                                        //*
+inflation  = (log(1+CPI)+log(1+CPI(-1))+log(1+CPI(-2))+log(1+CPI(-3)))*1; //*
+inflationq = log(1+CPI)*4;                                                //*
 outputgap  = YGAPobs;                                                       //*
 output     = Yobs;                                                          //*
-fispol     = E_G/100;                                                     //*
+fispol     = E_G/1;                                                     //*
 //**************************************************************************
 
 //**************************************************************************
@@ -824,9 +824,9 @@ interest =   cofintintb1*interest(-1)                                    //*
         E_F = 0.5*E_F(-1) + 0.5*E_F(1)
                 + (1-xie)*(1-betta*xie)/(xie)*(100*log(L/LSS) - E_F);
 
-        YGAPobs = 100*log(YGAP);
+        YGAPobs = 1*log(YGAP);
         Robs = 100*((1+R)/(1+RSS)-1);
-        Yobs = 100*log(Y/YSS);
+        Yobs = 1*log(Y/YSS);
         Zobs = 100*(ZSS/(ZSS + ZDSS*TDSS)*log(Z/ZSS) + ZDSS*TDSS/(ZSS + ZDSS*TDSS)*log(Z_D/ZDSS));
 //288
         Z_Dobs = 100*log(Z_D/ZDSS);
