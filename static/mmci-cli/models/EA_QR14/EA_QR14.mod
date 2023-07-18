@@ -92,7 +92,7 @@ for i=1:33
     eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
 end
 cd(thispath);
-//    std_r_ = 100;                                                        //*
+   std_r_ = 1;                                                        //*
                                                                          //*
 // Definition of Discretionary Fiscal Policy Parameter                   //*
 //coffispol = ;                                                          //*
