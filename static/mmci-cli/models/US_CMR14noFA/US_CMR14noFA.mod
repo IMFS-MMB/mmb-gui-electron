@@ -148,7 +148,7 @@ zetai_p           = 1;
     eval(['M_.params(i)  = ' deep_parameter_name ' ;'])                  
  end                                                                      
  cd(thispath);    
-std_r_ = 100;                                                            //* 
+std_r_ = 1;                                                            //* 
                                                                          //*
 // Definition of Discretionary Fiscal Policy Parameter                   //*
 coffispol = 1/etag_p;                                                    //*
@@ -237,11 +237,11 @@ y = g + c + i / muup;
 //*****************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables   //*
 
-  interest   = 100*( (1+Re)^4 - (1+Re_p)^4 )/((1+Re_p)^4);  // 400*(Re - Re_p);//*
-  inflationq = 100*(pi^4-pi_p^4)/(pi_p^4);  // 400*log(pi/pi_p);               //*
+  interest   = 1*( (1+Re)^4 - (1+Re_p)^4 )/((1+Re_p)^4);  // 400*(Re - Re_p);//*
+  inflationq = 1*(pi^4-pi_p^4)/(pi_p^4);  // 400*log(pi/pi_p);               //*
   inflation  = 1/4*(inflationq+inflationq(-1)+inflationq(-2)+inflationq(-3));  //*  
-  output     = (log(y)-log(steady_state(y)))*100;                            //*
-  outputgap  = (log(y)-log(yf))*100;                                         //*  
+  output     = (log(y)-log(steady_state(y)))*1;                            //*
+  outputgap  = (log(y)-log(yf))*1;                                         //*  
   fispol     = e_g;                                                             //*
 //**************************************************************************
 

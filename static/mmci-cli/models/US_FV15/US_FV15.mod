@@ -215,7 +215,7 @@ for i=1:33
     eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
 end
 cd(thispath);
-    std_r_=100;
+    std_r_=1;
 
 // Definition of Discretionary Fiscal Policy Parameter                   //*
 coffispol = 1;                                                           //*
@@ -227,11 +227,11 @@ model;
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables//*
                                                                          //*
-interest     = 400*(log(R) - log(steady_state(R)));                      //*
-inflation    = 100*(log(PI) + log(PI(-1)) + log(PI(-2)) + log(PI(-3)) - 4*log(steady_state(PI)));   //*
-inflationq   = 400*(log(PI) - log(steady_state(PI)));                    //*
-outputgap    = 100*(log(yd) - log(ydf) - (log(steady_state(yd)) - log(steady_state(ydf))));
-output       = 100*(log(yd) - log(steady_state(yd)));                    //*
+interest     = 4*(log(R) - log(steady_state(R)));                      //*
+inflation    = 1*(log(PI) + log(PI(-1)) + log(PI(-2)) + log(PI(-3)) - 4*log(steady_state(PI)));   //*
+inflationq   = 4*(log(PI) - log(steady_state(PI)));                    //*
+outputgap    = 1*(log(yd) - log(ydf) - (log(steady_state(yd)) - log(steady_state(ydf))));
+output       = 1*(log(yd) - log(steady_state(yd)));                    //*
 //fispol       = epsG;                                                   //*
 //**************************************************************************
 
@@ -272,7 +272,7 @@ interest =   cofintintb1*interest(-1)                                    //*
            + cofintoutpf2*output(+2)                                     //*
            + cofintoutpf3*output(+3)                                     //*
            + cofintoutpf4*output(+4)                                     //*
-           + std_r_/100 *interest_;                                          //*
+           + std_r_/1 *interest_;                                          //*
                                                                          //*
 // Discretionary Government Spending                                     //*
                                                                          //*
