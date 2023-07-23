@@ -249,7 +249,7 @@ inflation    = ((inflt+inflt(-1)+inflt(-2)+inflt(-3))*1) - 4*log(infls);
 inflationq   = 4*(inflt-log(infls));
 outputgap    = ((exp(yt)/exp(ytF))-1)*1;
 output       = 1*(yt-log(ys));
-fispol       = egt*1;
+fispol       = egt/100;
 
 // **************************************************************************
 
