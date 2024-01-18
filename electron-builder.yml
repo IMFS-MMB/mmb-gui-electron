@@ -19,7 +19,11 @@ dmg:
 mac:
   icon: build/icons/mac/icon.icns
   target:
-    - "dmg"
+    arch: 
+      - x64
+      - arm64
+    target:
+      - dmg
 win:
   icon: build/icons/win/icon.ico
 linux:
