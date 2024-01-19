@@ -22,8 +22,7 @@ mac:
     arch: 
       - x64
       - arm64
-    target:
-      - dmg
+    target: dmg
 win:
   icon: build/icons/win/icon.ico
 linux:
