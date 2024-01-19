@@ -34,6 +34,7 @@ function createWindow() {
    */
   mainWindow = new BrowserWindow({
     webPreferences: {
+      enableRemoteModule: true,
       nodeIntegration: true,
       nodeIntegrationInWorker: true,
     },
