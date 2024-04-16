@@ -263,12 +263,12 @@ model;
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables //*
 
-interest         = 100*(RNOMF^4-interest_EXOG^4)/interest_EXOG^4;        //*
-inflation        = 100*(PIE4F-PIE4F_EXOG)/PIE4F_EXOG;                    //*
-inflationq       = 100*(PIEF^4-PIE4F_EXOG)/PIE4F_EXOG;                   //*
-outputgap        = GDPGAPF;                                              //*
-output           = GDPF*100;                                             //*
-fispol           = E_GAF;                                                //*
+interest         = (RNOMF^4-interest_EXOG^4)/interest_EXOG^4;        //*
+inflation        = (PIE4F-PIE4F_EXOG)/PIE4F_EXOG;                    //*
+inflationq       = (PIEF^4-PIE4F_EXOG)/PIE4F_EXOG;                   //*
+outputgap        = GDPGAPF;                                          //*
+output           = GDPF;                                             //*
+fispol           = E_GAF;                                            //*
 // Given inflation target for annual inflation is used as target for annualized quarterly inflation.
 //**************************************************************************
 

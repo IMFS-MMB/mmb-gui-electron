@@ -521,9 +521,9 @@ model;
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables //*
 
-interest   = log((1+R)/(1+RSS))*400;                                        //*
-inflation  = (log(1+CPI)+log(1+CPI(-1))+log(1+CPI(-2))+log(1+CPI(-3)))*100; //*
-inflationq = log(1+CPI)*400;                                                //*
+interest   = log((1+R)/(1+RSS))*4;                                        //*
+inflation  = (log(1+CPI)+log(1+CPI(-1))+log(1+CPI(-2))+log(1+CPI(-3))); //*
+inflationq = log(1+CPI)*4;                                                //*
 outputgap  = YGAPobs;                                                       //*
 output     = Yobs;                                                          //*
 fispol     = E_G/100;                                                     //*

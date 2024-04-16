@@ -2138,7 +2138,7 @@ interest   = rffe;                                                       //*
 inflation  = (1/4)*(picnia+picnia(-1)+picnia(-2)+picnia(-3));            //*
 inflationq = picnia;                                                     //*
 outputgap  = xgap2;                                                      //*
-output     = xgdp*100;	                                                 //*
+output     = xgdp*1;	                                                 //*
 fispol     = egfi_;                                                      //*
 fispol     = egfl_;                                                      //*
 //**************************************************************************
