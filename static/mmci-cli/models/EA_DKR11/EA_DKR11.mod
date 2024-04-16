@@ -413,7 +413,7 @@ for i=1:33
     eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
 end
 cd(thispath);
-std_r_ = 100;                                                            //*
+std_r_ = 1;                                                            //*
                                                                          //*
 // Definition of Discretionary Fiscal Policy Parameter                   //*
 coffispol = 1/GSS;                                               //*
@@ -521,12 +521,12 @@ model;
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables //*
 
-interest   = log((1+R)/(1+RSS))*400;                                        //*
-inflation  = (log(1+CPI)+log(1+CPI(-1))+log(1+CPI(-2))+log(1+CPI(-3)))*100; //*
-inflationq = log(1+CPI)*400;                                                //*
+interest   = log((1+R)/(1+RSS))*4;                                        //*
+inflation  = (log(1+CPI)+log(1+CPI(-1))+log(1+CPI(-2))+log(1+CPI(-3)))*1; //*
+inflationq = log(1+CPI)*4;                                                //*
 outputgap  = YGAPobs;                                                       //*
 output     = Yobs;                                                          //*
-fispol     = E_G/100;                                                     //*
+fispol     = E_G/1;                                                     //*
 //**************************************************************************
 
 //**************************************************************************
@@ -824,9 +824,9 @@ interest =   cofintintb1*interest(-1)                                    //*
         E_F = 0.5*E_F(-1) + 0.5*E_F(1)
                 + (1-xie)*(1-betta*xie)/(xie)*(100*log(L/LSS) - E_F);
 
-        YGAPobs = 100*log(YGAP);
+        YGAPobs = 1*log(YGAP);
         Robs = 100*((1+R)/(1+RSS)-1);
-        Yobs = 100*log(Y/YSS);
+        Yobs = 1*log(Y/YSS);
         Zobs = 100*(ZSS/(ZSS + ZDSS*TDSS)*log(Z/ZSS) + ZDSS*TDSS/(ZSS + ZDSS*TDSS)*log(Z_D/ZDSS));
 //288
         Z_Dobs = 100*log(Z_D/ZDSS);
@@ -874,21 +874,21 @@ interest =   cofintintb1*interest(-1)                                    //*
         PD_HHobs = 100*( normcdf((log(OMEG_HH)+0.5*sigma_HH^2*(exp(EE_SIG_HH(-1)*2)))/(sigma_HH*exp(EE_SIG_HH(-1)))) - normcdf((log(OMEGHHSS)+0.5*sigma_HH^2)/(sigma_HH)));
         PD_Eobs = 100*( normcdf((log(OMEG)+0.5*sigma^2*(exp(EE_SIG(-1)*2)))/(sigma*exp(EE_SIG(-1)))) - normcdf((log(OMEGSS)+0.5*sigma^2)/(sigma)));
 
-        EE_A = rho_a*EE_A(-1) + E_A/100 ;
-        EE_A_D = rho_a_D*EE_A_D(-1) + E_A/100 + E_A_D/100 ;
-        EE_B = rho_b*EE_B(-1) + E_B/100;// + corHC*E_H/100 ;
-        EE_G = rho_g*EE_G(-1) + E_G/100 ;
+        EE_A = rho_a*EE_A(-1) + E_A/1 ;
+        EE_A_D = rho_a_D*EE_A_D(-1) + E_A/100 + E_A_D/1;
+        EE_B = rho_b*EE_B(-1) + E_B/1;// + corHC*E_H/100 ;
+        EE_G = rho_g*EE_G(-1) + E_G/1 ;
         EE_L = 0;
         EE_I = rho_i*EE_I(-1);// + E_I/10 ;
-        EE_P = 0*EE_P(-1) - E_P/100/(((1-xi_p)*(1-betta*xi_p)/(xi_p))) ;
-        EE_P_D =0*EE_P_D(-1)- 0*E_P/100/(((1-xi_p_D)*(1-betta*xi_p_D)/(xi_p_D))) ;// + E_P_D/100;
+        EE_P = 0*EE_P(-1) - E_P/1/(((1-xi_p)*(1-betta*xi_p)/(xi_p))) ;
+        EE_P_D =0*EE_P_D(-1)- 0*E_P/1/(((1-xi_p_D)*(1-betta*xi_p_D)/(xi_p_D))) ;// + E_P_D/100;
         EE_Q = rho_i*EE_Q(-1) + E_I/10  + corIC*EE_B ;//+ E_Q/100
-        EE_W = rho_l*EE_W(-1) + E_W/100/((1/(1+betta))*(1-betta*xi_w_C)*(1-xi_w_C)/xi_w_C);
+        EE_W = rho_l*EE_W(-1) + E_W/1/((1/(1+betta))*(1-betta*xi_w_C)*(1-xi_w_C)/xi_w_C);
         EE_LTV = rho_LTV*EE_LTV(-1);// + E_LTV/100 - 0*corBCLTV*EE_Bankcap/10;// + F_LTV/100/(1-chi_NR);
-        EE_H = rho_H*EE_H(-1) + E_H/100 + corHC*E_B/100 ;
+        EE_H = rho_H*EE_H(-1) + E_H/1 + corHC*E_B/100 ;
         EE_R = 0*EE_R(-1) + E_R ;
-        EE_R_D = rho_R_D*EE_R_D(-1) + E_R_D/RDSS/100/(((1-xi_R_D)*(1-betta*xi_R_D)/(xi_R_D)));
-        EE_R_L = rho_R_L*EE_R_L(-1) + E_R_L/RLSS/100/(((1-xi_R_L)*(1-betta*xi_R_L)/(xi_R_L)));
+        EE_R_D = rho_R_D*EE_R_D(-1) + E_R_D/RDSS/1/(((1-xi_R_D)*(1-betta*xi_R_D)/(xi_R_D)));
+        EE_R_L = rho_R_L*EE_R_L(-1) + E_R_L/RLSS/1/(((1-xi_R_L)*(1-betta*xi_R_L)/(xi_R_L)));
         EE_R_L_E = rho_R_L_E*EE_R_L_E(-1) + E_R_L_E/RLESS/100/(((1-xi_R_L_E)*(1-betta*xi_R_L_E)/(xi_R_L_E))) ;
         EE_LTV_E = rho_LTV_E*EE_LTV_E(-1);// + E_LTV_E/10 - 0*corBVLTVE*EE_Bankcap/10;// + F_LTV/100/(1-chi_NR_E);
         EE_IH = rho_i_H*EE_IH(-1);// + E_IH;

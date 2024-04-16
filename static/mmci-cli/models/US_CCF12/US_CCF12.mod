@@ -177,11 +177,11 @@ model(linear);
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables //*
 
-interest   =   FFR*100;                                           //*
-inflation =    (pi + pi(-1) + pi(-2) + pi(-3))*100;   //*
-inflationq  =  pi*400;                                      //*
-outputgap  =   ygap*100/4;                                                    //*
-output =       y*100/4;                                                    //*
+interest   =   FFR*1;                                           //*
+inflation =    (pi + pi(-1) + pi(-2) + pi(-3))*1;   //*
+inflationq  =  pi*4;                                      //*
+outputgap  =   ygap*1/4;                                                    //*
+output =       y*1/4;                                                    //*
 fispol = eps_Gz;                                                         //*
 //**************************************************************************
 
