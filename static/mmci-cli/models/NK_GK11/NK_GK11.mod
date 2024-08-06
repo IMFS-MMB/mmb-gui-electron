@@ -127,7 +127,7 @@ for i=1:33
     deep_parameter_name = M_.param_names(i,:);                           
     eval(['M_.params(i)  = ' deep_parameter_name ' ;'])                  
 end  
-std_r_ = 100;                                                                     
+std_r_ = 1;                                                                     
 cd(thispath);  
                                                           
 // Definition of Discretionary Fiscal Policy Parameter                   //*
@@ -139,11 +139,11 @@ model;
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables //*
 
-interest   = 400*(i-log(1/betta));                                        //*
-inflation  = (infl+infl(-1)+infl(-2)+infl(-3))*100;                       //*
-inflationq = 400*infl;                                                    //*
-outputgap  = (Y-Yf)*100;                                                  //*
-output     = (Y-Y_ss)*100;                                                //* 
+interest   = 4*(i-log(1/betta));                                        //*
+inflation  = (infl+infl(-1)+infl(-2)+infl(-3));                       //*
+inflationq = 4*infl;                                                    //*
+outputgap  = (Y-Yf);                                                  //*
+output     = (Y-Y_ss);                                                //* 
 fispol     = e_g;                                                         //*  
 //**************************************************************************
 
