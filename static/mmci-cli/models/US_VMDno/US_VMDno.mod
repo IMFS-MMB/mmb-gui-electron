@@ -92,7 +92,7 @@ alpha4=30000;
     end;
 end;                                         //*
 	cd(thispath);
-std_r_=100;                                                         	 //*
+std_r_=1;                                                         	 //*
 //**************************************************************************
 
 
@@ -112,11 +112,11 @@ model;
 
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables//*
-interest   = 100*( (1+ReXU)^4 - (1+ReXUU)^4 )/((1+ReXUU)^4);             //*
+interest   = ( (1+ReXU)^4 - (1+ReXUU)^4 )/((1+ReXUU)^4);             //*
 inflation  = 1/4*(inflationq+inflationq(-1)+inflationq(-2)+inflationq(-3));//*
-inflationq = 100*(piU^4-piUU^4)/(piUU^4);                                //*
-outputgap  = 100*(YU-YflexU)/YUU;                                        //*
-output     = 100*(YU-YUU)/YUU;                                           //*
+inflationq = (piU^4-piUU^4)/(piUU^4);                                //*
+outputgap  = (YU-YflexU)/YUU;                                        //*
+output     = (YU-YUU)/YUU;                                           //*
 //**************************************************************************
 
 //**************************************************************************
