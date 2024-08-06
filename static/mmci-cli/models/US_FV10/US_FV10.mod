@@ -148,11 +148,11 @@ gammmaPI    = 1.29;
 PIbar       = 1.01;
 rhod        = 0.12;
 rhophi      = 0.93;
-sigma_A     = exp(-3.97);
-sigma_d     = exp(-1.51);
-sigma_phi   = exp(-2.36);
-sigma_mu    = exp(-5.43);
-sigma_m     = exp(-5.85);
+sigma_A     = exp(-3.97)*10;
+sigma_d     = exp(-1.51)*10;
+sigma_phi   = exp(-2.36)*10;
+sigma_mu    = exp(-5.43)*10;
+sigma_m     = exp(-5.85)*10;
 Lambdamu    = 3.4e-3;
 LambdaA     = 2.8e-3;
 
