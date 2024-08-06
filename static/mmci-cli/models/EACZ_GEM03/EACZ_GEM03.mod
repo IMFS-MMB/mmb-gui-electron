@@ -252,7 +252,7 @@ for i=1:33
     eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
 end
 cd(thispath);
-std_r_ = 100;                                                            //*
+std_r_ = 1;                                                            //*
                                                                          //*
 // Definition of Discretionary Fiscal Policy Parameter                   //*
 coffispol = 1;                                                           //*
@@ -263,11 +263,11 @@ model;
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables //*
 
-interest         = 100*(RNOMF^4-interest_EXOG^4)/interest_EXOG^4;        //*
-inflation        = 100*(PIE4F-PIE4F_EXOG)/PIE4F_EXOG;                    //*
-inflationq       = 100*(PIEF^4-PIE4F_EXOG)/PIE4F_EXOG;                   //*
+interest         = (RNOMF^4-interest_EXOG^4)/interest_EXOG^4;        //*
+inflation        = (PIE4F-PIE4F_EXOG)/PIE4F_EXOG;                    //*
+inflationq       = (PIEF^4-PIE4F_EXOG)/PIE4F_EXOG;                   //*
 outputgap        = GDPGAPF;                                              //*
-output           = GDPF*100;                                             //*
+output           = GDPF;                                             //*
 fispol           = E_GAF;                                                //*
 // Given inflation target for annual inflation is used as target for annualized quarterly inflation.
 //**************************************************************************
@@ -562,7 +562,7 @@ fispol = coffispol*fiscal_;                                              //*
 //          100*(RNOMF^4-1) = (1-XDUMF)*100*(RNOM_EXOGF^4-1)+XDUMF*(XR3F*100*(RNOMF(-1)^4-1)+(1-XR3F)*(100*((1/BET*PIE4F^0.25)^4-1)+XR1F*(100*(PIE4F-1)-100*(PIE4TARF-1))+XR4F*100*(DEPEX^4-1)+XR2F*GDPGAPF)) ;
 
 
-          GDPGAPF = 100*(GDPF_NAT-GDPF_EXOG)/GDPF_EXOG ;
+          GDPGAPF = (GDPF_NAT-GDPF_EXOG)/GDPF_EXOG ;
           PIE4F = PIEF*PIEF(-1)*PIEF(-2)*PIEF(-3) ;
           AF = CF*(1+SHOPF)+EYEF+GAF ;
           GAF = .05*(GA_RATF*(GLAMBDAF*GDPF_NAT+(1-GLAMBDAF)*GDPF_EXOG))+.95*GAF(-1)+E_GAF;
