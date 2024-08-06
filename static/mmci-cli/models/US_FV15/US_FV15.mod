@@ -175,11 +175,11 @@ gammmaPI    = 2;
 PIbar       = 1.0005;
 rhod        = 0.1182;
 rhophi      = 0.9331;
-sigma_A     = exp(-3.9013);
-sigma_d     = exp(-1.9834);
-sigma_phi   = exp(-2.4983);
-sigma_mu    = exp(-6.0283);
-sigma_m     = exp(-6.000);
+sigma_A     = exp(-3.9013)*10;
+sigma_d     = exp(-1.9834)*10;
+sigma_phi   = exp(-2.4983)*10;
+sigma_mu    = exp(-6.0283)*10;
+sigma_m     = exp(-6.000)*10;
 Lambdamu    = 3.4e-3;
 LambdaA     = 2.8e-3;
 
