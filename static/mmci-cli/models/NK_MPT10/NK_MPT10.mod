@@ -92,7 +92,7 @@ cd(thispath);
 std_r_=1;
                                                                          //*
 // Definition of Discretionary Fiscal Policy Parameter                   //*
-coffispol = 1;                                                           //*
+coffispol = exp(1);                                                           //*
 //**************************************************************************
 
 sigma=1; % CRRA
