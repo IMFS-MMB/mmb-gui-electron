@@ -235,18 +235,18 @@ end;
 
 
 shocks;
-var c_ = 0.081^2;
-var r_ = 0.003^2;
-var mstar_ = 0.013^2;
+var c_ = 0.081^2*100;
+var r_ = 0.003^2*100;
+var mstar_ = 0.013^2*100;
 var pibar_= 0;
 var gbar_= 0;
-var n_ = 0.011^2;
-var i_ = 0.24^2;
-var fiistar_ = 0.004^2;
-var fii_ = 0.001^2;
-var a_ = 0.022^2;
-var fiscal_ = 0.005^2;  // replaces g_
-var pistar_ = 0.002^2;
+var n_ = 0.011^2*100;
+var i_ = 0.24^2*100;
+var fiistar_ = 0.004^2*100;
+var fii_ = 0.001^2*100;
+var a_ = 0.022^2*100;
+var fiscal_ = 0.005^2*100;  // replaces g_
+var pistar_ = 0.002^2*100;
 var rstar_ = 0;
 end;
 
