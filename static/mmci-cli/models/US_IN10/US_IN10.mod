@@ -88,7 +88,7 @@ for i=1:33
     eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
 end
 cd(thispath);
-    std_r_ = 100;                                                        //*
+    std_r_ = 1;                                                        //*
                                                                          //*
 // Definition of Discretionary Fiscal Policy Parameter                   //*
 //coffispol = ;                                                          //*
@@ -166,13 +166,13 @@ model ;
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables //*
 
-interest   = 400*(r-log(1/BETA));
-inflation  = (dp+dp(-1)+dp(-2)+dp(-3))*100;
-inflationq = dp*400;
-%outputgap  = (Y -Yf)*100;
-%output     = (Y-0.9308)*100;
-outputgap  = (zata_GDP-zata_GDPf)*100;
-output     = (zata_GDP-0.9308)*100;
+interest   = 4*(r-log(1/BETA));
+inflation  = (dp+dp(-1)+dp(-2)+dp(-3));
+inflationq = dp*4;
+%outputgap  = (Y -Yf);
+%output     = (Y-0.9308);
+outputgap  = (zata_GDP-zata_GDPf);
+output     = (zata_GDP-0.9308);
 //**************************************************************************
 //**************************************************************************
 // Policy Rule                                                           //*
