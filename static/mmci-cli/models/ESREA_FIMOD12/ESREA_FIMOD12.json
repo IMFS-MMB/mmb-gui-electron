@@ -1,0 +1,962 @@
+{
+    "$schema": "model",
+    "name": "ESREA_FIMOD12",
+    "capabilities": {
+      "rules": [
+        "Taylor",
+        "GR",
+        "LWW",
+        "SW",
+        "CEE",
+        "OW08",
+        "OW13",
+        "Coenen",
+        "CMR"
+      ],
+      "unconditional_variances": true
+    },
+    "description": {
+      "ac_ref": "Stähler and Thomas (2012)",
+      "paper_title": "FiMod—A DSGE model for fiscal policy simulations",
+      "journal": "Economic Modelling, 29, 239–261",
+      "replicants_name": "K. Bankowski",
+      "pub_date": "2012",
+      "keywords": [],
+      "description": "",
+      "category": "Estimated/Calibrated multi-country model",
+      "authors": [
+        "Stähler, Nikolai",
+        "Thomas, Carlos"
+      ]
+    },
+    "msr": [
+      "0.8410",
+      "0",
+      "0",
+      "0",
+      "(1-0.8410)*1.7960",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "(1-0.8410)*0.0540*4",
+      "-(1-0.8410)*0.0540*4",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1",
+      "0.25"
+    ],
+    "variabledim": 1,
+    "al": false,
+    "shocks": [
+      {
+        "name": "interest_",
+        "text": "Monetary Policy Shock"
+      },
+      {
+        "name": "fiscal_",
+        "text": "Fiscal Policy Shock"
+      }
+    ],
+    "al_info": null,
+    "variables": [
+            {
+        "name": "interest",
+        "text": "Interest"
+      },
+            {
+        "name": "inflation",
+        "text": "Inflation"
+      },
+            {
+        "name": "inflationq",
+        "text": "inflationq"
+      },
+            {
+        "name": "outputgap",
+        "text": "Output Gap"
+      },
+            {
+        "name": "output",
+        "text": "Output"
+      },
+            {
+        "name": "consumption",
+        "text": "Consumption"
+      },
+            {
+        "name": "investment",
+        "text": "Investment"
+      },
+            {
+        "name": "wage",
+        "text": "Real wage"
+      },
+            {
+        "name": "employment",
+        "text": "Labour"
+      },
+      {
+        "name": "fispol",
+        "text": "fispol"
+      },
+      {
+        "name": "Ytot",
+        "text": "Ytot"
+      },
+      {
+        "name": "Ctot",
+        "text": "Ctot"
+      },
+      {
+        "name": "It",
+        "text": "It"
+      },
+      {
+        "name": "Export",
+        "text": "Export"
+      },
+      {
+        "name": "Import",
+        "text": "Import"
+      },
+      {
+        "name": "utot",
+        "text": "utot"
+      },
+      {
+        "name": "wpt",
+        "text": "wpt"
+      },
+      {
+        "name": "UnitLabCost",
+        "text": "UnitLabCost"
+      },
+      {
+        "name": "pBt",
+        "text": "pBt"
+      },
+      {
+        "name": "DebttoGDP",
+        "text": "DebttoGDP"
+      },
+      {
+        "name": "Deficit",
+        "text": "Deficit"
+      },
+      {
+        "name": "PrimDefrat",
+        "text": "PrimDefrat"
+      },
+      {
+        "name": "PurchtoGDO",
+        "text": "PurchtoGDO"
+      },
+      {
+        "name": "tauct",
+        "text": "tauct"
+      },
+      {
+        "name": "taut",
+        "text": "taut"
+      },
+      {
+        "name": "wgt",
+        "text": "wgt"
+      },
+      {
+        "name": "fPrimDef",
+        "text": "fPrimDef"
+      },
+      {
+        "name": "fExport",
+        "text": "fExport"
+      },
+      {
+        "name": "fImport",
+        "text": "fImport"
+      },
+      {
+        "name": "fUnitLabCost",
+        "text": "fUnitLabCost"
+      },
+      {
+        "name": "fDebttoGDP",
+        "text": "fDebttoGDP"
+      },
+      {
+        "name": "fDeficit",
+        "text": "fDeficit"
+      },
+      {
+        "name": "fPrimDefrat",
+        "text": "fPrimDefrat"
+      },
+      {
+        "name": "fPurchtoGDO",
+        "text": "fPurchtoGDO"
+      },
+      {
+        "name": "q1t",
+        "text": "q1t"
+      },
+      {
+        "name": "q2t",
+        "text": "q2t"
+      },
+      {
+        "name": "piet",
+        "text": "piet"
+      },
+      {
+        "name": "ptildt",
+        "text": "ptildt"
+      },
+      {
+        "name": "Dt",
+        "text": "Dt"
+      },
+      {
+        "name": "lambdat",
+        "text": "lambdat"
+      },
+      {
+        "name": "Yt",
+        "text": "Yt"
+      },
+      {
+        "name": "mct",
+        "text": "mct"
+      },
+      {
+        "name": "Rt",
+        "text": "Rt"
+      },
+      {
+        "name": "Ct",
+        "text": "Ct"
+      },
+      {
+        "name": "kt",
+        "text": "kt"
+      },
+      {
+        "name": "Debt",
+        "text": "Debt"
+      },
+      {
+        "name": "ggt",
+        "text": "ggt"
+      },
+      {
+        "name": "qrt",
+        "text": "qrt"
+      },
+      {
+        "name": "Mpt",
+        "text": "Mpt"
+      },
+      {
+        "name": "vpt",
+        "text": "vpt"
+      },
+      {
+        "name": "npt",
+        "text": "npt"
+      },
+      {
+        "name": "ppt",
+        "text": "ppt"
+      },
+      {
+        "name": "Gt",
+        "text": "Gt"
+      },
+      {
+        "name": "Cgt",
+        "text": "Cgt"
+      },
+      {
+        "name": "At",
+        "text": "At"
+      },
+      {
+        "name": "pgt",
+        "text": "pgt"
+      },
+      {
+        "name": "ntot",
+        "text": "ntot"
+      },
+      {
+        "name": "xt",
+        "text": "xt"
+      },
+      {
+        "name": "rt",
+        "text": "rt"
+      },
+      {
+        "name": "Wpt",
+        "text": "Wpt"
+      },
+      {
+        "name": "Jt",
+        "text": "Jt"
+      },
+      {
+        "name": "Wgt",
+        "text": "Wgt"
+      },
+      {
+        "name": "vgt",
+        "text": "vgt"
+      },
+      {
+        "name": "ngt",
+        "text": "ngt"
+      },
+      {
+        "name": "Mgt",
+        "text": "Mgt"
+      },
+      {
+        "name": "qgt",
+        "text": "qgt"
+      },
+      {
+        "name": "Crt",
+        "text": "Crt"
+      },
+      {
+        "name": "lambdart",
+        "text": "lambdart"
+      },
+      {
+        "name": "nprt",
+        "text": "nprt"
+      },
+      {
+        "name": "nptot",
+        "text": "nptot"
+      },
+      {
+        "name": "ngtot",
+        "text": "ngtot"
+      },
+      {
+        "name": "ngrt",
+        "text": "ngrt"
+      },
+      {
+        "name": "Wptot",
+        "text": "Wptot"
+      },
+      {
+        "name": "Wprt",
+        "text": "Wprt"
+      },
+      {
+        "name": "Wgrt",
+        "text": "Wgrt"
+      },
+      {
+        "name": "wopt",
+        "text": "wopt"
+      },
+      {
+        "name": "A1t",
+        "text": "A1t"
+      },
+      {
+        "name": "A2t",
+        "text": "A2t"
+      },
+      {
+        "name": "A3t",
+        "text": "A3t"
+      },
+      {
+        "name": "A4t",
+        "text": "A4t"
+      },
+      {
+        "name": "A5t",
+        "text": "A5t"
+      },
+      {
+        "name": "A6t",
+        "text": "A6t"
+      },
+      {
+        "name": "Wpot",
+        "text": "Wpot"
+      },
+      {
+        "name": "Wprot",
+        "text": "Wprot"
+      },
+      {
+        "name": "Jot",
+        "text": "Jot"
+      },
+      {
+        "name": "Vact",
+        "text": "Vact"
+      },
+      {
+        "name": "Igt",
+        "text": "Igt"
+      },
+      {
+        "name": "kgt",
+        "text": "kgt"
+      },
+      {
+        "name": "cont",
+        "text": "cont"
+      },
+      {
+        "name": "A7t",
+        "text": "A7t"
+      },
+      {
+        "name": "Utildt",
+        "text": "Utildt"
+      },
+      {
+        "name": "Iot",
+        "text": "Iot"
+      },
+      {
+        "name": "kot",
+        "text": "kot"
+      },
+      {
+        "name": "Debtot",
+        "text": "Debtot"
+      },
+      {
+        "name": "CAt",
+        "text": "CAt"
+      },
+      {
+        "name": "CBt",
+        "text": "CBt"
+      },
+      {
+        "name": "IoAt",
+        "text": "IoAt"
+      },
+      {
+        "name": "IoBt",
+        "text": "IoBt"
+      },
+      {
+        "name": "CrAt",
+        "text": "CrAt"
+      },
+      {
+        "name": "CrBt",
+        "text": "CrBt"
+      },
+      {
+        "name": "RECBt",
+        "text": "RECBt"
+      },
+      {
+        "name": "ddt",
+        "text": "ddt"
+      },
+      {
+        "name": "CAtot",
+        "text": "CAtot"
+      },
+      {
+        "name": "IAtot",
+        "text": "IAtot"
+      },
+      {
+        "name": "pieAt",
+        "text": "pieAt"
+      },
+      {
+        "name": "IBtot",
+        "text": "IBtot"
+      },
+      {
+        "name": "CBtot",
+        "text": "CBtot"
+      },
+      {
+        "name": "fq1t",
+        "text": "fq1t"
+      },
+      {
+        "name": "fq2t",
+        "text": "fq2t"
+      },
+      {
+        "name": "fpiet",
+        "text": "fpiet"
+      },
+      {
+        "name": "fptilfdt",
+        "text": "fptilfdt"
+      },
+      {
+        "name": "fDt",
+        "text": "fDt"
+      },
+      {
+        "name": "flambdat",
+        "text": "flambdat"
+      },
+      {
+        "name": "fYt",
+        "text": "fYt"
+      },
+      {
+        "name": "fmct",
+        "text": "fmct"
+      },
+      {
+        "name": "fRt",
+        "text": "fRt"
+      },
+      {
+        "name": "fCt",
+        "text": "fCt"
+      },
+      {
+        "name": "fkt",
+        "text": "fkt"
+      },
+      {
+        "name": "fGt",
+        "text": "fGt"
+      },
+      {
+        "name": "fDebt",
+        "text": "fDebt"
+      },
+      {
+        "name": "fggt",
+        "text": "fggt"
+      },
+      {
+        "name": "fqpt",
+        "text": "fqpt"
+      },
+      {
+        "name": "fMpt",
+        "text": "fMpt"
+      },
+      {
+        "name": "fvpt",
+        "text": "fvpt"
+      },
+      {
+        "name": "fnpt",
+        "text": "fnpt"
+      },
+      {
+        "name": "fIt",
+        "text": "fIt"
+      },
+      {
+        "name": "fppt",
+        "text": "fppt"
+      },
+      {
+        "name": "fAt",
+        "text": "fAt"
+      },
+      {
+        "name": "fpgt",
+        "text": "fpgt"
+      },
+      {
+        "name": "futot",
+        "text": "futot"
+      },
+      {
+        "name": "fntot",
+        "text": "fntot"
+      },
+      {
+        "name": "fwpt",
+        "text": "fwpt"
+      },
+      {
+        "name": "fwgt",
+        "text": "fwgt"
+      },
+      {
+        "name": "fxt",
+        "text": "fxt"
+      },
+      {
+        "name": "frt",
+        "text": "frt"
+      },
+      {
+        "name": "fWpt",
+        "text": "fWpt"
+      },
+      {
+        "name": "fJt",
+        "text": "fJt"
+      },
+      {
+        "name": "fWgt",
+        "text": "fWgt"
+      },
+      {
+        "name": "ftaut",
+        "text": "ftaut"
+      },
+      {
+        "name": "fvgt",
+        "text": "fvgt"
+      },
+      {
+        "name": "fngt",
+        "text": "fngt"
+      },
+      {
+        "name": "fMgt",
+        "text": "fMgt"
+      },
+      {
+        "name": "fqgt",
+        "text": "fqgt"
+      },
+      {
+        "name": "fCtot",
+        "text": "fCtot"
+      },
+      {
+        "name": "fCrt",
+        "text": "fCrt"
+      },
+      {
+        "name": "flambdart",
+        "text": "flambdart"
+      },
+      {
+        "name": "fnprt",
+        "text": "fnprt"
+      },
+      {
+        "name": "fnptot",
+        "text": "fnptot"
+      },
+      {
+        "name": "fngtot",
+        "text": "fngtot"
+      },
+      {
+        "name": "fngrt",
+        "text": "fngrt"
+      },
+      {
+        "name": "fWptot",
+        "text": "fWptot"
+      },
+      {
+        "name": "fWprt",
+        "text": "fWprt"
+      },
+      {
+        "name": "fWgrt",
+        "text": "fWgrt"
+      },
+      {
+        "name": "fwopt",
+        "text": "fwopt"
+      },
+      {
+        "name": "fA1t",
+        "text": "fA1t"
+      },
+      {
+        "name": "fA2t",
+        "text": "fA2t"
+      },
+      {
+        "name": "fA3t",
+        "text": "fA3t"
+      },
+      {
+        "name": "fA4t",
+        "text": "fA4t"
+      },
+      {
+        "name": "fA5t",
+        "text": "fA5t"
+      },
+      {
+        "name": "fA6t",
+        "text": "fA6t"
+      },
+      {
+        "name": "fWpot",
+        "text": "fWpot"
+      },
+      {
+        "name": "fWprot",
+        "text": "fWprot"
+      },
+      {
+        "name": "ftaukt",
+        "text": "ftaukt"
+      },
+      {
+        "name": "ftausct",
+        "text": "ftausct"
+      },
+      {
+        "name": "ftauct",
+        "text": "ftauct"
+      },
+      {
+        "name": "fJot",
+        "text": "fJot"
+      },
+      {
+        "name": "fVact",
+        "text": "fVact"
+      },
+      {
+        "name": "fIgt",
+        "text": "fIgt"
+      },
+      {
+        "name": "fkgt",
+        "text": "fkgt"
+      },
+      {
+        "name": "fcont",
+        "text": "fcont"
+      },
+      {
+        "name": "fA7t",
+        "text": "fA7t"
+      },
+      {
+        "name": "fUtilfdt",
+        "text": "fUtilfdt"
+      },
+      {
+        "name": "ftaubt",
+        "text": "ftaubt"
+      },
+      {
+        "name": "fTt",
+        "text": "fTt"
+      },
+      {
+        "name": "fIot",
+        "text": "fIot"
+      },
+      {
+        "name": "fkot",
+        "text": "fkot"
+      },
+      {
+        "name": "fDebtot",
+        "text": "fDebtot"
+      },
+      {
+        "name": "fCAt",
+        "text": "fCAt"
+      },
+      {
+        "name": "fCBt",
+        "text": "fCBt"
+      },
+      {
+        "name": "fIoAt",
+        "text": "fIoAt"
+      },
+      {
+        "name": "fIoBt",
+        "text": "fIoBt"
+      },
+      {
+        "name": "fCrAt",
+        "text": "fCrAt"
+      },
+      {
+        "name": "fCrBt",
+        "text": "fCrBt"
+      },
+      {
+        "name": "fddt",
+        "text": "fddt"
+      },
+      {
+        "name": "fCAtot",
+        "text": "fCAtot"
+      },
+      {
+        "name": "fIAtot",
+        "text": "fIAtot"
+      },
+      {
+        "name": "pieBt",
+        "text": "pieBt"
+      },
+      {
+        "name": "fIBtot",
+        "text": "fIBtot"
+      },
+      {
+        "name": "fCBtot",
+        "text": "fCBtot"
+      },
+      {
+        "name": "St",
+        "text": "St"
+      },
+      {
+        "name": "Qt",
+        "text": "Qt"
+      },
+      {
+        "name": "S1t",
+        "text": "S1t"
+      },
+      {
+        "name": "fSt",
+        "text": "fSt"
+      },
+      {
+        "name": "fQt",
+        "text": "fQt"
+      },
+      {
+        "name": "fS1t",
+        "text": "fS1t"
+      },
+      {
+        "name": "fYtot",
+        "text": "fYtot"
+      },
+      {
+        "name": "Aauxrt",
+        "text": "Aauxrt"
+      },
+      {
+        "name": "Aauxot",
+        "text": "Aauxot"
+      },
+      {
+        "name": "Hauxot",
+        "text": "Hauxot"
+      },
+      {
+        "name": "Hauxrt",
+        "text": "Hauxrt"
+      },
+      {
+        "name": "Sub",
+        "text": "Sub"
+      },
+      {
+        "name": "fSub",
+        "text": "fSub"
+      },
+      {
+        "name": "fAauxrt",
+        "text": "fAauxrt"
+      },
+      {
+        "name": "fAauxot",
+        "text": "fAauxot"
+      },
+      {
+        "name": "fHauxot",
+        "text": "fHauxot"
+      },
+      {
+        "name": "fHauxrt",
+        "text": "fHauxrt"
+      },
+      {
+        "name": "fCgt",
+        "text": "fCgt"
+      },
+      {
+        "name": "PrimDef",
+        "text": "PrimDef"
+      },
+      {
+        "name": "taukt",
+        "text": "taukt"
+      },
+      {
+        "name": "taubt",
+        "text": "taubt"
+      },
+      {
+        "name": "tausct",
+        "text": "tausct"
+      },
+      {
+        "name": "Tt",
+        "text": "Tt"
+      },
+      {
+        "name": "RealInt",
+        "text": "RealInt"
+      },
+      {
+        "name": "cpiinf",
+        "text": "cpiinf"
+      },
+      {
+        "name": "fcpiinf",
+        "text": "fcpiinf"
+      },
+      {
+        "name": "epsiG_agg",
+        "text": "epsiG_agg"
+      },
+      {
+        "name": "Rev_t",
+        "text": "Rev_t"
+      },
+      {
+        "name": "Exp_t",
+        "text": "Exp_t"
+      },
+      {
+        "name": "Rev_GDP_t",
+        "text": "Rev_GDP_t"
+      },
+      {
+        "name": "Exp_GDP_t",
+        "text": "Exp_GDP_t"
+      } 
+    ]
+  }

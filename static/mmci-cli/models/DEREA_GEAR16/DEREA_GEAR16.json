@@ -1,0 +1,1098 @@
+{
+    "$schema": "model",
+    "name": "DEREA_GEAR16",
+    "capabilities": {
+      "rules": [
+        "Taylor",
+        "GR",
+        "LWW",
+        "SW",
+        "CEE",
+        "OW13",
+        "Coenen",
+        "CMR"
+      ],
+      "unconditional_variances": true
+    },
+    "description": {
+      "ac_ref": "Gadatsch et al. (2016)",
+      "paper_title": "Fiscal policy during the crisis: A look on Germany and the Euro area with GEAR",
+      "journal": "Economic Modelling, 52, 997-1016",
+      "replicants_name": "K. Bankowski",
+      "pub_date": "2016",
+      "keywords": [],
+      "description": "",
+      "category": "Estimated/Calibrated multi-country model",
+      "authors": [
+        "Gadatsch, Niklas",
+        "Hauzenberger, Klemens",
+        "Stähler, Nikolai"
+      ]
+    },
+    "msr": [
+      "0.840454065296516000",
+      "0",
+      "0",
+      "0",
+      "(1-0.840454065296516000)*1.796006986201710000",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "(1-0.840454065296516000)*0.054033948356913700*4",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1",
+      "0.25"
+    ],
+    "variabledim": 1,
+    "al": false,
+"shocks": [
+      {
+        "name": "interest_",
+        "text": "Monetary Policy Shock"
+      },
+      {
+        "name": "fiscal_",
+        "text": "Fiscal Policy Shock"
+      },
+      {
+        "name": "nua_a",
+        "text": "Technology shock"
+      },
+      {
+        "name": "nua_b",
+        "text": "nub_b"
+      },
+      {
+        "name": "nua_etheta",
+        "text": "nua_etheta"
+      },
+      {
+        "name": "nub_etheta",
+        "text": "nub_etheta"
+      },
+      {
+        "name": "nua_ethetaw",
+        "text": "nua_ethetaw"
+      },
+      {
+        "name": "nub_ethetaw",
+        "text": "nub_ethetaw"
+      },
+      {
+        "name": "nua_eb",
+        "text": "nua_eb"
+      },
+      {
+        "name": "nub_eb",
+        "text": "nub_eb"
+      },
+      {
+        "name": "nua_en",
+        "text": "nua_en"
+      },
+      {
+        "name": "nub_en",
+        "text": "nub_en"
+      },
+      {
+        "name": "nua_ein",
+        "text": "nua_ein"
+      },
+      {
+        "name": "nub_ein",
+        "text": "nub_ein"
+      },
+      {
+        "name": "nua_erp",
+        "text": "nua_erp"
+      },
+      {
+        "name": "nub_erp",
+        "text": "nub_erp"
+      },
+      {
+        "name": "nua_etau",
+        "text": "nua_etau"
+      },
+      {
+        "name": "nub_etau",
+        "text": "nub_etau"
+      },
+      {
+        "name": "nua_etauw",
+        "text": "nua_etauw"
+      },
+      {
+        "name": "nub_etauw",
+        "text": "nub_etauw"
+      },
+      {
+        "name": "nua_etausc",
+        "text": "nua_etausc"
+      },
+      {
+        "name": "nub_etausc",
+        "text": "nub_etausc"
+      },
+      {
+        "name": "nua_etauc",
+        "text": "nua_etauc"
+      },
+      {
+        "name": "nub_etauc",
+        "text": "nub_etauc"
+      },
+      {
+        "name": "nua_einG",
+        "text": "nua_einG"
+      },
+      {
+        "name": "nub_einG",
+        "text": "nub_einG"
+      },
+      {
+        "name": "nua_enG",
+        "text": "nua_enG"
+      },
+      {
+        "name": "nub_enG",
+        "text": "nub_enG"
+      },
+      {
+        "name": "nua_eTR",
+        "text": "nua_eTR"
+      },
+      {
+        "name": "nub_eTR",
+        "text": "nub_eTR"
+      },
+      {
+        "name": "nua_eT",
+        "text": "nua_eT"
+      },
+      {
+        "name": "nub_eT",
+        "text": "nub_eT"
+      },
+      {
+        "name": "nua_emg",
+        "text": "nua_emg"
+      },
+      {
+        "name": "nub_emg",
+        "text": "nub_emg"
+      },
+      {
+        "name": "nua_RoW",
+        "text": "nua_RoW"
+      },
+      {
+        "name": "nub_RoW",
+        "text": "nub_RoW"
+      },
+      {
+        "name": "nua_RoE",
+        "text": "nua_RoE"
+      },
+      {
+        "name": "nub_RoE",
+        "text": "nub_RoE"
+      },
+      {
+        "name": "eps_y_c",
+        "text": "eps_y_c"
+      },
+      {
+        "name": "eps_i_c",
+        "text": "eps_i_c"
+      },
+      {
+        "name": "eps_pi_c",
+        "text": "eps_pi_c"
+      },
+      {
+        "name": "eps_z_g",
+        "text": "eps_z_g"
+      }
+    ],
+    "al_info": null,
+    "variables": [
+            {
+        "name": "interest",
+        "text": "Interest"
+      },
+            {
+        "name": "inflation",
+        "text": "Inflation"
+      },
+            {
+        "name": "inflationq",
+        "text": "inflationq"
+      },
+            {
+        "name": "outputgap",
+        "text": "Output Gap"
+      },
+            {
+        "name": "output",
+        "text": "Output"
+      },
+            {
+        "name": "consumption",
+        "text": "Consumption"
+      },
+            {
+        "name": "investment",
+        "text": "Investment"
+      },
+            {
+        "name": "wage",
+        "text": "Real wage"
+      },
+            {
+        "name": "employment",
+        "text": "Labour"
+      },
+            {
+        "name": "fispol",
+        "text": "fispol"
+      },
+      {
+        "name": "i_a_t",
+        "text": "i_a_t"
+      },
+      {
+        "name": "i_b_t",
+        "text": "i_b_t"
+      },
+      {
+        "name": "i_c_t",
+        "text": "i_c_t"
+      },
+      {
+        "name": "i_Ga_t",
+        "text": "i_Ga_t"
+      },
+      {
+        "name": "i_Gb_t",
+        "text": "i_Gb_t"
+      },
+      {
+        "name": "i_ac_t",
+        "text": "i_ac_t"
+      },
+      {
+        "name": "i_ba_t",
+        "text": "i_ba_t"
+      },
+      {
+        "name": "i_bc_t",
+        "text": "i_bc_t"
+      },
+      {
+        "name": "i_policy_t",
+        "text": "i_policy_t"
+      },
+      {
+        "name": "y_a_t",
+        "text": "y_a_t"
+      },
+      {
+        "name": "y_b_t",
+        "text": "y_b_t"
+      },
+      {
+        "name": "y_c_t",
+        "text": "y_c_t"
+      },
+      {
+        "name": "c_a_t",
+        "text": "c_a_t"
+      },
+      {
+        "name": "c_b_t",
+        "text": "c_b_t"
+      },
+      {
+        "name": "c_o_a_t",
+        "text": "c_o_a_t"
+      },
+      {
+        "name": "c_o_b_t",
+        "text": "c_o_b_t"
+      },
+      {
+        "name": "c_r_a_t",
+        "text": "c_r_a_t"
+      },
+      {
+        "name": "c_r_b_t",
+        "text": "c_r_b_t"
+      },
+      {
+        "name": "in_a_t",
+        "text": "in_a_t"
+      },
+      {
+        "name": "in_b_t",
+        "text": "in_b_t"
+      },
+      {
+        "name": "in_o_a_t",
+        "text": "in_o_a_t"
+      },
+      {
+        "name": "in_o_b_t",
+        "text": "in_o_b_t"
+      },
+      {
+        "name": "lambda_o_a_t",
+        "text": "lambda_o_a_t"
+      },
+      {
+        "name": "lambda_o_b_t",
+        "text": "lambda_o_b_t"
+      },
+      {
+        "name": "lambda_r_a_t",
+        "text": "lambda_r_a_t"
+      },
+      {
+        "name": "lambda_r_b_t",
+        "text": "lambda_r_b_t"
+      },
+      {
+        "name": "n_a_t",
+        "text": "n_a_t"
+      },
+      {
+        "name": "n_b_t",
+        "text": "n_b_t"
+      },
+      {
+        "name": "nP_a_t",
+        "text": "nP_a_t"
+      },
+      {
+        "name": "nP_b_t",
+        "text": "nP_b_t"
+      },
+      {
+        "name": "nG_a_t",
+        "text": "nG_a_t"
+      },
+      {
+        "name": "nG_b_t",
+        "text": "nG_b_t"
+      },
+      {
+        "name": "wr_a_t",
+        "text": "wr_a_t"
+      },
+      {
+        "name": "wr_b_t",
+        "text": "wr_b_t"
+      },
+      {
+        "name": "wrG_a_t",
+        "text": "wrG_a_t"
+      },
+      {
+        "name": "wrG_b_t",
+        "text": "wrG_b_t"
+      },
+      {
+        "name": "mg_a_t",
+        "text": "mg_a_t"
+      },
+      {
+        "name": "mg_b_t",
+        "text": "mg_b_t"
+      },
+      {
+        "name": "k_a_t",
+        "text": "k_a_t"
+      },
+      {
+        "name": "k_b_t",
+        "text": "k_b_t"
+      },
+      {
+        "name": "k_o_a_t",
+        "text": "k_o_a_t"
+      },
+      {
+        "name": "k_o_b_t",
+        "text": "k_o_b_t"
+      },
+      {
+        "name": "mcr_a_t",
+        "text": "mcr_a_t"
+      },
+      {
+        "name": "mcr_b_t",
+        "text": "mcr_b_t"
+      },
+      {
+        "name": "rk_a_t",
+        "text": "rk_a_t"
+      },
+      {
+        "name": "rk_b_t",
+        "text": "rk_b_t"
+      },
+      {
+        "name": "q_a_t",
+        "text": "q_a_t"
+      },
+      {
+        "name": "q_b_t",
+        "text": "q_b_t"
+      },
+      {
+        "name": "Rk_a_t",
+        "text": "Rk_a_t"
+      },
+      {
+        "name": "Rk_b_t",
+        "text": "Rk_b_t"
+      },
+      {
+        "name": "l_a_t",
+        "text": "l_a_t"
+      },
+      {
+        "name": "l_b_t",
+        "text": "l_b_t"
+      },
+      {
+        "name": "l_o_a_t",
+        "text": "l_o_a_t"
+      },
+      {
+        "name": "l_o_b_t",
+        "text": "l_o_b_t"
+      },
+      {
+        "name": "l_r_a_t",
+        "text": "l_r_a_t"
+      },
+      {
+        "name": "l_r_b_t",
+        "text": "l_r_b_t"
+      },
+      {
+        "name": "ur_a_t",
+        "text": "ur_a_t"
+      },
+      {
+        "name": "ur_b_t",
+        "text": "ur_b_t"
+      },
+      {
+        "name": "cG_a_t",
+        "text": "cG_a_t"
+      },
+      {
+        "name": "cG_b_t",
+        "text": "cG_b_t"
+      },
+      {
+        "name": "tauw_a_t",
+        "text": "tauw_a_t"
+      },
+      {
+        "name": "tauw_b_t",
+        "text": "tauw_b_t"
+      },
+      {
+        "name": "tausc_a_t",
+        "text": "tausc_a_t"
+      },
+      {
+        "name": "tausc_b_t",
+        "text": "tausc_b_t"
+      },
+      {
+        "name": "tauk_a_t",
+        "text": "tauk_a_t"
+      },
+      {
+        "name": "tauk_b_t",
+        "text": "tauk_b_t"
+      },
+      {
+        "name": "tauc_a_t",
+        "text": "tauc_a_t"
+      },
+      {
+        "name": "tauc_b_t",
+        "text": "tauc_b_t"
+      },
+      {
+        "name": "TR_r_a_t",
+        "text": "TR_r_a_t"
+      },
+      {
+        "name": "TR_r_b_t",
+        "text": "TR_r_b_t"
+      },
+      {
+        "name": "TR_o_a_t",
+        "text": "TR_o_a_t"
+      },
+      {
+        "name": "TR_o_b_t",
+        "text": "TR_o_b_t"
+      },
+      {
+        "name": "TR_a_t",
+        "text": "TR_a_t"
+      },
+      {
+        "name": "TR_b_t",
+        "text": "TR_b_t"
+      },
+      {
+        "name": "T_a_t",
+        "text": "T_a_t"
+      },
+      {
+        "name": "T_b_t",
+        "text": "T_b_t"
+      },
+      {
+        "name": "UB_a_t",
+        "text": "UB_a_t"
+      },
+      {
+        "name": "UB_b_t",
+        "text": "UB_b_t"
+      },
+      {
+        "name": "BG_a_t",
+        "text": "BG_a_t"
+      },
+      {
+        "name": "BG_b_t",
+        "text": "BG_b_t"
+      },
+      {
+        "name": "kG_a_t",
+        "text": "kG_a_t"
+      },
+      {
+        "name": "kG_b_t",
+        "text": "kG_b_t"
+      },
+      {
+        "name": "inG_a_t",
+        "text": "inG_a_t"
+      },
+      {
+        "name": "inG_b_t",
+        "text": "inG_b_t"
+      },
+      {
+        "name": "yG_a_t",
+        "text": "yG_a_t"
+      },
+      {
+        "name": "yG_b_t",
+        "text": "yG_b_t"
+      },
+      {
+        "name": "omega_o_a_t",
+        "text": "omega_o_a_t"
+      },
+      {
+        "name": "omega_o_b_t",
+        "text": "omega_o_b_t"
+      },
+      {
+        "name": "omega_r_a_t",
+        "text": "omega_r_a_t"
+      },
+      {
+        "name": "omega_r_b_t",
+        "text": "omega_r_b_t"
+      },
+      {
+        "name": "pi_w_a_t",
+        "text": "pi_w_a_t"
+      },
+      {
+        "name": "pi_w_b_t",
+        "text": "pi_w_b_t"
+      },
+      {
+        "name": "kappaw_a_t",
+        "text": "kappaw_a_t"
+      },
+      {
+        "name": "kappaw_b_t",
+        "text": "kappaw_b_t"
+      },
+      {
+        "name": "pr_aa_t",
+        "text": "pr_aa_t"
+      },
+      {
+        "name": "pr_ba_t",
+        "text": "pr_ba_t"
+      },
+      {
+        "name": "pr_ca_t",
+        "text": "pr_ca_t"
+      },
+      {
+        "name": "pr_bb_t",
+        "text": "pr_bb_t"
+      },
+      {
+        "name": "pr_ab_t",
+        "text": "pr_ab_t"
+      },
+      {
+        "name": "pr_cb_t",
+        "text": "pr_cb_t"
+      },
+      {
+        "name": "pr_ac_t",
+        "text": "pr_ac_t"
+      },
+      {
+        "name": "pr_bc_t",
+        "text": "pr_bc_t"
+      },
+      {
+        "name": "pi_a_t",
+        "text": "pi_a_t"
+      },
+      {
+        "name": "pi_b_t",
+        "text": "pi_b_t"
+      },
+      {
+        "name": "pi_c_t",
+        "text": "pi_c_t"
+      },
+      {
+        "name": "pi_aa_t",
+        "text": "pi_aa_t"
+      },
+      {
+        "name": "pi_bb_t",
+        "text": "pi_bb_t"
+      },
+      {
+        "name": "pi_ab_t",
+        "text": "pi_ab_t"
+      },
+      {
+        "name": "pi_bc_t",
+        "text": "pi_bc_t"
+      },
+      {
+        "name": "pi_ac_t",
+        "text": "pi_ac_t"
+      },
+      {
+        "name": "pi_ba_t",
+        "text": "pi_ba_t"
+      },
+      {
+        "name": "c_aa_t",
+        "text": "c_aa_t"
+      },
+      {
+        "name": "c_ba_t",
+        "text": "c_ba_t"
+      },
+      {
+        "name": "c_bb_t",
+        "text": "c_bb_t"
+      },
+      {
+        "name": "c_ab_t",
+        "text": "c_ab_t"
+      },
+      {
+        "name": "c_ac_t",
+        "text": "c_ac_t"
+      },
+      {
+        "name": "c_bc_t",
+        "text": "c_bc_t"
+      },
+      {
+        "name": "in_aa_t",
+        "text": "in_aa_t"
+      },
+      {
+        "name": "in_ba_t",
+        "text": "in_ba_t"
+      },
+      {
+        "name": "in_bb_t",
+        "text": "in_bb_t"
+      },
+      {
+        "name": "in_ab_t",
+        "text": "in_ab_t"
+      },
+      {
+        "name": "in_ac_t",
+        "text": "in_ac_t"
+      },
+      {
+        "name": "in_bc_t",
+        "text": "in_bc_t"
+      },
+      {
+        "name": "Del_S_bc_t",
+        "text": "Del_S_bc_t"
+      },
+      {
+        "name": "Del_S_ac_t",
+        "text": "Del_S_ac_t"
+      },
+      {
+        "name": "rer_ba_t",
+        "text": "rer_ba_t"
+      },
+      {
+        "name": "rer_ca_t",
+        "text": "rer_ca_t"
+      },
+      {
+        "name": "rer_bc_t",
+        "text": "rer_bc_t"
+      },
+      {
+        "name": "rer_ac_t",
+        "text": "rer_ac_t"
+      },
+      {
+        "name": "B_c_t",
+        "text": "B_c_t"
+      },
+      {
+        "name": "B_ac_t",
+        "text": "B_ac_t"
+      },
+      {
+        "name": "B_bc_t",
+        "text": "B_bc_t"
+      },
+      {
+        "name": "B_a_t",
+        "text": "B_a_t"
+      },
+      {
+        "name": "B_ba_t",
+        "text": "B_ba_t"
+      },
+      {
+        "name": "nfa_a_t",
+        "text": "nfa_a_t"
+      },
+      {
+        "name": "nfa_b_t",
+        "text": "nfa_b_t"
+      },
+      {
+        "name": "nfa_c_t",
+        "text": "nfa_c_t"
+      },
+      {
+        "name": "ca_a_t",
+        "text": "ca_a_t"
+      },
+      {
+        "name": "ca_b_t",
+        "text": "ca_b_t"
+      },
+      {
+        "name": "ca_c_t",
+        "text": "ca_c_t"
+      },
+      {
+        "name": "a_a_t",
+        "text": "a_a_t"
+      },
+      {
+        "name": "a_b_t",
+        "text": "a_b_t"
+      },
+      {
+        "name": "z_g_t",
+        "text": "z_g_t"
+      },
+      {
+        "name": "theta_a_t",
+        "text": "theta_a_t"
+      },
+      {
+        "name": "theta_b_t",
+        "text": "theta_b_t"
+      },
+      {
+        "name": "thetaw_a_t",
+        "text": "thetaw_a_t"
+      },
+      {
+        "name": "thetaw_b_t",
+        "text": "thetaw_b_t"
+      },
+      {
+        "name": "e_b_a_t",
+        "text": "e_b_a_t"
+      },
+      {
+        "name": "e_b_b_t",
+        "text": "e_b_b_t"
+      },
+      {
+        "name": "e_n_a_t",
+        "text": "e_n_a_t"
+      },
+      {
+        "name": "e_n_b_t",
+        "text": "e_n_b_t"
+      },
+      {
+        "name": "e_in_a_t",
+        "text": "e_in_a_t"
+      },
+      {
+        "name": "e_in_b_t",
+        "text": "e_in_b_t"
+      },
+      {
+        "name": "e_rp_a_t",
+        "text": "e_rp_a_t"
+      },
+      {
+        "name": "e_rp_b_t",
+        "text": "e_rp_b_t"
+      },
+      {
+        "name": "e_tau_a_t",
+        "text": "e_tau_a_t"
+      },
+      {
+        "name": "e_tau_b_t",
+        "text": "e_tau_b_t"
+      },
+      {
+        "name": "e_RoW_a_t",
+        "text": "e_RoW_a_t"
+      },
+      {
+        "name": "e_RoW_b_t",
+        "text": "e_RoW_b_t"
+      },
+      {
+        "name": "e_RoE_a_t",
+        "text": "e_RoE_a_t"
+      },
+      {
+        "name": "e_RoE_b_t",
+        "text": "e_RoE_b_t"
+      },
+      {
+        "name": "pi_c_var_t",
+        "text": "pi_c_var_t"
+      },
+      {
+        "name": "i_c_var_t",
+        "text": "i_c_var_t"
+      },
+      {
+        "name": "y_c_var_t",
+        "text": "y_c_var_t"
+      },
+      {
+        "name": "y_c_aux_t",
+        "text": "y_c_aux_t"
+      },
+      {
+        "name": "dgdp_a_t",
+        "text": "dgdp_a_t"
+      },
+      {
+        "name": "dgdp_b_t",
+        "text": "dgdp_b_t"
+      },
+      {
+        "name": "GDP_a_t",
+        "text": "GDP_a_t"
+      },
+      {
+        "name": "GDP_b_t",
+        "text": "GDP_b_t"
+      },
+      {
+        "name": "ex_a_t",
+        "text": "ex_a_t"
+      },
+      {
+        "name": "ex_b_t",
+        "text": "ex_b_t"
+      },
+      {
+        "name": "im_a_t",
+        "text": "im_a_t"
+      },
+      {
+        "name": "im_b_t",
+        "text": "im_b_t"
+      },
+      {
+        "name": "y_a_obs",
+        "text": "y_a_obs"
+      },
+      {
+        "name": "y_b_obs",
+        "text": "y_b_obs"
+      },
+      {
+        "name": "y_c_obs",
+        "text": "y_c_obs"
+      },
+      {
+        "name": "c_a_obs",
+        "text": "c_a_obs"
+      },
+      {
+        "name": "c_b_obs",
+        "text": "c_b_obs"
+      },
+      {
+        "name": "in_a_obs",
+        "text": "in_a_obs"
+      },
+      {
+        "name": "in_b_obs",
+        "text": "in_b_obs"
+      },
+      {
+        "name": "n_a_obs",
+        "text": "n_a_obs"
+      },
+      {
+        "name": "n_b_obs",
+        "text": "n_b_obs"
+      },
+      {
+        "name": "wr_a_obs",
+        "text": "wr_a_obs"
+      },
+      {
+        "name": "wr_b_obs",
+        "text": "wr_b_obs"
+      },
+      {
+        "name": "pi_a_obs",
+        "text": "pi_a_obs"
+      },
+      {
+        "name": "pi_b_obs",
+        "text": "pi_b_obs"
+      },
+      {
+        "name": "pi_c_obs",
+        "text": "pi_c_obs"
+      },
+      {
+        "name": "ca_a_obs",
+        "text": "ca_a_obs"
+      },
+      {
+        "name": "ca_b_obs",
+        "text": "ca_b_obs"
+      },
+      {
+        "name": "ca_c_obs",
+        "text": "ca_c_obs"
+      },
+      {
+        "name": "i_EMU_obs",
+        "text": "i_EMU_obs"
+      },
+      {
+        "name": "i_c_obs",
+        "text": "i_c_obs"
+      },
+      {
+        "name": "l_a_obs",
+        "text": "l_a_obs"
+      },
+      {
+        "name": "l_b_obs",
+        "text": "l_b_obs"
+      },
+      {
+        "name": "ur_a_obs",
+        "text": "ur_a_obs"
+      },
+      {
+        "name": "ur_b_obs",
+        "text": "ur_b_obs"
+      },
+      {
+        "name": "ur_a_dif",
+        "text": "ur_a_dif"
+      },
+      {
+        "name": "ur_b_dif",
+        "text": "ur_b_dif"
+      },
+      {
+        "name": "BG_a_obs",
+        "text": "BG_a_obs"
+      },
+      {
+        "name": "BG_b_obs",
+        "text": "BG_b_obs"
+      },
+      {
+        "name": "def_a_obs",
+        "text": "def_a_obs"
+      },
+      {
+        "name": "def_b_obs",
+        "text": "def_b_obs"
+      },
+      {
+        "name": "rer_ba_obs",
+        "text": "rer_ba_obs"
+      },
+      {
+        "name": "nuAGG_ecG",
+        "text": "nuAGG_ecG"
+      }  
+    ]
+  }

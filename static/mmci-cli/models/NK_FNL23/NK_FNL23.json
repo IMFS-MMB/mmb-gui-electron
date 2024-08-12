@@ -1,0 +1,537 @@
+{
+  "$schema": "model",
+  "name": "NK_FNL23",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Ferrari and Landi (2023)",
+    "paper_title": "Towards a Green Economy: The Role of the Central Bank's Asset Purchases",
+    "journal": "International Journal of Central Banking",
+    "replicants_name": "J.M. Stein and M. Vilt",
+    "pub_date": "2023",
+    "keywords": [],
+    "description": "",
+    "category": "Calibrated model",
+    "authors": [
+      "Ferrari, Allesandro",
+      "Landi, Valerio Nispi"
+    ]
+  },
+  "msr": [
+    "0.93",
+    "0",
+    "0",
+    "0",
+    "2.74*(1-0.93)",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "va",
+      "text": "Technology shock"
+    },
+    {
+      "name": "vi",
+      "text": "Investment Technology Shock"
+    },
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "a",
+      "text": "Technology shock process"
+    },
+    {
+      "name": "c",
+      "text": "Consumption"
+    },
+    {
+      "name": "cf",
+      "text": "cf"
+    },
+    {
+      "name": "w",
+      "text": "Real wage"
+    },
+    {
+      "name": "lam",
+      "text": "lam"
+    },
+    {
+      "name": "rkG",
+      "text": "rkG"
+    },
+    {
+      "name": "h",
+      "text": "Labour"
+    },
+    {
+      "name": "rkB",
+      "text": "rkB"
+    },
+    {
+      "name": "hB",
+      "text": "hB"
+    },
+    {
+      "name": "hG",
+      "text": "hG"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    },
+    {
+      "name": "y",
+      "text": "y"
+    },
+    {
+      "name": "k",
+      "text": "Capital stock"
+    },
+    {
+      "name": "kB",
+      "text": "kB"
+    },
+    {
+      "name": "kG",
+      "text": "kG"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "q",
+      "text": "q"
+    },
+    {
+      "name": "I",
+      "text": "Investment"
+    },
+    {
+      "name": "r",
+      "text": "r"
+    },
+    {
+      "name": "pI",
+      "text": "pI"
+    },
+    {
+      "name": "pi",
+      "text": "pi"
+    },
+    {
+      "name": "yB",
+      "text": "yB"
+    },
+    {
+      "name": "yG",
+      "text": "yG"
+    },
+    {
+      "name": "pG",
+      "text": "pG"
+    },
+    {
+      "name": "pB",
+      "text": "pB"
+    },
+    {
+      "name": "rB",
+      "text": "rB"
+    },
+    {
+      "name": "rG",
+      "text": "rG"
+    },
+    {
+      "name": "bHG",
+      "text": "bHG"
+    },
+    {
+      "name": "bHB",
+      "text": "bHB"
+    },
+    {
+      "name": "bCB",
+      "text": "bCB"
+    },
+    {
+      "name": "bCG",
+      "text": "bCG"
+    },
+    {
+      "name": "mu",
+      "text": "mu"
+    },
+    {
+      "name": "e",
+      "text": "Emission"
+    },
+    {
+      "name": "X",
+      "text": "X"
+    },
+    {
+      "name": "G",
+      "text": "G"
+    },
+    {
+      "name": "rGE",
+      "text": "rGE"
+    },
+    {
+      "name": "rBE",
+      "text": "rBE"
+    },  
+    {
+      "name": "sp",
+      "text": "sp"
+    },
+    {
+      "name": "price",
+      "text": "price"
+    },
+    {
+      "name": "X_ea",
+      "text": "X_ea"
+    },
+    {
+      "name": "tau",
+      "text": "tau"
+    },
+    {
+      "name": "re",
+      "text": "re"
+    },
+    {
+      "name": "a",
+      "text": "a"
+    },
+    {
+      "name": "epsI",
+      "text": "epsI"
+    },
+    {
+      "name": "ylog",
+      "text": "ylog"
+    },
+    {
+      "name": "clog",
+      "text": "clog"
+    },
+    {
+      "name": "ilog",
+      "text": "ilog"
+    },
+    {
+      "name": "klog",
+      "text": "klog"
+    },
+    {
+      "name": "hlog",
+      "text": "hlog"
+    },
+    {
+      "name": "piA",
+      "text": "piA"
+    },
+    {
+      "name": "rGA",
+      "text": "rGA"
+    },
+    {
+      "name": "rBA",
+      "text": "rBA"
+    },
+    {
+      "name": "elog",
+      "text": "elog"
+    },
+    {
+      "name": "yGlog",
+      "text": "yGlog"
+    },
+    {
+      "name": "Xealog",
+      "text": "Xealog"
+    },
+    {
+      "name": "Xlog",
+      "text": "Xlog"
+    },
+    {
+      "name": "lamf",
+      "text": "lamf"
+    },
+    {
+      "name": "cf",
+      "text": "cf"
+    },
+    {
+      "name": "rkGf",
+      "text": "rkGf"
+    },
+    {
+      "name": "rkBf",
+      "text": "rkBf"
+    },
+    {
+      "name": "wf",
+      "text": "wf"
+    },
+    {
+      "name": "hf",
+      "text": "hf"
+    },
+    {
+      "name": "hBf",
+      "text": "hBf"
+    },
+    {
+      "name": "hGf",
+      "text": "hGf"
+    },
+    {
+      "name": "yf",
+      "text": "yf"
+    },
+    {
+      "name": "kf",
+      "text": "kf"
+    },
+    {
+      "name": "kBf",
+      "text": "kBf"
+    },
+    {
+      "name": "kGf",
+      "text": "kGf"
+    },
+    {
+      "name": "qf",
+      "text": "qf"
+    },
+    {
+      "name": "If",
+      "text": "If"
+    },
+    {
+      "name": "rf",
+      "text": "rf"
+    },
+    {
+      "name": "pIf",
+      "text": "pIf"
+    },
+    {
+      "name": "pif",
+      "text": "pif"
+    },
+    {
+      "name": "yBf",
+      "text": "yBf"
+    },
+    {
+      "name": "yGf",
+      "text": "yGf"
+    },
+    {
+      "name": "pGf",
+      "text": "pGf"
+    },
+    {
+      "name": "pBf",
+      "text": "pBf"
+    },
+    {
+      "name": "rBf",
+      "text": "rBf"
+    },
+    {
+      "name": "rGf",
+      "text": "rGf"
+    },
+    {
+      "name": "bHGf",
+      "text": "bHGf"
+    },
+    {
+      "name": "bHBf",
+      "text": "bHBf"
+    },
+    {
+      "name": "bCBf",
+      "text": "bCBf"
+    },
+    {
+      "name": "bCGf",
+      "text": "bCGf"
+    },
+    {
+      "name": "muf",
+      "text": "muf"
+    },
+    {
+      "name": "ef",
+      "text": "ef"
+    },
+    {
+      "name": "Gf",
+      "text": "Gf"
+    },
+    {
+      "name": "rGEf",
+      "text": "rGEf"
+    },
+    {
+      "name": "rBEf",
+      "text": "rBEf"
+    },
+    {
+      "name": "spf",
+      "text": "spf"
+    },
+    {
+      "name": "pricef",
+      "text": "pricef"
+    },
+    {
+      "name": "X_eaf",
+      "text": "X_eaf"
+    },
+    {
+      "name": "tauf",
+      "text": "tauf"
+    },
+    {
+      "name": "ref",
+      "text": "ref"
+    },
+    {
+      "name": "af",
+      "text": "af"
+    },
+    {
+      "name": "epsIf",
+      "text": "epsIf"
+    },
+    {
+      "name": "ylogf",
+      "text": "ylogf"
+    },
+    {
+      "name": "clogf",
+      "text": "clogf"
+    },
+    {
+      "name": "ilogf",
+      "text": "ilogf"
+    },
+    {
+      "name": "klogf",
+      "text": "klogf"
+    },
+    {
+      "name": "hlogf",
+      "text": "hlogf"
+    },
+    {
+      "name": "piAf",
+      "text": "piAf"
+    },
+    {
+      "name": "rGAf",
+      "text": "rGAf"
+    },
+    {
+      "name": "rBAf",
+      "text": "rBAf"
+    },
+    {
+      "name": "elogf",
+      "text": "elogf"
+    },
+    {
+      "name": "yGlogf",
+      "text": "yGlogf"
+    },
+    {
+      "name": "Xealogf",
+      "text": "Xealogf"
+    },
+    {
+      "name": "Xlogf",
+      "text": "Xlogf"
+    },
+    {
+      "name": "vg",
+      "text": "vg"
+    }
+  ]
+}
