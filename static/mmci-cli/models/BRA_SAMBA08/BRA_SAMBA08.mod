@@ -132,7 +132,7 @@ model(linear);
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables //*
 
-interest   = r*;                                                       //*
+interest   = r*4;                                                       //*
 inflation = (1/4)*(4*pi+4*pi(-1)+4*pi(-2)+4*pi(-3));     	          //*
 inflationq  = pi*4;                                                     //*
 outputgap  = yva;                                                     //*
