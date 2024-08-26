@@ -438,8 +438,7 @@ thispath = pwd;
 cd('..');
 load policy_param.mat;
 for i=1:33
-    %deep_parameter_name = M_.param_names(i,:);
-    deep_parameter_name = M_.param_names{i};
+    deep_parameter_name = M_.param_names(i,:);
     eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
 end
 cd(thispath);
