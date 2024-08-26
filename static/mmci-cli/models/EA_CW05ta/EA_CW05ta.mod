@@ -74,7 +74,7 @@ for i=1:33
     eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
 end
 cd(thispath);
-std_r_ = 100;                                                            //*
+std_r_ = 1;                                                            //*
 
 coffispol = 0;
 //**************************************************************************
@@ -84,11 +84,11 @@ model(linear);
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables //*
 
-interest   = is*100;                                                     //*
-inflation  = infl*100;                                                    //*
-inflationq = pi1*4*100;                                                  //*
-outputgap  = q*100;                                                      //*
-output     = q*100;                                                      //*
+interest   = is;                                                     //*
+inflation  = infl;                                                    //*
+inflationq = pi1*4;                                                  //*
+outputgap  = q;                                                      //*
+output     = q;                                                      //*
  //**************************************************************************
 
 

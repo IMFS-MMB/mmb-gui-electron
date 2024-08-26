@@ -1,0 +1,933 @@
+{
+  "$schema": "model",
+  "name": "US_BB18",
+  "capabilities": {
+    "rules": [
+      "Coenen",
+      "GR",
+      "LWW",
+      "OW13",
+      "SW",
+      "Taylor"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Balke, Brown (2018)",
+    "paper_title": "Oil supply shocks and the U.S. economy: An estimated DSGE model",
+    "journal": "Energy Policy, Volume 116, Pages 357-372",
+    "replicants_name": "Herrmann, Paetzold (Goethe)",
+    "pub_date": "2018",
+    "keywords": [],
+    "description": "Model of U.S. economy with roles for oil in production and transportation services.",
+    "category": "Estimated US model",
+    "authors": [
+      "Balke, N.", "Brown, S."
+    ]
+  },
+
+
+  "msr": [
+    "0.7",
+    "0",
+    "0",
+    "0",
+    "1.5*(1-0.7)",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0.3*(1-0.7)*4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0.1"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "vzc",
+      "text": "Preference shock to consumption"
+    },
+    {
+      "name": "vmk",
+      "text": "Price markup shock"
+    },
+     {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    },
+    {
+    "name": "vzm",
+    "text": "vzm"
+    },
+    {
+    "name": "vzo",
+    "text": "vzo"
+    },
+    {
+    "name": "vzoil",
+    "text": "vzoil"
+    },
+    {
+    "name": "vzrowgdp",
+    "text": "vzrowgdp"
+    },
+    {
+    "name": "vznetexpf",
+    "text": "vznetexpf"
+    },
+    {
+    "name": "vzprow",
+    "text": "vzprow"
+    },
+    {
+    "name": "vzI",
+    "text": "Investment Technology shock"
+    },
+    {
+    "name": "vzrisk",
+    "text": "Risk premium shock"
+    },
+    {
+    "name": "vzdoil",
+    "text": "vzdoil"
+    },
+    {
+    "name": "vpifstar",
+    "text": "vpifstar"
+    }
+     ],
+  "al_info": null,
+  "variables": [
+      {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "l",
+      "text": "Labour"
+    },
+    {
+      "name": "c",
+      "text": "Consumption"
+    },
+    {
+      "name": "cn",
+      "text": "cn"
+    },
+    {
+      "name": "ksc",
+      "text": "ksc"
+    },
+    {
+      "name": "ec",
+      "text": "ec"
+    },
+    {
+      "name": "oc",
+      "text": "oc"
+    },
+    {
+      "name": "kc",
+      "text": "kc"
+    },
+    {
+      "name": "Ic",
+      "text": "Ic"
+    },
+    {
+      "name": "xec",
+      "text": "xec"
+    },
+    {
+      "name": "yf",
+      "text": "yf"
+    },
+    {
+      "name": "ym",
+      "text": "ym"
+    },
+    {
+      "name": "zm",
+      "text": "zm"
+    },
+    {
+      "name": "lm",
+      "text": "lm"
+    },
+    {
+      "name": "ksm",
+      "text": "ksm"
+    },
+    {
+      "name": "km",
+      "text": "km"
+    },
+    {
+      "name": "Im",
+      "text": "Im"
+    },
+    {
+      "name": "om",
+      "text": "om"
+    },
+    {
+      "name": "em",
+      "text": "em"
+    },
+    {
+      "name": "xem",
+      "text": "xem"
+    },
+    {
+      "name": "transf",
+      "text": "transf"
+    },
+    {
+      "name": "ztransf",
+      "text": "ztransf"
+    },
+    {
+      "name": "lf",
+      "text": "lf"
+    },
+    {
+      "name": "ksf",
+      "text": "ksf"
+    },
+    {
+      "name": "kf",
+      "text": "kf"
+    },
+    {
+      "name": "If",
+      "text": "If"
+    },
+    {
+      "name": "of",
+      "text": "of"
+    },
+    {
+      "name": "ef",
+      "text": "ef"
+    },
+    {
+      "name": "xef",
+      "text": "xef"
+    },
+    {
+      "name": "yo",
+      "text": "yo"
+    },
+    {
+      "name": "zo",
+      "text": "zo"
+    },
+    {
+      "name": "lo",
+      "text": "lo"
+    },
+    {
+      "name": "ko",
+      "text": "ko"
+    },
+    {
+      "name": "Io",
+      "text": "Io"
+    },
+    {
+      "name": "pif",
+      "text": "pif"
+    },
+    {
+      "name": "pm",
+      "text": "pm"
+    },
+    {
+      "name": "po",
+      "text": "po"
+    },
+    {
+      "name": "prow",
+      "text": "prow"
+    },
+    {
+      "name": "rm",
+      "text": "rm"
+    },
+    {
+      "name": "w",
+      "text": "w"
+    },
+    {
+      "name": "lambdac",
+      "text": "lambdac"
+    },
+    {
+      "name": "lambdal",
+      "text": "lambdal"
+    },
+    {
+      "name": "lambdaksc",
+      "text": "lambdaksc"
+    },
+    {
+      "name": "lambdakc",
+      "text": "lambdakc"
+    },
+    {
+      "name": "lambdaec",
+      "text": "lambdaec"
+    },
+    {
+      "name": "lambdam",
+      "text": "lambdam"
+    },
+    {
+      "name": "lambdakm",
+      "text": "lambdakm"
+    },
+    {
+      "name": "lambdaem",
+      "text": "lambdaem"
+    },
+    {
+      "name": "lambdakf",
+      "text": "lambdakf"
+    },
+    {
+      "name": "lambdaef",
+      "text": "lambdaef"
+    },
+    {
+      "name": "lambdako",
+      "text": "lambdako"
+    },
+    {
+      "name": "M",
+      "text": "M"
+    },
+    {
+      "name": "h",
+      "text": "h"
+    },
+    {
+      "name": "netexpf",
+      "text": "netexpf"
+    },
+    {
+      "name": "importo",
+      "text": "importo"
+    },
+    {
+      "name": "rowsupply",
+      "text": "rowsupply"
+    },
+    {
+      "name": "rowdemand",
+      "text": "rowdemand"
+    },
+    {
+      "name": "zoil",
+      "text": "zoil"
+    },
+    {
+      "name": "rowgdp",
+      "text": "rowgdp"
+    },
+    {
+      "name": "zdoil",
+      "text": "zdoil"
+    },
+    {
+      "name": "zrowgdp",
+      "text": "zrowgdp"
+    },
+    {
+      "name": "znetexpf",
+      "text": "znetexpf"
+    },
+    {
+      "name": "mkshock",
+      "text": "mkshock"
+    },
+    {
+      "name": "zc",
+      "text": "zc"
+    },
+    {
+      "name": "R",
+      "text": "R"
+    },
+    {
+      "name": "zprow",
+      "text": "zprow"
+    },
+    {
+      "name": "wf",
+      "text": "wf"
+    },
+    {
+      "name": "wm",
+      "text": "wm"
+    },
+    {
+      "name": "wo",
+      "text": "wo"
+    },
+    {
+      "name": "g",
+      "text": "g"
+    },
+    {
+      "name": "zI",
+      "text": "zI"
+    },
+    {
+      "name": "zpermoil",
+      "text": "zpermoil"
+    },
+    {
+      "name": "zrisk",
+      "text": "zrisk"
+    },
+    {
+      "name": "yfout",
+      "text": "yfout"
+    },
+    {
+      "name": "cout",
+      "text": "cout"
+    },
+    {
+      "name": "Iout",
+      "text": "Iout"
+    },
+    {
+      "name": "poout",
+      "text": "poout"
+    },
+    {
+      "name": "lout",
+      "text": "lout"
+    },
+    {
+      "name": "usoilprod",
+      "text": "usoilprod"
+    },
+    {
+      "name": "oilimports",
+      "text": "oilimports"
+    },
+    {
+      "name": "rer",
+      "text": "rer"
+    },
+    {
+      "name": "worldoil",
+      "text": "worldoil"
+    },
+    {
+      "name": "transinvest",
+      "text": "transinvest"
+    },
+    {
+      "name": "oil_in_c",
+      "text": "oil_in_c"
+    },
+    {
+      "name": "oiltrans",
+      "text": "oiltrans"
+    },
+    {
+      "name": "netexports",
+      "text": "netexports"
+    },
+    {
+      "name": "ROW_y",
+      "text": "ROW_y"
+    },
+    {
+      "name": "int_rate",
+      "text": "int_rate"
+    },
+    {
+      "name": "pi",
+      "text": "pi"
+    },
+    {
+      "name": "gout",
+      "text": "gout"
+    },
+    {
+      "name": "oilexpend",
+      "text": "oilexpend"
+    },
+    {
+      "name": "usoilcons",
+      "text": "usoilcons"
+    },
+    {
+      "name": "pim",
+      "text": "pim"
+    },
+    {
+      "name": "lambdatransf",
+      "text": "lambdatransf"
+    },
+    {
+      "name": "zksc",
+      "text": "zksc"
+    },
+    {
+      "name": "zksf",
+      "text": "zksf"
+    },
+    {
+      "name": "zksm",
+      "text": "zksm"
+    },
+    {
+      "name": "zkso",
+      "text": "zkso"
+    },
+    {
+      "name": "zf",
+      "text": "zf"
+    },
+    {
+      "name": "pifstar",
+      "text": "pifstar"
+    },
+    {
+      "name": "l_flex",
+      "text": "l_flex"
+    },
+    {
+      "name": "c_flex",
+      "text": "c_flex"
+    },
+    {
+      "name": "cn_flex",
+      "text": "cn_flex"
+    },
+    {
+      "name": "ksc_flex",
+      "text": "ksc_flex"
+    },
+    {
+      "name": "ec_flex",
+      "text": "ec_flex"
+    },
+    {
+      "name": "oc_flex",
+      "text": "oc_flex"
+    },
+    {
+      "name": "kc_flex",
+      "text": "kc_flex"
+    },
+    {
+      "name": "Ic_flex",
+      "text": "Ic_flex"
+    },
+    {
+      "name": "xec_flex",
+      "text": "xec_flex"
+    },
+    {
+      "name": "yf_flex",
+      "text": "yf_flex"
+    },
+    {
+      "name": "ym_flex",
+      "text": "ym_flex"
+    },
+    {
+      "name": "zm_flex",
+      "text": "zm_flex"
+    },
+    {
+      "name": "lm_flex",
+      "text": "lm_flex"
+    },
+    {
+      "name": "ksm_flex",
+      "text": "ksm_flex"
+    },
+    {
+      "name": "km_flex",
+      "text": "km_flex"
+    },
+    {
+      "name": "Im_flex",
+      "text": "Im_flex"
+    },
+    {
+      "name": "om_flex",
+      "text": "om_flex"
+    },
+    {
+      "name": "em_flex",
+      "text": "em_flex"
+    },
+    {
+      "name": "xem_flex",
+      "text": "xem_flex"
+    },
+    {
+      "name": "transf_flex",
+      "text": "transf_flex"
+    },
+    {
+      "name": "ztransf_flex",
+      "text": "ztransf_flex"
+    },
+    {
+      "name": "lf_flex",
+      "text": "lf_flex"
+    },
+    {
+      "name": "ksf_flex",
+      "text": "ksf_flex"
+    },
+    {
+      "name": "kf_flex",
+      "text": "kf_flex"
+    },
+    {
+      "name": "If_flex",
+      "text": "If_flex"
+    },
+    {
+      "name": "of_flex",
+      "text": "of_flex"
+    },
+    {
+      "name": "ef_flex",
+      "text": "ef_flex"
+    },
+    {
+      "name": "xef_flex",
+      "text": "xef_flex"
+    },
+    {
+      "name": "yo_flex",
+      "text": "yo_flex"
+    },
+    {
+      "name": "zo_flex",
+      "text": "zo_flex"
+    },
+    {
+      "name": "lo_flex",
+      "text": "lo_flex"
+    },
+    {
+      "name": "ko_flex",
+      "text": "ko_flex"
+    },
+    {
+      "name": "Io_flex",
+      "text": "Io_flex"
+    },
+    {
+      "name": "pif_flex",
+      "text": "pif_flex"
+    },
+    {
+      "name": "pm_flex",
+      "text": "pm_flex"
+    },
+    {
+      "name": "po_flex",
+      "text": "po_flex"
+    },
+    {
+      "name": "prow_flex",
+      "text": "prow_flex"
+    },
+    {
+      "name": "rm_flex",
+      "text": "rm_flex"
+    },
+    {
+      "name": "w_flex",
+      "text": "w_flex"
+    },
+    {
+      "name": "lambdac_flex",
+      "text": "lambdac_flex"
+    },
+    {
+      "name": "lambdal_flex",
+      "text": "lambdal_flex"
+    },
+    {
+      "name": "lambdaksc_flex",
+      "text": "lambdaksc_flex"
+    },
+    {
+      "name": "lambdakc_flex",
+      "text": "lambdakc_flex"
+    },
+    {
+      "name": "lambdaec_flex",
+      "text": "lambdaec_flex"
+    },
+    {
+      "name": "lambdam_flex",
+      "text": "lambdam_flex"
+    },
+    {
+      "name": "lambdakm_flex",
+      "text": "lambdakm_flex"
+    },
+    {
+      "name": "lambdaem_flex",
+      "text": "lambdaem_flex"
+    },
+    {
+      "name": "lambdakf_flex",
+      "text": "lambdakf_flex"
+    },
+    {
+      "name": "lambdaef_flex",
+      "text": "lambdaef_flex"
+    },
+    {
+      "name": "lambdako_flex",
+      "text": "lambdako_flex"
+    },
+    {
+      "name": "M_flex",
+      "text": "M_flex"
+    },
+    {
+      "name": "h_flex",
+      "text": "h_flex"
+    },
+    {
+      "name": "netexpf_flex",
+      "text": "netexpf_flex"
+    },
+    {
+      "name": "importo_flex",
+      "text": "importo_flex"
+    },
+    {
+      "name": "rowsupply_flex",
+      "text": "rowsupply_flex"
+    },
+    {
+      "name": "rowdemand_flex",
+      "text": "rowdemand_flex"
+    },
+    {
+      "name": "zoil_flex",
+      "text": "zoil_flex"
+    },
+    {
+      "name": "rowgdp_flex",
+      "text": "rowgdp_flex"
+    },
+    {
+      "name": "zdoil_flex",
+      "text": "zdoil_flex"
+    },
+    {
+      "name": "zrowgdp_flex",
+      "text": "zrowgdp_flex"
+    },
+    {
+      "name": "znetexpf_flex",
+      "text": "znetexpf_flex"
+    },
+    {
+      "name": "mkshock_flex",
+      "text": "mkshock_flex"
+    },
+    {
+      "name": "zc_flex",
+      "text": "zc_flex"
+    },
+    {
+      "name": "R_flex",
+      "text": "R_flex"
+    },
+    {
+      "name": "zprow_flex",
+      "text": "zprow_flex"
+    },
+    {
+      "name": "wf_flex",
+      "text": "wf_flex"
+    },
+    {
+      "name": "wm_flex",
+      "text": "wm_flex"
+    },
+    {
+      "name": "wo_flex",
+      "text": "wo_flex"
+    },
+    {
+      "name": "g_flex",
+      "text": "g_flex"
+    },
+    {
+      "name": "zI_flex",
+      "text": "zI_flex"
+    },
+    {
+      "name": "zpermoil_flex",
+      "text": "zpermoil_flex"
+    },
+    {
+      "name": "zrisk_flex",
+      "text": "zrisk_flex"
+    },
+    {
+      "name": "yfout_flex",
+      "text": "yfout_flex"
+    },
+    {
+      "name": "cout_flex",
+      "text": "cout_flex"
+    },
+    {
+      "name": "Iout_flex",
+      "text": "Iout_flex"
+    },
+    {
+      "name": "poout_flex",
+      "text": "poout_flex"
+    },
+    {
+      "name": "lout_flex",
+      "text": "lout_flex"
+    },
+    {
+      "name": "usoilprod_flex",
+      "text": "usoilprod_flex"
+    },
+    {
+      "name": "oilimports_flex",
+      "text": "oilimports_flex"
+    },
+    {
+      "name": "rer_flex",
+      "text": "rer_flex"
+    },
+    {
+      "name": "worldoil_flex",
+      "text": "worldoil_flex"
+    },
+    {
+      "name": "transinvest_flex",
+      "text": "transinvest_flex"
+    },
+    {
+      "name": "oil_in_c_flex",
+      "text": "oil_in_c_flex"
+    },
+    {
+      "name": "oiltrans_flex",
+      "text": "oiltrans_flex"
+    },
+    {
+      "name": "netexports_flex",
+      "text": "netexports_flex"
+    },
+    {
+      "name": "ROW_y_flex",
+      "text": "ROW_y_flex"
+    },
+    {
+      "name": "int_rate_flex",
+      "text": "int_rate_flex"
+    },
+    {
+      "name": "pi_flex",
+      "text": "pi_flex"
+    },
+    {
+      "name": "gout_flex",
+      "text": "gout_flex"
+    },
+    {
+      "name": "oilexpend_flex",
+      "text": "oilexpend_flex"
+    },
+    {
+      "name": "usoilcons_flex",
+      "text": "usoilcons_flex"
+    },
+    {
+      "name": "pim_flex",
+      "text": "pim_flex"
+    },
+    {
+      "name": "lambdatransf_flex",
+      "text": "lambdatransf_flex"
+    },
+    {
+      "name": "zksc_flex",
+      "text": "zksc_flex"
+    },
+    {
+      "name": "zksf_flex",
+      "text": "zksf_flex"
+    },
+    {
+      "name": "zksm_flex",
+      "text": "zksm_flex"
+    },
+    {
+      "name": "zkso_flex",
+      "text": "zkso_flex"
+    },
+    {
+      "name": "zf_flex",
+      "text": "zf_flex"
+    },
+    {
+      "name": "pifstar_flex",
+      "text": "pifstar_flex"
+    }
+  ]
+}
+

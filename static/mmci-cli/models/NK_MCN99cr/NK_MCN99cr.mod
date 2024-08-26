@@ -16,11 +16,11 @@
 // Last edited: 10/09/07
 
 
-var pi p y R v m i eta ytilde ybar
+var pi p y R v m inv eta ytilde ybar
 
 //**************************************************************************
 // Modelbase Variables                                                   //*
-   interest inflation inflationq outputgap;                              //*
+   interest inflation inflationq outputgap output;                       //*
 //**************************************************************************
 
 varexo u_ e_ ey_ ev_
@@ -78,17 +78,18 @@ for i=1:33
     eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
 end
 cd(thispath);
-std_r_ = 100;                                                            //*
+std_r_ = 1;                                                            //*
 //**************************************************************************
 
 model(linear);
 
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables//*
-interest   = 100*4*R;                                                    //*
-inflation = 100*(1/4)*(4*pi + 4*pi(-1) + 4*pi(-2) + 4*pi(-3));           //*
-inflationq  = 100*4*pi;                                                  //*
-outputgap  = 100*ytilde;                                                 //*
+interest   = 4*R;                                                    //*
+inflation = (1/4)*(4*pi + 4*pi(-1) + 4*pi(-2) + 4*pi(-3));           //*
+inflationq  = 4*pi;                                                  //*
+outputgap  = ytilde;                                                 //*
+output = y;
 //**************************************************************************
 
 
@@ -132,12 +133,12 @@ interest =   cofintintb1*interest(-1)                                    //*
 pi     = p - p(-1);
 
 y =     y(+1) - sigm*CssYss*(R - (pi(+1))) + CssYss*v;
-m - p = (1/(sigm*gam))*YssCss*(y - IssYss*i) - (1/gam) * (1/Rss) * R + eta;
+m - p = (1/(sigm*gam))*YssCss*(y - IssYss*inv) - (1/gam) * (1/Rss) * R + eta;
 
 v =     rhov*v(-1) + ev_;
 eta =   rhoeta*eta(-1) + u_;
 
-i = gk + i(-1) + e_;
+inv = gk + inv(-1) + e_;
 ybar = stigma + rhoybar*ybar(-1)+ ey_;
 
 

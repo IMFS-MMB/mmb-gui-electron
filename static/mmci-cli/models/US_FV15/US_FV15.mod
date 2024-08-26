@@ -175,11 +175,11 @@ gammmaPI    = 2;
 PIbar       = 1.0005;
 rhod        = 0.1182;
 rhophi      = 0.9331;
-sigma_A     = exp(-3.9013);
-sigma_d     = exp(-1.9834);
-sigma_phi   = exp(-2.4983);
-sigma_mu    = exp(-6.0283);
-sigma_m     = exp(-6.000);
+sigma_A     = exp(-3.9013)*10;
+sigma_d     = exp(-1.9834)*10;
+sigma_phi   = exp(-2.4983)*10;
+sigma_mu    = exp(-6.0283)*10;
+sigma_m     = exp(-6.000)*10;
 Lambdamu    = 3.4e-3;
 LambdaA     = 2.8e-3;
 
@@ -215,7 +215,7 @@ for i=1:33
     eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
 end
 cd(thispath);
-    std_r_=100;
+    std_r_=1;
 
 // Definition of Discretionary Fiscal Policy Parameter                   //*
 coffispol = 1;                                                           //*
@@ -227,11 +227,11 @@ model;
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables//*
                                                                          //*
-interest     = 400*(log(R) - log(steady_state(R)));                      //*
-inflation    = 100*(log(PI) + log(PI(-1)) + log(PI(-2)) + log(PI(-3)) - 4*log(steady_state(PI)));   //*
-inflationq   = 400*(log(PI) - log(steady_state(PI)));                    //*
-outputgap    = 100*(log(yd) - log(ydf) - (log(steady_state(yd)) - log(steady_state(ydf))));
-output       = 100*(log(yd) - log(steady_state(yd)));                    //*
+interest     = 4*(log(R) - log(steady_state(R)));                      //*
+inflation    = (log(PI) + log(PI(-1)) + log(PI(-2)) + log(PI(-3)) - 4*log(steady_state(PI)));   //*
+inflationq   = 4*(log(PI) - log(steady_state(PI)));                    //*
+outputgap    = (log(yd) - log(ydf) - (log(steady_state(yd)) - log(steady_state(ydf))));
+output       = (log(yd) - log(steady_state(yd)));                    //*
 //fispol       = epsG;                                                   //*
 //**************************************************************************
 
@@ -272,7 +272,7 @@ interest =   cofintintb1*interest(-1)                                    //*
            + cofintoutpf2*output(+2)                                     //*
            + cofintoutpf3*output(+3)                                     //*
            + cofintoutpf4*output(+4)                                     //*
-           + std_r_/100 *interest_;                                          //*
+           + std_r_ *interest_;                                          //*
                                                                          //*
 // Discretionary Government Spending                                     //*
                                                                          //*

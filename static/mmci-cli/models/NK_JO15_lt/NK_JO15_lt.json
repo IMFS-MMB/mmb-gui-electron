@@ -64,7 +64,7 @@
     "1",
     "0.25"
   ],
-  "variabledim": 2,
+  "variabledim": 1,
   "al": false,
   "shocks": [
     {
@@ -156,7 +156,7 @@
     },
     {
       "name": "r",
-      "text": "Real interest rate"
+      "text": "r"
     },
     {
       "name": "r_bar",

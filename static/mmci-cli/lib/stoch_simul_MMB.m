@@ -73,6 +73,10 @@ function [base]=stoch_simul_MMB(base)
   options_.ar=base.maxhorizon;
   options_.order = 1;     % ADDED BY MODELBASE TEAM
 
+  if str2num(d_version([1 3]))<50 && contains(base.names,'US_FRB22_')
+      error(horzcat('Dynare version 5.0 or higher is required for model: ',base.names))
+  end
+
   if options_.linear
     options_.order = 1;
   end

@@ -1,0 +1,633 @@
+{
+  "$schema": "model",
+  "name": "UK_SM11",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW08",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Stephen Millard (2011)",
+    "paper_title": "An estimated DSGE model of energy,\ncosts and inflation in the United Kingdom",
+    "journal": "Bank of England Working Paper",
+    "replicants_name": "Thilo Leitzbach",
+    "pub_date": "2011",
+    "keywords": [],
+    "description": "",
+	"category": "Estimated other-country model",
+    "authors": [
+      "Stephen Millard"
+    ]
+  },
+  "msr": [
+    "0.7640",
+    "0",
+    "0",
+    "0",
+    "(1-0.7640)*1.1951",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "(1-0.7640)*0.1494",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+ "shocks": [
+    {
+      "name": "eps_a",
+      "text": "Productivity shock"
+    },
+    {
+      "name": "eps_po",
+      "text": "eps_po"
+    },
+    {
+      "name": "eps_yf",
+      "text": "eps_yf"
+    },
+    {
+      "name": "eps_pmf",
+      "text": "eps_pmf"
+    },
+    {
+      "name": "eps_rf",
+      "text": "eps_rf"
+    },
+    {
+      "name": "eps_pg",
+      "text": "eps_pg"
+    },
+    {
+      "name": "eps_mu",
+      "text": "Price markup shock"
+    },
+    {
+      "name": "eps_b",
+      "text": "Risk premium shock process"
+    },
+    {
+      "name": "eps_inv",
+      "text": "Investment technology shock"
+    },
+    {
+      "name": "eps_w",
+      "text": "Wage markup shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    },
+    {
+      "name": "fiscal_",
+      "text": "Fiscal Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "c",
+      "text": "Consumption"
+    },
+    {
+      "name": "lam",
+      "text": "lam"
+    },
+    {
+      "name": "pdot",
+      "text": "pdot"
+    },
+    {
+      "name": "w",
+      "text": "w"
+    },
+    {
+      "name": "cn",
+      "text": "cn"
+    },
+    {
+      "name": "cp",
+      "text": "cp"
+    },
+    {
+      "name": "ce",
+      "text": "ce"
+    },
+    {
+      "name": "cu",
+      "text": "cu"
+    },
+    {
+      "name": "pc",
+      "text": "pc"
+    },
+    {
+      "name": "pu",
+      "text": "pu"
+    },
+    {
+      "name": "pp",
+      "text": "pp"
+    },
+    {
+      "name": "va",
+      "text": "va"
+    },
+    {
+      "name": "h",
+      "text": "h"
+    },
+    {
+      "name": "k",
+      "text": "Capital"
+    },
+    {
+      "name": "pvc",
+      "text": "pvc"
+    },
+    {
+      "name": "wk",
+      "text": "wk"
+    },
+    {
+      "name": "wk",
+      "text": "wk"
+    },
+    {
+      "name": "q",
+      "text": "q"
+    },
+    {
+      "name": "b",
+      "text": "b"
+    },
+    {
+      "name": "e",
+      "text": "e"
+    },
+    {
+      "name": "vn",
+      "text": "vn"
+    },
+    {
+      "name": "mn",
+      "text": "mn"
+    },
+    {
+      "name": "ip",
+      "text": "ip"
+    },
+    {
+      "name": "iu",
+      "text": "iu"
+    },
+    {
+      "name": "wdot",
+      "text": "wdot"
+    },
+    {
+      "name": "mu",
+      "text": "mu"
+    },
+    {
+      "name": "qu",
+      "text": "qu"
+    },
+    {
+      "name": "ig",
+      "text": "ig"
+    },
+    {
+      "name": "vu",
+      "text": "vu"
+    },
+    {
+      "name": "qp",
+      "text": "qp"
+    },
+    {
+      "name": "io",
+      "text": "io"
+    },
+    {
+      "name": "vp",
+      "text": "vp"
+    },
+    {
+      "name": "ppb",
+      "text": "ppb"
+    },
+    {
+      "name": "rg",
+      "text": "rg"
+    },
+    {
+      "name": "xo",
+      "text": "xo"
+    },
+    {
+      "name": "xg",
+      "text": "xg"
+    },
+    {
+      "name": "s",
+      "text": "s"
+    },
+    {
+      "name": "bfc",
+      "text": "bfc"
+    },
+    {
+      "name": "z",
+      "text": "z"
+    },
+    {
+      "name": "pe",
+      "text": "pe"
+    },
+    {
+      "name": "xn",
+      "text": "pm"
+    },
+    {
+      "name": "pg",
+      "text": "pg"
+    },
+    {
+      "name": "pudot",
+      "text": "pudot"
+    },
+    {
+      "name": "ppbdot",
+      "text": "ppbdot"
+    },
+    {
+      "name": "ppdot",
+      "text": "ppdot"
+    },
+    {
+      "name": "po",
+      "text": "Oil price"
+    },
+    {
+      "name": "pmfshock",
+      "text": "pmfshock"
+    },
+    {
+      "name": "ashock",
+      "text": "ashock"
+    },
+    {
+      "name": "ishock",
+      "text": "ishock"
+    },
+    {
+      "name": "gshock",
+      "text": "gshock"
+    },
+    {
+      "name": "poshock",
+      "text": "poshock"
+    },
+    {
+      "name": "yfshock",
+      "text": "yfshock"
+    },
+    {
+      "name": "rfshock",
+      "text": "rfshock"
+    },
+    {
+      "name": "mushock",
+      "text": "mushock"
+    },
+    {
+      "name": "pgshock",
+      "text": "pgshock"
+    },
+    {
+      "name": "bshock",
+      "text": "bshock"
+    },
+    {
+      "name": "cfp",
+      "text": "cfp"
+    },
+    {
+      "name": "lamfp",
+      "text": "lamfp"
+    },
+    {
+      "name": "wfp",
+      "text": "wfp"
+    },
+    {
+      "name": "cnfp",
+      "text": "cnfp"
+    },
+    {
+      "name": "cpfp",
+      "text": "cpfp"
+    },
+    {
+      "name": "cefp",
+      "text": "cefp"
+    },
+    {
+      "name": "cufp",
+      "text": "cufp"
+    },
+    {
+      "name": "pcfp",
+      "text": "pcfp"
+    },
+    {
+      "name": "pufp",
+      "text": "pufp"
+    },
+    {
+      "name": "ppfp",
+      "text": "ppfp"
+    },
+    {
+      "name": "vafp",
+      "text": "vafp"
+    },
+    {
+      "name": "hfp",
+      "text": "hfp"
+    },
+    {
+      "name": "pvcfp",
+      "text": "pvcfp"
+    },
+    {
+      "name": "wkfp",
+      "text": "wkfp"
+    },
+    {
+      "name": "qfp",
+      "text": "qfp"
+    },
+    {
+      "name": "bfp",
+      "text": "bfp"
+    },
+    {
+      "name": "efp",
+      "text": "efp"
+    },
+    {
+      "name": "vnfp",
+      "text": "vnfp"
+    },
+    {
+      "name": "mnfp",
+      "text": "mnfp"
+    },
+    {
+      "name": "ipfp",
+      "text": "ipfp"
+    },
+    {
+      "name": "iufp",
+      "text": "iufp"
+    },
+    {
+      "name": "qufp",
+      "text": "qufp"
+    },
+    {
+      "name": "igfp",
+      "text": "igfp"
+    },
+    {
+      "name": "vufp",
+      "text": "vufp"
+    },
+    {
+      "name": "qpfp",
+      "text": "qpfp"
+    },
+    {
+      "name": "iofp",
+      "text": "iofp"
+    },
+    {
+      "name": "vpfp",
+      "text": "vffp"
+    },
+    {
+      "name": "ppbfp",
+      "text": "ppbfp"
+    },
+    {
+      "name": "rfp",
+      "text": "rfp"
+    },
+    {
+      "name": "xofp",
+      "text": "xofp"
+    },
+    {
+      "name": "xgfp",
+      "text": "xgfp"
+    },
+    {
+      "name": "sfp",
+      "text": "sfp"
+    },
+    {
+      "name": "bffp",
+      "text": "bffp"
+    },
+    {
+      "name": "zfp",
+      "text": "zfp"
+    },
+    {
+      "name": "pefp",
+      "text": "pefp"
+    },
+    {
+      "name": "xnfp",
+      "text": "xnfp"
+    },
+    {
+      "name": "pmfp",
+      "text": "pmfp"
+    },
+    {
+      "name": "pgfp",
+      "text": "pgfp"
+    },
+    {
+      "name": "pofp",
+      "text": "pofp"
+    },
+    {
+      "name": "pcdot",
+      "text": "pcdot"
+    },
+    {
+      "name": "pcdot4",
+      "text": "pcdot4"
+    },
+    {
+      "name": "pdot4",
+      "text": "pdot4"
+    },
+    {
+      "name": "ppdot4",
+      "text": "ppdot4"
+    },
+    {
+      "name": "pudot4",
+      "text": "pudot4"
+    },
+    {
+      "name": "rga",
+      "text": "rga"
+    },
+    {
+      "name": "inv",
+      "text": "Investment"
+    },
+    {
+      "name": "wdot4",
+      "text": "wdot4"
+    },
+    {
+      "name": "csharep",
+      "text": "csharep"
+    },
+    {
+      "name": "cshareu",
+      "text": "cshareu"
+    },
+    {
+      "name": "csharen",
+      "text": "csharen"
+    },
+    {
+      "name": "contpp",
+      "text": "contpp"
+    },
+    {
+      "name": "contpu",
+      "text": "contpu"
+    },
+    {
+      "name": "contpq",
+      "text": "contpq"
+    },
+    {
+      "name": "nomw",
+      "text": "nomw"
+    },
+    {
+      "name": "rcw",
+      "text": "Real wage"
+    },
+    {
+      "name": "dfrgap",
+      "text": "dfrgap"
+    },
+    {
+      "name": "pedot4",
+      "text": "pedot4"
+    },
+    {
+      "name": "encost4",
+      "text": "encost4"
+    },
+    {
+      "name": "pmcost4",
+      "text": "pmcost4"
+    },
+    {
+      "name": "wcost4",
+      "text": "wcost4"
+    },
+    {
+      "name": "profits",
+      "text": "profits"
+    },
+    {
+      "name": "pmdot4",
+      "text": "pmdot4"
+    },
+    {
+      "name": "vagap",
+      "text": "vagap"
+    },
+    {
+      "name": "qgap",
+      "text": "qgap"
+    },
+    {
+      "name": "invshock",
+      "text": "invshock"
+    },
+    {
+      "name": "wshock",
+      "text": "wshock"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "fispol",
+      "text": "fispol"
+    }
+  ]
+}

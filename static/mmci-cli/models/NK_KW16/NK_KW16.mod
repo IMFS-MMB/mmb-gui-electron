@@ -126,23 +126,6 @@ parameters
     a_ss ksi_ss g_ss Lambda_ss Pm_ss Phi_ss Q_ss Dis_ss infl_ss inflstar_ss Rd_ss Rp_ss Rb_ss Rk_ss i_ss
     prem_ss nu_b_ss nu_n_ss nu_k_ss portf_B_ss Om_ss Gy_ss;
 
-//**************************************************************************
-// Specification of Modelbase Parameters                                 //*
-                                                                         //*
-// Load Modelbase Monetary Policy Parameters                             //*
-thispath = pwd;
-cd('..');
-load policy_param.mat;
-for i=1:33
-    deep_parameter_name = M_.param_names(i,:);
-    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
-end
-cd(thispath);
-std_r_=100;
-                                                                         //*
-// Definition of Discretionary Fiscal Policy Parameter                   //*
- coffispol = 5;                                                        //*
-//**************************************************************************
 
 % standard Parameters
 beta=0.99;          % discount factor
@@ -224,15 +207,33 @@ T_ss = (Rb_ss-1)*B_ss+G_ss;
 portf_B_ss = Phi_ss*N_ss;
 D_ss = K_ss + B_ss - N_ss;
 
+//**************************************************************************
+// Specification of Modelbase Parameters                                 //*
+                                                                         //*
+// Load Modelbase Monetary Policy Parameters                             //*
+thispath = pwd;
+cd('..');
+load policy_param.mat;
+for i=1:33
+    deep_parameter_name = M_.param_names(i,:);
+    eval(['M_.params(i)  = ' deep_parameter_name ' ;'])
+end
+cd(thispath);
+std_r_=1;
+                                                                         //*
+// Definition of Discretionary Fiscal Policy Parameter                   //*
+ coffispol = 1/Gy_ss;                                                        //*
+//**************************************************************************
+
 model;
 
 //**************************************************************************
 // Definition of Modelbase Variables in Terms of Original Model Variables   //*
-interest   = log(i/i_ss)*400;                                            //*
-inflationq = log(infl/infl_ss)*400;                                            //*
+interest   = log(i/i_ss)*4;                                            //*
+inflationq = log(infl/infl_ss)*4;                                            //*
 inflation  = 1/4*(inflationq+inflationq(-1)+inflationq(-2)+inflationq(-3)); //*
-output     = log(Y/Y_ss)*100;                                              //*
-outputgap  = log(Y/Y_fe)*100;                                              //*
+output     = log(Y/Y_ss);                                              //*
+outputgap  = log(Y/Y_fe);                                              //*
 fispol     = e_g;
 //**************************************************************************
 

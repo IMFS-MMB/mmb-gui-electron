@@ -1,0 +1,791 @@
+{
+  "$schema": "model",
+  "name": "NK_CDK24",
+  "capabilities": {
+    "rules": [
+      "CEE",
+      "CMR",
+      "Coenen",
+      "GR",
+      "LWW",
+      "OW08",
+      "OW13",
+      "SW",
+      "Taylor"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Chan, J., Diz, S., & Kanngiesser, D. (2024)",
+    "paper_title": "Energy prices and household heterogeneity: Monetary policy in a Gas-TANK",
+    "journal": "Journal of Monetary Economics",
+    "replicants_name": "L. Pennacchio and A. Foroozande",
+    "pub_date": "2024",
+    "keywords": [],
+    "description": "Monetary Policy in a Gas-TANK",
+    "category": "Calibrated model",
+    "authors": [
+      "Jenny Chan", 
+      "Sebastian Diz",
+       "Derrick Kanngiesser"
+    ]
+  },
+  "msr": [
+    "0.9",
+    "0",
+    "0",
+    "0",
+    "(1-0.9)*1.5/4",
+    "(1-0.9)*1.5/4",
+    "(1-0.9)*1.5/4",
+    "(1-0.9)*1.5/4",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "(1-0.9)*0.125",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0.25"
+  ],
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "eta_tfp",
+      "text": "Technology shock"
+    },
+    {
+      "name": "eta_pEf",
+      "text": "eta_pEf"
+    },
+    {
+      "name": "eta_pEf_news",
+      "text": "eta_pEf_news"
+    },
+    {
+      "name": "eta_muz",
+      "text": "Price markup shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "Inflationq"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output gap"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "CES_u",
+      "text": "CES_u"
+    },
+    {
+      "name": "CES_u_flex",
+      "text": "CES_u_flex"
+    },
+    {
+      "name": "CES_c",
+      "text": "CES_c"
+    },
+    {
+      "name": "CES_c_flex",
+      "text": "CES_c_flex"
+    },
+    {
+      "name": "E_h_u",
+      "text": "E_h_u"
+    },
+    {
+      "name": "E_h_u_flex",
+      "text": "E_h_u_flex"
+    },
+    {
+      "name": "E_h_c",
+      "text": "E_h_c"
+    },
+    {
+      "name": "E_h_c_flex",
+      "text": "E_h_c_flex"
+    },
+    {
+      "name": "E_h",
+      "text": "E_h"
+    },    
+	{
+      "name": "E_h_flex",
+      "text": "E_h_flex"
+    },    
+	{
+      "name": "pCES_u",
+      "text": "pCES_u"
+    },    
+	{
+      "name": "pCES_u_flex",
+      "text": "pCES_u_flex"
+    },    
+	{
+      "name": "pCES_c",
+      "text": "pCES_c"
+    },    
+	{
+      "name": "pCES_c_flex",
+      "text": "pCES_c_flex"
+    },    
+	{
+      "name": "pCPI",
+      "text": "pCPI"
+    },    
+	{
+      "name": "pCPI_flex",
+      "text": "pCPI_flex"
+    },    
+	{
+      "name": "Pi_CPI",
+      "text": "Pi_CPI"
+    },    
+	{
+      "name": "Pi_CPI_lag1",
+      "text": "Pi_CPI_lag1"
+    },    
+	{
+      "name": "Pi_CPI_lag2",
+      "text": "Pi_CPI_lag2"
+    },    
+	{
+      "name": "Pi_CPI_ann",
+      "text": "Pi_CPI_ann"
+    },    
+	{
+      "name": "Pi_CPI_flex",
+      "text": "Pi_CPI_flex"
+    },    
+	{
+      "name": "Pi_CPI_lag1_flex",
+      "text": "Pi_CPI_lag1_flex"
+    },    
+	{
+      "name": "Pi_CPI_lag2_flex",
+      "text": "Pi_CPI_lag2_flex"
+    },    
+	{
+      "name": "Pi_CPI_ann_flex",
+      "text": "Pi_CPI_ann_flex"
+    },    
+	{
+      "name": "Pi_CES_u",
+      "text": "Pi_CES_u"
+    },    
+	{
+      "name": "Pi_CES_u_flex",
+      "text": "Pi_CES_u_flex"
+    },    
+	{
+      "name": "mrs_c",
+      "text": "mrs_c"
+    },    
+	{
+      "name": "mrs_c_flex",
+      "text": "mrs_c_flex"
+    },    
+	{
+      "name": "mrs_u",
+      "text": "mrs_u"
+    },    
+	{
+      "name": "mrs_u_flex",
+      "text": "mrs_u_flex"
+    },    
+	{
+      "name": "C_u",
+      "text": "C_u"
+    },    
+	{
+      "name": "C_u_flex",
+      "text": "C_u_flex"
+    },    
+	{
+      "name": "C_c",
+      "text": "C_c"
+    },    
+	{
+      "name": "C_c_flex",
+      "text": "C_c_flex"
+    },    
+	{
+      "name": "C",
+      "text": "Consumption"
+    },    
+	{
+      "name": "C_flex",
+      "text": "C_flex"
+    },    
+	{
+      "name": "N_c",
+      "text": "N_c"
+    },    
+	{
+      "name": "N_c_flex",
+      "text": "N_c_flex"
+    },    
+	{
+      "name": "N_u",
+      "text": "N_u"
+    },    
+	{
+      "name": "N_u_flex",
+      "text": "N_u_flex"
+    },    
+	{
+      "name": "N",
+      "text": "Hours worked"
+    },    
+	{
+      "name": "N_flex",
+      "text": "N_flex"
+    },    
+	{
+      "name": "UN_c",
+      "text": "UN_c"
+    },    
+	{
+      "name": "UN_c_flex",
+      "text": "UN_c_flex"
+    },    
+	{
+      "name": "UN_u",
+      "text": "UN_u"
+    },    
+	{
+      "name": "UN_u_flex",
+      "text": "UN_u_flex"
+    },    
+	{
+      "name": "NFA",
+      "text": "NFA"
+    },    
+	{
+      "name": "NFA_flex",
+      "text": "NFA_flex"
+    },    
+	{
+      "name": "LAMBDA",
+      "text": "LAMBDA"
+    },    
+	{
+      "name": "LAMBDA_flex",
+      "text": "LAMBDA_flex"
+    },    
+	{
+      "name": "LAMBDA_u",
+      "text": "LAMBDA_u"
+    },    
+	{
+      "name": "LAMBDA_u_flex",
+      "text": "LAMBDA_u_flex"
+    },
+	{
+      "name": "lambda_u",
+      "text": "lambda_u"
+    }, 
+	{
+      "name": "lambda_u_flex",
+      "text": "lambda_u_flex"
+    }, 
+	{
+      "name": "lambda_c",
+      "text": "lambda_c"
+    }, 
+	{
+      "name": "lambda_c_flex",
+      "text": "lambda_c_flex"
+    }, 
+	{
+      "name": "b",
+      "text": "b"
+    }, 
+	{
+      "name": "b_flex",
+      "text": "b_flex"
+    }, 
+	{
+      "name": "bf",
+      "text": "bf"
+    }, 
+	{
+      "name": "bf_flex",
+      "text": "bf_flex"
+    }, 
+	{
+      "name": "Z",
+      "text": "Z"
+    }, 
+	{
+      "name": "Z_flex",
+      "text": "Z_flex"
+    }, 
+	{
+      "name": "E_z",
+      "text": "E_z"
+    }, 
+	{
+      "name": "E_z_flex",
+      "text": "E_z_flex"
+    }, 
+	{
+      "name": "X",
+      "text": "X"
+    }, 
+	{
+      "name": "X_flex",
+      "text": "X_flex"
+    },
+	{
+      "name": "Y_gap",
+      "text": "Y_gap"
+    },
+	{
+      "name": "Q",
+      "text": "Q"
+    },
+	{
+      "name": "Q_flex",
+      "text": "Q_flex"
+    },
+	{
+      "name": "R_nom",
+      "text": "R_nom"
+    },
+	{
+      "name": "R_nom_flex",
+      "text": "R_nom_flex"
+    },
+	{
+      "name": "R_real",
+      "text": "Real interest rate"
+    },
+	{
+      "name": "w",
+      "text": "w"
+    },
+	{
+      "name": "w_flex",
+      "text": "w_flex"
+    },
+	{
+      "name": "wh",
+      "text": "Real wage"
+    },
+	{
+      "name": "wh_flex",
+      "text": "wh_flex"
+    },
+	{
+      "name": "mcw",
+      "text": "mcw"
+    },
+	{
+      "name": "mcw_flex",
+      "text": "mcw_flex"
+    },
+	{
+      "name": "mcz",
+      "text": "Marginal costs"
+    },
+	{
+      "name": "mcz_flex",
+      "text": "mcz_flex"
+    },
+	{
+      "name": "Pi_w",
+      "text": "Pi_w"
+    },
+	{
+      "name": "Pi_w_flex",
+      "text": "Pi_w_flex"
+    },
+	{
+      "name": "Pi_w_ann",
+      "text": "Pi_w_ann"
+    },
+	{
+      "name": "Pi_w_lag1",
+      "text": "Pi_w_lag1"
+    },
+	{
+      "name": "Pi_w_lag2",
+      "text": "Pi_w_lag2"
+    },
+	{
+      "name": "Pi_z",
+      "text": "Pi_z"
+    },
+	{
+      "name": "Pi_z_flex",
+      "text": "Pi_z_flex"
+    },
+	{
+      "name": "Pi_z_ann",
+      "text": "Pi_z_ann"
+    },
+	{
+      "name": "Pi_z_lag1",
+      "text": "Pi_z_lag1"
+    },
+	{
+      "name": "Pi_z_lag2",
+      "text": "Pi_z_lag2"
+    },
+	{
+      "name": "pE",
+      "text": "pE"
+    },
+	{
+      "name": "pE_flex",
+      "text": "pE_flex"
+    },
+	{
+      "name": "pEf",
+      "text": "pEf"
+    },
+    {
+      "name": "pExp",
+      "text": "pExp"
+    },
+	{
+      "name": "pExp_flex",
+      "text": "pExp_flex"
+    },
+	{
+      "name": "pX",
+      "text": "pX"
+    },
+	{
+      "name": "pC",
+      "text": "pC"
+    },
+	{
+      "name": "pC_flex",
+      "text": "pC_flex"
+    },
+	{
+      "name": "f1w",
+      "text": "f1w"
+    },
+	{
+      "name": "f2w",
+      "text": "f2w"
+    },
+	{
+      "name": "f1z",
+      "text": "f1z"
+    },
+	{
+      "name": "f2z",
+      "text": "f2z"
+    },
+	{
+      "name": "dispw",
+      "text": "dispw"
+    },
+	{
+      "name": "dispz",
+      "text": "dispz"
+    },
+	{
+      "name": "zetaw",
+      "text": "zetaw"
+    },
+	{
+      "name": "zetaz",
+      "text": "zetaz"
+    },
+	{
+      "name": "div_F",
+      "text": "div_F"
+    },
+	{
+      "name": "div_F_flex",
+      "text": "div_F_flex"
+    },
+	{
+      "name": "div_Z",
+      "text": "div_Z"
+    },
+	{
+      "name": "div_Z_flex",
+      "text": "div_Z_flex"
+    },
+	{
+      "name": "div_L",
+      "text": "div_L"
+    },
+	{
+      "name": "div_L_flex",
+      "text": "div_L_flex"
+    },
+	{
+      "name": "t_F",
+      "text": "t_F"
+    },
+	{
+      "name": "t_F_flex",
+      "text": "t_F_flex"
+    },
+	{
+      "name": "t_Z",
+      "text": "t_Z"
+    },
+	{
+      "name": "t_Z_flex",
+      "text": "t_Z_flex"
+    },
+	{
+      "name": "t_L",
+      "text": "t_L"
+    },
+	{
+      "name": "t_L_flex",
+      "text": "t_L_flex"
+    },
+	{
+      "name": "C_gap",
+      "text": "C_gap"
+    },
+	{
+      "name": "C_gap_flex",
+      "text": "C_gap_flex"
+    },
+	{
+      "name": "I_gap",
+      "text": "I_gap"
+    },
+	{
+      "name": "C_gap_CES",
+      "text": "C_gap_CES"
+    },
+	{
+      "name": "C_lag1",
+      "text": "C_lag1"
+    },
+	{
+      "name": "C_u_lag1",
+      "text": "C_u_lag1"
+    },
+	{
+      "name": "C_c_lag1",
+      "text": "C_c_lag1"
+    },
+	{
+      "name": "dlnckp",
+      "text": "Consumption growth"
+    },
+	{
+      "name": "dlnhrs",
+      "text": "dlnhrs"
+    },
+	{
+      "name": "dlnhrs_u",
+      "text": "dlnhrs_u"
+    },
+	{
+      "name": "dlnhrs_c",
+      "text": "dlnhrs_c"
+    },
+	{
+      "name": "dlnzkp",
+      "text": "dlnzkp"
+    },
+	{
+      "name": "dlnckp_c",
+      "text": "dlnckp_c"
+    },
+	{
+      "name": "dlnckp_u",
+      "text": "dlnckp_u"
+    },
+	{
+      "name": "dlneer",
+      "text": "dlneer"
+    },
+	{
+      "name": "dlnxkp",
+      "text": "dlnxkp"
+    },
+	{
+      "name": "dlnmkp",
+      "text": "dlnmkp"
+    },
+	{
+      "name": "output_gap",
+      "text": "output_gap"
+    },
+	{
+      "name": "dlnNFA",
+      "text": "dlnNFA"
+    },
+	{
+      "name": "dlnehkp",
+      "text": "dlnehkp"
+    },
+	{
+      "name": "dlnehkp_c",
+      "text": "dlnehkp_c"
+    },
+	{
+      "name": "dlnehkp_u",
+      "text": "dlnehkp_u"
+    },
+	{
+      "name": "dlnezkp",
+      "text": "dlnezkp"
+    },
+	{
+      "name": "wh_logdev",
+      "text": "wh_logdev"
+    },
+	{
+      "name": "w_logdev",
+      "text": "w_logdev"
+    },
+	{
+      "name": "dlnDiv_Z",
+      "text": "dlnDiv_Z"
+    },
+	{
+      "name": "dlnw",
+      "text": "dlnw"
+    },
+	{
+      "name": "dlnwh",
+      "text": "dlnwh"
+    },
+	{
+      "name": "markup_Z",
+      "text": "markup_Z"
+    },
+	{
+      "name": "inc_u",
+      "text": "inc_u"
+    },
+	{
+      "name": "inc_c",
+      "text": "inc_c"
+    },
+	{
+      "name": "I_gap_component",
+      "text": "I_gap_component"
+    },
+	{
+      "name": "Borrowing_component",
+      "text": "Borrowing_component"
+    },
+	{
+      "name": "Hours_credit_component",
+      "text": "Hours_credit_component"
+    },
+	{
+      "name": "Expected_Pi_CES_u",
+      "text": "Expected_Pi_CES_u"
+    },
+	{
+      "name": "Pi_E",
+      "text": "Pi_E"
+    },
+	{
+      "name": "Pi_E_lag1",
+      "text": "Pi_E_lag1"
+    },
+	{
+      "name": "Pi_E_lag2",
+      "text": "Pi_E_lag2"
+    },
+	{
+      "name": "Pi_E_ann",
+      "text": "Pi_E_ann"
+    },
+	{
+      "name": "Expected_Pi_E",
+      "text": "Expected_Pi_E"
+    },
+	{
+      "name": "pE_over_w",
+      "text": "pE_over_w"
+    },
+	{
+      "name": "z_hat",
+      "text": "z_hat"
+    },
+    {
+      "name": "n_hat",
+      "text": "n_hat"
+    },
+	{
+      "name": "z_minus_n_hat",
+      "text": "z_minus_n_hat"
+    },
+	{
+      "name": "Pi_w_over_Pi_z",
+      "text": "Pi_w_over_Pi_z"
+    },
+	{
+      "name": "markup_Z_effective",
+      "text": "markup_Z_effective"
+    },
+	{
+      "name": "dlnMarkup_Z_effective",
+      "text": "dlnMarkup_Z_effective"
+    },
+	{
+      "name": "eps_tfp",
+      "text": "Technology shock process"
+    },
+	{
+      "name": "eps_pEf",
+      "text": "eps_pEf"
+    },
+	{
+      "name": "eps_muz",
+      "text": "Price markup shock process"
+    },
+    {
+      "name": "eta_pEf_news",
+      "text": "eta_pEf_news"
+    }
+  ]
+}
