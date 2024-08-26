@@ -380,7 +380,7 @@ model(linear);
 
 interest   = rs0;                                                    //*
 inflation  = (lp0-lp40);                                             //*
-inflationq =*4*(lp0-lp10);                                  		 //*
+inflationq =4*(lp0-lp10);                                  		 //*
 outputgap  = ygap0;                                                  //*
 output     = y0/ybar0;                                               //*
 fispol     = lg0_;                                                       //*
