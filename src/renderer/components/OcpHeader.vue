@@ -45,7 +45,7 @@
                     <p class="mt-md-0 mt-4">
                         Welcome to the
                         <a href="https://www.macromodelbase.com/" target="_blank">Macroeconomic Model Database</a>
-                        (MMB) v.3.1. Contribute your model using our
+                        (MMB) v.3.3. Contribute your model using our
                         <a href="http://www.macromodelbase.com/form/code-submission" target="_blank">Contribute Form</a>
                         or get in touch via our
                         <a href="https://mmb.trydiscourse.com/" target="_blank">forum</a>.
