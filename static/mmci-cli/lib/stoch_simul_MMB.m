@@ -74,14 +74,14 @@ function [base]=stoch_simul_MMB(base)
   options_.order = 1;     % ADDED BY MODELBASE TEAM
 
 % Error fix
-  if str2num(d_version([1 3])) < 50 && ~isempty(strfind(base.names, 'US_FRB22_'))
-      error(horzcat('Dynare version 5.0 or higher is required for model: ', base.names));
-  end
-
-
-%  if str2num(d_version([1 3]))<50 && contains(base.names,'US_FRB22_')
-%      error(horzcat('Dynare version 5.0 or higher is required for model: ',base.names))
+%  if str2num(d_version([1 3])) < 50 && ~isempty(strfind(base.names, 'US_FRB22_'))
+%      error(horzcat('Dynare version 5.0 or higher is required for model: ', base.names));
 %  end
+
+
+  if str2num(d_version([1 3]))<50 && contains(base.names,'US_FRB22_')
+      error(horzcat('Dynare version 5.0 or higher is required for model: ',base.names))
+  end
 
   if options_.linear
     options_.order = 1;
