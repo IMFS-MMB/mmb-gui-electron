@@ -13,7 +13,9 @@ all = dir;
 all = all(3:end);
 for i =1:size(all,1)
     %if file is folder and has name steadystate
-    if (all(i).isdir) && (contains(all(i).name,'steadystate')==true)
+    %if (all(i).isdir) && (contains(all(i).name,'steadystate')==true)
+    %if (all(i).isdir) && (contains(all(i).name,'steadystate')==true)
+    if all(i).isdir && ~isempty(strfind(all(i).name, 'steadystate'))
         cd 'steadystate'
         inside = dir;
         inside = inside(3:end);
