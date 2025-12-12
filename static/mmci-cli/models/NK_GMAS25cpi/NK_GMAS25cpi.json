@@ -1,0 +1,131 @@
+{
+  "$schema": "model",
+  "name": "NK_GMAS25cpi",
+  "capabilities": {
+    "rules": [
+      "Taylor",
+      "GR",
+      "LWW",
+      "SW",
+      "CEE",
+      "OW13",
+      "Coenen",
+      "CMR"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Gali & Monacelli (2005)",
+    "paper_title": "Monetary policy and exchange rate volatility in a small open economy",
+    "journal": "Review of Economic Studies 72, pp. 707-734",
+    "replicants_name": "Zafar Adullayev, Luca Schmitz",
+    "pub_date": "2005",
+    "keywords": [],
+    "description": "includes 10% Tariff Shocks without Rebatement, CPI Targeting, derived by Z.Abdullayev & L.Schmitz, similar to Monacelli(2025)",
+    "category": "Calibrated model",
+    "authors": [
+      "Gali, Jordí",
+      "Monacelli, Tommaso"
+    ]
+  },
+  "msr": null,
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "a_",
+      "text": "Technology shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    },
+    {
+      "name": "ystar_",
+      "text": "ystar_"
+    },
+    {
+      "name": "tar_",
+      "text": "Tariff shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    {
+      "name": "a",
+      "text": "Technology"
+    },
+    {
+      "name": "e",
+      "text": "Nominal exchange rate"
+    },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output gap"
+    },
+    {
+      "name": "p",
+      "text": "Price level"
+    },
+    {
+      "name": "ph",
+      "text": "Domestic price level (PPI)"
+    },
+    {
+      "name": "pi",
+      "text": "CPI inflation"
+    },
+    {
+      "name": "pih",
+      "text": "Domestic inflation (PPI)"
+    },
+    {
+      "name": "pistar",
+      "text": "Foreign inflation"
+    },
+    {
+      "name": "rnat",
+      "text": "Natural interest rate"
+    },
+    {
+      "name": "s",
+      "text": "Terms of trade (ToT)"
+    },
+    {
+      "name": "x",
+      "text": "Output gap"
+    },
+    {
+      "name": "y",
+      "text": "Output"
+    },
+    {
+      "name": "ynat",
+      "text": "Natural level of output"
+    },
+    {
+      "name": "ystar",
+      "text": "World output"
+    },
+    {
+      "name": "tar",
+      "text": "Tariffs"
+    },
+    {
+      "name": "pf",
+      "text": "Foreign price level"
+    }
+  ]
+}

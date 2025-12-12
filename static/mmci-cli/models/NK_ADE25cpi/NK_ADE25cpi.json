@@ -1,0 +1,94 @@
+{
+  "$schema": "model",
+  "name": "NK_ADE25cpi",
+  "capabilities": {
+    "rules": [
+      "CEE",
+      "CMR",
+      "Coenen",
+      "GR",
+      "LWW",
+      "OW13",
+      "SW",
+      "Taylor"
+    ],
+    "unconditional_variances": true
+  },
+  "description": {
+    "ac_ref": "Auray et al. (2025)",
+    "paper_title": "Trade Wars and the Optimal Design of Monetary Rules",
+    "journal": "Journal of Monetary Economics",
+    "replicants_name": "Original code provided (Jihene Arfaoui and Adam Liu edited)",
+    "pub_date": "2025",
+    "keywords": [],
+    "description": "",
+    "category": "Calibrated model",
+    "authors": [
+      "Auray, Stéphane",
+      "Devereux, Micheal",
+      "Eyquem, Aurélien "
+    ]
+  },
+  "msr": null,
+  "variabledim": 1,
+  "al": false,
+  "shocks": [
+    {
+      "name": "eA",
+      "text": "Domestic Productivity Shock"
+    },
+    {
+      "name": "eAs",
+      "text": "Foreign Productivity Shock"
+    },
+    {
+      "name": "eT",
+      "text": "Domestic Tariff Shock"
+    },
+    {
+      "name": "eTs",
+      "text": "Foreign Tariff Shock"
+    },
+    {
+      "name": "interest_",
+      "text": "Monetary Policy Shock"
+    }
+  ],
+  "al_info": null,
+  "variables": [
+    { "name": "Pih", "text": "Pih" },
+    { "name": "Pif", "text": "Pif" },
+    { "name": "Utilh", "text": "Home Utility" },
+    { "name": "Utilf", "text": "Utilf" },
+    { "name": "C", "text": "Consumption" },
+    { "name": "Cs", "text": "Cs" },
+    { "name": "Y", "text": "Y" },
+    { "name": "Ys", "text": "Ys" },
+    { "name": "Ys", "text": "Ys" },
+    { "name": "Rs", "text": "Rs" },
+    { "name": "tb", "text": "Trade Balance" },
+    { "name": "Welf", "text": "Welfare" },
+    { "name": "L", "text": "Labor" },
+    { "name": "P", "text": "Home Price" },
+    {
+      "name": "inflation",
+      "text": "Inflation"
+    },
+    {
+      "name": "inflationq",
+      "text": "inflationq"
+    },
+    {
+      "name": "interest",
+      "text": "Interest"
+    },
+    {
+      "name": "output",
+      "text": "Output"
+    },
+    {
+      "name": "outputgap",
+      "text": "Output Gap"
+    }
+  ]
+}
