@@ -78,7 +78,7 @@ jobs:
 
       - if: github.ref == 'refs/heads/master'
         name: Upload artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: data
           path: static/mmci-cli/out/*.json
@@ -102,7 +102,7 @@ jobs:
       - run: npm i
       - run: npm run build:web
 
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4
         with:
           name: data
           path: dist/web/data
