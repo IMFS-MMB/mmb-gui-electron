@@ -82,6 +82,7 @@ jobs:
         with:
           name: data
           path: static/mmci-cli/out/*.json
+          overwrite: true
 
   deploy:
     if: github.ref == 'refs/heads/master'
