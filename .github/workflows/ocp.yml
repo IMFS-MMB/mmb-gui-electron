@@ -78,9 +78,9 @@ jobs:
 
       - if: github.ref == 'refs/heads/master'
         name: Upload artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
-          name: data
+          name: data-model-${{ matrix.MODEL_NAMES }}
           path: static/mmci-cli/out/*.json
           overwrite: true
 
@@ -103,10 +103,10 @@ jobs:
       - run: npm i
       - run: npm run build:web
 
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v7
         with:
-          name: data
           path: dist/web/data
+          merge-multiple: true
 
         # todo: switch to official pages action when it's prod ready (https://github.com/actions/deploy-pages)
       - name: Deploy
