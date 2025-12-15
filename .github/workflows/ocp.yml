@@ -23,7 +23,7 @@ jobs:
       - id: list-models
         # thanks, https://code.dblock.org/2021/09/03/generating-task-matrix-by-looping-over-repo-files-with-github-actions.html
         # set xargs -n[NUM] to calculate more than 1 model per job, e.g. xargs -n5. cave: this will break caching!
-        run: echo "::set-output name=models::$(ls -l static/mmci-cli/models | awk '/^d/ {print $9}' | xargs -n1 | sed 's| |,|g' | jq -R -s -c 'split("\n")[:-1]')"
+        run: echo "models=$(ls -l static/mmci-cli/models | awk '/^d/ {print $9}' | xargs -n1 | sed 's| |,|g' | jq -R -s -c 'split("\n")[:-1]')" >> $GITHUB_OUTPUT
 
   simulate:
     needs:
