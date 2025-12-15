@@ -106,6 +106,7 @@ jobs:
       - uses: actions/download-artifact@v7
         with:
           path: dist/web/data
+          pattern: data-model-*
           merge-multiple: true
 
         # todo: switch to official pages action when it's prod ready (https://github.com/actions/deploy-pages)
